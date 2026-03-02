@@ -1,4 +1,16 @@
 <footer class="site-footer">
   <p>Back to <a href="Characters.html">Characters</a> | <a href="index.html">Home</a></p>
   <p>&copy; {{ site.time | date: "%Y" }} One Mind, Two Stars — All Rights Reserved</p>
+  <script>
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.tab).classList.add('active');
+  });
+});
+</script>
+
 </footer>
