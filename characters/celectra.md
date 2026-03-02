@@ -1,135 +1,100 @@
 ---
-layout: default
 title: Celectra Ambar Carisco
+portrait: celectra.png
+affiliation: Carisco Family; Listener Corps; Human–Galinstanian Bridge
+status: Alive
+birthday: October 11, 2225
+birthplace: New Eden, Ares
+book1_age: "7.0 Earth / 6.28 Ares"
+book2_age: "14.1 Earth / 12.66 Ares"
+book3_age: "21.0 Earth / 18.85 Ares"
+book4_age: "29.3 Earth / 26.2 Ares"
+book5_age: "36.3 Earth / 32.5 Ares"
 ---
 
-<div class="character-card">
+<div class="infobox">
+  <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}" 
+       alt="{{ page.title }} portrait" 
+       class="portrait">
 
-# Celectra Ambar Carisco
+  <table>
+    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
+    <tr><th>Status</th><td>{{ page.status }}</td></tr>
+    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
+    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
+  </table>
+</div>
+
+# {{ page.title }}
 
 ## Overview
-**Role in Story:** Central protagonist; the human–Galinstanian bridge  
-**Affiliation(s):** Carisco Family; symbolic liaison to the First Contact Committee  
-**Status:** Alive  
-**Pronouns:** she/her (physical), they/them in unified-consciousness contexts  
-
-</div>
-
-<div class="character-card">
-
-## Quick Facts
-
-| Field | Value |
-|-------|-------|
-| **Birthday** | October 10, 2225 |
-| **Birthplace** | Utopis Station |
-| **Book 1 Age** | Earth: 7.0 — Ares: 6.28 |
-| **Book 2 Age** | Earth: 14.1 — Ares: 12.66 |
-| **Book 3 Age** | Earth: 20.9 — Ares: 18.75 |
-| **Occupation** | None (child); later symbolic diplomat |
-| **Cause of Death** | — |
-
-</div>
-
-<div class="character-card">
+Celectra Ambar Carisco is the first known dual-bodied human consciousness and the foundational bridge between humanity and the Galinstanian species of Ares. Born in 2225 after a radiation-induced consciousness fusion event, she grew into a diplomat, scientist, and cultural cornerstone whose natural electromagnetic communion shaped the colony’s survival and identity. Her life spans five books of the *Two Stars* saga, evolving from a traumatized child into a mother, scholar, and architect of interspecies harmony.
 
 ## Physical Description
-- Long white hair and milk‑chocolate eyes  
-- Small stature due to premature birth and radiation exposure  
-- Distinctive dual-body physiology (Mononous Disomas)  
-- Telepathic field detectable by Galinstanians  
-
-</div>
-
-<div class="character-card">
+Celectra’s two bodies are genetically identical, each standing 1.49 m and weighing ~41 kg in early adulthood. Both have white hair threaded with fiber-optic strands for formal occasions, pale violet irises, and a distinctive EM “signature” detectable by Galinstanians. During Book 3, pregnancy affects only her right body, creating visible asymmetry that becomes a major emotional and logistical challenge.
 
 ## Personality & Skills
-- Empathetic, curious, and perceptive  
-- High emotional intelligence  
-- Telepathic reception and transmission with Galinstanians  
-- Resilient despite trauma and medical vulnerability  
-- Struggles with being treated as a symbol rather than a child  
+Celectra’s consciousness is divided into four hemispheric “voices” that often disagree but ultimately integrate into a unified self:
 
-</div>
+- **Left-Analytical** — logic, engineering, scientific reasoning  
+- **Right-Analytical** — pattern recognition, intuition, EM-field modeling  
+- **Left-Emotional** — empathy, relational insight, vulnerability  
+- **Right-Emotional** — creativity, instinct, spiritual resonance  
 
-<div class="character-card">
+Her natural abilities include:
 
-## Story Overview (Non‑Spoiler)
-Celectra is the first human capable of true two‑way communication with the Galinstanians. Her existence reshapes human politics, science, and ethics. Raised by Amerigo and later Zoë, she navigates childhood while carrying the weight of interspecies diplomacy.
-
-</div>
-
-<div class="character-card">
-
-## Story Arcs (Spoiler‑Controlled)
-
-<div class="tab-container">
-
-  <div class="tab-buttons">
-    <button class="tab-btn active" data-tab="b1">Book 1</button>
-    <button class="tab-btn" data-tab="b2">Book 2</button>
-    <button class="tab-btn" data-tab="b3">Book 3</button>
-  </div>
-
-  <div id="b1" class="tab-content active">
-    <h3>Book 1</h3>
-    <ul>
-      <li>Reveals her telepathic connection with Stan</li>
-      <li>Endures medical exploitation by Dr. Kret</li>
-      <li>Becomes the center of political conflict over human–Galinstanian relations</li>
-      <li>Forms early friendships with Jaxon, Ananya, and others</li>
-    </ul>
-  </div>
-
-  <div id="b2" class="tab-content">
-    <h3>Book 2</h3>
-    <ul>
-      <li>Gains autonomy and confidence as her abilities mature</li>
-      <li>Publicly reveals her dual nature at Jaxon's birthday party</li>
-      <li>Helps establish the First Contact Committee</li>
-      <li>Navigates adolescence and complex social dynamics</li>
-    </ul>
-  </div>
-
-  <div id="b3" class="tab-content">
-    <h3>Book 3</h3>
-    <ul>
-      <li>Telepathic field destabilizes; monitored in EM‑shielded chambers</li>
-      <li>Serves as a living bridge during critical negotiations</li>
-      <li>Legacy continues through her daughters, Xara Zo and Jenni Jo</li>
-      <li>Represents the transition from biological bridge to technological successors</li>
-    </ul>
-  </div>
-
-</div>
-
-</div>
-
-<div class="character-card">
+- electromagnetic communion  
+- dual-body multitasking  
+- harmonic pattern recognition  
+- cross-species diplomacy  
+- advanced neuro-interface research  
 
 ## Relationships
-**Family:** Amerigo Carisco (father), Zoë Carisco (adoptive mother), Xan Carisco (brother), Jenni Carisco (biological mother, deceased)  
-**Romantic:** Jaxon Bowers (later partner; father of her daughters)  
-**Mentors / Students:** Sensei Kisa; Listener Corps members  
-**Allies:** Stan, Orren, Kiri, Chime, and other Galinstanians  
-**Antagonists:** Dr. Douglas Kret  
+- **Jaxon Bowers** — partner, later father of her twin daughters  
+- **Zoë Carisco** — mother, emotional anchor  
+- **Amerigo Carisco** — father, mentor, later Chief Scientist  
+- **Xan Carisco** — younger brother, acoustic-communication innovator  
+- **Stan, Chime, Harbor, Logic, Ripple** — Galinstanian friends and collaborators  
+- **Jenni Jo & Xara Zo** — her daughters (Book 3 onward)  
 
-</div>
+## Story Overview (Non-Spoiler)
+Across the series, Celectra evolves from a child struggling with trauma and dual embodiment into a scientist and diplomat whose work reshapes the future of Ares. Her arc centers on identity, purpose, legacy, and the ethics of bridging two species. By Book 5, she becomes a steward of the planetary resonance network and a mother guiding the next generation of bridges.
 
-<div class="character-card">
+---
 
-## Abilities, Conditions, or Special Notes
-- Mononous Disomas (dual-body unified consciousness)  
-- Telepathic communication with Galinstanians  
-- Radiation-induced developmental anomalies  
-- Symbolic and practical role in interspecies diplomacy  
+# Story Arcs (Spoiler-Controlled)
 
-</div>
+<div class="tab-container">
+  <div class="tab-buttons">
+    <button data-tab="book1">Book 1</button>
+    <button data-tab="book2">Book 2</button>
+    <button data-tab="book3">Book 3</button>
+    <button data-tab="book4">Book 4</button>
+    <button data-tab="book5">Book 5</button>
+  </div>
 
-<div class="character-card">
+  <div id="book1" class="tab-content">
+    <h2>Book 1 — The First Bridge</h2>
+    Celectra, age seven, becomes the first human capable of electromagnetic communion with Galinstanians. Her dual-body consciousness emerges after a radiation accident, and she forms her earliest bonds with Stan and Chime. She becomes the colony’s indispensable translator, despite the emotional and physical strain of her abilities.
+  </div>
 
-## Behind the Scenes
-- Her name blends celestial imagery with cultural resonance  
-- Early drafts emphasized medical mystery; later drafts focus on emotional and political impact  
+  <div id="book2" class="tab-content">
+    <h2>Book 2 — The Northern Territory</h2>
+    At fourteen, Celectra’s abilities deepen as she navigates political tensions, dangerous expeditions, and the trauma of discovering Dr. Douglas Kret’s past experiments. Her communion range expands with the help of bismuth amplifiers, and she begins shaping the Listener Corps. Her relationship with Jaxon begins to shift from childhood friendship toward something deeper.
+  </div>
 
+  <div id="book3" class="tab-content">
+    <h2>Book 3 — The Communion Interface</h2>
+    Now twenty-one, Celectra completes her Ph.D. and becomes central to the development of synthetic EM communication technology. She confronts the ethical horror of Kret’s research, experiences a crisis of identity as technology begins to replicate her abilities, and discovers she is pregnant with twins. Her natural communion weakens due to pregnancy, forcing her to rely on both the new interface and Galinstanian-crafted tiaras to maintain safe EM range.
+  </div>
+
+  <div id="book4" class="tab-content">
+    <h2>Book 4 — The Four Rivers Resonance</h2>
+    At twenty-nine, Celectra becomes a mother navigating the growing independence of her daughters, Jenni and Xara. She leads the investigation into resonance anomalies across the Four Rivers settlements, discovers the ancient bismuth anchor network beneath Ares, and helps coordinate the Great Resonance that restores planetary harmony. Her role shifts from “the bridge” to “the steward,” guiding the next generation of listeners.
+  </div>
+
+  <div id="book5" class="tab-content">
+    <h2>Book 5 — Stewardship and Succession</h2>
+    In her mid-thirties, Celectra oversees the Resonance Stewardship Program while her daughters and Ripple begin emerging as the next generation of bridges. She confronts political challenges, deepens her scientific work on consciousness and resonance, and faces the long-term implications of human–Galinstanian integration. Her arc centers on legacy: ensuring the systems she built will endure long after her dual bodies can no longer serve as the colony’s anchor.
+  </div>
 </div>
