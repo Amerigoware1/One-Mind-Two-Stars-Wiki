@@ -3,29 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Duška Santoso Carisco - One Mind, Two Stars Wiki</title>
-<style>
-body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
-th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-th { background-color: #f2f2f2; }
-h1 { color: #2c3e50; }
-h2 { color: #34495e; border-bottom: 2px solid #ecf0f1; padding-bottom: 5px; }
-a { color: #3498db; text-decoration: none; }
-a:hover { text-decoration: underline; }
-.footer { margin-top: 40px; border-top: 1px solid #ddd; padding-top: 10px; font-size: 0.9em; }
-</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duška Santoso Carisco - One Mind, Two Stars Wiki</title>
+    <link rel="stylesheet" href="WikiStyle.css"> <!-- Assuming this is linked; otherwise embed the CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <div class="top-banner">
+    <a href="index.html" class="home-button">🏠 Home</a>
+  </div>
 
-<h1>Duška Santoso Carisco</h1>
-<h2>The Resonant Artist</h2>
+    <div class="header-container">
+        <h1 class="gradient-title orbitron">Duška (Santoso) Carisco</h1>
+        <p class="subtitle italic text-center text-purple-300">The Resonant Artist</p>
+    </div>
 
-<table>
-<tr>
-<th width="30%">Full Name</th>
-<td>Duška Santoso Carisco</td>
-</tr>
+<div class="infobox">
+        <table>
+            <caption>Alexander Carisco</caption>
+			    <tr>
+      <td colspan="2" style="text-align:center; padding-bottom:10px;">
+        <img src="assets/images/Portrait_Placeholder.png" alt="Duška Carisco" style="width:280px; border-radius:0.5rem;">
+        <div style="font-size:0.9rem; margin-top:8px; color:#94a3b8;">Duška Carisco</div>
+      </td>
+    </tr>
 <tr>
 <th>Nickname</th>
 <td>Duška</td>
@@ -38,7 +43,7 @@ a:hover { text-decoration: underline; }
 <th>Family</th>
 <td>
 Husband: Alexander "Xan" Carisco<br>
-Son: Oxion "Ori" Carisco<br>
+Son: Oxion "Oxi" Carisco<br>
 Father-in-law: Amerigo Carisco<br>
 Mother-in-law: Zoë Carisco<br>
 Sister-in-law: Celectra Carisco-Bowers
@@ -61,7 +66,10 @@ Sister-in-law: Celectra Carisco-Bowers
 <td>Two Stars, One Destiny: The Four Rivers Resonance (Chapter 4)</td>
 </tr>
 </table>
-
+</div>
+  <div class="article-content">
+    <div class="content">
+        <div class="toc">
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#background">Background</a></li>
@@ -70,7 +78,7 @@ Sister-in-law: Celectra Carisco-Bowers
 <li><a href="#development">Character Development</a></li>
 <li><a href="#trivia">Trivia</a></li>
 </ul>
-
+</div></div></div>
 <h2 id="background">Background</h2>
 <p>Duška Santoso was born in New Eden during the early stabilization period of the colony. Growing up alongside the "integration generation," she developed a keen sensitivity to the cultural and technological shifts occurring on Ares. Unlike many of her peers who focused purely on engineering or science, Duška gravitated toward the arts, specifically exploring how visual and acoustic design could facilitate human-Galinstanian communication.</p>
 <p>She met Alexander "Xan" Carisco during their youth, bonding over shared interests in colony history and astronomy. They married in 2254, solidifying a union between two of the colony's foundational families. Their son, Oxion, was born in 2255, shortly after the resolution of the Four Rivers Resonance crisis. Duška continues to work closely with the University Outreach Program, often collaborating with Galinstanian partners like Lyric to design spaces that accommodate both human and non-human sensory needs.</p>
@@ -89,7 +97,7 @@ Sister-in-law: Celectra Carisco-Bowers
 <h3>Alexander "Xan" Carisco (Husband)</h3>
 <p>Their relationship is built on mutual respect and complementary skills. Xan handles the technical and observational data, while Duška interprets the human and cultural impact. They are often seen working together during community events, such as the Four Rivers Festival.</p>
 
-<h3>Oxion "Ori" Carisco (Son)</h3>
+<h3>Oxion "Oxi" Carisco (Son)</h3>
 <p>Duška is a devoted mother. From infancy, Oxion showed an unusual comfort around Galinstanians, a trait Duška nurtures carefully. She often leaves him in the care of grandparents Amerigo and Zoë when duty calls, trusting the extended family network.</p>
 
 <h3>The Carisco Family</h3>
@@ -131,11 +139,31 @@ Sister-in-law: Celectra Carisco-Bowers
 <li>She often jokes that her son Oxion understands Galinstanian pulses better than human speech.</li>
 </ul>
 
-<div class="footer">
-<p>Back to <a href="Cast.html">Characters</a> | <a href="index.html">Home</a></p>
-<p>© One Mind Two Stars Wiki</p>
-<p><a href="#top">⬆️ Top</a></p>
-</div>
+  <!-- Footer -->
+  <div id="footer">
+    <p>Back to <a href="Cast.html">Characters</a> | <a href="index.html">Home</a></p>
+    <p>&copy; One Mine Two Stars Wiki</p>
+  </div>
+<!-- Floating Return to Top Button -->
+<button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+
+<script>
+  const toTopBtn = document.getElementById("toTopBtn");
+
+  // Show button when scrolled down
+  window.addEventListener("scroll", () => {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      toTopBtn.style.display = "block";
+    } else {
+      toTopBtn.style.display = "none";
+    }
+  });
+
+  // Smooth scroll to top
+  toTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
 
 </body>
 </html>
