@@ -85,7 +85,7 @@ Celectra is the first human capable of true two‑way communication with the Gal
     <h3>Book 2</h3>
     <ul>
       <li>Gains autonomy and confidence as her abilities mature</li>
-      <li>Publicly reveals her dual nature at Jaxon’s birthday party</li>
+      <li>Publicly reveals her dual nature at Jaxon's birthday party</li>
       <li>Helps establish the First Contact Committee</li>
       <li>Navigates adolescence and complex social dynamics</li>
     </ul>
