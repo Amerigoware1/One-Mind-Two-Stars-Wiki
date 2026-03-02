@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/One-Mine-Two-Stars-Wiki/WikiStyle.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/path/to/styles.css">
+    <title>{{ page.title }}</title>
 </head>
-
 <body>
-
-  {% include header.html %}
-
-  <main class="content-container">
-    {{ content }}
-  </main>
-
-  {% include footer.html %}
-
+    <header>
+        <h1>{{ site.title }}</h1>
+        <nav>
+            {% for page in site.pages %}
+                <a href="{{ page.url }}">{{ page.title }}</a>
+            {% endfor %}
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+    </footer>
 </body>
 </html>
