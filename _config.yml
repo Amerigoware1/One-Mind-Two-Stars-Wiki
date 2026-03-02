@@ -1,4 +1,16 @@
 title: One Mine, Two Stars Wiki
 markdown: kramdown
 theme: minima
-plugins: []
+baseurl: "/One-Mine-Two-Stars-Wiki"
+
+collections:
+  characters:
+    output: true
+    permalink: /characters/:name.html
+
+defaults:
+  - scope:
+      path: ""
+      type: characters
+    values:
+      layout: default
