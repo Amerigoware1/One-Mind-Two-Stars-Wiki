@@ -684,6 +684,50 @@ main h2 {
   margin-bottom: 0.4rem;
 }
 
+/* Character Page Components */
+.character-card {
+  border: 2px solid #0ff;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 12px #0ff;
+}
+
+/* Tabs */
+.tab-container {
+  margin-top: 2rem;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab-buttons button {
+  background: #111;
+  border: 1px solid #0ff;
+  padding: 0.5rem 1rem;
+  color: #0ff;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: Orbitron, sans-serif;
+}
+
+.tab-buttons button.active {
+  background: #0ff;
+  color: #000;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
 
 
 
