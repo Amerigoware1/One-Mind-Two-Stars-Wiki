@@ -1,3 +1,7 @@
+---
+layout: default
+title: Celectra Ambar Carisco
+---
 <div class="character-card">
 
 # Celectra Ambar Carisco
