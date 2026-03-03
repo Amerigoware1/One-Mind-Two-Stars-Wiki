@@ -1,4 +1,5 @@
 ---
+layout: character
 title: Dr. Amerigo Carisco
 portrait: Portrait_Placeholder.png
 affiliation: Carisco Family; New Eden Science Directorate; Chief Scientist; New Eden Council
