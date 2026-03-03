@@ -13,4 +13,4 @@ defaults:
       path: ""
       type: characters
     values:
-      layout: default
+      layout: character
