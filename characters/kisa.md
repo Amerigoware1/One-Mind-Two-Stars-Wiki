@@ -64,40 +64,35 @@ Story Arcs (Spoiler-Controlled)
 <div id="book1" class="tab-content">
 <h2>Book 1 — The Advocate (Age 36)</h2>
 Sensei Kisa serves as Celectra's primary advocate during the heated Athletics Committee debates about her competition eligibility. When Councilor Okafor questions whether it's fair for Celectra to compete with four limbs while others have two, Sensei Kisa offers the principled defense: "She is who she is. We do not ask tall competitors to fight on their knees. Celectra's body is her body."
-
-1
+When the committee remains deadlocked, Celectra proposes her innovative solution: competing with only one body active while the other remains in meditative seiza. Sensei Kisa supports this compromise while recognizing its extraordinary difficulty, helping Celectra train for the unprecedented physical and mental demands. Their guidance proves instrumental when Celectra earns a silver medal—a testament to discipline over natural advantage.
 
 </div>
 
 <div id="book2" class="tab-content">
 <h2>Book 2 — The Stillness Protocol (Age 43)</h2>
 At 43, Sensei Kisa continues to refine their teaching methods for Ares' unique environment. They develop specialized exercises for Celectra to coordinate both bodies in martial movements while maintaining the stillness protocol required for competition. Between tournament matches, they work on Celectra's shoulders "with practiced hands," recognizing the strain of holding one body perfectly still while the other fights.
-
-1
+Their famous pre-finals wisdom—"There is always pressure. The question is whether you let it break you or shape you"—helps Celectra process the silver medal not as failure, but as an achievement of extraordinary discipline. Sensei Kisa's dojo becomes a model for inclusive excellence, influencing colony-wide policies for athletes with unique physiologies.
 
 </div>
 
 <div id="book3" class="tab-content">
 <h2>Book 3 — Mentor and Elder (Age 50)</h2>
 At 50, Sensei Kisa has become a respected elder in the colony, consulted on matters beyond martial arts. They mentor younger instructors in adapting Earth traditions to extraterrestrial life, emphasizing that discipline and respect transcend environment. When debates arise about using Dr. Kret's confiscated research, Sensei Kisa offers a nuanced perspective: "We can learn from methods while condemning their origins. The knowledge exists. Pretending it doesn't doesn't undo the harm—but we must never forget where it came from."
-
-1
+They continue to teach Celectra, now focusing less on competition and more on the meditative aspects of martial arts—helping her find grounding as she navigates pregnancy, motherhood, and the transition from sole bridge to mentor. Their dojo remains one of New Eden's most cherished community institutions, blending physical fitness, mental discipline, and cultural continuity.
 
 </div>
 
 <div id="book4" class="tab-content">
 <h2>Book 4 — Legacy in Motion (Age 58)</h2>
 At 58, Sensei Kisa begins transitioning from active instruction to advisory roles, training the next generation of dojo leaders. They consult on the Resonance Stewardship Program's youth curriculum, helping design physical activities that teach children to "listen" to Ares through movement and rhythm. When the twins volunteer for the program, Sensei Kisa recognizes their unique potential: Jenni's empathetic intuition and Xara's analytical precision—both valuable forms of discipline.
-
-1
+During the Four Rivers Festival, they oversee a special demonstration blending traditional kata with Galinstanian resonance patterns—a symbolic fusion of human and indigenous practices. Their presence at the Samaya Gallery opening (March 2256) is quietly celebratory: they see in Maya and Sam's work the same principles they've taught for decades—respect, adaptation, and the courage to build something new while honoring what came before.
 
 </div>
 
 <div id="book5" class="tab-content">
 <h2>Book 5 — The Steady Hand (Age 65)</h2>
 At 65, Sensei Kisa has become a living archive of colony history, consulted by historians documenting New Eden's early years. They attend the twins' 18th birthday celebration (November 2265) with quiet pride, watching Xara and Jenni lead the next generation of bridge-builders. When asked about their greatest achievement, they deflect: "I did not build bridges. I taught people to stand firmly so they could build their own."
-
-1
+Their dojo remains active under new leadership, but Sensei Kisa still appears for special occasions—offering a bow, a word of wisdom, or a gentle correction. Their famous statement, "She is who she is," is now taught in colony schools as a foundational principle of inclusive excellence. Their arc culminates not in dramatic action, but in the quiet satisfaction of knowing that the values they instilled continue to shape the colony—long after they've stepped back from daily instruction.
 
 </div>
 </div>
