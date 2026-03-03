@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Dr. Alexander "Alex" Cruiz
 portrait: Portrait_Placeholder.png
 affiliation: New Eden Medical Corps; Chief of Medicine; New Eden Council
