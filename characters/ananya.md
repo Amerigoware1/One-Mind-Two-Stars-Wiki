@@ -1,3 +1,5 @@
+---
+layout: character
 title: Ananya Patel
 portrait: Ananya.jpg
 affiliation: New Eden Youth Cohort; Biologist; Listener Corps Translator
@@ -9,6 +11,7 @@ book2_age: "15.3"
 book3_age: "22.2"
 book4_age: "30.4"
 book5_age: "37.4"
+---
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"
