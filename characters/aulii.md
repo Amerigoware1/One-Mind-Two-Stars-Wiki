@@ -4,11 +4,11 @@ affiliation: New Eden Youth Cohort; Martial Artist; Resonance Stewardship Progra
 status: Alive
 birthday: February 14, 2226
 birthplace: New Eden, Ares
-book1_age: "Not yet born"
-book2_age: "12.9"
-book3_age: "20.8"
-book4_age: "29.1"
-book5_age: "36.1"
+book1_age: "6.7"
+book2_age: "13.8"
+book3_age: "20.7"
+book4_age: "28.9"
+book5_age: "35.9"
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"
@@ -70,28 +70,30 @@ Aulii does not appear in Book 1. She is born in New Eden on February 14, 2226, s
 <div id="book2" class="tab-content">
 <h2>Book 2 — The Gold Medal (Age 12)</h2>
 At twelve, Aulii competes in the Sundome Karate Tournament alongside Celectra Carisco. She faces Celectra in the finals, where Celectra is competing under the "stillness protocol" (one body motionless, one body fighting). Aulii attacks with surgical precision, winning 4–1. She earns the Gold Medal, while Celectra takes Silver.
-
+After the match, Aulii shows remarkable sportsmanship. She acknowledges the difficulty of Celectra's constraint and offers a strategic suggestion: "Have you thought about alternating? Using your right body for one match and your left for the next? You'd still only be using half of yourself at a time, but each half could actually rest between bouts." This advice becomes a key adjustment for Celectra in future tournaments. Aulii's victory is remembered not as a triumph over weakness, but as a demonstration of excellence under fair conditions.
 
 </div>
 
 <div id="book3" class="tab-content">
 <h2>Book 3 — Young Instructor (Age 20)</h2>
 At twenty, Aulii begins assisting Sensei Kisa at the Sundome Dojo. She focuses on adapting traditional techniques for the unique physiologies of colony-born children, including those with sensory sensitivities or physical differences. She maintains a friendly rivalry with Celectra, sparring occasionally to keep her skills sharp.
-
+She also begins collaborating with the Resonance Stewardship Program, designing physical training modules that incorporate rhythm and body awareness—skills that will later prove valuable for the twins' generation. Her reputation grows as a teacher who emphasizes precision over power, and respect over dominance.
 
 </div>
 
 <div id="book4" class="tab-content">
 <h2>Book 4 — Mentor to the Next Generation (Age 29)</h2>
 At twenty-nine, Aulii takes on a more formal role as Physical Training Lead for the youth cohort. She works closely with Duška Santoso Carisco (resonance design) and Kael (acoustic rhythm) to create integrated training programs. When the twins (age 7-8) begin formal physical education, Aulii is their primary instructor.
-
+She recognizes their unique strengths early: Xara's analytical precision and Jenni's intuitive body awareness. She tailors their training accordingly, teaching Xara defensive positioning and Jenni adaptive movement. Her lessons emphasize that physical discipline is not about fighting, but about understanding your own body and respecting others'.
 
 </div>
 
 <div id="book5" class="tab-content">
 <h2>Book 5 — The Twins' Instructor (Age 36)</h2>
 At thirty-six, Aulii is a senior instructor in the Resonance Stewardship Program. She plays a key role in preparing the twins (age 14) for field work, teaching them defensive tactics, situational awareness, and how to move safely in unstable environments (caves, resonance chambers, etc.).
+During the Resonant Echo rescue preparation, Aulii ensures the twins are physically equipped for the mission, even though they are officially "observers." She teaches them how to fall, how to brace, and how to trust their bodies under stress. Her training proves crucial when the twins navigate the gallery rescue site.
 
+After the rescue, Aulii helps integrate acoustic movement patterns (learned from Kael) into standard martial arts curriculum. Her arc culminates in her becoming a bridge between generations: trained by Sensei Kisa, she now trains the twins, ensuring that discipline, respect, and adaptability remain core values of New Eden's physical culture.
 
 </div>
 </div>
