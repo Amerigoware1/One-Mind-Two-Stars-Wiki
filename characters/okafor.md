@@ -69,28 +69,34 @@ As Athletics Committee Chair, Okafor oversees the development of colony sports p
 <div id="book2" class="tab-content">
 <h2>Book 2 — The Eligibility Debate (Age 49)</h2>
 Okafor's most notable controversy involves Celectra Carisco's participation in karate tournaments. He initially opposes her eligibility, concerned that her four limbs give her an unfair advantage: "She has four hands and feet while everyone else has two." The debate consumes three committee meetings, with Celectra present but silent as adults discuss her body "like equipment rather than her."
+When Celectra proposes the stillness protocol—competing with only one body active while the other remains in meditative seiza—Okafor votes yes, though his expression suggests he expects her to fail spectacularly. He watches silently from the stands as she advances through rounds, maintaining the protocol despite visible strain. After she earns a silver medal, his expression shifts to something approaching grudging respect: "Impressive discipline. I didn't think you could maintain the stillness protocol for the entire tournament."
 
+He concludes by inviting her to "submit a formal proposal about alternating bodies between matches to the Athletics Committee. I'll... consider supporting it." From Okafor, that is practically a standing ovation.
 
 </div>
 
 <div id="book3" class="tab-content">
 <h2>Book 3 — Endorsing the Next Generation (Age 56)</h2>
 By 2246, Okafor has evolved into a councilor who values demonstrated merit over rigid precedent. When Jaxon Bowers, Ananya Patel, and Maya Keahi present findings from the Listener Corps, Okafor endorses their work: "I've watched these young people demonstrate discipline and rigor in everything from academic coursework to athletic competition. No coronal flares, no dead satellite behavior—just consistent stellar work. I see no reason to doubt their findings here."
-
+e continues to chair the Athletics Committee, now incorporating lessons from Celectra's case into broader policy: exceptional physiologies require exceptional consideration, but fairness remains the guiding principle. He collaborates with Sensei Kisa to develop training protocols that accommodate diverse bodies while maintaining competitive integrity.
 
 </div>
 
 <div id="book4" class="tab-content">
 <h2>Book 4 — Policy and Precedent (Age 64)</h2>
 At 64, Okafor serves as a senior voice on the Council, consulted on matters beyond athletics. During debates about the Four Rivers Resonance and subsurface infrastructure, he advocates for careful, evidence-based decision-making: "We don't change policy because it's convenient. We change it because the data demands it."
+He supports the Resonance Stewardship Program's youth curriculum, recognizing that teaching children to "listen" to Ares requires the same discipline he has always valued in athletes. When the twins volunteer for the program, he nods in approval: "If they approach this with the same rigor they showed in their rescue work, they'll serve Ares well."
 
+His relationship with Celectra has matured into mutual respect. He no longer sees her as an exception to be managed, but as a colleague whose unique perspective strengthens colony governance.
 
 </div>
 
 <div id="book5" class="tab-content">
 <h2>Book 5 — Legacy of Fairness (Age 71)</h2>
 At 71, Okafor has transitioned into an advisory role, mentoring younger councilors in principle-based governance. The policies he helped shape—accommodating exceptional physiologies while maintaining competitive integrity—are now standard practice across New Eden's recreational and educational programs.
+When the twins lead the Resonant Echo rescue and subsequent Council testimony, Okafor observes with quiet pride. He recognizes in their work the same values he has always championed: discipline, evidence, and the courage to adapt when circumstances demand it.
 
+His arc culminates not in dramatic transformation, but in the steady accumulation of wisdom: fairness isn't a fixed rule, but a practice—one that requires listening, learning, and the humility to change one's mind when the evidence warrants it.
 
 </div>
 </div>
