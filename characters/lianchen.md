@@ -83,7 +83,7 @@ Later, after critique from Dr. Yuki Chen regarding pipeline routes, Lian orders 
 <h2>Book 4 — The Four Rivers Resonance (Age 70)</h2>
 In Chapter 3 ("Council of Quiet Warnings"), Director Chen mentions the Samaya Gallery plans in passing during a Council meeting, noting: "Once the crater is fully stabilized, Maya and Sam will finally have their gallery." This indicates her oversight extends to structural stability affecting surface construction.
 
-Throughout the Four Rivers investigation, Lian collaborates with Amerigo Carisco and Alex Cruiz on subsurface construction projects affecting aquifers. When the resonance anchors are discovered, she works to ensure human infrastructure (pumps, geothermal regulators) is calibrated to avoid destructive interference in the bismuth network. Her earlier Northern Aquifer Expansion Proposal is revisited in light of new data, leading to a more sustainable long-term plan that balances colony needs with p
+Throughout the Four Rivers investigation, Lian collaborates with Amerigo Carisco and Alex Cruiz on subsurface construction projects affecting aquifers. When the resonance anchors are discovered, she works to ensure human infrastructure (pumps, geothermal regulators) is calibrated to avoid destructive interference in the bismuth network. Her earlier Northern Aquifer Expansion Proposal is revisited in light of new data, leading to a more sustainable long-term plan that balances colony needs with planetary health.
 </div>
 
 <div id="book5" class="tab-content">
