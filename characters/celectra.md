@@ -1,4 +1,5 @@
 ---
+layout: character
 title: Celectra Ambar Carisco
 portrait: celectra.png
 affiliation: Carisco Family; Listener Corps; Human–Galinstanian Bridge
