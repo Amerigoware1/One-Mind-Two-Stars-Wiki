@@ -73,7 +73,7 @@ Maya is present in the colony as a young child (Age 6.1). While not a central PO
 <h2>Book 2 — First Exhibition & Hero Worship (Age 13)</h2>
 At thirteen, Maya participates in her first art exhibition at the Activity Center (Book 2, Ch. 26). Her work is small, colorful, and earnest — but it catches Celectra's attention, sparking Maya's lifelong admiration.
 
-1
+This is the beginning of her quiet crush on Celectra, a mixture of awe and longing she doesn't yet understand. She volunteers with the Listener Corps youth programs (Ch. 9) and presents a song to Celectra representing friendship without hero worship by the end of the book (Ch. 20.5).
 
 </div>
 
@@ -81,7 +81,7 @@ At thirteen, Maya participates in her first art exhibition at the Activity Cente
 <h2>Book 3 — Growing Awareness & Partnership (Age 20)</h2>
 At twenty, Maya becomes more aware of her feelings — admiration, affection, and the awkwardness of realizing Celectra is both extraordinary and unreachable. She channels these emotions into her art, which begins to show early signs of the style she will later be known for.
 
-1
+She meets **Sam Calder** at her "Seven Years of Stone" exhibition (Book 3, Ch. 12, May 2247). Their partnership — creative, emotional, and eventually romantic — becomes one of the most important relationships of her life. By the end of Book 3 (June 2248), they are an official couple (Ch. 26).
 
 </div>
 
@@ -89,7 +89,7 @@ At twenty, Maya becomes more aware of her feelings — admiration, affection, an
 <h2>Book 4 — Finding Her Voice & Gallery Opening (Age 28)</h2>
 At twenty-eight, Maya is a young adult navigating her place in a rapidly changing colony. Her crush on Celectra has faded into deep respect, and she begins forming her own identity independent of the Carisco family's gravitational pull.
 
-1
+She and Sam prepare for the opening of the **Samaya Gallery & Museum of Integration**. The gallery officially opens in the Book 4 Epilogue (March 18, 2256), becoming a cultural hub for human–Galinstanian collaboration.
 
 </div>
 
@@ -97,7 +97,13 @@ At twenty-eight, Maya is a young adult navigating her place in a rapidly changin
 <h2>Book 5 — Samaya Gallery & Museum of Integration (Age 35)</h2>
 At thirty-five, Maya is an established artist and co‑director of the **Samaya Gallery** (opened 2256). The gallery is now a cultural cornerstone featuring:
 
-1234567
+- resonance‑inspired art  
+- cross‑species installations  
+- historical exhibits  
+- youth programs  
+- community gatherings  
+
+Maya's arc culminates in her becoming a confident, grounded artist whose work helps define New Eden's cultural identity. She mentors the next generation, including Celectra's twins (Jenni and Xara).
 
 </div>
 </div>
