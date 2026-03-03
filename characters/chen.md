@@ -4,11 +4,11 @@ affiliation: Utopis Station Medical; Radiation Medicine Specialist; Celectra's P
 status: Active
 birthday: March 4, 2089
 birthplace: Beijing, Earth
-book1_age: "136"
-book2_age: "150"
-book3_age: "159"
-book4_age: "167"
-book5_age: "176"
+book1_age: "53.6"
+book2_age: "60.7"
+book3_age: "67.6"
+book4_age: "75.9"
+book5_age: "82.9"
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"
@@ -69,7 +69,7 @@ In 2225, Dr. Chen is the attending physician when Jenni Carisco is exposed to Ni
 - <strong>Professional Compassion:</strong> Delivers the grim prognosis with clinical honesty: "Standard outcomes would be developmental defects. Microcephaly, neural tube closure problems. Often miscarriage."
 - <strong>Mitochondrial Anomaly:</strong> Notes Jenni's unusual mitochondrial DNA repair enzyme expression as a potential mitigating factor
 
-1
+Her diagnosis sets in motion the events that lead to Celectra's unique condition and the eventual human–Galinstanian bridge.
 
 </div>
 
@@ -87,7 +87,7 @@ Dr. Chen conducts critical monitoring of Celectra's telepathic capabilities:
 - <strong>Prognosis:</strong> Projects significant impairment by age 30, with complex communion becoming unreliable within 5–7 years
 - <strong>Hypothesis:</strong> Suggests the deterioration may be due to sustained active use of her telepathic abilities rather than passive aging
 
-1
+Her findings create urgent pressure to develop technological alternatives to Celectra's biological bridge function.
 
 </div>
 
