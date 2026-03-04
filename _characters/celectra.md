@@ -23,7 +23,7 @@ book5_age: "36.3 Earth / 32.5 Ares"
     <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
   </table>
 </div>
-
+<div class="article-content">
 # {{ page.title }}
 
 ## Overview
@@ -96,4 +96,5 @@ Across the series, Celectra evolves from a child struggling with trauma and dual
     <h2>Book 5 — Stewardship and Succession</h2>
     In her mid-thirties, Celectra oversees the Resonance Stewardship Program while her daughters and Ripple begin emerging as the next generation of bridges. She confronts political challenges, deepens her scientific work on consciousness and resonance, and faces the long-term implications of human–Galinstanian integration. Her arc centers on legacy: ensuring the systems she built will endure long after her dual bodies can no longer serve as the colony’s anchor.
   </div>
+</div>
 </div>
