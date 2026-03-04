@@ -694,8 +694,8 @@ main h2 {
   box-shadow: 0 0 12px #0ff;
 }
 .character-thumb {
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
     /* object-fit: cover;      Crops the image to a perfect square */
     /* border-radius: 50%;   Makes it a circle */
     border: 2px solid var(--neon-cyan);
