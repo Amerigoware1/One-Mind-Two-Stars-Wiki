@@ -13,7 +13,7 @@ layout: default
 
   {% if page.image %}
   <div class="character-image">
-    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+<img src="{{ character.portrait | relative_url }}" alt="{{ character.title | escape }}" class="character-thumb">
   </div>
   {% endif %}
 </article>
