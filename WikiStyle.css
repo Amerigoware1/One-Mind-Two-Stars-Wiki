@@ -728,6 +728,19 @@ main h2 {
   display: block;
 }
 
+/* This ensures the character biography doesn't overlap the box */
+.article-content {
+    display: block;
+    overflow: hidden; /* This forces it to respect the floated infobox */
+}
+
+/* Ensure the infobox stays glued to the right */
+.infobox {
+    float: right;
+    clear: right;
+    width: 320px;
+    margin: 0 0 1rem 1.5rem; /* Space between box and text */
+}
 
 
 
