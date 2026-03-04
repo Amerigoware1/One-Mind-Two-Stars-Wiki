@@ -1,123 +1,752 @@
-/* WikiStyle.css */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* ===========================
+   Sci-Fi Novel Wiki Theme
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  /* Core palette */
+  --bg-space:         #0f0124;   /* Deep void */
+  --bg-card:          #0c0028;   /* Holographic panel */
+  --bg-card-dark:     #0a0022;
+  --border-glow:      #1e0a47;
+  
+  /* Neon accents */
+  --neon-violet:      #c13cff;
+  --neon-cyan:        #00e8ff;
+  --neon-magenta:     #ff2af1;
+  
+  /* Text */
+  --text-primary:     #e37df5;
+  --text-muted:       #b8b1ff;
+  --text-heading:     #ffffff;
+  
+  /* Glows */
+  --glow-violet:      rgba(193, 60, 255, 0.3);
+  --glow-cyan:        rgba(0, 232, 255, 0.25);
+}
+
+/* ===========================
+   Base
+   =========================== */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background: #f9f9f9;
-  margin: 0;
-  padding: 0;
-}
-
-/* Header */
-.site-header {
-  background: #2c3e50;
-  color: white;
-  padding: 1rem 0;
-  margin-bottom: 2rem;
-}
-
-.site-header .wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.site-title {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.site-header nav a {
-  color: #ecf0f1;
-  text-decoration: none;
-  margin-left: 1rem;
-}
-
-.site-header nav a:hover {
-  text-decoration: underline;
-}
-
-/* Main Content */
-.wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-/* Character Pages */
-.character-header h1 {
-  color: #2c3e50;
-  border-bottom: 3px solid #3498db;
-  padding-bottom: 0.5rem;
-}
-
-.infobox {
-  background: white;
-  border: 1px solid #ddd;
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin: 1.5rem 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.infobox table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.infobox th {
-  text-align: left;
-  color: #555;
-  width: 120px;
-  padding: 0.5rem 0;
-}
-
-.infobox td {
-  padding: 0.5rem 0;
-  color: #333;
-}
-
-.infobox img.portrait {
-  float: right;
-  max-width: 200px;
-  margin-left: 1.5rem;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-}
-
-/* Footer */
-.site-footer {
-  text-align: center;
-  padding: 2rem 0;
-  margin-top: 3rem;
-  color: #777;
-  border-top: 1px solid #ddd;
-}
-
-/* Character List Grid */
-.character-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1.5rem;
-}
-
-.character-card {
-  background: white;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg-space);
+  color: var(--text-primary);
+  line-height: 1.7;
+  margin: 20px;
   padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-  border: 1px solid #ddd;
+  min-height: 100vh;
 }
 
-.character-card img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
+/* Optional subtle starfield texture (add via ::before if you want) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(120, 60, 255, 0.08) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(0, 232, 255, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ===========================
+   Typography
+   =========================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--text-heading);
+  margin-top: 1.5em;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-align: center;
+  background: linear-gradient(90deg, #60a5fa, var(--neon-violet), var(--neon-cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid rgba(193, 60, 255, 0.4);
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--neon-cyan);
+  border-bottom: 2px solid var(--neon-violet);
+  padding-bottom: 0.3em;
+}
+
+/* ===========================
+   Links
+   =========================== */
+a {
+  color: var(--neon-cyan);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+a:hover {
+  color: var(--neon-violet);
+  text-shadow: 0 0 8px var(--glow-cyan);
+}
+/* Float Clearing for Main Article
+   =========================== */
+.article-content {
+    /* Creates a new Block Formatting Context (BFC)
+       which forces the element to flow around the float (.infobox) */
+    overflow: hidden;
+    /* Optional: Add some top margin if needed, but the h1 separation should be enough */
+}
+/* ===========================
+   Cards & Panels
+   =========================== */
+.top-banner {
+   /* 1. Make the background fully transparent */
+   background: rgba(0, 0, 0, 0); 
+   /* 2. Keep the border, glow, and other styles */
+   border: 1px solid var(--border-glow);
+  border-radius: 0.75rem;
+  padding: 1rem 1.5rem;
+  margin: 0; 
+  position: fixed;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6),
+              0 0 15px var(--glow-violet);
+  transition: all 0.4s ease;
+  backdrop-filter: blur(4px);
+ }
+
+.card-bg, .toc, .result {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glow);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+margin: 25px 25px; 
+  
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6),
+              0 0 15px var(--glow-violet);
+  transition: all 0.4s ease;
+  backdrop-filter: blur(4px);
+}
+.card-bg:hover, .infobox:hover, .toc:hover, top-banner:hover {
+  box-shadow: 0 0 30px var(--glow-violet),
+              0 0 50px var(--glow-cyan);
+  transform: translateY(-4px);
+}
+
+/* ===========================
+   Infobox Specific
+   =========================== */
+.infobox {
+  float: right;
+  width: 320px;
+  margin: 0 0 1.5rem 1.5rem;
+}
+
+.infobox th, .infobox caption {
+  background: rgba(193, 60, 255, 0.2);
+  color: var(--neon-cyan);
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+.infobox {
+    background: var(--bg-card);
+   /* border: 1px solid var(--border-glow);*/
+   border: 1px solid var(--neon-violet);
+    padding: 1rem;
+    margin: 0 0 1.5rem 1.5rem; /* no giant top margin */
+    float: right;
+    clear: right;
+    width: 320px; /* or as needed */
+}
+/* ===========================
+   Infobox Image Control
+   =========================== */
+.infobox img.portrait, 
+.infobox video.portrait {
+  max-width: 100%;
+  height: auto; 
+  border-radius: 0.5rem; 
+  border: 2px solid var(--neon-cyan);
+  box-shadow: 0 0 10px var(--glow-cyan);
+  display: block; 
+  /* Added for video alignment */
+  object-fit: cover; 
+}
+/* Also, fix a nested table issue in the infobox: */
+.infobox table.infobox {
+    /* Remove the default border-radius from the nested table */
+    border-radius: 0; 
+    border: none;
+    margin: 0;
+}
+/* Ensure the infobox column holding the image spans the full width,
+   as your HTML uses colspan="2" */
+.infobox td[colspan="2"] {
+    text-align: center;
+}
+/* ===========================
+   TOC
+   =========================== */
+.toc {
+  background: var(--bg-card-dark);
+  border: 1px solid var(--neon-violet);
+}
+.toc a:hover {
+  color: var(--neon-magenta);
+}
+
+/* ===========================
+   Tables
+   =========================== */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5em 0;
+  border: 1px solid var(--border-glow);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+th {
+  background: rgba(193, 60, 255, 0.25);
+  color: var(--neon-cyan);
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+   }
+td, th {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border-glow);
+  text-align: center; 
+}
+tbody tr:nth-child(2) {
+  font-size: 0.9em;
+  color: rgba(180, 220, 255, 0.8);
+}
+
+/* ===========================
+   Buttons & Inputs
+   =========================== */
+button, input[type="submit"] {
+  background: linear-gradient(45deg, var(--neon-violet), var(--neon-cyan));
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 15px rgba(193, 60, 255, 0.5);
+}
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px var(--glow-violet);
+}
+
+input[type="number"], input[type="text"] {
+  background: var(--bg-card);
+  border: 1px solid var(--neon-violet);
+  color: var(--text-primary);
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+input:focus {
+  outline: none;
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 15px var(--glow-cyan);
+}
+
+/* ===========================
+   Utility Glow Text
+   =========================== */
+.glow-violet { text-shadow: 0 0 10px var(--neon-violet); color: var(--neon-violet); }
+.glow-cyan   { text-shadow: 0 0 10px var(--neon-cyan);   color: var(--neon-cyan); }
+
+/* Top banner — subtle permanent glow + stronger on hover */
+.top-banner {
+    position: fixed;
+    top: 0;        /* This pulls it to the very top */
+    left: 0;       /* This aligns it to the left */
+    width: 100%;   /* This ensures it stretches across the screen */
+    z-index: 10;   /* Keeps it above other content */
+    transition: all 0.4s ease;
+    border-bottom: 1px solid rgba(193, 60, 255, 0.15);
+}
+/* Permanent subtle glow */
+.top-banner::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    border: 1px solid transparent;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 12px rgba(193, 60, 255, 0.25);
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+/* Strong neon glow on hover */
+.top-banner:hover::before {
+    box-shadow: 0 0 30px rgba(193, 60, 255, 0.6),
+                0 0 50px rgba(0, 232, 255, 0.4);
+    border-color: rgba(193, 60, 255, 0.4);
+}
+
+/* Home button inside the banner – make it pop */
+.top-banner .home-button {
+    background: rgba(193, 60, 255, 0.15);
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(6px);
+    transition: all 0.3s;
+}
+.top-banner .home-button:hover {
+    background: rgba(193, 60, 255, 0.35);
+    box-shadow: 0 0 20px rgba(193, 60, 255, 0.6);
+}
+
+.top-banner button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+#timeDisplay {
+    margin-left: auto;
+    white-space: nowrap;
+    font-family: 'Orbitron', sans-serif;
+    color: var(--neon-cyan);
+}
+
+#canvas {
+    background-color: #000000 !important;
+}
+
+/* Indent subcategory headers within the Slang section */
+section h3 {
+  margin-left: 1.5em;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+/* Indent individual slang entries under each subcategory */
+section h3 + section,
+section h3 + section + section,
+section h3 + section + section + section {
+  margin-left: 3em;
+}
+
+/* Apply to all sibling <section> elements until the next h3 */
+section h3 ~ section {
+  margin-left: 3em;
+}
+
+
+/* Indent only the Slang subcategories */
+h2 + p + h3 {
+  margin-left: 1.5em;
+}
+
+/* Indent entries under each Slang subcategory */
+h3 + section {
+  margin-left: 3em;
+}
+
+/* Indent all following <section> elements until the next <h3> */
+h3 ~ section {
+  margin-left: 3em;
+}
+
+/* === Slang subcategory neon hierarchy === */
+section h3 {
+  margin-left: 1.5em;
+  margin-top: 1.8em;
+  font-size: 1.3rem;
+  color: var(--neon-cyan);
+  text-shadow:
+      0 0 8px var(--glow-cyan),
+      0 0 14px rgba(0, 232, 255, 0.4);
+  border-left: 4px solid var(--neon-violet);
+  padding-left: 0.6em;
+}
+
+/* Slight glow for slang entry headers */
+section h3 ~ section h2 {
+  text-shadow: 
+      0 0 6px rgba(193, 60, 255, 0.4),
+      0 0 10px rgba(0, 232, 255, 0.3);
+}
+
+section h3:not(:first-of-type) {
+  border-top: 1px solid rgba(193, 60, 255, 0.3);
+  padding-top: 1em;
+}
+
+/* Index page glowing link panels */
+.index-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.index-links a {
+  display: block;
+  padding: 1rem 1.5rem;
+  background: var(--bg-card-dark);
+  border: 1px solid var(--neon-violet);
+  border-radius: 0.6rem;
+  color: var(--neon-cyan);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 12px rgba(0, 232, 255, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  animation: panelPulse 3.2s ease-in-out infinite alternate;
+}
+
+.index-links a:hover {
+  color: var(--neon-magenta);
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 20px var(--glow-cyan), 0 0 30px var(--glow-violet);
+  transform: translateY(-3px);
+}
+
+.index-links a:active {
+  transform: translateY(0);
+  box-shadow: 0 0 12px rgba(0, 232, 255, 0.25);
+}
+
+.index-links .link-desc {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Pulse animation */
+@keyframes panelPulse {
+  0% {
+    box-shadow: 0 0 12px rgba(0, 232, 255, 0.25);
+    border-color: var(--neon-violet);
+  }
+  100% {
+    box-shadow: 0 0 22px rgba(193, 60, 255, 0.35), 0 0 30px rgba(0, 232, 255, 0.25);
+    border-color: var(--neon-cyan);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .index-links a {
+    animation: none;
+    transition: none;
+  }
+}
+
+main h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem;
+  color: var(--neon-cyan);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px var(--glow-cyan);
+  border-left: 4px solid var(--neon-violet);
+  padding-left: 0.6rem;
+}
+
+/* Floating Return to Top Button */
+#toTopBtn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: none;
+  background: var(--bg-card-dark);
+  border: 1px solid var(--neon-violet);
+  border-radius: 0.6rem;
+  color: var(--neon-cyan);
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 232, 255, 0.25);
+  transition: all 0.3s ease;
+  animation: pulseTopBtn 3s infinite alternate;
+  z-index: 1000;
+}
+
+#toTopBtn:hover {
+  color: var(--neon-magenta);
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 20px var(--glow-cyan), 0 0 30px var(--glow-violet);
+  transform: translateY(-3px);
+}
+
+@keyframes pulseTopBtn {
+  0% {
+    box-shadow: 0 0 12px rgba(0, 232, 255, 0.25);
+  }
+  100% {
+    box-shadow: 0 0 22px rgba(193, 60, 255, 0.35), 0 0 30px rgba(0, 232, 255, 0.25);
+  }
+}
+
+.page-body {
+  padding: 2rem;
+  min-height: 100vh;
+  background: var(--bg-space);
+  color: var(--text-primary);
+}
+
+.content-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.4rem;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-violet));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.page-footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Container to hold the video and buttons */
+.portrait-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Style for the control overlay */
+.video-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+/* Show buttons when hovering over the video */
+.portrait-container:hover .video-controls {
+    opacity: 1;
+}
+
+/* Sci-fi style for the small control buttons */
+.video-controls button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    background: rgba(15, 1, 36, 0.8); /* Matches your --bg-space */
+    border: 1px solid var(--neon-cyan);
+    color: var(--neon-cyan);
+    text-shadow: 0 0 5px var(--glow-cyan);
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--glow-cyan);
+}
+
+.video-controls button:hover {
+    background: var(--neon-cyan);
+    color: var(--bg-space);
+}
+
+/* ===========================
+   Timeline Layout
+   =========================== */
+
+.timeline-wrapper {
+  margin-top: 2rem;
+}
+
+.timeline-era {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+}
+
+.timeline-event {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--neon-violet);
+  border-left: 4px solid var(--neon-cyan);
+  border-radius: 0.6rem;
+  background: var(--bg-card-dark);
+  box-shadow: 0 0 15px rgba(0, 232, 255, 0.15);
+}
+
+.timeline-event:hover {
+  box-shadow: 0 0 25px var(--glow-cyan), 0 0 35px var(--glow-violet);
+  transform: translateY(-3px);
+  transition: 0.3s ease;
+}
+
+.timeline-date .main {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--neon-cyan);
+  font-size: 1.1rem;
+}
+
+.timeline-date .sub {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.timeline-title {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--text-heading);
+  margin: 0.4rem 0 0.6rem;
+}
+
+.timeline-summary {
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+}
+
+.timeline-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.timeline-meta .chip {
+  background: rgba(193, 60, 255, 0.15);
+  border: 1px solid var(--neon-violet);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: var(--neon-cyan);
+}
+
+/* ===========================
+   Vertical Timeline Flow
+   =========================== */
+
+.timeline-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.timeline-row {
+  display: grid;
+  grid-template-columns: 1fr 6px 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timeline-spine {
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    var(--neon-cyan),
+    var(--neon-violet)
+  );
+  box-shadow: 0 0 12px var(--glow-cyan), 0 0 20px var(--glow-violet);
+  border-radius: 3px;
+}
+
+.timeline-left,
+.timeline-right {
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--neon-violet);
+  background: var(--bg-card-dark);
+  border-radius: 0.6rem;
+  box-shadow: 0 0 15px rgba(0, 232, 255, 0.15);
+}
+
+.timeline-left h3,
+.timeline-right h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--neon-cyan);
+  margin-bottom: 0.4rem;
+}
+
+/* Character Page Components */
+.character-card {
+  border: 2px solid #0ff;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 12px #0ff;
+}
+
+/* Tabs */
+.tab-container {
+  margin-top: 2rem;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
+
+.tab-buttons button {
+  background: #111;
+  border: 1px solid #0ff;
+  padding: 0.5rem 1rem;
+  color: #0ff;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: Orbitron, sans-serif;
+}
+
+.tab-buttons button.active {
+  background: #0ff;
+  color: #000;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
