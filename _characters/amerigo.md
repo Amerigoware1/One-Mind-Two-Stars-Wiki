@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Dr. Amerigo Carisco
+title: Amerigo Carisco
 portrait: amerigo.png
 affiliation: Carisco Family; New Eden Science Directorate; Chief Scientist; New Eden Council
 status: Alive
@@ -29,7 +29,7 @@ book5_age: "68.7 Earth / 61.5 Ares"
 # {{ page.title }}
 
 ## Overview
-Dr. Amerigo Carisco is New Eden’s Chief Scientist, a founding member of the colony, and one of the most influential scientific minds on Ares. Brilliant, intense, and deeply principled, he becomes both the architect of humanity’s scientific future and the emotional core of the Carisco family. His relationship with Celectra — first as a father terrified for his daughter’s survival, later as a collaborator in shaping interspecies communication — defines much of the colony’s early history.
+Amerigo Carisco is New Eden’s Chief Scientist, a founding member of the colony, and one of the most influential scientific minds on Ares. Brilliant, intense, and deeply principled, he becomes both the architect of humanity’s scientific future and the emotional core of the Carisco family. His relationship with Celectra — first as a father terrified for his daughter’s survival, later as a collaborator in shaping interspecies communication — defines much of the colony’s early history.
 
 Amerigo’s arc spans five books, charting his evolution from a driven researcher to a statesman whose work shapes the long-term coexistence of humans and Galinstanians.
 
