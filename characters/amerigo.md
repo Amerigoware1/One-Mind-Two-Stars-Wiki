@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Dr. Amerigo Carisco
-portrait: Portrait_Placeholder.png
+portrait: Amerigo.png
 affiliation: Carisco Family; New Eden Science Directorate; Chief Scientist; New Eden Council
 status: Alive
 birthday: May 12, 2103
