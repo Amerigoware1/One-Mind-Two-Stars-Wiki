@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Jaxon Bowers
-portrait: "/assets/images/portrait-placeholder.png"
+portrait: "/assets/images/jaxon.jpg"
 affiliation: New Eden Engineering Corps; Communion Interface Project
 status: Alive
 birthday: October 31, 2222
