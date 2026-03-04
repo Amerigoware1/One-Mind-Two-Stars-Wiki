@@ -1,27 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ site.baseurl }}/WikiStyle.css">
-    <title>{{ page.title }}</title>
-</head>
-<body>
-    <header>
-        <h1>{{ site.title }}</h1>
-        <nav>
-            {% for p in site.pages %}
-                <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-            {% endfor %}
-        </nav>
-    </header>
+---
+layout: default
+---
 
-    <main>
-        {{ content }}
-    </main>
+<article class="character">
+  <header class="character-header">
+    <h1>{{ page.title }}</h1>
+  </header>
 
-    <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
-    </footer>
-</body>
-</html>
+  <div class="character-content">
+    {{ content }}
+  </div>
+
+  {% if page.image %}
+  <div class="character-image">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+</article>
+
+<style>
+  .character {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .character-header h1 {
+    color: #333;
+    border-bottom: 2px solid #428bca;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .character-content {
+    line-height: 1.6;
+    color: #444;
+  }
+  .character-image {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .character-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+</style>

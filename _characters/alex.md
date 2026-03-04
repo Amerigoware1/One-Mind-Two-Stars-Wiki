@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Dr. Alexander "Alex" Cruiz
-portrait: Portrait_Placeholder.png
+portrait: "/assets/images/Portrait Placeholder.png"
 affiliation: New Eden Medical Corps; Chief of Medicine; New Eden Council
 status: Alive
 birthday: November 2, 2103
@@ -14,9 +14,7 @@ book5_age: "68.2 Earth / 61.0 Ares"
 ---
 
 <div class="infobox">
-  <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}" 
-       alt="{{ page.title }} portrait" 
-       class="portrait">
+  img src="{{ page.portrait | relative_url }}" alt="{{ page.title }} portrait" class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
