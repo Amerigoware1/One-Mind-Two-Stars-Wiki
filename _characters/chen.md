@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Dr. Yuki Chen
-portrait: Portrait_Placeholder.png
+portrait: /assets/images/portrait-placeholder.png
 affiliation: Utopis Station Medical; Radiation Medicine Specialist; Celectra's Primary Monitor
 status: Active
 birthday: March 4, 2089
@@ -13,9 +13,7 @@ book4_age: "75.9"
 book5_age: "82.9"
 ---
 <div class="infobox">
-<img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-alt="{{ page.title }} portrait"
-class="portrait">
+<img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
 <table>
 <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

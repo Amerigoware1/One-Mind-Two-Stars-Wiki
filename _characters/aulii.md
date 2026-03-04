@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Aulii Vongphachanh
-portrait: Portrait_Placeholder.png
+portrait: /assets/images/portrait-placeholder.png
 affiliation: New Eden Youth Cohort; Martial Artist; Resonance Stewardship Program (Physical Training Lead)
 status: Alive
 birthday: February 14, 2226
@@ -13,9 +13,7 @@ book4_age: "28.9"
 book5_age: "35.9"
 ---
 <div class="infobox">
-<img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-alt="{{ page.title }} portrait"
-class="portrait">
+<img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
 <table>
 <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

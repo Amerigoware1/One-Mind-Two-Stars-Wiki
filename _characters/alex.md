@@ -23,7 +23,7 @@ book5_age: "68.2 Earth / 61.0 Ares"
     <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
   </table>
 </div>
-<div class="article-content">
+
 # {{ page.title }}
 
 ## Overview
@@ -109,4 +109,4 @@ Alex’s journey is one of responsibility and quiet heroism. He becomes the medi
     In his late sixties, Alex remains the senior-most medical authority on Ares. He mentors younger physicians, helps design long-term health protocols for resonance exposure, and supports the twins as they begin their stewardship roles. His arc centers on legacy — ensuring the colony’s medical systems will endure long after he retires.
   </div>
 </div>
-</div>
+
