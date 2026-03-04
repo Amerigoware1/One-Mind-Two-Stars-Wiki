@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Dee Cruiz
-portrait: Portrait_Placeholder.png
+portrait: "/assets/images/portrait-placeholder.png"
 affiliation: New Eden Community Corps; Cruiz–Carisco Family
 status: Alive
 birthday: May 12, 2101
@@ -14,9 +14,7 @@ book5_age: "70.7 Earth / 63.6 Ares"
 ---
 
 <div class="infobox">
-  <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}" 
-       alt="{{ page.title }} portrait" 
-       class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

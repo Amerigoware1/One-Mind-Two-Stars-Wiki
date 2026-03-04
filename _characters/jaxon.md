@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Jaxon Bowers
-portrait: Portrait_Placeholder.png
+portrait: "/assets/images/portrait-placeholder.png"
 affiliation: New Eden Engineering Corps; Communion Interface Project
 status: Alive
 birthday: October 31, 2222
@@ -14,9 +14,7 @@ book5_age: "39.2 Earth / 35.1 Ares"
 ---
 
 <div class="infobox">
-  <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}" 
-       alt="{{ page.title }} portrait" 
-       class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

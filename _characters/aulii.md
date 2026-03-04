@@ -13,7 +13,7 @@ book4_age: "28.9"
 book5_age: "35.9"
 ---
 <div class="infobox">
-<img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
 <table>
 <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
