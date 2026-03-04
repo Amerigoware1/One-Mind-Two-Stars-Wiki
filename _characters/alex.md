@@ -14,7 +14,7 @@ book5_age: "68.2 Earth / 61.0 Ares"
 ---
 
 <div class="infobox">
-  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title | escape }}" class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
