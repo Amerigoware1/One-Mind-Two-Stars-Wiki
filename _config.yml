@@ -1,14 +1,19 @@
+# Site Settings
 title: One Mine, Two Stars Wiki
 markdown: kramdown
 theme: minima
+
+# URL Settings
 url: "https://amerigoware1.github.io"
 baseurl: "/One-Mine-Two-Stars-Wiki"
 
+# Collections
 collections:
   characters:
     output: true
     permalink: /characters/:name.html
 
+# Default Layouts
 defaults:
   - scope:
       path: ""
