@@ -1,3 +1,5 @@
+---
+layout: character
 title: Sensei Onishi Kisa
 portrait: Portrait_Placeholder.png
 affiliation: Sundome Karate Dojo; Athletics Committee; New Eden Physical Education
@@ -9,6 +11,7 @@ book2_age: "43.1"
 book3_age: "50.0"
 book4_age: "58.2"
 book5_age: "65.2"
+---
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"

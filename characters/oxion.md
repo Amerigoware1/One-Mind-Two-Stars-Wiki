@@ -1,3 +1,5 @@
+---
+layout: character
 title: Oxion "Oxi" Carisco
 portrait: Portrait_Placeholder.png
 affiliation: Carisco Family; New Eden Student; Next-Generation Resonance Cohort
@@ -9,6 +11,7 @@ book2_age: "Not yet born"
 book3_age: "Not yet born"
 book4_age: "0.2 (infant)"
 book5_age: "6.4"
+---
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"

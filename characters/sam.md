@@ -1,3 +1,5 @@
+---
+layout: character
 title: Sam Calder
 portrait: Portrait_Placeholder.png
 affiliation: New Eden Colony; Audio Engineer; Co‑Founder of Samaya Gallery & Museum of Integration
@@ -9,6 +11,7 @@ book2_age: "11.9"
 book3_age: "18.8"
 book4_age: "27.0"
 book5_age: "34.0"
+---
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"

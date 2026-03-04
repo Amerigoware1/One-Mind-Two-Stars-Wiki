@@ -1,3 +1,5 @@
+---
+layout: character
 title: Maya Keahi
 portrait: Portrait_Placeholder.png
 affiliation: New Eden Youth Cohort; Artist; Co‑Founder of Samaya Gallery & Museum of Integration
@@ -9,6 +11,7 @@ book2_age: "13.2 Earth"
 book3_age: "20.1 Earth"
 book4_age: "28.3 Earth"
 book5_age: "35.3 Earth"
+---
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"

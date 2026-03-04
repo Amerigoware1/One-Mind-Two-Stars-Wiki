@@ -1,4 +1,5 @@
 ---
+layout: character
 title: Xan Carisco
 portrait: Portrait_Placeholder.png
 affiliation: Carisco Family; Listener Corps (Junior); Acoustic Interface Research

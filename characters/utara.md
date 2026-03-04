@@ -1,3 +1,5 @@
+---
+layout: character
 title: Utara
 portrait: Portrait_Placeholder.png
 affiliation: Utopis Station; New Eden Colony; Unified Thought and Resource Architecture
@@ -9,6 +11,7 @@ book2_age: "Active"
 book3_age: "Active"
 book4_age: "Active"
 book5_age: "Active"
+---
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"

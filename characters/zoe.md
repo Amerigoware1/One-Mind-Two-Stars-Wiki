@@ -1,4 +1,5 @@
 ---
+layout: character
 title: Dr. Zoë Carisco
 portrait: Portrait_Placeholder.png
 affiliation: Carisco Family; New Eden Psychology Division; Council Advisor

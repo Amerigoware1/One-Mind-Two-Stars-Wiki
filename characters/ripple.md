@@ -1,4 +1,5 @@
 ---
+layout: character
 title: Ripple (Northern Cluster)
 portrait: Portrait_Placeholder.png
 affiliation: Northern Cluster; Carisco Household; Four Rivers Resonance Network

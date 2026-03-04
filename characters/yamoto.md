@@ -1,3 +1,5 @@
+---
+layout: character
 title: Dr. Kenji Yamoto
 portrait: Portrait_Placeholder.png
 affiliation: New Eden Colony Council; Environmental Systems Director; Life Support Oversight
@@ -9,6 +11,7 @@ book2_age: "54.2"
 book3_age: "61.1"
 book4_age: "69.3"
 book5_age: "76.3"
+---
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"

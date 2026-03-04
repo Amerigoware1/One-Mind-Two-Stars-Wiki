@@ -1,3 +1,5 @@
+---
+layout: character
 title: Chen Wei
 portrait: Portrait_Placeholder.png
 affiliation: Listener Corps Technician; Signal Processing Specialist; New Eden Colony
@@ -9,6 +11,7 @@ book2_age: "14.0"
 book3_age: "21.0"
 book4_age: "30.0"
 book5_age: "37.0"
+---
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"

@@ -1,4 +1,5 @@
 ---
+layout: character
 title: Dee Cruiz
 portrait: Portrait_Placeholder.png
 affiliation: New Eden Community Corps; Cruiz–Carisco Family

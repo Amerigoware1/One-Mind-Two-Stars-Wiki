@@ -1,3 +1,5 @@
+---
+layout: character
 title: Xara Kret
 portrait: xara_kret_portrait.png
 affiliation: Earth; Pre-Colony Era; Kret Family
@@ -9,6 +11,7 @@ book2_age: "Deceased"
 book3_age: "Deceased"
 book4_age: "Deceased"
 book5_age: "Deceased"
+---
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"

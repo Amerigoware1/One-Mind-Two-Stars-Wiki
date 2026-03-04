@@ -1,4 +1,5 @@
 ---
+layout: character
 title: Dr. Douglas Kret
 portrait: Portrait_Placeholder.png
 affiliation: Formerly New Eden Medical Corps; Formerly New Eden Council

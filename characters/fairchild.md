@@ -1,3 +1,5 @@
+---
+layout: character
 title: Terry Fairchild
 portrait: Portrait_Placeholder.png
 affiliation: New Eden Medical; Senior Nurse; Medical Ethics Advocate; Trauma Response Specialist
@@ -9,6 +11,7 @@ book2_age: "56.5"
 book3_age: "63.4"
 book4_age: "71.6"
 book5_age: "78.6"
+---
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"

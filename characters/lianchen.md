@@ -1,3 +1,5 @@
+---
+layout: character
 title: Lian Chen
 portrait: Portrait_Placeholder.png
 affiliation: Ares Colony Science & Engineering Directorate; Agricultural Director; Hydrological Engineer
@@ -9,6 +11,7 @@ book2_age: "54.0"
 book3_age: "61.0"
 book4_age: "70.0"
 book5_age: "77.0"
+---
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"

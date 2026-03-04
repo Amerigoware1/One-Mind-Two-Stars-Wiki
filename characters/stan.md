@@ -1,10 +1,11 @@
 ---
+layout: character
 title: Stan (Galinstanian Elder)
 portrait: Portrait_Placeholder.png
 affiliation: Northern Cluster; Galinstanian Elders; Human–Galinstanian Bridge Network
 status: Alive
 birthday: Unknown (Galinstanian pre-human-contact era)
-birthplace: Northern Cluster, Ares
+birthplace: Local Cluster, Ares
 book1_age: "Ancient"
 book2_age: "Ancient"
 book3_age: "Ancient"
@@ -56,7 +57,7 @@ Stan often speaks in layered pulses that carry both meaning and emotion, allowin
 ## Relationships
 - **Celectra Carisco** — student, friend, and later equal in harmonic understanding  
 - **Chime** — cluster-mate and co-communicator  
-- **Harbor, Logic, Flicker, Spark, Guardian, Lyric** — fellow Northern Cluster members  
+- **Harbor, Logic, Flicker, Spark, Guardian, Lyric** — Northern Cluster members  
 - **Ripple** — younger cluster member Stan helps guide  
 - **Amerigo & Zoë Carisco** — respected human allies  
 - **Jenni Jo & Xara Zo** — children Stan watches grow with quiet affection  

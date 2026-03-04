@@ -1,3 +1,5 @@
+---
+layout: character
 title: Duška Santoso Carisco
 portrait: Portrait_Placeholder.png
 affiliation: Carisco Family; Resonance Designer; Community Arts Coordinator; University Outreach Liaison
@@ -9,6 +11,7 @@ book2_age: "5.5"
 book3_age: "12.4"
 book4_age: "20.7"
 book5_age: "27.7"
+---
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"

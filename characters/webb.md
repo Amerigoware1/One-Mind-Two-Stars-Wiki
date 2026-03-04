@@ -1,4 +1,5 @@
 ---
+layout: character
 title: Dr. Nathaniel Webb
 portrait: Portrait_Placeholder.png
 affiliation: New Eden Founders; Agricultural Sciences Division; Council (Former)

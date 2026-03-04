@@ -1,3 +1,5 @@
+---
+layout: character
 title: Isabella Santos
 portrait: santos_portrait.png
 affiliation: New Eden Colony Council; Colony Administrator; Founding Leadership
@@ -9,6 +11,7 @@ book2_age: "64.7"
 book3_age: "71.6"
 book4_age: "79.8"
 book5_age: "86.8"
+---
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"

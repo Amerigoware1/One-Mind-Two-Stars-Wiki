@@ -1,3 +1,5 @@
+---
+layout: character
 title: Chibuike Okafor
 portrait: Portrait_Placeholder.png
 affiliation: New Eden Colony Council; Athletics Committee Chair; Youth Development Director
@@ -9,6 +11,7 @@ book2_age: "49.4"
 book3_age: "56.3"
 book4_age: "64.5"
 book5_age: "71.5"
+---
 <div class="infobox">
 <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
 alt="{{ page.title }} portrait"

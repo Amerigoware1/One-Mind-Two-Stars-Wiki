@@ -1,4 +1,5 @@
 ---
+layout: character
 title: Xara Zo Carisco
 portrait: Portrait_Placeholder.png
 affiliation: Carisco Family; Listener Corps (Junior); Resonance Stewardship Program

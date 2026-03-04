@@ -1,4 +1,5 @@
 ---
+layout: character
 title: Jaxon Bowers
 portrait: Portrait_Placeholder.png
 affiliation: New Eden Engineering Corps; Communion Interface Project
