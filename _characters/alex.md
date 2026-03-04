@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Dr. Alexander "Alex" Cruiz
+title: Dr. Alexander 'Alex' Cruiz
 portrait: "/assets/images/alex.jpg"
 affiliation: New Eden Medical Corps; Chief of Medicine; New Eden Council
 status: Alive
