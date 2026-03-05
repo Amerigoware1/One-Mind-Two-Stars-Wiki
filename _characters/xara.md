@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Xara Kret
-portrait: xara_kret_portrait.png
+portrait: "/assets/images/portrait-placeholder.png"
 affiliation: Earth; Pre-Colony Era; Kret Family
 status: Deceased
 birthday: July 22, 2087
@@ -13,9 +13,7 @@ book4_age: "Deceased"
 book5_age: "Deceased"
 ---
 <div class="infobox">
-<img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-alt="{{ page.title }} portrait"
-class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
 <table>
 <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

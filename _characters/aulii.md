@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Aulii Vongphachanh
-portrait: /assets/images/portrait-placeholder.png
+portrait: "/assets/images/portrait-placeholder.png"
 affiliation: New Eden Youth Cohort; Martial Artist; Resonance Stewardship Program (Physical Training Lead)
 status: Alive
 birthday: February 14, 2226

@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Xan Carisco
-portrait: Portrait_Placeholder.png
+portrait: "/assets/images/xan.png
 affiliation: Carisco Family; Listener Corps (Junior); Acoustic Interface Research
 status: Alive
 birthday: March 8, 2234
@@ -14,9 +14,7 @@ book5_age: "27.8 Earth / 24.6 Ares"
 ---
 
 <div class="infobox">
-  <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-       alt="{{ page.title }} portrait"
-       class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

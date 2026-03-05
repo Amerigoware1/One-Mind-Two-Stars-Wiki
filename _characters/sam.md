@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Sam Calder
-portrait: "/assets/images/portrait-placeholder.png"
+portrait: "/assets/images/sam-androgynous.jpg"
 affiliation: New Eden Colony; Audio Engineer; Co‑Founder of Samaya Gallery & Museum of Integration
 status: Alive
 birthday: December 30, 2227

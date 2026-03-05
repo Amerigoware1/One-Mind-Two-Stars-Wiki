@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Jenni Jo Carisco
-portrait: /assets/images/jennijo.png
+portrait: "/assets/images/jennijo.png"
 affiliation: Carisco Family; Listener Corps (Junior); Resonance Stewardship Program
 status: Alive
 birthday: July 18, 2246

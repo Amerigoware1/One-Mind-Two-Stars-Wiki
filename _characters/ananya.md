@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Ananya Patel
-portrait: /assets/images/ananya.jpg
+portrait: "/assets/images/ananya.jpg"
 affiliation: New Eden Youth Cohort; Biologist; Listener Corps Translator
 status: Alive
 birthday: August 14, 2224

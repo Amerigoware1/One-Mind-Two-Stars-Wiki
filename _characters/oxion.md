@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Oxion "Oxi" Carisco
+title: Oxion 'Oxi' Carisco
 portrait: "/assets/images/portrait-placeholder.png"
 affiliation: Carisco Family; New Eden Student; Next-Generation Resonance Cohort
 status: Alive

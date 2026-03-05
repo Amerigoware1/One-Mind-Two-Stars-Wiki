@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Utara
-portrait: Portrait_Placeholder.png
+portrait: "/assets/images/portrait-placeholder.png"
 affiliation: Utopis Station; New Eden Colony; Unified Thought and Resource Architecture
 status: Active
 birthday: N/A (AI Activation ~2125)
@@ -13,9 +13,7 @@ book4_age: "Active"
 book5_age: "Active"
 ---
 <div class="infobox">
-<img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-alt="{{ page.title }} portrait"
-class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
 <table>
 <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

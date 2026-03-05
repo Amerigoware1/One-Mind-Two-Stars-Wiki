@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Dr. Yuki Chen
-portrait: /assets/images/portrait-placeholder.png
+portrait: "/assets/images/portrait-placeholder.png"
 affiliation: Utopis Station Medical; Radiation Medicine Specialist; Celectra's Primary Monitor
 status: Active
 birthday: March 4, 2089

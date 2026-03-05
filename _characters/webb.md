@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Dr. Nathaniel Webb
-portrait: Portrait_Placeholder.png
+portrait: "/assets/images/portrait-placeholder.png"
 affiliation: New Eden Founders; Agricultural Sciences Division; Council (Former)
 status: Alive
 birthday: August 29, 2085
@@ -14,9 +14,7 @@ book5_age: "86.4 Earth / 76.9 Ares"
 ---
 
 <div class="infobox">
-  <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-       alt="{{ page.title }} portrait"
-       class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

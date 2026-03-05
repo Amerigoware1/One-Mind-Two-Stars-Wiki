@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Maya Keahi
-portrait: "/assets/images/Maya.jpg"
+portrait: "/assets/images/maya.jpg"
 affiliation: New Eden Youth Cohort; Artist; Co‑Founder of Samaya Gallery & Museum of Integration
 status: Alive
 birthday: September 22, 2226

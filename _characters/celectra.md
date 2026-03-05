@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Celectra Ambar Carisco
-portrait: /assets/images/celectra.png
+portrait: "/assets/images/celectra.png"
 affiliation: Carisco Family; Listener Corps; Human–Galinstanian Bridge
 status: Alive
 birthday: October 11, 2225

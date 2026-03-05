@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Dr. Lorain Troy
-portrait: Portrait_Placeholder.png
+portrait: "/assets/images/portrait-placeholder.png"
 affiliation: New Eden Colony Science Division; Chief Scientist (Retired); Senior Council Member
 status: Retired
 birthday: November 8, 2099
@@ -13,9 +13,7 @@ book4_age: "65.2"
 book5_age: "72.2"
 ---
 <div class="infobox">
-<img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-alt="{{ page.title }} portrait"
-class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
 <table>
 <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

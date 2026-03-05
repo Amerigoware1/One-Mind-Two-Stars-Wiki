@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Chief Evelyn Roan
-portrait: "/assets/images/Roan.jpg"
+portrait: "/assets/images/portrait-placeholder.png"
 affiliation: New Eden Colony Security; Colony Council; Justice & Safety Advocate
 status: Active
 birthday: June 26, 2104

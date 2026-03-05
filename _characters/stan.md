@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Stan (Galinstanian Elder)
-portrait: Portrait_Placeholder.png
+portrait: "/assets/images/galinstanian.jpg"
 affiliation: Northern Cluster; Galinstanian Elders; Human–Galinstanian Bridge Network
 status: Alive
 birthday: Unknown (Galinstanian pre-human-contact era)
@@ -14,9 +14,7 @@ book5_age: "Ancient"
 ---
 
 <div class="infobox">
-  <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-       alt="{{ page.title }} portrait"
-       class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

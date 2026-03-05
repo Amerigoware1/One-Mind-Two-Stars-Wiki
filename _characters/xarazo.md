@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Xara Zo Carisco
-portrait: Portrait_Placeholder.png
+portrait: "/assets/images/xarazo.png"
 affiliation: Carisco Family; Listener Corps (Junior); Resonance Stewardship Program
 status: Alive
 birthday: July 18, 2246
@@ -14,9 +14,7 @@ book5_age: "14 years old"
 ---
 
 <div class="infobox">
-  <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-       alt="{{ page.title }} portrait"
-       class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

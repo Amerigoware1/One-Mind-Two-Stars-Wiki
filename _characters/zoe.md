@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Dr. Zoë Carisco
-portrait: Portrait_Placeholder.png
+portrait: "/assets/images/portrait-placeholder.png"
 affiliation: Carisco Family; New Eden Psychology Division; Council Advisor
 status: Alive
 birthday: January 3, 2107
@@ -14,9 +14,7 @@ book5_age: "65.0 Earth / 58.4 Ares"
 ---
 
 <div class="infobox">
-  <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}" 
-       alt="{{ page.title }} portrait" 
-       class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

@@ -1,7 +1,7 @@
 ---
 layout: character
-title: Jinan "Jenni" Carisco
-portrait: /assets/images/Jenni.png
+title: Jinan 'Jenni' Carisco
+portrait: "/assets/images/jenni.png"
 affiliation: Utopis-Lab 3; Exogeologist; Carisco Family
 status: Deceased
 birthday: January 20, 2105

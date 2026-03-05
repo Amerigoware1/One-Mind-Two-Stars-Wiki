@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Dee Cruiz
-portrait: "/assets/images/portrait-placeholder.png"
+portrait: "/assets/images/dee.jpg"
 affiliation: New Eden Community Corps; Cruiz–Carisco Family
 status: Alive
 birthday: May 12, 2101
