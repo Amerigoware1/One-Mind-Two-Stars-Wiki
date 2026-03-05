@@ -64,16 +64,13 @@ layout: default
       const buttons = container.querySelectorAll('.tab-btn');
       const contents = container.querySelectorAll('.tab-content');
 
-      // Set up click handlers for each button
       buttons.forEach(btn => {
         btn.addEventListener('click', () => {
           const target = btn.getAttribute('data-tab');
 
-          // Deactivate all buttons + content
           buttons.forEach(b => b.classList.remove('active'));
           contents.forEach(c => c.classList.remove('active'));
 
-          // Activate the clicked button + its content
           btn.classList.add('active');
           document.getElementById(target).classList.add('active');
         });
