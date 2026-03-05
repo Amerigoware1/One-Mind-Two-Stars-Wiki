@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Lian Chen
-portrait: "/assets/images/Portrait Placeholder.png"
+portrait: "/assets/images/portrait-placeholder.png"
 affiliation: Ares Colony Science & Engineering Directorate; Agricultural Director; Hydrological Engineer
 status: Active
 birthday: February 10, 2096
