@@ -94,7 +94,7 @@ overextension.
 ### Albinism
 Both bodies present with **oculocutaneous albinism**, including pale skin and white
 hair. The melanin in the irises was present before the en utero radiation exposure. Albinism does not interfere with communion but increases vulnerability during field operations.
-- **[Celectra’s Care Protocol Dossier](../CelectraCareProtocolDossier.html)**  
+- **[Celectra’s Care Protocol Dossier](../celectra-care-protocol-dossier.html)**  
 
 ### Growth Delay
 Celectra’s early childhood included **retarded growth velocity**, linked to
