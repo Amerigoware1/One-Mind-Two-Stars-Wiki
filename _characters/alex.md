@@ -107,3 +107,4 @@ Alex’s journey is one of responsibility and quiet heroism. He becomes the medi
     <h2>Book 5 — Elder Statesman of Medicine</h2>
     In his late sixties, Alex remains the senior-most medical authority on Ares. He mentors younger physicians, helps design long-term health protocols for resonance exposure, and supports the twins as they begin their stewardship roles. His arc centers on legacy — ensuring the colony’s medical systems will endure long after he retires.
   </div>
+  </div>
