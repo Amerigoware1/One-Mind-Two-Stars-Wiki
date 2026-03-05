@@ -11,6 +11,43 @@ book2_age: "46.0 Earth / 41.1 Ares"
 book3_age: "52.9 Earth / 47.3 Ares"
 book4_age: "61.2 Earth / 54.7 Ares"
 book5_age: "68.2 Earth / 61.0 Ares"
+book1_title: "Chief of Medicine"
+book1_arc: >
+  Alex becomes Chief of Medicine and a councilman after Dr. Douglas Kret is demoted
+  and exiled. He takes over the medical oversight of Celectra’s dual-bodied
+  development, becoming “Uncle Doc” — the adult she trusts most outside her parents.
+  He and Amerigo form the scientific–medical partnership that stabilizes the colony.
+
+book2_title: "The Northern Territory"
+book2_arc: >
+  Alex provides medical oversight for the Northern Territory expedition and treats
+  the aftermath of the torture inflicted on Chime. He becomes one of the first
+  humans to understand the physical toll of communion on both Celectra and
+  Galinstanians. His role expands as the colony grows more dependent on Celectra’s
+  abilities.
+
+book3_title: "Pregnancy and Decline"
+book3_arc: >
+  Alex diagnoses Celectra’s pregnancy and explains the asymmetrical symptoms
+  between her two bodies. He monitors the dangerous decline in her communion range
+  and becomes the voice of medical reality during the ethical debates over using
+  Kret’s research. He delivers the news of twins with a rare, unguarded smile.
+  His guidance becomes essential to keeping Celectra and the babies safe.
+
+book4_title: "The Resonance Crisis"
+book4_arc: >
+  Alex works alongside Amerigo and Celectra to interpret the medical implications
+  of the resonance disturbances. He warns that Galinstanians may experience
+  “resonance fatigue” and helps coordinate safe fieldwork for the twins. His role
+  shifts toward elder advisor as the colony faces the Four Rivers crisis.
+
+book5_title: "Elder Statesman of Medicine"
+book5_arc: >
+  In his late sixties, Alex remains the senior-most medical authority on Ares. He
+  mentors younger physicians, helps design long-term health protocols for
+  resonance exposure, and supports the twins as they begin their stewardship
+  roles. His arc centers on legacy — ensuring the colony’s medical systems will
+  endure long after he retires.
 ---
 
 <div class="infobox">
@@ -73,38 +110,4 @@ Alex’s journey is one of responsibility and quiet heroism. He becomes the medi
 
 ---
 
-# Story Arcs (Spoiler-Controlled)
-
-<div class="tab-container">
-    <button class="tab-btn active" data-tab="book1">Book 1</button>
-    <button class="tab-btn" data-tab="book2">Book 2</button>
-    <button class="tab-btn" data-tab="book3">Book 3</button>
-    <button class="tab-btn" data-tab="book4">Book 4</button>
-    <button class="tab-btn" data-tab="book5">Book 5</button>
-  </div>
-
-  <div id="book1" class="tab-content active">
-    <h2>Book 1 — Chief of Medicine</h2>
-    Alex becomes Chief of Medicine and a councilman after Dr. Douglas Kret is demoted and exiled. He takes over the medical oversight of Celectra’s dual-bodied development, becoming “Uncle Doc” — the adult she trusts most outside her parents. He and Amerigo form the scientific–medical partnership that stabilizes the colony.
-  </div>
-
-  <div id="book2" class="tab-content">
-    <h2>Book 2 — The Northern Territory</h2>
-    Alex provides medical oversight for the Northern Territory expedition and treats the aftermath of the torture inflicted on Chime. He becomes one of the first humans to understand the physical toll of communion on both Celectra and Galinstanians. His role expands as the colony grows more dependent on Celectra’s abilities.
-  </div>
-
-  <div id="book3" class="tab-content">
-    <h2>Book 3 — Pregnancy and Decline</h2>
-    Alex diagnoses Celectra’s pregnancy and explains the asymmetrical symptoms between her two bodies. He monitors the dangerous decline in her communion range and becomes the voice of medical reality during the ethical debates over using Kret’s research. He delivers the news of twins with a rare, unguarded smile. His guidance becomes essential to keeping Celectra and the babies safe.
-  </div>
-
-  <div id="book4" class="tab-content">
-    <h2>Book 4 — The Resonance Crisis</h2>
-    Alex works alongside Amerigo and Celectra to interpret the medical implications of the resonance disturbances. He warns that Galinstanians may experience “resonance fatigue” and helps coordinate safe fieldwork for the twins. His role shifts toward elder advisor as the colony faces the Four Rivers crisis.
-  </div>
-
-  <div id="book5" class="tab-content">
-    <h2>Book 5 — Elder Statesman of Medicine</h2>
-    In his late sixties, Alex remains the senior-most medical authority on Ares. He mentors younger physicians, helps design long-term health protocols for resonance exposure, and supports the twins as they begin their stewardship roles. His arc centers on legacy — ensuring the colony’s medical systems will endure long after he retires.
-  </div>
-  </div>
+{% include story-arcs.html %}
