@@ -1,36 +1,35 @@
+{% assign books = "" | split: "" %}
+{% for i in (1..5) %}
+  {% assign title = page["book" | append: i | append: "_title"] %}
+  {% assign arc = page["book" | append: i | append: "_arc"] %}
+  {% if title or arc %}
+    {% assign books = books | push: i %}
+  {% endif %}
+{% endfor %}
+
+{% assign first = books.first %}
+
 <div class="tab-container">
 
   <div class="tab-buttons">
-    <button class="tab-btn active" data-tab="book1">Book 1</button>
-    <button class="tab-btn" data-tab="book2">Book 2</button>
-    <button class="tab-btn" data-tab="book3">Book 3</button>
-    <button class="tab-btn" data-tab="book4">Book 4</button>
-    <button class="tab-btn" data-tab="book5">Book 5</button>
+    {% for i in books %}
+      <button
+        class="tab-btn {% if i == first %}active{% endif %}"
+        data-tab="book{{ i }}"
+      >
+        Book {{ i }}
+      </button>
+    {% endfor %}
   </div>
 
-  <div id="book1" class="tab-content active">
-    <h2>Book 1 — {{ page.book1_title }}</h2>
-    {{ page.book1_arc }}
-  </div>
-
-  <div id="book2" class="tab-content">
-    <h2>Book 2 — {{ page.book2_title }}</h2>
-    {{ page.book2_arc }}
-  </div>
-
-  <div id="book3" class="tab-content">
-    <h2>Book 3 — {{ page.book3_title }}</h2>
-    {{ page.book3_arc }}
-  </div>
-
-  <div id="book4" class="tab-content">
-    <h2>Book 4 — {{ page.book4_title }}</h2>
-    {{ page.book4_arc }}
-  </div>
-
-  <div id="book5" class="tab-content">
-    <h2>Book 5 — {{ page.book5_title }}</h2>
-    {{ page.book5_arc }}
-  </div>
+  {% for i in books %}
+    <div
+      id="book{{ i }}"
+      class="tab-content {% if i == first %}active{% endif %}"
+    >
+      <h2>Book {{ i }} — {{ page["book" | append: i | append: "_title"] }}</h2>
+      {{ page["book" | append: i | append: "_arc"] }}
+    </div>
+  {% endfor %}
 
 </div>
