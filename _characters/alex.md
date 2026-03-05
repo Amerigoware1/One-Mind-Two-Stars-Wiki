@@ -76,7 +76,6 @@ Alex’s journey is one of responsibility and quiet heroism. He becomes the medi
 # Story Arcs (Spoiler-Controlled)
 
 <div class="tab-container">
-  <div class="tab-buttons">
     <button class="tab-btn active" data-tab="book1">Book 1</button>
     <button class="tab-btn" data-tab="book2">Book 2</button>
     <button class="tab-btn" data-tab="book3">Book 3</button>
@@ -84,7 +83,7 @@ Alex’s journey is one of responsibility and quiet heroism. He becomes the medi
     <button class="tab-btn" data-tab="book5">Book 5</button>
   </div>
 
-  <div id="book1" class="tab-content">
+  <div id="book1" class="tab-content active">
     <h2>Book 1 — Chief of Medicine</h2>
     Alex becomes Chief of Medicine and a councilman after Dr. Douglas Kret is demoted and exiled. He takes over the medical oversight of Celectra’s dual-bodied development, becoming “Uncle Doc” — the adult she trusts most outside her parents. He and Amerigo form the scientific–medical partnership that stabilizes the colony.
   </div>
