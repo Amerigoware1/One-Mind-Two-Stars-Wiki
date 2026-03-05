@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Ripple (Northern Cluster)
-portrait: Portrait_Placeholder.png
+portrait: "/assets/images/portrait-placeholder.png"
 affiliation: Northern Cluster; Carisco Household; Four Rivers Resonance Network
 status: Alive
 birthday: Unknown (approx. 30 years old in Book 4)
@@ -10,13 +10,11 @@ book1_age: "Not yet introduced"
 book2_age: "Not yet introduced"
 book3_age: "Not yet introduced"
 book4_age: "Youngling (~30 years old)"
-book5_age: "Maturing Adult"
+book5_age: "Youngling (~37 years old)"
 ---
 
 <div class="infobox">
-  <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-       alt="{{ page.title }} portrait"
-       class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

@@ -12,11 +12,19 @@ layout: default
   </div>
 
 <div class="character-image">
-  {% assign portrait_path = character.portrait | default: "/assets/images/portrait-placeholder.png" %}
-  <img src="{{ portrait_path | relative_url }}" 
-       alt="{{ character.title | escape }}" 
-       class="character-thumb"
-       onerror="this.src='{{ '/assets/images/portrait-placeholder.png' | relative_url }}';">
+{% assign portrait_url = character.portrait | default: "/assets/images/portrait-placeholder.png" %}
+{% assign portrait_exists = portrait_url | file_exists %}
+
+{% if portrait_exists %}
+  {% assign final_portrait = portrait_url %}
+{% else %}
+  {% assign final_portrait = "/assets/images/portrait-placeholder.png" %}
+{% endif %}
+
+<img src="{{ final_portrait | relative_url }}"
+     alt="{{ character.title | escape }}"
+     class="character-thumb">
+
 </div>
 </article>
 

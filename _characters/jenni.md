@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Jinan "Jenni" Carisco
-portrait: Jenni.png
+portrait: /assets/images/Jenni.png
 affiliation: Utopis-Lab 3; Exogeologist; Carisco Family
 status: Deceased
 birthday: January 20, 2105
@@ -13,9 +13,7 @@ book4_age: "Deceased"
 book5_age: "Deceased"
 ---
 <div class="infobox">
-<img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-alt="{{ page.title }} portrait"
-class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
 <table>
 <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Dr. Douglas Kret
-portrait: Portrait_Placeholder.png
+portrait: "/assets/images/kret.jpg"
 affiliation: Formerly New Eden Medical Corps; Formerly New Eden Council
 status: Deceased
 birthday: February 14, 2098
@@ -16,9 +16,7 @@ book5_age: "—"
 ---
 
 <div class="infobox">
-  <img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-       alt="{{ page.title }} portrait"
-       class="portrait">
+<img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
   <table>
     <tr><th>Status</th><td>{{ page.status }}</td></tr>

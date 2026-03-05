@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Chief Evelyn Roan
-portrait: Roan.jpg
+portrait: "/assets/images/Roan.jpg"
 affiliation: New Eden Colony Security; Colony Council; Justice & Safety Advocate
 status: Active
 birthday: June 26, 2104
@@ -13,9 +13,7 @@ book4_age: "62.5"
 book5_age: "68.5"
 ---
 <div class="infobox">
-<img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-alt="{{ page.title }} portrait"
-class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
 <table>
 <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

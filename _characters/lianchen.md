@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Lian Chen
-portrait: Portrait_Placeholder.png
+portrait: "/assets/images/Portrait Placeholder.png"
 affiliation: Ares Colony Science & Engineering Directorate; Agricultural Director; Hydrological Engineer
 status: Active
 birthday: February 10, 2096
@@ -13,9 +13,7 @@ book4_age: "70.0"
 book5_age: "77.0"
 ---
 <div class="infobox">
-<img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-alt="{{ page.title }} portrait"
-class="portrait">
+<img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
 <table>
 <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>

@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Oxion "Oxi" Carisco
-portrait: Portrait_Placeholder.png
+portrait: "/assets/images/portrait-placeholder.png"
 affiliation: Carisco Family; New Eden Student; Next-Generation Resonance Cohort
 status: Alive
 birthday: July 31, 2255
@@ -13,9 +13,7 @@ book4_age: "0.2 (infant)"
 book5_age: "6.4"
 ---
 <div class="infobox">
-<img src="/One-Mine-Two-Stars-Wiki/assets/images/{{ page.portrait }}"
-alt="{{ page.title }} portrait"
-class="portrait">
+  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
 
 <table>
 <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
