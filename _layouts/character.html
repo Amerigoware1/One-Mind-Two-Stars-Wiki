@@ -55,3 +55,19 @@ layout: default
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
 </style>
+<!-- Tab Functionality -->
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabContainers = document.querySelectorAll('.tab-container');
+    
+    tabContainers.forEach(container => {
+      const buttons = container.querySelectorAll('.tab-btn');
+…          
+          // Get target ID and activate corresponding content
+          const target = btn.getAttribute('data-tab');
+          document.getElementById(target).classList.add('active');
+        });
+      });
+    });
+  });
+</script>
