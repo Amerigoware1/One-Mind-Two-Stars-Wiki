@@ -77,11 +77,11 @@ Alex’s journey is one of responsibility and quiet heroism. He becomes the medi
 
 <div class="tab-container">
   <div class="tab-buttons">
-    <button data-tab="book1">Book 1</button>
-    <button data-tab="book2">Book 2</button>
-    <button data-tab="book3">Book 3</button>
-    <button data-tab="book4">Book 4</button>
-    <button data-tab="book5">Book 5</button>
+    <button class="tab-btn active" data-tab="book1">Book 1</button>
+    <button class="tab-btn" data-tab="book2">Book 2</button>
+    <button class="tab-btn" data-tab="book3">Book 3</button>
+    <button class="tab-btn" data-tab="book4">Book 4</button>
+    <button class="tab-btn" data-tab="book5">Book 5</button>
   </div>
 
   <div id="book1" class="tab-content">
