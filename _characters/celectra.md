@@ -5,7 +5,7 @@ portrait: "/assets/images/celectra.png"
 affiliation: Carisco Family; Listener Corps; Human–Galinstanian Bridge
 status: Alive
 birthday: October 11, 2225
-birthplace: New Eden, Ares
+birthplace: Utopis Station, Ares Orbit
 book1_age: "7.0 Earth / 6.28 Ares"
 book2_age: "14.1 Earth / 12.66 Ares"
 book3_age: "21.0 Earth / 18.85 Ares"
