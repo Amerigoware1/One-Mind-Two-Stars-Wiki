@@ -5,7 +5,11 @@ layout: default
     <h1>{{ page.title }}</h1>
     
     <!-- Main Portrait Image -->
-    <img id="main-portrait" src="{{ page.portrait }}" alt="{{ page.title }}">
+    <img id="character-portrait"
+     src="{{ page.portrait | relative_url }}"
+     alt="{{ page.title }}"
+     class="portrait">
+
 </div>
 
 <div class="character-body">
@@ -21,31 +25,37 @@ layout: default
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const tabContainer = document.querySelector('.tab-container');
-    if (!tabContainer) return;
+  const tabContainers = document.querySelectorAll('.tab-container');
+  const portrait = document.getElementById('character-portrait');
+  const defaultImage = portrait ? portrait.src : null;
 
-    const buttons = tabContainer.querySelectorAll('.tab-btn');
-    const contents = document.querySelectorAll('.tab-content');
-    const portraitImg = document.getElementById('main-portrait');
+  tabContainers.forEach(container => {
+    const buttons = container.querySelectorAll('.tab-btn');
+    const contents = container.querySelectorAll('.tab-content');
 
     buttons.forEach(btn => {
       btn.addEventListener('click', () => {
-        const targetId = btn.getAttribute('data-tab');
-        const newPortrait = btn.getAttribute('data-portrait');
+        const target = btn.getAttribute('data-tab');
+        const newImage = btn.getAttribute('data-image');
 
-        // Update Buttons
+        // Switch active tab
         buttons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        // Update Content Panes
         contents.forEach(c => c.classList.remove('active'));
-        document.getElementById(targetId).classList.add('active');
 
-        // Update Portrait Image
-        if (newPortrait && portraitImg) {
-            portraitImg.src = newPortrait;
+        btn.classList.add('active');
+        document.getElementById(target).classList.add('active');
+
+        // Switch portrait image
+        if (portrait) {
+          if (newImage && newImage.trim() !== "") {
+            portrait.src = newImage;
+          } else {
+            portrait.src = defaultImage;
+          }
         }
       });
     });
   });
+});
+
 </script>

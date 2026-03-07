@@ -20,11 +20,14 @@
       {% assign p_url = page.portrait %}
     {% endif %}
     
-    <button class="tab-btn {% if i == first %}active{% endif %}" 
-            data-tab="book-{{ i }}" 
-            data-portrait="{{ p_url }}">
-      Book {{ i }}
-    </button>
+<button
+  class="tab-btn {% if i == first %}active{% endif %}"
+  data-tab="book{{ i }}"
+  data-image="{{ page['book' | append: i | append: '_image'] }}"
+>
+  Book {{ i }}
+</button>
+
   {% endfor %}
 </div>
 
