@@ -1,31 +1,31 @@
 {% assign books = "" | split: "" %}
 {% for i in (1..5) %}
-  {% assign title = page["book" | append: i | append: "_title"] %}
-  {% assign arc = page["book" | append: i | append: "_arc"] %}
+  {% assign title_key = "book" | append: i | append: "_title" %}
+  {% assign arc_key = "book" | append: i | append: "_arc" %}
+  {% assign title = page[title_key] %}
+  {% assign arc = page[arc_key] %}
   {% if title or arc %}
     {% assign books = books | push: i %}
   {% endif %}
 {% endfor %}
 
-<!-- Tab Navigation Buttons -->
+{% assign first = books.first %}
+
 <div class="tab-container">
   {% for i in books %}
-    {% assign p_url = page["portrait-book" | append: i] %}
-    <!-- Fallback to main portrait if book-specific one is missing -->
-    {% if p_url == "" %}{% assign p_url = page.portrait %}{% endif %}
-    
-    <button class="tab-btn" data-tab="book-{{ i }}" data-portrait="{{ p_url }}">
+    <button class="tab-btn {% if i == first %}active{% endif %}" data-tab="book-{{ i }}">
       Book {{ i }}
     </button>
   {% endfor %}
 </div>
 
-<!-- Tab Content Panes -->
 <div class="tab-content-wrapper">
   {% for i in books %}
-    <div id="book-{{ i }}" class="tab-content">
-      <h3>Book {{ i }} — {{ page["book" | append: i | append: "_title"] }}</h3>
-      <p>{{ page["book" | append: i | append: "_arc"] }}</p>
+    {% assign title_key = "book" | append: i | append: "_title" %}
+    {% assign arc_key = "book" | append: i | append: "_arc" %}
+    <div id="book-{{ i }}" class="tab-content {% if i == first %}active{% endif %}">
+      <h3>Book {{ i }} — {{ page[title_key] }}</h3>
+      <p>{{ page[arc_key] }}</p>
     </div>
   {% endfor %}
 </div>
