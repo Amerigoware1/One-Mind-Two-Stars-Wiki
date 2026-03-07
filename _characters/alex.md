@@ -56,7 +56,10 @@ book5_arc: >
 ---
 
 <div class="infobox">
-  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
+  <img id="character-portrait"
+     src="{{ page.portrait | relative_url }}"
+     alt="{{ page.title }}"
+     class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
@@ -65,8 +68,6 @@ book5_arc: >
     <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
   </table>
 </div>
-
-# {{ page.title }}
 
 ## Overview
 Dr. Alexander “Alex” Cruiz is New Eden’s Chief of Medicine, a long‑serving councilman, and Amerigo Carisco’s closest friend since the earliest days of the Ares mission. Known for his dry wit, unshakeable calm, and uncompromising medical standards, he becomes a foundational figure in Celectra’s life — first as “Uncle Doc” when she is seven, and later as the physician who understands her dual‑body physiology better than anyone.
