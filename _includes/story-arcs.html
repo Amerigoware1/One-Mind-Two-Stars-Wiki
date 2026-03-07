@@ -7,29 +7,25 @@
   {% endif %}
 {% endfor %}
 
-{% assign first = books.first %}
-
+<!-- Tab Navigation Buttons -->
 <div class="tab-container">
-
-  <div class="tab-buttons">
-    {% for i in books %}
-      <button
-        class="tab-btn {% if i == first %}active{% endif %}"
-        data-tab="book{{ i }}"
-      >
-        Book {{ i }}
-      </button>
-    {% endfor %}
-  </div>
-
   {% for i in books %}
-    <div
-      id="book{{ i }}"
-      class="tab-content {% if i == first %}active{% endif %}"
-    >
-      <h2>Book {{ i }} — {{ page["book" | append: i | append: "_title"] }}</h2>
-      {{ page["book" | append: i | append: "_arc"] }}
+    {% assign p_url = page["portrait-book" | append: i] %}
+    <!-- Fallback to main portrait if book-specific one is missing -->
+    {% if p_url == "" %}{% assign p_url = page.portrait %}{% endif %}
+    
+    <button class="tab-btn" data-tab="book-{{ i }}" data-portrait="{{ p_url }}">
+      Book {{ i }}
+    </button>
+  {% endfor %}
+</div>
+
+<!-- Tab Content Panes -->
+<div class="tab-content-wrapper">
+  {% for i in books %}
+    <div id="book-{{ i }}" class="tab-content">
+      <h3>Book {{ i }} — {{ page["book" | append: i | append: "_title"] }}</h3>
+      <p>{{ page["book" | append: i | append: "_arc"] }}</p>
     </div>
   {% endfor %}
-
 </div>
