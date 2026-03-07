@@ -1,36 +1,54 @@
 ---
 layout: default
 ---
-
-<article class="character">
-  <header class="character-header">
+<div class="character-header">
     <h1>{{ page.title }}</h1>
-  </header>
+    
+    <!-- Main Portrait Image -->
+    <!-- We set the default src to the main portrait -->
+    <img id="main-portrait" src="{{ page.portrait }}" alt="{{ page.title }}">
+</div>
 
-  <div class="character-content">
+<div class="character-body">
+    <!-- This is where alex.md content + story-arcs.html tabs will appear -->
     {{ content }}
-  </div>
+</div>
 
-</article>
+<style>
+    /* Basic Tab Styling */
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .tab-btn.active { font-weight: bold; text-decoration: underline; }
+    #main-portrait { max-width: 300px; height: auto; display: block; margin: 0 auto 20px; }
+</style>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const tabContainers = document.querySelectorAll('.tab-container');
+    const tabContainer = document.querySelector('.tab-container');
+    if (!tabContainer) return;
 
-    tabContainers.forEach(container => {
-      const buttons = container.querySelectorAll('.tab-btn');
-      const contents = container.querySelectorAll('.tab-content');
+    const buttons = tabContainer.querySelectorAll('.tab-btn');
+    // Select contents that are siblings or next to the container
+    const contents = document.querySelectorAll('.tab-content');
+    const portraitImg = document.getElementById('main-portrait');
 
-      buttons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          const target = btn.getAttribute('data-tab');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-tab');
+        const newPortrait = btn.getAttribute('data-portrait');
 
-          buttons.forEach(b => b.classList.remove('active'));
-          contents.forEach(c => c.classList.remove('active'));
+        // 1. Update Buttons
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
 
-          btn.classList.add('active');
-          document.getElementById(target).classList.add('active');
-        });
+        // 2. Update Content Panes
+        contents.forEach(c => c.classList.remove('active'));
+        document.getElementById(targetId).classList.add('active');
+
+        // 3. Update Portrait Image
+        if (newPortrait && portraitImg) {
+            portraitImg.src = newPortrait;
+        }
       });
     });
   });
