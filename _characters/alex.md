@@ -3,8 +3,8 @@ layout: character
 title: Dr. Alexander 'Alex' Cruiz
 portrait: "/assets/images/alex.jpg"
 portrait-book1: "/assets/images/alex-book1.jpg"
-portrait-book2: "/assets/images/alex-book2.jpg"
-portrait-book3: "/assets/images/alex-book3.jpg"
+portrait-book2: "/assets/images/alex-book2.webp"
+portrait-book3: "/assets/images/alex-book3.png"
 portrait-book4: "/assets/images/alex-book4.jpg"
 portrait-book5: "/assets/images/alex-book5.jpg"
 affiliation: New Eden Medical Corps; Chief of Medicine; New Eden Council
