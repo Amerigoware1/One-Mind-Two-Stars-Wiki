@@ -39,16 +39,17 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.classList.add('active');
         document.getElementById(target).classList.add('active');
 
-        // Switch portrait image
+        // Switch portrait image (with fallback)
         if (portrait) {
           if (newImage && newImage.trim() !== "") {
             portrait.src = newImage;
           } else {
-            portrait.src = defaultImage;
+            portrait.src = defaultImage || "/assets/images/portrait-placeholder.png";
           }
         }
       });
     });
   });
 });
+
 </script>
