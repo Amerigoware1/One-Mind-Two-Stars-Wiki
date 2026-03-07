@@ -5,17 +5,14 @@ layout: default
     <h1>{{ page.title }}</h1>
     
     <!-- Main Portrait Image -->
-    <!-- We set the default src to the main portrait -->
     <img id="main-portrait" src="{{ page.portrait }}" alt="{{ page.title }}">
 </div>
 
 <div class="character-body">
-    <!-- This is where alex.md content + story-arcs.html tabs will appear -->
     {{ content }}
 </div>
 
 <style>
-    /* Basic Tab Styling */
     .tab-content { display: none; }
     .tab-content.active { display: block; }
     .tab-btn.active { font-weight: bold; text-decoration: underline; }
@@ -28,7 +25,6 @@ layout: default
     if (!tabContainer) return;
 
     const buttons = tabContainer.querySelectorAll('.tab-btn');
-    // Select contents that are siblings or next to the container
     const contents = document.querySelectorAll('.tab-content');
     const portraitImg = document.getElementById('main-portrait');
 
@@ -37,15 +33,15 @@ layout: default
         const targetId = btn.getAttribute('data-tab');
         const newPortrait = btn.getAttribute('data-portrait');
 
-        // 1. Update Buttons
+        // Update Buttons
         buttons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
 
-        // 2. Update Content Panes
+        // Update Content Panes
         contents.forEach(c => c.classList.remove('active'));
         document.getElementById(targetId).classList.add('active');
 
-        // 3. Update Portrait Image
+        // Update Portrait Image
         if (newPortrait && portraitImg) {
             portraitImg.src = newPortrait;
         }
