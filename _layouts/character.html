@@ -22,12 +22,19 @@ layout: default
 document.addEventListener('DOMContentLoaded', function() {
   const tabContainers = document.querySelectorAll('.tab-container');
   const portrait = document.getElementById('character-portrait');
-  
-  const initialSrc = portrait ? portrait.getAttribute('src') : null;
   const placeholder = "/assets/images/portrait-placeholder.png";
-  
-  // The '{{' below was what triggered the error
-  const isValidPath = (path) => path && path.trim() !== "" && path !== "/" && !path.includes('{{');
+
+  // 1. Function to validate if a string is a real image path
+  const isImgValid = (path) => {
+    if (!path) return false;
+    const cleanPath = path.trim();
+    // Rejects empty strings, single slashes, or paths ending in / (likely site root)
+    return cleanPath !== "" && cleanPath !== "/" && !cleanPath.endsWith('/') && !cleanPath.includes('{{');
+  };
+
+  // 2. Capture and validate the initial character portrait
+  const initialSrc = portrait ? portrait.getAttribute('src') : null;
+  const fallbackSrc = isImgValid(initialSrc) ? initialSrc : placeholder;
 
   tabContainers.forEach(container => {
     const buttons = container.querySelectorAll('.tab-btn');
@@ -38,18 +45,19 @@ document.addEventListener('DOMContentLoaded', function() {
         const target = btn.getAttribute('data-tab');
         const newImage = btn.getAttribute('data-image');
 
+        // Tab Switching Logic
         buttons.forEach(b => b.classList.remove('active'));
         contents.forEach(c => c.classList.remove('active'));
         btn.classList.add('active');
-        document.getElementById(target).classList.add('active');
+        const targetEl = document.getElementById(target);
+        if (targetEl) targetEl.classList.add('active');
 
+        // Portrait Swapping Logic
         if (portrait) {
-          if (isValidPath(newImage)) {
+          if (isImgValid(newImage)) {
             portrait.src = newImage;
-          } else if (isValidPath(initialSrc)) {
-            portrait.src = initialSrc;
           } else {
-            portrait.src = placeholder;
+            portrait.src = fallbackSrc;
           }
         }
       });
