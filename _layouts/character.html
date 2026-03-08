@@ -20,22 +20,30 @@ layout: default
 {% raw %}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const tabContainers = document.querySelectorAll('.tab-container');
   const portrait = document.getElementById('character-portrait');
+  const tabContainers = document.querySelectorAll('.tab-container');
   const placeholder = "/assets/images/portrait-placeholder.png";
 
-  // 1. Robust validation: Only accept paths ending in image extensions
+  // 1. Capture the "Primary" image from Front Matter as the first fallback
+  const initialSrc = portrait ? portrait.getAttribute('src') : null;
+
+  // 2. Validation helper for Jekyll's "empty" paths
   const isImgValid = (path) => {
     if (!path) return false;
-    const cleanPath = path.trim();
-    // This regex checks if the path ends with common image extensions
-    const hasImageExtension = /\.(jpg|jpeg|png|webp|gif|svg)$/i.test(cleanPath);
-    // Also ensures we didn't accidentally grab an unrendered Liquid tag
-    return hasImageExtension && !cleanPath.includes('{{');
+    const clean = path.trim();
+    return clean !== "" && clean !== "/" && !clean.endsWith('/') && !clean.includes('{{');
   };
 
-  const initialSrc = portrait ? portrait.getAttribute('src') : null;
-  const fallbackSrc = isImgValid(initialSrc) ? initialSrc : placeholder;
+  // 3. The Emergency Fallback: Triggers if the file physically doesn't exist (404)
+  if (portrait) {
+    portrait.addEventListener('error', function() {
+      // If the broken image wasn't the placeholder, try the placeholder
+      if (portrait.getAttribute('src') !== placeholder) {
+        console.warn("Image 404 detected. Falling back to placeholder.");
+        portrait.src = placeholder;
+      }
+    });
+  }
 
   tabContainers.forEach(container => {
     const buttons = container.querySelectorAll('.tab-btn');
@@ -46,18 +54,21 @@ document.addEventListener('DOMContentLoaded', function() {
         const target = btn.getAttribute('data-tab');
         const newImage = btn.getAttribute('data-image');
 
+        // Update Tabs
         buttons.forEach(b => b.classList.remove('active'));
         contents.forEach(c => c.classList.remove('active'));
         btn.classList.add('active');
         const targetEl = document.getElementById(target);
         if (targetEl) targetEl.classList.add('active');
 
+        // Update Portrait
         if (portrait) {
-          // 2. If the newImage isn't a valid image file, use the character's main portrait or placeholder
           if (isImgValid(newImage)) {
             portrait.src = newImage;
+          } else if (isImgValid(initialSrc)) {
+            portrait.src = initialSrc;
           } else {
-            portrait.src = fallbackSrc;
+            portrait.src = placeholder;
           }
         }
       });
