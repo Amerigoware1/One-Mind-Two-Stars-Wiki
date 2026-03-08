@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Dr. Alexander 'Alex' Cruiz
-portrait: "/assets/images/alex.jpg"
+portrait: "/assets/images/alex-book1.jpg"
 portrait-book1: "/assets/images/alex-book1.jpg"
 portrait-book2: "/assets/images/alex-book2.webp"
 portrait-book3: "/assets/images/alex-book3.png"
