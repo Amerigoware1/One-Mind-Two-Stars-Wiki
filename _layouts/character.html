@@ -24,15 +24,16 @@ document.addEventListener('DOMContentLoaded', function() {
   const portrait = document.getElementById('character-portrait');
   const placeholder = "/assets/images/portrait-placeholder.png";
 
-  // 1. Function to validate if a string is a real image path
+  // 1. Robust validation: Only accept paths ending in image extensions
   const isImgValid = (path) => {
     if (!path) return false;
     const cleanPath = path.trim();
-    // Rejects empty strings, single slashes, or paths ending in / (likely site root)
-    return cleanPath !== "" && cleanPath !== "/" && !cleanPath.endsWith('/') && !cleanPath.includes('{{');
+    // This regex checks if the path ends with common image extensions
+    const hasImageExtension = /\.(jpg|jpeg|png|webp|gif|svg)$/i.test(cleanPath);
+    // Also ensures we didn't accidentally grab an unrendered Liquid tag
+    return hasImageExtension && !cleanPath.includes('{{');
   };
 
-  // 2. Capture and validate the initial character portrait
   const initialSrc = portrait ? portrait.getAttribute('src') : null;
   const fallbackSrc = isImgValid(initialSrc) ? initialSrc : placeholder;
 
@@ -45,15 +46,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const target = btn.getAttribute('data-tab');
         const newImage = btn.getAttribute('data-image');
 
-        // Tab Switching Logic
         buttons.forEach(b => b.classList.remove('active'));
         contents.forEach(c => c.classList.remove('active'));
         btn.classList.add('active');
         const targetEl = document.getElementById(target);
         if (targetEl) targetEl.classList.add('active');
 
-        // Portrait Swapping Logic
         if (portrait) {
+          // 2. If the newImage isn't a valid image file, use the character's main portrait or placeholder
           if (isImgValid(newImage)) {
             portrait.src = newImage;
           } else {
