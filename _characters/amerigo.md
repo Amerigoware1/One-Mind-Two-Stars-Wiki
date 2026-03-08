@@ -1,12 +1,12 @@
 ---
 layout: character
 title: Amerigo Carisco
-portrait: "/assets/images/amerigo.png"
-portrait-book1: "/assets/images/Amerigo-book1.png"
-portrait-book2: "/assets/images/Amerigo-book2.png"
-portrait-book3: "/assets/images/Amerigo-book3.png"
-portrait-book4: "/assets/images/Amerigo-book4.png"
-portrait-book5: "/assets/images/Amerigo-book5.png"
+portrait: "/assets/images/amerigo-book1.png"
+portrait-book1: "/assets/images/amerigo-book1.png"
+portrait-book2: "/assets/images/amerigo-book2.png"
+portrait-book3: "/assets/images/amerigo-book3.png"
+portrait-book4: "/assets/images/amerigo-book4.png"
+portrait-book5: "/assets/images/amerigo-book5.png"
 affiliation: Carisco Family; New Eden Science Directorate; Chief Scientist; New Eden Council
 status: Alive
 birthday: May 12, 2103
