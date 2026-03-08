@@ -21,7 +21,13 @@ layout: default
 document.addEventListener('DOMContentLoaded', function() {
   const tabContainers = document.querySelectorAll('.tab-container');
   const portrait = document.getElementById('character-portrait');
-  const defaultImage = portrait ? portrait.src : null;
+  
+  // Capture the initial source. If it's just "/" or empty, set to null.
+  const initialSrc = portrait ? portrait.getAttribute('src') : null;
+  const placeholder = "/assets/images/portrait-placeholder.png";
+  
+  // Helper to check if a path is a "real" image path and not just a root slash
+  const isValidPath = (path) => path && path.trim() !== "" && path !== "/" && !path.includes('{{');
 
   tabContainers.forEach(container => {
     const buttons = container.querySelectorAll('.tab-btn');
@@ -32,19 +38,20 @@ document.addEventListener('DOMContentLoaded', function() {
         const target = btn.getAttribute('data-tab');
         const newImage = btn.getAttribute('data-image');
 
-        // Switch active tab
+        // 1. Switch active tabs
         buttons.forEach(b => b.classList.remove('active'));
         contents.forEach(c => c.classList.remove('active'));
-
         btn.classList.add('active');
         document.getElementById(target).classList.add('active');
 
-        // Switch portrait image (with fallback)
+        // 2. Switch portrait image with strict validation
         if (portrait) {
-          if (newImage && newImage.trim() !== "") {
+          if (isValidPath(newImage)) {
             portrait.src = newImage;
+          } else if (isValidPath(initialSrc)) {
+            portrait.src = initialSrc;
           } else {
-            portrait.src = defaultImage || "/assets/images/portrait-placeholder.png";
+            portrait.src = placeholder;
           }
         }
       });
