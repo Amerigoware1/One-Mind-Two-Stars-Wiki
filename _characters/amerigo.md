@@ -2,15 +2,20 @@
 layout: character
 title: Amerigo Carisco
 portrait: "/assets/images/amerigo.png"
+portrait-book1: "/assets/images/Amerigo-book1.jpg"
+portrait-book2: "/assets/images/Amerigo-book2.webp"
+portrait-book3: "/assets/images/Amerigo-book3.png"
+portrait-book4: "/assets/images/Amerigo-book4.jpg"
+portrait-book5: "/assets/images/Amerigo-book5.jpg"
 affiliation: Carisco Family; New Eden Science Directorate; Chief Scientist; New Eden Council
 status: Alive
 birthday: May 12, 2103
 birthplace: Earth (pre‑Ares migration)
-book1_age: "39.4 Earth / 35.2 Ares"
-book2_age: "46.5 Earth / 41.4 Ares"
-book3_age: "53.4 Earth / 47.6 Ares"
-book4_age: "61.7 Earth / 55.3 Ares"
-book5_age: "68.7 Earth / 61.5 Ares"
+book1_age: "39.4 Earth / 35.6 Ares"
+book2_age: "46.5 Earth / 41.7 Ares"
+book3_age: "53.4 Earth / 47.9 Ares"
+book4_age: "61.7 Earth / 55.4 Ares"
+book5_age: "68.7 Earth / 61.7 Ares"
 book1_title: "The Scientist and the Father"
 book1_arc: >
   Amerigo struggles to balance his scientific responsibilities with the fear of losing
