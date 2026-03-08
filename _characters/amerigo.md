@@ -2,11 +2,11 @@
 layout: character
 title: Amerigo Carisco
 portrait: "/assets/images/amerigo.png"
-portrait-book1: "/assets/images/Amerigo-book1.jpg"
-portrait-book2: "/assets/images/Amerigo-book2.webp"
+portrait-book1: "/assets/images/Amerigo-book1.png"
+portrait-book2: "/assets/images/Amerigo-book2.png"
 portrait-book3: "/assets/images/Amerigo-book3.png"
-portrait-book4: "/assets/images/Amerigo-book4.jpg"
-portrait-book5: "/assets/images/Amerigo-book5.jpg"
+portrait-book4: "/assets/images/Amerigo-book4.png"
+portrait-book5: "/assets/images/Amerigo-book5.png"
 affiliation: Carisco Family; New Eden Science Directorate; Chief Scientist; New Eden Council
 status: Alive
 birthday: May 12, 2103
@@ -61,7 +61,10 @@ book5_arc: >
 ---
 
 <div class="infobox">
-  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
+  <img id="character-portrait"
+     src="{{ page.portrait | relative_url }}"
+     alt="{{ page.title }}"
+     class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
@@ -70,8 +73,6 @@ book5_arc: >
     <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
   </table>
 </div>
-
-# {{ page.title }}
 
 ## Overview
 Amerigo Carisco is New Eden’s Chief Scientist, a founding member of the colony, and one of the most influential scientific minds on Ares. Brilliant, intense, and deeply principled, he becomes both the architect of humanity’s scientific future and the emotional core of the Carisco family. His relationship with Celectra — first as a father terrified for his daughter’s survival, later as a collaborator in shaping interspecies communication — defines much of the colony’s early history.
