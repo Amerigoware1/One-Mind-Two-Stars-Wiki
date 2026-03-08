@@ -2,6 +2,7 @@
 layout: character
 title: Celectra Ambar Carisco
 portrait: "/assets/images/celectra-book1.webp"
+>>>>>>> ddf18d033281a03292e7bd6ea2a18a3b6e60968a
 affiliation: Carisco Family; Listener Corps; Human–Galinstanian Bridge
 status: Alive
 birthday: October 11, 2225
@@ -61,7 +62,10 @@ book5_arc: >
 ---
 
 <div class="infobox">
-  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
+  <img id="character-portrait"
+     src="{{ page.portrait | relative_url }}"
+     alt="{{ page.title }}"
+     class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
@@ -70,8 +74,6 @@ book5_arc: >
     <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
   </table>
 </div>
-
-# {{ page.title }}
 
 ## Overview
 Celectra Ambar Carisco is the first known dual-bodied human consciousness and the foundational bridge between humanity and the Galinstanian species of Ares. Born in 2225 after a radiation-induced consciousness fusion event, she grew into a diplomat, scientist, and cultural cornerstone whose natural electromagnetic communion shaped the colony’s survival and identity. Her life spans five books of the *Two Stars* saga, evolving from a traumatized child into a mother, scholar, and architect of interspecies harmony.
