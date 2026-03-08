@@ -18,11 +18,11 @@ book4_age: "61.2 Earth / 54.7 Ares"
 book5_age: "68.2 Earth / 61.0 Ares"
 book1_title: "Chief of Medicine"
 book1_arc: >
-  Alex becomes Chief of Medicine and a councilman after Dr. Douglas Kret is demoted
-  and exiled. He takes over the medical oversight of Celectra’s dual-bodied
-  development, becoming “Uncle Doc” — the adult she trusts most outside her parents.
-  He and Amerigo form the scientific–medical partnership that stabilizes the colony.
-
+   Alex — “Uncle Doc” — is the adult Celectra trusts most outside her father.
+   He and Amerigo form the scientific–medical partnership that stabilizes the colony.
+   Alex becomes Chief of Medicine and a councilman after Dr. Douglas Kret is demoted
+   and exiled. Alex continues medical oversight of Celectra’s dual-bodied
+   development,
 book2_title: "The Northern Territory"
 book2_arc: >
   Alex provides medical oversight for the Northern Territory expedition and treats

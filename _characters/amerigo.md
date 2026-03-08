@@ -18,11 +18,9 @@ book4_age: "61.7 Earth / 55.4 Ares"
 book5_age: "68.7 Earth / 61.7 Ares"
 book1_title: "The Scientist and the Father"
 book1_arc: >
-  Amerigo struggles to balance his scientific responsibilities with the fear of losing
-  Celectra after her radiation accident and dual-body emergence. He becomes one of the
+  Amerigo struggles to balance his scientific responsibilities, fatherhood, and coming to terms with Celectra's dual-body existence. He becomes one of the
   first humans to understand the Galinstanian EM network through Celectra’s communion.
-  After Dr. Kret’s demotion and exile, Amerigo becomes Chief Scientist and a councilman,
-  marking the beginning of his political and scientific leadership.
+  Amerigo relocates from the space station, Utopis to New Eden with Celectra for her sake and to follow is romanic interest.
 
 book2_title: "The Northern Territory"
 book2_arc: >
@@ -34,6 +32,8 @@ book2_arc: >
 
 book3_title: "The Communion Interface"
 book3_arc: >
+  With Dr.Troy's retirement, Amerigo becomes Chief Scientist and a councilman,
+  marking the beginning of his political and scientific leadership.
   As Chief Scientist, Amerigo leads the development of the Communion Interface —
   technology meant to replicate Celectra’s natural EM abilities. He pushes the team
   hard, driven by the need to protect Celectra as her natural range declines during
