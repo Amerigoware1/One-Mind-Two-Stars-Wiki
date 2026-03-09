@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Amerigo Carisco
+title: Amerigo Giorgio Carisco
 portrait: "/assets/images/amerigo-book1.webp"
 portrait-book1: "/assets/images/amerigo-book1.webp"
 portrait-book2: "/assets/images/amerigo-book2.webp"

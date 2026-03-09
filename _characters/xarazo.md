@@ -24,8 +24,6 @@ book5_age: "14 years old"
   </table>
 </div>
 
-# {{ page.title }}
-
 ## Overview
 Xara Zo Carisco is the younger of Celectra’s twin daughters and one of the most analytically gifted young listeners on Ares. At seven years old in Book 4, she experiences resonance as structure — patterns, geometry, timing, flow. Her bond with Ripple is intellectual and collaborative, forming the backbone of several key discoveries in Book 5.
 
@@ -74,7 +72,7 @@ Xara’s arc centers on understanding resonance as a system — a network of pat
 
   <div id="book3" class="tab-content">
     <h2>Book 3 — Birth and Early Perception</h2>
-    Xara is born during the events of Book 3. Even as an infant, she shows unusual focus and sensitivity to harmonic patterns.
+    Xara is born during the events of Book 3. She is named after her adoptive grandmother's mother (Xara) and her adoptive grandmother (Zoë). Even as an infant, she shows unusual focus and sensitivity to harmonic patterns.
   </div>
 
   <div id="book4" class="tab-content">

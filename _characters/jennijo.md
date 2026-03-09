@@ -1,7 +1,12 @@
 ---
 layout: character
 title: Jenni Jo Carisco
-portrait: "/assets/images/jennijo.png"
+portrait: "/assets/images/jenni-book1.webp"
+portrait-book1: "/assets/images/jenni-book1.webp"
+portrait-book2: "/assets/images/jenni-book2.webp"
+portrait-book3: "/assets/images/jenni-book3.webp"
+portrait-book4: "/assets/images/jenni-book4.webp"
+portrait-book5: "/assets/images/jenni-book5.webp"
 affiliation: Carisco Family; Listener Corps (Junior); Resonance Stewardship Program
 status: Alive
 birthday: July 18, 2246
@@ -14,7 +19,10 @@ book5_age: "14 years old"
 ---
 
 <div class="infobox">
-  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
+  <img id="character-portrait"
+     src="{{ page.portrait | relative_url }}"
+     alt="{{ page.title }}"
+     class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
@@ -23,8 +31,6 @@ book5_age: "14 years old"
     <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
   </table>
 </div>
-
-# {{ page.title }}
 
 ## Overview
 Jenni Jo Carisco is the older of Celectra’s twin daughters and one of the most emotionally attuned young listeners on Ares. At seven years old in Book 4, she experiences resonance as a *feeling* — warmth, pressure, brightness, unease — long before she can articulate the underlying patterns. Her bond with Ripple is immediate, instinctive, and foundational to her development.
@@ -74,7 +80,7 @@ Jenni’s arc centers on emotional resonance — understanding what others feel,
 
   <div id="book3" class="tab-content">
     <h2>Book 3 — Birth and Early Bonding</h2>
-    Jenni is born during the events of Book 3. Even as an infant, she responds strongly to Celectra’s EM field and to the presence of Galinstanians.
+    Jenni is born during the events of Book 3. She is named after her biological grandmother (Jenni) and Amerigo's middle name (Giorgio). Even as an infant, she responds strongly to Celectra’s EM field and to the presence of Galinstanians.
   </div>
 
   <div id="book4" class="tab-content">
@@ -89,3 +95,4 @@ Jenni’s arc centers on emotional resonance — understanding what others feel,
     At fourteen, Jenni becomes a junior member of the Resonance Stewardship Program. She specializes in emotional-harmonic stabilization and works closely with Ripple and Xara. Her arc centers on learning to trust her instincts while developing the discipline needed for planetary stewardship.
   </div>
 </div>
+{% include story-arcs.html %}
