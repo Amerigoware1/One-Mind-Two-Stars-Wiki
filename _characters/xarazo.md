@@ -1,7 +1,12 @@
 ---
 layout: character
 title: Xara Zo Carisco
-portrait: "/assets/images/xarazo.png"
+portrait: "/assets/images/xara-book1.webp"
+portrait-book1: "/assets/images/xara-book1.webp"
+portrait-book2: "/assets/images/xara-book2.webp"
+portrait-book3: "/assets/images/xara-book3.webp"
+portrait-book4: "/assets/images/xara-book4.webp"
+portrait-book5: "/assets/images/xara-book5.webp"
 affiliation: Carisco Family; Listener Corps (Junior); Resonance Stewardship Program
 status: Alive
 birthday: July 18, 2246
@@ -14,7 +19,10 @@ book5_age: "14 years old"
 ---
 
 <div class="infobox">
-  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
+  <img id="character-portrait"
+     src="{{ page.portrait | relative_url }}"
+     alt="{{ page.title }}"
+     class="portrait">
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
