@@ -1,12 +1,12 @@
 ---
 layout: character
 title: Jenni Jo Carisco
-portrait: "assets/images/jenni-book1.webp"
-portrait-book1: "assets/images/jenni-book1.webp"
-portrait-book2: "assets/images/jenni-book2.webp"
-portrait-book3: "assets/images/jenni-book3.webp"
-portrait-book4: "assets/images/jenni-book4.webp"
-portrait-book5: "assets/images/jenni-book5.webp"
+portrait: "/assets/images/jenni-book1.webp"
+portrait-book1: "/assets/images/jenni-book1.webp"
+portrait-book2: "/assets/images/jenni-book2.webp"
+portrait-book3: "/assets/images/jenni-book3.webp"
+portrait-book4: "/assets/images/jenni-book4.webp"
+portrait-book5: "/assets/images/jenni-book5.webp"
 affiliation: Carisco Family; Listener Corps (Junior); Resonance Stewardship Program
 status: Alive
 birthday: July 18, 2246
@@ -29,11 +29,12 @@ book4_arc: >
 book5_title: "The Four Rivers Resonance"
 book5_arc: >
     At fourteen, Jenni becomes a junior member of the Resonance Stewardship Program. She specializes in emotional-harmonic stabilization and works closely with Ripple and Xara. Her arc centers on learning to trust her instincts while developing the discipline needed for planetary stewardship.
+    
 ---
 
 <div class="infobox">
   <img id="character-portrait"
-     src="{{ page.portrait }}"
+     src="{{ page.portrait | relative_url }}"
      alt="{{ page.title }}"
      class="portrait">
 
