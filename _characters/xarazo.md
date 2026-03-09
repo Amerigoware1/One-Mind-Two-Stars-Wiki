@@ -1,9 +1,7 @@
 ---
 layout: character
 title: Xara Zo Carisco
-portrait: "/assets/images/xara-book1.webp"
-portrait-book1: "/assets/images/xara-book1.webp"
-portrait-book2: "/assets/images/xara-book2.webp"
+portrait: "/assets/images/xara-book3.webp"
 portrait-book3: "/assets/images/xara-book3.webp"
 portrait-book4: "/assets/images/xara-book4.webp"
 portrait-book5: "/assets/images/xara-book5.webp"
