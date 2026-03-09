@@ -16,6 +16,19 @@ book2_age: "Not yet born"
 book3_age: "Infant"
 book4_age: "7 years old"
 book5_age: "14 years old"
+book3_title: "Birth and Early Bonding"
+book3_arc: >
+    Jenni is born during the events of Book 3. She is named after her biological
+    grandmother (Jinni) and Amerigo's middle name (Giorgio). Even as an infant,
+    she responds strongly to Celectra's EM field and to the presence of Galinstanians.
+book4_title: "The Four Rivers Resonance"
+book4_arc: >
+    At seven years old, Jenni has known Ripple for five years. She remembers none of Ripple’s arrival, but she knows the story — the collapse, the migrating cluster, the moment she and Xara reached for Ripple and Ripple reached back.
+
+    Jenni’s sensitivity allows her to detect emotional-harmonic shifts before adults notice them. She plays a small but meaningful role in the Great Resonance, providing stabilizing pulses during moments of instability.
+book5_title: "The Four Rivers Resonance"
+book5_arc: >
+    At fourteen, Jenni becomes a junior member of the Resonance Stewardship Program. She specializes in emotional-harmonic stabilization and works closely with Ripple and Xara. Her arc centers on learning to trust her instincts while developing the discipline needed for planetary stewardship.
 ---
 
 <div class="infobox">
@@ -69,30 +82,4 @@ Jenni’s arc centers on emotional resonance — understanding what others feel,
 
 ---
 
-# Story Arcs (Spoiler-Controlled)
-
-<div class="tab-container">
-  <div class="tab-buttons">
-    <button data-tab="book3">Book 3</button>
-    <button data-tab="book4">Book 4</button>
-    <button data-tab="book5">Book 5</button>
-  </div>
-
-  <div id="book3" class="tab-content">
-    <h2>Book 3 — Birth and Early Bonding</h2>
-    Jenni is born during the events of Book 3. She is named after her biological grandmother (Jenni) and Amerigo's middle name (Giorgio). Even as an infant, she responds strongly to Celectra’s EM field and to the presence of Galinstanians.
-  </div>
-
-  <div id="book4" class="tab-content">
-    <h2>Book 4 — The Four Rivers Resonance</h2>
-    At seven years old, Jenni has known Ripple for five years. She remembers none of Ripple’s arrival, but she knows the story — the collapse, the migrating cluster, the moment she and Xara reached for Ripple and Ripple reached back.
-
-    Jenni’s sensitivity allows her to detect emotional-harmonic shifts before adults notice them. She plays a small but meaningful role in the Great Resonance, providing stabilizing pulses during moments of instability.
-  </div>
-
-  <div id="book5" class="tab-content">
-    <h2>Book 5 — Emotional Steward</h2>
-    At fourteen, Jenni becomes a junior member of the Resonance Stewardship Program. She specializes in emotional-harmonic stabilization and works closely with Ripple and Xara. Her arc centers on learning to trust her instincts while developing the discipline needed for planetary stewardship.
-  </div>
-</div>
 {% include story-arcs.html %}

@@ -16,6 +16,17 @@ book2_age: "Not yet born"
 book3_age: "Infant"
 book4_age: "7 years old"
 book5_age: "14 years old"
+book3_title: "Birth and Early Bonding"
+book3_arc: >
+    Xara is born during the events of Book 3. She is named after her adoptive grandmother's mother (Xara) and her adoptive grandmother (Zoë). Even as an infant, she shows unusual focus and sensitivity to harmonic patterns.
+book4_title: "The Four Rivers Resonance"
+book4_arc: >
+    At seven, Xara has known Ripple for five years. She is fascinated by Ripple’s harmonic fluctuations and begins mapping them with stones, toys, and water ripples. Her early observations help Celectra interpret the resonance anomalies.
+
+    Xara’s analytical clarity becomes essential during the Great Resonance.
+book5_title: "The Four Rivers Resonance"
+book5_arc: >
+    At fourteen, Xara becomes a junior member of the Resonance Stewardship Program. She specializes in harmonic geometry and anomaly detection. Working with Ripple and Jenni, she helps map the long-term stability of the planetary network. Her arc centers on becoming a “pattern weaver” — someone who sees the structure beneath the song.    
 ---
 
 <div class="infobox">
@@ -69,29 +80,4 @@ Xara’s arc centers on understanding resonance as a system — a network of pat
 
 ---
 
-# Story Arcs (Spoiler-Controlled)
-
-<div class="tab-container">
-  <div class="tab-buttons">
-    <button data-tab="book3">Book 3</button>
-    <button data-tab="book4">Book 4</button>
-    <button data-tab="book5">Book 5</button>
-  </div>
-
-  <div id="book3" class="tab-content">
-    <h2>Book 3 — Birth and Early Perception</h2>
-    Xara is born during the events of Book 3. She is named after her adoptive grandmother's mother (Xara) and her adoptive grandmother (Zoë). Even as an infant, she shows unusual focus and sensitivity to harmonic patterns.
-  </div>
-
-  <div id="book4" class="tab-content">
-    <h2>Book 4 — The Four Rivers Resonance</h2>
-    At seven, Xara has known Ripple for five years. She is fascinated by Ripple’s harmonic fluctuations and begins mapping them with stones, toys, and water ripples. Her early observations help Celectra interpret the resonance anomalies.
-
-    Xara’s analytical clarity becomes essential during the Great Resonance.
-  </div>
-
-  <div id="book5" class="tab-content">
-    <h2>Book 5 — Pattern Weaver</h2>
-    At fourteen, Xara becomes a junior member of the Resonance Stewardship Program. She specializes in harmonic geometry and anomaly detection. Working with Ripple and Jenni, she helps map the long-term stability of the planetary network. Her arc centers on becoming a “pattern weaver” — someone who sees the structure beneath the song.
-  </div>
-</div>
+{% include story-arcs.html %}
