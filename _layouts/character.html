@@ -22,7 +22,7 @@ layout: default
 document.addEventListener('DOMContentLoaded', function() {
   const portrait = document.getElementById('character-portrait');
   const tabContainers = document.querySelectorAll('.tab-container');
-  const placeholder = "{{ 'https://amerigoware1.github.io/One-Mine-Two-Stars-Wiki/assets/images/portrait-placeholder.png' }}";
+  const placeholder = 'https://amerigoware1.github.io/One-Mine-Two-Stars-Wiki/assets/images/portrait-placeholder.png';
 
   // 1. Capture the "Primary" image from Front Matter as the first fallback
   const initialSrc = portrait ? portrait.getAttribute('src') : null;
