@@ -33,7 +33,7 @@ book5_arc: >
 
 <div class="infobox">
   <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
+     src="{{ page.portrait }}"
      alt="{{ page.title }}"
      class="portrait">
 
