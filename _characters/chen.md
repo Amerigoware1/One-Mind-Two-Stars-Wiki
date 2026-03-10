@@ -97,7 +97,7 @@ book5_arc: >
 <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
 </table>
 </div>
-
+<div class="article-content">
 <div class="card-bg">
 ### Overview
 Dr. Yuki Chen is a senior physician specializing in radiation medicine and its effects on human physiology. Originally stationed on Utopis-Lab 3, she played a pivotal role in early colony history when she diagnosed Jenni Carisco's radiation-exposed twin pregnancy in 2225. After Dr. Alexander Cruiz's promotion to Chief of Medicine on Ares, Dr. Chen assumed his former position as Chief Physician of Utopis Station. In Book 3, she becomes Celectra's primary medical monitor, tracking the deterioration of her telepathic field with sobering precision.
@@ -143,5 +143,7 @@ tendency to carry the weight of difficult prognoses alone
 Dr. Chen's arc is about the weight of medical truth—delivering difficult diagnoses with compassion, tracking slow decline with precision, and helping a colony prepare for transitions it cannot avoid. She never seeks drama, but her quiet expertise shapes pivotal moments: the decision to continue a risky pregnancy, the urgency to develop technological alternatives to a biological bridge, and the steady medical leadership that keeps a colony healthy under binary stars.
 </div>
 ---
-
+<div class="card-bg">
 {% include story-arcs.html %}
+</div>
+</div>
