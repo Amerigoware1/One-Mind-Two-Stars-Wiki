@@ -68,15 +68,18 @@ book5_arc: >
     <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
   </table>
 </div>
-
+<div class="article-content">
+<div class="card-bg">
 ## Overview
 Dr. Alexander “Alex” Cruiz is New Eden’s Chief of Medicine, a long‑serving councilman, and Amerigo Carisco’s closest friend since the earliest days of the Ares mission. Known for his dry wit, unshakeable calm, and uncompromising medical standards, he becomes a foundational figure in Celectra’s life — first as “Uncle Doc” when she is seven, and later as the physician who understands her dual‑body physiology better than anyone.
 
 Alex’s arc spans five books, evolving from frontline doctor to elder statesman of the colony’s medical and ethical leadership.
-
+</div>
+<div class="card-bg">
 ## Physical Description
 Alex is tall, broad‑shouldered, and carries the posture of someone who has spent decades on his feet in clinics, emergency bays, and field tents. His hair grays early at the temples, and his expression often settles into a mix of focus and dry amusement. His presence is steadying — the kind of man who walks into a crisis and instantly lowers the room’s panic level.
-
+</div>
+<div class="card-bg">
 ## Personality & Skills
 Alex is defined by:
 
@@ -100,7 +103,8 @@ Personal strengths:
 - emotional steadiness  
 - the ability to tell Amerigo he’s wrong without starting a fight  
 - the ability to get Celectra to slow down and breathe  
-
+</div>
+<div class="card-bg">
 ## Relationships
 - **Amerigo Carisco** — best friend, intellectual partner, co‑strategist  
 - **Zoë Carisco** — close friend and confidante  
@@ -110,10 +114,15 @@ Personal strengths:
 - **Dee Cruiz** — sister (not spouse), fellow early colonist  
 - **Jaxon Bowers** — engineering partner in medical crises  
 - **Ripple, Chime, Stan** — Galinstanians he learns to read medically through Celectra  
-
+</div>
+<div class="card-bg">
 ## Story Overview (Non-Spoiler)
 Alex’s journey is one of responsibility and quiet heroism. He becomes the medical authority on Celectra’s physiology, the first to understand the risks of communion, and the doctor who delivers the colony’s hardest truths. His arc is about choosing to be the steady center in a world that constantly threatens to fracture.
+</div>
 
 ---
 
+<div class="card-bg">
 {% include story-arcs.html %}
+</div>
+</div>

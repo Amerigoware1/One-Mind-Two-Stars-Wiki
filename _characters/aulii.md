@@ -84,13 +84,16 @@ book5_arc: >
 <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
 </table>
 </div>
-
+<div class="article-content">
+<div class="card-bg">
 ### Overview
 Aulii Vongphachanh is a New Eden-born martial artist and a slightly older peer of Celectra Carisco's generation (approximately 1 year and 8 months her senior). She is best known for defeating Celectra in the Book 2 Sundome Karate Tournament, earning the Gold Medal while Celectra took Silver under the unique "stillness protocol" constraints. Respectful, strategic, and composed, Aulii transitioned from rival to colleague, eventually succeeding Sensei Onishi Kisa as a lead instructor in the Resonance Stewardship Program's physical training division. By Book 5, she serves as a primary mentor to the twins (Jenni and Xara), focusing on discipline, body awareness, and defensive tactics.
-
+</div>
+<div class="card-bg">
 ### Physical Description
 Aulii carries herself with the quiet precision of a lifelong martial artist. She has dark hair kept in a practical, tight bun during training, calm observant eyes, and movements that are economical and deliberate. She favors traditional gi attire in muted tones, always immaculately pressed, with her black belt worn with understated pride. Her posture is perfectly aligned whether standing, sitting, or moving, and she possesses a stillness that rivals even Celectra's dual-body discipline.
-
+</div>
+<div class="card-bg">
 ### Personality & Skills
 Aulii is defined by:
 - surgical precision in movement
@@ -109,7 +112,8 @@ Her weaknesses include:
 - occasional over-formality that can seem distant
 - reluctance to celebrate victories openly
 - tendency to prioritize strategy over emotional expression
-
+</div>
+<div class="card-bg">
 ### Relationships
 - **Celectra Carisco** — respectful rival turned colleague; Aulii won Gold to Celectra's Silver in Book 2, later collaborated on training protocols
 - **Hiro Vongphachanh** — sibling/peer; both part of the Vongphachanh martial arts lineage in New Eden
@@ -117,10 +121,15 @@ Her weaknesses include:
 - **Sensei Onishi Kisa** — mentor and predecessor; Aulii assists her in Book 4 and succeeds her upon retirement in Book 5
 - **Jaxon Bowers & Ananya Patel** — peers in the youth cohort; frequent training partners
 - **Kael** — collaborator in the Stewardship Program (physical rhythm vs. acoustic rhythm)
-
+</div>
+<div class="card-bg">
 ### Story Overview (Non-Spoiler)
 Aulii's arc is about excellence without ego. She proves that winning isn't about exploiting an opponent's limitations, but about honoring the challenge they present. Her suggestion to Celectra—alternating bodies between matches to allow genuine recovery—shows her strategic mind and genuine respect for fair competition. She represents the generation that grows up with integration as normal, and her teaching style emphasizes discipline, respect, and the courage to adapt.
+</div>
 
 ---
 
+<div class="card-bg">
 {% include story-arcs.html %}
+</div>
+</div>

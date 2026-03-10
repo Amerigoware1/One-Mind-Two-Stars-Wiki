@@ -142,7 +142,9 @@ tendency to carry the weight of difficult prognoses alone
 ### Story Overview (Non-Spoiler)
 Dr. Chen's arc is about the weight of medical truth—delivering difficult diagnoses with compassion, tracking slow decline with precision, and helping a colony prepare for transitions it cannot avoid. She never seeks drama, but her quiet expertise shapes pivotal moments: the decision to continue a risky pregnancy, the urgency to develop technological alternatives to a biological bridge, and the steady medical leadership that keeps a colony healthy under binary stars.
 </div>
+
 ---
+
 <div class="card-bg">
 {% include story-arcs.html %}
 </div>

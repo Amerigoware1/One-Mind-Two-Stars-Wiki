@@ -78,17 +78,21 @@ book5_arc: >
     <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
   </table>
 </div>
-
+<div class="article-content">
+<div class="card-bg">
 ## Overview
 Celectra Ambar Carisco is the first known dual-bodied human consciousness and the foundational bridge between humanity and the Galinstanian species of Ares. Born in 2225 after a radiation-induced consciousness fusion event, she grew into a diplomat, scientist, and cultural cornerstone whose natural electromagnetic communion shaped the colony’s survival and identity. Her life spans five books of the *Two Stars* saga, evolving from a traumatized child into a mother, scholar, and architect of interspecies harmony.
-
+</div>
+<div class="card-bg">
 ## Physical Description
 Celectra’s two bodies are genetically identical, each standing 1.49 m and weighing ~41 kg in early adulthood. Both have white hair threaded with fiber-optic strands for formal occasions, milk chocolate irises, and a distinctive EM “signature” detectable by Galinstanians. During Book 3, pregnancy affects only her right body, creating visible asymmetry that becomes a major emotional and logistical challenge.
-
+</div>
+<div class="card-bg">
 ## Medical Summary
 Celectra’s physiology is the subject of two major medical dossiers maintained by  
 Dr. Alex Cruiz and the New Eden Medical Corps:
-
+</div>
+<div class="card-bg">
 ### Mononous Disomas (Dual-Body Physiology)
 Celectra possesses a unique dual-bodied condition known as **mononous disomas**, in
 which two fully functional bodies share a single consciousness and a unified
@@ -96,12 +100,14 @@ sensory-emotional network. Both bodies exhibit synchronized autonomic responses,
 but can act independently with deliberate control. This condition is stable but
 requires ongoing monitoring for metabolic load, neural fatigue, and resonance
 overextension.
-
+</div>
+<div class="card-bg">
 ### Albinism
 Both bodies present with **oculocutaneous albinism**, including pale skin and white
 hair. The melanin in the irises was present before the en utero radiation exposure. Albinism does not interfere with communion but increases vulnerability during field operations.
 - **[Celectra’s Care Protocol Dossier](../celectra-care-protocol-dossier.html)**  
-
+</div>
+<div class="card-bg">
 ### Growth Delay
 Celectra’s early childhood included **retarded growth velocity**, linked to
 the placental damage. Growth
@@ -109,7 +115,8 @@ normalized in adolescence but remains well below the colony average. Alex
 monitors her nutritional intake, bone density, and endocrine markers as part of
 her long-term care plan.
 - **[Celectra Growth & Development Report](../CelectraGrowth.html)**  
-
+</div>
+<div class="card-bg">
 ## Personality & Skills
 Celectra’s consciousness is divided into four hemispheric “voices” that often disagree but ultimately integrate into a unified self:
 
@@ -125,7 +132,8 @@ Her natural abilities include:
 - harmonic pattern recognition  
 - cross-species diplomacy  
 - advanced neuro-interface research  
-
+</div>
+<div class="card-bg">
 ## Relationships
 - **Jaxon Bowers** — partner, later father of her twin daughters  
 - **Zoë Carisco** — mother, emotional anchor  
@@ -133,10 +141,15 @@ Her natural abilities include:
 - **Xan Carisco** — younger brother, acoustic-communication innovator  
 - **Stan, Chime, Harbor, Logic, Ripple** — Galinstanian friends and collaborators  
 - **Jenni Jo & Xara Zo** — her daughters (Book 3 onward)  
-
+</div>
+<div class="card-bg">
 ## Story Overview (Non-Spoiler)
 Across the series, Celectra evolves from a child struggling with trauma and dual embodiment into a scientist and diplomat whose work reshapes the future of Ares. Her arc centers on identity, purpose, legacy, and the ethics of bridging two species. By Book 5, she becomes a steward of the planetary resonance network and a mother guiding the next generation of bridges.
+</div>
 
 ---
 
+<div class="card-bg">
 {% include story-arcs.html %}
+</div>
+</div>
