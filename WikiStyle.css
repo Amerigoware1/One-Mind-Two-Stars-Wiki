@@ -783,11 +783,6 @@ main h2 {
     margin: 0 0 1rem 1.5rem; /* Space between box and text */
 }
 
-h3:hover {
-  text-shadow: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-violet);
-  transition: text-shadow 0.3s ease;
-}
-
 
 
 
