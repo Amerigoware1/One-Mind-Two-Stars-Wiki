@@ -98,13 +98,15 @@ book5_arc: >
 </table>
 </div>
 
-
+<div class="card-bg">
 ### Overview
 Dr. Yuki Chen is a senior physician specializing in radiation medicine and its effects on human physiology. Originally stationed on Utopis-Lab 3, she played a pivotal role in early colony history when she diagnosed Jenni Carisco's radiation-exposed twin pregnancy in 2225. After Dr. Alexander Cruiz's promotion to Chief of Medicine on Ares, Dr. Chen assumed his former position as Chief Physician of Utopis Station. In Book 3, she becomes Celectra's primary medical monitor, tracking the deterioration of her telepathic field with sobering precision.
-
+</div>
+<div class="card-bg">
 ### Physical Description
 Dr. Chen carries herself with the quiet authority of decades of medical practice. She has short, neatly kept silver-streaked hair, sharp observant eyes, and a calm demeanor that puts patients at ease even when delivering difficult news. She favors practical medical uniforms with subtle personal touches—a small pin, a colored undershirt—and always has a datapad or scanner within reach.
-
+</div>
+<div class="card-bg">
 ### Personality & Skills
 Dr. Chen is defined by:
 data-driven clinical precision
@@ -121,7 +123,8 @@ Her weaknesses include:
 emotional detachment that can feel cold to some
 reluctance to speculate beyond available data
 tendency to carry the weight of difficult prognoses alone
-
+</div>
+<div class="card-bg">
 ### Relationships
   - **Jenni Carisco** — patient during the critical 2225 diagnosis; Dr. Chen was
     the first to inform her of the twin pregnancy and radiation risks.
@@ -134,10 +137,11 @@ tendency to carry the weight of difficult prognoses alone
     physicians in radiation medicine.
   - **The Carisco Family** — historical link across generations; her work
     bookends Celectra's story from beginning to potential end.
-
+</div>
+<div class="card-bg">
 ### Story Overview (Non-Spoiler)
 Dr. Chen's arc is about the weight of medical truth—delivering difficult diagnoses with compassion, tracking slow decline with precision, and helping a colony prepare for transitions it cannot avoid. She never seeks drama, but her quiet expertise shapes pivotal moments: the decision to continue a risky pregnancy, the urgency to develop technological alternatives to a biological bridge, and the steady medical leadership that keeps a colony healthy under binary stars.
-
+</div>
 ---
 
 {% include story-arcs.html %}
