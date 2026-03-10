@@ -1,7 +1,11 @@
 ---
 layout: character
 title: Aulii Vongphachanh
-portrait: "/assets/images/portrait-placeholder.png"
+portrait: "/assets/images/aulii-book2.webp"
+portrait-book2: "/assets/images/aulii-book2.webp"
+portrait-book3: "/assets/images/aulii-book3.webp"
+portrait-book4: "/assets/images/aulii-book4.webp"
+portrait-book5: "/assets/images/aulii-book5.webp"
 affiliation: New Eden Youth Cohort; Martial Artist; Sundome Dojo; Resonance Stewardship Program (Physical Training)
 status: Alive
 birthday: February 14, 2224
@@ -68,7 +72,10 @@ book5_arc: >
   Eden’s physical culture.
 ---
 <div class="infobox">
-  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
+  <img id="character-portrait"
+     src="{{ page.portrait | relative_url }}"
+     alt="{{ page.title }}"
+     class="portrait">
 
 <table>
 <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
@@ -77,8 +84,6 @@ book5_arc: >
 <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
 </table>
 </div>
-
-{{ page.title }}
 
 ### Overview
 Aulii Vongphachanh is a New Eden-born martial artist and a slightly older peer of Celectra Carisco's generation (approximately 1 year and 8 months her senior). She is best known for defeating Celectra in the Book 2 Sundome Karate Tournament, earning the Gold Medal while Celectra took Silver under the unique "stillness protocol" constraints. Respectful, strategic, and composed, Aulii transitioned from rival to colleague, eventually succeeding Sensei Onishi Kisa as a lead instructor in the Resonance Stewardship Program's physical training division. By Book 5, she serves as a primary mentor to the twins (Jenni and Xara), focusing on discipline, body awareness, and defensive tactics.
@@ -115,3 +120,7 @@ Her weaknesses include:
 
 ### Story Overview (Non-Spoiler)
 Aulii's arc is about excellence without ego. She proves that winning isn't about exploiting an opponent's limitations, but about honoring the challenge they present. Her suggestion to Celectra—alternating bodies between matches to allow genuine recovery—shows her strategic mind and genuine respect for fair competition. She represents the generation that grows up with integration as normal, and her teaching style emphasizes discipline, respect, and the courage to adapt.
+
+---
+
+{% include story-arcs.html %}

@@ -11,11 +11,11 @@ affiliation: Carisco Family; New Eden Science Directorate; Chief Scientist; New 
 status: Alive
 birthday: May 12, 2103
 birthplace: Earth (pre‑Ares migration)
-book1_age: "39.4 Earth / 35.6 Ares"
-book2_age: "46.5 Earth / 41.7 Ares"
-book3_age: "53.4 Earth / 47.9 Ares"
-book4_age: "61.7 Earth / 55.4 Ares"
-book5_age: "68.7 Earth / 61.7 Ares"
+book1_age: "39.4"
+book2_age: "46.5"
+book3_age: "53.4"
+book4_age: "61.7"
+book5_age: "68.7"
 book1_title: "The Scientist and the Father"
 book1_arc: >
   Amerigo struggles to balance his scientific responsibilities, fatherhood, and coming to terms with Celectra's dual-body existence. He becomes one of the

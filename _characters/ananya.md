@@ -1,7 +1,12 @@
 ---
 layout: character
 title: Ananya Patel
-portrait: "/assets/images/ananya.jpg"
+portrait: "/assets/images/ananya-book1.webp"
+portrait-book1: "/assets/images/ananya-book1.webp"
+portrait-book2: "/assets/images/ananya-book2.webp"
+portrait-book3: "/assets/images/ananya-book3.webp"
+portrait-book4: "/assets/images/ananya-book4.webp"
+portrait-book5: "/assets/images/ananya-book5.webp"
 affiliation: New Eden Youth Cohort; Biologist; Listener Corps Translator
 status: Alive
 birthday: August 14, 2224
@@ -59,7 +64,10 @@ book5_arc: >
 
 ---
 <div class="infobox">
-  <img src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
+  <img id="character-portrait"
+     src="{{ page.portrait | relative_url }}"
+     alt="{{ page.title }}"
+     class="portrait">
 
 <table>
 <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
@@ -69,7 +77,6 @@ book5_arc: >
 </table>
 </div>
 
-{{ page.title }}
 ## Overview
 Ananya Patel moved from Utopis to New Eden when she was nine. Direct, energetic, and scientifically disciplined, she treats Celectra's extraordinary life like regular teenage drama—offering grounded humor and unwavering support. Known as "The Snack Queen" for her habit of showing up with treats during stressful moments, Ananya becomes one of the first volunteers for the Listener Corps and later applies her xenobiology training to advance human–Galinstanian communication research.
 
