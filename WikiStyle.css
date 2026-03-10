@@ -783,7 +783,12 @@ main h2 {
     margin: 0 0 1rem 1.5rem; /* Space between box and text */
 }
 
-
+section:hover {
+  box-shadow: 0 0 15px var(--glow-cyan), 0 0 25px var(--glow-violet);
+  border-radius: 8px;
+  padding: 0 8px;
+  transition: all 0.3s ease;
+}
 
 
 
