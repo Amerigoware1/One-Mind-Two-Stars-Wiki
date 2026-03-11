@@ -11,14 +11,14 @@ affiliation: Utopis-Lab 3; Exogeologist; Carisco Family
 status: Deceased
 birthday: January 20, 2105
 birthplace: Earth
-book1_age: "Deceased"
+book1_age: "30.7 in prologue"
 book2_age: "Deceased"
 book3_age: "Deceased"
 book4_age: "Deceased"
 book5_age: "Deceased"
 book1_title: "Legacy in Memory"
 book1_arc: >
-  Jenni does not appear alive in Book 1 beyond the prologue, but her presence is felt throughout. Amerigo keeps her photograph in his office, and the poem he wrote for her (discovered when the frame breaks) reveals the depth of his love and grief. Dr. Yuki Chen's diagnosis of Jenni's radiation-exposed twin pregnancy in 2225 sets in motion the events that lead to Celectra's unique condition. Jenni's mitochondrial DNA anomaly—unusual repair enzyme expression—becomes a key factor in Celectra's survival and the development of her "Celectricity."
+  Jenni does not appear alive in Book 1 beyond the prologue, but her presence is felt throughout. Amerigo keeps her photograph in his bedroom, and the poem he wrote for her (discovered when the frame breaks) reveals the depth of his love and grief. Dr. Yuki Chen's diagnosis of Jenni's radiation-exposed twin pregnancy in 2225 sets in motion the events that lead to Celectra's unique condition. Jenni's mitochondrial DNA anomaly—unusual repair enzyme expression—becomes a key factor in Celectra's survival and the development of her "Celectricity."
 
 book2_title: "The Foundation"
 book2_arc: >

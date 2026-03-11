@@ -74,5 +74,41 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+// Add this to your character page template
+document.addEventListener('DOMContentLoaded', function() {
+  const characterStatus = "{{ page.status }}";
+  const portraitContainer = document.querySelector('.infobox');
+  const portraitImg = document.getElementById('character-portrait');
+  
+  if (characterStatus === "Deceased" && portraitImg) {
+    // Get the last living image (book where they last appeared)
+    const lastBook = getLastLivingBook(); // You'd need logic to determine this
+    
+    // Set tombstone texture
+    portraitContainer.classList.add('portrait-deceased');
+    
+    // Add epitaph with name and dates
+    const birthYear = "{{ page.birthday | date: '%Y' }}";
+    const deathDate = "{{ page.death_date }}";
+    const epitaph = `{{ page.title }} • ${birthYear} – ${deathDate.split(',')[0]}`;
+    portraitContainer.setAttribute('data-epitaph', epitaph);
+    
+    // Ensure the image is the last living portrait
+    portraitImg.src = `/assets/images/{{ page.title | slugify }}-book${lastBook}.webp`;
+  }
+});
+
+function getLastLivingBook() {
+  // Check which book_age fields exist and aren't "—" or "Deceased"
+  // Return the highest book number where character was alive
+  const books = [1,2,3,4,5];
+  for (let i = books.length - 1; i >= 0; i--) {
+    const age = "{{ page[`book${books[i]}_age`] }}";
+    if (age && age !== "—" && age !== "Deceased" && !age.includes("Not yet born")) {
+      return books[i];
+    }
+  }
+  return 5; // fallback
+}
 </script>
 {% endraw %}

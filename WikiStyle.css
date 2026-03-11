@@ -783,7 +783,37 @@ main h2 {
     margin: 0 0 1rem 1.5rem; /* Space between box and text */
 }
 
+.portrait-deceased {
+  position: relative;
+  background: #2a2a2a; /* Dark stone base */
+  background-image: url('/assets/images/tombstone-texture.webp');
+  background-blend-mode: overlay;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
+.portrait-deceased img {
+  opacity: 0.4;
+  filter: grayscale(100%) contrast(1.2);
+  mix-blend-mode: luminosity;
+}
+
+.portrait-deceased::after {
+  content: attr(data-epitaph);
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #aaa;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.6);
+  padding: 4px;
+}
 
 
 
