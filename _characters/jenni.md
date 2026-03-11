@@ -11,6 +11,8 @@ affiliation: Utopis-Lab 3; Exogeologist; Carisco Family
 status: Deceased
 birthday: January 20, 2105
 birthplace: Earth
+death_date: October 11, 2225
+death_place: Utopis, Ares Orbit
 book1_age: "30.7 in prologue"
 book2_age: "Deceased"
 book3_age: "Deceased"
