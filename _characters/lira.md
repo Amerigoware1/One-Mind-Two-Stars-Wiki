@@ -133,46 +133,6 @@ Lira's arc is about the quiet work of supporting extraordinary people without se
 ---
 
 <div class="card-bg">
-### Key Relationships Deep Dive
-**Maya Keahi (Sister)** — Lira loves Maya with a fierce, quiet protectiveness. She watches Maya's childhood crush on Celectra with gentle amusement, never mocking, never interfering—simply present when Maya needs to talk. When Maya finds her footing with Sam, Lira welcomes them both with characteristic warmth. Their relationship is one of mutual respect: Maya's artistic vision, Lira's psychological insight, each admiring what the other brings.
-
-**Celectra Carisco** — Lira first sees Celectra as a child to babysit, then as a patient to observe, then as a colleague to support. She never treats Celectra as a curiosity or a burden—simply as a person doing extraordinary work who needs ordinary care. Celectra trusts Lira in ways she trusts few others, knowing Lira will never ask her to perform or explain. Their bond is quiet, professional, and deeply human.
-
-**Dr. Zoë Carisco** — Zoë mentors Lira, then gradually comes to rely on her as a colleague. They share a professional language and a deep commitment to the colony's psychological health. Zoë sees in Lira the clinician she hoped to become—steady, perceptive, able to hold space without being consumed.
-
-**The Twins (Jenni and Xara)** — Lira watches the twins grow with the same patient observation she once gave their mother. She notes their differences—Jenni's sensory intuition, Xara's analytical precision—and quietly ensures both are supported. By Book 5, they trust her implicitly, even when they can't tell their parents everything.
-</div>
-
-<div class="card-bg">
-### Themes
-- **The Power of Presence:** Lira's greatest gift is simply being there, steady and unshakeable
-- **Quiet Contribution:** Not all heroes lead rescues; some ensure the rescuers sleep afterward
-- **Generational Wisdom:** Each cohort teaches the next, and Lira ensures the teaching is kind
-- **Professional Love:** Caring for others as work, and work as caring—Lira embodies this balance
-- **Invisible Architecture:** The systems that support extraordinary people are built by ordinary ones who notice what's needed
-</div>
-
-<div class="card-bg">
-### Notable Quotes
-> "The bridge could use some piers." — *Lira to Celectra, Book 2*
-
-> "You're not worse at thinking. You're learning to be a mother. That takes all your processing power right now." — *Lira (echoing Jaxon's words, Book 3)*
-
-> "She's steady. Not like a rock—rocks crack. Like water. Always there, always finding the level." — *Maya describing Lira, Book 4*
-
-> "I don't need to be remembered. I just need the work to keep working." — *Lira, Book 5*
-</div>
-
-<div class="card-bg">
-### Trivia
-- Lira was the first person outside the Carisco family to notice Celectra's burnout symptoms
-- She keeps detailed journals of every child she's mentored—not as records, but as private reminders of who they were
-- She never married; her family is the colony, her children everyone she's helped raise
-- Maya's first gallery exhibition included a quiet portrait of Lira reading, titled "The Listener"
-- Lira is one of the few humans who can sit in complete silence with a Galinstanian for hours and feel no need to fill it
-</div>
-
-<div class="card-bg">
 {% include story-arcs.html %}
 </div>
 </div>
