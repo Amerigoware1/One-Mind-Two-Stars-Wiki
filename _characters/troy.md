@@ -5,8 +5,6 @@ portrait: "/assets/images/troy-book1.webp"
 portrait-book1: "/assets/images/troy-book1.webp"
 portrait-book2: "/assets/images/troy-book2.webp"
 portrait-book3: "/assets/images/troy-book3.webp"
-portrait-book4: "/assets/images/troy-book4.webp"
-portrait-book5: "/assets/images/troy-book5.webp"
 affiliation: New Eden Colony Science Division; Chief Scientist (Retired); Senior Council Member
 status: Deceased
 birthday: November 8, 2099
