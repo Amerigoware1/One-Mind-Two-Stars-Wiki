@@ -14,29 +14,110 @@ layout: default
   .tab-content.active { display: block; }
   .tab-btn.active { font-weight: bold; text-decoration: underline; }
   .portrait { max-width: 300px; height: auto; display: block; margin: 0 auto 20px; }
+  
+  /* Tombstone styles */
+  .portrait-deceased {
+    position: relative;
+    background: #2a2a2a;
+    background-image: url('/assets/images/tombstone-texture.webp');
+    background-blend-mode: overlay;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .portrait-deceased img {
+    opacity: 0.4;
+    filter: grayscale(100%) contrast(1.2);
+    mix-blend-mode: luminosity;
+  }
+  
+  .portrait-deceased::after {
+    content: attr(data-epitaph);
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #aaa;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
+    padding: 4px;
+    z-index: 10;
+  }
 </style>
 
 {% raw %}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const portrait = document.getElementById('character-portrait');
+  const portraitContainer = document.querySelector('.infobox');
   const tabContainers = document.querySelectorAll('.tab-container');
   const placeholder = 'https://amerigoware1.github.io/One-Mine-Two-Stars-Wiki/assets/images/portrait-placeholder.png';
 
-  // 1. Capture the "Primary" image from Front Matter as the first fallback
-  const initialSrc = portrait ? portrait.getAttribute('src') : null;
+  // Helper function to get Jekyll variables safely
+  function getJekyllVar(varName) {
+    try {
+      return "{{ page[varName] }}";
+    } catch(e) {
+      return '';
+    }
+  }
 
-  // 2. Validation helper for Jekyll's "empty" paths
+  // Get character status from the page
+  const characterStatus = "{{ page.status }}";
+  
+  // Determine last living book for deceased characters
+  function getLastLivingBook() {
+    const books = [1,2,3,4,5];
+    for (let i = books.length - 1; i >= 0; i--) {
+      const age = "{{ page[`book${books[i]}_age`] }}";
+      if (age && age !== "—" && age !== "Deceased" && !age.includes("Not yet born") && !age.includes("Unborn")) {
+        return books[i];
+      }
+    }
+    return null; // No living book found
+  }
+
+  // Apply tombstone effect if character is deceased
+  if (characterStatus === "Deceased" && portrait && portraitContainer) {
+    const lastBook = getLastLivingBook();
+    
+    // Set tombstone texture
+    portraitContainer.classList.add('portrait-deceased');
+    
+    // Add epitaph with name and dates
+    const birthYear = "{{ page.birthday | date: '%Y' }}";
+    const deathDate = "{{ page.death_date }}";
+    if (deathDate) {
+      const deathYear = deathDate.split(',')[0];
+      const epitaph = `{{ page.title }} • ${birthYear} – ${deathYear}`;
+      portraitContainer.setAttribute('data-epitaph', epitaph);
+    }
+    
+    // Ensure the image is the last living portrait (if we found one)
+    if (lastBook) {
+      const slug = "{{ page.title | slugify }}";
+      portrait.src = `/assets/images/${slug}-book${lastBook}.webp`;
+    }
+  }
+
+  // Validation helper for image paths
   const isImgValid = (path) => {
     if (!path) return false;
     const clean = path.trim();
     return clean !== "" && clean !== "/" && !clean.endsWith('/') && !clean.includes('{{');
   };
 
-  // 3. The Emergency Fallback: Triggers if the file physically doesn't exist (404)
+  // Capture the "Primary" image from Front Matter as the first fallback
+  const initialSrc = portrait ? portrait.getAttribute('src') : null;
+
+  // Emergency Fallback: Triggers if the file physically doesn't exist (404)
   if (portrait) {
     portrait.addEventListener('error', function() {
-      // If the broken image wasn't the placeholder, try the placeholder
       if (portrait.getAttribute('src') !== placeholder) {
         console.warn("Image 404 detected. Falling back to placeholder.");
         portrait.src = placeholder;
@@ -44,6 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Tab switching logic
   tabContainers.forEach(container => {
     const buttons = container.querySelectorAll('.tab-btn');
     const contents = container.querySelectorAll('.tab-content');
@@ -60,8 +142,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const targetEl = document.getElementById(target);
         if (targetEl) targetEl.classList.add('active');
 
-        // Update Portrait
-        if (portrait) {
+        // Update Portrait (only if not deceased - deceased images are fixed)
+        if (portrait && characterStatus !== "Deceased") {
           if (isImgValid(newImage)) {
             portrait.src = newImage;
           } else if (isImgValid(initialSrc)) {
@@ -74,41 +156,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-// Add this to your character page template
-document.addEventListener('DOMContentLoaded', function() {
-  const characterStatus = "{{ page.status }}";
-  const portraitContainer = document.querySelector('.infobox');
-  const portraitImg = document.getElementById('character-portrait');
-  
-  if (characterStatus === "Deceased" && portraitImg) {
-    // Get the last living image (book where they last appeared)
-    const lastBook = getLastLivingBook(); // You'd need logic to determine this
-    
-    // Set tombstone texture
-    portraitContainer.classList.add('portrait-deceased');
-    
-    // Add epitaph with name and dates
-    const birthYear = "{{ page.birthday | date: '%Y' }}";
-    const deathDate = "{{ page.death_date }}";
-    const epitaph = `{{ page.title }} • ${birthYear} – ${deathDate.split(',')[0]}`;
-    portraitContainer.setAttribute('data-epitaph', epitaph);
-    
-    // Ensure the image is the last living portrait
-    portraitImg.src = `/assets/images/{{ page.title | slugify }}-book${lastBook}.webp`;
-  }
-});
-
-function getLastLivingBook() {
-  // Check which book_age fields exist and aren't "—" or "Deceased"
-  // Return the highest book number where character was alive
-  const books = [1,2,3,4,5];
-  for (let i = books.length - 1; i >= 0; i--) {
-    const age = "{{ page[`book${books[i]}_age`] }}";
-    if (age && age !== "—" && age !== "Deceased" && !age.includes("Not yet born")) {
-      return books[i];
-    }
-  }
-  return 5; // fallback
-}
 </script>
 {% endraw %}
