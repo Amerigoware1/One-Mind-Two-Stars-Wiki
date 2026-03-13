@@ -45,21 +45,9 @@ book5_arc: >
   Now approaching four centuries of life, Stan has become a living archive of human–Galinstanian relations. He mentors Ripple and the next generation of Galinstanians, teaching them the history of first contact—including the moment a seven-year-old human named him, and he accepted.
 
   When the twins lead the Resonant Echo rescue, Stan pulses with recognition: the bonds he helped plant have grown into a forest. His arc culminates in the quiet satisfaction of an elder watching the young carry the work forward.
+  
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-    <tr><th>Approx. Age (First Contact)</th><td>300-400 years</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

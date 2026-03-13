@@ -53,21 +53,9 @@ book5_arc: >
   When the twins lead the Resonant Echo rescue and subsequent Council testimony, Roan observes with quiet pride. She recognizes in their work the same values she has always championed: protection of the vulnerable, accountability for harm, and the courage to adapt when circumstances demand it.
 
   Her arc culminates not in dramatic transformation, but in the steady accumulation of wisdom: security isn't about control—it's about creating conditions where people (human or otherwise) can live without fear. Her legacy is a colony where safety and compassion are not opposites, but partners.
+  
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

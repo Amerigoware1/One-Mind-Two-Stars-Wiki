@@ -43,22 +43,9 @@ book5_arc: >
   By 2262, Xara is remembered as part of the foundational generation whose love and loss shaped the colony's ethical framework. When the twins (Xara Zoë and Jenni) lead the Resonant Echo rescue, Xara Zoë reflects: "My namesake taught my grandmother that people matter more than data. I'm trying to live by that."
 
   Xara's arc culminates not in dramatic action, but in the quiet persistence of values: compassion, stability, and the courage to love deeply even when the future is uncertain. Her legacy is measured in the emotional resilience of those who carry her name—and in the colony's commitment to ensuring that progress never again comes at the cost of humanity.
+
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-    <tr><th>Died</th><td>{{ page.death_date }}, {{ page.death_place }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

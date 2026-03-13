@@ -51,19 +51,6 @@ book5_arc: >
   His arc culminates not in dramatic transformation, but in the steady accumulation of wisdom: fairness isn't a fixed rule, but a practice—one that requires listening, learning, and the humility to change one's mind when the evidence warrants it.
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

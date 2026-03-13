@@ -31,19 +31,6 @@ book5_arc: >
   At twenty-seven, Duška is an established resonance designer and university outreach liaison. During the Resonant Echo rescue at the Samaya Gallery, she plays a critical support role: managing resonance perimeters, providing artistic perception of flow during acoustic negotiations, and helping coordinate the hybrid human–Galinstanian response. Her work with Lyric and the Northern Cluster proves invaluable in stabilizing the rescued collective. Later, at the Utopis education conference, Duška helps manage tech demos showcasing the next generation of integration. Her arc culminates in her becoming a mentor to younger artists and designers, ensuring that the principles of inclusive, resonance-aware design become standard practice across the colony.
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

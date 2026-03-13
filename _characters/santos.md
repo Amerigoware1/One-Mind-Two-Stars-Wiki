@@ -47,21 +47,9 @@ book5_arc: >
   When the twins lead the Resonant Echo rescue and subsequent Council testimony, Santos observes with quiet pride. She recognizes in their work the same values she has always championed: accountability, adaptability, and the courage to build systems that outlast any one person.
 
   Her arc culminates not in dramatic transformation, but in the steady accumulation of wisdom: leadership isn't about control—it's about creating conditions where a community can thrive, even when the leaders themselves are gone. As she wrote in her journal: "Every decision we make plants seeds for forests we may never sit under."
+  
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

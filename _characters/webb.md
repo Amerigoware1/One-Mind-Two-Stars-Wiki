@@ -35,21 +35,9 @@ book4_arc: >
 book5_title: "Elder of the Colony"
 book5_arc: >
   Webb serves as a respected elder and advisor. He mentors younger agricultural scientists and provides historical perspective during Stewardship planning. His arc concludes with quiet dignity — a man who lived long enough to see the colony become something better than he imagined.
+
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

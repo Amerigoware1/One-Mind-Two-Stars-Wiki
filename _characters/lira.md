@@ -65,19 +65,6 @@ book5_arc: >
   **Legacy:** By the end of Book 5, Lira's greatest contribution is invisible but everywhere: in the confidence of young Listeners, in the psychological safety protocols of the colony, in the way children born on Ares grow up believing connection across species is normal. She built the systems that let them feel safe.
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

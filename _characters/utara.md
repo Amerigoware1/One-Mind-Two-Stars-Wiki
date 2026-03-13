@@ -42,21 +42,9 @@ book5_arc: >
   During the Council testimony, Xara argues: "Utara's limits are what allowed us to find the signal. If the system had auto-flagged us as trespassers, the cluster would be dead. Privacy enabled the rescue." This moment becomes a touchstone for debates about AI oversight and autonomy.
 
   Utara's arc culminates in her becoming more than infrastructure—she is a living archive of colony history, a witness to every crisis and triumph, and a silent guardian who has never slept since the colony ship left Sol. Her legacy is not in what she built, but in what she protected.
+  
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Activation</th><td>{{ page.activation_date }} ({{ page.book5_age }})</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

@@ -35,21 +35,9 @@ book4_arc: >
 book5_title: "Wisdom of the Elder"
 book5_arc: >
   In her sixties, Zoë becomes one of the colony's most respected elder psychologists. She mentors younger clinicians, supports the Resonance Stewardship Program, and helps guide the twins as they step into their roles as emerging bridges. Her arc centers on generational continuity—passing down the emotional tools needed to sustain harmony on Ares. She remains the quiet force who holds the Carisco family together.
+
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

@@ -34,22 +34,9 @@ book5_arc: >
   Their final pulse, "For friends," becomes a signature waveform recognized across Ares.
 
   Ripple joins the Resonance Stewardship Program alongside the twins, becoming one of the first Galinstanians to collaborate formally with human children in planetary maintenance. Their arc centers on becoming a bridge in their own right — not through EM or acoustic methods, but through pure harmonic expression.
+  
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-    <tr><th>Approx. Age (Book 4)</th><td>{{ page.book4_age }}</td></tr>
-    <tr><th>Approx. Age (Book 5)</th><td>{{ page.book5_age }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

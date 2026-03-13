@@ -43,19 +43,6 @@ book5_arc: >
   Her relationship with Yuki Chen has evolved into a comfortable, if still sharp, professional partnership. They are known around the colony as the "Chen Collective"—two brilliant minds who once shared a life and now share a commitment to Ares' future. Lian's legacy is not just in the water systems that keep the colony alive, but in the precedent she set: engineering can listen, adapt, and coexist.
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

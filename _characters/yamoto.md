@@ -49,21 +49,9 @@ book5_arc: >
   When the twins lead the Resonant Echo rescue, Yamoto's earlier advocacy for acoustic methods proves invaluable. The dust-blocked EM environment that trapped the cluster is understood through the environmental screening protocols he helped develop. He attends the Council testimony with quiet pride, nodding when Xara argues: "Utara's limits are what allowed us to find the signal. If the system had auto-flagged us as trespassers, the cluster would be dead. Privacy enabled the rescue."
 
   His arc culminates not in dramatic action, but in the steady accumulation of wisdom: a colony survives not by conquering its environment, but by listening to it. As he told the Council in 2246: "Every kilopascal matters." By 2262, that principle has become colony law—and his legacy is measured in the breath every colonist takes, clean and steady, because he ensured the systems would hold.
+
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

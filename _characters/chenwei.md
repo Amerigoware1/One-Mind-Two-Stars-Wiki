@@ -28,19 +28,6 @@ book5_title: "Stewardship & Legacy"
 book5_arc: >
   Chen is an established technician within the Resonance Stewardship Program. He helps train the next generation of Listener Corps members in signal processing and interface calibration. His work ensures that human–Galinstanian communication remains stable and accessible even as Celectra transitions into emeritus roles. He represents the continuity of the colony's technical infrastructure—the quiet expertise that keeps the bridges standing long after the originals have stepped back.
 ---
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-<table>
-<tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-<tr><th>Status</th><td>{{ page.status }}</td></tr>
-<tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-<tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-</table>
-</div>
 
 <div class="article-content">
 <div class="card-bg">

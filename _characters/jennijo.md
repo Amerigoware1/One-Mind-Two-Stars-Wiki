@@ -29,19 +29,6 @@ book5_arc: >
   At fourteen, Jenni becomes a junior member of the Resonance Stewardship Program. She specializes in emotional-harmonic stabilization and works closely with Ripple and Xara. Her arc centers on learning to trust her instincts while developing the discipline needed for planetary stewardship.
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

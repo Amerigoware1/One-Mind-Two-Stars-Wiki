@@ -37,21 +37,9 @@ book4_arc: >
 book5_title: "The Next Generation's Guide"
 book5_arc: >
   Xan becomes a senior member of the Resonance Stewardship Program, specializing in acoustic–resonance interfaces. He mentors younger listeners and engineers, including Jenni, Xara, and Ripple. His arc centers on legacy — proving that harmony can be engineered, improvised, or played, and that the future of Ares belongs to many voices, not just one.
+  
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

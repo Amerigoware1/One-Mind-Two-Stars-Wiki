@@ -37,19 +37,6 @@ book5_arc: >
   Jaxon becomes a senior engineer in the Resonance Stewardship Program. He mentors younger engineers, including members of Xan's generation, and helps refine long-term monitoring systems for the bismuth network. His relationship with Celectra matures into a stable partnership defined by shared purpose and co-parenting. He supports their daughters as they begin emerging as the next generation of bridges, proud but aware of the weight they will carry.
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

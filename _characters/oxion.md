@@ -30,21 +30,9 @@ book5_arc: >
   By the Epilogue (2265, twins' 18th birthday), Oxion is ten years old and framed as part of the next cohort of bridge-builders. He attends the evening resonance gathering with Xan (now 30), Kael (17), Resonant Echo, and the Northern Cluster cohort. He is learning tap code and basic interface use—not because he has to, but because he wants to.
 
   His arc represents what Celectra's work made possible: a child who grows up knowing that human–Galinstanian connection is not extraordinary, but ordinary. Not a bridge to be built, but ground to stand on.
+  
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

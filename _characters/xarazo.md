@@ -27,21 +27,9 @@ book4_arc: >
 book5_title: "Pattern Weaver"
 book5_arc: >
   At fourteen, Xara becomes a junior member of the Resonance Stewardship Program. She specializes in harmonic geometry and anomaly detection. Working with Ripple and Jenni, she helps map the long-term stability of the planetary network. Her arc centers on becoming a "pattern weaver" — someone who sees the structure beneath the song.
+  
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

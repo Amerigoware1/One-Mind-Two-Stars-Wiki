@@ -84,19 +84,7 @@ book5_arc: >
   physician who diagnosed the beginning of Celectra's story and helped ensure
   its sustainable future.
 ---
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
 
-<table>
-<tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-<tr><th>Status</th><td>{{ page.status }}</td></tr>
-<tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-<tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-</table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ### Overview

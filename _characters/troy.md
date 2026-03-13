@@ -45,22 +45,9 @@ book5_arc: >
   When the twins testify before Council about the Resonant Echo rescue, Amerigo reflects on how proud she would have been—not of the discovery, but of how it was made: with patience, respect, and attention to the vulnerable. Her legacy is not a monument, but a way of thinking that shaped generations.
 
   As Celectra tells her own daughters: "Dr. Troy taught us that science without ethics is just violation with better equipment. She's the reason we ask 'Should we?' before we ask 'Can we?'"
+  
 ---
 
-<!--  <div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-    <tr><th>Died</th><td>{{ page.death_date }}, {{ page.death_place }}</td></tr>
-  </table>
-</div>  -->
 <div class="article-content">
 <div class="card-bg">
 ## Overview

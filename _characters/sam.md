@@ -43,21 +43,9 @@ book5_arc: >
   Sam's frequency libraries become standard across New Eden's communication interfaces, making synthetic communion more musical and intuitive. They mentor younger artists and engineers, emphasizing that technology should honor emotion, not just transmit data. When the twins lead the Resonant Echo rescue, Sam's acoustic protocols help validate the use of rhythm and vibration as legitimate communication tools.
 
   Sam's arc culminates in their becoming a bridge between worlds—not through biology like Celectra, but through culture, art, and sound. They help build a colony where difference is not just tolerated, but celebrated as essential to the whole.
+  
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

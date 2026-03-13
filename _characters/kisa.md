@@ -47,19 +47,6 @@ book5_arc: >
   Her dojo remains active under new leadership, but Sensei Kisa still appears for special occasions—offering a bow, a word of wisdom, or a gentle correction. Her famous statement, "She is who she is," is now taught in colony schools as a foundational principle of inclusive excellence. Her arc culminates not in dramatic action, but in the quiet satisfaction of knowing that the values she instilled continue to shape the colony—long after she's stepped back from daily instruction.
 ---
 
-<div class="infobox">
-  <img id="character-portrait"
-     src="{{ page.portrait | relative_url }}"
-     alt="{{ page.title }}"
-     class="portrait">
-
-  <table>
-    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-    <tr><th>Status</th><td>{{ page.status }}</td></tr>
-    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-    <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-  </table>
-</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview
