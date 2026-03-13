@@ -2,15 +2,6 @@
 layout: default
 ---
 
-{%- comment -%}
-  character.html
-  Complete, corrected layout for character pages.
-  - Emits per-book data into the DOM using Liquid (build time).
-  - Isolates the tombstone visual to the image box only.
-  - Lets tabs override the portrait at runtime and toggles the tombstone per selected book.
-  - Place this file in your _layouts (or wherever your site expects layouts).
-{%- endcomment -%}
-
 <div class="character-header">
   <h1>{{ page.title }}</h1>
 </div>
@@ -19,17 +10,9 @@ layout: default
   {{ content }}
 </div>
 
-<!--{%- comment -%}
-  Infobox: this is the single canonical infobox used by all character pages.
-  The Liquid loop below emits per-book ages and image paths as hidden spans so JS can read them.
-{%- endcomment -%}
-<div class="infobox" id="portrait-container"
-     data-title="{{ page.title }}"
-     data-birthyear="{{ page.birthday | date: '%Y' }}"
-     data-deathdate="{{ page.death_date }}"
-     data-status="{{ page.status | default: '' }}">
-    <div class="portrait-box portrait-deceased" id="portrait-box"
-       data-epitaph="{{ page.title }} • {{ page.birthday | date: '%Y' }} – {{ page.death_date | split: ' ' | first }}">
+<!-- Infobox with portrait -->
+<div class="infobox" id="portrait-container" data-title="{{ page.title }}">
+  <div class="portrait-box" id="portrait-box">
     <img id="character-portrait" src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
   </div>
 
@@ -41,191 +24,116 @@ layout: default
   </table>
 
   {%- comment -%}
-    Emit per-book ages and image paths. Adjust the number of books if you support more/less.
-    These spans are hidden and only used as a reliable way for JS to read per-page data.
+    Emit per-book image paths for JS to use. Adjust range (1..5) as needed.
   {%- endcomment -%}
   {%- for i in (1..5) -%}
     <span class="sr-only" aria-hidden="true"
           data-book-index="{{ i }}"
-          data-book-age="{{ page["book" | append: i | append: "_age"] | default: '' | escape }}"
           data-book-image="{{ page["portrait-book" | append: i ] | default: page.portrait | relative_url }}"></span>
   {%- endfor -%}
 </div>
 
-{%- comment -%}
-  Styles: keep these in your main stylesheet if you prefer. They are included inline here for a drop-in layout.
-{%- endcomment -%}
 <style>
 /* Basic portrait layout */
-.portrait-box { position: relative; overflow: visible; display: inline-block; max-width: 300px; vertical-align: top; }
-
-/* Portrait image */
-.portrait-box .portrait { display: block; width: 100%; height: auto; transition: filter 0.25s ease, opacity 0.25s ease; }
-
-/* Make the portrait box look like the stone */
-.portrait-box.deceased-mode {
-  background-image: url('/assets/images/tombstone-texture.webp');
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px 8px 0 0; /* Optional: gives a tombstone arch shape at the top */
-  box-shadow: inset 0 0 15px rgba(0,0,0,0.6); /* Adds depth to the stone edges */
+.portrait-box { 
+  position: relative; 
+  overflow: hidden; 
+  display: inline-block; 
+  max-width: 300px; 
+  vertical-align: top; 
+  border-radius: 8px;
 }
 
-/* Blend the portrait into the stone as an etching */
-.portrait-box.deceased-mode .portrait {
-  opacity: 0.65; /* Adjust this to make the etching darker/lighter */
-  filter: grayscale(100%) contrast(1.5) brightness(0.8);
-  mix-blend-mode: multiply; /* This is the magic property that creates the etched look */
+.portrait-box .portrait { 
+  display: block; 
+  width: 100%; 
+  height: auto; 
+  transition: opacity 0.2s ease; 
 }
 
-/* Make the text look carved into the stone */
-.portrait-box::after {
-  content: attr(data-epitaph);
-  position: absolute;
-  left: 8px;
-  right: 8px;
-  bottom: 10px;
-  z-index: 999;
-  display: block;
-  font-family: 'Orbitron', 'Courier New', monospace;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-  pointer-events: none;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+/* Tab button styles */
+.tab-btn { 
+  cursor: pointer; 
+  padding: 0.4em 0.8em; 
+  border: none; 
+  background: none; 
+  font-size: 1rem;
+}
+.tab-btn.active { 
+  font-weight: bold; 
+  border-bottom: 2px solid currentColor; 
 }
 
-/* Show epitaph only when portrait-box has deceased-mode */
-.portrait-box.deceased-mode::after {
-  opacity: 1;
-  transform: translateY(0);
-  color: rgba(30, 30, 30, 0.8); /* Dark stone color for the text */
-  /* Engraved text effect */
-  text-shadow: 
-    -1px -1px 1px rgba(0,0,0,0.8), 
-    1px 1px 1px rgba(255,255,255,0.3); 
-}
-
-/* When portrait-box is not in deceased-mode, image is vivid */
-.portrait-box:not(.deceased-mode) .portrait {
-  opacity: 1;
-  filter: none;
-}
-
-/* Small helper for tab visuals */
-.tab-btn.active { font-weight: bold; text-decoration: underline; }
+/* Tab content visibility */
 .tab-content { display: none; }
 .tab-content.active { display: block; }
 
-/* Accessibility helper: visually hide sr-only elements but keep them in the DOM */
-.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+/* Accessibility helper */
+.sr-only { 
+  position: absolute !important; 
+  width: 1px; height: 1px; 
+  padding: 0; margin: -1px; 
+  overflow: hidden; clip: rect(0,0,0,0); 
+  white-space: nowrap; border: 0; 
+}
 </style>
 
-{%- comment -%}
-  Script: runtime behavior
-  - Reads the per-book spans emitted by Liquid.
-  - Initializes portrait to the last living book image for deceased characters.
-  - Listens for .tab-btn clicks to switch portrait and toggle tombstone visuals.
-  - Accepts tab buttons with either data-book="N" or data-image="/path/to/img".
-{%- endcomment -%}-->
 {% raw %}
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const container = document.getElementById('portrait-container');
-  const portraitBox = document.getElementById('portrait-box');
   const portrait = document.getElementById('character-portrait');
   const placeholder = '/assets/images/portrait-placeholder.png';
 
-  if (!container) { console.warn('portrait-container not found'); return; }
-  if (!portraitBox) { console.warn('portrait-box not found'); return; }
-  if (!portrait) { console.warn('character-portrait not found'); return; }
+  if (!container || !portrait) {
+    console.warn('Portrait elements not found');
+    return;
+  }
 
-  // Build arrays from the hidden spans emitted by Liquid
-  const bookAges = {};
+  // Build lookup: book index → image URL from hidden Liquid spans
   const bookImages = {};
   container.querySelectorAll('span[data-book-index]').forEach(span => {
     const idx = span.dataset.bookIndex;
-    bookAges[idx] = (span.dataset.bookAge || '').toString().trim();
-    bookImages[idx] = (span.dataset.bookImage || '').toString().trim();
+    const img = (span.dataset.bookImage || '').trim();
+    if (img) bookImages[idx] = img;
   });
 
-  // Debug: remove or comment out in production
-  console.log('bookAges', bookAges);
-  console.log('bookImages', bookImages);
+  // Initialize portrait from page front matter (default)
+  let currentSrc = portrait.src;
 
-  function isAgeDeceased(ageStr) {
-    if (!ageStr) return false;
-    const s = ageStr.toString().trim().toLowerCase();
-    return s === 'deceased' || s === 'dead' || s === '—';
-  }
-
-  function getLastLivingBookIndex() {
-    for (let i = 5; i >= 1; i--) {
-      const a = (bookAges[i] || '').toString().trim().toLowerCase();
-      if (a && a !== 'deceased' && a !== '—' && !a.includes('not yet born') && !a.includes('unborn')) {
-        return i;
-      }
-    }
-    return null;
-  }
-
-  // Initialize based on page status
-  const pageStatus = (container.dataset.status || '').toLowerCase();
-  if (pageStatus === 'deceased') {
-    const lastIdx = getLastLivingBookIndex();
-    if (lastIdx && bookImages[lastIdx]) {
-      portrait.src = bookImages[lastIdx];
-    }
-    portraitBox.classList.add('deceased-mode');
-  } else {
-    portraitBox.classList.remove('deceased-mode');
-  }
-
-  // Tab integration
-  // Accepts buttons with either data-book="2" or data-image="/path/to/img"
+  // Tab button click handler
   document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', function (ev) {
-      ev.preventDefault();
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
 
-      // Visual tab switching
+      // Update tab visual state
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const target = btn.getAttribute('data-tab');
-      if (target) {
+      this.classList.add('active');
+
+      // Switch tab content if data-tab is set
+      const targetId = this.dataset.tab;
+      if (targetId) {
         document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-        const el = document.getElementById(target);
-        if (el) el.classList.add('active');
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) targetEl.classList.add('active');
       }
 
-      // Portrait & Tombstone switching logic
-      const bookIndex = btn.dataset.book || btn.dataset.tab || null;
-      const explicitImage = btn.dataset.image || btn.getAttribute('data-image') || '';
-      
-      // Check if the character is dead in this specific tab's timeline
-      const isDeceasedInThisBook = bookIndex && isAgeDeceased(bookAges[bookIndex]);
+      // Switch portrait image
+      const bookIndex = this.dataset.book;
+      const explicitImage = this.dataset.image || this.getAttribute('data-image');
 
-      if (isDeceasedInThisBook) {
-        portraitBox.classList.add('deceased-mode');
-        // Force the image to be the last known living portrait for the etching
-        const lastAliveIdx = getLastLivingBookIndex();
-        if (lastAliveIdx && bookImages[lastAliveIdx]) {
-          portrait.src = bookImages[lastAliveIdx];
-        } else {
-          portrait.src = placeholder;
-        }
-      } else {
-        portraitBox.classList.remove('deceased-mode');
-        // Use the explicit image for this tab, or fallback to the book's specific image
-        const newSrc = explicitImage.trim() || (bookIndex ? (bookImages[bookIndex] || '') : '');
-        portrait.src = newSrc || placeholder;
+      if (explicitImage && explicitImage.trim()) {
+        // Use explicitly defined image on the button
+        portrait.src = explicitImage.trim();
+      } else if (bookIndex && bookImages[bookIndex]) {
+        // Use image from Liquid-emitted book data
+        portrait.src = bookImages[bookIndex];
       }
+      // If no match, keep current portrait (or could fallback to placeholder)
     });
   });
 
-  // Fallback if portrait 404s
+  // Fallback if portrait image fails to load
   portrait.addEventListener('error', function () {
     if (!portrait.dataset.fallbacked) {
       portrait.dataset.fallbacked = '1';
