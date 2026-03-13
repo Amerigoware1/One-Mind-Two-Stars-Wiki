@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: character
 title: Characters
 permalink: /characters/
 ---
