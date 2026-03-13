@@ -2,32 +2,13 @@
 layout: default
 ---
 
-<div class="character-layout">
-  <!-- Sticky infobox sidebar -->
-  <aside class="infobox-sidebar">
-    <div class="infobox" id="portrait-container" data-title="{{ page.title }}">
-      <div class="portrait-box" id="portrait-box">
-        <img id="character-portrait" src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
-      </div>
-      <table>
-        <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-        <tr><th>Status</th><td>{{ page.status }}</td></tr>
-        <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-        <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-      </table>
-      {%- for i in (1..5) -%}
-        <span class="sr-only" aria-hidden="true"
-              data-book-index="{{ i }}"
-              data-book-image="{{ page["portrait-book" | append: i ] | default: page.portrait | relative_url }}"></span>
-      {%- endfor -%}
-    </div>
-  </aside>
+{%- comment -%}
+  character.html - Only shows infobox on individual character pages
+{%- endcomment -%}
 
-  <!-- Main article content -->
-  <main class="character-main">
-    <div class="character-header">
-      <h1>{{ page.title }}</h1>
-    </div>
+{%- assign is_character_page = false -%}
+{%- if page.portrait or page.affiliation or page.status -%}
+…    </div>
     <div class="character-body">
       {{ content }}
     </div>
@@ -43,6 +24,20 @@ layout: default
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.5rem;
+}
+
+.character-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Full width when no infobox */
+.character-layout .character-main.full-width {
+  grid-column: 1 / -1;
 }
 
 /* Sticky infobox sidebar */
