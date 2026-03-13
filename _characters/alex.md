@@ -55,7 +55,7 @@ book5_arc: >
   endure long after he retires.
 ---
 
-<div class="infobox">
+<!-- <div class="infobox">
   <img id="character-portrait"
      src="{{ page.portrait | relative_url }}"
      alt="{{ page.title }}"
@@ -67,7 +67,7 @@ book5_arc: >
     <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
     <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
   </table>
-</div>
+</div> -->
 <div class="article-content">
 <div class="card-bg">
 ## Overview

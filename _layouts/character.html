@@ -10,7 +10,7 @@ layout: default
   {{ content }}
 </div>
 
-<!-- Infobox with portrait 
+<!-- Infobox with portrait -->
 <div class="infobox" id="portrait-container" data-title="{{ page.title }}">
   <div class="portrait-box" id="portrait-box">
     <img id="character-portrait" src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
@@ -21,7 +21,7 @@ layout: default
     <tr><th>Status</th><td>{{ page.status }}</td></tr>
     <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
     <tr><th>Death</th><td>{{ page.death_date }}</td></tr>
-  </table>-->
+  </table>
 
   {%- comment -%}
     Emit per-book image paths for JS to use. Adjust range (1..5) as needed.
