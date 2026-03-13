@@ -4,7 +4,9 @@ title: Dr. Douglas Kret
 portrait: "/assets/images/kret-book1.webp"
 portrait-book1: "/assets/images/kret-book1.webp"
 portrait-book2: "/assets/images/kret-book2.webp"
-portrait-book3: "/assets/images/kret-book2.webp"
+portrait-book3: "/assets/images/kret-book5.webp"
+portrait-book4: "/assets/images/kret-book5.webp"
+portrait-book5: "/assets/images/kret-book5.webp"
 affiliation: Formerly New Eden Medical Corps; Formerly New Eden Council
 status: Deceased
 birthday: February 14, 2098
