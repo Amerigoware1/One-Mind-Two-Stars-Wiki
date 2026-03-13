@@ -2,13 +2,27 @@
 layout: default
 ---
 
+{%- comment -%}
+  character.html
+  Complete, corrected layout for character pages.
+  - Emits per-book data into the DOM using Liquid (build time).
+  - Isolates the tombstone visual to the image box only.
+  - Lets tabs override the portrait at runtime and toggles the tombstone per selected book.
+  - Place this file in your _layouts (or wherever your site expects layouts).
+{%- endcomment -%}
+
 <div class="character-header">
-  <h1>{{ page.title }}</h1>9
+  <h1>{{ page.title }}</h1>
 </div>
 
 <div class="character-body">
   {{ content }}
 </div>
+
+{%- comment -%}
+  Infobox: this is the single canonical infobox used by all character pages.
+  The Liquid loop below emits per-book ages and image paths as hidden spans so JS can read them.
+{%- endcomment -%}
 <div class="infobox" id="portrait-container"
      data-title="{{ page.title }}"
      data-birthyear="{{ page.birthday | date: '%Y' }}"
@@ -27,6 +41,10 @@ layout: default
     <tr><th>Death</th><td>{{ page.death_date }}</td></tr>
   </table>
 
+  {%- comment -%}
+    Emit per-book ages and image paths. Adjust the number of books if you support more/less.
+    These spans are hidden and only used as a reliable way for JS to read per-page data.
+  {%- endcomment -%}
   {%- for i in (1..5) -%}
     <span class="sr-only" aria-hidden="true"
           data-book-index="{{ i }}"
@@ -35,9 +53,12 @@ layout: default
   {%- endfor -%}
 </div>
 
+{%- comment -%}
+  Styles: keep these in your main stylesheet if you prefer. They are included inline here for a drop-in layout.
+{%- endcomment -%}
 <style>
-/* Image box only */
-.portrait-box { position: relative; overflow: visible; display: inline-block; max-width: 300px; }
+/* Basic portrait layout */
+.portrait-box { position: relative; overflow: visible; display: inline-block; max-width: 300px; vertical-align: top; }
 
 /* Portrait image */
 .portrait-box .portrait { display: block; width: 100%; height: auto; transition: filter 0.25s ease, opacity 0.25s ease; }
@@ -86,12 +107,22 @@ layout: default
   filter: none;
 }
 
-/* Small helper for tab visuals if you need it */
+/* Small helper for tab visuals */
 .tab-btn.active { font-weight: bold; text-decoration: underline; }
 .tab-content { display: none; }
 .tab-content.active { display: block; }
+
+/* Accessibility helper: visually hide sr-only elements but keep them in the DOM */
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 </style>
 
+{%- comment -%}
+  Script: runtime behavior
+  - Reads the per-book spans emitted by Liquid.
+  - Initializes portrait to the last living book image for deceased characters.
+  - Listens for .tab-btn clicks to switch portrait and toggle tombstone visuals.
+  - Accepts tab buttons with either data-book="N" or data-image="/path/to/img".
+{%- endcomment -%}
 {% raw %}
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -113,6 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
     bookImages[idx] = (span.dataset.bookImage || '').toString().trim();
   });
 
+  // Debug: remove or comment out in production
   console.log('bookAges', bookAges);
   console.log('bookImages', bookImages);
 
