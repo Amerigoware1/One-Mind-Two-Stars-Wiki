@@ -706,8 +706,8 @@ main h2 {
 /* --- Book Tabs --- */
 .tab-container {
   margin: 2rem 0;
-  background: #1a1a1a;
-  border: 1px solid #333;
+  background: #0c0028;
+  border: 1px solid #1e0a47;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -715,7 +715,7 @@ main h2 {
 .tab-buttons {
   display: flex;
   flex-wrap: wrap;
-  background: #222;
+  background: #1e0a47;
   border-bottom: 1px solid #333;
 }
 
