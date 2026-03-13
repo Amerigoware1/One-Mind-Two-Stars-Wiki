@@ -47,7 +47,7 @@ book5_arc: >
   As Celectra tells her own daughters: "Dr. Troy taught us that science without ethics is just violation with better equipment. She's the reason we ask 'Should we?' before we ask 'Can we?'"
 ---
 
-<!-- <div class="infobox">
+<div class="infobox">
   <img id="character-portrait"
      src="{{ page.portrait | relative_url }}"
      alt="{{ page.title }}"
@@ -60,7 +60,7 @@ book5_arc: >
     <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
     <tr><th>Died</th><td>{{ page.death_date }}, {{ page.death_place }}</td></tr>
   </table>
-</div> -->
+</div>
 <div class="article-content">
 <div class="card-bg">
 ## Overview

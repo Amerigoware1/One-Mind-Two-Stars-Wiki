@@ -23,16 +23,15 @@ layout: default
   Infobox: this is the single canonical infobox used by all character pages.
   The Liquid loop below emits per-book ages and image paths as hidden spans so JS can read them.
 {%- endcomment -%}
-<div class="infobox" id="portrait-container"
+<!--  <div class="infobox" id="portrait-container"
      data-title="{{ page.title }}"
      data-birthyear="{{ page.birthday | date: '%Y' }}"
      data-deathdate="{{ page.death_date }}"
      data-status="{{ page.status | default: '' }}">
-  <!-- IMAGE BOX: only this element gets the tombstone visual -->
-  <div class="portrait-box portrait-deceased" id="portrait-box"
+    <div class="portrait-box portrait-deceased" id="portrait-box"
        data-epitaph="{{ page.title }} • {{ page.birthday | date: '%Y' }} – {{ page.death_date | split: ' ' | first }}">
     <img id="character-portrait" src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
-  </div>
+  </div>  -->
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
