@@ -63,14 +63,23 @@ layout: default
 /* Portrait image */
 .portrait-box .portrait { display: block; width: 100%; height: auto; transition: filter 0.25s ease, opacity 0.25s ease; }
 
-/* Deceased visual mode applied to the portrait-box only */
-.portrait-box.deceased-mode .portrait {
-  opacity: 0.55;
-  filter: grayscale(100%) contrast(1.15);
-  mix-blend-mode: normal;
+/* Make the portrait box look like the stone */
+.portrait-box.deceased-mode {
+  background-image: url('/assets/images/tombstone-texture.webp');
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px 8px 0 0; /* Optional: gives a tombstone arch shape at the top */
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.6); /* Adds depth to the stone edges */
 }
 
-/* Epitaph overlay attached to the portrait-box */
+/* Blend the portrait into the stone as an etching */
+.portrait-box.deceased-mode .portrait {
+  opacity: 0.65; /* Adjust this to make the etching darker/lighter */
+  filter: grayscale(100%) contrast(1.5) brightness(0.8);
+  mix-blend-mode: multiply; /* This is the magic property that creates the etched look */
+}
+
+/* Make the text look carved into the stone */
 .portrait-box::after {
   content: attr(data-epitaph);
   position: absolute;
@@ -79,16 +88,11 @@ layout: default
   bottom: 10px;
   z-index: 999;
   display: block;
-  color: #f3f3f3;
-  background: rgba(0,0,0,0.62);
-  padding: 6px 10px;
   font-family: 'Orbitron', 'Courier New', monospace;
   font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
   pointer-events: none;
   opacity: 0;
   transform: translateY(6px);
@@ -99,6 +103,11 @@ layout: default
 .portrait-box.deceased-mode::after {
   opacity: 1;
   transform: translateY(0);
+  color: rgba(30, 30, 30, 0.8); /* Dark stone color for the text */
+  /* Engraved text effect */
+  text-shadow: 
+    -1px -1px 1px rgba(0,0,0,0.8), 
+    1px 1px 1px rgba(255,255,255,0.3); 
 }
 
 /* When portrait-box is not in deceased-mode, image is vivid */
@@ -192,19 +201,27 @@ document.addEventListener('DOMContentLoaded', function () {
         if (el) el.classList.add('active');
       }
 
-      // Portrait switching
+      // Portrait & Tombstone switching logic
       const bookIndex = btn.dataset.book || btn.dataset.tab || null;
       const explicitImage = btn.dataset.image || btn.getAttribute('data-image') || '';
-      const newSrc = explicitImage.trim() || (bookIndex ? (bookImages[bookIndex] || '') : '');
+      
+      // Check if the character is dead in this specific tab's timeline
+      const isDeceasedInThisBook = bookIndex && isAgeDeceased(bookAges[bookIndex]);
 
-      if (newSrc) portrait.src = newSrc;
-      else portrait.src = placeholder;
-
-      // Toggle tombstone only on the portrait-box
-      if (bookIndex && isAgeDeceased(bookAges[bookIndex])) {
+      if (isDeceasedInThisBook) {
         portraitBox.classList.add('deceased-mode');
+        // Force the image to be the last known living portrait for the etching
+        const lastAliveIdx = getLastLivingBookIndex();
+        if (lastAliveIdx && bookImages[lastAliveIdx]) {
+          portrait.src = bookImages[lastAliveIdx];
+        } else {
+          portrait.src = placeholder;
+        }
       } else {
         portraitBox.classList.remove('deceased-mode');
+        // Use the explicit image for this tab, or fallback to the book's specific image
+        const newSrc = explicitImage.trim() || (bookIndex ? (bookImages[bookIndex] || '') : '');
+        portrait.src = newSrc || placeholder;
       }
     });
   });
