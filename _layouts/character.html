@@ -9,12 +9,33 @@ layout: default
 <div class="character-body">
   {{ content }}
 </div>
+<div class="infobox" id="portrait-container"
+     data-title="{{ page.title }}"
+     data-birthyear="{{ page.birthday | date: '%Y' }}"
+     data-deathdate="{{ page.death_date }}"
+     data-status="{{ page.status | default: '' }}">
+  <!-- IMAGE BOX: only this element gets the tombstone visual -->
+  <div class="portrait-box portrait-deceased" id="portrait-box"
+       data-epitaph="{{ page.title }} • {{ page.birthday | date: '%Y' }} – {{ page.death_date | split: ' ' | first }}">
+    <img id="character-portrait" src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
+  </div>
+
+  <table>
+    <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
+    <tr><th>Status</th><td>{{ page.status }}</td></tr>
+    <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
+    <tr><th>Death</th><td>{{ page.death_date }}</td></tr>
+  </table>
+
+  {%- for i in (1..5) -%}
+    <span class="sr-only" aria-hidden="true"
+          data-book-index="{{ i }}"
+          data-book-age="{{ page["book" | append: i | append: "_age"] | default: '' | escape }}"
+          data-book-image="{{ page["portrait-book" | append: i ] | default: page.portrait | relative_url }}"></span>
+  {%- endfor -%}
+</div>
+
 <style>
-  .tab-content { display: none; }
-  .tab-content.active { display: block; }
-  .tab-btn.active { font-weight: bold; text-decoration: underline; }
-  .portrait { max-width: 300px; height: auto; display: block; margin: 0 auto 20px; }
-  
 /* Image box only */
 .portrait-box { position: relative; overflow: visible; display: inline-block; max-width: 300px; }
 
@@ -65,6 +86,10 @@ layout: default
   filter: none;
 }
 
+/* Small helper for tab visuals if you need it */
+.tab-btn.active { font-weight: bold; text-decoration: underline; }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
 </style>
 
 {% raw %}
@@ -119,10 +144,23 @@ document.addEventListener('DOMContentLoaded', function () {
     portraitBox.classList.remove('deceased-mode');
   }
 
-  // Tab integration: support buttons with data-book or data-image
+  // Tab integration
+  // Accepts buttons with either data-book="2" or data-image="/path/to/img"
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', function (ev) {
       ev.preventDefault();
+
+      // Visual tab switching
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const target = btn.getAttribute('data-tab');
+      if (target) {
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        const el = document.getElementById(target);
+        if (el) el.classList.add('active');
+      }
+
+      // Portrait switching
       const bookIndex = btn.dataset.book || btn.dataset.tab || null;
       const explicitImage = btn.dataset.image || btn.getAttribute('data-image') || '';
       const newSrc = explicitImage.trim() || (bookIndex ? (bookImages[bookIndex] || '') : '');
@@ -139,6 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // Fallback if portrait 404s
   portrait.addEventListener('error', function () {
     if (!portrait.dataset.fallbacked) {
       portrait.dataset.fallbacked = '1';
