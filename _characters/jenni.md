@@ -35,21 +35,17 @@ book5_arc: >
   By 2262, Jenni is remembered as the pioneer whose sacrifice made human–Galinstanian integration possible. When the twins lead the rescue of the Resonant Echo cluster, Celectra reflects: "Jenni chose to carry us forward when she didn't know if we'd survive. I chose to build bridges so others wouldn't have to carry that weight alone." Jenni's story is taught in colony schools as an example of maternal courage and scientific integrity. Her mitochondrial anomaly—once a medical curiosity—becomes a symbol of resilience: sometimes the smallest differences make the biggest impact.
 ---
 
-{%- comment -%}
-  Paste into your layout where the infobox belongs.
-  This block:
-  - Emits data-bookN_age and data-bookN_image attributes for JS.
-  - Sets data-epitaph (used by CSS ::after).
-  - Keeps the original table content.
-{%- endcomment -%}
-
-<div class="infobox portrait-deceased" id="portrait-container"
+<div class="infobox" id="portrait-container"
      data-title="{{ page.title }}"
      data-birthyear="{{ page.birthday | date: '%Y' }}"
      data-deathdate="{{ page.death_date }}"
-     data-epitaph="{{ page.title }} • {{ page.birthday | date: '%Y' }} – {{ page.death_date | split: ' ' | first }}"
      data-status="{{ page.status | default: '' }}">
-  <img id="character-portrait" src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
+  <!-- IMAGE BOX: only this element gets the tombstone visual -->
+  <div class="portrait-box portrait-deceased" id="portrait-box"
+       data-epitaph="{{ page.title }} • {{ page.birthday | date: '%Y' }} – {{ page.death_date | split: ' ' | first }}">
+    <img id="character-portrait" src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
+  </div>
+
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
     <tr><th>Status</th><td>{{ page.status }}</td></tr>
@@ -57,16 +53,11 @@ book5_arc: >
     <tr><th>Death</th><td>{{ page.death_date }}</td></tr>
   </table>
 
-  {%- comment -%}
-    Emit per-book ages and image paths. Adjust keys if your front matter uses different names.
-  {%- endcomment -%}
   {%- for i in (1..5) -%}
-    {%- assign age_key = "book" | append: i | append: "_age" -%}
-    {%- assign img_key = "portrait-book" | append: i -%}
     <span class="sr-only" aria-hidden="true"
           data-book-index="{{ i }}"
-          data-book-age="{{ page[age_key] | default: '' | escape }}"
-          data-book-image="{{ page[img_key] | default: page.portrait | relative_url }}"></span>
+          data-book-age="{{ page["book" | append: i | append: "_age"] | default: '' | escape }}"
+          data-book-image="{{ page["portrait-book" | append: i ] | default: page.portrait | relative_url }}"></span>
   {%- endfor -%}
 </div>
 

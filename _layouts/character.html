@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="character-header">
-  <h1>{{ page.title }}</h1>
+  <h1>{{ page.title }}</h1>9
 </div>
 
 <div class="character-body">
@@ -15,19 +15,21 @@ layout: default
   .tab-btn.active { font-weight: bold; text-decoration: underline; }
   .portrait { max-width: 300px; height: auto; display: block; margin: 0 auto 20px; }
   
- /* Container and portrait */
-.portrait-deceased { position: relative; overflow: visible; }
-.portrait-deceased .portrait { display: block; width: 100%; height: auto; transition: filter 0.25s ease, opacity 0.25s ease; }
+/* Image box only */
+.portrait-box { position: relative; overflow: visible; display: inline-block; max-width: 300px; }
 
-/* Deceased visual mode (applied when the selected book is deceased) */
-.portrait-deceased.deceased-mode .portrait {
+/* Portrait image */
+.portrait-box .portrait { display: block; width: 100%; height: auto; transition: filter 0.25s ease, opacity 0.25s ease; }
+
+/* Deceased visual mode applied to the portrait-box only */
+.portrait-box.deceased-mode .portrait {
   opacity: 0.55;
   filter: grayscale(100%) contrast(1.15);
   mix-blend-mode: normal;
 }
 
-/* Epitaph overlay (visible when container has data-epitaph) */
-.portrait-deceased::after {
+/* Epitaph overlay attached to the portrait-box */
+.portrait-box::after {
   content: attr(data-epitaph);
   position: absolute;
   left: 8px;
@@ -46,19 +48,19 @@ layout: default
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.6);
   pointer-events: none;
-  opacity: 0;               /* hidden by default */
+  opacity: 0;
   transform: translateY(6px);
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-/* Show epitaph only when in deceased-mode */
-.portrait-deceased.deceased-mode::after {
+/* Show epitaph only when portrait-box has deceased-mode */
+.portrait-box.deceased-mode::after {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* When portrait is "alive" remove grayscale and make image vivid */
-.portrait-deceased:not(.deceased-mode) .portrait {
+/* When portrait-box is not in deceased-mode, image is vivid */
+.portrait-box:not(.deceased-mode) .portrait {
   opacity: 1;
   filter: none;
 }
@@ -69,10 +71,13 @@ layout: default
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const container = document.getElementById('portrait-container');
+  const portraitBox = document.getElementById('portrait-box');
   const portrait = document.getElementById('character-portrait');
   const placeholder = '/assets/images/portrait-placeholder.png';
 
-  if (!container || !portrait) return;
+  if (!container) { console.warn('portrait-container not found'); return; }
+  if (!portraitBox) { console.warn('portrait-box not found'); return; }
+  if (!portrait) { console.warn('character-portrait not found'); return; }
 
   // Build arrays from the hidden spans emitted by Liquid
   const bookAges = {};
@@ -83,14 +88,15 @@ document.addEventListener('DOMContentLoaded', function () {
     bookImages[idx] = (span.dataset.bookImage || '').toString().trim();
   });
 
-  // Helper: determine if an age string indicates deceased
+  console.log('bookAges', bookAges);
+  console.log('bookImages', bookImages);
+
   function isAgeDeceased(ageStr) {
     if (!ageStr) return false;
     const s = ageStr.toString().trim().toLowerCase();
     return s === 'deceased' || s === 'dead' || s === '—';
   }
 
-  // Find last living book index (fallback initial portrait)
   function getLastLivingBookIndex() {
     for (let i = 5; i >= 1; i--) {
       const a = (bookAges[i] || '').toString().trim().toLowerCase();
@@ -101,48 +107,38 @@ document.addEventListener('DOMContentLoaded', function () {
     return null;
   }
 
-  // Initialize: if page status is Deceased, set portrait to last living book and enable deceased-mode
+  // Initialize based on page status
   const pageStatus = (container.dataset.status || '').toLowerCase();
   if (pageStatus === 'deceased') {
     const lastIdx = getLastLivingBookIndex();
     if (lastIdx && bookImages[lastIdx]) {
       portrait.src = bookImages[lastIdx];
     }
-    container.classList.add('deceased-mode');
+    portraitBox.classList.add('deceased-mode');
   } else {
-    // Not deceased: ensure normal appearance
-    container.classList.remove('deceased-mode');
+    portraitBox.classList.remove('deceased-mode');
   }
 
-  // Tab integration: listen for clicks on .tab-btn (assumes your tabs use data-book or data-image)
+  // Tab integration: support buttons with data-book or data-image
   document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', function () {
-      // Determine which book this tab represents
+    btn.addEventListener('click', function (ev) {
+      ev.preventDefault();
       const bookIndex = btn.dataset.book || btn.dataset.tab || null;
-      // Prefer explicit data-image on the button, else fall back to bookImages
       const explicitImage = btn.dataset.image || btn.getAttribute('data-image') || '';
       const newSrc = explicitImage.trim() || (bookIndex ? (bookImages[bookIndex] || '') : '');
 
-      // If we have a valid image path, set it
-      if (newSrc) {
-        portrait.src = newSrc;
-      } else {
-        // fallback to placeholder if portrait missing
-        portrait.src = placeholder;
-      }
+      if (newSrc) portrait.src = newSrc;
+      else portrait.src = placeholder;
 
-      // Decide whether to show tombstone visuals:
-      // If the selected book's age indicates deceased, enable deceased-mode.
-      // Otherwise remove deceased-mode so the portrait appears "alive".
+      // Toggle tombstone only on the portrait-box
       if (bookIndex && isAgeDeceased(bookAges[bookIndex])) {
-        container.classList.add('deceased-mode');
+        portraitBox.classList.add('deceased-mode');
       } else {
-        container.classList.remove('deceased-mode');
+        portraitBox.classList.remove('deceased-mode');
       }
     });
   });
 
-  // Image error fallback
   portrait.addEventListener('error', function () {
     if (!portrait.dataset.fallbacked) {
       portrait.dataset.fallbacked = '1';
@@ -151,5 +147,4 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 </script>
-
 {% endraw %}
