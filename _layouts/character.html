@@ -31,14 +31,14 @@ layout: default
     <div class="portrait-box portrait-deceased" id="portrait-box"
        data-epitaph="{{ page.title }} • {{ page.birthday | date: '%Y' }} – {{ page.death_date | split: ' ' | first }}">
     <img id="character-portrait" src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
-  </div>  -->
+  </div>
 
   <table>
     <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
     <tr><th>Status</th><td>{{ page.status }}</td></tr>
     <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
     <tr><th>Death</th><td>{{ page.death_date }}</td></tr>
-  </table>
+  </table>  -->
 
   {%- comment -%}
     Emit per-book ages and image paths. Adjust the number of books if you support more/less.
