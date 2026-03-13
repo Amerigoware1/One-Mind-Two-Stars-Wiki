@@ -37,7 +37,7 @@ book5_arc: >
   Kret's research has been a case study in the Resonance Stewardship Program's ethics curriculum since Book 3. His name is invoked rarely, and only as a warning. The systems he violated — consent, transparency, interspecies respect — become the foundation of the colony's long-term governance.
 ---
 
-<div class="infobox">
+<!--  <div class="infobox">
   <img id="character-portrait"
      src="{{ page.portrait | relative_url }}"
      alt="{{ page.title }}"
@@ -50,7 +50,7 @@ book5_arc: >
     <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
     <tr><th>Death</th><td>{{ page.death_date }} — {{ page.death_place }}</td></tr>
   </table>
-</div>
+</div>  -->
 <div class="article-content">
 <div class="card-bg">
 ## Overview

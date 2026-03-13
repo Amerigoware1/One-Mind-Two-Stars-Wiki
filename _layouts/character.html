@@ -23,7 +23,7 @@ layout: default
   Infobox: this is the single canonical infobox used by all character pages.
   The Liquid loop below emits per-book ages and image paths as hidden spans so JS can read them.
 {%- endcomment -%}
-<!--  <div class="infobox" id="portrait-container"
+<div class="infobox" id="portrait-container"
      data-title="{{ page.title }}"
      data-birthyear="{{ page.birthday | date: '%Y' }}"
      data-deathdate="{{ page.death_date }}"
@@ -38,7 +38,7 @@ layout: default
     <tr><th>Status</th><td>{{ page.status }}</td></tr>
     <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
     <tr><th>Death</th><td>{{ page.death_date }}</td></tr>
-  </table>  -->
+  </table>
 
   {%- comment -%}
     Emit per-book ages and image paths. Adjust the number of books if you support more/less.
