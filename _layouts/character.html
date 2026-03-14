@@ -16,7 +16,13 @@ layout: default
   <aside class="infobox-sidebar">
     <div class="infobox" id="portrait-container" data-title="{{ page.title }}">
       <div class="portrait-box" id="portrait-box">
-        <img id="character-portrait" src="{{ page.portrait[0] | relative_url }}" alt="{{ page.title }}" class="portrait">
+        <img id="character-portrait" src="
+  {%- if page.portrait and page.portrait.size > 0 -%}
+    {{ page.portrait[0] | relative_url }}
+  {%- else -%}
+    /assets/images/portrait-placeholder.png
+  {%- endif -%}
+" alt="{{ page.title }}" class="portrait">
       </div>
       <table>
         <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
@@ -27,12 +33,16 @@ layout: default
 {%- for i in (1..5) -%}
 <span class="sr-only"
       data-book-index="{{ i }}"
-      data-book-images="{{ page["portrait-book" | append: i ] | join: ',' }}">
+      data-book-images="[
+        {%- if page["portrait-book" | append: i] -%}
+          {%- for img in page["portrait-book" | append: i] -%}
+            {%- if forloop.first == false -%},{%- endif -%}
+            "{{ img | relative_url | strip }}"
+          {%- endfor -%}
+        {%- endif -%}
+      ]">
 </span>
 {%- endfor -%}
-    </div>
-  </aside>
-  {%- endif -%}
 
   <main class="character-main {% unless is_character_page %}full-width{% endunless %}">
     <div class="character-header">
@@ -59,16 +69,21 @@ document.addEventListener('DOMContentLoaded', function () {
     return arr[Math.floor(Math.random() * arr.length)];
   }
 
-  container.querySelectorAll('span[data-book-index]').forEach(span => {
-    const idx = span.dataset.bookIndex;
-
-    const imgs = (span.dataset.bookImages || '')
-      .split(',')
+container.querySelectorAll('span[data-book-index]').forEach(span => {
+  const idx = span.dataset.bookIndex;
+  const imagesAttr = span.dataset.bookImages || '[]';
+  
+  try {
+    // Parse the JSON string to get a clean array
+    const imgs = JSON.parse(imagesAttr)
       .map(i => i.trim())
       .filter(i => i.length);
-
+    
     if (imgs.length) bookImages[idx] = imgs;
-  });
+  } catch (e) {
+    console.error('Failed to parse images for book', idx, imagesAttr, e);
+  }
+});
 
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', function (e) {
