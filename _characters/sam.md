@@ -1,10 +1,22 @@
 ---
 layout: character
 title: Sam Calder
-portrait: "/assets/images/sam-book3.webp"
-portrait-book3: "/assets/images/sam-book3.webp"
-portrait-book4: "/assets/images/sam-book4.webp"
-portrait-book5: "/assets/images/sam-book5.webp"
+portrait: 
+  - /assets/images/sam-masc-book3.webp
+  - /assets/images/sam-femme-book3.webp
+  - /assets/images/sam-andro-book3.webp
+portrait-book3:
+  - /assets/images/sam-masc-book3.webp
+  - /assets/images/sam-femme-book3.webp
+  - /assets/images/sam-andro-book3.webp
+portrait-book4:
+  - /assets/images/sam-masc-book4.webp
+  - /assets/images/sam-femme-book4.webp
+  - /assets/images/sam-andro-book4.webp
+portrait-book5:
+  - /assets/images/sam-masc-book5.webp
+  - /assets/images/sam-femme-book5.webp
+  - /assets/images/sam-andro-book5.webp
 affiliation: New Eden Colony; Audio Engineer; Co‑Founder of Samaya Gallery & Museum of Integration
 status: Alive
 birthday: December 30, 2227

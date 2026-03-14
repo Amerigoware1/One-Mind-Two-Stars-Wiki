@@ -24,11 +24,12 @@ layout: default
         <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
         <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
       </table>
-      {%- for i in (1..5) -%}
-        <span class="sr-only" aria-hidden="true"
-              data-book-index="{{ i }}"
-              data-book-image="{{ page["portrait-book" | append: i ] | default: page.portrait | relative_url }}"></span>
-      {%- endfor -%}
+{%- for i in (1..5) -%}
+<span class="sr-only"
+      data-book-index="{{ i }}"
+      data-book-images="{{ page["portrait-book" | append: i ] | join: ',' }}">
+</span>
+{%- endfor -%}
     </div>
   </aside>
   {%- endif -%}
@@ -45,6 +46,7 @@ layout: default
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+
   const container = document.getElementById('portrait-container');
   const portrait = document.getElementById('character-portrait');
   const placeholder = '/assets/images/portrait-placeholder.png';
@@ -52,19 +54,32 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!container || !portrait) return;
 
   const bookImages = {};
+
+  function randomFrom(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
   container.querySelectorAll('span[data-book-index]').forEach(span => {
     const idx = span.dataset.bookIndex;
-    const img = (span.dataset.bookImage || '').trim();
-    if (img) bookImages[idx] = img;
+
+    const imgs = (span.dataset.bookImages || '')
+      .split(',')
+      .map(i => i.trim())
+      .filter(i => i.length);
+
+    if (imgs.length) bookImages[idx] = imgs;
   });
 
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', function (e) {
+
       e.preventDefault();
+
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       this.classList.add('active');
 
       const targetId = this.dataset.tab;
+
       if (targetId) {
         document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
         const targetEl = document.getElementById(targetId);
@@ -76,8 +91,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (explicitImage && explicitImage.trim()) {
         portrait.src = explicitImage.trim();
+
       } else if (bookIndex && bookImages[bookIndex]) {
-        portrait.src = bookImages[bookIndex];
+
+        const imgs = bookImages[bookIndex];
+        if (imgs.length) portrait.src = randomFrom(imgs);
+
       }
     });
   });
@@ -88,6 +107,14 @@ document.addEventListener('DOMContentLoaded', function () {
       portrait.src = placeholder;
     }
   });
+
+  const activeTab = document.querySelector('.tab-btn.active');
+
+  if (activeTab && activeTab.dataset.book && bookImages[activeTab.dataset.book]) {
+    const imgs = bookImages[activeTab.dataset.book];
+    if (imgs.length) portrait.src = randomFrom(imgs);
+  }
+
 });
 </script>
 
