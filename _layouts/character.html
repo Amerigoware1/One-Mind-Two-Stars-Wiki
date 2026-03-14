@@ -16,7 +16,7 @@ layout: default
   <aside class="infobox-sidebar">
     <div class="infobox" id="portrait-container" data-title="{{ page.title }}">
       <div class="portrait-box" id="portrait-box">
-        <img id="character-portrait" src="{{ page.portrait | relative_url }}" alt="{{ page.title }}" class="portrait">
+        <img id="character-portrait" src="{{ page.portrait[0] | relative_url }}" alt="{{ page.title }}" class="portrait">
       </div>
       <table>
         <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
