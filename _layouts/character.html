@@ -20,7 +20,7 @@ layout: default
   {%- if page.portrait and page.portrait.size > 0 -%}
     {{ page.portrait[0] | relative_url }}
   {%- else -%}
-    /assets/images/portrait-placeholder.png
+    {{ '/assets/images/portrait-placeholder.png' | relative_url }}
   {%- endif -%}
 " alt="{{ page.title }}" class="portrait">
       </div>
@@ -31,16 +31,11 @@ layout: default
         <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
       </table>
 {%- for i in (1..5) -%}
+{%- assign book_key = "portrait-book" | append: i -%}
+{%- assign book_images = page[book_key] -%}
 <span class="sr-only"
       data-book-index="{{ i }}"
-      data-book-images="[
-        {%- if page["portrait-book" | append: i] -%}
-          {%- for img in page["portrait-book" | append: i] -%}
-            {%- if forloop.first == false -%},{%- endif -%}
-            &quot;{{ img | relative_url | strip }}&quot;
-          {%- endfor -%}
-        {%- endif -%}
-      ]">
+      data-book-images="{% if book_images and book_images.size > 0 %}{% for img in book_images %}{% if forloop.first == false %},{% endif %}{{ img | relative_url | strip }}{% endfor %}{% endif %}">
 </span>
 {%- endfor -%}
     </div>
@@ -62,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const container = document.getElementById('portrait-container');
   const portrait = document.getElementById('character-portrait');
-  const placeholder = '/assets/images/portrait-placeholder.png';
+  const placeholder = '{{ '/assets/images/portrait-placeholder.png' | relative_url }}';
 
   if (!container || !portrait) return;
 
@@ -72,21 +67,21 @@ document.addEventListener('DOMContentLoaded', function () {
     return arr[Math.floor(Math.random() * arr.length)];
   }
 
-container.querySelectorAll('span[data-book-index]').forEach(span => {
-  const idx = span.dataset.bookIndex;
-  const imagesAttr = span.dataset.bookImages || '[]';
-  
-  try {
-    // Parse the JSON string to get a clean array
-    const imgs = JSON.parse(imagesAttr)
-      .map(i => i.trim())
-      .filter(i => i.length);
+  container.querySelectorAll('span[data-book-index]').forEach(span => {
+    const idx = span.dataset.bookIndex;
+    const imagesStr = span.dataset.bookImages || '';
     
-    if (imgs.length) bookImages[idx] = imgs;
-  } catch (e) {
-    console.error('Failed to parse images for book', idx, imagesAttr, e);
-  }
-});
+    // Split by comma and clean up
+    const imgs = imagesStr
+      .split(',')
+      .map(i => i.trim())
+      .filter(i => i.length > 0);
+    
+    if (imgs.length > 0) {
+      bookImages[idx] = imgs;
+      console.log('Book', idx, 'images:', imgs); // Debug log
+    }
+  });
 
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', function (e) {
@@ -109,28 +104,43 @@ container.querySelectorAll('span[data-book-index]').forEach(span => {
 
       if (explicitImage && explicitImage.trim()) {
         portrait.src = explicitImage.trim();
-
+        console.log('Setting explicit image:', explicitImage); // Debug log
       } else if (bookIndex && bookImages[bookIndex]) {
-
         const imgs = bookImages[bookIndex];
-        if (imgs.length) portrait.src = randomFrom(imgs);
-
+        if (imgs.length) {
+          const selectedImg = randomFrom(imgs);
+          portrait.src = selectedImg;
+          console.log('Setting random image for book', bookIndex, ':', selectedImg); // Debug log
+        }
       }
     });
   });
 
   portrait.addEventListener('error', function () {
-    if (!portrait.dataset.fallbacked) {
-      portrait.dataset.fallbacked = '1';
-      portrait.src = placeholder;
+    console.log('Image failed to load:', this.src); // Debug log
+    if (!this.dataset.fallbacked) {
+      this.dataset.fallbacked = '1';
+      this.src = placeholder;
+      console.log('Falling back to placeholder:', placeholder); // Debug log
     }
   });
 
+  // Trigger initial image load based on active tab
   const activeTab = document.querySelector('.tab-btn.active');
-
-  if (activeTab && activeTab.dataset.book && bookImages[activeTab.dataset.book]) {
-    const imgs = bookImages[activeTab.dataset.book];
-    if (imgs.length) portrait.src = randomFrom(imgs);
+  if (activeTab) {
+    const bookIndex = activeTab.dataset.book;
+    if (bookIndex && bookImages[bookIndex]) {
+      const imgs = bookImages[bookIndex];
+      if (imgs.length) {
+        portrait.src = randomFrom(imgs);
+      }
+    }
+  } else {
+    // If no active tab, use first book image or placeholder
+    const firstBookImages = bookImages['1'];
+    if (firstBookImages && firstBookImages.length) {
+      portrait.src = randomFrom(firstBookImages);
+    }
   }
 
 });
