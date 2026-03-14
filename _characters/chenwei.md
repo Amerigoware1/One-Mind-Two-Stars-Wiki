@@ -1,11 +1,11 @@
 ---
 layout: character
 title: Chen Wei
-portrait: "/assets/images/amerigo-book2.webp"
-portrait-book2: "/assets/images/amerigo-book2.webp"
-portrait-book3: "/assets/images/amerigo-book3.webp"
-portrait-book4: "/assets/images/amerigo-book4.webp"
-portrait-book5: "/assets/images/amerigo-book5.webp"
+portrait: "/assets/images/chenwei-book2.webp"
+portrait-book2: "/assets/images/chenwei-book2.webp"
+portrait-book3: "/assets/images/chenwei-book3.webp"
+portrait-book4: "/assets/images/chenwei-book4.webp"
+portrait-book5: "/assets/images/chenwei-book5.webp"
 affiliation: Listener Corps Technician; Signal Processing Specialist; New Eden Colony
 status: Active
 birthday: March 10, 2225
