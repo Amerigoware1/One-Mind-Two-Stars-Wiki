@@ -37,12 +37,15 @@ layout: default
         {%- if page["portrait-book" | append: i] -%}
           {%- for img in page["portrait-book" | append: i] -%}
             {%- if forloop.first == false -%},{%- endif -%}
-            "{{ img | relative_url | strip }}"
+            &quot;{{ img | relative_url | strip }}&quot;
           {%- endfor -%}
         {%- endif -%}
       ]">
 </span>
 {%- endfor -%}
+    </div>
+  </aside>
+  {%- endif -%}
 
   <main class="character-main {% unless is_character_page %}full-width{% endunless %}">
     <div class="character-header">
