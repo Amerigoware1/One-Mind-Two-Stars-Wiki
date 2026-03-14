@@ -20,7 +20,7 @@ layout: default
   {%- if page.portrait and page.portrait.size > 0 -%}
     {{ page.portrait[0] | relative_url }}
   {%- else -%}
-    One-Mine-Two-Stars-Wiki/assets/images/portrait-placeholder.png
+    /One-Mine-Two-Stars-Wiki/assets/images/portrait-placeholder.png
   {%- endif -%}
 " alt="{{ page.title }}" class="portrait">
       </div>
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const container = document.getElementById('portrait-container');
   const portrait = document.getElementById('character-portrait');
-  const placeholder = 'One-Mine-Two-Stars-Wiki/assets/images/portrait-placeholder.png';
+  const placeholder = '/One-Mine-Two-Stars-Wiki/assets/images/portrait-placeholder.png';
 
   if (!container || !portrait) return;
 
