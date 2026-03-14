@@ -1,8 +1,12 @@
 ---
 layout: character
 title: Xara Kret
-portrait: "/assets/images/xara-kret-book1.webp"
-portrait-book1: "/assets/images/xara-kret-book1.webp"
+portrait: "/assets/images/xarabook1.webp"
+portrait-book1: "/assets/images/xara-book1.webp"
+portrait-book2: "/assets/images/xara-book2.webp"
+portrait-book3: "/assets/images/xara-book2.webp"
+portrait-book4: "/assets/images/xara-book2.webp"
+portrait-book5: "/assets/images/xara-book2.webp"
 affiliation: Earth; Pre-Colony Era; Kret Family
 status: Deceased
 birthday: July 22, 2087
