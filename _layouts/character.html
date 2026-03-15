@@ -35,7 +35,7 @@ layout: default
 {%- assign book_images = page[book_key] -%}
 <span class="sr-only"
       data-book-index="{{ i }}"
-      data-book-images="{% if book_images and book_images.size > 0 %}{% for img in book_images %}{% if forloop.first == false %},{% endif %}{{ img | relative_url | strip }}{% endfor %}{% endif %}">
+      data-book-images="{% if book_images and book_images.size > 0 %}{% for img in book_images %}{% if forloop.first == false %},{% endif %}{{ img | relative_url }}{% endfor %}{% endif %}">
 </span>
 {%- endfor -%}
     </div>
@@ -71,6 +71,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const idx = span.dataset.bookIndex;
     const imagesStr = span.dataset.bookImages || '';
     
+    console.log(`Raw data for book ${idx}:`, imagesStr);
+    
     // Split by comma and clean up
     const imgs = imagesStr
       .split(',')
@@ -79,7 +81,9 @@ document.addEventListener('DOMContentLoaded', function () {
     
     if (imgs.length > 0) {
       bookImages[idx] = imgs;
-      console.log('Book', idx, 'images:', imgs); // Debug log
+      console.log(`Book ${idx} images:`, imgs);
+    } else {
+      console.log(`No images for book ${idx}`);
     }
   });
 
@@ -104,24 +108,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (explicitImage && explicitImage.trim()) {
         portrait.src = explicitImage.trim();
-        console.log('Setting explicit image:', explicitImage); // Debug log
+        console.log('Setting explicit image:', explicitImage);
       } else if (bookIndex && bookImages[bookIndex]) {
         const imgs = bookImages[bookIndex];
         if (imgs.length) {
           const selectedImg = randomFrom(imgs);
           portrait.src = selectedImg;
-          console.log('Setting random image for book', bookIndex, ':', selectedImg); // Debug log
+          console.log('Setting random image for book', bookIndex, ':', selectedImg);
         }
       }
     });
   });
 
   portrait.addEventListener('error', function () {
-    console.log('Image failed to load:', this.src); // Debug log
+    console.log('Image failed to load:', this.src);
     if (!this.dataset.fallbacked) {
       this.dataset.fallbacked = '1';
       this.src = placeholder;
-      console.log('Falling back to placeholder:', placeholder); // Debug log
+      console.log('Falling back to placeholder:', placeholder);
     }
   });
 
