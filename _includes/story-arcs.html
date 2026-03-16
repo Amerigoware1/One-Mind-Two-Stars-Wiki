@@ -15,13 +15,13 @@
   <div class="tab-buttons">
     {% for i in books %}
       {% assign portrait_key = "portrait-book" | append: i %}
-      {% assign p_url = page[portrait_key] | first %}
+      {% assign p_imgs = page[portrait_key] %}
 
       <button
         class="tab-btn {% if i == first %}active{% endif %}"
         data-tab="book{{ i }}"
         data-book="{{ i }}"
-        data-image="{{ p_url | relative_url }}"
+        {% if p_imgs.size == 1 %}data-image="{{ p_imgs | first | relative_url }}"{% endif %}
       >
         Book {{ i }}
       </button>
