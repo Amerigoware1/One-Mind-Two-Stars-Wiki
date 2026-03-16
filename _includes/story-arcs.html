@@ -15,7 +15,7 @@
   <div class="tab-buttons">
     {% for i in books %}
       {% assign portrait_key = "portrait-book" | append: i %}
-      {% assign p_url = page[portrait_key] %}
+      {% assign p_url = page[portrait_key] | first %}
 
       <button
         class="tab-btn {% if i == first %}active{% endif %}"
