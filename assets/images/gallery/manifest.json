@@ -1,6 +1,6 @@
 [
   {
-    "file": "Celectra-Pregnant.png",
+    "file": "celectra_pregnant.png",
     "title": "Celectra During Pregnancy",
     "description": "Celectra at age 22, carrying the twins, Jenni and Xara.",
     "width": 988,
@@ -8,7 +8,7 @@
     "tags": ["celectra", "pregnancy", "character", "book 1"]
   },
   {
-    "file": "celectra-cabinet.png",
+    "file": "celectra_cabinet.png",
     "title": "Celectra's Cabinet of Stones",
     "description": "An illuminated cabinet containing Celectra's rock collection including large, precious stones that Galanstanians leave behind as insoluble waste.",
     "width": 1024,
@@ -16,7 +16,7 @@
     "tags": ["celectra", "rocks", "stones", "cabinet", "collection"]
   },
   {
-    "file": "ANI.png",
+    "file": "ani.png",
     "title": "Artificial Neural Interface",
     "description": "The experimental ANI device that allows neural linking between humans and Galinstanian consciousness and, eventually, Utara.",
     "width": 1205,
@@ -24,7 +24,7 @@
     "tags": ["technology", "ani", "interface"]
   },
   {
-    "file": "Cave.png",
+    "file": "cave.png",
     "title": "The Deep Caves",
     "description": "Entrance to the extensive cave system explored over fourteen years. These caves hold ancient Galinstanian secrets.",
     "width": 784,
@@ -32,7 +32,7 @@
     "tags": ["environment", "cave", "exploration", "ancient"]
   },
   {
-    "file": "Gazing through port hole.jpg",
+    "file": "gazing-through-port-hole.jpg",
     "title": "Utopis Station Living Room",
     "description": "The Carisco family's living quarters aboard the Utopis space station, featuring a view of Ares.",
     "width": 1024,
@@ -40,7 +40,7 @@
     "tags": ["celectra", "space station", "utopis", "living quarters", "book 1"]
   },
   {
-    "file": "Carisco Family.jpg",
+    "file": "carisco-family.webp",
     "title": "The Carisco Family Portrait",
     "description": "A formal portrait of the Carisco family from Book 2, showing the growing family.",
     "width": 718,
@@ -48,7 +48,7 @@
     "tags": ["carisco", "family", "portrait", "book 2"]
   },
   {
-    "file": "Galinstanian.jpg",
+    "file": "galinstanian.jpg",
     "title": "Galinstanian Being",
     "description": "A rare capture of a Galinstanian in their natural form, displaying the characteristic quicksilver reflections.",
     "width": 768,
