@@ -27,22 +27,108 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
       text-align: center;
       padding: 0.5rem;
-       cursor: pointer;
-  transition: box-shadow 0.2s;
+      cursor: pointer;
+      transition: box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
     .card-bg:hover {
-  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
-}
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+      transform: translateY(-2px);
+    }
     .card-bg img {
       width: 100%;
       height: 180px;
       object-fit: cover;
       border-radius: 4px;
     }
-    .card-caption {
+    .card-title {
       margin-top: 0.5rem;
-      font-size: 0.85rem;
-      color: #ddd;
+      font-weight: bold;
+      color: #fff;
+      font-size: 0.95rem;
+    }
+    .card-description {
+      margin-top: 0.25rem;
+      font-size: 0.8rem;
+      color: #aaa;
+      line-height: 1.3;
+      flex-grow: 1;
+    }
+    .card-tags {
+      margin-top: 0.5rem;
+      font-size: 0.7rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+      justify-content: center;
+    }
+    .tag {
+      background: #1e0a47;
+      color: #b79aff;
+      padding: 0.2rem 0.5rem;
+      border-radius: 12px;
+      font-size: 0.65rem;
+      text-transform: lowercase;
+    }
+    
+    /* Search and filter styling */
+    .gallery-controls {
+      display: flex;
+      gap: 1rem;
+      margin: 1rem 0 1.5rem;
+      flex-wrap: wrap;
+    }
+    
+    #gallery-search {
+      flex: 2;
+      min-width: 250px;
+      padding: 0.5rem 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #1e0a47;
+      border-radius: 6px;
+      background: #0c0028;
+      color: inherit;
+    }
+
+    #gallery-search:focus,
+    #tag-filter:focus {
+      outline: none;
+      border-color: #7b4fd4;
+    }
+    
+    #tag-filter {
+      flex: 1;
+      min-width: 150px;
+      padding: 0.5rem 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #1e0a47;
+      border-radius: 6px;
+      background: #0c0028;
+      color: inherit;
+      cursor: pointer;
+    }
+    
+    #tag-filter option {
+      background: #0c0028;
+      color: inherit;
+    }
+    
+    #no-results {
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+      font-style: italic;
+      grid-column: 1/-1;
+    }
+    
+    /* Loading state */
+    .loading {
+      grid-column: 1/-1;
+      text-align: center;
+      padding: 2rem;
+      color: #7b4fd4;
     }
   </style>
 </head>
@@ -56,8 +142,24 @@
     A collection of artifacts, environments, and curiosities from <em>One Mind Two Stars</em>.
   </div>
 
+  <!-- Search and filter controls -->
+  <div class="gallery-controls">
+    <input
+      type="text"
+      id="gallery-search"
+      placeholder="Search by title, description, or tags…"
+      autocomplete="off"
+    >
+    
+    <select id="tag-filter">
+      <option value="">All Tags</option>
+    </select>
+  </div>
+
   <!-- Gallery will be inserted here -->
-  <div id="gallery" class="gallery-grid"></div>
+  <div id="gallery" class="gallery-grid">
+    <div class="loading">Loading gallery...</div>
+  </div>
 
   <!-- Footer -->
   <div id="footer">
@@ -68,7 +170,7 @@
   <!-- Return to Top -->
   <button id="toTopBtn" style="display:none; position:fixed; bottom:20px; right:20px;">⬆️ Top</button>
 
-  <!-- PhotoSwipe Root Element (required) -->
+  <!-- PhotoSwipe Root Element -->
   <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="pswp__bg"></div>
     <div class="pswp__scroll-wrap">
@@ -83,7 +185,9 @@
           <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
           <button class="pswp__button pswp__button--zoom" title="Zoom"></button>
         </div>
-        <div class="pswp__caption"><div class="pswp__caption__center"></div></div>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -91,46 +195,153 @@
 <script src="photoswipe.umd.min.js"></script>
 <script src="photoswipe-lightbox.umd.min.js"></script>
 <script>
-  const galleryItems = [
-    { src: "Celectra-Pregnant.png", caption: "Celectra while pregnant (age 22)", width: 988, height: 954 },
-    { src: "celectra-cabinet.png", caption: "Celectra’s illuminated cabinet of Galinstanian leavings", width: 1024, height: 1536 },
-    { src: "ANI.png", caption: "Artificial Neural Interface", width: 1205, height: 722 },
-    { src: "Cave.png", caption: "Entrance to the deep caves explored over fourteen years.", width: 784, height: 1168 },
-    { src: "Gazing through port hole.jpg", caption: "Livingroom on the space station Utopis (Book 1)", width: 1024, height: 1024 },
-    { src: "Carisco Family.jpg", caption: "Carisco Family (Book 2)", width: 718, height: 1024 },
-    { src: "Galinstanian.jpg", caption: "Galinstanian", width: 768, height: 512 },
-    { src: "Listener Corps.png", caption: "Listener Corps", width: 1024, height: 1536 }
-  ];
-
-  const basePath = "assets/images/";
+  const galleryPath = "assets/images/gallery/";
   const galleryEl = document.getElementById("gallery");
+  const searchInput = document.getElementById("gallery-search");
+  const tagFilter = document.getElementById("tag-filter");
+  
+  let galleryItems = [];
+  let allTags = new Set();
+  let currentFilter = "";
+  let currentTag = "";
 
-  // This part builds the thumbnails on your page
-  galleryItems.forEach((item, index) => {
-    const card = document.createElement("div");
-    card.className = "card-bg";
-    card.innerHTML = `
-      <img src="${basePath}${item.src}" alt="${item.caption}" loading="lazy">
-      <div class="card-caption">${item.caption}</div>
-    `;
-    card.addEventListener("click", (e) => {
-      e.preventDefault();
-      openLightbox(index);
+  // Load gallery data from manifest
+  async function loadGalleryImages() {
+    try {
+      const response = await fetch(`${galleryPath}manifest.json`);
+      if (!response.ok) throw new Error("Manifest not found");
+      
+      const manifest = await response.json();
+      processManifest(manifest);
+    } catch (error) {
+      console.error("Could not load gallery manifest:", error);
+      galleryEl.innerHTML = `
+        <div style="grid-column:1/-1; text-align:center; padding:2rem; color:#f66;">
+          ⚠️ Could not load gallery manifest. Please ensure manifest.json exists in your gallery folder.
+        </div>
+      `;
+    }
+  }
+
+  // Process the manifest data
+  function processManifest(manifest) {
+    galleryItems = manifest.map(item => ({
+      src: item.file,
+      title: item.title || createCaption(item.file),
+      description: item.description || "",
+      width: item.width || 800,
+      height: item.height || 600,
+      tags: item.tags || []
+    }));
+
+    // Collect all unique tags
+    galleryItems.forEach(item => {
+      item.tags.forEach(tag => allTags.add(tag.toLowerCase()));
     });
-    galleryEl.appendChild(card);
-  });
 
+    // Populate tag filter
+    populateTagFilter();
+    
+    // Render the gallery
+    renderGallery();
+  }
+
+  // Create a fallback caption from filename
+  function createCaption(filename) {
+    return filename
+      .replace(/\.[^/.]+$/, "")
+      .replace(/[-_]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .replace(/\b\w/g, l => l.toUpperCase());
+  }
+
+  // Populate the tag filter dropdown
+  function populateTagFilter() {
+    const sortedTags = Array.from(allTags).sort();
+    sortedTags.forEach(tag => {
+      const option = document.createElement("option");
+      option.value = tag;
+      option.textContent = tag.charAt(0).toUpperCase() + tag.slice(1);
+      tagFilter.appendChild(option);
+    });
+  }
+
+  // Render the gallery grid with current filters
+  function renderGallery() {
+    const filtered = galleryItems.filter(item => {
+      // Text search
+      const searchMatch = !currentFilter || 
+        item.title.toLowerCase().includes(currentFilter) ||
+        item.description.toLowerCase().includes(currentFilter) ||
+        item.tags.some(tag => tag.toLowerCase().includes(currentFilter));
+      
+      // Tag filter
+      const tagMatch = !currentTag || 
+        item.tags.some(tag => tag.toLowerCase() === currentTag);
+      
+      return searchMatch && tagMatch;
+    });
+
+    if (filtered.length === 0) {
+      galleryEl.innerHTML = '<div id="no-results">No images match your search criteria.</div>';
+      return;
+    }
+
+    galleryEl.innerHTML = "";
+    
+    filtered.forEach((item, index) => {
+      const card = document.createElement("div");
+      card.className = "card-bg";
+      
+      // Build tags HTML
+      const tagsHtml = item.tags.length > 0 ? 
+        `<div class="card-tags">${item.tags.map(tag => 
+          `<span class="tag">${tag}</span>`
+        ).join('')}</div>` : '';
+      
+      card.innerHTML = `
+        <img src="${galleryPath}${item.src}" alt="${item.title}" loading="lazy">
+        <div class="card-title">${item.title}</div>
+        ${item.description ? `<div class="card-description">${item.description}</div>` : ''}
+        ${tagsHtml}
+      `;
+      
+      card.addEventListener("click", (e) => {
+        e.preventDefault();
+        openLightbox(galleryItems.findIndex(g => g.src === item.src));
+      });
+      
+      galleryEl.appendChild(card);
+    });
+  }
+
+  // Setup search and filter functionality
+  function setupFilters() {
+    searchInput.addEventListener("input", function() {
+      currentFilter = this.value.toLowerCase().trim();
+      renderGallery();
+    });
+
+    tagFilter.addEventListener("change", function() {
+      currentTag = this.value.toLowerCase();
+      renderGallery();
+    });
+  }
+
+  // PhotoSwipe lightbox with enhanced captions
   let lightbox;
-
+  
   function openLightbox(index) {
     if (!lightbox) {
       lightbox = new PhotoSwipeLightbox({
-        // This maps your 'width' and 'height' to the 'w' and 'h' PhotoSwipe needs
         dataSource: galleryItems.map(item => ({
-          src: basePath + item.src,
+          src: galleryPath + item.src,
           w: item.width,
           h: item.height,
-          alt: item.caption
+          alt: item.title,
+          title: item.title,
+          description: item.description
         })),
         bgOpacity: 0.9,
         wheelToZoom: true,
@@ -140,17 +351,43 @@
         maxZoomLevel: 3,
         pswpModule: PhotoSwipe 
       });
+      
+      // Customize the caption
+      lightbox.on('uiRegister', function() {
+        lightbox.pswp.ui.registerElement({
+          name: 'custom-caption',
+          order: 8,
+          isButton: false,
+          appendTo: 'root',
+          html: 'Custom caption',
+          onInit: (el, pswp) => {
+            lightbox.pswp.on('change', () => {
+              const currSlideElement = lightbox.pswp.currSlide.data;
+              if (currSlideElement) {
+                const captionText = currSlideElement.title + 
+                  (currSlideElement.description ? '<br><small>' + currSlideElement.description + '</small>' : '');
+                el.innerHTML = captionText || '';
+              }
+            });
+          }
+        });
+      });
+      
       lightbox.init();
     }
     lightbox.loadAndOpen(index);
   }
 
-  // Return to top button logic
+  // Return to top button
   const toTopBtn = document.getElementById("toTopBtn");
   window.addEventListener("scroll", () => {
     toTopBtn.style.display = window.scrollY > 200 ? "block" : "none";
   });
   toTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+  // Initialize
+  loadGalleryImages();
+  setupFilters();
 </script>
 </body>
 </html>
