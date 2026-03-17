@@ -6,12 +6,12 @@ permalink: /characters/
 
 # All Characters
 
-<input
+<div><input
   type="text"
   id="character-search"
   placeholder="Search characters…"
   autocomplete="off"
->
+></div>
 
 <div class="character-list" id="character-list">
   {% for character in site.characters %}
