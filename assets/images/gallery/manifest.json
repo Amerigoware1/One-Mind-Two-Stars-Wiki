@@ -1,5 +1,4 @@
 [
-<<<<<<< HEAD
  {
     "file": "alex-and-dee.webp",
     "title": "Uncle Alex and Aunt Dee",
@@ -65,8 +64,7 @@
     "title": "Listener Corps Emblem",
     "description": "The elite Listener Corps, trained to communicate with Galinstanian consciousness through neural interfaces.",
     "tags": ["listener corps", "organization", "elite"]
-  }
-=======
+  },
 {
 "file": "celectra_pregnant.png",
 "title": "Celectra During Pregnancy",
@@ -193,5 +191,4 @@
 "description": "Portrait of Xara and Jenni at age 7 in book 4.",
 "tags": ["xara", "jenni","book 4"]
 }
->>>>>>> 159395e3c3a4efe89e70f78942ea448b864e42cf
 ]
