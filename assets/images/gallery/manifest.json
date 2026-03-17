@@ -1,4 +1,72 @@
 [
+<<<<<<< HEAD
+ {
+    "file": "alex-and-dee.webp",
+    "title": "Uncle Alex and Aunt Dee",
+    "description": "Uncle Alex and Aunt Dee dancing at Jaxon's birthday party in Book 1.",
+    "tags": ["alex", "dee", "character", "book 1"]
+ },
+ {
+    "file": "ani.png",
+    "title": "Artificial Neural Interface",
+    "description": "The experimental ANI device that allows neural linking between humans and Galinstanian consciousness and, eventually, Utara.",
+    "tags": ["technology", "ani", "interface"]
+  },
+  {
+    "file": "ares.gif",
+    "title": "Ares Rotating",
+    "description": "Ares, a moon of Chaos rotating. It's the home of New Eden and most of the characters.",
+    "tags": ["ares", "moon", "planet"]
+  },
+  {
+    "file": "ares.png",
+    "title": "Map of Ares around New Eden",
+    "description": "Map of Ares around New Eden",
+    "tags": ["ares", "map", "new eden"]
+  },
+  {
+    "file": "celectra_pregnant.png",
+    "title": "Celectra During Pregnancy",
+    "description": "Celectra at age 22, carrying the twins, Jenni and Xara.",
+    "tags": ["celectra", "pregnancy", "character", "book 1"]
+  },
+  {
+    "file": "celectra_cabinet.png",
+    "title": "Celectra's Cabinet of Stones",
+    "description": "An illuminated cabinet containing Celectra's rock collection including large, precious stones that Galanstanians leave behind as insoluble waste.",
+    "tags": ["celectra", "rocks", "stones", "cabinet", "collection"]
+  },
+  {
+    "file": "cave.png",
+    "title": "The Deep Caves",
+    "description": "Entrance to the extensive cave system explored over fourteen years. These caves hold ancient Galinstanian secrets.",
+    "tags": ["environment", "cave", "exploration", "ancient"]
+  },
+  {
+    "file": "gazing-through-port-hole.jpg",
+    "title": "Utopis Station Living Room",
+    "description": "The Carisco family's living quarters aboard the Utopis space station, featuring a view of Ares.",
+    "tags": ["celectra", "space station", "utopis", "living quarters", "book 1"]
+  },
+  {
+    "file": "carisco-family.webp",
+    "title": "The Carisco Family Portrait",
+    "description": "A formal portrait of the Carisco family from Book 2, showing the growing family.",
+    "tags": ["carisco", "family", "portrait", "book 2"]
+  },
+  {
+    "file": "galinstanian.jpg",
+    "title": "Galinstanian Being",
+    "description": "A rare capture of a Galinstanian in their natural form, displaying the characteristic quicksilver reflections.",
+    "tags": ["galinstanian", "alien", "species", "bioluminescent"]
+  },
+  {
+    "file": "Listener Corps.png",
+    "title": "Listener Corps Emblem",
+    "description": "The elite Listener Corps, trained to communicate with Galinstanian consciousness through neural interfaces.",
+    "tags": ["listener corps", "organization", "elite"]
+  }
+=======
 {
 "file": "celectra_pregnant.png",
 "title": "Celectra During Pregnancy",
@@ -125,4 +193,5 @@
 "description": "Portrait of Xara and Jenni at age 7 in book 4.",
 "tags": ["xara", "jenni","book 4"]
 }
+>>>>>>> 159395e3c3a4efe89e70f78942ea448b864e42cf
 ]
