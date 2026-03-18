@@ -233,10 +233,7 @@ function processManifest(manifest) {
     description: item.description || "",
     tags: item.tags || []
   }));
-  // ... rest of function
-}
-
-    // Collect all unique tags
+     // Collect all unique tags
     galleryItems.forEach(item => {
       item.tags.forEach(tag => allTags.add(tag.toLowerCase()));
     });
