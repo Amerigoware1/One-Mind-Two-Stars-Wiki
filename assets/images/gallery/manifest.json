@@ -158,5 +158,29 @@
     "tags": ["xara", "jenni", "book 4"],
     "width": 928,
     "height": 1152
+  },
+  {
+    "file": "new-eden-book1.webp",
+    "title": "New Eden",
+    "description": "New Eden in books 1 and 2.",
+    "tags": ["new eden", "town", "book1", "book 2"],
+    "width": 3072,
+    "height": 4096
+  },
+  {
+    "file": "new-eden-book3.webp",
+    "title": "New Eden",
+    "description": "New Eden in books 3 and 4.",
+    "tags": ["new eden", "town", "book3", "book 4"],
+    "width": 1611,
+    "height": 2000
+  },
+  {
+    "file": "new-eden-book5.webp",
+    "title": "New Eden",
+    "description": "New Eden in books 5.",
+    "tags": ["new eden", "town", "book5"],
+    "width": 1024,
+    "height": 1024
   }
 ]
