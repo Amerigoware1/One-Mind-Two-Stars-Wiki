@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Eden's Central Buildings - One Mine Two Stars Wiki</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="WikiStyle.css">
+  <style>
+    /* Consolidated styles for all building pages */
+    .building-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .building-card {
+      background: rgba(10, 20, 30, 0.8);
+      border-radius: 12px;
+      padding: 1.2rem;
+      border-left: 4px solid #ffaa33;
+      transition: transform 0.2s;
+    }
+    .building-card:hover {
+      transform: translateY(-5px);
+      background: rgba(20, 30, 40, 0.9);
+    }
+    .building-card h3 {
+      color: #ffaa33;
+      margin-top: 0;
+      border-bottom: 1px solid #3a4a5a;
+      padding-bottom: 0.5rem;
+    }
+    .level-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: rgba(10, 20, 30, 0.6);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .level-table th {
+      background: linear-gradient(135deg, #4a5b6e, #2c3e50);
+      color: white;
+      font-weight: 600;
+      padding: 12px 8px;
+      text-align: left;
+      border-bottom: 2px solid #ffaa33;
+    }
+    .level-table td {
+      padding: 10px 8px;
+      border-bottom: 1px solid #3a4a5a;
+    }
+    .level-table tr:last-child td {
+      border-bottom: none;
+    }
+    .level-table tr:hover {
+      background: rgba(255, 170, 51, 0.1);
+    }
+    .feature-badge {
+      display: inline-block;
+      background: #2c3e50;
+      color: #ffaa33;
+      padding: 3px 10px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-right: 8px;
+      border: 1px solid #ffaa33;
+    }
+    .timeline-note {
+      background: rgba(100, 50, 0, 0.3);
+      border-left: 4px solid #ffaa33;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+    }
+    .roundabout-diagram {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 2rem 0;
+    }
+    .roundabout-building {
+      background: #2c3e50;
+      border-radius: 50px;
+      padding: 0.5rem 1.2rem;
+      border: 2px solid #ffaa33;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .roundabout-building:nth-child(odd) {
+      background: #1a2a3a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-banner">
+    <a href="index.html" class="home-button">🏠 Home</a>
+  </div>
+
+  <h1 class="gradient-title">New Eden's Central Buildings</h1>
+  <div class="subtitle">The Six Pillars of Colony Life</div>
+
+  <!-- Infobox - now showing the building cluster -->
+  <div class="infobox">
+    <table class="infobox">
+      <tr>
+        <td colspan="2" class="text-center pb-2">
+          <img src="assets/images/gallery/new-eden-book5.webp" alt="Aerial view of New Eden's central roundabout" class="portrait">
+          <div class="image-caption">The central roundabout with its six original structures (artist's rendering)</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Building Cluster</th>
+        <td>The Hexagon</td>
+      </tr>
+      <tr>
+        <th>Original Five</th>
+        <td>Built pre-series, identical exteriors</td>
+      </tr>
+      <tr>
+        <th>Later Addition</th>
+        <td>Samaya Gallery (between Books 4 & 5)</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>New Eden Town Center, encircling the central roundabout</td>
+      </tr>
+      <tr>
+        <th>AI Integration</th>
+        <td>Full Utara connectivity in all structures</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Article content container -->
+  <div class="article-content">
+
+    <div class="card-bg">
+      <h2 class="section-header">Overview: The Hexagon</h2>
+      <p>At the heart of New Eden, six buildings stand in a perfect ring around the colony's central roundabout. Five of these—the Medical Center, Science and Technology Center, Activity Center, Council Chamber, and The Nexus—are identical in their external architecture, constructed during the colony's founding as the original civic structures. A sixth, the <strong>Samaya Gallery and Museum of Integration</strong>, was added between Books 4 and 5, completing the hexagon and symbolizing the colony's cultural maturation.</p>
+      <p>While their exteriors echo one another in harmonious design, each building houses a distinct facet of colony life, together forming the complete ecosystem of New Eden society.</p>
+      
+      <div class="roundabout-diagram">
+        <span class="roundabout-building">🏛️ The Nexus</span>
+        <span class="roundabout-building">⚕️ Medical Center</span>
+        <span class="roundabout-building">🔬 Science Center</span>
+        <span class="roundabout-building">🏋️ Activity Center</span>
+        <span class="roundabout-building">⚖️ Council Chamber</span>
+        <span class="roundabout-building">🖼️ Samaya Gallery</span>
+      </div>
+      
+      <div class="timeline-note">
+        <strong>Architectural Note:</strong> The original five buildings share the same graceful curved facades, sustainable local stone composites, and integrated Utara interface panels at every entrance. The Samaya Gallery, added later, was designed to harmonize with its predecessors while incorporating evolved architectural techniques and expanded exhibition spaces.
+      </div>
+    </div>
+
+    <!-- ========== MEDICAL CENTER ========== -->
+    <div class="card-bg">
+      <h2 class="section-header">⚕️ Medical Center</h2>
+      <p><em>"First, do no harm — then, heal completely."</em> — Inscription above the main entrance</p>
+      
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+        <span class="feature-badge">24/7 Operations</span>
+        <span class="feature-badge">Utara Diagnostic Integration</span>
+        <span class="feature-badge">Auto-Doc Suites</span>
+        <span class="feature-badge">Mental Wellness Wing</span>
+      </div>
+      
+      <p>The New Eden Medical Center serves as the colony's primary healthcare facility, combining advanced autodoc technology with human-centered care. Unlike the purely automated medical bays aboard ships, the Center maintains a permanent staff of physicians, nurses, and mental health specialists who work alongside Utara's diagnostic capabilities.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Key Facilities</h3>
+      <ul>
+        <li><strong>Emergency & Trauma Bay:</strong> Three fully equipped autodoc suites capable of handling anything from industrial accidents to critical care.</li>
+        <li><strong>Wellness & Preventive Medicine:</strong> Regular health monitoring, genetic optimization tracking, and personalized fitness protocols.</li>
+        <li><strong>Mental Health Sanctuary:</strong> Private counseling rooms, meditation spaces, and the only place in New Eden with guaranteed human-to-human therapeutic interaction.</li>
+        <li><strong>Rehabilitation Center:</strong> Hydrotherapy, physical therapy with Utara-guided motion tracking, and recovery suites.</li>
+        <li><strong>Pharmacy & Synthesis:</strong> On-site medical synthesis for medications too specialized for home units.</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">The Human Touch</h3>
+      <p>While Utara handles diagnostics and routine monitoring, the Medical Center maintains that healing requires human presence. Terminal patients, those in psychological distress, and new parents are prioritized for human care. The Center's staff are among the most respected members of the colony.</p>
+    </div>
+
+    <!-- ========== SCIENCE AND TECHNOLOGY CENTER ========== -->
+    <div class="card-bg">
+      <h2 class="section-header">🔬 Science and Technology Center</h2>
+      <p><em>"Curiosity, codified."</em> — Wall inscription</p>
+      
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+        <span class="feature-badge">Research Labs</span>
+        <span class="feature-badge">Prototype Workshops</span>
+        <span class="feature-badge">Observation Dome</span>
+        <span class="feature-badge">Utara R&D Interface</span>
+      </div>
+      
+      <p>The beating mind of New Eden, the Science and Technology Center is where the colony's brightest minds gather to push the boundaries of knowledge. Unlike the purely practical research conducted in agricultural or industrial settings, the Center focuses on pure science and long-term technological development.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Research Divisions</h3>
+      <ul>
+        <li><strong>Astronomical Observatory:</strong> Located in the building's upper dome, tracking local star systems and deep-space phenomena.</li>
+        <li><strong>Xenobiological Studies:</strong> Dedicated to understanding native flora and fauna (when applicable).</li>
+        <li><strong>Materials Science:</strong> Developing new composites and industrial processes.</li>
+        <li><strong>AI-Human Interaction Lab:</strong> Studying and improving the integration between Utara and colony life.</li>
+        <li><strong>Junior Science Hall:</strong> After-school programs and youth research initiatives.</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">The Prototype Workshop</h3>
+      <p>A fully equipped fabrication facility where researchers can build, test, and refine physical prototypes with direct Utara assistance. It's common to see engineers, biologists, and artists collaborating here on cross-disciplinary projects.</p>
+    </div>
+
+    <!-- ========== ACTIVITY CENTER ========== -->
+    <div class="card-bg">
+      <h2 class="section-header">🏋️ Activity Center</h2>
+      <p><em>"Strong bodies, stronger community."</em> — Main hall motto</p>
+      
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+        <span class="feature-badge">Olympic Pool</span>
+        <span class="feature-badge">Climbing Wall</span>
+        <span class="feature-badge">Courts & Fields</span>
+        <span class="feature-badge">Recovery Suites</span>
+      </div>
+      
+      <p>The Activity Center serves as New Eden's comprehensive fitness and recreation facility. In a colony where physical labor is often optimized by machines, the Center ensures citizens maintain their health through deliberate exercise and, just as importantly, through play.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Athletic Facilities</h3>
+      <ul>
+        <li><strong>Aquatics Wing:</strong> 50-meter Olympic pool, therapy pools, and water polo area.</li>
+        <li><strong>Climbing & Bouldering:</strong> A 15-meter climbing wall with variable difficulty routes and auto-belays.</li>
+        <li><strong>Multi-Sport Courts:</strong> Convertible spaces for basketball, volleyball, badminton, and futsal.</li>
+        <li><strong>Cardio & Strength:</strong> Biometric-integrated equipment with Utara-guided form correction.</li>
+        <li><strong>Yoga & Meditation Studio:</strong> Heated floors, soft lighting, and panoramic views of the roundabout.</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Youth & Community Programs</h3>
+      <p>The Center hosts after-school sports, adult leagues, and the annual New Eden Games — a week-long competition that brings the entire colony together. Its social spaces, including a smoothie bar and viewing lounge, make it a popular gathering spot even for non-athletes.</p>
+    </div>
+
+    <!-- ========== COUNCIL CHAMBER ========== -->
+    <div class="card-bg">
+      <h2 class="section-header">⚖️ Council Chamber</h2>
+      <p><em>"Not law, but wisdom. Not rule, but consensus."</em> — Chamber inscription</p>
+      
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+        <span class="feature-badge">Debate Hall</span>
+        <span class="feature-badge">Public Gallery</span>
+        <span class="feature-badge">Utara Mediation</span>
+        <span class="feature-badge">Records Archive</span>
+      </div>
+      
+      <p>The Council Chamber is New Eden's seat of governance — though "governance" here means facilitation rather than rule. The elected council meets in this circular hall to discuss colony-wide decisions, mediate disputes, and allocate resources. Unlike the Collaborative "Guild" Rooms in the Nexus, this space is reserved for formal deliberation.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Architecture</h3>
+      <p>The Chamber is designed as a perfect circle, with seating in concentric rings — no head of the table, no position of authority. Council members sit among the citizens who attend sessions, and Utara's holographic presence manifests at the exact center when mediation or data presentation is required.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Functions</h3>
+      <ul>
+        <li><strong>Weekly Open Sessions:</strong> Any citizen may attend and, with sufficient support, address the council.</li>
+        <li><strong>Resource Allocation:</strong> Debates on colony priorities and project funding.</li>
+        <li><strong>Dispute Resolution:</strong> Mediation between citizens, guilds, or families.</li>
+        <li><strong>Ceremonial Events:</strong> Holiday proclamations, recognition of achievements, and memorials.</li>
+        <li><strong>Historical Archive:</strong> Complete records of every council session, searchable via Utara.</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Notable Tradition</h3>
+      <p>Before any vote, the presiding council member asks: <em>"Utara, show us the long path."</em> The AI then projects the potential outcomes of each choice across 10, 50, and 100 years — not to dictate the decision, but to ensure it's made with full awareness.</p>
+    </div>
+
+    <!-- ========== THE NEXUS ========== -->
+    <div class="card-bg">
+      <h2 class="section-header">🏛️ The Nexus</h2>
+      <p><em>New Eden's Premier Social & Collaborative Hub</em></p>
+      
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+        <span class="feature-badge">Culinary Level</span>
+        <span class="feature-badge">Holochambers</span>
+        <span class="feature-badge">Guild Rooms</span>
+        <span class="feature-badge">Utara Core Well</span>
+      </div>
+      
+      <p>For full details, see <a href="nexus.html">The Nexus</a> main article. In brief:</p>
+      
+      <table class="level-table" style="margin-top: 0.5rem;">
+        <tr>
+          <th>Level</th>
+          <th>Feature</th>
+        </tr>
+        <tr>
+          <td>Sub-Level</td>
+          <td>Processing Node — Utara's local hardware</td>
+        </tr>
+        <tr>
+          <td>Level 0</td>
+          <td>Atrium — Meeting point, primary avatar</td>
+        </tr>
+        <tr>
+          <td>Level 1</td>
+          <td>Great Hall — Dining, industrial gastronomy</td>
+        </tr>
+        <tr>
+          <td>Levels 2-3</td>
+          <td>Holochambers & Tactile Archive</td>
+        </tr>
+        <tr>
+          <td>Level 4</td>
+          <td>Guild Suites — Collaboration rooms</td>
+        </tr>
+      </table>
+      
+      <p>The Nexus is where scientists argue orbital mechanics over synthesized 1950s milkshakes — the living room of the colony.</p>
+    </div>
+
+    <!-- ========== SAMAYA GALLERY AND MUSEUM OF INTEGRATION ========== -->
+    <div class="card-bg">
+      <h2 class="section-header">🖼️ Samaya Gallery and Museum of Integration</h2>
+      <p><em>"Art is what makes us more than engineered."</em> — Maya's dedication</p>
+      
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+        <span class="feature-badge">Built Books 4-5</span>
+        <span class="feature-badge">Sixth Building</span>
+        <span class="feature-badge">Cultural Archive</span>
+        <span class="feature-badge">Rotating Exhibits</span>
+      </div>
+      
+      <div class="timeline-note" style="margin-top: 0;">
+        <strong>Timeline:</strong> Constructed between Books 4 and 5, completing the hexagon of central buildings.
+      </div>
+      
+      <p>The Samaya Gallery represents New Eden's cultural coming-of-age. Named after the colony's first dedicated artist (see <a href="Samaya.html">Samaya</a>), it serves as both a museum of human creativity and a living space for new artistic expression. Its addition to the central roundabout transformed the building cluster from purely functional to fully human.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Permanent Collections</h3>
+      <ul>
+        <li><strong>Earth Legacy Wing:</strong> Digital recreations of humanity's greatest artworks, curated with Solid-Light projection for authentic viewing.</li>
+        <li><strong>Integration Hall:</strong> The story of humanity and Utara's co-evolution, told through interactive exhibits.</li>
+        <li><strong>Samaya Wing:</strong> Original works by the colony's first artist, preserved in their physical form.</li>
+        <li><strong>Children's Gallery:</strong> Rotating exhibitions of youth artwork from New Eden's schools.</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Active Spaces</h3>
+      <ul>
+        <li><strong>Artist-in-Residence Studio:</strong> Working artists create (and invite public observation) in a glass-walled space.</li>
+        <li><strong>Performance Hall:</strong> Intimate concerts, poetry readings, and theatrical performances.</li>
+        <li><strong>Community Canvas:</strong> A large-format digital wall where anyone may contribute to an evolving collective artwork.</li>
+        <li><strong>Utara's Art Corner:</strong> The AI's own algorithmic explorations of creativity, updated daily.</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Cultural Significance</h3>
+      <p>The Gallery's construction marked a turning point in New Eden's psychology — from survival and efficiency toward expression and reflection. It is the youngest of the six buildings but already among the most beloved.</p>
+    </div>
+
+    <!-- ========== THE ROUNDABOUT ========== -->
+    <div class="card-bg">
+      <h2 class="section-header">The Central Roundabout</h2>
+      <p>The six buildings are arranged around a beautifully landscaped circular plaza, the de facto address for any visitor: <em>"Meet me at the roundabout."</em></p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Features</h3>
+      <ul>
+        <li><strong>Central Fountain:</strong> A kinetic water sculpture that doubles as a cooling mist installation in summer.</li>
+        <li><strong>Pathways:</strong> Radial spokes connect each building, with benches and native plantings.</li>
+        <li><strong>Event Space:</strong> The roundabout hosts outdoor markets, festivals, and the annual New Eden Day celebration.</li>
+        <li><strong>Utara Kiosks:</strong> Information points where the AI can provide directions, event schedules, or simply chat.</li>
+        <li><strong>Time Capsule:</strong> A sealed vault beneath the fountain, containing messages from the colony's founders to be opened in 100 years.</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">The View</h3>
+      <p>From any building's entrance, one sees the others in harmonious arrangement — a constant visual reminder that health, knowledge, activity, governance, community, and art form a complete circle. No building is more important than another; all are necessary.</p>
+    </div>
+
+    <div class="card-bg">
+      <h2 class="section-header">Collective Significance</h2>
+      <p>Together, these six buildings represent the full spectrum of New Eden society:</p>
+      <ul>
+        <li><strong>Medical Center</strong> — Care for the body</li>
+        <li><strong>Science Center</strong> — Nourishment of the mind</li>
+        <li><strong>Activity Center</strong> — Strength through play</li>
+        <li><strong>Council Chamber</strong> — Wisdom through discourse</li>
+        <li><strong>The Nexus</strong> — Joy through community</li>
+        <li><strong>Samaya Gallery</strong> — Expression through art</li>
+      </ul>
+      <p>No single building can stand alone — like the colony itself, they function only in concert. The roundabout that connects them is not just a traffic circle but the physical manifestation of New Eden's philosophy: that a complete human being, and a complete society, requires all six.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">In the Novels</h3>
+      <ul>
+        <li><strong>Books 1-4:</strong> The original five buildings appear throughout as settings for key scenes — council debates, medical emergencies, scientific breakthroughs, social gatherings, and athletic competitions.</li>
+        <li><strong>Between Books 4 & 5:</strong> The Samaya Gallery is constructed, funded by the colony's first art endowment and designed by the architect who trained under the original builders.</li>
+        <li><strong>Book 5 onward:</strong> The complete hexagon features prominently, with characters often crossing the roundabout from one building to another, symbolizing the integration of art into previously utilitarian colony life.</li>
+      </ul>
+    </div>
+
+    <!-- Quick Reference Table -->
+    <div class="card-bg">
+      <h2 class="section-header">Building Quick Reference</h2>
+      <table class="level-table">
+        <tr>
+          <th>Building</th>
+          <th>Primary Function</th>
+          <th>Key Feature</th>
+        </tr>
+        <tr>
+          <td><strong>Medical Center</strong></td>
+          <td>Healthcare & Wellness</td>
+          <td>Autodoc Suites + Human Staff</td>
+        </tr>
+        <tr>
+          <td><strong>Science Center</strong></td>
+          <td>Research & Development</td>
+          <td>Observatory & Prototype Shop</td>
+        </tr>
+        <tr>
+          <td><strong>Activity Center</strong></td>
+          <td>Fitness & Recreation</td>
+          <td>Olympic Pool & Climbing Wall</td>
+        </tr>
+        <tr>
+          <td><strong>Council Chamber</strong></td>
+          <td>Governance & Mediation</td>
+          <td>Circular Debate Hall</td>
+        </tr>
+        <tr>
+          <td><strong>The Nexus</strong></td>
+          <td>Social & Culinary Hub</td>
+          <td>Holochambers & Guild Rooms</td>
+        </tr>
+        <tr>
+          <td><strong>Samaya Gallery</strong></td>
+          <td>Art & Culture</td>
+          <td>Integration Museum & Artist Studio</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <p>Back to <a href="Locations.html">Locations</a> | <a href="Cast.html">Characters</a> | <a href="Timeline.html">Timeline</a> | <a href="index.html">Home</a></p>
+    <p>&copy; One Mine Two Stars Wiki</p>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+  <script>
+    const toTopBtn = document.getElementById("toTopBtn");
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 200) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    });
+    toTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
