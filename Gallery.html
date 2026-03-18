@@ -224,13 +224,17 @@
   }
 
   // Process the manifest data
-  function processManifest(manifest) {
-    galleryItems = manifest.map(item => ({
-      src: item.file,
-      title: item.title || createCaption(item.file),
-      description: item.description || "",
-      tags: item.tags || []
-    }));
+function processManifest(manifest) {
+  galleryItems = manifest.map(item => ({
+    src: item.file,
+    width: item.width,      // ← ADD THIS
+    height: item.height,    // ← ADD THIS
+    title: item.title || createCaption(item.file),
+    description: item.description || "",
+    tags: item.tags || []
+  }));
+  // ... rest of function
+}
 
     // Collect all unique tags
     galleryItems.forEach(item => {
