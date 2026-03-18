@@ -1,11 +1,11 @@
 [
- {
+  {
     "file": "alex-and-dee.webp",
     "title": "Uncle Alex and Aunt Dee",
-    "description": "Uncle Alex and Aunt Dee dancing at Jaxon's birthday party in Book 1.",
-    "tags": ["alex", "dee", "character", "book 1"]
- },
- {
+    "description": "Uncle Alex and Aunt Dee dancing at Jaxon's 10th birthday party in Book 1",
+    "tags": ["alex", "dee", "dance", "kiss", "book 1"]
+  },
+  {
     "file": "ani.png",
     "title": "Artificial Neural Interface",
     "description": "The experimental ANI device that allows neural linking between humans and Galinstanian consciousness and, eventually, Utara.",
@@ -20,32 +20,14 @@
   {
     "file": "ares.png",
     "title": "Map of Ares around New Eden",
-    "description": "Map of Ares around New Eden",
+    "description": "A Map showing the New Eden area of Ares.",
     "tags": ["ares", "map", "new eden"]
   },
   {
-    "file": "celectra_pregnant.png",
-    "title": "Celectra During Pregnancy",
-    "description": "Celectra at age 22, carrying the twins, Jenni and Xara.",
-    "tags": ["celectra", "pregnancy", "character", "book 1"]
-  },
-  {
-    "file": "celectra_cabinet.png",
-    "title": "Celectra's Cabinet of Stones",
-    "description": "An illuminated cabinet containing Celectra's rock collection including large, precious stones that Galanstanians leave behind as insoluble waste.",
-    "tags": ["celectra", "rocks", "stones", "cabinet", "collection"]
-  },
-  {
-    "file": "cave.png",
-    "title": "The Deep Caves",
-    "description": "Entrance to the extensive cave system explored over fourteen years. These caves hold ancient Galinstanian secrets.",
-    "tags": ["environment", "cave", "exploration", "ancient"]
-  },
-  {
-    "file": "gazing-through-port-hole.jpg",
-    "title": "Utopis Station Living Room",
-    "description": "The Carisco family's living quarters aboard the Utopis space station, featuring a view of Ares.",
-    "tags": ["celectra", "space station", "utopis", "living quarters", "book 1"]
+    "file": "bowers_babies.webp",
+    "title": "Jenni and Xara Bowers as Babies",
+    "description": "Celectra's identical twin babies, Jenni Jo and Xara Zo Bowers as babies.",
+    "tags": ["jenni", "xara", "bowers", "baby", "babies"]
   },
   {
     "file": "carisco-family.webp",
@@ -54,10 +36,46 @@
     "tags": ["carisco", "family", "portrait", "book 2"]
   },
   {
+    "file": "cave.png",
+    "title": "The Deep Caves",
+    "description": "Entrance to the extensive cave system explored over fourteen years. These caves hold ancient Galinstanian secrets.",
+    "tags": ["environment", "cave", "exploration", "ancient"]
+  },
+  {
+    "file": "celectra-age8.webp",
+    "title": "Celectra at Age 8",
+    "description": "Celectra on her 8th birthday in Book 1's epilogue",
+    "tags": []
+  },
+  {
+    "file": "celectra_cabinet.png",
+    "title": "Celectra's Cabinet of Stones",
+    "description": "An illuminated cabinet containing Celectra's rock collection including large, precious stones that Galanstanians leave behind as insoluble waste.",
+    "tags": ["celectra", "rocks", "stones", "cabinet", "collection"]
+  },
+  {
+    "file": "celectra_pregnant.png",
+    "title": "Celectra During Pregnancy",
+    "description": "Celectra at age 22, carrying the twins, Jenni and Xara.",
+    "tags": ["celectra", "pregnancy", "character", "book 1"]
+  },
+  {
+    "file": "Celectrum.jpg",
+    "title": "Celectrum",
+    "description": "An instrument invented by Jaxon in book 2",
+    "tags": ["celectrum", "instrument", "music"]
+  },
+  {
     "file": "galinstanian.jpg",
     "title": "Galinstanian Being",
     "description": "A rare capture of a Galinstanian in their natural form, displaying the characteristic quicksilver reflections.",
-    "tags": ["galinstanian", "alien", "species", "bioluminescent"]
+    "tags": ["galinstanian", "alien", "species", "stan"]
+  },
+  {
+    "file": "gazing-through-port-hole.jpg",
+    "title": "Utopis Station Living Room",
+    "description": "The Carisco family's living quarters aboard the Utopis space station, featuring a view of Ares.",
+    "tags": ["celectra", "space station", "utopis", "living quarters", "book 1"]
   },
   {
     "file": "Listener Corps.png",
@@ -65,130 +83,46 @@
     "description": "The elite Listener Corps, trained to communicate with Galinstanian consciousness through neural interfaces.",
     "tags": ["listener corps", "organization", "elite"]
   },
-{
-"file": "celectra_pregnant.png",
-"title": "Celectra During Pregnancy",
-"description": "Celectra at age 22, carrying the twins, Jenni and Xara.",
-"tags": ["celectra", "pregnancy", "character", "book 1"]
-},
-{
-"file": "celectra_cabinet.png",
-"title": "Celectra's Cabinet of Stones",
-"description": "An illuminated cabinet containing Celectra's rock collection including large, precious stones that Galanstanians leave behind as insoluble waste.",
-"tags": ["celectra", "rocks", "stones", "cabinet", "collection"]
-},
-{
-"file": "ani.png",
-"title": "Artificial Neural Interface",
-"description": "The experimental ANI device that allows neural linking between humans and Galinstanian consciousness and, eventually, Utara.",
-"tags": ["technology", "ani", "interface"]
-},
-{
-"file": "cave.png",
-"title": "The Deep Caves",
-"description": "Entrance to the extensive cave system explored over fourteen years. These caves hold ancient Galinstanian secrets.",
-"tags": ["environment", "cave", "exploration", "ancient"]
-},
-{
-"file": "gazing-through-port-hole.jpg",
-"title": "Utopis Station Living Room",
-"description": "The Carisco family's living quarters aboard the Utopis space station, featuring a view of Ares.",
-"tags": ["celectra", "space station", "utopis", "living quarters", "book 1"]
-},
-{
-"file": "carisco-family.webp",
-"title": "The Carisco Family Portrait",
-"description": "A formal portrait of the Carisco family from Book 2, showing the growing family.",
-"tags": ["carisco", "family", "portrait", "book 2"]
-},
-{
-"file": "galinstanian.jpg",
-"title": "Galinstanian Being",
-"description": "A rare capture of a Galinstanian in their natural form, displaying the characteristic quicksilver reflections.",
-"tags": ["galinstanian", "alien", "species", "stan"]
-},
-{
-"file": "Listener Corps.png",
-"title": "Listener Corps Emblem",
-"description": "The elite Listener Corps, trained to communicate with Galinstanian consciousness through neural interfaces.",
-"tags": ["listener corps", "organization", "elite"]
-},
-{
-"file": "alex-and-dee.webp",
-"title": "Uncle Alex and Aunt Dee",
-"description": "Uncle Alex and Aunt Dee dancing at Jaxon's 10th birthday party in Book 1",
-"tags": ["alex", "dee", "dance", "kiss", "book 1"]
-},
-{
-"file": "ares.gif",
-"title": "Ares Animation",
-"description": "Ares rotating",
-"tags": ["ares", "moon", "planet"]
-},
-{
-"file": "ares.png",
-"title": "Map of Ares",
-"description": "A Map showing the New Eden area of Ares.",
-"tags": ["ares", "map", "new eden"]
-},
-{
-"file": "bowers_babies.webp",
-"title": "Jenni and Xara Bowers as Babies",
-"description": "Celectra's identical twin babies, Jenni Jo and Xara Zo Bowers as babies.",
-"tags": ["jenni", "xara", "bowers", "baby", "babies"]
-},
-{
-"file": "celectra-age8.webp",
-"title": "Celectra at Age 8",
-"description": "Celectra on her 8th birthday in Book 1's epilogue",
-"tags": []
-},
-{
-"file": "Celectrum.jpg",
-"title": "Celectrum",
-"description": "An instrument invented by Jaxon in book 2",
-"tags": ["celectrum", "instrument", "music"]
-},
-{
-"file": "Maya-and-Sam.webp",
-"title": "Maya and Sam",
-"description": "Maya and Sam at the Samaya Gallery and Museum of Integration's grand opening between books 4 and 5.",
-"tags": ["maya", "sam", "gallery", "museum", "Integration"]
-},
-{
-"file": "maya-painting.webp",
-"title": "Maya Painting",
-"description": "Maya creating a fingerpaint masterpiece at age 6.",
-"tags": ["maya", "paint", "childhood"]
-},
-{
-"file": "Reclamatic.png",
-"title": "Reclamatic (cleaning bot)",
-"description": "A robotic floor cleaner that uses MRI tech to deatomize dust, debris, germs and even stains.",
-"tags": ["robot", "bot", "cleaning", "cleaner"]
-},
-{
-"file": "sam-and-maya.webp",
-"title": "Sam and Maya",
-"description": "Sam and Maya celebrating the grand opening of the Samaya Gallery and Museum of Integration between books 4 and 5.",
-"tags": ["maya", "sam", "gallery", "museum", "Integration"]
-},
-{
-"file": "samaya-gallery-and-museum-of-integration.webp",
-"title": "Samaya Gallery and Museum of Integration",
-"description": "Art gallery and museum founded and directed by Maya and Sam.",
-"tags": ["maya", "sam", "gallery", "museum", "Integration"]
-},
-{
-"file": "Utopis.png",
-"title": "Utopis",
-"description": "Exterior view of the space station, Utopis. Home of Celectra and Amergio through most of book 1.",
-"tags": ["utopis", "space station", "orbit", "childhood home"]
-},
-{
-"file": "xara-and-jenni.webp",
-"title": "Xara and Jenni",
-"description": "Portrait of Xara and Jenni at age 7 in book 4.",
-"tags": ["xara", "jenni","book 4"]
-}
+  {
+    "file": "Maya-and-Sam.webp",
+    "title": "Maya and Sam",
+    "description": "Maya and Sam at the Samaya Gallery and Museum of Integration's grand opening between books 4 and 5.",
+    "tags": ["maya", "sam", "gallery", "museum", "Integration"]
+  },
+  {
+    "file": "maya-painting.webp",
+    "title": "Maya Painting",
+    "description": "Maya creating a fingerpaint masterpiece at age 6.",
+    "tags": ["maya", "paint", "childhood"]
+  },
+  {
+    "file": "Reclamatic.png",
+    "title": "Reclamatic (cleaning bot)",
+    "description": "A robotic floor cleaner that uses MRI tech to deatomize dust, debris, germs and even stains.",
+    "tags": ["robot", "bot", "cleaning", "cleaner"]
+  },
+  {
+    "file": "sam-and-maya.webp",
+    "title": "Sam and Maya",
+    "description": "Sam and Maya celebrating the grand opening of the Samaya Gallery and Museum of Integration between books 4 and 5.",
+    "tags": ["maya", "sam", "gallery", "museum", "Integration"]
+  },
+  {
+    "file": "samaya-gallery-and-museum-of-integration.webp",
+    "title": "Samaya Gallery and Museum of Integration",
+    "description": "Art gallery and museum founded and directed by Maya and Sam.",
+    "tags": ["maya", "sam", "gallery", "museum", "Integration"]
+  },
+  {
+    "file": "Utopis.png",
+    "title": "Utopis",
+    "description": "Exterior view of the space station, Utopis. Home of Celectra and Amergio through most of book 1.",
+    "tags": ["utopis", "space station", "orbit", "childhood home"]
+  },
+  {
+    "file": "xara-and-jenni.webp",
+    "title": "Xara and Jenni",
+    "description": "Portrait of Xara and Jenni at age 7 in book 4.",
+    "tags": ["xara", "jenni", "book 4"]
+  }
 ]
