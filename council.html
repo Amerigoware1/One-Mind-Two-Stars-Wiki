@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Council Chamber - One Mine Two Stars Wiki</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="WikiStyle.css">
+  <style>
+    /* Council Chamber specific styles */
+    .council-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      background: rgba(10, 20, 30, 0.7);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    }
+    .council-table th {
+      background: linear-gradient(135deg, #5a4a3a, #3a2a1a);
+      color: #ffcc99;
+      font-weight: 600;
+      padding: 14px 10px;
+      text-align: left;
+      border-bottom: 2px solid #b88a4a;
+      font-size: 1.1rem;
+    }
+    .council-table td {
+      padding: 12px 10px;
+      border-bottom: 1px solid #4a3a2a;
+      vertical-align: top;
+    }
+    .council-table tr:last-child td {
+      border-bottom: none;
+    }
+    .council-table tr:hover {
+      background: rgba(200, 150, 80, 0.1);
+    }
+    .seat-number {
+      display: inline-block;
+      background: #2c3e50;
+      color: #b88a4a;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      text-align: center;
+      line-height: 28px;
+      font-weight: bold;
+      margin-right: 10px;
+      border: 2px solid #b88a4a;
+    }
+    .tribunal-card {
+      background: #2a1e14;
+      border-left: 6px solid #9a6e3e;
+      padding: 1.2rem;
+      margin: 1.2rem 0;
+      border-radius: 0 12px 12px 0;
+    }
+    .tribunal-date {
+      color: #dba959;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .tribunal-outcome {
+      display: inline-block;
+      background: #4a2e1e;
+      padding: 0.2rem 1rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      border: 1px solid #b88a4a;
+      margin-top: 0.5rem;
+    }
+    .ambassador-note {
+      background: linear-gradient(145deg, #1a2f3a, #0e1f2a);
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border: 1px solid #4a8a9a;
+      position: relative;
+    }
+    .ambassador-note::before {
+      content: "⚡";
+      position: absolute;
+      top: -10px;
+      left: 30px;
+      font-size: 2rem;
+      opacity: 0.3;
+      color: #7ac4d4;
+    }
+    .cave-quote {
+      font-style: italic;
+      background: rgba(0,0,0,0.3);
+      padding: 1rem;
+      border-radius: 30px 30px 30px 8px;
+      margin: 1rem 0;
+    }
+    .feature-badge {
+      display: inline-block;
+      background: #2c3e50;
+      color: #ffaa33;
+      padding: 3px 10px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-right: 8px;
+      margin-bottom: 5px;
+      border: 1px solid #ffaa33;
+    }
+    .level-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: rgba(10, 20, 30, 0.6);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .level-table th {
+      background: linear-gradient(135deg, #4a5b6e, #2c3e50);
+      color: white;
+      padding: 12px 8px;
+      border-bottom: 2px solid #ffaa33;
+    }
+    .level-table td {
+      padding: 10px 8px;
+      border-bottom: 1px solid #3a4a5a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-banner">
+    <a href="index.html" class="home-button">🏠 Home</a>
+  </div>
+
+  <h1 class="gradient-title">Council Chamber</h1>
+  <div class="subtitle">"Not law, but wisdom. Not rule, but consensus."</div>
+
+  <!-- Infobox -->
+  <div class="infobox">
+    <table class="infobox">
+      <tr>
+        <td colspan="2" class="text-center pb-2">
+          <img src="assets/images/gallery/council.webp" alt="The circular Council Chamber with its concentric seating" class="portrait">
+          <div class="image-caption">The Chamber during a regular session</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <td>Government / Civic Building</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>New Eden Town Center (original five)</td>
+      </tr>
+      <tr>
+        <th>Construction</th>
+        <td>Pre-series (colony founding)</td>
+      </tr>
+      <tr>
+        <th>Council Seats</th>
+        <td>12</td>
+      </tr>
+      <tr>
+        <th>Presiding Officer</th>
+        <td>Administrator Isabella Santos</td>
+      </tr>
+      <tr>
+        <th>Security Chief</th>
+        <td>Evelyn Roan (office in Chamber)</td>
+      </tr>
+      <tr>
+        <th>Key Role</th>
+        <td>Galistani ambassadorial interface</td>
+      </tr>
+      <tr>
+        <th>Notable Feature</th>
+        <td>Circular design — no head of table</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Article content container -->
+  <div class="article-content">
+
+    <!-- OVERVIEW -->
+    <div class="card-bg">
+      <h2 class="section-header">Overview</h2>
+      <p>The <strong>Council Chamber</strong> is New Eden's seat of governance — though "governance" here means facilitation rather than rule. As one of the original five buildings encircling the central roundabout, its exterior is identical to its neighbors: graceful curved facades, sustainable local stone composites, and integrated Utara interface panels. But inside, it is unique: a perfect circular hall where 12 council members sit among the citizens they serve, with no elevated podium, no head of the table, and no physical distinction between governing and governed.</p>
+      
+      <p>The Chamber hosts weekly open sessions, resource allocation debates, dispute mediation, ceremonial events, and — most critically — the tribunals that have shaped colony leadership. It is also the formal interface between human governance and the Galistani species, a role made possible by one extraordinary individual.</p>
+      
+      <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1.2rem 0 0 0;">
+        <span class="feature-badge">⚖️ 12 Seats</span>
+        <span class="feature-badge">🌀 Circular Design</span>
+        <span class="feature-badge">⚡ Galistani Interface</span>
+        <span class="feature-badge">🔍 Tribunal Venue</span>
+        <span class="feature-badge">👮 Security Office</span>
+      </div>
+    </div>
+
+    <!-- ARCHITECTURE & SYMBOLISM -->
+    <div class="card-bg">
+      <h2 class="section-header">Architecture & Symbolism</h2>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">The Circle</h3>
+      <p>The Chamber is designed as a <strong>perfect circle</strong>, with seating in twelve concentric rings — one for each council member, but with no ring elevated above another. Council members sit among the citizens who attend sessions; there is no podium, no throne, no head of the table. When a citizen addresses the council, they stand at the exact center of the circle, equidistant from all who listen.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Utara's Presence</h3>
+      <p>Unlike in other buildings where Utara's interface is peripheral, in the Chamber she is <strong>central</strong>. A holographic projection ring floats at head height around the room's circumference, displaying data, previous decisions, and — when requested — the projected outcomes of proposed choices. Before any vote, the presiding officer asks: <em>"Utara, show us the long path."</em> The AI then projects the potential outcomes of each choice across 10, 50, and 100 years — not to dictate the decision, but to ensure it's made with full awareness.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">The Public Gallery</h3>
+      <p>A raised walkway along the outer wall allows additional citizens to observe sessions. From this vantage, the circular seating below resembles a living organism — constantly shifting as council members move to sit among constituents or as citizens step into the center to speak.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Security Office</h3>
+      <p>Adjacent to the main Chamber, a discreet door leads to the office of the <strong>Chief of Security</strong>. Currently occupied by Councilwoman Evelyn Roan, this space functions as both her administrative center and the holding area for those awaiting tribunals. Its proximity to the Chamber reflects the colony's belief that security is not separate from governance but integral to it.</p>
+    </div>
+
+    <!-- THE 12 SEATS: COUNCIL ROSTER -->
+    <div class="card-bg">
+      <h2 class="section-header">The Twelve Seats</h2>
+      <p>The council comprises 12 members, each representing a vital sector of colony life. Seats are held by the heads of major departments, with appointments subject to council confirmation. The roster evolves across the series as leadership changes.</p>
+      
+      <table class="council-table">
+        <tr>
+          <th>Seat</th>
+          <th>Portfolio</th>
+          <th>Book 1 Incumbent</th>
+          <th>Book 3+ Incumbent</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td><span class="seat-number">1</span></td>
+          <td>Administrator</td>
+          <td colspan="2"><strong>Isabella Santos</strong></td>
+          <td>Presiding officer; colony-wide coordination</td>
+        </tr>
+        <tr>
+          <td><span class="seat-number">2</span></td>
+          <td>Security</td>
+          <td colspan="2"><strong>Evelyn Roan</strong></td>
+          <td>Leads investigations, tribunals; office in Chamber</td>
+        </tr>
+        <tr>
+          <td><span class="seat-number">3</span></td>
+          <td>Medicine</td>
+          <td>Douglas Kret</td>
+          <td><strong>Dr. Alex Cruiz</strong></td>
+          <td>Kret removed by tribunal (Book 1); Cruiz appointed</td>
+        </tr>
+        <tr>
+          <td><span class="seat-number">4</span></td>
+          <td>Science & Technology</td>
+          <td>Lorain Troy</td>
+          <td><strong>Amerigo Carisco</strong></td>
+          <td>Troy retires early Book 3 (illness); Carisco appointed</td>
+        </tr>
+        <tr>
+          <td><span class="seat-number">5</span></td>
+          <td>Agriculture</td>
+          <td colspan="2"><strong>Dr. Nathaniel Webb</strong></td>
+          <td>Food systems, terraforming support</td>
+        </tr>
+        <tr>
+          <td><span class="seat-number">6</span></td>
+          <td>Environmental Systems</td>
+          <td colspan="2"><strong>Dr. Kenji Yamoto</strong></td>
+          <td>Life support, climate, resource recycling</td>
+        </tr>
+        <tr>
+          <td><span class="seat-number">7</span></td>
+          <td>Athletics & Recreation</td>
+          <td colspan="2"><strong>Chibuike Okafor</strong></td>
+          <td>Activity Center, youth sports, colony games</td>
+        </tr>
+        <tr>
+          <td><span class="seat-number">8</span></td>
+          <td>Education</td>
+          <td colspan="2">[Elena Voss]</td>
+          <td>Schools, youth development, adult continuing ed</td>
+        </tr>
+        <tr>
+          <td><span class="seat-number">9</span></td>
+          <td>Engineering & Infrastructure</td>
+          <td colspan="2">[Marcus Chen]</td>
+          <td>Buildings, power grid, transport</td>
+        </tr>
+        <tr>
+          <td><span class="seat-number">10</span></td>
+          <td>Resource Allocation</td>
+          <td colspan="2">[Yuki Tanaka]</td>
+          <td>Supply chains, manufacturing, material budgets</td>
+        </tr>
+        <tr>
+          <td><span class="seat-number">11</span></td>
+          <td>Cultural Affairs</td>
+          <td colspan="2">Vacant until Book 5</td>
+          <td>Created for Samaya Gallery post-construction</td>
+        </tr>
+        <tr>
+          <td><span class="seat-number">12</span></td>
+          <td>Galistani Relations</td>
+          <td colspan="2"><em>Special non-voting role</em></td>
+          <td>Held by Celectra Carisco-Bowers (ambassador)</td>
+        </tr>
+      </table>
+      
+      <p style="margin-top: 1rem;"><em>Note: Four additional named council members (Webb, Yamoto, Okafor, plus the placeholder names suggested for Education, Engineering, and Resources) complete the 12. Seat 11 remained vacant until the Samaya Gallery's completion between Books 4 and 5, when Cultural Affairs was elevated to full council status.</em></p>
+    </div>
+
+    <!-- CELECTRA'S AMBASSADORIAL ROLE -->
+    <div class="ambassador-note">
+      <h3 style="color: #9ed4e4; margin-top: 0;">⚡ The Ambassador: Celectra Carisco-Bowers</h3>
+      <p>From the age of <strong>seven</strong>, Celectra Carisco-Bowers has been a fixture of the Council Chamber — first as a curiosity, then as an indispensable bridge between species. Her unique physiology allows her to communicate with the Galistanians via electromagnetic transmission in ways no other human can replicate.</p>
+      
+      <div class="cave-quote">
+        <p><em>"Anyone can receive their transmissions — Dr. Webb hears them as rustling leaves, Dr. Yamoto as harmonic resonance. But only Celectra can <strong>answer</strong>. She is not a translator; she is a conversation."</em> — Administrator Isabella Santos</p>
+      </div>
+      
+      <h4 style="color: #b88a4a; margin: 1rem 0 0.5rem 0;">Two Paths of Communication</h4>
+      <ul>
+        <li><strong>Remote (Bismuth Network):</strong> The Galistanians' natural bismuth-based neural network allows Celectra to commune with them from anywhere in the colony. This is efficient for routine updates.</li>
+        <li><strong>Personal (The Cave System):</strong> Celectra <em>prefers</em> to carry council questions and concerns directly to the Galistanians in their cave system, then return in person with their answers. She believes physical presence maintains trust — that the Galistanians read her body language, her heartbeat, her <em>self</em> in ways EM transmission cannot convey.</li>
+      </ul>
+      
+      <h4 style="color: #b88a4a; margin: 1rem 0 0.5rem 0;">The Listeners (Age 14+)</h4>
+      <p>At age 14, Celectra began recruiting and training <strong>Listeners</strong> — individuals with natural sensitivity to Galistani transmissions. These assistants now accompany her both into the caves and to Council Chamber sessions:</p>
+      <ul>
+        <li><strong>In the caves:</strong> Listeners help document Galistani responses, provide multiple human perspectives on the encounters, and serve as witnesses to the discussions.</li>
+        <li><strong>In the Chamber:</strong> During council sessions involving Galistani affairs, Listeners sit among the council rings, offering their interpretations and helping Celectra convey nuances the council might otherwise miss.</li>
+      </ul>
+      
+      <p>Celectra holds <strong>Seat 12</strong> as a non-voting ambassador — she does not make law, but no law concerning Galistani relations is made without her counsel. Her unique position means she spends more time in the Council Chamber than almost any voting member, often curled in one of the rings reading while debates swirl around her, waiting for the moment when Galistani insight is needed.</p>
+    </div>
+
+    <!-- TRIBUNALS: DOUGLAS KRET -->
+    <div class="card-bg">
+      <h2 class="section-header">Notable Tribunals</h2>
+      <p>The Council Chamber serves as the venue for colony tribunals — formal investigations into conduct that threatens community trust. Two such tribunals in Books 1 and 2 fundamentally reshaped the council's composition.</p>
+      
+      <div class="tribunal-card">
+        <div class="tribunal-date">⚖️ Book 1: First Kret Tribunal</div>
+        <p><strong>Subject:</strong> Dr. Douglas Kret, then Chief of Medicine and council member</p>
+        <p><strong>Presiding Investigator:</strong> Councilwoman Evelyn Roan, Chief of Security</p>
+        <p><strong>Charges:</strong> Medical ethics violations, unauthorized experimentation, endangering patients</p>
+        <p><strong>Outcome:</strong> Kret was removed from both his medical leadership and his council seat. His removal created the vacancy that Dr. Alex Cruiz — Celectra's "uncle" — would fill, becoming the new Chief of Medicine and taking Seat 3.</p>
+        <div class="tribunal-outcome">Guilty — Removed from office</div>
+      </div>
+      
+      <div class="tribunal-card">
+        <div class="tribunal-date">⚖️ Book 2: Second Kret Tribunal</div>
+        <p><strong>Subject:</strong> Dr. Douglas Kret (former council member)</p>
+        <p><strong>Presiding Investigator:</strong> Councilwoman Evelyn Roan</p>
+        <p><strong>Charges:</strong> Subsequent violations committed after his removal</p>
+        <p><strong>Outcome:</strong> This second tribunal resulted in Kret's complete exile from medical practice and restriction to non-critical colony roles. The proceedings further solidified Evelyn Roan's reputation as a thorough and impartial investigator.</p>
+        <div class="tribunal-outcome">Guilty — Restricted status</div>
+      </div>
+      
+      <p>Both tribunals were held in open session, with citizens filling the public gallery. The transparent process — every word recorded, every witness heard — established the Chamber's reputation as a place of accountability rather than punishment.</p>
+    </div>
+
+    <!-- KEY COUNCIL PROFILES -->
+    <div class="card-bg">
+      <h2 class="section-header">Key Council Figures</h2>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Administrator Isabella Santos</h3>
+      <p>The presiding officer of the council, Santos ensures sessions run smoothly and that every voice is heard. She does not vote except to break ties, viewing her role as facilitator rather than ruler. Her office is in the Chamber's administrative wing.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Councilwoman Evelyn Roan (Security)</h3>
+      <p>Chief of Security and the council's investigative arm. Roan's office is physically located within the Chamber complex — a deliberate choice symbolizing that security answers directly to the people. She led both Kret tribunals and is known for her meticulous, unflinching pursuit of facts. Citizens trust her because she fears no council member, not even the Administrator.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Dr. Alex Cruiz (Medicine, from Book 1)</h3>
+      <p>Celectra's "uncle" (close family friend), Cruiz took Seat 3 after Kret's removal. His gentle bedside manner and ethical clarity made him the natural choice to restore trust in the Medical Center.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Amerigo Carisco (Science & Technology, from Book 3)</h3>
+      <p>Celectra's father, appointed when Dr. Lorain Troy retired due to illness early in Book 3. A brilliant but humble researcher, Amerigo brought a scientist's precision to the council — and a father's protective instinct whenever Galistani matters arose.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Dr. Lorain Troy (Science & Technology, Book 1-3)</h3>
+      <p>The retiring chief whose illness created Amerigo's opportunity. Troy served through the colony's early scientific expansion and mentored many of its current researchers.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Dr. Nathaniel Webb (Agriculture)</h3>
+      <p>Responsible for food security and terraforming support. Webb's calm pragmatism often mediates between idealistic proposals and agricultural reality.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Dr. Kenji Yamoto (Environmental Systems)</h3>
+      <p>Oversees life support, climate control, and resource recycling. Yamoto speaks rarely but when he does, it's usually to remind the council of physical limits.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Chibuike Okafor (Athletics & Recreation)</h3>
+      <p>Representing the Activity Center, Okafor champions physical health, youth sports, and the annual New Eden Games. His seat reminds the council that colonies run on more than work.</p>
+      
+      <h4 class="text-lg font-semibold mt-4 mb-2">Additional Seats (Suggested)</h4>
+      <ul>
+        <li><strong>Elena Voss (Education):</strong> Schools, youth development, adult continuing education</li>
+        <li><strong>Marcus Chen (Engineering & Infrastructure):</strong> Buildings, power grid, transport systems</li>
+        <li><strong>Yuki Tanaka (Resource Allocation):</strong> Supply chains, manufacturing, material budgets</li>
+        <li><strong>Seat 11 (Cultural Affairs):</strong> Created Book 5, first occupant TBD (likely Maya Keahi or Sam Calder)</li>
+      </ul>
+    </div>
+
+    <!-- CELECTRA'S ROUTINE -->
+    <div class="card-bg">
+      <h2 class="section-header">A Day in the Chamber</h2>
+      <p>Celectra's relationship with the Council Chamber is so intimate that she essentially grew up there. A typical day in her ambassadorial life:</p>
+      
+      <ul>
+        <li><strong>Morning:</strong> Receive council questions from Administrator Santos. Review them with her Listeners in the Chamber's small library alcove.</li>
+        <li><strong>Midday:</strong> Travel to the cave system (alone or with Listeners) to meet with Galistanians. Carry council concerns, receive responses, observe Galistani reactions.</li>
+        <li><strong>Afternoon:</strong> Return to Chamber. Debrief with Listeners. Present findings to relevant council members.</li>
+        <li><strong>Evening:</strong> Remain in Chamber during sessions where Galistani matters are discussed, seated among the rings, ready to interpret or advise.</li>
+      </ul>
+      
+      <p>Between these duties, she can often be found in one of the Chamber's window seats, doing schoolwork or reading, while council business proceeds around her. She is as much a fixture of the building as the circular walls themselves.</p>
+    </div>
+
+    <!-- TIMELINE OF KEY EVENTS -->
+    <div class="card-bg">
+      <h2 class="section-header">Chamber Timeline</h2>
+      
+      <table class="level-table">
+        <tr>
+          <th>Period</th>
+          <th>Event</th>
+        </tr>
+        <tr>
+          <td><strong>Age 7+</strong></td>
+          <td>Celectra begins spending time in Chamber, first as observer, then as informal Galistani interface</td>
+        </tr>
+        <tr>
+          <td><strong>Book 1</strong></td>
+          <td>First Kret tribunal: Douglas Kret removed as Chief of Medicine; Dr. Alex Cruiz appointed to Seat 3</td>
+        </tr>
+        <tr>
+          <td><strong>Book 2</strong></td>
+          <td>Second Kret tribunal: Kret's complete restriction from medical practice</td>
+        </tr>
+        <tr>
+          <td><strong>Age 14</strong></td>
+          <td>Celectra begins recruiting Listeners; they accompany her in caves and Chamber</td>
+        </tr>
+        <tr>
+          <td><strong>Early Book 3</strong></td>
+          <td>Dr. Lorain Troy retires (illness); Amerigo Carisco appointed Chief of Science & Technology, takes Seat 4</td>
+        </tr>
+        <tr>
+          <td><strong>Between Books 4 & 5</strong></td>
+          <td>Seat 11 (Cultural Affairs) created; first occupant to be appointed after Gallery completion</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- CULTURAL SIGNIFICANCE -->
+    <div class="card-bg">
+      <h2 class="section-header">Cultural Significance</h2>
+      <p>The Council Chamber embodies New Eden's philosophy of transparent, accessible governance. Its circular design, open sessions, and Utara's "long path" projections ensure that decisions are made with collective wisdom rather than individual authority. For citizens, attending a council session is neither intimidating nor ceremonial — it is simply how the colony manages itself.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">In the Novels</h3>
+      <ul>
+        <li><strong>Books 1-2:</strong> The Kret tribunals dominate Chamber scenes, establishing Evelyn Roan's character and the council's commitment to accountability.</li>
+        <li><strong>Throughout:</strong> Celectra's presence — reading, waiting, speaking — reminds readers that governance includes the voices of the young and the non-human.</li>
+        <li><strong>Book 3:</strong> Lorain Troy's emotional farewell and Amerigo Carisco's quiet appointment mark a changing of the guard.</li>
+        <li><strong>Book 5 onward:</strong> The newly created Cultural Affairs seat signals the colony's maturation, adding art to the circle of governance.</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Quotable</h3>
+      <p><em>"In the Chamber, there is no 'they.' There is only 'we.' When you stand at the center, you face yourself."</em> — Administrator Isabella Santos</p>
+    </div>
+
+    <!-- QUICK REFERENCE -->
+    <div class="card-bg">
+      <h2 class="section-header">At a Glance</h2>
+      <table class="level-table">
+        <tr>
+          <th>Aspect</th>
+          <th>Detail</th>
+        </tr>
+        <tr>
+          <td><strong>Building Type</strong></td>
+          <td>Original five (identical exterior)</td>
+        </tr>
+        <tr>
+          <td><strong>Council Seats</strong></td>
+          <td>12 voting + 1 non-voting (Ambassador)</td>
+        </tr>
+        <tr>
+          <td><strong>Key Incumbents</strong></td>
+          <td>Santos, Roan, Cruiz, Carisco, Webb, Yamoto, Okafor</td>
+        </tr>
+        <tr>
+          <td><strong>Former Members</strong></td>
+          <td>Kret (removed), Troy (retired)</td>
+        </tr>
+        <tr>
+          <td><strong>Security Office</strong></td>
+          <td>Evelyn Roan, inside Chamber complex</td>
+        </tr>
+        <tr>
+          <td><strong>Ambassador</strong></td>
+          <td>Celectra Carisco-Bowers (Seat 13, non-voting)</td>
+        </tr>
+        <tr>
+          <td><strong>Unique Feature</strong></td>
+          <td>"Show us the long path" — Utara's projection</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <p>Back to <a href="Locations.html">Locations</a> | <a href="Cast.html">Characters</a> | <a href="Timeline.html">Timeline</a> | <a href="index.html">Home</a></p>
+    <p>See also: <a href="Celectra_Carisco-Bowers.html">Celectra Carisco-Bowers</a> | <a href="Evelyn_Roan.html">Evelyn Roan</a> | <a href="Alex_Cruiz.html">Dr. Alex Cruiz</a> | <a href="Amerigo_Carisco.html">Amerigo Carisco</a> | <a href="Nexus.html">The Nexus</a> | <a href="Samaya_Gallery.html">Samaya Gallery</a></p>
+    <p>&copy; One Mine Two Stars Wiki</p>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+  <script>
+    const toTopBtn = document.getElementById("toTopBtn");
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 200) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    });
+    toTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
