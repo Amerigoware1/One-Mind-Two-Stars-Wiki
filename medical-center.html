@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Center - One Mine Two Stars Wiki</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="WikiStyle.css">
+  <style>
+    /* Medical Center specific styles */
+    .medical-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .stat-card {
+      background: rgba(20, 40, 50, 0.7);
+      border-radius: 16px;
+      padding: 1rem 1.5rem;
+      flex: 1 1 180px;
+      border-left: 5px solid #4a9aaa;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #7ac4d4;
+      line-height: 1.2;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      color: #b0c8d0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .delivery-announcement {
+      background: linear-gradient(145deg, #1a3a3a, #0e2a2a);
+      border-radius: 30px;
+      padding: 1.2rem 2rem;
+      margin: 1.5rem 0;
+      border: 1px solid #5aa;
+      text-align: center;
+      font-size: 1.2rem;
+      box-shadow: 0 0 20px rgba(100, 200, 200, 0.2);
+    }
+    .delivery-date {
+      font-family: monospace;
+      background: #000;
+      padding: 0.2rem 1rem;
+      border-radius: 40px;
+      display: inline-block;
+      margin: 0.5rem;
+    }
+    .testimony-card {
+      background: #1e2c2a;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 1.2rem 0;
+      border-left: 6px solid #9a6e3e;
+      font-style: italic;
+      position: relative;
+    }
+    .testimony-card::before {
+      content: "“";
+      font-size: 4rem;
+      color: #6a8a7a;
+      opacity: 0.3;
+      position: absolute;
+      top: -10px;
+      left: 10px;
+    }
+    .speaker {
+      display: block;
+      margin-top: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      color: #b8d0aa;
+      text-align: right;
+    }
+    .ani-note {
+      background: #102830;
+      border-radius: 12px;
+      padding: 1rem;
+      margin: 1rem 0;
+      border: 2px dashed #4a9aaa;
+    }
+    .feature-badge {
+      display: inline-block;
+      background: #2c3e50;
+      color: #7ac4d4;
+      padding: 3px 10px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-right: 8px;
+      margin-bottom: 5px;
+      border: 1px solid #7ac4d4;
+    }
+    .level-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: rgba(10, 20, 30, 0.6);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .level-table th {
+      background: linear-gradient(135deg, #2a5a6a, #1a3a4a);
+      color: white;
+      padding: 12px 8px;
+      border-bottom: 2px solid #7ac4d4;
+    }
+    .level-table td {
+      padding: 10px 8px;
+      border-bottom: 1px solid #3a4a5a;
+    }
+    .council-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      background: rgba(10, 20, 30, 0.7);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .council-table th {
+      background: linear-gradient(135deg, #2a5a6a, #1a3a4a);
+      color: #cce;
+      padding: 14px 10px;
+      border-bottom: 2px solid #7ac4d4;
+    }
+    .council-table td {
+      padding: 12px 10px;
+      border-bottom: 1px solid #3a4a5a;
+    }
+    .seat-number {
+      display: inline-block;
+      background: #1a3a4a;
+      color: #7ac4d4;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      text-align: center;
+      line-height: 28px;
+      font-weight: bold;
+      margin-right: 10px;
+      border: 2px solid #7ac4d4;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-banner">
+    <a href="index.html" class="home-button">🏠 Home</a>
+  </div>
+
+  <h1 class="gradient-title">Medical Center</h1>
+  <div class="subtitle">"First, do no harm — then, heal completely."</div>
+
+  <!-- Infobox -->
+  <div class="infobox">
+    <table class="infobox">
+      <tr>
+        <td colspan="2" class="text-center pb-2">
+          <img src="assets/images/medical.webp" alt="Medical Center exterior, one of the original five" class="portrait">
+          <div class="image-caption">The Medical Center as seen from the roundabout</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <td>Healthcare Facility / Small Hospital</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>New Eden Town Center (original five)</td>
+      </tr>
+      <tr>
+        <th>Construction</th>
+        <td>Pre-series (colony founding)</td>
+      </tr>
+      <tr>
+        <th>Chief of Medicine</th>
+        <td>Dr. Alex Cruiz (from Book 1)</td>
+      </tr>
+      <tr>
+        <th>Head Nurse</th>
+        <td>Terry Fairchild (agender)</td>
+      </tr>
+      <tr>
+        <th>Colony Population</th>
+        <td>~600 (varies by book)</td>
+      </tr>
+      <tr>
+        <th>Key Innovation</th>
+        <td>ANI comfort monitoring (late Book 3)</td>
+      </tr>
+      <tr>
+        <th>Notable Births</th>
+        <td>Celectra (2225) • Twin deliveries (2247)</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Article content container -->
+  <div class="article-content">
+
+    <!-- OVERVIEW -->
+    <div class="card-bg">
+      <h2 class="section-header">Overview</h2>
+      <p>The <strong>Medical Center</strong> is New Eden's primary healthcare facility, one of the five original buildings encircling the central roundabout. Though its exterior is identical to its neighbors—graceful curved facades of local stone composite—its interior is a fully equipped small hospital serving a colony population of approximately 600 souls.</p>
+      
+      <p>Unlike the automated medical bays aboard starships, the Medical Center maintains a philosophy of <strong>human-centered care</strong>. While Utara handles diagnostics, monitoring, and routine data, the Center's small but dedicated staff ensures that healing remains a human interaction. This philosophy was tested during the Kret tribunals and affirmed under the leadership of Dr. Alex Cruiz.</p>
+      
+      <div class="medical-stats">
+        <div class="stat-card">
+          <div class="stat-number">~600</div>
+          <div class="stat-label">Colony Population</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Staff Coverage</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3</div>
+          <div class="stat-label">Autodoc Suites</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">13</div>
+          <div class="stat-label">Council Seat</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEY PERSONNEL -->
+    <div class="card-bg">
+      <h2 class="section-header">Key Personnel</h2>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Dr. Alex Cruiz — Chief of Medicine</h3>
+      <p>Dr. Cruiz arrived on New Eden from the orbital station <strong>Utopis</strong> with his wife Dee, shortly after the exile of Dr. Douglas Kret. His move was both personal and professional: his close friends Amerigo Carisco and his daughter Celectra had already settled on the surface, and the Medical Center needed a leader who could restore trust after Kret's tribunals.</p>
+      
+      <p>A true <strong>jack-of-all-specialties</strong>, Cruiz performs surgery, delivers babies, sets bones, treats chronic conditions, and counsels the dying. In a colony of 600, there is no room for narrow specialization—he is physician, surgeon, pediatrician, and gerontologist by turns, often in the same day.</p>
+      
+      <div class="testimony-card">
+        <p>He delivered Celectra on October 11, 2225, aboard Utopis—catching her in his own hands before the automated systems could react. Seven years later, she would call him "Uncle Doc." By Book 2, it was simply "Uncle Alex." And in November of 2247, in this very building, he would deliver her twins.</p>
+        <span class="speaker">— From "A History of New Eden Medicine"</span>
+      </div>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Terry Fairchild — Head Nurse</h3>
+      <p><strong>Terry Fairchild</strong> (agender; uses they/them) is the backbone of the Medical Center. As head nurse, they manage day-to-day operations, train new staff, and maintain the delicate balance between Utara's monitoring and human touch.</p>
+      
+      <p>But Terry's most defining moment came <strong>before</strong> Cruiz arrived. During Dr. Douglas Kret's tenure, Terry risked their entire career to:</p>
+      <ul>
+        <li>Defend Celectra Carisco-Bowers when Kret's unethical practices endangered her</li>
+        <li>Testify truthfully against their own boss during the Book 1 tribunal</li>
+      </ul>
+      
+      <p>Their testimony was instrumental in Kret's removal. When Cruiz took over, he kept Terry as head nurse—not out of obligation, but because they were the most competent, most ethical person in the building. The two now run the Center as equals: Cruiz the hands, Fairchild the memory of why trust matters.</p>
+      
+      <p><em>"I didn't risk my career to get rid of Kret so I could watch someone else make the same mistakes. Dr. Cruiz never would."</em> — Terry Fairchild</p>
+    </div>
+
+    <!-- FACILITIES & CAPABILITIES -->
+    <div class="card-bg">
+      <h2 class="section-header">Facilities & Capabilities</h2>
+      <p>Though modest by Earth standards, the Medical Center is a fully functional small hospital. Its capabilities are optimized for a population of 600, with flexibility for surges (construction accidents, exploration injuries, or the occasional epidemic).</p>
+      
+      <table class="level-table">
+        <tr>
+          <th>Department</th>
+          <th>Capabilities</th>
+        </tr>
+        <tr>
+          <td><strong>Emergency & Trauma</strong></td>
+          <td>3 fully equipped autodoc suites; capable of handling industrial accidents, severe injuries, and critical care</td>
+        </tr>
+        <tr>
+          <td><strong>Surgical Suite</strong></td>
+          <td>2 operating rooms (one robotic-assisted, one manual); Cruiz performs everything from appendectomies to C-sections</td>
+        </tr>
+        <tr>
+          <td><strong>Maternity Wing</strong></td>
+          <td>4 birthing suites; home to the colony's newest citizens (including Celectra's twins in 2247)</td>
+        </tr>
+        <tr>
+          <td><strong>Inpatient Ward</strong></td>
+          <td>12 beds for overnight or extended stays; rarely full except during illness outbreaks</td>
+        </tr>
+        <tr>
+          <td><strong>Outpatient Clinic</strong></td>
+          <td>Daily walk-in hours for routine care, chronic condition management, and checkups</td>
+        </tr>
+        <tr>
+          <td><strong>Rehabilitation Center</strong></td>
+          <td>Physical therapy, hydrotherapy, and Utara-guided motion tracking for recovery</td>
+        </tr>
+        <tr>
+          <td><strong>Mental Health Sanctuary</strong></td>
+          <td>Private counseling rooms, meditation spaces; the only place with guaranteed human-to-human therapy</td>
+        </tr>
+        <tr>
+          <td><strong>Pharmacy & Synthesis</strong></td>
+          <td>On-site medical synthesis for medications too specialized for home units</td>
+        </tr>
+        <tr>
+          <td><strong>Diagnostic Imaging</strong></td>
+          <td>Full suite (MRI, CT, ultrasound) integrated with Utara's analysis</td>
+        </tr>
+      </table>
+      
+      <p style="margin-top: 1rem;"><em>Staffing limitations mean not all departments are active simultaneously—Cruiz and Fairchild prioritize based on need, shifting resources as the colony demands.</em></p>
+    </div>
+
+    <!-- THE KRET ERA AND TRANSITION -->
+    <div class="card-bg">
+      <h2 class="section-header">The Kret Era & Transition</h2>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Dr. Douglas Kret</h3>
+      <p>Before Alex Cruiz, there was Douglas Kret—the original Chief of Medicine and holder of Council Seat 3. Kret's tenure ended in disgrace following two tribunals (Books 1 and 2) led by Security Chief Evelyn Roan. His crimes included medical ethics violations, unauthorized experimentation, and endangering patients—including, critically, Celectra Carisco-Bowers.</p>
+      
+      <p>Terry Fairchild's testimony was pivotal in exposing Kret's practices. After his removal from the council and medical leadership, Kret was <strong>exiled to roam the moon with a survey team</strong>, serving as medic and cook—a steep fall from his former status. His departure left a void that Alex Cruiz would fill.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Cruiz's Arrival</h3>
+      <p>Alex Cruiz moved down from Utopis with his wife Dee shortly after Amerigo and Celectra settled on New Eden. The timing was intentional: his friends needed him, and the colony needed a healer it could trust. Cruiz stepped into Seat 3 on the council and began the slow work of rebuilding the Medical Center's reputation.</p>
+      
+      <p>Unlike Kret, who hoarded authority, Cruiz immediately elevated Terry Fairchild to Head Nurse and made clear that the Center operated on transparency and consent. His first act was to invite any patient of Kret's to request a full review of their treatment—no questions asked.</p>
+    </div>
+
+    <!-- ANI TECH INNOVATION -->
+    <div class="ani-note">
+      <h3 style="color: #7ac4d4; margin-top: 0;">📊 ANI Comfort Monitoring (Late Book 3)</h3>
+      <p>Late in Book 3, Dr. Cruiz began implementing a revolutionary application of <strong>ANI (Artificial Neural Interface)</strong> technology. Previously used for basic neural monitoring, Cruiz adapted the tech to allow Utara to track not just patients' vital signs, but their <strong>actual perceived comfort level</strong>.</p>
+      
+      <p>This innovation means:</p>
+      <ul style="margin-bottom: 0;">
+        <li><strong>Real-time pain assessment:</strong> Utara detects discomfort before the patient can verbalize it</li>
+        <li><strong>Personalized sedation:</strong> ANI adjusts anesthetic delivery based on individual neural responses</li>
+        <li><strong>Recovery optimization:</strong> Comfort data helps Cruiz fine-tune post-operative care</li>
+        <li><strong>End-of-life dignity:</strong> Terminal patients can communicate comfort needs even when verbal communication fails</li>
+      </ul>
+      
+      <p style="margin-bottom: 0; margin-top: 1rem;">Cruiz insisted on rigorous consent protocols—ANI monitoring is always optional, and patients can override or disconnect at any time. The technology represents the opposite of Kret's philosophy: monitoring in service of the patient, not in spite of them.</p>
+    </div>
+
+    <!-- THE BIRTHS: CELECTRA AND HER TWINS -->
+    <div class="delivery-announcement">
+      <div>🩺 <strong>October 11, 2225</strong> — Utopis Station</div>
+      <div style="font-size: 1.5rem; margin: 0.5rem 0;">Dr. Alex Cruiz delivers Celectra Carisco-Bowers</div>
+      <div class="delivery-date">2225</div>
+      <div style="margin: 1rem 0;">⬇️</div>
+      <div>🩺 <strong>November 15, 2247</strong> — New Eden Medical Center</div>
+      <div style="font-size: 1.5rem; margin: 0.5rem 0;">Dr. Alex Cruiz delivers Celectra's twins</div>
+      <div class="delivery-date">2247</div>
+    </div>
+    
+    <div class="card-bg" style="margin-top: 0;">
+      <p>The two deliveries, separated by 22 years, bookend Cruiz's relationship with the Carisco-Bowers family. In 2225, he caught Celectra on Utopis—a moment he describes as <em>"the first time I held my heart outside my body."</em> By 2247, Celectra was a woman, an ambassador, and a mother, and Cruiz was there to welcome the next generation.</p>
+      
+      <p>The twin delivery was notable for another reason: it was the first time Cruiz used ANI comfort monitoring on a conscious, laboring patient. Celectra's real-time feedback helped refine the technology, and both babies (a boy and a girl) arrived healthy, with their uncle—now great-uncle—beaming through tears.</p>
+    </div>
+
+    <!-- COUNCIL REPRESENTATION -->
+    <div class="card-bg">
+      <h2 class="section-header">Council Seat 3: Medicine</h2>
+      <p>The Chief of Medicine holds one of the original 12 voting seats on New Eden's council. The transition of this seat represents one of the colony's most dramatic political shifts.</p>
+      
+      <table class="council-table">
+        <tr>
+          <th>Period</th>
+          <th>Incumbent</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td><span class="seat-number">3</span> Pre-Book 1</td>
+          <td>Douglas Kret</td>
+          <td>Removed by tribunal (ethics violations)</td>
+        </tr>
+        <tr>
+          <td><span class="seat-number">3</span> Book 1 onward</td>
+          <td><strong>Dr. Alex Cruiz</strong></td>
+          <td>Appointed after Kret's removal</td>
+        </tr>
+      </table>
+      
+      <p>As a council member, Cruiz advocates for:</p>
+      <ul>
+        <li>Mental health funding and staff</li>
+        <li>Preventive medicine programs</li>
+        <li>Ethical oversight of medical research</li>
+        <li>Patient autonomy in all treatments</li>
+      </ul>
+      
+      <p>He is notably quiet during debates outside his expertise, but when medicine is discussed, his voice carries weight—both because of his competence and because no one wants to repeat the Kret era.</p>
+    </div>
+
+    <!-- DAILY LIFE & STAFFING -->
+    <div class="card-bg">
+      <h2 class="section-header">Life in a Small-Colony Hospital</h2>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">The Jack-of-All-Specialties Reality</h3>
+      <p>With a colony population of 600 or less (varying by book), the Medical Center cannot support specialists. Dr. Cruiz is typical of colony physicians across the stellar system: expected to deliver babies, set fractures, perform surgery, treat infections, counsel the depressed, and comfort the dying—sometimes all in the same shift.</p>
+      
+      <p>This reality was true under Kret and remains true under Cruiz. What changed was <strong>attitude</strong>: Kret saw it as a burden; Cruiz sees it as the privilege of being present for every stage of human life.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">A Typical Day</h3>
+      <ul>
+        <li><strong>0600:</strong> Utara handoff from overnight monitoring; review alerts</li>
+        <li><strong>0700-0900:</strong> Rounds on inpatients (rarely more than 3-4)</li>
+        <li><strong>0900-1200:</strong> Outpatient clinic (routine checkups, chronic care)</li>
+        <li><strong>1200-1300:</strong> Lunch with Terry, discussing cases and colony gossip</li>
+        <li><strong>1300-1700:</strong> Procedures, surgeries, or home visits (if needed)</li>
+        <li><strong>1700-1900:</strong> Paperwork, research, ANI data review</li>
+        <li><strong>On call:</strong> 24/7 for emergencies—Terry shares this duty</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Staffing Limitations</h3>
+      <p>The Medical Center operates with a lean team:</p>
+      <ul>
+        <li><strong>1 physician</strong> (Cruiz)</li>
+        <li><strong>1 head nurse</strong> (Fairchild)</li>
+        <li><strong>2-3 rotating nurses</strong> (cross-trained from other sectors)</li>
+        <li><strong>Utara</strong> (constant monitoring, diagnostics, records)</li>
+        <li><strong>Volunteer aides</strong> (community members training in basic care)</li>
+      </ul>
+      
+      <p>During crises (accidents, epidemics), the colony mobilizes—off-duty engineers assist with logistics, teachers help with childcare, and everyone understands that the Medical Center's small size requires community support.</p>
+    </div>
+
+    <!-- CELECTRA'S RELATIONSHIP -->
+    <div class="card-bg">
+      <h2 class="section-header">"Uncle Doc" to "Uncle Alex"</h2>
+      
+      <p>Celectra Carisco-Bowers' relationship with Dr. Cruiz is one of the emotional anchors of the series. The evolution of her address marks their deepening bond:</p>
+      
+      <ul>
+        <li><strong>Book 1:</strong> <em>"Uncle Doc"</em> — Formal, respectful, still processing his arrival after Kret's departure</li>
+        <li><strong>Book 2 onward:</strong> <em>"Uncle Alex"</em> — Familiar, affectionate, the title of true family</li>
+      </ul>
+      
+      <p>After her mother's death (before the series) and with her father Amerigo often absorbed in science, Celectra found in Alex and Dee Cruiz a second family. The Medical Center became a place of safety—not just for her body, but for her spirit. Even as ambassador, she stops by weekly to sit in his office, drink tea, and let someone who knew her before she was extraordinary simply <em>see</em> her.</p>
+      
+      <div class="testimony-card">
+        <p>When I was seven, I asked Uncle Doc if he'd be my doctor forever. He said, 'I plan to be your doctor until you're old enough to be my doctor.' I didn't understand then. Now I do.</p>
+        <span class="speaker">— Celectra Carisco-Bowers, Book 5</span>
+      </div>
+    </div>
+
+    <!-- TIMELINE OF KEY EVENTS -->
+    <div class="card-bg">
+      <h2 class="section-header">Medical Center Timeline</h2>
+      
+      <table class="level-table">
+        <tr>
+          <th>Date</th>
+          <th>Event</th>
+        </tr>
+        <tr>
+          <td><strong>Oct 11, 2225</strong></td>
+          <td>Dr. Alex Cruiz delivers Celectra Carisco-Bowers aboard Utopis</td>
+        </tr>
+        <tr>
+          <td><strong>Pre-Book 1</strong></td>
+          <td>Douglas Kret serves as Chief of Medicine; Terry Fairchild serves as nurse</td>
+        </tr>
+        <tr>
+          <td><strong>Book 1</strong></td>
+          <td>First Kret tribunal: Kret removed; Cruiz arrives from Utopis with Dee, assumes Seat 3</td>
+        </tr>
+        <tr>
+          <td><strong>Book 1</strong></td>
+          <td>Celectra begins calling Cruiz "Uncle Doc"</td>
+        </tr>
+        <tr>
+          <td><strong>Book 2</strong></td>
+          <td>Second Kret tribunal; Kret exiled to survey team (medic/cook)</td>
+        </tr>
+        <tr>
+          <td><strong>Book 2</strong></td>
+          <td>Celectra transitions to "Uncle Alex"</td>
+        </tr>
+        <tr>
+          <td><strong>Late Book 3</strong></td>
+          <td>ANI comfort monitoring introduced; first used widely on patients</td>
+        </tr>
+        <tr>
+          <td><strong>Nov 15, 2247</strong></td>
+          <td>Dr. Cruiz delivers Celectra's twins in the Medical Center</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- CULTURAL SIGNIFICANCE -->
+    <div class="card-bg">
+      <h2 class="section-header">Cultural Significance</h2>
+      <p>The Medical Center represents more than healthcare—it embodies New Eden's commitment to <strong>trust, transparency, and human connection</strong>. The transition from Kret to Cruiz was a moral reset for the colony, proving that even those in power can be held accountable.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">In the Novels</h3>
+      <ul>
+        <li><strong>Book 1:</strong> The Medical Center is the site of Kret's unethical practices and the gathering of evidence for his tribunal.</li>
+        <li><strong>Throughout:</strong> Cruiz's quiet competence provides contrast to political drama elsewhere.</li>
+        <li><strong>Late Book 3:</strong> ANI innovation showcases the colony's technological progress and ethical rigor.</li>
+        <li><strong>Book 3 climax:</strong> The twin delivery scene—tender, joyful, and deeply human—reminds readers what the colony is fighting to preserve.</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">The Terry Fairchild Legacy</h3>
+      <p>Terry Fairchild's courage in testifying against Kret set a precedent: in New Eden, speaking truth to power is not just permitted—it's honored. They remain the quiet conscience of the Medical Center, and any young colonist considering a medical career is sent to talk with Terry first.</p>
+    </div>
+
+    <!-- QUICK REFERENCE -->
+    <div class="card-bg">
+      <h2 class="section-header">At a Glance</h2>
+      <table class="level-table">
+        <tr>
+          <th>Aspect</th>
+          <th>Detail</th>
+        </tr>
+        <tr>
+          <td><strong>Building Type</strong></td>
+          <td>Original five (identical exterior)</td>
+        </tr>
+        <tr>
+          <td><strong>Chief of Medicine</strong></td>
+          <td>Dr. Alex Cruiz (Seat 3)</td>
+        </tr>
+        <tr>
+          <td><strong>Head Nurse</strong></td>
+          <td>Terry Fairchild (agender, they/them)</td>
+        </tr>
+        <tr>
+          <td><strong>Predecessor</strong></td>
+          <td>Douglas Kret (removed Book 1, exiled Book 2)</td>
+        </tr>
+        <tr>
+          <td><strong>Key Innovation</strong></td>
+          <td>ANI comfort monitoring (late Book 3)</td>
+        </tr>
+        <tr>
+          <td><strong>Notable Births</strong></td>
+          <td>Celectra (2225) • Celectra's twins (2247)</td>
+        </tr>
+        <tr>
+          <td><strong>Coelectra's Term</strong></td>
+          <td>"Uncle Doc" (Book 1) → "Uncle Alex" (Book 2+)</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <p>Back to <a href="Locations.html">Locations</a> | <a href="Cast.html">Characters</a> | <a href="Timeline.html">Timeline</a> | <a href="index.html">Home</a></p>
+    <p>See also: <a href="Alex_Cruiz.html">Dr. Alex Cruiz</a> | <a href="Terry_Fairchild.html">Terry Fairchild</a> | <a href="Celectra_Carisco-Bowers.html">Celectra Carisco-Bowers</a> | <a href="Council_Chamber.html">Council Chamber</a> | <a href="Douglas_Kret.html">Douglas Kret</a></p>
+    <p>&copy; One Mine Two Stars Wiki</p>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+  <script>
+    const toTopBtn = document.getElementById("toTopBtn");
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 200) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    });
+    toTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
