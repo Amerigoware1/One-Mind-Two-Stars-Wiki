@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samaya Gallery and Museum of Integration - One Mine Two Stars Wiki</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="WikiStyle.css">
+  <style>
+    /* Gallery-specific styles */
+    .director-card {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin: 1.5rem 0;
+    }
+    .director-profile {
+      flex: 1 1 250px;
+      background: rgba(20, 30, 45, 0.7);
+      border-radius: 16px;
+      padding: 1.2rem;
+      border: 1px solid #4a5a6a;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .director-profile h4 {
+      color: #ffaa33;
+      margin: 0 0 0.5rem 0;
+      font-size: 1.3rem;
+      border-bottom: 1px solid #3a4a5a;
+      padding-bottom: 0.3rem;
+    }
+    .director-title {
+      font-style: italic;
+      color: #aab9c9;
+      margin-bottom: 0.8rem;
+      font-size: 0.95rem;
+    }
+    .pronoun-badge {
+      display: inline-block;
+      background: #2c3e50;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      border: 1px solid #ffaa33;
+      margin-bottom: 0.8rem;
+    }
+    .integration-highlight {
+      background: linear-gradient(145deg, #1a2a38, #0f1a24);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-left: 6px solid #8b6e4b;
+      position: relative;
+    }
+    .integration-highlight::before {
+      content: "🜁";
+      position: absolute;
+      top: -10px;
+      right: 20px;
+      font-size: 2.5rem;
+      opacity: 0.2;
+      color: #c79a6b;
+    }
+    .crater-note {
+      background: #13202b;
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      margin: 1rem 0;
+      border: 1px dashed #5a7a8a;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .crater-icon {
+      font-size: 2.5rem;
+      background: #2c4050;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .timeline-marker {
+      display: inline-block;
+      background: #4a2e1e;
+      color: #ffcc88;
+      padding: 0.2rem 1rem;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 1px solid #b27a42;
+    }
+    .exhibit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+    .exhibit-card {
+      background: rgba(15, 25, 35, 0.8);
+      border-radius: 12px;
+      padding: 1rem;
+      border-bottom: 3px solid #6a5a4a;
+    }
+    .exhibit-card h5 {
+      color: #ddb47a;
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .level-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: rgba(10, 20, 30, 0.6);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .level-table th {
+      background: linear-gradient(135deg, #4a5b6e, #2c3e50);
+      color: white;
+      font-weight: 600;
+      padding: 12px 8px;
+      text-align: left;
+      border-bottom: 2px solid #ffaa33;
+    }
+    .level-table td {
+      padding: 10px 8px;
+      border-bottom: 1px solid #3a4a5a;
+    }
+    .level-table tr:last-child td {
+      border-bottom: none;
+    }
+    .feature-badge {
+      display: inline-block;
+      background: #2c3e50;
+      color: #ffaa33;
+      padding: 3px 10px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-right: 8px;
+      border: 1px solid #ffaa33;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-banner">
+    <a href="index.html" class="home-button">🏠 Home</a>
+  </div>
+
+  <h1 class="gradient-title">Samaya Gallery and Museum of Integration</h1>
+  <div class="subtitle">"Art is what makes us more than engineered." — Founder's dedication</div>
+
+  <!-- Infobox -->
+  <div class="infobox">
+    <table class="infobox">
+      <tr>
+        <td colspan="2" class="text-center pb-2">
+          <img src="assets/images/gallery/gallery.webp" alt="Samaya Gallery exterior at dusk" class="portrait">
+          <div class="image-caption">The Gallery as seen from the central roundabout</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <td>Art Museum / Cultural Center / Archive</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>New Eden Town Center (sixth building)</td>
+      </tr>
+      <tr>
+        <th>Construction</th>
+        <td><span class="timeline-marker">Between Books 4 & 5</span></td>
+      </tr>
+      <tr>
+        <th>Co-Directors</th>
+        <td>Maya Keahi (Visual Arts) • Sam Calder (Sound)</td>
+      </tr>
+      <tr>
+        <th>Key Theme</th>
+        <td>Human-Galistani Integration</td>
+      </tr>
+      <tr>
+        <th>Notable Feature</th>
+        <td>Meteor Crater Basement (Archives)</td>
+      </tr>
+      <tr>
+        <th>Affiliation</th>
+        <td>Dr. Celectra Carisco-Bowers (Historical Consultant)</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Article content container -->
+  <div class="article-content">
+
+    <!-- OVERVIEW -->
+    <div class="card-bg">
+      <h2 class="section-header">Overview</h2>
+      <p>The <strong>Samaya Gallery and Museum of Integration</strong> stands as the sixth and final building around New Eden's central roundabout, constructed between Books 4 and 5 of the series. Named after the colony's first dedicated artist, it serves a dual purpose: a fine art gallery celebrating human creativity, and a museum documenting the profound integration between human colonists and the indigenous Galistanians — a process in which Dr. Celectra Carisco-Bowers played an integral role.</p>
+      <p>Unlike the original five buildings with their identical exteriors, the Gallery was designed to harmonize with its predecessors while expressing its unique cultural mission. Its completion transformed the central hexagon from purely functional to fully human, adding art to the colony's circle of health, knowledge, activity, governance, and community.</p>
+      
+      <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1.2rem 0 0 0;">
+        <span class="feature-badge">🎨 Visual Arts</span>
+        <span class="feature-badge">🔊 Sound Sculpture</span>
+        <span class="feature-badge">🜁 Integration Archive</span>
+        <span class="feature-badge">🌌 Crater Vault</span>
+        <span class="feature-badge">🤝 Co-Directed</span>
+      </div>
+    </div>
+
+    <!-- FOUNDING & LEADERSHIP -->
+    <div class="card-bg">
+      <h2 class="section-header">Founding & Leadership</h2>
+      <p>The Gallery's creation was driven by two visionary artists whose partnership — both personal and professional — shaped its identity. Before the Gallery existed, they made art anywhere they could find space.</p>
+      
+      <div class="director-card">
+        <!-- Maya Keahi -->
+        <div class="director-profile">
+          <h4>Maya Keahi</h4>
+          <div class="director-title">Co-Director & Primary Visual Artist</div>
+          <div class="pronoun-badge">she/her</div>
+          <p>A painter, sculptor, and installation artist whose work explores the intersection of human emotion and alien experience. In <strong>Books 2-4</strong>, Maya became known throughout New Eden for organizing exhibitions in unlikely spaces — primarily the Activity Center, where she transformed empty dojos, spare dance studios, and even yoga rooms into temporary galleries. These "guerrilla exhibitions" built public demand for a permanent cultural space.</p>
+          <p><em>“A dojo at dawn, with mats rolled up and light slanting through the windows — that's a gallery. It always was. We just needed the walls to remember it.”</em> — Maya</p>
+        </div>
+        
+        <!-- Sam Calder -->
+        <div class="director-profile">
+          <h4>Sam Calder</h4>
+          <div class="director-title">Co-Director & Sound Sculptor</div>
+          <div class="pronoun-badge">they/them</div>
+          <p>A composer and sound artist who joined the colony in <strong>Book 3</strong>. Sam works with field recordings, bio-acoustic translation, and immersive audio environments. They arrived just as Maya's exhibition movement was gaining momentum, and the two formed an immediate creative bond — and later, a personal partnership. Sam's sound installations now permeate the Gallery, creating layered experiences where visual art and audio are inseparable.</p>
+          <p><em>“Maya gives the Integration something to see. I give it something to hear. Together, we give it a voice.”</em> — Sam</p>
+        </div>
+      </div>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">The Pre-Gallery Years (Books 2-4)</h3>
+      <p>Before the Samaya Gallery existed, Maya Keahi was already bringing art to New Eden — she simply had to be creative about venues. The <strong>Activity Center</strong> became her unofficial gallery space:</p>
+      <ul>
+        <li><strong>Empty Dojos:</strong> The martial arts spaces, unused during off-hours, hosted Maya's first major solo exhibition: "Bodies Like Ours," exploring human form through Galistani-influenced perspectives.</li>
+        <li><strong>Dance Studios:</strong> With their mirrored walls and sprung floors, these became immersive installation spaces — Sam Calder's first collaborative piece with Maya was staged in one such studio in late Book 3.</li>
+        <li><strong>Acrobatics & Yoga Rooms:</strong> Their high ceilings and neutral walls proved perfect for large-scale works and meditative exhibitions.</li>
+        <li><strong>Gymnasiums:</strong> The largest exhibitions, including the annual Colony Art Showcase, took over main gym floors during holiday closures.</li>
+      </ul>
+      <p>These temporary spaces built a cultural momentum that made the Gallery's construction inevitable. When the colony voted to fund a permanent museum, Maya and Sam were the natural choices to lead it — together.</p>
+    </div>
+
+    <!-- THE INTEGRATION THEME -->
+    <div class="integration-highlight">
+      <h3 style="color: #eec9a0; margin-top: 0;">The Integration Collection</h3>
+      <p style="font-size: 1.05rem;">At the heart of the Gallery's mission is the documentation and celebration of <strong>Human-Galistani Integration</strong> — the complex, beautiful, and sometimes challenging process of two species learning to coexist. Much of the museum's collection directly addresses this theme, and much of what is preserved exists because of one woman's work.</p>
+      
+      <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+        <p style="margin: 0;"><strong>Dr. Celectra Carisco-Bowers</strong> — xenobiologist, diplomat, and the human most intimately involved in early Galistani contact — donated her personal archives, research notes, and correspondence to the museum. Her role in the Integration was <em>integral</em>: she was present for first contact, helped establish communication protocols, and became the Galistanians' most trusted human. The museum's <strong>Celectra Wing</strong> houses this material, ensuring the Integration is never forgotten or mythologized incorrectly.</p>
+      </div>
+      
+      <p>The Integration theme appears across media:</p>
+      <ul>
+        <li><strong>Visual Art:</strong> Maya's "Dialogue Series" paints human and Galistani figures in shared spaces, their forms blurring and influencing one another.</li>
+        <li><strong>Sound Installations:</strong> Sam's "Frequency of Meeting" translates Galistani subvocal patterns into human-audible soundscapes.</li>
+        <li><strong>Historical Artifacts:</strong> Physical objects from early contact — translation devices, gift exchanges, the original integration agreements.</li>
+        <li><strong>Oral Histories:</strong> Recorded interviews with human and Galistani participants in the Integration, available in the Listening Grove.</li>
+      </ul>
+    </div>
+
+    <!-- THE BASEMENT: METEOR CRATER ARCHIVE -->
+    <div class="card-bg">
+      <h2 class="section-header">The Crater Vault: Archives & Storage</h2>
+      
+      <div class="crater-note">
+        <div class="crater-icon">🌠</div>
+        <div style="flex: 1;">
+          <strong style="color: #ffaa33; font-size: 1.1rem;">Built in a meteor crater</strong><br>
+          <span>The Gallery's basement level was constructed within a small, ancient meteor crater — a natural depression that became the perfect climate-stable environment for archival storage.</span>
+        </div>
+      </div>
+      
+      <p>When excavation began for the Gallery, workers discovered a small but well-preserved meteor crater beneath the building site. Rather than fill it, the architects designed the basement to incorporate it — creating a naturally cool, seismically stable environment ideal for preserving delicate artifacts. The crater's walls were lined with climate-control systems, but its natural thermal mass reduces energy consumption by 40% compared to surface storage.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Levels of the Vault</h3>
+      <ul>
+        <li><strong>Upper Basement (Crater Rim):</strong> Temporary storage, receiving area, conservation labs where artifacts are prepared for exhibition.</li>
+        <li><strong>Mid-Level (Crater Walls):</strong> Rolling art racks for paintings, sculpture storage, and crated exhibitions awaiting rotation.</li>
+        <li><strong>Deep Vault (Crater Floor):</strong> The most sensitive materials — Dr. Carisco-Bowers' original notes, fragile Galistani artifacts, and the museum's permanent collection not on display. Climate is held at strict 18°C, 45% humidity.</li>
+        <li><strong>The Core:</strong> At the very bottom, a small glass-walled viewing area allows researchers to see the original impact strata — a reminder of the deep time that predates human arrival.</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Contents</h3>
+      <ul>
+        <li><strong>Dr. Celectra Carisco-Bowers Archive:</strong> Personal journals, first-contact recordings, Galistani vocabulary notes, and the original translation algorithm prototypes.</li>
+        <li><strong>Galistani Cultural Artifacts:</strong> Objects gifted during the Integration process, preserved with consultation from Galistani cultural advisors.</li>
+        <li><strong>Human Colony Archive:</strong> Secondary copies of important colony documents, artworks awaiting restoration, and the master recordings of Sam Calder's sound installations.</li>
+        <li><strong>The "Pre-Gallery" Collection:</strong> Works from Maya's Activity Center exhibitions, now preserved as part of the colony's cultural history.</li>
+      </ul>
+    </div>
+
+    <!-- GALLERY LEVELS -->
+    <div class="card-bg">
+      <h2 class="section-header">Gallery Levels</h2>
+      
+      <table class="level-table">
+        <tr>
+          <th>Level</th>
+          <th>Name</th>
+          <th>Function</th>
+        </tr>
+        <tr>
+          <td><span class="feature-badge">B</span></td>
+          <td>Crater Vault</td>
+          <td>Archives, storage, conservation (see above)</td>
+        </tr>
+        <tr>
+          <td><span class="feature-badge">1</span></td>
+          <td>Samaya Wing</td>
+          <td>Permanent collection: the colony's first artist, original works</td>
+        </tr>
+        <tr>
+          <td><span class="feature-badge">2</span></td>
+          <td>Integration Hall</td>
+          <td>The story of human-Galistani coexistence, Dr. Carisco-Bowers' legacy</td>
+        </tr>
+        <tr>
+          <td><span class="feature-badge">3</span></td>
+          <td>Earth Legacy Wing</td>
+          <td>Digital recreations of humanity's greatest artworks (Solid-Light projection)</td>
+        </tr>
+        <tr>
+          <td><span class="feature-badge">4</span></td>
+          <td>Contemporary & Rotating Exhibitions</td>
+          <td>Living artists, including Maya & Sam's current work</td>
+        </tr>
+        <tr>
+          <td><span class="feature-badge">R</span></td>
+          <td>Roof Terrace & Performance Space</td>
+          <td>Sculpture garden, intimate concerts, view of the roundabout</td>
+        </tr>
+      </table>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Featured Spaces</h3>
+      
+      <div class="exhibit-grid">
+        <div class="exhibit-card">
+          <h5>🎨 Samaya Wing</h5>
+          <p>The colony's first artist, Samaya, worked in relative obscurity during the early years. This permanent collection preserves her paintings, sketches, and the only known example of her sculptural work. The wing ends with a window overlooking the crater — connecting the artist to the deep time beneath.</p>
+        </div>
+        
+        <div class="exhibit-card">
+          <h5>🜁 Integration Hall</h5>
+          <p>The heart of the museum. A chronological journey through first contact, the difficult early years, and the gradual emergence of trust. Dr. Carisco-Bowers' original journals are displayed here (with digital copies in the Crater Vault for researchers).</p>
+        </div>
+        
+        <div class="exhibit-card">
+          <h5>🌍 Earth Legacy Wing</h5>
+          <p>Using Solid-Light projection technology (similar to the Nexus's Tactile Archive), this wing presents high-fidelity recreations of humanity's greatest artworks — from Lascaux to Kahlo, from the Buddhas of Bamiyan to Basquiat. Visitors can "handle" some pieces without damaging originals that exist only in digital memory.</p>
+        </div>
+        
+        <div class="exhibit-card">
+          <h5>🔊 The Calder Listening Grove</h5>
+          <p>A permanent installation by Sam Calder: a circular room filled with hidden speakers playing a constantly evolving composition based on Galistani vocalizations, human heartbeats, and the resonant frequencies of the crater itself. Benches carved from native stone invite lingering.</p>
+        </div>
+        
+        <div class="exhibit-card">
+          <h5>🖼️ Maya Keahi Gallery</h5>
+          <p>One full wall of Level 4 is dedicated to Maya's ongoing work. The space is reconfigured for each new series — she considers the gallery itself part of the artwork.</p>
+        </div>
+        
+        <div class="exhibit-card">
+          <h5>👥 Children's Integration Studio</h5>
+          <p>Where young colonists (and young Galistanians, when present) create art together. The walls are covered in a rotating mural that changes weekly.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DR. CELECTRA CARISCO-BOWERS' ROLE -->
+    <div class="card-bg">
+      <h2 class="section-header">The Celectra Archive</h2>
+      <p>Dr. Celectra Carisco-Bowers' relationship with the Gallery goes beyond donation — she serves as <strong>Honorary Curator of Integration History</strong> and consults on all exhibitions related to first contact and Galistani culture. Her ongoing involvement ensures the museum's portrayal of the Integration remains accurate and respectful.</p>
+      
+      <div style="background: rgba(255, 170, 51, 0.1); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+        <p style="margin: 0;"><em>"Celectra didn't just witness the Integration — she <strong>made it possible</strong>. The Gallery exists to make sure no one forgets that. Every time a child touches a Solid-Light version of a Galistani gift-object, they're touching her legacy too."</em> — Maya Keahi</p>
+      </div>
+      
+      <p>Highlights of the Archive include:</p>
+      <ul>
+        <li><strong>The First Word:</strong> A recording of Celectra speaking the first mutually understood word between human and Galistani — "kheel" (meaning both "star" and "connection").</li>
+        <li><strong>Translation Journals:</strong> Her daily logs from the first six months of contact, showing the painstaking process of building communication.</li>
+        <li><strong>Gifted Objects:</strong> Items given to Celectra personally by Galistani elders, never before displayed publicly, now in a special case in Integration Hall.</li>
+        <li><strong>Holographic Interviews:</strong> Recorded conversations where Celectra reflects on the Integration, available for researchers in the Crater Vault.</li>
+      </ul>
+    </div>
+
+    <!-- CULTURAL SIGNIFICANCE -->
+    <div class="card-bg">
+      <h2 class="section-header">Cultural Significance</h2>
+      <p>The Samaya Gallery represents New Eden's cultural coming-of-age. Its construction between Books 4 and 5 marks a turning point in the series — from a colony focused on survival and efficiency toward one that values expression, reflection, and the preservation of memory.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">In the Novels</h3>
+      <ul>
+        <li><strong>Books 2-4:</strong> Maya's guerilla exhibitions in the Activity Center appear in several scenes, building the case for a permanent gallery. Her frustration with packing and unpacking art in borrowed spaces becomes a running theme.</li>
+        <li><strong>Book 3:</strong> Sam Calder arrives, and their first collaboration with Maya (a sound-and-light installation in a dance studio) becomes a pivotal moment in both their artistic and personal relationship.</li>
+        <li><strong>Between Books 4 & 5:</strong> The Gallery's construction is a major subplot — debates over funding, design, and whether art is "essential" to colony life.</li>
+        <li><strong>Book 5 onward:</strong> The Gallery features prominently as a setting for key scenes: Integration ceremonies, diplomatic visits from Galistanians, and quiet moments of reflection for characters processing the colony's history.</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Maya & Sam's Partnership</h3>
+      <p>Their relationship — creative and personal — is woven into the Gallery's identity. Visitors often find them working together in the fourth-floor contemporary space: Maya at an easel, Sam surrounded by recording equipment, their art growing in dialogue. The Gallery is not just their workplace; it's their shared artwork, constantly evolving.</p>
+    </div>
+
+    <!-- QUICK REFERENCE TABLE -->
+    <div class="card-bg">
+      <h2 class="section-header">At a Glance</h2>
+      <table class="level-table">
+        <tr>
+          <th>Aspect</th>
+          <th>Detail</th>
+        </tr>
+        <tr>
+          <td><strong>Named For</strong></td>
+          <td>Samaya, the colony's first artist</td>
+        </tr>
+        <tr>
+          <td><strong>Founded</strong></td>
+          <td>Between Books 4 & 5</td>
+        </tr>
+        <tr>
+          <td><strong>Co-Directors</strong></td>
+          <td>Maya Keahi (she/her) • Sam Calder (they/them)</td>
+        </tr>
+        <tr>
+          <td><strong>Key Theme</strong></td>
+          <td>Human-Galistani Integration</td>
+        </tr>
+        <tr>
+          <td><strong>Integral Consultant</strong></td>
+          <td>Dr. Celectra Carisco-Bowers</td>
+        </tr>
+        <tr>
+          <td><strong>Notable Feature</strong></td>
+          <td>Meteor Crater Basement Archive</td>
+        </tr>
+        <tr>
+          <td><strong>Predecessor</strong></td>
+          <td>Activity Center exhibitions (Books 2-4)</td>
+        </tr>
+        <tr>
+          <td><strong>Technical Highlight</strong></td>
+          <td>Solid-Light projection in Earth Legacy Wing</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <p>Back to <a href="Locations.html">Locations</a> | <a href="Cast.html">Characters</a> | <a href="Timeline.html">Timeline</a> | <a href="index.html">Home</a></p>
+    <p>See also: <a href="maya.html">Maya Keahi</a> | <a href="sam.html">Sam Calder</a> | <a href="Celectra_Carisc o-Bowers.html">Dr. Celectra Carisco-Bowers</a> | <a href="Nexus.html">The Nexus</a></p>
+    <p>&copy; One Mine Two Stars Wiki</p>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+  <script>
+    const toTopBtn = document.getElementById("toTopBtn");
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 200) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    });
+    toTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
