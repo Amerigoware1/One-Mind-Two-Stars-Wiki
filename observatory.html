@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Eden Observatory - One Mine Two Stars Wiki</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="WikiStyle.css">
+  <style>
+    /* Observatory specific styles */
+    .observatory-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .stat-card {
+      background: rgba(20, 20, 40, 0.7);
+      border-radius: 16px;
+      padding: 1rem 1.5rem;
+      flex: 1 1 180px;
+      border-left: 5px solid #aaccff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #aaccff;
+      line-height: 1.2;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      color: #c0d0ff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .binary-sunset {
+      background: linear-gradient(145deg, #2a1a0a, #1a0e05);
+      border-radius: 30px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border: 2px solid #ffaa33;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(255, 170, 51, 0.3);
+    }
+    .chaos-note {
+      background: #1a1a2a;
+      border-radius: 16px;
+      padding: 1.2rem;
+      margin: 1.2rem 0;
+      border-left: 6px solid #c97e5a;
+    }
+    .romance-moment {
+      background: #2a1a2a;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border: 2px dashed #ff99cc;
+      position: relative;
+    }
+    .romance-moment::before {
+      content: "❤️";
+      position: absolute;
+      top: -15px;
+      left: 30px;
+      font-size: 2rem;
+      background: #2a1a2a;
+      padding: 0 10px;
+    }
+    .testimony-card {
+      background: #1e2c3a;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 1.2rem 0;
+      border-left: 6px solid #9a6eae;
+      font-style: italic;
+      position: relative;
+    }
+    .testimony-card::before {
+      content: "“";
+      font-size: 4rem;
+      color: #8a9ac0;
+      opacity: 0.3;
+      position: absolute;
+      top: -10px;
+      left: 10px;
+    }
+    .speaker {
+      display: block;
+      margin-top: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      color: #b8d0ff;
+      text-align: right;
+    }
+    .planet-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.8rem;
+      margin: 1rem 0;
+    }
+    .planet-item {
+      background: rgba(30, 30, 50, 0.7);
+      border-radius: 30px;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      border: 1px solid #aaccff;
+    }
+    .feature-badge {
+      display: inline-block;
+      background: #2a3a5a;
+      color: #aaccff;
+      padding: 3px 10px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-right: 8px;
+      margin-bottom: 5px;
+      border: 1px solid #aaccff;
+    }
+    .level-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: rgba(10, 10, 30, 0.6);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .level-table th {
+      background: linear-gradient(135deg, #3a4a6a, #1a2a4a);
+      color: #c0d0ff;
+      padding: 12px 8px;
+      border-bottom: 2px solid #aaccff;
+    }
+    .level-table td {
+      padding: 10px 8px;
+      border-bottom: 1px solid #2a3a6a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-banner">
+    <a href="index.html" class="home-button">🏠 Home</a>
+    <a href="New Eden.html" class="home-button" style="margin-left: 10px;">🏘️ New Eden</a>
+  </div>
+
+  <h1 class="gradient-title">New Eden Observatory</h1>
+  <div class="subtitle">"Where the sky becomes a story."</div>
+
+  <!-- Infobox -->
+  <div class="infobox">
+    <table class="infobox">
+      <tr>
+        <td colspan="2" class="text-center pb-2">
+          <img src="assets/images/gallery/observatory.webp" alt="New Eden Observatory dome at sunset" class="portrait">
+          <div class="image-caption">The observatory dome under the binary sunset</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <td>Educational Observatory / Public Viewing Facility</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>Ridge southeast of <a href="New Eden.html">New Eden</a>, within walking distance</td>
+      </tr>
+      <tr>
+        <th>Purpose</th>
+        <td>Educational tours • Public stargazing • Viewing Chaos</td>
+      </tr>
+      <tr>
+        <th>Notable View</th>
+        <td>Binary sunset (Niamh & Ciara) • Rise of Chaos</td>
+      </tr>
+      <tr>
+        <th>Access</th>
+        <td>Scheduled tours • Authorized personnel • Open path for visitors</td>
+      </tr>
+      <tr>
+        <th>Affiliation</th>
+        <td><a href="New Eden.html">New Eden Settlement</a> • Educational Outreach</td>
+      </tr>
+      <tr>
+        <th>Notable Moment</th>
+        <td>Amerigo & Zoë's interrupted picnic date</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Article content container -->
+  <div class="article-content">
+
+    <!-- OVERVIEW -->
+    <div class="card-bg">
+      <h2 class="section-header">Overview</h2>
+      <p>The <strong>New Eden Observatory</strong> is a modest, sleek dome perched on a ridge <strong>southeast of the settlement</strong>, within easy walking distance of the town center. Unlike the sophisticated research facilities aboard space vessels, the observatory serves a humbler but no less important purpose: <strong>educational tours</strong> and the simple, timeless wonder of stargazing.</p>
+      
+      <p>It is a place where colonists—young and old—come to learn about the heavens, to witness the dance of binary sunsets, and to gaze upon the warm super-Jupiter <strong>Chaos</strong>, around which Ares and its sister moons orbit. The path to the dome winds through red-dust trails and scattered rocks, offering a panoramic view of the village below—a reminder of how small humanity's foothold remains against the vastness of space.</p>
+      
+      <div class="observatory-stats">
+        <div class="stat-card">
+          <div class="stat-number">🌅</div>
+          <div class="stat-label">Binary Sunset</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">🪐</div>
+          <div class="stat-label">Chaos Viewing</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">🚶</div>
+          <div class="stat-label">Walking Distance</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOCATION & APPROACH -->
+    <div class="card-bg">
+      <h2 class="section-header">Location & Approach</h2>
+      
+      <p>The observatory sits on a prominent ridge <strong>southeast of New Eden</strong>, chosen for its unobstructed views of the sky and its proximity to the settlement. A well-trodden path winds from the edge of town up through rust-red dust and scattered volcanic rocks, switchbacking gently to make the climb accessible to colonists of all ages.</p>
+      
+      <p>The walk takes approximately <strong>8 minutes</strong> at a leisurely pace—long enough to leave the bustle of the village behind, short enough for an evening excursion. Along the way, hikers are treated to expanding views of New Eden below: first the central roundabout with its six buildings, then the fusion reactor's white dome to the west, and finally the full sweep of the settlement nestled in the Pison River's bend.</p>
+      
+      <p>Benches are placed at intervals along the path, inviting rest and contemplation. Local flora—genetically modified to survive the arid conditions—has been planted along the route, softening the stark landscape with pockets of green.</p>
+    </div>
+
+    <!-- ARCHITECTURE & FACILITIES -->
+    <div class="card-bg">
+      <h2 class="section-header">Architecture & Facilities</h2>
+      
+      <p>The observatory itself is a study in elegant simplicity: a <strong>sleek white dome</strong> mounted on a circular base of local stone, its glass panels positioned to capture the golden light of Niamh and the deepening pink of Ciara during sunset. The design prioritizes function and accessibility—this is a place for people, not just instruments.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Interior</h3>
+      <ul>
+        <li><strong>Circular Observation Platform:</strong> The main floor, situated beneath the dome's transparent roof, offers 360-degree views of the sky. Retractable sections allow for both protected viewing and open-air experiences.</li>
+        <li><strong>Educational Display Area:</strong> Interactive screens and physical models explain the <a href="https://amerigoware1.github.io/One-Mind-Two-Stars-Wiki/SolarSystemOverview.html" target="_blank">Niamh–Ciara system</a>, the moons of Chaos, and the history of human arrival on Ares.</li>
+        <li><strong>Small Library:</strong> A curated collection of astronomical texts, star charts, and recordings of past celestial events.</li>
+        <li><strong>Viewing Terrace:</strong> An external platform wrapping around the base, equipped with stationary binoculars and comfortable seating.</li>
+      </ul>
+      
+      <p>The observatory is staffed by rotating volunteers and educators, with Utara providing real-time information and sky mapping through personal devices or fixed kiosks.</p>
+    </div>
+
+    <!-- PURPOSE: EDUCATION & WONDER -->
+    <div class="card-bg">
+      <h2 class="section-header">Purpose: Education & Wonder</h2>
+      
+      <div style="background: rgba(100, 150, 200, 0.1); padding: 1rem; border-radius: 12px; margin: 1rem 0;">
+        <p><em>"It's less about serious astronomy—there are space vessels for that—and more about educational tours and viewing the warm super-Jupiter, <strong>Chaos</strong>, that Ares and other moons orbit."</em></p>
+      </div>
+      
+      <p>The observatory exists not to push the frontiers of science, but to bring the frontier <em>to the people</em>. For colonists whose lives are consumed by the practicalities of survival—building, farming, raising families—the dome on the ridge offers a reminder of why they came here in the first place: the wonder of a new world under new stars.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Educational Programs</h3>
+      <ul>
+        <li><strong>School Tours:</strong> Regular visits by New Eden's children, including Celectra's classes, learning to identify constellations and trace the orbits of Chaos's moons.</li>
+        <li><strong>Public Viewing Nights:</strong> Scheduled evenings when the dome opens to all, often timed to celestial events—eclipses, transits, or the rare alignment of multiple moons.</li>
+        <li><strong>Stargazing Workshops:</strong> Teaching colonists to use handheld scopes, read star charts, and navigate by the binary stars.</li>
+        <li><strong>Sunset Gatherings:</strong> Informal community events where families picnic on the terrace while Niamh and Ciara sink below the horizon.</li>
+      </ul>
+    </div>
+
+    <!-- THE SKY ABOVE: NIAMH, CIARA, AND CHAOS -->
+    <div class="binary-sunset">
+      <h3 style="color: #ffaa33; margin-top: 0;">🌅 The Binary Sunset</h3>
+      <p>Twice each Ares day, the sky puts on a show unmatched on Earth. <strong>Niamh</strong>, the bright G-type yellow star, and <strong>Ciara</strong>, the cooler K-type orange dwarf, descend together toward the horizon—their light filtering through the thin atmosphere to paint the landscape in gold and rose. From the observatory terrace, colonists watch the two stars sink lower, their colors deepening, until the last slivers disappear and the first stars emerge.</p>
+      <p style="margin-bottom: 0;">It is a moment of collective silence, even among the youngest visitors—a daily reminder that they live in a universe vaster than any single world.</p>
+    </div>
+    
+    <div class="chaos-note">
+      <h3 style="color: #c97e5a; margin-top: 0;">🪐 Viewing Chaos</h3>
+      <p>As darkness falls, the eye turns to <strong>Chaos</strong>—the warm super-Jupiter that dominates Ares' sky. A copper-hued giant whose swirling reds and blacks resemble a cosmic storm, Chaos hangs like a living jewel among the stars. Through the observatory's main scope, viewers can make out its cloud bands and, on clear nights, some of its family of moons:</p>
+      
+      <div class="planet-list">
+        <div class="planet-item"><strong>Hermes</strong> — Volcanic, glowing orange from tidal heating</div>
+        <div class="planet-item"><strong>Athena</strong> — Cold, airless, glittering with crystalline deposits</div>
+        <div class="planet-item"><strong>Poseidon</strong> — Ancient and resilient, heavily cratered</div>
+        <div class="planet-item"><strong>Demeter</strong> — An adaptive world in stable mid-orbit</div>
+        <div class="planet-item"><strong>Ares</strong> — Nearly Earth-sized, cosmologically recent capture</div>
+      </div>
+      
+      <p style="margin-bottom: 0; margin-top: 0.5rem;">Ares itself orbits Chaos every 45 Earth-days, meaning the giant's position in the sky changes noticeably from week to week—a constant, patient dance that even casual observers can track.</p>
+    </div>
+
+    <!-- A MEMORABLE EVENING: AMERIGO & ZOË -->
+    <div class="romance-moment">
+      <h3 style="color: #ff99cc; margin-top: 0;">🌙 The Picnic Date</h3>
+      
+      <p>The observatory is also the setting for a quiet, tender moment in the series—a reminder that even in a colony focused on survival, there is room for love.</p>
+      
+      <p><strong>Amerigo Carisco</strong> walks up to the dome with <strong>Dr. Zoë Carisco</strong> (then still "Dr. Zoë") on an evening picnic date. They spread a blanket on the leeward terrace, sharing food and watching the binary sunset paint the sky. For a few hours, they are not scientists or caregivers—just two people falling in love under alien stars.</p>
+      
+      <p>As darkness falls and Chaos begins to rise, Zoë's communicator chimes. It's Celectra's babysitter: the child is having a nightmare. Not just any nightmare—a <strong>trauma-induced episode</strong> because of what Kret did to her in the Medical Center basement.</p>
+      
+      <p>The romantic evening becomes a tender reminder of their shared duty. Without hesitation, they pack the remains of their picnic and hurry back down the ridge together, hand in hand, to comfort their daughter. The half-eaten meal, the interrupted stargazing—none of it matters compared to the child waiting for them.</p>
+      
+      <p>The observatory remains for them a place of complicated memory: the beauty of that sunset, the urgency of that run home, and the knowledge that some things are more important than stars.</p>
+    </div>
+
+    <!-- CELECTRA'S CONNECTION -->
+    <div class="card-bg">
+      <h2 class="section-header">Celectra's Observatory</h2>
+      
+      <p>For Celectra Carisco-Bowers, the observatory holds a different kind of significance. As a child, she visited on school tours, learning the names of Chaos's moons and tracing the paths of comets. After her trauma, Zoë sometimes brought her here on quiet afternoons—a place away from the Medical Center, away from memory, where she could simply be a child looking at the sky.</p>
+      
+      <div class="testimony-card">
+        <p>Zoë would point at Chaos and say, 'See that big one? That's where we live. On a moon, going around a giant, going around two suns. You're not small, Celectra. You're part of something enormous.' I didn't understand then. Now I do.</p>
+        <span class="speaker">— Celectra Carisco-Bowers, Book 5</span>
+      </div>
+      
+      <p>Later, as a young woman carrying twins, Celectra would occasionally make the climb alone—not for astronomy, but for perspective. The dome on the ridge became her place to think, to breathe, to remember that her problems, however heavy, were small against the backdrop of Chaos and its endless orbit.</p>
+    </div>
+
+    <!-- THE VIEW FROM THE RIDGE -->
+    <div class="card-bg">
+      <h2 class="section-header">The View Back</h2>
+      
+      <p>Perhaps the observatory's most underappreciated feature is the view it offers <em>down</em>. From the ridge, New Eden spreads out like a model village:</p>
+      
+      <ul>
+        <li>The central roundabout with its six buildings—five identical originals and the newer Samaya Gallery</li>
+        <li>The Bowers home, completed between Books 1 and 3</li>
+        <li>The fusion reactor's white containment dome to the west</li>
+        <li>The Pison River glinting eastward, its green banks a ribbon of life against the rust plains</li>
+        <li>The tiny figures of colonists moving between buildings, going about their days</li>
+      </ul>
+      
+      <p>For visitors, it's a chance to appreciate how far the colony has come. For longtime residents, it's a reminder of how much remains to be built. And for anyone who has ever doubted the worth of their work, it's proof that human hands can shape a world.</p>
+    </div>
+
+    <!-- PRACTICAL INFORMATION -->
+    <div class="card-bg">
+      <h2 class="section-header">Visiting the Observatory</h2>
+      
+      <table class="level-table">
+        <tr>
+          <th>Aspect</th>
+          <th>Detail</th>
+        </tr>
+        <tr>
+          <td><strong>Access</strong></td>
+          <td>Open to all colonists; scheduled tours for schools and groups; self-guided visits welcome during daylight hours</td>
+        </tr>
+        <tr>
+          <td><strong>Best Time</strong></td>
+          <td>Sunset (for binary viewing) and the hour after (for Chaos rise)</td>
+        </tr>
+        <tr>
+          <td><strong>Walk from Town</strong></td>
+          <td>20-30 minutes along marked path; benches at intervals</td>
+        </tr>
+        <tr>
+          <td><strong>Facilities</strong></td>
+          <td>Picnic area, shelter, restrooms, drinking water</td>
+        </tr>
+        <tr>
+          <td><strong>What to Bring</strong></td>
+          <td>Picnic, blanket, binoculars (or use observatory's stationary viewers)</td>
+        </tr>
+        <tr>
+          <td><strong>Restrictions</strong></td>
+          <td>No artificial lighting after dark (preserves night vision); children supervised</td>
+        </tr>
+      </table>
+      
+      <p style="margin-top: 1rem;"><em>The observatory is never locked—any colonist may visit at any time. But those who come after dark are asked to respect the darkness, letting their eyes adjust rather than reaching for lights.</em></p>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="card-bg">
+      <h2 class="section-header">Observatory Timeline</h2>
+      
+      <table class="level-table">
+        <tr>
+          <th>Period</th>
+          <th>Event</th>
+        </tr>
+        <tr>
+          <td><strong>Pre-Series</strong></td>
+          <td>Observatory constructed as part of early settlement infrastructure</td>
+        </tr>
+        <tr>
+          <td><strong>Celectra's Childhood</strong></td>
+          <td>School tours; occasional therapeutic visits with Zoë</td>
+        </tr>
+        <tr>
+          <td><strong>Book 3</strong></td>
+          <td>Amerigo and Zoë's picnic date; interrupted by Celectra's nightmare</td>
+        </tr>
+        <tr>
+          <td><strong>Book 3-5</strong></td>
+          <td>Celectra visits alone during pregnancy for perspective and peace</td>
+        </tr>
+        <tr>
+          <td><strong>Book 5+</strong></td>
+          <td>Continues as educational facility and community gathering place</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- CULTURAL SIGNIFICANCE -->
+    <div class="card-bg">
+      <h2 class="section-header">Cultural Significance</h2>
+      
+      <p>The New Eden Observatory represents something the colony could easily have forgotten: the importance of <strong>looking up</strong>. In a settlement focused on survival, agriculture, and infrastructure, the dome on the ridge is a standing invitation to remember why humanity left Earth—not just to escape, but to explore; not just to live, but to wonder.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">In the Novels</h3>
+      <ul>
+        <li><strong>Throughout:</strong> Background presence as a place of education and refuge</li>
+        <li><strong>Book 3:</strong> The picnic date scene—a rare moment of private joy amid growing responsibilities</li>
+        <li><strong>Post-Book 3:</strong> Celectra's solitary visits, processing trauma and pregnancy</li>
+        <li><strong>Book 5:</strong> Mentioned as a place where the next generation of children learns the sky</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Quotable</h3>
+      <p><em>"From up here, you can't see the fences or the fusion reactor or the scars. You can only see that we're here, on a moon, around a giant, around two suns—and we're still looking up."</em> — Amerigo Carisco</p>
+    </div>
+
+    <!-- SEE ALSO -->
+    <div class="card-bg">
+      <h2 class="section-header">See Also</h2>
+      <ul>
+        <li><a href="New_Eden.html">New Eden (Settlement)</a> — The colony below the ridge</li>
+        <li><a href="SolarSystemOverview.html" target="_blank">Niamh–Ciara System Overview</a> — The stars and planets above</li>
+        <li><a href="/_characters/amerigo.md">Amerigo Carisco</a> — Father, scientist, and picnic planner</li>
+        <li><a href="/_characters/zoe.md">Dr. Zoë Carisco</a> — Psychologist, mother, and stargazer</li>
+        <li><a href="/_characters/celectra.md">Celectra Carisco-Bowers</a> — Child of the colony, child of the stars</li>
+        <li><a href="medical-center.html">Medical Center</a> — Where Celectra's trauma began</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <p>Back to <a href="characters.md">Characters</a> | <a href="Timeline.html">Timeline</a> | <a href="index.html">Home</a></p>
+    <p>See also: <a href="New Eden.html">New Eden Settlement</a> | <a href="SolarSystemOverview.html" target="_blank">Niamh–Ciara System</a></p>
+    <p>&copy; One Mine Two Stars Wiki</p>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+  <script>
+    const toTopBtn = document.getElementById("toTopBtn");
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 200) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    });
+    toTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
