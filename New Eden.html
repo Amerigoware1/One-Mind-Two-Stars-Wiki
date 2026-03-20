@@ -11,7 +11,7 @@
       position: relative;
       width: 100%;
       max-width: 800px;
-      margin: 2rem auto;
+      margin: 0 auto;
       border-radius: 16px;
       overflow: hidden;
       box-shadow: 0 10px 30px rgba(0,0,0,0.5);
@@ -103,6 +103,43 @@
       transform: scale(1.2);
     }
     
+    /* Two-column layout for infobox and gallery */
+    .header-two-column {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      align-items: flex-start;
+    }
+    
+    .header-column {
+      flex: 1;
+      min-width: 280px;
+    }
+    
+    .header-column:first-child {
+      flex: 1.2;
+    }
+    
+    /* Ensure infobox takes full width in its column */
+    .header-column .infobox {
+      width: 100%;
+      margin: 0;
+    }
+    
+    /* Responsive: stack on smaller screens */
+    @media (max-width: 768px) {
+      .header-two-column {
+        flex-direction: column;
+      }
+      .header-column:first-child {
+        order: 2;
+      }
+      .header-column:last-child {
+        order: 1;
+      }
+    }
+    
     .timeline-badge {
       display: inline-block;
       background: #2c3e50;
@@ -127,6 +164,20 @@
       padding: 1rem 1.5rem;
       flex: 1 1 180px;
       border-left: 5px solid #ffaa33;
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffaa33;
+      line-height: 1.2;
+    }
+    
+    .stat-label {
+      font-size: 0.9rem;
+      color: #c0d0d0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
     
     .feature-badge {
@@ -155,6 +206,43 @@
       margin: 0 15px;
       white-space: nowrap;
     }
+    
+    .level-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: rgba(10, 20, 30, 0.6);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    
+    .level-table th {
+      background: linear-gradient(135deg, #4a5b6e, #2c3e50);
+      color: white;
+      padding: 12px 8px;
+      border-bottom: 2px solid #ffaa33;
+    }
+    
+    .level-table td {
+      padding: 10px 8px;
+      border-bottom: 1px solid #3a4a5a;
+    }
+    
+    .text-lg {
+      font-size: 1.1rem;
+    }
+    
+    .font-semibold {
+      font-weight: 600;
+    }
+    
+    .mt-4 {
+      margin-top: 1.5rem;
+    }
+    
+    .mb-2 {
+      margin-bottom: 0.5rem;
+    }
   </style>
 </head>
 <body>
@@ -164,59 +252,67 @@
 
   <h1>New Eden</h1>
   
-  <div class="infobox">
-    <table>
-      <tr><th colspan="2">New Eden</th></tr>
-      <tr><th>Type</th><td>Primary Settlement</td></tr>
-      <tr><th>Population</th><td>~200 colonists (Book 1) → ~600 (Book 5)</td></tr>
-      <tr><th>Location</th><td>Southern hemisphere, near the Pison River</td></tr>
-      <tr><th>Structures</th><td>Stone, steel, glass dwellings; six central buildings; fusion reactor; colony modules</td></tr>
-      <tr><th>Landmarks</th><td><a href="central-buildings.html">Central Roundabout</a>, Fusion Reactor, <a href="observatory.html">New Eden Observatory</a></td></tr>
-      <tr><th>Transport</th><td>Autocabs, aerial VTOLs, space shuttles</td></tr>
-      <tr><th>Climate</th><td>Arid plains, ~26°C daytime average</td></tr>
-      <tr><th><a href="assets/images/Ares.png">Map</a></th></tr>
-      <tr><th>See Also</th><td><a href="central-buildings.html">The Six Central Buildings</a></td></tr>
-    </table>
-  </div>
-
-  <!-- Image Gallery: Settlement Evolution -->
-  <div class="gallery-container">
-    <div class="gallery-slide active" id="slide1">
-      <img src="assets/images/gallery/new-eden-book1.webp" alt="New Eden in Book 1">
-      <div class="gallery-caption">
-        <span class="timeline-badge">Book 1</span> Dirt roads, no Bowers home, fenced crater where Gallery will stand
+  <!-- Two-column layout: Infobox on left, Gallery on right -->
+  <div class="header-two-column">
+    <!-- Left Column: Infobox -->
+    <div class="header-column">
+      <div class="infobox">
+        <table class="infobox">
+          <tr><th colspan="2">New Eden</th> </tr>
+          <tr><th>Type</th><td>Primary Settlement</td> </tr>
+          <tr><th>Population</th><td>~200 colonists (Book 1) → ~600 (Book 5)</td> </tr>
+          <tr><th>Location</th><td>Southern hemisphere, near the Pison River</td> </tr>
+          <tr><th>Structures</th><td>Stone, steel, glass dwellings; six central buildings; fusion reactor; colony modules</td> </tr>
+          <tr><th>Landmarks</th><td><a href="central-buildings.html">Central Roundabout</a>, Fusion Reactor, <a href="observatory.html">New Eden Observatory</a></td> </tr>
+          <tr><th>Transport</th><td>Autocabs, aerial VTOLs, space shuttles</td> </tr>
+          <tr><th>Climate</th><td>Arid plains, ~26°C daytime average</td> </tr>
+          <tr><th><a href="assets/images/Ares.png">Map</a></th> </tr>
+          <tr><th>See Also</th><td><a href="central-buildings.html">The Six Central Buildings</a></td> </tr>
+        </table>
       </div>
     </div>
     
-    <div class="gallery-slide" id="slide2">
-      <img src="assets/images/gallery/new-eden-book3.webp" alt="New Eden in Book 3">
-      <div class="gallery-caption">
-        <span class="timeline-badge">Book 3</span> Paved roads, Bowers home completed, crater still fenced
+    <!-- Right Column: Image Gallery -->
+    <div class="header-column">
+      <div class="gallery-container">
+        <div class="gallery-slide active" id="slide1">
+          <img src="assets/images/gallery/new-eden-book1.webp" alt="New Eden in Book 1">
+          <div class="gallery-caption">
+            <span class="timeline-badge">Book 1</span> Dirt roads, no Bowers home, fenced crater where Gallery will stand
+          </div>
+        </div>
+        
+        <div class="gallery-slide" id="slide2">
+          <img src="assets/images/gallery/new-eden-book3.webp" alt="New Eden in Book 3">
+          <div class="gallery-caption">
+            <span class="timeline-badge">Book 3</span> Paved roads, Bowers home completed, crater still fenced
+          </div>
+        </div>
+        
+        <div class="gallery-slide" id="slide3">
+          <img src="assets/images/gallery/new-eden-book5.webp" alt="New Eden in Book 5">
+          <div class="gallery-caption">
+            <span class="timeline-badge">Book 5</span> Paved roads, Bowers home, Samaya Gallery complete
+          </div>
+        </div>
+        
+        <div class="gallery-slide" id="slide4">
+          <img src="assets/images/gallery/new-eden-labeled.png" alt="New Eden labeled map">
+          <div class="gallery-caption">
+            <span class="timeline-badge">Book 5+</span> Labeled map: Roundabout, Bowers Home, Gallery, Observatory, Reactor
+          </div>
+        </div>
+        
+        <div class="gallery-nav gallery-prev" onclick="changeSlide(-1)">❮</div>
+        <div class="gallery-nav gallery-next" onclick="changeSlide(1)">❯</div>
+        
+        <div class="gallery-dots">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
       </div>
-    </div>
-    
-    <div class="gallery-slide" id="slide3">
-      <img src="assets/images/gallery/new-eden-book5.webp" alt="New Eden in Book 5">
-      <div class="gallery-caption">
-        <span class="timeline-badge">Book 5</span> Paved roads, Bowers home, Samaya Gallery complete
-      </div>
-    </div>
-    
-    <div class="gallery-slide" id="slide4">
-      <img src="assets/images/gallery/new-eden-labeled.png" alt="New Eden labeled map">
-      <div class="gallery-caption">
-        <span class="timeline-badge">Book 5+</span> Labeled map: Roundabout, Bowers Home, Gallery, Observatory, Reactor
-      </div>
-    </div>
-    
-    <div class="gallery-nav gallery-prev" onclick="changeSlide(-1)">❮</div>
-    <div class="gallery-nav gallery-next" onclick="changeSlide(1)">❯</div>
-    
-    <div class="gallery-dots">
-      <span class="dot active" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
     </div>
   </div>
 
@@ -283,24 +379,24 @@
       <p>New Eden is nestled in a crook of the Pison River, which runs north to south through the southern hemisphere. The settlement hugs the river's bend, with plans to eventually bridge its waters as expansion continues. On the eastern edge, the river glitters like a ribbon of melted glass, its narrow green banks stitched with genetically modified flora—trees and shrubs engineered to survive the planet's arid conditions. Beyond the river stretch rust-red plains, cracked and dry, shimmering in the heat. To the west, the fusion reactor's containment dome rises like a geometric moon fallen to ground, visible from nearly every rooftop.</p>
     </div>
 
-<!-- Revised Observatory Section for New Eden.html -->
-<div class="card-bg">
-  <h2 id="Observatory">New Eden Observatory</h2>
-  <p>Perched on a ridge <strong>southeast of the settlement</strong>, within easy walking distance of the town center, the New Eden Observatory is a sleek, modest dome dedicated not to serious research—that happens aboard space vessels—but to <strong>educational tours</strong> and the simple wonder of stargazing. Its glass panels gleam under the binary sunset, reflecting the golden light of Niamh and the deepening pink of Ciara. The path to the dome winds through red-dust trails and scattered rocks, offering a panoramic view of the village below.</p>
-  
-  <div style="background: rgba(255, 170, 51, 0.1); padding: 1rem; border-radius: 12px; margin: 1rem 0;">
-    <p><em>💫 "It's less about serious astronomy—there are space vessels for that—and more about educational tours and viewing the warm super-Jupiter, <strong>Chaos</strong>, that Ares and other moons orbit."</em></p>
-  </div>
+    <!-- Observatory Section -->
+    <div class="card-bg">
+      <h2 id="Observatory">New Eden Observatory</h2>
+      <p>Perched on a ridge <strong>southeast of the settlement</strong>, within easy walking distance of the town center, the New Eden Observatory is a sleek, modest dome dedicated not to serious research—that happens aboard space vessels—but to <strong>educational tours</strong> and the simple wonder of stargazing. Its glass panels gleam under the binary sunset, reflecting the golden light of Niamh and the deepening pink of Ciara. The path to the dome winds through red-dust trails and scattered rocks, offering a panoramic view of the village below.</p>
+      
+      <div style="background: rgba(255, 170, 51, 0.1); padding: 1rem; border-radius: 12px; margin: 1rem 0;">
+        <p><em>💫 "It's less about serious astronomy—there are space vessels for that—and more about educational tours and viewing the warm super-Jupiter, <strong>Chaos</strong>, that Ares and other moons orbit."</em></p>
+      </div>
 
-  <p>Inside, a circular observation platform sits beneath a transparent roof, offering an unobstructed view of the sky. From this vantage point, visitors can witness the synchronized descent of Niamh and Ciara, followed by the rise of Chaos—a copper-hued gas giant whose swirling reds and blacks resemble a cosmic storm, orbited by its family of moons: volcanic Hermes, crystalline Athena, ancient Poseidon, adaptive Demeter, and Ares itself.</p>
-  
-  <h3 class="text-lg font-semibold mt-4 mb-2">A Memorable Evening</h3>
-  <p>The observatory is also the setting for a quiet character moment in the series. <strong>Amerigo Carisco</strong> walks up to the dome with <strong>Dr. Zoë Carisco</strong> on an evening picnic date—a rare respite from their responsibilities. As they watch the stars emerge over the rust-red plain, Zoë's communicator chimes. It's Celectra's babysitter: the child is having a nightmare, trauma-induced because of Kret. The romantic evening becomes a tender reminder of their shared duty, and they hurry back down the ridge together, hand in hand, to comfort their daughter.</p>
-  
-  <p>The observatory remains a place of both public education and private memory—where colonists learn about the <a href="https://amerigoware1.github.io/One-Mind-Two-Stars-Wiki/SolarSystemOverview.html" target="_blank">Niamh–Ciara system</a> and where a family once ran home through the dusk.</p>
-  <p><em>For complete details on the Observatory, see <a href="observatory.html">New Eden Observatory</a>.</em></p>
-  <p><span class="feature-badge">🔭 Educational Tours</span> <span class="feature-badge">🌌 Viewing Chaos</span> <span class="feature-badge">🧺 Picnic Spot</span> <span class="feature-badge">🌙 Ares' Sky</span></p>
-</div>
+      <p>Inside, a circular observation platform sits beneath a transparent roof, offering an unobstructed view of the sky. From this vantage point, visitors can witness the synchronized descent of Niamh and Ciara, followed by the rise of Chaos—a copper-hued gas giant whose swirling reds and blacks resemble a cosmic storm, orbited by its family of moons: volcanic Hermes, crystalline Athena, ancient Poseidon, adaptive Demeter, and Ares itself.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">A Memorable Evening</h3>
+      <p>The observatory is also the setting for a quiet character moment in the series. <strong>Amerigo Carisco</strong> walks up to the dome with <strong>Dr. Zoë Carisco</strong> on an evening picnic date—a rare respite from their responsibilities. As they watch the stars emerge over the rust-red plain, Zoë's communicator chimes. It's Celectra's babysitter: the child is having a nightmare, trauma-induced because of Kret. The romantic evening becomes a tender reminder of their shared duty, and they hurry back down the ridge together, hand in hand, to comfort their daughter.</p>
+      
+      <p>The observatory remains a place of both public education and private memory—where colonists learn about the <a href="https://amerigoware1.github.io/One-Mind-Two-Stars-Wiki/SolarSystemOverview.html" target="_blank">Niamh–Ciara system</a> and where a family once ran home through the dusk.</p>
+      <p><em>For complete details on the Observatory, see <a href="observatory.html">New Eden Observatory</a>.</em></p>
+      <p><span class="feature-badge">🔭 Educational Tours</span> <span class="feature-badge">🌌 Viewing Chaos</span> <span class="feature-badge">🧺 Picnic Spot</span> <span class="feature-badge">🌙 Ares' Sky</span></p>
+    </div>
 
     <div class="card-bg">
       <h2 id="Cultural_Notes">Cultural Notes</h2>
@@ -316,32 +412,32 @@
         <tr>
           <th>Period</th>
           <th>Development</th>
-        </tr>
-        <tr>
+         </tr>
+         <tr>
           <td><strong>Pre-Series</strong></td>
           <td>Original five buildings constructed; dirt roads; fusion reactor operational; observatory built</td>
-        </tr>
-        <tr>
+         </tr>
+         <tr>
           <td><strong>Book 1</strong></td>
           <td>Dirt roads throughout; fenced crater where Gallery will stand; no Bowers home yet</td>
-        </tr>
-        <tr>
+         </tr>
+         <tr>
           <td><strong>Between Books 1 & 3</strong></td>
           <td>Roads paved; Bowers home constructed for Amerigo, Zoë, and Celectra</td>
-        </tr>
-        <tr>
+         </tr>
+         <tr>
           <td><strong>Book 3</strong></td>
           <td>Paved roads complete; Bowers home occupied; crater remains fenced</td>
-        </tr>
-        <tr>
+         </tr>
+         <tr>
           <td><strong>Between Books 4 & 5</strong></td>
           <td>Samaya Gallery constructed on crater site, completing the hexagon</td>
-        </tr>
-        <tr>
+         </tr>
+         <tr>
           <td><strong>Book 5</strong></td>
           <td>Full hexagon complete; labeled maps created for visitors</td>
-        </tr>
-      </table>
+         </tr>
+       </table>
     </div>
 
     <!-- See Also Section Linking to Central Buildings -->
@@ -410,8 +506,8 @@
   </script>
 
   <div id="footer">
-    <p>Back to <a href="characters.md">Characters</a> | <a href="Timeline.html">Timeline</a> | <a href="index.html">Home</a></p>
-    <p>See also: <a href="central-buildings.html">The Six Central Buildings</a></p>
+    <p>Back to <a href="characters.html">Characters</a> | <a href="Timeline.html">Timeline</a> | <a href="index.html">Home</a></p>
+    <p>See also: <a href="central-buildings.html">The Six Central Buildings</a> | <a href="observatory.html">New Eden Observatory</a></p>
     <p>&copy; One Mine Two Stars Wiki</p>
   </div>
 </body>
