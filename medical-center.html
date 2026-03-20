@@ -85,6 +85,30 @@
       margin: 1rem 0;
       border: 2px dashed #4a9aaa;
     }
+    .basement-warning {
+      background: #2a1a1a;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-left: 8px solid #aa4a4a;
+      position: relative;
+    }
+    .basement-warning::before {
+      content: "⚠️";
+      position: absolute;
+      top: -15px;
+      left: 20px;
+      font-size: 2rem;
+      background: #2a1a1a;
+      padding: 0 10px;
+    }
+    .kret-experiment {
+      background: #3a1e1e;
+      border-radius: 12px;
+      padding: 1rem;
+      margin: 1rem 0;
+      border: 1px solid #aa5555;
+    }
     .feature-badge {
       display: inline-block;
       background: #2c3e50;
@@ -96,6 +120,11 @@
       margin-right: 8px;
       margin-bottom: 5px;
       border: 1px solid #7ac4d4;
+    }
+    .warning-badge {
+      border-color: #aa5555;
+      color: #ffaaaa;
+      background: #4a2a2a;
     }
     .level-table {
       width: 100%;
@@ -184,7 +213,15 @@
       </tr>
       <tr>
         <th>Head Nurse</th>
-        <td>Terry Fairchild (agender)</td>
+        <td>Terry Fairchild (agender, they/them)</td>
+      </tr>
+      <tr>
+        <th>Chief of Psychology</th>
+        <td>Dr. Zoë (Kret) (Carisco) PsyD — Book 1: Dr. Zoë professionally, Zoë Kret legally; Book 2+: Dr. Zoë Carisco</td>
+      </tr>
+      <tr>
+        <th>Basement Level</th>
+        <td>Mortuary, morgue, autopsy theater</td>
       </tr>
       <tr>
         <th>Colony Population</th>
@@ -198,6 +235,10 @@
         <th>Notable Births</th>
         <td>Celectra (2225) • Twin deliveries (2247)</td>
       </tr>
+      <tr>
+        <th>Notable Trauma</th>
+        <td>Kret's experiments on 7-year-old Celectra (Book 1)</td>
+      </tr>
     </table>
   </div>
 
@@ -210,6 +251,8 @@
       <p>The <strong>Medical Center</strong> is New Eden's primary healthcare facility, one of the five original buildings encircling the central roundabout. Though its exterior is identical to its neighbors—graceful curved facades of local stone composite—its interior is a fully equipped small hospital serving a colony population of approximately 600 souls.</p>
       
       <p>Unlike the automated medical bays aboard starships, the Medical Center maintains a philosophy of <strong>human-centered care</strong>. While Utara handles diagnostics, monitoring, and routine data, the Center's small but dedicated staff ensures that healing remains a human interaction. This philosophy was tested during the Kret tribunals and affirmed under the leadership of Dr. Alex Cruiz.</p>
+      
+      <p>The building holds both light and shadow: it is where children are born and where the dead are honored, where healing occurs and where, for one seven-year-old girl, terrible harm was done before her escape changed everything.</p>
       
       <div class="medical-stats">
         <div class="stat-card">
@@ -231,7 +274,7 @@
       </div>
     </div>
 
-    <!-- KEY PERSONNEL -->
+    <!-- KEY PERSONNEL (UPDATED WITH DR. ZOË) -->
     <div class="card-bg">
       <h2 class="section-header">Key Personnel</h2>
       
@@ -257,65 +300,121 @@
       <p>Their testimony was instrumental in Kret's removal. When Cruiz took over, he kept Terry as head nurse—not out of obligation, but because they were the most competent, most ethical person in the building. The two now run the Center as equals: Cruiz the hands, Fairchild the memory of why trust matters.</p>
       
       <p><em>"I didn't risk my career to get rid of Kret so I could watch someone else make the same mistakes. Dr. Cruiz never would."</em> — Terry Fairchild</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Dr. Zoë Carisco, PsyD — Chief of Psychology</h3>
+      <p><strong>Dr. Zoë</strong> (as she was known in Book 1) became <strong>Dr. Zoë Carisco</strong> in Book 2 following her marriage into the Carisco family. She heads the Medical Center's mental health services, with an office and therapy rooms on the upper floors.</p>
+      
+      <p>Her domain includes:</p>
+      <ul>
+        <li><strong>Individual therapy:</strong> Long-term support for colonists struggling with isolation, trauma, or depression</li>
+        <li><strong>Family counseling:</strong> Navigating the complexities of multigenerational colony life</li>
+        <li><strong>Crisis intervention:</strong> Immediate response to psychological emergencies</li>
+        <li><strong>Children's services:</strong> Age-appropriate mental health care, including play therapy</li>
+      </ul>
+      
+      <p>Dr. Zoë's team includes several counselors and therapists, though like the medical staff, they are generalists who handle a wide range of issues. Her office became particularly significant after the Kret revelations—she was one of the first people Celectra trusted to process what had happened in the basement.</p>
+      
+      <p><em>"Healing isn't just about bodies. Sometimes the wounds you can't see are the ones that take longest to close."</em> — Dr. Zoë Carisco</p>
     </div>
 
-    <!-- FACILITIES & CAPABILITIES -->
+    <!-- FACILITIES & CAPABILITIES (UPDATED WITH PSYCHOLOGY WING) -->
     <div class="card-bg">
       <h2 class="section-header">Facilities & Capabilities</h2>
       <p>Though modest by Earth standards, the Medical Center is a fully functional small hospital. Its capabilities are optimized for a population of 600, with flexibility for surges (construction accidents, exploration injuries, or the occasional epidemic).</p>
       
       <table class="level-table">
         <tr>
-          <th>Department</th>
+          <th>Level/Department</th>
           <th>Capabilities</th>
         </tr>
         <tr>
-          <td><strong>Emergency & Trauma</strong></td>
-          <td>3 fully equipped autodoc suites; capable of handling industrial accidents, severe injuries, and critical care</td>
+          <td><strong>Ground Floor — Reception & Admin</strong></td>
+          <td>Waiting area, Utara intake kiosks, Terry Fairchild's office, staff lounge</td>
         </tr>
         <tr>
-          <td><strong>Surgical Suite</strong></td>
-          <td>2 operating rooms (one robotic-assisted, one manual); Cruiz performs everything from appendectomies to C-sections</td>
+          <td><strong>First Floor — Outpatient & Clinics</strong></td>
+          <td>Exam rooms, routine checkups, chronic care management</td>
         </tr>
         <tr>
-          <td><strong>Maternity Wing</strong></td>
-          <td>4 birthing suites; home to the colony's newest citizens (including Celectra's twins in 2247)</td>
+          <td><strong>Second Floor — Psychology Wing</strong></td>
+          <td>Dr. Zoë's office, therapy rooms, children's counseling space, group therapy room</td>
         </tr>
         <tr>
-          <td><strong>Inpatient Ward</strong></td>
+          <td><strong>Third Floor — Inpatient Ward</strong></td>
           <td>12 beds for overnight or extended stays; rarely full except during illness outbreaks</td>
         </tr>
         <tr>
-          <td><strong>Outpatient Clinic</strong></td>
-          <td>Daily walk-in hours for routine care, chronic condition management, and checkups</td>
+          <td><strong>Fourth Floor — Maternity Wing</strong></td>
+          <td>4 birthing suites; home to the colony's newest citizens (including Celectra's twins in 2247)</td>
         </tr>
         <tr>
-          <td><strong>Rehabilitation Center</strong></td>
+          <td><strong>Fifth Floor — Surgical Suite</strong></td>
+          <td>2 operating rooms (one robotic-assisted, one manual); Cruiz performs everything from appendectomies to C-sections</td>
+        </tr>
+        <tr>
+          <td><strong>Sixth Floor — Critical Care</strong></td>
+          <td>3 fully equipped autodoc suites; capable of handling industrial accidents and severe injuries</td>
+        </tr>
+        <tr>
+          <td><strong>Seventh Floor — Rehabilitation</strong></td>
           <td>Physical therapy, hydrotherapy, and Utara-guided motion tracking for recovery</td>
         </tr>
         <tr>
-          <td><strong>Mental Health Sanctuary</strong></td>
-          <td>Private counseling rooms, meditation spaces; the only place with guaranteed human-to-human therapy</td>
+          <td><strong>Eighth Floor — Diagnostic Imaging</strong></td>
+          <td>Full suite (MRI, CT, ultrasound) integrated with Utara's analysis</td>
         </tr>
         <tr>
-          <td><strong>Pharmacy & Synthesis</strong></td>
+          <td><strong>Ninth Floor — Pharmacy & Synthesis</strong></td>
           <td>On-site medical synthesis for medications too specialized for home units</td>
         </tr>
         <tr>
-          <td><strong>Diagnostic Imaging</strong></td>
-          <td>Full suite (MRI, CT, ultrasound) integrated with Utara's analysis</td>
+          <td><strong>Basement — Mortuary, Morgue & Autopsy Theater</strong></td>
+          <td>See detailed section below</td>
         </tr>
       </table>
       
       <p style="margin-top: 1rem;"><em>Staffing limitations mean not all departments are active simultaneously—Cruiz and Fairchild prioritize based on need, shifting resources as the colony demands.</em></p>
     </div>
 
-    <!-- THE KRET ERA AND TRANSITION -->
+    <!-- THE BASEMENT: MORTUARY, MORGUE, AND THE KRET EXPERIMENTS -->
+    <div class="basement-warning">
+      <h3 style="color: #ffaaaa; margin-top: 0;">⬇️ The Basement: Where the Dead Are Kept — and Where Harm Was Done</h3>
+      
+      <p>The Medical Center's basement level houses the facilities for the deceased:</p>
+      <ul>
+        <li><strong>Mortuary:</strong> Preparation area for burial or other funeral rites</li>
+        <li><strong>Morgue:</strong> Temperature-controlled storage for up to 8 bodies</li>
+        <li><strong>Autopsy Theater:</strong> Fully equipped examination room for determining causes of death</li>
+      </ul>
+      
+      <p>In most colonies, these are quiet, respectful spaces—necessary but seldom discussed. During Dr. Douglas Kret's tenure, however, the basement became something far darker.</p>
+      
+      <div class="kret-experiment">
+        <h4 style="color: #ff8888; margin: 0 0 0.5rem 0;">The Second Round of Kret's Experiments (Book 1)</h4>
+        <p>When Celectra Carisco-Bowers was <strong>seven years old</strong>, Dr. Douglas Kret brought her to the basement autopsy theater for a series of unethical experiments. Using her unique physiology, Kret tested the effects of <strong>bodies separated by distance and objects causing momentary death</strong>—multiple times.</p>
+        
+        <p>The experiments involved inducing temporary clinical death through controlled separation of her consciousness from her body, observing the effects, and reviving her. Each iteration left lasting trauma, both physical and psychological. The basement, meant to honor the dead, became a place where a child was made to die—and return—against her will.</p>
+        
+        <p>It was after one of these sessions that Celectra <strong>ran away</strong> from the Medical Center, fleeing into the cave system outside New Eden. There, hiding and terrified, she discovered the <strong>galinstan-based lifeforms</strong>—a first contact that would reshape the colony's future. What Kret intended as cruel control became the catalyst for the Integration.</p>
+      </div>
+      
+      <p>After Kret's removal, Dr. Cruiz ordered a complete renovation of the basement. The autopsy theater was reconfigured, and strict protocols now govern its use. But for Celectra—and for those who know her story—the basement remains a place of complicated memory: the site of trauma, but also the place she fled <em>from</em> on the day she changed everything.</p>
+      
+      <p><em>"I don't hate that room. I can't. Because walking out of it was the first brave thing I ever did."</em> — Celectra Carisco-Bowers, Book 5</p>
+    </div>
+
+    <!-- THE KRET ERA AND TRANSITION (UPDATED WITH BASEMENT DETAILS) -->
     <div class="card-bg">
       <h2 class="section-header">The Kret Era & Transition</h2>
       
       <h3 class="text-lg font-semibold mt-4 mb-2">Dr. Douglas Kret</h3>
-      <p>Before Alex Cruiz, there was Douglas Kret—the original Chief of Medicine and holder of Council Seat 3. Kret's tenure ended in disgrace following two tribunals (Books 1 and 2) led by Security Chief Evelyn Roan. His crimes included medical ethics violations, unauthorized experimentation, and endangering patients—including, critically, Celectra Carisco-Bowers.</p>
+      <p>Before Alex Cruiz, there was Douglas Kret—the original Chief of Medicine and holder of Council Seat 3. Kret's tenure ended in disgrace following two tribunals (Books 1 and 2) led by Security Chief Evelyn Roan. His crimes included:</p>
+      <ul>
+        <li>Medical ethics violations and unauthorized experimentation</li>
+        <li>Endangering patients, including seven-year-old Celectra Carisco-Bowers</li>
+        <li>Using the basement autopsy theater for repeated, non-consensual death-revival experiments</li>
+        <li>Covering up his activities from colleagues and the council</li>
+      </ul>
       
       <p>Terry Fairchild's testimony was pivotal in exposing Kret's practices. After his removal from the council and medical leadership, Kret was <strong>exiled to roam the moon with a survey team</strong>, serving as medic and cook—a steep fall from his former status. His departure left a void that Alex Cruiz would fill.</p>
       
@@ -323,22 +422,8 @@
       <p>Alex Cruiz moved down from Utopis with his wife Dee shortly after Amerigo and Celectra settled on New Eden. The timing was intentional: his friends needed him, and the colony needed a healer it could trust. Cruiz stepped into Seat 3 on the council and began the slow work of rebuilding the Medical Center's reputation.</p>
       
       <p>Unlike Kret, who hoarded authority, Cruiz immediately elevated Terry Fairchild to Head Nurse and made clear that the Center operated on transparency and consent. His first act was to invite any patient of Kret's to request a full review of their treatment—no questions asked.</p>
-    </div>
-
-    <!-- ANI TECH INNOVATION -->
-    <div class="ani-note">
-      <h3 style="color: #7ac4d4; margin-top: 0;">📊 ANI Comfort Monitoring (Late Book 3)</h3>
-      <p>Late in Book 3, Dr. Cruiz began implementing a revolutionary application of <strong>ANI (Artificial Neural Interface)</strong> technology. Previously used for basic neural monitoring, Cruiz adapted the tech to allow Utara to track not just patients' vital signs, but their <strong>actual perceived comfort level</strong>.</p>
       
-      <p>This innovation means:</p>
-      <ul style="margin-bottom: 0;">
-        <li><strong>Real-time pain assessment:</strong> Utara detects discomfort before the patient can verbalize it</li>
-        <li><strong>Personalized sedation:</strong> ANI adjusts anesthetic delivery based on individual neural responses</li>
-        <li><strong>Recovery optimization:</strong> Comfort data helps Cruiz fine-tune post-operative care</li>
-        <li><strong>End-of-life dignity:</strong> Terminal patients can communicate comfort needs even when verbal communication fails</li>
-      </ul>
-      
-      <p style="margin-bottom: 0; margin-top: 1rem;">Cruiz insisted on rigorous consent protocols—ANI monitoring is always optional, and patients can override or disconnect at any time. The technology represents the opposite of Kret's philosophy: monitoring in service of the patient, not in spite of them.</p>
+      <p>Cruiz also personally apologized to Celectra for what had happened in the basement—not because he was responsible, but because he believed the colony's medical establishment owed her that acknowledgment. It was the beginning of their deepened bond.</p>
     </div>
 
     <!-- THE BIRTHS: CELECTRA AND HER TWINS -->
@@ -356,6 +441,24 @@
       <p>The two deliveries, separated by 22 years, bookend Cruiz's relationship with the Carisco-Bowers family. In 2225, he caught Celectra on Utopis—a moment he describes as <em>"the first time I held my heart outside my body."</em> By 2247, Celectra was a woman, an ambassador, and a mother, and Cruiz was there to welcome the next generation.</p>
       
       <p>The twin delivery was notable for another reason: it was the first time Cruiz used ANI comfort monitoring on a conscious, laboring patient. Celectra's real-time feedback helped refine the technology, and both babies (a boy and a girl) arrived healthy, with their uncle—now great-uncle—beaming through tears.</p>
+      
+      <p>Dr. Zoë Carisco was present as well—not as a medical provider, but as family. The circle of those who had helped Celectra heal from her childhood trauma gathered in the maternity wing, transforming the Medical Center from a place of fear into a place of joy.</p>
+    </div>
+
+    <!-- ANI TECH INNOVATION -->
+    <div class="ani-note">
+      <h3 style="color: #7ac4d4; margin-top: 0;">📊 ANI Comfort Monitoring (Late Book 3)</h3>
+      <p>Late in Book 3, Dr. Cruiz began implementing a revolutionary application of <strong>ANI (Artificial Neural Interface)</strong> technology. Previously used for basic neural monitoring, Cruiz adapted the tech to allow Utara to track not just patients' vital signs, but their <strong>actual perceived comfort level</strong>.</p>
+      
+      <p>This innovation means:</p>
+      <ul style="margin-bottom: 0;">
+        <li><strong>Real-time pain assessment:</strong> Utara detects discomfort before the patient can verbalize it</li>
+        <li><strong>Personalized sedation:</strong> ANI adjusts anesthetic delivery based on individual neural responses</li>
+        <li><strong>Recovery optimization:</strong> Comfort data helps Cruiz fine-tune post-operative care</li>
+        <li><strong>End-of-life dignity:</strong> Terminal patients can communicate comfort needs even when verbal communication fails</li>
+      </ul>
+      
+      <p style="margin-bottom: 0; margin-top: 1rem;">Cruiz insisted on rigorous consent protocols—ANI monitoring is always optional, and patients can override or disconnect at any time. The technology represents the opposite of Kret's philosophy: monitoring in service of the patient, not in spite of them. Dr. Zoë Carisco was consulted extensively on the psychological implications, ensuring that the technology could not be weaponized as Kret had weaponized his position.</p>
     </div>
 
     <!-- COUNCIL REPRESENTATION -->
@@ -372,7 +475,7 @@
         <tr>
           <td><span class="seat-number">3</span> Pre-Book 1</td>
           <td>Douglas Kret</td>
-          <td>Removed by tribunal (ethics violations)</td>
+          <td>Removed by tribunal (ethics violations, child endangerment)</td>
         </tr>
         <tr>
           <td><span class="seat-number">3</span> Book 1 onward</td>
@@ -383,41 +486,46 @@
       
       <p>As a council member, Cruiz advocates for:</p>
       <ul>
-        <li>Mental health funding and staff</li>
+        <li>Mental health funding and staff (working closely with Dr. Zoë)</li>
         <li>Preventive medicine programs</li>
-        <li>Ethical oversight of medical research</li>
-        <li>Patient autonomy in all treatments</li>
+        <li>Ethical oversight of all medical research</li>
+        <li>Patient autonomy and consent in all treatments</li>
+        <li>Transparent investigation of any future complaints</li>
       </ul>
       
       <p>He is notably quiet during debates outside his expertise, but when medicine is discussed, his voice carries weight—both because of his competence and because no one wants to repeat the Kret era.</p>
     </div>
 
-    <!-- DAILY LIFE & STAFFING -->
+    <!-- DAILY LIFE & STAFFING (UPDATED WITH PSYCHOLOGY TEAM) -->
     <div class="card-bg">
       <h2 class="section-header">Life in a Small-Colony Hospital</h2>
       
       <h3 class="text-lg font-semibold mt-4 mb-2">The Jack-of-All-Specialties Reality</h3>
       <p>With a colony population of 600 or less (varying by book), the Medical Center cannot support specialists. Dr. Cruiz is typical of colony physicians across the stellar system: expected to deliver babies, set fractures, perform surgery, treat infections, counsel the depressed, and comfort the dying—sometimes all in the same shift.</p>
       
-      <p>This reality was true under Kret and remains true under Cruiz. What changed was <strong>attitude</strong>: Kret saw it as a burden; Cruiz sees it as the privilege of being present for every stage of human life.</p>
+      <p>Dr. Zoë and her team face a similar breadth: children, adults, couples, trauma survivors, and those simply struggling with the isolation of colony life all come to the psychology wing.</p>
+      
+      <p>This reality was true under Kret and remains true under Cruiz. What changed was <strong>attitude</strong>: Kret saw it as a burden; Cruiz and Zoë see it as the privilege of being present for every stage of human life.</p>
       
       <h3 class="text-lg font-semibold mt-4 mb-2">A Typical Day</h3>
       <ul>
         <li><strong>0600:</strong> Utara handoff from overnight monitoring; review alerts</li>
         <li><strong>0700-0900:</strong> Rounds on inpatients (rarely more than 3-4)</li>
         <li><strong>0900-1200:</strong> Outpatient clinic (routine checkups, chronic care)</li>
-        <li><strong>1200-1300:</strong> Lunch with Terry, discussing cases and colony gossip</li>
+        <li><strong>1200-1300:</strong> Lunch with Terry and/or Zoë, discussing cases and colony gossip</li>
         <li><strong>1300-1700:</strong> Procedures, surgeries, or home visits (if needed)</li>
         <li><strong>1700-1900:</strong> Paperwork, research, ANI data review</li>
-        <li><strong>On call:</strong> 24/7 for emergencies—Terry shares this duty</li>
+        <li><strong>On call:</strong> 24/7 for emergencies—Terry and rotating nurses share this duty</li>
       </ul>
       
-      <h3 class="text-lg font-semibold mt-4 mb-2">Staffing Limitations</h3>
+      <h3 class="text-lg font-semibold mt-4 mb-2">Staffing</h3>
       <p>The Medical Center operates with a lean team:</p>
       <ul>
         <li><strong>1 physician</strong> (Cruiz)</li>
         <li><strong>1 head nurse</strong> (Fairchild)</li>
         <li><strong>2-3 rotating nurses</strong> (cross-trained from other sectors)</li>
+        <li><strong>1 chief psychologist</strong> (Dr. Zoë Carisco)</li>
+        <li><strong>2-3 counselors/therapists</strong> (part-time or shared with education)</li>
         <li><strong>Utara</strong> (constant monitoring, diagnostics, records)</li>
         <li><strong>Volunteer aides</strong> (community members training in basic care)</li>
       </ul>
@@ -425,26 +533,40 @@
       <p>During crises (accidents, epidemics), the colony mobilizes—off-duty engineers assist with logistics, teachers help with childcare, and everyone understands that the Medical Center's small size requires community support.</p>
     </div>
 
-    <!-- CELECTRA'S RELATIONSHIP -->
+    <!-- CELECTRA'S RELATIONSHIP (UPDATED WITH ESCAPE STORY) -->
     <div class="card-bg">
-      <h2 class="section-header">"Uncle Doc" to "Uncle Alex"</h2>
+      <h2 class="section-header">"Uncle Doc" to "Uncle Alex" — And the Escape That Changed Everything</h2>
       
-      <p>Celectra Carisco-Bowers' relationship with Dr. Cruiz is one of the emotional anchors of the series. The evolution of her address marks their deepening bond:</p>
+      <p>Celectra Carisco-Bowers' relationship with Dr. Cruiz is one of the emotional anchors of the series. But before that relationship could form, she had to survive what Kret did to her—and find the courage to run.</p>
       
+      <h3 class="text-lg font-semibold mt-4 mb-2">The Escape (Book 1)</h3>
+      <p>After a session in the basement autopsy theater—another induced death, another revival—seven-year-old Celectra made a decision. She <strong>ran</strong>. Out of the Medical Center, past the roundabout, and into the cave system that bordered New Eden. She was terrified, alone, and convinced that if she stayed, Kret would eventually go too far and she wouldn't come back.</p>
+      
+      <p>In those caves, hiding in the dark, she discovered something no human had ever seen: <strong>galinstan-based lifeforms</strong>, sentient beings who perceived her not as a threat but as a curiosity. Her unique physiology allowed communication where others might have failed. She didn't know it yet, but she had just made first contact—and changed the colony's future forever.</p>
+      
+      <p>When she was found and returned, the resulting investigation exposed Kret's crimes and led to his first tribunal.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Healing with Dr. Zoë</h3>
+      <p>In the aftermath, Dr. Zoë (as she was then) became Celectra's therapist. Their sessions, held in the psychology wing's children's room, helped Celectra process the trauma while also nurturing her emerging connection to the Galistanians. Dr. Zoë never pushed; she simply provided a safe space where a child who had been through the unthinkable could learn to trust again.</p>
+      
+      <p>When Dr. Zoë married into the Carisco family in Book 2, becoming Dr. Zoë Carisco, Celectra gained not just a therapist but family—another adult who had seen her at her most vulnerable and never flinched.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">The Evolution of Address</h3>
       <ul>
-        <li><strong>Book 1:</strong> <em>"Uncle Doc"</em> — Formal, respectful, still processing his arrival after Kret's departure</li>
+        <li><strong>Book 1 (pre-Cruiz):</strong> Formal relationship with Kret; terror of the basement</li>
+        <li><strong>Book 1 (post-Cruiz arrival):</strong> <em>"Uncle Doc"</em> — Tentative trust, still processing</li>
         <li><strong>Book 2 onward:</strong> <em>"Uncle Alex"</em> — Familiar, affectionate, the title of true family</li>
       </ul>
       
-      <p>After her mother's death (before the series) and with her father Amerigo often absorbed in science, Celectra found in Alex and Dee Cruiz a second family. The Medical Center became a place of safety—not just for her body, but for her spirit. Even as ambassador, she stops by weekly to sit in his office, drink tea, and let someone who knew her before she was extraordinary simply <em>see</em> her.</p>
+      <p>After her mother's death (before the series) and with her father Amerigo often absorbed in science, Celectra found in Alex and Dee Cruiz, and in Dr. Zoë, a second family. The Medical Center became a place of complicated memory—the site of her worst trauma, yes, but also the place she fled <em>from</em> toward her destiny, and later the place where her own children would be born.</p>
       
       <div class="testimony-card">
-        <p>When I was seven, I asked Uncle Doc if he'd be my doctor forever. He said, 'I plan to be your doctor until you're old enough to be my doctor.' I didn't understand then. Now I do.</p>
+        <p>When I was seven, I ran out of that building believing I'd rather die in the caves than let Kret touch me again. I didn't die. I found friends. I found purpose. And twenty-two years later, I walked back in—by choice—to let Uncle Alex catch my babies. The building didn't change. I did.</p>
         <span class="speaker">— Celectra Carisco-Bowers, Book 5</span>
       </div>
     </div>
 
-    <!-- TIMELINE OF KEY EVENTS -->
+    <!-- TIMELINE OF KEY EVENTS (UPDATED) -->
     <div class="card-bg">
       <h2 class="section-header">Medical Center Timeline</h2>
       
@@ -459,7 +581,15 @@
         </tr>
         <tr>
           <td><strong>Pre-Book 1</strong></td>
-          <td>Douglas Kret serves as Chief of Medicine; Terry Fairchild serves as nurse</td>
+          <td>Douglas Kret serves as Chief of Medicine; Terry Fairchild serves as nurse; Dr. Zoë begins psychology practice</td>
+        </tr>
+        <tr>
+          <td><strong>Early Book 1</strong></td>
+          <td>Kret performs unethical experiments on 7-year-old Celectra in basement autopsy theater</td>
+        </tr>
+        <tr>
+          <td><strong>Early Book 1</strong></td>
+          <td>Celectra escapes Medical Center, hides in caves, discovers Galistanian lifeforms (first contact)</td>
         </tr>
         <tr>
           <td><strong>Book 1</strong></td>
@@ -467,7 +597,7 @@
         </tr>
         <tr>
           <td><strong>Book 1</strong></td>
-          <td>Celectra begins calling Cruiz "Uncle Doc"</td>
+          <td>Celectra begins therapy with Dr. Zoë; begins calling Cruiz "Uncle Doc"</td>
         </tr>
         <tr>
           <td><strong>Book 2</strong></td>
@@ -475,7 +605,7 @@
         </tr>
         <tr>
           <td><strong>Book 2</strong></td>
-          <td>Celectra transitions to "Uncle Alex"</td>
+          <td>Dr. Zoë marries into Carisco family, becomes Dr. Zoë Carisco; Celectra transitions to "Uncle Alex"</td>
         </tr>
         <tr>
           <td><strong>Late Book 3</strong></td>
@@ -483,29 +613,34 @@
         </tr>
         <tr>
           <td><strong>Nov 15, 2247</strong></td>
-          <td>Dr. Cruiz delivers Celectra's twins in the Medical Center</td>
+          <td>Dr. Cruiz delivers Celectra's twins in the Medical Center maternity wing; Dr. Zoë present as family</td>
         </tr>
       </table>
     </div>
 
-    <!-- CULTURAL SIGNIFICANCE -->
+    <!-- CULTURAL SIGNIFICANCE (UPDATED) -->
     <div class="card-bg">
       <h2 class="section-header">Cultural Significance</h2>
-      <p>The Medical Center represents more than healthcare—it embodies New Eden's commitment to <strong>trust, transparency, and human connection</strong>. The transition from Kret to Cruiz was a moral reset for the colony, proving that even those in power can be held accountable.</p>
+      <p>The Medical Center represents more than healthcare—it embodies New Eden's commitment to <strong>trust, transparency, and human connection</strong>. The transition from Kret to Cruiz was a moral reset for the colony, proving that even those in power can be held accountable. The presence of Dr. Zoë's psychology wing affirms that mental health is as vital as physical health.</p>
+      
+      <p>And the basement—once a site of horror—now stands as a reminder that even the darkest places can be reclaimed. Celectra's escape from that room led to first contact, and her return to deliver her own children in the same building demonstrates that trauma does not have to be the end of the story.</p>
       
       <h3 class="text-lg font-semibold mt-4 mb-2">In the Novels</h3>
       <ul>
-        <li><strong>Book 1:</strong> The Medical Center is the site of Kret's unethical practices and the gathering of evidence for his tribunal.</li>
-        <li><strong>Throughout:</strong> Cruiz's quiet competence provides contrast to political drama elsewhere.</li>
+        <li><strong>Book 1:</strong> The Medical Center is the site of Kret's unethical practices, Celectra's trauma, and her dramatic escape to the caves. Dr. Zoë's therapy sessions begin.</li>
+        <li><strong>Throughout:</strong> Cruiz's quiet competence provides contrast to political drama elsewhere. Dr. Zoë's office becomes a refuge for characters processing trauma.</li>
         <li><strong>Late Book 3:</strong> ANI innovation showcases the colony's technological progress and ethical rigor.</li>
-        <li><strong>Book 3 climax:</strong> The twin delivery scene—tender, joyful, and deeply human—reminds readers what the colony is fighting to preserve.</li>
+        <li><strong>Book 3 climax:</strong> The twin delivery scene—tender, joyful, and deeply human—reminds readers what the colony is fighting to preserve, and how Celectra has transformed her relationship with this building.</li>
       </ul>
       
       <h3 class="text-lg font-semibold mt-4 mb-2">The Terry Fairchild Legacy</h3>
       <p>Terry Fairchild's courage in testifying against Kret set a precedent: in New Eden, speaking truth to power is not just permitted—it's honored. They remain the quiet conscience of the Medical Center, and any young colonist considering a medical career is sent to talk with Terry first.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Dr. Zoë's Ongoing Role</h3>
+      <p>Dr. Zoë Carisco continues to treat not only Celectra but also other survivors of trauma, including some of those affected by Kret's broader pattern of abuse. Her psychology wing is the only place in New Eden where colonists can speak with guaranteed confidentiality—not even Utara records therapy sessions without explicit consent.</p>
     </div>
 
-    <!-- QUICK REFERENCE -->
+    <!-- QUICK REFERENCE (UPDATED) -->
     <div class="card-bg">
       <h2 class="section-header">At a Glance</h2>
       <table class="level-table">
@@ -526,8 +661,16 @@
           <td>Terry Fairchild (agender, they/them)</td>
         </tr>
         <tr>
+          <td><strong>Chief of Psychology</strong></td>
+          <td>Dr. Zoë Carisco, PsyD (Book 1: Dr. Zoë; Book 2+: Dr. Zoë Carisco)</td>
+        </tr>
+        <tr>
           <td><strong>Predecessor</strong></td>
           <td>Douglas Kret (removed Book 1, exiled Book 2)</td>
+        </tr>
+        <tr>
+          <td><strong>Basement Facilities</strong></td>
+          <td>Mortuary, morgue, autopsy theater (site of Kret's experiments)</td>
         </tr>
         <tr>
           <td><strong>Key Innovation</strong></td>
@@ -538,7 +681,11 @@
           <td>Celectra (2225) • Celectra's twins (2247)</td>
         </tr>
         <tr>
-          <td><strong>Coelectra's Term</strong></td>
+          <td><strong>Notable Escape</strong></td>
+          <td>Celectra flees basement (Book 1), discovers Galistanians</td>
+        </tr>
+        <tr>
+          <td><strong>Celectra's Terms</strong></td>
           <td>"Uncle Doc" (Book 1) → "Uncle Alex" (Book 2+)</td>
         </tr>
       </table>
@@ -548,7 +695,7 @@
 
   <div id="footer">
     <p>Back to <a href="Locations.html">Locations</a> | <a href="Cast.html">Characters</a> | <a href="Timeline.html">Timeline</a> | <a href="index.html">Home</a></p>
-    <p>See also: <a href="Alex_Cruiz.html">Dr. Alex Cruiz</a> | <a href="Terry_Fairchild.html">Terry Fairchild</a> | <a href="Celectra_Carisco-Bowers.html">Celectra Carisco-Bowers</a> | <a href="Council_Chamber.html">Council Chamber</a> | <a href="Douglas_Kret.html">Douglas Kret</a></p>
+    <p>See also: <a href="Alex_Cruiz.html">Dr. Alex Cruiz</a> | <a href="Terry_Fairchild.html">Terry Fairchild</a> | <a href="Zoe_Carisco.html">Dr. Zoë Carisco</a> | <a href="Celectra_Carisco-Bowers.html">Celectra Carisco-Bowers</a> | <a href="Council_Chamber.html">Council Chamber</a> | <a href="Douglas_Kret.html">Douglas Kret</a></p>
     <p>&copy; One Mine Two Stars Wiki</p>
   </div>
 

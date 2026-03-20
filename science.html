@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science and Technology Center - One Mine Two Stars Wiki</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="WikiStyle.css">
+  <style>
+    /* Science Center specific styles */
+    .science-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .stat-card {
+      background: rgba(30, 20, 40, 0.7);
+      border-radius: 16px;
+      padding: 1rem 1.5rem;
+      flex: 1 1 180px;
+      border-left: 5px solid #aa7acc;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ccaaff;
+      line-height: 1.2;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      color: #d0b0e0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+    .team-card {
+      background: rgba(40, 30, 50, 0.8);
+      border-radius: 16px;
+      padding: 1.2rem;
+      border-bottom: 4px solid #b48ad4;
+      transition: transform 0.2s;
+    }
+    .team-card:hover {
+      transform: translateY(-5px);
+      background: rgba(50, 40, 60, 0.9);
+    }
+    .team-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #e6c8ff;
+      margin-bottom: 0.3rem;
+    }
+    .team-role {
+      color: #b8a0d0;
+      font-style: italic;
+      font-size: 0.9rem;
+      margin-bottom: 0.8rem;
+    }
+    .ani-highlight {
+      background: linear-gradient(145deg, #1a1030, #2a1a40);
+      border-radius: 24px;
+      padding: 1.8rem;
+      margin: 1.8rem 0;
+      border: 2px solid #b282e0;
+      box-shadow: 0 0 30px rgba(150, 100, 200, 0.3);
+    }
+    .ani-highlight h3 {
+      color: #d8b0ff;
+      margin-top: 0;
+    }
+    .timeline-marker {
+      display: inline-block;
+      background: #3a2a4a;
+      color: #d8b0ff;
+      padding: 0.2rem 1rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      border: 1px solid #b282e0;
+    }
+    .testimony-card {
+      background: #2a1e30;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 1.2rem 0;
+      border-left: 6px solid #9a6eae;
+      font-style: italic;
+      position: relative;
+    }
+    .testimony-card::before {
+      content: "“";
+      font-size: 4rem;
+      color: #8a6e9a;
+      opacity: 0.3;
+      position: absolute;
+      top: -10px;
+      left: 10px;
+    }
+    .speaker {
+      display: block;
+      margin-top: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      color: #d8b0e0;
+      text-align: right;
+    }
+    .feature-badge {
+      display: inline-block;
+      background: #2a2a4a;
+      color: #ccaaff;
+      padding: 3px 10px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-right: 8px;
+      margin-bottom: 5px;
+      border: 1px solid #b282e0;
+    }
+    .level-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: rgba(10, 20, 30, 0.6);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .level-table th {
+      background: linear-gradient(135deg, #4a3a6a, #2a1a4a);
+      color: #e0c0ff;
+      padding: 12px 8px;
+      border-bottom: 2px solid #b282e0;
+    }
+    .level-table td {
+      padding: 10px 8px;
+      border-bottom: 1px solid #3a2a5a;
+    }
+    .council-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      background: rgba(10, 20, 30, 0.7);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .council-table th {
+      background: linear-gradient(135deg, #4a3a6a, #2a1a4a);
+      color: #e0c0ff;
+      padding: 14px 10px;
+      border-bottom: 2px solid #b282e0;
+    }
+    .council-table td {
+      padding: 12px 10px;
+      border-bottom: 1px solid #3a2a5a;
+    }
+    .seat-number {
+      display: inline-block;
+      background: #2a1a4a;
+      color: #ccaaff;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      text-align: center;
+      line-height: 28px;
+      font-weight: bold;
+      margin-right: 10px;
+      border: 2px solid #b282e0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-banner">
+    <a href="index.html" class="home-button">🏠 Home</a>
+  </div>
+
+  <h1 class="gradient-title">Science and Technology Center</h1>
+  <div class="subtitle">"Curiosity, codified."</div>
+
+  <!-- Infobox -->
+  <div class="infobox">
+    <table class="infobox">
+      <tr>
+        <td colspan="2" class="text-center pb-2">
+          <img src="assets/images/science_center.webp" alt="Science and Technology Center exterior with observatory dome" class="portrait">
+          <div class="image-caption">The Science Center's observatory dome at twilight</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <td>Research Facility / Laboratory Complex</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>New Eden Town Center (original five)</td>
+      </tr>
+      <tr>
+        <th>Construction</th>
+        <td>Pre-series (colony founding)</td>
+      </tr>
+      <tr>
+        <th>Chief of Science & Technology</th>
+        <td>Dr. Lorain Troy (Books 1-3) → <strong>Amerigo Carisco</strong> (Book 3 onward)</td>
+      </tr>
+      <tr>
+        <th>Notable Projects</th>
+        <td>ANI headset development (Book 3)</td>
+      </tr>
+      <tr>
+        <th>Key Feature</th>
+        <td>Observatory Dome • Prototype Workshop</td>
+      </tr>
+      <tr>
+        <th>Council Seat</th>
+        <td>4 (Science & Technology)</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Article content container -->
+  <div class="article-content">
+
+    <!-- OVERVIEW -->
+    <div class="card-bg">
+      <h2 class="section-header">Overview</h2>
+      <p>The <strong>Science and Technology Center</strong> is New Eden's dedicated research facility, one of the five original buildings encircling the central roundabout. Its exterior matches its neighbors—graceful curved facades of local stone composite—but it is distinguished by its <strong>observatory dome</strong>, which rises above the building like a eye turned toward the stars.</p>
+      
+      <p>Here, the colony's brightest minds pursue pure research and applied technology, from astronomical observation to materials science to the revolutionary ANI interfaces that would transform human-AI interaction. The Center embodies the colony's founding principle: that survival requires knowledge, and knowledge requires dedicated space to grow.</p>
+      
+      <div class="science-stats">
+        <div class="stat-card">
+          <div class="stat-number">12+</div>
+          <div class="stat-label">Active Labs</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Council Seat</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">🔭</div>
+          <div class="stat-label">Observatory</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">⚙️</div>
+          <div class="stat-label">Prototype Shop</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AMERIGO'S JOURNEY -->
+    <div class="card-bg">
+      <h2 class="section-header">Amerigo Carisco: From Remote Work to Department Head</h2>
+      
+      <div class="testimony-card">
+        <p>I'd worked for Dr. Troy for years—from orbit, through a screen, sending data and receiving feedback. I thought I knew her. Then I walked into this building for the first time, and she was <em>right there</em>, reading my latest report over real coffee, and I realized: I was about to be supervised by a legend, in person, every single day.</p>
+        <span class="speaker">— Amerigo Carisco, on his first day in the Science Center</span>
+      </div>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Remote Work from Utopis (Pre-Book 1 through Early Book 3)</h3>
+      <p>Before moving to the surface, Amerigo Carisco was a materials scientist working remotely from <strong>Utopis Station</strong>, reporting to Dr. Lorain Troy via regular data transfers and scheduled holographic meetings. Their relationship was professional, efficient, and entirely virtual—Amerigo sent his research; Troy reviewed it and sent back feedback. He never expected to work beside her.</p>
+      
+      <p>Two things changed that:</p>
+      <ul>
+        <li><strong>Celectra's discovery</strong> of the Galistanians made surface residence necessary for her ambassadorial role</li>
+        <li><strong>Dr. Zoë</strong>—then still "Dr. Zoë," soon to be Carisco—made surface residence <em>desirable</em></li>
+      </ul>
+      
+      <p>Amerigo and Celectra moved to New Eden together, and Amerigo began working <strong>directly under Dr. Troy's supervision</strong> in the Science Center.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Slightly Nervous, Completely Unnecessary</h3>
+      <p>Amerigo later admitted to being <em>"slightly nervous"</em> about the transition. Would in-person supervision be more demanding? Would Troy discover some flaw in his work that distance had hidden?</p>
+      
+      <p>He had nothing to worry about. As an <strong>exemplary materials scientist</strong>, his work spoke for itself. Troy welcomed him not as a subordinate but as a colleague, and within weeks, Amerigo felt as though he'd always worked at her side. His nervousness became a fond memory—and a reminder that even the most competent among us doubt ourselves.</p>
+      
+      <div class="testimony-card">
+        <p>Amerigo walked in looking like he expected me to quiz him on freshman chemistry. I handed him a coffee and said, 'Your last paper on bismuth crystal lattice deformation was the best thing I've read in five years. Now stop hovering and get to work.' He relaxed immediately.</p>
+        <span class="speaker">— Dr. Lorain Troy</span>
+      </div>
+    </div>
+
+    <!-- LEADERSHIP TRANSITION -->
+    <div class="card-bg">
+      <h2 class="section-header">Leadership Transition: Troy to Carisco</h2>
+      
+      <table class="council-table">
+        <tr>
+          <th>Period</th>
+          <th>Chief of Science & Technology</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td><span class="seat-number">4</span> Pre-Series to Early Book 3</td>
+          <td><strong>Dr. Lorain Troy</strong></td>
+          <td>Founding department head; mentor to Amerigo</td>
+        </tr>
+        <tr>
+          <td><span class="seat-number">4</span> Early Book 3 onward</td>
+          <td><strong>Amerigo Carisco</strong></td>
+          <td>Appointed following Troy's retirement (illness)</td>
+        </tr>
+      </table>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Dr. Lorain Troy</h3>
+      <p>Dr. Lorain Troy served as Chief of Science and Technology from the colony's founding, shaping the Center's research priorities and mentoring a generation of scientists. Her work in materials science and energy systems laid the groundwork for much of New Eden's technological infrastructure.</p>
+      
+      <p>Early in <strong>Book 3</strong>, Troy's health declined rapidly, forcing her to retire from both the department and her council seat (Seat 4). Her departure was emotional—she had built the Center from nothing and was leaving it in the hands of a man she'd only recently met in person, but whose work she had admired for years.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Amerigo Carisco's Appointment</h3>
+      <p>Amerigo's promotion was both logical and poignant. He was already the department's most accomplished materials scientist; he knew Troy's systems and priorities; and he had the temperament to lead without ego. The council confirmed his appointment unanimously, and Troy personally handed him the keys to her office.</p>
+      
+      <p><em>"She told me, 'Don't change everything just because you can. But don't leave anything broken just because I built it.' That's been my philosophy ever since."</em> — Amerigo Carisco</p>
+    </div>
+
+    <!-- BOOK 3: THE ANI HEADSET PROJECT -->
+    <div class="ani-highlight">
+      <h3>🧠 The ANI Headset Development (Book 3)</h3>
+      <p><span class="timeline-marker">Book 3 Central Plot</span></p>
+      
+      <p>Under Amerigo's supervision, the Science Center became the hub for one of the colony's most significant technological breakthroughs: the development of <strong>ANI (Artificial Neural Interface) headsets</strong>. These devices would eventually allow Utara to monitor not just vital signs but actual perceived comfort levels—a innovation with profound medical and therapeutic applications.</p>
+      
+      <p>The project was led by <strong>Dr. Celectra Carisco, Ph.D.</strong>—Amerigo's daughter, now a researcher in her own right—and brought together an interdisciplinary team of scientists, engineers, and artists whose collaboration exemplified the Center's mission.</p>
+      
+      <h4 style="color: #d8b0ff; margin: 1.5rem 0 0.5rem 0;">The Core Team</h4>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-name">Dr. Celectra Carisco, Ph.D.</div>
+          <div class="team-role">Project Lead • Neural Interface Specialist</div>
+          <div>Brought unique insight from her Galistani connection; primary architect of the headset's neural mapping protocols.</div>
+        </div>
+        
+        <div class="team-card">
+          <div class="team-name">Jaxon</div>
+          <div class="team-role">Lead Engineer • Celectra's Partner</div>
+          <div>Father of Celectra's twins (born later in Book 3); designed the headset's hardware and ergonomics.</div>
+        </div>
+        
+        <div class="team-card">
+          <div class="team-name">Chen Wei</div>
+          <div class="team-role">Signal Processing • Data Architecture</div>
+          <div>Developed the algorithms that translated neural activity into Utara-readable data streams.</div>
+        </div>
+        
+        <div class="team-card">
+          <div class="team-name">Ananya Patel</div>
+          <div class="team-role">Biocompatibility • Materials Science</div>
+          <div>Ensured the headsets were safe for prolonged skin contact; worked closely with Amerigo on material selection.</div>
+        </div>
+        
+        <div class="team-card">
+          <div class="team-name">Maya Keahi</div>
+          <div class="team-role">User Experience • Visualization</div>
+          <div>Applied her artist's eye to the headset's feedback displays, making neural data intuitive and beautiful.</div>
+        </div>
+        
+        <div class="team-card">
+          <div class="team-name">Sam Calder</div>
+          <div class="team-role">Audio Feedback • Sensory Integration</div>
+          <div>Designed the auditory components; ensured that sound cues complemented visual data without overwhelming.</div>
+        </div>
+      </div>
+      
+      <h4 style="color: #d8b0ff; margin: 1.5rem 0 0.5rem 0;">Additional Contributors</h4>
+      <p>The project drew on expertise from across the colony:</p>
+      <ul>
+        <li><strong>Dr. Alex Cruiz</strong> (Medical Center) — Consulted on medical applications and safety protocols</li>
+        <li><strong>Terry Fairchild</strong> — Provided nursing perspective on patient comfort monitoring</li>
+        <li><strong>Utara</strong> — The AI herself collaborated on the interface design, ensuring seamless integration</li>
+        <li><strong>Dr. Zoë Carisco</strong> — Advised on psychological implications and user comfort</li>
+      </ul>
+      
+      <p>The project's success led directly to the <strong>ANI comfort monitoring</strong> implemented in the Medical Center late in Book 3, with Celectra herself serving as one of the first test subjects. The headsets would later find applications in therapy, education, and human-AI collaboration across the colony.</p>
+    </div>
+
+    <!-- FACILITIES -->
+    <div class="card-bg">
+      <h2 class="section-header">Facilities & Departments</h2>
+      
+      <table class="level-table">
+        <tr>
+          <th>Level/Area</th>
+          <th>Function</th>
+          <th>Notable Projects</th>
+        </tr>
+        <tr>
+          <td><strong>Observatory (Dome)</strong></td>
+          <td>Astronomical observation, deep-space monitoring</td>
+          <td>System mapping, exoplanet studies</td>
+        </tr>
+        <tr>
+          <td><strong>Materials Science Lab</strong></td>
+          <td>Research on local and imported materials</td>
+          <td>Amerigo's specialty; bismuth studies; ANI headset materials</td>
+        </tr>
+        <tr>
+          <td><strong>Xenobiological Studies</strong></td>
+          <td>Native flora and fauna research</td>
+          <td>Galistani biology (in coordination with Celectra)</td>
+        </tr>
+        <tr>
+          <td><strong>AI-Human Interaction Lab</strong></td>
+          <td>Utara integration research</td>
+          <td>ANI headset development primary project</td>
+        </tr>
+        <tr>
+          <td><strong>Prototype Workshop</strong></td>
+          <td>Full fabrication facility for physical prototypes</td>
+          <td>Jaxon's domain; headset hardware iterations</td>
+        </tr>
+        <tr>
+          <td><strong>Data Architecture Wing</strong></td>
+          <td>Signal processing, algorithm development</td>
+          <td>Chen Wei's neural translation work</td>
+        </tr>
+        <tr>
+          <td><strong>Biocompatibility Lab</strong></td>
+          <td>Safety testing, material interaction studies</td>
+          <td>Ananya Patel's domain</td>
+        </tr>
+        <tr>
+          <td><strong>Visualization Studio</strong></td>
+          <td>Data presentation, user interface design</td>
+          <td>Maya Keahi's contributions</td>
+        </tr>
+        <tr>
+          <td><strong>Audio Integration Lab</strong></td>
+          <td>Sensory feedback, sound design</td>
+          <td>Sam Calder's primary workspace</td>
+        </tr>
+        <tr>
+          <td><strong>Junior Science Hall</strong></td>
+          <td>After-school programs, youth research</td>
+          <td>Education outreach, future scientist training</td>
+        </tr>
+        <tr>
+          <td><strong>Lecture Hall</strong></td>
+          <td>Presentations, colloquia, public talks</td>
+          <td>Regular research updates, Troy's farewell lecture</td>
+        </tr>
+      </table>
+      
+      <p style="margin-top: 1rem;">The Center also houses administrative offices for the Chief of Science, meeting rooms for cross-department collaboration, and the ubiquitous "whiteboard walls" found throughout New Eden's civic buildings.</p>
+    </div>
+
+    <!-- THE TEAM DYNAMICS -->
+    <div class="card-bg">
+      <h2 class="section-header">The Book 3 Team: Collaboration in Action</h2>
+      
+      <p>The ANI headset project exemplified the Science Center's interdisciplinary approach. Celectra's neural research, Jaxon's engineering, Chen Wei's algorithms, Ananya's materials science, Maya's visualization, and Sam's audio integration all converged in a single device—each discipline essential, none sufficient alone.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Key Relationships</h3>
+      
+      <ul>
+        <li><strong>Celectra & Jaxon:</strong> Professional collaborators and romantic partners, their work on the headsets was also a kind of courtship. The project's success paralleled their growing commitment, and by its completion, they were expecting twins.</li>
+        
+        <li><strong>Maya & Sam:</strong> Already partners in art and life (see <a href="Samaya_Gallery.html">Samaya Gallery</a>), they brought their intuitive collaboration to the team. Maya's visualizations and Sam's audio feedback were designed in tandem, creating a unified sensory experience.</li>
+        
+        <li><strong>Chen Wei & Ananya Patel:</strong> Frequent collaborators on the boundary between data and physical reality—Chen's algorithms needed Ananya's material constraints, and vice versa.</li>
+        
+        <li><strong>Amerigo & Celectra:</strong> Father and daughter, now colleague and colleague. Amerigo supervised without hovering, trusting Celectra's leadership while providing the resources she needed. Their relationship deepened during this period, as Celectra saw her father not just as Dad but as a scientist she respected.</li>
+      </ul>
+      
+      <div class="testimony-card">
+        <p>People think science is solitary. It's not. It's people around a table, arguing about data until someone draws something on a napkin and everyone goes quiet because <em>that's it</em>. The ANI team argued beautifully.</p>
+        <span class="speaker">— Dr. Celectra Carisco, on the Book 3 project</span>
+      </div>
+    </div>
+
+    <!-- COUNCIL REPRESENTATION -->
+    <div class="card-bg">
+      <h2 class="section-header">Council Seat 4: Science & Technology</h2>
+      
+      <table class="council-table">
+        <tr>
+          <th>Seat</th>
+          <th>Portfolio</th>
+          <th>Book 1-3 Incumbent</th>
+          <th>Book 3+ Incumbent</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td><span class="seat-number">4</span></td>
+          <td>Science & Technology</td>
+          <td>Lorain Troy</td>
+          <td><strong>Amerigo Carisco</strong></td>
+          <td>Troy retires early Book 3 (illness); Carisco appointed</td>
+        </tr>
+      </table>
+      
+      <p>As a council member, Amerigo advocates for:</p>
+      <ul>
+        <li>Long-term research funding, even when immediate applications aren't obvious</li>
+        <li>Ethical oversight of new technologies (informed by his predecessor's standards)</li>
+        <li>Collaboration between scientific disciplines and other sectors (art, medicine, education)</li>
+        <li>Mentorship and training for the colony's young scientists</li>
+      </ul>
+      
+      <p>Amerigo is quieter than some council members, preferring to let data speak. When he does address the council, colleagues listen—he doesn't waste words.</p>
+    </div>
+
+    <!-- TIMELINE OF KEY EVENTS -->
+    <div class="card-bg">
+      <h2 class="section-header">Science Center Timeline</h2>
+      
+      <table class="level-table">
+        <tr>
+          <th>Period</th>
+          <th>Event</th>
+        </tr>
+        <tr>
+          <td><strong>Pre-Series</strong></td>
+          <td>Dr. Lorain Troy establishes Science Center as founding department</td>
+        </tr>
+        <tr>
+          <td><strong>Pre-Book 1 to Early Book 3</strong></td>
+          <td>Amerigo Carisco works remotely from Utopis, reporting to Troy</td>
+        </tr>
+        <tr>
+          <td><strong>Post-Book 1</strong></td>
+          <td>Celectra's Galistani discovery increases need for surface research</td>
+        </tr>
+        <tr>
+          <td><strong>Early Book 3</strong></td>
+          <td>Amerigo and Celectra move to New Eden; Amerigo begins in-person work under Troy</td>
+        </tr>
+        <tr>
+          <td><strong>Early Book 3</strong></td>
+          <td>Dr. Lorain Troy retires due to illness; Amerigo appointed Chief of Science & Technology</td>
+        </tr>
+        <tr>
+          <td><strong>Book 3 (Central Plot)</strong></td>
+          <td>ANI headset development led by Celectra, with Jaxon, Chen Wei, Ananya Patel, Maya Keahi, Sam Calder, and others</td>
+        </tr>
+        <tr>
+          <td><strong>Late Book 3</strong></td>
+          <td>ANI comfort monitoring implemented in Medical Center; Celectra's twin pregnancy confirmed</td>
+        </tr>
+        <tr>
+          <td><strong>Book 5+</strong></td>
+          <td>Center continues as hub for ongoing research, including Galistani integration studies</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- CULTURAL SIGNIFICANCE -->
+    <div class="card-bg">
+      <h2 class="section-header">Cultural Significance</h2>
+      
+      <p>The Science and Technology Center embodies New Eden's commitment to knowledge as both survival tool and cultural value. Its observatory dome is a visible reminder that the colony looks outward even as it builds inward; its labs are where abstract curiosity becomes concrete innovation.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">In the Novels</h3>
+      <ul>
+        <li><strong>Pre-Book 1 through Early Book 3:</strong> Amerigo's remote work establishes his character as a dedicated scientist and devoted father, even from orbit.</li>
+        <li><strong>Early Book 3:</strong> Troy's retirement and Amerigo's promotion mark a changing of the guard, with emotional resonance.</li>
+        <li><strong>Book 3 (Central):</strong> The ANI headset project dominates, showcasing interdisciplinary collaboration and the next generation of scientists (Celectra, Jaxon, et al.).</li>
+        <li><strong>Throughout:</strong> The Center serves as a gathering place for the colony's thinkers, its halls buzzing with debates that will shape New Eden's future.</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">The Troy Legacy</h3>
+      <p>Dr. Lorain Troy's portrait hangs in the Center's main hallway, and her farewell lecture—on the importance of pure research, even when survival pressures demand applied solutions—is required viewing for every new scientist. Amerigo keeps a copy of her first feedback to him in his desk drawer.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">The ANI Legacy</h3>
+      <p>The headsets developed in Book 3 became foundational to subsequent human-AI integration, influencing medical care, therapy, and eventually the Samaya Gallery's interactive exhibits. The team that built them—scientists, engineers, and artists working as equals—became a model for future projects.</p>
+    </div>
+
+    <!-- QUICK REFERENCE -->
+    <div class="card-bg">
+      <h2 class="section-header">At a Glance</h2>
+      <table class="level-table">
+        <tr>
+          <th>Aspect</th>
+          <th>Detail</th>
+        </tr>
+        <tr>
+          <td><strong>Building Type</strong></td>
+          <td>Original five (identical exterior, plus observatory dome)</td>
+        </tr>
+        <tr>
+          <td><strong>Current Chief</strong></td>
+          <td>Amerigo Carisco (Seat 4, from early Book 3)</td>
+        </tr>
+        <tr>
+          <td><strong>Founding Chief</strong></td>
+          <td>Dr. Lorain Troy (retired Book 3)</td>
+        </tr>
+        <tr>
+          <td><strong>Notable Project</strong></td>
+          <td>ANI headset development (Book 3)</td>
+        </tr>
+        <tr>
+          <td><strong>Project Lead</strong></td>
+          <td>Dr. Celectra Carisco, Ph.D.</td>
+        </tr>
+        <tr>
+          <td><strong>Core Team</strong></td>
+          <td>Jaxon, Chen Wei, Ananya Patel, Maya Keahi, Sam Calder</td>
+        </tr>
+        <tr>
+          <td><strong>Key Features</strong></td>
+          <td>Observatory • Prototype Workshop • AI-Human Interaction Lab</td>
+        </tr>
+        <tr>
+          <td><strong>Celectra's Roles</strong></td>
+          <td>First as subject of study (Galistani connection), then as lead researcher (ANI)</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <p>Back to <a href="Locations.html">Locations</a> | <a href="Cast.html">Characters</a> | <a href="Timeline.html">Timeline</a> | <a href="index.html">Home</a></p>
+    <p>See also: <a href="Amerigo_Carisco.html">Amerigo Carisco</a> | <a href="Celectra_Carisco-Bowers.html">Dr. Celectra Carisco</a> | <a href="Lorain_Troy.html">Dr. Lorain Troy</a> | <a href="Jaxon.html">Jaxon</a> | <a href="Maya_Keahi.html">Maya Keahi</a> | <a href="Sam_Calder.html">Sam Calder</a> | <a href="Medical_Center.html">Medical Center</a> | <a href="Samaya_Gallery.html">Samaya Gallery</a></p>
+    <p>&copy; One Mine Two Stars Wiki</p>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+  <script>
+    const toTopBtn = document.getElementById("toTopBtn");
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 200) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    });
+    toTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>

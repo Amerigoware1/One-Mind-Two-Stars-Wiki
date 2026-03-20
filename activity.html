@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity Center (Mall of Motion) - One Mine Two Stars Wiki</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="WikiStyle.css">
+  <style>
+    /* Activity Center specific styles */
+    .activity-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .stat-card {
+      background: rgba(40, 50, 30, 0.7);
+      border-radius: 16px;
+      padding: 1rem 1.5rem;
+      flex: 1 1 180px;
+      border-left: 5px solid #9acc7a;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #aaffaa;
+      line-height: 1.2;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      color: #c0e0b0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .sensei-card {
+      background: linear-gradient(145deg, #2a3a1a, #1a2a0e);
+      border-radius: 24px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border: 2px solid #9acc7a;
+    }
+    .sensei-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .sensei-profile {
+      background: rgba(30, 40, 20, 0.8);
+      border-radius: 16px;
+      padding: 1.2rem;
+      border-bottom: 4px solid #b8e08c;
+    }
+    .sensei-name {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #d8ffb0;
+      margin-bottom: 0.2rem;
+    }
+    .sensei-title {
+      color: #a8d08c;
+      font-style: italic;
+      margin-bottom: 0.8rem;
+    }
+    .tournament-card {
+      background: #2a3a2a;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-left: 8px solid gold;
+      position: relative;
+    }
+    .gold-medal {
+      color: gold;
+      font-weight: bold;
+    }
+    .silver-medal {
+      color: #c0c0c0;
+      font-weight: bold;
+    }
+    .celectra-timeline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .timeline-era {
+      flex: 1 1 200px;
+      background: rgba(30, 40, 30, 0.7);
+      border-radius: 12px;
+      padding: 1rem;
+      border-top: 4px solid #8cb87a;
+    }
+    .era-title {
+      font-weight: 600;
+      color: #b8f0a0;
+      margin-bottom: 0.5rem;
+    }
+    .event-badge {
+      display: inline-block;
+      background: #2a4a2a;
+      color: #b8ffa0;
+      padding: 0.3rem 1rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      border: 1px solid #7ab87a;
+      margin: 0.2rem 0;
+    }
+    .locker-room-note {
+      background: #1a2a1a;
+      border-radius: 16px;
+      padding: 1.2rem;
+      margin: 1.2rem 0;
+      border: 2px dashed #7ab87a;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .locker-icon {
+      font-size: 2.5rem;
+    }
+    .feature-badge {
+      display: inline-block;
+      background: #2a4a2a;
+      color: #b8ffa0;
+      padding: 3px 10px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-right: 8px;
+      margin-bottom: 5px;
+      border: 1px solid #7ab87a;
+    }
+    .level-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: rgba(10, 20, 10, 0.6);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .level-table th {
+      background: linear-gradient(135deg, #4a6a3a, #2a4a1a);
+      color: #d8ffb0;
+      padding: 12px 8px;
+      border-bottom: 2px solid #9acc7a;
+    }
+    .level-table td {
+      padding: 10px 8px;
+      border-bottom: 1px solid #3a5a2a;
+    }
+    .council-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      background: rgba(10, 20, 10, 0.7);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .council-table th {
+      background: linear-gradient(135deg, #4a6a3a, #2a4a1a);
+      color: #d8ffb0;
+      padding: 14px 10px;
+      border-bottom: 2px solid #9acc7a;
+    }
+    .council-table td {
+      padding: 12px 10px;
+      border-bottom: 1px solid #3a5a2a;
+    }
+    .seat-number {
+      display: inline-block;
+      background: #2a4a1a;
+      color: #b8ffa0;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      text-align: center;
+      line-height: 28px;
+      font-weight: bold;
+      margin-right: 10px;
+      border: 2px solid #9acc7a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-banner">
+    <a href="index.html" class="home-button">🏠 Home</a>
+  </div>
+
+  <h1 class="gradient-title">Activity Center</h1>
+  <div class="subtitle">"Mall of Motion" • "Strong bodies, stronger community."</div>
+
+  <!-- Infobox -->
+  <div class="infobox">
+    <table class="infobox">
+      <tr>
+        <td colspan="2" class="text-center pb-2">
+          <img src="assets/images//gallery/activity.webp" alt="Activity Center exterior, one of the original five" class="portrait">
+          <div class="image-caption">The Activity Center — hub of movement and community</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <td>Fitness / Recreation / Community Events</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>New Eden Town Center (original five)</td>
+      </tr>
+      <tr>
+        <th>Nickname</th>
+        <td>"Mall of Motion"</td>
+      </tr>
+      <tr>
+        <th>Council Representative</th>
+        <td>Chibuike Okafor (Seat 7)</td>
+      </tr>
+      <tr>
+        <th>Key Personnel</th>
+        <td>Sensei Onishi Kisa • Aulii Vongphachanh (Sensei from Book 5)</td>
+      </tr>
+      <tr>
+        <th>Notable Events</th>
+        <td>Annual New Eden Games • Book 2 Karate Tournament • Pre-Gallery art exhibitions • Weddings</td>
+      </tr>
+      <tr>
+        <th>Specialties</th>
+        <td>Sundome Karate • Acrobatics • Swimming • Yoga • Gymnastics • Dance • Indoor/Outdoor Sports</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Article content container -->
+  <div class="article-content">
+
+    <!-- OVERVIEW -->
+    <div class="card-bg">
+      <h2 class="section-header">Overview</h2>
+      <p>The <strong>Activity Center</strong>—affectionately nicknamed the <strong>"Mall of Motion"</strong>—is New Eden's comprehensive fitness and recreation facility, one of the five original buildings encircling the central roundabout. Its exterior matches its neighbors, but inside, it is a world of movement: swimming pools, dojos, dance studios, climbing walls, courts, and open spaces that transform to meet the colony's needs.</p>
+      
+      <p>More than just a gym, the Center serves as the colony's flexible community space. Its open floors have hosted art exhibitions (including Maya Keahi's pre-Gallery shows), weddings, festivals, and the annual New Eden Games. When the colony gathers to celebrate, move, or compete, it gathers here.</p>
+      
+      <div class="activity-stats">
+        <div class="stat-card">
+          <div class="stat-number">🏊</div>
+          <div class="stat-label">Olympic Pool</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">🧘</div>
+          <div class="stat-label">Yoga Studio</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">🥋</div>
+          <div class="stat-label">Sundome Dojo</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">🤸</div>
+          <div class="stat-label">Gymnastics</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEY PERSONNEL -->
+    <div class="sensei-card">
+      <h2 style="color: #d8ffb0; margin-top: 0;">🥋 The Sundome Karate Lineage</h2>
+      
+      <div class="sensei-grid">
+        <div class="sensei-profile">
+          <div class="sensei-name">Sensei Onishi Kisa</div>
+          <div class="sensei-title">Founding Sensei • Sundome Karate Master</div>
+          <p>Sensei Onishi established the Sundome Karate dojo in the Activity Center from the colony's earliest days. Sundome—the art of the "one-inch stop"—emphasizes control, precision, and the ability to deliver force at the very last moment. It is as much a philosophy as a martial art: restraint is strength, and the best strike is the one you <em>could</em> have thrown but chose not to.</p>
+          <p>Onishi taught generations of New Eden's youth, including a young Celectra Carisco-Bowers. Their dojo is a place of discipline, respect, and the endless pursuit of perfect control.</p>
+        </div>
+        
+        <div class="sensei-profile">
+          <div class="sensei-name">Aulii Vongphachanh</div>
+          <div class="sensei-title">Sensei (from Book 5) • Tournament Champion</div>
+          <p>Aulii first made her mark in <strong>Book 2</strong>, when she defeated Celectra in the annual Sundome Karate tournament. The match was hard-fought, and Celectra's silver medal was earned through extraordinary effort: she fought the entire tournament with <strong>one body</strong>, while her other body remained in Seiza (sitting meditation) to keep the competition fair.</p>
+          <p>Over the following years, Aulii trained under Sensei Onishi, developing not just her technique but her teaching philosophy. When Onishi stepped down in <strong>Book 5</strong>, Aulii was the natural successor—respected by students, feared by opponents, and deeply committed to Sundome's principles of controlled power.</p>
+        </div>
+      </div>
+      
+      <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 12px; margin-top: 1rem;">
+        <p style="margin: 0;"><strong>Council Representative:</strong> Chibuike Okafor holds Seat 7, representing athletics and recreation on the colony council. A former athlete himself, Okafor ensures that the Activity Center receives the resources it needs and that physical health remains a colony priority.</p>
+      </div>
+    </div>
+
+    <!-- THE BOOK 2 TOURNAMENT: CELECTRA'S SILVER -->
+    <div class="tournament-card">
+      <h3 style="color: gold; margin-top: 0;">🏆 The Book 2 Sundome Karate Tournament</h3>
+      
+      <p>The annual tournament is one of the Activity Center's most anticipated events, drawing competitors and spectators from across New Eden. The <strong>Book 2 tournament</strong> became legendary for a single reason: <strong>Celectra Carisco-Bowers</strong> chose to fight at a self-imposed disadvantage.</p>
+      
+      <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin: 1.5rem 0;">
+        <div style="flex: 1; min-width: 250px;">
+          <h4 style="color: #b8ffa0; margin-bottom: 0.5rem;">The Champion</h4>
+          <p><span class="gold-medal">🥇 Aulii Vongphachanh</span> — Won the tournament outright, defeating Celectra in the final match. Her victory was clean, skilled, and well-deserved.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px;">
+          <h4 style="color: #b8ffa0; margin-bottom: 0.5rem;">The Silver Medalist</h4>
+          <p><span class="silver-medal">🥈 Celectra Carisco-Bowers</span> — Fought the entire tournament with <strong>one body</strong> while her other body remained in <strong>Seiza</strong> (sitting meditation) throughout the building. She imposed this handicap to keep the competition fair, believing that using both bodies would give her an unfair advantage.</p>
+        </div>
+      </div>
+      
+      <p>Despite fighting at half capacity, Celectra advanced through bracket after bracket, reaching the final against Aulii. The match was close—those who witnessed it still debate whether a fully-embodied Celectra might have won—but in the end, Aulii's technique prevailed. Celectra accepted silver with grace, and the two competitors gained lifelong respect for each other.</p>
+      
+      <p style="margin-top: 1rem;">The tournament solidified both women's reputations: Aulii as a rising star, Celectra as someone who would sacrifice victory for fairness. When Aulii became Sensei in Book 5, Celectra was among the first to congratulate her.</p>
+    </div>
+
+    <!-- CELECTRA'S LIFELONG RELATIONSHIP WITH MOVEMENT -->
+    <div class="card-bg">
+      <h2 class="section-header">Celectra's Journey Through Motion</h2>
+      
+      <p>The Activity Center has been a constant in Celectra Carisco-Bowers' life, from childhood classes through postpartum recovery. Her relationship with movement mirrors her broader journey: disciplined, adaptive, and never giving up.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Youth: The Rotating Cycle</h3>
+      <p>During her childhood and adolescence, Celectra's physical education followed a <strong>rotating weekly cycle</strong> that kept her engaged with diverse movement forms:</p>
+      <ul>
+        <li><strong>Karate (Sundome)</strong> — Under Sensei Onishi, learning control and precision</li>
+        <li><strong>Acrobatics</strong> — Tumbling, balance, and aerial awareness</li>
+        <li><strong>Swimming</strong> — In the Olympic pool, building endurance and breath control</li>
+        <li><strong>Yoga</strong> — Flexibility, mindfulness, and connection between bodies</li>
+        <li><strong>Gymnastics</strong> — Strength, form, and apparatus work</li>
+        <li><strong>Dance</strong> — Expression, rhythm, and coordination</li>
+        <li><strong>Physical Education (PE)</strong> — General fitness and team sports</li>
+      </ul>
+      <p>This diverse foundation gave Celectra a kinesthetic intelligence that would serve her throughout life—in the caves with the Galistanians, in the ANI lab, and eventually in motherhood.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Young Adulthood (Ages 21-22): Pregnancy and Diastasis Recti</h3>
+      <p>During her pregnancy with twins (conceived during the Book 3 ANI project), Celectra's <strong>right body</strong>—the biological mother of the twins—faced significant physical limitations. <strong>Diastasis recti</strong> (separation of abdominal muscles) made many of her accustomed movements difficult or impossible.</p>
+      
+      <p>Her left body continued training, but the right body had to modify everything. For someone who had always moved freely, this was frustrating—a reminder that even the most disciplined body has limits.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Postpartum: Slow Resumption Under Medical Guidance</h3>
+      <p>After the twins' birth (November 15, 2247), Celectra worked closely with <strong>Dr. Alex Cruiz</strong> to resume physical activity safely. Her postpartum protocol included:</p>
+      <ul>
+        <li><strong>Gentle yoga</strong> to rebuild core strength without strain</li>
+        <li><strong>Swimming</strong> for low-impact cardiovascular conditioning</li>
+        <li><strong>Modified karate drills</strong> focusing on form rather than power</li>
+        <li><strong>Physical therapy</strong> for diastasis recti recovery</li>
+      </ul>
+      
+      <p>Cruiz monitored her progress closely, and Celectra—always disciplined—followed his guidance without rushing. By the end of Book 5, she was training again, though she accepted that her right body might never return to its previous peak. Her left body, which had not carried the pregnancy, remained fully capable.</p>
+      
+      <div class="testimony-card">
+        <p>I spent my whole life learning to control two bodies. Then one of them did something the other couldn't—created life—and I had to learn all over again. The Activity Center was patient with me. So I learned to be patient with myself.</p>
+        <span class="speaker">— Celectra Carisco-Bowers, Book 5</span>
+      </div>
+    </div>
+
+    <!-- FACILITIES -->
+    <div class="card-bg">
+      <h2 class="section-header">Facilities</h2>
+      
+      <table class="level-table">
+        <tr>
+          <th>Area</th>
+          <th>Features</th>
+        </tr>
+        <tr>
+          <td><strong>Aquatics Wing</strong></td>
+          <td>50-meter Olympic pool, therapy pools, water polo area, spectator seating</td>
+        </tr>
+        <tr>
+          <td><strong>Sundome Dojo</strong></td>
+          <td>Traditional mat space, meditation corner (Seiza area), competition ring</td>
+        </tr>
+        <tr>
+          <td><strong>Dance Studios (3)</strong></td>
+          <td>Mirrored walls, sprung floors, ballet barres, sound systems</td>
+        </tr>
+        <tr>
+          <td><strong>Yoga & Meditation Studio</strong></td>
+          <td>Heated floors, soft lighting, panoramic views of the roundabout</td>
+        </tr>
+        <tr>
+          <td><strong>Gymnastics Hall</strong></td>
+          <td>Floor exercise area, vault, balance beams, uneven bars, foam pit</td>
+        </tr>
+        <tr>
+          <td><strong>Acrobatics Space</strong></td>
+          <td>Tumble track, aerial silks rigging, tumbling mats</td>
+        </tr>
+        <tr>
+          <td><strong>Climbing Center</strong></td>
+          <td>15-meter climbing wall with variable routes, bouldering cave, auto-belays</td>
+        </tr>
+        <tr>
+          <td><strong>Multi-Sport Courts (2)</strong></td>
+          <td>Convertible spaces for basketball, volleyball, badminton, futsal</td>
+        </tr>
+        <tr>
+          <td><strong>Cardio & Strength Floor</strong></td>
+          <td>Biometric-integrated equipment, free weights, Utara-guided form correction</td>
+        </tr>
+        <tr>
+          <td><strong>Locker Rooms (Ground Level, Rear)</strong></td>
+          <td>Access to outdoor fields; see detailed section below</td>
+        </tr>
+        <tr>
+          <td><strong>Open Event Hall</strong></td>
+          <td>Flexible space for exhibitions, weddings, tournaments, community gatherings</td>
+        </tr>
+        <tr>
+          <td><strong>Smoothie Bar & Lounge</strong></td>
+          <td>Post-workout gathering spot, social hub for athletes and families</td>
+        </tr>
+      </table>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Locker Rooms & Outdoor Access</h3>
+      <div class="locker-room-note">
+        <div class="locker-icon">🚪➡️🏞️</div>
+        <div style="flex: 1;">
+          <strong style="color: #b8ffa0;">Ground Level, Rear</strong> — The locker rooms are positioned at the building's rear, providing direct access to <strong>outdoor sports fields</strong>. This design allows athletes to change indoors, step outside to play, and return for showers without tracking mud through the main facility.
+        </div>
+      </div>
+      <p>The outdoor fields accommodate soccer, rugby, ultimate frisbee, and the annual New Eden Games opening ceremonies. During pleasant weather, they're among the most active spaces in the colony.</p>
+    </div>
+
+    <!-- COMMUNITY & EVENT SPACE -->
+    <div class="card-bg">
+      <h2 class="section-header">More Than Athletics: A Community Hub</h2>
+      
+      <p>The Activity Center's <strong>open spaces</strong> and <strong>flexible design</strong> make it the colony's default gathering place for events that don't fit elsewhere. Its large, empty floors can be transformed in hours to host almost anything.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Art Exhibitions (Pre-Gallery)</h3>
+      <p>Before the Samaya Gallery was built (between Books 4 and 5), the Activity Center was New Eden's primary exhibition space. <strong>Maya Keahi</strong> mounted her early shows here, using:</p>
+      <ul>
+        <li><strong>Empty dojos</strong> — Her first major solo exhibition, "Bodies Like Ours," transformed a martial arts space into a gallery</li>
+        <li><strong>Dance studios</strong> — Immersive installations with mirrored walls</li>
+        <li><strong>Yoga rooms</strong> — Meditative exhibitions in naturally quiet spaces</li>
+        <li><strong>Gymnasiums</strong> — Large-scale shows during holiday closures</li>
+      </ul>
+      <p>These temporary exhibitions built cultural momentum that eventually led to the Gallery's construction. The Activity Center remains available for overflow exhibitions and community art shows.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">Weddings & Celebrations</h3>
+      <p>The Open Event Hall, with its high ceilings and adaptable layout, has hosted countless colony celebrations:</p>
+      <ul>
+        <li><strong>Weddings</strong> — Including several notable unions (Amerigo & Zoë celebrated their marriage here)</li>
+        <li><strong>Coming-of-age ceremonies</strong> — Marking colonists' transitions to adulthood</li>
+        <li><strong>Holiday festivals</strong> — Seasonal gatherings with food, music, and dancing</li>
+        <li><strong>Memorial services</strong> — When the colony mourns together</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">The Annual New Eden Games</h3>
+      <p>The Center's signature event is the <strong>New Eden Games</strong>, a week-long competition that brings the entire colony together. Events include:</p>
+      <ul>
+        <li>Swimming and diving competitions</li>
+        <li>Sundome Karate tournament (where Celectra won silver in Book 2)</li>
+        <li>Gymnastics and acrobatics showcases</li>
+        <li>Team sports championships</li>
+        <li>Climbing competitions</li>
+        <li>Dance performances and battles</li>
+      </ul>
+      <p>The Games conclude with an awards ceremony in the Open Event Hall, followed by a colony-wide celebration that spills onto the outdoor fields.</p>
+    </div>
+
+    <!-- COUNCIL REPRESENTATION -->
+    <div class="card-bg">
+      <h2 class="section-header">Council Seat 7: Athletics & Recreation</h2>
+      
+      <table class="council-table">
+        <tr>
+          <th>Seat</th>
+          <th>Portfolio</th>
+          <th>Incumbent</th>
+          <th>Notes</th>
+        </tr>
+        <tr>
+          <td><span class="seat-number">7</span></td>
+          <td>Athletics & Recreation</td>
+          <td><strong>Chibuike Okafor</strong></td>
+          <td>Represents Activity Center, youth sports, colony games, physical wellness</td>
+        </tr>
+      </table>
+      
+      <p>Chibuike Okafor brings an athlete's perspective to the council. A former competitor himself, he advocates for:</p>
+      <ul>
+        <li>Funding for youth sports programs and facilities</li>
+        <li>Recognition of physical wellness as equal to medical and mental health</li>
+        <li>Support for the annual New Eden Games</li>
+        <li>Maintaining the Activity Center's flexibility for community events</li>
+      </ul>
+      
+      <p>Okafor is known for his ability to find common ground—perhaps a result of years spent mediating disputes between competitive athletes. He works closely with Dr. Zoë Carisco on the psychological benefits of exercise and with Chibuike (yes, he shares a first name with the council member; they are not related) on facility maintenance.</p>
+    </div>
+
+    <!-- TIMELINE OF KEY EVENTS -->
+    <div class="card-bg">
+      <h2 class="section-header">Activity Center Timeline</h2>
+      
+      <table class="level-table">
+        <tr>
+          <th>Period</th>
+          <th>Event</th>
+        </tr>
+        <tr>
+          <td><strong>Pre-Series</strong></td>
+          <td>Center established as original five; Sensei Onishi Kisa founds Sundome Dojo</td>
+        </tr>
+        <tr>
+          <td><strong>Celectra's Youth</strong></td>
+          <td>Weekly rotating cycle: karate, acrobatics, swimming, yoga, gymnastics, dance, PE</td>
+        </tr>
+        <tr>
+          <td><strong>Book 2</strong></td>
+          <td>Sundome Karate Tournament: Aulii Vongphachanh defeats Celectra (silver); Celectra fights with one body, other in Seiza</td>
+        </tr>
+        <tr>
+          <td><strong>Books 2-4</strong></td>
+          <td>Maya Keahi's pre-Gallery exhibitions use empty dojos, dance studios, yoga rooms, gymnasiums</td>
+        </tr>
+        <tr>
+          <td><strong>Book 3</strong></td>
+          <td>Celectra's pregnancy limits right body's activity; diastasis recti diagnosis</td>
+        </tr>
+        <tr>
+          <td><strong>Late Book 3</strong></td>
+          <td>Postpartum recovery begins under Dr. Cruiz's guidance; slow resumption of movement</td>
+        </tr>
+        <tr>
+          <td><strong>Between Books 4 & 5</strong></td>
+          <td>Samaya Gallery opens, reducing but not eliminating Center's art exhibition role</td>
+        </tr>
+        <tr>
+          <td><strong>Book 5</strong></td>
+          <td>Aulii Vongphachanh becomes Sensei of Sundome Dojo; Celectra's recovery continues</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- CULTURAL SIGNIFICANCE -->
+    <div class="card-bg">
+      <h2 class="section-header">Cultural Significance</h2>
+      
+      <p>The Activity Center embodies New Eden's belief that <strong>movement is essential</strong>—not just for fitness, but for community, expression, and joy. Its nickname, the "Mall of Motion," captures its role as a place where colonists browse activities the way earlier humans browsed stores: trying new things, finding what fits, returning to what they love.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">In the Novels</h3>
+      <ul>
+        <li><strong>Throughout:</strong> Background presence as Celectra trains, competes, and recovers</li>
+        <li><strong>Book 2:</strong> The Sundome tournament is a major set piece, establishing Aulii as a character and showcasing Celectra's ethics</li>
+        <li><strong>Books 2-4:</strong> Maya's exhibitions here build the case for a permanent gallery</li>
+        <li><strong>Book 3:</strong> Celectra's modified training during pregnancy appears in quiet character moments</li>
+        <li><strong>Book 5:</strong> Aulii's installation as Sensei marks a changing of the guard</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">The Sundome Philosophy</h3>
+      <p>The one-inch stop—the ability to deliver force at the very last instant, or to withhold it entirely—resonates beyond the dojo. Celectra's choice to fight with one body embodied Sundome's principle: true strength is knowing when <em>not</em> to use all your power. The philosophy influences her diplomacy with the Galistanians and her approach to motherhood.</p>
+      
+      <h3 class="text-lg font-semibold mt-4 mb-2">A Space for Everyone</h3>
+      <p>Unlike the specialized buildings around the roundabout, the Activity Center belongs to everyone. Athletes train here, yes, but so do children learning to swim, elders practicing gentle yoga, artists mounting exhibitions, and couples celebrating their weddings. It is the most democratic of the original five buildings—a place where movement, in all its forms, is honored.</p>
+    </div>
+
+    <!-- QUICK REFERENCE -->
+    <div class="card-bg">
+      <h2 class="section-header">At a Glance</h2>
+      <table class="level-table">
+        <tr>
+          <th>Aspect</th>
+          <th>Detail</th>
+        </tr>
+        <tr>
+          <td><strong>Building Type</strong></td>
+          <td>Original five (identical exterior)</td>
+        </tr>
+        <tr>
+          <td><strong>Council Seat</strong></td>
+          <td>7 — Chibuike Okafor</td>
+        </tr>
+        <tr>
+          <td><strong>Sundome Sensei (Books 1-4)</strong></td>
+          <td>Sensei Onishi Kisa</td>
+        </tr>
+        <tr>
+          <td><strong>Sundome Sensei (Book 5+)</strong></td>
+          <td>Aulii Vongphachanh</td>
+        </tr>
+        <tr>
+          <td><strong>Notable Tournament</strong></td>
+          <td>Book 2: Aulii defeats Celectra (silver)</td>
+        </tr>
+        <tr>
+          <td><strong>Celectra's Youth Activities</strong></td>
+          <td>Karate, acrobatics, swimming, yoga, gymnastics, dance, PE (rotating weekly)</td>
+        </tr>
+        <tr>
+          <td><strong>Key Flexibility</strong></td>
+          <td>Open spaces host art, weddings, community events</td>
+        </tr>
+        <tr>
+          <td><strong>Outdoor Access</strong></td>
+          <td>Locker rooms lead to sports fields</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <p>Back to <a href="Locations.html">Locations</a> | <a href="Cast.html">Characters</a> | <a href="Timeline.html">Timeline</a> | <a href="index.html">Home</a></p>
+    <p>See also: <a href="Chibuike_Okafor.html">Chibuike Okafor</a> | <a href="Aulii_Vongphachanh.html">Aulii Vongphachanh</a> | <a href="Onishi_Kisa.html">Sensei Onishi Kisa</a> | <a href="Celectra_Carisco-Bowers.html">Celectra Carisco-Bowers</a> | <a href="Medical_Center.html">Medical Center</a> | <a href="Samaya_Gallery.html">Samaya Gallery</a></p>
+    <p>&copy; One Mine Two Stars Wiki</p>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+  <script>
+    const toTopBtn = document.getElementById("toTopBtn");
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 200) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    });
+    toTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
