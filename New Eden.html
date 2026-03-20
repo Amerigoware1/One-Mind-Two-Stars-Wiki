@@ -3,64 +3,387 @@
 <head>
   <meta charset="UTF-8">
   <title>New Eden - Primary Settlement</title>
-	<link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <link rel="stylesheet" href="WikiStyle.css?v=3">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="WikiStyle.css?v=3">
+  <style>
+    /* Gallery styles for settlement progression */
+    .gallery-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 2rem auto;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      border: 2px solid #ffaa33;
+    }
+    
+    .gallery-slide {
+      display: none;
+      position: relative;
+    }
+    
+    .gallery-slide.active {
+      display: block;
+    }
+    
+    .gallery-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.7);
+      color: #ffaa33;
+      padding: 0.8rem;
+      text-align: center;
+      font-weight: 600;
+      backdrop-filter: blur(5px);
+      border-top: 1px solid #ffaa33;
+    }
+    
+    .gallery-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.6);
+      color: #ffaa33;
+      border: 2px solid #ffaa33;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+      z-index: 10;
+    }
+    
+    .gallery-nav:hover {
+      background: #ffaa33;
+      color: black;
+    }
+    
+    .gallery-prev {
+      left: 20px;
+    }
+    
+    .gallery-next {
+      right: 20px;
+    }
+    
+    .gallery-dots {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0,0,0,0.3);
+      border-radius: 0 0 16px 16px;
+    }
+    
+    .dot {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin: 0 8px;
+      background: #4a5b6e;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s;
+      border: 1px solid #ffaa33;
+    }
+    
+    .dot.active {
+      background: #ffaa33;
+      transform: scale(1.2);
+    }
+    
+    .timeline-badge {
+      display: inline-block;
+      background: #2c3e50;
+      color: #ffaa33;
+      padding: 0.2rem 1rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      border: 1px solid #ffaa33;
+      margin-right: 0.5rem;
+    }
+    
+    .settlement-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .stat-card {
+      background: rgba(20, 30, 40, 0.7);
+      border-radius: 16px;
+      padding: 1rem 1.5rem;
+      flex: 1 1 180px;
+      border-left: 5px solid #ffaa33;
+    }
+    
+    .feature-badge {
+      display: inline-block;
+      background: #2c3e50;
+      color: #ffaa33;
+      padding: 3px 10px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      margin-right: 8px;
+      border: 1px solid #ffaa33;
+    }
+    
+    .see-also {
+      background: rgba(255, 170, 51, 0.1);
+      border-radius: 12px;
+      padding: 1.2rem;
+      margin: 1.5rem 0;
+      text-align: center;
+      border: 2px dashed #ffaa33;
+    }
+    
+    .see-also a {
+      color: #ffaa33;
+      font-weight: 600;
+      margin: 0 15px;
+      white-space: nowrap;
+    }
+  </style>
 </head>
 <body>
   <div class="top-banner">
-  <a href="index.html" class="home-button">🏠 Home</a>
-</div>
+    <a href="index.html" class="home-button">🏠 Home</a>
+  </div>
 
   <h1>New Eden</h1>
+  
   <div class="infobox">
     <table>
       <tr><th colspan="2">New Eden</th></tr>
       <tr><th>Type</th><td>Primary Settlement</td></tr>
-      <tr><th>Population</th><td>~200 colonists</td></tr>
+      <tr><th>Population</th><td>~200 colonists (Book 1) → ~600 (Book 5)</td></tr>
       <tr><th>Location</th><td>Southern hemisphere, near the Pison River</td></tr>
-      <tr><th>Structures</th><td>Stone, steel, glass dwellings; council hall; fusion reactor; colony modules</td></tr>
-	  <tr><th>Landmarks</th><td>Council Hall, Fusion Reactor, New Eden Observatory</td></tr>
+      <tr><th>Structures</th><td>Stone, steel, glass dwellings; six central buildings; fusion reactor; colony modules</td></tr>
+      <tr><th>Landmarks</th><td><a href="New_Eden_Central_Buildings.html">Central Roundabout</a>, Fusion Reactor, New Eden Observatory</td></tr>
       <tr><th>Transport</th><td>Autocabs, aerial shuttles</td></tr>
       <tr><th>Climate</th><td>Arid plains, ~26°C daytime average</td></tr>
-		<tr><th><a href="assets/images/Ares.png">Map</a>
+      <tr><th><a href="assets/images/Ares.png">Map</a></th></tr>
+      <tr><th>See Also</th><td><a href="New_Eden_Central_Buildings.html">The Six Central Buildings</a></td></tr>
     </table>
   </div>
-<div class="article-content">
- <div class="card-bg">
+
+  <!-- Image Gallery: Settlement Evolution -->
+  <div class="gallery-container">
+    <div class="gallery-slide active" id="slide1">
+      <img src="assets/images/gallery/new-eden-book1.webp" alt="New Eden in Book 1">
+      <div class="gallery-caption">
+        <span class="timeline-badge">Book 1</span> Dirt roads, no Bowers home, fenced crater where Gallery will stand
+      </div>
+    </div>
+    
+    <div class="gallery-slide" id="slide2">
+      <img src="assets/images/gallery/new-eden-book3.webp" alt="New Eden in Book 3">
+      <div class="gallery-caption">
+        <span class="timeline-badge">Book 3</span> Paved roads, Bowers home completed, crater still fenced
+      </div>
+    </div>
+    
+    <div class="gallery-slide" id="slide3">
+      <img src="assets/images/gallery/new-eden-book5.webp" alt="New Eden in Book 5">
+      <div class="gallery-caption">
+        <span class="timeline-badge">Book 5</span> Paved roads, Bowers home, Samaya Gallery complete
+      </div>
+    </div>
+    
+    <div class="gallery-slide" id="slide4">
+      <img src="assets/images/gallery/new-eden-labeled.png" alt="New Eden labeled map">
+      <div class="gallery-caption">
+        <span class="timeline-badge">Book 5+</span> Labeled map: Roundabout, Bowers Home, Gallery, Observatory, Reactor
+      </div>
+    </div>
+    
+    <div class="gallery-nav gallery-prev" onclick="changeSlide(-1)">❮</div>
+    <div class="gallery-nav gallery-next" onclick="changeSlide(1)">❯</div>
+    
+    <div class="gallery-dots">
+      <span class="dot active" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+  </div>
+
+  <div class="article-content">
+    <div class="card-bg">
       <h2>Contents</h2>
-    <ul>
-      <li><a href="#Overview">Overview</a></li>
-      <li><a href="#Layout_and_Structures">Layout and Structures</a></li>
-      <li><a href="#Surroundings">Surroundings</a></li>
-      <li><a href="#Cultural_Notes">Cultural Notes</a></li>
-    </ul>
-  </div>
-<div class="card-bg">
-  <h2 id="Overview">Overview</h2>
-  <p>New Eden is the first permanent settlement established on the surface of the moon, Ares. Designed to house the initial wave of colonists after stasis, it remains the administrative and symbolic heart of the colony. Though small in population, its infrastructure supports interplanetary communication, governance, and early-stage terraforming efforts.</p>
-  </div>
-<div class="card-bg">
-  <h2 id="Layout_and_Structures">Layout and Structures</h2>
-  <p>The village is a blend of old and new: modular colony units from the original Utopis ship are nestled between newer dwellings of stone, steel, and glass. These structures cluster around a central council hall, forming a tight-knit community. A fusion reactor sits west of the settlement, its containment dome visible from nearly every rooftop—a gleaming white sphere on the rust-red plain.</p>
-  </div>
-<div class="card-bg">
-  <h2 id="Surroundings">Surroundings</h2>
-<p>New Eden is nestled in a crook of the Pison River, which runs north to south through the southern hemisphere. The settlement hugs the river’s bend, with plans to eventually bridge its waters as expansion continues. On the eastern edge, the river glitters like a ribbon of melted glass, its narrow green banks stitched with genetically modified flora—trees and shrubs engineered to survive the planet’s arid conditions. Beyond the river stretch rust-red plains, cracked and dry, shimmering in the heat. To the west, the fusion reactor’s containment dome rises like a geometric moon fallen to ground, visible from nearly every rooftop.</p>
-  </div>
-<div class="card-bg">
-	<h2 id="Observatory">New Eden Observatory</h2>
-<p>Perched on a ridge overlooking the settlement, the New Eden Observatory is a sleek dome reserved for guided observations and astronomical research. Its glass panels gleam under the binary sunset, reflecting the golden light of Niamh and the deepening pink of Ciara. The path to the dome winds through red-dust trails and scattered rocks, offering a panoramic view of the village below.</p>
+      <ul>
+        <li><a href="#Overview">Overview</a></li>
+        <li><a href="#Layout_and_Structures">Layout and Structures</a></li>
+        <li><a href="#Central_Roundabout">Central Roundabout</a></li>
+        <li><a href="#Surroundings">Surroundings</a></li>
+        <li><a href="#Observatory">New Eden Observatory</a></li>
+        <li><a href="#Cultural_Notes">Cultural Notes</a></li>
+        <li><a href="#Settlement_Timeline">Settlement Timeline</a></li>
+      </ul>
+    </div>
 
-<p>Access is restricted to authorized personnel and scheduled tours. Inside, a circular observation platform sits beneath a transparent roof, offering an unobstructed view of the sky. From this vantage point, visitors can witness the synchronized descent of Niamh and Ciara, followed by the rise of Chaos—a copper-hued gas giant whose swirling reds and blacks resemble a cosmic storm. The observatory is both a scientific outpost and a place of quiet awe, where colonists glimpse the vastness of their new home.</p>
-  </div>
-<div class="card-bg">
+    <div class="card-bg">
+      <h2 id="Overview">Overview</h2>
+      <p>New Eden is the first permanent settlement established on the surface of the moon, Ares. Designed to house the initial wave of colonists after stasis, it remains the administrative and symbolic heart of the colony. Though small in population, its infrastructure supports interplanetary communication, governance, and early-stage terraforming efforts.</p>
+      
+      <div class="settlement-stats">
+        <div class="stat-card">
+          <div class="stat-number">200 → 600</div>
+          <div class="stat-label">Population Growth</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">6</div>
+          <div class="stat-label">Central Buildings</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">🏘️</div>
+          <div class="stat-label">Bowers Home (Book 3)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">🖼️</div>
+          <div class="stat-label">Gallery (Book 5)</div>
+        </div>
+      </div>
+    </div>
 
-  <h2 id="Cultural_Notes">Cultural Notes</h2>
-  <p>New Eden is often described as both too small and too crowded—a paradox born of its intimate scale and the weight of expectation. For many colonists, it represents survival, legacy, and the beginning of a new chapter. Children like Celectra grow up surrounded by the remnants of interstellar travel and the slow emergence of planetary life, watching the settlement evolve from puzzle-piece modules into a living village.</p>
-</div>
-	  <!-- Back to Top Button -->
+    <div class="card-bg">
+      <h2 id="Layout_and_Structures">Layout and Structures</h2>
+      <p>The village is a blend of old and new: modular colony units from the original Utopis ship are nestled between newer dwellings of stone, steel, and glass. These structures cluster around a central council hall, forming a tight-knit community. A fusion reactor sits west of the settlement, its containment dome visible from nearly every rooftop—a gleaming white sphere on the rust-red plain.</p>
+      
+      <p><strong>Key residential developments:</strong> The <strong>Bowers home</strong>—residence of Amerigo Carisco, Dr. Zoë Carisco, and their family—was completed between Books 1 and 3, replacing earlier temporary housing. Its construction marked the family's permanent commitment to surface life.</p>
+      
+      <p><strong>The fenced crater:</strong> For Books 1-4, a fenced depression on the roundabout's sixth side marked the future site of the Samaya Gallery. Children played near its edges, and colonists would picnic on the grass berm, speculating about what would one day stand there.</p>
+    </div>
+
+    <div class="card-bg">
+      <h2 id="Central_Roundabout">Central Roundabout</h2>
+      <p>At the heart of New Eden, six buildings stand in a perfect ring around the colony's central roundabout. Five of these—the <strong><a href="Medical_Center.html">Medical Center</a></strong>, <strong><a href="Science_Center.html">Science and Technology Center</a></strong>, <strong><a href="Activity_Center.html">Activity Center</a></strong>, <strong><a href="Council_Chamber.html">Council Chamber</a></strong>, and <strong><a href="Nexus.html">The Nexus</a></strong>—are identical in their external architecture, constructed during the colony's founding. A sixth, the <strong><a href="Samaya_Gallery.html">Samaya Gallery and Museum of Integration</a></strong>, was added between Books 4 and 5, completing the hexagon.</p>
+      
+      <p>The roundabout itself features a kinetic fountain, radial pathways, Utara information kiosks, and a time capsule buried beneath the fountain to be opened in 100 years. It is the de facto meeting point for all colonists: <em>"Meet me at the roundabout."</em></p>
+      
+      <p><span class="feature-badge">📍 Central Hub</span> <span class="feature-badge">🏛️ Six Buildings</span> <span class="feature-badge">⛲ Kinetic Fountain</span></p>
+      
+      <p><em>For complete details on each building, see <a href="New_Eden_Central_Buildings.html">New Eden's Central Buildings</a>.</em></p>
+    </div>
+
+    <div class="card-bg">
+      <h2 id="Surroundings">Surroundings</h2>
+      <p>New Eden is nestled in a crook of the Pison River, which runs north to south through the southern hemisphere. The settlement hugs the river's bend, with plans to eventually bridge its waters as expansion continues. On the eastern edge, the river glitters like a ribbon of melted glass, its narrow green banks stitched with genetically modified flora—trees and shrubs engineered to survive the planet's arid conditions. Beyond the river stretch rust-red plains, cracked and dry, shimmering in the heat. To the west, the fusion reactor's containment dome rises like a geometric moon fallen to ground, visible from nearly every rooftop.</p>
+    </div>
+
+    <div class="card-bg">
+      <h2 id="Observatory">New Eden Observatory</h2>
+      <p>Perched on a ridge overlooking the settlement, the New Eden Observatory is a sleek dome reserved for guided observations and astronomical research. Its glass panels gleam under the binary sunset, reflecting the golden light of Niamh and the deepening pink of Ciara. The path to the dome winds through red-dust trails and scattered rocks, offering a panoramic view of the village below.</p>
+
+      <p>Access is restricted to authorized personnel and scheduled tours. Inside, a circular observation platform sits beneath a transparent roof, offering an unobstructed view of the sky. From this vantage point, visitors can witness the synchronized descent of Niamh and Ciara, followed by the rise of Chaos—a copper-hued gas giant whose swirling reds and blacks resemble a cosmic storm. The observatory is both a scientific outpost and a place of quiet awe, where colonists glimpse the vastness of their new home.</p>
+    </div>
+
+    <div class="card-bg">
+      <h2 id="Cultural_Notes">Cultural Notes</h2>
+      <p>New Eden is often described as both too small and too crowded—a paradox born of its intimate scale and the weight of expectation. For many colonists, it represents survival, legacy, and the beginning of a new chapter. Children like Celectra grow up surrounded by the remnants of interstellar travel and the slow emergence of planetary life, watching the settlement evolve from puzzle-piece modules into a living village.</p>
+      
+      <p>The completion of the Samaya Gallery in Book 5 marked a turning point—the colony finally had a space dedicated not to survival, but to expression. The fenced crater that children had played around for years was now a museum, and New Eden felt, for the first time, like a permanent home rather than a temporary outpost.</p>
+    </div>
+
+    <div class="card-bg">
+      <h2 id="Settlement_Timeline">Settlement Timeline</h2>
+      
+      <table class="level-table">
+        <tr>
+          <th>Period</th>
+          <th>Development</th>
+        </tr>
+        <tr>
+          <td><strong>Pre-Series</strong></td>
+          <td>Original five buildings constructed; dirt roads; fusion reactor operational; observatory built</td>
+        </tr>
+        <tr>
+          <td><strong>Book 1</strong></td>
+          <td>Dirt roads throughout; fenced crater where Gallery will stand; no Bowers home yet</td>
+        </tr>
+        <tr>
+          <td><strong>Between Books 1 & 3</strong></td>
+          <td>Roads paved; Bowers home constructed for Amerigo, Zoë, and Celectra</td>
+        </tr>
+        <tr>
+          <td><strong>Book 3</strong></td>
+          <td>Paved roads complete; Bowers home occupied; crater remains fenced</td>
+        </tr>
+        <tr>
+          <td><strong>Between Books 4 & 5</strong></td>
+          <td>Samaya Gallery constructed on crater site, completing the hexagon</td>
+        </tr>
+        <tr>
+          <td><strong>Book 5</strong></td>
+          <td>Full hexagon complete; labeled maps created for visitors</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- See Also Section Linking to Central Buildings -->
+    <div class="see-also">
+      <strong>🏛️ Explore the Six Buildings:</strong>
+      <a href="Medical_Center.html">⚕️ Medical</a> •
+      <a href="Science_Center.html">🔬 Science</a> •
+      <a href="Activity_Center.html">🏋️ Activity</a> •
+      <a href="Council_Chamber.html">⚖️ Council</a> •
+      <a href="Nexus.html">🏛️ Nexus</a> •
+      <a href="Samaya_Gallery.html">🖼️ Gallery</a>
+      <br><br>
+      <a href="New_Eden_Central_Buildings.html">→ Full Guide: New Eden's Central Buildings ←</a>
+    </div>
+
+  </div>
+
+  <!-- Back to Top Button -->
   <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+
+  <!-- Gallery Navigation Script -->
   <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function changeSlide(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("gallery-slide");
+      let dots = document.getElementsByClassName("dot");
+      
+      if (n > slides.length) { slideIndex = 1; }
+      if (n < 1) { slideIndex = slides.length; }
+      
+      for (i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      
+      for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+      }
+      
+      slides[slideIndex - 1].classList.add("active");
+      dots[slideIndex - 1].classList.add("active");
+    }
+
+    // Original back-to-top script
     const toTopBtn = document.getElementById("toTopBtn");
     window.addEventListener("scroll", () => {
       if (document.documentElement.scrollTop > 200) {
@@ -73,13 +396,11 @@
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   </script>
+
+  <div id="footer">
+    <p>Back to <a href="Locations.html">Locations</a> | <a href="Cast.html">Characters</a> | <a href="Timeline.html">Timeline</a> | <a href="index.html">Home</a></p>
+    <p>See also: <a href="New_Eden_Central_Buildings.html">The Six Central Buildings</a></p>
+    <p>&copy; One Mine Two Stars Wiki</p>
+  </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
