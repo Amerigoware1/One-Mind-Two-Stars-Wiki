@@ -17,11 +17,18 @@ permalink: /characters/
   {% for character in site.characters %}
   <div class="character-card" data-name="{{ character.title | downcase }}">
     <a href="{{ character.url | relative_url }}">
-      <img
-        src="{{ character.portrait | default: '/assets/images/portrait-placeholder.png' | relative_url }}"
-        alt="{{ character.title }}"
-        class="character-thumb"
-        onerror="this.onerror=null;this.src='{{ '/assets/images/portrait-placeholder.png' | relative_url }}';"
+{% assign portrait_url = character.portrait %}
+
+{% if portrait_url.first %}  <!-- Check if it's an array [[24]] -->
+  {% assign portrait_url = portrait_url.first %}
+{% endif %}
+
+<img
+  src="{{ portrait_url | default: '/assets/images/portrait-placeholder.png' | relative_url }}"
+  alt="{{ character.title }}"
+  class="character-thumb"
+  onerror="this.onerror=null;this.src='{{ '/assets/images/portrait-placeholder.png' | relative_url }}';"
+>
       >
       <h2>{{ character.title }}</h2>
     </a>
