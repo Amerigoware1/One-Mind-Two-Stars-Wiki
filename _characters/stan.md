@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Stan (Northern Cluster)
-portrait: "/assets/images/stan-book1.webp"
+portrait: "/assets/images//stan-book1.webp"
 portrait-book1: "/assets/images/stan-book1.webp"
 portrait-book2: "/assets/images/stan-book2.webp"
 portrait-book3: "/assets/images/stan-book3.webp"
