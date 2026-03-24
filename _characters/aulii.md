@@ -1,7 +1,8 @@
 ---
 layout: character
 title: Aulii Vongphachanh
-portrait: "/assets/images/aulii-book2.webp"
+portrait: "/assets/images/aulii-book5.webp"
+portrait-book1: "/assets/images/aulii-book1.webp"
 portrait-book2: "/assets/images/aulii-book2.webp"
 portrait-book3: "/assets/images/aulii-book3.webp"
 portrait-book4: "/assets/images/aulii-book4.webp"

@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Jaxon Bowers
-portrait: "/assets/images/jaxon-book1.webp"
+portrait: "/assets/images/jaxon-book5.webp"
 portrait-book1: "/assets/images/jaxon-book1.webp"
 portrait-book2: "/assets/images/jaxon-book2.webp"
 portrait-book3: "/assets/images/jaxon-book3.webp"

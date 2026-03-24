@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Duška Santoso Carisco
-portrait: "/assets/images/duska-book2.webp"
+portrait: "/assets/images/duska-book5.webp"
 portrait-book2: "/assets/images/duska-book2.webp"
 portrait-book3: "/assets/images/duska-book3.webp"
 portrait-book4: "/assets/images/duska-book4.webp"

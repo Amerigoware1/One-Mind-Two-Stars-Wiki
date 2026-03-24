@@ -1,7 +1,8 @@
 ---
 layout: character
 title: Chen Wei
-portrait: "/assets/images/chenwei-book2.webp"
+portrait: "/assets/images/chenwei-book5.webp"
+portrait-book1: "/assets/images/chenwei-book1.webp"
 portrait-book2: "/assets/images/chenwei-book2.webp"
 portrait-book3: "/assets/images/chenwei-book3.webp"
 portrait-book4: "/assets/images/chenwei-book4.webp"
@@ -15,6 +16,9 @@ book2_age: "14.7"
 book3_age: "21.6"
 book4_age: "29.8"
 book5_age: "36.8"
+book1_title: "Growing (Age 7.6)"
+book1_arc: >
+  At seven years old, Chen Wei is growing up in New Eden, already showing the focus and precision that will define him. At the Activity Center, he began karate at age six and now wears a kiiro obi (yellow belt), known among his instructors for his careful, analytical approach to technique rather than raw speed or power. He also trains in gymnastics, where his natural sense of balance and control sets him apart—he is often found on the balance beam, moving with a quiet concentration that belies his age. He is a quiet presence in Celectra's cohort, more comfortable observing than performing.
 book2_title: "The Pivot & Recruitment"
 book2_arc: >
   At 14, Chen faces 14-year-old Celectra in the first round of a tournament. Despite his technical skill, he loses to her superior control and coordination. The loss prompts him to question physical competition and seek fields where analytical thinking matters more than physiology. He joins the newly formed Listener Corps, fascinated by the technical challenge of cross-species communication. He assists in baseline monitoring of telepathic fields and helps develop early amplification equipment.

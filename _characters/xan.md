@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Xan Carisco
-portrait: "/assets/images/xan-book2.webp"
+portrait: "/assets/images/xan-book5.webp"
 portrait-book2: "/assets/images/xan-book2.webp"
 portrait-book3: "/assets/images/xan-book3.webp"
 portrait-book4: "/assets/images/xan-book4.webp"

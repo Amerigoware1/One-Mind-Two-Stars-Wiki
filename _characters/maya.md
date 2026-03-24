@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Maya Keahi
-portrait: "/assets/images/maya-book1.webp"
+portrait: "/assets/images/maya-book5.webp"
 portrait-book1: "/assets/images/maya-book1.webp"
 portrait-book2: "/assets/images/maya-book2.webp"
 portrait-book3: "/assets/images/maya-book3.webp"

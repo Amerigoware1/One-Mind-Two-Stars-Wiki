@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Ananya Patel
-portrait: "/assets/images/ananya-book1.webp"
+portrait: "/assets/images/ananya-book5.webp"
 portrait-book1: "/assets/images/ananya-book1.webp"
 portrait-book2: "/assets/images/ananya-book2.webp"
 portrait-book3: "/assets/images/ananya-book3.webp"

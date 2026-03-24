@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Celectra Ambar Carisco
-portrait: "/assets/images/celectra-book1.webp"
+portrait: "/assets/images/celectra-book5.webp"
 portrait-book1: "/assets/images/celectra-book1.webp"
 portrait-book2: "/assets/images/celectra-book2.webp"
 portrait-book3: "/assets/images/celectra-book3.webp"

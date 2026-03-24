@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Ethan Johnson
-portrait: "/assets/images/ethan-book2.webp"
+portrait: "/assets/images/ethan-book5.webp"
 portrait-book2: "/assets/images/ethan-book2.webp"
 portrait-book3: "/assets/images/ethan-book3.webp"
 portrait-book4: "/assets/images/ethan-book4.webp"

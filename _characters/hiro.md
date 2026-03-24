@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Hiro Vongphachanh
-portrait: "/assets/images/hiro-book2.webp"
+portrait: "/assets/images/hiro-book5.webp"
 portrait-book2: "/assets/images/hiro-book2.webp" 
 portrait-book3: "/assets/images/hiro-book3.webp" 
 portrait-book4: "/assets/images/hiro-book4.webp" 
@@ -17,6 +17,12 @@ book2_arc: >
   At six years old, Hiro attends Xan’s sixth birthday celebration in the caverns. He approaches Chime’s parent—the same Galinstanian who gifted Xan the aquamarine—with the particular reverence children show to elders. He names them “Guardian” because “they feel like they’d keep everyone safe.”
 
   Hiro’s respectful, protective nature is evident even at this young age. The bond formed that day reflects his instinct to honor and protect, which will later shape his path in martial arts and community defense.
+book3_title: "The Path of Discipline (Age 12)"
+book3_arc: >
+  At twelve, Hiro's training at the Sundome Dojo intensifies. Under Sensei Onishi Kisa's guidance, he develops not just physical skill but the deeper philosophy of protection—learning that true strength is the ability to prevent harm, not just respond to it. His bond with Guardian grows through shared practice; Guardian's steady presence helps Hiro understand the martial principle of calm in crisis. He begins assisting with younger students at the dojo, discovering that he has a gift for teaching patience and discipline to children.
+book4_title: "The Four Rivers Exchange (Age 21)"
+book4_arc: >
+  At twenty-one, Hiro is a senior student at the Sundome Dojo and a trusted member of the community's informal security network. He joins the Four Rivers Exchange Program as an assistant, tasked with ensuring the safety of the field trips. His presence is reassuring—adults know he's capable, and children feel safe with him. When the resonance disturbances escalate and the tremor strikes the cavern, Hiro is part of the initial response team, working with Guardian to assess structural integrity and ensure everyone evacuates safely.  
 book5_title: "Martial Arts Instructor (Age 28)"
 book5_arc: >
   At twenty-eight, Hiro is a martial arts instructor at the Sundome Dojo and a physical training specialist in the Resonance Stewardship Program. He works with Guardian, his bonded Galinstanian, to develop defensive and protective protocols for the colony. During the rescue, he is mobilized to provide physical support and maintain security around the site, ensuring the operation proceeds safely.

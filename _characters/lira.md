@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Lira Keahi
-portrait: "/assets/images/lira-book1.webp"
+portrait: "/assets/images/lira-book5.webp"
 portrait-book1: "/assets/images/lira-book1.webp"
 portrait-book2: "/assets/images/lira-book2.webp"
 portrait-book3: "/assets/images/lira-book3.webp"

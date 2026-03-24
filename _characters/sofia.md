@@ -17,6 +17,12 @@ book2_arc: >
   At five years old, Sofia attends Xan’s sixth birthday celebration in the caverns. She is drawn to a patient, steady Galinstanian whose presence feels like safety. She names them “Harbor,” explaining, “That’s where boats on Earth go to be safe from storms.”
 
   Sofia’s gentle, nurturing nature is evident even at this young age. She approaches the Galinstanian with quiet curiosity, and the bond formed that day reflects her instinct to seek and provide comfort.
+book3_title: "Finding Her Path (Age 12)"
+book3_arc: >
+  At twelve, Sofia's gentle, nurturing nature begins to find professional direction. She shadows Dr. Lorain Troy in the medical wing, fascinated by the intersection of human and Galinstanian physiology. She develops a particular interest in how resonance fields affect emotional and physical well-being, spending hours with Harbor observing Galinstanian health patterns. Though young, she has a natural gift for calming distressed patients—both human and Galinstanian. These years cement her commitment to a career in medical support.
+book4_title: "The Four Rivers Exchange (Age 20)"
+book4_arc: >
+  At twenty, Sofia is a university student in pre-medical studies, already known for her work with Galinstanian health monitoring. She volunteers for the Four Rivers Exchange Program, providing medical support for the field trips. Her role includes monitoring the younger twins' well-being and observing how the resonance disturbances affect Galinstanian physiology. When Ripple falters at Hiddekel, Sofia is the first to assess their condition, providing calm, patient care that helps stabilize them before Jenni's mirroring game takes over.
 book5_title: "Medical Support Specialist (Age 27)"
 book5_arc: >
   At twenty-seven, Sofia is a university mentor and medical support specialist in the Resonance Stewardship Program. She works with Harbor, her bonded Galinstanian, to monitor the health and well-being of community members—both human and Galinstanian. During the rescue, she brings medical sensors to the gallery site and helps stabilize the rescued collective with gentle, patient care.

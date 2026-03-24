@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Emma Johnson
-portrait: "/assets/images/emma-book2.webp"
+portrait: "/assets/images/emma-book5.webp"
 portrait-book2: "/assets/images/emma-book2.webp"
 portrait-book3: "/assets/images/emma-book3.webp"
 portrait-book4: "/assets/images/emma-book4.webp"

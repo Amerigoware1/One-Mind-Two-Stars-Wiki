@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Oxion 'Oxi' Carisco
-portrait: "/assets/images/oxion-book4.webp"
+portrait: "/assets/images/oxion-book5.webp"
 portrait-book4: "/assets/images/oxion-book4.webp"
 portrait-book5: "/assets/images/oxion-book5.webp"
 affiliation: Carisco Family; New Eden Student; Next-Generation Resonance Cohort

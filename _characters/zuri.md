@@ -11,12 +11,20 @@ status: Alive
 birthday: February 15, 2232
 birthplace: New Eden, Ares
 book2_age: "7.8"
+book3_age: "14.7"
+book4_age: "22.9"
 book5_age: "29.9"
 book2_title: "Xan's Birthday (Age 7)"
 book2_arc: >
   At seven years old, Zuri attends Xan’s sixth birthday celebration in the caverns. He is drawn to a playful, curious Galinstanian whose presence feels almost childlike despite their maturity. As the Galinstanian attempts to replicate the shape of Zuri’s face, Zuri laughs and names them “Spark” because “they make everything feel more fun.”
 
   Zuri’s playful, joyful nature is evident even at this age. The bond formed that day reflects his instinct to find delight in connection and to share that delight with others.
+book3_title: "Growing Up (Age 14)"
+book3_arc: >
+  At fourteen, Zuri is a bright, energetic presence among the youth cohort. His bond with Spark deepens as they explore the settlement together, often finding Galinstanian youth to play with. He struggles with formal academic structures—his mind works in bursts of curiosity rather than linear progression—but excels at anything that requires creativity or human connection. He spends much of his time at the Activity Center, helping younger children feel comfortable around Galinstanians through games and play. These years solidify his understanding that joy is not frivolous but essential.
+book4_title: "The Four Rivers Exchange (Age 22)"
+book4_arc: >
+  At twenty-two, Zuri is a university student specializing in youth development and community engagement. He volunteers for the Four Rivers Exchange Program, assisting Lira with the younger twins' field trips. His role is to keep spirits high and create moments of play amid the investigation—organizing games, telling stories, and helping Jenni and Xara decompress after tense observations. When the resonance crisis deepens, Zuri and Spark help maintain community morale and provide emotional support to the Galinstanian clusters affected by the disturbances.
 book5_title: "Youth Engagement Specialist (Age 29)"
 book5_arc: >
   At twenty-nine, Zuri is a university mentor and youth engagement specialist in the Resonance Stewardship Program. He works with Spark, his bonded Galinstanian, to develop programs that help young people—both human and Galinstanian—connect through play, curiosity, and shared exploration. During the rescue, he helps maintain the resonance perimeter, using his natural joyfulness to keep the team’s spirits up during tense moments.
