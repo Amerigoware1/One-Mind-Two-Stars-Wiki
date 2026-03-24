@@ -15,6 +15,11 @@ book2_age: "15.8"
 book3_age: "22.7"
 book4_age: "30.9"
 book5_age: "37.9"
+book1_title: "Growing (Age 8)"
+book1_arc: >
+  At age eight, Aulii doesn't appear in Book 1, but she's growing up in New Eden. She is Celectra's classmate in karate and other activities with their age cohort.
+
+  Aulii started karate when she was four years old and has progressed steadily. Now wearing a midori obi (green belt), she is known among her instructors for thriving on the discipline and self-control that sundome (inch-stop) karate demands—a focus that surprises and impresses those who expect typical childhood restlessness.
 book2_title: "The Gold Medal (Age 15)"
 book2_arc: >
   At fifteen, Aulii competes in the Sundome Karate Tournament alongside Celectra
