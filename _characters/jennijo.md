@@ -7,7 +7,7 @@ portrait-book4: "/assets/images/jennijo-book4.webp"
 portrait-book5: "/assets/images/jennijo-book5.webp"
 affiliation: Carisco Family; Listener Corps (Junior); Resonance Stewardship Program
 status: Alive
-birthday: July 18, 2246
+birthday: November 15, 2247
 birthplace: New Eden, Ares
 book1_age: "Not yet born"
 book2_age: "Not yet born"
