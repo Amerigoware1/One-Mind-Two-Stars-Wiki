@@ -1,12 +1,12 @@
 ---
 layout: character
 title: Terry Fairchild
-portrait: "/assets/images/terry-book1.webp"
-portrait-book1: "/assets/images/terry-book1.webp"
-portrait-book2: "/assets/images/terry-book2.webp"
-portrait-book3: "/assets/images/terry-book3.webp"
-portrait-book4: "/assets/images/terry-book4.webp"
-portrait-book5: "/assets/images/terry-book5.webp"
+portrait: "/assets/images/fairchild-book1.webp"
+portrait-book1: "/assets/images/fairchild-book1.webp"
+portrait-book2: "/assets/images/fairchild-book2.webp"
+portrait-book3: "/assets/images/fairchild-book3.webp"
+portrait-book4: "/assets/images/fairchild-book4.webp"
+portrait-book5: "/assets/images/fairchild-book5.webp"
 affiliation: New Eden Medical; Senior Nurse; Medical Ethics Advocate; Trauma Response Specialist
 status: Active
 birthday: May 26, 2093
