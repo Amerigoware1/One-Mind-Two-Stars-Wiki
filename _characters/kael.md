@@ -2,11 +2,22 @@
 layout: character
 title: Kael Aoki
 portrait: "/assets/images/kael-book5.webp"
+portrait-book4: "/assets/images/kael-book4.webp"
 portrait-book5: "/assets/images/kael-book5.webp"
 affiliation: New Eden Youth Cohort; Acoustic Rhythm Specialist; Resonance Stewardship Program (Acoustic Training)
 status: Alive
 birthday: December 10, 2247
 birthplace: New Eden, Ares
+book4_age: "14.1"
+book4_title: "Dreaming of Percussion (Age 7)"
+book4_arc: >
+    At seven, Kael is the youngest of the twins' cohort, trailing behind Jenni and Xara by a few weeks. While other children play group games or practice martial arts forms at the Activity Center, Kael can often be found at the edges, hands moving against his thighs, tapping out rhythms only he can hear.
+
+    His parents, both engineers working on the Euphrates settlement's structural acoustics, bring home a beginner's digital drum pad for his seventh birthday. Kael takes to it with the obsessive focus that will later define him. He practices until his hands ache, until his parents have to set time limits. He carries the pad to the courtyard, to the Activity Center, to the gallery courtyard where Maya and Sam are preparing for an exhibit opening.
+
+    The twins notice him there sometimes—a small figure with a drum pad, eyes closed, head tilted, hands moving. Jenni tries to get him to play clapping games with her and Ripple; Xara observes his rhythm patterns with quiet interest. Kael is polite but distracted, always listening to something they can't quite hear. Like everyone else, he regularly wears an ANI hat to communicate with Utara or any Galinstanian he may interact with.
+
+    What he doesn't realise is that his human neighbors aren't the only ones listening.
 book5_age: "14.1"
 book5_title: "The Drummer of Hope (Age 14)"
 book5_arc: >
