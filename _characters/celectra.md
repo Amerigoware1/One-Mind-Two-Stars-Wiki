@@ -26,6 +26,7 @@ book1_arc: >
 
 book2_title: "The Northern Territory"
 book2_arc: >
+  At age fourteen, Celectra has finished with the academic portion of schooling but is working on college lessons as well as dance, swimming, karate, yoga, acrobatics, and gymnastics (all indoor activities because of her skin condition—and she abhors shoes). She is Majoring in Applied Cognitive Science with specialization in Neuro-Linguistic & Multiplicity Studies.
   Celectra joins the Northern Territory expedition as the colony’s only functional
   bridge to Galinstanians. She endures the trauma of Chime’s torture and the strain
   of long-range communion. Her abilities become essential to the mission’s survival,
@@ -36,6 +37,7 @@ book2_arc: >
 
 book3_title: "Pregnancy and Decline"
 book3_arc: >
+  At age twenty-one, Celectra defends her Ph.D. dissertation: "Neuro-Interface Design for Cross-Species Communication: Modeling Exo-Consciousness Through Electromagnetic Field Synthesis" 
   Celectra’s unexpected pregnancy reveals asymmetrical symptoms between her two
   bodies, forcing Alex and Amerigo to confront the limits of their understanding.
   Her communion range begins to decline, raising ethical debates about using Dr.
@@ -76,7 +78,7 @@ Celectra’s two bodies are genetically identical, each standing 1.49 m and we
 </div>
 <div class="card-bg">
 ## Medical Summary
-Celectra’s physiology is the subject of two major medical dossiers maintained by  
+Celectra’s physiology is the subject of three major medical dossiers maintained by  
 Dr. Alex Cruiz and the New Eden Medical Corps:
 </div>
 <div class="card-bg">
@@ -92,7 +94,7 @@ overextension.
 ### Albinism
 Both bodies present with **oculocutaneous albinism**, including pale skin and white
 hair. The melanin in the irises was present before the en utero radiation exposure. Albinism does not interfere with communion but increases vulnerability during field operations.
-- **[Celectra’s Care Protocol Dossier](../celectra-care-protocol-dossier.html)**  
+- **<a href="../celectra-care-protocol-dossier.html">Celectra’s Skin Care Protocol Dossier</a>** 
 </div>
 <div class="card-bg">
 ### Growth Delay
@@ -101,7 +103,7 @@ the placental damage. Growth
 normalized in adolescence but remains well below the colony average. Alex
 monitors her nutritional intake, bone density, and endocrine markers as part of
 her long-term care plan.
-- **[Celectra Growth & Development Report](../CelectraGrowth.html)**  
+- **<a href="../CelectraGrowth.html">Celectra Growth & Development Report</a>** 
 </div>
 <div class="card-bg">
 ## Personality & Skills
