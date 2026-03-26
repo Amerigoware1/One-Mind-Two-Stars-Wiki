@@ -38,13 +38,13 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Ripple is a young Galinstanian of the Northern Cluster and the closest non-human companion of Jenni and Xara Carisco. At roughly thirty years old — still early childhood for their species — Ripple is fluid, sensitive, and deeply attuned to harmonic disturbances. They arrive in Book 4 after a cavern collapse destroys their original home and kills their parent. The migrating cluster that rescues Ripple entrusts them to Celectra and Jaxon after sensing the twins' immediate, instinctive bond.
 
 Ripple becomes a central figure in the Four Rivers Resonance crisis and later emerges as one of the first Galinstanians to develop a personal "song" that travels the planetary network.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 Ripple moves like a large raindrop sliding down a windowpane — continuous, coherent, guided by internal logic rather than limbs. Their surface shimmers in soft blues and greens when calm, brightening during emotional resonance. Their field radiates warmth, recognition, and a quickened pulse of greeting.
 
@@ -56,7 +56,7 @@ Ripple's form subtly adjusts to their environment:
 
 They do not sleep, but they "rest" by sinking into a melted chamber in the Pison's riverbank beneath the Carisco home.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Ripple is defined by:
 
@@ -76,7 +76,7 @@ Their strengths include:
 
 Ripple remembers everything — including the moment the twins reached for them at age two.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Jenni Jo Carisco** — closest friend, emotional partner in play and exploration; their bond transcends typical human–Galinstanian connection
 - **Xara Zo Carisco** — intellectual counterpart, pattern collaborator; where Jenni feels, Xara analyzes, and Ripple harmonizes between them
@@ -86,14 +86,14 @@ Ripple remembers everything — including the moment the twins reached for them 
 - **Amerigo & Zoë Carisco** — trusted adults who treat Ripple as family
 - **Xan Carisco** — rhythmic companion and later mentor in acoustic collaboration
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Ripple's journey is one of loss, belonging, and harmonic growth. They begin as a youngling displaced by tragedy and become a stabilizing force in the Four Rivers crisis. Their "First Song" in Book 5 marks a cultural milestone for both species and signals their emergence as a next-generation bridge—not through EM or acoustic methods, but through pure harmonic expression.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Key Moments
 - **The Reaching (Book 4):** At age two, the twins reach for Ripple; Ripple reaches back. The cluster recognizes the bond and entrusts Ripple to the Carisco family.
 - **First Flutter (Book 4):** Ripple senses the initial resonance disturbance beneath the Pison, alerting the twins to the coming crisis.
@@ -103,7 +103,7 @@ Ripple's journey is one of loss, belonging, and harmonic growth. They begin as a
 - **"For Friends" (Book 5):** Ripple's final pulse becomes a signature waveform recognized across Ares.
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Themes
 - **Belonging After Loss:** Finding family not through blood, but through those who reach for you
 - **Harmonic Identity:** Developing a unique voice within a collective species
@@ -111,7 +111,7 @@ Ripple's journey is one of loss, belonging, and harmonic growth. They begin as a
 - **The Next Generation:** Young beings—human and Galinstanian—growing up together as peers
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Trivia
 - Ripple is the first Galinstanian to develop a personal "song" that travels the planetary network
 - Their resting chamber beneath the Carisco home was naturally melted by their own warmth over time
@@ -121,7 +121,7 @@ Ripple's journey is one of loss, belonging, and harmonic growth. They begin as a
 - Xan taught Ripple basic rhythmic patterns, which evolved into their first attempts at song
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

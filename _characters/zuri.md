@@ -33,15 +33,15 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Overview
 Zuri Yazzie is a New Eden-born youth engagement specialist and university mentor, part of Xan’s older cohort (approximately fifteen years older than the twins). He is best known for naming the Galinstanian Spark at Xan’s sixth birthday celebration, choosing the name because Spark “makes everything feel more fun.” Playful, curious, and endlessly joyful, Zuri helps the next generation find their own connections through play and shared exploration.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Physical Description
 Zuri has an infectious smile that makes people want to smile back. He has warm brown skin, dark hair worn in loose curls, and bright eyes that seem to find humor in everything. He moves with the kind of loose, relaxed energy that makes him seem younger than his age—until a serious moment arrives, and his focus sharpens. He favors bright, comfortable clothing that reflects his personality.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Personality & Skills
 Zuri is defined by:
 - infectious joy and playfulness
@@ -61,7 +61,7 @@ His weaknesses include:
 - tendency to deflect serious emotions with humor
 - difficulty with rigid protocols and formal structures
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Relationships
 - **Spark** — bonded Galinstanian; Zuri named Spark for fun; now they bring fun to others together
 - **Jenni & Xara Carisco-Bowers** — younger peers; Zuri helps engage youth in the Stewardship Program
@@ -69,14 +69,14 @@ His weaknesses include:
 - **Sofia Patel** — friend from the same cohort
 - **Kael Aoki** — younger musician; Zuri helps connect Kael to youth programs
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Story Overview (Non-Spoiler)
 Zuri’s arc is about the power of joy. He named Spark seeking fun as a child; as an adult, he brings joy to others as naturally as breathing. His role in Book 5 is often overlooked in official accounts—he keeps morale up, makes people laugh, reminds the team why they’re doing what they’re doing—but that work is essential. He represents the generation that learned that connection doesn’t have to be serious to be meaningful.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

@@ -41,17 +41,17 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Xan Carisco is the younger brother of Celectra and one of the most innovative communicators of his generation. While Celectra bridges species through electromagnetic communion, Xan pioneers a parallel method: **acoustic harmonic communication** using bismuth‑plated instruments. His glockenspiel‑based frequency system becomes a breakthrough in Book 3, proving that communication with Galinstanians can emerge from creativity as much as biology.
 
 Xan's arc spans Books 2–5, evolving from a curious, energetic child into a thoughtful young adult whose empathy and ingenuity reshape the future of human–Galinstanian interaction.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 Xan is tall and lean, with expressive eyes and a kinetic, rhythmic energy. He often taps patterns on nearby surfaces without realizing it. His hands are calloused from years of working with bismuth instruments and experimental acoustic devices. By adulthood, he carries himself with the quiet confidence of someone who has found his voice — literally and figuratively.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Xan is defined by:
 
@@ -75,7 +75,7 @@ His weaknesses include:
 - tendency to disappear into his work when frustrated
 - sometimes assumes others think rhythmically like he does
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Celectra Carisco** — older sister, role model, collaborator; their bond deepens as he proves communication can take many forms
 - **Zoë & Amerigo Carisco** — parents who nurture his creativity and never make him feel lesser for not sharing Celectra's abilities
@@ -86,14 +86,14 @@ His weaknesses include:
 - **Oxion "Oxi" Carisco** — son; Xan teaches him the same rhythmic patterns Chime taught him, completing a generational circle
 - **Hiro, Sofia, Zuri** — peers and later colleagues in the Resonance Stewardship Program
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Xan's journey centers on finding his own voice in a family defined by extraordinary abilities. He becomes the first human to establish a **non‑EM, non‑technological** communication method with Galinstanians, proving that harmony can emerge from creativity as much as from science. His legacy is not in replacing his sister, but in showing that the future belongs to many voices, not just one.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Key Moments
 - **First Rhythm (Book 2):** Age seven, Xan taps patterns on Chime's body; Chime responds. A friendship — and a new method — begins.
 - **The Glockenspiel (Book 3):** Unveils his bismuth‑plated instrument, proving acoustic communication works without Celectra's involvement.
@@ -103,7 +103,7 @@ Xan's journey centers on finding his own voice in a family defined by extraordin
 - **Generational Circle (Book 5):** Teaches young Oxi the same patterns Chime taught him — rhythm as inheritance.
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Acoustic Philosophy
 - **Rhythm as Language:** Pattern and repetition create meaning that transcends species
 - **Multiple Methods:** EM communion is one path; acoustic harmony is another; the future needs both
@@ -111,7 +111,7 @@ Xan's journey centers on finding his own voice in a family defined by extraordin
 - **Legacy Through Teaching:** What matters isn't what you build, but who you teach to build
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Themes
 - **Finding Your Voice:** Discovering that your contribution matters even when it looks different from your family's
 - **Parallel Paths:** Celectra and Xan prove that communication isn't a single solution but a chorus of approaches
@@ -120,7 +120,7 @@ Xan's journey centers on finding his own voice in a family defined by extraordin
 - **The Joy of Play:** Some of the most important work happens when we're simply curious
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Trivia
 - Xan still has the first glockenspiel he built; it sits in his workshop, battered but functional
 - He can identify individual Galinstanians by their rhythmic responses alone
@@ -131,7 +131,7 @@ Xan's journey centers on finding his own voice in a family defined by extraordin
 - By Book 5, his acoustic methods are taught alongside Celectra's EM communion in every colony school
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

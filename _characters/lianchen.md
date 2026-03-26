@@ -44,15 +44,15 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Agricultural Director Lian Chen is a pragmatic and highly skilled engineer responsible for the water security and agricultural sustainability of the Ares colony. A veteran of two decades on Utopis Station, she sought a new beginning on Ares following the dissolution of her marriage to Dr. Yuki Chen. Her leadership is defined by a fierce commitment to human survival needs, balanced with a growing, if sometimes grudging, acknowledgment of planetary ethics. She is known for her directness, her exceptional grasp of hydrological systems, and her complicated professional history with Dr. Yuki Chen.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 Director Chen is a compact, physically fit woman who maintains the efficient posture of a career engineer and station dweller. Her hair is cut short and practically, with streaks of grey. Her expression is often one of focused assessment, and she is rarely seen without a dataslate or stylus in hand. Her attire is strictly utilitarian—standard colony jumpsuits, often with the sleeves rolled up, devoid of personal adornment. Despite her chronological age, life extension therapies keep her biological appearance in her fifties.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Lian is defined by:
 
@@ -76,7 +76,7 @@ Her weaknesses include:
 - tendency to prioritize human needs over planetary ethics until forced otherwise
 - carrying the emotional weight of her dissolved marriage with Yuki
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Dr. Yuki Chen** — former spouse; relationship built on intense intellectual partnership, now defined by mutual respect sharpened by history of personal intimacy; remain each other's most incisive critics
 - **Amerigo Carisco** — professional colleague; collaborates on subsurface construction projects affecting aquifers
@@ -84,14 +84,14 @@ Her weaknesses include:
 - **Ananya Patel & Chen Wei** — oversees agricultural impact during Book 3 interface testing near hydroponic zones
 - **Ares Colony Science & Engineering Directorate** — leads water security and agricultural sustainability divisions
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Lian's arc is about balancing survival with ethics. She arrives on Ares seeking a clean break from her past, immersing herself in the monumental challenge of keeping the colony alive. Her journey involves learning that human survival doesn't have to come at the expense of the planet's indigenous life—and that engineering solutions can accommodate both. Her complicated history with Yuki Chen adds a layer of personal stakes to professional debates, proving that past intimacy can evolve into productive, if sharp, collaboration.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

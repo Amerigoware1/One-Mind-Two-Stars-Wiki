@@ -31,15 +31,15 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Overview
 Hiro Vongphachanh is a New Eden-born martial artist and physical training specialist, part of Xan’s older cohort (approximately fourteen years older than the twins) and sibling to Aulii Vongphachanh. He is best known for naming the Galinstanian Guardian at Xan’s sixth birthday celebration, choosing the name because “they feel like they’d keep everyone safe.” Respectful, protective, and disciplined, Hiro serves as a key physical support during the Book 5 rescue.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Physical Description
 Hiro carries himself with the quiet discipline of a trained martial artist, though his demeanor is warmer than his sister Aulii’s formal precision. He has dark hair kept short, observant dark eyes, and the kind of solid presence that makes people feel safe. He favors practical training clothes—gi pants and loose shirts—and moves with economy of motion. His hands are calloused from practice, and he has the habit of scanning rooms for exits and potential threats without seeming paranoid about it.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Personality & Skills
 Hiro is defined by:
 - protective instinct and sense of responsibility
@@ -59,7 +59,7 @@ His weaknesses include:
 - difficulty relaxing when others might be at risk
 - tendency to put others’ safety before his own well-being
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Relationships
 - **Guardian** — bonded Galinstanian; Hiro named Guardian seeking protection; now they protect together
 - **Aulii Vongphachanh** — sister; both trained at Sundome Dojo
@@ -67,14 +67,14 @@ His weaknesses include:
 - **Xan Carisco** — older peer and friend from childhood
 - **Sensei Onishi Kisa** — mentor at the dojo
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Story Overview (Non-Spoiler)
 Hiro’s arc is about protection. He named Guardian seeking safety as a child; as an adult, he has become the protector he sought. His role in Book 5 is to ensure the rescue operation proceeds safely—not through heroics, but through quiet, steady presence. He represents the generation that learned that protection isn’t about aggression, but about creating safety for others to do what they need to do.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

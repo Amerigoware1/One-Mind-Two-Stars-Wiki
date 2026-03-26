@@ -48,15 +48,15 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Sensei Onishi Kisa is the head martial arts instructor at New Eden Colony's Sundome Karate Dojo and a respected member of the Athletics Committee. Hailing from Okinawa, Japan—the birthplace of karate—Sensei Kisa brings centuries of martial tradition to Ares while adapting them to the colony's unique 0.9g environment. Known for her wisdom, fairness, and advocacy for all athletes, she played a crucial role in supporting Celectra Carisco's participation in competitive karate despite her unique dual-body physiology.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 Sensei Kisa carries herself with the quiet authority of a lifetime dedicated to martial discipline. She has silver-streaked black hair kept in a neat, practical cut, sharp observant eyes, and a posture that remains perfectly aligned whether standing, sitting, or moving. She favors traditional gi attire in muted tones, always immaculately pressed, with her black belt worn with understated pride. Her hands are calloused from decades of practice, and she moves with economical grace—every gesture intentional, every step grounded.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Sensei Kisa is defined by:
 
@@ -79,7 +79,7 @@ Her weaknesses include:
 - reluctance to compromise core values, even for expediency
 - carrying the emotional weight of students' struggles
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Celectra Carisco** — respected student and advocate; Sensei Kisa sees past Celectra's unique physiology to her dedication and skill
 - **Councilor Michael Okafor** — professional counterpart on the Athletics Committee; principled debates that ultimately strengthened colony policy
@@ -87,14 +87,14 @@ Her weaknesses include:
 - **Athletics Committee** — respected voice for fair competition and athlete wellbeing
 - **New Eden Youth** — mentor to generations of Ares-born children learning discipline, focus, and respect
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Sensei Kisa's arc is about preserving tradition while embracing change—teaching that excellence isn't about conforming to a single standard, but about honoring each individual's path while maintaining rigorous discipline. Her famous statement, "She is who she is," became a touchstone for discussions about accommodating difference while maintaining excellence in New Eden. She represents the quiet, steady force that helps a colony grow not just stronger, but wiser.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

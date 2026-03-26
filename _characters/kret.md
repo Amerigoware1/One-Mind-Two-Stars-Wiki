@@ -40,17 +40,17 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Dr. Douglas Kret was once New Eden's Chief of Medicine and a respected member of the early colony. His reputation collapsed after the discovery of his unauthorized experiments on Galinstanian captives — research that left deep scars on the Northern Cluster and shaped the colony's ethical framework for decades. Exiled two‑thirds of the way through Book 2, Kret spent the remainder of his life aboard **Utopis‑Lab 1**, a remote research station scanning the moons of the outermost planet, Amaterasu.
 
 Kret's death in early Book 4 ends a long chapter of guilt, secrecy, and scientific misconduct, but his legacy continues to influence the colony's medical and ethical policies.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 In his prime, Kret was tall, sharp-featured, and meticulously groomed. By the time of his exile, he appeared gaunt and prematurely aged. Reports from Utopis‑Lab 1 describe progressive physical decline — weight loss, tremors, and a hollowed expression — consistent with chronic stress, isolation, and untreated health conditions.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Kret was defined by:
 
@@ -75,7 +75,7 @@ His weaknesses included:
 - a growing paranoia during exile
 - rationalizing harm in service of "progress"
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Amerigo Carisco** — former colleague, later chief opponent in exposing Kret's misconduct
 - **Dr. Alexander Cruiz** — successor as Chief of Medicine who worked to undo Kret's ethical damage
@@ -85,14 +85,14 @@ His weaknesses included:
 - **New Eden Council** — governing body that investigated and exiled him
 - **Northern Cluster** — Galinstanians who endured his unauthorized experiments
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Kret's arc is a cautionary tale about scientific ambition without ethical grounding. His exile marks a turning point in the colony's history, and his death closes a chapter that many hoped would never reopen. His legacy serves as the foundational negative example for New Eden's medical ethics — a reminder that progress without consent is not progress at all, but violation.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

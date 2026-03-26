@@ -27,15 +27,15 @@ book3_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Overview
 Orren is an ancient Galinstanian of the Northern Cluster, known for his warm, patient, teacherly presence. He was one of the first Galinstanians Celectra named, and the name was chosen to match how his presence feels: warm and ancient and wise. Orren rarely speaks, but when he does, his words carry the weight of long existence—a perspective that encompasses the arrival of humans, the building of New Eden, and the slow, patient work of connection between species.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Physical Description
 Orren’s presence is warm and layered, like earth that has held generations. His EM field carries a patience that feels ancient—not the sharpness of Kiri or the steadiness of Stan, but something slower, deeper, more patient. When he flows, it is with the weight of long existence, each movement considered, each pulse carrying the accumulation of millennia. He tends to hold himself at the edges of gatherings, not from distance but from the awareness that his presence can be overwhelming to young beings—both human and Galinstanian.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Personality & Skills
 Orren is defined by:
 - ancient, patient, teacherly presence
@@ -55,7 +55,7 @@ His weaknesses include:
 - ancient perspective sometimes out of sync with urgent human timelines
 - tendency to hold back, waiting for the right moment that may not come
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Relationships
 - **Celectra Carisco-Bowers** — namer and bridge; Orren has watched her from childhood through motherhood
 - **Stan** — fellow ancient; they anchor the Northern Cluster together
@@ -63,7 +63,7 @@ His weaknesses include:
 - **Maya Keahi** — artist; Orren perceives her portrait of him with profound appreciation, noting that she captured his essence as teacher and guide
 - **The Twins** — Orren watches them with the same patient attention he gave their mother
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Story Overview (Non-Spoiler)
 Orren’s arc is about the weight of long presence. He was here before humans arrived. He will be here after—if not in this form, then in the network that connects all Galinstanians across Ares. His gift to Celectra is not in words but in presence: the steady, ancient warmth that says transformation is not loss, becoming is not ending, and the network holds all of us.
 
@@ -72,7 +72,7 @@ When Maya Keahi painted his portrait, she captured him in warm earth tones and l
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

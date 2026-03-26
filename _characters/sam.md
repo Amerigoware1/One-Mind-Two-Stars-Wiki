@@ -61,19 +61,19 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Sam Calder is a genderfluid audio engineer and soundscape artist who relocated from Utopis Space Station to New Eden in search of independence and self‑discovery. Born with congenital atrichia universalis (complete hairlessness), Sam has embraced their unique appearance as part of their fluid identity, using fashion and headwear to express mood and presentation. Known for warmth, curiosity, and exceptional emotional intelligence, Sam forms deep connections easily and serves as a bridge between diverse cultural backgrounds.
 
 In Book 3, Sam arrives in New Eden and begins a collaborative relationship with Maya Keahi, providing sound design for her art exhibitions. By Book 4, they co‑found the **Samaya Gallery & Museum of Integration**, which opens in March 2256. Sam's expertise in audio engineering later contributes to standardized frequency libraries for human–Galinstanian communication interfaces.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 Sam has congenital atrichia universalis, meaning they have no body hair, eyebrows, or eyelashes from birth. Their smooth, reflective scalp is often accentuated with oils, shimmer, or elaborate headwear. They possess a slender, wiry build adapted to low‑gravity station life, granting them notable agility. Sam's eyes are strikingly expressive, conveying emotions through subtle micro‑expressions that others quickly learn to read.
 
 Their presentation shifts fluidly: feminine days feature flowing skirts, pastel wigs, and layered jewelry; masculine days emphasize sharp lines, structured clothing, and a bare, polished scalp; neutral days favor oversized utility wear or jumpsuits with minimal adornment. A signature collection of scarves, wraps, circlets, and metallic bands serves as a visual indicator of their current mood.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Sam is defined by:
 
@@ -97,7 +97,7 @@ Their weaknesses include:
 - tendency to prioritize others' comfort over their own needs
 - occasional restlessness when feeling confined by expectations
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Maya Keahi** — partner; relationship begins in Book 3 through artistic collaboration; mutual healing and growth; Maya finds freedom in Sam's fluidity, Sam finds grounding in Maya's steadiness
 - **Celectra Carisco‑Bowers** — colleague and friend; Sam respects her role as bridge while focusing on cultural integration through art and sound
@@ -106,14 +106,14 @@ Their weaknesses include:
 - **Lira Keahi** — sister-in-law through Maya; develops a warm, respectful relationship built on quiet observation and mutual understanding
 - **Utopis Family** — loving but protective; Sam moved to Ares to establish independence from being "the atrichia kid"
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non‑Spoiler)
 Sam's arc is about finding home not in a place, but in a community that accepts fluidity—of identity, of art, and of connection. They move from station technician to cultural architect, using sound and design to make New Eden feel accessible to both humans and Galinstanians. Their partnership with Maya grounds them, while their work ensures that the colony's communication systems honor not just data, but tone, rhythm, and emotion.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Key Moments
 - **"Seven Years of Stone" (Book 3):** Sam meets Maya at her exhibition, beginning their artistic and personal partnership
 - **The Question (Book 3):** "Your work is actually part of why I came here. Saw your Galinstanian pieces in Utopis exhibition. Wanted to experience what you were documenting."
@@ -123,7 +123,7 @@ Sam's arc is about finding home not in a place, but in a community that accepts 
 - **Mentor's Role (Book 5):** Teaches younger artists that technology should honor emotion, not just transmit data
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Acoustic Philosophy
 - **Sound Shapes Space:** Environments can be designed to feel welcoming through careful acoustic attention
 - **Emotion in Data:** Communication systems should convey tone, not just transmit information
@@ -132,7 +132,7 @@ Sam's arc is about finding home not in a place, but in a community that accepts 
 - **Rhythm as Bridge:** Vibration and pattern transcend language barriers
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Themes
 - **Finding Home:** Belonging isn't about where you're from, but where you're seen
 - **Fluid Identity:** The freedom to shift between presentations without explanation or apology
@@ -141,7 +141,7 @@ Sam's arc is about finding home not in a place, but in a community that accepts 
 - **Building Bridges Differently:** Not all bridges are biological—some are built with sound, art, and care
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Trivia
 - Sam's signature headwear collection includes over 50 pieces, each associated with a different mood or presentation
 - They learned basic engineering on Utopis by helping maintenance crews as a child
@@ -151,7 +151,7 @@ Sam's arc is about finding home not in a place, but in a community that accepts 
 - Their relationship with Maya is often cited as an example of how partnership can be both grounding and freeing
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

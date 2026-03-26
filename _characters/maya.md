@@ -38,17 +38,17 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Maya Keahi is part of the first generation born entirely on Ares and one of New Eden's earliest emerging artists. She begins as a shy, observant child with a fierce hero‑worship of Celectra — a mix of admiration, longing, and a quiet romantic crush she never voices. Over the series, Maya grows into a confident young woman who finds her own voice through art, community work, and her partnership with Sam Calder.
 
 By 2256 (Book 4 Epilogue), Maya and Sam co‑found the **Samaya Gallery & Museum of Integration**, a cultural cornerstone dedicated to human–Galinstanian collaboration.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 Maya is small, wiry, and expressive, with dark hair she often ties back while working. Her eyes are sharp and thoughtful, and she has a habit of tucking her hands into her sleeves when nervous. As she matures, she develops a calm, grounded presence that contrasts with her earlier self‑consciousness.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Maya is defined by:
 
@@ -71,7 +71,7 @@ Her weaknesses include:
 - comparing herself to extraordinary people
 - difficulty asserting herself in early years
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Lira Keahi** — older sister, role model, and quiet support throughout Maya's development
 - **Celectra Carisco** — childhood hero, brief crush, later mentor figure who sees Maya's gifts clearly
@@ -80,14 +80,14 @@ Her weaknesses include:
 - **Xan Carisco** — peer she admires for his creativity and parallel artistic journey
 - **Ripple** — Galinstanian she bonds with through the twins, inspiring resonance‑inspired works
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Maya's arc is about growing up in the shadow of greatness and discovering that her own gifts — subtle, human, artistic — matter just as much. Her crush on Celectra is a quiet, private thread that helps shape her emotional development but never defines her. Her true legacy emerges through art, community building, and the creation of the Samaya Gallery, a space where human and Galinstanian expression can meet as equals.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Notable Moments
 - **First Exhibition (Book 2):** Her small, colorful works catch Celectra's attention, sparking a lifelong admiration
 - **"Seven Years of Stone" Exhibition (Book 3):** Where she meets Sam Calder, beginning their creative partnership
@@ -95,7 +95,7 @@ Maya's arc is about growing up in the shadow of greatness and discovering that h
 - **Resonance-Inspired Works (Book 5):** Creates installations that blend human artistry with Galinstanian patterns
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Themes
 - **Finding Your Own Light:** Growing up beside extraordinary people and discovering your own gifts matter
 - **Quiet Devotion:** Love that doesn't need to be returned to be meaningful
@@ -103,7 +103,7 @@ Maya's arc is about growing up in the shadow of greatness and discovering that h
 - **Partnership:** Building something lasting with someone who sees you clearly
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

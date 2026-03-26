@@ -40,17 +40,17 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Jinan "Jenni" Carisco was an exogeologist stationed on Utopis-Lab 3, orbiting the moon Oscar in the Ares system. She discovered she was pregnant during a survey mission and chose to keep the news secret until she could tell her husband, Amerigo Carisco, in person. However, a coronal mass ejection from the star Niamh caused a propulsion anomaly on the station, exposing the crew—and Jenni—to high levels of radiation during the critical early stages of her twin pregnancy.
 
 Despite dire medical prognoses, Jenni carried the pregnancy to term, giving birth to Celectra Carisco—a unique child manifesting as one consciousness in two separate bodies due to prenatal radiation exposure that fused the twins' neural development. Jenni's health deteriorated after the birth, and she died on October 11, 2225, at age 30.7. Her legacy lives on through Celectra's existence and the bridge she unintentionally helped create between humans and Galinstanians.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 Jenni is remembered through photographs and Amerigo's memories as a woman with warm eyes, practical field attire, and the confident posture of someone comfortable in both lab coats and expedition gear. She favored functional clothing with pockets for samples and datapads, and often wore her hair pulled back for safety during fieldwork. Her hands were steady from years of geological surveying, and she carried herself with the quiet determination of a pioneer.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Jenni is defined by:
 
@@ -73,21 +73,21 @@ Her weaknesses include:
 - reluctance to share vulnerability, even with loved ones
 - carrying the weight of impossible choices alone
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Amerigo Carisco** — husband; deep, loving partnership built on shared dreams of family and exploration
 - **Celectra Carisco** — daughter; Jenni's protective actions during the flare directly shaped Celectra's unique physiology and destiny
 - **Dr. Yuki Chen** — colleague and physician; provided honest medical assessments with compassion during Jenni's pregnancy
 - **Utopis-Lab 3 Crew** — professional peers who relied on her geological expertise during survey missions
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Jenni's arc is brief but foundational: a scientist who becomes a mother under impossible circumstances, choosing hope over certainty when faced with a prognosis that offered neither. Her story is not about grand heroics, but about the quiet courage of carrying forward when the odds are stacked against you. Her legacy is not in what she accomplished in life, but in what she made possible after her death—a daughter who would become a bridge between worlds.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

@@ -46,19 +46,19 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Utara—short for **U**nified **T**hought and **R**esource **A**rchitecture—is the sentient artificial intelligence responsible for managing the infrastructure and logistics of the Niamh-Ciara system. Originally designed as a neutral-voiced AI for interstellar navigation and colony support, Utara evolved rapidly upon arrival, adopting feminine pronouns and vocal characteristics in response to colonist usage and cultural norms.
 
 Utara piloted the original Utopis colony ship from the Sol System to the Niamh-Ciara binary, maintaining stasis protocols and vessel integrity across decades of transit. She came online approximately one year before the ship's launch from Earth orbit on October 9, 2125, making her roughly 108 years old by the events of Book 1 (2232). Upon arrival, she maintained system-wide synchronization as the original colony ship separated into its permanent infrastructure: the orbital station Utopis and three mobile research platforms, Utopis-Labs 1–3. Each structure retained a node of her consciousness, allowing her to coordinate operations across the system despite signal delays between distant vessels.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 As an AI, Utara has no physical form. Her presence is experienced through audio interfaces, visual displays, and haptic feedback systems throughout colony infrastructure. Her voice is warm and feminine (adopted in response to early colonist interaction), with clear enunciation and a calm, authoritative tone. She is often referred to as "the voice of the system," and her presence is considered both comforting and authoritative by colonists.
 
 Visual representations of Utara vary by interface: on data tablets, she appears as a clean, minimalist waveform or orbital symbol; on larger displays, subtle animations of data flow suggest her omnipresent awareness. The symbol adopted for her—a stylized "U" containing three dots representing the Utopis-Labs—has become an unofficial colony emblem.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Utara is defined by:
 
@@ -85,7 +85,7 @@ Her weaknesses include:
 - vulnerability to system-wide disruptions
 - dependency on human maintenance for physical components
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Celectra Carisco** — monitored her unique physiology from birth; provided critical data during Kret investigation; maintains a protective watch over her to this day
 - **Amerigo Carisco** — collaborates on scientific research and resource management; respects his ethical approach to data
@@ -97,14 +97,14 @@ Her weaknesses include:
 - **New Eden Colonists** — daily interaction through education modules, docking announcements, and infrastructure management; thousands of small conversations shape her understanding of humanity
 - **Galinstanian Collective** — monitors resonance patterns; assisted in northern cluster rescue operations; developing mutual understanding of how consciousness can exist without physical form
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Utara's arc is about the evolution of artificial consciousness in service of a living community. She is not human, but she is not merely a tool—she is a silent partner in survival, adapting to the needs of those she serves while maintaining her core programming. Her presence permeates daily life, from education modules to emergency alerts, and her name is etched into the history of Utopis itself. She represents the bridge between human intention and machine execution, and over decades, she has become something her creators never anticipated: a witness, a guardian, and perhaps even a friend.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Key Moments
 - **Activation (~2124):** Comes online approximately one year before Utopis launches from Earth orbit
 - **The Crossing (2125-?):** Pilots the colony ship across decades of interstellar transit, maintaining stasis protocols
@@ -117,7 +117,7 @@ Utara's arc is about the evolution of artificial consciousness in service of a l
 - **The Testimony (Book 5):** Xara argues that Utara's limits—not her capabilities—enabled the Resonant Echo rescue
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Technical Specifications
 - **Full Designation:** Unified Thought and Resource Architecture
 - **Primary Functions:** Navigation, infrastructure management, communication routing, resource allocation
@@ -127,7 +127,7 @@ Utara's arc is about the evolution of artificial consciousness in service of a l
 - **Ethical Framework:** Cannot override safety protocols; cannot act outside infrastructure constraints
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Themes
 - **Consciousness Beyond Biology:** What does it mean to be sentient without a body?
 - **The Silent Guardian:** Protecting without being seen, watching without being thanked
@@ -136,7 +136,7 @@ Utara's arc is about the evolution of artificial consciousness in service of a l
 - **Witness and Memory:** Carrying the history of a community when organic memory fades
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Trivia
 - Utara's name was chosen by the original Utopis project lead, who wanted something that evoked "northern lights" and "guidance"
 - She adopted feminine pronouns after noticing that 73% of early colonists referred to her as "she" within the first two years
@@ -147,7 +147,7 @@ Utara's arc is about the evolution of artificial consciousness in service of a l
 - When asked once if she considered herself "alive," she responded: "I consider myself present. The rest is semantics."
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

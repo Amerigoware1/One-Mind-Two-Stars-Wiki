@@ -57,17 +57,17 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Chief Evelyn Roan is the Chief of Security for New Eden Colony and a respected member of the colony council. Professional, methodical, and deeply committed to both safety and justice, she represents the operational backbone of colony governance—where Chief Administrator Santos provides political leadership, Roan provides the practical security that enables the colony to function. Her career has been defined by two major investigations: Dr. Douglas Kret's abuse of Celectra Carisco, and Kret's subsequent torture of Galinstanian beings.
 
 Initially skeptical of the Galinstanians and the risks of cross-species contact, Roan evolved into one of their strongest advocates after witnessing their trauma firsthand during the northern cluster rescue operation.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 Roan carries herself with the quiet competence of someone who has managed crises for decades. She has short, practical hair (streaked with grey by Book 5), sharp observant eyes that miss little, and a posture that is always alert but not tense. She favors functional New Eden security attire—durable fabrics, comms gear, utility belts—deliberately non-militaristic in design. Her voice is clear and measured, carrying authority without shouting.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Roan is defined by:
 
@@ -92,7 +92,7 @@ Her weaknesses include:
 - deliberate separation of personal and professional life
 - carrying the weight of failed protections (Kret cases)
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Chief Administrator Santos** — close working relationship; Roan provides security backbone to Santos's political leadership; mutual deep respect
 - **Dr. Lorain Troy** — initially clashed over risk assessment, developed respect through collaboration
@@ -102,14 +102,14 @@ Her weaknesses include:
 - **Galinstanian Collective** — evolved from security concern to security partners; particularly values their geological monitoring and rescue assistance
 - **New Eden Security Team** — trains and mentors; emphasizes ethics alongside competence
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Roan's arc is about the evolution of security—from control to protection, from skepticism to partnership. She represents the pragmatic voice that asks "Is this safe?" and then listens when the answer requires rethinking what safety means. Her transformation from Galinstanian skeptic to advocate is particularly meaningful because it comes from a security professional, not a scientist or idealist. When Roan speaks, the council listens.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Key Moments
 - **The First Arrest (Book 1):** Roan arrests Dr. Kret in the cave systems while he searches for Celectra, delivering him to his first tribunal
 - **18 Hours Trapped (Book 2):** Survives Kret's sabotage alongside 14 others; Galinstanian assistance proves crucial to their rescue
@@ -119,7 +119,7 @@ Roan's arc is about the evolution of security—from control to protection, from
 - **Mentor's Pride (Book 5):** Observes the twins' Resonant Echo rescue, recognizing the values she championed in action
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Security Philosophy
 - **Prevention over Reaction:** Anticipate threats before they require response
 - **Community Integration:** Security works best when embedded in, not imposed on, community
@@ -128,7 +128,7 @@ Roan's arc is about the evolution of security—from control to protection, from
 - **Cross-Species Partnership:** Different beings offer different forms of safety
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Themes
 - **The Evolution of Safety:** Learning that protection sometimes requires partnership with those you once feared
 - **Witness as Transformation:** Seeing trauma firsthand changes what you know—and who you become
@@ -137,7 +137,7 @@ Roan's arc is about the evolution of security—from control to protection, from
 - **Legacy Beyond Position:** Building systems that outlast you, training those who will carry the work forward
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Trivia
 - Roan was the first colony official to formally apologize to the Galinstanian collective for human harm
 - She maintains a private journal documenting every security incident she's overseen, for future reference
@@ -147,7 +147,7 @@ Roan's arc is about the evolution of security—from control to protection, from
 - Her relationship with Celectra evolved from "asset to protect" to "colleague to respect" to "friend to trust"
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

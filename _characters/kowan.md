@@ -31,15 +31,15 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Overview
 Kowan Elian is a New Eden-born data specialist and university mentor, part of Xan’s older cohort (approximately seven years older than the twins). He is best known for naming the Galinstanian Logic at Xan’s sixth birthday celebration, a bond that has shaped his life and career. Analytical, methodical, and deeply committed to truth, Kowan serves as a crucial technical ally during the Book 5 rescue, validating the twins’ data and presenting evidence to the Council.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Physical Description
 Kowan has a calm, unassuming presence that belies his sharp analytical mind. He has dark hair worn short, thoughtful brown eyes, and the kind of face that makes people trust him instinctively. He favors practical clothing—often a university mentor’s jacket over comfortable pants—and carries a holopad as an extension of his hand. His movements are deliberate rather than fast, each action considered before executed.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Personality & Skills
 Kowan is defined by:
 - methodical, analytical approach to problems
@@ -59,7 +59,7 @@ His weaknesses include:
 - tendency to observe rather than act in emotional situations
 - difficulty expressing personal emotional investment
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Relationships
 - **Logic** — bonded Galinstanian; Kowan named Logic at age six, and they have worked together ever since
 - **Jenni & Xara Carisco-Bowers** — younger peers; Kowan helps them access research equipment and validates their data
@@ -67,14 +67,14 @@ His weaknesses include:
 - **Duška Santoso Carisco** — collaborator in the Stewardship Program
 - **Utara** — Kowan works with Logic to verify Utara’s sensor data during the rescue
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Story Overview (Non-Spoiler)
 Kowan’s arc is about the quiet power of expertise and the bonds formed in childhood. He named Logic at six—a moment that seemed like play but became the foundation of a lifelong partnership. In Book 5, that partnership becomes essential: Kowan and Logic validate the twins’ discovery, prove the acoustic signal was real, and help shift Council policy through evidence. He represents the generation that grew up with integration and now uses that experience to protect and guide the next one.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

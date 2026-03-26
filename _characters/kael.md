@@ -29,15 +29,15 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Overview
 Kael Aoki is a New Eden-born musician and acoustic rhythm specialist, slightly younger than the twins (same age, born weeks apart). He is defined by his intense focus on drumming and rhythm, using ANI technology to broadcast his practice. His “accidental heroism” in Book 5—unknowingly providing hope to a trapped collective for months—cements his role as a bridge between acoustic and EM communication. Passionate, earnest, and a little awkward, Kael represents the power of unintentional connection and the formal recognition of sound as a tool for understanding.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Physical Description
 Kael is lean and wiry, with the kind of focused energy that burns still until released. He has dark, perpetually messy hair, often pushed back out of his face, and calloused hands from hours of drumming. He favors simple, practical clothing—usually a worn hoodie and loose pants—that allows for unrestricted movement. His ANI headset is a near-constant accessory, perched over his ears like a second skin. In moments of concentration, his gaze becomes distant, focused entirely on the rhythm in his head.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Personality & Skills
 Kael is defined by:
 - intense, almost obsessive focus on rhythm and pattern
@@ -57,7 +57,7 @@ His weaknesses include:
 - difficulty articulating the emotional weight of his role
 - tendency to downplay his own importance
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Relationships
 - **Resonant Echo** — the collective he unknowingly sustained; they honor him as “Drummer-of-Hope” and become a lifelong connection
 - **Jenni & Xara Carisco-Bowers** — peers who discover his role in the rescue; they become collaborators in integrating acoustic methods
@@ -65,14 +65,14 @@ His weaknesses include:
 - **Logic & Harbor** — Galinstanians who help validate his acoustic methods during the Council testimony
 - **Ms. Rivera** — educator who encourages his musical practice
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Story Overview (Non-Spoiler)
 Kael’s arc is about the power of unintended impact. He does not set out to be a hero—he simply practices his drums with dedication. Yet that dedication becomes a lifeline for beings trapped in silence for seven years. His story asks: What if the most important thing you ever do is something you do every day without thinking about it? By the end of Book 5, Kael learns to accept his role not as an accident, but as proof that consistent, focused practice can change lives in ways you never expect.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

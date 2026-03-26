@@ -51,17 +51,17 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Xara Kret (July 22, 2087 – March 20, 2122) was the wife of Dr. Douglas Kret and mother of Zoë Kret (later Zoë Carisco). Little is documented about her early life or professional background, as records from the pre-colonization era are limited. She is primarily remembered through her familial connections and the impact her life and death had on her immediate family.
 
 Xara died in a shuttle accident on March 20, 2122, at age 34—three years before the Utopis colony ship departed the Sol System. She never traveled to the Niamh-Ciara system, but her legacy endures through her daughter Zoë, who became a key figure in the Ares colony as a psychologist and matriarch of the Carisco family.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 Xara is remembered through photographs and Zoë's memories as a woman with warm eyes, a gentle smile, and a calming presence. She favored practical, comfortable clothing and often wore her hair in soft waves. Her hands were expressive when she spoke, and she carried herself with the quiet confidence of someone who knew her worth without needing to announce it.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Xara is defined by:
 
@@ -84,21 +84,21 @@ Her weaknesses include:
 - tendency to prioritize family over personal recognition
 - vulnerability to the risks of early space travel
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Dr. Douglas Kret** — husband; their marriage was a significant influence on his motivations; her death may have contributed to his later obsessive research tendencies, though Zoë maintains that "he chose the wrong lessons from her loss"
 - **Zoë Carisco (née Kret)** — daughter; close, loving relationship characterized by warmth, patience, and emotional honesty; Zoë recalls her mother fondly as a source of stability and comfort
 - **Extended Family** — sparse records; Xara's pre-colony life remains largely private, a reminder of how much personal history is lost in the gaps between eras
 - **The Carisco Legacy** — though she never met them, her values shaped Amerigo's wife, Celectra's mother, and the generations that followed
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Xara's arc is brief but foundational: a life cut short, yet one that shaped the emotional landscape of those who carried her memory forward. She represents the human cost of expansion—the loved ones left behind, or lost before the journey even began. Her legacy is not in what she accomplished personally, but in the resilience she instilled in her daughter, and the quiet love that persisted beyond her death.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Key Moments
 - **Life (2087-2122):** Thirty-four years of a life documented mostly through the memories of those who loved her
 - **The Accident (March 20, 2122):** Dies in a shuttle accident, three years before the Utopis departs; her absence shapes everything that follows
@@ -107,7 +107,7 @@ Xara's arc is brief but foundational: a life cut short, yet one that shaped the 
 - **The Reflection (Book 5):** Xara Zoë articulates her legacy: "My namesake taught my grandmother that people matter more than data. I'm trying to live by that."
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Zoë's Memory
 > "My mother believed people mattered more than data. He forgot that." — *Zoë, reflecting on Douglas Kret*
 
@@ -118,7 +118,7 @@ Xara's arc is brief but foundational: a life cut short, yet one that shaped the 
 > "She would have loved you all. Not because of what you do—because of who you are." — *Zoë to Celectra and Jaxon, after the twins are named*
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Themes
 - **The Weight of Absence:** How those we lose continue to shape us through memory and values
 - **Reclaiming Legacy:** Rescuing a name from association with harm and restoring it to its true meaning
@@ -127,7 +127,7 @@ Xara's arc is brief but foundational: a life cut short, yet one that shaped the 
 - **The Human Cost of Expansion:** The loved ones left behind, or lost, in humanity's reach for the stars
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Trivia
 - Xara's photograph is one of the few pre-colony artifacts Zoë brought to Ares; it sits on her desk to this day
 - The shuttle accident that killed her was caused by a mechanical failure—random, meaningless, and devastating
@@ -137,7 +137,7 @@ Xara's arc is brief but foundational: a life cut short, yet one that shaped the 
 - Despite the sparse documentation, her values permeate the Carisco family's approach to psychology, parenting, and cross-species ethics
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

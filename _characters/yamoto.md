@@ -53,15 +53,15 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Councilor Dr. Kenji Yamoto is a respected member of the New Eden Colony Council with responsibility for environmental systems and sustainable agriculture. With an engineering background focused on closed ecological systems, Yamoto oversees the colony's life support infrastructure, hydroponic farms, and atmospheric regulation. His pragmatic, data-driven approach has been instrumental in maintaining New Eden's environmental balance through years of expansion and population growth.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 Yamoto carries himself with the precise posture of an engineer accustomed to monitoring exact measurements. He has neatly kept dark hair (streaked with grey by Book 5), sharp observant eyes behind practical glasses, and a calm demeanor that reflects decades of managing critical systems. He favors functional colony attire with subtle council insignia, and is rarely seen without a datapad displaying environmental readouts. His hands are steady—trained for delicate calibration work—and he moves with economical grace.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Yamoto is defined by:
 
@@ -85,7 +85,7 @@ His weaknesses include:
 - reluctance to approve expansion without extensive verification
 - tendency to internalize stress about system failures
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Amerigo Carisco** — respects his scientific leadership; supported his succession to Chief Scientist; collaborates on understanding environmental impacts on the bismuth network
 - **Councilor Webb** — frequently balances Webb's expansionist agenda with environmental realities; their debates are sharp but productive
@@ -96,14 +96,14 @@ His weaknesses include:
 - **Chief Administrator Santos** — reports on environmental capacity for population planning; their data-driven relationship ensures colony growth stays within sustainable limits
 - **The Twins (Jenni & Xara)** — observes their resonance work with quiet interest; Xara's pattern recognition reminds him of his own analytical mind
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Yamoto's arc is about the quiet work of keeping a colony alive—the invisible infrastructure that allows everything else to function. He represents the voice that asks "Can our systems handle this?" before expansion proceeds, ensuring that growth doesn't outpace sustainability. His journey from pure engineer to councilor who values indigenous knowledge mirrors the colony's broader evolution from survival to partnership with Ares itself.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Key Moments
 - **The Warning (Book 2):** "Every kilopascal matters. Every degree of temperature variance. On Ares, we don't have the luxury of Earth's buffer systems."
 - **The Validation (Book 3):** Jolts in recognition when Xan's glockenspiel reveals atmospheric pressure variance: "That's correct. But how…?"
@@ -113,7 +113,7 @@ Yamoto's arc is about the quiet work of keeping a colony alive—the invisible i
 - **The Legacy (Book 5):** His protocols become standard; his principle—"every kilopascal matters"—becomes colony law
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Environmental Philosophy
 - **Data with Context:** Numbers matter, but so does indigenous perception that can reveal what sensors miss
 - **Sustainable Growth:** Expansion must match life support capacity—not the other way around
@@ -122,7 +122,7 @@ Yamoto's arc is about the quiet work of keeping a colony alive—the invisible i
 - **Every Kilopascal Matters:** On Ares, there is no margin for error—vigilance is survival
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Notable Quotes
 > "Every kilopascal matters. Every degree of temperature variance. On Ares, we don't have the luxury of Earth's buffer systems." — *Book 2*
 
@@ -135,7 +135,7 @@ Yamoto's arc is about the quiet work of keeping a colony alive—the invisible i
 > "We don't conquer Ares. We listen to it. Then we tune ourselves to what we hear." — *Yamoto, reflecting on his career, Book 5*
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Themes
 - **Invisible Work:** The most essential systems are the ones no one thinks about—until they fail
 - **Data and Wisdom:** Numbers alone aren't enough; indigenous knowledge completes the picture
@@ -144,7 +144,7 @@ Yamoto's arc is about the quiet work of keeping a colony alive—the invisible i
 - **Quiet Legacy:** Being remembered not in monuments, but in breathable air and stable systems
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Trivia
 - Yamoto personally calibrates the atmospheric sensors every six months—not because they need it, but because it keeps him connected to the systems he oversees
 - He was the first councilor to formally propose integrating Galinstanian environmental observations into colony monitoring protocols
@@ -155,7 +155,7 @@ Yamoto's arc is about the quiet work of keeping a colony alive—the invisible i
 - The phrase "Yamoto's Question" entered colony lexicon as shorthand for asking "Can our systems handle this?" before any major initiative
 </div>
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

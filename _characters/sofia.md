@@ -31,15 +31,15 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Overview
 Sofia Patel is a New Eden-born medical support specialist and university mentor, part of Xan’s older cohort (approximately thirteen years older than the twins). She is best known for naming the Galinstanian Harbor at Xan’s sixth birthday celebration, choosing the name because “that’s where boats go to be safe from storms.” Gentle, patient, and deeply nurturing, Sofia provides crucial medical and emotional support during the Book 5 rescue.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Physical Description
 Sofia has a warm, open face that invites trust. She has long dark hair she usually pulls back in a practical ponytail, warm brown eyes that crinkle when she smiles, and hands that are gentle but capable. She favors soft, comfortable clothing in muted colors—sweaters, loose pants, sensible shoes for long days. Her presence is calming; people naturally relax around her.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Personality & Skills
 Sofia is defined by:
 - gentle, patient, nurturing nature
@@ -59,7 +59,7 @@ Her weaknesses include:
 - difficulty with confrontation
 - sometimes too gentle for urgent decision-making
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Relationships
 - **Harbor** — bonded Galinstanian; Sofia named Harbor at age five, seeking safety; now they provide safety together
 - **Jenni & Xara Carisco-Bowers** — younger peers; Sofia helps monitor their well-being during the rescue
@@ -67,14 +67,14 @@ Her weaknesses include:
 - **Duška Santoso Carisco** — collaborator in the Stewardship Program
 - **Zuri Yazzie** — friend from the same cohort
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Story Overview (Non-Spoiler)
 Sofia’s arc is about the power of gentle care. She named Harbor seeking safety as a child; as an adult, she has become the safety she sought. Her role in Book 5 is quiet but essential—she brings medical expertise to the rescue site and provides the calm, patient presence that helps the traumatized collective stabilize. She represents the generation that learned to integrate care into both human and Galinstanian relationships.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

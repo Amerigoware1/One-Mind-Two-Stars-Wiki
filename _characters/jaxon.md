@@ -38,15 +38,15 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Jaxon Bowers is a New Eden engineer whose life becomes deeply intertwined with Celectra's from childhood onward. Known for his steadiness, loyalty, and quiet brilliance, he evolves from a supportive friend into a key architect of the Communion Interface—the technology that eventually supplements and partially replaces Celectra's natural EM-bridge abilities. His arc spans five books, following his growth from a curious boy into a father, partner, and one of the colony's most respected engineers.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 Jaxon is tall, lean, and strong from years of hands-on engineering work. He has dark hair, warm brown eyes, and a calm, grounded presence. His posture and movements often contrast Celectra's dual-body fluidity—he is a single, steady point in her often-distributed world.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Jaxon is defined by:
 
@@ -65,7 +65,7 @@ He excels at:
 
 He is often the emotional counterweight to Celectra's four-hemisphere internal debates.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Celectra Carisco** — partner, later co-parent of twin daughters
 - **Amerigo Carisco** — mentor and later supervisor
@@ -74,14 +74,14 @@ He is often the emotional counterweight to Celectra's four-hemisphere internal d
 - **Ananya Patel** — engineering collaborator
 - **Ripple, Chime, Stan** — Galinstanians he learns to trust and work alongside
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Jaxon's journey centers on responsibility, love, and the tension between supporting Celectra as a person and supporting the systems that depend on her. His engineering innovations shape the future of human–Galinstanian communication, and his personal growth mirrors the colony's transition from survival to stewardship.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

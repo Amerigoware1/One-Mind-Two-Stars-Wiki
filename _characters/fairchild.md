@@ -47,15 +47,15 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Terry Fairchild is a senior nurse with over two decades of medical experience who served as Celectra Carisco's primary caregiver during Dr. Douglas Kret's unethical experimentation period in 2232. Of multiracial heritage from Durban, South Africa, Fairchild presents with intentionally neutral features that reflect their non-binary identity and uses they/them pronouns. Despite being employed by Dr. Kret, they maintained strong ethical boundaries and provided crucial compassionate care to the traumatized seven-year-old Celectra, ultimately playing a key role in exposing Kret's misconduct and helping secure his conviction.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 Fairchild's appearance is intentionally gender-neutral: "Their features were pleasantly neutral, neither conventionally masculine nor feminine, and their short hair offered no additional clues." They favor practical medical uniforms in muted tones, always immaculately pressed, with their name badge prominently displayed. Their eyes are warm and observant, and they carry themselves with the quiet confidence of someone who has seen both the best and worst of medical practice.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Terry is defined by:
 
@@ -79,7 +79,7 @@ Their weaknesses include:
 - reluctance to confront authority until ethics are clearly violated
 - occasional self-doubt about whether they acted soon enough
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Celectra Carisco** — developed a protective, almost parental relationship; provided normalcy through breakfast rituals and games during trauma; Celectra remembers them as "the one who saw me as a person"
 - **Dr. Douglas Kret** — professional relationship marked by growing moral revulsion; followed orders until crossing an ethical line, then became Kret's most effective accuser
@@ -87,14 +87,14 @@ Their weaknesses include:
 - **Utara (AI)** — worked in parallel during the separation emergency; both recognized the crisis and triggered override protocols
 - **New Eden Medical Community** — respected senior figure who now chairs ethics review committees and trains new staff on boundary maintenance
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Terry's arc is about the weight of professional duty when it conflicts with moral conviction. They represent the quiet courage of those who work within flawed systems but refuse to let those systems define their ethics. Their story is not about grand heroics, but about the cumulative impact of small acts of compassion—and the pivotal moment when silence is no longer an option.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

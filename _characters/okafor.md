@@ -52,15 +52,15 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Councilor Chibuike Okafor is a New Eden Colony Council member who chairs the Athletics Committee and oversees recreation and sports programs. Originally from Lagos, Nigeria, Okafor brings a rigorous, principle-based approach to competition fairness while gradually learning to accommodate exceptional cases like Celectra Carisco. Initially skeptical of allowing Celectra to compete in martial arts tournaments due to her dual-body advantage, he eventually developed respect for her discipline and supported innovative solutions that maintained competitive integrity.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 Okafor carries himself with the upright posture of someone accustomed to presiding over formal proceedings. He has close-cropped salt-and-pepper hair, sharp observant eyes, and a demeanor that balances authority with approachability. He favors conservative colony attire—dark jumpsuits with Council insignia—and is rarely seen without a datapad or stylus. His voice is measured and deliberate, and he has a habit of steepling his fingers when considering difficult decisions.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Okafor is defined by:
 
@@ -83,7 +83,7 @@ His weaknesses include:
 - tendency to prioritize procedural fairness over individual circumstance
 - occasional difficulty articulating respect without seeming condescending
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Celectra Carisco** — evolves from skeptical authority figure to respectful councilor who acknowledges her discipline and contributions
 - **Sensei Onishi Kisa** — professional counterpart on Athletics Committee; their debates shape colony sports policy
@@ -91,14 +91,14 @@ His weaknesses include:
 - **Council Members (Santos, Webb, etc.)** — works within council structure, often taking conservative positions that balance more progressive voices
 - **New Eden Youth** — takes role as youth overseer seriously, emphasizing discipline while providing opportunities
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Okafor's arc is about the evolution of fairness—learning that equal treatment doesn't always mean identical rules, and that true competition honors both principle and person. His journey from skeptic to respectful supporter mirrors the colony's broader adaptation to unique individuals. He represents the valuable voice that asks "How do we ensure this is fair?"—and then listens when the answer requires rethinking the question.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

@@ -27,15 +27,15 @@ book3_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Overview
 Kiri is a Galinstanian of the Northern Cluster, known for her sharp, precise presence—like cutting crystal. She was one of the first Galinstanians Celectra named, and she chose to be female after Celectra explained human concepts of gender. Curious about human stories and culture, Kiri represents the Galinstanian impulse to understand the beings who have come to share their world. Though ancient by human measure, she carries a young, bright energy in her curiosity, balanced by an older resonance when wisdom is needed.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Physical Description
 Kiri’s presence is sharp and precise, her EM field carrying the clarity of cut crystal. When she moves, there is an economy to it—nothing wasted, nothing blurred. Her form is fluid mercury with edges that feel intentional rather than accidental. She tends to hold herself apart slightly during group communions, not from distance but from focus; she is watching, learning, absorbing. When she speaks, her transmissions carry a brightness that cuts through noise, each word chosen with care.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Personality & Skills
 Kiri is defined by:
 - sharp, precise presence (like cutting crystal)
@@ -55,7 +55,7 @@ Her weaknesses include:
 - precision can read as coldness to those who don't know her
 - tendency to observe before acting
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Relationships
 - **Celectra Carisco-Bowers** — namer and friend; Kiri chose to be female because she wanted to be like Celectra
 - **Stan** — elder and anchor of the Northern Cluster
@@ -63,14 +63,14 @@ Her weaknesses include:
 - **Chime** — fellow Galinstanian; Kiri joins Chime in crafting the circlet amplifiers
 - **Maya Keahi** — artist; Kiri perceives Maya's portrait of her with sophisticated understanding, noting that Maya "grasps that form and essence are connected"
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Story Overview (Non-Spoiler)
 Kiri’s arc is about curiosity and choice. She approached Celectra as a young Galinstanian asking about human gods, confused by the concept of stories told to explain what wasn't understood. She chose to be female because she saw something in Celectra she wanted to emulate. In Book 3, she helps craft the circlet amplifiers—not to keep Celectra in service, but to keep her as a friend. Kiri understands that Celectra is becoming something new, and her gift is designed to carry her through that transition. She represents the Galinstanian capacity for profound friendship, expressed through precision, clarity, and the willingness to ask questions.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>
