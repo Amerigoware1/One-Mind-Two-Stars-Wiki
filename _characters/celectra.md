@@ -120,27 +120,16 @@ her long-term care plan.
 <div class="card-bg" markdown="1">
 
 ## Personality & Skills
-While Celectra utilizes a "Four Quadrant" heuristic for decision-making, she is cognitively aware that these "voices" are simplified interfaces for a highly distributed neural network. Her specialization in Applied Cognitive Science allows her to identify these internalizations as distinct functional modules rather than literal hemispheric splits.
+Celectra’s **Internal Dashboard**  
 
-She categorizes her internal monologue into four primary Functional Tiers:
+Celectra views her consciousness not as a single voice, but as a Board of Directors. While she knows the “left‑brain / right‑brain” split is a scientific myth, she uses these four categories as a mental shorthand to weigh her options—especially when her training in multiplicity studies tells her she is experiencing “data‑clashes.”
 
-Executive-Analytical (The "Left-Logic" heuristic)
-
-Technical focus: Boolean logic, syntax construction, and engineering protocols. Primarily rooted in prefrontal-parietal integration.
-
-Gestalt-Intuitive (The "Right-Logic" heuristic)
-
-Technical focus: Pattern recognition, EM-field modeling, and non-linear system analysis. Driven by high-bandwidth temporal-occipital processing.
-
-Relational-Empathetic (The "Left-Emotional" heuristic)
-
-Technical focus: Social-semiotic decoding, linguistic nuance, and relational modeling.
-
-Visceral-Instinctive (The "Right-Emotional" heuristic)
-
-Technical focus: Limbic resonance, rapid-response survival heuristics, and abstract creative synthesis.
-
-The Meta-Cognitive Layer: Celectra views the "disagreements" between these tiers as data-clashes. In her private logs, she describes "Self" not as any one voice, but as the Integrative Processor that resolves these conflicting streams into a single vector of action.
+| The Voice | What It Handles (The Layman Version) | Her Technical Reality |
+|-----------|--------------------------------------|------------------------|
+| **The Engineer** (Left‑Analytical) | Math, physics, and “How do I fix this?” | Linear logic and engineering protocols. |
+| **The Weaver** (Right‑Analytical) | Patterns, “vibes,” and EM‑fields. | Non‑linear data and system modeling. |
+| **The Diplomat** (Left‑Emotional) | People, social cues, and “Are they okay?” | Linguistic nuance and social‑modeling. |
+| **The Wildcard** (Right‑Emotional) | Art, gut instincts, and “What if we try this?” | Abstract synthesis and survival heuristics. |
 
 Her natural abilities include:
 
