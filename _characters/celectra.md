@@ -69,19 +69,26 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Celectra Ambar Carisco is the first known dual-bodied human consciousness and the foundational bridge between humanity and the Galinstanian species of Ares. Born in 2225 after a radiation-induced consciousness fusion event, she grew into a diplomat, scientist, and cultural cornerstone whose natural electromagnetic communion shaped the colony’s survival and identity. Her life spans five books of the *Two Stars* saga, evolving from a traumatized child into a mother, scholar, and architect of interspecies harmony.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 Celectra’s two bodies are genetically identical, each standing 1.49 m and weighing ~41 kg in early adulthood. Both have white hair threaded with fiber-optic strands for formal occasions, milk chocolate irises, and a distinctive EM “signature” detectable by Galinstanians. During Book 3, pregnancy affects only her right body, creating visible asymmetry that becomes a major emotional and logistical challenge.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Medical Summary
 Celectra’s physiology is the subject of three major medical dossiers maintained by  
 Dr. Alex Cruiz and the New Eden Medical Corps:
+
 </div>
 <div class="card-bg" markdown="1">
+
 ### Mononous Disomas (Dual-Body Physiology)
 Celectra possesses a unique dual-bodied condition known as **mononous disomas**, in
 which two fully functional bodies share a single consciousness and a unified
@@ -89,14 +96,18 @@ sensory-emotional network. Both bodies exhibit synchronized autonomic responses,
 but can act independently with deliberate control. This condition is stable but
 requires ongoing monitoring for metabolic load, neural fatigue, and resonance
 overextension.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ### Albinism
 Both bodies present with **oculocutaneous albinism**, including pale skin and white
 hair. The melanin in the irises was present before the en utero radiation exposure. Albinism does not interfere with communion but increases vulnerability during field operations.
 - **<a href="../celectra-care-protocol-dossier.html">Celectra’s Skin Care Protocol Dossier</a>** 
+
 </div>
 <div class="card-bg" markdown="1">
+
 ### Growth Delay
 Celectra’s early childhood included **retarded growth velocity**, linked to
 the placental damage. Growth
@@ -104,15 +115,32 @@ normalized in adolescence but remains well below the colony average. Alex
 monitors her nutritional intake, bone density, and endocrine markers as part of
 her long-term care plan.
 - **<a href="../CelectraGrowth.html">Celectra Growth & Development Report</a>** 
+
 </div>
 <div class="card-bg" markdown="1">
-## Personality & Skills
-Celectra’s consciousness is divided into four hemispheric “voices” that often disagree but ultimately integrate into a unified self:
 
-- **Left-Analytical** — logic, engineering, scientific reasoning  
-- **Right-Analytical** — pattern recognition, intuition, EM-field modeling  
-- **Left-Emotional** — empathy, relational insight, vulnerability  
-- **Right-Emotional** — creativity, instinct, spiritual resonance  
+## Personality & Skills
+While Celectra utilizes a "Four Quadrant" heuristic for decision-making, she is cognitively aware that these "voices" are simplified interfaces for a highly distributed neural network. Her specialization in Applied Cognitive Science allows her to identify these internalizations as distinct functional modules rather than literal hemispheric splits.
+
+She categorizes her internal monologue into four primary Functional Tiers:
+
+Executive-Analytical (The "Left-Logic" heuristic)
+
+Technical focus: Boolean logic, syntax construction, and engineering protocols. Primarily rooted in prefrontal-parietal integration.
+
+Gestalt-Intuitive (The "Right-Logic" heuristic)
+
+Technical focus: Pattern recognition, EM-field modeling, and non-linear system analysis. Driven by high-bandwidth temporal-occipital processing.
+
+Relational-Empathetic (The "Left-Emotional" heuristic)
+
+Technical focus: Social-semiotic decoding, linguistic nuance, and relational modeling.
+
+Visceral-Instinctive (The "Right-Emotional" heuristic)
+
+Technical focus: Limbic resonance, rapid-response survival heuristics, and abstract creative synthesis.
+
+The Meta-Cognitive Layer: Celectra views the "disagreements" between these tiers as data-clashes. In her private logs, she describes "Self" not as any one voice, but as the Integrative Processor that resolves these conflicting streams into a single vector of action.
 
 Her natural abilities include:
 
@@ -121,8 +149,10 @@ Her natural abilities include:
 - harmonic pattern recognition  
 - cross-species diplomacy  
 - advanced neuro-interface research  
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Jaxon Bowers** — partner, later father of her twin daughters  
 - **Zoë Carisco** — mother, emotional anchor  
@@ -130,15 +160,20 @@ Her natural abilities include:
 - **Xan Carisco** — younger brother, acoustic-communication innovator  
 - **Stan, Chime, Harbor, Logic, Ripple** — Galinstanian friends and collaborators  
 - **Jenni Jo & Xara Zo** — her daughters (Book 3 onward)  
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Story Overview (Non-Spoiler)
 Across the series, Celectra evolves from a child struggling with trauma and dual embodiment into a scientist and diplomat whose work reshapes the future of Ares. Her arc centers on identity, purpose, legacy, and the ethics of bridging two species. By Book 5, she becomes a steward of the planetary resonance network and a mother guiding the next generation of bridges.
+
 </div>
 
 ---
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
 </div>
