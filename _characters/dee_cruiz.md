@@ -38,15 +38,15 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Overview
 Dee Cruiz is a long‑time member of the New Eden community and the wife of Dr. Alexander “Alex” Cruiz. Known for her warmth, humor, and steady presence, she becomes an unofficial aunt to the Carisco children and a beloved figure in the colony. Dee is the kind of person who makes any room feel safer simply by being in it. Her story is one of quiet, essential strength — the emotional bedrock upon which the more visible leaders of the colony rely.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Physical Description
 Dee has a soft, expressive face, warm brown skin, and a distinctive voice — low, airy, and instantly recognizable. She carries herself with relaxed confidence, often wearing practical clothing with small personal touches of color or pattern. Her smile is gentle but knowing, and her eyes miss nothing.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Personality & Skills
 Dee is defined by:
 
@@ -65,7 +65,7 @@ Her strengths include:
 
 She is the person Alex decompresses with after long shifts, and the one Zoë trusts with the emotional undercurrents of the colony.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Relationships
 - **Dr. Alexander Cruiz** — husband, lifelong partner, his emotional anchor
 - **Zoë Carisco** — close friend and confidante
@@ -75,14 +75,14 @@ She is the person Alex decompresses with after long shifts, and the one Zoë tru
 - **Jenni Jo & Xara Zo** — grand-nieces she spoils shamelessly
 - **Ripple** — a Galinstanian who enjoys her calm, uncomplicated presence
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)
 Dee’s role in the series is subtle but essential. She provides emotional grounding for Alex, stability for the Carisco family, and a sense of continuity as the colony grows and changes. She is not a scientist or a council member, but her influence is felt in the quiet spaces — the kitchen table conversations, the late-night check-ins, the moments when someone needs a steady hand. Her arc is a testament to the power of community and the profound impact of a life lived in service to others.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

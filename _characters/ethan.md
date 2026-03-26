@@ -31,15 +31,15 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Overview
 Ethan Johnson is a New Eden-born interface technology specialist, part of Xan’s older cohort (approximately fourteen years older than the twins). He is the steadier, more methodical half of the Johnson twins, known for naming the Galinstanian Flicker alongside his sister Emma. Patient, grounding, and deeply reliable, Ethan specializes in the stability and robustness of ANI interfaces—building foundations that can support the speed his sister creates.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Physical Description
 Ethan has the same dark hair as his sister but wears it longer, often tied back. His features are broader, his presence calmer. Where Emma moves fast, Ethan moves deliberately—each action considered before executed. He has a way of standing that makes people feel anchored, a solidity that doesn’t demand attention but is impossible to ignore when things go wrong. He favors practical, durable clothing in muted colors, and he has the habit of resting his hands on whatever surface is nearest when he’s thinking, as if grounding himself.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Personality & Skills
 Ethan is defined by:
 - steadiness and reliability
@@ -59,7 +59,7 @@ His weaknesses include:
 - tendency to slow things down when speed is needed
 - difficulty with Emma’s impatience
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Relationships
 - **Emma Johnson** — twin sister; they named Flicker together and still work as a team, though their roles have diverged
 - **Flicker** — shared Galinstanian; Ethan connects with Flicker through steadiness and reliability
@@ -67,14 +67,14 @@ His weaknesses include:
 - **Kowan Elian** — collaborator in interface testing; Ethan appreciates Kowan’s methodical approach
 - **Xan Carisco** — older peer and friend from childhood
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Story Overview (Non-Spoiler)
 Ethan’s arc is about the value of foundations. He named Flicker as a child, drawn to brightness but also providing the steadiness that made the connection sustainable. As an adult, he builds interfaces that don’t fail—systems that can be trusted. In Book 5, his work ensures the rescue operation has stable technical support, a foundation his sister’s speed can build on. He represents the generation that learned that speed without stability is just noise, and that true connection requires both.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

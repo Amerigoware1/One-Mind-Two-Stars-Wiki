@@ -65,15 +65,18 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
+
 ## Overview
 Ananya Patel moved from Utopis to New Eden when she was nine. Direct, energetic, and scientifically disciplined, she treats Celectra's extraordinary life like regular teenage drama—offering grounded humor and unwavering support. Known as "The Snack Queen" for her habit of showing up with treats during stressful moments, Ananya becomes one of the first volunteers for the Listener Corps and later applies her xenobiology training to advance human–Galinstanian communication research.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
+
 ## Physical Description
 Ananya has warm brown skin, dark wavy hair she often wears in a practical high ponytail, and expressive eyes that shift from playful to intensely focused depending on the task. She favors comfortable, functional clothing with pockets for snacks and datapads. As she matures, she carries herself with the quiet confidence of someone who knows her strengths and isn't afraid to use them.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Ananya is defined by:
 - **direct, no-nonsense communication**
@@ -91,7 +94,8 @@ Her weaknesses include:
 - tendency to take on too much to help friends
 - occasional bluntness that needs gentle correction
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
+
 ## Relationships
 - **Celectra Carisco** — best friend since childhood; Ananya treats her like a person, not a phenomenon
 - **Chen Wei** — fellow Listener Corps translator; research collaborator
@@ -100,11 +104,15 @@ Her weaknesses include:
 - **Lira Keahi** — mentor figure in psychology/Listener training
 - **Stan & the Galinstanian collective** — professional respect; she learns to receive communion with clarity and care
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
+
 ## Story Overview (Non-Spoiler)
 Ananya's arc is about turning friendship into function—using her scientific training and emotional intelligence to help build systems that outlast any one person. She never seeks the spotlight, but her steady presence, sharp mind, and willingness to show up (often with snacks) make her indispensable to Celectra, the Listener Corps, and the broader project of human–Galinstanian integration.
 </div>
-</div>
-
 ---
+<div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
+</div>
+</div>

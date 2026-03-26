@@ -31,15 +31,15 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Overview
 Emma Johnson is a New Eden-born interface technology specialist, part of Xan’s older cohort (approximately fourteen years older than the twins). She is the more forward, boundary-pushing half of the Johnson twins, known for naming the Galinstanian Flicker alongside her brother Ethan. Quick, direct, and endlessly curious, Emma specializes in the speed and responsiveness of ANI interfaces—making connection feel instantaneous rather than mechanical.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Physical Description
 Emma has sharp, angular features and dark hair she keeps short for practicality. Her eyes are quick-moving, always scanning, always finding the next thing to examine. She has the restless energy of someone who gets impatient with slowness—her fingers tap, her knee bounces, her attention moves faster than most people can track. She favors simple, functional clothing that won’t get in her way, and she has a habit of pulling at the collar of her shirt when she’s thinking.
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Personality & Skills
 Emma is defined by:
 - restless curiosity and forward momentum
@@ -59,7 +59,7 @@ Her weaknesses include:
 - tendency to move too fast for careful work
 - sometimes forgetting that not everyone thinks at her speed
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Relationships
 - **Ethan Johnson** — twin brother; they named Flicker together and still work as a team, though their roles have diverged
 - **Flicker** — shared Galinstanian; Emma connects with Flicker through speed and brightness
@@ -67,14 +67,14 @@ Her weaknesses include:
 - **Kowan Elian** — collaborator in interface testing; Emma pushes him to move faster
 - **Xan Carisco** — older peer and friend from childhood
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 ### Story Overview (Non-Spoiler)
 Emma’s arc is about the value of speed—not just technical speed, but the speed of connection itself. She named Flicker as a child because the Galinstanian moved like light; as an adult, she builds interfaces that move fast enough to feel like thought. In Book 5, her expertise in rapid response helps the rescue operation move when it needs to move. She represents the generation that learned that waiting too long can be a form of silence, and that sometimes speed is the most compassionate thing you can offer.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>

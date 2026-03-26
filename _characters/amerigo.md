@@ -61,17 +61,22 @@ book5_arc: >
 ---
 
 <div class="article-content">
-<div class="card-bg">
+<div class="card-bg" markdown="1">
+
 ## Overview
 Amerigo Carisco is New Eden’s Chief Scientist, a founding member of the colony, and one of the most influential scientific minds on Ares. Brilliant, intense, and deeply principled, he becomes both the architect of humanity’s scientific future and the emotional core of the Carisco family. His relationship with Celectra — first as a father terrified for his daughter’s survival, later as a collaborator in shaping interspecies communication — defines much of the colony’s early history.
 
 Amerigo’s arc spans five books, charting his evolution from a driven researcher to a statesman whose work shapes the long-term coexistence of humans and Galinstanians.
+
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
+
 ## Physical Description
 Amerigo is tall, sharp-featured, and expressive, with dark hair that grays early at the temples. His posture is upright and purposeful, and his eyes carry the intensity of someone who thinks in equations even while making breakfast. He has a habit of pacing when deep in thought and rubbing the bridge of his nose when frustrated.
+
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Amerigo is defined by:
 
@@ -95,8 +100,10 @@ His personal strengths include:
 - emotional resilience  
 - the ability to admit when he’s wrong (eventually)  
 - the ability to balance logic with compassion  
+
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
+
 ## Relationships
 - **Zoë Carisco** — wife, emotional equal, grounding force  
 - **Celectra Carisco** — daughter, scientific collaborator, source of pride and fear  
@@ -105,15 +112,17 @@ His personal strengths include:
 - **Dr. Alexander Cruiz** — best friend, co-strategist, trusted advisor  
 - **Jaxon Bowers** — mentee, later son-in-law figure  
 - **Stan, Chime, Logic** — Galinstanians he learns to understand through Celectra’s communion  
+
 </div>
-<div class="card-bg">
+<div class="card-bg" markdown="1">
+
 ## Story Overview (Non-Spoiler)
 Amerigo’s journey is one of responsibility, discovery, and the emotional cost of raising a child who becomes essential to the survival of two species. His scientific leadership shapes the colony’s future, while his personal arc explores the tension between protecting Celectra and empowering her to define her own path.
 </div>
 
 ---
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
 {% include story-arcs.html %}
 </div>
 </div>
