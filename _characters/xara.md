@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Xara Kret
-portrait: "/assets/images/xarabook1.webp"
+portrait: "/assets/images/xara-book5.webp"
 portrait-book1: "/assets/images/xara-book1.webp"
 portrait-book2: "/assets/images/xara-book2.webp"
 portrait-book3: "/assets/images/xara-book2.webp"
