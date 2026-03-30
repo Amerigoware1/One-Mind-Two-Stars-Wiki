@@ -7,7 +7,7 @@ portrait-book2: "/assets/images/lian-book2.webp"
 portrait-book3: "/assets/images/lian-book3.webp"
 portrait-book4: "/assets/images/lian-book4.webp"
 portrait-book5: "/assets/images/lian-book5.webp"
-affiliation: Ares Colony Engineering Directorate; Hydrological Engineer
+affiliation: Ares Colony Engineering Directorate; Chief Hydrological Engineer
 status: Active
 birthday: February 10, 2096
 birthplace: Earth (Utopis Station)
@@ -46,7 +46,7 @@ book5_arc: >
 <div class="article-content">
 <div class="card-bg" markdown="1">
 ## Overview
-Agricultural Director Lian Chen is a pragmatic and highly skilled engineer responsible for the water security and agricultural sustainability of the Ares colony. A veteran of two decades on Utopis Station, she sought a new beginning on Ares following the dissolution of her marriage to Dr. Yuki Chen. Her leadership is defined by a fierce commitment to human survival needs, balanced with a growing, if sometimes grudging, acknowledgment of planetary ethics. She is known for her directness, her exceptional grasp of hydrological systems, and her complicated professional history with Dr. Yuki Chen.
+Chief Hydrological Engineer Lian Chen is a pragmatic and highly skilled engineer responsible for the water security and agricultural sustainability of the Ares colony. A veteran of two decades on Utopis Station, she sought a new beginning on Ares following the dissolution of her marriage to Dr. Yuki Chen. Her leadership is defined by a fierce commitment to human survival needs, balanced with a growing, if sometimes grudging, acknowledgment of planetary ethics. She is known for her directness, her exceptional grasp of hydrological systems, and her complicated professional history with Dr. Yuki Chen.
 </div>
 <div class="card-bg" markdown="1">
 ## Physical Description
@@ -82,7 +82,7 @@ Her weaknesses include:
 - **Amerigo Carisco** — professional colleague; collaborates on subsurface construction projects affecting aquifers
 - **Councilor Santos & Webb** — reports to Council; defends resource proposals against political scrutiny
 - **Ananya Patel & Chen Wei** — oversees agricultural impact during Book 3 interface testing near hydroponic zones
-- **Ares Colony Science & Engineering Directorate** — leads water security and agricultural sustainability divisions
+- **Ares Colony Chief Hydrological Engineer** — leads water security and agricultural sustainability divisions
 </div>
 <div class="card-bg" markdown="1">
 ## Story Overview (Non-Spoiler)

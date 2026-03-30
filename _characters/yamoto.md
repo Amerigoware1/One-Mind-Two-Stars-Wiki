@@ -7,7 +7,7 @@ portrait-book2: "/assets/images/yamoto-book2.webp"
 portrait-book3: "/assets/images/yamoto-book3.webp"
 portrait-book4: "/assets/images/yamoto-book4.webp"
 portrait-book5: "/assets/images/yamoto-book5.webp"
-affiliation: New Eden Colony Council; Environmental Systems Director; Life Support Oversight
+affiliation: New Eden Colony Council; Environmental Systems Director
 status: Active
 birthday: September 14, 2095
 birthplace: Kyoto, Japan, Earth
