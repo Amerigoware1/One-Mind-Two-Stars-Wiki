@@ -7,7 +7,7 @@ portrait-book2: "/assets/images/webb-book2.webp"
 portrait-book3: "/assets/images/webb-book3.webp"
 portrait-book4: "/assets/images/webb-book4.webp"
 portrait-book5: "/assets/images/webb-book5.webp"
-affiliation: New Eden Founders; Agricultural Sciences Division; Council (Former)
+affiliation: New Eden Founders; Agricultural Sciences Division; Council
 status: Alive
 birthday: August 29, 2085
 birthplace: Earth (pre‑Ares migration)

@@ -7,15 +7,15 @@ portrait-book2: "/assets/images/lian-book2.webp"
 portrait-book3: "/assets/images/lian-book3.webp"
 portrait-book4: "/assets/images/lian-book4.webp"
 portrait-book5: "/assets/images/lian-book5.webp"
-affiliation: Ares Colony Science & Engineering Directorate; Agricultural Director; Hydrological Engineer
+affiliation: Ares Colony Engineering Directorate; Hydrological Engineer
 status: Active
 birthday: February 10, 2096
 birthplace: Earth (Utopis Station)
-book1_age: "47.0"
-book2_age: "54.0"
-book3_age: "61.0"
-book4_age: "70.0"
-book5_age: "77.0"
+book1_age: "46.7"
+book2_age: "53.8"
+book3_age: "60.7"
+book4_age: "68.9"
+book5_age: "75.9"
 book1_title: "The Transfer"
 book1_arc: >
   Lian spends the early part of this period completing her tenure on Utopis Station before transferring to the fledgling Ares colony. She arrives with two decades of hydrological engineering experience, seeking a clean break from her former life and marriage to Dr. Yuki Chen. She immerses herself immediately in assessing Ares' water security, establishing the baseline systems that will support the colony's expansion. While not a central POV character, her foundational work on aquifer mapping and recycling systems enables the colony's survival during these early years.
