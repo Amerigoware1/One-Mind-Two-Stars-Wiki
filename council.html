@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Council Chamber - One Mine Two Stars Wiki</title>
+  <title>The Plenum - One Mine Two Stars Wiki</title>
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="stylesheet" href="WikiStyle.css">
   <style>
@@ -29,13 +29,30 @@
     .council-table td {
       padding: 12px 10px;
       border-bottom: 1px solid #4a3a2a;
-      vertical-align: top;
+      vertical-align: middle;
     }
     .council-table tr:last-child td {
       border-bottom: none;
     }
     .council-table tr:hover {
       background: rgba(200, 150, 80, 0.1);
+    }
+    .portrait-thumb {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: 50%;
+      background: #2c3e50;
+      border: 2px solid #b88a4a;
+    }
+    .member-link {
+      font-weight: bold;
+      color: #ffcc99;
+      text-decoration: none;
+    }
+    .member-link:hover {
+      text-decoration: underline;
+      color: #ffaa66;
     }
     .seat-number {
       display: inline-block;
@@ -125,12 +142,19 @@
       padding: 10px 8px;
       border-bottom: 1px solid #3a4a5a;
     }
-    .directorate-table td:first-child, .council-table td:first-child {
-      font-weight: 500;
+    .technocracy-note {
+      background: rgba(30, 40, 50, 0.8);
+      border-left: 4px solid #ffaa33;
+      padding: 0.8rem 1.2rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
-    .small-note {
-      font-size: 0.85rem;
-      color: #ccaa77;
+    .technocracy-note strong {
+      color: #ffcc99;
     }
   </style>
 </head>
@@ -140,7 +164,7 @@
     <a href="index.html" class="home-button">🏠 Home</a>
   </div>
 
-  <h1 class="gradient-title">Council Chamber</h1>
+  <h1 class="gradient-title">The Plenum and the Council Chamber</h1>
   <div class="subtitle">"Not law, but wisdom. Not rule, but consensus."</div>
 
   <!-- Infobox -->
@@ -148,7 +172,7 @@
     <table class="infobox">
       <tr>
         <td colspan="2" class="text-center pb-2">
-          <img src="assets/images/gallery/council.webp" alt="The circular Plenum housing the Council Chamber" class="portrait">
+          <img src="assets/images/gallery/plenum.webp" alt="The circular Plenum housing the Council Chamber" class="portrait">
           <div class="image-caption">Exterior View of the Plenum</div>
         </td>
       </tr>
@@ -174,7 +198,7 @@
       </tr>
       <tr>
         <th>Security Chief</th>
-        <td>Evelyn Roan (office in Chamber)</td>
+        <td>Evelyn Roan (office in dome)</td>
       </tr>
       <tr>
         <th>Key Role</th>
@@ -193,9 +217,14 @@
     <!-- OVERVIEW -->
     <div class="card-bg">
       <h2 class="section-header">Overview</h2>
-      <p>The <strong>Council Chamber</strong> is New Eden's seat of governance — though "governance" here means facilitation rather than rule. As one of the original five buildings encircling the central roundabout, its exterior is identical to its neighbors: graceful curved facades, sustainable local stone composites, and integrated Utara interface panels. But inside, it is unique: a perfect circular hall where 12 council members sit among the citizens they serve, with no elevated podium, no head of the table, and no physical distinction between governing and governed.</p>
+      <p>The <strong>Council Chamber</strong> on the ground floor is New Eden's seat of governance — though "governance" here means facilitation rather than rule. As one of the original five buildings encircling the central roundabout, its exterior is identical to its neighbors: graceful curved facades, sustainable local stone composites, and integrated Utara interface panels. But inside, it is unique: a perfect circular hall where 12 council members sit among the citizens they serve, with no elevated podium, no head of the table, and no physical distinction between governing and governed.</p>
       
       <p>The Chamber hosts weekly open sessions, resource allocation debates, dispute mediation, ceremonial events, and — most critically — the tribunals that have shaped colony leadership. It is also the formal interface between human governance and the Galinstanian species, a role made possible by one extraordinary individual.</p>
+      
+      <div class="technocracy-note">
+        <span>⚙️</span>
+        <span><strong>Technocratic Governance:</strong> New Eden is a <strong>democratic technocracy</strong> — leadership is vested in experts and department heads whose authority derives from proven competence in their fields. Council seats are held by directors of critical sectors (medicine, engineering, science, etc.), and policy decisions are grounded in data, feasibility studies, and Utara's long‑term projections. This system ensures that those who govern are those who truly understand the systems they oversee.</span>
+      </div>
       
       <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 1.2rem 0 0 0;">
         <span class="feature-badge">⚖️ 12 Seats</span>
@@ -203,6 +232,7 @@
         <span class="feature-badge">⚡ Galinstanian Interface</span>
         <span class="feature-badge">🔍 Tribunal Venue</span>
         <span class="feature-badge">👮 Security Office</span>
+        <span class="feature-badge">📊 Technocracy</span>
       </div>
     </div>
 
@@ -223,7 +253,7 @@
       <p>On the top floor is the office of the <strong>Chief of Security</strong>. Currently occupied by Councilwoman Evelyn Roan, this space functions as both her administrative center and the holding area for those awaiting tribunals. Its proximity to the Chamber reflects the colony's belief that security is not separate from governance but integral to it.</p>
     </div>
 
-    <!-- THE 12 SEATS: COUNCIL ROSTER (NOW 13 including non-voting) -->
+    <!-- THE 12 SEATS: COUNCIL ROSTER WITH PORTRAITS AND LINKS -->
     <div class="card-bg">
       <h2 class="section-header">The Twelve Seats</h2>
       <p>The council comprises 12 voting members, each representing a vital sector of colony life. Seats are held by the heads of major departments, with appointments subject to council confirmation. The roster evolves across the series as leadership changes.</p>
@@ -231,6 +261,7 @@
       <table class="council-table">
         <thead>
           <tr>
+            <th>Portrait</th>
             <th>Seat</th>
             <th>Portfolio</th>
             <th>Book 1 Incumbent</th>
@@ -239,24 +270,106 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td><span class="seat-number">1</span></td><td>Administrator</td><td colspan="2"><strong>Isabella Santos</strong></td><td>Presiding officer; colony-wide coordination</td></tr>
-          <tr><td><span class="seat-number">2</span></td><td>Security</td><td colspan="2"><strong>Evelyn Roan</strong></td><td>Leads investigations, tribunals; office in Chamber</td></tr>
-          <tr><td><span class="seat-number">3</span></td><td>Medicine</td><td>Douglas Kret</td><td><strong>Dr. Alex Cruiz</strong></td><td>Kret removed by tribunal (Book 1); Cruiz appointed</td></tr>
-          <tr><td><span class="seat-number">4</span></td><td>Science & Technology</td><td>Lorain Troy</td><td><strong>Amerigo Carisco</strong></td><td>Troy retires early Book 3 (illness); Carisco appointed</td></tr>
-          <tr><td><span class="seat-number">5</span></td><td>Agriculture</td><td colspan="2"><strong>Dr. Nathaniel Webb</strong></td><td>Food systems, terraforming support</td></tr>
-          <tr><td><span class="seat-number">6</span></td><td>Environmental Systems</td><td colspan="2"><strong>Dr. Kenji Yamoto</strong></td><td>Water management, resource recycling</td></tr>
-          <tr><td><span class="seat-number">7</span></td><td>Athletics & Recreation</td><td colspan="2"><strong>Chibuike Okafor</strong></td><td>Activity Center, youth sports, colony games</td></tr>
-          <tr><td><span class="seat-number">8</span></td><td>Logistics & Transportation</td><td colspan="2">Nazia Thälmann</td><td>Materials and personnel transportation</td></tr>
-          <tr><td><span class="seat-number">9</span></td><td>Engineering & Infrastructure</td><td colspan="2">Joaquim Abrahamson</td><td>Buildings, power grid, transport</td></tr>
-          <tr><td><span class="seat-number">10</span></td><td>Energy Systems</td><td colspan="2">Lidia Sebastiani</td><td>Power generation, distribution, long-term policy</td></tr>
-          <tr><td><span class="seat-number">11</span></td><td>Orbital & System Coordination</td><td colspan="2">Rhea Babić</td><td>Cartography, mineral sampling, exploration/scouting</td></tr>
-          <tr><td><span class="seat-number">12</span></td><td>Cultural Affairs</td><td colspan="2">Claudia Belrose</td><td>The arts, Samaya Gallery oversight</td></tr>
-          <tr><td><span class="seat-number">13</span></td><td>Galinstanian Relations</td><td>—</td><td><strong>Celectra Carisco-Bowers</strong></td><td><strong>Non-voting ambassador</strong>; liaison, bridge, ANI project lead (Book 3+)</td></tr>
+          <!-- Helper function: for each character, we define image path and link. -->
+          <tr>
+            <td><img class="portrait-thumb" src="assets/images/santos-book4.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Isabella Santos"></td>
+            <td><span class="seat-number">1</span></td>
+            <td>Administrator</td>
+            <td colspan="2"><a class="member-link" href="/_characters/santos.md">Isabella Santos</a></td>
+            <td>Presiding officer; colony-wide coordination</td>
+          </tr>
+          <tr>
+            <td><img class="portrait-thumb" src="assets/images/roan-book2.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Evelyn Roan"></td>
+            <td><span class="seat-number">2</span></td>
+            <td>Security</td>
+            <td colspan="2"><a class="member-link" href="/_characters/roan.md">Evelyn Roan</a></td>
+            <td>Leads investigations, tribunals; office in Chamber</td>
+          </tr>
+          <tr>
+            <td><img class="portrait-thumb" src="assets/images/kret-book2.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Douglas Kret"></td>
+            <td><span class="seat-number">3</span></td>
+            <td>Medicine</td>
+            <td><a class="member-link" href="/_characters/kret.md">Douglas Kret</a></td>
+            <td><a class="member-link" href="/_characters/alex.md">Dr. Alex Cruiz</a></td>
+            <td>Kret removed by tribunal (Book 1); Cruiz appointed</td>
+          </tr>
+          <tr>
+            <td><img class="portrait-thumb" src="assets/images/troy-book2.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Lorain Troy"></td>
+            <td><span class="seat-number">4</span></td>
+            <td>Science & Technology</td>
+            <td><a class="member-link" href="/_characters/troy.md">Lorain Troy</a></td>
+            <td><a class="member-link" href="/_characters/amerigo.md">Amerigo Carisco</a></td>
+            <td>Troy retires early Book 3 (illness); Carisco appointed</td>
+          </tr>
+          <tr>
+            <td><img class="portrait-thumb" src="assets/images/webb.book2.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Nathaniel Webb"></td>
+            <td><span class="seat-number">5</span></td>
+            <td>Agriculture</td>
+            <td colspan="2"><a class="member-link" href="/_characters/webb.md">Dr. Nathaniel Webb</a></td>
+            <td>Food systems, terraforming support</td>
+          </tr>
+          <tr>
+            <td><img class="portrait-thumb" src="assets/images/yomoto-book2.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Kenji Yamoto"></td>
+            <td><span class="seat-number">6</span></td>
+            <td>Environmental Systems</td>
+            <td colspan="2"><a class="member-link" href="/_characters/yamoto.md">Dr. Kenji Yamoto</a></td>
+            <td>Water management, resource recycling</td>
+          </tr>
+          <tr>
+            <td><img class="portrait-thumb" src="assets/images/okafor-book3.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Chibuike Okafor"></td>
+            <td><span class="seat-number">7</span></td>
+            <td>Athletics & Recreation</td>
+            <td colspan="2"><a class="member-link" href="/_characters/okafor.md">Chibuike Okafor</a></td>
+            <td>Activity Center, youth sports, colony games</td>
+          </tr>
+          <tr>
+            <td><img class="portrait-thumb" src="assets/images/thalmann-book2.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Nazia Thälmann"></td>
+            <td><span class="seat-number">8</span></td>
+            <td>Logistics & Transportation</td>
+            <td colspan="2"><a class="member-link" href="/_characters/thalmann.md">Nazia Thälmann</a></td>
+            <td>Materials and personnel transportation</td>
+          </tr>
+          <tr>
+            <td><img class="portrait-thumb" src="assets/images/abrahamson-book2.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Joaquim Abrahamson"></td>
+            <td><span class="seat-number">9</span></td>
+            <td>Engineering & Infrastructure</td>
+            <td colspan="2"><a class="member-link" href="/_characters/abrahamson.md">Joaquim Abrahamson</a></td>
+            <td>Buildings, power grid, transport</td>
+          </tr>
+          <tr>
+            <td><img class="portrait-thumb" src="assets/images/sebastiani-book2.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Lidia Sebastiani"></td>
+            <td><span class="seat-number">10</span></td>
+            <td>Energy Systems</td>
+            <td colspan="2"><a class="member-link" href="/_characters/sebastiani.md">Lidia Sebastiani</a></td>
+            <td>Power generation, distribution, long-term policy</td>
+          </tr>
+          <tr>
+            <td><img class="portrait-thumb" src="assets/images/babic-book2.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Rhea Babić"></td>
+            <td><span class="seat-number">11</span></td>
+            <td>Orbital & System Coordination</td>
+            <td colspan="2"><a class="member-link" href="/_characters/babic.md">Rhea Babić</a></td>
+            <td>Cartography, mineral sampling, exploration/scouting</td>
+          </tr>
+          <tr>
+            <td><img class="portrait-thumb" src="assets/images/belrose-book2.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Claudia Belrose"></td>
+            <td><span class="seat-number">12</span></td>
+            <td>Cultural Affairs</td>
+            <td colspan="2"><a class="member-link" href="/_characters/belrose.md">Claudia Belrose</a></td>
+            <td>The arts, Samaya Gallery oversight</td>
+          </tr>
+          <tr>
+            <td><img class="portrait-thumb" src="assets/images/celectra-book3.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Celectra Carisco-Bowers"></td>
+            <td><span class="seat-number">13</span></td>
+            <td>Galinstanian Relations</td>
+            <td>—</td>
+            <td><a class="member-link" href="/_characters/celectra.md">Celectra Carisco-Bowers</a></td>
+            <td><strong>Non-voting ambassador</strong>; liaison, bridge, ANI project lead (Book 3+)</td>
+          </tr>
         </tbody>
       </table>
     </div>
 
-    <!-- DIRECTORATE LEADERSHIP (NON-VOTING) - NEW SECTION -->
+    <!-- DIRECTORATE LEADERSHIP (NON-VOTING) -->
     <div class="card-bg">
       <h2 class="section-header">Directorate Leadership (Non-Voting)</h2>
       <p>While the Council sets policy, the Directorate executes it. Key Department Heads report to the Council but do not hold voting seats. These leaders attend sessions to defend budgets, present feasibility assessments, and implement council decisions.</p>
@@ -273,7 +386,7 @@
         </thead>
         <tbody>
           <tr>
-            <td><strong>Lian Chen</strong></td>
+            <td><strong><a href="_characters/lianchen.md">Lian Chen</a></strong></td>
             <td>Director of Agricultural Systems</td>
             <td>Engineering Directorate</td>
             <td>Hydrological engineering baseline</td>
@@ -281,7 +394,7 @@
             <td>Reports to Councilors Webb & Yamoto; "Chen Collective" with Yuki Chen</td>
           </tr>
           <tr>
-            <td><strong>Dr. Yuki Chen</strong></td>
+            <td><strong><a href="_characters/chen.md">Dr. Yuki Chen</a></strong></td>
             <td>Chief Medical Officer</td>
             <td>Utopis Station Medical Bay</td>
             <td>Station medical operations</td>
@@ -289,7 +402,7 @@
             <td>Reports to Councilor Cruiz; former spouse of Lian Chen</td>
           </tr>
           <tr>
-            <td><strong>Celectra Carisco-Bowers</strong></td>
+            <td><strong><a href="_characters/celectra.md">Dr. Celectra Carisco-Bowers</a></strong></td>
             <td>Ambassador / Liaison</td>
             <td>Galinstanian Relations</td>
             <td>Species bridge, Listener training</td>
@@ -297,30 +410,23 @@
             <td>Non-voting Seat 13; works under Councilor Amerigo Carisco (Book 3+)</td>
           </tr>
           <tr>
-            <td><strong>Maya Keahi</strong></td>
+            <td><strong><a href="_characters/maya.md">Maya Keahi</a></strong></td>
             <td>Curator</td>
             <td>Samaya Gallery</td>
             <td>Gallery planning</td>
             <td>Gallery operations</td>
             <td>Reports to Councilor Belrose (Cultural Affairs)</td>
           </tr>
-          <tr>
-            <td><strong>Dr. Alex Cruiz</strong></td>
-            <td>Chief of Medicine</td>
-            <td>Medical Center</td>
-            <td>—</td>
-            <td>Medical Center oversight</td>
-            <td>Also holds Council Seat 3 (dual role)</td>
-          </tr>
+<!-- Additional directors/lead here -->
         </tbody>
       </table>
       <p class="small-note">* Some Directorate leaders (e.g., Cruiz) may also hold Council seats. Others operate exclusively within the Directorate structure.</p>
     </div>
 
-    <!-- AMBASSADOR: CELECTRA CARISCO-BOWERS -->
+    <!-- AMBASSADOR: CELECTRA CARISCO-BOWERS (kept for detail) -->
     <div class="ambassador-note">
       <h3 style="color: #9ed4e4; margin-top: 0;">⚡ The Ambassador: Celectra Carisco-Bowers</h3>
-      <p>From the age of <strong>seven</strong>, Celectra Carisco-Bowers has been a fixture of the Council Chamber — first as a curiosity, then as an indispensable bridge between species. Her unique physiology allows her to communicate with the Galinstanians via electromagnetic transmission in ways no other human can replicate.</p>
+      <p>From the age of <strong>seven</strong>, Celectra Carisco-Bowers has been a fixture of the Council Chamber — as an indispensable bridge between species. Her unique physiology allows her to communicate with the Galinstanians via electromagnetic transmission in ways no other human can replicate until she leads development of replacement technology (ANI).</p>
       
       <div class="cave-quote">
         <p><em>"Anyone can receive their transmissions — Dr. Webb hears them as rustling leaves, Dr. Yamoto as harmonic resonance. But only Celectra can <strong>answer</strong>. She is not a translator; she is a conversation."</em> — Administrator Isabella Santos</p>
@@ -342,7 +448,7 @@
       <p>Celectra holds <strong>Seat 13</strong> as a non-voting ambassador — she does not make law, but no law concerning Galinstanian relations is made without her counsel. Her unique position means she spends more time in the Council Chamber than almost any voting member, often curled in one of the rings reading while debates swirl around her, waiting for the moment when Galinstanian insight is needed.</p>
     </div>
 
-    <!-- NOTABLE TRIBUNALS -->
+    <!-- NOTABLE TRIBUNALS (unchanged) -->
     <div class="card-bg">
       <h2 class="section-header">Notable Tribunals</h2>
       <p>The Council Chamber serves as the venue for colony tribunals — formal investigations into conduct that threatens community trust. Two such tribunals in Books 1 and 2 fundamentally reshaped the council's composition.</p>
@@ -382,7 +488,7 @@
       <p>Between these duties, she can often be found in one of the Chamber's gallery seats, doing schoolwork or reading, while council business proceeds around her. She is as much a fixture of the building as the circular walls themselves.</p>
     </div>
 
-    <!-- TIMELINE OF KEY EVENTS -->
+    <!-- TIMELINE -->
     <div class="card-bg">
       <h2 class="section-header">Chamber Timeline</h2>
       <table class="level-table">
@@ -422,7 +528,7 @@
         <tr><td><strong>Council Seats</strong></td><td>12 voting + 1 non-voting (Ambassador)</td></tr>
         <tr><td><strong>Key Incumbents</strong></td><td>Santos, Roan, Cruiz, Carisco, Webb, Yamoto, Okafor</td></tr>
         <tr><td><strong>Former Members</strong></td><td>Kret (removed), Troy (retired)</td></tr>
-        <tr><td><strong>Security Office</strong></td><td>Evelyn Roan, inside Chamber complex</td></tr>
+        <tr><td><strong>Security Office</strong></td><td>Evelyn Roan, inside Plenum complex</td></tr>
         <tr><td><strong>Ambassador</strong></td><td>Celectra Carisco-Bowers (Seat 13, non-voting)</td></tr>
         <tr><td><strong>Unique Feature</strong></td><td>"Show us the long path" — Utara's projection</td></tr>
       </table>
