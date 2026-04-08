@@ -11,11 +11,11 @@ affiliation: Carisco Family; New Eden Psychology Division; Council Advisor
 status: Alive
 birthday: January 3, 2107
 birthplace: Earth (pre‑Ares migration)
-book1_age: "38.5"
-book2_age: "44.7"
-book3_age: "44.7"
-book4_age: "52.1"
-book5_age: "58.4"
+book1_age: "35.8"
+book2_age: "42.9"
+book3_age: "49.8"
+book4_age: "58"
+book5_age: "65"
 book1_title: "The Mother of a Miracle"
 book1_arc: >
   Zoë becomes the first human to raise a dual-bodied child. She navigates Celectra's trauma, sensory overload, and early communion abilities with a blend of clinical insight and maternal intuition. Her calm, grounding presence becomes essential to Celectra's survival and development.
