@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mononous Disomas – Celectra's Neural Dossier</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="WikiStyle.css?v=3">
+</head>
+<body class="p-4">
+
+  <div class="top-banner">
+    <a href="index.html" class="home-button">🏠 Home</a>
+  </div>
+
+  <!-- Header Section -->
+  <header class="header-container">
+    <h1 class="gradient-title">Mononous Disomas: Celectra’s Neural Dossier</h1>
+    <p class="subtitle">One Mind Spanning Two Bodies – Congenital Dual‑Body Unification</p>
+  </header>
+
+  <!-- Condition Summary Card -->
+  <div class="card-bg gradient-border">
+    <h2 class="section-header">Condition Summary</h2>
+    <div class="summary-grid text-sm">
+      <div>
+        <p class="font-semibold text-gray-600">Formal Designation:</p>
+        <p class="text-gray-400">Mononous Disomas (Greek: μονόνοος δισώματος – “single mind, two bodies”)</p>
+      </div>
+      <div>
+        <p class="font-semibold text-gray-600">Etiology:</p>
+        <p class="text-gray-400">In utero high‑energy proton & gamma radiation exposure (coronal mass ejection) during neural tube formation, first trimester.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-gray-600">Core Phenomenon:</p>
+        <p class="text-danger">Unified consciousness, fully shared autonomic regulation, and inter‑brain neural synchronization across two physically distinct bodies.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Etiology & Mechanism -->
+  <h2 class="section-header">Etiology & Developmental Mechanism</h2>
+  <div class="regimen-grid">
+    <div class="card-bg gradient-border">
+      <h3 class="text-lg-bold text-blue-400 mb-4 flex items-center">
+        <span class="icon-header">⚡</span> The Flare Event
+      </h3>
+      <ul class="list-container">
+        <li class="list-item">
+          <p class="font-semibold">Timing & Agent:</p>
+          <p class="text-sm">Exposure to Niamh’s coronal mass ejection (proton radiation + gamma) for ~8 minutes during the first trimester, while aboard Utopis‑Lab 3.</p>
+        </li>
+        <li class="list-item">
+          <p class="font-semibold">Critical Window:</p>
+          <p class="text-sm">Radiation struck during neural tube formation – a period when embryonic brains normally develop separate identity boundaries. Instead, proton flux fused signalling channels between the developing cortices, creating a permanent inter‑brain bridge.</p>
+        </li>
+        <li class="list-item">
+          <p class="font-semibold">Secondary Effects:</p>
+          <p class="text-sm">Placental vascular weakening → growth restriction & prematurity (1.3 kg each). Melanoblast apoptosis → congenital albinism (CA‑REV). Optic cups already differentiated → retained brown irises.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card-bg gradient-border">
+      <h3 class="text-lg-bold text-indigo-700 mb-4 flex items-center">
+        <span class="icon-header">🧠</span> The Neural Bridge
+      </h3>
+      <ul class="list-container">
+        <li class="list-item">
+          <p class="font-semibold">“Celectricity” Hypothesis:</p>
+          <p class="text-sm">During fetal development, soft, unfused skulls allowed weak electrical signals to pass between brains. As heads moved apart, the link strengthened like a muscle – now a robust, low‑latency inter‑brain connection.</p>
+        </li>
+        <li class="list-item">
+          <p class="font-semibold">Autonomic Unification:</p>
+          <p class="text-sm">One brain (likely the left body’s) acts as master regulator for both hearts, lungs, and other autonomic systems. Explains identical vitals and shared physiological response to exercise.</p>
+        </li>
+        <li class="list-item">
+          <p class="font-semibold">Corpus Callosum Enhancement:</p>
+          <p class="text-sm">Each individual brain exhibits a corpus callosum nearly twice the normal density, enhancing intra‑hemispheric communication – the foundation for “genius‑squared” cognition.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Clinical Manifestations -->
+  <div class="card-bg gradient-border mt-8">
+    <h2 class="section-header">Clinical Manifestations & Diagnostic Evidence</h2>
+    <div class="summary-grid text-sm" style="grid-template-columns: 1fr 1fr;">
+      <div>
+        <p class="font-semibold text-gray-600">Shared Sensation & Perception</p>
+        <ul class="list-disc pl-5 text-gray-400">
+          <li>Touch, tickle, or pain on one body is felt by both.</li>
+          <li>Flashcard test: facing away, Celectra correctly identifies images shown only to the other body.</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-gray-600">Unified Physiology</p>
+        <ul class="list-disc pl-5 text-gray-400">
+          <li>Identical resting heart rate (92 bpm) and synchronized exercise response.</li>
+          <li>Jumping jacks with one body → both heart rates rise and fall together.</li>
+          <li>Shared respiratory rate and identical biometrics (height, weight, vitals).</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-gray-600">Cognitive Synchrony</p>
+        <ul class="list-disc pl-5 text-gray-400">
+          <li>Identical answers on separate tests – same correct and <em>same wrong</em> answers.</li>
+          <li>Silent reading by one body → perfect verbal read‑out by the other in real time.</li>
+          <li>Sentence completion, dual‑voice unison speech.</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-gray-600">Neuroimaging Findings</p>
+        <ul class="list-disc pl-5 text-gray-400">
+          <li>No standard corpus callosum between bodies – instead, anomalous inter‑brain signal alignment.</li>
+          <li>Electra’s brain (left body) shows dominant autonomic control centers; Celeste’s brain shows complementary activity.</li>
+          <li>Unprecedented neural synchronization density (observed via qEEG and functional MRI).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Implications & Risks -->
+  <div class="card-bg gradient-border mt-8 border-t-4 border-amber-600">
+    <h3 class="text-lg-bold text-amber-700 mb-3">IV. Implications & Unique Vulnerabilities</h3>
+    <div class="text-gray-400 text-sm space-y-3">
+      <p><strong class="text-amber-600">✅ Advantages:</strong> True cognitive redundancy – two brains running one consciousness. Enhanced problem‑solving (synergistic intellect), physical coordination across two bodies, and doubled sensory input. Described by Celectra as “genius squared”.</p>
+      <p><strong class="text-amber-600">⚠️ Risks & Unknowns:</strong> Extreme electromagnetic sensitivity (unquantified). Potential psychological trauma if bodies are forcibly separated – Celectra has never experienced “apartness”. Long‑term neural bridge stability unknown; no precedent in medical literature.</p>
+      <p><strong class="text-amber-600">🛡️ Protective Factors:</strong> Redundant circulatory/respiratory systems with centralized control. If one heart fails, the other brain’s motor control might maintain perfusion (theoretical). Early acceptance of singular identity reduces psychological fragmentation.</p>
+      <p><strong class="text-amber-600">🔬 Research Caution:</strong> As stated by Dr. Cruiz: <em>“If we try to map this too aggressively, dissect it, replicate it... we could destroy what makes her functional while trying to understand what makes her unique.”</em></p>
+    </div>
+  </div>
+
+  <!-- Management & Monitoring -->
+  <div class="card-bg gradient-border mt-8">
+    <h2 class="section-header">Ongoing Management & Specialist Oversight</h2>
+    <div class="summary-grid text-sm">
+      <div>
+        <p class="font-semibold text-gray-600">Primary Care Team</p>
+        <p class="text-gray-400">Dr. Alex Cruiz (neurology & radiation medicine) + Dr. Zoë Kret (psychological development, Ares Colony).</p>
+      </div>
+      <div>
+        <p class="font-semibold text-gray-600">Monitoring Protocol</p>
+        <p class="text-gray-400">Quarterly inter‑brain synchronization scans; annual psychological assessment focused on identity cohesion and separation anxiety; continuous biometric logging (identical vitals tracking).</p>
+      </div>
+      <div>
+        <p class="font-semibold text-gray-600">Lifestyle Accommodations</p>
+        <p class="text-gray-400">Both bodies always kept within proximity (no forced separation). Educational curriculum adapted for dual‑body participation but unified evaluation. “Celectra” used as singular name across all records.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-gray-600">Contraindications</p>
+        <p class="text-gray-400">Experimental neural interference, surgical separation attempts, or any procedure that disrupts inter‑brain signalling. Avoid high‑intensity electromagnetic fields near either body.</p>
+      </div>
+    </div>
+    <p class="italic text-gray-400 text-sm mt-4 border-t border-gray-700 pt-3">Dr. Cruiz’s closing note: <em>“We don’t know what we don’t know. But she’s thriving – healthy, brilliant, and happy. Sometimes that has to be enough.”</em></p>
+  </div>
+
+  <!-- Historical Footnote: The Name -->
+  <div class="card-bg gradient-border mt-8 bg-opacity-50">
+    <h3 class="text-lg-bold text-fuchsia-700 mb-2">Etymology & Identity Affirmation</h3>
+    <p class="text-gray-400 text-sm">The term <strong>Mononous Disomas</strong> was coined by Dr. Alex Cruiz (Greek: <em>mono‑nous</em> = single mind, <em>dis‑somas</em> = two bodies). Celectra initially resisted the clinical label (“Eww. I’m not sick.”) but later accepted it as a neutral descriptor. She personally chose the merged name <strong>Celectra</strong> at age 10, replacing “Celeste and Electra” to reflect her singular identity. The dossier respects her preference while documenting the scientific classification.</p>
+    <p class="text-gray-500 text-xs mt-2">Utara (Colony Educator) confirmation: “I believe she is correct about being one person.” – validated by identical wrong answers on separated tests.</p>
+  </div>
+
+  <hr class="mt-8">
+  <p style="text-align:center; margin-top:1rem;">
+    <a href="/One-Mind-Two-Stars-Wiki/characters/celectra.html" class="return-link"> ← Return to Celectra</a>
+  </p>
+
+  <!-- Back to Top Button -->
+  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+  <script>
+    const toTopBtn = document.getElementById("toTopBtn");
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 200) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    });
+    toTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
