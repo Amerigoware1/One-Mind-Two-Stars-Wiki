@@ -96,7 +96,7 @@ sensory-emotional network. Both bodies exhibit synchronized autonomic responses,
 but can act independently with deliberate control. This condition is stable but
 requires ongoing monitoring for metabolic load, neural fatigue, and resonance
 overextension.
-
+- **<a href="../Mononous Disomas.html">Mononous Disomas – Celectra's Neural Dossier</a>** 
 </div>
 <div class="card-bg" markdown="1">
 
