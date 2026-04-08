@@ -69,7 +69,7 @@ In Book 3, Sam arrives in New Eden and begins a collaborative relationship with 
 </div>
 <div class="card-bg" markdown="1">
 ## Physical Description
-Sam has congenital atrichia universalis, meaning they have no body hair, eyebrows, or eyelashes from birth. Their smooth, reflective scalp is often accentuated with oils, shimmer, or elaborate headwear. They possess a slender, wiry build adapted to low‑gravity station life, granting them notable agility. Sam's eyes are strikingly expressive, conveying emotions through subtle micro‑expressions that others quickly learn to read.
+Sam has congenital atrichia universalis, meaning they have no body hair, eyebrows, or eyelashes from birth*(For a real-world description of this condition, see [Wikipedia](https://en.wikipedia.org/wiki/Congenital_atrichia_universalis)*. Their smooth, reflective scalp is often accentuated with oils, shimmer, or elaborate headwear. They possess a slender, wiry build adapted to low‑gravity station life, granting them notable agility. Sam's eyes are strikingly expressive, conveying emotions through subtle micro‑expressions that others quickly learn to read.
 
 Their presentation shifts fluidly: feminine days feature flowing skirts, pastel wigs, and layered jewelry; masculine days emphasize sharp lines, structured clothing, and a bare, polished scalp; neutral days favor oversized utility wear or jumpsuits with minimal adornment. A signature collection of scarves, wraps, circlets, and metallic bands serves as a visual indicator of their current mood.
 </div>
