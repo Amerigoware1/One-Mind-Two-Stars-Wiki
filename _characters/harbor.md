@@ -1,8 +1,7 @@
 ---
 layout: character
 title: Harbor (Northern Territory)
-portrait: "/assets/images/harbor-book1.webp"
-portrait-book1: "/assets/images/harbor-book1.webp"
+portrait: "/assets/images/harbor-book2.webp"
 portrait-book2: "/assets/images/harbor-book2.webp"
 portrait-book3: "/assets/images/harbor-book3.webp"
 portrait-book4: "/assets/images/harbor-book4.webp"

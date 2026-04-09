@@ -1,8 +1,7 @@
 ---
 layout: character
 title: Flicker (Northern Territory)
-portrait: "/assets/images/flicker-book1.webp"
-portrait-book1: "/assets/images/flicker-book1.webp"
+portrait: "/assets/images/flicker-book2.webp"
 portrait-book2: "/assets/images/flicker-book2.webp"
 portrait-book3: "/assets/images/flicker-book3.webp"
 portrait-book4: "/assets/images/flicker-book4.webp"
