@@ -1,8 +1,7 @@
 ---
 layout: character
 title: Kiri
-portrait: "/assets/images/kiri-book1.webp"
-portrait-book1: "/assets/images/kiri-book1.webp"
+portrait: "/assets/images/kiri-book2.webp"
 portrait-book2: "/assets/images/kiri-book2.webp"
 portrait-book3: "/assets/images/kiri-book3.webp"
 portrait-book4: "/assets/images/kiri-book4.webp"

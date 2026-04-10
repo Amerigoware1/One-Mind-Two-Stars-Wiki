@@ -101,8 +101,8 @@ When Sofia named them "Harbor," she saw something Harbor was still becoming. The
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The Hiding (Pre-Book 1):** Harbor listens helplessly as Kret tortures Chime; the guilt begins
-- **The Cave-In (Book 1):** Harbor works with the other Galinstanians to dissolve stone, helping everyone escape
+- **The Hiding (Pre-Book 2):** Harbor listens helplessly as Kret tortures Chime; the guilt begins
+- **The Cave-In (Book 2):** Harbor works with the other Galinstanians to dissolve stone, helping everyone escape
 - **The Naming (Book 2):** Seven-year-old Sofia names them "Harbor"—"because that's where boats go to be safe"
 - **The Integration (Book 3):** Harbor steps back from central narrative, focusing on healing and grounding the cluster
 - **The Anchor (Book 4):** During the Four Rivers crisis, Harbor's steady presence helps calm younger Galinstanians

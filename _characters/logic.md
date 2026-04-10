@@ -101,7 +101,7 @@ After the rescue, Logic learned that some problems cannot be solved by calculati
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The Helpless Calculation (Pre-Book 1):** Logic runs every possible scenario to save Chime; all fail; the unsolvable equation haunts them
+- **The Helpless Calculation (Pre-Book 2):** Logic runs every possible scenario to save Chime; all fail; the unsolvable equation haunts them
 - **The Naming (Book 2):** Logic applies precise dissolution patterns, maximizing efficiency to escape
 Kowan names them "Logic"—"pure logic"—and the name fits perfectly
 - **The Collaboration (Book 3):** Logic assists Kowan with technical research, working in the background

@@ -100,8 +100,8 @@ When Emma and Ethan named them "Flicker," they saw the truth: Flicker is light t
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The Hiding (Pre-Book 1):** Flicker forced into terrified stillness while Chime suffers; the trauma of confinement begins
-- **The Cave-In (Book 1):** Flicker uses speed to help dissolve stone rapidly, finding purpose in movement
+- **The Hiding (Pre-Book 2):** Flicker forced into terrified stillness while Chime suffers; the trauma of confinement begins
+- **The Cave-In (Book 2):** Flicker uses speed to help dissolve stone rapidly, finding purpose in movement
 - **The Naming (Book 2):** Emma and Ethan together name Flicker—"like light that moves"—and share the bond
 - **The Integration (Book 3):** Flicker explores New Eden, their curiosity undimmed
 - **The Messenger (Book 4):** During the Four Rivers crisis, Flicker carries messages across the colony
