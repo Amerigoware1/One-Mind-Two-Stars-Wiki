@@ -176,6 +176,14 @@
     "height": 842
   },
   {
+    "file": "swim-meet.webp",
+    "title": "Swim Meet",
+    "description": "Swim meet in the pool room",
+    "tags": ["pool", "activity", "swim", "activity center"],
+    "width": 1264,
+    "height": 842
+  },
+  {
     "file": "Reclamatic.png",
     "title": "Reclamatic (cleaning bot)",
     "description": "A robotic floor cleaner that uses MRI tech to deatomize dust, debris, germs and even stains.",
