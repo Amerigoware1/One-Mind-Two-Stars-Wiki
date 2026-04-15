@@ -39,8 +39,16 @@
     "width": 1024,
     "height": 1024
   },
+    {
+    "file": "bowers-twins.webp",
+    "title": "Jenni and Xara Bowers at Age Seven",
+    "description": "Celectra's identical twin babies, Jenni Jo and Xara Zo Bowers at age seven.",
+    "tags": ["jenni", "xara", "bowers", "baby", "babies"],
+    "width": 1638,
+    "height": 2184
+  },
   {
-    "file": "carisco-family.webp",
+    "file": "/carisco-family.webp",
     "title": "The Carisco Family Portrait",
     "description": "A formal portrait of the Carisco family from Book 2, showing the growing family.",
     "tags": ["carisco", "family", "portrait", "book 2"],
@@ -118,6 +126,14 @@
     "tags": ["maya", "paint", "childhood"],
     "width": 832,
     "height": 1248
+  },
+  {
+    "file": "pool-room.webp",
+    "title": "Pool Room",
+    "description": "The pool room.",
+    "tags": ["pool", "activity", "swim", "activity center"],
+    "width": 1264,
+    "height": 842
   },
   {
     "file": "Reclamatic.png",
