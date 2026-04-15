@@ -48,7 +48,7 @@
     "height": 2184
   },
   {
-    "file": "/images/carisco-family.webp",
+    "file": "carisco-family.webp",
     "title": "The Carisco Family Portrait",
     "description": "A formal portrait of the Carisco family from Book 2, showing the growing family.",
     "tags": ["carisco", "family", "portrait", "book 2"],
@@ -56,7 +56,7 @@
     "height": 1232
   },
     {
-    "file": "/images/carisco-family-cave.webp",
+    "file": "carisco-family-cave.webp",
     "title": "The Carisco Family Portrait",
     "description": "A snapshot of the Carisco family from Book 2, showing the growing family in the cave.",
     "tags": ["carisco", "family", "portrait", "book 2"],
