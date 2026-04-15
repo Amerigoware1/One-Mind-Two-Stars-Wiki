@@ -55,7 +55,7 @@
     "width": 1536,
     "height": 1024
   },
-    {
+  {
     "file": "bowers-twins.webp",
     "title": "Jenni and Xara Bowers at Age Seven",
     "description": "Celectra's identical twin babies, Jenni Jo and Xara Zo Bowers at age seven.",
@@ -71,7 +71,7 @@
     "width": 864,
     "height": 1232
   },
-    {
+  {
     "file": "carisco-family-cave.webp",
     "title": "The Carisco Family Portrait",
     "description": "A snapshot of the Carisco family from Book 2, showing the growing family in the cave.",
@@ -95,7 +95,7 @@
     "width": 832,
     "height": 1248
   },
-   {
+  {
     "file": "celectra-book2-alt.webp",
     "title": "Celectra at age fourteen",
     "description": "Celectra at age fourteen",
@@ -128,6 +128,22 @@
     "height": 1184
   },
   {
+    "file": "ethan-age10.webp",
+    "title": "Ethan at age 10",
+    "description": "Ethan at age 10",
+    "tags": ["ethan", "book 2"],
+    "width": 768,
+    "height": 1024
+  },
+  {
+    "file": "ethan-and-emma.webp",
+    "title": "Ethan and Emma at age 6",
+    "description": "Ethan and Emma at age 6",
+    "tags": ["ethan", "emma","book 2"],
+    "width": 768,
+    "height": 1024
+  },
+  {
     "file": "galinstanian.jpg",
     "title": "Galinstanian Being",
     "description": "A rare capture of a Galinstanian in their natural form, displaying the characteristic quicksilver reflections.",
@@ -142,6 +158,22 @@
     "tags": ["celectra", "space station", "utopis", "living quarters", "book 1"],
     "width": 4096,
     "height": 4096
+  },
+  {
+    "file": "grotto.webp",
+    "title": "Grotto",
+    "description": "The subterrainian geothermal pool grotto",
+    "tags": ["cave", "grotto", "pool", "geothermal"],
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "file": "jenni-xara-reading.webp",
+    "title": "Reading Twins",
+    "description": "Seven-year-old twins reading",
+    "tags": ["cave", "grotto", "pool", "geothermal"],
+    "width": 1024,
+    "height": 1536
   },
   {
     "file": "Listener Corps.png",
@@ -198,6 +230,30 @@
     "tags": ["maya", "sam", "gallery", "museum", "Integration"],
     "width": 1024,
     "height": 1536
+  },
+  {
+    "file": "sam-alt-12.webp",
+    "title": "Sam Childhood",
+    "description": "Sam doing homework on Utopis.",
+    "tags": ["sam", "utopis", "homework"],
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "file": "sam-alt.webp",
+    "title": "Sam Childhood",
+    "description": "Sam doing homework on Utopis.",
+    "tags": ["sam", "utopis", "homework"],
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "file": "sam-book1.alt.webp",
+    "title": "Sam Childhood",
+    "description": "Sam playing on Utopis.",
+    "tags": ["sam", "utopis", "homework"],
+    "width": 832,
+    "height": 1216
   },
   {
     "file": "gallery.webp",
