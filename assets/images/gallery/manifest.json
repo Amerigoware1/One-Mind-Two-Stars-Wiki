@@ -39,6 +39,22 @@
     "width": 1024,
     "height": 1024
   },
+  {
+    "file": "Bowers home.webp",
+    "title": "Bowers Home",
+    "description": "Exterior view of Celectra and Jaxon's home.",
+    "tags": ["bowers", "home", "house", "new eden", "ares"],
+    "width": 434,
+    "height": 434
+  },
+  {
+    "file": "bowers-living-room.webp",
+    "title": "Bowers Living Room",
+    "description": "Interior view of Celectra and Jaxon's home.",
+    "tags": ["bowers", "home", "house", "new eden", "ares"],
+    "width": 1536,
+    "height": 1024
+  },
     {
     "file": "bowers-twins.webp",
     "title": "Jenni and Xara Bowers at Age Seven",
@@ -60,8 +76,8 @@
     "title": "The Carisco Family Portrait",
     "description": "A snapshot of the Carisco family from Book 2, showing the growing family in the cave.",
     "tags": ["carisco", "family", "portrait", "book 2"],
-    "width": 864,
-    "height": 1232
+    "width": 832,
+    "height": 1040
   },
   {
     "file": "cave.png",
@@ -75,9 +91,17 @@
     "file": "celectra-age8.webp",
     "title": "Celectra at Age 8",
     "description": "Celectra on her 8th birthday in Book 1's epilogue",
-    "tags": [],
-    "width": 959,
+    "tags": ["celectra", "carisco"],
+    "width": 832,
     "height": 1248
+  },
+   {
+    "file": "celectra-book2-alt.webp",
+    "title": "Celectra at age fourteen",
+    "description": "Celectra at age fourteen",
+    "tags": ["celectra", "carisco"],
+    "width": 832,
+    "height": 1213
   },
   {
     "file": "celectra_cabinet.png",
@@ -94,6 +118,14 @@
     "tags": ["celectrum", "instrument", "music"],
     "width": 832,
     "height": 1248
+  },
+  {
+    "file": "duska-book2-alt.webp",
+    "title": "Duska at age 5",
+    "description": "Duska at age 5",
+    "tags": ["duska", "book 2"],
+    "width": 896,
+    "height": 1184
   },
   {
     "file": "galinstanian.jpg",
