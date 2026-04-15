@@ -55,6 +55,14 @@
     "width": 864,
     "height": 1232
   },
+    {
+    "file": "/images/carisco-family-cave.webp",
+    "title": "The Carisco Family Portrait",
+    "description": "A snapshot of the Carisco family from Book 2, showing the growing family in the cave.",
+    "tags": ["carisco", "family", "portrait", "book 2"],
+    "width": 864,
+    "height": 1232
+  },
   {
     "file": "cave.png",
     "title": "The Deep Caves",
