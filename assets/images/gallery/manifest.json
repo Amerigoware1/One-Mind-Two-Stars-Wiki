@@ -248,9 +248,17 @@
     "height": 1536
   },
   {
-    "file": "sam-book1.alt.webp",
+    "file": "sam-book1-alt.webp",
     "title": "Sam playing",
     "description": "Sam playing on Utopis.",
+    "tags": ["sam", "utopis", "homework"],
+    "width": 832,
+    "height": 1216
+  },
+  {
+    "file": "sam-book2-alt.webp",
+    "title": "Sam Age 12",
+    "description": "Sam using a holopad.",
     "tags": ["sam", "utopis", "homework"],
     "width": 832,
     "height": 1216
