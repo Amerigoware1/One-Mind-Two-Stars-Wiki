@@ -1,43 +1,51 @@
 [
   {
-    "file": "alex-and-dee.webp",
-    "title": "Uncle Alex and Aunt Dee",
-    "description": "Uncle Alex and Aunt Dee dancing at Jaxon's 10th birthday party in Book 1",
-    "tags": ["alex", "dee", "dance", "kiss", "book 1"],
-    "width": 1024,
-    "height": 1536
+    "file": "gazing-through-port-hole.jpg",
+    "title": "Utopis Station Living Room",
+    "description": "The Carisco family's living quarters aboard the Utopis space station, featuring a view of Ares.",
+    "tags": ["celectra", "space station", "utopis", "living quarters", "book 1"],
+    "width": 4096,
+    "height": 4096
+  },  
+  {
+    "file": "celectra-age8.webp",
+    "title": "Celectra at Age 8",
+    "description": "Celectra on her 8th birthday in Book 1's epilogue",
+    "tags": ["celectra", "carisco"],
+    "width": 589,
+    "height": 1178
   },
   {
-    "file": "ani.png",
-    "title": "Artificial Neural Interface",
-    "description": "The experimental ANI device that allows neural linking between humans and Galinstanian consciousness and, eventually, Utara.",
-    "tags": ["technology", "ani", "interface"],
-    "width": 1205,
-    "height": 722
+    "file": "celectra-book2-alt.webp",
+    "title": "Celectra at age fourteen",
+    "description": "Celectra at age fourteen",
+    "tags": ["celectra", "carisco"],
+    "width": 832,
+    "height": 1213
   },
   {
-    "file": "ares.gif",
-    "title": "Ares Rotating",
-    "description": "Ares, a moon of Chaos rotating. It's the home of New Eden and most of the characters.",
-    "tags": ["ares", "moon", "planet"],
-    "width": 340,
-    "height": 340
-  },
-  {
-    "file": "ares.png",
-    "title": "Map of Ares around New Eden",
-    "description": "A Map showing the New Eden area of Ares.",
-    "tags": ["ares", "map", "new eden"],
-    "width": 1042,
-    "height": 576
-  },
-  {
-    "file": "bowers_babies.webp",
-    "title": "Jenni and Xara Bowers as Babies",
-    "description": "Celectra's identical twin babies, Jenni Jo and Xara Zo Bowers as babies.",
-    "tags": ["jenni", "xara", "bowers", "baby", "babies"],
+    "file": "celectra-pregnant.webp",
+    "title": "Celectra Pregnant",
+    "description": "Celectra carrying twins in her right body.",
+    "tags": ["celectra", "twins", "pregnant"],
     "width": 1024,
     "height": 1024
+  },  
+  {
+    "file": "carisco-family.webp",
+    "title": "The Carisco Family Portrait",
+    "description": "A formal portrait of the Carisco family from Book 2, showing the growing family.",
+    "tags": ["carisco", "family", "portrait", "book 2"],
+    "width": 864,
+    "height": 1232
+  },
+  {
+    "file": "carisco-family-cave.webp",
+    "title": "The Carisco Family Portrait",
+    "description": "A snapshot of the Carisco family from Book 2, showing the growing family in the cave.",
+    "tags": ["carisco", "family", "portrait", "book 2"],
+    "width": 832,
+    "height": 1040
   },
   {
     "file": "Bowers home.webp",
@@ -56,6 +64,14 @@
     "height": 1024
   },
   {
+    "file": "bowers_babies.webp",
+    "title": "Jenni and Xara Bowers as Babies",
+    "description": "Celectra's identical twin babies, Jenni Jo and Xara Zo Bowers as babies.",
+    "tags": ["jenni", "xara", "bowers", "baby", "babies"],
+    "width": 1024,
+    "height": 1024
+  },
+  {
     "file": "bowers-twins.webp",
     "title": "Jenni and Xara Bowers at Age Seven",
     "description": "Celectra's identical twin babies, Jenni Jo and Xara Zo Bowers at age seven.",
@@ -64,44 +80,36 @@
     "height": 2184
   },
   {
-    "file": "carisco-family.webp",
-    "title": "The Carisco Family Portrait",
-    "description": "A formal portrait of the Carisco family from Book 2, showing the growing family.",
-    "tags": ["carisco", "family", "portrait", "book 2"],
-    "width": 864,
-    "height": 1232
-  },
-  {
-    "file": "carisco-family-cave.webp",
-    "title": "The Carisco Family Portrait",
-    "description": "A snapshot of the Carisco family from Book 2, showing the growing family in the cave.",
-    "tags": ["carisco", "family", "portrait", "book 2"],
-    "width": 832,
-    "height": 1040
-  },
-  {
-    "file": "cave.png",
-    "title": "The Deep Caves",
-    "description": "Entrance to the extensive cave system explored over fourteen years. These caves hold ancient Galinstanian secrets.",
-    "tags": ["environment", "cave", "exploration", "ancient"],
+    "file": "jenni-xara-reading.webp",
+    "title": "Reading Twins",
+    "description": "Seven-year-old twins reading",
+    "tags": ["cave", "grotto", "pool", "geothermal"],
     "width": 1024,
     "height": 1536
   },
   {
-    "file": "celectra-age8.webp",
-    "title": "Celectra at Age 8",
-    "description": "Celectra on her 8th birthday in Book 1's epilogue",
-    "tags": ["celectra", "carisco"],
-    "width": 589,
-    "height": 1178
+    "file": "xara-and-jenni.webp",
+    "title": "Xara and Jenni",
+    "description": "Portrait of Xara and Jenni at age 7 in book 4.",
+    "tags": ["xara", "jenni", "book 4"],
+    "width": 928,
+    "height": 1152
+  },    
+  {
+    "file": "alex-and-dee.webp",
+    "title": "Uncle Alex and Aunt Dee",
+    "description": "Uncle Alex and Aunt Dee dancing at Jaxon's 10th birthday party in Book 1",
+    "tags": ["alex", "dee", "dance", "kiss", "book 1"],
+    "width": 1024,
+    "height": 1536
   },
   {
-    "file": "celectra-book2-alt.webp",
-    "title": "Celectra at age fourteen",
-    "description": "Celectra at age fourteen",
-    "tags": ["celectra", "carisco"],
-    "width": 832,
-    "height": 1213
+    "file": "ani.png",
+    "title": "Artificial Neural Interface",
+    "description": "The experimental ANI device that allows neural linking between humans and Galinstanian consciousness and, eventually, Utara.",
+    "tags": ["technology", "ani", "interface"],
+    "width": 1205,
+    "height": 722
   },
   {
     "file": "celectra_cabinet.png",
@@ -144,6 +152,14 @@
     "height": 1024
   },
   {
+    "file": "cave.png",
+    "title": "The Deep Caves",
+    "description": "Entrance to the extensive cave system explored over fourteen years. These caves hold ancient Galinstanian secrets.",
+    "tags": ["environment", "cave", "exploration", "ancient"],
+    "width": 1024,
+    "height": 1536
+  },  
+  {
     "file": "galinstanian.jpg",
     "title": "Galinstanian Being",
     "description": "A rare capture of a Galinstanian in their natural form, displaying the characteristic quicksilver reflections.",
@@ -152,25 +168,9 @@
     "height": 512
   },
   {
-    "file": "gazing-through-port-hole.jpg",
-    "title": "Utopis Station Living Room",
-    "description": "The Carisco family's living quarters aboard the Utopis space station, featuring a view of Ares.",
-    "tags": ["celectra", "space station", "utopis", "living quarters", "book 1"],
-    "width": 4096,
-    "height": 4096
-  },
-  {
     "file": "grotto.webp",
     "title": "Grotto",
     "description": "The subterrainian geothermal pool grotto",
-    "tags": ["cave", "grotto", "pool", "geothermal"],
-    "width": 1024,
-    "height": 1536
-  },
-  {
-    "file": "jenni-xara-reading.webp",
-    "title": "Reading Twins",
-    "description": "Seven-year-old twins reading",
     "tags": ["cave", "grotto", "pool", "geothermal"],
     "width": 1024,
     "height": 1536
@@ -184,14 +184,6 @@
     "height": 1536
   },
   {
-    "file": "Maya-and-Sam.webp",
-    "title": "Maya and Sam",
-    "description": "Maya and Sam at the Samaya Gallery and Museum of Integration's grand opening between books 4 and 5.",
-    "tags": ["maya", "sam", "gallery", "museum", "Integration"],
-    "width": 1024,
-    "height": 1536
-  },
-  {
     "file": "maya-painting.webp",
     "title": "Maya Painting",
     "description": "Maya creating a fingerpaint masterpiece at age 6.",
@@ -200,37 +192,13 @@
     "height": 1248
   },
   {
-    "file": "pool-room.webp",
-    "title": "Pool Room",
-    "description": "The pool room.",
-    "tags": ["pool", "activity", "swim", "activity center"],
-    "width": 1264,
-    "height": 842
-  },
-  {
-    "file": "swim-meet.webp",
-    "title": "Swim Meet",
-    "description": "Swim meet in the pool room",
-    "tags": ["pool", "activity", "swim", "activity center"],
-    "width": 1264,
-    "height": 842
-  },
-  {
-    "file": "Reclamatic.png",
-    "title": "Reclamatic (cleaning bot)",
-    "description": "A robotic floor cleaner that uses MRI tech to deatomize dust, debris, germs and even stains.",
-    "tags": ["robot", "bot", "cleaning", "cleaner"],
-    "width": 775,
-    "height": 458
-  },
-  {
-    "file": "sam-and-maya.webp",
-    "title": "Sam and Maya",
-    "description": "Sam and Maya celebrating the grand opening of the Samaya Gallery and Museum of Integration between books 4 and 5.",
-    "tags": ["maya", "sam", "gallery", "museum", "Integration"],
-    "width": 1024,
-    "height": 1536
-  },
+    "file": "sam-altr.webp",
+    "title": "Sam Childhood",
+    "description": "Sam as a toddler on Utopis.",
+    "tags": ["sam", "utopis", "homework"],
+    "width": 928,
+    "height": 928
+  },  
   {
     "file": "sam-alt-12.webp",
     "title": "Sam Childhood",
@@ -264,12 +232,28 @@
     "height": 1216
   },
   {
-    "file": "gallery.webp",
-    "title": "Samaya Gallery and Museum of Integration",
-    "description": "Art gallery and museum founded and directed by Maya and Sam.",
+    "file": "Maya-and-Sam.webp",
+    "title": "Maya and Sam",
+    "description": "Maya and Sam at the Samaya Gallery and Museum of Integration's grand opening between books 4 and 5.",
     "tags": ["maya", "sam", "gallery", "museum", "Integration"],
-    "width": 941,
-    "height": 627
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "file": "sam-and-maya.webp",
+    "title": "Sam and Maya",
+    "description": "Sam and Maya celebrating the grand opening of the Samaya Gallery and Museum of Integration between books 4 and 5.",
+    "tags": ["maya", "sam", "gallery", "museum", "Integration"],
+    "width": 1024,
+    "height": 1536
+  }, 
+  {
+    "file": "Reclamatic.png",
+    "title": "Reclamatic (cleaning bot)",
+    "description": "A robotic floor cleaner that uses MRI tech to deatomize dust, debris, germs and even stains.",
+    "tags": ["robot", "bot", "cleaning", "cleaner"],
+    "width": 775,
+    "height": 458
   },
   {
     "file": "Utopis.png",
@@ -280,13 +264,21 @@
     "height": 1024
   },
   {
-    "file": "xara-and-jenni.webp",
-    "title": "Xara and Jenni",
-    "description": "Portrait of Xara and Jenni at age 7 in book 4.",
-    "tags": ["xara", "jenni", "book 4"],
-    "width": 928,
-    "height": 1152
+    "file": "ares.gif",
+    "title": "Ares Rotating",
+    "description": "Ares, a moon of Chaos rotating. It's the home of New Eden and most of the characters.",
+    "tags": ["ares", "moon", "planet"],
+    "width": 340,
+    "height": 340
   },
+  {
+    "file": "ares.png",
+    "title": "Map of Ares around New Eden",
+    "description": "A Map showing the New Eden area of Ares.",
+    "tags": ["ares", "map", "new eden"],
+    "width": 1042,
+    "height": 576
+  },  
   {
     "file": "new-eden-book1.webp",
     "title": "New Eden",
@@ -312,11 +304,67 @@
     "height": 1024
   },
   {
-    "file": "celectra-pregnant.webp",
-    "title": "Celectra Pregnant",
-    "description": "Celectra carrying twins in her right body.",
-    "tags": ["celectra", "twins", "pregnant"],
-    "width": 1024,
+    "file": "gallery.webp",
+    "title": "Samaya Gallery and Museum of Integration",
+    "description": "Art gallery and museum founded and directed by Maya and Sam.",
+    "tags": ["maya", "sam", "gallery", "museum", "integration"],
+    "width": 941,
+    "height": 627
+  },
+  {
+    "file": "acivity.webp",
+    "title": "Activity Center",
+    "description": "Activity center (Mall of Motion).",
+    "tags": ["activity", "motion", "gym", "exercize", "swim", "PE"],
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "pool-room.webp",
+    "title": "Pool Room",
+    "description": "The pool room.",
+    "tags": ["pool", "activity", "swim", "activity center"],
+    "width": 1264,
+    "height": 842
+  },
+  {
+    "file": "swim-meet.webp",
+    "title": "Swim Meet",
+    "description": "Swim meet in the pool room",
+    "tags": ["pool", "activity", "swim", "activity center"],
+    "width": 1264,
+    "height": 842
+  },
+  {
+    "file": "nexus.webp",
+    "title": "The Nexus",
+    "description": "The Nexus, a place communal social space.",
+    "tags": ["social", "dining", "food", "drink", "relaxation", "study"],
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "observatory.webp",
+    "title": "The Observatory",
+    "description": "The Observatory. Professional research, star gazing, planetarium",
+    "tags": ["observatory", "space", "stars", "planets", "moons", "science"],
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "plenum.webp",
+    "title": "The Plenum",
+    "description": "The Plenum houses the council chamber and offices and security.",
+    "tags": ["plenum", "council", "government", "security"],
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "science.webp",
+    "title": "The Science and Technology Center",
+    "description": "The Science and Technology Center contains labs and workshops.",
+    "tags": ["science", "technology", "ANI", "dr. troy", "amerigo", "celectra"],
+    "width": 1536,
     "height": 1024
   }
 ]
