@@ -312,7 +312,7 @@
     "height": 627
   },
   {
-    "file": "acivity.webp",
+    "file": "activity.webp",
     "title": "Activity Center",
     "description": "Activity center (Mall of Motion).",
     "tags": ["activity", "motion", "gym", "exercize", "swim", "PE"],
@@ -335,6 +335,14 @@
     "width": 1264,
     "height": 842
   },
+  {
+    "file": "medical.webp",
+    "title": "The Medical Center",
+    "description": "The Medical Center is where all health matters are addressed.",
+    "tags": ["medical", "medicine", "surgery", "psychology", "doctor", "nurse"],
+    "width": 1536,
+    "height": 1024
+  },  
   {
     "file": "nexus.webp",
     "title": "The Nexus",
