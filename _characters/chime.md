@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Chime (Northern Territory)
-portrait: "/assets/images/chime-book2.webp"
+portrait: "/assets/images/chime-book4.webp"
 portrait-book2: "/assets/images/chime-book2.webp"
 portrait-book3: "/assets/images/chime-book3.webp"
 portrait-book4: "/assets/images/chime-book4.webp"
