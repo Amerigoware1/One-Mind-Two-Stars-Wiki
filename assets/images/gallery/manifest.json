@@ -40,6 +40,14 @@
     "height": 1536
   },
   {
+    "file": "xan-duska-playing.webp",
+    "title": "Xan and Duška playing",
+    "description": "Xan playing a video game at Duška's house.",
+    "tags": ["xan", "duška", "playing", "childhood home"],
+    "width": 1186,
+    "height": 784
+  },
+  {
     "file": "carisco-family.webp",
     "title": "The Carisco Family Portrait",
     "description": "A formal portrait of the Carisco family from Book 2, showing the growing family.",
@@ -177,11 +185,19 @@
   },
   {
     "file": "duska-book2-alt.webp",
-    "title": "Duska at age 5",
-    "description": "Duska at age 5",
-    "tags": ["duska", "book 2"],
+    "title": "Duška at age 5",
+    "description": "Duška at age 5",
+    "tags": ["duška", "book 2"],
     "width": 896,
     "height": 1184
+  },
+  {
+    "file": "duska-xan-playing.webp",
+    "title": "Duška and Xan playing",
+    "description": "Duška at age 5 playing with 6-year-old Xan",
+    "tags": ["duška", "xan","book 2"],
+    "width": 1536,
+    "height": 1024
   },
   {
     "file": "ethan-age10.webp",
