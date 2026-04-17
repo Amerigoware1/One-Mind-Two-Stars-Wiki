@@ -30,7 +30,23 @@
     "tags": ["celectra", "twins", "pregnant"],
     "width": 1024,
     "height": 1024
-  },  
+  },
+  {
+    "file": "xan-age7.webp",
+    "title": "Xan playing",
+    "description": "Xan playing a video game at home.",
+    "tags": ["xan", "playing", "childhood home"],
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "file": "xan-age8.webp",
+    "title": "Xan playing",
+    "description": "Xan playing a video game at home.",
+    "tags": ["xan", "childhood home", "childhood"],
+    "width": 1024,
+    "height": 1536
+  },
   {
     "file": "carisco-family.webp",
     "title": "The Carisco Family Portrait",
@@ -124,6 +140,46 @@
     "title": "Celectrum",
     "description": "An instrument invented by Jaxon in book 2",
     "tags": ["celectrum", "instrument", "music"],
+    "width": 832,
+    "height": 1248
+  },
+    {
+    "file": "ananya-age9.webp",
+    "title": "Ananya at age 9",
+    "description": "Ananya at age 9",
+    "tags": ["ananya", "book 1"],
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "file": "chenwei-age10.webp",
+    "title": "Chen Wei at age 10",
+    "description": "Chen Wei practicing at age 10",
+    "tags": ["chen wei", "book 1"],
+    "width": 1664,
+    "height": 928
+  },
+  {
+    "file": "hiro-aulii.webp",
+    "title": "Hiro and Aulii Vongphachanh",
+    "description": "Hiro and Aulii sparing in their yard",
+    "tags": ["hiro", "aulii", "Vongphachanh"],
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "hiro-kisa.webp",
+    "title": "Hiro and Sensei Kisa",
+    "description": "Sensei Kisa teaching Hiro at the dojo",
+    "tags": ["hiro", "kisa", "dojo", "karate"],
+    "width": 1536,
+    "height": 1024
+  },  
+  {
+    "file": "kowan-playing.webp",
+    "title": "Kowan playing",
+    "description": "Kowan playing in his living room",
+    "tags": ["kowan", "playing"],
     "width": 832,
     "height": 1248
   },
@@ -246,7 +302,39 @@
     "tags": ["maya", "sam", "gallery", "museum", "Integration"],
     "width": 1024,
     "height": 1536
-  }, 
+  },
+  {
+    "file": "oxi-age7.webp",
+    "title": "Oxi at the grotto",
+    "description": "Oxi getting into the grotto hot pool",
+    "tags": ["oxi", "grotto"],
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "file": "oxi-grotto.webp",
+    "title": "Oxi at the grotto",
+    "description": "Oxi floating in the geothermal pool",
+    "tags": ["oxi", "grotto"],
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "file": "sofia-age9.webp",
+    "title": "Sofia reading",
+    "description": "Sofia reading her holopad before bed.",
+    "tags": ["sofia", "reading", "holopad", "childhood"],
+    "width": 832,
+    "height": 1248
+  },    
+  {
+    "file": "zuri-age8.webp",
+    "title": "Zuri playing",
+    "description": "Zuri playing in his yard.",
+    "tags": ["celectra", "twins", "pregnant"],
+    "width": 1024,
+    "height": 1536
+  },     
   {
     "file": "Reclamatic.png",
     "title": "Reclamatic (cleaning bot)",
