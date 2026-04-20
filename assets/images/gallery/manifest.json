@@ -106,16 +106,24 @@
   {
     "file": "bowers-twins.webp",
     "title": "Jenni and Xara Bowers at Age Seven",
-    "description": "Celectra's identical twin babies, Jenni Jo and Xara Zo Bowers at age seven.",
+    "description": "Celectra's identical twin girls, Jenni Jo and Xara Zo Bowers at age seven.",
     "tags": ["jenni", "xara", "bowers", "baby", "babies"],
     "width": 832,
     "height": 1248
   },
   {
+    "file": "bowers-evening.webp",
+    "title": "Bowers Family",
+    "description": "Candid photo of the Bowers relaxing before bed.",
+    "tags": ["jenni", "xara", "bowers", "celectra", "jaxson", "book 4"],
+    "width": 845,
+    "height": 634
+  },  
+  {
     "file": "xara-jenni-podchair.webp",
     "title": "Reading Twins",
     "description": "Seven-year-old twins reading",
-    "tags": ["cave", "grotto", "pool", "geothermal"],
+    "tags": ["jenni", "xara", "reading", "pod chair", "book 4"],
     "width": 1024,
     "height": 1536
   },
