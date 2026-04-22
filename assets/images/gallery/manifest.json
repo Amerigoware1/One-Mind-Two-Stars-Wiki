@@ -102,6 +102,14 @@
     "tags": ["jenni", "xara", "bowers", "toddlers", "toddler","birthday"],
     "width": 1237,
     "height": 928
+  },
+  {
+    "file": "wedding.webp",
+    "title": "Bowers Wedding",
+    "description": "Celectra and Jaxon getting married.",
+    "tags": ["celectra", "jaxon", "bowers", "wedding"],
+    "width": 1000,
+    "height": 672
   },  
   {
     "file": "bowers-twins.webp",
@@ -115,7 +123,7 @@
     "file": "bowers-evening.webp",
     "title": "Bowers Family",
     "description": "Candid photo of the Bowers relaxing before bed.",
-    "tags": ["jenni", "xara", "bowers", "celectra", "jaxson", "book 4"],
+    "tags": ["jenni", "xara", "bowers", "celectra", "jaxon", "book 4"],
     "width": 845,
     "height": 634
   },  
