@@ -782,3 +782,53 @@ main h2 {
     width: 320px;
     margin: 0 0 1rem 1.5rem; /* Space between box and text */
 }
+/* --- Metabolic Power Level Bars --- */
+.metabolic-container {
+  background: var(--bg-card-dark);
+  border: 1px solid var(--border-glow);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.power-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.75rem;
+  margin-bottom: 0.3rem;
+  color: var(--text-muted);
+}
+
+.bar-bg {
+  background: rgba(255, 255, 255, 0.1);
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(0, 232, 255, 0.2);
+}
+
+.bar-fill {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+  box-shadow: 0 0 10px var(--neon-cyan);
+}
+
+/* Gradient Colors based on intensity */
+.fill-normal  { background: linear-gradient(90deg, #00e8ff, #0099ff); width: 15%; } /* Baseline Human */
+.fill-idling  { background: linear-gradient(90deg, #c13cff, #ff2af1); width: 35%; } /* Celectra Idle */
+.fill-active  { background: linear-gradient(90deg, #ff2af1, #ff0000); width: 85%; } /* Deep Communion */
+
+.bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  animation: scan 2s infinite;
+}
+
+@keyframes scan {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}

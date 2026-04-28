@@ -96,6 +96,8 @@ sensory-emotional network. Both bodies exhibit synchronized autonomic responses,
 but can act independently with deliberate control. This condition is stable but
 requires ongoing monitoring for metabolic load, neural fatigue, and resonance
 overextension.
+- **Waveguide Skulls:** Her skulls are mineralized with trace metals, acting as biogenic antennas to focus the "celectricity".
+- **Celectric Tax:** She maintains a BMR 2.5x higher than average; her body prioritizes powering the neural bridge over physical mass.
 - **<a href="../Mononous Disomas.html">Mononous Disomas – Celectra's Neural Dossier</a>** 
 </div>
 <div class="card-bg" markdown="1">
@@ -114,6 +116,9 @@ the placental damage. Growth
 normalized in adolescence but remains well below the colony average. Alex
 monitors her nutritional intake, bone density, and endocrine markers as part of
 her long-term care plan.
+Initially diagnosed as "failure to thrive," her small stature is now understood as a **metabolic trade-off**. 
+- **Nutritional Protocol:** Raised on high-density lipid pastes (MCTs) to fuel the inter-brain connection.
+- **Adult Metabolism:** Able to consume high-calorie "junk food" without weight gain due to the constant energy drain of the standing wave.
 - **<a href="../CelectraGrowth.html">Celectra Growth & Development Report</a>** 
 
 </div>
@@ -143,11 +148,12 @@ Her natural abilities include:
 <div class="card-bg" markdown="1">
 
 ## Relationships
+- **Amerigo Carisco** — father, mentor, later Chief Scientist
+- **Jinan “Jenni” Carisco** — biological mother, died in childbirth
+- **Zoë Carisco** — adoptive mother, emotional anchor  
 - **Jaxon Bowers** — partner, later father of her twin daughters  
-- **Zoë Carisco** — mother, emotional anchor  
-- **Amerigo Carisco** — father, mentor, later Chief Scientist  
 - **Xan Carisco** — younger brother, acoustic-communication innovator  
-- **Stan, Chime, Harbor, Logic, Ripple** — Galinstanian friends and collaborators  
+- **Stan, Chime, Harbor, Logic, Ripple, etal** — Galinstanian friends and collaborators  
 - **Jenni Jo & Xara Zo** — her daughters (Book 3 onward)  
 
 </div>
