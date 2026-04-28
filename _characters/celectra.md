@@ -155,7 +155,7 @@ Her natural abilities include:
 - **Xan Carisco** — younger brother, acoustic-communication innovator  
 - **Stan, Chime, Harbor, Logic, Ripple, etal** — Galinstanian friends and collaborators  
 - **Jenni Jo & Xara Zo** — her daughters (Book 3 onward)  
-
+- **Alex Cruiz** — physician who developed the magnesium-supplementation protocol to stabilize her waveguide skulls and high-calorie diet and monitors her skin for melanomas.
 </div>
 <div class="card-bg" markdown="1">
 
