@@ -1,3 +1,4 @@
+---
 layout: character
 title: Celectra Ambar Carisco
 portrait:  "/assets/images/celectra-book5.webp "
@@ -17,49 +18,49 @@ book4_age:  "29.3 Earth / 26.2 Ares "
 book5_age:  "36.3 Earth / 32.5 Ares "
 book1_title:  "Dual-Body Emergence "
 book1_arc: >
-At age seven, Celectra survives Dr. Kret's uncaring procedures to collect data about her dual-bodied physiology. She runs away from his clinic into a cave system where she finds  new friends. Under the care of Dr. Alex Cruiz and her father and Dr. Zoë, she begins to heal from the trama, but still has PTSD. She becomes the first human capable of
-communion—pe rceiving the Galinstanian EM network through resonance fields. Her
-childhood is shaped by medical observation, cautious exploration, and the gradual
-realization that she is both a  scientific breakthrough and a child who wants a
-normal life.
+ At age seven, Celectra survives Dr. Kret's uncaring procedures to collect data about her dual-bodied physiology. She runs away from his clinic into a cave system where she finds  new friends. Under the care of Dr. Alex Cruiz and her father and Dr. Zoë, she begins to heal from the trama, but still has PTSD. She becomes the first human capable of
+ communion—pe rceiving the Galinstanian EM network through resonance fields. Her
+ childhood is shaped by medical observation, cautious exploration, and the gradual
+ realization that she is both a  scientific breakthrough and a child who wants a
+ normal life.
 book2_title: "The Northern Territory"
 book2_arc: >
-At age fourteen, Celectra has finished with the academic portion of schooling but is working on college lessons as well as dance, swimming, karate, yoga, acrobatics, and gymnastics (all indoor activities because of her skin condition—and she abhors shoes). She is Majoring in Applied Cognitive Science with specialization in Neuro-Linguistic & Multiplicity Studies.
-Celectra joins the Northern Territory expedition as the colony’s only functional
-bridge to Galinstanians. She endures the trauma of Chime’s torture and the strain
-of long-range communion. Her abilities become essential to the mission’s survival,
-but the emotional cost is high. She begins forming the Listener Corps with Ananya
-and others, shifting from isolated responsibility to shared stewardship. Her
-relationship with Alex deepens as he becomes the only physician who fully
-understands her physiology.
+ At age fourteen, Celectra has finished with the academic portion of schooling but is working on college lessons as well as dance, swimming, karate, yoga, acrobatics, and gymnastics (all indoor activities because of her skin condition—and she abhors shoes). She is Majoring in Applied Cognitive Science with specialization in Neuro-Linguistic & Multiplicity Studies.
+ Celectra joins the Northern Territory expedition as the colony’s only functional
+ bridge to Galinstanians. She endures the trauma of Chime’s torture and the strain
+ of long-range communion. Her abilities become essential to the mission’s survival,
+ but the emotional cost is high. She begins forming the Listener Corps with Ananya
+ and others, shifting from isolated responsibility to shared stewardship. Her
+ relationship with Alex deepens as he becomes the only physician who fully
+ understands her physiology.
 book3_title: "Pregnancy and Decline"
 book3_arc: >
-At age twenty-one, Celectra defends her Ph.D. dissertation: "Neuro-Interface Design for Cross-Species Communication: Modeling Exo-Consciousness Through Electromagnetic Field Synthesis"
-Celectra’s unexpected pregnancy reveals asymmetrical symptoms between her two
-bodies, forcing Alex and Amerigo to confront the limits of their understanding.
-Her communion range begins to decline, raising ethical debates about using Dr.
-Kret’s research. She becomes the center of scientific, political, and personal
-conflict as the colony grapples with how to protect her and the unborn twins. Her
-eventual diagnosis of twins brings both joy and fear, and she must balance her
-role as the colony’s bridge with her role as a mother.
+ At age twenty-one, Celectra defends her Ph.D. dissertation: "Neuro-Interface Design for Cross-Species Communication: Modeling Exo-Consciousness Through Electromagnetic Field Synthesis"
+ Celectra’s unexpected pregnancy reveals asymmetrical symptoms between her two
+ bodies, forcing Alex and Amerigo to confront the limits of their understanding.
+ Her communion range begins to decline, raising ethical debates about using Dr.
+ Kret’s research. She becomes the center of scientific, political, and personal
+ conflict as the colony grapples with how to protect her and the unborn twins. Her
+ eventual diagnosis of twins brings both joy and fear, and she must balance her
+ role as the colony’s bridge with her role as a mother.
 book4_title: "The Resonance Crisis"
 book4_arc: >
-Celectra works with Amerigo, Alex, and the Listener Corps to interpret the
-resonance disturbances affecting the Four Rivers settlements. Her communion
-becomes unstable, requiring careful management to avoid resonance fatigue. She
-mentors the twins as they begin to show early aptitude for resonance perception.
-Her role shifts from sole bridge to senior advisor as the colony transitions to a
-multi-bridge system integrating technology, acoustics, and human intuition.
+ Celectra works with Amerigo, Alex, and the Listener Corps to interpret the
+ resonance disturbances affecting the Four Rivers settlements. Her communion
+ becomes unstable, requiring careful management to avoid resonance fatigue. She
+ mentors the twins as they begin to show early aptitude for resonance perception.
+ Her role shifts from sole bridge to senior advisor as the colony transitions to a
+ multi-bridge system integrating technology, acoustics, and human intuition.
 book5_title: "Stewardship and Legacy"
 book5_arc: >
-In her early forties, Celectra becomes a senior figure in the Resonance
-Stewardship Program. She supports the twins as they take on their first field
-responsibilities and helps refine long-term protocols for safe communion. Her
-influence becomes foundational: she is no longer the colony’s only bridge, but the
-architect of the system that ensures no one will ever bear that burden alone. Her
-legacy is one of resilience, compassion, and the creation of a future where
-communion is shared, understood, and sustainable.
-
+ In her early forties, Celectra becomes a senior figure in the Resonance
+ Stewardship Program. She supports the twins as they take on their first field
+ responsibilities and helps refine long-term protocols for safe communion. Her
+ influence becomes foundational: she is no longer the colony’s only bridge, but the
+ architect of the system that ensures no one will ever bear that burden alone. Her
+ legacy is one of resilience, compassion, and the creation of a future where
+ communion is shared, understood, and sustainable.
+---
 ## Overview
 Celectra Ambar Carisco is the first known dual-bodied human consciousness and the foundational bridge between humanity and the Galinstanian species of Ares. Born in 2225 after a radiation-induced consciousness fusion event, she grew into a diplomat, scientist, and cultural cornerstone whose natural electromagnetic communion shaped the colony’s survival and identity. Her life spans five books of the Two Stars saga, evolving from a traumatized child into a mother, scholar, and architect of interspecies harmony.
 
