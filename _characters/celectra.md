@@ -157,7 +157,7 @@ Her natural abilities include:
 ## Relationships
 * **Amerigo Carisco** — father, mentor, later Chief Scientist
 * **Jinan “Jenni” Carisco** — biological mother, died in childbirth
-* **Zoë Carisco** — adoptive mother, emotional anchor
+* **Dr. Zoë (Kret) Carisco** — adoptive mother, emotional anchor
 * **Jaxon Bowers** — partner, later father of her twin daughters
 * **Xan Carisco** — younger brother, acoustic-communication innovator
 * **Stan, Chime, Harbor, Logic, Ripple, etal** — Galinstanian friends and collaborators

@@ -18,7 +18,7 @@ book4_age: "58"
 book5_age: "65"
 book1_title: "The Mother of a Miracle"
 book1_arc: >
-  Zoë becomes the first human to raise a dual-bodied child. She navigates Celectra's trauma, sensory overload, and early communion abilities with a blend of clinical insight and maternal intuition. Her calm, grounding presence becomes essential to Celectra's survival and development.
+  Zoë becomes the second human to raise a dual-bodied child. She navigates Celectra's trauma, sensory overload, and early communion abilities with a blend of clinical insight and maternal intuition. Her calm, grounding presence becomes essential to Celectra's survival and development.
 
 book2_title: "The Northern Territory"
 book2_arc: >
@@ -81,7 +81,7 @@ Her weaknesses include:
 <div class="card-bg" markdown="1">
 ## Relationships
 - **Amerigo Carisco** — husband, intellectual partner, and the only person who can make her set down the weight for a moment
-- **Celectra Carisco** — daughter, source of pride and worry; their bond is tested by Celectra's unique needs but never broken
+- **Celectra Carisco** — adopted stepdaughter, source of pride and worry; their bond is tested by Celectra's unique needs but never broken
 - **Xan Carisco** — son, her "little engineer"; she nurtures his creativity without ever making him feel lesser
 - **Jenni Jo & Xara Zo** — granddaughters, the center of her later life; she watches them with the quiet joy of seeing her values carried forward
 - **Jaxon Bowers** — son‑in‑law in all but name; she sees in him the steadiness Celectra needs
