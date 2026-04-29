@@ -134,7 +134,8 @@ Beyond oral nutrition, the 40°C Mineral Pool (Non-Alkaline) serves as a seconda
 
 ### Implementation Note: The "Thermal Zone"
 Because her bodies are biological furnaces, the space between them acts as a stagnant heat pocket. When Celectra is well-fueled by the CMS-1 protocol, her radiant heat output increases.
-**Protocol Warning:** Partners or co-habitants (e.g., Jaxon Bowers) should be aware that while Celectra feels "normal" to herself in this state, she is outputting the thermal energy of two humans in high-gear. This often necessitates localized cooling (AC) for others, even while Celectra remains in her thermal-neutral comfort zone.
+To help combat this, Celectra exhibits a lifelong preference for being barefoot, which serves as a critical passive cooling mechanism. Due to her 38.5°C core temperature and Oculocutaneous Albinism skin sensitivity, traditional footwear causes rapid thermal runaway and epidermal distress. This preference extends to her choice of physical disciplines (Karate, Yoga, Swimming), where direct surface contact allows for maximum metabolic discharge and venting static interference of her neural broadcast.
+Additionally, she exclusively wears clothing made of "cyro-silk", a graphene-infused high-denier lyocell material and her bedsheets are made of the same material.
 
 ## Personality & Skills
 ### Celectra’s Internal Dashboard
