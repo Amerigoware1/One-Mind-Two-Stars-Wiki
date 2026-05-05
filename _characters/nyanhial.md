@@ -20,7 +20,7 @@ book5_age: "37.8"
 book1_title: "Rhythm & Pitch (Age 8)"
 book1_arc: >
   At eight, Nyanhial splits her afternoons between the dance studio and the New Eden youth soccer pitch. Training alongside Nhial, she quickly develops a shared vocabulary of movement: dance teaches her body control and spatial grace, while soccer grounds that grace in teamwork, timing, and rapid decision‑making. She plays as a central midfielder, already showing an instinct for reading the flow of play and positioning herself where she can intercept or distribute. Her coaches note her unusual calm under pressure and her ability to synchronize with partners without verbal cues.
-  
+
 book2_title: "Field Vision (Age 15)"
 book2_arc: >
   At fourteen, Nyanhial competes in regional youth soccer (the sport still thrives, even as other terrestrial games fade). Her dance‑honed footwork and peripheral awareness make her a playmaking force, capable of threading passes through tight defensive lines. When she watches Nhial’s Sundome Tournament match against Celectra, she doesn’t just see a loss – she sees a breakdown in operational flow. That observation sparks her interest in logistics and data tracking. She begins organizing team equipment schedules, tracking match statistics, and mapping practice routes, discovering a talent for turning chaotic variables into predictable systems.
