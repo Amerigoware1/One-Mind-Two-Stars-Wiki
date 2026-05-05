@@ -7,7 +7,7 @@ portrait-book2: "/assets/images/nyanhial-book2.webp"
 portrait-book3: "/assets/images/nyanhial-book3.webp"
 portrait-book4: "/assets/images/nyanhial-book4.webp"
 portrait-book5: "/assets/images/nyanhial-book5.webp"
-affiliation: New Eden Youth Cohort; Dancer & soccer Player; Ares Colonial Mining Corps (Logistics & Data Archiving Division)
+affiliation: New Eden Youth Cohort; Dancer & Soccer Player; Ares Colonial Mining Corps (Logistics & Data Archiving Division)
 status: Alive
 birthday: March 22, 2224
 birthplace: New Eden, Ares
