@@ -34,6 +34,7 @@ book5_title: "Lead Mineralogist & Safety Coordinator (Age 39)"
 book5_arc: >
   At thirty‑nine, Nhial is a lead mineralogist and senior safety coordinator. During critical excavation campaigns, he trains crews in high‑stress decision‑making, using his background in disciplined movement to keep teams calm during cave‑ins or ventilation failures. He helps younger miners practice rapid environmental assessment, teaching them to trust their trained instincts while staying within strict safety parameters. His calm, precise feedback earns him widespread respect, and he formalizes the “anticipatory survey” protocol, ensuring future generations learn to read and react to unstable geological environments without freezing or overcommitting.
   ---
+  
 <div class="article-content">
  <div class="card-bg" markdown="1">
 ### Overview

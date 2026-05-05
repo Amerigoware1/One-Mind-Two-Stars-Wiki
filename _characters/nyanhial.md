@@ -1,3 +1,4 @@
+---
 layout: character
 title: Nyanhial Dok
 portrait: "/assets/images/nyanhial-book5.webp"
@@ -31,6 +32,8 @@ book4_arc: >
 book5_title: "Lead Archivist & Logistics Director (Age 37)"
 book5_arc: >
   At thirty‑seven, Nyanhial is the lead data archivist and logistics director for Ares’ colonial mining network. During high‑stress excavation phases and emergency response drills, she coordinates cross‑crew supply drops, medical routing, and geological data backups with precision that mirrors her childhood dance formations and pitch awareness. She formalizes the “Adaptive Logistics Protocol,” a colony‑standard system that trains crews to maintain operational harmony even when primary shafts are compromised. Her work ensures that Nhial’s geological surveys, rescue teams, and mining engineers all receive the right resources at the right time, keeping the colony’s underground expansion sustainable and secure.
+  ---
+  
 <div class="article-content">
  <div class="card-bg" markdown="1">
 ### Overview
