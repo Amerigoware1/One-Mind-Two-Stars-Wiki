@@ -20,15 +20,19 @@ book5_age: "37.8"
 book1_title: "Rhythm & Pitch (Age 8)"
 book1_arc: >
   At eight, Nyanhial splits her afternoons between the dance studio and the New Eden youth soccer pitch. Training alongside Nhial, she quickly develops a shared vocabulary of movement: dance teaches her body control and spatial grace, while soccer grounds that grace in teamwork, timing, and rapid decision‑making. She plays as a central midfielder, already showing an instinct for reading the flow of play and positioning herself where she can intercept or distribute. Her coaches note her unusual calm under pressure and her ability to synchronize with partners without verbal cues.
+  
 book2_title: "Field Vision (Age 15)"
 book2_arc: >
   At fourteen, Nyanhial competes in regional youth soccer (the sport still thrives, even as other terrestrial games fade). Her dance‑honed footwork and peripheral awareness make her a playmaking force, capable of threading passes through tight defensive lines. When she watches Nhial’s Sundome Tournament match against Celectra, she doesn’t just see a loss – she sees a breakdown in operational flow. That observation sparks her interest in logistics and data tracking. She begins organizing team equipment schedules, tracking match statistics, and mapping practice routes, discovering a talent for turning chaotic variables into predictable systems.
+
 book3_title: "Data & Logistics (Age 22)"
 book3_arc: >
   At twenty‑two, Nyanhial joins the Ares Colonial Mining Corps as a junior data archivist and logistics coordinator. Her athletic background translates directly to operational planning: she treats supply chains like midfield transitions, mapping optimal routes for equipment, personnel, and survey data. Working in tandem with Nhial’s geological teams, she develops real‑time inventory dashboards and seismic‑data routing protocols that keep deep‑colony crews supplied without bottlenecks. Her ability to anticipate material needs before crews request them earns her rapid promotion and cross‑departmental trust.
+
 book4_title: "Operations Coordinator (Age 30)"
 book4_arc: >
   At thirty, Nyanhial serves as a senior operations coordinator for multi‑shaft mining campaigns. She designs “synchronized flow” logistics models that align drilling schedules, ventilation maintenance, ore transport, and survey archiving into a single operational rhythm. When tunnel collapses or equipment failures occur, her calm, systematic rerouting prevents cascade delays and keeps rescue teams moving efficiently. She mentors younger logistics staff in predictive inventory management, emphasizing that smooth operations depend not on working faster, but on moving in rhythm with the environment.
+
 book5_title: "Lead Archivist & Logistics Director (Age 37)"
 book5_arc: >
   At thirty‑seven, Nyanhial is the lead data archivist and logistics director for Ares’ colonial mining network. During high‑stress excavation phases and emergency response drills, she coordinates cross‑crew supply drops, medical routing, and geological data backups with precision that mirrors her childhood dance formations and pitch awareness. She formalizes the “Adaptive Logistics Protocol,” a colony‑standard system that trains crews to maintain operational harmony even when primary shafts are compromised. Her work ensures that Nhial’s geological surveys, rescue teams, and mining engineers all receive the right resources at the right time, keeping the colony’s underground expansion sustainable and secure.

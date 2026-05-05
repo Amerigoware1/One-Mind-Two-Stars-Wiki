@@ -20,16 +20,19 @@ book5_age: "39.3"
 book1_title: "Growing (Age 10)"
 book1_arc: >
   At ten, Nhial splits his time between Sundome Dojo and a local dance studio. His exceptional speed translates seamlessly across both disciplines, allowing him to move with striking precision in kumite and fluid grace on the dance floor. In karate, he favors counter‑strikes and intercepting techniques, often frustrating sparring partners who cannot close the distance. Sensei Kisa encourages him to develop patience, warning that pure speed without anticipation can be exploited, while his dance instructor pushes him to connect physical momentum to rhythmic awareness.
+  
 book2_title: "The Speedster (Age 17)"
 book2_arc: >
   At sixteen, Nhial enters the Sundome Karate Tournament, bringing a footwork style heavily influenced by his dance training. In the second round, he faces Celectra Carisco. His speed and unpredictable angles force Celectra to abandon reactive defense and instead anticipate his attacks – a mental shift that sharpens her focus. The match is close, but Celectra wins 3–1. Afterward, Nhial congratulates her and remarks, “Fighting you is like trying to hit a ghost.” He leaves the tournament with a new appreciation for strategic thinking, realizing that raw speed and rhythm alone are not enough without tactical foresight.
+
 book3_title: "Geology & Mineralogy (Age 24)"
 book3_arc: >
   Off‑page, at twenty‑four, Nhial pivots from competition to a practical, colony‑essential career. He enrolls in the Ares Colonial Mining Corps’ geological survey program, where his analytical mind and physical endurance make him an exceptional field mineralogist. He learns to read subterranean strata, identify ore veins, and map safe extraction routes through unstable terrain. His background in martial arts and dance informs his precise, controlled movements in confined tunnels, while his pattern‑seeking brain excels at correlating seismic data with mineral composition.
-book4_title: "Field Geologist (Age 32)"
+
 book4_title: "Field Geologist (Age 32)"
 book4_arc: >
   At thirty‑two, Nhial serves as a senior field geologist and extraction analyst. He works directly with drilling engineers and tunnel crews to optimize ore processing and prevent structural failures. He develops “terrain‑reading” safety drills that teach miners to detect micro‑fractures, gas pockets, and shifting load‑bearing walls before they become hazards. His emphasis on “controlled pacing” becomes a cornerstone of mining safety protocols, and he is frequently consulted when new survey equipment or seismic sensors are installed in deep‑colony shafts.
+
 book5_title: "Lead Mineralogist & Safety Coordinator (Age 39)"
 book5_arc: >
   At thirty‑nine, Nhial is a lead mineralogist and senior safety coordinator. During critical excavation campaigns, he trains crews in high‑stress decision‑making, using his background in disciplined movement to keep teams calm during cave‑ins or ventilation failures. He helps younger miners practice rapid environmental assessment, teaching them to trust their trained instincts while staying within strict safety parameters. His calm, precise feedback earns him widespread respect, and he formalizes the “anticipatory survey” protocol, ensuring future generations learn to read and react to unstable geological environments without freezing or overcommitting.
