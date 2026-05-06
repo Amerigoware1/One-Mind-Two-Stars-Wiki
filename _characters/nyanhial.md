@@ -71,7 +71,6 @@ Her weaknesses include:
 ### Relationships
 - **Nhial Dok** – older brother and primary collaborator; their complementary skills in field geology and logistics keep survey missions running safely
 - **Celectra Carisco** – mutual respect; Nyanhial occasionally consults with Celectra on Stewardship program scheduling and youth cohort logistics
-- **Aris Thorne** – senior mining geologist; relies on Nyanhial’s data routing to ensure core samples and seismic readings are archived without loss
 - **Jenni & Xara Carisco‑Bowers** – cross‑trained in Nhial’s simulation drills; Nyanhial coordinates their equipment and schedule rotations
 - **Duška Santoso Carisco & Kael** – logistics partners for integrating acoustic sensor arrays into colonial supply networks
 - **Kai Vasquez & Leila Al‑Farsi** – former cohort peers; Nyanhial manages their training schedules during early colony expansion phases
