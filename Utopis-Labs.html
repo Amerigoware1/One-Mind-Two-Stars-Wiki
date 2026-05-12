@@ -45,7 +45,7 @@
 
     <div class="card-bg">
         <h2>Design and Specifications</h2>
-        <p>All three Utopis-Labs share the same basic architecture as the original Utopis habitat cylinder, scaled down in length. Each features three radial stories, floor‑mounted portholes on the outer level, a central core with spoke elevators, and a small bridge module at the forward end. Independent fusion engines allow for repositioning within the Ares system, and each lab carries a full suite of scientific instruments tailored to its primary mission. The labs were designed to operate autonomously but remain in regular contact with Utopis Station and AI Utara.</p>
+        <p>All three Utopis-Labs share the same basic architecture as the original Utopis habitat cylinder, scaled down in length. Each features three radial stories, floor‑mounted portholes on the outer level, a central core with spoke elevators, and a small bridge module at the forward end. Independent fusion engines allow for repositioning within the Ares system, and each lab carries a full suite of scientific instruments tailored to its primary mission. The labs were designed to operate autonomously via delayed extention of Utara but remain in regular contact with Utopis Station.</p>
     </div>
 
     <div class="card-bg">
@@ -94,20 +94,21 @@
     </div>
 
 </div>
-
-<button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
-<script>
+  <!-- Back to Top Button -->
+  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+  <script>
     const toTopBtn = document.getElementById("toTopBtn");
     window.addEventListener("scroll", () => {
-        if (document.documentElement.scrollTop > 200) {
-            toTopBtn.style.display = "block";
-        } else {
-            toTopBtn.style.display = "none";
-        }
+      if (document.documentElement.scrollTop > 200) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
     });
     toTopBtn.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
-</script>
+  </script>	
 </body>
+
 </html>
