@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Extended Archive – One Mind, Two Stars Wiki</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="WikiStyle.css">
+  <style>
+    /* Passcode-specific additions to your existing style */
+    .passcode-container {
+      max-width: 500px;
+      margin: 4rem auto;
+      text-align: center;
+    }
+    
+    .passcode-box {
+      background: #0c0028;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    
+    .passcode-box input {
+      width: 80%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      background: #1e1e2f;
+      border: 1px solid #bb86fc;
+      border-radius: 5px;
+      color: white;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    
+    .passcode-box button {
+      margin-top: 1rem;
+      background: #bb86fc;
+      color: #0c0028;
+      border: none;
+      padding: 0.5rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    
+    .error-message {
+      color: #ff6b6b;
+      margin-top: 1rem;
+    }
+    
+    #archive-content {
+      display: none;
+    }
+    
+    .story-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .story-card {
+      background: #0c0028;
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: transform 0.2s;
+    }
+    
+    .story-card:hover {
+      transform: translateY(-3px);
+    }
+    
+    .story-card h3 {
+      margin-top: 0;
+      color: #bb86fc;
+    }
+    
+    .story-card p {
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+    
+    .story-card a {
+      color: #bb86fc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    hr {
+      border-color: #333;
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-banner">
+    <a href="index.html" class="home-button">🏠 Home</a>
+  </div>
+  
+  <h1>📚 Extended Archive</h1>
+  <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem auto;">
+    Welcome to the Extended Archive — a collection of deleted scenes, extended flashbacks, and alternate versions 
+    of chapters that didn't make it into the final novel. These are not required reading, but they offer a fuller 
+    view of Celectra’s world and the characters who inhabit it.
+  </p>
+  
+  <!-- Passcode Gate -->
+  <div id="passcodeGate" class="passcode-container">
+    <div class="passcode-box">
+      <p style="margin-bottom: 1rem;">🔐 This section is for readers who have finished <em>One Mind, Two Stars: The Bridge of Ares</em>.</p>
+      <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #aaa;">Enter the passcode found in the back of the book:</p>
+      <input type="password" id="passcodeInput" placeholder="Enter passcode">
+      <div><button onclick="checkPasscode()">Unlock Archive</button></div>
+      <div id="errorMsg" class="error-message"></div>
+    </div>
+  </div>
+  
+  <!-- Protected Content -->
+  <div id="archiveContent">
+    <div class="story-list">
+      <!-- Each story entry — update the href and details as you add files -->
+      <div class="story-card">
+        <h3>The Birthday Swim</h3>
+        <p>The complete river trip, with all the details that didn't fit into the novel's opening chapter.</p>
+        <a href="anthology/the-birthday-swim.md">Read →</a>
+      </div>
+      
+      <div class="story-card">
+        <h3>Echoes of Earth</h3>
+        <p>The long version of Jenni’s story, from the lava tubes to the 0300 call.</p>
+        <a href="anthology/echoes-of-earth.md">Read →</a>
+      </div>
+      
+      <div class="story-card">
+        <h3>The Confirmation</h3>
+        <p>The full medical exam where Dr. Cruiz explains Celectra's unique physiology.</p>
+        <a href="anthology/the-confirmation.md">Read →</a>
+      </div>
+      
+      <div class="story-card">
+        <h3>Early Signs</h3>
+        <p>A collection of moments from Celectra’s early childhood that hinted at her true nature.</p>
+        <a href="anthology/early-signs.md">Read →</a>
+      </div>
+      
+      <div class="story-card">
+        <h3>First Impressions</h3>
+        <p>Celectra’s first therapy session with Dr. Zoë Kret (full-length version).</p>
+        <a href="anthology/first-impressions.md">Read →</a>
+      </div>
+      
+      <div class="story-card">
+        <h3>The Shade-Beast</h3>
+        <p>The holo-chamber session where Aquella faces the shade-beast.</p>
+        <a href="anthology/the-shade-beast.md">Read →</a>
+      </div>
+      
+      <div class="story-card">
+        <h3>The Parisian Promise (Director's Cut)</h3>
+        <p>An extended version of the party finale, with additional moments between Amerigo and Zoë.</p>
+        <a href="anthology/parisian-promise-extended.md">Read →</a>
+      </div>
+      
+      <div class="story-card">
+        <h3>Crystalline Truths (Pre-Cave)</h3>
+        <p>An early version of Celectra testing her birthday bismuth, preserved as a curiosity.</p>
+        <a href="anthology/crystalline-truths.md">Read →</a>
+      </div>
+    </div>
+    
+    <hr>
+    
+    <p style="text-align: center; color: #aaa; font-size: 0.85rem;">
+      Stories are presented as originally written, with minor formatting adjustments for the web. 
+      Some content may overlap with the final novel; these are intended as bonus material for dedicated readers.
+    </p>
+    
+    <p style="text-align: center;">
+      <a href="index.html" style="color: #bb86fc;">← Return to Main Wiki</a>
+    </p>
+  </div>
+  
+  <button id="toTopBtn" aria-label="Return to top" style="display: none;">⬆️ Top</button>
+  
+  <script>
+    // Passcode check — update the code to match what you put in the book's backmatter
+    function checkPasscode() {
+      const input = document.getElementById('passcodeInput').value;
+      // Use the same passcode you plan to publish in the book
+      const validPasscode = 'BRIDGE'; // <-- Change this to your desired code
+      
+      if (input === validPasscode) {
+        // Hide passcode gate, show content
+        document.getElementById('passcodeGate').style.display = 'none';
+        document.getElementById('archiveContent').style.display = 'block';
+        // Store in localStorage so returning readers don't need to re-enter
+        localStorage.setItem('archiveUnlocked', 'true');
+      } else {
+        document.getElementById('errorMsg').innerText = 'Incorrect passcode. Please check the back of the book.';
+      }
+    }
+    
+    // Check if previously unlocked
+    if (localStorage.getItem('archiveUnlocked') === 'true') {
+      document.getElementById('passcodeGate').style.display = 'none';
+      document.getElementById('archiveContent').style.display = 'block';
+    }
+    
+    // Back to Top Button Logic (consistent with your existing site)
+    const toTopBtn = document.getElementById('toTopBtn');
+    window.addEventListener('scroll', () => {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        toTopBtn.style.display = 'block';
+      } else {
+        toTopBtn.style.display = 'none';
+      }
+    });
+    toTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
