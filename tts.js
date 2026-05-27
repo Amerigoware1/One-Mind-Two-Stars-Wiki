@@ -1,27 +1,53 @@
-// tts.js – Text‑to‑Speech with header controls and highlighting
+// tts.js – Floating TTS panel with highlighting and auto‑scroll
 (function() {
     const CONFIG = {
         highlightBg: 'rgba(255, 235, 59, 0.4)',
-        scrollPadding: 20,
         storageKey: 'ttsSettings',
         voiceLangPattern: /^en-/i
     };
 
-    // DOM elements (will be found after page load)
-    let voiceSelect, playBtn, pauseBtn, stopBtn, rateSlider, rateValue;
     let currentUtterance = null;
     let voicesList = [];
 
-    function getMainTextNodes() {
-        // Exclude navigation, header, footer, and the TTS controls themselves
-        const excludeSelectors = '.tts-controls, .top-banner, .home-button, #toTopBtn, .quick-jump, .search-container, nav, header, footer';
-        const mainElement = document.querySelector('main') || document.querySelector('article') || document.body;
-        const clone = mainElement.cloneNode(true);
+    // ----- Create floating panel HTML -----
+    const panel = document.createElement('div');
+    panel.id = 'ttsFloatingPanel';
+    panel.innerHTML = `
+        <div style="background: #1e1e2f; border-radius: 12px; padding: 10px 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); border: 1px solid #bb86fc; backdrop-filter: blur(8px); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-family: sans-serif; font-size: 0.8rem;">
+            <select id="ttsVoiceSelect" style="background:#0c0028; color:white; border:1px solid #bb86fc; border-radius:4px; padding:4px 6px;"></select>
+            <button id="ttsPlayBtn" style="background:#bb86fc; color:#0c0028; border:none; border-radius:4px; padding:4px 12px; cursor:pointer;">▶ Play</button>
+            <button id="ttsPauseBtn" style="background:#555; color:white; border:none; border-radius:4px; padding:4px 12px; cursor:pointer;">⏸ Pause</button>
+            <button id="ttsStopBtn" style="background:#555; color:white; border:none; border-radius:4px; padding:4px 12px; cursor:pointer;">■ Stop</button>
+            <label style="color:white; display:flex; align-items:center; gap:4px;">Speed:
+                <input type="range" id="ttsRateSlider" min="0.5" max="2" step="0.1" value="1" style="width:80px;">
+                <span id="ttsRateValue" style="color:#bb86fc;">1.0</span>
+            </label>
+        </div>
+    `;
+    panel.style.position = 'fixed';
+    panel.style.bottom = '20px';
+    panel.style.right = '20px';
+    panel.style.zIndex = '9999';
+    document.body.appendChild(panel);
+
+    // DOM elements
+    const voiceSelect = document.getElementById('ttsVoiceSelect');
+    const playBtn = document.getElementById('ttsPlayBtn');
+    const pauseBtn = document.getElementById('ttsPauseBtn');
+    const stopBtn = document.getElementById('ttsStopBtn');
+    const rateSlider = document.getElementById('ttsRateSlider');
+    const rateValue = document.getElementById('ttsRateValue');
+
+    // ----- Helper: get main text to read (exclude navigation, panel, etc.) -----
+    function getMainText() {
+        const excludeSelectors = '#ttsFloatingPanel, .top-banner, .home-button, #toTopBtn, .quick-jump, .search-container, nav, header, footer';
+        const mainElem = document.querySelector('main') || document.querySelector('article') || document.body;
+        const clone = mainElem.cloneNode(true);
         clone.querySelectorAll(excludeSelectors).forEach(el => el.remove());
-        let text = clone.innerText.replace(/\s+/g, ' ').trim();
-        return text;
+        return clone.innerText.replace(/\s+/g, ' ').trim();
     }
 
+    // ----- Highlight and scroll -----
     function highlightCurrentSentence(sentenceText) {
         document.querySelectorAll('.tts-highlight').forEach(el => {
             el.style.backgroundColor = '';
@@ -32,9 +58,8 @@
             document.body,
             NodeFilter.SHOW_TEXT,
             {
-                acceptNode: function(node) {
-                    if (node.parentElement.closest('.tts-controls')) return NodeFilter.FILTER_REJECT;
-                    if (node.parentElement.style.display === 'none') return NodeFilter.FILTER_REJECT;
+                acceptNode: (node) => {
+                    if (node.parentElement.closest('#ttsFloatingPanel')) return NodeFilter.FILTER_REJECT;
                     if (node.textContent.trim().length === 0) return NodeFilter.FILTER_REJECT;
                     return NodeFilter.FILTER_ACCEPT;
                 }
@@ -55,11 +80,7 @@
         }
     }
 
-    function autoScrollToHighlight() {
-        const highlighted = document.querySelector('.tts-highlight');
-        if (highlighted) highlighted.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-
+    // ----- Voice list -----
     function populateVoices() {
         voicesList = speechSynthesis.getVoices();
         const englishVoices = voicesList.filter(v => CONFIG.voiceLangPattern.test(v.lang));
@@ -72,13 +93,9 @@
                 if (settings.voiceName && englishVoices.some(v => v.name === settings.voiceName))
                     voiceSelect.value = settings.voiceName;
                 if (settings.rate) rateSlider.value = settings.rate;
-                updateRateDisplay();
+                rateValue.textContent = rateSlider.value;
             } catch(e) {}
         }
-    }
-
-    function updateRateDisplay() {
-        if (rateValue) rateValue.textContent = rateSlider.value;
     }
 
     function saveSettings() {
@@ -88,12 +105,10 @@
         }));
     }
 
+    // ----- Speech -----
     function speak() {
-        if (currentUtterance) {
-            speechSynthesis.cancel();
-            currentUtterance = null;
-        }
-        const text = getMainTextNodes();
+        if (currentUtterance) speechSynthesis.cancel();
+        const text = getMainText();
         if (!text) return;
         const utterance = new SpeechSynthesisUtterance(text);
         const selectedVoice = voicesList.find(v => v.name === voiceSelect.value);
@@ -107,7 +122,6 @@
                 const currentText = text.substring(event.charIndex, event.charIndex + event.charLength);
                 if (currentText && currentText !== lastSentence) {
                     highlightCurrentSentence(currentText);
-                    autoScrollToHighlight();
                     lastSentence = currentText;
                 }
             }
@@ -124,54 +138,39 @@
         speechSynthesis.speak(utterance);
     }
 
-    function init() {
-        voiceSelect = document.getElementById('ttsVoiceSelect');
-        playBtn = document.getElementById('ttsPlayBtn');
-        pauseBtn = document.getElementById('ttsPauseBtn');
-        stopBtn = document.getElementById('ttsStopBtn');
-        rateSlider = document.getElementById('ttsRateSlider');
-        rateValue = document.getElementById('ttsRateValue');
-        if (!voiceSelect) return; // controls not in DOM yet? Wait.
-
-        playBtn.addEventListener('click', () => {
-            if (speechSynthesis.paused) speechSynthesis.resume();
-            else speak();
+    // ----- Event listeners -----
+    playBtn.addEventListener('click', () => {
+        if (speechSynthesis.paused) speechSynthesis.resume();
+        else speak();
+    });
+    pauseBtn.addEventListener('click', () => {
+        if (speechSynthesis.speaking && !speechSynthesis.paused) speechSynthesis.pause();
+    });
+    stopBtn.addEventListener('click', () => {
+        if (currentUtterance) speechSynthesis.cancel();
+        currentUtterance = null;
+        document.querySelectorAll('.tts-highlight').forEach(el => {
+            el.style.backgroundColor = '';
+            el.classList.remove('tts-highlight');
         });
-        pauseBtn.addEventListener('click', () => {
-            if (speechSynthesis.speaking && !speechSynthesis.paused) speechSynthesis.pause();
-        });
-        stopBtn.addEventListener('click', () => {
-            if (currentUtterance) speechSynthesis.cancel();
+    });
+    rateSlider.addEventListener('input', () => {
+        rateValue.textContent = rateSlider.value;
+        saveSettings();
+        if (currentUtterance) {
+            speechSynthesis.cancel();
             currentUtterance = null;
-            document.querySelectorAll('.tts-highlight').forEach(el => {
-                el.style.backgroundColor = '';
-                el.classList.remove('tts-highlight');
-            });
-        });
-        rateSlider.addEventListener('input', () => {
-            updateRateDisplay();
-            saveSettings();
-            if (currentUtterance) {
-                speechSynthesis.cancel();
-                currentUtterance = null;
-            }
-        });
-        voiceSelect.addEventListener('change', () => {
-            saveSettings();
-            if (currentUtterance) {
-                speechSynthesis.cancel();
-                currentUtterance = null;
-            }
-        });
+        }
+    });
+    voiceSelect.addEventListener('change', () => {
+        saveSettings();
+        if (currentUtterance) {
+            speechSynthesis.cancel();
+            currentUtterance = null;
+        }
+    });
 
-        if (speechSynthesis.onvoiceschanged !== undefined)
-            speechSynthesis.onvoiceschanged = populateVoices;
-        populateVoices();
-    }
-
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-    } else {
-        init();
-    }
+    if (speechSynthesis.onvoiceschanged !== undefined)
+        speechSynthesis.onvoiceschanged = populateVoices;
+    populateVoices();
 })();
