@@ -8,15 +8,8 @@
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/favicon.png">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrapper">
-      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title }}</a>
-      <nav>
-        <a href="{{ "/" | relative_url }}">Home</a>
-        <a href="{{ "/characters/" | relative_url }}">Characters</a>
-      </nav>
-    </div>
-  </header>
+
+  {% include header.html %}
 
   <main class="page-content">
     <div class="wrapper">
@@ -29,6 +22,8 @@
       <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}</p>
     </div>
   </footer>
-  <script src="{{ '/tts.js' | relative_url }}"></script>
+
+  <!-- Load TTS script – using baseurl to ensure correct path -->
+  <script src="{{ site.baseurl }}/tts.js"></script>
 </body>
 </html>
