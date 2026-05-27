@@ -101,7 +101,7 @@ She genuinely didn’t understand that other people experienced consciousness di
 
 How being *herself* felt.
 
-***
+\*\*\*  
 
 Now, in the present moment, with her four little feet warm in his hands and her dual breathing steady and synchronized, Amerigo understood.  
 
