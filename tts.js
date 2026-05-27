@@ -117,15 +117,15 @@
         utterance.lang = 'en-US';
 
         let lastSentence = '';
-        utterance.onboundary = (event) => {
-            if (event.name === 'sentence' || event.name === 'word') {
-                const currentText = text.substring(event.charIndex, event.charIndex + event.charLength);
-                if (currentText && currentText !== lastSentence) {
-                    highlightCurrentSentence(currentText);
-                    lastSentence = currentText;
-                }
-            }
-        };
+        // utterance.onboundary = (event) => {
+            // if (event.name === 'sentence' || event.name === 'word') {
+                // const currentText = text.substring(event.charIndex, event.charIndex + event.charLength);
+                // if (currentText && currentText !== lastSentence) {
+                   //  highlightCurrentSentence(currentText);
+                    // lastSentence = currentText;
+                // }
+            // }
+        // };
         utterance.onend = () => {
             currentUtterance = null;
             document.querySelectorAll('.tts-highlight').forEach(el => {
