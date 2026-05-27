@@ -6,7 +6,7 @@
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="stylesheet" href="WikiStyle.css">
   <style>
-    /* Passcode-specific additions to your existing style */
+    /* Passcode-specific additions */
     .passcode-container {
       max-width: 500px;
       margin: 4rem auto;
@@ -48,8 +48,8 @@
       margin-top: 1rem;
     }
     
-    #archive-content {
-      display: none;
+    #archiveContent {
+      display: none;  /* hidden by default until passcode is entered */
     }
     
     .story-list {
@@ -90,6 +90,20 @@
       border-color: #333;
       margin: 2rem 0;
     }
+
+    .top-banner a.home-button {
+      background: #0c0028;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #bb86fc;
+      border: 1px solid #bb86fc;
+      margin-right: 0.5rem;
+    }
+    .top-banner a.home-button:hover {
+      background: #bb86fc;
+      color: #0c0028;
+    }
   </style>
 </head>
 <body>
@@ -97,7 +111,7 @@
     <a href="index.html" class="home-button">🏠 Home</a>
   </div>
   
-  <h1>📖 Extended Archive</h1>
+  <h1>📚 Extended Archive</h1>
   <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem auto;">
     Welcome to the Extended Archive — a collection of deleted scenes, extended flashbacks, and alternate versions 
     of chapters that didn't make it into the final novel. These are not required reading, but they offer a fuller 
@@ -109,16 +123,16 @@
     <div class="passcode-box">
       <p style="margin-bottom: 1rem;">🔐 This section is for readers who have finished <em>One Mind, Two Stars: The Bridge of Ares</em>.</p>
       <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #aaa;">Enter the passcode found in the back of the book:</p>
-      <input type="password" id="passcodeInput" placeholder="Enter passcode">
+      <input type="password" id="passcodeInput" placeholder="Enter passcode" autocomplete="off">
       <div><button onclick="checkPasscode()">Unlock Archive</button></div>
       <div id="errorMsg" class="error-message"></div>
     </div>
   </div>
   
-  <!-- Protected Content -->
-  <div id="archiveContent" style="display: none;">
+  <!-- Protected Content (hidden until passcode entered) -->
+  <div id="archiveContent">
     <div class="story-list">
-      <!-- Each story entry — update the href and details as you add files -->
+      <!-- Each story entry – update the href and details as you add files -->
       <div class="story-card">
         <h3>The Birthday Swim</h3>
         <p>The complete river trip, with all the details that didn't fit into the novel's opening chapter.</p>
@@ -183,10 +197,9 @@
   <button id="toTopBtn" aria-label="Return to top" style="display: none;">⬆️ Top</button>
   
   <script>
-    // Passcode check — update the code to match what you put in the book's backmatter
+    // Passcode check – update the passcode to match what you publish in the book
     function checkPasscode() {
       const input = document.getElementById('passcodeInput').value;
-      // Use the same passcode you plan to publish in the book
       const validPasscode = 'BRIDGE'; // <-- Change this to your desired code
       
       if (input === validPasscode) {
@@ -195,15 +208,20 @@
         document.getElementById('archiveContent').style.display = 'block';
         // Store in localStorage so returning readers don't need to re-enter
         localStorage.setItem('archiveUnlocked', 'true');
+        // Clear any previous error message
+        document.getElementById('errorMsg').innerText = '';
       } else {
         document.getElementById('errorMsg').innerText = 'Incorrect passcode. Please check the back of the book.';
       }
     }
     
-    // Check if previously unlocked
+    // Check if previously unlocked (persistent across visits)
     if (localStorage.getItem('archiveUnlocked') === 'true') {
       document.getElementById('passcodeGate').style.display = 'none';
       document.getElementById('archiveContent').style.display = 'block';
+    } else {
+      // Ensure content is hidden on first visit (inline style already does this)
+      document.getElementById('archiveContent').style.display = 'none';
     }
     
     // Back to Top Button Logic (consistent with your existing site)
