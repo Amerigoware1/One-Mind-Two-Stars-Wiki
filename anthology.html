@@ -97,7 +97,7 @@
     <a href="index.html" class="home-button">🏠 Home</a>
   </div>
   
-  <h1>📚 Extended Archive</h1>
+  <h1>📖 Extended Archive</h1>
   <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem auto;">
     Welcome to the Extended Archive — a collection of deleted scenes, extended flashbacks, and alternate versions 
     of chapters that didn't make it into the final novel. These are not required reading, but they offer a fuller 
@@ -202,6 +202,7 @@
     
     // Check if previously unlocked
     if (localStorage.getItem('archiveUnlocked') === 'true') {
+        localStorage.setItem('archiveUnlocked', 'false');
       document.getElementById('passcodeGate').style.display = 'none';
       document.getElementById('archiveContent').style.display = 'block';
     }
