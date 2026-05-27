@@ -202,7 +202,6 @@
     
     // Check if previously unlocked
     if (localStorage.getItem('archiveUnlocked') === 'true') {
-        localStorage.setItem('archiveUnlocked', 'false');
       document.getElementById('passcodeGate').style.display = 'none';
       document.getElementById('archiveContent').style.display = 'block';
     }
