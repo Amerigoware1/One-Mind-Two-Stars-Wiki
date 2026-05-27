@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Genesis Revelations
 ---
 <div class="top-banner">

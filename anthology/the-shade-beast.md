@@ -1,12 +1,11 @@
 ---
+layout: default
 title: The Shade Beast
 ---
 <div class="top-banner">
   <a href="../index.html" class="home-button">🏠 Home</a>
   <a href="../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
-
-# The Shade Beast
 
 When Dr. Zoë Kret arrived at the holo-chamber aboard Utopis, a place she had only visited once as a child, she found Celectra already there. The metallic tang of recycled air on Utopis, a sharp contrast to the arid breeze she remembered from Ares, hung heavy in the sterile space. Celectra was barefoot and pacing the corridor.   
 

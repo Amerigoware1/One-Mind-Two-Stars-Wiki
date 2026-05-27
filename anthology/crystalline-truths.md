@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Crystalline Truths
 ---
 <div class="top-banner">

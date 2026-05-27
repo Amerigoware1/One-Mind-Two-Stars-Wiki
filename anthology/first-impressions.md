@@ -1,4 +1,5 @@
 ---
+layout: default
 title: First Impressions
 ---
 <div class="top-banner">

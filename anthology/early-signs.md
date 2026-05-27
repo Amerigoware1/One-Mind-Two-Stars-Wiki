@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Early Signs
 ---
 <div class="top-banner">

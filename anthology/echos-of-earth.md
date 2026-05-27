@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Echos of Earth
 ---
 <div class="top-banner">
