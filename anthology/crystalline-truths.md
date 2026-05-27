@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Crystalline Truths
 ---
 <div class="top-banner">
   <a href="../index.html" class="home-button">🏠 Home</a>
   <a href="../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
+
+# Crystalline Truths
 
 ​Celectra woke in the pre-dawn dimness. One body rolled from bed, knees sinking into the soft-touch flooring. The other leaned over the edge, fingers finding the carbon fiber panel set into the bedframe. A near-silent *whir* of electric motors followed, and a powered drawer, faced with matching cherry veneer, eased itself open from the decking until it was fully extended. It hung suspended just over the floor.
 
