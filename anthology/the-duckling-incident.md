@@ -30,8 +30,6 @@ Celectra’s left body popped the panel open with a fingernail, revealing a nest
 
 “I want to teach it to follow me,” she said.
 
-There was a pause – approximately 0.3 seconds, which for Utara was an eternity.
-
 “That would require reassigning its target acquisition protocols from ‘debris’ to a specific biosignature,” Utara said. “Your biosignature, presumably. The safety implications are non‑trivial. If the disintegrator beam were active, following you would mean trying to atomize you.”
 
 “That’s why I asked about training mode first.”
@@ -64,7 +62,8 @@ She tapped the tertiary slot. A dropdown appeared: **ASSIGN NEW TARGET TYPE**.
 
 The screen flickered. A new entry appeared:
 
-**TERTIARY TARGET:** *Carisco, Celectra (biosignature confirmed)*
+TERTIARY TARGET: Carisco, Celeste & Electra (Identical Biosignature Match: Delta-9)
+(System Note: Dual-node biological anomaly detected. Merging profile tracking.)
 
 Celectra’s left body grinned. Her right body, still pacing the reclamatic, grinned too.
 
@@ -80,81 +79,91 @@ Her left body keyed the comm on the maintenance panel. “Daddy? Can you come to
 
 ---
 
-Daddy arrived two minutes later, wiping his hands on a rag from the lab. He took one look at the open panel, the datapad, and the reclamatic hovering beside one of her bodies – and sighed.
+Amerigo arrived two minutes later, wiping his hands on a rag from the lab. He took one look at the open panel where Celeste stood holding the datapad, and then looked down the corridor where Electra stood pacing the hovering reclamatic.
 
-“What are you building?”
+He sighed, but his eyes narrowed slightly. He always felt a strange, subtle vertigo when they did this. There had been no whisper down the hall, no head nod, no shared glances between the girls.
 
-“Not building. Reprogramming,” Celectra’s left body said. “I need you to verify the safety lock before I finish.”
+“What are you two building?”
 
-She showed him the screen: training mode active, emitter output zero, the new biosignature target listed but not yet activated.
+“Not building. Reprogramming,” Celeste said, her fingers flying across the maintenance screen. Down the hall, Electra’s head turned in perfect, mechanical synchronization as if she were the one who had spoken. “I need you to verify the safety lock before I finish.”
 
-“You’re teaching it to follow you,” he said. It wasn’t a question.
+She showed him the screen: training mode active, emitter output zero.
 
-“Yes. But I need you to confirm the disintegrator is really off. Utara says it is, but she’s not the one who’ll be standing in front of the beam.”
+“You’re teaching it to follow you,” he said to Celeste.
 
-Daddy’s expression shifted – from exasperation to something softer. She had thought of the risk. She had built a verification step. She had called him to check.
+Down the hall, Electra answered for her sister without a breath of delay: “Yes. But I need you to confirm the disintegrator is really off. Utara says it is, but she’s not the one who’ll be standing in front of the beam.”
 
-He crouched beside the reclamatic and pulled up its diagnostic readout on his own datapad. “Emitter output: zero. Beam frequency: idle. Thermal signature: ambient.” He looked up at both her faces. “It’s safe.”
+Amerigo blinked. The hand-off between his daughters’ voices was too seamless. It was like listening to one person speak from two places at once.
 
-“Then final step.” Celectra’s right body extended a hand toward the reclamatic. “Activate tertiary target.”
+For a moment, a cold unease crept through him — the same vertigo he sometimes felt watching them move in perfect synchrony, as though distance meant nothing between them.
 
-The drone beeped. Its sensor array cycled once, twice – and then it turned toward her right body with the focused attention of a predator that had just discovered prey.
+Then Electra grinned at him, six years old and missing one front tooth, and the feeling collapsed under the familiar weight of fatherhood. They were his daughters. Twins. Just twins.
+
+He crouched beside the reclamatic near Electra and pulled up its diagnostic readout on his own datapad. “Emitter output: zero. Beam frequency: idle. Thermal signature: ambient.” He looked down the hall at Celeste, then down at Electra. Both of them were wearing the exact same tight, triumphant little smirk. Spooky kids, he thought, a wave of paternal affection washing over the strangeness. “It’s safe.”
+
+“Then final step.” Electra extended a hand toward the reclamatic. Down the corridor, Celeste tapped the screen. “Activate tertiary target.”
+
+The drone beeped. Its sensor array cycled once, twice – and then it turned toward Electra with the focused attention of a predator that had just discovered prey.
 
 Instead of atomizing her, it glided forward, stopped at her feet, and waited.
 
-“Huh,” Daddy said.
+“Huh,” Amerigo said.
 
-Celectra’s right body took a step. The reclamatic followed. She took another step. It followed again, maintaining exactly one meter of distance.
+Electra took a step. The reclamatic followed. She took another step. It followed again, maintaining exactly one meter of distance.
 
-Her left body, still at the maintenance panel, clapped her hands together. “It works!”
+Celeste, still at the maintenance panel, clapped her hands together. “It works!”
 
-“Don’t run,” Daddy said quickly.
+“Don’t run,” Amerigo said quickly.
 
-She ran.
+They ran.
 
-Both bodies took off down the corridor in opposite directions – which was, she immediately realized, a problem. The reclamatic, programmed to follow one biosignature, couldn’t decide which body to chase. It spun in place, beeped in distress, and then shut down with a soft whine.
+Both bodies took off down the corridor in opposite directions – which was, he immediately realized, a problem. The reclamatic, programmed to follow one biosignature, couldn’t decide which body to chase. It spun in place, beeped in distress, and then shut down with a soft whine.
 
-Celectra’s bodies stopped. Both looked at the dead drone.
+Both girls stopped. Both looked at the dead drone.
 
-“Utara,” she said, “did I break it?”
+“Utara,” one of them said, “did I break it?”
 
 “No. The unit encountered contradictory targeting inputs and entered failsafe mode. It will reboot in thirty seconds.”
 
-Daddy walked over to the drone, nudged it with his boot, and looked at both of her faces with an expression that was equal parts impressed and terrified.
+Amerigo walked over to the drone, nudged it with his boot, and looked at both of there faces with an expression that was equal parts impressed and terrified.
 
 “You taught it to follow *one* of you. But there are two of you.”
 
-“Same biosignature,” Celectra said. “It should follow both.”
+“Same biosignature,” they said stereophonically. “It should follow both.”
 
 “Should.”
 
 The reclamatic rebooted. Its lights flickered green.
 
-Celectra’s bodies moved – this time in the same direction, side by side, matching pace. The drone glided after them, keeping its distance, its beam emitter dark.
+The twins moved – this time in the same direction, side by side, matching pace. The drone glided after them, keeping its distance, its beam emitter dark.
 
-“Now walk slower,” Daddy said.
+“Now walk slower,” Amerigo said.
 
-She walked slower. The drone matched her pace.
+They walked slower. The drone matched her pace.
 
 “Now turn.”
 
-She turned. The drone turned.
+They turned. The drone turned.
 
 “Now stop.”
 
-She stopped. The drone stopped.
+They stopped. The drone stopped.
 
 He ran a hand through his hair. “You reprogrammed a cleaning drone to follow you like a duckling.”
 
-“Like ducklings,” Celectra corrected. “Plural. Because there are two of me.”
+“Like ducklings,” they corrected. “Plural. Because there are two of me.”
 
-“There’s one of you,” he said quietly, and she felt the warmth of it – that he was finally saying it without being corrected.
+“There are two of you,” he said quietly, "with virtually identical biosignatures."
 
 “Right. One of me. Two bodies. One duckling following both.”
 
-The reclamatic beeped again, and Celectra’s left body began walking in a slow circle. The drone followed, tracing her path exactly. Her right body stayed still, watching.
+Amerigo opened his mouth, then stopped.
 
-“It’s confused,” Daddy observed.
+The correction should have sounded childish. Instead it landed with the awful clarity of simple truth.
+
+The reclamatic beeped again, and Celeste began walking in a slow circle. The drone followed, tracing her path exactly. Electra stayed still, watching.
+
+“It’s confused,” Amerigo observed.
 
 “It’s learning,” she said. “It’ll figure out that both bodies are the same target. It just needs practice.”
 
@@ -162,21 +171,21 @@ The reclamatic beeped again, and Celectra’s left body began walking in a slow 
 
 “Yes. And tomorrow, I’ll teach it to fetch.”
 
-He stared at her.
+He stared at them.
 
 “Kidding,” she said. Both faces smiled. “Mostly.”
 
 ---
 
-The reclamatics followed her for the rest of the afternoon. Not just one – after she successfully demonstrated the trick to Utara, the AI had, with what Celectra suspected was amusement, synchronized the reprogramming across three units. By evening, she had a parade.
+The reclamatics followed them for the rest of the afternoon. Not just one – after they successfully demonstrated the trick to Utara, the AI had, with what Amerigo suspected was amusement, synchronized the reprogramming across three units. By evening, they had a parade.
 
-Daddy watched from the observation window as Celectra’s two bodies led a line of glowing drones through the corridors, their blue sensor lights tracing her path like fireflies.
+Daddy watched through his lab's glass doors as his daughters led a line of glowing drones through the corridors, their blue sensor lights tracing her path like fireflies.
 
 He shook his head. He laughed.
 
-Then he opened his comm and called Uncle Doc.
+Then he opened his comm and called Alex.
 
-“You’re not going to believe what your goddaughter did today.”
+“You’re not going to believe what your goddaughters did today.”
 
 ---
 
