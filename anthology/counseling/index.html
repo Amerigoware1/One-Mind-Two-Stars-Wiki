@@ -1,7 +1,112 @@
----
-layout: default
-title: Counseling Sessions – Extended Archive
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Extended Archive – One Mind, Two Stars Wiki</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="WikiStyle.css">
+  <style>
+    /* Passcode-specific additions */
+    .passcode-container {
+      max-width: 500px;
+      margin: 4rem auto;
+      text-align: center;
+    }
+    
+    .passcode-box {
+      background: #0c0028;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    
+    .passcode-box input {
+      width: 80%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      background: #1e1e2f;
+      border: 1px solid #bb86fc;
+      border-radius: 5px;
+      color: white;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    
+    .passcode-box button {
+      margin-top: 1rem;
+      background: #bb86fc;
+      color: #0c0028;
+      border: none;
+      padding: 0.5rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    
+    .error-message {
+      color: #ff6b6b;
+      margin-top: 1rem;
+    }
+    
+    #archiveContent {
+      display: none;  /* hidden by default until passcode is entered */
+    }
+    
+    .story-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .story-card {
+      background: #0c0028;
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: transform 0.2s;
+    }
+    
+    .story-card:hover {
+      transform: translateY(-3px);
+    }
+    
+    .story-card h3 {
+      margin-top: 0;
+      color: #bb86fc;
+    }
+    
+    .story-card p {
+      color: #ccc;
+      font-size: 0.9rem;
+    }
+    
+    .story-card a {
+      color: #bb86fc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    hr {
+      border-color: #333;
+      margin: 2rem 0;
+    }
+
+    .top-banner a.home-button {
+      background: #0c0028;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #bb86fc;
+      border: 1px solid #bb86fc;
+      margin-right: 0.5rem;
+    }
+    .top-banner a.home-button:hover {
+      background: #bb86fc;
+      color: #0c0028;
+    }
+  </style>
+</head>
+<body>
 
 <div class="top-banner">
   <a href="../../index.html" class="home-button">🏠 Home</a>
@@ -43,3 +148,49 @@ title: Counseling Sessions – Extended Archive
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="../../anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>
+
+  <button id="toTopBtn" aria-label="Return to top" style="display: none;">⬆️ Top</button>
+  
+  <script>
+    // Passcode check – update the passcode to match what you publish in the book
+    function checkPasscode() {
+      const input = document.getElementById('passcodeInput').value;
+      const validPasscode = 'BRIDGE'; // <-- Change this to your desired code
+      
+      if (input === validPasscode) {
+        // Hide passcode gate, show content
+        document.getElementById('passcodeGate').style.display = 'none';
+        document.getElementById('archiveContent').style.display = 'block';
+        // Store in localStorage so returning readers don't need to re-enter
+        localStorage.setItem('archiveUnlocked', 'true');
+        // Clear any previous error message
+        document.getElementById('errorMsg').innerText = '';
+      } else {
+        document.getElementById('errorMsg').innerText = 'Incorrect passcode. Please check the back of the book.';
+      }
+    }
+    
+    // Check if previously unlocked (persistent across visits)
+    if (localStorage.getItem('archiveUnlocked') === 'true') {
+      document.getElementById('passcodeGate').style.display = 'none';
+      document.getElementById('archiveContent').style.display = 'block';
+    } else {
+      // Ensure content is hidden on first visit (inline style already does this)
+      document.getElementById('archiveContent').style.display = 'none';
+    }
+    
+    // Back to Top Button Logic (consistent with your existing site)
+    const toTopBtn = document.getElementById('toTopBtn');
+    window.addEventListener('scroll', () => {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        toTopBtn.style.display = 'block';
+      } else {
+        toTopBtn.style.display = 'none';
+      }
+    });
+    toTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
