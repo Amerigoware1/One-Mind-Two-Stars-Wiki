@@ -4,8 +4,8 @@ title: Pancakes with Aunt Dee
 ---
 
 <div class="top-banner">
-  <a href="../index.html" class="home-button">🏠 Home</a>
-  <a href="../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
+  <a href="../../index.html" class="home-button">🏠 Home</a>
+  <a href="../../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
 
 Amerigo paused in the doorway of the Cruiz kitchen, the scent of vanilla and warm flour wrapping around him like a familiar blanket. He watched, heart softening, as his four-year-old daughters worked.

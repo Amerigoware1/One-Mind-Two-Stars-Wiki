@@ -4,8 +4,8 @@ layout: default
 ---
 
 <div class="top-banner">
-  <a href="../index.html" class="home-button">🏠 Home</a>
-  <a href="../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
+  <a href="../../index.html" class="home-button">🏠 Home</a>
+  <a href="../../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
 
 # The Duckling Incident
