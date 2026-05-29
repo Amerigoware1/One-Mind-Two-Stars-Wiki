@@ -18,7 +18,7 @@ Her right body leaned against the corridor wall, arms crossed, watching a reclam
 
 Her left body, twenty meters away near the maintenance alcove, had already found the access panel.
 
-“Utara,” she said, both voices at once, though only one body was near a speaker. “What’s the reclamatic’s safety protocol for training mode?”
+“Utara,” she said, both voices at once, though only one body was near a speaker. “What’s the cleaning bot’s safety protocol for training mode?”
 
 Utara’s calm synthetic voice answered from the ceiling speaker: “Training mode disables the disintegrator emitter while maintaining mobility and sensor functions. It is intended for maintenance and testing. Authorization is required.”
 
