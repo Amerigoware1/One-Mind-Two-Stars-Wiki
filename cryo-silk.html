@@ -2,392 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cryo-Silk Medical Textile / Celectra Carisco Prescription - Wiki</title>
+  <title>Cryo-Silk - Technical Specifications & History</title>
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: #0a0c12;
-      color: #eef2ff;
-      font-family: 'Segoe UI', 'Roboto', 'Noto Sans', system-ui, -apple-system, sans-serif;
-      line-height: 1.5;
-      padding: 2rem 1rem;
-    }
-
-    .top-banner {
-      max-width: 1100px;
-      margin: 0 auto 1.5rem auto;
-    }
-
-    .home-button {
-      display: inline-block;
-      background: #1e2a3a;
-      color: #bbd4f0;
-      padding: 0.5rem 1.2rem;
-      border-radius: 40px;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      backdrop-filter: blur(4px);
-      transition: all 0.2s ease;
-      border: 1px solid #2d3e4e;
-    }
-
-    .home-button:hover {
-      background: #2c3e4e;
-      color: white;
-      border-color: #6a9cc7;
-    }
-
-    h1 {
-      max-width: 1100px;
-      margin: 0 auto 1rem auto;
-      font-size: 2.3rem;
-      font-weight: 500;
-      letter-spacing: -0.3px;
-      border-left: 5px solid #4d9f8c;
-      padding-left: 1.2rem;
-    }
-
-    /* infobox - same style as ANI */
-    .infobox {
-      float: right;
-      width: 320px;
-      background: #11161f;
-      border: 1px solid #2a3342;
-      border-radius: 20px;
-      padding: 0 0 12px 0;
-      margin: 0 0 1.5rem 2rem;
-      font-size: 0.9rem;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    }
-
-    .infobox table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .infobox th, .infobox td {
-      padding: 10px 12px;
-      vertical-align: top;
-      border-bottom: 1px solid #232a36;
-    }
-
-    .infobox th {
-      text-align: left;
-      width: 38%;
-      background: #0e131c;
-      font-weight: 600;
-      color: #bbdef5;
-    }
-
-    .infobox td {
-      background: #0f1620;
-      color: #d3deed;
-    }
-
-    .infobox .text-center {
-      text-align: center;
-    }
-
-    .infobox .portrait {
-      max-width: 100%;
-      border-radius: 12px;
-      background: #1e2a36;
-      padding: 6px;
-    }
-
-    .image-caption {
-      font-size: 0.75rem;
-      color: #9aaec9;
-      margin-top: 6px;
-      text-align: center;
-    }
-
-    .article-content {
-      max-width: 1100px;
-      margin: 0 auto;
-      overflow: hidden;
-    }
-
-    .card-bg {
-      background: #0f141fcc;
-      backdrop-filter: blur(2px);
-      border-radius: 24px;
-      padding: 1.4rem 1.8rem;
-      margin-bottom: 1.8rem;
-      border: 1px solid #26303f;
-      transition: 0.1s;
-    }
-
-    .card-bg h2 {
-      font-size: 1.6rem;
-      font-weight: 500;
-      margin-bottom: 1rem;
-      border-left: 4px solid #4d9f8c;
-      padding-left: 0.8rem;
-    }
-
-    .card-bg h3 {
-      font-size: 1.2rem;
-      margin: 1.2rem 0 0.5rem 0;
-      color: #c7e2ff;
-    }
-
-    .card-bg p, .card-bg li {
-      color: #cfdef5;
-    }
-
-    ul, .card-bg ul {
-      margin: 0.8rem 0 0.8rem 1.5rem;
-    }
-
-    li {
-      margin: 0.5rem 0;
-    }
-
-    .spec-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 15px 0;
-    }
-
-    .spec-table th, .spec-table td {
-      border: 1px solid #2d3748;
-      padding: 10px;
-      text-align: left;
-    }
-
-    .spec-table th {
-      background-color: #19212e;
-      font-weight: 600;
-    }
-
-    .spec-table tr:nth-child(even) {
-      background-color: rgba(70, 130, 120, 0.1);
-    }
-
-    blockquote {
-      margin: 20px 0;
-      padding: 12px 20px;
-      border-left: 4px solid #4d9f8c;
-      background-color: #0e1822;
-      font-style: italic;
-      color: #cbdff2;
-      border-radius: 8px;
-    }
-
-    #toTopBtn {
-      position: fixed;
-      bottom: 2rem;
-      right: 2rem;
-      background: #1f2c3c;
-      border: 1px solid #4d9f8c;
-      color: white;
-      padding: 0.6rem 1rem;
-      border-radius: 50px;
-      cursor: pointer;
-      font-size: 0.9rem;
-      display: none;
-      backdrop-filter: blur(8px);
-      transition: 0.2s;
-      z-index: 999;
-    }
-
-    #toTopBtn:hover {
-      background: #2e4058;
-      transform: scale(1.02);
-    }
-
-    hr {
-      border-color: #2a3649;
-      margin: 1rem 0;
-    }
-
-    .badge-prescription {
-      background: #2f5b6e;
-      display: inline-block;
-      border-radius: 50px;
-      padding: 0.2rem 0.8rem;
-      font-size: 0.7rem;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-
-    @media (max-width: 760px) {
-      .infobox {
-        float: none;
-        width: 100%;
-        margin: 0 0 1.5rem 0;
-      }
-      .card-bg {
-        padding: 1.2rem;
-      }
-      h1 {
-        font-size: 1.8rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="WikiStyle.css?v=3">
 </head>
+
 <body>
-
-<div class="top-banner">
-  <a href="index.html" class="home-button">🏠 Home</a>
-</div>
-
-<h1>Cryo-Silk Medical Textile <span style="font-size: 1rem; font-weight: normal;">(Prescription-grade thermoregulatory fabric)</span></h1>
-
-<div class="infobox">
-  <table>
-    <tr>
-      <td colspan="2" class="text-center pb-2">
-        <img src="assets/images/gallery/cryosilk.png" alt="Cryo-Silk fabric microstructure" class="portrait" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 300 200\'%3E%3Crect width=\'300\' height=\'200\' fill=\'%231a2736\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%2380b3d0\'%3ECryo-Silk%3C/text%3E%3C/svg%3E'">
-        <div class="image-caption">Cryo-Silk fiber matrix (SEM visualization)</div>
-      </td>
-    </tr>
-    <tr><th colspan="2">Cryo-Silk / Thermoregulatory Medical Textile</th></tr>
-    <tr><th>Common Names</th><td>Cryo-Weave, Adaptive Silk, Prescription ThermoFabric</td></tr>
-    <tr><th>Prescribing Physician</th><td>Dr. Alexander Cruiz (Chief of Neuro-Autonomic Medicine, Perseverance Colony)</td></tr>
-    <tr><th>Patient</th><td>Celectra Carisco-Bowers (Primary Interface, Human-Galinstanian Communion)</td></tr>
-    <tr><th>Date of Prescription</th><td>Early 2248 (Post-partum neural fatigue protocol, revision 2249)</td></tr>
-    <tr><th>Primary Indication</th><td>Autonomic thermodysregulation, post-communion neural overload, chronic sympathetic strain</td></tr>
-    <tr><th>Material Base</th><td>MicroModal + High-denier Lyocell + Atomically-infused Graphene matrix (no active optics)</td></tr>
-    <tr><th>Delivery Form</th><td>Prescription-only garments: base layer shirt, therapeutic wraps, sleep cowl</td></tr>
-    <tr><th>Status</th><td>Active medical textile; approved by Colonial Health Council (2248), expanded to interface operators (2250)</td></tr>
-  </table>
-</div>
-
-<div class="article-content">
+  <div class="top-banner">
+    <a href="index.html" class="home-button">🏠 Home</a>
+  </div>
+  <h1>Material Profile: Cryo-Silk</h1>
   
   <div class="card-bg">
-    <h2>Contents</h2>
+    <p><strong>Classification:</strong> Advanced Biocarbon-Cellulosic Hybrid Textile</p>
+    <p><strong>Primary Composition:</strong> Graphene-infused high-denier lyocell, micro-gauge fine beechwood MicroModal, integrated passive polymer optical fiber (POF) matrix.</p>
+    <p>Cryo-silk is a non-proprietary, open-source advanced smart-apparel material. Engineered to bridge the gap between heavy industrial durability and hyper-sensitive dermatological protection, it has become the mainstream global standard for civilian and stellar attire synthesized via the Molecular Reconfiguration Engine (MRE)[cite: 1].</p>
+  </div>
+
+  <div class="card-bg">
+    <h2>Origins & Discovery</h2>
+    <p>Unlike corporate-designed synthetic polymers, cryo-silk was born entirely out of medical emergency. Following the birth of Celectra, who exhibited severe congenital albinism, standard MRE-synthesized fabrics[cite: 1] quickly proved catastrophic to the infant's highly delicate skin. Within her first week of life, standard synthetic blends caused persistent, severe diaper rashes and friction-induced systemic fevers that conventional medical protocols failed to soothe.</p>
+    
+    <p>Faced with an urgent medical crisis, <strong>Dr. Alex Cruiz</strong> collaborated with his best friend and Celectra's father, master materials scientist <strong>Amerigo Carisco</strong>[cite: 2]. Working directly at the atomic level, Amerigo bypassed standard MRE textile algorithms[cite: 1] to construct a radical new material framework. Within a week of Celectra's birth, the duo successfully synthesized the first cryo-silk diapers, followed forty-eight hours later by optimized crib sheets. The breakthrough instantly alleviated the infant's epidermal inflammation and regulated her body temperature.</p>
+  </div>
+
+  <div class="card-bg">
+    <h2>Technical Architecture</h2>
     <ul>
-      <li><a href="#medical-origin" style="color:#9cc9ff;">Medical Origin & Prescription Context</a></li>
-      <li><a href="#textile-architecture" style="color:#9cc9ff;">Textile Architecture & Material Science</a></li>
-      <li><a href="#thermoregulatory-mechanism" style="color:#9cc9ff;">Thermoregulatory Mechanism (Graphene Equalization)</a></li>
-      <li><a href="#clinical-indications" style="color:#9cc9ff;">Clinical Indications & Symptom Targets</a></li>
-      <li><a href="#prescription-regimen" style="color:#9cc9ff;">Prescription Regimen & Usage Protocol</a></li>
-      <li><a href="#comparative-performance" style="color:#9cc9ff;">Comparative Performance vs. Standard Textiles</a></li>
-      <li><a href="#cultural-legacy" style="color:#9cc9ff;">Legacy & Expanded Use</a></li>
+      <li><strong>The Dermal Interface (MicroModal):</strong> The next-to-skin layer utilizes a fine-gauge, silky beechwood MicroModal weave. This eliminates micro-abrasions, keeping even the most hypersensitive skin from becoming raw or itchy—a chronic failure point of standard synthesized MRE clothing.</li>
+      <li><strong>The Structural Core (High-Denier Lyocell):</strong> Extruded from heavy eucalyptus filaments, this layer provides a high-strength, tear-resistant framework that ensures excellent dimensional stability and a clean, tailored drape that resists wrinkling.</li>
+      <li><strong>The Thermal Circuit (Atomically-Infused Graphene):</strong> Infused directly into the lyocell matrix by Amerigo Carisco's custom code[cite: 2], the graphene functions as a passive heat-distribution grid. It actively wicks localized body heat away from hot spots to eliminate localized chills and breaks friction-induced fevers. Furthermore, its permanent bacteriostatic nature offers non-chemical antimicrobial odor protection that never washes out.</li>
+      <li><strong>The Luminance Matrix (Micro-Fiber-Optics):</strong> Woven alongside the lyocell channels, ultra-flexible polymer optical fibers leak light evenly along their lateral surfaces. Originally engineered by Dr. Cruiz as a wearable phototherapy blue-light grid to treat newborn jaundice and promote skin healing, these passive plastic fibers carry zero electrical current or heat risk to the wearer.</li>
     </ul>
   </div>
 
   <div class="card-bg">
-    <h2 id="medical-origin">Medical Origin & Prescription Context</h2>
-    <p><span class="badge-prescription">✧ Prescription-grade textile ✧</span> Cryo-Silk originated not as a consumer product, but as a targeted medical intervention developed by <strong>Dr. Alexander Cruiz</strong>, a neuro-autonomic specialist at Perseverance Colony Medical Institute. Following the birth of her twins (Xara and Jenni) in late 2247, Celectra Carisco-Bowers experienced exacerbated autonomic dysregulation — severe thermal fluctuations, post-communion sympathetic surges, and paradoxical chills during Galinstanian resonance sessions. Standard thermal regulation garments failed to address her layered physiology: the 21.7 Hz communion field induced localized microvascular instability, and postpartum hormonal shifts amplified her natural sensitivity.</p>
-    <p>Dr. Cruiz, who had previously collaborated with Jaxon Bowers on neural fatigue markers, rejected both pharmaceutical heavy sedation and passive insulation. Instead, he synthesized advanced textile engineering from materials research originally intended for deep-space cryo suits. The result — <strong>Cryo-Silk</strong> — eliminated all active nano-fiber optics (unlike commercial "smart apparel") and focused entirely on passive, graphene-driven thermal equalization, moisture wicking, and sensory neutrality. By mid-2248, Celectra reported 73% reduction in communion-induced temperature spikes, and the Colonial Health Council approved Cryo-Silk as a <strong>prescription-only medical device</strong> for autonomic disorders and neural interface operators.</p>
-    <blockquote><i>"Celectra’s body was a battlefield — postpartum recovery, near-daily Galinstanian translation, and a baseline neural architecture that never learned how to rest. She didn't need another drug. She needed fabric that breathed with her nervous system."</i><br>— Dr. Alexander Cruiz, 2248 Internal Medicine Log</blockquote>
+    <h2>Mainstream Adoption and Evolution</h2>
+    <p>What began as a bespoke medical solution for a single child rapidly disrupted the entire planetary and station apparel landscape. As early adapters felt the material and witnessed its performance, the limitations of older synthesized garments became glaringly obvious. The global population, tired of the stiff, itchy, or sweaty drawbacks of standard synthetic MRE outputs[cite: 1], began favoring cryo-silk for everyday life.</p>
+    
+    <p>By the time Celectra reached adulthood, cryo-silk had completely decentralized into the mainstream. Because Dr. Cruiz and Amerigo Carisco[cite: 2] published the molecular patterns openly, the material schematic is available on all public networks. Today, it is the most frequently requested material profile for domestic, workplace, and travel garments worldwide. The original therapeutic micro-fiber-optic grid has since evolved into a highly celebrated cultural design aesthetic, allowing users to customize their attire with fluid, phone-controlled, color-shifting swirls for the night scene.</p>
   </div>
 
-  <div class="card-bg">
-    <h2 id="textile-architecture">Textile Architecture & Material Science</h2>
-    <p>Unlike commercial "performance wear," Cryo-Silk uses a multi-tiered hybrid weave optimized for medical stability. The absence of polymer optical fibers (POFs) ensures complete passivity, zero electromagnetic emission, and MRI/ANI compatibility.</p>
-    <h3>Engineered Fiber Layers</h3>
-    <ul>
-      <li><strong>MicroModal (Fine-Gauge Beechwood Cellulosic – 40%):</strong> Next-to-skin comfort layer; delivers featherlight drape, rapid moisture absorption (reduces post-communion adhesive chill), hypoallergenic profile for prolonged wear.</li>
-      <li><strong>High-Denier Lyocell (Eucalyptus Filament – 45%):</strong> Structural backbone. Provides tensile strength, dimensional stability (no elbow/knee bagging), and a crisp-yet-flexible matrix that preserves tailored fit even after 200+ wash cycles.</li>
-      <li><strong>Atomically-Infused Graphene (Nanomaterial Polymer Matrix – 15% by mass):</strong> Integrated homogeneously into Lyocell extrusion. Acts as a <strong>passive thermal circuit board</strong> – equalizing hot/cold zones across the entire garment surface. No external power needed. Also confers permanent, non-leaching antimicrobial protection.</li>
-    </ul>
-    <p><strong>Deliberate omission:</strong> No fiber-optic threads, no LED drivers, no Bluetooth. Unlike Project Lumina's consumer illumination concept, Cryo-Silk is a <strong>sterile therapeutic textile</strong> with zero active electronics. This preserves circadian neurochemistry and avoids interference with the 21.7 Hz Galinstanian resonance field.</p>
-  </div>
-
-  <div class="card-bg">
-    <h2 id="thermoregulatory-mechanism">Thermoregulatory Mechanism — Graphene Equalization</h2>
-    <p>Conventional thermal garments rely on insulation or phase-change materials that create "hot spots" and delayed response. Cryo-Silk leverages graphene’s exceptional in-plane thermal conductivity (approx. 3000–5000 W/m·K) to instantaneously spread localized thermal energy from high-metabolism zones (core, neck, lumbar) across the entire fabric surface. For Celectra’s use case:</p>
-    <ul>
-      <li><strong>During Galinstanian communion:</strong> Elevated cognitive load triggers aberrant sympathetic discharge, causing transient vasoconstriction in extremities and flushing in the torso. Cryo-Silk dissipates heat from thorax to cooler distal zones, reducing the "thermal shock" sensation by 68% (clinical trial, n=12 interface users).</li>
-      <li><strong>Postpartum night sweats & fatigue:</strong> The graphene matrix equalizes skin temperature to within ±0.4°C of optimal thermoneutrality, preventing wake-inducing thermal spikes and reducing cortisol spikes by ~31% measured via ANI biometrics.</li>
-      <li><strong>Passive moisture pumping:</strong> Hydrophilic MicroModal draws perspiration away, while graphene’s high surface area accelerates evaporation without chilling — ideal for long communion sessions (2–4 hours).</li>
-    </ul>
-    <div style="background:#0e1622; border-radius: 16px; padding: 10px 20px; margin: 16px 0;">
-      <p><strong>🔬 Dr. Cruiz's Note:</strong> "Unlike active cooling garments that rely on fans or liquid tubing, Cryo-Silk is silent, weightless, and cannot fail electrically. Its thermal time constant matches human autonomic rhythms — it's not fast; it's wise."</p>
-    </div>
-  </div>
-
-  <div class="card-bg">
-    <h2 id="clinical-indications">Clinical Indications & Symptom Targets</h2>
-    <p>Prescription criteria (Cruiz Protocol 2248-v2) focus on conditions where autonomic instability compromises quality of life or professional interface duties.</p>
-    <table class="spec-table">
-      <tr><th>Symptom / Condition</th><th>Mechanism of Cryo-Silk Benefit</th><th>Efficacy (self-report + ANI data)</th></tr>
-      <tr><td>Post-communion thermal dysregulation (hot/cold swings)</td><td>Graphene equalization dampens amplitude of temperature oscillations</td><td>74% reduction in reported discomfort, 63% faster return to baseline</td></tr>
-      <tr><td>Sympathetic overactivation / hyperarousal</td><td>Stable somatosensory input reduces thalamic stress signaling</td><td>28% decrease in galvanic skin response spikes (2249 trial)</td></tr>
-      <tr><td>Chronic fatigue (autonomic exhaustion)</td><td>Lowered metabolic cost of thermoregulation preserves cognitive reserve</td><td>Improved communion clarity (score +12% on SI clarity index)</td></tr>
-      <tr><td>Postpartum thermal instability</td><td>Gentle wicking + microclimate stabilization reduces wake episodes</td><td>Average +1.7 hours uninterrupted sleep (Celectra, n=1 longitudinal case)</td></tr>
-      <tr><td>Reactive fabric sensitivity / contact irritation</td><td>Hypoallergenic beechwood + graphene antimicrobial</td><td>Zero reported dermatitis in 3 years (n=237 users as of 2251)</td></tr>
-    </table>
-  </div>
-
-  <div class="card-bg">
-    <h2 id="prescription-regimen">Prescription Regimen & Usage Protocol</h2>
-    <p>Cryo-Silk is not sold over-the-counter. Dr. Cruiz and the Colonial Autonomic Clinic issue personalized prescriptions based on biometric mapping. Celectra Carisco’s original regimen (updated 2249–2253) includes:</p>
-    <ul>
-      <li><strong>Daily Wear (minimum 10 hours):</strong> Prescription base-layer long-sleeve shirt with integrated graphene density grading (higher concentration over thoracic sympathetic chain).</li>
-      <li><strong>Post-Communion Recovery Wrap:</strong> Neck-and-shoulder cowl worn 30–60 minutes after Galinstanian translation sessions; enhances parasympathetic rebound.</li>
-      <li><strong>Nocturnal Sleep Garment:</strong> Lightweight Cryo-Silk sleep shirt; adaptive thermal equalization reduces night sweats without overcooling.</li>
-      <li><strong>Maintenance:</strong> Machine wash gentle, air dry. Graphene-infused lyocell retains efficacy for 500+ washes. Annual re-evaluation by prescribing physician.</li>
-    </ul>
-    <p>Unlike the disposable "wearable tech" trends of early 2200s, Cryo-Silk is designed for <strong>durability, repairability, and medical-grade accountability</strong>. Each garment carries a data chip with batch-level graphene density certification.</p>
-  </div>
-
-  <div class="card-bg">
-    <h2 id="comparative-performance">Comparative Performance vs. Standard Textiles (Clinical Data, 2249)</h2>
-    <table class="spec-table">
-      <tr><th>Property</th><th>Standard Cotton-Blend</th><th>Standard Merino Wool</th><th>Cryo-Silk (Prescription)</th></tr>
-      <tr><td>Thermal Equalization (ΔT across zones)</td><td>±2.8°C</td><td>±1.9°C</td><td>±0.4°C</td></tr>
-      <tr><td>Moisture Vapor Transmission (g/m²/24h)</td><td>580</td><td>720</td><td>945</td></tr>
-      <tr><td>Bacterial Odor Control (wash cycles)</td><td>10 cycles (silver treatment degrades)</td><td>30 cycles (lanolin loss)</td><td>Permanent (graphene infused, non-leaching)</td></tr>
-      <tr><td>Interference with 21.7 Hz EM field</td><td>None</td><td>None</td><td>Zero interference (non-conductive matrix design)</td></tr>
-      <tr><td>Prescription Only?</td><td>No</td><td>No</td><td>Yes — medical device classification</td></tr>
-    </table>
-    <p class="mt-2" style="margin-top:8px;">*Data from Colonial Health Council report CHC-2250-TEXT-04, compiled from 67 autonomic disorder patients.</p>
-  </div>
-
-  <div class="card-bg">
-    <h2 id="cultural-legacy">Legacy & Expanded Use (2250–2253)</h2>
-    <p>What began as a tailored prescription for Celectra Carisco has grown into a quiet revolution in neuro-medical textiles. By 2250, Dr. Cruiz extended Cryo-Silk prescriptions to <strong>Galinstanian interface operators, veterans with autonomic dysregulation, and postpartum individuals suffering severe thermodysregulation</strong>. The fabric’s success lies in its humility — it contains no LEDs, no phone apps, no “active” features — only molecular engineering that respects the body’s innate wisdom.</p>
-    <ul>
-      <li><strong>2251:</strong> The Perseverance Autonomic Clinic reported that 94% of prescription recipients reduced or eliminated pharmaceutical thermoregulatory adjuncts (beta-blockers, anticholinergics).</li>
-      <li><strong>2252:</strong> Celectra’s memoir, <i>First Contact: A Personal Account</i>, includes a chapter titled “The Fabric That Held Me Together,” thanking Dr. Cruiz and the textile engineering team. Cryo-Silk becomes a symbol of patient-centered innovation rather than commercial hype.</li>
-      <li><strong>2253:</strong> Second-generation Cryo-Silk (even finer MicroModal, enhanced graphene dispersion) enters clinical trials for pediatric autonomic disorders, including children (like Xara and Jenni Bowers) who inherit hybrid neural sensitivities.</li>
-    </ul>
-    <blockquote><i>“The answer wasn’t more data or brighter screens. It was a shirt that stopped fighting my body and started listening to it. Dr. Cruiz gave me back the silence between thoughts.”</i><br>— Celectra Carisco-Bowers, 2252 Interview, Colonial Health Quarterly</blockquote>
-    <p><strong>Contrast with commercial “smart apparel”:</strong> Unlike the Project Lumina concept (which emphasizes active illumination and Bluetooth control), Cryo-Silk intentionally discarded optical fibers and digital connectivity. Dr. Cruiz argued that for a burned-out nervous system, the last thing needed is another device demanding attention. The result stands as a foil to tech-overload — a textile that heals through <em>absence</em>.</p>
-  </div>
-
-  <div class="card-bg">
-    <h2>Appendix: Prescription Summary (Dr. Alexander Cruiz, Original Order)</h2>
-    <p><strong>Patient:</strong> Celectra Carisco, ID# CCB-2245<br>
-    <strong>Diagnosis:</strong> Postpartum autonomic dysregulation with communion-provoked thermal instability (ICD-11 code: 8E4Y).<br>
-    <strong>Prescription:</strong> Cryo-Silk medical textile — base layer (3 units), sleep cowl (2 units), recovery wrap (1 unit).<br>
-    <strong>Duration:</strong> Ongoing, re-evaluated biannually.<br>
-    <strong>Special Instructions:</strong> Wear during all communion sessions and sleep. Avoid adjunctive heated/active garments. Report any sensory irritation (none expected).<br>
-    <strong>Signed:</strong> <em>Dr. Alexander Cruiz, MD, Physician, Utopis Station</em> — 11.22.2225 (rev. 2226, 2229).</p>
-    <hr>
-    <p style="font-size:0.85rem; color:#8fabc7;">Note: Cryo-Silk is strictly a passive medical textile. All therapeutic claims validated by Colonial Health Council randomized trials (RCT#2249-CS-01).</p>
-  </div>
-</div>
-
-<button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
-
-<script>
-  const toTopBtn = document.getElementById("toTopBtn");
-  window.addEventListener("scroll", () => {
-    if (document.documentElement.scrollTop > 200) {
-      toTopBtn.style.display = "block";
-    } else {
-      toTopBtn.style.display = "none";
-    }
-  });
-  toTopBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-</script>
-
+  <p><a href="Glossary.html">← Back to Glossary</a></p>
+  <p><a href="index.html">← Back to Index</a></p>
+  
+  <!-- Back to Top Button -->
+  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+  <script>
+    const toTopBtn = document.getElementById("toTopBtn");
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 200) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    });
+    toTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </body>
 </html>
