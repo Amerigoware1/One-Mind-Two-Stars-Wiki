@@ -7,100 +7,131 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="WikiStyle.css">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #1e0a47;
-            color: #333;
-        }
-    
-        .wiki-container {
-            background-color: #1e0a47;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-    
-        h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
-        }
-    
-        h2 {
-            color: #34495e;
-            margin-top: 30px;
-            border-left: 4px solid #3498db;
-            padding-left: 10px;
-        }
-    
-        h3 {
-            color: #7f8c8d;
-            margin-top: 20px;
-        }
-    
-        .meta-info {
-            background-color: #ecf0f1;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 20px 0;
-        }
-    
-        .meta-info strong {
-            color: #2c3e50;
-        }
-    
-        .status-complete {
-            color: #27ae60;
-            font-weight: bold;
-        }
-    
-        nav {
-            background-color: #1e0a47;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-    
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 15px;
-        }
-    
-        nav a:hover {
-            text-decoration: underline;
-        }
-    
-        .character-box {
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
-        }
-    
-        ul {
-            margin: 10px 0;
-            padding-left: 30px;
-        }
-    
-        li {
-            margin: 5px 0;
-        }
-    
-        blockquote {
-            border-left: 4px solid #3498db;
-            margin: 15px 0;
-            padding: 10px 20px;
-            background-color: #1e0a47;
-            font-style: italic;
-            color: #555;
-        }
-    </style>
+    /* Import the sci-fi fonts from the main theme */
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600;700&display=swap');
+
+    body {
+        font-family: 'Inter', system-ui, sans-serif;
+        line-height: 1.7;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #0f0124; /* --bg-space (Deep void) */
+        color: #e37df5;            /* --text-primary */
+    }
+
+    /* Transformed into a holographic panel card */
+    .wiki-container {
+        background-color: #0c0028; /* --bg-card */
+        padding: 30px;
+        border-radius: 0.75rem;
+        border: 1px solid #1e0a47; /* --border-glow */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6),
+                    0 0 15px rgba(193, 60, 255, 0.3); /* --glow-violet */
+        backdrop-filter: blur(4px);
+    }
+
+    h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 900;
+        text-align: center;
+        background: linear-gradient(90deg, #60a5fa, #c13cff, #00e8ff); /* Linear gradient to neon-cyan */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 0.4em;
+        border-bottom: 1px solid rgba(193, 60, 255, 0.4);
+        margin-top: 1.5em;
+    }
+
+    h2 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #00e8ff;            /* --neon-cyan */
+        border-bottom: 2px solid #c13cff; /* --neon-violet */
+        border-left: none;         /* Overriding corporate left border */
+        padding-bottom: 0.3em;
+        padding-left: 0;
+        margin-top: 2.5rem;
+    }
+
+    h3 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.3rem;
+        color: #00e8ff;            /* --neon-cyan */
+        text-shadow: 0 0 8px rgba(0, 232, 255, 0.25);
+        border-left: 4px solid #c13cff; /* --neon-violet */
+        padding-left: 0.6em;
+        margin-top: 1.8em;
+    }
+
+    /* Darkened to match table header style tints */
+    .meta-info {
+        background-color: rgba(193, 60, 255, 0.15); 
+        border: 1px solid #1e0a47; /* --border-glow */
+        padding: 15px;
+        border-radius: 0.5rem;
+        margin: 20px 0;
+    }
+
+    .meta-info strong {
+        color: #ffffff;            /* --text-heading */
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    /* Complete status pops out in glowing Neon Magenta */
+    .status-complete {
+        color: #ff2af1;            /* --neon-magenta */
+        font-weight: bold;
+        text-shadow: 0 0 8px rgba(255, 42, 241, 0.4);
+    }
+
+    /* Modified navbar into a clean cyber-row */
+    nav {
+        background-color: #0a0022; /* --bg-card-dark */
+        border: 1px solid #1e0a47;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 0.5rem;
+        display: flex;
+        gap: 15px;
+    }
+
+    nav a {
+        color: #00e8ff;            /* --neon-cyan */
+        font-family: 'Orbitron', sans-serif;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+    nav a:hover {
+        color: #c13cff;            /* --neon-violet */
+        text-decoration: none;
+        text-shadow: 0 0 8px rgba(0, 232, 255, 0.25);
+    }
+
+    /* Styled like character-card snippet from source css */
+    .character-box {
+        background-color: rgba(0, 0, 0, 0.4);
+        border: 2px solid #00e8ff;  /* Cyber cyan framing */
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(0, 232, 255, 0.3);
+    }
+
+    ul {
+        margin: 10px 0;
+        padding-left: 30px;
+        list-style-type: square;   /* Blocky/square bullets look more sci-fi */
+    }
+
+    li {
+        margin: 7px 0;
+        color: #b8b1ff;            /* --text-muted */
+    }
+</style>
 </head>
 <body>
     <nav>
