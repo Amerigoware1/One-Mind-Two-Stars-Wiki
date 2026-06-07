@@ -1,10 +1,11 @@
+/* ==========================================================================
+   1. IMPORTS & CORE CONFIG (Must be at the absolute top)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600;700&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
-/* ===========================
-   Sci-Fi Novel Wiki Theme
-   =========================== */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600;700&display=swap');
 
 :root {
   /* Core palette */
@@ -28,9 +29,9 @@
   --glow-cyan:        rgba(0, 232, 255, 0.25);
 }
 
-/* ===========================
-   Base
-   =========================== */
+/* ==========================================================================
+   2. BASE & TYPOGRAPHY
+   ========================================================================== */
 body {
   font-family: 'Inter', system-ui, sans-serif;
   background: var(--bg-space);
@@ -41,7 +42,6 @@ body {
   min-height: 100vh;
 }
 
-/* Optional subtle starfield texture (add via ::before if you want) */
 body::before {
   content: "";
   position: fixed;
@@ -52,9 +52,6 @@ body::before {
   z-index: -1;
 }
 
-/* ===========================
-   Typography
-   =========================== */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Orbitron', sans-serif;
   color: var(--text-heading);
@@ -82,309 +79,94 @@ h2 {
   padding-bottom: 0.3em;
 }
 
-/* ===========================
-   Links
-   =========================== */
+ul {
+  margin: 10px 0;
+  padding-left: 30px;
+  list-style-type: square;   /* Blocky/square bullets look more sci-fi */
+}
+
+li {
+  margin: 7px 0;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   3. NAVIGATION, CARDS, & INTERACTIVE PANELS
+   ========================================================================== */
 a {
   color: var(--neon-cyan);
   text-decoration: none;
   transition: all 0.2s;
 }
+
 a:hover {
   color: var(--neon-violet);
   text-shadow: 0 0 8px var(--glow-cyan);
 }
-/* Float Clearing for Main Article
-   =========================== */
-.article-content {
-    /* Creates a new Block Formatting Context (BFC)
-       which forces the element to flow around the float (.infobox) */
-    overflow: hidden;
-    /* Optional: Add some top margin if needed, but the h1 separation should be enough */
-}
-/* ===========================
-   Cards & Panels
-   =========================== */
+
 .top-banner {
-   /* 1. Make the background fully transparent */
-   background: rgba(0, 0, 0, 0); 
-   /* 2. Keep the border, glow, and other styles */
-   border: 1px solid var(--border-glow);
-  border-radius: 0.75rem;
+  position: fixed;
+  top: 0;        
+  left: 0;       
+  width: 100%;   
+  z-index: 10;   
+  background: rgba(0, 0, 0, 0); 
+  border-bottom: 1px solid rgba(193, 60, 255, 0.15);
   padding: 1rem 1.5rem;
   margin: 0; 
-  position: fixed;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6),
-              0 0 15px var(--glow-violet);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 15px var(--glow-violet);
   transition: all 0.4s ease;
   backdrop-filter: blur(4px);
- }
+}
+
+.top-banner::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 12px rgba(193, 60, 255, 0.25);
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.top-banner:hover::before {
+  box-shadow: 0 0 30px rgba(193, 60, 255, 0.6), 0 0 50px rgba(0, 232, 255, 0.4);
+  border-color: rgba(193, 60, 255, 0.4);
+}
+
+.top-banner .home-button {
+  background: rgba(193, 60, 255, 0.15);
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s;
+}
+
+.top-banner .home-button:hover {
+  background: rgba(193, 60, 255, 0.35);
+  box-shadow: 0 0 20px rgba(193, 60, 255, 0.6);
+}
+
+.top-banner button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
 
 .card-bg, .toc, .result {
   background: var(--bg-card);
   border: 1px solid var(--border-glow);
   border-radius: 0.75rem;
   padding: 1.5rem;
-margin: 25px 25px; 
-  
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6),
-              0 0 15px var(--glow-violet);
+  margin: 25px 25px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 15px var(--glow-violet);
   transition: all 0.4s ease;
   backdrop-filter: blur(4px);
 }
-.card-bg:hover, .infobox:hover, .toc:hover, top-banner:hover {
-  box-shadow: 0 0 30px var(--glow-violet),
-              0 0 50px var(--glow-cyan);
+
+.card-bg:hover, .infobox:hover, .toc:hover, .top-banner:hover {
+  box-shadow: 0 0 30px var(--glow-violet), 0 0 50px var(--glow-cyan);
   transform: translateY(-4px);
-}
-
-/* ===========================
-   Infobox Specific
-   =========================== */
-.infobox {
-  float: right;
-  width: 320px;
-  margin: 0 0 1.5rem 1.5rem;
-}
-
-.infobox th, .infobox caption {
-  background: rgba(193, 60, 255, 0.2);
-  color: var(--neon-cyan);
-  font-family: 'Orbitron', sans-serif;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-}
-.infobox {
-    background: var(--bg-card);
-   /* border: 1px solid var(--border-glow);*/
-   border: 1px solid var(--neon-violet);
-    padding: 1rem;
-    margin: 0 0 1.5rem 1.5rem; /* no giant top margin */
-    float: right;
-    clear: right;
-    width: 320px; /* or as needed */
-}
-/* ===========================
-   Infobox Image Control
-   =========================== */
-.infobox img.portrait, 
-.infobox video.portrait {
-  max-width: 100%;
-  height: auto; 
-  border-radius: 0.5rem; 
-  border: 2px solid var(--neon-cyan);
-  box-shadow: 0 0 10px var(--glow-cyan);
-  display: block; 
-  /* Added for video alignment */
-  object-fit: cover; 
-}
-/* Also, fix a nested table issue in the infobox: */
-.infobox table.infobox {
-    /* Remove the default border-radius from the nested table */
-    border-radius: 0; 
-    border: none;
-    margin: 0;
-}
-/* Ensure the infobox column holding the image spans the full width,
-   as your HTML uses colspan="2" */
-.infobox td[colspan="2"] {
-    text-align: center;
-}
-/* ===========================
-   TOC
-   =========================== */
-.toc {
-  background: var(--bg-card-dark);
-  border: 1px solid var(--neon-violet);
-}
-.toc a:hover {
-  color: var(--neon-magenta);
-}
-
-/* ===========================
-   Tables
-   =========================== */
-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  margin: 1.5em 0;
-  border: 1px solid var(--border-glow);
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-th {
-  background: rgba(193, 60, 255, 0.25);
-  color: var(--neon-cyan);
-  font-family: 'Orbitron', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-   }
-td, th {
-  padding: 0.75rem;
-  border-bottom: 1px solid var(--border-glow);
-  text-align: center; 
-}
-tbody tr:nth-child(2) {
-  font-size: 0.9em;
-  color: rgba(180, 220, 255, 0.8);
-}
-
-/* ===========================
-   Buttons & Inputs
-   =========================== */
-button, input[type="submit"] {
-  background: linear-gradient(45deg, var(--neon-violet), var(--neon-cyan));
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
-  box-shadow: 0 0 15px rgba(193, 60, 255, 0.5);
-}
-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 30px var(--glow-violet);
-}
-
-input[type="number"], input[type="text"] {
-  background: var(--bg-card);
-  border: 1px solid var(--neon-violet);
-  color: var(--text-primary);
-  padding: 0.6rem;
-  border-radius: 0.5rem;
-}
-input:focus {
-  outline: none;
-  border-color: var(--neon-cyan);
-  box-shadow: 0 0 15px var(--glow-cyan);
-}
-
-/* ===========================
-   Utility Glow Text
-   =========================== */
-.glow-violet { text-shadow: 0 0 10px var(--neon-violet); color: var(--neon-violet); }
-.glow-cyan   { text-shadow: 0 0 10px var(--neon-cyan);   color: var(--neon-cyan); }
-
-/* Top banner — subtle permanent glow + stronger on hover */
-.top-banner {
-    position: fixed;
-    top: 0;        /* This pulls it to the very top */
-    left: 0;       /* This aligns it to the left */
-    width: 100%;   /* This ensures it stretches across the screen */
-    z-index: 10;   /* Keeps it above other content */
-    transition: all 0.4s ease;
-    border-bottom: 1px solid rgba(193, 60, 255, 0.15);
-}
-/* Permanent subtle glow */
-.top-banner::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    border: 1px solid transparent;
-    border-radius: 0.75rem;
-    box-shadow: 0 0 12px rgba(193, 60, 255, 0.25);
-    pointer-events: none;
-    transition: all 0.4s ease;
-}
-
-/* Strong neon glow on hover */
-.top-banner:hover::before {
-    box-shadow: 0 0 30px rgba(193, 60, 255, 0.6),
-                0 0 50px rgba(0, 232, 255, 0.4);
-    border-color: rgba(193, 60, 255, 0.4);
-}
-
-/* Home button inside the banner – make it pop */
-.top-banner .home-button {
-    background: rgba(193, 60, 255, 0.15);
-    padding: 0.6rem 1.2rem;
-    border-radius: 0.5rem;
-    backdrop-filter: blur(6px);
-    transition: all 0.3s;
-}
-.top-banner .home-button:hover {
-    background: rgba(193, 60, 255, 0.35);
-    box-shadow: 0 0 20px rgba(193, 60, 255, 0.6);
-}
-
-.top-banner button {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-}
-
-#timeDisplay {
-    margin-left: auto;
-    white-space: nowrap;
-    font-family: 'Orbitron', sans-serif;
-    color: var(--neon-cyan);
-}
-
-#canvas {
-    background-color: #000000 !important;
-}
-
-/* Indent subcategory headers within the Slang section */
-section h3 {
-  margin-left: 1.5em;
-  margin-top: 1.2em;
-  margin-bottom: 0.5em;
-}
-
-/* Indent individual slang entries under each subcategory */
-section h3 + section,
-section h3 + section + section,
-section h3 + section + section + section {
-  margin-left: 3em;
-}
-
-/* Apply to all sibling <section> elements until the next h3 */
-section h3 ~ section {
-  margin-left: 3em;
-}
-
-
-/* Indent only the Slang subcategories */
-h2 + p + h3 {
-  margin-left: 1.5em;
-}
-
-/* Indent entries under each Slang subcategory */
-h3 + section {
-  margin-left: 3em;
-}
-
-/* Indent all following <section> elements until the next <h3> */
-h3 ~ section {
-  margin-left: 3em;
-}
-
-/* === Slang subcategory neon hierarchy === */
-section h3 {
-  margin-left: 1.5em;
-  margin-top: 1.8em;
-  font-size: 1.3rem;
-  color: var(--neon-cyan);
-  text-shadow:
-      0 0 8px var(--glow-cyan),
-      0 0 14px rgba(0, 232, 255, 0.4);
-  border-left: 4px solid var(--neon-violet);
-  padding-left: 0.6em;
-}
-
-/* Slight glow for slang entry headers */
-section h3 ~ section h2 {
-  text-shadow: 
-      0 0 6px rgba(193, 60, 255, 0.4),
-      0 0 10px rgba(0, 232, 255, 0.3);
-}
-
-section h3:not(:first-of-type) {
-  border-top: 1px solid rgba(193, 60, 255, 0.3);
-  padding-top: 1em;
 }
 
 /* Index page glowing link panels */
@@ -403,7 +185,6 @@ section h3:not(:first-of-type) {
   border-radius: 0.6rem;
   color: var(--neon-cyan);
   font-weight: 600;
-  text-decoration: none;
   box-shadow: 0 0 12px rgba(0, 232, 255, 0.25);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   animation: panelPulse 3.2s ease-in-out infinite alternate;
@@ -428,164 +209,142 @@ section h3:not(:first-of-type) {
   color: var(--text-muted);
 }
 
-/* Pulse animation */
 @keyframes panelPulse {
-  0% {
-    box-shadow: 0 0 12px rgba(0, 232, 255, 0.25);
-    border-color: var(--neon-violet);
-  }
-  100% {
-    box-shadow: 0 0 22px rgba(193, 60, 255, 0.35), 0 0 30px rgba(0, 232, 255, 0.25);
-    border-color: var(--neon-cyan);
-  }
+  0% { box-shadow: 0 0 12px rgba(0, 232, 255, 0.25); border-color: var(--neon-violet); }
+  100% { box-shadow: 0 0 22px rgba(193, 60, 255, 0.35), 0 0 30px rgba(0, 232, 255, 0.25); border-color: var(--neon-cyan); }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .index-links a {
-    animation: none;
-    transition: none;
-  }
+/* ==========================================================================
+   4. INFOBOX & WIKI MEDIA CONTROLS
+   ========================================================================== */
+.article-content {
+  display: block;
+  overflow: hidden; /* Forces block content to wrap clean around floating sidebar */
 }
 
-main h2 {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.6rem;
-  color: var(--neon-cyan);
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 10px var(--glow-cyan);
-  border-left: 4px solid var(--neon-violet);
-  padding-left: 0.6rem;
-}
-
-/* Floating Return to Top Button */
-#toTopBtn {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  display: none;
-  background: var(--bg-card-dark);
+.infobox {
+  float: right;
+  clear: right;
+  width: 320px;
+  background: var(--bg-card);
   border: 1px solid var(--neon-violet);
-  border-radius: 0.6rem;
+  padding: 1rem;
+  margin: 0 0 1.5rem 1.5rem;
+}
+
+.infobox th, .infobox caption {
+  background: rgba(193, 60, 255, 0.2);
   color: var(--neon-cyan);
   font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
-  padding: 0.8rem 1.2rem;
-  cursor: pointer;
-  box-shadow: 0 0 12px rgba(0, 232, 255, 0.25);
-  transition: all 0.3s ease;
-  animation: pulseTopBtn 3s infinite alternate;
-  z-index: 1000;
-}
-
-#toTopBtn:hover {
-  color: var(--neon-magenta);
-  border-color: var(--neon-cyan);
-  box-shadow: 0 0 20px var(--glow-cyan), 0 0 30px var(--glow-violet);
-  transform: translateY(-3px);
-}
-
-@keyframes pulseTopBtn {
-  0% {
-    box-shadow: 0 0 12px rgba(0, 232, 255, 0.25);
-  }
-  100% {
-    box-shadow: 0 0 22px rgba(193, 60, 255, 0.35), 0 0 30px rgba(0, 232, 255, 0.25);
-  }
-}
-
-.page-body {
-  padding: 2rem;
-  min-height: 100vh;
-  background: var(--bg-space);
-  color: var(--text-primary);
-}
-
-.content-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.page-header h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2.4rem;
-    background: linear-gradient(90deg, var(--neon-cyan), var(--neon-violet));
-    
-    -webkit-background-clip: text; /* For Chrome, Safari, and Edge */
-    background-clip: text;         /* The standard property for other browsers */
-    
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-}
-
-.subtitle {
-  text-align: center;
-  color: var(--text-muted);
-  margin-top: 0.5rem;
-}
-
-.page-footer {
-  text-align: center;
-  margin-top: 3rem;
-  color: var(--text-muted);
+  text-transform: uppercase;
   font-size: 0.9rem;
+  letter-spacing: 1px;
 }
 
-/* Container to hold the video and buttons */
+.infobox img.portrait, 
+.infobox video.portrait {
+  max-width: 100%;
+  height: auto; 
+  border-radius: 0.5rem; 
+  border: 2px solid var(--neon-cyan);
+  box-shadow: 0 0 10px var(--glow-cyan);
+  display: block; 
+  object-fit: cover; 
+}
+
+.infobox table.infobox {
+  border-radius: 0; 
+  border: none;
+  margin: 0;
+}
+
+.infobox td[colspan="2"] {
+  text-align: center;
+}
+
 .portrait-container {
-    position: relative;
-    display: inline-block;
-    width: 100%;
+  position: relative;
+  display: inline-block;
+  width: 100%;
 }
 
-/* Style for the control overlay */
 .video-controls {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    opacity: 0; /* Hidden by default */
-    transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
 }
 
-/* Show buttons when hovering over the video */
 .portrait-container:hover .video-controls {
-    opacity: 1;
+  opacity: 1;
 }
 
-/* Sci-fi style for the small control buttons */
 .video-controls button {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 0.7rem;
-    padding: 4px 8px;
-    background: rgba(15, 1, 36, 0.8); /* Matches your --bg-space */
-    border: 1px solid var(--neon-cyan);
-    color: var(--neon-cyan);
-    text-shadow: 0 0 5px var(--glow-cyan);
-    cursor: pointer;
-    box-shadow: 0 0 10px var(--glow-cyan);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  background: rgba(15, 1, 36, 0.8); 
+  border: 1px solid var(--neon-cyan);
+  color: var(--neon-cyan);
+  text-shadow: 0 0 5px var(--glow-cyan);
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--glow-cyan);
 }
 
 .video-controls button:hover {
-    background: var(--neon-cyan);
-    color: var(--bg-space);
+  background: var(--neon-cyan);
+  color: var(--bg-space);
 }
 
-/* ===========================
-   Timeline Layout
-   =========================== */
-
-.timeline-wrapper {
-  margin-top: 2rem;
+/* ==========================================================================
+   5. TABLES, TIMELINES, & LIST SECTIONS
+   ========================================================================== */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5em 0;
+  border: 1px solid var(--border-glow);
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
-.timeline-era {
-  margin-bottom: 3rem;
-  padding: 1.5rem;
+th {
+  background: rgba(193, 60, 255, 0.25);
+  color: var(--neon-cyan);
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
+
+td, th {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border-glow);
+  text-align: center; 
+}
+
+tbody tr:nth-child(2) {
+  font-size: 0.9em;
+  color: rgba(180, 220, 255, 0.8);
+}
+
+.toc {
+  background: var(--bg-card-dark);
+  border: 1px solid var(--neon-violet);
+}
+
+.toc a:hover {
+  color: var(--neon-magenta);
+}
+
+/* --- Timeline Flow Layout --- */
+.timeline-wrapper { margin-top: 2rem; }
+.timeline-era { margin-bottom: 3rem; padding: 1.5rem; }
 
 .timeline-event {
   margin: 1.5rem 0;
@@ -603,35 +362,11 @@ main h2 {
   transition: 0.3s ease;
 }
 
-.timeline-date .main {
-  font-family: 'Orbitron', sans-serif;
-  color: var(--neon-cyan);
-  font-size: 1.1rem;
-}
-
-.timeline-date .sub {
-  display: block;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-.timeline-title {
-  font-family: 'Orbitron', sans-serif;
-  color: var(--text-heading);
-  margin: 0.4rem 0 0.6rem;
-}
-
-.timeline-summary {
-  color: var(--text-primary);
-  margin-bottom: 0.6rem;
-}
-
-.timeline-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-}
-
+.timeline-date .main { font-family: 'Orbitron', sans-serif; color: var(--neon-cyan); font-size: 1.1rem; }
+.timeline-date .sub { display: block; font-size: 0.85rem; color: var(--text-muted); }
+.timeline-title { color: var(--text-heading); margin: 0.4rem 0 0.6rem; font-family: 'Orbitron', sans-serif;}
+.timeline-summary { color: var(--text-primary); margin-bottom: 0.6rem; }
+.timeline-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .timeline-meta .chip {
   background: rgba(193, 60, 255, 0.15);
   border: 1px solid var(--neon-violet);
@@ -641,53 +376,28 @@ main h2 {
   color: var(--neon-cyan);
 }
 
-/* ===========================
-   Vertical Timeline Flow
-   =========================== */
-
-.timeline-flow {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  margin-top: 2rem;
-}
-
-.timeline-row {
-  display: grid;
-  grid-template-columns: 1fr 6px 1fr;
-  align-items: center;
-  gap: 1rem;
-}
-
+.timeline-flow { display: flex; flex-direction: column; gap: 3rem; margin-top: 2rem; }
+.timeline-row { display: grid; grid-template-columns: 1fr 6px 1fr; align-items: center; gap: 1rem; }
 .timeline-spine {
   width: 6px;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    var(--neon-cyan),
-    var(--neon-violet)
-  );
+  background: linear-gradient(to bottom, var(--neon-cyan), var(--neon-violet));
   box-shadow: 0 0 12px var(--glow-cyan), 0 0 20px var(--glow-violet);
   border-radius: 3px;
 }
-
-.timeline-left,
-.timeline-right {
+.timeline-left, .timeline-right {
   padding: 1rem 1.25rem;
   border: 1px solid var(--neon-violet);
   background: var(--bg-card-dark);
   border-radius: 0.6rem;
   box-shadow: 0 0 15px rgba(0, 232, 255, 0.15);
 }
+.timeline-left h3, .timeline-right h3 { font-family: 'Orbitron', sans-serif; color: var(--neon-cyan); margin-bottom: 0.4rem; }
 
-.timeline-left h3,
-.timeline-right h3 {
-  font-family: 'Orbitron', sans-serif;
-  color: var(--neon-cyan);
-  margin-bottom: 0.4rem;
-}
-
-/* Character Page Components */
+/* ==========================================================================
+   6. NOVEL CORE COMPONENT SPECIFICS
+   ========================================================================== */
+/* Character Layouts */
 .character-card {
   border: 2px solid #0ff;
   padding: 1.5rem;
@@ -696,313 +406,115 @@ main h2 {
   background: rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 12px #0ff;
 }
+
 .character-thumb {
     max-width: 150px;
     max-height: 150px;
-    /* object-fit: cover;      Crops the image to a perfect square */
-    /* border-radius: 50%;   Makes it a circle */
     border: 2px solid var(--neon-cyan);
     box-shadow: 0 0 10px var(--glow-cyan);
-    /* margin: 1rem auto;      Centers the image */
     display: block;
 }
-/* --- Book Tabs --- */
-.tab-container {
-  margin: 2rem 0;
-  background: #0c0028;
-  border: 1px solid #1e0a47;
-  border-radius: 8px;
-  overflow: hidden;
-}
 
-.tab-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  background: #1e0a47;
-  border-bottom: 1px solid #333;
-}
-
+/* Book Content Tabs */
+.tab-container { margin: 2rem 0; background: #0c0028; border: 1px solid #1e0a47; border-radius: 8px; overflow: hidden; }
+.tab-buttons { display: flex; flex-wrap: wrap; background: #1e0a47; border-bottom: 1px solid #333; }
 .tab-btn {
-  background: transparent;
-  border: none;
-  color: #1e0a47;
-  padding: 1rem 1.5rem;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  border-right: 1px solid #333;
+  background: transparent; border: none; color: #1e0a47; padding: 1rem 1.5rem;
+  cursor: pointer; font-size: 1rem; font-weight: bold; transition: all 0.3s ease; border-right: 1px solid #333;
 }
-
-.tab-btn:hover {
-  background: #333;
-  color: #fff;
-}
-
-.tab-btn.active {
-  background: #0f0f0f;
-  color: #0ff; /* Neon Cyan */
-  border-bottom: 2px solid #0ff;
-}
-
-.tab-content {
-  display: none;
-  padding: 1.5rem;
-  animation: fadeIn 0.3s ease;
-}
-
-.tab-content.active {
-  display: block;
-}
+.tab-btn:hover { background: #333; color: #fff; }
+.tab-btn.active { background: #0f0f0f; color: #0ff; border-bottom: 2px solid #0ff; }
+.tab-content { display: none; padding: 1.5rem; animation: fadeIn 0.3s ease; }
+.tab-content.active { display: block; }
 
 /* Spoiler Blur Effect */
-.spoiler-blur {
-  filter: blur(5px);
-  transition: filter 0.3s ease;
-  cursor: pointer;
-}
+.spoiler-blur { filter: blur(5px); transition: filter 0.3s ease; cursor: pointer; }
+.spoiler-blur:hover, .spoiler-blur.revealed { filter: blur(0); }
 
-.spoiler-blur:hover,
-.spoiler-blur.revealed {
-  filter: blur(0);
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* This ensures the character biography doesn't overlap the box */
-.article-content {
-    display: block;
-    overflow: hidden; /* This forces it to respect the floated infobox */
-}
-
-/* Ensure the infobox stays glued to the right */
-.infobox {
-    float: right;
-    clear: right;
-    width: 320px;
-    margin: 0 0 1rem 1.5rem; /* Space between box and text */
-}
-/* --- Metabolic Power Level Bars --- */
-.metabolic-container {
-  background: var(--bg-card-dark);
-  border: 1px solid var(--border-glow);
-  padding: 1rem;
-  border-radius: 8px;
-  margin: 1rem 0;
-}
-
-.power-label {
-  display: flex;
-  justify-content: space-between;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 0.75rem;
-  margin-bottom: 0.3rem;
-  color: var(--text-muted);
-}
-
-.bar-bg {
-  background: rgba(255, 255, 255, 0.1);
-  height: 12px;
-  border-radius: 6px;
-  overflow: hidden;
-  position: relative;
-  border: 1px solid rgba(0, 232, 255, 0.2);
-}
-
-.bar-fill {
-  height: 100%;
-  transition: width 0.5s ease-in-out;
-  box-shadow: 0 0 10px var(--neon-cyan);
-}
-
-/* Gradient Colors based on intensity */
-.fill-normal  { background: linear-gradient(90deg, #00e8ff, #0099ff); width: 15%; } /* Baseline Human */
-.fill-idling  { background: linear-gradient(90deg, #c13cff, #ff2af1); width: 35%; } /* Celectra Idle */
-.fill-active  { background: linear-gradient(90deg, #ff2af1, #ff0000); width: 85%; } /* Deep Communion */
-
+/* Metabolic Power Level Bars */
+.metabolic-container { background: var(--bg-card-dark); border: 1px solid var(--border-glow); padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+.power-label { display: flex; justify-content: space-between; font-family: 'Orbitron', sans-serif; font-size: 0.75rem; margin-bottom: 0.3rem; color: var(--text-muted); }
+.bar-bg { background: rgba(255, 255, 255, 0.1); height: 12px; border-radius: 6px; overflow: hidden; position: relative; border: 1px solid rgba(0, 232, 255, 0.2); }
+.bar-fill { height: 100%; transition: width 0.5s ease-in-out; box-shadow: 0 0 10px var(--neon-cyan); }
+.fill-normal  { background: linear-gradient(90deg, #00e8ff, #0099ff); width: 15%; } 
+.fill-idling  { background: linear-gradient(90deg, #c13cff, #ff2af1); width: 35%; } 
+.fill-active  { background: linear-gradient(90deg, #ff2af1, #ff0000); width: 85%; } 
 .bar-fill::after {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  animation: scan 2s infinite;
+  content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); animation: scan 2s infinite;
 }
 
-@keyframes scan {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(100%); }
+/* Slang Page Layout Indent Hierarchy */
+section h3 {
+  margin-left: 1.5em;
+  margin-top: 1.8em;
+  font-size: 1.3rem;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 8px var(--glow-cyan), 0 0 14px rgba(0, 232, 255, 0.4);
+  border-left: 4px solid var(--neon-violet);
+  padding-left: 0.6em;
 }
+section h3 ~ section { margin-left: 3em; }
+section h3 ~ section h2 { text-shadow: 0 0 6px rgba(193, 60, 255, 0.4), 0 0 10px rgba(0, 232, 255, 0.3); }
+section h3:not(:first-of-type) { border-top: 1px solid rgba(193, 60, 255, 0.3); padding-top: 1em; }
+
+/* ==========================================================================
+   7. INPUTS, BUTTONS, & UI UTILITIES
+   ========================================================================== */
+button, input[type="submit"] {
+  background: linear-gradient(45deg, var(--neon-violet), var(--neon-cyan));
+  color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 0.5rem;
+  font-weight: 600; cursor: pointer; transition: all 0.3s; box-shadow: 0 0 15px rgba(193, 60, 255, 0.5);
+}
+button:hover { transform: translateY(-3px); box-shadow: 0 0 30px var(--glow-violet); }
+
+input[type="number"], input[type="text"] {
+  background: var(--bg-card); border: 1px solid var(--neon-violet);
+  color: var(--text-primary); padding: 0.6rem; border-radius: 0.5rem;
+}
+input:focus { outline: none; border-color: var(--neon-cyan); box-shadow: 0 0 15px var(--glow-cyan); }
+
+.glow-violet { text-shadow: 0 0 10px var(--neon-violet); color: var(--neon-violet); }
+.glow-cyan   { text-shadow: 0 0 10px var(--neon-cyan);   color: var(--neon-cyan); }
+#timeDisplay { margin-left: auto; white-space: nowrap; font-family: 'Orbitron', sans-serif; color: var(--neon-cyan); }
+#canvas      { background-color: #000000 !important; }
+.page-body   { padding: 2rem; min-height: 100vh; background: var(--bg-space); color: var(--text-primary); }
+.content-wrapper { max-width: 900px; margin: 0 auto; }
+.subtitle, .page-footer { text-align: center; margin-top: 0.5rem; color: var(--text-muted); }
+.page-footer { margin-top: 3rem; font-size: 0.9rem; }
+
+#toTopBtn {
+  position: fixed; bottom: 2rem; right: 2rem; display: none;
+  background: var(--bg-card-dark); border: 1px solid var(--neon-violet); border-radius: 0.6rem;
+  color: var(--neon-cyan); font-family: 'Orbitron', sans-serif; font-weight: 700; padding: 0.8rem 1.2rem;
+  cursor: pointer; box-shadow: 0 0 12px rgba(0, 232, 255, 0.25); transition: all 0.3s ease;
+  animation: pulseTopBtn 3s infinite alternate; z-index: 1000;
+}
+#toTopBtn:hover { color: var(--neon-magenta); border-color: var(--neon-cyan); box-shadow: 0 0 20px var(--glow-cyan), 0 0 30px var(--glow-violet); transform: translateY(-3px); }
+
 .tts-controls {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-left: 1rem;
-  background: rgba(12, 0, 40, 0.8);
-  padding: 0.25rem 0.75rem;
-  border-radius: 30px;
-  border: 1px solid #bb86fc;
+  display: inline-flex; align-items: center; gap: 0.5rem; margin-left: 1rem;
+  background: rgba(12, 0, 40, 0.8); padding: 0.25rem 0.75rem; border-radius: 30px; border: 1px solid #bb86fc;
+}
+.tts-controls select, .tts-controls button, .tts-controls .rate-label {
+  background: #0c0028; color: white; border: 1px solid #555; border-radius: 4px; padding: 0.2rem 0.5rem; font-size: 0.8rem; cursor: pointer;
+}
+.tts-controls button { background: #bb86fc; color: #0c0028; border: none; font-weight: bold; }
+.tts-controls .rate-label { display: inline-flex; align-items: center; gap: 0.3rem; background: transparent; border: none; }
+
+/* ==========================================================================
+   8. RESPONSIVE MEDIA QUERIES & ANIMATIONS
+   ========================================================================== */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pulseTopBtn { 0% { box-shadow: 0 0 12px rgba(0, 232, 255, 0.25); } 100% { box-shadow: 0 0 22px rgba(193, 60, 255, 0.35), 0 0 30px rgba(0, 232, 255, 0.25); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .index-links a { animation: none; transition: none; }
 }
 
-.tts-controls select,
-.tts-controls button,
-.tts-controls .rate-label {
-  background: #0c0028;
-  color: white;
-  border: 1px solid #555;
-  border-radius: 4px;
-  padding: 0.2rem 0.5rem;
-  font-size: 0.8rem;
-  cursor: pointer;
-}
-
-.tts-controls button {
-  background: #bb86fc;
-  color: #0c0028;
-  border: none;
-  font-weight: bold;
-}
-
-.tts-controls .rate-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  background: transparent;
-  border: none;
-}
 @media (max-width: 768px) {
-  .header-inner {
-    flex-wrap: wrap;
-  }
-  .tts-controls {
-    margin-left: 0;
-    margin-top: 0.5rem;
-  }
-
-    /* Import the sci-fi fonts from the main theme */
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600;700&display=swap');
-
-    body {
-        font-family: 'Inter', system-ui, sans-serif;
-        line-height: 1.7;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #0f0124; /* --bg-space (Deep void) */
-        color: #e37df5;            /* --text-primary */
-    }
-
-    /* Transformed into a holographic panel card */
-    .wiki-container {
-        background-color: #0c0028; /* --bg-card */
-        padding: 30px;
-        border-radius: 0.75rem;
-        border: 1px solid #1e0a47; /* --border-glow */
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6),
-                    0 0 15px rgba(193, 60, 255, 0.3); /* --glow-violet */
-        backdrop-filter: blur(4px);
-    }
-
-    h1 {
-        font-family: 'Orbitron', sans-serif;
-        font-weight: 900;
-        text-align: center;
-        background: linear-gradient(90deg, #60a5fa, #c13cff, #00e8ff); /* Linear gradient to neon-cyan */
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        padding-bottom: 0.4em;
-        border-bottom: 1px solid rgba(193, 60, 255, 0.4);
-        margin-top: 1.5em;
-    }
-
-    h2 {
-        font-family: 'Orbitron', sans-serif;
-        font-size: 1.8rem;
-        font-weight: 700;
-        color: #00e8ff;            /* --neon-cyan */
-        border-bottom: 2px solid #c13cff; /* --neon-violet */
-        border-left: none;         /* Overriding corporate left border */
-        padding-bottom: 0.3em;
-        padding-left: 0;
-        margin-top: 2.5rem;
-    }
-
-    h3 {
-        font-family: 'Orbitron', sans-serif;
-        font-size: 1.3rem;
-        color: #00e8ff;            /* --neon-cyan */
-        text-shadow: 0 0 8px rgba(0, 232, 255, 0.25);
-        border-left: 4px solid #c13cff; /* --neon-violet */
-        padding-left: 0.6em;
-        margin-top: 1.8em;
-    }
-
-    /* Darkened to match table header style tints */
-    .meta-info {
-        background-color: rgba(193, 60, 255, 0.15); 
-        border: 1px solid #1e0a47; /* --border-glow */
-        padding: 15px;
-        border-radius: 0.5rem;
-        margin: 20px 0;
-    }
-
-    .meta-info strong {
-        color: #ffffff;            /* --text-heading */
-        font-family: 'Orbitron', sans-serif;
-    }
-
-    /* Complete status pops out in glowing Neon Magenta */
-    .status-complete {
-        color: #ff2af1;            /* --neon-magenta */
-        font-weight: bold;
-        text-shadow: 0 0 8px rgba(255, 42, 241, 0.4);
-    }
-
-    /* Modified navbar into a clean cyber-row */
-    nav {
-        background-color: #0a0022; /* --bg-card-dark */
-        border: 1px solid #1e0a47;
-        padding: 12px;
-        margin-bottom: 20px;
-        border-radius: 0.5rem;
-        display: flex;
-        gap: 15px;
-    }
-
-    nav a {
-        color: #00e8ff;            /* --neon-cyan */
-        font-family: 'Orbitron', sans-serif;
-        text-decoration: none;
-        transition: all 0.2s;
-    }
-
-    nav a:hover {
-        color: #c13cff;            /* --neon-violet */
-        text-decoration: none;
-        text-shadow: 0 0 8px rgba(0, 232, 255, 0.25);
-    }
-
-    /* Styled like character-card snippet from source css */
-    .character-box {
-        background-color: rgba(0, 0, 0, 0.4);
-        border: 2px solid #00e8ff;  /* Cyber cyan framing */
-        padding: 15px;
-        margin: 15px 0;
-        border-radius: 12px;
-        box-shadow: 0 0 12px rgba(0, 232, 255, 0.3);
-    }
-
-    ul {
-        margin: 10px 0;
-        padding-left: 30px;
-        list-style-type: square;   /* Blocky/square bullets look more sci-fi */
-    }
-
-    li {
-        margin: 7px 0;
-        color: #b8b1ff;            /* --text-muted */
-    }
-  }
+  .header-inner { flex-wrap: wrap; }
+  .tts-controls { margin-left: 0; margin-top: 0.5rem; }
+  .timeline-row { grid-template-columns: 1fr; gap: 1.5rem; }
+  .timeline-spine { display: none; } /* Drop the timeline spine graphic on mobile layouts */
+}

@@ -10,15 +10,15 @@
   <style>
     /* Additional styles for the series section */
     .series-status {
-      background: #0c0028;
-      color: white;
+      background: var(--bg-card);
+      color: var(--text-heading);
       padding: 2rem;
       border-radius: 10px;
       margin: 2rem 0;
       box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
     .series-status h2 {
-      color: #bb86fc;
+      color: var(--neon-cyan);
       margin-top: 0;
     }
     .book-progress {
@@ -28,15 +28,16 @@
       flex-wrap: wrap;
     }
     .book-card {
-      background: #0c0028;
+      background: var(--bg-card-dark);
       border-radius: 8px;
       padding: 1rem;
       flex: 1;
       min-width: 200px;
+      border: 1px solid var(--border-glow);
     }
     .book-card h3 {
       margin-top: 0;
-      color: #bb86fc;
+      color: var(--neon-violet);
     }
     .status-badge {
       display: inline-block;
@@ -45,13 +46,15 @@
       font-size: 0.8rem;
       font-weight: bold;
       margin: 0.5rem 0;
+      color: #ffffff;
     }
     .status-ready { background: #4caf50; }
     .status-polishing { background: #ff9800; }
     .status-drafting { background: #2196f3; }
+    
     .author-note {
-      background: #0c0028;
-      border-left: 4px solid #bb86fc;
+      background: var(--bg-card-dark);
+      border-left: 4px solid var(--neon-violet);
       padding: 1rem;
       margin: 1.5rem 0;
       border-radius: 0 8px 8px 0;
