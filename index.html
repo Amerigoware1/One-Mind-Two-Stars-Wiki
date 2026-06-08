@@ -4,9 +4,40 @@
   <meta charset="UTF-8">
   <title>One Mind, Two Stars Wiki</title>
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  
+  <!-- Preload main stylesheet to prioritise its loading -->
+  <link rel="preload" href="WikiStyle.css" as="style">
+  <!-- Load main stylesheet -->
   <link rel="stylesheet" href="WikiStyle.css">
+  
+  <!-- CRITICAL INLINE STYLES: ensures colour scheme works even if WikiStyle.css is slow -->
   <style>
-    /* Additional styles for the series section */
+    /* Duplicate of the CSS variables from WikiStyle.css – prevents flash of unstyled content */
+    :root {
+      --bg-space:         #0f0124;
+      --bg-card:          #0c0028;
+      --bg-card-dark:     #0a0022;
+      --border-glow:      #1e0a47;
+      --neon-violet:      #c13cff;
+      --neon-cyan:        #00e8ff;
+      --neon-magenta:     #ff2af1;
+      --text-primary:     #e37df5;
+      --text-muted:       #b8b1ff;
+      --text-heading:     #ffffff;
+      --glow-violet:      rgba(193, 60, 255, 0.3);
+      --glow-cyan:        rgba(0, 232, 255, 0.25);
+    }
+    /* Force immediate background/text to match the theme */
+    body {
+      background: var(--bg-space);
+      color: var(--text-primary);
+      margin: 20px;
+      padding: 1rem;
+    }
+  </style>
+
+  <!-- Additional styles for the series section (same as before) -->
+  <style>
     .series-status {
       background: var(--bg-card);
       color: var(--text-heading);
@@ -86,7 +117,7 @@
           <p>Complete manuscript. Introducing the Niamh–Ciara system, Utopis Station, unique physiology, and the discovery of Galinstanian life.</p>
         </div>
         <div class="book-card">
-          <h3>Book 2: One Mind, Two Stars 2: The Northern Shadows</h3>Galinstanians
+          <h3>Book 2: One Mind, Two Stars 2: The Northern Shadows</h3>
           <span class="status-badge status-polishing">In Revision/Polishing</span>
           <p>Deepening conflicts between antagonist and Galinstanian allies, and the ethical implications of experimentation on sentient beings.</p>
         </div>
@@ -160,7 +191,6 @@
   <script>
     const toTopBtn = document.getElementById("toTopBtn");
 
-    // Show button when scrolled down
     window.addEventListener("scroll", () => {
       if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         toTopBtn.style.display = "block";
@@ -169,11 +199,9 @@
       }
     });
 
-    // Smooth scroll to top
     toTopBtn.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
   </script>
-
 </body>
 </html>
