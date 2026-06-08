@@ -2,118 +2,178 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>System Overview</title>
+  <title>System Overview – One Mind, Two Stars Wiki</title>
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="stylesheet" href="WikiStyle.css?v=3">
+  <style>
+    /* Table Structural Layout specific to this summary document */
+    .system-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .system-table th, 
+    .system-table td {
+      border: 1px solid var(--border-glow);
+      padding: 12px;
+      text-align: left;
+    }
+
+    .system-table th {
+      background-color: var(--bg-card-dark);
+      font-family: 'Orbitron', sans-serif;
+      color: var(--neon-cyan);
+      letter-spacing: 0.5px;
+    }
+
+    .system-table tr {
+      transition: background-color 0.2s;
+    }
+
+    .system-table tbody tr:hover {
+      background-color: rgba(193, 60, 255, 0.05);
+    }
+
+    /* Emphasizes Chaos as the primary planetary centerpiece of the story */
+    .system-table tr.highlight-row {
+      background-color: rgba(255, 42, 241, 0.08);
+      border: 2px solid var(--neon-magenta);
+    }
+
+    .system-table tr.highlight-row td {
+      border-top: 1px solid var(--neon-magenta);
+      border-bottom: 1px solid var(--neon-magenta);
+      font-weight: 600;
+    }
+
+    .system-table tr.highlight-row td:first-child {
+      color: var(--neon-magenta);
+      font-family: 'Orbitron', sans-serif;
+      text-shadow: 0 0 8px rgba(255, 42, 241, 0.4);
+    }
+  </style>
 </head>
-<body>
-<div class="top-banner">
-  <a href="index.html" class="home-button">🏠 Home</a>
-  </div>
-  <h1>💫Niamh–Ciara System Overview💫</h1>
+<body class="page-body">
+  <div class="content-wrapper">
 
-  <div class="card-bg">
-    <h2>Binary Stars</h2>
-    <ul>
-      <li><strong>Niamh:</strong> G-type yellow star (bright, radiant)</li>
-      <li><strong>Ciara:</strong> K-type orange dwarf (cooler, dimmer)</li>
-      <li><strong>Separation:</strong> ~0.15 AU</li>
-    </ul>
+    <div class="top-banner">
+      <a href="index.html" class="home-button">🏠 Home</a>
+    </div>
+
+    <div class="page-header">
+      <h1>💫 Niamh–Ciara System Overview 💫</h1>
+    </div>
+
+    <div class="card-bg">
+      <h2>Binary Stars</h2>
+      <ul>
+        <li><strong>Niamh:</strong> G-type yellow star (bright, radiant)</li>
+        <li><strong>Ciara:</strong> K-type orange dwarf (cooler, dimmer)</li>
+        <li><strong>Separation:</strong> ~0.15 AU</li>
+      </ul>
+    </div>
+
+    <div class="card-bg">
+      <h2>Moons of Chaos</h2>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;"><em>Ordered from innermost to outermost</em></p>
+      <ul>
+        <li><strong>Hermes:</strong> Volcanic and glowing orange due to intense tidal heating.</li>
+        <li><strong>Athena:</strong> Cold, airless, and glittering with crystalline deposits.</li>
+        <li><strong>Poseidon:</strong> Ancient and resilient, marked by a heavily cratered surface.</li>
+        <li><strong>Demeter:</strong> An adaptive world in a stable mid-orbit.</li>
+        <li><strong><a href="Ares-Wiki.html">Ares:</a></strong> Nearly Earth-sized and warm. A cosmologically "recent" capture (approx. 2–5 million years ago), it maintains a mildly elliptical orbit and remains rotationally independent.</li>
+      </ul>
+    </div>
+
+    <div class="card-bg">
+      <h2>Planetary Table</h2>
+      <div style="overflow-x: auto;">
+        <table class="system-table">
+          <thead>
+            <tr>
+              <th>Planet</th>
+              <th>Type</th>
+              <th>Moons</th>
+              <th>Mythos</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Oisín</td>
+              <td>Rocky</td>
+              <td>Oscar</td>
+              <td>Irish</td>
+              <td>Closest to Niamh</td>
+            </tr>
+            <tr class="highlight-row">
+              <td>Chaos 🌟</td>
+              <td>Super-Jupiter</td>
+              <td>Ares, Hermes, Athena, Poseidon, Demeter</td>
+              <td>Greek</td>
+              <td>Central system to the narrative</td>
+            </tr>
+            <tr>
+              <td>Ra</td>
+              <td>Gas giant</td>
+              <td>Anubis, Isis, Osiris</td>
+              <td>Egyptian</td>
+              <td>Named for sun god</td>
+            </tr>
+            <tr>
+              <td>Odin</td>
+              <td>Super-Earth</td>
+              <td>Thor, Loki, Freyja, Baldr</td>
+              <td>Norse</td>
+              <td>Dark, geologically active</td>
+            </tr>
+            <tr>
+              <td>Vishnu</td>
+              <td>Ocean world</td>
+              <td>Lakshmi, Shiva, Krishna</td>
+              <td>Indian</td>
+              <td>Frozen crust, subsurface oceans</td>
+            </tr>
+            <tr>
+              <td>Quetzalcoatl</td>
+              <td>Gas giant</td>
+              <td>Huitzilopochtli, Tezcatlipoca, XipeTotec, Tlaloc</td>
+              <td>Aztec</td>
+              <td>Feathered Serpent deity</td>
+            </tr>
+            <tr>
+              <td>Amaterasu</td>
+              <td>Frozen gas giant</td>
+              <td>Susanoo, Tsukuyomi, Inari</td>
+              <td>Japanese</td>
+              <td>Named for sun goddess</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card-bg">
+      <h2>Key Parameters</h2>
+      <ul>
+        <li><strong>Ares Day Length:</strong> 18 Earth-hours (Gradually slowing due to tidal braking).</li>
+        <li><strong>Ares Orbital Period:</strong> 45 Earth-days (1 "Month").</li>
+        <li><strong>Chaos Year:</strong> 407 Earth-days / 542.66 Ares-days.</li>
+        <li><strong>Star Separation:</strong> Niamh and Ciara orbit at ~0.15 AU, appearing as a close binary pair from Chaos system.</li>
+      </ul>
+    </div>
+
+    <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+    
   </div>
 
-<div class="card-bg">
-    <h2>Moons of Chaos</h2>
-    <p><em>Ordered from innermost to outermost</em></p>
-    <ul>
-      <li><strong>Hermes:</strong> Volcanic and glowing orange due to intense tidal heating.</li>
-      <li><strong>Athena:</strong> Cold, airless, and glittering with crystalline deposits.</li>
-      <li><strong>Poseidon:</strong> Ancient and resilient, marked by a heavily cratered surface.</li>
-      <li><strong>Demeter:</strong> An adaptive world in a stable mid-orbit.</li>
-      <li><strong><a href="Ares-Wiki.html">Ares:</a></strong> Nearly Earth-sized and warm. A cosmologically "recent" capture (approx. 2–5 million years ago), it maintains a mildly elliptical orbit and remains rotationally independent.</li>
-    </ul>
-  </div>
-
-<div class="card-bg">
-  <h2>Planetary Table</h2>
-  <table style="width:100%; border-collapse: collapse; border: 2px solid #444;">
-    <thead>
-      <tr style="background-color: #0f0124;">
-       <th class="table-header">Planet</th>
-<th class="table-header">Type</th>
-<th class="table-header">Moons</th>
-<th class="table-header">Mythos</th>
-<th class="table-header">Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="border: 1px solid #444; padding: 8px;">Oisín</td>
-        <td style="border: 1px solid #444; padding: 8px;">Rocky</td>
-        <td style="border: 1px solid #444; padding: 8px;">Oscar</td>
-        <td style="border: 1px solid #444; padding: 8px;">Irish</td>
-        <td style="border: 1px solid #444; padding: 8px;">Closest to Niamh</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #444; padding: 8px;">Chaos</td>
-        <td style="border: 1px solid #444; padding: 8px;">Super-Jupiter</td>
-        <td style="border: 1px solid #444; padding: 8px;">Ares, Hermes, Athena, Poseidon, Demeter</td>
-        <td style="border: 1px solid #444; padding: 8px;">Greek</td>
-        <td style="border: 1px solid #444; padding: 8px;">Central to story</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #444; padding: 8px;">Ra</td>
-        <td style="border: 1px solid #444; padding: 8px;">Gas giant</td>
-        <td style="border: 1px solid #444; padding: 8px;">Anubis, Isis, Osiris</td>
-        <td style="border: 1px solid #444; padding: 8px;">Egyptian</td>
-        <td style="border: 1px solid #444; padding: 8px;">Named for sun god</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #444; padding: 8px;">Odin</td>
-        <td style="border: 1px solid #444; padding: 8px;">Super-Earth</td>
-        <td style="border: 1px solid #444; padding: 8px;">Thor, Loki, Freyja, Baldr</td>
-        <td style="border: 1px solid #444; padding: 8px;">Norse</td>
-        <td style="border: 1px solid #444; padding: 8px;">Dark, geologically active</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #444; padding: 8px;">Vishnu</td>
-        <td style="border: 1px solid #444; padding: 8px;">Ocean world</td>
-        <td style="border: 1px solid #444; padding: 8px;">Lakshmi, Shiva, Krishna</td>
-        <td style="border: 1px solid #444; padding: 8px;">Indian</td>
-        <td style="border: 1px solid #444; padding: 8px;">Frozen crust, subsurface oceans</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #444; padding: 8px;">Quetzalcoatl</td>
-        <td style="border: 1px solid #444; padding: 8px;">Gas giant</td>
-        <td style="border: 1px solid #444; padding: 8px;">Huitzilopochtli, Tezcatlipoca, XipeTotec, Tlaloc</td>
-        <td style="border: 1px solid #444; padding: 8px;">Aztec</td>
-        <td style="border: 1px solid #444; padding: 8px;">Feathered Serpent deity</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #444; padding: 8px;">Amaterasu</td>
-        <td style="border: 1px solid #444; padding: 8px;">Frozen gas giant</td>
-        <td style="border: 1px solid #444; padding: 8px;">Susanoo, Tsukuyomi, Inari</td>
-        <td style="border: 1px solid #444; padding: 8px;">Japanese</td>
-        <td style="border: 1px solid #444; padding: 8px;">Named for sun goddess</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<div class="card-bg">
-    <h2>Key Parameters</h2>
-    <ul>
-      <li><strong>Ares Day Length:</strong> 18 Earth-hours (Gradually slowing due to tidal braking).</li>
-      <li><strong>Ares Orbital Period:</strong> 45 Earth-days (1 "Month").</li>
-      <li><strong>Chaos Year:</strong> 407 Earth-days / 542.66 Ares-days.</li>
-      <li><strong>Star Separation:</strong> Niamh and Ciara orbit at ~0.15 AU, appearing as a close binary pair from Chaos system.</li>
-    </ul>
-  </div>
-    <!-- Back to Top Button -->
-  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
   <script>
+    // Back to Top Button Logic
     const toTopBtn = document.getElementById("toTopBtn");
     window.addEventListener("scroll", () => {
-      if (document.documentElement.scrollTop > 200) {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         toTopBtn.style.display = "block";
       } else {
         toTopBtn.style.display = "none";
@@ -125,9 +185,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
