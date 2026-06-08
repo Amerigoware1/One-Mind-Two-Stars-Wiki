@@ -1,75 +1,12 @@
-TaliaTalia<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Extended Archive – One Mind, Two Stars Wiki</title>
+  <title>Counseling Sessions – One Mind, Two Stars Wiki</title>
   <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
   <link rel="stylesheet" href="../../WikiStyle.css">
   <style>
-   body {
-  font-family: 'Inter', system-ui, sans-serif;
-  background: var(--bg-space);
-  color: var(--text-primary);
-  line-height: 1.7;
-  margin: 20px;
-  padding: 1rem;
-  min-height: 100vh;
-}
-
-/* Optional subtle starfield texture (add via ::before if you want) */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(circle at 20% 80%, rgba(120, 60, 255, 0.08) 0%, transparent 50%),
-              radial-gradient(circle at 80% 20%, rgba(0, 232, 255, 0.06) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: -1;
-}
-
-/* ===========================
-   Typography
-   =========================== */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Orbitron', sans-serif;
-  color: var(--text-heading);
-  margin-top: 1.5em;
-  letter-spacing: 0.5px;
-}
-
-h1 {
-  font-size: 2.8rem;
-  font-weight: 900;
-  text-align: center;
-  background: linear-gradient(90deg, #60a5fa, var(--neon-violet), var(--neon-cyan));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-bottom: 0.4em;
-  border-bottom: 1px solid rgba(193, 60, 255, 0.4);
-}
-
-h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--neon-cyan);
-  border-bottom: 2px solid var(--neon-violet);
-  padding-bottom: 0.3em;
-}
-
-/* ===========================
-   Links
-   =========================== */
-a {
-  color: var(--neon-cyan);
-  text-decoration: none;
-  transition: all 0.2s;
-}
-a:hover {
-  color: var(--neon-violet);
-  text-shadow: 0 0 8px var(--glow-cyan);
-} 
-    
+    /* Spacing layout constraints specific to the Story sub-grid */
     .story-list {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -77,127 +14,70 @@ a:hover {
       margin: 2rem 0;
     }
     
-    .story-card {
-      background: #0c0028;
-      border-radius: 8px;
-      padding: 1.5rem;
-      transition: transform 0.2s;
-    }
-    
-    .story-card:hover {
-      transform: translateY(-3px);
-    }
-    
-    .story-card h3 {
-      margin-top: 0;
-      color: #bb86fc;
-    }
-    
     .story-card p {
-      color: #ccc;
+      color: var(--text-muted);
       font-size: 0.9rem;
     }
-    
-    .story-card a {
-      color: #bb86fc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    
-    hr {
-      border-color: #333;
-      margin: 2rem 0;
-    }
 
-    .top-banner a.home-button {
-      background: #0c0028;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      text-decoration: none;
-      color: #bb86fc;
-      border: 1px solid #bb86fc;
-      margin-right: 0.5rem;
-    }
-    .top-banner a.home-button:hover {
-      background: #bb86fc;
-      color: #0c0028;
+    .story-card .word-count {
+      color: var(--text-muted);
+      opacity: 0.75;
+      font-size: 0.85rem;
+      margin: 0.5rem 0 1rem 0;
     }
   </style>
 </head>
-<body>
+<body class="page-body">
+  <div class="content-wrapper">
 
-<div class="top-banner">
-  <a href="../../index.html" class="home-button">🏠 Home</a>
-  <a href="../../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
-</div>
+    <div class="top-banner">
+      <a href="../../index.html" class="home-button">🏠 Home</a>
+      <a href="../../anthology.html" class="home-button">📚 Archive</a>
+    </div>
 
-<h1>Counseling Sessions</h1>
+    <div class="page-header">
+      <h1>Counseling Sessions</h1>
+      <p class="subtitle" style="max-width: 700px; margin: 0 auto 2rem auto;">
+        The full‑length holo‑chamber therapy sessions where Celectra (as Aquella) works through her fears with Dr. Zoë Kret. 
+        These extended scenes were trimmed for the novel but preserved here in their entirety.
+      </p>
+    </div>
 
-<p class="subtitle" style="text-align: center; margin-bottom: 2rem;">
-  The full‑length holo‑chamber therapy sessions where Celectra (as Aquella) works through her fears with Dr. Zoë Kret. 
-  These extended scenes were trimmed for the novel but preserved here in their entirety.
-</p>
-
-<div class="story-list" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-  
-  <div class="story-card" style="background: #0c0028; border-radius: 8px; padding: 1.5rem;">
-    <h3>First Impressions</h3>
-    <p>Celectra’s very first session with Zoë. They create the characters Aquella and Lolita, and Celectra introduces the barycenter metaphor.</p>
-    <p style="color: #aaa; font-size: 0.85rem;">≈ 2800 words</p>
-    <a href="./first-impressions.html" style="color: #bb86fc;">Read →</a>
-  </div>
-  
-  <div class="story-card" style="background: #0c0028; border-radius: 8px; padding: 1.5rem;">
-    <h3>The Shade‑Beast</h3>
-    <p>In a holo‑session on Utopis, Aquella and Lolita face a creature born from fear – and Celectra realizes she can walk toward it.</p>
-    <p style="color: #aaa; font-size: 0.85rem;">≈ 2200 words</p>
-    <a href="./the-shade-beast.html" style="color: #bb86fc;">Read →</a>
-  </div>
-  
-  <div class="story-card" style="background: #0c0028; border-radius: 8px; padding: 1.5rem;">
-    <h3>Drawing the Line</h3>
-    <p>The conclusion of the Aquella story. The Great Grand Stallion draws a line between two armies, and Celectra learns what diplomacy feels like.</p>
-    <p style="color: #aaa; font-size: 0.85rem;">≈ 2400 words</p>
-    <a href="./drawing-the-line.html" style="color: #bb86fc;">Read →</a>
-  </div>
-  
-</div>
-
-<div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="../../anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
-</div>
-
-  <button id="toTopBtn" aria-label="Return to top" style="display: none;">⬆️ Top</button>
-  
-  <script>
-    // Passcode check – update the passcode to match what you publish in the book
-    function checkPasscode() {
-      const input = document.getElementById('passcodeInput').value;
-      const validPasscode = 'BRIDGE'; // <-- Change this to your desired code
+    <div class="story-list">
       
-      if (input === validPasscode) {
-        // Hide passcode gate, show content
-        document.getElementById('passcodeGate').style.display = 'none';
-        document.getElementById('archiveContent').style.display = 'block';
-        // Store in localStorage so returning readers don't need to re-enter
-        localStorage.setItem('archiveUnlocked', 'true');
-        // Clear any previous error message
-        document.getElementById('errorMsg').innerText = '';
-      } else {
-        document.getElementById('errorMsg').innerText = 'Incorrect passcode. Please check the back of the book.';
-      }
-    }
+      <div class="story-card card-bg">
+        <h3>First Impressions</h3>
+        <p>Celectra’s very first session with Zoë. They create the characters Aquella and Lolita, and Celectra introduces the barycenter metaphor.</p>
+        <p class="word-count">≈ 2800 words</p>
+        <a href="./first-impressions.html">Read →</a>
+      </div>
+      
+      <div class="story-card card-bg">
+        <h3>The Shade‑Beast</h3>
+        <p>In a holo‑session on Utopis, Aquella and Lolita face a creature born from fear – and Celectra realizes she can walk toward it.</p>
+        <p class="word-count">≈ 2200 words</p>
+        <a href="./the-shade-beast.html">Read →</a>
+      </div>
+      
+      <div class="story-card card-bg">
+        <h3>Drawing the Line</h3>
+        <p>The conclusion of the Aquella story. The Great Grand Stallion draws a line between two armies, and Celectra learns what diplomacy feels like.</p>
+        <p class="word-count">≈ 2400 words</p>
+        <a href="./drawing-the-line.html">Read →</a>
+      </div>
+      
+      </div>
+
+    <div style="margin-top: 3rem; text-align: center;">
+      <a href="../../anthology.html">← Back to Extended Archive</a>
+    </div>
+
+    <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
     
-    // Check if previously unlocked (persistent across visits)
-    if (localStorage.getItem('archiveUnlocked') === 'true') {
-      document.getElementById('passcodeGate').style.display = 'none';
-      document.getElementById('archiveContent').style.display = 'block';
-    } else {
-      // Ensure content is hidden on first visit (inline style already does this)
-      document.getElementById('archiveContent').style.display = 'none';
-    }
-    
-    // Back to Top Button Logic (consistent with your existing site)
+  </div>
+
+  <script>
+    // Back to Top Button Logic
     const toTopBtn = document.getElementById('toTopBtn');
     window.addEventListener('scroll', () => {
       if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
