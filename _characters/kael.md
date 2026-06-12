@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Kael Aoki
 portrait: "/assets/images/kael-book5.webp"

@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Guardian (northern-territory)
 portrait: "/assets/images/guardian-book2.webp"

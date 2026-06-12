@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Logic (northern-territory)
 portrait: "/assets/images/logic-book2.webp"

@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Sensei Onishi Kisa
 portrait: "/assets/images/kisa-book1.webp"

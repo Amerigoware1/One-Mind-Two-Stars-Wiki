@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Dr. Douglas Kret
 portrait: "/assets/images/kret-book1.webp"

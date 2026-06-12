@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Chime (northern-territory)
 portrait: "/assets/images/chime-book4.webp"
@@ -22,8 +22,6 @@ book2_arc: >
 
   Chime becomes central to the healing journey of the Northern Territory cluster. Their trauma from Kret's experiments manifests as hesitation in communion and fear of isolation. Stan helps Chime process what happened, teaching them that harm does not have to define identity.
 
- 
-
 book3_title: "The Communion Interface"
 book3_arc: >
   As the Communion Interface project develops, Chime serves as a cautionary voice about the ethics of technology that touches consciousness. Having been violated by Kret's experiments, Chime understands intimately what it means to have one's interiority invaded without consent.
@@ -43,8 +41,7 @@ book5_arc: >
   When the twins discover the trapped Four (later-named resonant echo), Chime becomes their primary signal expert. Having been trapped themselves, Chime understands the psychology of confinement—the hope that flickers, the despair that threatens to extinguish it.
 
   Chime guides the twins in interpreting the tapping patterns, recognizing the desperation beneath the code. After the rescue, Chime helps Resonant Echo transition to freedom, offering the hard-won wisdom of one who has been on both sides of the wall.
-
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -106,8 +103,6 @@ Chime's arc is about what happens after the torture ends. The rescue was only th
 
 When the twins discover the trapped Four (later-resonant echo), Chime steps forward not as a victim but as a guide. Having been trapped, Chime knows the way out—not just the physical path, but the psychological one.
 </div>
-
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

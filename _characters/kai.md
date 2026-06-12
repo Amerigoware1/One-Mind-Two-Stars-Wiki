@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Kai Vasquez
 portrait: "/assets/images/kai-book5.webp"

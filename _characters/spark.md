@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Spark (northern-territory)
 portrait: "/assets/images/spark-book2.webp"

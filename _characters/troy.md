@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Dr. Lorain Troy
 portrait: "/assets/images/troy-book1.webp"

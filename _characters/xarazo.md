@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Xara Zo Carisco
 portrait: "/assets/images/xarazo-book5.webp"

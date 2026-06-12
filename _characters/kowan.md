@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Kowan Elian
 portrait: "/assets/images/kowan-book5.webp"

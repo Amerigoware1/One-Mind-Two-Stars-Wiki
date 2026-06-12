@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Dr. Kenji Yamoto
 portrait: "/assets/images/yamoto-book1.webp"

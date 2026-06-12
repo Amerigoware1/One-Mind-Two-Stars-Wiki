@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Isabella Santos
 portrait: "/assets/images/santos-book1.webp"

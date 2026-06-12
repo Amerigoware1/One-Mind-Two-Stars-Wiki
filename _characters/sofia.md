@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Sofia Patel
 portrait: "/assets/images/sofia-book5.webp"

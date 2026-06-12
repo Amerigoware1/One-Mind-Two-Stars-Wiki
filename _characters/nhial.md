@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Nhial Dok
 portrait: "/assets/images/nhial-book5.webp"

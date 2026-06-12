@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Duška Santoso Carisco
 portrait: "/assets/images/duska-book5.webp"
@@ -29,7 +29,7 @@ book4_arc: >
 book5_title: "The Resonant Echo & Next-Generation Leadership"
 book5_arc: >
   At twenty-seven, Duška is an established resonance designer and university outreach liaison. During the Resonant Echo rescue at the Samaya Gallery, she plays a critical support role: managing resonance perimeters, providing artistic perception of flow during acoustic negotiations, and helping coordinate the hybrid human–Galinstanian response. Her work with Lyric and the Northern Cluster proves invaluable in stabilizing the rescued collective. Later, at the Utopis education conference, Duška helps manage tech demos showcasing the next generation of integration. Her arc culminates in her becoming a mentor to younger artists and designers, ensuring that the principles of inclusive, resonance-aware design become standard practice across the colony.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -78,8 +78,6 @@ Her weaknesses include:
 ## Story Overview (non-spoiler)
 Duška's arc is about finding her voice as a cultural architect—someone who shapes the spaces where humans and Galinstanians meet, not through technology alone, but through thoughtful design that honors both species' sensory needs. She represents the generation that grows up with integration as normal, and her work helps ensure that normalcy is sustainable, beautiful, and inclusive.
 </div>
-
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

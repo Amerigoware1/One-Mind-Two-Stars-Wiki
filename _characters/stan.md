@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Stan (northern-cluster)
 portrait: "/assets/images//stan-book1.webp"

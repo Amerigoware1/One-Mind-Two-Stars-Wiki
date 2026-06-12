@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Jenni Jo Carisco
 portrait: "/assets/images/jennijo-book5.webp"

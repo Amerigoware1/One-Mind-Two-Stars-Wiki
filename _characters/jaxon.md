@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Jaxon Bowers
 portrait: "/assets/images/jaxon-book5.webp"

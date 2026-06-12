@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Emma Johnson
 portrait: "/assets/images/emma-book5.webp"
@@ -28,7 +28,7 @@ book5_arc: >
   At twenty-eight, Emma is a university mentor and interface technology specialist in the Resonance Stewardship Program. She works with Flicker, the Galinstanian she and Ethan shared as children, focusing on the speed and responsiveness of ANI interfaces. Her particular expertise is in reducing latency—making connections feel instantaneous rather than mechanical.
 
   During the rescue, Emma manages the rapid-response technical perimeter, ensuring that emergency systems can be deployed without lag. Her work is about speed: making technology fast enough to feel like instinct. She and Ethan still work together, but their roles have diverged—Emma pushes boundaries while Ethan builds foundations.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -71,8 +71,6 @@ Her weaknesses include:
 ### Story Overview (non-spoiler)
 Emma’s arc is about the value of speed—not just technical speed, but the speed of connection itself. She named Flicker as a child because the Galinstanian moved like light; as an adult, she builds interfaces that move fast enough to feel like thought. In Book 5, her expertise in rapid response helps the rescue operation move when it needs to move. She represents the generation that learned that waiting too long can be a form of silence, and that sometimes speed is the most compassionate thing you can offer.
 </div>
-
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

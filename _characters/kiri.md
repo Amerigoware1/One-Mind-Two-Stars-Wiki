@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Kiri
 portrait: "/assets/images/kiri-book2.webp"

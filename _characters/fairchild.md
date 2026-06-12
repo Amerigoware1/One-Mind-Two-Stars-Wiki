@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Terry Fairchild
 portrait: "/assets/images/fairchild-book1.webp"

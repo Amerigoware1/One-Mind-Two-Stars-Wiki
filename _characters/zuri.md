@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Zuri Yazzie
 portrait: "/assets/images/zuri-book5.webp"

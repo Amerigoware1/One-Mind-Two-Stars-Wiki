@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Jinan 'Jenni' Carisco
 portrait: "/assets/images/jenni-book1.webp"

@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Ethan Johnson
 portrait: "/assets/images/ethan-book5.webp"
@@ -28,7 +28,7 @@ book5_arc: >
   At twenty-eight, Ethan is a university mentor and interface technology specialist in the Resonance Stewardship Program. He works with Flicker, the Galinstanian he and Emma shared as children, focusing on the stability and reliability of ANI interfaces. His particular expertise is in building robust systems that don’t fail—foundations that can support the speed his sister builds.
 
   During the rescue, Ethan manages the structural technical perimeter, ensuring that the systems supporting the operation remain stable and secure. He and Emma still work together, but their roles have diverged—Emma pushes boundaries while Ethan builds foundations.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -71,8 +71,6 @@ His weaknesses include:
 ### Story Overview (non-spoiler)
 Ethan’s arc is about the value of foundations. He named Flicker as a child, drawn to brightness but also providing the steadiness that made the connection sustainable. As an adult, he builds interfaces that don’t fail—systems that can be trusted. In Book 5, his work ensures the rescue operation has stable technical support, a foundation his sister’s speed can build on. He represents the generation that learned that speed without stability is just noise, and that true connection requires both.
 </div>
-
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Chen Wei
 portrait: "/assets/images/chenwei-book5.webp"
@@ -31,7 +31,7 @@ book4_arc: >
 book5_title: "Stewardship & Legacy"
 book5_arc: >
   Chen is an established technician within the Resonance Stewardship Program. He helps train the next generation of Listener Corps members in signal processing and interface calibration. His work ensures that human–Galinstanian communication remains stable and accessible even as Celectra transitions into emeritus roles. He represents the continuity of the colony's technical infrastructure—the quiet expertise that keeps the bridges standing long after the originals have stepped back.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -76,7 +76,6 @@ His weaknesses include:
 Chen's arc is about finding value beyond physical prowess. His early disappointment in the dojo becomes the catalyst for a career that helps secure the colony's future. He represents the generation that builds the systems allowing human–Galinstanian relations to continue without dependence on a single biological bridge. His story mirrors the colony's shift from physical survival to complex technical coexistence.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

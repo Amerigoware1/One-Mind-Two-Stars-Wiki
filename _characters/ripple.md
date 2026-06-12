@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Ripple (northern-cluster)
 portrait: "/assets/images/ripple-book4.webp"

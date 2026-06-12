@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Chibuike Okafor
 portrait: "/assets/images/okafor-book1.webp"
