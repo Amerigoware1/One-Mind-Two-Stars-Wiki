@@ -1,7 +1,7 @@
--
+---
 layout: default
 title: Parisian Promise
--
+---
 
 <div class="top-banner">
   <a href="./index.html" class="home-button">🏠 Home</a>
@@ -156,7 +156,6 @@ She was Celectra, two bodies sharing one brilliant mind, and she had people who 
 
 Outside, the binary stars kept circling their shared light. Inside, Celectra breathed in sync with them—whole, loved, and endless as the night.
 
--
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>

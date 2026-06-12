@@ -26,7 +26,7 @@ book5_arc: >
   The collective, already aware of acoustic tap code from the bismuth network, interprets Kael’s rhythms as a deliberate “hope beacon,” confirming that the surface still uses acoustic methods. When the twins discover the trapped beings, they realize Kael’s unintentional heroism.
 
   After the rescue, Kael is honored by Resonant Echo as the “Drummer-of-Hope.” His testimony before the Council helps reinstate acoustic methods as a recognized communication protocol. By the end of Book 5, he is appointed as the youth acoustic instructor in the Resonance Stewardship Program, teaching the next generation the power of rhythm and intention.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -70,7 +70,6 @@ His weaknesses include:
 Kael’s arc is about the power of unintended impact. He does not set out to be a hero—he simply practices his drums with dedication. Yet that dedication becomes a lifeline for beings trapped in silence for seven years. His story asks: What if the most important thing you ever do is something you do every day without thinking about it? By the end of Book 5, Kael learns to accept his role not as an accident, but as proof that consistent, focused practice can change lives in ways you never expect.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

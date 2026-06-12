@@ -44,7 +44,7 @@ book5_arc: >
   At 78, Terry has transitioned into an emeritus advisory role, but their influence remains foundational. The Fairchild Protocols for trauma-informed care are standard across New Eden Medical, and their mentorship has shaped generations of colony physicians.
   When the twins uncover the trapped Galinstanian cluster, Terry's earlier advocacy for acoustic communication methods helps validate the rescue approach. They attend the Council testimony as a respected elder, nodding in approval as Xara argues: "Utara's limits are what allowed us to find the signal. If the system had auto-flagged us as trespassers, the cluster would be dead. Privacy enabled the rescue."
   Terry's arc culminates not in dramatic action, but in the quiet satisfaction of knowing that the systems they helped build continue to protect the vulnerable—long after they've stepped back from daily practice.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -91,8 +91,6 @@ Their weaknesses include:
 ## Story Overview (non-spoiler)
 Terry's arc is about the weight of professional duty when it conflicts with moral conviction. They represent the quiet courage of those who work within flawed systems but refuse to let those systems define their ethics. Their story is not about grand heroics, but about the cumulative impact of small acts of compassion—and the pivotal moment when silence is no longer an option.
 </div>
-
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

@@ -34,7 +34,7 @@ book5_title: "The Joy Keeper"
 book5_arc: >
   By Book 5, Spark has become the unofficial joy keeper of New Eden's Galinstanian community—the one who reminds everyone that survival is not just about enduring, but about finding reasons to pulse with brightness. Their bond with Zuri has matured; Zuri is now a young adult, and they share a deep understanding that play is not the opposite of seriousness—it is how seriousness becomes bearable. When the Resonant Echo rescue succeeds, Spark helps the newly freed collective experience their first moments of genuine delight, teaching them that joy is not a betrayal of suffering but a triumph over it.
 
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -94,7 +94,6 @@ Spark's arc is about the courage of joy. For three days, Spark hid in terrified 
 When Zuri named them "Spark," Zuri saw the truth: Spark makes everything feel more fun. But that fun is hard-won. Spark's story is about learning that joy is not the absence of pain—it is the choice to let pain coexist with delight. And that making others laugh is a form of healing, for both the joker and the audience.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

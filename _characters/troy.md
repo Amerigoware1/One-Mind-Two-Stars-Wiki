@@ -48,7 +48,7 @@ book5_arc: >
 
   As Celectra tells her own daughters: "Dr. Troy taught us that science without ethics is just violation with better equipment. She's the reason we ask 'Should we?' before we ask 'Can we?'"
   
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -97,7 +97,6 @@ Her weaknesses included:
 Dr. Troy's arc is about the weight of scientific leadership—holding a colony's research ethics steady when every discovery carries existential stakes. She represents the voice that asks "Should we?" not just "Can we?" Her retirement, hastened by illness, wasn't an ending but a passing of the torch to a generation she helped shape. Her death two years before Book 4 means she never witnesses the Four Rivers crisis or the twins' emergence—but her questions echo through every decision made in her absence. Her legacy is measured not in discoveries, but in the ethical framework that guides all future research.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

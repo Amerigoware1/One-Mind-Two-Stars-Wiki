@@ -27,7 +27,7 @@ book4_arc: >
 book5_title: "Stewardship and Emotional Resonance"
 book5_arc: >
   At fourteen, Jenni becomes a junior member of the Resonance Stewardship Program. She specializes in emotional-harmonic stabilization and works closely with Ripple and Xara. Her arc centers on learning to trust her instincts while developing the discipline needed for planetary stewardship.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -77,7 +77,6 @@ Her weaknesses include:
 Jenni's arc centers on emotional resonance — understanding what others feel, and learning how to stabilize harmonic fields through empathy. She becomes one of the first children to work formally with Galinstanians in the Stewardship Program, representing a generation for whom integration is not a challenge to overcome but a reality to nurture.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

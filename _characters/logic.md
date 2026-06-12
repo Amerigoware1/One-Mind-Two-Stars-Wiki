@@ -36,7 +36,7 @@ book5_title: "The Data Weaver"
 book5_arc: >
   By Book 5, Logic has become the unofficial data architect of New Eden's Galinstanian–human collaboration. Working alongside Kowan (now-a young adult and technical expert), Logic helps validate the acoustic data that twins present to the Council. Their meticulous nature ensures that no detail is overlooked. When the Resonant Echo rescue requires precise coordination, Logic maps the structural integrity of the gallery wall, calculating safe dissolution points. Their arc culminates in quiet satisfaction: the problem that once had no solution (how-to save chime) now has many solutions—and Logic helped design them all.
 
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -97,7 +97,6 @@ Logic's arc is about the limits of logic—and what lies beyond them. For three 
 After the rescue, Logic learned that some problems cannot be solved by calculation alone. They require trust, patience, and the willingness to act without certainty. Logic's story is about integrating emotion into the equation—not as an override, but as another variable. And about learning that sometimes the answer is not a solution, but a process.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

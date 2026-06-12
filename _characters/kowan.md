@@ -28,7 +28,7 @@ book5_arc: >
   At twenty-eight, Kowan is a university mentor and data specialist in the Resonance Stewardship Program. He works closely with Logic, his bonded Galinstanian, to validate and analyze data from the twins’ investigation. He helps the twins access a high-fidelity acoustic analyzer for their investigation and later presents the corroborating data logs to the Council, proving that Utara’s sensor records match their testimony within ±0.3 seconds.
 
   Kowan represents the generation that grew up with integration as normal. His technical expertise and his relationship with Logic (whom-he named at six) provide crucial support during the rescue. He is calm, precise, and deeply committed to evidence-based advocacy.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -72,7 +72,6 @@ His weaknesses include:
 Kowan’s arc is about the quiet power of expertise and the bonds formed in childhood. He named Logic at six—a moment that seemed like play but became the foundation of a lifelong partnership. In Book 5, that partnership becomes essential: Kowan and Logic validate the twins’ discovery, prove the acoustic signal was real, and help shift Council policy through evidence. He represents the generation that grew up with integration and now uses that experience to protect and guide the next one.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

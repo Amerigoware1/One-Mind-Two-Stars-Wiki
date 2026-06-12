@@ -1,7 +1,7 @@
--
+---
 layout: default
 
--
+---
 
 <div class="top-banner">
   <a href="././index.html" class="home-button">🏠 Home</a>
@@ -36,7 +36,6 @@ Celectra’s left body popped the panel open with a fingernail, revealing a nest
 
 Another pause. Then, Utara’s voice carried something that might have been approval: “Logical sequencing. Proceed.”
 
--
 
 The reclamatic had completed its circuit and was now gliding back toward Celectra’s right body. She timed it perfectly – as it passed, her right body began to walk in the same direction, matching its pace. The drone, programmed to ignore stationary objects, registered her as a moving obstacle and adjusted its course.
 
@@ -77,7 +76,6 @@ She stopped walking. The reclamatic stopped beside her, its sensors clearly conf
 
 Her left body keyed the comm on the maintenance panel. “Daddy? Can you come to the corridor near the hydroponics bay? Bring your security override.”
 
--
 
 Amerigo arrived two minutes later, wiping his hands on a rag from the lab. He took one look at the open panel where Celeste stood holding the datapad, and then looked down the corridor where Electra stood pacing the hovering reclamatic.
 
@@ -175,7 +173,6 @@ He stared at them.
 
 “Kidding,” she said. Both faces smiled. “Mostly.”
 
--
 
 The reclamatics followed them for the rest of the afternoon. Not just one – after they successfully demonstrated the trick to Utara, the AI had, with what Amerigo suspected was amusement, synchronized the reprogramming across three units. By evening, they had a parade.
 
@@ -187,7 +184,6 @@ Then he opened his comm and called Alex.
 
 “You’re not going to believe what your goddaughters did today.”
 
--
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>

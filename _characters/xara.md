@@ -48,7 +48,7 @@ book5_arc: >
 
   Xara's arc culminates not in dramatic action, but in the quiet persistence of values: compassion, stability, and the courage to love deeply even when the future is uncertain. Her legacy is measured in the emotional resilience of those who carry her name—and in the colony's commitment to ensuring that progress never again comes at the cost of humanity.
 
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -96,7 +96,6 @@ Her weaknesses include:
 Xara's arc is brief but foundational: a life cut short, yet one that shaped the emotional landscape of those who carried her memory forward. She represents the human cost of expansion—the loved ones left behind, or lost before the journey even began. Her legacy is not in what she accomplished personally, but in the resilience she instilled in her daughter, and the quiet love that persisted beyond her death.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

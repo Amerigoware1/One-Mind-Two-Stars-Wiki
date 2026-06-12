@@ -28,7 +28,7 @@ book5_title: "Pattern Weaver"
 book5_arc: >
   At fourteen, Xara becomes a junior member of the Resonance Stewardship Program. She specializes in harmonic geometry and anomaly detection. Working with Ripple and Jenni, she helps map the long-term stability of the planetary network. Her arc centers on becoming a "pattern weaver" — someone who sees the structure beneath the song.
   
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -79,7 +79,6 @@ Her weaknesses include:
 Xara's arc centers on understanding resonance as a system — a network of patterns, flows, and harmonics. She becomes one of the youngest humans capable of reading the bismuth network with near-adult clarity, earning her the informal title of "pattern weaver" among the Resonance Stewardship Program. Her journey is about learning that structure and feeling are not opposites, but partners in understanding.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

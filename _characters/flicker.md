@@ -36,7 +36,7 @@ book5_title: "The Messenger"
 book5_arc: >
   By Book 5, Flicker has become the unofficial messenger of the New Eden Galinstanian community—quick, reliable, and cheerful. Their bond with Emma and Ethan has matured; the twins are now young adults, and Flicker delights in watching them become leaders. When the Resonant Echo rescue requires rapid coordination, Flicker zips between locations, carrying hope as fast as they move. Their arc culminates in the quiet satisfaction of being useful—the fastest being, finally able to outrun the memory of hiding.
 
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -96,7 +96,6 @@ Flicker's arc is about movement as survival. For three days, Flicker was forced 
 When Emma and Ethan named them "Flicker," they saw the truth: Flicker is light that moves. Their story is about learning that movement is not escape—it is expression. And that being fast is not about running from the past, but about carrying hope into the future.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

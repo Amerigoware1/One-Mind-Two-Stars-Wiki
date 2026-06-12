@@ -46,7 +46,7 @@ book5_arc: >
 
   When the twins lead the Resonant Echo rescue, Stan pulses with recognition: the bonds he helped plant have grown into a forest. His arc culminates in the quiet satisfaction of an elder watching the young carry the work forward.
   
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -99,7 +99,6 @@ His weaknesses include:
 Stan's arc is about the grace of acceptance—of a child's naming, of human urgency, of the slow work of building understanding between species that perceive time differently. He represents the wisdom that knows when to speak and when to wait, when to guide and when to let the young find their own way. His greatest gift to humanity was not translation, but the simple act of accepting being seen—and named—by a seven-year-old who reached across the impossible.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

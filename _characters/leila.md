@@ -74,7 +74,7 @@ book5_arc: >
   merging medical science with martial arts philosophy. She continues to
   practice karate for fitness and health, but her true legacy is in the lives
   her protocols have saved.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -120,7 +120,6 @@ Her weaknesses include:
 Leila’s arc is about finding power in vulnerability – the ability to fall safely and to use an opponent’s momentum against them. She loses to Celectra in a tournament but takes that loss as impetus to refine her specialty rather than broaden it. Unlike a pure martial artist, she channels that same analytical drive into a medical career, becoming a physician and researcher. Through her teaching, she transforms ukemi from a niche martial art into a core survival skill for resonance‑era youth. She represents the generation that learns to embrace instability, turning every fall into a setup for the next movement – whether on the mat or in the trauma bay.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

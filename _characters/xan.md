@@ -38,7 +38,7 @@ book5_title: "The Next Generation's Guide"
 book5_arc: >
   Xan becomes a senior member of the Resonance Stewardship Program, specializing in acoustic–resonance interfaces. He mentors younger listeners and engineers, including Jenni, Xara, and Ripple. His arc centers on legacy — proving that harmony can be engineered, improvised, or played, and that the future of Ares belongs to many voices, not just one.
   
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -91,7 +91,6 @@ His weaknesses include:
 Xan's journey centers on finding his own voice in a family defined by extraordinary abilities. He becomes the first human to establish a **non‑EM, non‑technological** communication method with Galinstanians, proving that harmony can emerge from creativity as much as from science. His legacy is not in replacing his sister, but in showing that the future belongs to many voices, not just one.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

@@ -1,7 +1,7 @@
--
+---
 layout: default
 title: The Confirmation
--
+---
 
 <div class="top-banner">
   <a href="./index.html" class="home-button">🏠 Home</a>
@@ -200,7 +200,6 @@ After saying goodbye to Dr. Cruiz, Amerigo and Celectra left his office and head
 
 Amerigo squeezed both her hands gently. “You’re welcome, sweetheart. I should have listened sooner.”
 
--
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>

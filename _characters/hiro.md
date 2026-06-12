@@ -28,7 +28,7 @@ book5_arc: >
   At twenty-eight, Hiro is a martial arts instructor at the Sundome Dojo and a physical training specialist in the Resonance Stewardship Program. He works with Guardian, his bonded Galinstanian, to develop defensive and protective protocols for the colony. During the rescue, he is mobilized to provide physical support and maintain security around the site, ensuring the operation proceeds safely.
 
   Hiro represents the protective side of the older cohort. His bond with Guardian, formed when he sought a protector as a child, now informs his work as someone who protects others.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -72,7 +72,6 @@ His weaknesses include:
 Hiro’s arc is about protection. He named Guardian seeking safety as a child; as an adult, he has become the protector he sought. His role in Book 5 is to ensure the rescue operation proceeds safely—not through heroics, but through quiet, steady presence. He represents the generation that learned that protection isn’t about aggression, but about creating safety for others to do what they need to do.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

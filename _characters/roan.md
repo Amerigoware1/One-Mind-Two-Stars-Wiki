@@ -54,7 +54,7 @@ book5_arc: >
 
   Her arc culminates not in dramatic transformation, but in the steady accumulation of wisdom: security isn't about control—it's about creating conditions where people (human-or otherwise) can live without fear. Her legacy is a colony where safety and compassion are not opposites, but partners.
   
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -107,7 +107,6 @@ Her weaknesses include:
 Roan's arc is about the evolution of security—from control to protection, from skepticism to partnership. She represents the pragmatic voice that asks "Is this safe?" and then listens when the answer requires rethinking what safety means. Her transformation from Galinstanian skeptic to advocate is particularly meaningful because it comes from a security professional, not a scientist or idealist. When Roan speaks, the council listens.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

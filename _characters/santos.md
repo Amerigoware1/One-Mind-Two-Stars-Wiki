@@ -48,7 +48,7 @@ book5_arc: >
 
   Her arc culminates not in dramatic transformation, but in the steady accumulation of wisdom: leadership isn't about control—it's about creating conditions where a community can thrive, even when the leaders themselves are gone. As she wrote in her journal: "Every decision we make plants seeds for forests we may never sit under."
   
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -100,7 +100,6 @@ Her weaknesses include:
 Santos's arc is about the weight of institutional leadership—holding a colony together when every decision carries existential stakes. She represents the voice that asks "What does this mean for our survival?" and then works to ensure that the answer serves both immediate needs and long-term values. Her evolution from cautious administrator to advocate for interspecies cooperation mirrors the colony's own journey from survival to sustainability.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

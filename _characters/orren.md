@@ -34,7 +34,7 @@ book4_arc: >
 
 book5_title: "The Teacher (age-unknown)"
 book5_arc: >
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -80,7 +80,6 @@ Orren’s arc is about the weight of long presence. He was here before humans ar
 When Maya Keahi painted his portrait, she captured him in warm earth tones and layered depth—teacher, guide, presence that existed long before humans and will exist long after. Orren understood the portrait as translation: the artist saw his essence and rendered it in visual form. That understanding—of translation, of essence, of the patience required to truly see another—is what Orren offers to everyone who touches the network.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

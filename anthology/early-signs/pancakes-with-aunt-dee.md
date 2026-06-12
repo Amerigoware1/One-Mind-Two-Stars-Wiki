@@ -1,7 +1,7 @@
--
+---
 layout: default
 title: Pancakes with Aunt Dee
--
+---
 
 <div class="top-banner">
   <a href="././index.html" class="home-button">🏠 Home</a>

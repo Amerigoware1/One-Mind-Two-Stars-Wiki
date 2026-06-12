@@ -36,7 +36,7 @@ book5_title: "Elder Steadiness"
 book5_arc: >
   By Book 5, Harbor has become a quiet pillar of the New Eden Galinstanian community. Their bond with Sofia has matured—she is now a young adult, and their connection has deepened from childhood wonder to adult mutual respect. Harbor helps integrate the newly rescued Resonant Echo collective, offering the same patient safety that Sofia once named in them. When the twins lead the Resonant Echo rescue, Harbor pulses with quiet satisfaction: the steady ones are needed most when everything else shakes.
 
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -97,7 +97,6 @@ Harbor's arc is about the weight of helplessness—and what comes after. For thr
 When Sofia named them "Harbor," she saw something Harbor was still becoming. Their story is about growing into that name—learning that patience is not passivity, that steadiness is strength, and that being safe for others is a form of rescue all its own.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

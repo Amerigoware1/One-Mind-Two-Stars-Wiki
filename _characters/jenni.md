@@ -37,7 +37,7 @@ book4_arc: >
 book5_title: "The Bridge She Built"
 book5_arc: >
   By 2262, Jenni is remembered as the pioneer whose sacrifice made human–Galinstanian integration possible. When the twins lead the rescue of the Resonant Echo cluster, Celectra reflects: "Jenni chose to carry us forward when she didn't know if we'd survive. I chose to build bridges so others wouldn't have to carry that weight alone." Jenni's story is taught in colony schools as an example of maternal courage and scientific integrity. Her mitochondrial anomaly—once a medical curiosity—becomes a symbol of resilience: sometimes the smallest differences make the biggest impact.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -85,7 +85,6 @@ Her weaknesses include:
 Jenni's arc is brief but foundational: a scientist who becomes a mother under impossible circumstances, choosing hope over certainty when faced with a prognosis that offered neither. Her story is not about grand heroics, but about the quiet courage of carrying forward when the odds are stacked against you. Her legacy is not in what she accomplished in life, but in what she made possible after her death—a daughter who would become a bridge between worlds.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

@@ -1,7 +1,7 @@
--
+---
 layout: default
 title: Early Signs
--
+---
 <div class="top-banner">
   <a href="./index.html" class="home-button">🏠 Home</a>
   <a href="./anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
@@ -168,7 +168,6 @@ And here, on this station, her daughter—singular, extraordinary, impossible—
 
 And for the first time since Jenni’s death, Amerigo felt something like peace.
 
--
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>

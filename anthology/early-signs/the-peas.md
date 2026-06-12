@@ -1,6 +1,6 @@
--
+---
 layout: default
--
+---
 
 <div class="top-banner">
   <a href="././index.html" class="home-button">🏠 Home</a>

@@ -63,7 +63,7 @@ book5_arc: >
   **Understated Wisdom:** Throughout Book 5, Lira offers occasional observations to Zoë and Celectra about the twins' development, the psychological implications of the trapped cluster, and how to support young people through crisis. Her voice is quiet but always heard.
 
   **Legacy:** By the end of Book 5, Lira's greatest contribution is invisible but everywhere: in the confidence of young Listeners, in the psychological safety protocols of the colony, in the way children born on Ares grow up believing connection across species is normal. She built the systems that let them feel safe.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -117,7 +117,6 @@ Her weaknesses include:
 Lira's arc is about the quiet work of supporting extraordinary people without seeking recognition herself. She enters the story as a competent young adult learning from Zoë, gradually becomes an indispensable mentor to the Listener Corps, and eventually helps shape how New Eden raises its children—particularly those touched by the bridge between species. Her greatest gift is her steadiness: in a world of remarkable individuals, Lira is the one who remembers to check if they've eaten, slept, or breathed.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

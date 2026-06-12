@@ -58,7 +58,7 @@ book5_arc: >
 
   Sam's arc culminates in their becoming a bridge between worlds—not through biology like Celectra, but through culture, art, and sound. They help build a colony where difference is not just tolerated, but celebrated as essential to the whole.
   
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -111,7 +111,6 @@ Their weaknesses include:
 Sam's arc is about finding home not in a place, but in a community that accepts fluidity—of identity, of art, and of connection. They move from station technician to cultural architect, using sound and design to make New Eden feel accessible to both humans and Galinstanians. Their partnership with Maya grounds them, while their work ensures that the colony's communication systems honor not just data, but tone, rhythm, and emotion.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

@@ -35,7 +35,7 @@ book5_arc: >
 
   Ripple joins the Resonance Stewardship Program alongside the twins, becoming one of the first Galinstanians to collaborate formally with human children in planetary maintenance. Their arc centers on becoming a bridge in their own right — not through EM or acoustic methods, but through pure harmonic expression.
   
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -91,7 +91,6 @@ Ripple remembers everything — including the moment the twins reached for them 
 Ripple's journey is one of loss, belonging, and harmonic growth. They begin as a youngling displaced by tragedy and become a stabilizing force in the Four Rivers crisis. Their "First Song" in Book 5 marks a cultural milestone for both species and signals their emergence as a next-generation bridge—not through EM or acoustic methods, but through pure harmonic expression.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

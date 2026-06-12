@@ -31,7 +31,7 @@ book5_arc: >
 
   His arc represents what Celectra's work made possible: a child who grows up knowing that human–Galinstanian connection is not extraordinary, but ordinary. Not a bridge to be built, but ground to stand on.
   
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -81,7 +81,6 @@ His weaknesses include:
 Oxion's arc represents the future of the colony—the generation that grows up knowing integration as normal rather than hard-won. He is not a bridge-builder like his great-aunt Celectra, but something new: a child who never knew separation between species, who reaches for Galinstanians the way other children reach for toys. His story is about what becomes possible when the work of one generation creates normalcy for the next.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

@@ -1,7 +1,7 @@
--
+---
 layout: default
 title: Genesis Revelations
--
+---
 <div class="top-banner">
   <a href="./index.html" class="home-button">🏠 Home</a>
   <a href="./anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
@@ -271,7 +271,6 @@ Both faces lit up with radiant smiles, and he felt something shift in his chest�
 He raised his head, a new resolve hardening his expression. “This changes everything,” he announced. “I’m scheduling an appointment with Dr. Cruiz right now.”
 
 
--
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>

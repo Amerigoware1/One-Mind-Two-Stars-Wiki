@@ -1,7 +1,7 @@
--
+---
 layout: default
 title: Echos of Earth
--
+---
 <div class="top-banner">
   <a href="./index.html" class="home-button">🏠 Home</a>
   <a href="./anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
@@ -230,7 +230,6 @@ And in that hush, with their warmth seeping into his skin like the first breath 
 
 Williams didn’t tell him to stop crying. She just sat beside him, her slightly wrinkled hand resting on Amerigo’s shoulder, while he held his daughters and grieved for the woman who’d given everything to bring them into the world.
 
--
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>

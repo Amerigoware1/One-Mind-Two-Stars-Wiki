@@ -45,7 +45,7 @@ book5_arc: >
   At 65, Sensei Kisa has become a living archive of colony history, consulted by historians documenting New Eden's early years. She attends the twins' 18th birthday celebration (november-2265) with quiet pride, watching Xara and Jenni lead the next generation of bridge-builders. When asked about her greatest achievement, she deflects: "I did not build bridges. I taught people to stand firmly so they could build their own."
 
   Her dojo remains active under new leadership, but Sensei Kisa still appears for special occasions—offering a bow, a word of wisdom, or a gentle correction. Her famous statement, "She is who she is," is now taught in colony schools as a foundational principle of inclusive excellence. Her arc culminates not in dramatic action, but in the quiet satisfaction of knowing that the values she instilled continue to shape the colony—long after she's stepped back from daily instruction.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -92,7 +92,6 @@ Her weaknesses include:
 Sensei Kisa's arc is about preserving tradition while embracing change—teaching that excellence isn't about conforming to a single standard, but about honoring each individual's path while maintaining rigorous discipline. Her famous statement, "She is who she is," became a touchstone for discussions about accommodating difference while maintaining excellence in New Eden. She represents the quiet, steady force that helps a colony grow not just stronger, but wiser.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

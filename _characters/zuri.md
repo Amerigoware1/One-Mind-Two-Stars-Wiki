@@ -30,7 +30,7 @@ book5_arc: >
   At twenty-nine, Zuri is a university mentor and youth engagement specialist in the Resonance Stewardship Program. He works with Spark, his bonded Galinstanian, to develop programs that help young people—both human and Galinstanian—connect through play, curiosity, and shared exploration. During the rescue, he helps maintain the resonance perimeter, using his natural joyfulness to keep the team’s spirits up during tense moments.
 
   Zuri represents the joyful, playful side of the older cohort. His bond with Spark, formed when he was a child who loved to laugh, now informs his work helping the next generation find their own connections.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -74,7 +74,6 @@ His weaknesses include:
 Zuri’s arc is about the power of joy. He named Spark seeking fun as a child; as an adult, he brings joy to others as naturally as breathing. His role in Book 5 is often overlooked in official accounts—he keeps morale up, makes people laugh, reminds the team why they’re doing what they’re doing—but that work is essential. He represents the generation that learned that connection doesn’t have to be serious to be meaningful.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

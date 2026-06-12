@@ -34,7 +34,7 @@ book5_title: "The Protector"
 book5_arc: >
   By Book 5, Guardian has become a quiet sentinel of New Eden's cross-species community. Their bond with Hiro has matured—Hiro is now a young adult, and Guardian watches with quiet pride as he becomes protective of others. When the Resonant Echo rescue unfolds, Guardian helps secure the perimeter, ensuring that no one else will ever be trapped as Chime was. Their arc culminates in a moment of profound peace: Chime, fully healed, pulses a private thank-you to their parent—for hiding, for surviving, for being there when the hiding ended.
 
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -95,7 +95,6 @@ Guardian's arc is about the limits of protection—and what comes after. For thr
 When Hiro named them "Guardian," Hiro saw the truth: Guardian protects. Not perfectly—no one can. But fiercely, consistently, and without condition. Guardian's story is about learning that hiding was not failure—it was survival. And that being there when the hiding ends is its own form of protection.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

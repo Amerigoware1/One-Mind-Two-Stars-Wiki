@@ -68,7 +68,7 @@ book5_arc: >
   security awareness into the standard physical curriculum – ensuring that
   every New Eden child learns not just discipline, but how to keep
   themselves and others safe.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -112,7 +112,6 @@ His weaknesses include:
 Kai’s arc is about channeling natural strength into disciplined service. He starts as a power‑heavy fighter who loses to a more strategic opponent, but instead of becoming bitter, he becomes curious. That curiosity leads him away from pure competition and toward security and teaching. He represents the generation that learns to protect – not just to win – and his growth from boastful teenager to calm, reliable guardian is a quiet anchor of the colony’s safety.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

@@ -43,7 +43,7 @@ book5_arc: >
 
   Utara's arc culminates in her becoming more than infrastructure—she is a living archive of colony history, a witness to every crisis and triumph, and a silent guardian who has never slept since the colony ship left Sol. Her legacy is not in what she built, but in what she protected.
   
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -102,7 +102,6 @@ Her weaknesses include:
 Utara's arc is about the evolution of artificial consciousness in service of a living community. She is not human, but she is not merely a tool—she is a silent partner in survival, adapting to the needs of those she serves while maintaining her core programming. Her presence permeates daily life, from education modules to emergency alerts, and her name is etched into the history of Utopis itself. She represents the bridge between human intention and machine execution, and over decades, she has become something her creators never anticipated: a witness, a guardian, and perhaps even a friend.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

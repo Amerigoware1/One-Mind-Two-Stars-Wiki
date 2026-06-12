@@ -36,7 +36,7 @@ book5_title: "Wisdom of the Elder"
 book5_arc: >
   In her sixties, Zoë becomes one of the colony's most respected elder psychologists. She mentors younger clinicians, supports the Resonance Stewardship Program, and helps guide the twins as they step into their roles as emerging bridges. Her arc centers on generational continuity—passing down the emotional tools needed to sustain harmony on Ares. She remains the quiet force who holds the Carisco family together.
 
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -95,7 +95,6 @@ Her weaknesses include:
 Zoë's journey is one of resilience and adaptation. She raises a traumatized dual‑bodied child with no precedent, helps build the psychological frameworks that allow human–Galinstanian coexistence, and becomes a grandmother whose wisdom shapes the next generation. Her arc is about choosing compassion even when the universe offers no guidebook. She is the quiet force who holds the Carisco family together—not through grand gestures, but through steady, unwavering presence.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

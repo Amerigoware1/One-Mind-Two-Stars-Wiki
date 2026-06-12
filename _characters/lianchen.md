@@ -41,7 +41,7 @@ book5_arc: >
   By 2262, Lian has established herself as a foundational figure in Ares' infrastructure. The Resonance Stewardship Program incorporates her hydrological models to monitor subsurface network health alongside Galinstanian input. She mentors younger engineers in closed-ecosystem agriculture, emphasizing that survival and ethics are not mutually exclusive.
 
   Her relationship with Yuki Chen has evolved into a comfortable, if still sharp, professional partnership. They are known around the colony as the "Chen Collective"—two brilliant minds who once shared a life and now share a commitment to Ares' future. Lian's legacy is not just in the water systems that keep the colony alive, but in the precedent she set: engineering can listen, adapt, and coexist.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -89,7 +89,6 @@ Her weaknesses include:
 Lian's arc is about balancing survival with ethics. She arrives on Ares seeking a clean break from her past, immersing herself in the monumental challenge of keeping the colony alive. Her journey involves learning that human survival doesn't have to come at the expense of the planet's indigenous life—and that engineering solutions can accommodate both. Her complicated history with Yuki Chen adds a layer of personal stakes to professional debates, proving that past intimacy can evolve into productive, if sharp, collaboration.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

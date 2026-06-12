@@ -28,7 +28,7 @@ book5_arc: >
   At twenty-seven, Sofia is a university mentor and medical support specialist in the Resonance Stewardship Program. She works with Harbor, her bonded Galinstanian, to monitor the health and well-being of community members—both human and Galinstanian. During the rescue, she brings medical sensors to the gallery site and helps stabilize the rescued collective with gentle, patient care.
 
   Sofia represents the nurturing side of the older cohort. Her bond with Harbor, formed when she was a child seeking safety, now informs her work as someone who provides safety to others.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -72,7 +72,6 @@ Her weaknesses include:
 Sofia’s arc is about the power of gentle care. She named Harbor seeking safety as a child; as an adult, she has become the safety she sought. Her role in Book 5 is quiet but essential—she brings medical expertise to the rescue site and provides the calm, patient presence that helps the traumatized collective stabilize. She represents the generation that learned to integrate care into both human and Galinstanian relationships.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

@@ -50,7 +50,7 @@ book5_arc: >
 
   His arc culminates not in dramatic action, but in the steady accumulation of wisdom: a colony survives not by conquering its environment, but by listening to it. As he told the Council in 2246: "Every liter counts." By 2262, that principle has become colony law—and his legacy is measured in the clean water every colonist drinks, steady and pure, because he ensured the systems would hold.
 
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -103,7 +103,6 @@ His weaknesses include:
 Yamoto's arc is about the quiet work of keeping a colony's resources in balance—the invisible infrastructure that allows everything else to function. He represents the voice that asks "Can our systems handle this?" before expansion proceeds, ensuring that growth doesn't outpace sustainability. His journey from pure engineer to councilor who values indigenous knowledge mirrors the colony's broader evolution from survival to partnership with Ares itself.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments

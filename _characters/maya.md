@@ -35,7 +35,7 @@ book4_arc: >
 book5_title: "Samaya Gallery & Museum of Integration"
 book5_arc: >
   At thirty-five, Maya is an established artist and co‑director of the **Samaya Gallery**. The gallery is now a cultural cornerstone featuring resonance‑inspired art and cross‑species installations.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -85,7 +85,6 @@ Her weaknesses include:
 Maya's arc is about growing up in the shadow of greatness and discovering that her own gifts — subtle, human, artistic — matter just as much. Her crush on Celectra is a quiet, private thread that helps shape her emotional development but never defines her. Her true legacy emerges through art, community building, and the creation of the Samaya Gallery, a space where human and Galinstanian expression can meet as equals.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Notable Moments

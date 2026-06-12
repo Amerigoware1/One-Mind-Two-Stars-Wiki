@@ -36,7 +36,7 @@ book5_title: "Elder of the Colony"
 book5_arc: >
   Webb serves as a respected elder and advisor. He mentors younger agricultural scientists and provides historical perspective during Stewardship planning. His arc concludes with quiet dignity — a man who lived long enough to see the colony become something better than he imagined.
 
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -90,7 +90,6 @@ His weaknesses include:
 Webb's arc is about humility, growth, and the slow unlearning of assumptions. He begins as a man who sees Ares as a frontier to be tamed and ends as someone who understands that coexistence — not dominance — is the colony's future. His officiation of Celectra and Jaxon's wedding becomes one of the most unexpectedly tender moments in the series.
 </div>
 
--
 
 <div class="card-bg" markdown="1">
 ### Key Moments
