@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Sofia Patel
 portrait: "/assets/images/sofia-book5.webp"
@@ -6,34 +6,34 @@ portrait-book2: "/assets/images/sofia-book2.webp"
 portrait-book3: "/assets/images/sofia-book3.webp"
 portrait-book4: "/assets/images/sofia-book4.webp"
 portrait-book5: "/assets/images/sofia-book5.webp"
-affiliation: New Eden Youth Cohort (Previous); University Mentor; Resonance Stewardship Program (Medical Support)
+affiliation: New Eden Youth Cohort (previous); University Mentor; Resonance Stewardship Program (medical-support)
 status: Alive
 birthday: July 4, 2234
 birthplace: New Eden, Ares
 book2_age: "5.4"
 book5_age: "27.5"
-book2_title: "Xan's Birthday (Age 5)"
+book2_title: "Xan's Birthday (age-5)"
 book2_arc: >
   At five years old, Sofia attends Xan’s sixth birthday celebration in the caverns. She is drawn to a patient, steady Galinstanian whose presence feels like safety. She names them “Harbor,” explaining, “That’s where boats on Earth go to be safe from storms.”
 
   Sofia’s gentle, nurturing nature is evident even at this young age. She approaches the Galinstanian with quiet curiosity, and the bond formed that day reflects her instinct to seek and provide comfort.
-book3_title: "Finding Her Path (Age 12)"
+book3_title: "Finding Her Path (age-12)"
 book3_arc: >
   At twelve, Sofia's gentle, nurturing nature begins to find professional direction. She shadows Dr. Lorain Troy in the medical wing, fascinated by the intersection of human and Galinstanian physiology. She develops a particular interest in how resonance fields affect emotional and physical well-being, spending hours with Harbor observing Galinstanian health patterns. Though young, she has a natural gift for calming distressed patients—both human and Galinstanian. These years cement her commitment to a career in medical support.
-book4_title: "The Four Rivers Exchange (Age 20)"
+book4_title: "The Four Rivers Exchange (age-20)"
 book4_arc: >
   At twenty, Sofia is a university student in pre-medical studies, already known for her work with Galinstanian health monitoring. She volunteers for the Four Rivers Exchange Program, providing medical support for the field trips. Her role includes monitoring the younger twins' well-being and observing how the resonance disturbances affect Galinstanian physiology. When Ripple falters at Hiddekel, Sofia is the first to assess their condition, providing calm, patient care that helps stabilize them before Jenni's mirroring game takes over.
-book5_title: "Medical Support Specialist (Age 27)"
+book5_title: "Medical Support Specialist (age-27)"
 book5_arc: >
   At twenty-seven, Sofia is a university mentor and medical support specialist in the Resonance Stewardship Program. She works with Harbor, her bonded Galinstanian, to monitor the health and well-being of community members—both human and Galinstanian. During the rescue, she brings medical sensors to the gallery site and helps stabilize the rescued collective with gentle, patient care.
 
   Sofia represents the nurturing side of the older cohort. Her bond with Harbor, formed when she was a child seeking safety, now informs her work as someone who provides safety to others.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
 ### Overview
-Sofia Patel is a New Eden-born medical support specialist and university mentor, part of Xan’s older cohort (approximately thirteen years older than the twins). She is best known for naming the Galinstanian Harbor at Xan’s sixth birthday celebration, choosing the name because “that’s where boats go to be safe from storms.” Gentle, patient, and deeply nurturing, Sofia provides crucial medical and emotional support during the Book 5 rescue.
+Sofia Patel is a New Eden-born medical support specialist and university mentor, part of Xan’s older cohort (approximately-thirteen years older than the twins). She is best known for naming the Galinstanian Harbor at Xan’s sixth birthday celebration, choosing the name because “that’s where boats go to be safe from storms.” Gentle, patient, and deeply nurturing, Sofia provides crucial medical and emotional support during the Book 5 rescue.
 </div>
 <div class="card-bg" markdown="1">
 ### Physical Description
@@ -68,11 +68,11 @@ Her weaknesses include:
 - **Zuri Yazzie** — friend from the same cohort
 </div>
 <div class="card-bg" markdown="1">
-### Story Overview (Non-Spoiler)
+### Story Overview (non-spoiler)
 Sofia’s arc is about the power of gentle care. She named Harbor seeking safety as a child; as an adult, she has become the safety she sought. Her role in Book 5 is quiet but essential—she brings medical expertise to the rescue site and provides the calm, patient presence that helps the traumatized collective stabilize. She represents the generation that learned to integrate care into both human and Galinstanian relationships.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

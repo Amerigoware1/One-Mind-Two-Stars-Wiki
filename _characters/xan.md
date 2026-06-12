@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Xan Carisco
 portrait: "/assets/images/xan-book5.webp"
@@ -6,7 +6,7 @@ portrait-book2: "/assets/images/xan-book2.webp"
 portrait-book3: "/assets/images/xan-book3.webp"
 portrait-book4: "/assets/images/xan-book4.webp"
 portrait-book5: "/assets/images/xan-book5.webp"
-affiliation: Carisco Family; Listener Corps (Junior); Acoustic Interface Research
+affiliation: Carisco Family; Listener Corps (junior); Acoustic Interface Research
 status: Alive
 birthday: March 8, 2234
 birthplace: New Eden, Ares
@@ -38,7 +38,7 @@ book5_title: "The Next Generation's Guide"
 book5_arc: >
   Xan becomes a senior member of the Resonance Stewardship Program, specializing in acoustic–resonance interfaces. He mentors younger listeners and engineers, including Jenni, Xara, and Ripple. His arc centers on legacy — proving that harmony can be engineered, improvised, or played, and that the future of Ares belongs to many voices, not just one.
   
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -87,20 +87,20 @@ His weaknesses include:
 - **Hiro, Sofia, Zuri** — peers and later colleagues in the Resonance Stewardship Program
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Xan's journey centers on finding his own voice in a family defined by extraordinary abilities. He becomes the first human to establish a **non‑EM, non‑technological** communication method with Galinstanians, proving that harmony can emerge from creativity as much as from science. His legacy is not in replacing his sister, but in showing that the future belongs to many voices, not just one.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **First Rhythm (Book 2):** Age seven, Xan taps patterns on Chime's body; Chime responds. A friendship — and a new method — begins.
-- **The Glockenspiel (Book 3):** Unveils his bismuth‑plated instrument, proving acoustic communication works without Celectra's involvement.
+- **First Rhythm (book-2):** Age seven, Xan taps patterns on Chime's body; Chime responds. A friendship — and a new method — begins.
+- **The Glockenspiel (book-3):** Unveils his bismuth‑plated instrument, proving acoustic communication works without Celectra's involvement.
 - **The Demonstration:** "Celectra is not the only path. Communication can emerge from creativity."
-- **Four Rivers Exchange (Book 4):** Assists Lira with the teen program, using acoustic intuition to identify harmonic patterns.
-- **Teaching the Twins (Book 4-5):** Passes rhythmic patterns to Jenni and Xara, continuing the cycle.
-- **Generational Circle (Book 5):** Teaches young Oxi the same patterns Chime taught him — rhythm as inheritance.
+- **Four Rivers Exchange (book-4):** Assists Lira with the teen program, using acoustic intuition to identify harmonic patterns.
+- **Teaching the Twins (book-4-5):** Passes rhythmic patterns to Jenni and Xara, continuing the cycle.
+- **Generational Circle (book-5):** Teaches young Oxi the same patterns Chime taught him — rhythm as inheritance.
 </div>
 
 <div class="card-bg" markdown="1">

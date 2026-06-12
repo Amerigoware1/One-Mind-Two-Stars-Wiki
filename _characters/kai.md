@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Kai Vasquez
 portrait: "/assets/images/kai-book5.webp"
@@ -16,7 +16,7 @@ book2_age: "16.7"
 book3_age: "24.6"
 book4_age: "32.8"
 book5_age: "39.8"
-book1_title: "Growing (Age 11)"
+book1_title: "Growing (age-11)"
 book1_arc: >
   At eleven, Kai is already known among his cohort for his physical strength and
   quick reflexes. He trains at Sundome Dojo alongside Celectra, Aulii, and others,
@@ -24,7 +24,7 @@ book1_arc: >
   power without control is wasted energy – a lesson he struggles to internalize.
   Off the mat, he is boisterous and loyal, quick to laugh and quicker to defend
   a friend.
-book2_title: "The First Match (Age 16)"
+book2_title: "The First Match (age-16)"
 book2_arc: >
   At sixteen, Kai enters the Sundome Karate Tournament with confidence. In the
   opening round he faces Celectra Carisco, who is fighting under the “stillness
@@ -38,7 +38,7 @@ book2_arc: >
   splitting her focus – a question born of genuine curiosity rather than ego.
   That conversation sparks a lasting friendship and a new respect for
   unconventional training methods.
-book3_title: "Security Track (Age 24)"
+book3_title: "Security Track (age-24)"
 book3_arc: >
   Off-page, at twenty-four, Kai shifts his focus from competitive karate to
   colony security. He joins the New Eden Auxiliary, where his physical prowess
@@ -47,7 +47,7 @@ book3_arc: >
   begins mentoring younger students, particularly those who, like his younger
   self, need to learn restraint. His friendly rivalry with Celectra continues
   during occasional sparring sessions.
-book4_title: "Instructor and Guardian (Age 32)"
+book4_title: "Instructor and Guardian (age-32)"
 book4_arc: >
   At thirty-two, Kai divides his time between security shifts and teaching
   defensive tactics to the next youth cohort. He works closely with Aulii,
@@ -57,7 +57,7 @@ book4_arc: >
   body language and respond appropriately. His straightforward, no‑nonsense
   style complements Aulii’s precision, and the two form an effective teaching
   team.
-book5_title: "The Reliable Guardian (Age 39)"
+book5_title: "The Reliable Guardian (age-39)"
 book5_arc: >
   At thirty-nine, Kai is a senior security officer and a trusted instructor
   in the Resonance Stewardship Program’s defensive modules. During the
@@ -68,7 +68,7 @@ book5_arc: >
   security awareness into the standard physical curriculum – ensuring that
   every New Eden child learns not just discipline, but how to keep
   themselves and others safe.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -102,17 +102,17 @@ His weaknesses include:
 <div class="card-bg" markdown="1">
 ### Relationships
 - **Celectra Carisco** – friendly rival turned friend; her unconventional “stillness protocol” fascinated him, and he sought her out after his loss to learn more
-- **Aulii Vongphachanh** – colleague and co‑instructor; they balance each other’s teaching styles (power vs. precision)
+- **Aulii Vongphachanh** – colleague and co‑instructor; they balance each other’s teaching styles (power-vs. precision)
 - **Jenni & Xara Carisco‑Bowers** – students in defensive tactics; Kai runs scenario drills for them
 - **Sensei Onishi Kisa** – mentor who taught him that control matters more than power
 - **Amara Okonkwo & Leila Al‑Farsi** – cohort peers; regular training partners
 </div>
 <div class="card-bg" markdown="1">
-### Story Overview (Non‑Spoiler)
+### Story Overview (non‑spoiler)
 Kai’s arc is about channeling natural strength into disciplined service. He starts as a power‑heavy fighter who loses to a more strategic opponent, but instead of becoming bitter, he becomes curious. That curiosity leads him away from pure competition and toward security and teaching. He represents the generation that learns to protect – not just to win – and his growth from boastful teenager to calm, reliable guardian is a quiet anchor of the colony’s safety.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

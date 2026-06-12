@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Dr. Yuki Chen
 portrait: "/assets/images/yuki-book1.webp"
@@ -83,7 +83,7 @@ book5_arc: >
   arc culminates in her becoming a living archive of colony medicine—the
   physician who diagnosed the beginning of Celectra's story and helped ensure
   its sustainable future.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -127,11 +127,11 @@ tendency to carry the weight of difficult prognoses alone
     bookends Celectra's story from beginning to potential end.
 </div>
 <div class="card-bg" markdown="1">
-### Story Overview (Non-Spoiler)
+### Story Overview (non-spoiler)
 Dr. Chen's arc is about the weight of medical truth—delivering difficult diagnoses with compassion, tracking slow decline with precision, and helping a colony prepare for transitions it cannot avoid. She never seeks drama, but her quiet expertise shapes pivotal moments: the decision to continue a risky pregnancy, the urgency to develop technological alternatives to a biological bridge, and the steady medical leadership that keeps a colony healthy under binary stars.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

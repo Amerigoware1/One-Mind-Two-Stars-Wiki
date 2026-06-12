@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Maya Keahi
 portrait: "/assets/images/maya-book5.webp"
@@ -16,7 +16,7 @@ book2_age: "13.2"
 book3_age: "20.1"
 book4_age: "28.3"
 book5_age: "35.3"
-book1_title: "Childhood (off page)"
+book1_title: "Childhood (off-page)"
 book1_arc: >
   Maya is present in the colony as a young child. While not a central POV character, she is part of the earliest generation of Ares-born children growing up alongside Celectra's early integration work.
 
@@ -35,14 +35,14 @@ book4_arc: >
 book5_title: "Samaya Gallery & Museum of Integration"
 book5_arc: >
   At thirty-five, Maya is an established artist and co‑director of the **Samaya Gallery**. The gallery is now a cultural cornerstone featuring resonance‑inspired art and cross‑species installations.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
 ## Overview
 Maya Keahi is part of the first generation born entirely on Ares and one of New Eden's earliest emerging artists. She begins as a shy, observant child with a fierce hero‑worship of Celectra — a mix of admiration, longing, and a quiet romantic crush she never voices. Over the series, Maya grows into a confident young woman who finds her own voice through art, community work, and her partnership with Sam Calder.
 
-By 2256 (Book 4 Epilogue), Maya and Sam co‑found the **Samaya Gallery & Museum of Integration**, a cultural cornerstone dedicated to human–Galinstanian collaboration.
+By 2256 (book-4 epilogue), Maya and Sam co‑found the **Samaya Gallery & Museum of Integration**, a cultural cornerstone dedicated to human–Galinstanian collaboration.
 </div>
 <div class="card-bg" markdown="1">
 ## Physical Description
@@ -56,11 +56,11 @@ Maya is defined by:
 - strong observational instincts
 - emotional perceptiveness
 - a tendency to overthink
-- deep admiration for Celectra (early series)
+- deep admiration for Celectra (early-series)
 
 Her strengths include:
 
-- visual art (mixed media, resonance‑inspired forms)
+- visual art (mixed-media, resonance‑inspired forms)
 - community engagement
 - careful listening
 - collaborative creativity with Sam
@@ -81,18 +81,18 @@ Her weaknesses include:
 - **Ripple** — Galinstanian she bonds with through the twins, inspiring resonance‑inspired works
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Maya's arc is about growing up in the shadow of greatness and discovering that her own gifts — subtle, human, artistic — matter just as much. Her crush on Celectra is a quiet, private thread that helps shape her emotional development but never defines her. Her true legacy emerges through art, community building, and the creation of the Samaya Gallery, a space where human and Galinstanian expression can meet as equals.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Notable Moments
-- **First Exhibition (Book 2):** Her small, colorful works catch Celectra's attention, sparking a lifelong admiration
-- **"Seven Years of Stone" Exhibition (Book 3):** Where she meets Sam Calder, beginning their creative partnership
-- **Samaya Gallery Opening (Book 4 Epilogue):** Co-founds the cultural cornerstone with Sam, March 2256
-- **Resonance-Inspired Works (Book 5):** Creates installations that blend human artistry with Galinstanian patterns
+- **First Exhibition (book-2):** Her small, colorful works catch Celectra's attention, sparking a lifelong admiration
+- **"Seven Years of Stone" Exhibition (book-3):** Where she meets Sam Calder, beginning their creative partnership
+- **Samaya Gallery Opening (book-4 epilogue):** Co-founds the cultural cornerstone with Sam, March 2256
+- **Resonance-Inspired Works (book-5):** Creates installations that blend human artistry with Galinstanian patterns
 </div>
 
 <div class="card-bg" markdown="1">

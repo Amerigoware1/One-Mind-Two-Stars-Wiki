@@ -1,9 +1,9 @@
----
+-
 layout: default
----
+-
 <div class="top-banner">
-  <a href="../index.html" class="home-button">🏠 Home</a>
-  <a href="../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
+  <a href="./index.html" class="home-button">🏠 Home</a>
+  <a href="./anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
 
 # Crystalline Truths
@@ -95,8 +95,8 @@ Maybe today Uncle Doc would finally help Daddy see what she’d always known: th
 Together, they headed to the kitchen, the station’s lighting sequence finally beginning its gradual brightening as Utopis turned its face toward another day.
 
 
----
+-
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="../anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>

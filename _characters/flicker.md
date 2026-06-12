@@ -1,6 +1,6 @@
----
+-
 layout: character
-title: Flicker (Northern Territory)
+title: Flicker (northern-territory)
 portrait: "/assets/images/flicker-book2.webp"
 portrait-book2: "/assets/images/flicker-book2.webp"
 portrait-book3: "/assets/images/flicker-book3.webp"
@@ -26,31 +26,31 @@ book2_arc: >
 
 book3_title: "The Communion Interface"
 book3_arc: >
-  (Minor appearance) Flicker and the Northern Territory cluster are mentioned as being in a period of integration. Emma and Ethan, now adolescents, are focused on their own growth. Flicker continues exploring New Eden, their natural curiosity undimmed by the passage of time.
+  (minor-appearance) Flicker and the Northern Territory cluster are mentioned as being in a period of integration. Emma and Ethan, now adolescents, are focused on their own growth. Flicker continues exploring New Eden, their natural curiosity undimmed by the passage of time.
 
 book4_title: "The Four Rivers Resonance"
 book4_arc: >
-  (Minor appearance/mention) During the Four Rivers crisis, Flicker helps carry messages across the colony, their speed making them invaluable for rapid communication when the bismuth network is unstable. Their presence is noted but not central.
+  (minor-appearance/mention) During the Four Rivers crisis, Flicker helps carry messages across the colony, their speed making them invaluable for rapid communication when the bismuth network is unstable. Their presence is noted but not central.
 
 book5_title: "The Messenger"
 book5_arc: >
   By Book 5, Flicker has become the unofficial messenger of the New Eden Galinstanian community—quick, reliable, and cheerful. Their bond with Emma and Ethan has matured; the twins are now young adults, and Flicker delights in watching them become leaders. When the Resonant Echo rescue requires rapid coordination, Flicker zips between locations, carrying hope as fast as they move. Their arc culminates in the quiet satisfaction of being useful—the fastest being, finally able to outrun the memory of hiding.
 
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
 ## Overview
 Flicker is a member of the Northern Territory Galinstanian cluster, named by the human twins Emma and Ethan during the rescue celebration. The twins perceived Flicker's presence as "fast! Like thoughts that move too quick to catch!" and chose "Flicker" because Flicker is "like light that moves."
 
-Flicker's essence is quick, bright, and endlessly curious. Of all the Northern Territory cluster, Flicker is the most eager to explore—new places, new beings, new patterns. The trauma of hiding during Chime's torture left Flicker with a deep aversion to stillness; movement feels like safety. Bonded to two humans (Emma and Ethan), Flicker has learned to flow between them, a perfect match for twins who are themselves two branches from one root.
+Flicker's essence is quick, bright, and endlessly curious. Of all the Northern Territory cluster, Flicker is the most eager to explore—new places, new beings, new patterns. The trauma of hiding during Chime's torture left Flicker with a deep aversion to stillness; movement feels like safety. Bonded to two humans (emma-and ethan), Flicker has learned to flow between them, a perfect match for twins who are themselves two branches from one root.
 </div>
 
 <div class="card-bg" markdown="1">
 ## Physical Description
 Flicker's form is smaller and less dense than other Northern Territory Galinstanians—built for speed rather than stability. Their surface catches light in ways that resemble flickering sunlight on water, constantly shifting, never still. When Flicker moves, they seem to teleport; in truth, they simply flow faster than human eyes can track.
 
-Their pulses are rapid, bright, almost staccato—the Galinstanian equivalent of a hummingbird's heartbeat. When excited (which is often), Flicker's entire field brightens, pulses quickening further. When still (rare), they dim slightly, as if holding their breath.
+Their pulses are rapid, bright, almost staccato—the Galinstanian equivalent of a hummingbird's heartbeat. When excited (which-is often), Flicker's entire field brightens, pulses quickening further. When still (rare), they dim slightly, as if holding their breath.
 </div>
 
 <div class="card-bg" markdown="1">
@@ -67,14 +67,14 @@ Their strengths include:
 
 - rapid movement and message delivery
 - exploring new environments quickly
-- noticing small details others miss (moving too fast to filter)
+- noticing small details others miss (moving-too fast to filter)
 - cheering up distressed beings with bright presence
 - adapting to new situations without hesitation
 
 Their weaknesses include:
 
 - difficulty staying still or waiting patiently
-- aversion to enclosed spaces (triggers memories of hiding)
+- aversion to enclosed spaces (triggers-memories of hiding)
 - sometimes moves too fast for careful communication
 - can be exhausting for slower beings to interact with
 </div>
@@ -82,30 +82,30 @@ Their weaknesses include:
 <div class="card-bg" markdown="1">
 ## Relationships
 - **Emma & Ethan** — bonded to both human twins; Flicker flows between them, fascinated by their similarities and differences
-- **The Northern Territory Cluster (Chime, Harbor, Logic, Spark, Guardian, Lyric)** — family; Flicker is the fastest and most curious among them
-- **Chime** — Flicker carries guilt for hiding during Chime's torture; expresses care through movement (bringing Chime small mineral gifts, zipping around them protectively)
+- **The Northern Territory Cluster (chime,-harbor, logic, spark, guardian, lyric)** — family; Flicker is the fastest and most curious among them
+- **Chime** — Flicker carries guilt for hiding during Chime's torture; expresses care through movement (bringing-chime small mineral gifts, zipping around them protectively)
 - **Celectra Carisco** — rescuer; Flicker trusts her and often zips around her during visits, a sign of affection
 - **Ripple** — younger Galinstanian; Flicker teaches speed and agility, though Ripple will never be as fast
-- **Resonant Echo (the Four)** — Flicker helps orient them to the colony, zipping ahead to scout safe paths
+- **Resonant Echo (the-four)** — Flicker helps orient them to the colony, zipping ahead to scout safe paths
 </div>
 
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Flicker's arc is about movement as survival. For three days, Flicker was forced into terrified stillness while Chime suffered. That stillness became associated with helplessness, with fear, with the inability to help. After the rescue, Flicker moved—fast, constantly, almost compulsively—as if speed could outrun the memory.
 
 When Emma and Ethan named them "Flicker," they saw the truth: Flicker is light that moves. Their story is about learning that movement is not escape—it is expression. And that being fast is not about running from the past, but about carrying hope into the future.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The Hiding (Pre-Book 2):** Flicker forced into terrified stillness while Chime suffers; the trauma of confinement begins
-- **The Cave-In (Book 2):** Flicker uses speed to help dissolve stone rapidly, finding purpose in movement
-- **The Naming (Book 2):** Emma and Ethan together name Flicker—"like light that moves"—and share the bond
-- **The Integration (Book 3):** Flicker explores New Eden, their curiosity undimmed
-- **The Messenger (Book 4):** During the Four Rivers crisis, Flicker carries messages across the colony
-- **The Scout (Book 5):** Flicker helps coordinate the Resonant Echo rescue, zipping between locations with hope
+- **The Hiding (pre-book-2):** Flicker forced into terrified stillness while Chime suffers; the trauma of confinement begins
+- **The Cave-In (book-2):** Flicker uses speed to help dissolve stone rapidly, finding purpose in movement
+- **The Naming (book-2):** Emma and Ethan together name Flicker—"like light that moves"—and share the bond
+- **The Integration (book-3):** Flicker explores New Eden, their curiosity undimmed
+- **The Messenger (book-4):** During the Four Rivers crisis, Flicker carries messages across the colony
+- **The Scout (book-5):** Flicker helps coordinate the Resonant Echo rescue, zipping between locations with hope
 </div>
 
 <div class="card-bg" markdown="1">

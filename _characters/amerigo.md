@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Amerigo Giorgio Carisco
 portrait: "/assets/images/amerigo-book1.webp"
@@ -10,7 +10,7 @@ portrait-book5: "/assets/images/amerigo-book5.webp"
 affiliation: Carisco Family; New Eden Science Directorate; Chief Scientist; New Eden Council
 status: Alive
 birthday: May 12, 2103
-birthplace: Earth (pre‑Ares migration)
+birthplace: Earth (pre‑ares-migration)
 book1_age: "39.4"
 book2_age: "46.5"
 book3_age: "53.4"
@@ -58,7 +58,7 @@ book5_arc: >
   after he is gone. He watches with pride as Jenni, Xara, and Ripple begin shaping the
   future he once feared Celectra would have to carry alone.
 
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -116,11 +116,11 @@ His personal strengths include:
 </div>
 <div class="card-bg" markdown="1">
 
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Amerigo’s journey is one of responsibility, discovery, and the emotional cost of raising a child who becomes essential to the survival of two species. His scientific leadership shapes the colony’s future, while his personal arc explores the tension between protecting Celectra and empowering her to define her own path.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

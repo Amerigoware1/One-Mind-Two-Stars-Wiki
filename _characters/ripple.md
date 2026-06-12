@@ -1,6 +1,6 @@
----
+-
 layout: character
-title: Ripple (Northern Cluster)
+title: Ripple (northern-cluster)
 portrait: "/assets/images/ripple-book4.webp"
 portrait-book4: "/assets/images/ripple-book4.webp"
 portrait-book5: "/assets/images/ripple-book5.webp"
@@ -35,7 +35,7 @@ book5_arc: >
 
   Ripple joins the Resonance Stewardship Program alongside the twins, becoming one of the first Galinstanians to collaborate formally with human children in planetary maintenance. Their arc centers on becoming a bridge in their own right — not through EM or acoustic methods, but through pure harmonic expression.
   
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -87,20 +87,20 @@ Ripple remembers everything — including the moment the twins reached for them 
 - **Xan Carisco** — rhythmic companion and later mentor in acoustic collaboration
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Ripple's journey is one of loss, belonging, and harmonic growth. They begin as a youngling displaced by tragedy and become a stabilizing force in the Four Rivers crisis. Their "First Song" in Book 5 marks a cultural milestone for both species and signals their emergence as a next-generation bridge—not through EM or acoustic methods, but through pure harmonic expression.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The Reaching (Book 4):** At age two, the twins reach for Ripple; Ripple reaches back. The cluster recognizes the bond and entrusts Ripple to the Carisco family.
-- **First Flutter (Book 4):** Ripple senses the initial resonance disturbance beneath the Pison, alerting the twins to the coming crisis.
-- **Hiddekel Instability (Book 4):** Ripple experiences distress from geothermal interference, demonstrating the vulnerability of Galinstanian younglings.
-- **The Great Resonance (Book 4):** Ripple participates in stabilizing the planetary network, their harmonic sensitivity proving essential.
-- **Ripple's First Song (Book 5):** Their unique composition travels the restored bismuth network, lighting up distant anchors.
-- **"For Friends" (Book 5):** Ripple's final pulse becomes a signature waveform recognized across Ares.
+- **The Reaching (book-4):** At age two, the twins reach for Ripple; Ripple reaches back. The cluster recognizes the bond and entrusts Ripple to the Carisco family.
+- **First Flutter (book-4):** Ripple senses the initial resonance disturbance beneath the Pison, alerting the twins to the coming crisis.
+- **Hiddekel Instability (book-4):** Ripple experiences distress from geothermal interference, demonstrating the vulnerability of Galinstanian younglings.
+- **The Great Resonance (book-4):** Ripple participates in stabilizing the planetary network, their harmonic sensitivity proving essential.
+- **Ripple's First Song (book-5):** Their unique composition travels the restored bismuth network, lighting up distant anchors.
+- **"For Friends" (book-5):** Ripple's final pulse becomes a signature waveform recognized across Ares.
 </div>
 
 <div class="card-bg" markdown="1">

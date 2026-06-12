@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Lian Chen
 portrait: "/assets/images/lian-book1.webp"
@@ -10,7 +10,7 @@ portrait-book5: "/assets/images/lian-book5.webp"
 affiliation: Ares Colony Engineering Directorate; Chief Hydrological Engineer
 status: Active
 birthday: February 10, 2096
-birthplace: Earth (Utopis Station)
+birthplace: Earth (utopis-station)
 book1_age: "46.7"
 book2_age: "53.8"
 book3_age: "60.7"
@@ -26,22 +26,22 @@ book2_arc: >
 
 book3_title: "The Test Run & Compromise"
 book3_arc: >
-  Lian plays a key role during the testing of the Communion Interface near agricultural zones. In Chapter 14 ("The Test Run"), she observes Ananya and Chen Wei deploying with interfaces to negotiate a minor dispute between human agricultural expansion and Galinstanian passage routes. After the successful negotiation, she remarks: "That was... surprisingly smooth. How long did that take?" Her interaction highlights her pragmatic nature—she cares about results, but is willing to acknowledge when new methods work.
+  Lian plays a key role during the testing of the Communion Interface near agricultural zones. In Chapter 14 ("the-test run"), she observes Ananya and Chen Wei deploying with interfaces to negotiate a minor dispute between human agricultural expansion and Galinstanian passage routes. After the successful negotiation, she remarks: "That was... surprisingly smooth. How long did that take?" Her interaction highlights her pragmatic nature—she cares about results, but is willing to acknowledge when new methods work.
 
   Later, after critique from Dr. Yuki Chen regarding pipeline routes, Lian orders new fluid-structure interaction simulations on a proposed pipeline route, showcasing her commitment to robust engineering over pride. She engineers a revised pipeline route that achieves required water volume while preserving most Galinstanian thermal signatures, demonstrating adaptability to xenological concerns.
 
 book4_title: "The Four Rivers Resonance"
 book4_arc: >
-  In Chapter 3 ("Council of Quiet Warnings"), Director Chen mentions the Samaya Gallery plans in passing during a Council meeting, noting: "Once the crater is fully stabilized, Maya and Sam will finally have their gallery." This indicates her oversight extends to structural stability affecting surface construction.
+  In Chapter 3 ("council-of quiet warnings"), Director Chen mentions the Samaya Gallery plans in passing during a Council meeting, noting: "Once the crater is fully stabilized, Maya and Sam will finally have their gallery." This indicates her oversight extends to structural stability affecting surface construction.
 
-  Throughout the Four Rivers investigation, Lian collaborates with Amerigo Carisco and Alex Cruiz on subsurface construction projects affecting aquifers. When the resonance anchors are discovered, she works to ensure human infrastructure (pumps, geothermal regulators) is calibrated to avoid destructive interference in the bismuth network. Her earlier Northern Aquifer Expansion Proposal is revisited in light of new data, leading to a more sustainable long-term plan that balances colony needs with planetary health.
+  Throughout the Four Rivers investigation, Lian collaborates with Amerigo Carisco and Alex Cruiz on subsurface construction projects affecting aquifers. When the resonance anchors are discovered, she works to ensure human infrastructure (pumps,-geothermal regulators) is calibrated to avoid destructive interference in the bismuth network. Her earlier Northern Aquifer Expansion Proposal is revisited in light of new data, leading to a more sustainable long-term plan that balances colony needs with planetary health.
 
 book5_title: "Legacy of Water"
 book5_arc: >
   By 2262, Lian has established herself as a foundational figure in Ares' infrastructure. The Resonance Stewardship Program incorporates her hydrological models to monitor subsurface network health alongside Galinstanian input. She mentors younger engineers in closed-ecosystem agriculture, emphasizing that survival and ethics are not mutually exclusive.
 
   Her relationship with Yuki Chen has evolved into a comfortable, if still sharp, professional partnership. They are known around the colony as the "Chen Collective"—two brilliant minds who once shared a life and now share a commitment to Ares' future. Lian's legacy is not just in the water systems that keep the colony alive, but in the precedent she set: engineering can listen, adapt, and coexist.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -66,7 +66,7 @@ Her strengths include:
 
 - hydrological engineering and closed-ecosystem agriculture
 - resource management and long-term sustainability planning
-- adapting infrastructure to xenological concerns (when data supports it)
+- adapting infrastructure to xenological concerns (when-data supports it)
 - liaison work between engineering, geology, and agriculture teams
 
 Her weaknesses include:
@@ -85,11 +85,11 @@ Her weaknesses include:
 - **Ares Colony Chief Hydrological Engineer** — leads water security and agricultural sustainability divisions
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Lian's arc is about balancing survival with ethics. She arrives on Ares seeking a clean break from her past, immersing herself in the monumental challenge of keeping the colony alive. Her journey involves learning that human survival doesn't have to come at the expense of the planet's indigenous life—and that engineering solutions can accommodate both. Her complicated history with Yuki Chen adds a layer of personal stakes to professional debates, proving that past intimacy can evolve into productive, if sharp, collaboration.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

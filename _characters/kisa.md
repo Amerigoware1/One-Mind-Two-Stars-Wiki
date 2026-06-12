@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Sensei Onishi Kisa
 portrait: "/assets/images/kisa-book1.webp"
@@ -38,14 +38,14 @@ book4_title: "Legacy in Motion"
 book4_arc: >
   At 58, Sensei Kisa begins transitioning from active instruction to advisory roles, training the next generation of dojo leaders. She consults on the Resonance Stewardship Program's youth curriculum, helping design physical activities that teach children to "listen" to Ares through movement and rhythm. When the twins volunteer for the program, Sensei Kisa recognizes their unique potential: Jenni's empathetic intuition and Xara's analytical precision—both valuable forms of discipline.
 
-  During the Four Rivers Festival, she oversees a special demonstration blending traditional kata with Galinstanian resonance patterns—a symbolic fusion of human and indigenous practices. Her presence at the Samaya Gallery opening (March 2256) is quietly celebratory: she sees in Maya and Sam's work the same principles she's taught for decades—respect, adaptation, and the courage to build something new while honoring what came before.
+  During the Four Rivers Festival, she oversees a special demonstration blending traditional kata with Galinstanian resonance patterns—a symbolic fusion of human and indigenous practices. Her presence at the Samaya Gallery opening (march-2256) is quietly celebratory: she sees in Maya and Sam's work the same principles she's taught for decades—respect, adaptation, and the courage to build something new while honoring what came before.
 
 book5_title: "The Steady Hand"
 book5_arc: >
-  At 65, Sensei Kisa has become a living archive of colony history, consulted by historians documenting New Eden's early years. She attends the twins' 18th birthday celebration (November 2265) with quiet pride, watching Xara and Jenni lead the next generation of bridge-builders. When asked about her greatest achievement, she deflects: "I did not build bridges. I taught people to stand firmly so they could build their own."
+  At 65, Sensei Kisa has become a living archive of colony history, consulted by historians documenting New Eden's early years. She attends the twins' 18th birthday celebration (november-2265) with quiet pride, watching Xara and Jenni lead the next generation of bridge-builders. When asked about her greatest achievement, she deflects: "I did not build bridges. I taught people to stand firmly so they could build their own."
 
   Her dojo remains active under new leadership, but Sensei Kisa still appears for special occasions—offering a bow, a word of wisdom, or a gentle correction. Her famous statement, "She is who she is," is now taught in colony schools as a foundational principle of inclusive excellence. Her arc culminates not in dramatic action, but in the quiet satisfaction of knowing that the values she instilled continue to shape the colony—long after she's stepped back from daily instruction.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -88,11 +88,11 @@ Her weaknesses include:
 - **New Eden Youth** — mentor to generations of Ares-born children learning discipline, focus, and respect
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Sensei Kisa's arc is about preserving tradition while embracing change—teaching that excellence isn't about conforming to a single standard, but about honoring each individual's path while maintaining rigorous discipline. Her famous statement, "She is who she is," became a touchstone for discussions about accommodating difference while maintaining excellence in New Eden. She represents the quiet, steady force that helps a colony grow not just stronger, but wiser.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

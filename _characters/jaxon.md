@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Jaxon Bowers
 portrait: "/assets/images/jaxon-book5.webp"
@@ -35,7 +35,7 @@ book4_arc: >
 book5_title: "Stewardship and Legacy"
 book5_arc: >
   Jaxon becomes a senior engineer in the Resonance Stewardship Program. He mentors younger engineers, including members of Xan's generation, and helps refine long-term monitoring systems for the bismuth network. His relationship with Celectra matures into a stable partnership defined by shared purpose and co-parenting. He supports their daughters as they begin emerging as the next generation of bridges, proud but aware of the weight they will carry.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -75,11 +75,11 @@ He is often the emotional counterweight to Celectra's four-hemisphere internal d
 - **Ripple, Chime, Stan** — Galinstanians he learns to trust and work alongside
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Jaxon's journey centers on responsibility, love, and the tension between supporting Celectra as a person and supporting the systems that depend on her. His engineering innovations shape the future of human–Galinstanian communication, and his personal growth mirrors the colony's transition from survival to stewardship.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

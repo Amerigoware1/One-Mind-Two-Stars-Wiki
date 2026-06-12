@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Dee Cruiz
 portrait: "/assets/images/dee-book1.webp"
@@ -10,7 +10,7 @@ portrait-book5: "/assets/images/dee-book5.webp"
 affiliation: New Eden Community Corps; Cruiz–Carisco Family
 status: Alive
 birthday: May 12, 2101
-birthplace: Earth (pre‑Ares migration)
+birthplace: Earth (pre‑ares-migration)
 book1_age: "41.4"
 book2_age: "48.5"
 book3_age: "55.4"
@@ -35,7 +35,7 @@ book4_arc: >
 book5_title: "Stewardship and the Next Generation"
 book5_arc: >
   In her later years, Dee transitions into a respected elder of the colony. She mentors younger community members in the art of building and maintaining connections, supporting the next generation of leaders in the Resonance Stewardship Program. Her arc is one of gentle continuity, highlighting the quiet, essential work of nurturing a community's soul and ensuring its emotional health for generations to come.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -76,11 +76,11 @@ She is the person Alex decompresses with after long shifts, and the one Zoë tru
 - **Ripple** — a Galinstanian who enjoys her calm, uncomplicated presence
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Dee’s role in the series is subtle but essential. She provides emotional grounding for Alex, stability for the Carisco family, and a sense of continuity as the colony grows and changes. She is not a scientist or a council member, but her influence is felt in the quiet spaces — the kitchen table conversations, the late-night check-ins, the moments when someone needs a steady hand. Her arc is a testament to the power of community and the profound impact of a life lived in service to others.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

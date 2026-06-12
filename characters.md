@@ -1,8 +1,8 @@
----
+-
 layout: character
 title: Characters
 permalink: /characters/
----
+-
 
 # All Characters
 
@@ -19,7 +19,7 @@ permalink: /characters/
     <a href="{{ character.url | relative_url }}">
 {% assign portrait_url = character.portrait %}
 
-{% if portrait_url.first %}  <!-- Check if it's an array [[24]] -->
+{% if portrait_url.first %}  <!- Check if it's an array [[24]] ->
   {% assign portrait_url = portrait_url.first %}
 {% endif %}
 
@@ -46,7 +46,7 @@ permalink: /characters/
   const cards  = document.querySelectorAll('.character-card');
   const none   = document.getElementById('no-results');
 
-  search.addEventListener('input', function () {
+  search.addEventListener('input',-function () {
     const query = this.value.toLowerCase().trim();
     let visible = 0;
     cards.forEach(card => {
@@ -79,7 +79,7 @@ permalink: /characters/
 
   .character-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fill,-minmax(160px, 1fr));
     gap: 1.5rem;
   }
 

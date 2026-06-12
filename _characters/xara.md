@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Xara Kret
 portrait: "/assets/images/xara-book1.webp"
@@ -12,7 +12,7 @@ status: Deceased
 birthday: July 22, 2087
 birthplace: Earth
 death_date: March 20, 2122
-death_place: Sol System (shuttle accident)
+death_place: Sol System (shuttle-accident)
 book1_age: "Deceased"
 book2_age: "Deceased"
 book3_age: "Deceased"
@@ -38,22 +38,22 @@ book3_arc: >
 
 book4_title: "Names and Memory"
 book4_arc: >
-  When Celectra and Jaxon name their twins, they choose Xara as one of the names (for their daughter, Xara Zoë Bowers). The moment is deeply emotional: Zoë sees her mother's name carried forward, not as grief, but as hope. Xara's legacy is no longer just a photograph or a memory; it's a child who will grow up in a world her grandmother helped make possible through the values she instilled.
+  When Celectra and Jaxon name their twins, they choose Xara as one of the names (for-their daughter, xara zoë bowers). The moment is deeply emotional: Zoë sees her mother's name carried forward, not as grief, but as hope. Xara's legacy is no longer just a photograph or a memory; it's a child who will grow up in a world her grandmother helped make possible through the values she instilled.
 
   The naming also serves as reconciliation: Zoë reclaims her mother's name from the shadow of Douglas Kret's crimes, ensuring that Xara is remembered for her warmth, not her husband's ambition.
 
 book5_title: "The Bridge She Built"
 book5_arc: >
-  By 2262, Xara is remembered as part of the foundational generation whose love and loss shaped the colony's ethical framework. When the twins (Xara Zoë and Jenni) lead the Resonant Echo rescue, Xara Zoë reflects: "My namesake taught my grandmother that people matter more than data. I'm trying to live by that."
+  By 2262, Xara is remembered as part of the foundational generation whose love and loss shaped the colony's ethical framework. When the twins (xara-zoë and jenni) lead the Resonant Echo rescue, Xara Zoë reflects: "My namesake taught my grandmother that people matter more than data. I'm trying to live by that."
 
   Xara's arc culminates not in dramatic action, but in the quiet persistence of values: compassion, stability, and the courage to love deeply even when the future is uncertain. Her legacy is measured in the emotional resilience of those who carry her name—and in the colony's commitment to ensuring that progress never again comes at the cost of humanity.
 
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
 ## Overview
-Xara Kret (July 22, 2087 – March 20, 2122) was the wife of Dr. Douglas Kret and mother of Zoë Kret (later Zoë Carisco). Little is documented about her early life or professional background, as records from the pre-colonization era are limited. She is primarily remembered through her familial connections and the impact her life and death had on her immediate family.
+Xara Kret (july-22, 2087 – march 20, 2122) was the wife of Dr. Douglas Kret and mother of Zoë Kret (later-zoë carisco). Little is documented about her early life or professional background, as records from the pre-colonization era are limited. She is primarily remembered through her familial connections and the impact her life and death had on her immediate family.
 
 Xara died in a shuttle accident on March 20, 2122, at age 34—three years before the Utopis colony ship departed the Sol System. She never traveled to the Niamh-Ciara system, but her legacy endures through her daughter Zoë, who became a key figure in the Ares colony as a psychologist and matriarch of the Carisco family.
 </div>
@@ -87,24 +87,24 @@ Her weaknesses include:
 <div class="card-bg" markdown="1">
 ## Relationships
 - **Dr. Douglas Kret** — husband; their marriage was a significant influence on his motivations; her death may have contributed to his later obsessive research tendencies, though Zoë maintains that "he chose the wrong lessons from her loss"
-- **Zoë Carisco (née Kret)** — daughter; close, loving relationship characterized by warmth, patience, and emotional honesty; Zoë recalls her mother fondly as a source of stability and comfort
+- **Zoë Carisco (née-kret)** — daughter; close, loving relationship characterized by warmth, patience, and emotional honesty; Zoë recalls her mother fondly as a source of stability and comfort
 - **Extended Family** — sparse records; Xara's pre-colony life remains largely private, a reminder of how much personal history is lost in the gaps between eras
 - **The Carisco Legacy** — though she never met them, her values shaped Amerigo's wife, Celectra's mother, and the generations that followed
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Xara's arc is brief but foundational: a life cut short, yet one that shaped the emotional landscape of those who carried her memory forward. She represents the human cost of expansion—the loved ones left behind, or lost before the journey even began. Her legacy is not in what she accomplished personally, but in the resilience she instilled in her daughter, and the quiet love that persisted beyond her death.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
 - **Life (2087-2122):** Thirty-four years of a life documented mostly through the memories of those who loved her
-- **The Accident (March 20, 2122):** Dies in a shuttle accident, three years before the Utopis departs; her absence shapes everything that follows
+- **The Accident (march-20, 2122):** Dies in a shuttle accident, three years before the Utopis departs; her absence shapes everything that follows
 - **Zoë's Inheritance:** Her values—patience, presence, compassion—become the foundation of Zoë's psychological practice
-- **The Naming (Book 4):** Xara Zoë Bowers is named in her honor, reclaiming her name from the shadow of Douglas Kret's crimes
-- **The Reflection (Book 5):** Xara Zoë articulates her legacy: "My namesake taught my grandmother that people matter more than data. I'm trying to live by that."
+- **The Naming (book-4):** Xara Zoë Bowers is named in her honor, reclaiming her name from the shadow of Douglas Kret's crimes
+- **The Reflection (book-5):** Xara Zoë articulates her legacy: "My namesake taught my grandmother that people matter more than data. I'm trying to live by that."
 </div>
 
 <div class="card-bg" markdown="1">

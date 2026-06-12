@@ -1,10 +1,10 @@
----
+-
 layout: default
 title: Genesis Revelations
----
+-
 <div class="top-banner">
-  <a href="../index.html" class="home-button">🏠 Home</a>
-  <a href="../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
+  <a href="./index.html" class="home-button">🏠 Home</a>
+  <a href="./anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
 
 Amerigo jolted awake to the sound of a pint-sized invasion force storming his berth aboard the space station, Utopis. His twin daughters, a whirlwind of boundless energy, quickly flanked his bed, seizing his arms and launching an adorable onslaught of demands, their voices a synchronized clamor in his room. This wasn’t the first time this had happened, and he knew it wouldn’t be the last. Despite his lean and muscular physique, he was utterly powerless against their formidable attributes of charm and puppy-dog eyes.  
@@ -258,7 +258,7 @@ He called the girls to set their holopads aside and settled them across from him
 
 The identical faces lit up with radiant smiles, their eyes sparkling with a blend of shock, joy, and relief. “Finally\!” they exclaimed in perfect unison. “You understand what I’ve been trying to tell you all along\!”  
 
-Amerigo nodded slowly, absorbing their words. He remembered now—every time he'd corrected them ('you two'), they'd insisted, 'I am only one person.' He'd dismissed it as childish stubbornness. But today, watching them solve calculus in perfect parallel without a single exchanged glance... he finally heard the truth in that singular 'I.' “I understood you,” he clarified, “but it’s a matter of believing, of fully comprehending such an extraordinary concept. I don’t think anyone has ever encountered, or even imagined, such a phenomenon before.”  
+Amerigo nodded slowly, absorbing their words. He remembered now—every time he'd corrected them ('you-two'), they'd insisted, 'I am only one person.' He'd dismissed it as childish stubbornness. But today, watching them solve calculus in perfect parallel without a single exchanged glance... he finally heard the truth in that singular 'I.' “I understood you,” he clarified, “but it’s a matter of believing, of fully comprehending such an extraordinary concept. I don’t think anyone has ever encountered, or even imagined, such a phenomenon before.”  
 
 He paused, his gaze dropping to the holopads still glowing with her completed work, his mind reeling with the implications. This wasn’t just a curiosity; it was a revelation. It was something that needed to be understood, protected, and studied—but carefully, by people who would see his daughter as a person, not a puzzle.  
 
@@ -271,8 +271,8 @@ Both faces lit up with radiant smiles, and he felt something shift in his chest�
 He raised his head, a new resolve hardening his expression. “This changes everything,” he announced. “I’m scheduling an appointment with Dr. Cruiz right now.”
 
 
----
+-
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="../anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>

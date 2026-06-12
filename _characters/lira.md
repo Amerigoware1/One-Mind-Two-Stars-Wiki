@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Lira Keahi
 portrait: "/assets/images/lira-book5.webp"
@@ -50,7 +50,7 @@ book4_arc: >
 
   **Chapter 13 — Ripple's Stumble:** Lira praises Jenni's quick thinking in stabilizing Ripple through the mirroring game, reinforcing the twins' growing confidence in their own abilities.
 
-  **Ongoing Role:** Throughout Book 4, Lira coordinates with Celectra, feeds observations back to Zoë, and helps shape how the next generation understands the bismuth network. She is present at the Four Rivers Festival (Chapter 27) and quietly proud of how far the twins have come.
+  **Ongoing Role:** Throughout Book 4, Lira coordinates with Celectra, feeds observations back to Zoë, and helps shape how the next generation understands the bismuth network. She is present at the Four Rivers Festival (chapter-27) and quietly proud of how far the twins have come.
 
 book5_title: "The Quiet Architect"
 book5_arc: >
@@ -63,7 +63,7 @@ book5_arc: >
   **Understated Wisdom:** Throughout Book 5, Lira offers occasional observations to Zoë and Celectra about the twins' development, the psychological implications of the trapped cluster, and how to support young people through crisis. Her voice is quiet but always heard.
 
   **Legacy:** By the end of Book 5, Lira's greatest contribution is invisible but everywhere: in the confidence of young Listeners, in the psychological safety protocols of the colony, in the way children born on Ares grow up believing connection across species is normal. She built the systems that let them feel safe.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -90,11 +90,11 @@ Lira is defined by:
 
 Her strengths include:
 
-- child and adolescent psychology (specializing in trauma and exceptional circumstances)
+- child and adolescent psychology (specializing-in trauma and exceptional circumstances)
 - group dynamics facilitation
 - crisis de-escalation
 - Listener Corps training and supervision
-- cross-species psychological support (human–Galinstanian interaction)
+- cross-species psychological support (human–galinstanian-interaction)
 
 Her weaknesses include:
 
@@ -109,15 +109,15 @@ Her weaknesses include:
 - **Dr. Zoë Carisco** — mentor and supervisor during psychology internship; later colleague and friend
 - **Jaxon Bowers, Ananya Patel** — supports them as early Listener Corps members
 - **Jenni Jo & Xara Zo Carisco** — observes their development; offers guidance when needed
-- **Stan (Galinstanian)** — respects his wisdom; facilitates human–Galinstanian psychological understanding
+- **Stan (galinstanian)** — respects his wisdom; facilitates human–Galinstanian psychological understanding
 - **Sam Calder** — Maya's partner; Lira welcomes them into the family with characteristic quiet warmth
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Lira's arc is about the quiet work of supporting extraordinary people without seeking recognition herself. She enters the story as a competent young adult learning from Zoë, gradually becomes an indispensable mentor to the Listener Corps, and eventually helps shape how New Eden raises its children—particularly those touched by the bridge between species. Her greatest gift is her steadiness: in a world of remarkable individuals, Lira is the one who remembers to check if they've eaten, slept, or breathed.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

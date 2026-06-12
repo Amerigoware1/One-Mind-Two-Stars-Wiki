@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Chen Wei
 portrait: "/assets/images/chenwei-book5.webp"
@@ -16,9 +16,9 @@ book2_age: "14.7"
 book3_age: "21.6"
 book4_age: "29.8"
 book5_age: "36.8"
-book1_title: "Growing (Age 7.6)"
+book1_title: "Growing (age-7.6)"
 book1_arc: >
-  At seven years old, Chen Wei is growing up in New Eden, already showing the focus and precision that will define him. At the Activity Center, he began karate at age six and now wears a kiiro obi (yellow belt), known among his instructors for his careful, analytical approach to technique rather than raw speed or power. He also trains in gymnastics, where his natural sense of balance and control sets him apart—he is often found on the balance beam, moving with a quiet concentration that belies his age. He is a quiet presence in Celectra's cohort, more comfortable observing than performing.
+  At seven years old, Chen Wei is growing up in New Eden, already showing the focus and precision that will define him. At the Activity Center, he began karate at age six and now wears a kiiro obi (yellow-belt), known among his instructors for his careful, analytical approach to technique rather than raw speed or power. He also trains in gymnastics, where his natural sense of balance and control sets him apart—he is often found on the balance beam, moving with a quiet concentration that belies his age. He is a quiet presence in Celectra's cohort, more comfortable observing than performing.
 book2_title: "The Pivot & Recruitment"
 book2_arc: >
   At 14, Chen faces 14-year-old Celectra in the first round of a tournament. Despite his technical skill, he loses to her superior control and coordination. The loss prompts him to question physical competition and seek fields where analytical thinking matters more than physiology. He joins the newly formed Listener Corps, fascinated by the technical challenge of cross-species communication. He assists in baseline monitoring of telepathic fields and helps develop early amplification equipment.
@@ -31,7 +31,7 @@ book4_arc: >
 book5_title: "Stewardship & Legacy"
 book5_arc: >
   Chen is an established technician within the Resonance Stewardship Program. He helps train the next generation of Listener Corps members in signal processing and interface calibration. His work ensures that human–Galinstanian communication remains stable and accessible even as Celectra transitions into emeritus roles. He represents the continuity of the colony's technical infrastructure—the quiet expertise that keeps the bridges standing long after the originals have stepped back.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -68,15 +68,15 @@ His weaknesses include:
 - **Sensei Onishi Kisa** — former teacher; still respects their wisdom but has moved beyond martial arts
 - **Kai Vasquez & Yuki Sato** — former dojo peers; paths have diverged but mutual respect remains
 - **Listener Corps Team** — works collaboratively with Ananya Patel, Maya Keahi, and other corps members
-- **Dr. Yuki Chen** — professional colleague in monitoring and tech development (no familial relation)
+- **Dr. Yuki Chen** — professional colleague in monitoring and tech development (no-familial relation)
 - **Jaxon Bowers** — engineering collaborator on interface development
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Chen's arc is about finding value beyond physical prowess. His early disappointment in the dojo becomes the catalyst for a career that helps secure the colony's future. He represents the generation that builds the systems allowing human–Galinstanian relations to continue without dependence on a single biological bridge. His story mirrors the colony's shift from physical survival to complex technical coexistence.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

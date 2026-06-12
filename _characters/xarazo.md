@@ -1,11 +1,11 @@
----
+-
 layout: character
 title: Xara Zo Carisco
 portrait: "/assets/images/xarazo-book5.webp"
 portrait-book3: "/assets/images/xarazo-book3.webp"
 portrait-book4: "/assets/images/xarazo-book4.webp"
 portrait-book5: "/assets/images/xarazo-book5.webp"
-affiliation: Carisco Family; Listener Corps (Junior); Resonance Stewardship Program
+affiliation: Carisco Family; Listener Corps (junior); Resonance Stewardship Program
 status: Alive
 birthday: November 15, 2247
 birthplace: New Eden, Ares
@@ -16,7 +16,7 @@ book4_age: "7 years old"
 book5_age: "14 years old"
 book3_title: "Birth and Early Bonding"
 book3_arc: >
-  Xara is born during the events of Book 3. She is named after her adoptive grandmother's mother (Xara) and her adoptive grandmother (Zoë). Even as an infant, she shows unusual focus and sensitivity to harmonic patterns.
+  Xara is born during the events of Book 3. She is named after her adoptive grandmother's mother (xara) and her adoptive grandmother (zoë). Even as an infant, she shows unusual focus and sensitivity to harmonic patterns.
 
 book4_title: "The Four Rivers Resonance"
 book4_arc: >
@@ -28,14 +28,14 @@ book5_title: "Pattern Weaver"
 book5_arc: >
   At fourteen, Xara becomes a junior member of the Resonance Stewardship Program. She specializes in harmonic geometry and anomaly detection. Working with Ripple and Jenni, she helps map the long-term stability of the planetary network. Her arc centers on becoming a "pattern weaver" — someone who sees the structure beneath the song.
   
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
 ## Overview
 Xara Zo Carisco is the younger of Celectra's twin daughters and one of the most analytically gifted young listeners on Ares. At seven years old in Book 4, she experiences resonance as structure — patterns, geometry, timing, flow. Her bond with Ripple is intellectual and collaborative, forming the backbone of several key discoveries in Book 5.
 
-By fourteen, Xara becomes one of the youngest humans capable of reading the bismuth network with near-adult clarity. She is named after her adoptive grandmother's mother (Xara Kret) and her adoptive grandmother (Zoë Carisco), carrying forward a legacy of compassion and insight.
+By fourteen, Xara becomes one of the youngest humans capable of reading the bismuth network with near-adult clarity. She is named after her adoptive grandmother's mother (xara-kret) and her adoptive grandmother (zoë-carisco), carrying forward a legacy of compassion and insight.
 </div>
 <div class="card-bg" markdown="1">
 ## Physical Description
@@ -75,20 +75,20 @@ Her weaknesses include:
 - **Logic, Stan, Chime** — Galinstanians she studies with fascination; Logic, in particular, appreciates her analytical approach
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Xara's arc centers on understanding resonance as a system — a network of patterns, flows, and harmonics. She becomes one of the youngest humans capable of reading the bismuth network with near-adult clarity, earning her the informal title of "pattern weaver" among the Resonance Stewardship Program. Her journey is about learning that structure and feeling are not opposites, but partners in understanding.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **Naming (Book 3):** Carries forward the names of Xara Kret and Zoë Carisco — a legacy of warmth and wisdom
-- **First Maps (Book 4):** At age seven, begins mapping Ripple's harmonic fluctuations using stones, toys, and water ripples
-- **The Great Resonance (Book 4):** Her analytical clarity helps Celectra interpret the resonance anomalies
-- **Pattern Weaver (Book 5):** Joins the Resonance Stewardship Program, specializing in harmonic geometry
-- **The Question (Book 5):** "Ripple likes them? Or recognizes their resonance pattern?" — her analytical mind at work
-- **Sister Partnership (Book 4-5):** Jenni's emotional intuition + Xara's structural analysis = the complete picture
+- **Naming (book-3):** Carries forward the names of Xara Kret and Zoë Carisco — a legacy of warmth and wisdom
+- **First Maps (book-4):** At age seven, begins mapping Ripple's harmonic fluctuations using stones, toys, and water ripples
+- **The Great Resonance (book-4):** Her analytical clarity helps Celectra interpret the resonance anomalies
+- **Pattern Weaver (book-5):** Joins the Resonance Stewardship Program, specializing in harmonic geometry
+- **The Question (book-5):** "Ripple likes them? Or recognizes their resonance pattern?" — her analytical mind at work
+- **Sister Partnership (book-4-5):** Jenni's emotional intuition + Xara's structural analysis = the complete picture
 </div>
 
 <div class="card-bg" markdown="1">
@@ -113,7 +113,7 @@ Xara's arc centers on understanding resonance as a system — a network of patte
 
 <div class="card-bg" markdown="1">
 ### Trivia
-- Xara's middle name "Zo" honors both her grandmother Zoë while her first name honors her adoptive great-grandmother Xara (Zoë's mother)
+- Xara's middle name "Zo" honors both her grandmother Zoë while her first name honors her adoptive great-grandmother Xara (zoë's-mother)
 - She began mapping patterns before she could read — her first "charts" were arrangements of colored stones
 - Logic, the Galinstanian elder, once called her "the one who sees the numbers in the music"
 - Xara keeps a detailed journal of every harmonic anomaly she's observed, dating back to age seven

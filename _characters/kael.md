@@ -1,15 +1,15 @@
----
+-
 layout: character
 title: Kael Aoki
 portrait: "/assets/images/kael-book5.webp"
 portrait-book4: "/assets/images/kael-book4.webp"
 portrait-book5: "/assets/images/kael-book5.webp"
-affiliation: New Eden Youth Cohort; Acoustic Rhythm Specialist; Resonance Stewardship Program (Acoustic Training)
+affiliation: New Eden Youth Cohort; Acoustic Rhythm Specialist; Resonance Stewardship Program (acoustic-training)
 status: Alive
 birthday: December 10, 2247
 birthplace: New Eden, Ares
 book4_age: "14.1"
-book4_title: "Dreaming of Percussion (Age 7)"
+book4_title: "Dreaming of Percussion (age-7)"
 book4_arc: >
     At seven, Kael is the youngest of the twins' cohort, trailing behind Jenni and Xara by a few weeks. While other children play group games or practice martial arts forms at the Activity Center, Kael can often be found at the edges, hands moving against his thighs, tapping out rhythms only he can hear.
 
@@ -19,19 +19,19 @@ book4_arc: >
 
     What he doesn't realise is that his human neighbors aren't the only ones listening.
 book5_age: "14.1"
-book5_title: "The Drummer of Hope (Age 14)"
+book5_title: "The Drummer of Hope (age-14)"
 book5_arc: >
   At fourteen, Kael is known for his obsessive drumming practice, often wearing an ANI headset to broadcast complex rhythms. Unbeknownst to him, his daily practice—located approximately forty meters from the sealed gallery wall—becomes a lifeline for the trapped Galinstanian collective, Resonant Echo.
 
   The collective, already aware of acoustic tap code from the bismuth network, interprets Kael’s rhythms as a deliberate “hope beacon,” confirming that the surface still uses acoustic methods. When the twins discover the trapped beings, they realize Kael’s unintentional heroism.
 
   After the rescue, Kael is honored by Resonant Echo as the “Drummer-of-Hope.” His testimony before the Council helps reinstate acoustic methods as a recognized communication protocol. By the end of Book 5, he is appointed as the youth acoustic instructor in the Resonance Stewardship Program, teaching the next generation the power of rhythm and intention.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
 ### Overview
-Kael Aoki is a New Eden-born musician and acoustic rhythm specialist, slightly younger than the twins (same age, born weeks apart). He is defined by his intense focus on drumming and rhythm, using ANI technology to broadcast his practice. His “accidental heroism” in Book 5—unknowingly providing hope to a trapped collective for months—cements his role as a bridge between acoustic and EM communication. Passionate, earnest, and a little awkward, Kael represents the power of unintentional connection and the formal recognition of sound as a tool for understanding.
+Kael Aoki is a New Eden-born musician and acoustic rhythm specialist, slightly younger than the twins (same-age, born weeks apart). He is defined by his intense focus on drumming and rhythm, using ANI technology to broadcast his practice. His “accidental heroism” in Book 5—unknowingly providing hope to a trapped collective for months—cements his role as a bridge between acoustic and EM communication. Passionate, earnest, and a little awkward, Kael represents the power of unintentional connection and the formal recognition of sound as a tool for understanding.
 </div>
 <div class="card-bg" markdown="1">
 ### Physical Description
@@ -41,7 +41,7 @@ Kael is lean and wiry, with the kind of focused energy that burns still until re
 ### Personality & Skills
 Kael is defined by:
 - intense, almost obsessive focus on rhythm and pattern
-- unintentional heroism (his daily practice becomes a lifeline)
+- unintentional heroism (his-daily practice becomes a lifeline)
 - earnestness that can read as awkwardness
 - deep respect for Galinstanian communication methods
 - a belief that sound is a form of intention
@@ -66,11 +66,11 @@ His weaknesses include:
 - **Ms. Rivera** — educator who encourages his musical practice
 </div>
 <div class="card-bg" markdown="1">
-### Story Overview (Non-Spoiler)
+### Story Overview (non-spoiler)
 Kael’s arc is about the power of unintended impact. He does not set out to be a hero—he simply practices his drums with dedication. Yet that dedication becomes a lifeline for beings trapped in silence for seven years. His story asks: What if the most important thing you ever do is something you do every day without thinking about it? By the end of Book 5, Kael learns to accept his role not as an accident, but as proof that consistent, focused practice can change lives in ways you never expect.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

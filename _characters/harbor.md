@@ -1,6 +1,6 @@
----
+-
 layout: character
-title: Harbor (Northern Territory)
+title: Harbor (northern-territory)
 portrait: "/assets/images/harbor-book2.webp"
 portrait-book2: "/assets/images/harbor-book2.webp"
 portrait-book3: "/assets/images/harbor-book3.webp"
@@ -26,17 +26,17 @@ book2_arc: >
 
 book3_title: "The Communion Interface"
 book3_arc: >
-  (Minor appearance) Harbor and the Northern Territory cluster are mentioned as being in a period of integration and healing. With their bonded humans now adolescents focused on school and growing up, direct contact is less frequent. Harbor remains a steady presence in the background of New Eden life, occasionally consulted for their patience and grounding energy.
+  (minor-appearance) Harbor and the Northern Territory cluster are mentioned as being in a period of integration and healing. With their bonded humans now adolescents focused on school and growing up, direct contact is less frequent. Harbor remains a steady presence in the background of New Eden life, occasionally consulted for their patience and grounding energy.
 
 book4_title: "The Four Rivers Resonance"
 book4_arc: >
-  (Minor appearance/mention) When the Four Rivers crisis disturbs the bismuth network, Harbor is among the Galinstanians who help maintain calm in the colony. Their steady resonance provides a grounding anchor for younger Galinstanians like Ripple, though Harbor does not take a central role in the crisis resolution.
+  (minor-appearance/mention) When the Four Rivers crisis disturbs the bismuth network, Harbor is among the Galinstanians who help maintain calm in the colony. Their steady resonance provides a grounding anchor for younger Galinstanians like Ripple, though Harbor does not take a central role in the crisis resolution.
 
 book5_title: "Elder Steadiness"
 book5_arc: >
   By Book 5, Harbor has become a quiet pillar of the New Eden Galinstanian community. Their bond with Sofia has matured—she is now a young adult, and their connection has deepened from childhood wonder to adult mutual respect. Harbor helps integrate the newly rescued Resonant Echo collective, offering the same patient safety that Sofia once named in them. When the twins lead the Resonant Echo rescue, Harbor pulses with quiet satisfaction: the steady ones are needed most when everything else shakes.
 
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -48,9 +48,9 @@ During Chime's torture at the hands of Dr. Kret, Harbor experienced the helpless
 
 <div class="card-bg" markdown="1">
 ## Physical Description
-Harbor's form is solid and grounded—more dense than younger Galinstanians, with a surface that feels smooth but slightly grippy to human touch (Sofia once described it as "like warm river stone"). Their pulses are slow, measured, rhythmic—the Galinstanian equivalent of a deep, steady breath.
+Harbor's form is solid and grounded—more dense than younger Galinstanians, with a surface that feels smooth but slightly grippy to human touch (sofia-once described it as "like warm river stone"). Their pulses are slow, measured, rhythmic—the Galinstanian equivalent of a deep, steady breath.
 
-When Harbor moves, it is with deliberate grace, never hurried. Their presence in any space immediately communicates safety. Young Galinstanians (including Ripple) gravitate toward Harbor when distressed, finding their resonance calming. Even humans who cannot perceive Galinstanian resonance directly report feeling "settled" when Harbor is nearby.
+When Harbor moves, it is with deliberate grace, never hurried. Their presence in any space immediately communicates safety. Young Galinstanians (including-ripple) gravitate toward Harbor when distressed, finding their resonance calming. Even humans who cannot perceive Galinstanian resonance directly report feeling "settled" when Harbor is nearby.
 </div>
 
 <div class="card-bg" markdown="1">
@@ -65,15 +65,15 @@ Harbor is defined by:
 
 Their strengths include:
 
-- emotional anchoring (calming distressed beings of both species)
-- remembering patterns over long periods (centuries of patience)
+- emotional anchoring (calming-distressed beings of both species)
+- remembering patterns over long periods (centuries-of patience)
 - physical density that makes them excellent at structural support
 - mediating conflicts without taking sides
 - waiting—truly waiting, without impatience or anxiety
 
 Their weaknesses include:
 
-- guilt about hiding during Chime's torture (never fully resolved)
+- guilt about hiding during Chime's torture (never-fully resolved)
 - tendency to absorb others' distress, leading to resonance fatigue
 - difficulty with rapid change or urgent deadlines
 - sometimes too passive when action is needed
@@ -82,31 +82,31 @@ Their weaknesses include:
 <div class="card-bg" markdown="1">
 ## Relationships
 - **Sofia** — bonded human who named them "Harbor" as a child; their connection has matured into adult mutual respect
-- **The Northern Territory Cluster (Chime, Flicker, Logic, Spark, Guardian, Lyric)** — family; Harbor is the anchor they all turn to
+- **The Northern Territory Cluster (chime,-flicker, logic, spark, guardian, lyric)** — family; Harbor is the anchor they all turn to
 - **Chime** — Harbor carries guilt for hiding during Chime's torture; Chime has forgiven them, but Harbor struggles to forgive themselves
 - **Celectra Carisco** — rescuer and continued ally; Harbor trusts her completely
 - **Stan** — elder who helped Harbor process the guilt of hiding
 - **Ripple** — younger Galinstanian who seeks Harbor's calming presence during stress
-- **Resonant Echo (the Four)** — Harbor helps them transition, offering the same steady safety Sofia once named
+- **Resonant Echo (the-four)** — Harbor helps them transition, offering the same steady safety Sofia once named
 </div>
 
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Harbor's arc is about the weight of helplessness—and what comes after. For three days, Harbor hid while Chime suffered, unable to help. That experience could have broken them. Instead, it shaped them into the anchor of their cluster: the steady one, the safe one, the presence that makes others feel held.
 
 When Sofia named them "Harbor," she saw something Harbor was still becoming. Their story is about growing into that name—learning that patience is not passivity, that steadiness is strength, and that being safe for others is a form of rescue all its own.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The Hiding (Pre-Book 2):** Harbor listens helplessly as Kret tortures Chime; the guilt begins
-- **The Cave-In (Book 2):** Harbor works with the other Galinstanians to dissolve stone, helping everyone escape
-- **The Naming (Book 2):** Seven-year-old Sofia names them "Harbor"—"because that's where boats go to be safe"
-- **The Integration (Book 3):** Harbor steps back from central narrative, focusing on healing and grounding the cluster
-- **The Anchor (Book 4):** During the Four Rivers crisis, Harbor's steady presence helps calm younger Galinstanians
-- **The Safe Place (Book 5):** Harbor helps Resonant Echo transition to freedom, finally becoming the harbor they were named to be
+- **The Hiding (pre-book-2):** Harbor listens helplessly as Kret tortures Chime; the guilt begins
+- **The Cave-In (book-2):** Harbor works with the other Galinstanians to dissolve stone, helping everyone escape
+- **The Naming (book-2):** Seven-year-old Sofia names them "Harbor"—"because that's where boats go to be safe"
+- **The Integration (book-3):** Harbor steps back from central narrative, focusing on healing and grounding the cluster
+- **The Anchor (book-4):** During the Four Rivers crisis, Harbor's steady presence helps calm younger Galinstanians
+- **The Safe Place (book-5):** Harbor helps Resonant Echo transition to freedom, finally becoming the harbor they were named to be
 </div>
 
 <div class="card-bg" markdown="1">

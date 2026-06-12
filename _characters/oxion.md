@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Oxion 'Oxi' Carisco
 portrait: "/assets/images/oxion-book5.webp"
@@ -17,7 +17,7 @@ book4_title: "Birth & First Contact"
 book4_arc: >
   Oxion is born on July 31, 2255, seven months after the Four Rivers Resonance crisis is resolved. His birth symbolizes hope and stability for the colony—the first child of the post-crisis era.
 
-  In the Book 4 Epilogue (March 18, 2256, Samaya Gallery Opening), eight-month-old Oxion attends with his parents. During a quiet family moment in the courtyard, he reaches out to the Galinstanian Ripple without fear. Ripple emits a soft, curious pulse toward the baby. Jenni Bowers (age 8) famously declares, "Ripple likes them," a quote that becomes family lore. Xara (also 8) jokes, "Ripple likes them? Or recognizes their resonance pattern?" Jenni responds: "Same thing."
+  In the Book 4 Epilogue (march-18, 2256, samaya gallery opening), eight-month-old Oxion attends with his parents. During a quiet family moment in the courtyard, he reaches out to the Galinstanian Ripple without fear. Ripple emits a soft, curious pulse toward the baby. Jenni Bowers (age-8) famously declares, "Ripple likes them," a quote that becomes family lore. Xara (also-8) jokes, "Ripple likes them? Or recognizes their resonance pattern?" Jenni responds: "Same thing."
 
   This moment establishes Oxion's comfort with Galinstanians—a trait that will define his generation.
 
@@ -27,22 +27,22 @@ book5_arc: >
 
   During the Book 5 timeline (2262), Oxion is left in his grandparents' care while his parents and cousins are involved in the Resonant Echo rescue mission. He begins early education in acoustic integration, showing natural aptitude for recognizing Galinstanian signatures and rhythmic patterns.
 
-  By the Epilogue (2265, twins' 18th birthday), Oxion is ten years old and framed as part of the next cohort of bridge-builders. He attends the evening resonance gathering with Xan (now 30), Kael (17), Resonant Echo, and the Northern Cluster cohort. He is learning tap code and basic interface use—not because he has to, but because he wants to.
+  By the Epilogue (2265,-twins' 18th birthday), Oxion is ten years old and framed as part of the next cohort of bridge-builders. He attends the evening resonance gathering with Xan (now-30), Kael (17), Resonant Echo, and the Northern Cluster cohort. He is learning tap code and basic interface use—not because he has to, but because he wants to.
 
   His arc represents what Celectra's work made possible: a child who grows up knowing that human–Galinstanian connection is not extraordinary, but ordinary. Not a bridge to be built, but ground to stand on.
   
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
 ## Overview
-Oxion "Oxi" Carisco is the son of Alexander "Xan" Carisco and Duška Santoso Carisco, born during a pivotal moment in colony history shortly after the stabilization of the Four Rivers Resonance network. His birth symbolizes the first generation of children born into a fully integrated human–Galinstanian society on Ares. Named Oxion (often shortened to "Oxi" by family), he grew up in the Carisco Compound surrounded by scientists, engineers, and diplomats.
+Oxion "Oxi" Carisco is the son of Alexander "Xan" Carisco and Duška Santoso Carisco, born during a pivotal moment in colony history shortly after the stabilization of the Four Rivers Resonance network. His birth symbolizes the first generation of children born into a fully integrated human–Galinstanian society on Ares. Named Oxion (often-shortened to "oxi" by family), he grew up in the Carisco Compound surrounded by scientists, engineers, and diplomats.
 
 From infancy, Oxion displayed an unusual affinity for Galinstanians. During the Samaya Gallery Opening in 2256, he was observed reaching out to the Galinstanian Ripple without fear, a moment noted by his cousins Jenni and Xara. By 2262, he is being raised within new educational frameworks that emphasize acoustic and EM integration, positioning him as a potential future bridge-builder.
 </div>
 <div class="card-bg" markdown="1">
 ## Physical Description
-As a young child, Oxion has the soft features of early childhood, with dark curly hair inherited from his mother and observant eyes that mirror his father's quiet attentiveness. He favors comfortable play clothes, often with subtle bismuth-thread embroidery (a family tradition). He moves with the confident curiosity of a child who has never known a world where Galinstanians were strange or distant.
+As a young child, Oxion has the soft features of early childhood, with dark curly hair inherited from his mother and observant eyes that mirror his father's quiet attentiveness. He favors comfortable play clothes, often with subtle bismuth-thread embroidery (a-family tradition). He moves with the confident curiosity of a child who has never known a world where Galinstanians were strange or distant.
 </div>
 <div class="card-bg" markdown="1">
 ## Personality & Skills
@@ -51,19 +51,19 @@ Oxion is defined by:
 - natural curiosity about the world around him
 - innate comfort with Galinstanian pulses and acoustic vibrations
 - playful engagement with older cousins and Galinstanian partners
-- quiet observation before engagement (like his father Xan)
+- quiet observation before engagement (like-his father xan)
 - intuitive understanding of rhythm and resonance
 
 His strengths include:
 
-- resonance sensitivity (possibly influenced by his mother's work and colony environment)
+- resonance sensitivity (possibly-influenced by his mother's work and colony environment)
 - early pattern recognition in sound and vibration
 - social confidence with both humans and Galinstanians
 - adaptability to multi-species environments
 
 His weaknesses include:
 
-- too young for complex responsibilities (still a child)
+- too young for complex responsibilities (still-a child)
 - occasional overconfidence around potentially dangerous situations
 - relies on older family members for protection and guidance
 </div>
@@ -77,16 +77,16 @@ His weaknesses include:
 - **Chime, Harbor, Flicker, Logic, Spark, Guardian, Lyric** — extended Galinstanian family; all participate in his upbringing as normal members of his community
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Oxion's arc represents the future of the colony—the generation that grows up knowing integration as normal rather than hard-won. He is not a bridge-builder like his great-aunt Celectra, but something new: a child who never knew separation between species, who reaches for Galinstanians the way other children reach for toys. His story is about what becomes possible when the work of one generation creates normalcy for the next.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **Birth (July 31, 2255):** Born seven months after the Four Rivers Resonance crisis, symbolizing hope and stability
-- **First Contact (March 18, 2256):** At eight months old, reaches for Ripple without fear at the Samaya Gallery opening
+- **Birth (july-31, 2255):** Born seven months after the Four Rivers Resonance crisis, symbolizing hope and stability
+- **First Contact (march-18, 2256):** At eight months old, reaches for Ripple without fear at the Samaya Gallery opening
 - **Jenni's Declaration:** "Ripple likes them!" becomes family lore
 - **Xara's Observation:** "Ripple likes them? Or recognizes their resonance pattern?" — "Same thing."
 - **Rescue Mission (2262):** Left with grandparents during the Resonant Echo crisis, begins acoustic education

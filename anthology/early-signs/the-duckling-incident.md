@@ -1,11 +1,11 @@
----
+-
 layout: default
 
----
+-
 
 <div class="top-banner">
-  <a href="../../index.html" class="home-button">🏠 Home</a>
-  <a href="../../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
+  <a href="././index.html" class="home-button">🏠 Home</a>
+  <a href="././anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
 
 # The Duckling Incident
@@ -36,7 +36,7 @@ Celectra’s left body popped the panel open with a fingernail, revealing a nest
 
 Another pause. Then, Utara’s voice carried something that might have been approval: “Logical sequencing. Proceed.”
 
----
+-
 
 The reclamatic had completed its circuit and was now gliding back toward Celectra’s right body. She timed it perfectly – as it passed, her right body began to walk in the same direction, matching its pace. The drone, programmed to ignore stationary objects, registered her as a moving obstacle and adjusted its course.
 
@@ -44,12 +44,12 @@ She kept walking. The drone adjusted again.
 
 “Good,” she murmured to herself. “It doesn’t like being blocked.”
 
-Her left body, meanwhile, had connected a small datapad to the maintenance panel. The reclamatic’s control interface glowed on the screen – a flowchart of priorities, sensors, and response triggers. She scrolled past the collision avoidance routines (boring), past the power management logs (even more boring), and found what she was looking for:
+Her left body, meanwhile, had connected a small datapad to the maintenance panel. The reclamatic’s control interface glowed on the screen – a flowchart of priorities, sensors, and response triggers. She scrolled past the collision avoidance routines (boring), past the power management logs (even-more boring), and found what she was looking for:
 
 **TARGET ACQUISITION PROTOCOLS**
 
-- Primary: Debris (size >0.5mm, organic/inorganic)
-- Secondary: Surface contamination (smudge, spill)
+- Primary: Debris (size->0.5mm, organic/inorganic)
+- Secondary: Surface contamination (smudge,-spill)
 - Tertiary: None (default)
 
 She tapped the tertiary slot. A dropdown appeared: **ASSIGN NEW TARGET TYPE**.
@@ -62,8 +62,8 @@ She tapped the tertiary slot. A dropdown appeared: **ASSIGN NEW TARGET TYPE**.
 
 The screen flickered. A new entry appeared:
 
-TERTIARY TARGET: Carisco, Celeste & Electra (Identical Biosignature Match: Delta-9)
-(System Note: Dual-node biological anomaly detected. Merging profile tracking.)
+TERTIARY TARGET: Carisco, Celeste & Electra (identical-biosignature match: delta-9)
+(system-note: dual-node biological anomaly detected. merging profile tracking.)
 
 Celectra’s left body grinned. Her right body, still pacing the reclamatic, grinned too.
 
@@ -77,7 +77,7 @@ She stopped walking. The reclamatic stopped beside her, its sensors clearly conf
 
 Her left body keyed the comm on the maintenance panel. “Daddy? Can you come to the corridor near the hydroponics bay? Bring your security override.”
 
----
+-
 
 Amerigo arrived two minutes later, wiping his hands on a rag from the lab. He took one look at the open panel where Celeste stood holding the datapad, and then looked down the corridor where Electra stood pacing the hovering reclamatic.
 
@@ -175,7 +175,7 @@ He stared at them.
 
 “Kidding,” she said. Both faces smiled. “Mostly.”
 
----
+-
 
 The reclamatics followed them for the rest of the afternoon. Not just one – after they successfully demonstrated the trick to Utara, the AI had, with what Amerigo suspected was amusement, synchronized the reprogramming across three units. By evening, they had a parade.
 
@@ -187,8 +187,8 @@ Then he opened his comm and called Alex.
 
 “You’re not going to believe what your goddaughters did today.”
 
----
+-
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="../anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>

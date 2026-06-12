@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Dr. Lorain Troy
 portrait: "/assets/images/troy-book1.webp"
@@ -7,7 +7,7 @@ portrait-book2: "/assets/images/troy-book2.webp"
 portrait-book3: "/assets/images/troy-book3.webp"
 portrait-book4: "/assets/images/troy-book4.webp"
 portrait-book5: "/assets/images/troy-book4.webp"
-affiliation: New Eden Colony Science Division; Chief Scientist (Retired); Senior Council Member
+affiliation: New Eden Colony Science Division; Chief Scientist (retired); Senior Council Member
 status: Deceased
 birthday: November 8, 2099
 birthplace: Cambridge, Massachusetts, Earth
@@ -28,13 +28,13 @@ book2_arc: >
 
 book3_title: "Retirement & Succession"
 book3_arc: >
-  In late October 2246, Dr. Troy announces her retirement after 35 years of service—a decision hastened by declining health. A formal ceremony honors her contributions to xenobiology and cross-species relations. Amerigo Carisco is named her successor in a unanimous Council vote. She chairs the committee that reviews Celectra's Ph.D. defense ("Neuro-Interface Design for Cross-Species Communication"), ensuring rigorous standards while acknowledging the unprecedented nature of Celectra's work.
+  In late October 2246, Dr. Troy announces her retirement after 35 years of service—a decision hastened by declining health. A formal ceremony honors her contributions to xenobiology and cross-species relations. Amerigo Carisco is named her successor in a unanimous Council vote. She chairs the committee that reviews Celectra's Ph.D. defense ("neuro-interface-design for cross-species communication"), ensuring rigorous standards while acknowledging the unprecedented nature of Celectra's work.
 
   During the debate over using Dr. Kret's confiscated research, Dr. Troy offers a nuanced position: "Science doesn't have morality. Scientists do. We can learn from his methods while condemning his ethics. The knowledge exists. Pretending it doesn't doesn't undo the harm he caused—but we must never forget where it came from or what it cost."
 
   Her retirement speech becomes a touchstone for colony science: "The greatest measure of our science will not be what we discover, but how we choose to use that knowledge. We have built bridges between species; may we continue to build them between our ethics and our ambitions."
 
-book4_title: "Passing (Off Page)"
+book4_title: "Passing (off-page)"
 book4_arc: >
   Dr. Troy dies on August 23, 2253, two years before the events of Book 4 begin. Her death is quiet and off-page, noted in the colony records and mourned privately by those who knew her. The cause is related to the undisclosed illness that prompted her early retirement—a condition she chose to face with the same dignity she brought to her leadership.
 
@@ -48,7 +48,7 @@ book5_arc: >
 
   As Celectra tells her own daughters: "Dr. Troy taught us that science without ethics is just violation with better equipment. She's the reason we ask 'Should we?' before we ask 'Can we?'"
   
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -93,23 +93,23 @@ Her weaknesses included:
 - **New Eden Science Division** — trained an entire generation of scientists in responsible xenobiology; her influence shaped every researcher who followed
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Dr. Troy's arc is about the weight of scientific leadership—holding a colony's research ethics steady when every discovery carries existential stakes. She represents the voice that asks "Should we?" not just "Can we?" Her retirement, hastened by illness, wasn't an ending but a passing of the torch to a generation she helped shape. Her death two years before Book 4 means she never witnesses the Four Rivers crisis or the twins' emergence—but her questions echo through every decision made in her absence. Her legacy is measured not in discoveries, but in the ethical framework that guides all future research.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The Kret Tribunal (Book 1):** Provides expert testimony establishing that knowledge gained through violation cannot be celebrated—only acknowledged and never repeated
-- **First Protocols (Book 1):** Develops the colony's initial xenobiology guidelines, emphasizing non-invasive study of indigenous life
-- **Mentoring Amerigo (Book 2):** Begins preparing her successor, recognizing his balanced approach to science and ethics
-- **The Nuanced Position (Book 3):** "Science doesn't have morality. Scientists do. We can learn from his methods while condemning his ethics."
-- **Retirement Speech (Book 3):** "The greatest measure of our science will not be what we discover, but how we choose to use that knowledge."
-- **To Celectra (Book 3):** "You are becoming what you always were meant to be—the architect, not the structure. The teacher, not the eternal student."
+- **The Kret Tribunal (book-1):** Provides expert testimony establishing that knowledge gained through violation cannot be celebrated—only acknowledged and never repeated
+- **First Protocols (book-1):** Develops the colony's initial xenobiology guidelines, emphasizing non-invasive study of indigenous life
+- **Mentoring Amerigo (book-2):** Begins preparing her successor, recognizing his balanced approach to science and ethics
+- **The Nuanced Position (book-3):** "Science doesn't have morality. Scientists do. We can learn from his methods while condemning his ethics."
+- **Retirement Speech (book-3):** "The greatest measure of our science will not be what we discover, but how we choose to use that knowledge."
+- **To Celectra (book-3):** "You are becoming what you always were meant to be—the architect, not the structure. The teacher, not the eternal student."
 - **Private Struggle (2246-2253):** Faces her illness with dignity, rarely speaking of it publicly
-- **Death (August 23, 2253):** Dies quietly, two years before Book 4 begins; mourned by a colony she helped build
-- **Living Legacy (Book 5):** Her questions still guide every ethical debate; her name still carries weight
+- **Death (august-23, 2253):** Dies quietly, two years before Book 4 begins; mourned by a colony she helped build
+- **Living Legacy (book-5):** Her questions still guide every ethical debate; her name still carries weight
 </div>
 
 <div class="card-bg" markdown="1">

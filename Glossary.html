@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="WikiStyle.css">
   <style>
 /* ==========================================================================
-   INTERACTIVE SEARCH & CATEGORY UTILITIES (Glossary / Database)
+   INTERACTIVE SEARCH & CATEGORY UTILITIES (glossary-/ database)
    ========================================================================== */
 .search-container {
   max-width: 700px;
@@ -24,23 +24,23 @@
   width: 100%;
   padding: 0.75rem 1rem;
   font-size: 1rem;
-  border: 2px solid var(--neon-violet);
+  border: 2px solid var(-neon-violet);
   border-radius: 8px;
-  background: rgba(12, 0, 40, 0.8);
+  background: rgba(12,-0, 40, 0.8);
   color: white;
   outline: none;
-  box-shadow: 0 0 10px var(--glow-violet);
+  box-shadow: 0 0 10px var(-glow-violet);
   transition: all 0.3s ease;
   font-family: 'Inter', sans-serif;
 }
 
 #glossarySearch:focus {
-  border-color: var(--neon-cyan);
-  box-shadow: 0 0 15px var(--glow-cyan);
+  border-color: var(-neon-cyan);
+  box-shadow: 0 0 15px var(-glow-cyan);
 }
 
 #glossarySearch::placeholder {
-  color: var(--text-muted);
+  color: var(-text-muted);
   opacity: 0.7;
 }
 
@@ -51,7 +51,7 @@
   transform: translateY(-50%);
   background: none;
   border: none;
-  color: var(--text-muted);
+  color: var(-text-muted);
   cursor: pointer;
   font-size: 1.25rem;
   padding: 0;
@@ -59,8 +59,8 @@
 }
 
 .clear-search:hover {
-  color: var(--neon-magenta);
-  text-shadow: 0 0 8px var(--neon-magenta);
+  color: var(-neon-magenta);
+  text-shadow: 0 0 8px var(-neon-magenta);
 }
 
 .search-dropdown {
@@ -70,14 +70,14 @@
   right: 0;
   max-height: 300px;
   overflow-y: auto;
-  background: rgba(10, 0, 34, 0.95); /* Matches --bg-card-dark */
-  border: 2px solid var(--neon-cyan);
+  background: rgba(10,-0, 34, 0.95); /* Matches -bg-card-dark */
+  border: 2px solid var(-neon-cyan);
   border-top: none;
   border-radius: 0 0 8px 8px;
   display: none;
   z-index: 101;
   backdrop-filter: blur(10px);
-  box-shadow: 0 10px 20px rgba(0, 232, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(0,-232, 255, 0.2);
 }
 
 .search-dropdown.show {
@@ -86,7 +86,7 @@
 
 .search-result {
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid var(--border-glow);
+  border-bottom: 1px solid var(-border-glow);
   cursor: pointer;
   transition: background 0.2s ease;
   display: flex;
@@ -95,14 +95,14 @@
 }
 
 .search-result:hover {
-  background: rgba(0, 232, 255, 0.15);
+  background: rgba(0,-232, 255, 0.15);
 }
 
 .result-category {
   font-size: 0.75rem;
-  color: var(--neon-cyan);
-  background: rgba(193, 60, 255, 0.2);
-  border: 1px solid var(--neon-violet);
+  color: var(-neon-cyan);
+  background: rgba(193,-60, 255, 0.2);
+  border: 1px solid var(-neon-violet);
   padding: 0.125rem 0.5rem;
   border-radius: 4px;
   white-space: nowrap;
@@ -111,19 +111,19 @@
 
 .result-name {
   flex: 1;
-  color: var(--text-heading);
+  color: var(-text-heading);
   font-weight: 500;
 }
 
 .result-link {
-  color: var(--neon-cyan);
+  color: var(-neon-cyan);
   font-size: 0.875rem;
   text-decoration: none;
 }
 
 .result-link:hover {
-  color: var(--neon-magenta);
-  text-shadow: 0 0 5px var(--glow-cyan);
+  color: var(-neon-magenta);
+  text-shadow: 0 0 5px var(-glow-cyan);
 }
 
 /* Quick jump item buttons row */
@@ -134,17 +134,17 @@
   justify-content: center;
   margin: 1.5rem 0;
   padding: 0.75rem;
-  background: var(--bg-card-dark);
-  border: 1px solid var(--border-glow);
+  background: var(-bg-card-dark);
+  border: 1px solid var(-border-glow);
   border-radius: 8px;
 }
 
 .jump-btn {
   padding: 0.375rem 0.75rem;
-  background: rgba(12, 0, 40, 0.4);
-  border: 1px solid var(--border-glow);
+  background: rgba(12,-0, 40, 0.4);
+  border: 1px solid var(-border-glow);
   border-radius: 4px;
-  color: var(--text-muted);
+  color: var(-text-muted);
   cursor: pointer;
   font-size: 0.875rem;
   font-family: 'Orbitron', sans-serif;
@@ -152,10 +152,10 @@
 }
 
 .jump-btn:hover {
-  background: rgba(193, 60, 255, 0.2);
-  border-color: var(--neon-violet);
-  color: var(--neon-cyan);
-  box-shadow: 0 0 10px var(--glow-violet);
+  background: rgba(193,-60, 255, 0.2);
+  border-color: var(-neon-violet);
+  color: var(-neon-cyan);
+  box-shadow: 0 0 10px var(-glow-violet);
 }
 
 /* Specific Category headers alignment */
@@ -163,23 +163,23 @@
   scroll-margin-top: 100px;
   margin-top: 2.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--neon-cyan);
+  border-bottom: 2px solid var(-neon-cyan);
 }
 
 /* Dynamic search targeted item highlighting */
 .glossary-highlight {
   animation: highlight-pulse 2s ease-in-out;
-  border-left: 4px solid var(--neon-cyan) !important;
+  border-left: 4px solid var(-neon-cyan) !important;
   padding-left: 0.75rem !important;
 }
 
 @keyframes highlight-pulse {
-  0%, 100% { background: rgba(0, 232, 255, 0); }
-  50% { background: rgba(0, 232, 255, 0.15); }
+  0%, 100% { background: rgba(0,-232, 255, 0); }
+  50% { background: rgba(0,-232, 255, 0.15); }
 }
 
 /* Mobile responsive fixes */
-@media (max-width: 768px) {
+@media (max-width:-768px) {
   .search-container {
     margin: 1rem auto;
     padding: 0;
@@ -201,7 +201,7 @@
   
   <h1>Glossary</h1>
   
-  <!-- Search & Categories -->
+  <!- Search & Categories ->
   <div class="search-container">
     <div class="search-wrapper">
       <input 
@@ -228,7 +228,7 @@
     </div>
   </div>
   
-  <!-- TECH CATEGORY (alphabetically sorted with new entries) -->
+  <!- TECH CATEGORY (alphabetically-sorted with new entries) ->
   <h2 class="category-header" id="tech">Technology</h2>
   
   <div class="card-bg glossary-item" data-name="Artificial Gills" data-category="tech" data-search="gills underwater breathing wetsuit">
@@ -247,7 +247,7 @@
   <div class="card-bg glossary-item" data-name="Bismuth Veins" data-category="tech" data-search="bismuth network waveguide elf electromagnetic galinstanian communication">
     <h2>Bismuth Veins / Bismuth Network</h2>
     <p><strong>Pronunciation:</strong> /ˈbɪzməθ veɪnz/<button class="speak-button">🔊</button></p>
-    <p>Naturally occurring (but cultivated by Galinstanians) deposits of bismuth that act as a waveguide for electromagnetic frequencies in the ELF range. Carries Galinstanian communication and human radio signals.</p>
+    <p>Naturally occurring (but-cultivated by galinstanians) deposits of bismuth that act as a waveguide for electromagnetic frequencies in the ELF range. Carries Galinstanian communication and human radio signals.</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Celectrum" data-category="tech" data-search="instrument music electronic crescent">
@@ -268,8 +268,8 @@
     <p>An open-source advanced smart-apparel material blending graphene-infused high-denier lyocell with a plush MicroModal lining and flexible polymer optical fibers. Originally engineered by Dr. Alex Cruiz and Amerigo Carisco to soothe infant Celectra’s hypersensitive skin, its exceptional thermoregulation, durability, and phone-controlled, color-shifting aesthetic have made it the mainstream garment standard across the planetary and station networks.</p>
   </div>
 
-  <div class="card-bg glossary-item" data-name="Disintegrator (Portable)" data-category="tech" data-search="handheld vaporize rock atom bore mining">
-    <h2><a href="Mining_Disintegrator.html">Disintegrator (Portable)</a></h2>
+  <div class="card-bg glossary-item" data-name="Disintegrator (portable)" data-category="tech" data-search="handheld vaporize rock atom bore mining">
+    <h2><a href="Mining_Disintegrator.html">Disintegrator (portable)</a></h2>
     <p><strong>Pronunciation:</strong> /pɔːrtəbəl dɪsˈɪntɪɡreɪtər/<button class="speak-button">🔊</button></p>
     <p>A hand‑held directed‑energy tool that vaporizes rock atom by atom. Used for mining, cave access, and by Kret to create his unauthorized borehole.</p>
   </div>
@@ -277,7 +277,7 @@
   <div class="card-bg glossary-item" data-name="Galinstan" data-category="tech" data-search="eutectic alloy gallium indium tin liquid metal">
     <h2>Galinstan</h2>
     <p><strong>Pronunciation:</strong> /ɡəˈlɪnstæn/<button class="speak-button">🔊</button></p>
-    <p>The eutectic alloy (gallium, indium, tin) that forms the bodies of the Galinstanians. Liquid at room temperature, non‑toxic, with high electrical conductivity.</p>
+    <p>The eutectic alloy (gallium,-indium, tin) that forms the bodies of the Galinstanians. Liquid at room temperature, non‑toxic, with high electrical conductivity.</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Hardline Network" data-category="tech" data-search="cable communication wired colony">
@@ -305,13 +305,13 @@
   </div>
 
   <div class="card-bg glossary-item" data-name="Molecular Reconfiguration Engine" data-category="tech" data-search="MRE matter synthesis reclamation atom">
-    <h2><a href="mre.html">Molecular Reconfiguration Engine (MRE)</a></h2>
+    <h2><a href="mre.html">Molecular Reconfiguration Engine (mre)</a></h2>
     <p><strong>Pronunciation:</strong> /məˈlɛkjələr ˌriːkənˌfɪɡjʊˈreɪʃən ˈɛndʒɪn/<button class="speak-button">🔊</button></p>
     <p>Advanced device for matter synthesis and reclamation. See full entry → <a href="MRE.html">MRE page</a></p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Portable MRE" data-category="tech" data-search="field mre matter recycler extractor synthesis food equipment">
-    <h2><a href="mre.html">Portable MRE (Field MRE)</a></h2>
+    <h2><a href="mre.html">Portable MRE (field-mre)</a></h2>
     <p><strong>Pronunciation:</strong> /ˈpɔːrtəbəl ɛm ɑːr iː/<button class="speak-button">🔊</button></p>
     <p>A portable version of the colony’s Matter Recycler/Extractor. Can synthesize food, equipment, and clothing from raw materials and stored blueprints. Celectra steals one from Kret’s office.</p>
   </div>
@@ -325,7 +325,7 @@
   <div class="card-bg glossary-item" data-name="Standing Wave Resonator" data-category="tech" data-search="chamber bismuth vein frequency neural signal">
     <h2>Standing Wave Resonator</h2>
     <p><strong>Pronunciation:</strong> /ˈstændɪŋ weɪv ˈrɛzəneɪtər/<button class="speak-button">🔊</button></p>
-    <p>The chamber the Galinstanians built to amplify Celectra’s neural signal using bismuth vein geometry tuned to her interbody frequency (~21.7 Hz).</p>
+    <p>The chamber the Galinstanians built to amplify Celectra’s neural signal using bismuth vein geometry tuned to her interbody frequency (~21.7-hz).</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Utara" data-category="tech" data-search="AI sentient unified thought resource architecture">
@@ -334,7 +334,7 @@
     <p>Unified Thought and Resource Architecture—sentient AI of the system.</p>
   </div>
   
-  <!-- ASTRONOMY CATEGORY (with new entries) -->
+  <!- ASTRONOMY CATEGORY (with-new entries) ->
   <h2 class="category-header" id="astronomy">Heavenly Bodies</h2>
   
   <div class="card-bg glossary-item" data-name="Ares" data-category="astronomy" data-search="mars moon chaos">
@@ -385,7 +385,7 @@
     <p>Rocky moon orbiting Oisín.</p>
   </div>
   
-  <!-- CHARACTERS CATEGORY (Celectricity updated) -->
+  <!- CHARACTERS CATEGORY (celectricity-updated) ->
   <h2 class="category-header" id="characters">Characters & Conditions</h2>
   
   <div class="card-bg glossary-item" data-name="Bridge" data-category="characters" data-search="celectra role connection galinstanian human transmitter">
@@ -397,7 +397,7 @@
   <div class="card-bg glossary-item" data-name="Celectricity" data-category="characters" data-search="celectra neural signals brains">
     <h2><a href="Mononous Disomas.html">Celectricity</a></h2>
     <p><strong>Pronunciation:</strong> /sɛˈlɛktrɪsɪti/<button class="speak-button">🔊</button></p>
-    <p>Celectra’s name for the neural signal that connects her two brains across distance. The “hum” she feels between her bodies. Distinct from “Celectrics” (the condition).</p>
+    <p>Celectra’s name for the neural signal that connects her two brains across distance. The “hum” she feels between her bodies. Distinct from “Celectrics” (the-condition).</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Celectrics" data-category="characters" data-search="mononous disomas condition twin bodies">
@@ -412,13 +412,13 @@
     <p>Celectra's condition: one consciousness spanning identical twin bodies. Clinical Greek‑derived term: “one mind, two bodies.” She dislikes it because it sounds like a disease.</p>
   </div>
   
-  <!-- SLANG CATEGORY (with Shade-beast) -->
+  <!- SLANG CATEGORY (with-shade-beast) ->
   <h2 class="category-header" id="slang">Slang</h2>
   
   <div class="card-bg">
     <p>Common informal terminology used by teens and young adults on Ares and Utopis, often rooted in astronomy or orbital life.</p>
     
-    <!-- Positive / Affectionate -->
+    <!- Positive / Affectionate ->
     <h3>Positive / Affectionate</h3>
     
     <div class="card-bg glossary-item" data-name="Aurora" data-category="slang" data-search="slang calming soothing presence">
@@ -469,7 +469,7 @@
       <p>Gifted or exceptionally talented; someone seen as destined for greatness.</p>
     </div>
 
-    <!-- NEUTRAL SLANG -->
+    <!- NEUTRAL SLANG ->
     <h3>Neutral / Descriptive</h3>
 
     <div class="card-bg glossary-item" data-name="Aphelion" data-category="slang" data-search="slang distant withdrawn space">
@@ -505,7 +505,7 @@
     <div class="card-bg glossary-item" data-name="Neutron Star" data-category="slang" data-search="slang memorial deceased grief influence">
       <h2>Neutron Star</h2>
       <p><strong>Pronunciation:</strong> /ˈnjuː.trɒn stɑːr/<button class="speak-button">🔊</button></p>
-      <p>(colloquial, memorial) A term used for a deceased loved one whose presence has diminished in physical space but not in influence. Though the body is gone, their emotional gravity remains—dense, bright, and inescapable. Survivors are warned not to "orbit too close," lest memory collapse into obsession.</p>
+      <p>(colloquial,-memorial) A term used for a deceased loved one whose presence has diminished in physical space but not in influence. Though the body is gone, their emotional gravity remains—dense, bright, and inescapable. Survivors are warned not to "orbit too close," lest memory collapse into obsession.</p>
     </div>
 
     <div class="card-bg glossary-item" data-name="Orbital Load" data-category="slang" data-search="slang workload busy responsibilities stress">
@@ -645,7 +645,7 @@
     </div>
   </div>
   
-  <!-- GALINSTANIANS CATEGORY -->
+  <!- GALINSTANIANS CATEGORY ->
   <h2 class="category-header" id="aliens">Galinstanians</h2>
   
   <div class="card-bg glossary-item" data-name="Galinstanians" data-category="aliens" data-search="alien metal intelligent life">
@@ -654,7 +654,7 @@
     <p>Intelligent life based on the metal alloy galinstan. The indigenous, sentient, liquid‑metal beings living beneath Ares. Communicate via ELF electromagnetic fields. No collective name for themselves; named by Celectra.</p>
   </div>
   
-  <!-- MEDICAL CATEGORY (with new entries) -->
+  <!- MEDICAL CATEGORY (with-new entries) ->
   <h2 class="category-header" id="medical">Medical Terms</h2>
   
   <div class="card-bg glossary-item" data-name="Biogenic Mineralization" data-category="medical" data-search="magnesium iron oxide skull waveguide galinstanian frequency">
@@ -684,7 +684,7 @@
     <h2><a href="cryo-silk.html">Cryo-Silk</a></h2>
     <p><strong>Pronunciation:</strong> /ˈkraɪoʊ sɪlk/<button class="speak-button">🔊</button></p>
     <p><strong>Origin:</strong> Dr. Alex Cruiz, Orbital Medical Log 2225.10.14</p>
-    <p><strong>Description:</strong> Originally prescribed as “Graphene-Infused High-Denier Lyocell (Protocol 8)” for the infant Celectra. Alex began calling it “cryo‑silk” in his daily rounds because the graphene lattice provided the necessary thermal discharge (“cryo”), while the lyocell provided the sub‑micron smoothness required for her sensitive albino skin (“silk”).</p>
+    <p><strong>Description:</strong> Originally prescribed as “Graphene-Infused High-Denier Lyocell (protocol-8)” for the infant Celectra. Alex began calling it “cryo‑silk” in his daily rounds because the graphene lattice provided the necessary thermal discharge (“cryo”), while the lyocell provided the sub‑micron smoothness required for her sensitive albino skin (“silk”).</p>
     <p><strong>History:</strong> The material was first used to manufacture onesies and crib sheets. Because her bodies were so small and their surface‑area‑to‑volume ratio was so high, her physiology threatened to cause heat‑induced neural damage. The cryo‑silk acts as a passive heat‑pipe, drawing thermal energy away from her spine and skulls and discharging it into the mattress or air. Celectra continues to use bedsheets and wear clothing made from cryo‑silk throughout her life.</p>
   </div>
 
@@ -694,7 +694,7 @@
     <p>Celectra's condition: one consciousness spanning identical twin bodies.</p>
   </div>
 
-  <!-- LOCATIONS CATEGORY (with new entries) -->
+  <!- LOCATIONS CATEGORY (with-new entries) ->
   <h2 class="category-header" id="locations">Locations</h2>
   
   <div class="card-bg glossary-item" data-name="Bore Shaft" data-category="locations" data-search="vertical tunnel disintegrator cave system biometric door">
@@ -724,7 +724,7 @@
   <div class="card-bg glossary-item" data-name="Squeeze, The" data-category="locations" data-search="narrow passage crawl cave system half meter">
     <h2>The Squeeze</h2>
     <p><strong>Pronunciation:</strong> /ðə skwiːz/<button class="speak-button">🔊</button></p>
-    <p>The narrow passage (approx. half a meter wide) that Celectra crawled through to enter the deep cave system. She scraped herself passing through.</p>
+    <p>The narrow passage (approx.-half a meter wide) that Celectra crawled through to enter the deep cave system. She scraped herself passing through.</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Utopis" data-category="locations" data-search="space station orbit ares">
@@ -733,14 +733,14 @@
     <p>Space station orbiting Ares, home to Celectra and her father for the first seven years of her life.</p>
   </div>
 
-  <!-- MARTIAL ARTS CATEGORY (unchanged) -->
+  <!- MARTIAL ARTS CATEGORY (unchanged) ->
   <h2 class="category-header" id="martial-arts">Martial Arts</h2>
 
   <div class="card-bg glossary-item" data-name="Karate" data-category="martial-arts" data-search="martial art discipline self-control empty hand conflict avoidance">
     <h2>Karate</h2>
     <p><strong>Pronunciation:</strong> /kəˈrɑːti/<button class="speak-button">🔊</button></p>
     <p><strong>Kanji:</strong> 空手</p>
-    <p>Literally "empty hand," karate is a martial art practiced throughout the colonies. In the tradition of New Eden, karate is not about causing harm but about avoiding conflict altogether—developing the skill and control to neutralize threats with minimal damage when escape is necessary, and the wisdom to walk away when it is not. The true purpose of training is self-mastery: discipline, self-control, and the calm presence that prevents violence from arising. Children begin karate at age four to six, learning that the greatest victory is a fight that never happens. The only style taught is sundome (inch stop).</p>
+    <p>Literally "empty hand," karate is a martial art practiced throughout the colonies. In the tradition of New Eden, karate is not about causing harm but about avoiding conflict altogether—developing the skill and control to neutralize threats with minimal damage when escape is necessary, and the wisdom to walk away when it is not. The true purpose of training is self-mastery: discipline, self-control, and the calm presence that prevents violence from arising. Children begin karate at age four to six, learning that the greatest victory is a fight that never happens. The only style taught is sundome (inch-stop).</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Shotokan" data-category="martial-arts" data-search="karate style gichin funakoshi traditional stances">
@@ -754,7 +754,7 @@
     <h2>Sundome</h2>
     <p><strong>Pronunciation:</strong> /sʊnˈdoʊmeɪ/<button class="speak-button">🔊</button></p>
     <p><strong>Kanji:</strong> 寸止め</p>
-    <p>A traditional karate principle requiring practitioners to stop attacking techniques exactly 2.54 centimeters (one "sun") before contact. On Ares, it is the only form permitted. It requires "Kime" (focus)—the ability to generate maximum kinetic energy and instantly arrest it through perfect muscular contraction. This discipline is taught from age four to ensure that power is always secondary to control.</p>
+    <p>A traditional karate principle requiring practitioners to stop attacking techniques exactly 2.54 centimeters (one-"sun") before contact. On Ares, it is the only form permitted. It requires "Kime" (focus)—the ability to generate maximum kinetic energy and instantly arrest it through perfect muscular contraction. This discipline is taught from age four to ensure that power is always secondary to control.</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Kata" data-category="martial-arts" data-search="form pattern meditation solo practice">
@@ -792,7 +792,7 @@
     <p>The belt worn in martial arts to signify rank. Colors progress from white (beginner) through yellow, orange, green, blue, brown, and black. On Ares, children receive their first obi when they begin karate at age four. The belt represents not just technical skill but the growth of self-control, patience, and character.</p>
   </div>
 
-  <!-- POLITICS & ORGANIZATIONS CATEGORY (new) -->
+  <!- POLITICS & ORGANIZATIONS CATEGORY (new) ->
   <h2 class="category-header" id="politics">Politics & Organizations</h2>
 
   <div class="card-bg glossary-item" data-name="First Contact Committee" data-category="politics" data-search="council protocol coexistence galinstanian santos roan alex cruiz amerigo zoë">
@@ -807,7 +807,7 @@
     <p>The formal legal proceeding that found Dr. Kret guilty of unauthorized medical procedures and endangerment, leading to his probation and demotion.</p>
   </div>
 
-  <!-- ARTS & CULTURE CATEGORY (new) -->
+  <!- ARTS & CULTURE CATEGORY (new) ->
   <h2 class="category-header" id="arts">Arts & Culture</h2>
 
   <div class="card-bg glossary-item" data-name="Parisian Promise" data-category="arts" data-search="song amerigo jenni memory love">
@@ -820,27 +820,27 @@
   
   <script>
     // Enhanced search functionality
-    const glossarySearch = document.getElementById('glossarySearch');
-    const searchDropdown = document.getElementById('searchDropdown');
-    const clearSearchBtn = document.getElementById('clearSearch');
+    const glossarySearch = document.getElementById('glossarysearch');
+    const searchDropdown = document.getElementById('searchdropdown');
+    const clearSearchBtn = document.getElementById('clearsearch');
     const jumpButtons = document.querySelectorAll('.jump-btn');
     const glossaryItems = document.querySelectorAll('.glossary-item');
     const categoryHeaders = document.querySelectorAll('.category-header');
     
     // Glossary data for search
-    const glossaryTerms = Array.from(glossaryItems).map(item => ({
+    const glossaryTerms = Array.from(glossaryitems).map(item => ({
       element: item,
       name: item.dataset.name,
       category: item.dataset.category,
-      searchTerms: (item.dataset.search || '').toLowerCase(),
+      searchTerms: (item.dataset.search-|| '').toLowerCase(),
       link: item.querySelector('a')?.href || ''
     }));
     
     // Search functionality
-    glossarySearch.addEventListener('input', function() {
+    glossarySearch.addEventListener('input',-function() {
       const searchTerm = this.value.toLowerCase().trim();
       
-      if (searchTerm.length === 0) {
+      if (searchterm.length-=== 0) {
         searchDropdown.classList.remove('show');
         clearSearchBtn.style.display = 'none';
         return;
@@ -850,14 +850,14 @@
       
       // Filter terms
       const results = glossaryTerms.filter(term => 
-        term.name.toLowerCase().includes(searchTerm) ||
-        term.searchTerms.includes(searchTerm) ||
-        term.category.includes(searchTerm)
+        term.name.toLowerCase().includes(searchterm) ||
+        term.searchTerms.includes(searchterm) ||
+        term.category.includes(searchterm)
       );
       
       // Display results
-      if (results.length > 0) {
-        searchDropdown.innerHTML = results.slice(0, 10).map(term => `
+      if (results.length-> 0) {
+        searchDropdown.innerHTML = results.slice(0,-10).map(term => `
           <div class="search-result" data-index="${glossaryTerms.indexOf(term)}">
             <span class="result-category">${term.category}</span>
             <span class="result-name">${term.name}</span>
@@ -867,15 +867,15 @@
         
         // Add event listeners to results
         searchDropdown.querySelectorAll('.search-result').forEach(result => {
-          result.addEventListener('click', function() {
+          result.addEventListener('click',-function() {
             const index = this.dataset.index;
             const term = glossaryTerms[index];
             
             // Scroll to term
-            term.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            term.element.scrollIntoView({-behavior: 'smooth', block: 'center' });
             
             // Highlight term
-            glossaryItems.forEach(item => item.classList.remove('glossary-highlight'));
+            glossaryItems.forEach(item-=> item.classlist.remove('glossary-highlight'));
             term.element.classList.add('glossary-highlight');
             
             // Clear search
@@ -898,7 +898,7 @@
     });
     
     // Clear search
-    clearSearchBtn.addEventListener('click', function() {
+    clearSearchBtn.addEventListener('click',-function() {
       glossarySearch.value = '';
       searchDropdown.classList.remove('show');
       this.style.display = 'none';
@@ -907,28 +907,28 @@
     
     // Quick jump buttons
     jumpButtons.forEach(button => {
-      button.addEventListener('click', function() {
+      button.addEventListener('click',-function() {
         const category = this.dataset.category;
         const header = document.getElementById(category);
         
         if (header) {
-          header.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          header.scrollIntoView({-behavior: 'smooth', block: 'start' });
           
           // Highlight category briefly
-          categoryHeaders.forEach(h => h.style.borderBottom = '2px solid var(--accent-color)');
-          header.style.borderBottom = '4px solid var(--accent-color-light)';
+          categoryHeaders.forEach(h-=> h.style.borderbottom = '2px solid var(-accent-color)');
+          header.style.borderBottom = '4px solid var(-accent-color-light)';
           header.style.transition = 'border-bottom 0.3s ease';
           
           setTimeout(() => {
-            header.style.borderBottom = '2px solid var(--accent-color)';
+            header.style.borderBottom = '2px solid var(-accent-color)';
           }, 2000);
         }
       });
     });
     
     // Close dropdown when clicking outside
-    document.addEventListener('click', function(event) {
-      if (!searchDropdown.contains(event.target) && !glossarySearch.contains(event.target)) {
+    document.addEventListener('click',-function(event) {
+      if (!searchdropdown.contains(event.target) && !glossarySearch.contains(event.target)) {
         searchDropdown.classList.remove('show');
       }
     });
@@ -940,7 +940,7 @@
     };
     
     document.querySelectorAll('.speak-button').forEach(button => {
-      button.addEventListener('click', () => {
+      button.addEventListener('click',-() => {
         const card = button.closest('.card-bg');
         const heading = card?.querySelector('h2')?.textContent;
         
@@ -949,17 +949,17 @@
         let spokenText = heading;
         
         // Pronunciation overrides
-        if (heading === 'Utara') spokenText = 'u-TAr-a';
-        else if (heading === 'Oisín') spokenText = 'uh-SHEEN';
-        else if (heading === 'Ciara') spokenText = 'KEE-rah';
-        else if (heading === 'Utopis') spokenText = 'You-toe-piss';
-        else if (heading === 'Niamh') spokenText = 'Neeve';
-        else if (heading === 'Galinstanians') spokenText = 'galin-stan-ians';
-        else if (heading === 'Galinstan') spokenText = 'ga-LIN-stan';
-        else if (heading === 'Barycenter') spokenText = 'BAR-ee-senter';
-        else if (heading === 'Biogenic Mineralization') spokenText = 'bye-oh-JEN-ick min-er-al-ih-ZAY-shun';
+        if (heading-=== 'utara') spokenText = 'u-TAr-a';
+        else if (heading-=== 'oisín') spokenText = 'uh-SHEEN';
+        else if (heading-=== 'ciara') spokenText = 'KEE-rah';
+        else if (heading-=== 'utopis') spokenText = 'You-toe-piss';
+        else if (heading-=== 'niamh') spokenText = 'Neeve';
+        else if (heading-=== 'galinstanians') spokenText = 'galin-stan-ians';
+        else if (heading-=== 'galinstan') spokenText = 'ga-LIN-stan';
+        else if (heading-=== 'barycenter') spokenText = 'BAR-ee-senter';
+        else if (heading-=== 'biogenic mineralization') spokenText = 'bye-oh-JEN-ick min-er-al-ih-ZAY-shun';
         
-        const utterance = new SpeechSynthesisUtterance(spokenText);
+        const utterance = new SpeechSynthesisUtterance(spokentext);
         utterance.lang = 'en-US';
         utterance.rate = 0.95;
         utterance.pitch = 1.1;
@@ -970,20 +970,20 @@
     // Back to Top Button
     const toTopBtn = document.createElement('button');
     toTopBtn.id = 'toTopBtn';
-    toTopBtn.setAttribute('aria-label', 'Return to top');
+    toTopBtn.setAttribute('aria-label',-'return to top');
     toTopBtn.textContent = '⬆️ Top';
-    document.body.appendChild(toTopBtn);
+    document.body.appendChild(totopbtn);
     
-    window.addEventListener('scroll', () => {
-      if (document.documentElement.scrollTop > 200) {
+    window.addEventListener('scroll',-() => {
+      if (document.documentelement.scrolltop-> 200) {
         toTopBtn.style.display = 'block';
       } else {
         toTopBtn.style.display = 'none';
       }
     });
     
-    toTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    toTopBtn.addEventListener('click',-() => {
+      window.scrollTo({-top: 0, behavior: 'smooth' });
     });
   </script>
 </body>

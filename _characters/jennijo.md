@@ -1,11 +1,11 @@
----
+-
 layout: character
 title: Jenni Jo Carisco
 portrait: "/assets/images/jennijo-book5.webp"
 portrait-book3: "/assets/images/jennijo-book3.webp"
 portrait-book4: "/assets/images/jennijo-book4.webp"
 portrait-book5: "/assets/images/jennijo-book5.webp"
-affiliation: Carisco Family; Listener Corps (Junior); Resonance Stewardship Program
+affiliation: Carisco Family; Listener Corps (junior); Resonance Stewardship Program
 status: Alive
 birthday: November 15, 2247
 birthplace: New Eden, Ares
@@ -16,7 +16,7 @@ book4_age: "7 years old"
 book5_age: "14 years old"
 book3_title: "Birth and Early Bonding"
 book3_arc: >
-  Jenni is born during the events of Book 3. She is named after her biological grandmother (Jinni) and Amerigo's middle name (Giorgio). Even as an infant, she responds strongly to Celectra's EM field and to the presence of Galinstanians.
+  Jenni is born during the events of Book 3. She is named after her biological grandmother (jinni) and Amerigo's middle name (giorgio). Even as an infant, she responds strongly to Celectra's EM field and to the presence of Galinstanians.
 
 book4_title: "The Four Rivers Resonance"
 book4_arc: >
@@ -27,7 +27,7 @@ book4_arc: >
 book5_title: "Stewardship and Emotional Resonance"
 book5_arc: >
   At fourteen, Jenni becomes a junior member of the Resonance Stewardship Program. She specializes in emotional-harmonic stabilization and works closely with Ripple and Xara. Her arc centers on learning to trust her instincts while developing the discipline needed for planetary stewardship.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -73,11 +73,11 @@ Her weaknesses include:
 - **Chime, Stan, Harbor** — Galinstanian elders she trusts implicitly
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Jenni's arc centers on emotional resonance — understanding what others feel, and learning how to stabilize harmonic fields through empathy. She becomes one of the first children to work formally with Galinstanians in the Stewardship Program, representing a generation for whom integration is not a challenge to overcome but a reality to nurture.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

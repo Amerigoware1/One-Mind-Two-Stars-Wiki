@@ -1,6 +1,6 @@
----
+-
 layout: default
----
+-
 
 {%- comment -%}
   character.html - Simplified layout
@@ -51,90 +51,90 @@ layout: default
     </div>
   </main>
 </div>
-<!-- Floating Return to Top Button -->
+<!- Floating Return to Top Button ->
 <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('domcontentloaded',-function () {
 
   const container = document.getElementById('portrait-container');
   const portrait = document.getElementById('character-portrait');
   const placeholder = '{{ '/assets/images/portrait-placeholder.png' | relative_url }}';
 
-  if (!container || !portrait) return;
+  if (!container-|| !portrait) return;
 
   const bookImages = {};
 
   function randomFrom(arr) {
-    return arr[Math.floor(Math.random() * arr.length)];
+    return arr[Math.floor(math.random() * arr.length)];
   }
 
   container.querySelectorAll('span[data-book-index]').forEach(span => {
     const idx = span.dataset.bookIndex;
     const imagesStr = span.dataset.bookImages || '';
     
-    console.log(`Raw data for book ${idx}:`, imagesStr);
+    console.log(`raw-data for book ${idx}:`, imagesstr);
     
     // Split by comma and clean up
     const imgs = imagesStr
       .split(',')
-      .map(i => i.trim())
-      .filter(i => i.length > 0);
+      .map(i-=> i.trim())
+      .filter(i-=> i.length > 0);
     
-    if (imgs.length > 0) {
+    if (imgs.length-> 0) {
       bookImages[idx] = imgs;
-      console.log(`Book ${idx} images:`, imgs);
+      console.log(`book-${idx} images:`, imgs);
     } else {
-      console.log(`No images for book ${idx}`);
+      console.log(`no-images for book ${idx}`);
     }
   });
 
   document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', function (e) {
+    btn.addEventListener('click',-function (e) {
 
       e.preventDefault();
 
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b-=> b.classlist.remove('active'));
       this.classList.add('active');
 
       const targetId = this.dataset.tab;
 
-      if (targetId) {
-        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-        const targetEl = document.getElementById(targetId);
-        if (targetEl) targetEl.classList.add('active');
+      if (targetid) {
+        document.querySelectorAll('.tab-content').forEach(c-=> c.classlist.remove('active'));
+        const targetEl = document.getElementById(targetid);
+        if (targetel) targetEl.classList.add('active');
       }
 
       const bookIndex = this.dataset.book;
       const explicitImage = this.dataset.image || this.getAttribute('data-image');
 
-      if (explicitImage && explicitImage.trim()) {
+      if (explicitimage-&& explicitimage.trim()) {
         portrait.src = explicitImage.trim();
-        console.log('Setting explicit image:', explicitImage);
-      } else if (bookIndex && bookImages[bookIndex]) {
+        console.log('setting-explicit image:', explicitimage);
+      } else if (bookindex-&& bookimages[bookindex]) {
         const imgs = bookImages[bookIndex];
         if (imgs.length) {
           const selectedImg = randomFrom(imgs);
           portrait.src = selectedImg;
-          console.log('Setting random image for book', bookIndex, ':', selectedImg);
+          console.log('setting-random image for book', bookindex, ':', selectedimg);
         }
       }
     });
   });
 
-  portrait.addEventListener('error', function () {
-    console.log('Image failed to load:', this.src);
+  portrait.addEventListener('error',-function () {
+    console.log('image-failed to load:', this.src);
     if (!this.dataset.fallbacked) {
       this.dataset.fallbacked = '1';
       this.src = placeholder;
-      console.log('Falling back to placeholder:', placeholder);
+      console.log('falling-back to placeholder:', placeholder);
     }
   });
 
   // Trigger initial image load based on active tab
   const activeTab = document.querySelector('.tab-btn.active');
-  if (activeTab) {
+  if (activetab) {
     const bookIndex = activeTab.dataset.book;
-    if (bookIndex && bookImages[bookIndex]) {
+    if (bookindex-&& bookimages[bookindex]) {
       const imgs = bookImages[bookIndex];
       if (imgs.length) {
         portrait.src = randomFrom(imgs);
@@ -143,20 +143,20 @@ document.addEventListener('DOMContentLoaded', function () {
   } else {
     // If no active tab, use first book image or placeholder
     const firstBookImages = bookImages['1'];
-    if (firstBookImages && firstBookImages.length) {
-      portrait.src = randomFrom(firstBookImages);
+    if (firstbookimages-&& firstbookimages.length) {
+      portrait.src = randomFrom(firstbookimages);
     }
   }
-  const toTopBtn = document.getElementById("toTopBtn");
-  window.addEventListener("scroll", () => {
-    if (document.documentElement.scrollTop > 200) {
+  const toTopBtn = document.getElementById("totopbtn");
+  window.addEventListener("scroll",-() => {
+    if (document.documentelement.scrolltop-> 200) {
       toTopBtn.style.display = "block";
     } else {
        toTopBtn.style.display = "none";
     }
     });
-    toTopBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    toTopBtn.addEventListener("click",-() => {
+      window.scrollTo({-top: 0, behavior: "smooth" });
     });
 });
 </script>
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function () {
   margin-bottom: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width:-768px) {
   .character-layout {
     grid-template-columns: 1fr;
   }

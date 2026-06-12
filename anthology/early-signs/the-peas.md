@@ -1,10 +1,10 @@
----
+-
 layout: default
----
+-
 
 <div class="top-banner">
-  <a href="../../index.html" class="home-button">🏠 Home</a>
-  <a href="../../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
+  <a href="././index.html" class="home-button">🏠 Home</a>
+  <a href="././anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
 
 # The Peas
@@ -46,5 +46,5 @@ He filed it away – in the same mental folder where he’d already placed the s
 But he saved the peas for another day.
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="../anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>

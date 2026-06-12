@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Terry Fairchild
 portrait: "/assets/images/fairchild-book1.webp"
@@ -18,7 +18,7 @@ book4_age: "71.6"
 book5_age: "78.6"
 book1_title: "The Caregiver in the Storm"
 book1_arc: >
-  In 2232, Terry serves as Dr. Kret's assigned nurse during his unethical research on seven-year-old Celectra's mononous disoma condition. They quickly recognize that Celectra is one person across two bodies after witnessing her terror at separation, and they provide crucial emotional support: bringing breakfast in bed, playing Neutralize (and losing three consecutive matches), and offering quiet reassurance.
+  In 2232, Terry serves as Dr. Kret's assigned nurse during his unethical research on seven-year-old Celectra's mononous disoma condition. They quickly recognize that Celectra is one person across two bodies after witnessing her terror at separation, and they provide crucial emotional support: bringing breakfast in bed, playing Neutralize (and-losing three consecutive matches), and offering quiet reassurance.
   During the catastrophic separation experiment, Terry's composure cracks as they scream "She's DEAD!" and demand the chamber be opened. They perform CPR on Celeste's body while Dr. Kret checks Electra, demonstrating medical skill under extreme pressure. Their testimony, combined with Utara's records, becomes central to Kret's conviction.
   As they tell Amerigo Carisco: "I don't believe he intended to harm her, but he showed complete disregard for her safety." This distinction between malice and reckless arrogance helps shape colony medical ethics reforms.
 
@@ -44,7 +44,7 @@ book5_arc: >
   At 78, Terry has transitioned into an emeritus advisory role, but their influence remains foundational. The Fairchild Protocols for trauma-informed care are standard across New Eden Medical, and their mentorship has shaped generations of colony physicians.
   When the twins uncover the trapped Galinstanian cluster, Terry's earlier advocacy for acoustic communication methods helps validate the rescue approach. They attend the Council testimony as a respected elder, nodding in approval as Xara argues: "Utara's limits are what allowed us to find the signal. If the system had auto-flagged us as trespassers, the cluster would be dead. Privacy enabled the rescue."
   Terry's arc culminates not in dramatic action, but in the quiet satisfaction of knowing that the systems they helped build continue to protect the vulnerable—long after they've stepped back from daily practice.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -84,15 +84,15 @@ Their weaknesses include:
 - **Celectra Carisco** — developed a protective, almost parental relationship; provided normalcy through breakfast rituals and games during trauma; Celectra remembers them as "the one who saw me as a person"
 - **Dr. Douglas Kret** — professional relationship marked by growing moral revulsion; followed orders until crossing an ethical line, then became Kret's most effective accuser
 - **Amerigo Carisco** — earned his trust through honest assessment: "I know you're not to blame, Terry"; their testimony helped Amerigo understand what happened to his daughter
-- **Utara (AI)** — worked in parallel during the separation emergency; both recognized the crisis and triggered override protocols
+- **Utara (ai)** — worked in parallel during the separation emergency; both recognized the crisis and triggered override protocols
 - **New Eden Medical Community** — respected senior figure who now chairs ethics review committees and trains new staff on boundary maintenance
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Terry's arc is about the weight of professional duty when it conflicts with moral conviction. They represent the quiet courage of those who work within flawed systems but refuse to let those systems define their ethics. Their story is not about grand heroics, but about the cumulative impact of small acts of compassion—and the pivotal moment when silence is no longer an option.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

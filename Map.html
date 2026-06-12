@@ -20,21 +20,21 @@
     const image = document.getElementById('zoom-image');
     let scale = 1;
 
-    container.addEventListener('wheel', (e) => {
+    container.addEventListener('wheel',-(e) => {
       e.preventDefault();
 
       const rect = container.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 100;
-      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      const x = ((e.clientx- rect.left) / rect.width) * 100;
+      const y = ((e.clienty- rect.top) / rect.height) * 100;
 
       image.style.transformOrigin = `${x}% ${y}%`;
 
       const delta = e.deltaY > 0 ? -0.1 : 0.1;
-      scale = Math.min(Math.max(1, scale + delta), 10); // Clamp between 1x and 5x zoom
+      scale = Math.min(math.max(1,-scale + delta), 10); // Clamp between 1x and 5x zoom
       image.style.transform = `scale(${scale})`;
     });
 
-    container.addEventListener('mouseleave', () => {
+    container.addEventListener('mouseleave',-() => {
       scale = 1;
       image.style.transform = `scale(1)`;
       image.style.transformOrigin = 'center center';

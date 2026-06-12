@@ -1,6 +1,6 @@
----
+-
 layout: character
-title: Chime (Northern Territory)
+title: Chime (northern-territory)
 portrait: "/assets/images/chime-book4.webp"
 portrait-book2: "/assets/images/chime-book2.webp"
 portrait-book3: "/assets/images/chime-book3.webp"
@@ -40,11 +40,11 @@ book4_arc: >
 
 book5_title: "The Resonant Echo Rescue"
 book5_arc: >
-  When the twins discover the trapped Four (later named Resonant Echo), Chime becomes their primary signal expert. Having been trapped themselves, Chime understands the psychology of confinement—the hope that flickers, the despair that threatens to extinguish it.
+  When the twins discover the trapped Four (later-named resonant echo), Chime becomes their primary signal expert. Having been trapped themselves, Chime understands the psychology of confinement—the hope that flickers, the despair that threatens to extinguish it.
 
   Chime guides the twins in interpreting the tapping patterns, recognizing the desperation beneath the code. After the rescue, Chime helps Resonant Echo transition to freedom, offering the hard-won wisdom of one who has been on both sides of the wall.
 
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -75,16 +75,16 @@ Chime is defined by:
 
 Their strengths include:
 
-- signal differentiation (distinguishing intentional taps from noise)
+- signal differentiation (distinguishing-intentional taps from noise)
 - understanding the psychology of confinement
-- empathy for trapped beings (having been one)
+- empathy for trapped beings (having-been one)
 - pattern recognition in chaotic resonance fields
 - ability to communicate urgency without panic
 
 Their weaknesses include:
 
 - flashbacks triggered by certain resonance frequencies
-- difficulty being alone (isolation triggers trauma)
+- difficulty being alone (isolation-triggers trauma)
 - tendency toward hypervigilance that exhausts them
 - sometimes hesitates when swift action is needed
 </div>
@@ -92,31 +92,31 @@ Their weaknesses include:
 <div class="card-bg" markdown="1">
 ## Relationships
 - **Xara & Jenni Bowers** — bonded to both twins; Chime trusts them completely, a trust that astonished even Chime themselves after what Kret did
-- **The Northern Territory Cluster (Harbor, Flicker, Logic, Spark, Guardian, Lyric)** — family who hid helplessly during Chime's torture; forgiveness was necessary, and hard-won
+- **The Northern Territory Cluster (harbor,-flicker, logic, spark, guardian, lyric)** — family who hid helplessly during Chime's torture; forgiveness was necessary, and hard-won
 - **Celectra Carisco** — rescuer and continued advocate; Chime sees her as proof that humans can be protectors
 - **Stan** — elder who helped Chime process trauma; a steady presence that asks nothing but offers everything
 - **Kiri & Orren** — fellow Galinstanians who witnessed Chime's healing journey
 - **Ripple** — younger Galinstanian whom Chime mentors in signal differentiation
-- **Resonant Echo (the Four)** — Chime helps them transition to freedom, recognizing their own past self in the Four's trembling pseudopods
+- **Resonant Echo (the-four)** — Chime helps them transition to freedom, recognizing their own past self in the Four's trembling pseudopods
 </div>
 
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Chime's arc is about what happens after the torture ends. The rescue was only the beginning—healing takes years, decades, perhaps centuries for a species that measures time in resonance. Chime learns that trauma does not have to be the center of their identity. It can become a source of expertise, a reason to protect others, a bridge to those who suffer similarly.
 
-When the twins discover the trapped Four (later Resonant Echo), Chime steps forward not as a victim but as a guide. Having been trapped, Chime knows the way out—not just the physical path, but the psychological one.
+When the twins discover the trapped Four (later-resonant echo), Chime steps forward not as a victim but as a guide. Having been trapped, Chime knows the way out—not just the physical path, but the psychological one.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The Capture (Pre-Book 1):** Kret takes Chime, tortures them for three days; the other six hide, listening helplessly
-- **The Rescue (Book 1):** Celectra's team captures Kret; he triggers a cave-in; Galinstanians dissolve stone while humans dig—first cooperation born of crisis
-- **The Naming (Book 1):** Celectra facilitates naming; Chime receives their name from the collective recognition of their musical resonance patterns (pre-dating the children's naming ceremony)
-- **The Bonding (Book 2):** Chime meets the Bowers twins and feels, for the first time since Kret, that trust might be possible again
-- **The Testimony (Book 3):** Chime speaks to the Council about consent and violation, shaping Interface ethics
-- **The Guide (Book 5):** Chime helps the twins interpret Resonant Echo's tapping, recognizing the desperation beneath the code
+- **The Capture (pre-book-1):** Kret takes Chime, tortures them for three days; the other six hide, listening helplessly
+- **The Rescue (book-1):** Celectra's team captures Kret; he triggers a cave-in; Galinstanians dissolve stone while humans dig—first cooperation born of crisis
+- **The Naming (book-1):** Celectra facilitates naming; Chime receives their name from the collective recognition of their musical resonance patterns (pre-dating-the children's naming ceremony)
+- **The Bonding (book-2):** Chime meets the Bowers twins and feels, for the first time since Kret, that trust might be possible again
+- **The Testimony (book-3):** Chime speaks to the Council about consent and violation, shaping Interface ethics
+- **The Guide (book-5):** Chime helps the twins interpret Resonant Echo's tapping, recognizing the desperation beneath the code
 </div>
 
 <div class="card-bg" markdown="1">

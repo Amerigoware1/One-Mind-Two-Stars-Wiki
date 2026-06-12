@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Dr. Kenji Yamoto
 portrait: "/assets/images/yamoto-book1.webp"
@@ -30,27 +30,27 @@ book2_arc: >
 
 book3_title: "The Glockenspiel Validation"
 book3_arc: >
-  In late 2246, Yamoto plays a key role during Xan Carisco's demonstration of his acoustic communication system with Chime. When Xan's glockenspiel transmission reveals a variance in the Sector 4 water reclamation cycle (minus 0.3 percent efficiency) from the algae experiment, Yamoto jolts in recognition: "That's correct. But how…?"
+  In late 2246, Yamoto plays a key role during Xan Carisco's demonstration of his acoustic communication system with Chime. When Xan's glockenspiel transmission reveals a variance in the Sector 4 water reclamation cycle (minus-0.3 percent efficiency) from the algae experiment, Yamoto jolts in recognition: "That's correct. But how…?"
 
   This moment validates both Xan's method and the Galinstanians' ability to perceive environmental changes humans might miss. Yamoto becomes an advocate for integrating acoustic monitoring into environmental systems, recognizing that Galinstanian perception offers data no human sensor could capture. He votes in favor of Amerigo Carisco's succession to Chief Scientist, trusting his balanced approach to science and sustainability.
 
 book4_title: "The Four Rivers Pattern"
 book4_arc: >
-  In 2255, Yamoto's expertise proves crucial during the Four Rivers Resonance investigation. When anomalies are detected at Gihon (pump-cycle interference), Hiddekel (geothermal hum), and Euphrates (resonance reflections), Yamoto helps Celectra and Amerigo understand how human infrastructure is introducing phase noise into the bismuth network.
+  In 2255, Yamoto's expertise proves crucial during the Four Rivers Resonance investigation. When anomalies are detected at Gihon (pump-cycle-interference), Hiddekel (geothermal-hum), and Euphrates (resonance-reflections), Yamoto helps Celectra and Amerigo understand how human infrastructure is introducing phase noise into the bismuth network.
 
-  He advocates for the hybrid solution: tuning human systems (water pumps, geothermal regulators, structural dampeners) to match the bismuth network's natural resonant frequencies. His environmental engineering background helps design the support lattice that reinforces the resonance anchors while humans sync frequencies. During the Great Resonance, Yamoto monitors colony-wide water and infrastructure systems to ensure the harmonic activation doesn't destabilize critical distribution networks.
+  He advocates for the hybrid solution: tuning human systems (water-pumps, geothermal regulators, structural dampeners) to match the bismuth network's natural resonant frequencies. His environmental engineering background helps design the support lattice that reinforces the resonance anchors while humans sync frequencies. During the Great Resonance, Yamoto monitors colony-wide water and infrastructure systems to ensure the harmonic activation doesn't destabilize critical distribution networks.
 
   After the crisis, he champions the Resonance Stewardship Program, ensuring that youth curriculum includes environmental monitoring alongside acoustic training. His philosophy evolves: sustainability isn't just about human systems—it's about harmonizing with the planet's indigenous networks.
 
 book5_title: "Legacy of Sustainability"
 book5_arc: >
-  At 76, Yamoto has transitioned into an advisory role, but his influence remains foundational. The environmental protocols he helped establish—sustainable water usage rates, integrated Galinstanian perception monitoring, resonance-aware infrastructure design—are now standard across New Eden and the newer river settlements (Gihon, Hiddekel, Euphrates).
+  At 76, Yamoto has transitioned into an advisory role, but his influence remains foundational. The environmental protocols he helped establish—sustainable water usage rates, integrated Galinstanian perception monitoring, resonance-aware infrastructure design—are now standard across New Eden and the newer river settlements (gihon,-hiddekel, euphrates).
 
   When the twins lead the Resonant Echo rescue, Yamoto's earlier advocacy for acoustic methods proves invaluable. The dust-blocked EM environment that trapped the cluster is understood through the environmental screening protocols he helped develop. He attends the Council testimony with quiet pride, nodding when Xara argues: "Utara's limits are what allowed us to find the signal. If the system had auto-flagged us as trespassers, the cluster would be dead. Privacy enabled the rescue."
 
   His arc culminates not in dramatic action, but in the steady accumulation of wisdom: a colony survives not by conquering its environment, but by listening to it. As he told the Council in 2246: "Every liter counts." By 2262, that principle has become colony law—and his legacy is measured in the clean water every colonist drinks, steady and pure, because he ensured the systems would hold.
 
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -59,7 +59,7 @@ Councilor Dr. Kenji Yamoto is a respected member of the New Eden Colony Council 
 </div>
 <div class="card-bg" markdown="1">
 ## Physical Description
-Yamoto carries himself with the precise posture of an engineer accustomed to monitoring exact measurements. He has neatly kept dark hair (streaked with grey by Book 5), sharp observant eyes behind practical glasses, and a calm demeanor that reflects decades of managing critical systems. He favors functional colony attire with subtle council insignia, and is rarely seen without a datapad displaying water purity and flow readouts. His hands are steady—trained for delicate calibration work—and he moves with economical grace.
+Yamoto carries himself with the precise posture of an engineer accustomed to monitoring exact measurements. He has neatly kept dark hair (streaked-with grey by book 5), sharp observant eyes behind practical glasses, and a calm demeanor that reflects decades of managing critical systems. He favors functional colony attire with subtle council insignia, and is rarely seen without a datapad displaying water purity and flow readouts. His hands are steady—trained for delicate calibration work—and he moves with economical grace.
 </div>
 <div class="card-bg" markdown="1">
 ## Personality & Skills
@@ -68,7 +68,7 @@ Yamoto is defined by:
 - data-driven decision-making and precision
 - sustainable resource advocacy
 - interdisciplinary collaboration
-- respect for indigenous knowledge (Galinstanian environmental perception)
+- respect for indigenous knowledge (galinstanian-environmental perception)
 - quiet vigilance over critical systems
 
 His strengths include:
@@ -96,23 +96,23 @@ His weaknesses include:
 - **Xan Carisco** — impressed by his acoustic communication system; sees practical applications for environmental monitoring and early anomaly detection
 - **Celectra Carisco** — values her bridge function for understanding Galinstanian perceptions of environmental changes humans cannot sense
 - **Chief Administrator Santos** — reports on resource capacity for population planning; their data-driven relationship ensures colony growth stays within sustainable limits
-- **The Twins (Jenni & Xara)** — observes their resonance work with quiet interest; Xara's pattern recognition reminds him of his own analytical mind
+- **The Twins (jenni-& xara)** — observes their resonance work with quiet interest; Xara's pattern recognition reminds him of his own analytical mind
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Yamoto's arc is about the quiet work of keeping a colony's resources in balance—the invisible infrastructure that allows everything else to function. He represents the voice that asks "Can our systems handle this?" before expansion proceeds, ensuring that growth doesn't outpace sustainability. His journey from pure engineer to councilor who values indigenous knowledge mirrors the colony's broader evolution from survival to partnership with Ares itself.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The Warning (Book 2):** "Every liter counts. Every cycle of reclamation. On Ares, we don't have the luxury of Earth's aquifers."
-- **The Validation (Book 3):** Jolts in recognition when Xan's glockenspiel reveals water reclamation variance: "That's correct. But how…?"
-- **The Shift (Book 3):** Becomes an advocate for integrating Galinstanian perception into environmental monitoring
-- **The Four Rivers (Book 4):** Helps design the support lattice that reinforces resonance anchors while humans sync frequencies
-- **The Philosophy (Book 4):** Sustainability evolves from "human systems only" to "harmonizing with indigenous networks"
-- **The Legacy (Book 5):** His protocols become standard; his principle—"every liter counts"—becomes colony law
+- **The Warning (book-2):** "Every liter counts. Every cycle of reclamation. On Ares, we don't have the luxury of Earth's aquifers."
+- **The Validation (book-3):** Jolts in recognition when Xan's glockenspiel reveals water reclamation variance: "That's correct. But how…?"
+- **The Shift (book-3):** Becomes an advocate for integrating Galinstanian perception into environmental monitoring
+- **The Four Rivers (book-4):** Helps design the support lattice that reinforces resonance anchors while humans sync frequencies
+- **The Philosophy (book-4):** Sustainability evolves from "human systems only" to "harmonizing with indigenous networks"
+- **The Legacy (book-5):** His protocols become standard; his principle—"every liter counts"—becomes colony law
 </div>
 
 <div class="card-bg" markdown="1">

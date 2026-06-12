@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Kiri
 portrait: "/assets/images/kiri-book2.webp"
@@ -8,7 +8,7 @@ portrait-book4: "/assets/images/kiri-book4.webp"
 portrait-book5: "/assets/images/kiri-book5.webp"
 affiliation: Galinstanian; Northern Cluster; Resonance Stewardship Program
 status: Alive
-birthday: Unknown (middle-aged by human measure)
+birthday: Unknown (middle-aged-by human measure)
 birthplace: Ares
 book1_age: "~30"
 book3_age: "~37"
@@ -23,7 +23,7 @@ book3_arc: >
   During Celectra's pregnancy, when her natural field begins degrading, Kiri joins Stan, Orren, and Chime in crafting a gift: circlet amplifiers, each individually shaped to Celectra's neural signature. Kiri's ancient resonance carries warmth as she explains the secondary function: allowing Celectra to maintain communion with them even when she is no longer bridge.
 
   Kiri's words are gentle but clear: "You are becoming something new. These help you bridge the transition." She sees Celectra's transformation not as loss but as growth, and her gift is designed to carry Celectra through it.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -37,9 +37,9 @@ Kiri’s presence is sharp and precise, her EM field carrying the clarity of cut
 <div class="card-bg" markdown="1">
 ### Personality & Skills
 Kiri is defined by:
-- sharp, precise presence (like cutting crystal)
+- sharp, precise presence (like-cutting crystal)
 - deep curiosity about human stories and culture
-- warmth beneath precision (ancient resonance carrying kindness)
+- warmth beneath precision (ancient-resonance carrying kindness)
 - commitment to understanding rather than simply observing
 - choice to be female, modeled on Celectra
 
@@ -50,7 +50,7 @@ Her strengths include:
 - providing clarity in confused situations
 
 Her weaknesses include:
-- occasional distance (watching rather than participating)
+- occasional distance (watching-rather than participating)
 - precision can read as coldness to those who don't know her
 - tendency to observe before acting
 </div>
@@ -63,11 +63,11 @@ Her weaknesses include:
 - **Maya Keahi** — artist; Kiri perceives Maya's portrait of her with sophisticated understanding, noting that Maya "grasps that form and essence are connected"
 </div>
 <div class="card-bg" markdown="1">
-### Story Overview (Non-Spoiler)
+### Story Overview (non-spoiler)
 Kiri’s arc is about curiosity and choice. She approached Celectra as a young Galinstanian asking about human gods, confused by the concept of stories told to explain what wasn't understood. She chose to be female because she saw something in Celectra she wanted to emulate. In Book 3, she helps craft the circlet amplifiers—not to keep Celectra in service, but to keep her as a friend. Kiri understands that Celectra is becoming something new, and her gift is designed to carry her through that transition. She represents the Galinstanian capacity for profound friendship, expressed through precision, clarity, and the willingness to ask questions.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

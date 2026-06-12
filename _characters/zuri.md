@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Zuri Yazzie
 portrait: "/assets/images/zuri-book5.webp"
@@ -6,7 +6,7 @@ portrait-book2: "/assets/images/zuri-book2.webp"
 portrait-book3: "/assets/images/zuri-book3.webp"
 portrait-book4: "/assets/images/zuri-book4.webp"
 portrait-book5: "/assets/images/zuri-book5.webp"
-affiliation: New Eden Youth Cohort (Previous); University Mentor; Resonance Stewardship Program (Youth Engagement)
+affiliation: New Eden Youth Cohort (previous); University Mentor; Resonance Stewardship Program (youth-engagement)
 status: Alive
 birthday: February 15, 2232
 birthplace: New Eden, Ares
@@ -14,28 +14,28 @@ book2_age: "7.8"
 book3_age: "14.7"
 book4_age: "22.9"
 book5_age: "29.9"
-book2_title: "Xan's Birthday (Age 7)"
+book2_title: "Xan's Birthday (age-7)"
 book2_arc: >
   At seven years old, Zuri attends Xan’s sixth birthday celebration in the caverns. He is drawn to a playful, curious Galinstanian whose presence feels almost childlike despite their maturity. As the Galinstanian attempts to replicate the shape of Zuri’s face, Zuri laughs and names them “Spark” because “they make everything feel more fun.”
 
   Zuri’s playful, joyful nature is evident even at this age. The bond formed that day reflects his instinct to find delight in connection and to share that delight with others.
-book3_title: "Growing Up (Age 14)"
+book3_title: "Growing Up (age-14)"
 book3_arc: >
   At fourteen, Zuri is a bright, energetic presence among the youth cohort. His bond with Spark deepens as they explore the settlement together, often finding Galinstanian youth to play with. He struggles with formal academic structures—his mind works in bursts of curiosity rather than linear progression—but excels at anything that requires creativity or human connection. He spends much of his time at the Activity Center, helping younger children feel comfortable around Galinstanians through games and play. These years solidify his understanding that joy is not frivolous but essential.
-book4_title: "The Four Rivers Exchange (Age 22)"
+book4_title: "The Four Rivers Exchange (age-22)"
 book4_arc: >
   At twenty-two, Zuri is a university student specializing in youth development and community engagement. He volunteers for the Four Rivers Exchange Program, assisting Lira with the younger twins' field trips. His role is to keep spirits high and create moments of play amid the investigation—organizing games, telling stories, and helping Jenni and Xara decompress after tense observations. When the resonance crisis deepens, Zuri and Spark help maintain community morale and provide emotional support to the Galinstanian clusters affected by the disturbances.
-book5_title: "Youth Engagement Specialist (Age 29)"
+book5_title: "Youth Engagement Specialist (age-29)"
 book5_arc: >
   At twenty-nine, Zuri is a university mentor and youth engagement specialist in the Resonance Stewardship Program. He works with Spark, his bonded Galinstanian, to develop programs that help young people—both human and Galinstanian—connect through play, curiosity, and shared exploration. During the rescue, he helps maintain the resonance perimeter, using his natural joyfulness to keep the team’s spirits up during tense moments.
 
   Zuri represents the joyful, playful side of the older cohort. His bond with Spark, formed when he was a child who loved to laugh, now informs his work helping the next generation find their own connections.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
 ### Overview
-Zuri Yazzie is a New Eden-born youth engagement specialist and university mentor, part of Xan’s older cohort (approximately fifteen years older than the twins). He is best known for naming the Galinstanian Spark at Xan’s sixth birthday celebration, choosing the name because Spark “makes everything feel more fun.” Playful, curious, and endlessly joyful, Zuri helps the next generation find their own connections through play and shared exploration.
+Zuri Yazzie is a New Eden-born youth engagement specialist and university mentor, part of Xan’s older cohort (approximately-fifteen years older than the twins). He is best known for naming the Galinstanian Spark at Xan’s sixth birthday celebration, choosing the name because Spark “makes everything feel more fun.” Playful, curious, and endlessly joyful, Zuri helps the next generation find their own connections through play and shared exploration.
 </div>
 <div class="card-bg" markdown="1">
 ### Physical Description
@@ -70,11 +70,11 @@ His weaknesses include:
 - **Kael Aoki** — younger musician; Zuri helps connect Kael to youth programs
 </div>
 <div class="card-bg" markdown="1">
-### Story Overview (Non-Spoiler)
+### Story Overview (non-spoiler)
 Zuri’s arc is about the power of joy. He named Spark seeking fun as a child; as an adult, he brings joy to others as naturally as breathing. His role in Book 5 is often overlooked in official accounts—he keeps morale up, makes people laugh, reminds the team why they’re doing what they’re doing—but that work is essential. He represents the generation that learned that connection doesn’t have to be serious to be meaningful.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

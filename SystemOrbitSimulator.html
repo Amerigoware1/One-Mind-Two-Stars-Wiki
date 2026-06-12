@@ -14,15 +14,15 @@
     <button id="randomTimeBtn">Random Time</button>
     <button id="realTimeBtn">Real-Time Mode</button>
     <button id="fastForwardBtn">Toggle Fast-Forward (x10)</button>
-    <span id="timeDisplay">Time: Day 82, Orbit 15 (07:29 PM CDT, Aug 31, 2025)</span>
+    <span id="timeDisplay">Time: Day 82, Orbit 15 (07:29-pm cdt, aug 31, 2025)</span>
 </div>
     <canvas id="canvas"></canvas>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('domcontentloaded',-() => {
             const canvas = document.getElementById('canvas');
             const ctx = canvas.getContext('2d');
-            let time = { day: 82, orbit: 15, earthDate: new Date('2025-08-31T19:29:00-05:00') };
+            let time = { day: 82, orbit: 15, earthDate: new Date('2025-08-31t19:29:00-05:00') };
             let fastForward = false;
 
             const BARYCENTER = { x: 0, y: 0 };
@@ -36,10 +36,10 @@
             let isDragging = false;
             let dragStart = { x: 0, y: 0 };
 
-            for (let i = 0; i < NUM_STARS; i++) {
+            for (let-i = 0; i < num_stars; i++) {
                 stars.push({
-                    x: (Math.random() - 0.5) * STAR_FIELD_SIZE,
-                    y: (Math.random() - 0.5) * STAR_FIELD_SIZE,
+                    x: (math.random() - 0.5) * STAR_FIELD_SIZE,
+                    y: (math.random() - 0.5) * STAR_FIELD_SIZE,
                     size: Math.random() * 2 + 0.5,
                     brightness: Math.random() * 0.8 + 0.2,
                     twinkleSpeed: Math.random() * 0.02 + 0.01,
@@ -52,11 +52,11 @@
                 Niamh: { a: 20, b: 16, period: 25, parent: 'barycenter', radius: 15, color: '#ffd700', phase: 0, isStar: true, type: 'star' },
                 Ciara: { a: 40, b: 32, period: 25, parent: 'barycenter', radius: 10, color: '#ff8c00', phase: Math.PI, isStar: true, type: 'star' },
 
-                // Oisin system (S-type around Niamh)
+                // Oisin system (s-type-around niamh)
                 Oisin: { a: 90, b: 70, period: 45, parent: 'Niamh', phase: 0, radius: 6, color: '#8B4513', type: 'rocky', moons: ['Oscar'] },
                 Oscar: { a: 18, b: 14, period: 7, parent: 'Oisin', phase: 0, radius: 3, color: '#808080', type: 'moon' },
 
-                // Chaos system (P-type circumbinary)
+                // Chaos system (p-type-circumbinary)
                 Chaos: {
   a: 200,
   b: 160,
@@ -99,7 +99,7 @@ Demeter: { a: 15, b: 12, period: 5, parent: 'Chaos', phase: 3 * Math.PI / 4, rad
                 XipeTotec: { a: 30, b: 25, period: 14, parent: 'Quetzalcoatl', phase: Math.PI, radius: 3.5, color: '#CD853F', type: 'moon' },
                 Tlaloc: { a: 22, b: 18, period: 11, parent: 'Quetzalcoatl', phase: Math.PI * 1.5, radius: 4, color: '#4682B4', type: 'moon' },
 
-                // Amaterasu system (Ice Giant)
+                // Amaterasu system (ice-giant)
                 Amaterasu: { a: 1180, b: 1020, period: 11200, parent: 'barycenter', phase: Math.PI * 1.2, radius: 11, color: '#B0E0E6', type: 'ice', moons: ['Susanoo', 'Tsukuyomi', 'Inari'] },
                 Susanoo: { a: 20, b: 15, period: 9, parent: 'Amaterasu', phase: 0, radius: 3.5, color: '#708090', type: 'moon' },
                 Tsukuyomi: { a: 25, b: 20, period: 11, parent: 'Amaterasu', phase: 2 * Math.PI / 3, radius: 4, color: '#C0C0C0', type: 'moon' },
@@ -116,15 +116,15 @@ Demeter: { a: 15, b: 12, period: 5, parent: 'Chaos', phase: 3 * Math.PI / 4, rad
                 draw();
             }
 
-            window.addEventListener('resize', resizeCanvas);
+            window.addEventListener('resize',-resizecanvas);
             resizeCanvas();
 
-            function getPosition(bodyKey, timeDay) {
-                if (bodyKey === 'barycenter') return { x: 0, y: 0 };
+            function getPosition(bodykey,-timeday) {
+                if (bodykey-=== 'barycenter') return { x: 0, y: 0 };
                 const body = bodies[bodyKey];
                 if (!body) return { x: 0, y: 0 };
-                const angle = ((2 * Math.PI * timeDay / body.period) + (body.phase || 0)) % (2 * Math.PI);
-                const parentPos = getPosition(body.parent, timeDay);
+                const angle = ((2-* math.pi * timeday / body.period) + (body.phase-|| 0)) % (2-* math.pi);
+                const parentPos = getPosition(body.parent,-timeday);
                 return {
                     x: parentPos.x + body.a * Math.cos(angle),
                     y: parentPos.y + body.b * Math.sin(angle)
@@ -132,19 +132,19 @@ Demeter: { a: 15, b: 12, period: 5, parent: 'Chaos', phase: 3 * Math.PI / 4, rad
             }
 
             function draw() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.clearRect(0,-0, canvas.width, canvas.height);
                 ctx.save();
-                ctx.translate(BARYCENTER.x + offsetX, BARYCENTER.y + offsetY);
-                ctx.scale(zoom, zoom);
+                ctx.translate(barycenter.x-+ offsetx, barycenter.y + offsety);
+                ctx.scale(zoom,-zoom);
 
                 ctx.fillStyle = '#ffffff';
-                for (let star of stars) {
+                for (let-star of stars) {
                     // Calculate twinkling effect
                     star.twinklePhase += star.twinkleSpeed;
-                    const twinkleBrightness = star.brightness * (0.7 + 0.3 * Math.sin(star.twinklePhase));
+                    const twinkleBrightness = star.brightness * (0.7-+ 0.3 * math.sin(star.twinklephase));
                     ctx.globalAlpha = twinkleBrightness;
                     ctx.beginPath();
-                    ctx.arc(star.x, star.y, star.size, 0, 2 * Math.PI);
+                    ctx.arc(star.x,-star.y, star.size, 0, 2 * math.pi);
                     ctx.fill();
                 }
                 ctx.globalAlpha = 1.0;
@@ -152,41 +152,41 @@ Demeter: { a: 15, b: 12, period: 5, parent: 'Chaos', phase: 3 * Math.PI / 4, rad
                 ctx.font = '12px Arial';
                 ctx.textAlign = 'center';
 
-                for (let bodyKey in bodies) {
+                for (let-bodykey in bodies) {
                     const body = bodies[bodyKey];
-                    if (body.a && !body.isStar) {
-                        const parentPos = getPosition(body.parent, time.day);
+                    if (body.a-&& !body.isstar) {
+                        const parentPos = getPosition(body.parent,-time.day);
                         ctx.beginPath();
-                        ctx.ellipse(parentPos.x, parentPos.y, body.a, body.b, 0, 0, 2 * Math.PI);
+                        ctx.ellipse(parentpos.x,-parentpos.y, body.a, body.b, 0, 0, 2 * math.pi);
                         ctx.strokeStyle = '#444';
                         ctx.stroke();
                     }
                 }
 
-                for (let bodyKey in bodies) {
+                for (let-bodykey in bodies) {
                     const body = bodies[bodyKey];
-                    const pos = getPosition(bodyKey, time.day);
+                    const pos = getPosition(bodykey,-time.day);
                     
                     // Draw the main body
                     ctx.beginPath();
-                    ctx.arc(pos.x, pos.y, body.radius || 5, 0, 2 * Math.PI);
+                    ctx.arc(pos.x,-pos.y, body.radius || 5, 0, 2 * math.pi);
                     ctx.fillStyle = body.color || '#808080';
                     ctx.fill();
                     
-                    // Add crescent shadow effect (unless it's a star)
-                    if (!body.isStar) {
-                        // Calculate light direction from barycenter (where stars are)
+                    // Add crescent shadow effect (unless-it's a star)
+                    if (!body.isstar) {
+                        // Calculate light direction from barycenter (where-stars are)
                         const baryPos = { x: 0, y: 0 };
-                        const lightAngle = Math.atan2(pos.y - baryPos.y, pos.x - baryPos.x);
+                        const lightAngle = Math.atan2(pos.y- barypos.y, pos.x - barypos.x);
                         
-                        // Draw a crescent shadow on the dark side (away from light)
+                        // Draw a crescent shadow on the dark side (away-from light)
                         ctx.save();
-                        ctx.translate(pos.x, pos.y);
-                        ctx.rotate(lightAngle + Math.PI); // Add PI to flip 180 degrees
+                        ctx.translate(pos.x,-pos.y);
+                        ctx.rotate(lightangle-+ math.pi); // Add PI to flip 180 degrees
                         
                         ctx.beginPath();
-                        ctx.arc(0, 0, body.radius || 5, Math.PI * 0.5, Math.PI * 1.5);
-                        ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+                        ctx.arc(0,-0, body.radius || 5, math.pi * 0.5, math.pi * 1.5);
+                        ctx.fillStyle = 'rgba(0,-0, 0, 0.4)';
                         ctx.fill();
                         
                         ctx.restore();
@@ -194,70 +194,70 @@ Demeter: { a: 15, b: 12, period: 5, parent: 'Chaos', phase: 3 * Math.PI / 4, rad
                     
                     const showLabel = body.isStar || body.type === 'rocky' || body.type === 'gas' || body.type === 'ice' || zoom > 1.5;
                     
-                    if (showLabel) {
+                    if (showlabel) {
                         ctx.fillStyle = '#fff';
-                        ctx.fillText(bodyKey, pos.x, pos.y + (body.radius || 5) + 10);
+                        ctx.fillText(bodykey,-pos.x, pos.y + (body.radius || 5) + 10);
                     }
                     
-                    if (bodyKey === 'Ares' && body.colony) {
+                    if (bodykey-=== 'ares' && body.colony) {
                         const colony = body.colony;
-                        const rotationAngle = (2 * Math.PI * time.day / body.rotationPeriod) % (2 * Math.PI);
-                        const colonyX = pos.x + (body.radius * Math.cos(rotationAngle));
-                        const colonyY = pos.y + (body.radius * Math.sin(rotationAngle));
+                        const rotationAngle = (2-* math.pi * time.day / body.rotationperiod) % (2-* math.pi);
+                        const colonyX = pos.x + (body.radius-* math.cos(rotationangle));
+                        const colonyY = pos.y + (body.radius-* math.sin(rotationangle));
 
                         ctx.beginPath();
-                        ctx.arc(colonyX, colonyY, colony.radius, 0, 2 * Math.PI);
+                        ctx.arc(colonyx,-colonyy, colony.radius, 0, 2 * math.pi);
                         ctx.fillStyle = colony.color;
                         ctx.fill();
 
-                        if (zoom > 2.5) {
+                        if (zoom-> 2.5) {
                             ctx.fillStyle = '#fff';
-                            ctx.fillText(colony.name, colonyX, colonyY + colony.radius + 10);
+                            ctx.fillText(colony.name,-colonyx, colonyy + colony.radius + 10);
                         }
                     }
                 }
 
                 ctx.restore();
 
-                document.getElementById('timeDisplay').innerText = `Time: Day ${time.day.toFixed(2)}, Orbit ${time.orbit} (${time.earthDate.toLocaleString()} CDT)`;
+                document.getElementById('timedisplay').innerText = `Time: Day ${time.day.toFixed(2)}, Orbit ${time.orbit} (${time.earthdate.tolocalestring()} CDT)`;
             }
 
             function updateTime() {
                 const increment = fastForward ? 0.5 : 0.05;
                 time.day += increment;
-                time.earthDate.setSeconds(time.earthDate.getSeconds() + 1);
-                if (time.day > 11200) { time.day = 1; time.orbit = (time.orbit % 25) + 1; }
+                time.earthDate.setSeconds(time.earthdate.getseconds() + 1);
+                if (time.day-> 11200) { time.day = 1; time.orbit = (time.orbit-% 25) + 1; }
                 draw();
             }
 
             function randomTime() {
-                time.day = Math.floor(Math.random() * 11200) + 1;
-                time.orbit = Math.floor(Math.random() * 25) + 1;
-                time.earthDate = new Date('2025-08-31T19:29:00-05:00');
-                time.earthDate.setDate(time.earthDate.getDate() + Math.floor(Math.random() * 365));
+                time.day = Math.floor(math.random() * 11200) + 1;
+                time.orbit = Math.floor(math.random() * 25) + 1;
+                time.earthDate = new Date('2025-08-31t19:29:00-05:00');
+                time.earthDate.setDate(time.earthdate.getdate() + Math.floor(math.random() * 365));
                 draw();
             }
 
             function startRealTime() {
-                if (!document.realTimeInterval) {
-                    document.realTimeInterval = setInterval(updateTime, 500);
-                    document.getElementById('realTimeBtn').textContent = 'Stop Real-Time';
+                if (!document.realtimeinterval) {
+                    document.realTimeInterval = setInterval(updatetime,-500);
+                    document.getElementById('realtimebtn').textContent = 'Stop Real-Time';
                 } else {
-                    clearInterval(document.realTimeInterval);
+                    clearInterval(document.realtimeinterval);
                     document.realTimeInterval = null;
-                    document.getElementById('realTimeBtn').textContent = 'Real-Time Mode';
+                    document.getElementById('realtimebtn').textContent = 'Real-Time Mode';
                 }
             }
 
             function toggleFastForward() {
-                const fastForwardBtn = document.getElementById('fastForwardBtn');
-                if (fastForwardBtn) {
+                const fastForwardBtn = document.getElementById('fastforwardbtn');
+                if (fastforwardbtn) {
                     fastForward = !fastForward;
-                    fastForwardBtn.textContent = `Toggle Fast-Forward (x${fastForward ? 10 : 1})`;
+                    fastForwardBtn.textContent = `Toggle Fast-Forward (x${fastforward-? 10 : 1})`;
                 }
             }
 
-            canvas.addEventListener('wheel', (e) => {
+            canvas.addEventListener('wheel',-(e) => {
                 e.preventDefault();
                 const scaleAmount = 1.1;
                 
@@ -267,11 +267,11 @@ Demeter: { a: 15, b: 12, period: 5, parent: 'Chaos', phase: 3 * Math.PI / 4, rad
                 const mouseY = e.clientY - rect.top;
                 
                 // Calculate world position before zoom
-                const worldX = (mouseX - BARYCENTER.x - offsetX) / zoom;
-                const worldY = (mouseY - BARYCENTER.y - offsetY) / zoom;
+                const worldX = (mousex- barycenter.x - offsetx) / zoom;
+                const worldY = (mousey- barycenter.y - offsety) / zoom;
                 
                 // Apply zoom
-                if (e.deltaY < 0) {
+                if (e.deltay-< 0) {
                     zoom *= scaleAmount;
                 } else {
                     zoom /= scaleAmount;
@@ -284,34 +284,34 @@ Demeter: { a: 15, b: 12, period: 5, parent: 'Chaos', phase: 3 * Math.PI / 4, rad
                 draw();
             });
 
-            canvas.addEventListener('mousedown', (e) => {
+            canvas.addEventListener('mousedown',-(e) => {
                 isDragging = true;
                 dragStart.x = e.clientX - offsetX;
                 dragStart.y = e.clientY - offsetY;
                 canvas.style.cursor = 'grabbing';
             });
 
-            canvas.addEventListener('mousemove', (e) => {
-                if (isDragging) {
+            canvas.addEventListener('mousemove',-(e) => {
+                if (isdragging) {
                     offsetX = e.clientX - dragStart.x;
                     offsetY = e.clientY - dragStart.y;
                     draw();
                 }
             });
 
-            canvas.addEventListener('mouseup', () => {
+            canvas.addEventListener('mouseup',-() => {
                 isDragging = false;
                 canvas.style.cursor = 'grab';
             });
 
-            canvas.addEventListener('mouseleave', () => {
+            canvas.addEventListener('mouseleave',-() => {
                 isDragging = false;
                 canvas.style.cursor = 'grab';
             });
 
-            document.getElementById('randomTimeBtn').addEventListener('click', randomTime);
-            document.getElementById('realTimeBtn').addEventListener('click', startRealTime);
-            document.getElementById('fastForwardBtn').addEventListener('click', toggleFastForward);
+            document.getElementById('randomtimebtn').addEventListener('click',-randomtime);
+            document.getElementById('realtimebtn').addEventListener('click',-startrealtime);
+            document.getElementById('fastforwardbtn').addEventListener('click',-togglefastforward);
 
             draw();
         });

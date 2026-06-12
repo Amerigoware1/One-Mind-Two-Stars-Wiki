@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Ananya Patel
 portrait: "/assets/images/ananya-book5.webp"
@@ -16,14 +16,14 @@ book2_age: "15.3"
 book3_age: "22.2"
 book4_age: "30.4"
 book5_age: "37.4"
-book1_title: "New Arrival (Age 8)"
+book1_title: "New Arrival (age-8)"
 book1_arc: >
   Ananya appears as a bright, curious eight-year-old who recently moved from Utopis
   to New Eden. She befriends Celectra quickly, treating her dual-body existence as
   interesting but not defining. Even at this age, she shows a knack for asking the
   right questions and offering simple, heartfelt support.
 
-book2_title: "The First Volunteer (Age 15)"
+book2_title: "The First Volunteer (age-15)"
 book2_arc: >
   At fifteen, Ananya bursts into Celectra's life with unannounced visits, sharp
   observations, and zero diplomatic dancing. When Celectra is overwhelmed by her
@@ -32,7 +32,7 @@ book2_arc: >
   documents sessions, and provides crucial emotional grounding. Her humor and
   reliability help transform Celectra's isolation into a supported team effort.
 
-book3_title: "Scientist & Translator (Age 22)"
+book3_title: "Scientist & Translator (age-22)"
 book3_arc: >
   Now a xenobiology graduate, Ananya applies formal scientific training to
   Galinstanian research. She works alongside Chen Wei and Jaxon on the Communion
@@ -42,7 +42,7 @@ book3_arc: >
   as researcher and friend—makes her a key architect of the systems that will
   eventually replace Celectra's biological bridge.
 
-book4_title: "Building the Network (Age 30)"
+book4_title: "Building the Network (age-30)"
 book4_arc: >
   At thirty, Ananya is an established biologist and senior Listener Corps trainer.
   She helps design the hybrid communication protocols that integrate Celectra's
@@ -51,7 +51,7 @@ book4_arc: >
   acoustic methods and ethical oversight. Her steady presence helps the colony
   navigate the transition from "one bridge" to "many bridges."
 
-book5_title: "Mentor & Legacy (Age 37)"
+book5_title: "Mentor & Legacy (age-37)"
 book5_arc: >
   At thirty-seven, Ananya trains the next generation of Listeners and researchers.
   She helps formalize the Resonance Stewardship Program, ensuring that
@@ -62,7 +62,7 @@ book5_arc: >
   infrastructure—the friend who showed up, stayed, and helped build something that
   lasts.
 
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -106,10 +106,10 @@ Her weaknesses include:
 </div>
 <div class="card-bg" markdown="1">
 
-## Story Overview (Non-Spoiler)
-Ananya's arc is about turning friendship into function—using her scientific training and emotional intelligence to help build systems that outlast any one person. She never seeks the spotlight, but her steady presence, sharp mind, and willingness to show up (often with snacks) make her indispensable to Celectra, the Listener Corps, and the broader project of human–Galinstanian integration.
+## Story Overview (non-spoiler)
+Ananya's arc is about turning friendship into function—using her scientific training and emotional intelligence to help build systems that outlast any one person. She never seeks the spotlight, but her steady presence, sharp mind, and willingness to show up (often-with snacks) make her indispensable to Celectra, the Listener Corps, and the broader project of human–Galinstanian integration.
 </div>
----
+-
 <div class="card-bg" markdown="1">
 
 {% include story-arcs.html %}

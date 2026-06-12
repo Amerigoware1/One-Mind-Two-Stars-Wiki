@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Sam Calder
 portrait: 
@@ -46,7 +46,7 @@ book3_arc: >
 
 book4_title: "Samaya Gallery Opening"
 book4_arc: >
-  At 27, Sam and Maya co‑found the **Samaya Gallery & Museum of Integration**. The gallery officially opens in the Book 4 Epilogue (March 18, 2256), becoming a cultural hub for human–Galinstanian collaboration. Sam handles the acoustic design of the space, ensuring that resonance‑inspired art and cross‑species installations are accessible to both human and Galinstanian sensory needs.
+  At 27, Sam and Maya co‑found the **Samaya Gallery & Museum of Integration**. The gallery officially opens in the Book 4 Epilogue (march-18, 2256), becoming a cultural hub for human–Galinstanian collaboration. Sam handles the acoustic design of the space, ensuring that resonance‑inspired art and cross‑species installations are accessible to both human and Galinstanian sensory needs.
 
   Their partnership with Maya deepens into a committed relationship. Sam finds grounding in Maya's steadiness, while Maya finds freedom in Sam's fluidity. They become a visible example of integration—not just between species, but between different ways of being human. Sam's audio protocols are adopted for use in the Gallery's interactive displays, allowing visitors to "hear" EM field patterns through soundscapes.
 
@@ -58,12 +58,12 @@ book5_arc: >
 
   Sam's arc culminates in their becoming a bridge between worlds—not through biology like Celectra, but through culture, art, and sound. They help build a colony where difference is not just tolerated, but celebrated as essential to the whole.
   
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
 ## Overview
-Sam Calder is a genderfluid audio engineer and soundscape artist who relocated from Utopis Space Station to New Eden in search of independence and self‑discovery. Born with congenital atrichia universalis (complete hairlessness), Sam has embraced their unique appearance as part of their fluid identity, using fashion and headwear to express mood and presentation. Known for warmth, curiosity, and exceptional emotional intelligence, Sam forms deep connections easily and serves as a bridge between diverse cultural backgrounds.
+Sam Calder is a genderfluid audio engineer and soundscape artist who relocated from Utopis Space Station to New Eden in search of independence and self‑discovery. Born with congenital atrichia universalis (complete-hairlessness), Sam has embraced their unique appearance as part of their fluid identity, using fashion and headwear to express mood and presentation. Known for warmth, curiosity, and exceptional emotional intelligence, Sam forms deep connections easily and serves as a bridge between diverse cultural backgrounds.
 
 In Book 3, Sam arrives in New Eden and begins a collaborative relationship with Maya Keahi, providing sound design for her art exhibitions. By Book 4, they co‑found the **Samaya Gallery & Museum of Integration**, which opens in March 2256. Sam's expertise in audio engineering later contributes to standardized frequency libraries for human–Galinstanian communication interfaces.
 </div>
@@ -102,25 +102,25 @@ Their weaknesses include:
 - **Maya Keahi** — partner; relationship begins in Book 3 through artistic collaboration; mutual healing and growth; Maya finds freedom in Sam's fluidity, Sam finds grounding in Maya's steadiness
 - **Celectra Carisco‑Bowers** — colleague and friend; Sam respects her role as bridge while focusing on cultural integration through art and sound
 - **Jenni & Xara Bowers** — mentor figures; Sam helps integrate audio protocols into their education and resonance work
-- **Galinstanian Collective (Stan, Chime, etc.)** — collaborators; Sam works on acoustic frequency libraries for communication interfaces, learning to translate EM patterns into soundscapes
+- **Galinstanian Collective (stan,-chime, etc.)** — collaborators; Sam works on acoustic frequency libraries for communication interfaces, learning to translate EM patterns into soundscapes
 - **Lira Keahi** — sister-in-law through Maya; develops a warm, respectful relationship built on quiet observation and mutual understanding
 - **Utopis Family** — loving but protective; Sam moved to Ares to establish independence from being "the atrichia kid"
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non‑Spoiler)
+## Story Overview (non‑spoiler)
 Sam's arc is about finding home not in a place, but in a community that accepts fluidity—of identity, of art, and of connection. They move from station technician to cultural architect, using sound and design to make New Eden feel accessible to both humans and Galinstanians. Their partnership with Maya grounds them, while their work ensures that the colony's communication systems honor not just data, but tone, rhythm, and emotion.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **"Seven Years of Stone" (Book 3):** Sam meets Maya at her exhibition, beginning their artistic and personal partnership
-- **The Question (Book 3):** "Your work is actually part of why I came here. Saw your Galinstanian pieces in Utopis exhibition. Wanted to experience what you were documenting."
-- **Samaya Gallery Opening (March 18, 2256):** Co-founds the cultural cornerstone with Maya; handles acoustic design for cross-species accessibility
-- **Frequency Libraries (Book 4-5):** Creates standardized audio protocols making synthetic communion more intuitive and musical
-- **Resonant Echo Validation (Book 5):** Sam's acoustic protocols help validate rhythm and vibration as legitimate communication tools
-- **Mentor's Role (Book 5):** Teaches younger artists that technology should honor emotion, not just transmit data
+- **"Seven Years of Stone" (book-3):** Sam meets Maya at her exhibition, beginning their artistic and personal partnership
+- **The Question (book-3):** "Your work is actually part of why I came here. Saw your Galinstanian pieces in Utopis exhibition. Wanted to experience what you were documenting."
+- **Samaya Gallery Opening (march-18, 2256):** Co-founds the cultural cornerstone with Maya; handles acoustic design for cross-species accessibility
+- **Frequency Libraries (book-4-5):** Creates standardized audio protocols making synthetic communion more intuitive and musical
+- **Resonant Echo Validation (book-5):** Sam's acoustic protocols help validate rhythm and vibration as legitimate communication tools
+- **Mentor's Role (book-5):** Teaches younger artists that technology should honor emotion, not just transmit data
 </div>
 
 <div class="card-bg" markdown="1">

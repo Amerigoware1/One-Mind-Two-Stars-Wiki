@@ -5,49 +5,49 @@
   <title>One Mind, Two Stars Wiki</title>
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   
-  <!-- Preload main stylesheet to prioritise its loading -->
+  <!- Preload main stylesheet to prioritise its loading ->
   <link rel="preload" href="WikiStyle.css" as="style">
-  <!-- Load main stylesheet -->
+  <!- Load main stylesheet ->
   <link rel="stylesheet" href="WikiStyle.css">
   
-  <!-- CRITICAL INLINE STYLES: ensures colour scheme works even if WikiStyle.css is slow -->
+  <!- CRITICAL INLINE STYLES: ensures colour scheme works even if WikiStyle.css is slow ->
   <style>
     /* Duplicate of the CSS variables from WikiStyle.css – prevents flash of unstyled content */
     :root {
-      --bg-space:         #0f0124;
-      --bg-card:          #0c0028;
-      --bg-card-dark:     #0a0022;
-      --border-glow:      #1e0a47;
-      --neon-violet:      #c13cff;
-      --neon-cyan:        #00e8ff;
-      --neon-magenta:     #ff2af1;
-      --text-primary:     #e37df5;
-      --text-muted:       #b8b1ff;
-      --text-heading:     #ffffff;
-      --glow-violet:      rgba(193, 60, 255, 0.3);
-      --glow-cyan:        rgba(0, 232, 255, 0.25);
+      -bg-space:         #0f0124;
+      -bg-card:          #0c0028;
+      -bg-card-dark:     #0a0022;
+      -border-glow:      #1e0a47;
+      -neon-violet:      #c13cff;
+      -neon-cyan:        #00e8ff;
+      -neon-magenta:     #ff2af1;
+      -text-primary:     #e37df5;
+      -text-muted:       #b8b1ff;
+      -text-heading:     #ffffff;
+      -glow-violet:      rgba(193,-60, 255, 0.3);
+      -glow-cyan:        rgba(0,-232, 255, 0.25);
     }
     /* Force immediate background/text to match the theme */
     body {
-      background: var(--bg-space);
-      color: var(--text-primary);
+      background: var(-bg-space);
+      color: var(-text-primary);
       margin: 20px;
       padding: 1rem;
     }
   </style>
 
-  <!-- Additional styles for the series section (same as before) -->
+  <!- Additional styles for the series section (same-as before) ->
   <style>
     .series-status {
-      background: var(--bg-card);
-      color: var(--text-heading);
+      background: var(-bg-card);
+      color: var(-text-heading);
       padding: 2rem;
       border-radius: 10px;
       margin: 2rem 0;
       box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
     .series-status h2 {
-      color: var(--neon-cyan);
+      color: var(-neon-cyan);
       margin-top: 0;
     }
     .book-progress {
@@ -57,16 +57,16 @@
       flex-wrap: wrap;
     }
     .book-card {
-      background: var(--bg-card-dark);
+      background: var(-bg-card-dark);
       border-radius: 8px;
       padding: 1rem;
       flex: 1;
       min-width: 200px;
-      border: 1px solid var(--border-glow);
+      border: 1px solid var(-border-glow);
     }
     .book-card h3 {
       margin-top: 0;
-      color: var(--neon-violet);
+      color: var(-neon-violet);
     }
     .status-badge {
       display: inline-block;
@@ -82,8 +82,8 @@
     .status-drafting { background: #2196f3; }
     
     .author-note {
-      background: var(--bg-card-dark);
-      border-left: 4px solid var(--neon-violet);
+      background: var(-bg-card-dark);
+      border-left: 4px solid var(-neon-violet);
       padding: 1rem;
       margin: 1.5rem 0;
       border-radius: 0 8px 8px 0;
@@ -96,7 +96,7 @@
     <h1>One Mind, Two Stars Wiki</h1>
     <p>This is your central hub for exploring the speculative world of Celectra, the Utopis space station, and the Niamh–Ciara planetary system. Browse glossary terms, planetary data, and technical breakdowns of key systems and locations.</p>
     
-    <!-- Author Announcement -->
+    <!- Author Announcement ->
     <div class="author-note">
       <p><strong>📚 Note from the Author:</strong> Welcome to the official wiki for my upcoming sci-fi series! This site serves as both a worldbuilding resource for readers and a living pitch document for agents/editors. Explore the universe below, and feel free to <a href="mailto:echrisco@gmail.com" style="color:#bb86fc;">reach out</a> if you're in publishing or beta reading!</p>
       <p>This series began with a simple question inspired by the remarkable lives of conjoined twins: <em>What if two bodies contained one consciousness?</em> <a href="Behind-the-Story.html" style="color:#bb86fc;">Read the full story behind the story →</a></p>
@@ -105,7 +105,7 @@
   </header>
 
   <main>
-    <!-- Series Status Section -->
+    <!- Series Status Section ->
     <section class="series-status">
       <h2>📖 The "One Mind, Two Stars" Series</h2>
       <p>A sci-fi epic exploring humanity's expansion to the Niamh–Ciara system, featuring Celectra's unique physiology, mysterious indigenous species, and the philosophical challenges of colonization.</p>
@@ -132,11 +132,11 @@
       <a href="Series-Overview.html" style="color:#bb86fc; font-weight:bold; text-decoration:none; border:1px solid #bb86fc; padding:0.5rem 1rem; border-radius:5px; display:inline-block; margin-top:1rem;">View Full Series Overview →</a>
     </section>
 
-    <!-- Core Articles -->
+    <!- Core Articles ->
     <section>
       <h2>📘 Core Articles</h2>
       <div class="index-links">
-        <a href="anthology.html">📖 Anthology<br><span class="link-desc">Deleted scenes, extended flashbacks, and bonus material (passcode protected)</span></a>
+        <a href="anthology.html">📖 Anthology<br><span class="link-desc">Deleted scenes, extended flashbacks, and bonus material (passcode-protected)</span></a>
         <a href="Glossary.html">📘 Glossary<br><span class="link-desc">Definitions and terminology</span></a>
         <a href="Timeline.html">🕙 Timeline<br><span class="link-desc">Chronological Record of the Chaos System Colony</span></a>
         <a href="Behind-the-Story.html">✨ Behind the Story<br><span class="link-desc">Author's inspiration and notes</span></a>
@@ -152,7 +152,7 @@
       </div>
     </section>
 
-    <!-- Tools & Simulators -->
+    <!- Tools & Simulators ->
     <section>
       <h2>🛠️ Tools & Simulators</h2>
       <div class="index-links">
@@ -162,7 +162,7 @@
       </div>
     </section>
 
-    <!-- Characters & Factions -->
+    <!- Characters & Factions ->
     <section>
       <h2>👥 Characters & Groups</h2>
       <div class="index-links">
@@ -171,7 +171,7 @@
       </div>
     </section>
     
-    <!-- Publishing Contact Section -->
+    <!- Publishing Contact Section ->
     <section style="background:#0c0028; padding:1.5rem; border-radius:8px; margin-top:2rem;">
       <h2>📬 For Publishing Professionals</h2>
       <p>This wiki demonstrates the depth and marketability of the series. It includes:</p>
@@ -185,22 +185,22 @@
     </section>
   </main>
 
-  <!-- Floating Return to Top Button -->
+  <!- Floating Return to Top Button ->
   <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
 
   <script>
-    const toTopBtn = document.getElementById("toTopBtn");
+    const toTopBtn = document.getElementById("totopbtn");
 
-    window.addEventListener("scroll", () => {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    window.addEventListener("scroll",-() => {
+      if (document.body.scrolltop-> 200 || document.documentelement.scrolltop > 200) {
         toTopBtn.style.display = "block";
       } else {
         toTopBtn.style.display = "none";
       }
     });
 
-    toTopBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    toTopBtn.addEventListener("click",-() => {
+      window.scrollTo({-top: 0, behavior: "smooth" });
     });
   </script>
 </body>

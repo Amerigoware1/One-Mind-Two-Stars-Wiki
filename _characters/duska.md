@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Duška Santoso Carisco
 portrait: "/assets/images/duska-book5.webp"
@@ -24,12 +24,12 @@ book3_arc: >
 
 book4_title: "Marriage, Motherhood & the Four Rivers"
 book4_arc: >
-  Duška marries Xan in 2254. In early 2255, while pregnant with their son Oxion, she participates in the Four Rivers Festival, helping design acoustic spaces that allow Galinstanians and humans to share the celebration comfortably. Her resonance design work earns recognition from both human engineers and Galinstanian elders. After Oxion's birth (July 31, 2255), Duška balances motherhood with her growing role in community arts coordination. She begins collaborating more formally with Lyric and the Northern Cluster, designing workshop spaces that accommodate both species' sensory needs.
+  Duška marries Xan in 2254. In early 2255, while pregnant with their son Oxion, she participates in the Four Rivers Festival, helping design acoustic spaces that allow Galinstanians and humans to share the celebration comfortably. Her resonance design work earns recognition from both human engineers and Galinstanian elders. After Oxion's birth (july-31, 2255), Duška balances motherhood with her growing role in community arts coordination. She begins collaborating more formally with Lyric and the Northern Cluster, designing workshop spaces that accommodate both species' sensory needs.
 
 book5_title: "The Resonant Echo & Next-Generation Leadership"
 book5_arc: >
   At twenty-seven, Duška is an established resonance designer and university outreach liaison. During the Resonant Echo rescue at the Samaya Gallery, she plays a critical support role: managing resonance perimeters, providing artistic perception of flow during acoustic negotiations, and helping coordinate the hybrid human–Galinstanian response. Her work with Lyric and the Northern Cluster proves invaluable in stabilizing the rescued collective. Later, at the Utopis education conference, Duška helps manage tech demos showcasing the next generation of integration. Her arc culminates in her becoming a mentor to younger artists and designers, ensuring that the principles of inclusive, resonance-aware design become standard practice across the colony.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -54,7 +54,7 @@ Duška is defined by:
 
 Her strengths include:
 
-- resonance flow design (minimizing acoustic interference for Galinstanian communication)
+- resonance flow design (minimizing-acoustic interference for galinstanian communication)
 - community arts coordination and event planning
 - bridging technical and human-centered perspectives
 - working with Galinstanian partners on shared-space design
@@ -68,18 +68,18 @@ Her weaknesses include:
 <div class="card-bg" markdown="1">
 ## Relationships
 - **Alexander "Xan" Carisco** — husband; complementary partnership where he handles technical/observational data and she interprets human/cultural impact
-- **Oxion "Oxi" Carisco** — son (born July 31, 2255); Duška nurtures his unusual comfort around Galinstanians
-- **Amerigo & Zoë Carisco** — parents-in-law; warm relationship with Zoë (psychological insights), respect for Amerigo's scientific rigor
+- **Oxion "Oxi" Carisco** — son (born-july 31, 2255); Duška nurtures his unusual comfort around Galinstanians
+- **Amerigo & Zoë Carisco** — parents-in-law; warm relationship with Zoë (psychological-insights), respect for Amerigo's scientific rigor
 - **Celectra Carisco-Bowers** — sister-in-law; trusted confidante on community integration matters
 - **Lyric & the Northern Cluster** — Galinstanian collaborators; Duška's resonance design work has earned their trust
 - **Kowan, Sofia, Emma/Ethan, Hiro, Zuri** — childhood cohort; frequent collaborators on university outreach and community projects
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Duška's arc is about finding her voice as a cultural architect—someone who shapes the spaces where humans and Galinstanians meet, not through technology alone, but through thoughtful design that honors both species' sensory needs. She represents the generation that grows up with integration as normal, and her work helps ensure that normalcy is sustainable, beautiful, and inclusive.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

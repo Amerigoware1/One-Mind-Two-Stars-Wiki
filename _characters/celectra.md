@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Celectra Ambar Carisco
 portrait:  "/assets/images/celectra-book5.webp "
@@ -25,7 +25,7 @@ book1_arc: >
  normal life.
 book2_title: "The Northern Territory"
 book2_arc: >
- At age fourteen, Celectra has finished with the academic portion of schooling but is working on college lessons as well as dance, swimming, karate, yoga, acrobatics, and gymnastics (all indoor activities because of her skin condition—and she abhors shoes). She is Majoring in Applied Cognitive Science with specialization in Neuro-Linguistic & Multiplicity Studies.
+ At age fourteen, Celectra has finished with the academic portion of schooling but is working on college lessons as well as dance, swimming, karate, yoga, acrobatics, and gymnastics (all-indoor activities because of her skin condition—and she abhors shoes). She is Majoring in Applied Cognitive Science with specialization in Neuro-Linguistic & Multiplicity Studies.
  Celectra joins the Northern Territory expedition as the colony’s only functional
  bridge to Galinstanians. She endures the trauma of Chime’s torture and the strain
  of long-range communion. Her abilities become essential to the mission’s survival,
@@ -60,7 +60,7 @@ book5_arc: >
  architect of the system that ensures no one will ever bear that burden alone. Her
  legacy is one of resilience, compassion, and the creation of a future where
  communion is shared, understood, and sustainable.
----
+-
 ## Overview
 Celectra Ambar Carisco is the first known dual-bodied human consciousness and the foundational bridge between humanity and the Galinstanian species of Ares. Born in 2225 after a radiation-induced consciousness fusion event, she grew into a diplomat, scientist, and cultural cornerstone whose natural electromagnetic communion shaped the colony’s survival and identity. Her life spans five books of the Two Stars saga, evolving from a traumatized child into a mother, scholar, and architect of interspecies harmony.
 
@@ -70,30 +70,30 @@ Celectra’s two bodies are genetically identical, each standing 1.49 m and weig
 ## Medical Summary
 Celectra’s physiology is the subject of three major medical dossiers maintained by Dr. Alex Cruiz and the New Eden Medical Corps:
 
-### Mononous Disomas (Dual-Body Physiology)
+### Mononous Disomas (dual-body-physiology)
 Celectra possesses a unique dual-bodied condition known as mononous disomas, in which two fully functional bodies share a single consciousness and a unified sensory-emotional network. Both bodies exhibit synchronized autonomic responses, but can act independently with deliberate control. This condition is stable but requires ongoing monitoring for metabolic load, neural fatigue, and resonance overextension.
 * **Waveguide Skulls:** Her skulls are mineralized with trace metals, acting as biogenic antennas to focus the "celectricity".
 * **Celectric Tax:** She maintains a BMR 2.5x higher than average; her body prioritizes powering the neural bridge over physical mass.
-[Mononous Disomas – Celectra's Neural Dossier](../Mononous Disomas.html)
+[Mononous Disomas – Celectra's Neural Dossier](./mononous-disomas.html)
 
 ### Albinism
 Both bodies present with oculocutaneous albinism, including pale skin and white hair. The melanin in the irises was present before the en utero radiation exposure. Albinism does not interfere with communion but increases vulnerability during field operations.
-[Celectra’s Skin Care Protocol Dossier](../celectra-care-protocol-dossier.html)
+[Celectra’s Skin Care Protocol Dossier](./celectra-care-protocol-dossier.html)
 
 ### Growth Delay
 Celectra’s early childhood included retarded growth velocity, linked to the placental damage. Growth normalized in adolescence but remains well below the colony average. Alex monitors her nutritional intake, bone density, and endocrine markers as part of her long-term care plan.
 Initially diagnosed as "failure to thrive," her small stature is now understood as a metabolic trade-off.
-[Celectra Growth ](../CelectraGrowth.html)[& Development Report](../CelectraGrowth.html)
+[Celectra Growth ](./celectragrowth.html)[& Development Report](./celectragrowth.html)
 
-## The Nutritional Protocol (CMS-1)
-To maintain a high-fidelity consciousness across two bodies, Celectra must overcome a constant "Celectricity Tax." In her early development, this was mistaken for failure to thrive, leading to the creation of the CMS-1 (Celectric Metabolic Stabilizer) protocol.
-The protocol was created by Dr. Alex Cruiz (Uncle Doc) in her infancy as a high-density "milkshake" or suspension that fuels her 2.5x BMR without taxing her physical growth further.
+## The Nutritional Protocol (cms-1)
+To maintain a high-fidelity consciousness across two bodies, Celectra must overcome a constant "Celectricity Tax." In her early development, this was mistaken for failure to thrive, leading to the creation of the CMS-1 (celectric-metabolic stabilizer) protocol.
+The protocol was created by Dr. Alex Cruiz (uncle-doc) in her infancy as a high-density "milkshake" or suspension that fuels her 2.5x BMR without taxing her physical growth further.
 
 ### 1. The "Celectricity Shake" Composition
 The CMS-1 formula is designed to be absorbed rapidly, bypassing typical slow digestion to provide immediate "rocket fuel" for the neural bridge.
 
 | Ingredient | Purpose | Biological Function |
-|---|---|---|
+|-|-|-|
 | **MCT Emulsions** | Brain Fuel | Medium-Chain Triglycerides convert directly to ketones, powering high-frequency neural firing. |
 | **Magnesium Glycinate** | Structural Integrity | Maintains the magnesium-laced "waveguide" matrix within the skull bone. |
 | **Sodium/Potassium Salts** | Ion Balance | Replenishes electrolytes lost to the constant rapid-fire ion exchange of the standing wave. |
@@ -102,14 +102,14 @@ The CMS-1 formula is designed to be absorbed rapidly, bypassing typical slow dig
 ### 2. Metabolic States & Requirements
 Celectra’s caloric needs shift dramatically based on the "bandwidth" of her connection.
 
-* **Resting/Idling (~5,000 kcal/day):** Standard dual-body synchronization. Requires consistent snacking to prevent "Neural Brownouts."
-* **Active Communion (~8,500 kcal/day):** Occurs during intense multitasking or high-emotional states.
-* **Deep Communion (~12,500+ kcal/day):** Planetary resonance events. Requires pre-loading with CMS-1 and immediate post-event refueling to avoid physical collapse.
+* **Resting/Idling (~5,000-kcal/day):** Standard dual-body synchronization. Requires consistent snacking to prevent "Neural Brownouts."
+* **Active Communion (~8,500-kcal/day):** Occurs during intense multitasking or high-emotional states.
+* **Deep Communion (~12,500+-kcal/day):** Planetary resonance events. Requires pre-loading with CMS-1 and immediate post-event refueling to avoid physical collapse.
 
-<!-- Wiki Power Level Monitor -->
+<!- Wiki Power Level Monitor ->
 <div class="metabolic-container">
   <div class="power-label">
-    <span>Celectra (Standard Dual-Body Sync)</span>
+    <span>Celectra (standard-dual-body sync)</span>
     <span>~5,000 kcal/day</span>
   </div>
   <div class="bar-bg">
@@ -128,25 +128,25 @@ Celectra’s caloric needs shift dramatically based on the "bandwidth" of her co
 </div>
 
 ### 3. Therapeutic Geothermal Restoration
-Beyond oral nutrition, the 40°C Mineral Pool (Non-Alkaline) serves as a secondary "passive" protocol.
-* **Thermal Neutrality:** At 40°C, the environment matches her internal waste heat (38.5°C), allowing her body to cease active thermoregulation and divert that energy to neural repair.
-* **Transdermal Absorption:** The high magnesium content of the geothermal water helps "recharge" the conductivity of her cranial matrix through the skin, alleviating the "hum-ache" (chronic neural fatigue).
+Beyond oral nutrition, the 40°C Mineral Pool (non-alkaline) serves as a secondary "passive" protocol.
+* **Thermal Neutrality:** At 40°C, the environment matches her internal waste heat (38.5°c), allowing her body to cease active thermoregulation and divert that energy to neural repair.
+* **Transdermal Absorption:** The high magnesium content of the geothermal water helps "recharge" the conductivity of her cranial matrix through the skin, alleviating the "hum-ache" (chronic-neural fatigue).
 
 ### Implementation Note: The "Thermal Zone"
 Because her bodies are biological furnaces, the space between them acts as a stagnant heat pocket. When Celectra is well-fueled by the CMS-1 protocol, her radiant heat output increases.
-To help combat this, Celectra exhibits a lifelong preference for being barefoot, which serves as a critical passive cooling mechanism. Due to her 38.5°C core temperature and Oculocutaneous Albinism skin sensitivity, traditional footwear causes rapid thermal runaway and epidermal distress. This preference extends to her choice of physical disciplines (Karate, Yoga, Swimming), where direct surface contact allows for maximum metabolic discharge and venting static interference of her neural broadcast.
+To help combat this, Celectra exhibits a lifelong preference for being barefoot, which serves as a critical passive cooling mechanism. Due to her 38.5°C core temperature and Oculocutaneous Albinism skin sensitivity, traditional footwear causes rapid thermal runaway and epidermal distress. This preference extends to her choice of physical disciplines (karate,-yoga, swimming), where direct surface contact allows for maximum metabolic discharge and venting static interference of her neural broadcast.
 Additionally, she exclusively wears clothing made of "cyro-silk", a graphene-infused high-denier lyocell material and her bedsheets are made of the same material.
 
 ## Personality & Skills
 ### Celectra’s Internal Dashboard
 Celectra views her consciousness not as a single voice, but as a Board of Directors. While she knows the “left‑brain / right‑brain” split is a scientific myth, she uses these four categories as a mental shorthand to weigh her options—especially when her training in multiplicity studies tells her she is experiencing “data‑clashes.”
 
-| The Voice | What It Handles (The Layman Version) | Her Technical Reality |
-|---|---|---|
-| **The Engineer** (Left‑Analytical) | Math, physics, and “How do I fix this?” | Linear logic and engineering protocols. |
-| **The Weaver** (Right‑Analytical) | Patterns, “vibes,” and EM‑fields. | Non‑linear data and system modeling. |
-| **The Diplomat** (Left‑Emotional) | People, social cues, and “Are they okay?” | Linguistic nuance and social‑modeling. |
-| **The Wildcard** (Right‑Emotional) | Art, gut instincts, and “What if we try this?” | Abstract synthesis and survival heuristics. |
+| The Voice | What It Handles (the-layman version) | Her Technical Reality |
+|-|-|-|
+| **The Engineer** (left‑analytical) | Math, physics, and “How do I fix this?” | Linear logic and engineering protocols. |
+| **The Weaver** (right‑analytical) | Patterns, “vibes,” and EM‑fields. | Non‑linear data and system modeling. |
+| **The Diplomat** (left‑emotional) | People, social cues, and “Are they okay?” | Linguistic nuance and social‑modeling. |
+| **The Wildcard** (right‑emotional) | Art, gut instincts, and “What if we try this?” | Abstract synthesis and survival heuristics. |
 
 Her natural abilities include:
 * Electromagnetic communion
@@ -158,14 +158,14 @@ Her natural abilities include:
 ## Relationships
 * **Amerigo Carisco** — father, mentor, later Chief Scientist
 * **Jinan “Jenni” Carisco** — biological mother, died in childbirth
-* **Dr. Zoë (Kret) Carisco** — adoptive mother, emotional anchor
+* **Dr. Zoë (kret) Carisco** — adoptive mother, emotional anchor
 * **Jaxon Bowers** — partner, later father of her twin daughters
 * **Xan Carisco** — younger brother, acoustic-communication innovator
 * **Stan, Chime, Harbor, Logic, Ripple, etal** — Galinstanian friends and collaborators
-* **Jenni Jo & Xara Zo** — her daughters (Book 3 onward)
+* **Jenni Jo & Xara Zo** — her daughters (book-3 onward)
 * **Alex Cruiz** — physician who developed the magnesium-supplementation protocol to stabilize her waveguide skulls and high-calorie diet and monitors her skin for melanomas.
 
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Across the series, Celectra evolves from a child struggling with trauma and dual embodiment into a scientist and diplomat whose work reshapes the future of Ares. Her arc centers on identity, purpose, legacy, and the ethics of bridging two species. By Book 5, she becomes a steward of the planetary resonance network and a mother guiding the next generation of bridges.
 
 {% include story-arcs.html %}

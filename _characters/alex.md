@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Dr. Alexander 'Alex' Cruiz
 portrait: "/assets/images/alex-book1.webp"
@@ -10,7 +10,7 @@ portrait-book5: "/assets/images/alex-book5.webp"
 affiliation: New Eden Medical Corps; Chief of Medicine; New Eden Council
 status: Alive
 birthday: November 2, 2103
-birthplace: Earth (pre‑Ares migration)
+birthplace: Earth (pre‑ares-migration)
 book1_age: "38.9 Earth / 34.7 Ares"
 book2_age: "46.0 Earth / 41.1 Ares"
 book3_age: "52.9 Earth / 47.3 Ares"
@@ -53,7 +53,7 @@ book5_arc: >
   resonance exposure, and supports the twins as they begin their stewardship
   roles. His arc centers on legacy — ensuring the colony’s medical systems will
   endure long after he retires.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -85,7 +85,7 @@ Professional strengths:
 
 - trauma medicine  
 - obstetrics and neonatal care  
-- xenobiology (practical, field-tested)  
+- xenobiology (practical,-field-tested)  
 - emergency response  
 - long-term monitoring of dual-bodied physiology  
 
@@ -105,19 +105,19 @@ Personal strengths:
 - **Celectra Carisco** — patient, surrogate niece, later someone he protects fiercely  
 - **Xan Carisco** — “kiddo,” often patched up after experiments  
 - **Jenni Jo & Xara Zo** — grand-nieces he adores  
-- **Dee Cruiz** — sister (not spouse), fellow early colonist  
+- **Dee Cruiz** — sister (not-spouse), fellow early colonist  
 - **Jaxon Bowers** — engineering partner in medical crises  
 - **Ripple, Chime, Stan** — Galinstanians he learns to read medically through Celectra  
 
 </div>
 <div class="card-bg" markdown="1">
 
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Alex’s journey is one of responsibility and quiet heroism. He becomes the medical authority on Celectra’s physiology, the first to understand the risks of communion, and the doctor who delivers the colony’s hardest truths. His arc is about choosing to be the steady center in a world that constantly threatens to fracture.
 
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 

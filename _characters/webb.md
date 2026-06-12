@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Dr. Nathaniel Webb
 portrait: "/assets/images/webb-book1.webp"
@@ -10,7 +10,7 @@ portrait-book5: "/assets/images/webb-book5.webp"
 affiliation: New Eden Founders; Agricultural Sciences Division; Council
 status: Alive
 birthday: August 29, 2085
-birthplace: Earth (pre‑Ares migration)
+birthplace: Earth (pre‑ares-migration)
 book1_age: "57.0"
 book2_age: "64.2"
 book3_age: "71.1"
@@ -36,7 +36,7 @@ book5_title: "Elder of the Colony"
 book5_arc: >
   Webb serves as a respected elder and advisor. He mentors younger agricultural scientists and provides historical perspective during Stewardship planning. His arc concludes with quiet dignity — a man who lived long enough to see the colony become something better than he imagined.
 
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -67,7 +67,7 @@ His strengths include:
 - soil chemistry
 - long-term settlement planning
 - crisis logistics
-- stubbornness (weaponized for good)
+- stubbornness (weaponized-for good)
 
 His weaknesses include:
 
@@ -86,23 +86,23 @@ His weaknesses include:
 - **Stan, Chime, Ripple** — Galinstanians he slowly learns to trust, though he'd never admit how far he's come
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Webb's arc is about humility, growth, and the slow unlearning of assumptions. He begins as a man who sees Ares as a frontier to be tamed and ends as someone who understands that coexistence — not dominance — is the colony's future. His officiation of Celectra and Jaxon's wedding becomes one of the most unexpectedly tender moments in the series.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The Grumbling Years (Book 1-2):** Webb opposes expanded Galinstanian engagement, earning a reputation as the council's resident skeptic
-- **Witness to Trauma (Book 2):** Seeing Chime's suffering after the northern cluster rescue begins cracking his certainty
-- **The Wedding (Book 3):** Officiates Celectra and Jaxon's ceremony with a speech that leaves no dry eye in the house — including his own
-- **Honorary Grandfather (Book 4):** Develops an unlikely soft spot for the twins, bringing them "educational" soil samples that are really just excuses to visit
-- **The Quiet Advisor (Book 5):** Mentors younger scientists, offering historical perspective that proves invaluable during Stewardship planning
+- **The Grumbling Years (book-1-2):** Webb opposes expanded Galinstanian engagement, earning a reputation as the council's resident skeptic
+- **Witness to Trauma (book-2):** Seeing Chime's suffering after the northern cluster rescue begins cracking his certainty
+- **The Wedding (book-3):** Officiates Celectra and Jaxon's ceremony with a speech that leaves no dry eye in the house — including his own
+- **Honorary Grandfather (book-4):** Develops an unlikely soft spot for the twins, bringing them "educational" soil samples that are really just excuses to visit
+- **The Quiet Advisor (book-5):** Mentors younger scientists, offering historical perspective that proves invaluable during Stewardship planning
 </div>
 
 <div class="card-bg" markdown="1">
-### The Wedding Speech (Excerpt)
+### The Wedding Speech (excerpt)
 > "I'll be honest — when I first heard about a child who could talk to beings made of metal, I thought we'd lost our minds. We were barely keeping crops alive. We didn't have time for miracles.
 
 > But Celectra didn't ask for permission to be what she is. She just... was. And she kept being it, day after day, year after year, until even an old fool like me had to admit: some things matter more than survival.

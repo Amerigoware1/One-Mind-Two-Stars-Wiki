@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Chibuike Okafor
 portrait: "/assets/images/okafor-book1.webp"
@@ -49,7 +49,7 @@ book5_arc: >
   When the twins lead the Resonant Echo rescue and subsequent Council testimony, Okafor observes with quiet pride. He recognizes in their work the same values he has always championed: discipline, evidence, and the courage to adapt when circumstances demand it.
 
   His arc culminates not in dramatic transformation, but in the steady accumulation of wisdom: fairness isn't a fixed rule, but a practice—one that requires listening, learning, and the humility to change one's mind when the evidence warrants it.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -88,15 +88,15 @@ His weaknesses include:
 - **Celectra Carisco** — evolves from skeptical authority figure to respectful councilor who acknowledges her discipline and contributions
 - **Sensei Onishi Kisa** — professional counterpart on Athletics Committee; their debates shape colony sports policy
 - **Jaxon Bowers & Ananya Patel** — comes to respect their work ethic and reliability, endorsing their Listener Corps findings
-- **Council Members (Santos, Webb, etc.)** — works within council structure, often taking conservative positions that balance more progressive voices
+- **Council Members (santos,-webb, etc.)** — works within council structure, often taking conservative positions that balance more progressive voices
 - **New Eden Youth** — takes role as youth overseer seriously, emphasizing discipline while providing opportunities
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Okafor's arc is about the evolution of fairness—learning that equal treatment doesn't always mean identical rules, and that true competition honors both principle and person. His journey from skeptic to respectful supporter mirrors the colony's broader adaptation to unique individuals. He represents the valuable voice that asks "How do we ensure this is fair?"—and then listens when the answer requires rethinking the question.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

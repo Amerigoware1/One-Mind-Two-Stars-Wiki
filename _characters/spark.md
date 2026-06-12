@@ -1,6 +1,6 @@
----
+-
 layout: character
-title: Spark (Northern Territory)
+title: Spark (northern-territory)
 portrait: "/assets/images/spark-book2.webp"
 portrait-book2: "/assets/images/spark-book2.webp"
 portrait-book3: "/assets/images/spark-book3.webp"
@@ -24,17 +24,17 @@ book2_arc: >
 
 book3_title: "The Communion Interface"
 book3_arc: >
-  (Minor appearance) Spark is mentioned as being part of the Northern Territory cluster during their integration period. Zuri, now an adolescent, is busy with school and growing up; their contact is less frequent but warm. Spark continues to bring lightness to the Galinstanian community.
+  (minor-appearance) Spark is mentioned as being part of the Northern Territory cluster during their integration period. Zuri, now an adolescent, is busy with school and growing up; their contact is less frequent but warm. Spark continues to bring lightness to the Galinstanian community.
 
 book4_title: "The Four Rivers Resonance"
 book4_arc: >
-  (Minor appearance/mention) During the Four Rivers crisis, Spark helps maintain morale among the younger Galinstanians, using play and curiosity to keep fear at bay. Their presence is noted but not central to the resolution.
+  (minor-appearance/mention) During the Four Rivers crisis, Spark helps maintain morale among the younger Galinstanians, using play and curiosity to keep fear at bay. Their presence is noted but not central to the resolution.
 
 book5_title: "The Joy Keeper"
 book5_arc: >
   By Book 5, Spark has become the unofficial joy keeper of New Eden's Galinstanian community—the one who reminds everyone that survival is not just about enduring, but about finding reasons to pulse with brightness. Their bond with Zuri has matured; Zuri is now a young adult, and they share a deep understanding that play is not the opposite of seriousness—it is how seriousness becomes bearable. When the Resonant Echo rescue succeeds, Spark helps the newly freed collective experience their first moments of genuine delight, teaching them that joy is not a betrayal of suffering but a triumph over it.
 
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -46,7 +46,7 @@ During Chime's torture, Spark was forced into terrified stillness, their natural
 
 <div class="card-bg" markdown="1">
 ## Physical Description
-Spark's form is fluid and expressive, constantly shifting in ways that suggest playfulness. Their surface shimmers with brighter highlights than other Galinstanians—as if light lingers longer on them. When Spark is happy (which is often), their pulses quicken into something approaching a giggle in resonance form.
+Spark's form is fluid and expressive, constantly shifting in ways that suggest playfulness. Their surface shimmers with brighter highlights than other Galinstanians—as if light lingers longer on them. When Spark is happy (which-is often), their pulses quicken into something approaching a giggle in resonance form.
 
 Spark moves with exaggerated gestures when interacting with humans, having learned that physical comedy translates across species. They can approximate human facial expressions in pseudopod form, though the results are always slightly melted and hilarious—exactly as intended.
 </div>
@@ -57,7 +57,7 @@ Spark is defined by:
 
 - infectious joy that lifts entire rooms
 - playful curiosity about everything
-- deliberate lightness (a choice, not ignorance)
+- deliberate lightness (a-choice, not ignorance)
 - ability to find humor in dark situations without dismissing pain
 - deep well of sadness that makes their joy meaningful
 
@@ -80,30 +80,30 @@ Their weaknesses include:
 <div class="card-bg" markdown="1">
 ## Relationships
 - **Zuri** — bonded human who named them "Spark"; their connection is built on shared delight and mutual joy
-- **The Northern Territory Cluster (Chime, Harbor, Flicker, Logic, Guardian, Lyric)** — family; Spark is the one who makes them laugh when memory presses too hard
+- **The Northern Territory Cluster (chime,-harbor, flicker, logic, guardian, lyric)** — family; Spark is the one who makes them laugh when memory presses too hard
 - **Chime** — Spark carries grief for Chime's suffering; expresses care through gentle play and small surprises
 - **Celectra Carisco** — rescuer; Spark pulses brighter whenever she enters a room
 - **Ripple** — younger Galinstanian; Spark teaches that joy is not weakness
-- **Resonant Echo (the Four)** — Spark helps them discover delight after trauma, offering silly pseudopod faces and gentle resonance games
+- **Resonant Echo (the-four)** — Spark helps them discover delight after trauma, offering silly pseudopod faces and gentle resonance games
 </div>
 
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Spark's arc is about the courage of joy. For three days, Spark hid in terrified silence while Chime suffered. After the rescue, Spark could have retreated into darkness. Instead, they chose lightness—not as denial, but as defiance.
 
 When Zuri named them "Spark," Zuri saw the truth: Spark makes everything feel more fun. But that fun is hard-won. Spark's story is about learning that joy is not the absence of pain—it is the choice to let pain coexist with delight. And that making others laugh is a form of healing, for both the joker and the audience.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The Silence (Book 2, pre-rescue):** Spark forced into terrified stillness while Chime suffers; the weight of helplessness
-- **The Cave-In (Book 2):** Spark works alongside others to dissolve stone, finding purpose in collective action
-- **The Naming (Book 2):** Zuri names them "Spark"—"because they make everything feel more fun"
-- **The Integration (Book 3):** Spark steps back from central narrative, focusing on bringing lightness to the Galinstanian community
-- **The Morale Keeper (Book 4):** During the Four Rivers crisis, Spark helps younger Galinstanians stay calm through play
-- **The Joy Teacher (Book 5):** Spark helps Resonant Echo discover delight, proving that joy survives trauma
+- **The Silence (book-2, pre-rescue):** Spark forced into terrified stillness while Chime suffers; the weight of helplessness
+- **The Cave-In (book-2):** Spark works alongside others to dissolve stone, finding purpose in collective action
+- **The Naming (book-2):** Zuri names them "Spark"—"because they make everything feel more fun"
+- **The Integration (book-3):** Spark steps back from central narrative, focusing on bringing lightness to the Galinstanian community
+- **The Morale Keeper (book-4):** During the Four Rivers crisis, Spark helps younger Galinstanians stay calm through play
+- **The Joy Teacher (book-5):** Spark helps Resonant Echo discover delight, proving that joy survives trauma
 </div>
 
 <div class="card-bg" markdown="1">

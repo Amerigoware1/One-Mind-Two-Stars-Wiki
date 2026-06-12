@@ -1,6 +1,6 @@
----
+-
 layout: character
-title: Guardian (Northern Territory)
+title: Guardian (northern-territory)
 portrait: "/assets/images/guardian-book2.webp"
 portrait-book2: "/assets/images/guardian-book2.webp"
 portrait-book3: "/assets/images/guardian-book3.webp"
@@ -24,17 +24,17 @@ book2_arc: >
 
 book3_title: "The Communion Interface"
 book3_arc: >
-  (Minor appearance) Guardian is mentioned as being part of the Northern Territory cluster during integration. Their protective nature extends to monitoring the ethical boundaries of the Communion Interface, ensuring no Galinstanian is ever again subjected to non-consensual access.
+  (minor-appearance) Guardian is mentioned as being part of the Northern Territory cluster during integration. Their protective nature extends to monitoring the ethical boundaries of the Communion Interface, ensuring no Galinstanian is ever again subjected to non-consensual access.
 
 book4_title: "The Four Rivers Resonance"
 book4_arc: >
-  (Minor appearance/mention) During the Four Rivers crisis, Guardian helps maintain safety perimeters, their protective instincts making them invaluable for keeping young Galinstanians and human children away from unstable resonance zones.
+  (minor-appearance/mention) During the Four Rivers crisis, Guardian helps maintain safety perimeters, their protective instincts making them invaluable for keeping young Galinstanians and human children away from unstable resonance zones.
 
 book5_title: "The Protector"
 book5_arc: >
   By Book 5, Guardian has become a quiet sentinel of New Eden's cross-species community. Their bond with Hiro has matured—Hiro is now a young adult, and Guardian watches with quiet pride as he becomes protective of others. When the Resonant Echo rescue unfolds, Guardian helps secure the perimeter, ensuring that no one else will ever be trapped as Chime was. Their arc culminates in a moment of profound peace: Chime, fully healed, pulses a private thank-you to their parent—for hiding, for surviving, for being there when the hiding ended.
 
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -46,7 +46,7 @@ During Chime's three days of torture at Kret's hands, Guardian endured the uniqu
 
 <div class="card-bg" markdown="1">
 ## Physical Description
-Guardian's form is substantial—larger than most Galinstanians, with a density that suggests strength and stability. Their surface is warm to human touch, and their pulses are deep, steady, and encompassing—like a heartbeat felt through a hug. When Guardian wraps pseudopods around someone (usually a child), the embrace feels complete, safe, and utterly reliable.
+Guardian's form is substantial—larger than most Galinstanians, with a density that suggests strength and stability. Their surface is warm to human touch, and their pulses are deep, steady, and encompassing—like a heartbeat felt through a hug. When Guardian wraps pseudopods around someone (usually-a child), the embrace feels complete, safe, and utterly reliable.
 
 When distressed, Guardian's form tightens, becoming smaller and more compact—a defensive posture learned during the hiding. When protective instincts activate, they expand, flowing between the threat and those they guard.
 </div>
@@ -55,23 +55,23 @@ When distressed, Guardian's form tightens, becoming smaller and more compact—a
 ## Personality & Skills
 Guardian is defined by:
 
-- fierce protective love for all children (Galinstanian and human)
+- fierce protective love for all children (galinstanian-and human)
 - deep well of parental guilt about hiding during Chime's torture
 - quiet warmth that makes children feel safe
-- patience that seems infinite (centuries of parenting)
+- patience that seems infinite (centuries-of parenting)
 - ability to be terrifying when threats approach
 
 Their strengths include:
 
-- protecting vulnerable beings (physical and emotional shielding)
+- protecting vulnerable beings (physical-and emotional shielding)
 - sensing distress in young beings of both species
-- remaining calm during crises (parental composure)
+- remaining calm during crises (parental-composure)
 - creating safe spaces for healing
 - mediating between adults and children
 
 Their weaknesses include:
 
-- unresolved guilt about Chime's torture (a wound that will never fully close)
+- unresolved guilt about Chime's torture (a-wound that will never fully close)
 - tendency to be overprotective, especially with Chime
 - difficulty trusting humans who remind them of Kret
 - can be intimidating to adults while being gentle with children
@@ -81,30 +81,30 @@ Their weaknesses include:
 ## Relationships
 - **Chime** — Guardian's child; the bond is deep, complicated by the trauma of hiding while Chime suffered
 - **Hiro** — bonded human who named them "Guardian"; Hiro's reverence for parents touched Guardian deeply
-- **The Northern Territory Cluster (Chime, Harbor, Flicker, Logic, Spark, Lyric)** — family; Guardian is the protective elder among them
+- **The Northern Territory Cluster (chime,-harbor, flicker, logic, spark, lyric)** — family; Guardian is the protective elder among them
 - **Celectra Carisco** — rescuer; Guardian trusts her with their child's safety, which is the highest trust they can give
 - **Stan** — elder who helped Guardian process parental guilt
 - **All children of New Eden** — Guardian watches over them all, human and Galinstanian alike
-- **Resonant Echo (the Four)** — Guardian helps them feel safe, offering the protective embrace they once could not give to Chime
+- **Resonant Echo (the-four)** — Guardian helps them feel safe, offering the protective embrace they once could not give to Chime
 </div>
 
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Guardian's arc is about the limits of protection—and what comes after. For three days, Guardian heard their child's pain and could do nothing. The guilt of that helplessness is the deepest wound Guardian carries. But the rescue taught Guardian something crucial: protection is not only about preventing harm. It is also about being present after harm has occurred.
 
 When Hiro named them "Guardian," Hiro saw the truth: Guardian protects. Not perfectly—no one can. But fiercely, consistently, and without condition. Guardian's story is about learning that hiding was not failure—it was survival. And that being there when the hiding ends is its own form of protection.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The Helpless Parent (Book 2, pre-rescue):** Guardian hides, listening to Chime's torture—the worst days of their life
-- **The Cave-In (Book 2):** Guardian dissolves stone with desperate precision, channeling parental fury into escape
-- **The Reunion (Book 2):** Guardian flows to Chime, wrapping around them in protective stillness
-- **The Naming (Book 2):** Hiro names them "Guardian"—"because that's what they do"
-- **The Watch (Book 3 & 4):** Guardian maintains safety perimeters, protecting from the background
-- **The Peace (Book 5):** Chime pulses a private thank-you: for hiding, for surviving, for being there when the hiding ended
+- **The Helpless Parent (book-2, pre-rescue):** Guardian hides, listening to Chime's torture—the worst days of their life
+- **The Cave-In (book-2):** Guardian dissolves stone with desperate precision, channeling parental fury into escape
+- **The Reunion (book-2):** Guardian flows to Chime, wrapping around them in protective stillness
+- **The Naming (book-2):** Hiro names them "Guardian"—"because that's what they do"
+- **The Watch (book-3 & 4):** Guardian maintains safety perimeters, protecting from the background
+- **The Peace (book-5):** Chime pulses a private thank-you: for hiding, for surviving, for being there when the hiding ended
 </div>
 
 <div class="card-bg" markdown="1">
@@ -129,7 +129,7 @@ When Hiro named them "Guardian," Hiro saw the truth: Guardian protects. Not perf
 ### Trivia
 - Guardian's name came from Hiro's childhood reverence for parents; Hiro had recently learned the word "guardian" in school
 - Guardian still pulses a "goodnight" rhythm to Chime every evening—a habit from before the capture that they resumed after the rescue
-- They can sense when a child (of either species) is afraid, even from a distance
+- They can sense when a child (of-either species) is afraid, even from a distance
 - Guardian has never fully forgiven themselves for hiding, though Chime has long since forgiven them
 - Hiro, now grown, still visits Guardian whenever he needs to feel safe
 - Guardian maintains a mental map of every child in New Eden and their general well-being

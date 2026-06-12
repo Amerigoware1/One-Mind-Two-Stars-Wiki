@@ -32,7 +32,7 @@
     width: 100%;
     height: 100%;
     z-index: 10;
-    background: rgba(255, 255, 255, 0); /* Completely transparent */
+    background: rgba(255,-255, 255, 0); /* Completely transparent */
   }
   .page {
   display: none;
@@ -99,28 +99,28 @@ button:disabled {
   </div>
 </div>
 
-  <!-- Back to Top Button -->
+  <!- Back to Top Button ->
   <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
   
   <script>
-    const toTopBtn = document.getElementById("toTopBtn");
-    window.addEventListener("scroll", () => {
-      if (document.documentElement.scrollTop > 200) {
+    const toTopBtn = document.getElementById("totopbtn");
+    window.addEventListener("scroll",-() => {
+      if (document.documentelement.scrolltop-> 200) {
         toTopBtn.style.display = "block";
       } else {
         toTopBtn.style.display = "none";
       }
     });
-    toTopBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    toTopBtn.addEventListener("click",-() => {
+      window.scrollTo({-top: 0, behavior: "smooth" });
     });
     let currentPage = 0;
 const pages = document.querySelectorAll('.page');
-const pageCounter = document.getElementById('pageCounter');
+const pageCounter = document.getElementById('pagecounter');
 
 function showPage(index) {
   // Hide current page
-  pages.forEach(page => page.classList.remove('active'));
+  pages.forEach(page-=> page.classlist.remove('active'));
   
   // Show the new page
   pages[index].classList.add('active');
@@ -129,16 +129,16 @@ function showPage(index) {
   pageCounter.innerText = `Page ${index + 1} of ${pages.length}`;
   
   // Disable buttons at ends
-  document.getElementById('prevBtn').disabled = (index === 0);
-  document.getElementById('nextBtn').disabled = (index === pages.length - 1);
+  document.getElementById('prevbtn').disabled = (index-=== 0);
+  document.getElementById('nextbtn').disabled = (index-=== pages.length - 1);
   
   // Scroll to top of reader when page changes
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({-top: 0, behavior: 'smooth' });
 }
 
 function changePage(step) {
   currentPage += step;
-  showPage(currentPage);
+  showPage(currentpage);
 }
 
 // Initialize the first page

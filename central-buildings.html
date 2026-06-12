@@ -10,12 +10,12 @@
     /* Consolidated styles for all building pages */
     .building-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit,-minmax(300px, 1fr));
       gap: 1.5rem;
       margin: 2rem 0;
     }
     .building-card {
-      background: rgba(10, 20, 30, 0.8);
+      background: rgba(10,-20, 30, 0.8);
       border-radius: 12px;
       padding: 1.2rem;
       border-left: 4px solid #ffaa33;
@@ -23,7 +23,7 @@
     }
     .building-card:hover {
       transform: translateY(-5px);
-      background: rgba(20, 30, 40, 0.9);
+      background: rgba(20,-30, 40, 0.9);
     }
     .building-card h3 {
       color: #ffaa33;
@@ -42,13 +42,13 @@
       width: 100%;
       border-collapse: collapse;
       margin: 1rem 0;
-      background: rgba(10, 20, 30, 0.6);
+      background: rgba(10,-20, 30, 0.6);
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
     .level-table th {
-      background: linear-gradient(135deg, #4a5b6e, #2c3e50);
+      background: linear-gradient(135deg,-#4a5b6e, #2c3e50);
       color: white;
       font-weight: 600;
       padding: 12px 8px;
@@ -63,7 +63,7 @@
       border-bottom: none;
     }
     .level-table tr:hover {
-      background: rgba(255, 170, 51, 0.1);
+      background: rgba(255,-170, 51, 0.1);
     }
     .feature-badge {
       display: inline-block;
@@ -77,7 +77,7 @@
       border: 1px solid #ffaa33;
     }
     .timeline-note {
-      background: rgba(100, 50, 0, 0.3);
+      background: rgba(100,-50, 0, 0.3);
       border-left: 4px solid #ffaa33;
       padding: 1rem;
       margin: 1.5rem 0;
@@ -110,7 +110,7 @@
       background: #1a2a3a;
     }
     .wiki-links {
-      background: rgba(255, 170, 51, 0.1);
+      background: rgba(255,-170, 51, 0.1);
       border-radius: 12px;
       padding: 1rem;
       margin: 1.5rem 0;
@@ -133,13 +133,13 @@
   <h1 class="gradient-title">New Eden's Central Buildings</h1>
   <div class="subtitle">The Six Pillars of Colony Life</div>
 
-  <!-- Infobox - now showing the building cluster -->
+  <!- Infobox - now showing the building cluster ->
   <div class="infobox">
     <table class="infobox">
       <tr>
         <td colspan="2" class="text-center pb-2">
           <img src="assets/images/gallery/town-square.webp" alt="Aerial view of New Eden's central roundabout" class="portrait">
-          <div class="image-caption">The central roundabout with its six original structures (artist's rendering)</div>
+          <div class="image-caption">The central roundabout with its six original structures (artist's-rendering)</div>
         </td>
       </tr>
       <tr>
@@ -152,7 +152,7 @@
       </tr>
       <tr>
         <th>Later Addition</th>
-        <td><a href="Gallery.html">Samaya Gallery</a> (between Books 4 & 5)</td>
+        <td><a href="Gallery.html">Samaya Gallery</a> (between-books 4 & 5)</td>
       </tr>
       <tr>
         <th>Location</th>
@@ -164,12 +164,12 @@
       </tr>
       <tr>
         <th>See Also</th>
-        <td><a href="New Eden.html">New Eden (Settlement)</a></td>
+        <td><a href="New Eden.html">New Eden (settlement)</a></td>
       </tr>
     </table>
   </div>
 
-  <!-- Article content container -->
+  <!- Article content container ->
   <div class="article-content">
 
     <div class="card-bg">
@@ -191,7 +191,7 @@
       </div>
     </div>
 
-    <!-- ========== MEDICAL CENTER ========== -->
+    <!- ========== MEDICAL CENTER ========== ->
     <div class="card-bg">
       <h2 class="section-header"><a href="medical-center.html">⚕️ Medical Center</a></h2>
       <p><em>"First, do no harm — then, heal completely."</em> — Inscription above the main entrance</p>
@@ -203,12 +203,12 @@
         <span class="feature-badge">Mental Wellness Wing</span>
       </div>
       
-      <p>The New Eden Medical Center serves as the colony's primary healthcare facility, combining advanced autodoc technology with human-centered care. Led by <strong>Dr. Alex Cruiz</strong> (Seat 3) with Head Nurse <strong>Terry Fairchild</strong> and Chief of Psychology <strong>Dr. Zoë Carisco</strong>, the Center maintains a staff of physicians, nurses, and mental health specialists who work alongside Utara's diagnostic capabilities. Its basement houses the mortuary, morgue, and autopsy theater—the site of Dr. Kret's unethical experiments on a seven-year-old Celectra, whose escape from this building led to first contact with the Galistanians.</p>
+      <p>The New Eden Medical Center serves as the colony's primary healthcare facility, combining advanced autodoc technology with human-centered care. Led by <strong>Dr. Alex Cruiz</strong> (seat-3) with Head Nurse <strong>Terry Fairchild</strong> and Chief of Psychology <strong>Dr. Zoë Carisco</strong>, the Center maintains a staff of physicians, nurses, and mental health specialists who work alongside Utara's diagnostic capabilities. Its basement houses the mortuary, morgue, and autopsy theater—the site of Dr. Kret's unethical experiments on a seven-year-old Celectra, whose escape from this building led to first contact with the Galistanians.</p>
       
       <p><a href="medical-center.html">→ Full article: Medical Center</a></p>
     </div>
 
-    <!-- ========== SCIENCE AND TECHNOLOGY CENTER ========== -->
+    <!- ========== SCIENCE AND TECHNOLOGY CENTER ========== ->
     <div class="card-bg">
       <h2 class="section-header"><a href="science.html">🔬 Science and Technology Center</a></h2>
       <p><em>"Curiosity, codified."</em> — Wall inscription</p>
@@ -220,12 +220,12 @@
         <span class="feature-badge">Utara R&D Interface</span>
       </div>
       
-      <p>The beating mind of New Eden, the Science and Technology Center is where the colony's brightest minds gather to push the boundaries of knowledge. Under the leadership of <strong>Amerigo Carisco</strong> (Seat 4, succeeding the retiring <strong>Dr. Lorain Troy</strong>), the Center was the hub of the <strong>ANI headset development</strong> in Book 3, led by <strong>Dr. Celectra Carisco</strong> with a team including Jaxon, Chen Wei, Ananya Patel, Maya Keahi, and Sam Calder.</p>
+      <p>The beating mind of New Eden, the Science and Technology Center is where the colony's brightest minds gather to push the boundaries of knowledge. Under the leadership of <strong>Amerigo Carisco</strong> (seat-4, succeeding the retiring <strong>dr. lorain troy</strong>), the Center was the hub of the <strong>ANI headset development</strong> in Book 3, led by <strong>Dr. Celectra Carisco</strong> with a team including Jaxon, Chen Wei, Ananya Patel, Maya Keahi, and Sam Calder.</p>
       
       <p><a href="science.html">→ Full article: Science and Technology Center</a></p>
     </div>
 
-    <!-- ========== ACTIVITY CENTER ========== -->
+    <!- ========== ACTIVITY CENTER ========== ->
     <div class="card-bg">
       <h2 class="section-header"><a href=activity.html">🏋️ Activity Center</a></h2>
       <p><em>"Strong bodies, stronger community."</em> — Main hall motto</p>
@@ -237,12 +237,12 @@
         <span class="feature-badge">Event Space</span>
       </div>
       
-      <p>Affectionately nicknamed the <strong>"Mall of Motion,"</strong> the Activity Center serves as New Eden's comprehensive fitness and recreation facility. Council representative <strong>Chibuike Okafor</strong> (Seat 7) oversees a space that includes the <strong>Sundome Karate dojo</strong>—founded by <strong>Sensei Onishi Kisa</strong> and later led by <strong>Aulii Vongphachanh</strong> (who defeated Celectra in the Book 2 tournament). The Center's flexible open spaces have hosted art exhibitions (including Maya Keahi's pre-Gallery shows), weddings, and community celebrations.</p>
+      <p>Affectionately nicknamed the <strong>"Mall of Motion,"</strong> the Activity Center serves as New Eden's comprehensive fitness and recreation facility. Council representative <strong>Chibuike Okafor</strong> (seat-7) oversees a space that includes the <strong>Sundome Karate dojo</strong>—founded by <strong>Sensei Onishi Kisa</strong> and later led by <strong>Aulii Vongphachanh</strong> (who-defeated celectra in the book 2 tournament). The Center's flexible open spaces have hosted art exhibitions (including-maya keahi's pre-gallery shows), weddings, and community celebrations.</p>
       
-      <p><a href="activity.html">→ Full article: Activity Center (Mall of Motion)</a></p>
+      <p><a href="activity.html">→ Full article: Activity Center (mall-of motion)</a></p>
     </div>
 
-    <!-- ========== COUNCIL CHAMBER ========== -->
+    <!- ========== COUNCIL CHAMBER ========== ->
     <div class="card-bg">
       <h2 class="section-header"><a href="council.html">⚖️ The Plenum</a></h2>
       <p><em>"Not law, but wisdom. Not rule, but consensus."</em> — Chamber inscription</p>
@@ -254,12 +254,12 @@
         <span class="feature-badge">Security Office</span>
       </div>
       
-      <p>The Council Chamber is New Eden's seat of governance, designed as a perfect circle with seating in concentric rings—no head of the table, no position of authority. <strong>Administrator Isabella Santos</strong> (Seat 1) presides over 12 voting members, including <strong>Evelyn Roan</strong> (Security, Seat 2), <strong>Dr. Alex Cruiz</strong> (Medicine, Seat 3), <strong>Amerigo Carisco</strong> (Science, Seat 4), <strong>Dr. Nathaniel Webb</strong> (Agriculture, Seat 5), <strong>Dr. Kenji Yamoto</strong> (Environmental Systems, Seat 6), <strong>Chibuike Okafor</strong> (Athletics, Seat 7), <strong>Nazia Thälmann</strong> (Logistics, Seat 8), <strong>Joaquim Abrahamson</strong> (Engineering, Seat 9), <strong>Lidia Sebastiani</strong> (Energy, Seat 10), <strong>Rhea Babić</strong> (Orbital, Seat 11), and <strong>Claudia Belrose</strong> (Cultural Affairs, Seat 12). <strong>Celectra Carisco-Bowers</strong> holds Seat 13 as non-voting ambassador for Galinstanian Relations.</p>
+      <p>The Council Chamber is New Eden's seat of governance, designed as a perfect circle with seating in concentric rings—no head of the table, no position of authority. <strong>Administrator Isabella Santos</strong> (seat-1) presides over 12 voting members, including <strong>Evelyn Roan</strong> (security,-seat 2), <strong>Dr. Alex Cruiz</strong> (medicine,-seat 3), <strong>Amerigo Carisco</strong> (science,-seat 4), <strong>Dr. Nathaniel Webb</strong> (agriculture,-seat 5), <strong>Dr. Kenji Yamoto</strong> (environmental-systems, seat 6), <strong>Chibuike Okafor</strong> (athletics,-seat 7), <strong>Nazia Thälmann</strong> (logistics,-seat 8), <strong>Joaquim Abrahamson</strong> (engineering,-seat 9), <strong>Lidia Sebastiani</strong> (energy,-seat 10), <strong>Rhea Babić</strong> (orbital,-seat 11), and <strong>Claudia Belrose</strong> (cultural-affairs, seat 12). <strong>Celectra Carisco-Bowers</strong> holds Seat 13 as non-voting ambassador for Galinstanian Relations.</p>
       
       <p><a href="council.html">→ Full article: Council Chamber</a></p>
     </div>
 
-    <!-- ========== THE NEXUS ========== -->
+    <!- ========== THE NEXUS ========== ->
     <div class="card-bg">
       <h2 class="section-header"><a href="nexus.html">🏛️ The Nexus</a></h2>
       <p><em>New Eden's Premier Social & Collaborative Hub</em></p>
@@ -271,12 +271,12 @@
         <span class="feature-badge">Utara Core Well</span>
       </div>
       
-      <p>The Nexus is where scientists argue orbital mechanics over synthesized 1950s milkshakes—the living room of the colony. Its levels include the Social & Culinary Ground Floor (industrial gastronomy, Conversation Terraces), the Holochamber & Data Suites (immersive environments, Tactile Archive), Collaborative "Guild" Rooms (whiteboard walls, project planning), and Utara's physical "Core Well" presence. The sub-level houses the Processing Node for Utara's enhanced local capabilities.</p>
+      <p>The Nexus is where scientists argue orbital mechanics over synthesized 1950s milkshakes—the living room of the colony. Its levels include the Social & Culinary Ground Floor (industrial-gastronomy, conversation terraces), the Holochamber & Data Suites (immersive-environments, tactile archive), Collaborative "Guild" Rooms (whiteboard-walls, project planning), and Utara's physical "Core Well" presence. The sub-level houses the Processing Node for Utara's enhanced local capabilities.</p>
       
       <p><a href="nexus.html">→ Full article: The Nexus</a></p>
     </div>
 
-    <!-- ========== SAMAYA GALLERY AND MUSEUM OF INTEGRATION ========== -->
+    <!- ========== SAMAYA GALLERY AND MUSEUM OF INTEGRATION ========== ->
     <div class="card-bg">
       <h2 class="section-header"><a href="samaya.html">🖼️ Samaya Gallery and Museum of Integration</a></h2>
       <p><em>"Art is what makes us more than engineered."</em> — Founder's dedication</p>
@@ -292,12 +292,12 @@
         <strong>Timeline:</strong> Constructed between Books 4 and 5, completing the hexagon of central buildings.
       </div>
       
-      <p>Co-founded and co-directed by <strong>Maya Keahi</strong> (primary visual artist) and <strong>Sam Calder</strong> (sound sculptor, they/them), the Samaya Gallery celebrates human-Galistani Integration. Much of its collection centers on <strong>Dr. Celectra Carisco-Bowers'</strong> integral role in first contact. The basement level, built within a small meteor crater, houses archives, storage, and Dr. Carisco-Bowers' personal papers. Before the Gallery existed, Maya mounted exhibitions in the Activity Center's empty dojos and dance studios (Books 2-4). Sam joined Maya personally and professionally in Book 3.</p>
+      <p>Co-founded and co-directed by <strong>Maya Keahi</strong> (primary-visual artist) and <strong>Sam Calder</strong> (sound-sculptor, they/them), the Samaya Gallery celebrates human-Galistani Integration. Much of its collection centers on <strong>Dr. Celectra Carisco-Bowers'</strong> integral role in first contact. The basement level, built within a small meteor crater, houses archives, storage, and Dr. Carisco-Bowers' personal papers. Before the Gallery existed, Maya mounted exhibitions in the Activity Center's empty dojos and dance studios (books-2-4). Sam joined Maya personally and professionally in Book 3.</p>
       
       <p><a href="samaya.html">→ Full article: Samaya Gallery</a></p>
     </div>
 
-    <!-- ========== THE ROUNDABOUT ========== -->
+    <!- ========== THE ROUNDABOUT ========== ->
     <div class="card-bg">
       <h2 class="section-header">The Central Roundabout</h2>
       <p>The six buildings are arranged around a beautifully landscaped circular plaza, the de facto address for any visitor: <em>"Meet me at the roundabout."</em></p>
@@ -315,7 +315,7 @@
       <p>From any building's entrance, one sees the others in harmonious arrangement—a constant visual reminder that health, knowledge, activity, governance, community, and art form a complete circle. No building is more important than another; all are necessary.</p>
     </div>
 
-    <!-- ========== QUICK REFERENCE ========== -->
+    <!- ========== QUICK REFERENCE ========== ->
     <div class="card-bg">
       <h2 class="section-header">Building Quick Reference</h2>
       <table class="level-table">
@@ -357,10 +357,10 @@
       </table>
     </div>
 
-    <!-- ========== SEE ALSO ========== -->
+    <!- ========== SEE ALSO ========== ->
     <div class="wiki-links">
       <strong>Related Pages:</strong>
-      <a href="New Eden.html">🏘️ New Eden (Settlement)</a> •
+      <a href="New Eden.html">🏘️ New Eden (settlement)</a> •
       <a href="characters.html">👥 Characters</a> •
       <a href="Timeline.html">📅 Timeline</a> •
       <a href="index.html">🏠 Home</a>
@@ -373,19 +373,19 @@
     <p>&copy; One Mine Two Stars Wiki</p>
   </div>
 
-  <!-- Back to Top Button -->
+  <!- Back to Top Button ->
   <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
   <script>
-    const toTopBtn = document.getElementById("toTopBtn");
-    window.addEventListener("scroll", () => {
-      if (document.documentElement.scrollTop > 200) {
+    const toTopBtn = document.getElementById("totopbtn");
+    window.addEventListener("scroll",-() => {
+      if (document.documentelement.scrolltop-> 200) {
         toTopBtn.style.display = "block";
       } else {
         toTopBtn.style.display = "none";
       }
     });
-    toTopBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    toTopBtn.addEventListener("click",-() => {
+      window.scrollTo({-top: 0, behavior: "smooth" });
     });
   </script>
 </body>

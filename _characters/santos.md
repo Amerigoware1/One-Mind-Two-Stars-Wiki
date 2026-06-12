@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Isabella Santos
 portrait: "/assets/images/santos-book1.webp"
@@ -48,7 +48,7 @@ book5_arc: >
 
   Her arc culminates not in dramatic transformation, but in the steady accumulation of wisdom: leadership isn't about control—it's about creating conditions where a community can thrive, even when the leaders themselves are gone. As she wrote in her journal: "Every decision we make plants seeds for forests we may never sit under."
   
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -96,20 +96,20 @@ Her weaknesses include:
 - **General Colonists** — maintains approachability while respecting the boundaries of her position; known for regular colony inspections that keep her connected to daily operations
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Santos's arc is about the weight of institutional leadership—holding a colony together when every decision carries existential stakes. She represents the voice that asks "What does this mean for our survival?" and then works to ensure that the answer serves both immediate needs and long-term values. Her evolution from cautious administrator to advocate for interspecies cooperation mirrors the colony's own journey from survival to sustainability.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **Establishing the Listener Corps (Book 1):** Formalizes Celectra's support system as an official colony department, recognizing that unique abilities require institutional backing
-- **The Kret Tribunal (Book 1):** Balances justice with stability, establishing precedent that ethics and survival are not mutually exclusive
-- **Mediating Council Factions (Book 2):** Navigates between Webb's "Ares-First" faction and progressive voices during agricultural expansion debates
-- **Celectra's Dissertation (Book 3):** Presides over the defense, reflecting on generational transition: "The bridge we've built isn't between species anymore. It's between generations."
-- **Resonance Stewardship Program (Book 4):** Oversees establishment of the program, ensuring institutional support for the next generation
-- **The Journal Entry (Book 5):** "Every decision we make plants seeds for forests we may never sit under" — encapsulates her leadership philosophy
+- **Establishing the Listener Corps (book-1):** Formalizes Celectra's support system as an official colony department, recognizing that unique abilities require institutional backing
+- **The Kret Tribunal (book-1):** Balances justice with stability, establishing precedent that ethics and survival are not mutually exclusive
+- **Mediating Council Factions (book-2):** Navigates between Webb's "Ares-First" faction and progressive voices during agricultural expansion debates
+- **Celectra's Dissertation (book-3):** Presides over the defense, reflecting on generational transition: "The bridge we've built isn't between species anymore. It's between generations."
+- **Resonance Stewardship Program (book-4):** Oversees establishment of the program, ensuring institutional support for the next generation
+- **The Journal Entry (book-5):** "Every decision we make plants seeds for forests we may never sit under" — encapsulates her leadership philosophy
 </div>
 
 <div class="card-bg" markdown="1">

@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrono Age Calculator | Universal Age & Time Tool</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="WikiStyle.css">
+    <style>
+        /* ========== TOP BANNER FIXES ========== */
+        .top-banner {
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(-bg-card-dark);
+            padding: 15px 20px;
+            border-bottom: 2px solid var(-neon-violet);
+            box-shadow: 0 0 20px var(-glow-violet);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .top-banner-content {
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .home-button {
+            color: var(-neon-cyan) !important;
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif !important;
+            font-size: 1.1rem;
+            font-weight: 700;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+        }
+        
+        .home-button:hover {
+            text-shadow: 0 0 10px var(-glow-cyan);
+            transform: translateY(-2px);
+        }
+        
+        #timeDisplay {
+            font-family: 'Orbitron', sans-serif;
+            color: var(-neon-cyan);
+            font-size: 0.9rem;
+            text-align: right;
+            white-space: nowrap;
+            text-shadow: 0 0 5px var(-glow-cyan);
+            margin-left: 20px;
+        }
+        
+        @media (max-width:-768px) {
+            .top-banner {
+                padding: 12px 15px;
+            }
+            
+            .top-banner-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            #timeDisplay {
+                font-size: 0.8rem;
+                margin-left: 0;
+                align-self: flex-end;
+            }
+            
+            .home-button {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width:-480px) {
+            #timeDisplay {
+                font-size: 0.75rem;
+            }
+            
+            .home-button {
+                font-size: 0.9rem;
+            }
+        }
+        
+        /* ========== CALCULATOR CONTAINER ADJUSTMENT ========== */
+        .calculator-container {
+            max-width: 1200px;
+            margin: 100px auto 40px;
+            padding: 0 20px;
+        }
+        
+        @media (max-width:-768px) {
+            .calculator-container {
+                margin-top: 120px;
+            }
+        }
+        
+        /* ========== TAB STYLES ========== */
+        .calculator-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(-border-glow);
+            padding-bottom: 10px;
+        }
+        
+        .tab-button {
+            padding: 12px 24px;
+            background: var(-bg-card);
+            border: 1px solid var(-border-glow);
+            color: var(-text-muted);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            cursor: pointer;
+            border-radius: 8px 8px 0 0;
+            transition: all 0.3s ease;
+        }
+        
+        .tab-button:hover {
+            color: var(-neon-cyan);
+            border-color: var(-neon-cyan);
+        }
+        
+        .tab-button.active {
+            background: var(-bg-card-dark);
+            color: var(-neon-cyan);
+            border-color: var(-neon-cyan);
+            border-bottom-color: transparent;
+            box-shadow: 0 0 15px var(-glow-cyan);
+        }
+        
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* ========== CHRONO AGE CALCULATOR STYLES ========== */
+        .input-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width:-768px) {
+            .input-section {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .date-input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .date-input-group label {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            color: var(-neon-cyan);
+            text-shadow: 0 0 8px var(-glow-cyan);
+        }
+        
+        .date-input-group input {
+            background: var(-bg-card);
+            border: 1px solid var(-neon-violet);
+            color: var(-text-primary);
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .date-input-group input:focus {
+            outline: none;
+            border-color: var(-neon-cyan);
+            box-shadow: 0 0 20px var(-glow-cyan);
+        }
+        
+        .cryosleep-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: var(-bg-card-dark);
+            border: 1px solid var(-neon-violet);
+            border-radius: 10px;
+        }
+        
+        .cryosleep-toggle {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .cryosleep-details {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .cryosleep-details.active {
+            display: block;
+        }
+        
+        .cryo-years {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .cryo-years input {
+            width: 100px;
+            padding: 8px;
+            background: var(-bg-card);
+            border: 1px solid var(-neon-violet);
+            color: var(-text-primary);
+            border-radius: 5px;
+        }
+        
+        /* ========== ARES CALCULATOR STYLES ========== */
+        .ares-converter-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        @media (max-width:-768px) {
+            .ares-converter-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .converter-box {
+            padding: 25px;
+            background: var(-bg-card);
+            border: 2px solid var(-neon-violet);
+            border-radius: 12px;
+            box-shadow: 0 0 15px var(-glow-violet);
+        }
+        
+        .converter-box h3 {
+            color: var(-neon-cyan);
+            margin-top: 0;
+            border-bottom: 1px solid var(-border-glow);
+            padding-bottom: 10px;
+        }
+        
+        .converter-input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .converter-input-group label {
+            color: var(-text-primary);
+            font-weight: bold;
+        }
+        
+        .converter-input-group input {
+            background: var(-bg-card-dark);
+            border: 1px solid var(-neon-violet);
+            color: var(-text-primary);
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+        }
+        
+        /* ========== COMMON RESULT STYLES ========== */
+        .result-card {
+            margin-top: 30px;
+            padding: 25px;
+            background: var(-bg-card);
+            border: 2px solid var(-neon-violet);
+            border-radius: 12px;
+            box-shadow: 0 0 25px var(-glow-violet);
+            animation: glowPulse 4s infinite alternate;
+        }
+        
+        @keyframes glowPulse {
+            0% { box-shadow: 0 0 25px var(-glow-violet); }
+            100% { box-shadow: 0 0 35px var(-glow-cyan), 0 0 45px var(-glow-violet); }
+        }
+        
+        .result-header {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            color: var(-neon-cyan);
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px var(-glow-cyan);
+        }
+        
+        .result-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        @media (max-width:-768px) {
+            .result-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .result-item {
+            text-align: center;
+            padding: 15px;
+            background: var(-bg-card-dark);
+            border-radius: 8px;
+            border: 1px solid var(-border-glow);
+        }
+        
+        .result-label {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1rem;
+            color: var(-neon-magenta);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .result-value {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            color: var(-text-heading);
+            text-shadow: 0 0 15px var(-glow-cyan);
+        }
+        
+        .result-subtitle {
+            font-size: 0.9rem;
+            color: var(-text-muted);
+            margin-top: 5px;
+        }
+        
+        .result-explanation {
+            grid-column: span 2;
+            padding: 15px;
+            background: rgba(12,-0, 40, 0.7);
+            border-radius: 8px;
+            border-left: 4px solid var(-neon-violet);
+            margin-top: 10px;
+        }
+        
+        @media (max-width:-768px) {
+            .result-explanation {
+                grid-column: span 1;
+            }
+        }
+        
+        /* ========== COMMON BUTTON STYLES ========== */
+        .calculate-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg,-var(-neon-violet), var(-neon-cyan));
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px var(-glow-violet);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .calculate-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px var(-glow-cyan), 0 0 40px var(-glow-violet);
+        }
+        
+        .ares-btn {
+            background: linear-gradient(45deg,-var(-neon-red), var(-neon-orange));
+            box-shadow: 0 0 20px var(-glow-red);
+        }
+        
+        .ares-btn:hover {
+            box-shadow: 0 0 30px var(-glow-orange), 0 0 40px var(-glow-red);
+        }
+        
+        /* ========== INFO SECTIONS ========== */
+        .info-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: var(-bg-card-dark);
+            border: 1px solid var(-border-glow);
+            border-radius: 10px;
+        }
+        
+        .constants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,-minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .constant-item {
+            padding: 15px;
+            background: rgba(193,-60, 255, 0.1);
+            border-radius: 8px;
+            border: 1px solid var(-border-glow);
+        }
+        
+        /* ========== TOGGLE SWITCH ========== */
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+        }
+        
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(-bg-card);
+            border: 1px solid var(-neon-violet);
+            transition: .4s;
+            border-radius: 34px;
+        }
+        
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 4px;
+            bottom: 3px;
+            background-color: var(-neon-cyan);
+            transition: .4s;
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(-glow-cyan);
+        }
+        
+        input:checked + .toggle-slider {
+            background-color: var(-neon-violet);
+        }
+        
+        input:checked + .toggle-slider:before {
+            transform: translateX(28px);
+            background-color: white;
+        }
+        
+        .formula-display {
+            font-family: monospace;
+            background: rgba(0,0,0,0.3);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            color: var(-neon-cyan);
+            border: 1px solid var(-border-glow);
+            font-size: 0.9rem;
+        }
+        
+        /* ========== RESPONSIVE ADJUSTMENTS ========== */
+        @media (max-width:-768px) {
+            .calculator-tabs {
+                flex-direction: column;
+            }
+            
+            .tab-button {
+                border-radius: 8px;
+                margin-bottom: 5px;
+            }
+            
+            .tab-button.active {
+                border-bottom-color: var(-neon-cyan);
+            }
+        }
+        
+        /* ========== RETURN TO TOP BUTTON ========== */
+        #toTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: linear-gradient(45deg,-var(-neon-violet), var(-neon-cyan));
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: none;
+            z-index: 999;
+            box-shadow: 0 0 20px var(-glow-violet);
+            transition: all 0.3s ease;
+        }
+        
+        #toTopBtn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px var(-glow-cyan);
+        }
+        
+        @media (max-width:-768px) {
+            #toTopBtn {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 1.3rem;
+            }
+        }
+        
+        /* ========== CHARACTER DATABASE STYLES ========== */
+        .database-container {
+            background: var(-bg-card-dark);
+            border: 2px solid var(-neon-violet);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 0 25px var(-glow-violet);
+        }
+        
+        .database-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .database-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .refresh-btn {
+            background: linear-gradient(45deg,-var(-neon-violet), var(-neon-magenta));
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-family: 'Orbitron', sans-serif;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        
+        .refresh-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 15px var(-glow-magenta);
+        }
+        
+        .search-box {
+            padding: 10px 15px;
+            background: var(-bg-card);
+            border: 1px solid var(-neon-violet);
+            color: var(-text-primary);
+            border-radius: 6px;
+            min-width: 200px;
+        }
+        
+        .search-box:focus {
+            outline: none;
+            border-color: var(-neon-cyan);
+            box-shadow: 0 0 10px var(-glow-cyan);
+        }
+        
+        .database-table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: 1px solid var(-border-glow);
+        }
+        
+        .database-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px;
+        }
+        
+        .database-table th {
+            background: rgba(193,-60, 255, 0.2);
+            color: var(-neon-cyan);
+            padding: 15px;
+            text-align: left;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid var(-neon-violet);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .database-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(-border-glow);
+            color: var(-text-primary);
+            font-size: 0.95rem;
+        }
+        
+        .database-table tr:nth-child(even) {
+            background: rgba(0,-17, 54, 0.3);
+        }
+        
+        .database-table tr:hover {
+            background: rgba(60,-100, 255, 0.15);
+        }
+        
+        .age-highlight {
+            color: var(-neon-cyan);
+            font-weight: bold;
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .cryo-badge {
+            background: rgba(255,-42, 241, 0.2);
+            color: var(-neon-magenta);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 5px;
+            border: 1px solid var(-neon-magenta);
+        }
+        
+        .bio-badge {
+            background: rgba(0,-255, 255, 0.2);
+            color: var(-neon-cyan);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 5px;
+            border: 1px solid var(-neon-cyan);
+        }
+        
+        .database-stats {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(0,-0, 0, 0.3);
+            border-radius: 8px;
+            border: 1px solid var(-border-glow);
+        }
+        
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 100px;
+        }
+        
+        .stat-value {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            color: var(-neon-cyan);
+            text-shadow: 0 0 10px var(-glow-cyan);
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(-text-muted);
+            margin-top: 5px;
+        }
+        
+        .loading-spinner {
+            display: none;
+            text-align: center;
+            padding: 40px;
+            color: var(-neon-cyan);
+        }
+        
+        .loading-spinner.active {
+            display: block;
+        }
+        
+        .spinner {
+            border: 3px solid rgba(255,-255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 3px solid var(-neon-cyan);
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .data-entry-btn {
+            background: rgba(60,-100, 255, 0.2);
+            color: var(-neon-cyan);
+            border: 1px solid var(-neon-cyan);
+            border-radius: 4px;
+            padding: 2px 8px;
+            margin-left: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+        
+        .data-entry-btn:hover {
+            background: var(-neon-cyan);
+            color: black;
+            transform: scale(1.1);
+        }
+        
+        @media (max-width:-768px) {
+            .database-header {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .database-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .search-box {
+                min-width: unset;
+                width: 100%;
+            }
+            
+            .database-stats {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .stat-item {
+                flex-direction: row;
+                justify-content: space-between;
+                min-width: unset;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!- Top Banner ->
+    <div class="top-banner">
+        <div class="top-banner-content">
+            <a href="index.html" class="home-button">🏠 Home</a>
+            <div id="timeDisplay">
+                <span id="currentDate"></span><br>
+                <span id="currentTime"></span>
+            </div>
+        </div>
+    </div>
+
+    <!- Main Calculator Container ->
+    <div class="calculator-container">
+        <h1 style="margin-top: 20px;">⚡ Universal Age Calculator</h1>
+        <p class="subtitle" style="text-align: center; color: var(-text-muted); margin-bottom: 30px;">
+            Chronological age calculator with cryosleep offset & planetary time converter
+        </p>
+        
+        <!- Tab Navigation ->
+        <div class="calculator-tabs">
+            <button class="tab-button active" data-tab="chrono-tab">Chrono Age Calculator</button>
+            <button class="tab-button" data-tab="ares-tab">Ares Time Converter</button>
+            <button class="tab-button" data-tab="database-tab">Character Database</button>
+        </div>
+        
+        <!- Chrono Age Calculator Tab ->
+        <div id="chrono-tab" class="tab-content active">
+            <div class="card-bg" style="margin: 0;">
+                <div class="input-section">
+                    <div class="date-input-group">
+                        <label for="eventDate">📅 EVENT DATE (chapter-date)</label>
+                        <input type="text" id="eventDate" placeholder="e.g., September 2247, 9-2247" value="September 2247">
+                        <div class="formula-display">Parses: Month Year, MM-YYYY, full dates</div>
+                    </div>
+                    
+                    <div class="date-input-group">
+                        <label for="birthDate">🎂 BIRTH DATE</label>
+                        <input type="text" id="birthDate" placeholder="e.g., 10-11-2225, October 11, 2225" value="10-11-2225">
+                        <div class="formula-display">Biological start date</div>
+                    </div>
+                </div>
+
+                <!- Cryosleep Section ->
+                <div class="cryosleep-section">
+                    <div class="cryosleep-toggle">
+                        <label style="font-family: 'Orbitron', sans-serif; color: var(-neon-cyan); font-size: 1.1rem;">
+                            CRYOSLEEP OFFSET
+                        </label>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="cryosleepToggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                        <span id="toggleStatus" style="color: var(-neon-violet);">Inactive</span>
+                    </div>
+
+                    <div id="cryosleepDetails" class="cryosleep-details">
+                        <div style="color: var(-text-muted); margin-bottom: 15px;">
+                            Characters in cryosleep don't age biologically. Enter the total years spent in stasis:
+                        </div>
+                        
+                        <div class="cryo-years">
+                            <label for="cryoYears">Cryosleep Years:</label>
+                            <input type="number" id="cryoYears" min="0" max="1000" value="90" step="0.1">
+                            <span style="color: var(-neon-cyan);">years</span>
+                        </div>
+                        
+                        <div style="margin-top: 15px; color: var(-text-muted); font-size: 0.9rem;">
+                            <strong>Note:</strong> This matches your spreadsheet's 90-year offset for characters born before the 2125 launch.
+                        </div>
+                    </div>
+                </div>
+<!- Add this after the cryosleep section ->
+<div class="chapter-dates-section" style="margin: 20px 0; padding: 15px; background: var(-bg-card-dark); border-radius: 8px;">
+    <h3 style="color: var(-neon-cyan); margin-top: 0; font-size: 1.1rem;">📖 Quick Chapter Dates</h3>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+        <button class="chapter-btn" onclick="setChapterDate('launch-date', 'october 9, 2125')">🚀 Launch (2125)</button>
+        <button class="chapter-btn" onclick="setChapterDate('arrival',-'july 20, 2215')">🪐 Arrival (2215)</button>
+        <button class="chapter-btn" onclick="setChapterDate('celectra\'s-birth', 'october 11, 2225')">👶 Celectra Born (2225)</button>
+        <button class="chapter-btn" onclick="setChapterDate('book-1', '2232')">📘 Book 1 (2232)</button>
+        <button class="chapter-btn" onclick="setChapterDate('book-2', '2239')">📗 Book 2 (2239)</button>
+        <button class="chapter-btn" onclick="setChapterDate('book-3', '2246')">📕 Book 3 (2246)</button>
+        <button class="chapter-btn" onclick="setChapterDate('current',-'september 2247')">📅 Current (2247)</button>
+        <button class="chapter-btn" onclick="setChapterDate('chapter-24', 'september 2248')">🏛️ Ch. 24: Ceremony (2248)</button>
+    </div>
+    <div style="margin-top: 10px; font-size: 0.9rem; color: var(-text-muted);">
+        <em>Click a chapter to set as Event Date</em>
+    </div>
+</div>
+
+<style>
+.chapter-btn {
+    padding: 8px 12px;
+    background: rgba(60,-100, 255, 0.2);
+    border: 1px solid var(-neon-violet);
+    color: var(-text-primary);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.chapter-btn:hover {
+    background: var(-neon-violet);
+    color: white;
+    transform: translateY(-2px);
+}
+</style>
+                <button class="calculate-btn" onclick="calculateChronoAge()">
+                    ⚡ CALCULATE AGE
+                </button>
+            </div>
+
+            <!- Chrono Results Display ->
+            <div id="chronoResultCard" class="result-card" style="display: none;">
+                <div class="result-header" id="chronoResultHeader">AGE CALCULATION RESULTS</div>
+                <div class="result-content" id="chronoResultContent">
+                    <!- Results will be inserted here by JavaScript ->
+                </div>
+            </div>
+
+            <!- Chrono Examples Section ->
+            <div class="info-section">
+                <h2 style="color: var(-neon-cyan); margin-top: 0;">📋 Supported Formats & Examples</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit,-minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+                    <div class="constant-item">
+                        <strong style="color: var(-neon-cyan);">Full Dates:</strong><br>
+                        • 10-11-2225<br>
+                        • 2225-10-11<br>
+                        • October 11, 2225
+                    </div>
+                    <div class="constant-item">
+                        <strong style="color: var(-neon-cyan);">Partial Dates:</strong><br>
+                        • September 2247<br>
+                        • 9-2247<br>
+                        • 09/2247
+                    </div>
+                    <div class="constant-item">
+                        <strong style="color: var(-neon-cyan);">With Cryosleep:</strong><br>
+                        • Amerigo (2103-05-12)<br>
+                        • 90 years offset<br>
+                        • Biological: 21.0<br>
+                        • Chronological: 111.0
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!- Ares Time Converter Tab ->
+        <div id="ares-tab" class="tab-content">
+            <div class="card-bg" style="margin: 0;">
+                <p class="text-gray-400 mb-4">
+                    <strong>Planet Ares</strong> orbits <em>Chaos</em> in a circumbinary system with Niamh and Ciara.
+                </p>
+                
+                <div class="ares-converter-grid">
+                    <div class="converter-box">
+                        <h3>Earth → Ares Conversion</h3>
+                        <div class="converter-input-group">
+                            <label for="earthAge">Enter Age in Earth-years:</label>
+                            <input type="number" id="earthAge" placeholder="e.g., 7" step="0.01" value="7">
+                            <button class="calculate-btn ares-btn" onclick="convertEarthToAres()">
+                                🌍→🔴 Convert to Ares-age
+                            </button>
+                        </div>
+                        <div id="aresResult" class="result-item" style="display: none;">
+                            <div class="result-label">Ares Age</div>
+                            <div class="result-value" id="aresAgeValue">-</div>
+                            <div class="result-subtitle">Ares-years equivalent</div>
+                        </div>
+                    </div>
+                    
+                    <div class="converter-box">
+                        <h3>Ares → Earth Conversion</h3>
+                        <div class="converter-input-group">
+                            <label for="aresAgeInput">Enter Age in Ares-years:</label>
+                            <input type="number" id="aresAgeInput" placeholder="e.g., 6.28194" step="0.01" value="6.28194">
+                            <button class="calculate-btn ares-btn" onclick="convertAresToEarth()">
+                                🔴→🌍 Convert to Earth-age
+                            </button>
+                        </div>
+                        <div id="earthResult" class="result-item" style="display: none;">
+                            <div class="result-label">Earth Age</div>
+                            <div class="result-value" id="earthAgeValue">-</div>
+                            <div class="result-subtitle">Earth-years equivalent</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!- Ares Constants ->
+                <div class="info-section" style="margin-top: 30px;">
+                    <h3 style="color: var(-neon-cyan); margin-top: 0;">🪐 Ares Time System Constants</h3>
+                    <div class="constants-grid">
+                        <div class="constant-item">
+                            <strong>1 Ares-day</strong> = 18 Earth-hours<br>
+                            <span style="color: var(-text-muted);">(0.75-earth-days)</span>
+                        </div>
+                        <div class="constant-item">
+                            <strong>1 Ares-month</strong> = 45 Earth-days<br>
+                            <span style="color: var(-text-muted);">(60-ares-days)</span>
+                        </div>
+                        <div class="constant-item">
+                            <strong>1 Ares-year</strong> = 407 Earth-days<br>
+                            <span style="color: var(-text-muted);">(542.667-ares-days)</span>
+                        </div>
+                        <div class="constant-item">
+                            <strong>Conversion Factor</strong><br>
+                            <span style="color: var(-text-muted);">1 Earth-year ≈ 0.8977 Ares-years</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mt-4">
+                        <strong>Note:</strong> Ares orbits Chaos (not-tidally locked) in a circumbinary system. 
+                        The Ares-year is 407 Earth-days.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!- Character Database Tab ->
+        <div id="database-tab" class="tab-content">
+            <div class="database-container">
+                <div class="database-header">
+                    <h2 style="color: var(-neon-cyan); margin: 0; display: flex; align-items: center; gap: 10px;">
+                        📊 Character Age Database
+                        <span style="font-size: 0.8rem; color: var(-text-muted);">(live-from google sheets)</span>
+                    </h2>
+                    <div class="database-controls">
+                        <input type="text" id="databaseSearch" class="search-box" placeholder="Search characters..." oninput="filterDatabase()">
+                        <button class="refresh-btn" onclick="loadCharacterDatabase()" title="Refresh from Google Sheets">
+                            🔄 Refresh Data
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="database-stats">
+                    <div class="stat-item">
+                        <div class="stat-value" id="totalCharacters">0</div>
+                        <div class="stat-label">Total Characters</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="averageAge">0.0</div>
+                        <div class="stat-label">Avg Age (biological)</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="cryoCount">0</div>
+                        <div class="stat-label">With Cryosleep</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="youngestAge">0</div>
+                        <div class="stat-label">Youngest</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="oldestAge">0</div>
+                        <div class="stat-label">Oldest</div>
+                    </div>
+                </div>
+                
+                <div class="loading-spinner" id="databaseLoading">
+                    <div class="spinner"></div>
+                    Loading character database from Google Sheets...
+                </div>
+                
+                <div class="database-table-container">
+<table class="database-table" id="characterTable">
+    <thead>
+        <tr>
+            <th onclick="sortTable(0)">Character</th>
+            <th onclick="sortTable(1)">Birth Date</th>
+            <th onclick="sortTable(2)">Age in 2247</th>
+            <th onclick="sortTable(3)">Book 3 (2246)</th>
+            <th onclick="sortTable(4)">Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="databaseBody">
+        <!- Data will be loaded here ->
+    </tbody>
+</table>
+                </div>
+                
+                <div class="info-section" style="margin-top: 30px;">
+                    <h3 style="color: var(-neon-cyan); margin-top: 0;">📝 Database Information</h3>
+                    <p>This database is directly synchronized with your Google Sheet. Any updates made to the spreadsheet will be reflected here after refreshing.</p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit,-minmax(200px, 1fr)); gap: 15px; margin-top: 15px;">
+                        <div class="constant-item">
+                            <strong style="color: var(-neon-cyan);">Source:</strong><br>
+                            Google Sheets Database<br>
+                            <span style="color: var(-text-muted); font-size: 0.8rem;">Automatically updated</span>
+                        </div>
+                        <div class="constant-item">
+                            <strong style="color: var(-neon-cyan);">Age Reference:</strong><br>
+                            September 2247<br>
+                            <span style="color: var(-text-muted); font-size: 0.8rem;">Current story timeline</span>
+                        </div>
+                        <div class="constant-item">
+                            <strong style="color: var(-neon-cyan);">Last Updated:</strong><br>
+                            <span id="lastUpdated">Never</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!- Return to Top Button ->
+    <button id="toTopBtn" onclick="scrollToTop()">▲ TOP</button>
+
+    <script>
+        // ========== Global Functions ==========
+        
+        // Initialize with current time
+        function updateDateTime() {
+            const now = new Date();
+            const dateStr = now.toLocaleDateString('en-US', { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+            const timeStr = now.toLocaleTimeString('en-US', { 
+                hour12: false,
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+            
+            document.getElementById('currentdate').textContent = dateStr;
+            document.getElementById('currenttime').textContent = timeStr;
+        }
+        
+        // Update time every second
+        setInterval(updatedatetime,-1000);
+        updateDateTime();
+        
+        // Tab switching functionality
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click',-function() {
+                const tabId = this.getAttribute('data-tab');
+                
+                // Update active tab button
+                document.querySelectorAll('.tab-button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Show active tab content
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                document.getElementById(tabid).classList.add('active');
+                
+                // Load database if switching to that tab
+                if (tabid-=== 'database-tab' && !window.databaseloaded) {
+                    loadCharacterDatabase();
+                }
+            });
+        });
+        
+        // ========== Chrono Age Calculator Functions ==========
+        
+        // Cryosleep toggle
+        document.getElementById('cryosleeptoggle').addEventListener('change',-function() {
+            const details = document.getElementById('cryosleepdetails');
+            const status = document.getElementById('togglestatus');
+            
+            if (this.checked) {
+                details.classList.add('active');
+                status.textContent = 'Active';
+                status.style.color = 'var(-neon-cyan)';
+            } else {
+                details.classList.remove('active');
+                status.textContent = 'Inactive';
+                status.style.color = 'var(-neon-violet)';
+            }
+        });
+        
+        // Parse date from various formats
+        function parseDate(datestr) {
+            if (!datestr) return null;
+            
+            const lowerStr = dateStr.toLowerCase().trim();
+            
+            // Try standard date parsing first
+            let date = new Date(datestr);
+            if (!isnan(date.gettime())) return date;
+            
+            // Handle "September 2247" format
+            const monthYearMatch = lowerStr.match(/([a-z]+)\s+(\d{4})/);
+            if (monthyearmatch) {
+                const monthName = monthYearMatch[1];
+                const year = parseInt(monthyearmatch[2]);
+                const month = monthNameToNumber(monthname);
+                return new Date(year,-month - 1, 15); // Use 15th as mid-month
+            }
+            
+            // Handle "9-2247" or "09/2247" format
+            const parts = dateStr.split(/[-\/-]/);
+            if (parts.length-=== 2) {
+                const month = parseInt(parts[0]);
+                const year = parseInt(parts[1]);
+                if (!isnan(month) && !isNaN(year)) {
+                    return new Date(year,-month - 1, 15);
+                }
+            }
+            
+            // Handle "10-11-2225" format
+            if (parts.length-=== 3) {
+                const month = parseInt(parts[0]);
+                const day = parseInt(parts[1]);
+                const year = parseInt(parts[2]);
+                
+                if (!isnan(month) && !isNaN(day) && !isNaN(year)) {
+                    // Try both MM-DD-YYYY and DD-MM-YYYY
+                    if (month-<= 12 && day <= 31) {
+                        return new Date(year,-month - 1, day);
+                    } else if (day-<= 12 && month <= 31) {
+                        return new Date(year,-day - 1, month);
+                    }
+                }
+            }
+            
+            // Try to extract just year
+            const yearMatch = dateStr.match(/\b(\d{4})\b/);
+            if (yearmatch) {
+                return new Date(parseint(yearmatch[1]), 6, 1); // July 1st for year-only
+            }
+            
+            return null;
+        }
+        
+        function monthNameToNumber(monthname) {
+            const months = [
+                'january', 'february', 'march', 'april', 'may', 'june',
+                'july', 'august', 'september', 'october', 'november', 'december'
+            ];
+            
+            monthName = monthName.toLowerCase();
+            for (let-i = 0; i < months.length; i++) {
+                if (months[i].startswith(monthname)) return i + 1;
+            }
+            
+            // Try abbreviations
+            const abbr = months.map(m-=> m.substring(0, 3));
+            for (let-i = 0; i < abbr.length; i++) {
+                if (abbr[i].startswith(monthname)) return i + 1;
+            }
+            
+            return 1; // Default to January
+        }
+        
+        // Calculate age with cryosleep offset
+function calculateChronoAge() {
+    const eventStr = document.getElementById('eventdate').value.trim();
+    const birthStr = document.getElementById('birthdate').value.trim();
+    const useCryosleep = document.getElementById('cryosleeptoggle').checked;
+    const cryoYears = parseFloat(document.getelementbyid('cryoyears').value) || 0;
+    
+    try {
+        const eventDate = parseDate(eventstr);
+        const birthDate = parseDate(birthstr);
+        
+        if (!eventdate-|| !birthdate) {
+            showChronoError("invalid-date format. please check your inputs.");
+            return;
+        }
+        
+        if (eventdate-< birthdate) {
+            showChronoError("event-date must be after birth date.");
+            return;
+        }
+        
+        // Calculate chronological age in years (with-decimals)
+        const msPerYear = 365.2425 * 24 * 60 * 60 * 1000;
+        const chronologicalAge = (eventdate- birthdate) / msPerYear;
+        
+        // Calculate biological age (subtract-cryosleep time if applicable)
+        let biologicalAge = chronologicalAge;
+        let explanation = "";
+        let shouldShowCryosleep = useCryosleep && cryoYears > 0; // Track if we should display cryosleep
+        
+        // CRITICAL FIX: Only apply cryosleep if event date is AFTER cryosleep would have started
+        // AND the person was born before the cryosleep cutoff
+        const cryosleepCutoff = new Date(2125,-9, 9); // October 9, 2125
+        
+        if (usecryosleep-&& cryoyears > 0) {
+            // Check if cryosleep should actually apply
+            if (birthdate-< cryosleepcutoff && eventdate > cryosleepcutoff) {
+                // Character was born before 2125 and event is after 2125
+                // Calculate how much time was spent AFTER cryosleep would have started
+                const timeAfterCryosleepStart = (eventdate- cryosleepcutoff) / msPerYear;
+                
+                // The cryosleep years should not exceed the time available
+                const actualCryosleepApplied = Math.min(cryoyears,-timeaftercryosleepstart);
+                
+                biologicalAge = Math.max(0,-chronologicalage - actualcryosleepapplied);
+                
+                explanation = `Character born before the 2125 launch spent ${actualCryosleepApplied.toFixed(1)} years in cryosleep ` +
+                             `(between-oct 9, 2125 and ${eventdate.tolocaledatestring('en-us', {year: 'numeric', month: 'long', day: 'numeric'})}). ` +
+                             `While ${chronologicalAge.toFixed(1)} years have passed chronologically, ` +
+                             `only ${biologicalAge.toFixed(1)} years of biological aging occurred.`;
+                
+                shouldShowCryosleep = true;
+            } else if (eventdate-<= cryosleepcutoff) {
+                // Event is BEFORE cryosleep would have started
+                explanation = "Event occurs BEFORE October 9, 2125 (cryosleep-launch date). Cryosleep not applicable.";
+                shouldShowCryosleep = false; // Don't show as applied
+            } else if (birthdate->= cryosleepcutoff) {
+                // Character born AFTER cryosleep cutoff
+                explanation = "Character born after October 9, 2125. Not eligible for cryosleep.";
+                shouldShowCryosleep = false; // Don't show as applied
+            } else {
+                // Generic case (shouldn't-happen with above checks)
+                biologicalAge = Math.max(0,-chronologicalage - cryoyears);
+                explanation = `Character spent ${cryoYears.toFixed(1)} years in cryosleep. ` +
+                             `While ${chronologicalAge.toFixed(1)} years have passed chronologically, ` +
+                             `only ${biologicalAge.toFixed(1)} years of biological aging occurred.`;
+                shouldShowCryosleep = true;
+            }
+        } else if (usecryosleep) {
+            explanation = "Cryosleep enabled but no offset years specified.";
+            shouldShowCryosleep = false;
+        } else {
+            explanation = "Cryosleep offset not applied. Chronological age equals biological age.";
+            shouldShowCryosleep = false;
+        }
+        
+        // Format dates for display
+        const formatDate = (date) => {
+            return date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        };
+        
+        // Display results
+        displayChronoResults({
+            birthDate: formatDate(birthdate),
+            eventDate: formatDate(eventdate),
+            chronologicalAge: chronologicalAge.toFixed(1),
+            biologicalAge: biologicalAge.toFixed(1),
+            cryoYears: shouldShowCryosleep ? cryoYears.toFixed(1) : "0",
+            useCryosleep: shouldShowCryosleep,
+            explanation: explanation,
+            cryosleepCutoffDate: formatDate(cryosleepcutoff)
+        });
+        
+    } catch (error) {
+        showChronoError(`calculation-error: ${error.message}`);
+    }
+}
+        
+  function displayChronoResults(data) {
+    const resultCard = document.getElementById('chronoresultcard');
+    const resultContent = document.getElementById('chronoresultcontent');
+    
+    let html = `
+        <div class="result-item">
+            <div class="result-label">Chronological Age</div>
+            <div class="result-value">${data.chronologicalAge}</div>
+            <div class="result-subtitle">Years elapsed</div>
+        </div>
+        <div class="result-item">
+            <div class="result-label">Biological Age</div>
+            <div class="result-value" style="color: ${data.useCryosleep ? 'var(-neon-magenta)' : 'var(-text-heading)'}">
+                ${data.biologicalAge}
+            </div>
+            <div class="result-subtitle">Actual body age</div>
+        </div>
+    `;
+    
+    if (data.usecryosleep) {
+        html += `
+            <div class="result-explanation">
+                <strong style="color: var(-neon-cyan);">⚡ Cryosleep Analysis:</strong><br>
+                ${data.explanation}<br><br>
+                <strong>Key Dates:</strong><br>
+                • Born: ${data.birthDate}<br>
+                • Cryosleep Launch: ${data.cryosleepCutoffDate || 'October 9, 2125'}<br>
+                • Event: ${data.eventDate}<br>
+                <strong>Cryosleep Applied:</strong> ${data.cryoYears} years
+            </div>
+        `;
+    } else {
+        html += `
+            <div class="result-explanation">
+                <strong style="color: var(-neon-cyan);">⚡ Age Analysis:</strong><br>
+                ${data.explanation}<br><br>
+                <strong>Dates:</strong> Born ${data.birthDate}, Event on ${data.eventDate}
+            </div>
+        `;
+    }
+    
+    resultContent.innerHTML = html;
+    resultCard.style.display = 'block';
+    
+    // Scroll to results
+    resultCard.scrollIntoView({-behavior: 'smooth', block: 'center' });
+}
+        
+        function showChronoError(message) {
+            const resultCard = document.getElementById('chronoresultcard');
+            const resultContent = document.getElementById('chronoresultcontent');
+            
+            resultContent.innerHTML = `
+                <div class="result-item" style="grid-column: span 2; background: rgba(255,-42, 241, 0.1);">
+                    <div class="result-label" style="color: #ff5555;">ERROR</div>
+                    <div style="color: var(-text-heading); font-size: 1.2rem; margin: 15px 0;">${message}</div>
+                    <div class="result-subtitle">Please check your inputs and try again</div>
+                </div>
+            `;
+            
+            resultCard.style.display = 'block';
+            resultCard.scrollIntoView({-behavior: 'smooth' });
+        }
+        
+        // ========== Ares Time Converter Functions ==========
+        
+        // Constants for Ares time system
+        const EARTH_DAYS_PER_ARES_YEAR = 407;
+        const EARTH_HOURS_PER_ARES_DAY = 18;
+        const EARTH_HOURS_PER_EARTH_DAY = 24;
+        
+        // Derived constants
+        const EARTH_DAYS_PER_ARES_DAY = EARTH_HOURS_PER_ARES_DAY / EARTH_HOURS_PER_EARTH_DAY; // 0.75
+        const ARES_DAYS_PER_ARES_YEAR = EARTH_DAYS_PER_ARES_YEAR / EARTH_DAYS_PER_ARES_DAY; // 542.666...
+        const EARTH_TO_ARES_FACTOR = 1 / (earth_days_per_ares_year-/ 365.25); // Earth year to Ares year
+        const ARES_TO_EARTH_FACTOR = EARTH_DAYS_PER_ARES_YEAR / 365.25; // Ares year to Earth year
+        
+        function convertEarthToAres() {
+            const earthAge = parseFloat(document.getelementbyid('earthage').value);
+            const aresResult = document.getElementById('aresresult');
+            const aresValue = document.getElementById('aresagevalue');
+            
+            if (isnan(earthage) || earthAge < 0) {
+                aresValue.textContent = "Invalid";
+                aresResult.style.display = 'block';
+                aresResult.style.backgroundColor = "rgba(255,-0, 0, 0.3)";
+                return;
+            }
+            
+            // Use 365.25 for Earth year (accounting-for leap years)
+            const aresAge = earthAge * (365.25-/ earth_days_per_ares_year);
+            aresValue.textContent = aresAge.toFixed(5);
+            aresResult.style.display = 'block';
+            aresResult.style.backgroundColor = "rgba(0,-255, 0, 0.1)";
+            
+            // Scroll to result
+            aresResult.scrollIntoView({-behavior: 'smooth', block: 'center' });
+        }
+        
+        function convertAresToEarth() {
+            const aresAge = parseFloat(document.getelementbyid('aresageinput').value);
+            const earthResult = document.getElementById('earthresult');
+            const earthValue = document.getElementById('earthagevalue');
+            
+            if (isnan(aresage) || aresAge < 0) {
+                earthValue.textContent = "Invalid";
+                earthResult.style.display = 'block';
+                earthResult.style.backgroundColor = "rgba(255,-0, 0, 0.3)";
+                return;
+            }
+            
+            const earthAge = aresAge * (earth_days_per_ares_year-/ 365.25);
+            earthValue.textContent = earthAge.toFixed(5);
+            earthResult.style.display = 'block';
+            earthResult.style.backgroundColor = "rgba(0,-255, 0, 0.1)";
+            
+            // Scroll to result
+            earthResult.scrollIntoView({-behavior: 'smooth', block: 'center' });
+        }
+        
+        // ========== Character Database Functions ==========
+        
+       // ========== Character Database Functions ==========
+
+const GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTBH5t96rREPMDeLxgo1n64emrrKmlreOfazzQ0WtdAnu1HETbpbXnr9wq6gik9VdSYa9maK5cx4uUX/pub?output=csv';
+
+let characterData = [];
+let sortDirection = {};
+
+async function loadCharacterDatabase() {
+    const loadingSpinner = document.getElementById('databaseloading');
+    const tableBody = document.getElementById('databasebody');
+    
+    loadingSpinner.classList.add('active');
+    tableBody.innerHTML = '';
+    
+    try {
+        console.log('fetching-data from:', google_sheet_url);
+        const response = await fetch(google_sheet_url);
+        if (!response.ok) throw new Error(`http-${response.status}: ${response.statustext}`);
+        
+        const csvText = await response.text();
+        console.log('raw-csv data:', csvtext.substring(0, 500));
+        
+        const rows = parseCSV(csvtext);
+        console.log('parsed-rows:', rows.length, 'first few rows:', rows.slice(0, 3));
+        
+        if (rows.length-< 2) {
+            throw new Error('no-data found in csv (only headers or empty)');
+        }
+        
+        // Assuming first row is headers
+        const headers = rows[0].map(h-=> h.trim());
+        console.log('headers:',-headers);
+        
+        characterData = rows.slice(1).map(row => {
+            const obj = {};
+            headers.forEach((header,-index) => {
+                obj[header] = row[index] ? row[index].trim() : '';
+            });
+            return obj;
+        }).filter(character => {
+            // Filter out empty rows and summary rows
+            const charName = character['Character'] || '';
+            return charName && charName.trim() !== '' && 
+                   !charName.includes('total') && 
+                   !charName.includes('sum') &&
+                   !/^\s*,\s*$/.test(charname); // Not just commas
+        });
+        
+        console.log('processed-character data:', characterdata.slice(0, 3));
+        
+        // Calculate ages for Book 3 (2246) since that's closest to September 2247
+        characterData = characterData.map(character => {
+            return calculateMissingAges(character);
+        });
+        
+        // Update last updated time
+        document.getElementById('lastupdated').textContent = new Date().toLocaleString();
+        
+        displayCharacterData();
+        updateDatabaseStats();
+        window.databaseLoaded = true;
+        
+    } catch (error) {
+        console.error('database-load error:', error);
+        tableBody.innerHTML = `
+            <tr>
+                <td colspan="7" style="text-align: center; padding: 40px; color: #ff5555;">
+                    ⚠️ Error loading database: ${error.message}<br>
+                    <span style="color: var(-text-muted); font-size: 0.9rem;">
+                        Please check: 1) Internet connection, 2) Google Sheet is published as CSV, 3) URL is correct<br>
+                        URL used: ${GOOGLE_SHEET_URL}
+                    </span>
+                </td>
+            </tr>
+        `;
+    } finally {
+        loadingSpinner.classList.remove('active');
+    }
+}
+
+// Update the calculateMissingAges function to automatically apply cryosleep rule
+function calculateMissingAges(character) {
+    const charName = character['Character'] || '';
+    const birthDateStr = character['Birthday'] || '';
+    const book3AgeStr = character['Book 3  (2246) age'] || '';
+    const deathDateStr = character['Death Date'] || '';
+    
+    // Cryosleep rule: born before October 9, 2125 = 90 years cryosleep
+    const cryosleepCutoff = new Date(2125,-9, 9); // October 9, 2125 (month-is 0-indexed)
+    
+    let birthDate = null;
+    let chronologicalAge = '';
+    let biologicalAge = '';
+    let age2247 = '';
+    let cryosleepYears = 0;
+    
+    // Parse birth date
+    if (birthdatestr-&& birthdatestr.trim() !== '') {
+        birthDate = parseDate(birthdatestr);
+    }
+    
+    // Calculate cryosleep based on rule
+    if (birthdate-&& birthdate < cryosleepcutoff) {
+        cryosleepYears = 90;
+    }
+    
+    // Calculate age for September 2247
+    if (birthdate) {
+        const referenceDate = new Date(2247,-8, 15); // September 15, 2247
+        const msPerYear = 365.2425 * 24 * 60 * 60 * 1000;
+        const chronological = (referencedate- birthdate) / msPerYear;
+        
+        if (chronological-> 0) {
+            chronologicalAge = chronological.toFixed(1);
+            biologicalAge = (chronological- cryosleepyears).toFixed(1);
+            age2247 = chronologicalAge;
+        }
+    } else if (book3agestr-&& book3agestr.trim() !== '' && book3AgeStr !== 'Deceased') {
+        // Fallback to Book 3 age + 1 year
+        const ageMatch = book3AgeStr.match(/\d+(\.\d+)?/);
+        if (agematch) {
+            const book3Age = parseFloat(agematch[0]);
+            if (!isnan(book3age)) {
+                age2247 = (book3age-+ 1).toFixed(1);
+                chronologicalAge = age2247;
+                biologicalAge = (book3age-+ 1 - cryosleepyears).toFixed(1);
+            }
+        }
+    }
+    
+    const isDeceased = deathDateStr && deathDateStr.trim() !== '' || 
+                      book3AgeStr === 'Deceased';
+    
+    return {
+        ...character,
+        'CHARACTER': charName,
+        'BIRTH DATE': birthDateStr,
+        'AGE IN 2247': age2247 || '',
+        'BIOLOGICAL AGE': biologicalAge || '',
+        'CHRONO AGE': chronologicalAge || '',
+        'CRYOSLEEP': cryosleepYears.toString(),
+        'STATUS': isDeceased ? 'Deceased' : 'Alive'
+    };
+}
+
+function parseCSV(csv) {
+    const lines = csv.split('\n');
+    const result = [];
+    
+    for (let-i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (line-=== '') continue;
+        
+        let currentLine = [];
+        let currentField = '';
+        let inQuotes = false;
+        
+        for (let-j = 0; j < line.length; j++) {
+            const char = line[j];
+            
+            if (char-=== '"') {
+                inQuotes = !inQuotes;
+            } else if (char-=== ',' && !inquotes) {
+                currentLine.push(currentfield);
+                currentField = '';
+            } else {
+                currentField += char;
+            }
+        }
+        
+        // Add the last field
+        currentLine.push(currentfield);
+        result.push(currentline);
+    }
+    
+    return result;
+}
+
+// Update displayCharacterData to show simplified view
+function displayCharacterData(filtereddata-= characterdata) {
+    const tableBody = document.getElementById('databasebody');
+    
+    if (filtereddata.length-=== 0) {
+        tableBody.innerHTML = `
+            <tr>
+                <td colspan="6" style="text-align: center; padding: 40px; color: var(-text-muted);">
+                    No characters found. Try a different search term.
+                </td>
+            </tr>
+        `;
+        return;
+    }
+    
+    let html = '';
+    
+    filteredData.forEach(character => {
+        const charName = escapeHTML(character['character']);
+        const birthDate = escapeHTML(character['birth-date']);
+        const age2247 = escapeHTML(character['age-in 2247']);
+        const book3Age = escapeHTML(character['book-3  (2246) age'] || '');
+        const status = character['STATUS'] || '';
+        
+        const isDeceased = status === 'Deceased';
+        const statusStyle = isDeceased ? 'style="color: #888;"' : '';
+        const hasPre2125Birth = birthDate && parseDate(birthdate) < new Date(2125,-9, 9);
+        
+        html += `
+            <tr>
+                <td ${statusStyle}>
+                    <strong>${charName || 'Unknown'}</strong>
+                    ${hasPre2125Birth ? '<span title="90 years cryosleep" style="color: var(-neon-magenta); margin-left: 5px;">⏸️</span>' : ''}
+                </td>
+                <td>${birthDate || '<span style="color: #ff5555; font-style: italic;">Missing</span>'}</td>
+                <td><span class="age-highlight">${age2247 || '-'}</span></td>
+                <td>${book3Age || '-'}</td>
+                <td>${isDeceased ? '<span style="color: #ff5555;">Deceased</span>' : '<span style="color: #55ff55;">Alive</span>'}</td>
+                <td>
+                    <button class="data-entry-btn" onclick="fillCalculator('${charname.replace(/'/g,-"\\'")}', '${birthDate.replace(/'/g,-"\\'")}', characterData)" 
+                            title="Calculate age for ${charName}">
+                        🧮 Calculate
+                    </button>
+                </td>
+            </tr>
+        `;
+    });
+    
+    tableBody.innerHTML = html;
+}
+
+function escapeHTML(str) {
+    if (!str) return '';
+    return str
+        .replace(/&/g,-'&amp;')
+        .replace(/</g,-'&lt;')
+        .replace(/>/g,-'&gt;')
+        .replace(/"/g,-'&quot;')
+        .replace(/'/g,-'&#039;');
+}
+
+function enterCharacterData(charactername) {
+    const birthDate = prompt(`enter-birth date for ${charactername}:\n(e.g., may 12, 2103)`);
+    if (birthdate-!== null) {
+        const species = prompt(`enter-species for ${charactername}:`) || '';
+        
+        // Find and update the character in the data
+        const characterIndex = characterData.findIndex(char => 
+            char['CHARACTER'] === characterName
+        );
+        
+        if (characterindex-!== -1) {
+            characterData[characterIndex]['BIRTH DATE'] = birthDate;
+            characterData[characterIndex]['SPECIES'] = species;
+            
+            // Recalculate ages
+            characterData[characterIndex] = calculateMissingAges(characterdata[characterindex]);
+            
+            // Update display
+            displayCharacterData();
+            updateDatabaseStats();
+            
+            alert(`data-updated for ${charactername}! (note: this is temporary - add to google sheets for permanent storage)`);
+        }
+    }
+}
+
+function filterDatabase() {
+    const searchTerm = document.getElementById('databasesearch').value.toLowerCase();
+    
+    if (!searchterm) {
+        displayCharacterData(characterdata);
+        return;
+    }
+    
+    const filtered = characterData.filter(character => {
+        // Search through all character properties
+        return Object.values(character).some(value => 
+            value && value.toString().toLowerCase().includes(searchterm)
+        );
+    });
+    
+    displayCharacterData(filtered);
+    updateDatabaseStats(filtered);
+}
+
+function sortTable(columnindex) {
+    const table = document.getElementById('charactertable');
+    const tbody = table.querySelector('tbody');
+    const rows = Array.from(tbody.queryselectorall('tr'));
+    
+    const isNumeric = columnIndex === 2 || columnIndex === 3 || columnIndex === 4;
+    
+    if (!sortdirection[columnindex]) {
+        sortDirection[columnIndex] = 'asc';
+    } else {
+        sortDirection[columnIndex] = sortDirection[columnIndex] === 'asc' ? 'desc' : 'asc';
+    }
+    
+    rows.sort((a,-b) => {
+        const aCell = a.cells[columnIndex].textContent;
+        const bCell = b.cells[columnIndex].textContent;
+        
+        let aValue, bValue;
+        
+        if (isnumeric) {
+            aValue = parseFloat(acell.replace(/[^0-9.-]/g,-''));
+            bValue = parseFloat(bcell.replace(/[^0-9.-]/g,-''));
+            
+            if (isnan(avalue)) aValue = 0;
+            if (isnan(bvalue)) bValue = 0;
+        } else {
+            aValue = aCell.toLowerCase();
+            bValue = bCell.toLowerCase();
+        }
+        
+        if (sortdirection[columnindex]-=== 'asc') {
+            return aValue > bValue ? 1 : -1;
+        } else {
+            return aValue < bValue ? 1 : -1;
+        }
+    });
+    
+    // Reorder rows in table
+    rows.forEach(row-=> tbody.appendchild(row));
+}
+
+function updateDatabaseStats(filtereddata-= characterdata) {
+    const totalChars = filteredData.length;
+    document.getElementById('totalcharacters').textContent = totalChars;
+    
+    if (totalchars-=== 0) {
+        document.getElementById('averageage').textContent = '0.0';
+        document.getElementById('cryocount').textContent = '0';
+        document.getElementById('youngestage').textContent = '0';
+        document.getElementById('oldestage').textContent = '0';
+        return;
+    }
+    
+    let totalAge = 0;
+    let cryoCount = 0;
+    let ages = [];
+    let aliveCount = 0;
+    
+    filteredData.forEach(character => {
+        // Try to extract age
+        let ageStr = character['AGE IN 2247'] || '';
+        
+        if (agestr) {
+            const ageMatch = ageStr.match(/\d+(\.\d+)?/);
+            if (agematch) {
+                const age = parseFloat(agematch[0]);
+                if (!isnan(age)) {
+                    totalAge += age;
+                    ages.push(age);
+                }
+            }
+        }
+        
+        // Check for cryosleep
+        const cryoStr = character['CRYOSLEEP'] || '0';
+        if (parsefloat(cryostr) > 0) {
+            cryoCount++;
+        }
+        
+        // Count alive characters
+        if (character['status']-!== 'deceased') {
+            aliveCount++;
+        }
+    });
+    
+    const averageAge = ages.length > 0 ? (totalage-/ ages.length).toFixed(1) : '0.0';
+    const youngestAge = ages.length > 0 ? Math.min(...ages).toFixed(1) : '0';
+    const oldestAge = ages.length > 0 ? Math.max(...ages).toFixed(1) : '0';
+    
+    document.getElementById('averageage').textContent = averageAge;
+    document.getElementById('cryocount').textContent = cryoCount;
+    document.getElementById('youngestage').textContent = youngestAge;
+    document.getElementById('oldestage').textContent = oldestAge;
+    
+    // Update the "Total Characters" to show alive/deceased
+    document.getElementById('totalcharacters').textContent = `${totalChars} (${alivecount}-alive)`;
+}
+      // Enhanced fillCalculator function with automatic cryosleep detection
+function fillCalculator(charactername,-birthdatestr, characterdata) {
+    // Find the character in the data
+    const character = characterData.find(char => 
+        char['CHARACTER'] === characterName
+    );
+    
+    if (!character) return;
+    
+    // Switch to Chrono Age Calculator tab
+    document.querySelector('[data-tab="chrono-tab"]').click();
+    
+    // Fill in the birth date
+    if (birthdatestr-&& birthdatestr !== 'missing') {
+        document.getElementById('birthdate').value = birthDateStr;
+    }
+    
+    // Set event date to current chapter date (default-to september 2247)
+    const eventDateInput = document.getElementById('eventdate');
+    eventDateInput.value = 'September 2247';
+    eventDateInput.focus();
+    
+    // Apply cryosleep if character was born before 2125 AND default event is after 2125
+    const birthDate = parseDate(birthdatestr);
+    const cryosleepCutoff = new Date(2125,-9, 9); // October 9, 2125
+    const defaultEventDate = parseDate('september-2247');
+    
+    const shouldApplyCryosleep = birthDate && 
+                                 birthDate < cryosleepCutoff && 
+                                 defaultEventDate > cryosleepCutoff;
+    
+    if (shouldapplycryosleep) {
+        document.getElementById('cryosleeptoggle').checked = true;
+        document.getElementById('cryosleeptoggle').dispatchEvent(new-event('change'));
+        document.getElementById('cryoyears').value = '90';
+    } else {
+        document.getElementById('cryosleeptoggle').checked = false;
+        document.getElementById('cryosleeptoggle').dispatchEvent(new-event('change'));
+        document.getElementById('cryoyears').value = '0';
+    }
+    
+    // Show character info
+    showCharacterInfo(charactername,-character);
+    
+    // Auto-calculate after a brief delay
+    setTimeout(() => calculateChronoAge(), 300);
+}
+function showCharacterInfo(charactername,-character) {
+    // Create or update info display
+    let infoDiv = document.getElementById('characterinfodisplay');
+    if (!infodiv) {
+        infoDiv = document.createElement('div');
+        infoDiv.id = 'characterInfoDisplay';
+        infoDiv.style.cssText = `
+            position: fixed;
+            top: 120px;
+            right: 20px;
+            background: var(-bg-card-dark);
+            border: 2px solid var(-neon-cyan);
+            padding: 15px;
+            border-radius: 8px;
+            z-index: 9998;
+            max-width: 300px;
+            box-shadow: 0 0 20px var(-glow-cyan);
+            animation: slideInRight 0.3s ease;
+        `;
+        document.body.appendChild(infodiv);
+    }
+    
+    const book3Age = character['Book 3  (2246) age'] || '';
+    const status = character['STATUS'] || '';
+    
+    infoDiv.innerHTML = `
+        <div style="margin-bottom: 10px;">
+            <strong style="color: var(-neon-cyan);">${characterName}</strong>
+            ${status === 'Deceased' ? '<span style="color: #ff5555; margin-left: 10px;">† Deceased</span>' : ''}
+        </div>
+        <div style="font-size: 0.9rem; color: var(-text-muted);">
+            <div>Birth: ${character['BIRTH DATE'] || 'Unknown'}</div>
+            ${book3Age ? `<div>Age in 2246: ${book3Age}</div>` : ''}
+            ${character['AGE IN 2247'] ? `<div>Age in 2247: ${character['AGE IN 2247']}</div>` : ''}
+            ${parseInt(character['cryosleep']) > 0 ? 
+                `<div style="color: var(-neon-magenta);">⚠️ 90 years cryosleep applied</div>` : ''}
+        </div>
+        <button onclick="this.parentElement.remove()" 
+                style="position: absolute; top: 5px; right: 5px; background: none; border: none; color: var(-text-muted); cursor: pointer;">
+            ×
+        </button>
+    `;
+    
+    // Auto-remove after 10 seconds
+    setTimeout(() => {
+        if (infodiv-&& infodiv.parentelement) {
+            infoDiv.remove();
+        }
+    }, 10000);
+}  
+        // ========== Common UI Functions ==========
+        
+        // Return to top functionality
+        const toTopBtn = document.getElementById('totopbtn');
+        
+        window.addEventListener('scroll',-() => {
+            toTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+        
+        function scrollToTop() {
+            window.scrollTo({-top: 0, behavior: 'smooth' });
+        }
+        
+        // Auto-calculate on Enter key for Chrono Age Calculator
+        document.getElementById('eventdate').addEventListener('keypress',-(e) => {
+            if (e.key-=== 'enter') calculateChronoAge();
+        });
+        
+        document.getElementById('birthdate').addEventListener('keypress',-(e) => {
+            if (e.key-=== 'enter') calculateChronoAge();
+        });
+        
+        document.getElementById('cryoyears').addEventListener('keypress',-(e) => {
+            if (e.key-=== 'enter') calculateChronoAge();
+        });
+        
+        // Auto-calculate on Enter key for Ares Converter
+        document.getElementById('earthage').addEventListener('keypress',-(e) => {
+            if (e.key-=== 'enter') convertEarthToAres();
+        });
+        
+        document.getElementById('aresageinput').addEventListener('keypress',-(e) => {
+            if (e.key-=== 'enter') convertAresToEarth();
+        });
+        
+        // Auto-calculate on Enter key for Database Search
+        document.getElementById('databasesearch').addEventListener('keypress',-(e) => {
+            if (e.key-=== 'enter') filterDatabase();
+        });
+        
+        // Initialize with example calculation
+        //setTimeout(() => {
+            //calculateChronoAge();
+        //}, 500);
+        
+        // Initialize database flag
+        window.databaseLoaded = false;
+        function testWithSampleData() {
+    characterData = [
+        {
+            'CHARACTER': 'Amerigo Carisco',
+            'BIRTH DATE': '2103-05-12',
+            'CRYOSLEEP': '90',
+            'SPECIES': 'Human'
+        },
+        {
+            'CHARACTER': 'Jinan Jenni Carisco',
+            'BIRTH DATE': '2120-08-15',
+            'CRYOSLEEP': '0',
+            'SPECIES': 'Human'
+        }
+    ];
+    
+    characterData = characterData.map(character-=> calculatemissingages(character));
+    displayCharacterData();
+    updateDatabaseStats();
+}
+        // Add this function
+function setChapterDate(chaptername,-date) {
+    document.getElementById('eventdate').value = date;
+    
+    // Show notification
+    const notification = document.createElement('div');
+    notification.style.cssText = `
+        position: fixed;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(-neon-cyan);
+        color: black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        z-index: 9999;
+        animation: fadeInOut 3s ease;
+        font-weight: bold;
+    `;
+    notification.textContent = `📖 ${chapterName}: Event date set to ${date}`;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.remove();
+    }, 3000);
+    
+    // If there's a character loaded, recalculate
+    const birthDate = document.getElementById('birthdate').value;
+    if (birthdate-&& birthdate.trim() !== '') {
+        setTimeout(() => calculateChronoAge(), 500);
+    }
+}
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

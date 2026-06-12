@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Dr. Douglas Kret
 portrait: "/assets/images/kret-book1.webp"
@@ -10,7 +10,7 @@ portrait-book5: "/assets/images/kret-book5.webp"
 affiliation: Formerly New Eden Medical Corps; Formerly New Eden Council
 status: Deceased
 birthday: February 14, 2098
-birthplace: Earth (pre‑Ares migration)
+birthplace: Earth (pre‑ares-migration)
 death_date: April 2, 2259
 death_place: Utopis‑Lab 1, Amaterasu Outer System
 book1_age: "44.8"
@@ -37,7 +37,7 @@ book4_arc: >
 book5_title: "Legacy and Aftermath"
 book5_arc: >
   Kret's research has been a case study in the Resonance Stewardship Program's ethics curriculum since Book 3. His name is invoked rarely, and only as a warning. The systems he violated — consent, transparency, interspecies respect — become the foundation of the colony's long-term governance.
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -86,11 +86,11 @@ His weaknesses included:
 - **Northern Cluster** — Galinstanians who endured his unauthorized experiments
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Kret's arc is a cautionary tale about scientific ambition without ethical grounding. His exile marks a turning point in the colony's history, and his death closes a chapter that many hoped would never reopen. His legacy serves as the foundational negative example for New Eden's medical ethics — a reminder that progress without consent is not progress at all, but violation.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

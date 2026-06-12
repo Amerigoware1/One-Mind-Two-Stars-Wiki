@@ -1,6 +1,6 @@
----
+-
 layout: character
-title: Stan (Northern Cluster)
+title: Stan (northern-cluster)
 portrait: "/assets/images//stan-book1.webp"
 portrait-book1: "/assets/images/stan-book1.webp"
 portrait-book2: "/assets/images/stan-book2.webp"
@@ -9,7 +9,7 @@ portrait-book4: "/assets/images/stan-book4.webp"
 portrait-book5: "/assets/images/stan-book5.webp"
 affiliation: Northern Cluster; Galinstanian Collective; New Eden Liaison
 status: Alive
-birthday: Unknown (approx. 300-400 years old at first contact)
+birthday: Unknown (approx.-300-400 years old at first contact)
 birthplace: Northern Cluster, Ares
 book1_age: "~300-400"
 book2_age: "~307-407"
@@ -46,12 +46,12 @@ book5_arc: >
 
   When the twins lead the Resonant Echo rescue, Stan pulses with recognition: the bonds he helped plant have grown into a forest. His arc culminates in the quiet satisfaction of an elder watching the young carry the work forward.
   
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
 ## Overview
-Stan is an elder of the Northern Cluster and the first Galinstanian to establish sustained communication with humans. At first contact, he was chosen by the Galinstanian collective to serve as spokesperson—selected based on proximity and his relative "youth" among them (approximately 300-400 years old, young by their species' standards). When seven-year-old Celectra, with a child's instinct, assigned him the name "Stan" and thought of him as male, he accepted both without hesitation. This acceptance became foundational to human–Galinstanian relations: a gesture of respect from a species that understands identity differently.
+Stan is an elder of the Northern Cluster and the first Galinstanian to establish sustained communication with humans. At first contact, he was chosen by the Galinstanian collective to serve as spokesperson—selected based on proximity and his relative "youth" among them (approximately-300-400 years old, young by their species' standards). When seven-year-old Celectra, with a child's instinct, assigned him the name "Stan" and thought of him as male, he accepted both without hesitation. This acceptance became foundational to human–Galinstanian relations: a gesture of respect from a species that understands identity differently.
 
 Over the decades that follow, Stan serves as cultural interpreter, guide, and steady presence through every major crisis. He represents not just Galinstanian wisdom, but the profound grace of being truly seen—and accepted—by another species.
 </div>
@@ -95,20 +95,20 @@ His weaknesses include:
 - **Jaxon Bowers** — trusts his steady presence; recognizes in him the same grounding energy that younger Galinstanians need
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Stan's arc is about the grace of acceptance—of a child's naming, of human urgency, of the slow work of building understanding between species that perceive time differently. He represents the wisdom that knows when to speak and when to wait, when to guide and when to let the young find their own way. His greatest gift to humanity was not translation, but the simple act of accepting being seen—and named—by a seven-year-old who reached across the impossible.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The Naming (Book 1):** Seven-year-old Celectra, with a child's instinct, names him "Stan" and thinks of him as male. He accepts—a gesture that becomes foundational to human–Galinstanian relations
-- **The Translation (Book 1):** Begins the long work of bridging not just language, but two species' ways of perceiving reality
-- **The Rescue (Book 2):** Helps Chime and the captive Galinstanians begin healing from Kret's experiments
-- **The Counsel (Book 3):** Offers Galinstanian perspective on using Kret's research: knowledge gained through harm carries the harm within it
-- **The Pattern (Book 4):** Recognizes ancient resonance patterns during the Four Rivers crisis, guiding the twins and Ripple
-- **The Forest (Book 5):** Pulses with quiet satisfaction as the bonds he planted become a forest of connection
+- **The Naming (book-1):** Seven-year-old Celectra, with a child's instinct, names him "Stan" and thinks of him as male. He accepts—a gesture that becomes foundational to human–Galinstanian relations
+- **The Translation (book-1):** Begins the long work of bridging not just language, but two species' ways of perceiving reality
+- **The Rescue (book-2):** Helps Chime and the captive Galinstanians begin healing from Kret's experiments
+- **The Counsel (book-3):** Offers Galinstanian perspective on using Kret's research: knowledge gained through harm carries the harm within it
+- **The Pattern (book-4):** Recognizes ancient resonance patterns during the Four Rivers crisis, guiding the twins and Ripple
+- **The Forest (book-5):** Pulses with quiet satisfaction as the bonds he planted become a forest of connection
 </div>
 
 <div class="card-bg" markdown="1">
@@ -136,7 +136,7 @@ Stan's arc is about the grace of acceptance—of a child's naming, of human urge
 - He can recognize Celectra's resonance pattern anywhere, even after decades, even through interference
 - Stan has never needed to "sleep" as humans understand it, but enters periods of deep resonance contemplation
 - He maintains a mental archive of every significant human–Galinstanian interaction since first contact
-- The younger generation of Galinstanians (including Ripple) refer to him as "Elder Stan" with genuine respect
+- The younger generation of Galinstanians (including-ripple) refer to him as "Elder Stan" with genuine respect
 </div>
 
 <div class="card-bg" markdown="1">

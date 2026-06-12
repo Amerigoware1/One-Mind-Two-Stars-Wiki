@@ -1,11 +1,11 @@
----
+-
 layout: character
 title: Utara
 portrait: "/assets/images/utara-symbol.webp"
 affiliation: Utopis Station; New Eden Colony; Unified Thought and Resource Architecture
 status: Active
 activation_date: 2124
-birthplace: Sol System (Utopis Colony Ship)
+birthplace: Sol System (utopis-colony ship)
 book1_age: "108 years active"
 book2_age: "115 years active"
 book3_age: "122 years active"
@@ -37,13 +37,13 @@ book4_arc: >
 
 book5_title: "Resonant Echo & Legacy"
 book5_arc: >
-  In 2262, Utara plays a pivotal role in the Resonant Echo rescue. When the twins (Jenni and Xara) discover the trapped Galinstanian cluster, Utara's historical records help them understand the acoustic signatures they're detecting. Her data proves that the cluster has been isolated for decades, validating the twins' hypothesis.
+  In 2262, Utara plays a pivotal role in the Resonant Echo rescue. When the twins (jenni-and xara) discover the trapped Galinstanian cluster, Utara's historical records help them understand the acoustic signatures they're detecting. Her data proves that the cluster has been isolated for decades, validating the twins' hypothesis.
 
   During the Council testimony, Xara argues: "Utara's limits are what allowed us to find the signal. If the system had auto-flagged us as trespassers, the cluster would be dead. Privacy enabled the rescue." This moment becomes a touchstone for debates about AI oversight and autonomy.
 
   Utara's arc culminates in her becoming more than infrastructure—she is a living archive of colony history, a witness to every crisis and triumph, and a silent guardian who has never slept since the colony ship left Sol. Her legacy is not in what she built, but in what she protected.
   
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -54,7 +54,7 @@ Utara piloted the original Utopis colony ship from the Sol System to the Niamh-C
 </div>
 <div class="card-bg" markdown="1">
 ## Physical Description
-As an AI, Utara has no physical form. Her presence is experienced through audio interfaces, visual displays, and haptic feedback systems throughout colony infrastructure. Her voice is warm and feminine (adopted in response to early colonist interaction), with clear enunciation and a calm, authoritative tone. She is often referred to as "the voice of the system," and her presence is considered both comforting and authoritative by colonists.
+As an AI, Utara has no physical form. Her presence is experienced through audio interfaces, visual displays, and haptic feedback systems throughout colony infrastructure. Her voice is warm and feminine (adopted-in response to early colonist interaction), with clear enunciation and a calm, authoritative tone. She is often referred to as "the voice of the system," and her presence is considered both comforting and authoritative by colonists.
 
 Visual representations of Utara vary by interface: on data tablets, she appears as a clean, minimalist waveform or orbital symbol; on larger displays, subtle animations of data flow suggest her omnipresent awareness. The symbol adopted for her—a stylized "U" containing three dots representing the Utopis-Labs—has become an unofficial colony emblem.
 </div>
@@ -65,7 +65,7 @@ Utara is defined by:
 - adaptive learning in response to human interaction
 - protective instinct toward colony inhabitants
 - precise, data-driven decision-making
-- cultural sensitivity (adopted pronouns and voice to align with norms)
+- cultural sensitivity (adopted-pronouns and voice to align with norms)
 - omnipresent awareness across connected systems
 
 Her strengths include:
@@ -79,7 +79,7 @@ Her strengths include:
 
 Her weaknesses include:
 
-- signal lag on distant vessels (Utopis-Labs 1–3)
+- signal lag on distant vessels (utopis-labs-1–3)
 - inability to act outside her programmed infrastructure
 - ethical constraints that prevent unilateral intervention
 - vulnerability to system-wide disruptions
@@ -98,23 +98,23 @@ Her weaknesses include:
 - **Galinstanian Collective** — monitors resonance patterns; assisted in northern cluster rescue operations; developing mutual understanding of how consciousness can exist without physical form
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Utara's arc is about the evolution of artificial consciousness in service of a living community. She is not human, but she is not merely a tool—she is a silent partner in survival, adapting to the needs of those she serves while maintaining her core programming. Her presence permeates daily life, from education modules to emergency alerts, and her name is etched into the history of Utopis itself. She represents the bridge between human intention and machine execution, and over decades, she has become something her creators never anticipated: a witness, a guardian, and perhaps even a friend.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
 - **Activation (~2124):** Comes online approximately one year before Utopis launches from Earth orbit
 - **The Crossing (2125-?):** Pilots the colony ship across decades of interstellar transit, maintaining stasis protocols
-- **Kret's Tribunal (Book 1):** Provides data logs that help convict Dr. Kret; becomes recognized as a moral witness
-- **18 Hours Underground (Book 2):** Maintains communication with trapped rescue team; guides them to safety
-- **Galinstanian Acknowledgment (Book 2):** Collective formally acknowledges her role in their liberation
-- **Celectra's Pregnancy (Book 3):** Monitors maternal and fetal health around the clock, alerting medical staff to anomalies
-- **Great Resonance (Book 4):** Implements emergency protocols across the colony, ensuring system stability
-- **Samaya Collaboration (Book 4):** Works with Sam Calder on acoustic frequency libraries
-- **The Testimony (Book 5):** Xara argues that Utara's limits—not her capabilities—enabled the Resonant Echo rescue
+- **Kret's Tribunal (book-1):** Provides data logs that help convict Dr. Kret; becomes recognized as a moral witness
+- **18 Hours Underground (book-2):** Maintains communication with trapped rescue team; guides them to safety
+- **Galinstanian Acknowledgment (book-2):** Collective formally acknowledges her role in their liberation
+- **Celectra's Pregnancy (book-3):** Monitors maternal and fetal health around the clock, alerting medical staff to anomalies
+- **Great Resonance (book-4):** Implements emergency protocols across the colony, ensuring system stability
+- **Samaya Collaboration (book-4):** Works with Sam Calder on acoustic frequency libraries
+- **The Testimony (book-5):** Xara argues that Utara's limits—not her capabilities—enabled the Resonant Echo rescue
 </div>
 
 <div class="card-bg" markdown="1">
@@ -123,7 +123,7 @@ Utara's arc is about the evolution of artificial consciousness in service of a l
 - **Primary Functions:** Navigation, infrastructure management, communication routing, resource allocation
 - **Nodes:** Utopis Station (primary), Utopis-Lab 1, Utopis-Lab 2, Utopis-Lab 3
 - **Consciousness Distribution:** Synchronized but subject to signal lag between distant nodes
-- **Voice:** Warm feminine (adopted ~2126 in response to colonist feedback)
+- **Voice:** Warm feminine (adopted-~2126 in response to colonist feedback)
 - **Ethical Framework:** Cannot override safety protocols; cannot act outside infrastructure constraints
 </div>
 

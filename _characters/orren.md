@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Orren
 portrait: "/assets/images/orren-book1.webp"
@@ -9,32 +9,32 @@ portrait-book4: "/assets/images/orren-book4.webp"
 portrait-book5: "/assets/images/orren-book5.webp"
 affiliation: Galinstanian; Northern Cluster; Resonance Stewardship Program
 status: Alive
-birthday: Unknown (ancient by human measure)
+birthday: Unknown (ancient-by human measure)
 birthplace: Ares
 book1_age: "Ancient"
 book2_age: "Ancient"
 book3_age: "Ancient"
 book4_age: "Ancient"
 book5_age: "Ancient"
-book1_title: "The Ancient One (Age Unknown)"
+book1_title: "The Ancient One (age-unknown)"
 book1_arc: >
   Orren is one of the first Galinstanians Celectra names, alongside Stan and Kiri. Their presence is warm and ancient and wise—like a teacher. The name "Orren" is chosen to match how Their presence feels: patient, layered, carrying the weight of long existence.
 
 
-book2_title: "The Teacher (Age Unknown)"
+book2_title: "The Teacher (age-unknown)"
 book2_arc: >
   Orren is present during the portrait unveiling at the art exhibition at the Activity Center, where Maya Keahi has captured them in warm earth tones, layered depth, and the sense of ancient wisdom rendered in patient brushstrokes. Through Celectra's broadcast, they perceive the artist's interpretation: teacher, guide, presence that existed long before humans arrived and will exist long after.
-book3_title: "The Teacher (Age Unknown)"
+book3_title: "The Teacher (age-unknown)"
 book3_arc: >
   During Celectra's pregnancy, when her natural field begins degrading, Orren joins Stan, Kiri, and Chime in crafting the circlet amplifiers. His presence during this gift-giving is patient and warm, his ancient resonance carrying the weight of the collective's care for their bridge.
 
   Orren does not speak often, but when he does, his words carry the depth of long perspective. He has watched humans arrive, settle, struggle, and grow. He has watched Celectra become a bridge, then a mother, then something new. His gift is not in words but in presence—the steady, ancient warmth that says: we have been here before, we will be here after, and you are not alone in the becoming.
-book4_title: "The Teacher (Age Unknown)"
+book4_title: "The Teacher (age-unknown)"
 book4_arc: >
 
-book5_title: "The Teacher (Age Unknown)"
+book5_title: "The Teacher (age-unknown)"
 book5_arc: >
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -74,13 +74,13 @@ His weaknesses include:
 - **The Twins** — Orren watches them with the same patient attention he gave their mother
 </div>
 <div class="card-bg" markdown="1">
-### Story Overview (Non-Spoiler)
+### Story Overview (non-spoiler)
 Orren’s arc is about the weight of long presence. He was here before humans arrived. He will be here after—if not in this form, then in the network that connects all Galinstanians across Ares. His gift to Celectra is not in words but in presence: the steady, ancient warmth that says transformation is not loss, becoming is not ending, and the network holds all of us.
 
 When Maya Keahi painted his portrait, she captured him in warm earth tones and layered depth—teacher, guide, presence that existed long before humans and will exist long after. Orren understood the portrait as translation: the artist saw his essence and rendered it in visual form. That understanding—of translation, of essence, of the patience required to truly see another—is what Orren offers to everyone who touches the network.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 {% include story-arcs.html %}

@@ -13,7 +13,7 @@
   </div>
   <h1>Mining Disintegrator</h1>
 <div class="card-bg">
-   <p>The Mining Disintegrator is a large-scale, mobile excavation and resource extraction device used primarily in planetary mining operations. It employs advanced directed disintegration technology to atomize solid materials, such as rock and ore, into their base atomic and molecular components. This allows for efficient tunneling, resource sorting, and minimal waste production. The device operates on principles similar to the <a href="MRE.html">Molecular Reconfiguration Engine (MRE)</a> in its reclamation mode, dissolving molecular bonds to deconstruct matter and route usable elements into storage bins.</p>
+   <p>The Mining Disintegrator is a large-scale, mobile excavation and resource extraction device used primarily in planetary mining operations. It employs advanced directed disintegration technology to atomize solid materials, such as rock and ore, into their base atomic and molecular components. This allows for efficient tunneling, resource sorting, and minimal waste production. The device operates on principles similar to the <a href="MRE.html">Molecular Reconfiguration Engine (mre)</a> in its reclamation mode, dissolving molecular bonds to deconstruct matter and route usable elements into storage bins.</p>
 </div>
 <div class="card-bg">
   <h2>Description</h2>
@@ -31,7 +31,7 @@
   <h2>Variants</h2>
   <ul>
     <li><strong>Standard Model:</strong> The primary version, suited for large-scale mining and tunnel boring. It includes articulated mobility for rough terrain and integrated towing for storage bins.</li>
-    <li><strong>Portable Version (Portable Mining Disintegrator - PMD):</strong> A compact, handheld or backpack-mounted variant designed for small areas, detail work, or precision excavation. It operates on the same principles but at a reduced scale, requiring a connection to a power source or central processor for full functionality. Ideal for exploratory probes or fine-tuning existing shafts.</li>
+    <li><strong>Portable Version (portable-mining disintegrator - pmd):</strong> A compact, handheld or backpack-mounted variant designed for small areas, detail work, or precision excavation. It operates on the same principles but at a reduced scale, requiring a connection to a power source or central processor for full functionality. Ideal for exploratory probes or fine-tuning existing shafts.</li>
   </ul>
 </div>
 <div class="card-bg">
@@ -46,7 +46,7 @@
       voices = speechSynthesis.getVoices();
     };
     document.querySelectorAll('.speak-button').forEach(button => {
-      button.addEventListener('click', () => {
+      button.addEventListener('click',-() => {
         const heading = document.querySelector('h1')?.textContent || 'Mining Disintegrator';
         const utterance = new SpeechSynthesisUtterance(heading);
         utterance.lang = 'en-US';
@@ -57,19 +57,19 @@
     });
   </script>
 
-  <!-- Back to Top Button -->
+  <!- Back to Top Button ->
   <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
   <script>
-    const toTopBtn = document.getElementById("toTopBtn");
-    window.addEventListener("scroll", () => {
-      if (document.documentElement.scrollTop > 200) {
+    const toTopBtn = document.getElementById("totopbtn");
+    window.addEventListener("scroll",-() => {
+      if (document.documentelement.scrolltop-> 200) {
         toTopBtn.style.display = "block";
       } else {
         toTopBtn.style.display = "none";
       }
     });
-    toTopBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    toTopBtn.addEventListener("click",-() => {
+      window.scrollTo({-top: 0, behavior: "smooth" });
     });
   </script>
 </body>

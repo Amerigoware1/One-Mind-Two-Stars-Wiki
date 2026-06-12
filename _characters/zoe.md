@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Dr. Zoë Carisco
 portrait: "/assets/images/zoe-book1.webp"
@@ -10,7 +10,7 @@ portrait-book5: "/assets/images/zoe-book5.webp"
 affiliation: Carisco Family; New Eden Psychology Division; Council Advisor
 status: Alive
 birthday: January 3, 2107
-birthplace: Earth (pre‑Ares migration)
+birthplace: Earth (pre‑ares-migration)
 book1_age: "35.8"
 book2_age: "42.9"
 book3_age: "49.8"
@@ -36,7 +36,7 @@ book5_title: "Wisdom of the Elder"
 book5_arc: >
   In her sixties, Zoë becomes one of the colony's most respected elder psychologists. She mentors younger clinicians, supports the Resonance Stewardship Program, and helps guide the twins as they step into their roles as emerging bridges. Her arc centers on generational continuity—passing down the emotional tools needed to sustain harmony on Ares. She remains the quiet force who holds the Carisco family together.
 
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -76,7 +76,7 @@ Her weaknesses include:
 
 - tendency to carry everyone's emotional weight
 - difficulty asking for help when she needs it
-- past trauma (her father's legacy) that surfaces at unexpected moments
+- past trauma (her-father's legacy) that surfaces at unexpected moments
 </div>
 <div class="card-bg" markdown="1">
 ## Relationships
@@ -91,21 +91,21 @@ Her weaknesses include:
 - **Dr. Douglas Kret** — her father; their relationship is the wound that shaped her, and the reason she became a healer
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Zoë's journey is one of resilience and adaptation. She raises a traumatized dual‑bodied child with no precedent, helps build the psychological frameworks that allow human–Galinstanian coexistence, and becomes a grandmother whose wisdom shapes the next generation. Her arc is about choosing compassion even when the universe offers no guidebook. She is the quiet force who holds the Carisco family together—not through grand gestures, but through steady, unwavering presence.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The First Night (Book 1):** Holding both of Celectra's bodies after the Kret experiments, promising they're safe now
-- **The Birthday Chapter (Book 3):** A meditation on aging, mortality, and legacy at fifty
-- **To Celectra (Book 3):** "You're not becoming obsolete. You're becoming what you always were meant to be—the architect, not the structure."
-- **Resonance Fatigue (Book 4):** Warns the team that Galinstanians may experience emotional exhaustion from sustained resonance
-- **The Naming (Book 4):** Watches as her mother's name (Xara) and her own are given to the twins—a moment of profound continuity
-- **Grandmother's Pride (Book 5):** Observes the twins' testimony with quiet joy, seeing her values in action
-- **The Quiet Center (All Books):** Every family gathering, every crisis, every celebration—she is the calm in the storm
+- **The First Night (book-1):** Holding both of Celectra's bodies after the Kret experiments, promising they're safe now
+- **The Birthday Chapter (book-3):** A meditation on aging, mortality, and legacy at fifty
+- **To Celectra (book-3):** "You're not becoming obsolete. You're becoming what you always were meant to be—the architect, not the structure."
+- **Resonance Fatigue (book-4):** Warns the team that Galinstanians may experience emotional exhaustion from sustained resonance
+- **The Naming (book-4):** Watches as her mother's name (xara) and her own are given to the twins—a moment of profound continuity
+- **Grandmother's Pride (book-5):** Observes the twins' testimony with quiet joy, seeing her values in action
+- **The Quiet Center (all-books):** Every family gathering, every crisis, every celebration—she is the calm in the storm
 </div>
 
 <div class="card-bg" markdown="1">

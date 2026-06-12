@@ -28,7 +28,7 @@
     }
     .meta-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit,-minmax(200px, 1fr));
       gap: 1rem;
       margin: 1rem 0;
     }
@@ -56,20 +56,20 @@
       padding: 0.8rem 1.5rem;
       font-family: 'Orbitron', sans-serif;
       font-size: 0.9rem;
-      color: var(--neon-cyan);
+      color: var(-neon-cyan);
       text-transform: uppercase;
       letter-spacing: 2px;
-      background: rgba(0, 232, 255, 0.05);
-      border: 1px solid var(--neon-cyan);
+      background: rgba(0,-232, 255, 0.05);
+      border: 1px solid var(-neon-cyan);
       border-radius: 4px;
       text-decoration: none;
-      box-shadow: 0 0 10px var(--glow-cyan);
+      box-shadow: 0 0 10px var(-glow-cyan);
       transition: all 0.3s ease;
     }
     .read-sample-btn:hover {
-      background: var(--neon-cyan);
-      color: var(--bg-space);
-      box-shadow: 0 0 25px var(--neon-cyan);
+      background: var(-neon-cyan);
+      color: var(-bg-space);
+      box-shadow: 0 0 25px var(-neon-cyan);
       transform: scale(1.05);
     }
     .book-links {
@@ -115,7 +115,7 @@
 
   <div class="meta-cards">
     <div class="chip"><strong>Genre:</strong> Speculative Hard Sci-Fi / Character-Driven Space Opera</div>
-    <div class="chip"><strong>Target Audience:</strong> Adult / YA Crossover (clean, accessible, scientifically rigorous)</div>
+    <div class="chip"><strong>Target Audience:</strong> Adult / YA Crossover (clean,-accessible, scientifically rigorous)</div>
     <div class="chip"><strong>Core Themes:</strong> Autonomy, Neurodiversity, First Contact Ethics, Found Family, Sustainable Systems</div>
     <div class="chip"><strong>Comparable Titles:</strong> <em>Ender’s Game × Project Hail Mary × A Psalm for the Wild-Built</em></div>
     <div class="chip"><strong>Book 1 Word Count:</strong> ~93,000 words</div>
@@ -123,7 +123,7 @@
     <div class="chip"><strong>Editorial Flexibility:</strong> Book 1 stands alone; all sequel material is adaptable based on publisher guidance</div>
   </div>
 
-  <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+  <p style="margin-top: 1rem; font-size: 0.9rem; color: var(-text-muted);">
     <em>Note: All future-book content on this site is exploratory and subject to change during the editorial process.</em>
   </p>
 </section>
@@ -138,13 +138,13 @@
     <section id="book-breakdown" class="wiki-section">
       <h2>Book-by-Book Breakdown</h2>
       
-      <!-- BOOK 1 -->
+      <!- BOOK 1 ->
       <article class="book-card">
         <h3>Book 1: One Mind, Two Stars</h3>
         <div class="book-meta">
           <span class="status-complete">Status: Complete</span> | 
           <span>Word Count: ~93,000</span> | 
-          <span>Timeline: Age 7–8 (First contact occurs days after her 7th birthday; concludes on her 8th birthday)</span>
+          <span>Timeline: Age 7–8 (first-contact occurs days after her 7th birthday; concludes on her 8th birthday)</span>
         </div>
         <p class="synopsis">
           Seven-year-old Celectra Carisco has one mind, two bodies, and a strict forty-meter limit. While her father fiercely protects her right to be seen as a single, whole person, the colony’s Chief of Medicine views her unique neurology as the key to unlocking consciousness transfer. When his unethical isolation tests push Celectra to the brink of cardiac arrest, she flees into the uncharted, subterranean cave systems of the moon Ares.
@@ -158,13 +158,13 @@
 </div>
       </article>
 
-      <!-- BOOK 2 -->
+      <!- BOOK 2 ->
       <article class="book-card">
         <h3>Book 2: One Mind, Two Stars: The Northern Shadows</h3>
         <div class="book-meta">
           <span class="status-revision">Status: Complete / In Revision</span> | 
           <span>Word Count: ~80,000</span> | 
-          <span>Timeline: Age 14 (6 years after Book 1's epilogue; Xan is 6 years old)</span>
+          <span>Timeline: Age 14 (6-years after book 1's epilogue; xan is 6 years old)</span>
         </div>
         <p class="synopsis">
           Fourteen-year-old Celectra is buckling under the relentless demands of being New Eden's sole translator. Her "Celectricity" allows instantaneous communion with the Galinstanians, but the emotional labor leaves her exhausted and isolated. When she finally sets boundaries to protect her own mental health, the Council is forced to recognize that treating a child as an indispensable resource is unsustainable.
@@ -178,12 +178,12 @@
 </div>
       </article>
 
-      <!-- BOOK 3 -->
+      <!- BOOK 3 ->
       <article class="book-card">
         <h3>Book 3: One Mind, Two Stars: Neutron Legacy</h3>
         <div class="book-meta">
           <span class="status-outlining">Status: In Revision / Outlining</span> | 
-          <span>Word Count: ~95,000 (Projected)</span> | 
+          <span>Word Count: ~95,000 (projected)</span> | 
           <span>Timeline: Age 21</span>
         </div>
         <p class="synopsis">
@@ -215,9 +215,9 @@
       <p><strong>Emmery Chrisco</strong> is seeking representation for the completed first novel, with additional books and worldbuilding materials available.</p>
       <p><strong>Currently Available:</strong></p>
       <ul>
-        <li>Complete Book 1 manuscript (~93k words)</li>
-        <li><a href="cast.html">Character bios and relationship maps</a> (live on site)</li>
-        <li>Series premise and detailed worldbuilding (explorable throughout this wiki)</li>
+        <li>Complete Book 1 manuscript (~93k-words)</li>
+        <li><a href="cast.html">Character bios and relationship maps</a> (live-on site)</li>
+        <li>Series premise and detailed worldbuilding (explorable-throughout this wiki)</li>
       </ul>
       
       <p><strong>Under Development:</strong></p>
@@ -234,7 +234,7 @@
     <section>
       <h2>Explore the Universe</h2>
       <p>This wiki contains detailed information about every aspect of the series:</p>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:1rem; margin-top:1rem;">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,-minmax(250px, 1fr)); gap:1rem; margin-top:1rem;">
         <a href="SolarSystemOverview.html" class="card-bg" style="padding:1rem; display:block; text-decoration:none;">
           <h3 style="margin-top:0;">🪐 Star System</h3>
           <p>Detailed orbital data for Niamh–Ciara binary system</p>

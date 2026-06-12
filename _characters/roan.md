@@ -1,4 +1,4 @@
----
+-
 layout: character
 title: Chief Evelyn Roan
 portrait: "/assets/images/roan-book1.webp"
@@ -24,7 +24,7 @@ book1_arc: >
 
 book2_title: "The Northern Cluster Rescue"
 book2_arc: >
-  In 2239, Roan leads the rescue operation for the northern Galinstanian cluster after Kret's experiments. She personally witnesses the trauma inflicted on the young Galinstanian, and her perspective begins to shift. When Kret sabotages the rescue operation—overloading equipment to cause structural collapse—Roan and 14 others (including two minors) are trapped underground for 18 hours.
+  In 2239, Roan leads the rescue operation for the northern Galinstanian cluster after Kret's experiments. She personally witnesses the trauma inflicted on the young Galinstanian, and her perspective begins to shift. When Kret sabotages the rescue operation—overloading equipment to cause structural collapse—Roan and 14 others (including-two minors) are trapped underground for 18 hours.
 
   Galinstanian assistance proves crucial to their survival and rescue. This experience transforms Roan from skeptic to advocate. She testifies at Kret's second tribunal: "During extraction, Dr. Kret deliberately sabotaged our rescue operation... Only luck and the assistance of the Galinstanian collective prevented multiple casualties." Her testimony helps secure Kret's final conviction.
 
@@ -34,7 +34,7 @@ book3_title: "Security & Integration"
 book3_arc: >
   By 2246, Roan is a strong advocate for Galinstanian protection and rights. She incorporates their unique abilities into security planning, balancing human security needs with cross-species ethics. She supports the Listener Corps expansion as a security enhancement and works with Dr. Yuki Chen and Chen Wei on monitoring protocols for the Communion Interface testing.
 
-  Roan's security philosophy emphasizes prevention over reaction, community integration, proportional response, and transparency. She establishes notable protocols including revised First Contact Protocols (emphasizing non-harm), Cross-Species Security patrols, and Scientific Ethics Oversight for high-risk research.
+  Roan's security philosophy emphasizes prevention over reaction, community integration, proportional response, and transparency. She establishes notable protocols including revised First Contact Protocols (emphasizing-non-harm), Cross-Species Security patrols, and Scientific Ethics Oversight for high-risk research.
 
   Her relationship with Celectra has matured into mutual respect. Roan no longer sees her as an exception to be managed, but as a colleague whose unique perspective strengthens colony security.
 
@@ -52,9 +52,9 @@ book5_arc: >
 
   When the twins lead the Resonant Echo rescue and subsequent Council testimony, Roan observes with quiet pride. She recognizes in their work the same values she has always championed: protection of the vulnerable, accountability for harm, and the courage to adapt when circumstances demand it.
 
-  Her arc culminates not in dramatic transformation, but in the steady accumulation of wisdom: security isn't about control—it's about creating conditions where people (human or otherwise) can live without fear. Her legacy is a colony where safety and compassion are not opposites, but partners.
+  Her arc culminates not in dramatic transformation, but in the steady accumulation of wisdom: security isn't about control—it's about creating conditions where people (human-or otherwise) can live without fear. Her legacy is a colony where safety and compassion are not opposites, but partners.
   
----
+-
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
@@ -65,7 +65,7 @@ Initially skeptical of the Galinstanians and the risks of cross-species contact,
 </div>
 <div class="card-bg" markdown="1">
 ## Physical Description
-Roan carries herself with the quiet competence of someone who has managed crises for decades. She has short, practical hair (streaked with grey by Book 5), sharp observant eyes that miss little, and a posture that is always alert but not tense. She favors functional New Eden security attire—durable fabrics, comms gear, utility belts—deliberately non-militaristic in design. Her voice is clear and measured, carrying authority without shouting.
+Roan carries herself with the quiet competence of someone who has managed crises for decades. She has short, practical hair (streaked-with grey by book 5), sharp observant eyes that miss little, and a posture that is always alert but not tense. She favors functional New Eden security attire—durable fabrics, comms gear, utility belts—deliberately non-militaristic in design. Her voice is clear and measured, carrying authority without shouting.
 </div>
 <div class="card-bg" markdown="1">
 ## Personality & Skills
@@ -74,7 +74,7 @@ Roan is defined by:
 - professional integrity and methodical investigation
 - prevention-focused security philosophy
 - evidence-based decision-making
-- evolution from skeptic to advocate (Galinstanian relations)
+- evolution from skeptic to advocate (galinstanian-relations)
 - community-based security over authoritarian control
 
 Her strengths include:
@@ -90,7 +90,7 @@ Her weaknesses include:
 - initial skepticism toward unknown intelligence
 - tendency to prioritize safety over exploration
 - deliberate separation of personal and professional life
-- carrying the weight of failed protections (Kret cases)
+- carrying the weight of failed protections (kret-cases)
 </div>
 <div class="card-bg" markdown="1">
 ## Relationships
@@ -103,20 +103,20 @@ Her weaknesses include:
 - **New Eden Security Team** — trains and mentors; emphasizes ethics alongside competence
 </div>
 <div class="card-bg" markdown="1">
-## Story Overview (Non-Spoiler)
+## Story Overview (non-spoiler)
 Roan's arc is about the evolution of security—from control to protection, from skepticism to partnership. She represents the pragmatic voice that asks "Is this safe?" and then listens when the answer requires rethinking what safety means. Her transformation from Galinstanian skeptic to advocate is particularly meaningful because it comes from a security professional, not a scientist or idealist. When Roan speaks, the council listens.
 </div>
 
----
+-
 
 <div class="card-bg" markdown="1">
 ### Key Moments
-- **The First Arrest (Book 1):** Roan arrests Dr. Kret in the cave systems while he searches for Celectra, delivering him to his first tribunal
-- **18 Hours Trapped (Book 2):** Survives Kret's sabotage alongside 14 others; Galinstanian assistance proves crucial to their rescue
-- **The Testimony (Book 2):** "Only luck and the assistance of the Galinstanian collective prevented multiple casualties." — her words help secure Kret's final conviction
-- **First Contact Protocols Revised (Book 3):** Establishes new cross-species security frameworks emphasizing non-harm
-- **Joint Rescue (Book 4):** Leads integrated human–Galinstanian emergency response during the Four Rivers crisis
-- **Mentor's Pride (Book 5):** Observes the twins' Resonant Echo rescue, recognizing the values she championed in action
+- **The First Arrest (book-1):** Roan arrests Dr. Kret in the cave systems while he searches for Celectra, delivering him to his first tribunal
+- **18 Hours Trapped (book-2):** Survives Kret's sabotage alongside 14 others; Galinstanian assistance proves crucial to their rescue
+- **The Testimony (book-2):** "Only luck and the assistance of the Galinstanian collective prevented multiple casualties." — her words help secure Kret's final conviction
+- **First Contact Protocols Revised (book-3):** Establishes new cross-species security frameworks emphasizing non-harm
+- **Joint Rescue (book-4):** Leads integrated human–Galinstanian emergency response during the Four Rivers crisis
+- **Mentor's Pride (book-5):** Observes the twins' Resonant Echo rescue, recognizing the values she championed in action
 </div>
 
 <div class="card-bg" markdown="1">

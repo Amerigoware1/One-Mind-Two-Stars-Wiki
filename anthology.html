@@ -14,11 +14,11 @@
     }
     
     .passcode-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border-glow);
+      background: var(-bg-card);
+      border: 1px solid var(-border-glow);
       padding: 2rem;
       border-radius: 0.75rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 15px var(--glow-violet);
+      box-shadow: 0 4px 20px rgba(0,-0, 0, 0.6), 0 0 15px var(-glow-violet);
     }
     
     /* Leverages main file input theme but ensures centering/spacing */
@@ -36,8 +36,8 @@
     
     /* Cyber-alert styling using theme palette */
     .error-message {
-      color: var(--neon-magenta);
-      text-shadow: 0 0 8px rgba(255, 42, 241, 0.4);
+      color: var(-neon-magenta);
+      text-shadow: 0 0 8px rgba(255,-42, 241, 0.4);
       margin-top: 1rem;
       font-weight: bold;
     }
@@ -49,21 +49,21 @@
     /* Grid wrapper for the locked content archive */
     .story-list {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fill,-minmax(300px, 1fr));
       gap: 1.5rem;
       margin: 2rem 0;
     }
     
     /* Story card links inherit primary text, headers inherit cyan glow */
     .story-card p {
-      color: var(--text-muted);
+      color: var(-text-muted);
       font-size: 0.9rem;
     }
     
     /* Sci-fi Divider line */
     hr {
       border: none;
-      border-top: 1px solid var(--border-glow);
+      border-top: 1px solid var(-border-glow);
       margin: 2rem 0;
     }
   </style>
@@ -87,7 +87,7 @@
     <div id="passcodeGate" class="passcode-container">
       <div class="passcode-box">
         <p style="margin-bottom: 1rem;">🔐 This section is for readers who have finished <em>One Mind, Two Stars: The Bridge of Ares</em>.</p>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: var(--text-muted);">Enter the passcode found in the back of the book:</p>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: var(-text-muted);">Enter the passcode found in the back of the book:</p>
         <input type="password" id="passcodeInput" placeholder="Enter passcode" autocomplete="off">
         <div><button onclick="checkPasscode()">Unlock Archive</button></div>
         <div id="errorMsg" class="error-message"></div>
@@ -105,7 +105,7 @@
     
         <div class="story-card card-bg">
           <h3>Counseling Sessions</h3>
-          <p>The full-length holo‑chamber therapy sessions where Celectra (as Aquella) works through her fears with Zoë.</p>
+          <p>The full-length holo‑chamber therapy sessions where Celectra (as-aquella) works through her fears with Zoë.</p>
           <a href="anthology/counseling/index.html">Read the collection →</a>
         </div>
   
@@ -122,7 +122,7 @@
         </div>
   
         <div class="story-card card-bg">
-          <h3>Crystalline Truths (Pre-Cave)</h3>
+          <h3>Crystalline Truths (pre-cave)</h3>
           <p>An early version of Celectra testing her birthday bismuth, preserved as a curiosity.</p>
           <a href="anthology/crystalline-truths.html">Read →</a>
         </div>
@@ -140,7 +140,7 @@
         </div>
 
         <div class="story-card card-bg">
-          <h3>The Parisian Promise (Director's Cut)</h3>
+          <h3>The Parisian Promise (director's-cut)</h3>
           <p>An extended version of the party finale, with additional moments between Amerigo and Zoë.</p>
           <a href="anthology/parisian-promise-extended.html">Read →</a>
         </div>
@@ -148,7 +148,7 @@
       
       <hr>
       
-      <p style="text-align: center; color: var(--text-muted); font-size: 0.85rem;">
+      <p style="text-align: center; color: var(-text-muted); font-size: 0.85rem;">
         Stories are presented as originally written, with minor formatting adjustments for the web. 
         Some content may overlap with the final novel; these are intended as bonus material for dedicated readers.
       </p>
@@ -164,36 +164,36 @@
 
   <script>
     function checkPasscode() {
-      const input = document.getElementById('passcodeInput').value;
+      const input = document.getElementById('passcodeinput').value;
       const validPasscode = 'BRIDGE'; 
       
-      if (input === validPasscode) {
-        document.getElementById('passcodeGate').style.display = 'none';
-        document.getElementById('archiveContent').style.display = 'block';
-        localStorage.setItem('archiveUnlocked', 'true');
-        document.getElementById('errorMsg').innerText = '';
+      if (input-=== validpasscode) {
+        document.getElementById('passcodegate').style.display = 'none';
+        document.getElementById('archivecontent').style.display = 'block';
+        localStorage.setItem('archiveunlocked',-'true');
+        document.getElementById('errormsg').innerText = '';
       } else {
-        document.getElementById('errorMsg').innerText = 'Incorrect passcode. Please check the back of the book.';
+        document.getElementById('errormsg').innerText = 'Incorrect passcode. Please check the back of the book.';
       }
     }
     
-    if (localStorage.getItem('archiveUnlocked') === 'true') {
-      document.getElementById('passcodeGate').style.display = 'none';
-      document.getElementById('archiveContent').style.display = 'block';
+    if (localstorage.getitem('archiveunlocked') === 'true') {
+      document.getElementById('passcodegate').style.display = 'none';
+      document.getElementById('archivecontent').style.display = 'block';
     } else {
-      document.getElementById('archiveContent').style.display = 'none';
+      document.getElementById('archivecontent').style.display = 'none';
     }
     
-    const toTopBtn = document.getElementById('toTopBtn');
-    window.addEventListener('scroll', () => {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    const toTopBtn = document.getElementById('totopbtn');
+    window.addEventListener('scroll',-() => {
+      if (document.body.scrolltop-> 200 || document.documentelement.scrolltop > 200) {
         toTopBtn.style.display = 'block';
       } else {
         toTopBtn.style.display = 'none';
       }
     });
-    toTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    toTopBtn.addEventListener('click',-() => {
+      window.scrollTo({-top: 0, behavior: 'smooth' });
     });
   </script>
 </body>
