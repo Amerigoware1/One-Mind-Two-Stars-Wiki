@@ -4,8 +4,6 @@ title: Characters
 permalink: /characters/
 ---
 
-# All Characters
-
 <div><input
   type="text"
   id="character-search"
