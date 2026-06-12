@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Dr. Alexander 'Alex' Cruiz
 portrait: "/assets/images/alex-book1.webp"
@@ -53,7 +53,7 @@ book5_arc: >
   resonance exposure, and supports the twins as they begin their stewardship
   roles. His arc centers on legacy — ensuring the colony’s medical systems will
   endure long after he retires.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
