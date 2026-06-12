@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Celectra Ambar Carisco
 portrait:  "/assets/images/celectra-book5.webp "
@@ -60,7 +60,7 @@ book5_arc: >
  architect of the system that ensures no one will ever bear that burden alone. Her
  legacy is one of resilience, compassion, and the creation of a future where
  communion is shared, understood, and sustainable.
--
+---
 ## Overview
 Celectra Ambar Carisco is the first known dual-bodied human consciousness and the foundational bridge between humanity and the Galinstanian species of Ares. Born in 2225 after a radiation-induced consciousness fusion event, she grew into a diplomat, scientist, and cultural cornerstone whose natural electromagnetic communion shaped the colony’s survival and identity. Her life spans five books of the Two Stars saga, evolving from a traumatized child into a mother, scholar, and architect of interspecies harmony.
 

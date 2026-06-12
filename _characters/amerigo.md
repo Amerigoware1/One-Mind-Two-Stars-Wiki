@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Amerigo Giorgio Carisco
 portrait: "/assets/images/amerigo-book1.webp"
@@ -57,8 +57,7 @@ book5_arc: >
   on legacy — ensuring that the scientific foundations he built will support Ares long
   after he is gone. He watches with pride as Jenni, Xara, and Ripple begin shaping the
   future he once feared Celectra would have to carry alone.
-
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">

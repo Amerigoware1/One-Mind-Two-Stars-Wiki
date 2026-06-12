@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Ananya Patel
 portrait: "/assets/images/ananya-book5.webp"
@@ -61,8 +61,7 @@ book5_arc: >
   her becoming a quiet cornerstone of New Eden's scientific and diplomatic
   infrastructure—the friend who showed up, stayed, and helped build something that
   lasts.
-
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">

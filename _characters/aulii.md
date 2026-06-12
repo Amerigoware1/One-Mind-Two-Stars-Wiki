@@ -1,4 +1,4 @@
--
+---
 layout: character
 title: Aulii Vongphachanh
 portrait: "/assets/images/aulii-book5.webp"
@@ -76,7 +76,7 @@ book5_arc: >
   bridge between generations: trained by Sensei Kisa, she now trains the twins,
   ensuring that discipline, respect, and adaptability remain core values of New
   Eden’s physical culture.
--
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
