@@ -1,9 +1,9 @@
--
+---
 layout: default
--
+---
 
 {%- comment -%}
-  character.html - Simplified layout
+  Clean, corrected character layout
 {%- endcomment -%}
 
 {%- assign is_character_page = false -%}
@@ -16,28 +16,27 @@ layout: default
   <aside class="infobox-sidebar">
     <div class="infobox" id="portrait-container" data-title="{{ page.title }}">
       <div class="portrait-box" id="portrait-box">
-        <img id="character-portrait" src="
-  {%- if page.portrait and page.portrait.size > 0 -%}
-    {{ page.portrait[0] | relative_url }}
-  {%- else -%}
-    {{ '/assets/images/portrait-placeholder.png' | relative_url }}
-  {%- endif -%}
-" alt="{{ page.title }}" class="portrait">
+        <img id="character-portrait"
+             src="{% if page.portrait %}{{ page.portrait | relative_url }}{% else %}{{ '/assets/images/portrait-placeholder.png' | relative_url }}{% endif %}"
+             alt="{{ page.title }}"
+             class="portrait">
       </div>
+
       <table>
         <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
         <tr><th>Status</th><td>{{ page.status }}</td></tr>
         <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
         <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
       </table>
-{%- for i in (1..5) -%}
-{%- assign book_key = "portrait-book" | append: i -%}
-{%- assign book_images = page[book_key] -%}
-<span class="sr-only"
-      data-book-index="{{ i }}"
-      data-book-images="{% if book_images and book_images.size > 0 %}{% for img in book_images %}{% if forloop.first == false %},{% endif %}{{ img | relative_url }}{% endfor %}{% endif %}">
-</span>
-{%- endfor -%}
+
+      {%- for i in (1..5) -%}
+        {%- assign key = "portrait-book" | append: i -%}
+        {%- assign imgs = page[key] -%}
+        <span class="sr-only"
+              data-book-index="{{ i }}"
+              data-book-images="{% if imgs %}{% for img in imgs %}{% if forloop.first == false %},{% endif %}{{ img | relative_url }}{% endfor %}{% endif %}">
+        </span>
+      {%- endfor -%}
     </div>
   </aside>
   {%- endif -%}
@@ -46,118 +45,100 @@ layout: default
     <div class="character-header">
       <h1>{{ page.title }}</h1>
     </div>
+
     <div class="character-body">
       {{ content }}
     </div>
   </main>
 </div>
-<!- Floating Return to Top Button ->
+
+<!-- Floating Return to Top Button -->
 <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+
 <script>
-document.addEventListener('domcontentloaded',-function () {
+document.addEventListener('DOMContentLoaded', function () {
 
   const container = document.getElementById('portrait-container');
   const portrait = document.getElementById('character-portrait');
-  const placeholder = '{{ '/assets/images/portrait-placeholder.png' | relative_url }}';
+  const placeholder = '{{ "/assets/images/portrait-placeholder.png" | relative_url }}';
 
-  if (!container-|| !portrait) return;
+  if (!container || !portrait) return;
 
   const bookImages = {};
 
   function randomFrom(arr) {
-    return arr[Math.floor(math.random() * arr.length)];
+    return arr[Math.floor(Math.random() * arr.length)];
   }
 
   container.querySelectorAll('span[data-book-index]').forEach(span => {
     const idx = span.dataset.bookIndex;
     const imagesStr = span.dataset.bookImages || '';
-    
-    console.log(`raw-data for book ${idx}:`, imagesstr);
-    
-    // Split by comma and clean up
+
     const imgs = imagesStr
       .split(',')
-      .map(i-=> i.trim())
-      .filter(i-=> i.length > 0);
-    
-    if (imgs.length-> 0) {
+      .map(i => i.trim())
+      .filter(i => i.length > 0);
+
+    if (imgs.length > 0) {
       bookImages[idx] = imgs;
-      console.log(`book-${idx} images:`, imgs);
-    } else {
-      console.log(`no-images for book ${idx}`);
     }
   });
 
   document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click',-function (e) {
-
+    btn.addEventListener('click', function (e) {
       e.preventDefault();
 
-      document.querySelectorAll('.tab-btn').forEach(b-=> b.classlist.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
       this.classList.add('active');
 
       const targetId = this.dataset.tab;
-
-      if (targetid) {
-        document.querySelectorAll('.tab-content').forEach(c-=> c.classlist.remove('active'));
-        const targetEl = document.getElementById(targetid);
-        if (targetel) targetEl.classList.add('active');
+      if (targetId) {
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) targetEl.classList.add('active');
       }
 
       const bookIndex = this.dataset.book;
-      const explicitImage = this.dataset.image || this.getAttribute('data-image');
+      const explicitImage = this.dataset.image;
 
-      if (explicitimage-&& explicitimage.trim()) {
+      if (explicitImage && explicitImage.trim()) {
         portrait.src = explicitImage.trim();
-        console.log('setting-explicit image:', explicitimage);
-      } else if (bookindex-&& bookimages[bookindex]) {
-        const imgs = bookImages[bookIndex];
-        if (imgs.length) {
-          const selectedImg = randomFrom(imgs);
-          portrait.src = selectedImg;
-          console.log('setting-random image for book', bookindex, ':', selectedimg);
-        }
+      } else if (bookIndex && bookImages[bookIndex]) {
+        portrait.src = randomFrom(bookImages[bookIndex]);
       }
     });
   });
 
-  portrait.addEventListener('error',-function () {
-    console.log('image-failed to load:', this.src);
+  portrait.addEventListener('error', function () {
     if (!this.dataset.fallbacked) {
       this.dataset.fallbacked = '1';
       this.src = placeholder;
-      console.log('falling-back to placeholder:', placeholder);
     }
   });
 
-  // Trigger initial image load based on active tab
   const activeTab = document.querySelector('.tab-btn.active');
-  if (activetab) {
+  if (activeTab) {
     const bookIndex = activeTab.dataset.book;
-    if (bookindex-&& bookimages[bookindex]) {
-      const imgs = bookImages[bookIndex];
-      if (imgs.length) {
-        portrait.src = randomFrom(imgs);
-      }
+    if (bookIndex && bookImages[bookIndex]) {
+      portrait.src = randomFrom(bookImages[bookIndex]);
     }
-  } else {
-    // If no active tab, use first book image or placeholder
-    const firstBookImages = bookImages['1'];
-    if (firstbookimages-&& firstbookimages.length) {
-      portrait.src = randomFrom(firstbookimages);
-    }
+  } else if (bookImages['1']) {
+    portrait.src = randomFrom(bookImages['1']);
   }
-  const toTopBtn = document.getElementById("totopbtn");
-  window.addEventListener("scroll",-() => {
-    if (document.documentelement.scrolltop-> 200) {
+
+  const toTopBtn = document.getElementById("toTopBtn");
+  window.addEventListener("scroll", () => {
+    if (document.documentElement.scrollTop > 200) {
       toTopBtn.style.display = "block";
     } else {
-       toTopBtn.style.display = "none";
+      toTopBtn.style.display = "none";
     }
-    });
-    toTopBtn.addEventListener("click",-() => {
-      window.scrollTo({-top: 0, behavior: "smooth" });
-    });
+  });
+
+  toTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
 });
 </script>
 
@@ -187,38 +168,11 @@ document.addEventListener('domcontentloaded',-function () {
   border: 1px solid #1e0a47;
   border-radius: 8px;
   padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.infobox .portrait-box {
-  margin-bottom: 1rem;
 }
 
 .infobox .portrait {
   width: 100%;
-  height: auto;
-  display: block;
   border-radius: 4px;
-}
-
-.infobox table {
-  width: 100%;
-  font-size: 0.95rem;
-}
-
-.infobox th {
-  text-align: left;
-  padding: 0.3rem 0;
-  font-weight: 600;
-  width: 40%;
-}
-
-.infobox td {
-  padding: 0.3rem 0;
-}
-
-.character-main {
-  min-width: 0;
 }
 
 .character-header h1 {
@@ -226,14 +180,12 @@ document.addEventListener('domcontentloaded',-function () {
   margin-bottom: 1.5rem;
 }
 
-@media (max-width:-768px) {
+@media (max-width: 768px) {
   .character-layout {
     grid-template-columns: 1fr;
   }
-  
   .infobox-sidebar {
     position: static;
-    order: -1;
     margin-bottom: 1.5rem;
   }
 }
@@ -242,5 +194,14 @@ document.addEventListener('domcontentloaded',-function () {
 .tab-btn.active { font-weight: bold; border-bottom: 2px solid currentColor; }
 .tab-content { display: none; }
 .tab-content.active { display: block; }
-.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
 </style>
