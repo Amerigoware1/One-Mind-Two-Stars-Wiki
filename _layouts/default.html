@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-  <link rel="stylesheet" href="{{ "/WikiStyle.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/wikistyle.css" | relative_url }}">
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/favicon.png">
 </head>
 <body>
-
+  {% include top-banner.html %}
   {% include header.html %}
 
   <main class="page-content">
