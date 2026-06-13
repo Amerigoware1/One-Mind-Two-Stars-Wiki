@@ -29,6 +29,20 @@ layout: default
     margin-top: 15px;
   }
 
+  /* Animated border glow for active reading */
+  .reader-container.tts-active {
+    border-color: #007acc;
+    box-shadow: 0 0 12px rgba(0, 122, 204, 0.5);
+    animation: borderPulse 2s infinite ease-in-out;
+    transition: all 0.3s ease;
+  }
+
+  @keyframes borderPulse {
+    0% { box-shadow: 0 0 12px rgba(0, 122, 204, 0.4); }
+    50% { box-shadow: 0 0 18px rgba(0, 122, 204, 0.8); }
+    100% { box-shadow: 0 0 12px rgba(0, 122, 204, 0.4); }
+  }
+
   /* The Invisible Shield */
   .shield {
     position: absolute;
@@ -60,7 +74,9 @@ layout: default
     border-top: 1px solid #ccc;
   }
 
-  button {
+  /* Isolated button overrides to prevent breaking site-wide styles */
+  .reader-container button, 
+  .tts-controls button {
     padding: 8px 15px;
     cursor: pointer;
     background-color: #333;
@@ -69,7 +85,8 @@ layout: default
     border-radius: 4px;
   }
 
-  button:disabled {
+  .reader-container button:disabled, 
+  .tts-controls button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
   }
@@ -98,20 +115,6 @@ layout: default
     border-radius: 4px;
     border: 1px solid #ccc;
   }
-
-  /* Animated border glow for active reading */
-.reader-container.tts-active {
-  border-color: #007acc;
-  box-shadow: 0 0 12px rgba(0, 122, 204, 0.5);
-  animation: borderPulse 2s infinite ease-in-out;
-  transition: all 0.3s ease;
-}
-
-@keyframes borderPulse {
-  0% { box-shadow: 0 0 12px rgba(0, 122, 204, 0.4); }
-  50% { box-shadow: 0 0 18px rgba(0, 122, 204, 0.8); }
-  100% { box-shadow: 0 0 12px rgba(0, 122, 204, 0.4); }
-}
 </style>
 <body>
 
