@@ -74,16 +74,16 @@ Celectra’s physiology is the subject of three major medical dossiers maintaine
 Celectra possesses a unique dual-bodied condition known as mononous disomas, in which two fully functional bodies share a single consciousness and a unified sensory-emotional network. Both bodies exhibit synchronized autonomic responses, but can act independently with deliberate control. This condition is stable but requires ongoing monitoring for metabolic load, neural fatigue, and resonance overextension.
 * **Waveguide Skulls:** Her skulls are mineralized with trace metals, acting as biogenic antennas to focus the "celectricity".
 * **Celectric Tax:** She maintains a BMR 2.5x higher than average; her body prioritizes powering the neural bridge over physical mass.
-[Mononous Disomas – Celectra's Neural Dossier](./mononous-disomas.html)
+[Mononous Disomas – Celectra's Neural Dossier](../mononous-disomas.html)
 
 ### Albinism
 Both bodies present with oculocutaneous albinism, including pale skin and white hair. The melanin in the irises was present before the en utero radiation exposure. Albinism does not interfere with communion but increases vulnerability during field operations.
-[Celectra’s Skin Care Protocol Dossier](./celectra-care-protocol-dossier.html)
+[Celectra’s Skin Care Protocol Dossier](../celectra-care-protocol-dossier.html)
 
 ### Growth Delay
 Celectra’s early childhood included retarded growth velocity, linked to the placental damage. Growth normalized in adolescence but remains well below the colony average. Alex monitors her nutritional intake, bone density, and endocrine markers as part of her long-term care plan.
 Initially diagnosed as "failure to thrive," her small stature is now understood as a metabolic trade-off.
-[Celectra Growth ](./celectragrowth.html)[& Development Report](./celectragrowth.html)
+[Celectra Growth ](../celectragrowth.html)[& Development Report](../celectragrowth.html)
 
 ## The Nutritional Protocol (cms-1)
 To maintain a high-fidelity consciousness across two bodies, Celectra must overcome a constant "Celectricity Tax." In her early development, this was mistaken for failure to thrive, leading to the creation of the CMS-1 (celectric-metabolic stabilizer) protocol.
