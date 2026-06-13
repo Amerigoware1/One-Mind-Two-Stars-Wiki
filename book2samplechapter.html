@@ -101,6 +101,36 @@ button:disabled {
     <button onclick="changePage(1)" id="nextBtn">Next ➡️</button>
   </div>
 </div>
+<script>
+      let currentPage = 0;
+const pages = document.querySelectorAll('.page');
+const pageCounter = document.getElementById('pageCounter');
 
+function showPage(index) {
+  // Hide current page
+  pages.forEach(page => page.classList.remove('active'));
+
+  // Show the new page
+  pages[index].classList.add('active');
+
+  // Update counter
+  pageCounter.innerText = `Page ${index + 1} of ${pages.length}`;
+
+  // Disable buttons at ends
+  document.getElementById('prevBtn').disabled = (index === 0);
+  document.getElementById('nextBtn').disabled = (index === pages.length - 1);
+
+  // Scroll to top of reader when page changes
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function changePage(step) {
+  currentPage += step;
+  showPage(currentPage);
+}
+
+// Initialize the first page
+showPage(0);
+  </script>
   </body>
 </html>
