@@ -1,0 +1,11 @@
+﻿
+CommandType     Name                                               Version    S
+                                                                              o
+                                                                              u
+                                                                              r
+                                                                              c
+                                                                              e
+-----------     ----                                               -------    -
+Application     git.exe                                            2.45.1.1   C
+
+
