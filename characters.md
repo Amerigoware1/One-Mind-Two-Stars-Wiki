@@ -56,11 +56,14 @@ permalink: /characters/
 </script>
 
 <style>
-  #character-search {
+#character-search {
     display: block;
     width: 100%;
     max-width: 400px;
-    margin: 0 0 1.5rem;
+    
+    /* Change the first 0 to a value that clears your banner */
+    margin: 6rem auto 1.5rem; 
+    
     padding: 0.5rem 0.75rem;
     font-size: 1rem;
     border: 1px solid #1e0a47;
