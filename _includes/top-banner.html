@@ -14,7 +14,38 @@
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
+    const bannerNav = document.getElementById('dynamic-banner-nav');
+    if (!bannerNav) return;
+
+    // Normalize the path name to lower case to prevent match misses
+    const currentPath = window.location.pathname.toLowerCase();
+
+    // Catch ANY variation of the main directory hub view
+    const isCharacterHub = currentPath.endsWith('/characters') || 
+                           currentPath.endsWith('/characters/') || 
+                           currentPath.includes('characters.html');
+    
+    // Scan for dynamic return links on the active page
+    const dossierReturnLink = document.querySelector('.return-link');
+    const footerCharactersLink = document.querySelector('.site-footer a[href*="characters"]');
+
+    if (dossierReturnLink) {
+      // If on a sub-dossier, copy its specific return path up
+      const topBtn = dossierReturnLink.cloneNode(true);
+      topBtn.className = 'banner-btn';
+      topBtn.innerHTML = `‹ ${topBtn.textContent.replace(/Return to/i, '').trim()}`;
+      bannerNav.appendChild(topBtn);
+    } 
+    // Only show the Characters Hub button if we aren't already looking at the hub list/page
+    else if (footerCharactersLink && !isCharacterHub) {
+      const topBtn = footerCharactersLink.cloneNode(true);
+      topBtn.className = 'banner-btn';
+      topBtn.innerHTML = `‹ Characters Hub`;
+      bannerNav.appendChild(topBtn);
+    }
+  });
+/*   document.addEventListener("DOMContentLoaded", function() {
     const bannerNav = document.getElementById('dynamic-banner-nav');
     if (!bannerNav) return;
 
@@ -39,5 +70,5 @@
       topBtn.innerHTML = `‹ Characters Hub`;
       bannerNav.appendChild(topBtn);
     }
-  });
+  }); */
 </script>
