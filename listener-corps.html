@@ -1,3 +1,8 @@
+---
+layout: default
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +12,7 @@
   <link rel="stylesheet" href="wikistyle.css?v=3">
 </head>
 <body>
-  <div class="top-banner">
-    <a href="index.html" class="home-button">🏠 Home</a>
-  </div>
-  
-  <h1 class="gradient-title">Listener Corps</h1>
+<h1 class="gradient-title">Listener Corps</h1>
   <div class="subtitle">Human Auxiliary Translation Team (historical-era: 2239–2246)</div>
 
   <div class="infobox">
@@ -92,14 +93,5 @@
     </div>
   </div>
 
-  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
-  <script>
-    const toTopBtn = document.getElementById("totopbtn");
-    window.addEventListener("scroll",-() => {
-      if (document.documentelement.scrolltop-> 200) { toTopBtn.style.display = "block"; } 
-      else { toTopBtn.style.display = "none"; }
-    });
-    toTopBtn.addEventListener("click",-() => { window.scrollTo({-top: 0, behavior: "smooth" }); });
-  </script>
-</body>
+  </body>
 </html>

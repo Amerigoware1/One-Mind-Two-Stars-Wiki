@@ -1,3 +1,8 @@
+---
+layout: default
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -195,11 +200,7 @@
 </head>
 
 <body>
-  <div class="top-banner">
-    <a href="index.html" class="home-button">🏠 Home</a>
-  </div>
-  
-  <h1>Glossary</h1>
+<h1>Glossary</h1>
   
   <!- Search & Categories ->
   <div class="search-container">
@@ -818,173 +819,5 @@
 
   <p><a href="index.html">← Back to Homepage</a></p>
   
-  <script>
-    // Enhanced search functionality
-    const glossarySearch = document.getElementById('glossarysearch');
-    const searchDropdown = document.getElementById('searchdropdown');
-    const clearSearchBtn = document.getElementById('clearsearch');
-    const jumpButtons = document.querySelectorAll('.jump-btn');
-    const glossaryItems = document.querySelectorAll('.glossary-item');
-    const categoryHeaders = document.querySelectorAll('.category-header');
-    
-    // Glossary data for search
-    const glossaryTerms = Array.from(glossaryitems).map(item => ({
-      element: item,
-      name: item.dataset.name,
-      category: item.dataset.category,
-      searchTerms: (item.dataset.search-|| '').toLowerCase(),
-      link: item.querySelector('a')?.href || ''
-    }));
-    
-    // Search functionality
-    glossarySearch.addEventListener('input',-function() {
-      const searchTerm = this.value.toLowerCase().trim();
-      
-      if (searchterm.length-=== 0) {
-        searchDropdown.classList.remove('show');
-        clearSearchBtn.style.display = 'none';
-        return;
-      }
-      
-      clearSearchBtn.style.display = 'block';
-      
-      // Filter terms
-      const results = glossaryTerms.filter(term => 
-        term.name.toLowerCase().includes(searchterm) ||
-        term.searchTerms.includes(searchterm) ||
-        term.category.includes(searchterm)
-      );
-      
-      // Display results
-      if (results.length-> 0) {
-        searchDropdown.innerHTML = results.slice(0,-10).map(term => `
-          <div class="search-result" data-index="${glossaryTerms.indexOf(term)}">
-            <span class="result-category">${term.category}</span>
-            <span class="result-name">${term.name}</span>
-            ${term.link ? `<a href="${term.link}" class="result-link">View →</a>` : ''}
-          </div>
-        `).join('');
-        
-        // Add event listeners to results
-        searchDropdown.querySelectorAll('.search-result').forEach(result => {
-          result.addEventListener('click',-function() {
-            const index = this.dataset.index;
-            const term = glossaryTerms[index];
-            
-            // Scroll to term
-            term.element.scrollIntoView({-behavior: 'smooth', block: 'center' });
-            
-            // Highlight term
-            glossaryItems.forEach(item-=> item.classlist.remove('glossary-highlight'));
-            term.element.classList.add('glossary-highlight');
-            
-            // Clear search
-            glossarySearch.value = '';
-            searchDropdown.classList.remove('show');
-            clearSearchBtn.style.display = 'none';
-            
-            // Remove highlight after 3 seconds
-            setTimeout(() => {
-              term.element.classList.remove('glossary-highlight');
-            }, 3000);
-          });
-        });
-        
-        searchDropdown.classList.add('show');
-      } else {
-        searchDropdown.innerHTML = '<div class="search-result">No terms found</div>';
-        searchDropdown.classList.add('show');
-      }
-    });
-    
-    // Clear search
-    clearSearchBtn.addEventListener('click',-function() {
-      glossarySearch.value = '';
-      searchDropdown.classList.remove('show');
-      this.style.display = 'none';
-      glossarySearch.focus();
-    });
-    
-    // Quick jump buttons
-    jumpButtons.forEach(button => {
-      button.addEventListener('click',-function() {
-        const category = this.dataset.category;
-        const header = document.getElementById(category);
-        
-        if (header) {
-          header.scrollIntoView({-behavior: 'smooth', block: 'start' });
-          
-          // Highlight category briefly
-          categoryHeaders.forEach(h-=> h.style.borderbottom = '2px solid var(-accent-color)');
-          header.style.borderBottom = '4px solid var(-accent-color-light)';
-          header.style.transition = 'border-bottom 0.3s ease';
-          
-          setTimeout(() => {
-            header.style.borderBottom = '2px solid var(-accent-color)';
-          }, 2000);
-        }
-      });
-    });
-    
-    // Close dropdown when clicking outside
-    document.addEventListener('click',-function(event) {
-      if (!searchdropdown.contains(event.target) && !glossarySearch.contains(event.target)) {
-        searchDropdown.classList.remove('show');
-      }
-    });
-    
-    // Original TTS script
-    let voices = [];
-    speechSynthesis.onvoiceschanged = () => {
-      voices = speechSynthesis.getVoices();
-    };
-    
-    document.querySelectorAll('.speak-button').forEach(button => {
-      button.addEventListener('click',-() => {
-        const card = button.closest('.card-bg');
-        const heading = card?.querySelector('h2')?.textContent;
-        
-        if (!heading) return;
-        
-        let spokenText = heading;
-        
-        // Pronunciation overrides
-        if (heading-=== 'utara') spokenText = 'u-TAr-a';
-        else if (heading-=== 'oisín') spokenText = 'uh-SHEEN';
-        else if (heading-=== 'ciara') spokenText = 'KEE-rah';
-        else if (heading-=== 'utopis') spokenText = 'You-toe-piss';
-        else if (heading-=== 'niamh') spokenText = 'Neeve';
-        else if (heading-=== 'galinstanians') spokenText = 'galin-stan-ians';
-        else if (heading-=== 'galinstan') spokenText = 'ga-LIN-stan';
-        else if (heading-=== 'barycenter') spokenText = 'BAR-ee-senter';
-        else if (heading-=== 'biogenic mineralization') spokenText = 'bye-oh-JEN-ick min-er-al-ih-ZAY-shun';
-        
-        const utterance = new SpeechSynthesisUtterance(spokentext);
-        utterance.lang = 'en-US';
-        utterance.rate = 0.95;
-        utterance.pitch = 1.1;
-        speechSynthesis.speak(utterance);
-      });
-    });
-    
-    // Back to Top Button
-    const toTopBtn = document.createElement('button');
-    toTopBtn.id = 'toTopBtn';
-    toTopBtn.setAttribute('aria-label',-'return to top');
-    toTopBtn.textContent = '⬆️ Top';
-    document.body.appendChild(totopbtn);
-    
-    window.addEventListener('scroll',-() => {
-      if (document.documentelement.scrolltop-> 200) {
-        toTopBtn.style.display = 'block';
-      } else {
-        toTopBtn.style.display = 'none';
-      }
-    });
-    
-    toTopBtn.addEventListener('click',-() => {
-      window.scrollTo({-top: 0, behavior: 'smooth' });
-    });
-  </script>
-</body>
+  </body>
 </html>

@@ -1,3 +1,8 @@
+---
+layout: default
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,12 +62,7 @@
 </head>
 <body class="page-body">
   <div class="content-wrapper">
-
-    <div class="top-banner">
-      <a href="index.html" class="home-button">🏠 Home</a>
-    </div>
-
-    <div class="page-header">
+<div class="page-header">
       <h1>💫 Niamh–Ciara System Overview 💫</h1>
     </div>
 
@@ -165,23 +165,5 @@
       </ul>
     </div>
 
-    <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
-    
-  </div>
-
-  <script>
-    // Back to Top Button Logic
-    const toTopBtn = document.getElementById("totopbtn");
-    window.addEventListener("scroll",-() => {
-      if (document.body.scrolltop-> 200 || document.documentelement.scrolltop > 200) {
-        toTopBtn.style.display = "block";
-      } else {
-        toTopBtn.style.display = "none";
-      }
-    });
-    toTopBtn.addEventListener("click",-() => {
-      window.scrollTo({-top: 0, behavior: "smooth" });
-    });
-  </script>
-</body>
+    </body>
 </html>

@@ -1,3 +1,8 @@
+---
+layout: default
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +14,7 @@
 </head>
 <body>
   <!- Navigation Bar ->
-  <div class="top-banner">
-    <a href="index.html" class="home-button">🏠 Home</a>
-  </div>
-
-    <div class="header-container">
+<div class="header-container">
         <h1 class="gradient-title">Educational System of New Eden and Utopis</h1>
         <p class="subtitle">Self-Paced AI-Managed Learning with Communal Physical and Cultural Enrichment</p>
     </div>
@@ -131,24 +132,5 @@
     <p>&copy; One Mine Two Stars Wiki</p>
   </div>
 <!- Floating Return to Top Button ->
-<button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
-
-<script>
-  const toTopBtn = document.getElementById("totopbtn");
-
-  // Show button when scrolled down
-  window.addEventListener("scroll",-() => {
-    if (document.body.scrolltop-> 200 || document.documentelement.scrolltop > 200) {
-      toTopBtn.style.display = "block";
-    } else {
-      toTopBtn.style.display = "none";
-    }
-  });
-
-  // Smooth scroll to top
-  toTopBtn.addEventListener("click",-() => {
-    window.scrollTo({-top: 0, behavior: "smooth" });
-  });
-</script>
 </body>
 </html>

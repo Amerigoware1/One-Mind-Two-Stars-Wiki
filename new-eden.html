@@ -1,3 +1,8 @@
+---
+layout: default
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -246,11 +251,7 @@
   </style>
 </head>
 <body>
-  <div class="top-banner">
-    <a href="index.html" class="home-button">🏠 Home</a>
-  </div>
-
-  <h1>New Eden</h1>
+<h1>New Eden</h1>
   
   <!- Two-column layout: Infobox on left, Gallery on right ->
   <div class="header-two-column">
@@ -461,56 +462,6 @@
     </div>
 
   </div>
-
-  <!- Back to Top Button ->
-  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
-
-  <!- Gallery Navigation Script ->
-  <script>
-    let slideIndex = 1;
-    showSlides(slideindex);
-
-    function changeSlide(n) {
-      showSlides(slideindex-+= n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideindex-= n);
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("gallery-slide");
-      let dots = document.getElementsByClassName("dot");
-      
-      if (n-> slides.length) { slideIndex = 1; }
-      if (n-< 1) { slideIndex = slides.length; }
-      
-      for (i-= 0; i < slides.length; i++) {
-        slides[i].classList.remove("active");
-      }
-      
-      for (i-= 0; i < dots.length; i++) {
-        dots[i].classList.remove("active");
-      }
-      
-      slides[slideIndex - 1].classList.add("active");
-      dots[slideIndex - 1].classList.add("active");
-    }
-
-    // Original back-to-top script
-    const toTopBtn = document.getElementById("totopbtn");
-    window.addEventListener("scroll",-() => {
-      if (document.documentelement.scrolltop-> 200) {
-        toTopBtn.style.display = "block";
-      } else {
-        toTopBtn.style.display = "none";
-      }
-    });
-    toTopBtn.addEventListener("click",-() => {
-      window.scrollTo({-top: 0, behavior: "smooth" });
-    });
-  </script>
 
   <div id="footer">
     <p>Back to <a href="characters.md">Characters</a> | <a href="Timeline.html">Timeline</a> | <a href="index.html">Home</a></p>

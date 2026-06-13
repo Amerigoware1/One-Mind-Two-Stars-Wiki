@@ -1,6 +1,3 @@
-<div class="top-banner">
-  <a href="{{ site.baseurl }}/" class="home-button">🏠 Home</a>
-</div>
 <div class="banner-container">
   <span class="banner-title">One Mind, Two Stars Wiki</span>
   
@@ -11,16 +8,24 @@
   document.addEventListener("DOMContentLoaded", function() {
     const bannerNav = document.getElementById('dynamic-banner-nav');
     
-    // 1. Look for a footer or a specific navigation container at the bottom
-    const bottomNavLinks = document.querySelectorAll('.site-footer a');
-    
-    // 2. If links exist down there, clone them into the top banner
-    if (bottomNavLinks.length > 0) {
-      bottomNavLinks.forEach(link => {
-        const clonedLink = link.cloneNode(true);
-        clonedLink.classList.add('banner-btn'); // Apply your neon button styles
-        bannerNav.appendChild(clonedLink);
-      });
+    // 1. First, check if we are on a dossier page with a specific sub-return link
+    const dossierReturnLink = document.querySelector('.return-link');
+    // 2. Next, check if there is a main section link in the footer
+    const footerCharactersLink = document.querySelector('.site-footer a[href*="characters"]');
+
+    if (dossierReturnLink) {
+      // If reading a dossier, clone its specific "Return to [Character]" link to the top banner
+      const topBtn = dossierReturnLink.cloneNode(true);
+      topBtn.className = 'banner-btn'; // Strip old styles, apply the banner button look
+      // Make sure it reads cleanly at the top
+      topBtn.innerHTML = `‹ ${topBtn.textContent.trim()}`;
+      bannerNav.appendChild(topBtn);
+    } else if (footerCharactersLink) {
+      // If on a regular character layout page, clone the main Directory link up to the top
+      const topBtn = footerCharactersLink.cloneNode(true);
+      topBtn.className = 'banner-btn';
+      topBtn.innerHTML = `‹ Characters Hub`;
+      bannerNav.appendChild(topBtn);
     }
   });
 </script>

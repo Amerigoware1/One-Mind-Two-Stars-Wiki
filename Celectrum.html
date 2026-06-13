@@ -1,3 +1,8 @@
+---
+layout: default
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +12,7 @@
   <link rel="stylesheet" href="wikistyle.css?v=3">
 </head>
 <body>
-  <div class="top-banner">
-    <a href="index.html" class="home-button">🏠 Home</a>
-  </div>
-
-  <h1>Celectrum</h1>
+<h1>Celectrum</h1>
   <div class="infobox">
         <tr>
       <td colspan="2" class="text-center pb-2">
@@ -111,21 +112,6 @@
 
 </div>
 
-  <!- Back to Top Button ->
-  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
-  <script>
-    const toTopBtn = document.getElementById("totopbtn");
-    window.addEventListener("scroll",-() => {
-      if (document.documentelement.scrolltop-> 200) {
-        toTopBtn.style.display = "block";
-      } else {
-        toTopBtn.style.display = "none";
-      }
-    });
-    toTopBtn.addEventListener("click",-() => {
-      window.scrollTo({-top: 0, behavior: "smooth" });
-    });
-  </script>
   <script>
   const video = document.getElementById('celectrum-vid');
 const muteBtn = document.getElementById('mutebtn');
@@ -147,11 +133,4 @@ function toggleMute() {
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
 

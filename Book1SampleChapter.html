@@ -1,3 +1,8 @@
+---
+layout: default
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,11 +73,7 @@ button:disabled {
 }
 </style>
 <body>
-  <div class="top-banner">
-    <a href="index.html" class="home-button">🏠 Home</a>
-  </div>
-
-  <h1>Book 1, Chapter 1 Sample</h1>
+<h1>Book 1, Chapter 1 Sample</h1>
 <div class="reader-container unselectable" oncontextmenu="return false;">
   <div class="shield"></div>
   
@@ -99,50 +100,5 @@ button:disabled {
   </div>
 </div>
 
-  <!- Back to Top Button ->
-  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
-  
-  <script>
-    const toTopBtn = document.getElementById("totopbtn");
-    window.addEventListener("scroll",-() => {
-      if (document.documentelement.scrolltop-> 200) {
-        toTopBtn.style.display = "block";
-      } else {
-        toTopBtn.style.display = "none";
-      }
-    });
-    toTopBtn.addEventListener("click",-() => {
-      window.scrollTo({-top: 0, behavior: "smooth" });
-    });
-    let currentPage = 0;
-const pages = document.querySelectorAll('.page');
-const pageCounter = document.getElementById('pagecounter');
-
-function showPage(index) {
-  // Hide current page
-  pages.forEach(page-=> page.classlist.remove('active'));
-  
-  // Show the new page
-  pages[index].classList.add('active');
-  
-  // Update counter
-  pageCounter.innerText = `Page ${index + 1} of ${pages.length}`;
-  
-  // Disable buttons at ends
-  document.getElementById('prevbtn').disabled = (index-=== 0);
-  document.getElementById('nextbtn').disabled = (index-=== pages.length - 1);
-  
-  // Scroll to top of reader when page changes
-  window.scrollTo({-top: 0, behavior: 'smooth' });
-}
-
-function changePage(step) {
-  currentPage += step;
-  showPage(currentpage);
-}
-
-// Initialize the first page
-showPage(0);
-  </script>
-</body>
+  </body>
 </html>

@@ -1,17 +1,37 @@
 <footer class="site-footer">
-  <p>Back to <a href="Characters.html">Characters</a> | <a href="index.html">Home</a></p>
+  <p>Back to <a href="{{ '/characters/' | relative_url }}">👨🏻‍👩🏻‍👦🏻‍👦🏻 Characters</a> | <a href="{{ '/' | relative_url }}">🏠 Home</a></p>
   <p>&copy; {{ site.time | date: "%Y" }} One Mind, Two Stars — All Rights Reserved</p>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-      btn.classList.add('active');
-      document.getElementById(btn.dataset.tab).classList.add('active');
-    });
-  });
-});
-</script>
 
+  <!-- Tab Switching Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+          document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+          btn.classList.add('active');
+          document.getElementById(btn.dataset.tab).classList.add('active');
+        });
+      });
+    });
+  </script>
+
+  <!-- Back to Top Button -->
+  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
+  <script>
+    const toTopBtn = document.getElementById("toTopBtn");
+
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 200) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    });
+
+    toTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </footer>
+

@@ -1,3 +1,8 @@
+---
+layout: default
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,12 +29,7 @@
     </style>
 </head>
 <body>
-    <div class="top-banner">
-        <a href="index.html" class="home-button">🏠 Home</a>
-        <span id="timeDisplay">Timeline • 2084–2259</span>
-    </div>
-
-    <main class="page-body">
+<main class="page-body">
         <div class="content-wrapper">
             <header class="page-header">
                 <h1>🜂 SERIES TIMELINE</h1>
@@ -481,19 +481,5 @@
         </div>
     </main>
 
-    <button id="toTopBtn">↑ TOP</button>
-
-    <script>
-        // Smooth scroll to top
-        document.getElementById('totopbtn').addEventListener('click',-function() {
-            window.scrollTo({-top: 0, behavior: 'smooth' });
-        });
-
-        // Show/hide scroll button
-        window.addEventListener('scroll',-function() {
-            const btn = document.getElementById('totopbtn');
-            btn.style.display = (window.scrolly-> 300) ? 'block' : 'none';
-        });
-    </script>
-</body>
+    </body>
 </html>

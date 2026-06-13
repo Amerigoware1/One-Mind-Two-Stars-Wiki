@@ -1,3 +1,8 @@
+---
+layout: default
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +13,7 @@
   <link rel="stylesheet" href="wikistyle.css?v=3">
 </head>
 <body class="p-4">
-
-  <div class="top-banner">
-    <a href="index.html" class="home-button">🏠 Home</a>
-  </div>
-
-  <!- Header Section ->
+<!- Header Section ->
   <header class="header-container">
     <h1 class="gradient-title">Mononous Disomas: Celectra’s Neural Dossier</h1>
     <p class="subtitle">One Mind Spanning Two Bodies – Congenital Dual‑Body Unification</p>
@@ -236,25 +236,10 @@
     <p class="text-gray-500 text-xs mt-2">Utara (colony-educator) confirmation: “I believe she is correct about being one person.” – validated by identical wrong answers on separated tests.</p>
   </div>
 
-  <hr class="mt-8">
-  <p style="text-align:center; margin-top:1rem;">
-    <a href="/One-Mind-Two-Stars-Wiki/characters/celectra.html" class="return-link"> ← Return to Celectra</a>
-  </p>
+<hr class="mt-8">
+<p style="text-align:center; margin-top:1rem;">
+  <a href="{{ '/characters/celectra.html' | relative_url }}" class="return-link">Return to Celectra</a> | <a href="Glossary.html#medical" class="return-link">Browse Glossary</a></p>
+</p>
 
-  <!- Back to Top Button ->
-  <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
-  <script>
-    const toTopBtn = document.getElementById("totopbtn");
-    window.addEventListener("scroll",-() => {
-      if (document.documentelement.scrolltop-> 200) {
-        toTopBtn.style.display = "block";
-      } else {
-        toTopBtn.style.display = "none";
-      }
-    });
-    toTopBtn.addEventListener("click",-() => {
-      window.scrollTo({-top: 0, behavior: "smooth" });
-    });
-  </script>
-</body>
+  </body>
 </html>

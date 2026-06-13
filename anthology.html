@@ -1,3 +1,8 @@
+---
+layout: default
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,12 +75,7 @@
 </head>
 <body class="page-body">
   <div class="content-wrapper">
-    
-    <div class="top-banner">
-      <a href="index.html" class="home-button">🏠 Home</a>
-    </div>
-    
-    <div class="page-header">
+<div class="page-header">
       <h1>📚 Extended Archive</h1>
       <p class="subtitle" style="max-width: 700px; margin: 0 auto 2rem auto;">
         Welcome to the Extended Archive — a collection of deleted scenes, extended flashbacks, and alternate versions 
@@ -158,43 +158,5 @@
       </p>
     </div>
     
-    <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
-    
-  </div>
-
-  <script>
-    function checkPasscode() {
-      const input = document.getElementById('passcodeinput').value;
-      const validPasscode = 'BRIDGE'; 
-      
-      if (input-=== validpasscode) {
-        document.getElementById('passcodegate').style.display = 'none';
-        document.getElementById('archivecontent').style.display = 'block';
-        localStorage.setItem('archiveunlocked',-'true');
-        document.getElementById('errormsg').innerText = '';
-      } else {
-        document.getElementById('errormsg').innerText = 'Incorrect passcode. Please check the back of the book.';
-      }
-    }
-    
-    if (localstorage.getitem('archiveunlocked') === 'true') {
-      document.getElementById('passcodegate').style.display = 'none';
-      document.getElementById('archivecontent').style.display = 'block';
-    } else {
-      document.getElementById('archivecontent').style.display = 'none';
-    }
-    
-    const toTopBtn = document.getElementById('totopbtn');
-    window.addEventListener('scroll',-() => {
-      if (document.body.scrolltop-> 200 || document.documentelement.scrolltop > 200) {
-        toTopBtn.style.display = 'block';
-      } else {
-        toTopBtn.style.display = 'none';
-      }
-    });
-    toTopBtn.addEventListener('click',-() => {
-      window.scrollTo({-top: 0, behavior: 'smooth' });
-    });
-  </script>
-</body>
+    </body>
 </html>
