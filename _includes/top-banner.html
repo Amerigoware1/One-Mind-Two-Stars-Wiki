@@ -18,14 +18,14 @@
     const bannerNav = document.getElementById('dynamic-banner-nav');
     if (!bannerNav) return;
 
-    // 1. Grab the precise layout type from our new body marker
-    const currentLayout = document.body.getAttribute('data-layout');
+    // 1. Let Jekyll hardcode the layout type directly into JavaScript during build!
+    const currentLayout = "{{ page.layout }}";
 
     // 2. Scan the active page for relevant return links
     const dossierReturnLink = document.querySelector('.return-link');
     const footerCharactersLink = document.querySelector('.site-footer a[href*="characters"]');
 
-    // SCENARIO A: We are deep inside a sub-dossier layout
+    // SCENARIO A: Inside a medical/care sub-dossier layout
     if (dossierReturnLink) {
       const topBtn = dossierReturnLink.cloneNode(true);
       topBtn.className = 'banner-btn';
@@ -33,8 +33,7 @@
       bannerNav.appendChild(topBtn);
     } 
     
-    // SCENARIO B: We are on a standard character biography page
-    // (Only show the button if the layout is explicitly 'character')
+    // SCENARIO B: On a standard biography layout page (where layout is explicitly 'character')
     else if (footerCharactersLink && currentLayout === 'character') {
       const topBtn = footerCharactersLink.cloneNode(true);
       topBtn.className = 'banner-btn';
@@ -42,6 +41,6 @@
       bannerNav.appendChild(topBtn);
     }
     
-    // SCENARIO C: Any other page (home, hub list, timeline) -> Do absolutely nothing!
+    // SCENARIO C: The hub list directory or homepage -> Does nothing!
   });
 </script>
