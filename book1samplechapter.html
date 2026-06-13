@@ -98,6 +98,20 @@ layout: default
     border-radius: 4px;
     border: 1px solid #ccc;
   }
+
+  /* Animated border glow for active reading */
+.reader-container.tts-active {
+  border-color: #007acc;
+  box-shadow: 0 0 12px rgba(0, 122, 204, 0.5);
+  animation: borderPulse 2s infinite ease-in-out;
+  transition: all 0.3s ease;
+}
+
+@keyframes borderPulse {
+  0% { box-shadow: 0 0 12px rgba(0, 122, 204, 0.4); }
+  50% { box-shadow: 0 0 18px rgba(0, 122, 204, 0.8); }
+  100% { box-shadow: 0 0 12px rgba(0, 122, 204, 0.4); }
+}
 </style>
 <body>
 
@@ -210,11 +224,14 @@ if (synth && synth.onvoiceschanged !== undefined) {
 
 function toggleTTS() {
   if (!synth) return;
+  
+  const readerBox = document.querySelector('.reader-container');
 
   if (synth.speaking && !isPaused) {
     synth.pause();
     isPaused = true;
     document.getElementById('ttsPlayBtn').innerText = "⏸️ Resume";
+    if (readerBox) readerBox.classList.remove('tts-active'); // Pause the pulse
     return;
   }
   
@@ -222,6 +239,7 @@ function toggleTTS() {
     synth.resume();
     isPaused = false;
     document.getElementById('ttsPlayBtn').innerText = "⏸️ Pause";
+    if (readerBox) readerBox.classList.add('tts-active'); // Resume the pulse
     return;
   }
 
@@ -240,19 +258,19 @@ function toggleTTS() {
     utterance.voice = voices[selectedVoiceIndex];
   }
 
-  // --- Auto-Advance Logic ---
+  // Handle active class tracking when audio starts
+  utterance.onstart = function() {
+    if (readerBox) readerBox.classList.add('tts-active');
+  };
+
   utterance.onend = function() {
-    // Check if there is a next page available in the sequence
     if (currentPage < pages.length - 1) {
-      currentPage++; // Move index forward
-      showPage(currentPage); // Update visual display and reset scroll
-      
-      // Small visual pause (300ms) before the next page begins speaking
+      currentPage++;
+      showPage(currentPage);
       setTimeout(() => {
         toggleTTS(); 
       }, 300);
     } else {
-      // If it's the final page, terminate playback cleanly
       stopTTS();
     }
   };
@@ -269,6 +287,10 @@ function stopTTS() {
   isPaused = false;
   document.getElementById('ttsPlayBtn').innerText = "▶️ Play Audio";
   document.getElementById('ttsStopBtn').disabled = true;
+  
+  // Strip the active styling completely on stop
+  const readerBox = document.querySelector('.reader-container');
+  if (readerBox) readerBox.classList.remove('tts-active');
 }
 
 function changeVoice() {
