@@ -1,29 +1,27 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en" }}">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
-  <link rel="stylesheet" href="{{ "/wikistyle.css" | relative_url }}">
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/favicon.png">
+  
+  <!--  LINK YOUR CSS HERE (adjust path if needed) -->
+  <link rel="stylesheet" href="{{ '/wikistyle.css' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
+  <!-- Optional: Favicon, meta tags, etc. -->
 </head>
 <body>
+
   {% include top-banner.html %}
   {% include header.html %}
 
   <main class="page-content">
-    <div class="wrapper">
-      {{ content }}
-    </div>
+    {{ content }}
   </main>
 
-  <footer class="site-footer">
-    <div class="wrapper">
-      <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}</p>
-    </div>
+  <footer>
+    {% include footer.html %}
   </footer>
 
-  <!- Load TTS script – using baseurl to ensure correct path ->
-  <script src="{{ site.baseurl }}/tts.js"></script>
 </body>
 </html>
