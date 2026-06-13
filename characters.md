@@ -1,9 +1,8 @@
 ---
-layout: character
 layout: character-list
+title: Characters
 permalink: /characters/
 ---
-
 <div><input
   type="text"
   id="character-search"
