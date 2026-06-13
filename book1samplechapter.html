@@ -1,6 +1,5 @@
 ---
 layout: default
-
 ---
 
 <!DOCTYPE html>
@@ -27,6 +26,7 @@ layout: default
     display: inline-block;
     max-width: 800px;
     border: 1px solid #ccc;
+    margin-top: 15px;
   }
 
   /* The Invisible Shield */
@@ -37,60 +37,96 @@ layout: default
     width: 100%;
     height: 100%;
     z-index: 10;
-    background: rgba(255,-255, 255, 0); /* Completely transparent */
+    background: rgba(255, 255, 255, 0); /* Completely transparent */
   }
+  
   .page {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
 
-.page.active {
-  display: block;
-  opacity: 1;
-}
+  .page.active {
+    display: block;
+    opacity: 1;
+  }
 
-.nav-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background: #f9f9f9;
-  border-top: 1px solid #ccc;
-}
-   button {
-  padding: 8px 15px;
-  cursor: pointer;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 4px;
-}
+  .nav-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f9f9f9;
+    border-top: 1px solid #ccc;
+  }
 
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
+  button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  /* Restored TTS Controls Panel Styling */
+  .tts-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f4f4f4;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    max-width: 800px;
+    margin-bottom: 10px;
+  }
+
+  .tts-controls label {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #444;
+  }
+
+  .tts-controls select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
 </style>
 <body>
+
 <h1>Book 1, Chapter 1 Sample</h1>
+
+<div class="tts-controls">
+  <button id="ttsPlayBtn" onclick="toggleTTS()">▶️ Play Audio</button>
+  <button id="ttsStopBtn" onclick="stopTTS()" disabled>⏹️ Stop</button>
+  <label for="voiceSelect">Voice:</label>
+  <select id="voiceSelect" onchange="changeVoice()"></select>
+</div>
+
 <div class="reader-container unselectable" oncontextmenu="return false;">
   <div class="shield"></div>
   
   <div id="page-viewer">
-    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page1.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 1" draggable="false"></div>
-    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page2.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 2" draggable="false"></div>
-    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page3.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 3" draggable="false"></div>
-    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page4.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 4" draggable="false"></div>
-    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page5.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 5" draggable="false"></div>
-    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page6.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 6" draggable="false"></div>
-    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page7.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 7" draggable="false"></div>
-    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page8.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 8" draggable="false"></div>
-    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page9.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 9" draggable="false"></div>
-    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page10.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 10" draggable="false"></div>
-    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page11.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 11" draggable="false"></div>
-    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page12.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 12" draggable="false"></div>
-    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page13.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 13" draggable="false"></div>
+    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page1.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 1 narrative content" draggable="false"></div>
+    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page2.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 2 narrative content" draggable="false"></div>
+    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page3.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 3 narrative content" draggable="false"></div>
+    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page4.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 4 narrative content" draggable="false"></div>
+    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page5.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 5 narrative content" draggable="false"></div>
+    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page6.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 6 narrative content" draggable="false"></div>
+    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page7.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 7 narrative content" draggable="false"></div>
+    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page8.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 8 narrative content" draggable="false"></div>
+    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page9.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 9 narrative content" draggable="false"></div>
+    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page10.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 10 narrative content" draggable="false"></div>
+    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page11.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 11 narrative content" draggable="false"></div>
+    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page12.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 12 narrative content" draggable="false"></div>
+    <div class="card-bg page"><img src="assets/samples/book1/chapter1-page13.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 13 narrative content" draggable="false"></div>
   </div>
 
   <div class="nav-controls" style="margin-top: 10px; z-index: 20; position: relative;">
@@ -99,26 +135,39 @@ button:disabled {
     <button onclick="changePage(1)" id="nextBtn">Next ➡️</button>
   </div>
 </div>
+
 <script>
-      let currentPage = 0;
+let currentPage = 0;
 const pages = document.querySelectorAll('.page');
 const pageCounter = document.getElementById('pageCounter');
 
+// TTS state tracking
+let synth = window.speechSynthesis;
+let utterance = null;
+let isPaused = false;
+let voices = [];
+
 function showPage(index) {
-  // Hide current page
+  if (index < 0 || index >= pages.length) return;
+
+  // Clean up existing page highlights
   pages.forEach(page => page.classList.remove('active'));
 
-  // Show the new page
+  // Activate target page
   pages[index].classList.add('active');
 
-  // Update counter
+  // Update counter tracking text
   pageCounter.innerText = `Page ${index + 1} of ${pages.length}`;
 
-  // Disable buttons at ends
+  // Handle button disable logic cleanly
   document.getElementById('prevBtn').disabled = (index === 0);
   document.getElementById('nextBtn').disabled = (index === pages.length - 1);
 
-  // Scroll to top of reader when page changes
+  // Stop current narration if user turns the page mid-track
+  if (synth && synth.speaking) {
+    stopTTS();
+  }
+
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -127,8 +176,82 @@ function changePage(step) {
   showPage(currentPage);
 }
 
-// Initialize the first page
+// --- Restored Text To Speech Engine Functions ---
+
+function populateVoiceList() {
+  if (!synth) return;
+  voices = synth.getVoices();
+  const voiceSelect = document.getElementById('voiceSelect');
+  voiceSelect.innerHTML = '';
+  
+  voices.forEach((voice, i) => {
+    const option = document.createElement('option');
+    option.textContent = `${voice.name} (${voice.lang})`;
+    option.value = i;
+    if (voice.default) option.selected = true;
+    voiceSelect.appendChild(option);
+  });
+}
+
+if (synth && synth.onvoiceschanged !== undefined) {
+  synth.onvoiceschanged = populateVoiceList;
+}
+
+function toggleTTS() {
+  if (!synth) return;
+
+  if (synth.speaking && !isPaused) {
+    synth.pause();
+    isPaused = true;
+    document.getElementById('ttsPlayBtn').innerText = "⏸️ Resume";
+    return;
+  }
+  
+  if (isPaused) {
+    synth.resume();
+    isPaused = false;
+    document.getElementById('ttsPlayBtn').innerText = "⏸️ Pause";
+    return;
+  }
+
+  // Target current page's alt text or readable content 
+  const activePageImg = pages[currentPage].querySelector('img');
+  const textToRead = activePageImg ? activePageImg.alt : "No readable content found on this page.";
+
+  utterance = new SpeechSynthesisUtterance(textToRead);
+  const selectedVoiceIndex = document.getElementById('voiceSelect').value;
+  if (voices[selectedVoiceIndex]) {
+    utterance.voice = voices[selectedVoiceIndex];
+  }
+
+  utterance.onend = function() {
+    stopTTS();
+  };
+
+  document.getElementById('ttsPlayBtn').innerText = "⏸️ Pause";
+  document.getElementById('ttsStopBtn').disabled = false;
+  
+  synth.speak(utterance);
+}
+
+function stopTTS() {
+  if (!synth) return;
+  synth.cancel();
+  isPaused = false;
+  document.getElementById('ttsPlayBtn').innerText = "▶️ Play Audio";
+  document.getElementById('ttsStopBtn').disabled = true;
+}
+
+function changeVoice() {
+  if (synth.speaking) {
+    stopTTS();
+    toggleTTS();
+  }
+}
+
+// Trigger initial setup
+populateVoiceList();
 showPage(0);
-  </script>
-  </body>
+</script>
+</body>
 </html>
