@@ -45,30 +45,3 @@
     // SCENARIO C: Any other page (home, hub list, timeline) -> Do absolutely nothing!
   });
 </script>
-/*   document.addEventListener("DOMContentLoaded", function() {
-    const bannerNav = document.getElementById('dynamic-banner-nav');
-    if (!bannerNav) return;
-
-    // Check if we are on the main characters list page
-    const isCharacterHub = window.location.pathname.match(/\/characters\/?$/) || window.location.pathname.includes('characters.html');
-    
-    // Scan for dynamic return links on the active page
-    const dossierReturnLink = document.querySelector('.return-link');
-    const footerCharactersLink = document.querySelector('.site-footer a[href*="characters"]');
-
-    if (dossierReturnLink) {
-      // If on a sub-dossier, copy its specific return path up
-      const topBtn = dossierReturnLink.cloneNode(true);
-      topBtn.className = 'banner-btn';
-      topBtn.innerHTML = `‹ ${topBtn.textContent.replace(/Return to/i, '').trim()}`;
-      bannerNav.appendChild(topBtn);
-    } 
-    // Only show the Character Hub button if we aren't already on the hub page
-    else if (footerCharactersLink && !isCharacterHub) {
-      const topBtn = footerCharactersLink.cloneNode(true);
-      topBtn.className = 'banner-btn';
-      topBtn.innerHTML = `‹ Characters Hub`;
-      bannerNav.appendChild(topBtn);
-    }
-  }); */
-</script>
