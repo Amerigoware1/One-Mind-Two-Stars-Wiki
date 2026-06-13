@@ -1,31 +1,39 @@
-<div class="top-banner"></div>
-<!-- <div class="banner-container"> -->
-  <span class="banner-title">One Mind, Two Stars Wiki</span>
+<div class="top-banner">
+  <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
     
-    <a href="index.html" class="home-button">🏠 Home</a>
-  
-  <nav class="banner-nav" id="dynamic-banner-nav"></nav>
+    <span class="banner-title" style="font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 1.1rem; color: #ffffff;">
+      One Mind, Two Stars Wiki
+    </span>
+      
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <a href="{{ '/' | relative_url }}" class="home-button">🏠 Home</a>
+      <span id="dynamic-banner-nav" style="display: flex; gap: 1rem;"></span>
+    </div>
+
   </div>
-<!-- </div> -->
+</div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const bannerNav = document.getElementById('dynamic-banner-nav');
+    if (!bannerNav) return;
+
+    // Check if we are on the main characters list page
+    const isCharacterHub = window.location.pathname.match(/\/characters\/?$/) || window.location.pathname.includes('characters.html');
     
-    // 1. First, check if we are on a dossier page with a specific sub-return link
+    // Scan for dynamic return links on the active page
     const dossierReturnLink = document.querySelector('.return-link');
-    // 2. Next, check if there is a main section link in the footer
     const footerCharactersLink = document.querySelector('.site-footer a[href*="characters"]');
 
     if (dossierReturnLink) {
-      // If reading a dossier, clone its specific "Return to [Character]" link to the top banner
+      // If on a sub-dossier, copy its specific return path up
       const topBtn = dossierReturnLink.cloneNode(true);
-      topBtn.className = 'banner-btn'; // Strip old styles, apply the banner button look
-      // Make sure it reads cleanly at the top
-      topBtn.innerHTML = `‹ ${topBtn.textContent.trim()}`;
+      topBtn.className = 'banner-btn';
+      topBtn.innerHTML = `‹ ${topBtn.textContent.replace(/Return to/i, '').trim()}`;
       bannerNav.appendChild(topBtn);
-    } else if (footerCharactersLink) {
-      // If on a regular character layout page, clone the main Directory link up to the top
+    } 
+    // Only show the Character Hub button if we aren't already on the hub page
+    else if (footerCharactersLink && !isCharacterHub) {
       const topBtn = footerCharactersLink.cloneNode(true);
       topBtn.className = 'banner-btn';
       topBtn.innerHTML = `‹ Characters Hub`;

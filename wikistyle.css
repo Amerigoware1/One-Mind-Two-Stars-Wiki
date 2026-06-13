@@ -104,19 +104,39 @@ a:hover {
   text-shadow: 0 0 8px var(--glow-cyan);
 }
 
-.top-banner {
-  position: fixed;
-  top: 0;        
-  left: 0;       
-  width: 100%;   
-  z-index: 10;   
-  background: rgba(0, 0, 0, 0); 
-  border-bottom: 1px solid rgba(193, 60, 255, 0.15);
-  padding: 1rem 1.5rem;
-  margin: 0; 
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 15px var(--glow-violet);
-  transition: all 0.4s ease;
-  backdrop-filter: blur(4px);
+/* Styling for the dynamic dynamic buttons inside the fixed header */
+.top-banner .banner-btn {
+  background: rgba(0, 232, 255, 0.15); /* Sleek cyan transparency to contrast home violet */
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(6px);
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--neon-cyan) !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid rgba(0, 232, 255, 0.25);
+  transition: all 0.3s;
+}
+
+.top-banner .banner-btn:hover {
+  background: rgba(0, 232, 255, 0.35);
+  color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(0, 232, 255, 0.6);
+  border-color: var(--neon-cyan);
+}
+
+/* Ensure the layout links look like real inline block elements */
+.top-banner .home-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff !important;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid rgba(193, 60, 255, 0.25);
 }
 
 .top-banner::before {
