@@ -225,11 +225,10 @@ function toggleTTS() {
     return;
   }
 
-  // Decode the hidden text for the current page right before speaking
   let textToRead = "No readable content found.";
   if (obscuredPages[currentPage]) {
     try {
-      textToRead = atob(obscuredPages[currentPage]); // Decodes Base64 string
+      textToRead = atob(obscuredPages[currentPage]);
     } catch (e) {
       console.error("Error decoding page text.", e);
     }
@@ -241,8 +240,21 @@ function toggleTTS() {
     utterance.voice = voices[selectedVoiceIndex];
   }
 
+  // --- Auto-Advance Logic ---
   utterance.onend = function() {
-    stopTTS();
+    // Check if there is a next page available in the sequence
+    if (currentPage < pages.length - 1) {
+      currentPage++; // Move index forward
+      showPage(currentPage); // Update visual display and reset scroll
+      
+      // Small visual pause (300ms) before the next page begins speaking
+      setTimeout(() => {
+        toggleTTS(); 
+      }, 300);
+    } else {
+      // If it's the final page, terminate playback cleanly
+      stopTTS();
+    }
   };
 
   document.getElementById('ttsPlayBtn').innerText = "⏸️ Pause";
