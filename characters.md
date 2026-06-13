@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Characters
+layout: character-list
 permalink: /characters/
 ---
 
