@@ -11,7 +11,9 @@ layout: default
   {%- assign is_character_page = true -%}
 {%- endif -%}
 
-<div class="character-layout">
+<div class="wrapper">
+  <div class="character-layout">
+
   {%- if is_character_page -%}
   <aside class="infobox-sidebar">
     <div class="infobox" id="portrait-container" data-title="{{ page.title }}">
@@ -51,7 +53,7 @@ layout: default
     </div>
   </main>
 </div>
-
+</div>
 <!-- Floating Return to Top Button -->
 <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
 
