@@ -1,3 +1,26 @@
 <div class="top-banner">
   <a href="{{ site.baseurl }}/" class="home-button">🏠 Home</a>
 </div>
+<div class="banner-container">
+  <span class="banner-title">One Mind, Two Stars Wiki</span>
+  
+  <nav class="banner-nav" id="dynamic-banner-nav"></nav>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const bannerNav = document.getElementById('dynamic-banner-nav');
+    
+    // 1. Look for a footer or a specific navigation container at the bottom
+    const bottomNavLinks = document.querySelectorAll('.site-footer a');
+    
+    // 2. If links exist down there, clone them into the top banner
+    if (bottomNavLinks.length > 0) {
+      bottomNavLinks.forEach(link => {
+        const clonedLink = link.cloneNode(true);
+        clonedLink.classList.add('banner-btn'); // Apply your neon button styles
+        bannerNav.appendChild(clonedLink);
+      });
+    }
+  });
+</script>
