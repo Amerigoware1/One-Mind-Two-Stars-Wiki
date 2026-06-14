@@ -1,32 +1,38 @@
+{% comment %}
+  Build a list of books that actually have content.
+  A book is included if it has either a title or an arc.
+{% endcomment %}
 {% assign books = "" | split: "" %}
 {% for i in (1..5) %}
   {% assign title_key = "book" | append: i | append: "_title" %}
   {% assign arc_key = "book" | append: i | append: "_arc" %}
-  {% assign title = page[title_key] %}
-  {% assign arc = page[arc_key] %}
-  {% if title or arc %}
+  {% if page[title_key] or page[arc_key] %}
     {% assign books = books | push: i %}
   {% endif %}
 {% endfor %}
 
-
 <div class="tab-container">
+
+  <!-- TAB BUTTONS -->
   <div class="tab-buttons">
     {% for i in books %}
       {% assign portrait_key = "portrait-book" | append: i %}
-      {% assign p_imgs = page[portrait_key] %} 
+      {% assign p_imgs = page[portrait_key] %}
 
       <button
-        class="tab-btn
+        class="tab-btn"
         data-tab="book{{ i }}"
         data-book="{{ i }}"
-        {% if p_imgs.size == 1 %}data-image="{{ p_imgs | first | relative_url }}"{% endif %}
+        {% if p_imgs and p_imgs.size == 1 %}
+          data-image="{{ p_imgs | first | relative_url }}"
+        {% endif %}
       >
         Book {{ i }}
       </button>
     {% endfor %}
   </div>
 
+  <!-- TAB CONTENT -->
   <div class="tab-content-wrapper">
     {% for i in books %}
       {% assign title_key = "book" | append: i | append: "_title" %}
@@ -40,4 +46,5 @@
       </div>
     {% endfor %}
   </div>
+
 </div>
