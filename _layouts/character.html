@@ -56,7 +56,7 @@ layout: default
 <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-
+  const initialPortrait = portrait.src;
   const container = document.getElementById('portrait-container');
   const portrait = document.getElementById('character-portrait');
   const placeholder = "{{ '/assets/images/portrait-placeholder.png' | relative_url }}";
@@ -131,23 +131,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Trigger initial image load based on active tab
-  const activeTab = document.querySelector('.tab-btn.active');
-  if (activeTab) {
-    const bookIndex = activeTab.dataset.book;
-    if (bookIndex && bookImages[bookIndex]) {
-      const imgs = bookImages[bookIndex];
-      if (imgs.length) {
-        portrait.src = randomFrom(imgs);
-      }
-    }
-  } else {
-    // If no active tab, use first book image or placeholder
-    const firstBookImages = bookImages['1'];
-    if (firstBookImages && firstBookImages.length) {
-      portrait.src = randomFrom(firstBookImages);
-    }
+  // INITIAL LOAD LOGIC
+// If a tab is already active, use its image.
+// Otherwise, keep the YAML portrait as the default.
+const activeTab = document.querySelector('.tab-btn.active');
+
+if (activeTab) {
+  const bookIndex = activeTab.dataset.book;
+  const explicitImage = activeTab.dataset.image;
+
+  if (explicitImage && explicitImage.trim()) {
+    portrait.src = explicitImage.trim();
+  } else if (bookIndex && bookImages[bookIndex]) {
+    portrait.src = randomFrom(bookImages[bookIndex]);
   }
+} else {
+  // No active tab → DO NOTHING.
+  // The YAML portrait stays as the default.
+  portrait.src = initialPortrait;
+}
   const toTopBtn = document.getElementById("toTopBtn");
   window.addEventListener("scroll", () => {
     if (document.documentElement.scrollTop > 200) {
