@@ -512,15 +512,7 @@ input:focus { outline: none; border-color: var(--neon-cyan); box-shadow: 0 0 15p
 }
 #toTopBtn:hover { color: var(--neon-magenta); border-color: var(--neon-cyan); box-shadow: 0 0 20px var(--glow-cyan), 0 0 30px var(--glow-violet); transform: translateY(-3px); }
 
-.tts-controls {
-  display: inline-flex; align-items: center; gap: 0.5rem; margin-left: 1rem;
-  background: rgba(12, 0, 40, 0.8); padding: 0.25rem 0.75rem; border-radius: 30px; border: 1px solid #bb86fc;
-}
-.tts-controls select, .tts-controls button, .tts-controls .rate-label {
-  background: #0c0028; color: white; border: 1px solid #555; border-radius: 4px; padding: 0.2rem 0.5rem; font-size: 0.8rem; cursor: pointer;
-}
-.tts-controls button { background: #bb86fc; color: #0c0028; border: none; font-weight: bold; }
-.tts-controls .rate-label { display: inline-flex; align-items: center; gap: 0.3rem; background: transparent; border: none; }
+
 
 /* ==========================================================================
    8. RESPONSIVE MEDIA QUERIES & ANIMATIONS
