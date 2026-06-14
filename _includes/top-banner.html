@@ -30,7 +30,7 @@
     if (dossierReturnLink) {
       const topBtn = dossierReturnLink.cloneNode(true);
       topBtn.className = 'banner-btn';
-      topBtn.innerHTML = `‹ ${topBtn.textContent.replace(/Return to/i, '').trim()}`;
+      topBtn.innerHTML = `‹ ${topBtn.textContent.replace({{ '/Return to/i, ''' | relative_url }}).trim()}`;
       bannerNav.appendChild(topBtn);
     } 
     

@@ -44,7 +44,7 @@
         const mainElem = document.querySelector('main') || document.querySelector('article') || document.body;
         const clone = mainElem.cloneNode(true);
         clone.querySelectorAll(excludeSelectors).forEach(el => el.remove());
-        return clone.innerText.replace(/\s+/g, ' ').trim();
+        return clone.innerText.replace({{ '/\s+/g, ' '' | relative_url }}).trim();
     }
 
     // ----- Highlight and scroll -----

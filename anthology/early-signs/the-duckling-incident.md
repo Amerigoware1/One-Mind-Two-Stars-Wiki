@@ -4,8 +4,8 @@ layout: default
 ---
 
 <div class="top-banner">
-  <a href="././index.html" class="home-button">🏠 Home</a>
-  <a href="././anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
+  <a href="{{ '/././index.html' | relative_url }}" class="home-button">🏠 Home</a>
+  <a href="{{ '/././anthology.html' | relative_url }}" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
 
 # The Duckling Incident
@@ -186,5 +186,5 @@ Then he opened his comm and called Alex.
 
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="{{ '/./anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>

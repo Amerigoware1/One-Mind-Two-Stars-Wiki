@@ -3,8 +3,8 @@ layout: default
 title: The Shade Beast
 -
 <div class="top-banner">
-  <a href="././index.html" class="home-button">🏠 Home</a>
-  <a href="././anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
+  <a href="{{ '/././index.html' | relative_url }}" class="home-button">🏠 Home</a>
+  <a href="{{ '/././anthology.html' | relative_url }}" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
 
 When Dr. Zoë Kret arrived at the holo-chamber aboard Utopis, a place she had only visited once as a child, she found Celectra already there. The metallic tang of recycled air on Utopis, a sharp contrast to the arid breeze she remembered from Ares, hung heavy in the sterile space. Celectra was barefoot and pacing the corridor.   
@@ -161,5 +161,5 @@ As they left the holo-chamber together, Zoë found herself wondering which of th
 -
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="{{ '/./anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>

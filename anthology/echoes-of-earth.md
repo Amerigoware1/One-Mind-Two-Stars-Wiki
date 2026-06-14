@@ -3,8 +3,8 @@ layout: default
 title: Echos of Earth
 ---
 <div class="top-banner">
-  <a href="./index.html" class="home-button">🏠 Home</a>
-  <a href="./anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
+  <a href="{{ '/./index.html' | relative_url }}" class="home-button">🏠 Home</a>
+  <a href="{{ '/./anthology.html' | relative_url }}" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
 
 Amerigo sat heavily in the middle of the sofa, absently cupping the four little feet in his lap between his hands. Celectra lay with a head on each arm of the sofa, each with a holopad synced to the same page of a book. Just this morning, Alex had confirmed what Amerigo had begun to suspect: Celectra wasn't twins, Celeste and Electra, but one person—a single consciousness in two bodies.  
@@ -232,5 +232,5 @@ Williams didn’t tell him to stop crying. She just sat beside him, her slightly
 
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="{{ '/./anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>

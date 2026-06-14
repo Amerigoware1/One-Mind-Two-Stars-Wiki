@@ -3,8 +3,8 @@ layout: default
 title: First Impressions
 -
 <div class="top-banner">
-  <a href="././index.html" class="home-button">🏠 Home</a>
-  <a href="././anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
+  <a href="{{ '/././index.html' | relative_url }}" class="home-button">🏠 Home</a>
+  <a href="{{ '/././anthology.html' | relative_url }}" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
 
 Dr. Zoë Kret, PsyD, rushed to finish her notes on her last patient when she heard the door swoosh open. She looked up to see two beautiful young girls hesitantly entering her office with their father and stopping behind the two cushioned chairs in front of her desk.  
@@ -180,5 +180,5 @@ As Celectra gathered herself to leave, Zoë’s thoughts drifted to Amerigo. His
 -
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="{{ '/./anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>

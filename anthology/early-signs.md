@@ -3,8 +3,8 @@ layout: default
 title: Early Signs
 ---
 <div class="top-banner">
-  <a href="../index.html" class="home-button">🏠 Home</a>
-  <a href="../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
+  <a href="{{ '/../index.html' | relative_url }}" class="home-button">🏠 Home</a>
+  <a href="{{ '/../anthology.html' | relative_url }}" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
 
 By week two, Amerigo had resorted to colored ribbons tied around their right ankles. Gold for Electra. Blue for Celeste.  
@@ -170,5 +170,5 @@ And for the first time since Jenni’s death, Amerigo felt something like peace.
 
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="../anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="{{ '/../anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>

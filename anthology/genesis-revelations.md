@@ -3,8 +3,8 @@ layout: default
 title: Genesis Revelations
 ---
 <div class="top-banner">
-  <a href="../index.html" class="home-button">🏠 Home</a>
-  <a href="../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
+  <a href="{{ '/../index.html' | relative_url }}" class="home-button">🏠 Home</a>
+  <a href="{{ '/../anthology.html' | relative_url }}" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
 
 Amerigo jolted awake to the sound of a pint-sized invasion force storming his berth aboard the space station, Utopis. His twin daughters, a whirlwind of boundless energy, quickly flanked his bed, seizing his arms and launching an adorable onslaught of demands, their voices a synchronized clamor in his room. This wasn’t the first time this had happened, and he knew it wouldn’t be the last. Despite his lean and muscular physique, he was utterly powerless against their formidable attributes of charm and puppy-dog eyes.  
@@ -273,5 +273,5 @@ He raised his head, a new resolve hardening his expression. “This changes ever
 
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="../anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="{{ '/../anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>
