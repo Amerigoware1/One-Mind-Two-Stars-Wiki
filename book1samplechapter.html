@@ -6,6 +6,29 @@ title: "Book 1 Sample Chapter"
 
 
 <style>
+    /* Center ALL main containers */
+.tts-controls,
+.reader-container,
+.nav-controls {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Optional: Ensure parent container doesn't constrain centering */
+#page-viewer, .book1samplechapter {
+  text-align: center; /* For inline-block elements if needed */
+}
+
+/* For extra robustness with max-width elements */
+.reader-container,
+.tts-controls,
+.nav-controls {
+  width: fit-content;
+  min-width: 100%; /* Ensures it spans available space before centering */
+  max-width: 800px; /* Maintains your readable width cap */
+  display: flex; /* Keep flex for internal layout */
+  justify-content: center; /* Center content inside each panel */
+}
   /* Prevents users from highlighting or selecting text/images */
   .unselectable {
     -webkit-user-select: none;
@@ -142,30 +165,6 @@ title: "Book 1 Sample Chapter"
     border-radius: 4px;
     border: 1px solid #ccc;
   }
-
-  /* Center ALL main containers */
-.tts-controls,
-.reader-container,
-.nav-controls {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* Optional: Ensure parent container doesn't constrain centering */
-#page-viewer, .book1samplechapter {
-  text-align: center; /* For inline-block elements if needed */
-}
-
-/* For extra robustness with max-width elements */
-.reader-container,
-.tts-controls,
-.nav-controls {
-  width: fit-content;
-  min-width: 100%; /* Ensures it spans available space before centering */
-  max-width: 800px; /* Maintains your readable width cap */
-  display: flex; /* Keep flex for internal layout */
-  justify-content: center; /* Center content inside each panel */
-}
 </style>
 
 <h1>Book 1, Chapter 1 Sample</h1>
