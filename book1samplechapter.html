@@ -26,22 +26,22 @@ title: "Book 1 Sample Chapter"
     position: relative;
     display: inline-block;
     max-width: 800px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--neon-violet);
     margin-top: 15px;
   }
 
   /* Animated border glow for active reading */
   .reader-container.tts-active {
-    border-color: #007acc;
-    box-shadow: 0 0 12px rgba(0, 122, 204, 0.5);
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 12px rgba(0, 232, 255, 0.5);
     animation: borderPulse 2s infinite ease-in-out;
     transition: all 0.3s ease;
   }
 
   @keyframes borderPulse {
-    0% { box-shadow: 0 0 12px rgba(0, 122, 204, 0.4); }
-    50% { box-shadow: 0 0 18px rgba(0, 122, 204, 0.8); }
-    100% { box-shadow: 0 0 12px rgba(0, 122, 204, 0.4); }
+    0% { box-shadow: 0 0 12px rgba(0, 232, 255, 0.4); }
+    50% { box-shadow: 0 0 18px rgba(0, 232, 255, 0.8); }
+    100% { box-shadow: 0 0 12px rgba(0, 232, 255, 0.4); }
   }
 
   /* The Invisible Shield */
@@ -74,36 +74,37 @@ title: "Book 1 Sample Chapter"
   padding: 10px 15px;
   margin-top: 10px;
   /* Semi-transparent dark purple - matching tts-controls */
-  background: rgba(12, 0, 40, 0.9);
+  background: var(--bg-card);
   border-radius: 6px;
   /* Accent border like tts-controls */
-  border: 1px solid #bb86fc;
+  border: 1px solid var(--neon-violet);
   max-width: 800px;
   z-index: 20;
   position: relative;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 /* Navigation Buttons */
 .nav-controls button {
   padding: 8px 15px;
   cursor: pointer;
-  background-color: #bb86fc;
-  color: #0c0028;
+  background-color: var(--neon-violet);
+  color: var(--text-heading);
   border: none;
   border-radius: 4px;
   font-weight: bold;
 }
 
 .nav-controls button:disabled {
-  background-color: #555;
+  background-color: var(--neon-magenta);
   cursor: not-allowed;
+  opacity: 0.5;
 }
 
 /* Page Counter Text */
 .nav-controls #pageCounter {
   font-weight: bold;
-  color: #e0e0e0;
+  color: var(--text-primary);
 }
 
   /* Isolated button overrides to prevent breaking site-wide styles */
@@ -111,16 +112,17 @@ title: "Book 1 Sample Chapter"
   .tts-controls button {
     padding: 8px 15px;
     cursor: pointer;
-    background-color: #333;
-    color: white;
+    background-color: var(--neon-violet);
+    color: var(--text-heading);
     border: none;
     border-radius: 4px;
   }
 
   .reader-container button:disabled, 
   .tts-controls button:disabled {
-    background-color: #ccc;
+    background-color: var(--neon-magenta);
     cursor: not-allowed;
+    opacity: 0.5;
   }
 
   /* Restored TTS Controls Panel Styling */
@@ -129,26 +131,28 @@ title: "Book 1 Sample Chapter"
   align-items: center;
   gap: 12px;
   /* Semi-transparent dark purple */
-  background: rgba(12, 0, 40, 0.9); 
+  background: var(--bg-card); 
   padding: 10px 15px;
   border-radius: 6px;
   /* Bright accent border to make it pop */
-  border: 1px solid #bb86fc; 
+  border: 1px solid var(--neon-violet); 
   max-width: 800px;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
   .tts-controls label {
     font-size: 0.9em;
     font-weight: bold;
-    color: #444;
+    color: var(--text-muted);
   }
 
   .tts-controls select {
     padding: 5px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--neon-violet);
+    background: var(--bg-card);
+    color: var(--text-primary);
   }
 </style>
 
