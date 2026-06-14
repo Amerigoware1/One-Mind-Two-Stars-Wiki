@@ -45,7 +45,7 @@
         // ⭐ SCENARIO C: Sample chapter pages → Return to Series Overview
     else if (isSampleChapter) {
       const topBtn = document.createElement('a');
-      topBtn.href = "{{ '/Series-Overview.html' | relative_url }}";
+      topBtn.href = "{{ '/series-overview.html' | relative_url }}";
       topBtn.className = 'banner-btn';
       topBtn.textContent = "‹ Series Overview";
       bannerNav.appendChild(topBtn);
