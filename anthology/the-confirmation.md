@@ -4,8 +4,8 @@ title: The Confirmation
 ---
 
 <div class="top-banner">
-  <a href="./index.html" class="home-button">🏠 Home</a>
-  <a href="./anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
+  <a href="../index.html" class="home-button">🏠 Home</a>
+  <a href="../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
 
 Amerigo watched his daughters' anticipation radiate through the exam room as Nurse Tim Alverson ushered them into the examination room. Amerigo took in the familiar details—the textured panels with their calming artificial wood grain, the soft hum of air filters, and the faint scent of antiseptic softened by something floral. Alex had always insisted a doctor’s office should feel less like a clinic and more like a place of comfort, and it showed; the small space felt more like a cozy study than a medical facility.  
@@ -202,5 +202,5 @@ Amerigo squeezed both her hands gently. “You’re welcome, sweetheart. I shoul
 
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="../anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>

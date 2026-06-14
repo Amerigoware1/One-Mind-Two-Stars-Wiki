@@ -4,8 +4,8 @@ title: Parisian Promise
 ---
 
 <div class="top-banner">
-  <a href="./index.html" class="home-button">🏠 Home</a>
-  <a href="./anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
+  <a href="../index.html" class="home-button">🏠 Home</a>
+  <a href="../anthology.html" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
 </div>
 
 The cylindrical elevator car was cramped with six bodies, but Celectra felt only warmth—the solid presence of Uncle Doc at her back, Daddy's hand resting lightly on her shoulder, Dr. Zoë's quiet hum vibrating through the confined space. This closeness wasn't confinement; it was sanctuary.  
@@ -158,5 +158,5 @@ Outside, the binary stars kept circling their shared light. Inside, Celectra bre
 
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="./anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="../anthology.html" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>
