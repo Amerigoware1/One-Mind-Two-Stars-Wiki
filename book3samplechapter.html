@@ -2,18 +2,15 @@
 layout: default
 
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book 3, Chapter 1 Sample</title>
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  <link rel="stylesheet" href="wikistyle.css?v=3">
-</head>
-
 <style>
+  /* Center all reader elements on the page */
+.reader-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
   /* Prevents users from highlighting or selecting text/images */
   .unselectable {
     -webkit-user-select: none;
@@ -26,7 +23,22 @@ layout: default
     position: relative;
     display: inline-block;
     max-width: 800px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--neon-violet);
+    margin-top: 15px;
+  }
+
+  /* Animated border glow for active reading */
+  .reader-container.tts-active {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 12px rgba(0, 232, 255, 0.5);
+    animation: borderPulse 2s infinite ease-in-out;
+    transition: all 0.3s ease;
+  }
+
+  @keyframes borderPulse {
+    0% { box-shadow: 0 0 12px rgba(0, 232, 255, 0.4); }
+    50% { box-shadow: 0 0 18px rgba(0, 232, 255, 0.8); }
+    100% { box-shadow: 0 0 12px rgba(0, 232, 255, 0.4); }
   }
 
   /* The Invisible Shield */
@@ -37,46 +49,122 @@ layout: default
     width: 100%;
     height: 100%;
     z-index: 10;
-    background: rgba(255,-255, 255, 0); /* Completely transparent */
+    background: rgba(255, 255, 255, 0); /* Completely transparent */
   }
+  
   .page {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
 
-.page.active {
-  display: block;
-  opacity: 1;
-}
+  .page.active {
+    display: block;
+    opacity: 1;
+  }
 
+/* Nav Controls Panel - Matching TTS Controls */
 .nav-controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background: #f9f9f9;
-  border-top: 1px solid #ccc;
-}
-   button {
-  padding: 8px 15px;
-  cursor: pointer;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 4px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  /* Semi-transparent dark purple - matching tts-controls */
+  background: var(--bg-card);
+  border-radius: 6px;
+  /* Accent border like tts-controls */
+  border: 1px solid var(--neon-violet);
+  max-width: 800px;
+  z-index: 20;
+  position: relative;
+  color: var(--text-primary);
 }
 
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+/* Navigation Buttons */
+.nav-controls button {
+  padding: 8px 15px;
+  cursor: pointer;
+  background-color: var(--neon-violet);
+  color: var(--text-heading);
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
 }
+
+.nav-controls button:disabled {
+  background-color: var(--neon-magenta);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Page Counter Text */
+.nav-controls #pageCounter {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+  /* Isolated button overrides to prevent breaking site-wide styles */
+  .reader-container button,
+  .tts-controls button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: var(--neon-violet);
+    color: var(--text-heading);
+    border: none;
+    border-radius: 4px;
+  }
+
+  .reader-container button:disabled, 
+  .tts-controls button:disabled {
+    background-color: var(--neon-magenta);
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  /* Restored TTS Controls Panel Styling */
+.tts-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* Semi-transparent dark purple */
+  background: var(--bg-card); 
+  padding: 10px 15px;
+  border-radius: 6px;
+  /* Bright accent border to make it pop */
+  border: 1px solid var(--neon-violet); 
+  max-width: 800px;
+  margin-bottom: 10px;
+  color: var(--text-primary);
+}
+
+  .tts-controls label {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--text-muted);
+  }
+
+  .tts-controls select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid var(--neon-violet);
+    background: var(--bg-card);
+    color: var(--text-primary);
+  }
 </style>
-<body>
-<h1>Book 3, Chapter 1 Sample</h1>
+
+<h1>Book 1, Chapter 1 Sample</h1>
+<div class="reader-wrapper">
+<div class="tts-controls">
+  <button id="ttsPlayBtn" onclick="toggleTTS()">▶️ Play Audio</button>
+  <button id="ttsStopBtn" onclick="stopTTS()" disabled>⏹️ Stop</button>
+  <label for="voiceSelect">Voice:</label>
+  <select id="voiceSelect" onchange="changeVoice()"></select>
+</div>
+
 <div class="reader-container unselectable" oncontextmenu="return false;">
   <div class="shield"></div>
-  
+
   <div id="page-viewer">
     <div class="card-bg page"><img src="assets/samples/book3/chapter1-page1.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 1" draggable="false"></div>
     <div class="card-bg page"><img src="assets/samples/book3/chapter1-page2.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 2" draggable="false"></div>
@@ -88,11 +176,12 @@ button:disabled {
     <div class="card-bg page"><img src="assets/samples/book3/chapter1-page8.jpg" loading="lazy" style="width:100%; display:block;" alt="Page 8" draggable="false"></div>
   </div>
 
-  <div class="nav-controls" style="margin-top: 10px; z-index: 20; position: relative;">
+ <div class="nav-controls" style="margin-top: 10px; z-index: 20; position: relative;">
     <button onclick="changePage(-1)" id="prevBtn">⬅️ Previous</button>
     <span id="pageCounter">Page 1 of 8</span>
     <button onclick="changePage(1)" id="nextBtn">Next ➡️</button>
   </div>
+</div>
 </div>
 <script>
 let currentPage = 0;
@@ -108,7 +197,7 @@ let voices = [];
 // --- Obscured Story Text Array ---
 // Replace these placeholder strings with your actual Base64-encoded chapter text for each page
 const obscuredPages = [
-"Use Base64 encoding to store the text content of each page here. For example, if you have the text for page 1, encode it using Base64 and place the resulting string in this array at index 0. Repeat this process for all pages, ensuring that the order of the text matches the order of the page images. This way, when a user clicks 'Play Audio,' the TTS engine can decode the corresponding text and read it aloud while displaying the correct page."
+  "Use Base64 encoding to store the text content of each page here. For example, if you have the text for page 1, encode it using Base64 and place the resulting string in this array at index 0. Repeat this process for all pages, ensuring that the order of the text matches the order of the page images. This way, when a user clicks 'Play Audio,' the TTS engine can decode the corresponding text and read it aloud while displaying the correct page."
 ];
 
 function showPage(index) {
@@ -156,11 +245,14 @@ if (synth && synth.onvoiceschanged !== undefined) {
 
 function toggleTTS() {
   if (!synth) return;
+  
+  const readerBox = document.querySelector('.reader-container');
 
   if (synth.speaking && !isPaused) {
     synth.pause();
     isPaused = true;
     document.getElementById('ttsPlayBtn').innerText = "⏸️ Resume";
+    if (readerBox) readerBox.classList.remove('tts-active'); // Pause the pulse
     return;
   }
   
@@ -168,6 +260,7 @@ function toggleTTS() {
     synth.resume();
     isPaused = false;
     document.getElementById('ttsPlayBtn').innerText = "⏸️ Pause";
+    if (readerBox) readerBox.classList.add('tts-active'); // Resume the pulse
     return;
   }
 
@@ -186,19 +279,19 @@ function toggleTTS() {
     utterance.voice = voices[selectedVoiceIndex];
   }
 
-  // --- Auto-Advance Logic ---
+  // Handle active class tracking when audio starts
+  utterance.onstart = function() {
+    if (readerBox) readerBox.classList.add('tts-active');
+  };
+
   utterance.onend = function() {
-    // Check if there is a next page available in the sequence
     if (currentPage < pages.length - 1) {
-      currentPage++; // Move index forward
-      showPage(currentPage); // Update visual display and reset scroll
-      
-      // Small visual pause (300ms) before the next page begins speaking
+      currentPage++;
+      showPage(currentPage);
       setTimeout(() => {
         toggleTTS(); 
       }, 300);
     } else {
-      // If it's the final page, terminate playback cleanly
       stopTTS();
     }
   };
@@ -215,6 +308,10 @@ function stopTTS() {
   isPaused = false;
   document.getElementById('ttsPlayBtn').innerText = "▶️ Play Audio";
   document.getElementById('ttsStopBtn').disabled = true;
+  
+  // Strip the active styling completely on stop
+  const readerBox = document.querySelector('.reader-container');
+  if (readerBox) readerBox.classList.remove('tts-active');
 }
 
 function changeVoice() {
@@ -227,5 +324,3 @@ function changeVoice() {
 populateVoiceList();
 showPage(0);
 </script>
-  </body>
-</html>
