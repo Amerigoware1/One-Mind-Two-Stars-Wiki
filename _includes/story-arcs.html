@@ -9,16 +9,15 @@
   {% endif %}
 {% endfor %}
 
-{% assign first = books.first %}
 
 <div class="tab-container">
   <div class="tab-buttons">
     {% for i in books %}
       {% assign portrait_key = "portrait-book" | append: i %}
-      {% assign p_imgs = page[portrait_key] %}
+      {% assign p_imgs = page[portrait_key] %} 
 
       <button
-        class="tab-btn {% if i == first %}active{% endif %}"
+        class="tab-btn
         data-tab="book{{ i }}"
         data-book="{{ i }}"
         {% if p_imgs.size == 1 %}data-image="{{ p_imgs | first | relative_url }}"{% endif %}
@@ -33,7 +32,7 @@
       {% assign title_key = "book" | append: i | append: "_title" %}
       {% assign arc_key = "book" | append: i | append: "_arc" %}
 
-      <div id="book{{ i }}" class="tab-content {% if i == first %}active{% endif %}">
+      <div id="book{{ i }}" class="tab-content">
         <h3>Book {{ i }} — {{ page[title_key] }}</h3>
         <div class="arc-text">
           {{ page[arc_key] | markdownify }}
