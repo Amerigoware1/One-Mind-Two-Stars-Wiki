@@ -1,8 +1,7 @@
 ---
 layout: character
 title: Sam Calder
-portrait: 
-  - /assets/images/sam-femme-book5.webp
+portrait: /assets/images/sam-femme-book5.webp
 portrait-book1:
   - /assets/images/sam-book1.webp
 portrait-book2:
