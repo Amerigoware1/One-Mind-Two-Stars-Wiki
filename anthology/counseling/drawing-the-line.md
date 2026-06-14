@@ -1,11 +1,7 @@
-TaliaTalia-
+---
 layout: default
-title: First Impressions
--
-<div class="top-banner">
-  <a href="{{ '/././index.html' | relative_url }}" class="home-button">🏠 Home</a>
-  <a href="{{ '/././anthology.html' | relative_url }}" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
-</div>
+title: Drawing the Line
+---
 
 The Nexus was a wide circular building just like the others around the roundabout in New Eden's center—part community hall, part recreation space—the social hub, its stone walls thick enough to hold the heat on cool evenings and the cool on hot ones. The holo-chambers were on the upper floor, three rooms set aside for entertainment, education, and the occasional therapeutic use that Celectra suggested. The corridor smelled of the same generic cleaning solution as every colony building, but up here the light was better, east-facing windows catching the morning before Chaos rose to dominate the sky.
 
@@ -187,5 +183,5 @@ Celectra shifted the celestite to the hand that held the holopad, freeing the ot
 -
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="{{ '/./anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>

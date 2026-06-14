@@ -3,10 +3,6 @@ layout: default
 title: Pancakes with Aunt Dee
 ---
 
-<div class="top-banner">
-  <a href="{{ '/././index.html' | relative_url }}" class="home-button">🏠 Home</a>
-  <a href="{{ '/././anthology.html' | relative_url }}" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
-</div>
 
 Amerigo paused in the doorway of the Cruiz kitchen, the scent of vanilla and warm flour wrapping around him like a familiar blanket. He watched, heart softening, as his four-year-old daughters worked.
 
@@ -41,5 +37,5 @@ Amerigo took the plate, the warmth seeping into his hands. "Looks perfect," he s
 As he took his first bite, the sweetness of maple and tartness of berry exploding on his tongue, Amerigo Carisco felt a profound gratitude. For Dee, who taught his daughters more than recipes. For Alex, who kept them healthy. For the quiet, flour-dusted morning where his twin daughters, Celeste and Electra, were just kids, and he was just their dad, and that was more than enough. The footprints on the floor weren't evidence of a crime, he decided. They were a map. A map leading right back to this: home.
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="{{ '/./anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>

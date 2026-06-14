@@ -3,11 +3,6 @@ layout: default
 title: Parisian Promise
 ---
 
-<div class="top-banner">
-  <a href="{{ '/../index.html' | relative_url }}" class="home-button">🏠 Home</a>
-  <a href="{{ '/../anthology.html' | relative_url }}" class="home-button" style="margin-left: 0.5rem;">📚 Archive</a>
-</div>
-
 The cylindrical elevator car was cramped with six bodies, but Celectra felt only warmth—the solid presence of Uncle Doc at her back, Daddy's hand resting lightly on her shoulder, Dr. Zoë's quiet hum vibrating through the confined space. This closeness wasn't confinement; it was sanctuary.  
 
 "You were incredible in there," Dr. Zoë said softly, her hand finding Celectra's shoulder as the first hint of centrifugal force began to tug at them. "I've never seen such courage."  
@@ -158,5 +153,5 @@ Outside, the binary stars kept circling their shared light. Inside, Celectra bre
 
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="{{ '/../anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
 </div>

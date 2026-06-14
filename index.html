@@ -6,12 +6,12 @@ title: "Home - One Mind, Two Stars Wiki"
 <head>
   <meta charset="UTF-8">
   <title>One Mind, Two Stars Wiki</title>
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
   
   <!--Preload main stylesheet to prioritise its loading-->
-  <link rel="preload" href="wikistyle.css" as="style">
+  <link rel="preload" href="{{ '/wikistyle.css' | relative_url }}" as="style">
   <!--Load main stylesheet-->
-  <link rel="stylesheet" href="wikistyle.css">
+  <link rel="stylesheet" href="{{ '/wikistyle.css' | relative_url }}">
   
   <!--CRITICAL INLINE STYLES: ensures colour scheme works even if wikistyle.css is slow-->
   <style>
@@ -174,7 +174,7 @@ title: "Home - One Mind, Two Stars Wiki"
     <section>
       <h2>👥 Characters & Groups</h2>
       <div class="index-links">
-        <a href="_characters">👨🏻‍👩🏻‍👦🏻‍👦🏻 Characters<br><span class="link-desc">Novel cast of characters</span></a>
+        <a href="{{ '_characters.html' | relative_url }}">👨🏻‍👩🏻‍👦🏻‍👦🏻 Characters<br><span class="link-desc">Novel cast of characters</span></a>
         <a href="{{ '/listener-corps.html' | relative_url }}">🎧 Listener Corps<br><span class="link-desc">About the Listener Corps</span></a>
       </div>
     </section>
