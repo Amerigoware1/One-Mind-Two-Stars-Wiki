@@ -56,12 +56,14 @@ layout: default
 <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  const initialPortrait = portrait.src;
+
   const container = document.getElementById('portrait-container');
   const portrait = document.getElementById('character-portrait');
+  const initialPortrait = portrait ? portrait.src : null;
   const placeholder = "{{ '/assets/images/portrait-placeholder.png' | relative_url }}";
 
   if (!container || !portrait) return;
+
 
   const bookImages = {};
 
