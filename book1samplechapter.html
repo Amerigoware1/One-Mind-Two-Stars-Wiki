@@ -58,14 +58,45 @@ title: "Book 1 Sample Chapter"
     opacity: 1;
   }
 
-  .nav-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background: #f9f9f9;
-    border-top: 1px solid #ccc;
-  }
+/* Nav Controls Panel - Matching TTS Controls */
+.nav-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-top: 10px;
+  /* Semi-transparent dark purple - matching tts-controls */
+  background: rgba(12, 0, 40, 0.9);
+  border-radius: 6px;
+  /* Accent border like tts-controls */
+  border: 1px solid #bb86fc;
+  max-width: 800px;
+  z-index: 20;
+  position: relative;
+  color: #ffffff;
+}
+
+/* Navigation Buttons */
+.nav-controls button {
+  padding: 8px 15px;
+  cursor: pointer;
+  background-color: #bb86fc;
+  color: #0c0028;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.nav-controls button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Page Counter Text */
+.nav-controls #pageCounter {
+  font-weight: bold;
+  color: #e0e0e0;
+}
 
   /* Isolated button overrides to prevent breaking site-wide styles */
   .reader-container button,
