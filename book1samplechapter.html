@@ -153,7 +153,7 @@ title: "Book 1 Sample Chapter"
 </style>
 
 <h1>Book 1, Chapter 1 Sample</h1>
-<div class="reader-wrapper"></div>
+<div class="reader-wrapper">
 <div class="tts-controls">
   <button id="ttsPlayBtn" onclick="toggleTTS()">▶️ Play Audio</button>
   <button id="ttsStopBtn" onclick="stopTTS()" disabled>⏹️ Stop</button>
@@ -186,7 +186,7 @@ title: "Book 1 Sample Chapter"
     <button onclick="changePage(1)" id="nextBtn">Next ➡️</button>
   </div>
 </div>
-
+</div>
 <script>
 let currentPage = 0;
 const pages = document.querySelectorAll('.page');
