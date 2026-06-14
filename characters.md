@@ -1,7 +1,7 @@
 ---
 layout: character-list
 title: Characters
-permalink: /characters/
+permalink: /_characters/
 ---
 <div><input
   type="text"
