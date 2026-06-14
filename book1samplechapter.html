@@ -6,7 +6,15 @@ title: "Book 1 Sample Chapter"
 
 
 <style>
-   /* Prevents users from highlighting or selecting text/images */
+  /* Center all reader elements on the page */
+.reader-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+  /* Prevents users from highlighting or selecting text/images */
   .unselectable {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -152,7 +160,7 @@ title: "Book 1 Sample Chapter"
   <label for="voiceSelect">Voice:</label>
   <select id="voiceSelect" onchange="changeVoice()"></select>
 </div>
-
+<div class="reader-wrapper"></div>
 <div class="reader-container unselectable" oncontextmenu="return false;">
   <div class="shield"></div>
   
@@ -178,7 +186,7 @@ title: "Book 1 Sample Chapter"
     <button onclick="changePage(1)" id="nextBtn">Next ➡️</button>
   </div>
 </div>
-
+</div>
 <script>
 let currentPage = 0;
 const pages = document.querySelectorAll('.page');
