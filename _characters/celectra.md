@@ -106,7 +106,7 @@ Celectra’s caloric needs shift dramatically based on the "bandwidth" of her co
 * **Active Communion (~8,500-kcal/day):** Occurs during intense multitasking or high-emotional states.
 * **Deep Communion (~12,500+-kcal/day):** Planetary resonance events. Requires pre-loading with CMS-1 and immediate post-event refueling to avoid physical collapse.
 
-<!- Wiki Power Level Monitor ->
+<!--Wiki Power Level Monitor-->
 <div class="metabolic-container">
   <div class="power-label">
     <span>Celectra (standard-dual-body sync)</span>
