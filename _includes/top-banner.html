@@ -20,6 +20,7 @@
 
     // 1. Let Jekyll hardcode the layout type directly into JavaScript during build!
     const currentLayout = "{{ page.layout }}";
+    const isSampleChapter = "{{ page.sample_chapter | default: false }}" === "true";
 
     // 2. Scan the active page for relevant return links
     const dossierReturnLink = document.querySelector('.return-link');
@@ -41,6 +42,14 @@
       bannerNav.appendChild(topBtn);
     }
     
-    // SCENARIO C: The hub list directory or homepage -> Does nothing!
+        // ⭐ SCENARIO C: Sample chapter pages → Return to Series Overview
+    else if (isSampleChapter) {
+      const topBtn = document.createElement('a');
+      topBtn.href = "{{ '/Series-Overview.html' | relative_url }}";
+      topBtn.className = 'banner-btn';
+      topBtn.textContent = "‹ Series Overview";
+      bannerNav.appendChild(topBtn);
+    }
+    // SCENARIO D: The hub list directory or homepage -> Does nothing!
   });
 </script>
