@@ -1,14 +1,10 @@
 ---
 layout: character
 title: Jenni Jo Carisco
-portrait: "{{ '/assets/images/jennijo-book5.webp' | relative_url }}"
-
-portrait-book3: "{{ '/assets/images/jennijo-book3.webp' | relative_url }}"
-
-portrait-book4: "{{ '/assets/images/jennijo-book4.webp' | relative_url }}"
-
-portrait-book5: "{{ '/assets/images/jennijo-book5.webp' | relative_url }}"
-
+portrait: "/assets/images/jennijo-book5.webp"
+portrait-book3: "/assets/images/jennijo-book3.webp"
+portrait-book4: "/assets/images/jennijo-book4.webp"
+portrait-book5: "/assets/images/jennijo-book5.webp"
 affiliation: Carisco Family; Listener Corps (junior); Resonance Stewardship Program
 status: Alive
 birthday: November 15, 2247

@@ -1,16 +1,11 @@
 ---
 layout: character
 title: Kiri
-portrait: "{{ '/assets/images/kiri-book2.webp' | relative_url }}"
-
-portrait-book2: "{{ '/assets/images/kiri-book2.webp' | relative_url }}"
-
-portrait-book3: "{{ '/assets/images/kiri-book3.webp' | relative_url }}"
-
-portrait-book4: "{{ '/assets/images/kiri-book4.webp' | relative_url }}"
-
-portrait-book5: "{{ '/assets/images/kiri-book5.webp' | relative_url }}"
-
+portrait: "/assets/images/kiri-book2.webp"
+portrait-book2: "/assets/images/kiri-book2.webp"
+portrait-book3: "/assets/images/kiri-book3.webp"
+portrait-book4: "/assets/images/kiri-book4.webp"
+portrait-book5: "/assets/images/kiri-book5.webp"
 affiliation: Galinstanian; Northern Cluster; Resonance Stewardship Program
 status: Alive
 birthday: Unknown (middle-aged-by human measure)

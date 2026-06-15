@@ -1,18 +1,12 @@
 ---
 layout: character
 title: Lian Chen
-portrait: "{{ '/assets/images/lian-book1.webp' | relative_url }}"
-
-portrait-book1: "{{ '/assets/images/lian-book1.webp' | relative_url }}"
-
-portrait-book2: "{{ '/assets/images/lian-book2.webp' | relative_url }}"
-
-portrait-book3: "{{ '/assets/images/lian-book3.webp' | relative_url }}"
-
-portrait-book4: "{{ '/assets/images/lian-book4.webp' | relative_url }}"
-
-portrait-book5: "{{ '/assets/images/lian-book5.webp' | relative_url }}"
-
+portrait: "/assets/images/lian-book1.webp"
+portrait-book1: "/assets/images/lian-book1.webp"
+portrait-book2: "/assets/images/lian-book2.webp"
+portrait-book3: "/assets/images/lian-book3.webp"
+portrait-book4: "/assets/images/lian-book4.webp"
+portrait-book5: "/assets/images/lian-book5.webp"
 affiliation: Ares Colony Engineering Directorate; Chief Hydrological Engineer
 status: Active
 birthday: February 10, 2096

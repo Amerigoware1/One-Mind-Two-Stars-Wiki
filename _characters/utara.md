@@ -1,8 +1,7 @@
 ---
 layout: character
 title: Utara
-portrait: "{{ '/assets/images/utara-symbol.webp' | relative_url }}"
-
+portrait: "/assets/images/utara-symbol.webp"
 affiliation: Utopis Station; New Eden Colony; Unified Thought and Resource Architecture
 status: Active
 activation_date: 2124

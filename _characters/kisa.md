@@ -1,18 +1,12 @@
 ---
 layout: character
 title: Sensei Onishi Kisa
-portrait: "{{ '/assets/images/kisa-book1.webp' | relative_url }}"
-
-portrait-book1: "{{ '/assets/images/kisa-book1.webp' | relative_url }}"
-
-portrait-book2: "{{ '/assets/images/kisa-book2.webp' | relative_url }}"
-
-portrait-book3: "{{ '/assets/images/kisa-book3.webp' | relative_url }}"
-
-portrait-book4: "{{ '/assets/images/kisa-book4.webp' | relative_url }}"
-
-portrait-book5: "{{ '/assets/images/kisa-book5.webp' | relative_url }}"
-
+portrait: "/assets/images/kisa-book1.webp"
+portrait-book1: "/assets/images/kisa-book1.webp"
+portrait-book2: "/assets/images/kisa-book2.webp"
+portrait-book3: "/assets/images/kisa-book3.webp"
+portrait-book4: "/assets/images/kisa-book4.webp"
+portrait-book5: "/assets/images/kisa-book5.webp"
 affiliation: Sundome Karate Dojo; Athletics Committee; New Eden Physical Education
 status: Active
 birthday: October 17, 2106

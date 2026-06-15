@@ -1,16 +1,11 @@
 ---
 layout: character
 title: Logic (northern-territory)
-portrait: "{{ '/assets/images/logic-book2.webp' | relative_url }}"
-
-portrait-book2: "{{ '/assets/images/logic-book2.webp' | relative_url }}"
-
-portrait-book3: "{{ '/assets/images/logic-book3.webp' | relative_url }}"
-
-portrait-book4: "{{ '/assets/images/logic-book4.webp' | relative_url }}"
-
-portrait-book5: "{{ '/assets/images/logic-book5.webp' | relative_url }}"
-
+portrait: "/assets/images/logic-book2.webp"
+portrait-book2: "/assets/images/logic-book2.webp"
+portrait-book3: "/assets/images/logic-book3.webp"
+portrait-book4: "/assets/images/logic-book4.webp"
+portrait-book5: "/assets/images/logic-book5.webp"
 affiliation: Northern Territory; New Eden; Bonded to Kowan
 status: Alive
 birthday: Unknown

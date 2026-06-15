@@ -1,12 +1,9 @@
 ---
 layout: character
 title: Ripple (northern-cluster)
-portrait: "{{ '/assets/images/ripple-book4.webp' | relative_url }}"
-
-portrait-book4: "{{ '/assets/images/ripple-book4.webp' | relative_url }}"
-
-portrait-book5: "{{ '/assets/images/ripple-book5.webp' | relative_url }}"
-
+portrait: "/assets/images/ripple-book4.webp"
+portrait-book4: "/assets/images/ripple-book4.webp"
+portrait-book5: "/assets/images/ripple-book5.webp"
 affiliation: Northern Cluster; Carisco Household; Four Rivers Resonance Network
 status: Alive
 birthday: Unknown

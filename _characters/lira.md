@@ -1,18 +1,12 @@
 ---
 layout: character
 title: Lira Keahi
-portrait: "{{ '/assets/images/lira-book5.webp' | relative_url }}"
-
-portrait-book1: "{{ '/assets/images/lira-book1.webp' | relative_url }}"
-
-portrait-book2: "{{ '/assets/images/lira-book2.webp' | relative_url }}"
-
-portrait-book3: "{{ '/assets/images/lira-book3.webp' | relative_url }}"
-
-portrait-book4: "{{ '/assets/images/lira-book4.webp' | relative_url }}"
-
-portrait-book5: "{{ '/assets/images/lira-book5.webp' | relative_url }}"
-
+portrait: "/assets/images/lira-book5.webp"
+portrait-book1: "/assets/images/lira-book1.webp"
+portrait-book2: "/assets/images/lira-book2.webp"
+portrait-book3: "/assets/images/lira-book3.webp"
+portrait-book4: "/assets/images/lira-book4.webp"
+portrait-book5: "/assets/images/lira-book5.webp"
 affiliation: Psychologist; Listener Corps Mentor; Youth Development Specialist
 status: Alive
 birthday: April 19, 2217

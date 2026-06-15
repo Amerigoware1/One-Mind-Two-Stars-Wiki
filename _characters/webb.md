@@ -1,18 +1,12 @@
 ---
 layout: character
 title: Dr. Nathaniel Webb
-portrait: "{{ '/assets/images/webb-book1.webp' | relative_url }}"
-
-portrait-book1: "{{ '/assets/images/webb-book1.webp' | relative_url }}"
-
-portrait-book2: "{{ '/assets/images/webb-book2.webp' | relative_url }}"
-
-portrait-book3: "{{ '/assets/images/webb-book3.webp' | relative_url }}"
-
-portrait-book4: "{{ '/assets/images/webb-book4.webp' | relative_url }}"
-
-portrait-book5: "{{ '/assets/images/webb-book5.webp' | relative_url }}"
-
+portrait: "/assets/images/webb-book1.webp"
+portrait-book1: "/assets/images/webb-book1.webp"
+portrait-book2: "/assets/images/webb-book2.webp"
+portrait-book3: "/assets/images/webb-book3.webp"
+portrait-book4: "/assets/images/webb-book4.webp"
+portrait-book5: "/assets/images/webb-book5.webp"
 affiliation: New Eden Founders; Agricultural Sciences Division; Council
 status: Alive
 birthday: August 29, 2085

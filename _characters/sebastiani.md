@@ -1,18 +1,12 @@
 ---
 layout: character
 title: Lidia Sebastiani
-portrait: "{{ '/assets/images/sebastiani-book1.jpg' | relative_url }}"
-
-portrait-book1: "{{ '/assets/images/sebastiani-book1.jpg' | relative_url }}"
-
-portrait-book2: "{{ '/assets/images/sebastiani-book2.jpg' | relative_url }}"
-
-portrait-book3: "{{ '/assets/images/sebastiani-book3.jpg' | relative_url }}"
-
-portrait-book4: "{{ '/assets/images/sebastiani-book4.jpg' | relative_url }}"
-
-portrait-book5: "{{ '/assets/images/sebastiani-book5.jpg' | relative_url }}"
-
+portrait: "/assets/images/sebastiani-book1.jpg"
+portrait-book1: "/assets/images/sebastiani-book1.jpg"
+portrait-book2: "/assets/images/sebastiani-book2.jpg"
+portrait-book3: "/assets/images/sebastiani-book3.jpg"
+portrait-book4: "/assets/images/sebastiani-book4.jpg"
+portrait-book5: "/assets/images/sebastiani-book5.jpg"
 affiliation: New Eden Colony Council; Seat 10; Energy Systems & Grid Infrastructure
 status: Living
 birthday: February 29, 2088

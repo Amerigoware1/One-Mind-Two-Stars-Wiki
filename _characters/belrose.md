@@ -1,18 +1,12 @@
 ---
 layout: character
 name: Claudia Belrose
-portrait: "{{ '/assets/img/portraits/belrose-book1.jpg' | relative_url }}"
-
-portrait-book1: "{{ '/assets/images/belrose-book1.webp' | relative_url }}"
-
-portrait-book2: "{{ '/assets/images/belrose-book2.webp' | relative_url }}"
-
-portrait-book3: "{{ '/assets/images/belrose-book3.webp' | relative_url }}"
-
-portrait-book4: "{{ '/assets/images/belrose-book4.webp' | relative_url }}"
-
-portrait-book5: "{{ '/assets/images/belrose-book5.webp' | relative_url }}"
-
+portrait: "/assets/img/portraits/belrose-book1.jpg"
+portrait-book1: "/assets/images/belrose-book1.webp"
+portrait-book2: "/assets/images/belrose-book2.webp"
+portrait-book3: "/assets/images/belrose-book3.webp"
+portrait-book4: "/assets/images/belrose-book4.webp"
+portrait-book5: "/assets/images/belrose-book5.webp"
 affiliation: New Eden Colony Cultural Affairs & Community Relations Division; Council Member
 status: Alive
 birthday: July 22, 2092
