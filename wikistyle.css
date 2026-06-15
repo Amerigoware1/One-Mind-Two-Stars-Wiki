@@ -241,6 +241,7 @@ a:hover {
 .article-content {
   display: block;
   overflow: hidden; /* Forces block content to wrap clean around floating sidebar */
+  float: left; /* Allows infobox to float right without breaking layout */
 }
 
 /* Main Infobox */
