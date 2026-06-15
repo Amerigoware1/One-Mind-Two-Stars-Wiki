@@ -250,7 +250,7 @@ a:hover {
   float: right;
   clear: right;
   width: 320px;
-  max-width: 100%;
+  /* max-width: 100%; */
   background: var(--bg-card);
   border: 1px solid var(--neon-violet);
   border-radius: 12px;
