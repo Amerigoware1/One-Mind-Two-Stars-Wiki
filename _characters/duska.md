@@ -1,11 +1,16 @@
 ---
 layout: character
 title: Duška Santoso Carisco
-portrait: "/assets/images/duska-book5.webp"
-portrait-book2: "/assets/images/duska-book2.webp"
-portrait-book3: "/assets/images/duska-book3.webp"
-portrait-book4: "/assets/images/duska-book4.webp"
-portrait-book5: "/assets/images/duska-book5.webp"
+portrait: "{{ '//assets/images/duska-book5.webp' | relative_url }}"
+
+portrait-book2: "{{ '//assets/images/duska-book2.webp' | relative_url }}"
+
+portrait-book3: "{{ '//assets/images/duska-book3.webp' | relative_url }}"
+
+portrait-book4: "{{ '//assets/images/duska-book4.webp' | relative_url }}"
+
+portrait-book5: "{{ '//assets/images/duska-book5.webp' | relative_url }}"
+
 affiliation: Carisco Family; Resonance Designer; Community Arts Coordinator; University Outreach Liaison
 status: Alive
 birthday: May 5, 2234

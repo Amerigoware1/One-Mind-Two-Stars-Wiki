@@ -1,12 +1,18 @@
 ---
 layout: character
 title: Dee Cruiz
-portrait: "/assets/images/dee-book1.webp"
-portrait-book1: "/assets/images/dee-book1.webp"
-portrait-book2: "/assets/images/dee-book2.webp"
-portrait-book3: "/assets/images/dee-book3.webp"
-portrait-book4: "/assets/images/dee-book4.webp"
-portrait-book5: "/assets/images/dee-book5.webp"
+portrait: "{{ '//assets/images/dee-book1.webp' | relative_url }}"
+
+portrait-book1: "{{ '//assets/images/dee-book1.webp' | relative_url }}"
+
+portrait-book2: "{{ '//assets/images/dee-book2.webp' | relative_url }}"
+
+portrait-book3: "{{ '//assets/images/dee-book3.webp' | relative_url }}"
+
+portrait-book4: "{{ '//assets/images/dee-book4.webp' | relative_url }}"
+
+portrait-book5: "{{ '//assets/images/dee-book5.webp' | relative_url }}"
+
 affiliation: New Eden Community Corps; Cruiz–Carisco Family
 status: Alive
 birthday: May 12, 2101

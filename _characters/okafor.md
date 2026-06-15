@@ -1,12 +1,18 @@
 ---
 layout: character
 title: Chibuike Okafor
-portrait: "/assets/images/okafor-book1.webp"
-portrait-book1: "/assets/images/okafor-book1.webp"
-portrait-book2: "/assets/images/okafor-book2.webp"
-portrait-book3: "/assets/images/okafor-book3.webp"
-portrait-book4: "/assets/images/okafor-book4.webp"
-portrait-book5: "/assets/images/okafor-book5.webp"
+portrait: "{{ '//assets/images/okafor-book1.webp' | relative_url }}"
+
+portrait-book1: "{{ '//assets/images/okafor-book1.webp' | relative_url }}"
+
+portrait-book2: "{{ '//assets/images/okafor-book2.webp' | relative_url }}"
+
+portrait-book3: "{{ '//assets/images/okafor-book3.webp' | relative_url }}"
+
+portrait-book4: "{{ '//assets/images/okafor-book4.webp' | relative_url }}"
+
+portrait-book5: "{{ '//assets/images/okafor-book5.webp' | relative_url }}"
+
 affiliation: New Eden Colony Council; Athletics Committee Chair; Youth Development Director
 status: Active
 birthday: July 4, 2100

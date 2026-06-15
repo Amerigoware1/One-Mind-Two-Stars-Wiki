@@ -2,12 +2,18 @@
 
 layout: character
 name: 
-portrait: "/assets/images/babic-book1.jpg"
-portrait-book1: "/assets/images/babic-book1.webp"
-portrait-book2: "/assets/images/babic-book2.webp"
-portrait-book3: "/assets/images/babic-book3.webp"
-portrait-book4: "/assets/images/babic-book4.webp"
-portrait-book5: "/assets/images/babic-book5.webp"
+portrait: "{{ '//assets/images/babic-book1.jpg' | relative_url }}"
+
+portrait-book1: "{{ '//assets/images/babic-book1.webp' | relative_url }}"
+
+portrait-book2: "{{ '//assets/images/babic-book2.webp' | relative_url }}"
+
+portrait-book3: "{{ '//assets/images/babic-book3.webp' | relative_url }}"
+
+portrait-book4: "{{ '//assets/images/babic-book4.webp' | relative_url }}"
+
+portrait-book5: "{{ '//assets/images/babic-book5.webp' | relative_url }}"
+
 affiliation: New Eden Colony Orbital & System Coordination Division; Senior Council Member
 status: Alive
 birthday: July 22, 2092

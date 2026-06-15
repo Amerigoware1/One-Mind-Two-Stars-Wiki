@@ -1,12 +1,18 @@
 ---
 layout: character
 title: Dr. Zoë Carisco
-portrait: "/assets/images/zoe-book1.webp"
-portrait-book1: "/assets/images/zoe-book1.webp"
-portrait-book2: "/assets/images/zoe-book2.webp"
-portrait-book3: "/assets/images/zoe-book3.webp"
-portrait-book4: "/assets/images/zoe-book4.webp"
-portrait-book5: "/assets/images/zoe-book5.webp"
+portrait: "{{ '//assets/images/zoe-book1.webp' | relative_url }}"
+
+portrait-book1: "{{ '//assets/images/zoe-book1.webp' | relative_url }}"
+
+portrait-book2: "{{ '//assets/images/zoe-book2.webp' | relative_url }}"
+
+portrait-book3: "{{ '//assets/images/zoe-book3.webp' | relative_url }}"
+
+portrait-book4: "{{ '//assets/images/zoe-book4.webp' | relative_url }}"
+
+portrait-book5: "{{ '//assets/images/zoe-book5.webp' | relative_url }}"
+
 affiliation: Carisco Family; New Eden Psychology Division; Council Advisor
 status: Alive
 birthday: January 3, 2107

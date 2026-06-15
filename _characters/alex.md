@@ -1,12 +1,18 @@
 ---
 layout: character
 title: Dr. Alexander 'Alex' Cruiz
-portrait: "/assets/images/alex-book1.webp"
-portrait-book1: "/assets/images/alex-book1.webp"
-portrait-book2: "/assets/images/alex-book2.webp"
-portrait-book3: "/assets/images/alex-book3.webp"
-portrait-book4: "/assets/images/alex-book4.webp"
-portrait-book5: "/assets/images/alex-book5.webp"
+portrait: "{{ '//assets/images/alex-book1.webp' | relative_url }}"
+
+portrait-book1: "{{ '//assets/images/alex-book1.webp' | relative_url }}"
+
+portrait-book2: "{{ '//assets/images/alex-book2.webp' | relative_url }}"
+
+portrait-book3: "{{ '//assets/images/alex-book3.webp' | relative_url }}"
+
+portrait-book4: "{{ '//assets/images/alex-book4.webp' | relative_url }}"
+
+portrait-book5: "{{ '//assets/images/alex-book5.webp' | relative_url }}"
+
 affiliation: New Eden Medical Corps; Chief of Medicine; New Eden Council
 status: Alive
 birthday: November 2, 2103

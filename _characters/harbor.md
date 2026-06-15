@@ -1,11 +1,16 @@
 ---
 layout: character
 title: Harbor (northern-territory)
-portrait: "/assets/images/harbor-book2.webp"
-portrait-book2: "/assets/images/harbor-book2.webp"
-portrait-book3: "/assets/images/harbor-book3.webp"
-portrait-book4: "/assets/images/harbor-book4.webp"
-portrait-book5: "/assets/images/harbor-book5.webp"
+portrait: "{{ '//assets/images/harbor-book2.webp' | relative_url }}"
+
+portrait-book2: "{{ '//assets/images/harbor-book2.webp' | relative_url }}"
+
+portrait-book3: "{{ '//assets/images/harbor-book3.webp' | relative_url }}"
+
+portrait-book4: "{{ '//assets/images/harbor-book4.webp' | relative_url }}"
+
+portrait-book5: "{{ '//assets/images/harbor-book5.webp' | relative_url }}"
+
 affiliation: Northern Territory; New Eden; Bonded to Sofia
 status: Alive
 birthday: Unknown

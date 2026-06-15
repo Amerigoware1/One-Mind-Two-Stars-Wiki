@@ -1,12 +1,18 @@
 ---
 layout: character
 title: Nyanhial Dok
-portrait: "/assets/images/nyanhial-book5.webp"
-portrait-book1: "/assets/images/nyanhial-book1.webp"
-portrait-book2: "/assets/images/nyanhial-book2.webp"
-portrait-book3: "/assets/images/nyanhial-book3.webp"
-portrait-book4: "/assets/images/nyanhial-book4.webp"
-portrait-book5: "/assets/images/nyanhial-book5.webp"
+portrait: "{{ '//assets/images/nyanhial-book5.webp' | relative_url }}"
+
+portrait-book1: "{{ '//assets/images/nyanhial-book1.webp' | relative_url }}"
+
+portrait-book2: "{{ '//assets/images/nyanhial-book2.webp' | relative_url }}"
+
+portrait-book3: "{{ '//assets/images/nyanhial-book3.webp' | relative_url }}"
+
+portrait-book4: "{{ '//assets/images/nyanhial-book4.webp' | relative_url }}"
+
+portrait-book5: "{{ '//assets/images/nyanhial-book5.webp' | relative_url }}"
+
 affiliation: New Eden Youth Cohort; Dancer & Soccer Player; Ares Colonial Mining Corps (logistics-& data archiving division)
 status: Alive
 birthday: March 22, 2224

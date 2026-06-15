@@ -1,12 +1,18 @@
 ---
 layout: character
 title: Dr. Lorain Troy
-portrait: "/assets/images/troy-book1.webp"
-portrait-book1: "/assets/images/troy-book1.webp"
-portrait-book2: "/assets/images/troy-book2.webp"
-portrait-book3: "/assets/images/troy-book3.webp"
-portrait-book4: "/assets/images/troy-book4.webp"
-portrait-book5: "/assets/images/troy-book4.webp"
+portrait: "{{ '//assets/images/troy-book1.webp' | relative_url }}"
+
+portrait-book1: "{{ '//assets/images/troy-book1.webp' | relative_url }}"
+
+portrait-book2: "{{ '//assets/images/troy-book2.webp' | relative_url }}"
+
+portrait-book3: "{{ '//assets/images/troy-book3.webp' | relative_url }}"
+
+portrait-book4: "{{ '//assets/images/troy-book4.webp' | relative_url }}"
+
+portrait-book5: "{{ '//assets/images/troy-book4.webp' | relative_url }}"
+
 affiliation: New Eden Colony Science Division; Chief Scientist (retired); Senior Council Member
 status: Deceased
 birthday: November 8, 2099
