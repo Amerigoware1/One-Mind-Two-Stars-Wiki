@@ -1,17 +1,17 @@
 ---
 layout: character
 title: Jinan 'Jenni' Carisco
-portrait: "{{ '//assets/images/jenni-book1.webp' | relative_url }}"
+portrait: "{{ '/assets/images/jenni-book1.webp' | relative_url }}"
 
-portrait-book1: "{{ '//assets/images/jenni-book1.webp' | relative_url }}"
+portrait-book1: "{{ '/assets/images/jenni-book1.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/jenni-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/jenni-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/jenni-book2.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/jenni-book2.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/jenni-book2.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/jenni-book2.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/jenni-book2.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/jenni-book2.webp' | relative_url }}"
 
 affiliation: Utopis-Lab 3; Exogeologist; Carisco Family
 status: Deceased

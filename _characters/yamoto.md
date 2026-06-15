@@ -1,17 +1,17 @@
 ---
 layout: character
 title: Dr. Kenji Yamoto
-portrait: "{{ '//assets/images/yamoto-book1.webp' | relative_url }}"
+portrait: "{{ '/assets/images/yamoto-book1.webp' | relative_url }}"
 
-portrait-book1: "{{ '//assets/images/yamoto-book1.webp' | relative_url }}"
+portrait-book1: "{{ '/assets/images/yamoto-book1.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/yamoto-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/yamoto-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/yamoto-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/yamoto-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/yamoto-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/yamoto-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/yamoto-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/yamoto-book5.webp' | relative_url }}"
 
 affiliation: New Eden Colony Council; Environmental Systems Director
 status: Active

@@ -1,17 +1,17 @@
 ---
 layout: character
 title: Dr. Yuki Chen
-portrait: "{{ '//assets/images/yuki-book1.webp' | relative_url }}"
+portrait: "{{ '/assets/images/yuki-book1.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/yuki-book1.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/yuki-book1.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/yuki-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/yuki-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/yuki-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/yuki-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/yuki-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/yuki-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/yuki-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/yuki-book5.webp' | relative_url }}"
 
 affiliation: Utopis Station Medical; Radiation Medicine Specialist; Celectra's Primary Monitor
 status: Active

@@ -1,17 +1,17 @@
 ---
 layout: character
 title: Stan (northern-cluster)
-portrait: "{{ '//assets/images/stan-book1.webp' | relative_url }}"
+portrait: "{{ '/assets/images/stan-book1.webp' | relative_url }}"
 
-portrait-book1: "{{ '//assets/images/stan-book1.webp' | relative_url }}"
+portrait-book1: "{{ '/assets/images/stan-book1.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/stan-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/stan-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/stan-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/stan-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/stan-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/stan-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/stan-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/stan-book5.webp' | relative_url }}"
 
 affiliation: Northern Cluster; Galinstanian Collective; New Eden Liaison
 status: Alive

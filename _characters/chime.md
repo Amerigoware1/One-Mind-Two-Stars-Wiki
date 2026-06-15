@@ -1,15 +1,15 @@
 ---
 layout: character
 title: Chime (northern-territory)
-portrait: "{{ '//assets/images/chime-book4.webp' | relative_url }}"
+portrait: "{{ '/assets/images/chime-book4.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/chime-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/chime-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/chime-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/chime-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/chime-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/chime-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/chime-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/chime-book5.webp' | relative_url }}"
 
 affiliation: Northern Territory; New Eden; Bonded to Xara & Jenni Bowers
 status: Alive

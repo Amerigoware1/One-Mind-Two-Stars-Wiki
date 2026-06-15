@@ -1,17 +1,17 @@
 ---
 layout: character
 title: Jaxon Bowers
-portrait: "{{ '//assets/images/jaxon-book5.webp' | relative_url }}"
+portrait: "{{ '/assets/images/jaxon-book5.webp' | relative_url }}"
 
-portrait-book1: "{{ '//assets/images/jaxon-book1.webp' | relative_url }}"
+portrait-book1: "{{ '/assets/images/jaxon-book1.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/jaxon-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/jaxon-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/jaxon-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/jaxon-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/jaxon-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/jaxon-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/jaxon-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/jaxon-book5.webp' | relative_url }}"
 
 affiliation: New Eden Engineering Corps; Communion Interface Project
 status: Alive

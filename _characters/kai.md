@@ -1,17 +1,17 @@
 ---
 layout: character
 title: Kai Vasquez
-portrait: "{{ '//assets/images/kai-book5.webp' | relative_url }}"
+portrait: "{{ '/assets/images/kai-book5.webp' | relative_url }}"
 
-portrait-book1: "{{ '//assets/images/kai-book1.webp' | relative_url }}"
+portrait-book1: "{{ '/assets/images/kai-book1.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/kai-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/kai-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/kai-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/kai-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/kai-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/kai-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/kai-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/kai-book5.webp' | relative_url }}"
 
 affiliation: New Eden Youth Cohort; Martial Artist; Sundome Dojo; Colony Security Auxiliary
 status: Alive

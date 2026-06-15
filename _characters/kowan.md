@@ -1,15 +1,15 @@
 ---
 layout: character
 title: Kowan Elian
-portrait: "{{ '//assets/images/kowan-book5.webp' | relative_url }}"
+portrait: "{{ '/assets/images/kowan-book5.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/kowan-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/kowan-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/kowan-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/kowan-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/kowan-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/kowan-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/kowan-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/kowan-book5.webp' | relative_url }}"
 
 affiliation: New Eden Youth Cohort (previous); University Mentor; Resonance Stewardship Program (data-analysis)
 status: Alive

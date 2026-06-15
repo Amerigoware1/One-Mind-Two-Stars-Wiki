@@ -1,15 +1,15 @@
 ---
 layout: character
 title: Guardian (northern-territory)
-portrait: "{{ '//assets/images/guardian-book2.webp' | relative_url }}"
+portrait: "{{ '/assets/images/guardian-book2.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/guardian-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/guardian-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/guardian-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/guardian-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/guardian-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/guardian-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/guardian-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/guardian-book5.webp' | relative_url }}"
 
 affiliation: Northern Territory; New Eden; Bonded to Hiro
 status: Alive

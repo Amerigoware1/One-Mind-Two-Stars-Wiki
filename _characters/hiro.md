@@ -1,15 +1,15 @@
 ---
 layout: character
 title: Hiro Vongphachanh
-portrait: "{{ '//assets/images/hiro-book5.webp' | relative_url }}"
+portrait: "{{ '/assets/images/hiro-book5.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/hiro-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/hiro-book2.webp' | relative_url }}"
  
-portrait-book3: "{{ '//assets/images/hiro-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/hiro-book3.webp' | relative_url }}"
  
-portrait-book4: "{{ '//assets/images/hiro-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/hiro-book4.webp' | relative_url }}"
  
-portrait-book5: "{{ '//assets/images/hiro-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/hiro-book5.webp' | relative_url }}"
  
 affiliation: New Eden Youth Cohort (previous); Martial Artist; Sundome Dojo; Resonance Stewardship Program (physical-training)
 status: Alive

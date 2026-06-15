@@ -1,17 +1,17 @@
 ---
 layout: character
 title: Orren
-portrait: "{{ '//assets/images/orren-book1.webp' | relative_url }}"
+portrait: "{{ '/assets/images/orren-book1.webp' | relative_url }}"
 
-portrait-book1: "{{ '//assets/images/orren-book1.webp' | relative_url }}"
+portrait-book1: "{{ '/assets/images/orren-book1.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/orren-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/orren-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/orren-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/orren-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/orren-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/orren-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/orren-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/orren-book5.webp' | relative_url }}"
 
 affiliation: Galinstanian; Northern Cluster; Resonance Stewardship Program
 status: Alive

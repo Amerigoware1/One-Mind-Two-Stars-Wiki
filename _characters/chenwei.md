@@ -1,17 +1,17 @@
 ---
 layout: character
 title: Chen Wei
-portrait: "{{ '//assets/images/chenwei-book5.webp' | relative_url }}"
+portrait: "{{ '/assets/images/chenwei-book5.webp' | relative_url }}"
 
-portrait-book1: "{{ '//assets/images/chenwei-book1.webp' | relative_url }}"
+portrait-book1: "{{ '/assets/images/chenwei-book1.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/chenwei-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/chenwei-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/chenwei-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/chenwei-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/chenwei-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/chenwei-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/chenwei-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/chenwei-book5.webp' | relative_url }}"
 
 affiliation: Listener Corps Technician; Signal Processing Specialist; New Eden Colony
 status: Active

@@ -1,17 +1,17 @@
 ---
 layout: character
 title: Amerigo Giorgio Carisco
-portrait: "{{ '//assets/images/amerigo-book1.webp' | relative_url }}"
+portrait: "{{ '/assets/images/amerigo-book1.webp' | relative_url }}"
 
-portrait-book1: "{{ '//assets/images/amerigo-book1.webp' | relative_url }}"
+portrait-book1: "{{ '/assets/images/amerigo-book1.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/amerigo-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/amerigo-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/amerigo-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/amerigo-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/amerigo-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/amerigo-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/amerigo-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/amerigo-book5.webp' | relative_url }}"
 
 affiliation: Carisco Family; New Eden Science Directorate; Chief Scientist; New Eden Council
 status: Alive

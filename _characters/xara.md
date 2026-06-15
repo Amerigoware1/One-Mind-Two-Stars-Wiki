@@ -1,17 +1,17 @@
 ---
 layout: character
 title: Xara Kret
-portrait: "{{ '//assets/images/xara-book1.webp' | relative_url }}"
+portrait: "{{ '/assets/images/xara-book1.webp' | relative_url }}"
 
-portrait-book1: "{{ '//assets/images/xara-book1.webp' | relative_url }}"
+portrait-book1: "{{ '/assets/images/xara-book1.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/xara-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/xara-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/xara-book2.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/xara-book2.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/xara-book2.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/xara-book2.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/xara-book2.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/xara-book2.webp' | relative_url }}"
 
 affiliation: Earth; Pre-Colony Era; Kret Family
 status: Deceased

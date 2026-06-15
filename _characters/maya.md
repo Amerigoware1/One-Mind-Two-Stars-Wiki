@@ -1,17 +1,17 @@
 ---
 layout: character
 title: Maya Keahi
-portrait: "{{ '//assets/images/maya-book5.webp' | relative_url }}"
+portrait: "{{ '/assets/images/maya-book5.webp' | relative_url }}"
 
-portrait-book1: "{{ '//assets/images/maya-book1.webp' | relative_url }}"
+portrait-book1: "{{ '/assets/images/maya-book1.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/maya-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/maya-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/maya-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/maya-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/maya-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/maya-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/maya-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/maya-book5.webp' | relative_url }}"
 
 affiliation: New Eden Youth Cohort; Artist; Co‑Founder of Samaya Gallery & Museum of Integration
 status: Alive

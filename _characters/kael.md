@@ -1,11 +1,11 @@
 ---
 layout: character
 title: Kael Aoki
-portrait: "{{ '//assets/images/kael-book5.webp' | relative_url }}"
+portrait: "{{ '/assets/images/kael-book5.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/kael-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/kael-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/kael-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/kael-book5.webp' | relative_url }}"
 
 affiliation: New Eden Youth Cohort; Acoustic Rhythm Specialist; Resonance Stewardship Program (acoustic-training)
 status: Alive

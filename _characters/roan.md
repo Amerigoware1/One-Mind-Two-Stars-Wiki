@@ -1,17 +1,17 @@
 ---
 layout: character
 title: Chief Evelyn Roan
-portrait: "{{ '//assets/images/roan-book1.webp' | relative_url }}"
+portrait: "{{ '/assets/images/roan-book1.webp' | relative_url }}"
 
-portrait-book1: "{{ '//assets/images/roan-book1.webp' | relative_url }}"
+portrait-book1: "{{ '/assets/images/roan-book1.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/roan-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/roan-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/roan-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/roan-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/roan-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/roan-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/roan-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/roan-book5.webp' | relative_url }}"
 
 affiliation: New Eden Colony Security; Colony Council; Justice & Safety Advocate
 status: Active

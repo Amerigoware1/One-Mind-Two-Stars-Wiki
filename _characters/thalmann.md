@@ -1,17 +1,17 @@
 ---
 layout: character
 title: Nazia Thälmann
-portrait: "{{ '//assets/images/thalmann-book1.jpg' | relative_url }}"
+portrait: "{{ '/assets/images/thalmann-book1.jpg' | relative_url }}"
 
-portrait-book1: "{{ '//assets/images/thalmann-book1.jpg' | relative_url }}"
+portrait-book1: "{{ '/assets/images/thalmann-book1.jpg' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/thalmann-book2.jpg' | relative_url }}"
+portrait-book2: "{{ '/assets/images/thalmann-book2.jpg' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/thalmann-book3.jpg' | relative_url }}"
+portrait-book3: "{{ '/assets/images/thalmann-book3.jpg' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/thalmann-book4.jpg' | relative_url }}"
+portrait-book4: "{{ '/assets/images/thalmann-book4.jpg' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/thalmann-book5.jpg' | relative_url }}"
+portrait-book5: "{{ '/assets/images/thalmann-book5.jpg' | relative_url }}"
 
 affiliation: New Eden Colony Council; Logistics & Transportation
 status: Alive

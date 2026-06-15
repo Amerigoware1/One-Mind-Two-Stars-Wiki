@@ -1,17 +1,17 @@
 ---
 layout: character
 title: Ananya Patel
-portrait: "{{ '//assets/images/ananya-book5.webp' | relative_url }}"
+portrait: "{{ '/assets/images/ananya-book5.webp' | relative_url }}"
 
-portrait-book1: "{{ '//assets/images/ananya-book1.webp' | relative_url }}"
+portrait-book1: "{{ '/assets/images/ananya-book1.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/ananya-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/ananya-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/ananya-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/ananya-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/ananya-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/ananya-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/ananya-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/ananya-book5.webp' | relative_url }}"
 
 affiliation: New Eden Youth Cohort; Biologist; Listener Corps Translator
 status: Alive

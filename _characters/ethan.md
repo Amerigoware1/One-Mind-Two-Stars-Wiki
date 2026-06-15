@@ -1,15 +1,15 @@
 ---
 layout: character
 title: Ethan Johnson
-portrait: "{{ '//assets/images/ethan-book5.webp' | relative_url }}"
+portrait: "{{ '/assets/images/ethan-book5.webp' | relative_url }}"
 
-portrait-book2: "{{ '//assets/images/ethan-book2.webp' | relative_url }}"
+portrait-book2: "{{ '/assets/images/ethan-book2.webp' | relative_url }}"
 
-portrait-book3: "{{ '//assets/images/ethan-book3.webp' | relative_url }}"
+portrait-book3: "{{ '/assets/images/ethan-book3.webp' | relative_url }}"
 
-portrait-book4: "{{ '//assets/images/ethan-book4.webp' | relative_url }}"
+portrait-book4: "{{ '/assets/images/ethan-book4.webp' | relative_url }}"
 
-portrait-book5: "{{ '//assets/images/ethan-book5.webp' | relative_url }}"
+portrait-book5: "{{ '/assets/images/ethan-book5.webp' | relative_url }}"
 
 affiliation: New Eden Youth Cohort (previous); University Mentor; Resonance Stewardship Program (interface-technology)
 status: Alive
