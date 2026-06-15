@@ -310,9 +310,9 @@ a:hover {
 }
 
 /* Clear floats properly after infobox */
-.infobox + * {
+/* .infobox + * {
   clear: both;
-}
+} */
 
 /* Responsive behavior */
 @media (max-width: 992px) {
