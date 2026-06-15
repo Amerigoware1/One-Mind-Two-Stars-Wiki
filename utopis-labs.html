@@ -19,7 +19,9 @@ layout: default
     <table class="infobox">
         <tr>
             <td colspan="2" class="text-center pb-2">
-                <img src="assets/images/utopis-lab.webp" alt="Utopis-Lab mobile research platform" class="portrait" onerror="this.src='assets/images/placeholder.png';">
+                <img src="{{ '/assets/images/utopis-lab.webp' | relative_url }}"
+ alt="Utopis-Lab mobile research platform" class="portrait" onerror="this.src="{{ '/assets/images/placeholder.png' | relative_url }}"
+;">
                 <div class="image-caption">A Utopis-Lab module (generic-representation)</div>
             </td>
         </tr>
