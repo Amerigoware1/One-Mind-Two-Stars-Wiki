@@ -128,8 +128,8 @@ permalink: /gallery/
 </style>
 
 <!-- PhotoSwipe v5 UMD -->
-<script src="{{ '/photoswipe.umd.min.js' | relative_url }}"></script>
-<script src="{{ '/photoswipe-lightbox.umd.min.js' | relative_url }}"></script>
+<script src="{{ '/photoswipe-umd.min.js' | relative_url }}"></script>
+<script src="{{ '/photoswipe-lightbox-umd.min.js' | relative_url }}"></script>
 
 <script>
 console.log("Gallery script is running");
