@@ -239,8 +239,8 @@ a:hover {
    ========================================================================== */
 
 .article-content {
-  display: flow-root;           /* Modern, better alternative to overflow:hidden */
-  overflow: visible;
+  display: block;
+  overflow: hidden; /* Forces block content to wrap clean around floating sidebar */
 }
 
 /* Main Infobox */
