@@ -1,7 +1,7 @@
 ---
 layout: character
 name: Joaquim Abrahamson
-portrait: "/assets/images/abrahamson-book1.jpg"
+portrait: "/assets/images/abrahamson-book1.webp"
 portrait-book1: "/assets/images/abrahamson-book1.webp"
 portrait-book2: "/assets/images/abrahamson-book2.webp"
 portrait-book3: "/assets/images/abrahamson-book3.webp"

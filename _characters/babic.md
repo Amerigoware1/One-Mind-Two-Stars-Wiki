@@ -2,7 +2,7 @@
 
 layout: character
 name: 
-portrait: "/assets/images/babic-book1.jpg"
+portrait: "/assets/images/babic-book1.webp"
 portrait-book1: "/assets/images/babic-book1.webp"
 portrait-book2: "/assets/images/babic-book2.webp"
 portrait-book3: "/assets/images/babic-book3.webp"
