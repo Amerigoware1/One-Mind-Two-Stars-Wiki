@@ -28,7 +28,7 @@ permalink: /gallery/
   <div class="loading">Loading gallery...</div>
 </div>
 
-<!-- PhotoSwipe Root (v5 UMD) -->
+<!-- PhotoSwipe Root -->
 <div class="pswp" id="pswp" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="pswp__bg"></div>
   <div class="pswp__scroll-wrap">
@@ -49,7 +49,6 @@ permalink: /gallery/
   </div>
 </div>
 
-<!-- Gallery-specific CSS -->
 <style>
   .gallery-grid {
     display: grid;
@@ -120,18 +119,19 @@ permalink: /gallery/
     padding: 2rem;
     color: #aaa;
   }
+
+  /* Force close button visible */
   .pswp__button--close {
-  opacity: 1 !important;
-  visibility: visible !important;
-}
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
 </style>
 
 <!-- PhotoSwipe v5 UMD -->
-{% raw %}<script src="{{ '/photoswipe.umd.min.js' | relative_url }}"></script>{% endraw %}
-{% raw %}<script src="{{ '/photoswipe-lightbox.umd.min.js' | relative_url }}"></script>{% endraw %}
+<script src="{{ '/photoswipe.umd.min.js' | relative_url }}"></script>
+<script src="{{ '/photoswipe-lightbox.umd.min.js' | relative_url }}"></script>
 
-<!-- Gallery Loader + PhotoSwipe v5 Integration -->
-{% raw %}<script>
+<script>
 document.addEventListener("DOMContentLoaded", async () => {
   const galleryEl = document.getElementById("gallery");
   const searchEl = document.getElementById("gallery-search");
@@ -202,44 +202,38 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   let lightbox;
-function initLightbox() {
-  if (lightbox) lightbox.destroy();
-console.log("Gallery script loaded");
+  function initLightbox() {
+    if (lightbox) lightbox.destroy();
 
-  lightbox = new PhotoSwipeLightbox({
-    gallery: '#gallery',
-    children: 'a',
-    pswpModule: PhotoSwipe,
+    lightbox = new PhotoSwipeLightbox({
+      gallery: '#gallery',
+      children: 'a',
+      pswpModule: PhotoSwipe,
 
-    // Enable scroll-to-zoom
-    wheelToZoom: true,
+      wheelToZoom: true,
+      showHideAnimationType: 'zoom',
+      closeOnVerticalDrag: true,
 
-    // UI behavior
-    showHideAnimationType: 'zoom',
-    closeOnVerticalDrag: true,
-
-    // Captions
-    captionContent: (slide) => {
-      const item = items[slide.data.index];
-      return `
-        <div style="padding: 1rem; text-align: center;">
-          <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">
-            ${item.title}
+      captionContent: (slide) => {
+        const item = items[slide.data.index];
+        return {% raw %}`
+          <div style="padding: 1rem; text-align: center;">
+            <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">
+              ${item.title}
+            </div>
+            <div style="font-size: 0.9rem; opacity: 0.8;">
+              ${item.description}
+            </div>
           </div>
-          <div style="font-size: 0.9rem; opacity: 0.8;">
-            ${item.description}
-          </div>
-        </div>
-      `;
-    }
-  });
+        `{% endraw %};
+      }
+    });
 
-  lightbox.init();
-}
-
+    lightbox.init();
+  }
 
   renderGallery();
   searchEl.addEventListener("input", renderGallery);
   tagFilterEl.addEventListener("change", renderGallery);
 });
-</script>{% endraw %}
+</script>
