@@ -120,6 +120,10 @@ permalink: /gallery/
     padding: 2rem;
     color: #aaa;
   }
+  .pswp__button--close {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 </style>
 
 <!-- PhotoSwipe v5 UMD -->
@@ -199,16 +203,38 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   let lightbox;
   function initLightbox() {
-    if (lightbox) lightbox.destroy();
+  if (lightbox) lightbox.destroy();
 
-    lightbox = new PhotoSwipeLightbox({
-      gallery: '#gallery',
-      children: 'a',
-      pswpModule: PhotoSwipe
-    });
+  lightbox = new PhotoSwipeLightbox({
+    gallery: '#gallery',
+    children: 'a',
+    pswpModule: PhotoSwipe,
 
-    lightbox.init();
-  }
+    // Enable scroll-to-zoom
+    wheelToZoom: true,
+
+    // UI behavior
+    showHideAnimationType: 'zoom',
+    closeOnVerticalDrag: true,
+
+    // Captions
+    captionContent: (slide) => {
+      const item = items[slide.data.index];
+      return `
+        <div style="padding: 1rem; text-align: center;">
+          <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">
+            ${item.title}
+          </div>
+          <div style="font-size: 0.9rem; opacity: 0.8;">
+            ${item.description}
+          </div>
+        </div>
+      `;
+    }
+  });
+
+  lightbox.init();
+}
 
   renderGallery();
   searchEl.addEventListener("input", renderGallery);
