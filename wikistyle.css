@@ -237,55 +237,96 @@ a:hover {
 /* ==========================================================================
    4. INFOBOX & WIKI MEDIA CONTROLS
    ========================================================================== */
+
 .article-content {
-  display: block;
-  overflow: hidden; /* Forces block content to wrap clean around floating sidebar */
+  display: flow-root;           /* Modern, better alternative to overflow:hidden */
+  overflow: visible;
 }
 
+/* Main Infobox */
 .infobox {
   float: right;
   clear: right;
   width: 320px;
+  max-width: 100%;
   background: var(--bg-card);
   border: 1px solid var(--neon-violet);
+  border-radius: 12px;
   padding: 1rem;
   margin: 0 0 1.5rem 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  position: relative;           /* Helps contain children */
+  z-index: 2;
 }
 
-.infobox th, .infobox caption {
+/* Prevent double-frame / overlapping portraits */
+.infobox img.portrait,
+.infobox video.portrait,
+.portrait-container img,
+.portrait-container video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  border: 2px solid var(--neon-cyan);
+  box-shadow: 0 0 10px var(--glow-cyan);
+  display: block;
+  margin: 0 auto 1rem auto;     /* Center + spacing */
+  object-fit: cover;
+}
+
+/* Make sure portrait container doesn't cause layout shift */
+.portrait-container {
+  position: relative;
+  display: block;               /* Changed from inline-block */
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Infobox table fixes */
+.infobox table.infobox {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  margin: 0;
+  background: transparent;
+}
+
+.infobox th, 
+.infobox caption {
   background: rgba(193, 60, 255, 0.2);
   color: var(--neon-cyan);
   font-family: 'Orbitron', sans-serif;
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 1px;
-}
-
-.infobox img.portrait, 
-.infobox video.portrait {
-  max-width: 100%;
-  height: auto; 
-  border-radius: 0.5rem; 
-  border: 2px solid var(--neon-cyan);
-  box-shadow: 0 0 10px var(--glow-cyan);
-  display: block; 
-  object-fit: cover; 
-}
-
-.infobox table.infobox {
-  border-radius: 0; 
-  border: none;
-  margin: 0;
+  padding: 8px 10px;
 }
 
 .infobox td[colspan="2"] {
   text-align: center;
+  padding: 10px 0;
 }
 
-.portrait-container {
-  position: relative;
-  display: inline-block;
-  width: 100%;
+/* Clear floats properly after infobox */
+.infobox + * {
+  clear: both;
+}
+
+/* Responsive behavior */
+@media (max-width: 992px) {
+  .infobox {
+    float: none;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto 2rem auto;   /* Center on mobile */
+  }
+}
+
+@media (max-width: 600px) {
+  .infobox {
+    padding: 0.9rem;
+    margin: 0 0 1.8rem 0;
+  }
 }
 
 .video-controls {
