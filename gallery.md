@@ -127,11 +127,11 @@ permalink: /gallery/
 </style>
 
 <!-- PhotoSwipe v5 UMD -->
-<script src="{{ '/photoswipe.umd.min.js' | relative_url }}"></script>
-<script src="{{ '/photoswipe-lightbox.umd.min.js' | relative_url }}"></script>
+{% raw %}<script src="{{ '/photoswipe.umd.min.js' | relative_url }}"></script>{% endraw %}
+{% raw %}<script src="{{ '/photoswipe-lightbox.umd.min.js' | relative_url }}"></script>{% endraw %}
 
 <!-- Gallery Loader + PhotoSwipe v5 Integration -->
-<script>
+{% raw %}<script>
 document.addEventListener("DOMContentLoaded", async () => {
   const galleryEl = document.getElementById("gallery");
   const searchEl = document.getElementById("gallery-search");
@@ -204,6 +204,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let lightbox;
 function initLightbox() {
   if (lightbox) lightbox.destroy();
+console.log("Gallery script loaded");
 
   lightbox = new PhotoSwipeLightbox({
     gallery: '#gallery',
@@ -241,4 +242,4 @@ function initLightbox() {
   searchEl.addEventListener("input", renderGallery);
   tagFilterEl.addEventListener("change", renderGallery);
 });
-</script>
+</script>{% endraw %}
