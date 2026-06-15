@@ -12,36 +12,53 @@ layout: default
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="stylesheet" href="wikistyle.css">
   <style>
-    /* Council Chamber specific styles */
+    /* === RESPONSIVE TABLE IMPROVEMENTS === */
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+      margin: 1.5rem 0;
+    }
+
     .council-table {
       width: 100%;
+      min-width: 980px;           /* Prevents crushing on smaller screens */
       border-collapse: collapse;
-      margin: 1.5rem 0;
-      background: rgba(10,-20, 30, 0.7);
-      border-radius: 16px;
+      background: rgba(10, 20, 30, 0.7);
       overflow: hidden;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
     }
+
     .council-table th {
-      background: linear-gradient(135deg,-#5a4a3a, #3a2a1a);
+      background: linear-gradient(135deg, #5a4a3a, #3a2a1a);
       color: #ffcc99;
       font-weight: 600;
       padding: 14px 10px;
       text-align: left;
       border-bottom: 2px solid #b88a4a;
       font-size: 1.1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      white-space: nowrap;
     }
+
     .council-table td {
       padding: 12px 10px;
       border-bottom: 1px solid #4a3a2a;
       vertical-align: middle;
     }
+
     .council-table tr:last-child td {
       border-bottom: none;
     }
+
     .council-table tr:hover {
-      background: rgba(200,-150, 80, 0.1);
+      background: rgba(200, 150, 80, 0.1);
     }
+
+    /* Portrait & Seat Styles */
     .portrait-thumb {
       width: 48px;
       height: 48px;
@@ -50,15 +67,7 @@ layout: default
       background: #2c3e50;
       border: 2px solid #b88a4a;
     }
-    .member-link {
-      font-weight: bold;
-      color: #ffcc99;
-      text-decoration: none;
-    }
-    .member-link:hover {
-      text-decoration: underline;
-      color: #ffaa66;
-    }
+
     .seat-number {
       display: inline-block;
       background: #2c3e50;
@@ -72,6 +81,19 @@ layout: default
       margin-right: 10px;
       border: 2px solid #b88a4a;
     }
+
+    .member-link {
+      font-weight: bold;
+      color: #ffcc99;
+      text-decoration: none;
+    }
+
+    .member-link:hover {
+      text-decoration: underline;
+      color: #ffaa66;
+    }
+
+    /* === YOUR EXISTING STYLES (unchanged) === */
     .tribunal-card {
       background: #2a1e14;
       border-left: 6px solid #9a6e3e;
@@ -79,11 +101,13 @@ layout: default
       margin: 1.2rem 0;
       border-radius: 0 12px 12px 0;
     }
+
     .tribunal-date {
       color: #dba959;
       font-weight: 600;
       font-size: 1.1rem;
     }
+
     .tribunal-outcome {
       display: inline-block;
       background: #4a2e1e;
@@ -93,14 +117,16 @@ layout: default
       border: 1px solid #b88a4a;
       margin-top: 0.5rem;
     }
+
     .ambassador-note {
-      background: linear-gradient(145deg,-#1a2f3a, #0e1f2a);
+      background: linear-gradient(145deg, #1a2f3a, #0e1f2a);
       border-radius: 20px;
       padding: 1.5rem;
       margin: 1.5rem 0;
       border: 1px solid #4a8a9a;
       position: relative;
     }
+
     .ambassador-note::before {
       content: "⚡";
       position: absolute;
@@ -110,6 +136,7 @@ layout: default
       opacity: 0.3;
       color: #7ac4d4;
     }
+
     .cave-quote {
       font-style: italic;
       background: rgba(0,0,0,0.3);
@@ -117,6 +144,7 @@ layout: default
       border-radius: 30px 30px 30px 8px;
       margin: 1rem 0;
     }
+
     .feature-badge {
       display: inline-block;
       background: #2c3e50;
@@ -129,26 +157,30 @@ layout: default
       margin-bottom: 5px;
       border: 1px solid #ffaa33;
     }
+
     .level-table {
       width: 100%;
       border-collapse: collapse;
       margin: 1rem 0;
-      background: rgba(10,-20, 30, 0.6);
+      background: rgba(10, 20, 30, 0.6);
       border-radius: 12px;
       overflow: hidden;
     }
+
     .level-table th {
-      background: linear-gradient(135deg,-#4a5b6e, #2c3e50);
+      background: linear-gradient(135deg, #4a5b6e, #2c3e50);
       color: white;
       padding: 12px 8px;
       border-bottom: 2px solid #ffaa33;
     }
+
     .level-table td {
       padding: 10px 8px;
       border-bottom: 1px solid #3a4a5a;
     }
+
     .technocracy-note {
-      background: rgba(30,-40, 50, 0.8);
+      background: rgba(30, 40, 50, 0.8);
       border-left: 4px solid #ffaa33;
       padding: 0.8rem 1.2rem;
       margin: 1rem 0;
@@ -158,10 +190,33 @@ layout: default
       align-items: center;
       gap: 12px;
     }
+
     .technocracy-note strong {
       color: #ffcc99;
     }
-  </style>
+
+    /* Mobile Adjustments */
+    @media (max-width: 992px) {
+      .portrait-thumb {
+        width: 42px;
+        height: 42px;
+      }
+      .seat-number {
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+        margin-right: 8px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .council-table th,
+      .council-table td {
+        padding: 10px 8px;
+        font-size: 0.96rem;
+      }
+    }
+</style>
 </head>
 <body>
 <h1 class="gradient-title">The Plenum and the Council Chamber</h1>
@@ -258,117 +313,118 @@ layout: default
       <h2 class="section-header">The Twelve Seats</h2>
       <p>The council comprises 12 voting members, each representing a vital sector of colony life. Seats are held by the heads of major departments, with appointments subject to council confirmation. The roster evolves across the series as leadership changes.</p>
       
-      <table class="council-table">
-        <thead>
-          <tr>
-            <th>Portrait</th>
-            <th>Seat</th>
-            <th>Portfolio</th>
-            <th>Book 1 Incumbent</th>
-            <th>Book 3+ Incumbent</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!--Helper function: for each character, we define image path and link.-->
-          <tr>
-            <td><img class="portrait-thumb" src="assets/images/admin.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Isabella Santos"></td>
-            <td><span class="seat-number">1</span></td>
-            <td>Administrator</td>
-            <td colspan="2"><a class="member-link" href="{{ '/_characters/santos.html' | relative_url }}">Isabella Santos</a></td>
-            <td>Presiding officer; colony-wide coordination</td>
-          </tr>
-          <tr>
-            <td><img class="portrait-thumb" src="assets/images/security.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Evelyn Roan"></td>
-            <td><span class="seat-number">2</span></td>
-            <td>Security</td>
-            <td colspan="2"><a class="member-link" href="{{ '/_characters/roan.html' | relative_url }}">Evelyn Roan</a></td>
-            <td>Leads investigations, tribunals; office in Chamber</td>
-          </tr>
-          <tr>
-            <td><img class="portrait-thumb" src="assets/images/med.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Douglas Kret"></td>
-            <td><span class="seat-number">3</span></td>
-            <td>Medicine</td>
-            <td><a class="member-link" href="{{ '/_characters/kret.html' | relative_url }}">Douglas Kret</a></td>
-            <td><a class="member-link" href="{{ '/_characters/alex.html' | relative_url }}">Dr. Alex Cruiz</a></td>
-            <td>Kret removed by tribunal (book-1); Cruiz appointed</td>
-          </tr>
-          <tr>
-            <td><img class="portrait-thumb" src="assets/images/sci-tech.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Lorain Troy"></td>
-            <td><span class="seat-number">4</span></td>
-            <td>Science & Technology</td>
-            <td><a class="member-link" href="{{ '/_characters/troy.html' | relative_url }}">Lorain Troy</a></td>
-            <td><a class="member-link" href="{{ '/_characters/amerigo.html' | relative_url }}">Amerigo Carisco</a></td>
-            <td>Troy retires early Book 3 (illness); Carisco appointed</td>
-          </tr>
-          <tr>
-            <td><img class="portrait-thumb" src="assets/images/agri.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Nathaniel Webb"></td>
-            <td><span class="seat-number">5</span></td>
-            <td>Agriculture</td>
-            <td colspan="2"><a class="member-link" href="{{ '/_characters/webb.html' | relative_url }}">Dr. Nathaniel Webb</a></td>
-            <td>Food systems, terraforming support</td>
-          </tr>
-          <tr>
-            <td><img class="portrait-thumb" src="assets/images/environ.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Kenji Yamoto"></td>
-            <td><span class="seat-number">6</span></td>
-            <td>Environmental Systems</td>
-            <td colspan="2"><a class="member-link" href="{{ '/_characters/yamoto.html' | relative_url }}">Dr. Kenji Yamoto</a></td>
-            <td>Water management, resource recycling</td>
-          </tr>
-          <tr>
-            <td><img class="portrait-thumb" src="assets/images/athletic.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Chibuike Okafor"></td>
-            <td><span class="seat-number">7</span></td>
-            <td>Athletics & Recreation</td>
-            <td colspan="2"><a class="member-link" href="{{ '/_characters/okafor.html' | relative_url }}">Chibuike Okafor</a></td>
-            <td>Activity Center, youth sports, colony games</td>
-          </tr>
-          <tr>
-            <td><img class="portrait-thumb" src="assets/images/log-trans.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Nazia Thälmann"></td>
-            <td><span class="seat-number">8</span></td>
-            <td>Logistics & Transportation</td>
-            <td colspan="2"><a class="member-link" href="{{ '/_characters/thalmann.html' | relative_url }}">Nazia Thälmann</a></td>
-            <td>Materials and personnel transportation</td>
-          </tr>
-          <tr>
-            <td><img class="portrait-thumb" src="assets/images/engi-infra.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Joaquim Abrahamson"></td>
-            <td><span class="seat-number">9</span></td>
-            <td>Engineering & Infrastructure</td>
-            <td colspan="2"><a class="member-link" href="{{ '/_characters/abrahamson.html' | relative_url }}">Joaquim Abrahamson</a></td>
-            <td>Buildings, power grid, transport</td>
-          </tr>
-          <tr>
-            <td><img class="portrait-thumb" src="assets/images/energy.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Lidia Sebastiani"></td>
-            <td><span class="seat-number">10</span></td>
-            <td>Energy Systems</td>
-            <td colspan="2"><a class="member-link" href="{{ '/_characters/sebastiani.html' | relative_url }}">Lidia Sebastiani</a></td>
-            <td>Power generation, distribution, long-term policy</td>
-          </tr>
-          <tr>
-            <td><img class="portrait-thumb" src="assets/images/orb-sys.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Rhea Babić"></td>
-            <td><span class="seat-number">11</span></td>
-            <td>Orbital & System Coordination</td>
-            <td colspan="2"><a class="member-link" href="{{ '/_characters/babic.html' | relative_url }}">Rhea Babić</a></td>
-            <td>Cartography, mineral sampling, exploration/scouting</td>
-          </tr>
-          <tr>
-            <td><img class="portrait-thumb" src="assets/images/cult-rel.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Claudia Belrose"></td>
-            <td><span class="seat-number">12</span></td>
-            <td>Cultural Affairs</td>
-            <td colspan="2"><a class="member-link" href="{{ '/_characters/belrose.html' | relative_url }}">Claudia Belrose</a></td>
-            <td>The arts, Samaya Gallery oversight</td>
-          </tr>
-          <tr>
-            <td><img class="portrait-thumb" src="assets/images/bridge.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Celectra Carisco-Bowers"></td>
-            <td><span class="seat-number">13</span></td>
-            <td>Galinstanian Relations</td>
-            <td>—</td>
-            <td><a class="member-link" href="{{ '/_characters/celectra.html' | relative_url }}">Celectra Carisco-Bowers</a></td>
-            <td><strong>Non-voting ambassador</strong>; liaison, bridge, ANI project lead (book-3+)</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-wrapper">
+        <table class="council-table">
+          <thead>
+            <tr>
+              <th>Portrait</th>
+              <th>Seat</th>
+              <th>Portfolio</th>
+              <th>Book 1 Incumbent</th>
+              <th>Book 3+ Incumbent</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--Helper function: for each character, we define image path and link.-->
+            <tr>
+              <td><img class="portrait-thumb" src="assets/images/admin.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Isabella Santos"></td>
+              <td><span class="seat-number">1</span></td>
+              <td>Administrator</td>
+              <td colspan="2"><a class="member-link" href="{{ '/_characters/santos.html' | relative_url }}">Isabella Santos</a></td>
+              <td>Presiding officer; colony-wide coordination</td>
+            </tr>
+            <tr>
+              <td><img class="portrait-thumb" src="assets/images/security.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Evelyn Roan"></td>
+              <td><span class="seat-number">2</span></td>
+              <td>Security</td>
+              <td colspan="2"><a class="member-link" href="{{ '/_characters/roan.html' | relative_url }}">Evelyn Roan</a></td>
+              <td>Leads investigations, tribunals; office in Chamber</td>
+            </tr>
+            <tr>
+              <td><img class="portrait-thumb" src="assets/images/med.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Douglas Kret"></td>
+              <td><span class="seat-number">3</span></td>
+              <td>Medicine</td>
+              <td><a class="member-link" href="{{ '/_characters/kret.html' | relative_url }}">Douglas Kret</a></td>
+              <td><a class="member-link" href="{{ '/_characters/alex.html' | relative_url }}">Dr. Alex Cruiz</a></td>
+              <td>Kret removed by tribunal (book-1); Cruiz appointed</td>
+            </tr>
+            <tr>
+              <td><img class="portrait-thumb" src="assets/images/sci-tech.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Lorain Troy"></td>
+              <td><span class="seat-number">4</span></td>
+              <td>Science & Technology</td>
+              <td><a class="member-link" href="{{ '/_characters/troy.html' | relative_url }}">Lorain Troy</a></td>
+              <td><a class="member-link" href="{{ '/_characters/amerigo.html' | relative_url }}">Amerigo Carisco</a></td>
+              <td>Troy retires early Book 3 (illness); Carisco appointed</td>
+            </tr>
+            <tr>
+              <td><img class="portrait-thumb" src="assets/images/agri.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Nathaniel Webb"></td>
+              <td><span class="seat-number">5</span></td>
+              <td>Agriculture</td>
+              <td colspan="2"><a class="member-link" href="{{ '/_characters/webb.html' | relative_url }}">Dr. Nathaniel Webb</a></td>
+              <td>Food systems, terraforming support</td>
+            </tr>
+            <tr>
+              <td><img class="portrait-thumb" src="assets/images/environ.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Kenji Yamoto"></td>
+              <td><span class="seat-number">6</span></td>
+              <td>Environmental Systems</td>
+              <td colspan="2"><a class="member-link" href="{{ '/_characters/yamoto.html' | relative_url }}">Dr. Kenji Yamoto</a></td>
+              <td>Water management, resource recycling</td>
+            </tr>
+            <tr>
+              <td><img class="portrait-thumb" src="assets/images/athletic.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Chibuike Okafor"></td>
+              <td><span class="seat-number">7</span></td>
+              <td>Athletics & Recreation</td>
+              <td colspan="2"><a class="member-link" href="{{ '/_characters/okafor.html' | relative_url }}">Chibuike Okafor</a></td>
+              <td>Activity Center, youth sports, colony games</td>
+            </tr>
+            <tr>
+              <td><img class="portrait-thumb" src="assets/images/log-trans.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Nazia Thälmann"></td>
+              <td><span class="seat-number">8</span></td>
+              <td>Logistics & Transportation</td>
+              <td colspan="2"><a class="member-link" href="{{ '/_characters/thalmann.html' | relative_url }}">Nazia Thälmann</a></td>
+              <td>Materials and personnel transportation</td>
+            </tr>
+            <tr>
+              <td><img class="portrait-thumb" src="assets/images/engi-infra.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Joaquim Abrahamson"></td>
+              <td><span class="seat-number">9</span></td>
+              <td>Engineering & Infrastructure</td>
+              <td colspan="2"><a class="member-link" href="{{ '/_characters/abrahamson.html' | relative_url }}">Joaquim Abrahamson</a></td>
+              <td>Buildings, power grid, transport</td>
+            </tr>
+            <tr>
+              <td><img class="portrait-thumb" src="assets/images/energy.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Lidia Sebastiani"></td>
+              <td><span class="seat-number">10</span></td>
+              <td>Energy Systems</td>
+              <td colspan="2"><a class="member-link" href="{{ '/_characters/sebastiani.html' | relative_url }}">Lidia Sebastiani</a></td>
+              <td>Power generation, distribution, long-term policy</td>
+            </tr>
+            <tr>
+              <td><img class="portrait-thumb" src="assets/images/orb-sys.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Rhea Babić"></td>
+              <td><span class="seat-number">11</span></td>
+              <td>Orbital & System Coordination</td>
+              <td colspan="2"><a class="member-link" href="{{ '/_characters/babic.html' | relative_url }}">Rhea Babić</a></td>
+              <td>Cartography, mineral sampling, exploration/scouting</td>
+            </tr>
+            <tr>
+              <td><img class="portrait-thumb" src="assets/images/cult-rel.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Claudia Belrose"></td>
+              <td><span class="seat-number">12</span></td>
+              <td>Cultural Affairs</td>
+              <td colspan="2"><a class="member-link" href="{{ '/_characters/belrose.html' | relative_url }}">Claudia Belrose</a></td>
+              <td>The arts, Samaya Gallery oversight</td>
+            </tr>
+            <tr>
+              <td><img class="portrait-thumb" src="assets/images/bridge.webp" onerror="this.onerror=null;this.src='assets/images/portrait-placeholder.png';" alt="Celectra Carisco-Bowers"></td>
+              <td><span class="seat-number">13</span></td>
+              <td>Galinstanian Relations</td>
+              <td>—</td>
+              <td><a class="member-link" href="{{ '/_characters/celectra.html' | relative_url }}">Celectra Carisco-Bowers</a></td>
+              <td><strong>Non-voting ambassador</strong>; liaison, bridge, ANI project lead (book-3+)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-
     <!--DIRECTORATE LEADERSHIP (non-voting)-->
     <div class="card-bg">
       <h2 class="section-header">Directorate Leadership (non-voting)</h2>
