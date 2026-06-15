@@ -132,6 +132,7 @@ permalink: /gallery/
 <script src="{{ '/photoswipe-lightbox.umd.min.js' | relative_url }}"></script>
 
 <script>
+console.log("Gallery script is running");
 document.addEventListener("DOMContentLoaded", async () => {
   const galleryEl = document.getElementById("gallery");
   const searchEl = document.getElementById("gallery-search");
