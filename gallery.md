@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   let lightbox;
-  function initLightbox() {
+function initLightbox() {
   if (lightbox) lightbox.destroy();
 
   lightbox = new PhotoSwipeLightbox({
@@ -235,6 +235,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   lightbox.init();
 }
+
 
   renderGallery();
   searchEl.addEventListener("input", renderGallery);
