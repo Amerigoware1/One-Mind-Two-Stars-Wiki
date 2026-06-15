@@ -123,6 +123,10 @@ permalink: /gallery/
 </style>
 
 <!-- PhotoSwipe JS -->
+<script src="{{ '/photoswipe.min.js' | relative_url }}"></script>
+<script src="{{ '/photoswipe-ui-default.min.js' | relative_url }}"></script>
+
+<!-- Restored Gallery Loader + PhotoSwipe Integration -->
 <script type="module">
   import PhotoSwipeLightbox from "{{ '/photoswipe-lightbox.umd.min.js' | relative_url }}";
   import PhotoSwipe from "{{ '/photoswipe.umd.min.js' | relative_url }}";
