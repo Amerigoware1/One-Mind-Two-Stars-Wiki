@@ -28,7 +28,7 @@ permalink: /gallery/
   <div class="loading">Loading gallery...</div>
 </div>
 
-<!-- PhotoSwipe Root (required) -->
+<!-- PhotoSwipe Root (v5 UMD) -->
 <div class="pswp" id="pswp" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="pswp__bg"></div>
   <div class="pswp__scroll-wrap">
@@ -122,105 +122,96 @@ permalink: /gallery/
   }
 </style>
 
-<!-- PhotoSwipe JS -->
-<script src="{{ '/photoswipe.min.js' | relative_url }}"></script>
-<script src="{{ '/photoswipe-ui-default.min.js' | relative_url }}"></script>
+<!-- PhotoSwipe v5 UMD -->
+<script src="{{ '/photoswipe.umd.min.js' | relative_url }}"></script>
+<script src="{{ '/photoswipe-lightbox.umd.min.js' | relative_url }}"></script>
 
-<!-- Restored Gallery Loader + PhotoSwipe Integration -->
-<script type="module">
-  import PhotoSwipeLightbox from "{{ '/photoswipe-lightbox.umd.min.js' | relative_url }}";
-  import PhotoSwipe from "{{ '/photoswipe.umd.min.js' | relative_url }}";
+<!-- Gallery Loader + PhotoSwipe v5 Integration -->
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+  const galleryEl = document.getElementById("gallery");
+  const searchEl = document.getElementById("gallery-search");
+  const tagFilterEl = document.getElementById("tag-filter");
 
-  document.addEventListener("DOMContentLoaded", async () => {
-    const galleryEl = document.getElementById("gallery");
-    const searchEl = document.getElementById("gallery-search");
-    const tagFilterEl = document.getElementById("tag-filter");
+  let items = [];
+  try {
+    const res = await fetch("{{ '/assets/images/gallery/manifest.json' | relative_url }}");
+    items = await res.json();
+  } catch (err) {
+    galleryEl.innerHTML = "<div class='loading'>Failed to load gallery.</div>";
+    console.error("Gallery JSON load error:", err);
+    return;
+  }
 
-    let items = [];
-    try {
-      const res = await fetch("{{ '/assets/images/gallery/manifest.json' | relative_url }}");
-      items = await res.json();
-    } catch (err) {
-      galleryEl.innerHTML = "<div class='loading'>Failed to load gallery.</div>";
-      console.error("Gallery JSON load error:", err);
+  // Build tag list
+  const allTags = new Set();
+  items.forEach(i => i.tags.forEach(t => allTags.add(t)));
+  [...allTags].sort().forEach(tag => {
+    const opt = document.createElement("option");
+    opt.value = tag;
+    opt.textContent = tag;
+    tagFilterEl.appendChild(opt);
+  });
+
+  function renderGallery() {
+    const query = searchEl.value.toLowerCase().trim();
+    const tag = tagFilterEl.value;
+
+    const filtered = items.filter(item => {
+      const matchesText =
+        item.title.toLowerCase().includes(query) ||
+        item.description.toLowerCase().includes(query) ||
+        item.tags.some(t => t.toLowerCase().includes(query));
+
+      const matchesTag = !tag || item.tags.includes(tag);
+
+      return matchesText && matchesTag;
+    });
+
+    if (filtered.length === 0) {
+      galleryEl.innerHTML = "<div id='no-results'>No results found.</div>";
       return;
     }
 
-    // Build tag list
-    const allTags = new Set();
-    items.forEach(i => i.tags.forEach(t => allTags.add(t)));
-    [...allTags].sort().forEach(tag => {
-      const opt = document.createElement("option");
-      opt.value = tag;
-      opt.textContent = tag;
-      tagFilterEl.appendChild(opt);
+    galleryEl.innerHTML = "";
+    filtered.forEach((item, index) => {
+      const link = document.createElement("a");
+      link.href = "{{ '/assets/images/gallery/' | relative_url }}" + item.file;
+      link.dataset.pswpWidth = item.width;
+      link.dataset.pswpHeight = item.height;
+      link.dataset.pswpIndex = index;
+      link.className = "card-bg";
+
+      link.innerHTML = `
+        <img src="{{ '/assets/images/gallery/' | relative_url }}${item.file}" alt="${item.title}">
+        <div class="card-title">${item.title}</div>
+        <div class="card-description">${item.description}</div>
+        <div class="card-tags">
+          ${item.tags.map(t => `<span class="tag">${t}</span>`).join("")}
+        </div>
+      `;
+
+      galleryEl.appendChild(link);
     });
 
-    // Render gallery
-    function renderGallery() {
-      const query = searchEl.value.toLowerCase().trim();
-      const tag = tagFilterEl.value;
+    initLightbox();
+  }
 
-      const filtered = items.filter(item => {
-        const matchesText =
-          item.title.toLowerCase().includes(query) ||
-          item.description.toLowerCase().includes(query) ||
-          item.tags.some(t => t.toLowerCase().includes(query));
+  let lightbox;
+  function initLightbox() {
+    if (lightbox) lightbox.destroy();
 
-        const matchesTag = !tag || item.tags.includes(tag);
+    lightbox = new PhotoSwipeLightbox({
+      gallery: '#gallery',
+      children: 'a',
+      pswpModule: PhotoSwipe
+    });
 
-        return matchesText && matchesTag;
-      });
+    lightbox.init();
+  }
 
-      if (filtered.length === 0) {
-        galleryEl.innerHTML = "<div id='no-results'>No results found.</div>";
-        return;
-      }
-
-      galleryEl.innerHTML = "";
-      filtered.forEach((item, index) => {
-        const card = document.createElement("a");
-        card.className = "card-bg";
-        card.href = "{{ '/assets/images/gallery/' | relative_url }}" + item.file;
-        card.dataset.pswpWidth = item.width;
-        card.dataset.pswpHeight = item.height;
-        card.dataset.pswpIndex = index;
-
-        card.innerHTML = `
-          <img src="{{ '/assets/images/gallery/' | relative_url }}${item.file}" alt="${item.title}">
-          <div class="card-title">${item.title}</div>
-          <div class="card-description">${item.description}</div>
-          <div class="card-tags">
-            ${item.tags.map(t => `<span class="tag">${t}</span>`).join("")}
-          </div>
-        `;
-
-        galleryEl.appendChild(card);
-      });
-
-      // Reinitialize PhotoSwipe after rendering
-      initLightbox();
-    }
-
-    // PhotoSwipe v5 Lightbox
-    let lightbox;
-    function initLightbox() {
-      if (lightbox) lightbox.destroy();
-
-      lightbox = new PhotoSwipeLightbox({
-        gallery: '#gallery',
-        children: 'a',
-        pswpModule: PhotoSwipe
-      });
-
-      lightbox.init();
-    }
-
-    // Initial render
-    renderGallery();
-
-    // Event listeners
-    searchEl.addEventListener("input", renderGallery);
-    tagFilterEl.addEventListener("change", renderGallery);
-  });
+  renderGallery();
+  searchEl.addEventListener("input", renderGallery);
+  tagFilterEl.addEventListener("change", renderGallery);
+});
 </script>
