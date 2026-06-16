@@ -174,50 +174,59 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // 3. Render gallery (and re‑init lightbox)
   function renderGallery() {
-    const query = searchEl.value.toLowerCase().trim();
-    const selectedTag = tagFilterEl.value;
+  const query = searchEl.value.toLowerCase().trim();
+  const selectedTag = tagFilterEl.value;
 
-    currentItems = allItems.filter(item => {
-      const matchesText =
-        item.title.toLowerCase().includes(query) ||
-        item.description.toLowerCase().includes(query) ||
-        item.tags.some(t => t.toLowerCase().includes(query));
-      const matchesTag = !selectedTag || item.tags.includes(selectedTag);
-      return matchesText && matchesTag;
-    });
+  currentItems = allItems.filter(item => {
+    const matchesText =
+      item.title.toLowerCase().includes(query) ||
+      item.description.toLowerCase().includes(query) ||
+      item.tags.some(t => t.toLowerCase().includes(query));
+    const matchesTag = !selectedTag || item.tags.includes(selectedTag);
+    return matchesText && matchesTag;
+  });
 
-    if (currentItems.length === 0) {
-      galleryEl.innerHTML = "<div id='no-results'>No results found.</div>";
-      if (window.lightboxInstance) window.lightboxInstance.destroy();
-      return;
-    }
-
-    // Build grid
-    galleryEl.innerHTML = "";
-    currentItems.forEach((item, idx) => {
-      const link = document.createElement("a");
-      link.href = "{{ '/assets/images/gallery/' | relative_url }}" + item.file;
-      link.dataset.pswpWidth = item.width;
-      link.dataset.pswpHeight = item.height;
-      link.dataset.pswpIndex = idx;
-      link.className = "card-bg";
-
-      link.innerHTML = `
-        <img src="{{ '/assets/images/gallery/' | relative_url }}${item.file}" alt="${item.title}">
-        <div class="card-title">${escapeHtml(item.title)}</div>
-        <div class="card-description">${escapeHtml(item.description)}</div>
-        <div class="card-tags">
-          ${item.tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join("")}
-        </div>
-      `;
-      galleryEl.appendChild(link);
-    });
-
-    initLightbox();
-    document.getElementById('gallery').addEventListener('click', (e) => {
-  console.log('Gallery click detected on:', e.target);
-});
+  if (currentItems.length === 0) {
+    galleryEl.innerHTML = "<div id='no-results'>No results found.</div>";
+    if (window.lightboxInstance) window.lightboxInstance.destroy();
+    return;
   }
+
+  // Build grid
+  galleryEl.innerHTML = "";
+  currentItems.forEach((item, idx) => {
+    const link = document.createElement("a");
+    link.href = "{{ '/assets/images/gallery/' | relative_url }}" + item.file;
+    link.dataset.pswpWidth = item.width;
+    link.dataset.pswpHeight = item.height;
+    link.dataset.pswpIndex = idx;
+    link.className = "card-bg";
+
+    link.innerHTML = `
+      <img src="{{ '/assets/images/gallery/' | relative_url }}${item.file}" alt="${escapeHtml(item.title)}">
+      <div class="card-title">${escapeHtml(item.title)}</div>
+      <div class="card-description">${escapeHtml(item.description)}</div>
+      <div class="card-tags">
+        ${item.tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join("")}
+      </div>
+    `;
+
+    // ✅ MANUAL CLICK HANDLER – forces lightbox to open
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (window.lightboxInstance) {
+        window.lightboxInstance.loadAndOpen(link);
+      } else {
+        console.error("Lightbox instance not found");
+      }
+    });
+
+    galleryEl.appendChild(link);
+  });
+
+  // Re-init lightbox (needed for caption updates, but the manual click handler already works)
+  initLightbox();
+}
 
   // 4. PhotoSwipe v5 initialization (with correct filtered items)
   let lightbox = null;
