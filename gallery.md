@@ -282,6 +282,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Initial render
   renderGallery();
+  const firstLink = document.querySelector('#gallery a');
+if (firstLink && window.lightboxInstance) {
+  window.lightboxInstance.loadAndOpen(firstLink);
+}
 });
 </script>
 <script>
