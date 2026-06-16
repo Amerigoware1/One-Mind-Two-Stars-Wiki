@@ -3,9 +3,12 @@ layout: default
 title: Gallery
 permalink: /gallery/
 ---
-<link rel="stylesheet" href="{{ '/photoswipe.css' | relative_url }}">
-<script src="/One-Mind-Two-Stars-Wiki/photoswipe-umd.min.js"></script>
-<script src="/One-Mind-Two-Stars-Wiki/photoswipe-lightbox-umd.min.js"></script>
+<!-- The required stylesheet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css">
+
+<!-- The two JavaScript files -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/umd/photoswipe.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/umd/photoswipe-lightbox.umd.min.js"></script>
 <div class="card-bg">
   <h1>Gallery</h1>
   <p>A collection of artifacts, environments, and curiosities from <em>One Mind Two Stars</em>.</p>
