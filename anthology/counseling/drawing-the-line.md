@@ -3,6 +3,7 @@ layout: default
 title: Drawing the Line
 ---
 
+
 {% capture chapter_content %}
 
 The Nexus was a wide circular building just like the others around the roundabout in New Eden's center—part community hall, part recreation space—the social hub, its stone walls thick enough to hold the heat on cool evenings and the cool on hot ones. The holo-chambers were on the upper floor, three rooms set aside for entertainment, education, and the occasional therapeutic use that Celectra suggested. The corridor smelled of the same generic cleaning solution as every colony building, but up here the light was better, east-facing windows catching the morning before Chaos rose to dominate the sky.
@@ -14,6 +15,8 @@ Celectra was already waiting in the corridor when Zoë arrived, barefoot as alwa
 "Twenty minutes," Celectra said. "I wanted to think before you arrived."
 
 Zoë had learned to take this seriously. "About the story, or about something else?"
+
+<!-- page -->
 
 "Both." Both faces turned toward her with the particular quality of attention that meant she had been turning something over and was ready to set it down. "I've been thinking about what the shade-beast was. What it really was." A pause. "It wasn't just fear. It was the version of fear that says *you're too small, you don't matter, someone bigger than you gets to decide what happens.* That's why it smelled like Kret."
 
@@ -36,6 +39,8 @@ The hoofprints were already there when they arrived, brighter than before. The m
 *Lolita:* "How close?"
 
 Celectra's winged body rose, hovering above the treeline, and her other body playing Kylyn shaded her eyes to look. "There—in the valley. He's there, but he's not alone."
+
+<!-- page -->
 
 Zoë stepped forward as Lolita. "What do you see?"
 
@@ -60,6 +65,8 @@ She crossed the open ground without slowing, and Utara cooperated—the Stallion
 She placed one body's hand on the Stallion's nose, her other body turning to face the nearer army, wings spreading wide.
 
 *Aquella:* "Don't move."
+
+<!-- page -->
 
 Zoë watched both armies freeze in the simulation, their commanders' faces registering the impossible arrival of a seven-thousand-year-old water nymph standing between them. Then she felt what Celectra was building toward and stepped back, letting the story breathe.
 
@@ -91,6 +98,8 @@ She walked to the other side of the line.
 
 *West:* "Never."
 
+<!-- page -->
+
 She was quiet for a moment. Zoë recognized the quality of Celectra's pauses now—this was not uncertainty, it was choice. She was deciding how to say the true thing.
 
 *Aquella:* "Then here's what you can do. You can unite. One people. The eastern farmers and the western ones, living in the same land, burying your dead in the same soil, teaching your children each other's histories." She let that sit. "Or you can stay on your own sides of this line. The eastern fields are east of it. The western graves are west of it. The line is real. The Stallion made it. It will not move."
@@ -116,6 +125,8 @@ Other dragons began to wake. Soldiers backed away. The commanders reached for we
 *Aquella, sharp:* "Leave them alone."
 
 *East commander, alarmed:* "They'll kill us—"
+
+<!-- page -->
 
 *Aquella:* "They won't. Not if you don't give them a reason." She walked between the nearest dragon and the soldiers, both bodies, arms slightly out, a seven-thousand-year-old nymph standing between fear and its consequences. "You won't be brain-draining dragons anymore. You won't be fighting each other anymore. You'll be too busy figuring out how to farm on both sides of a line, and the dragons will go back to being what they were before you decided they were useful."
 
@@ -143,6 +154,8 @@ Zoë sat on the chamber floor, back against the wall. Celectra joined her after 
 
 "You could have had a fight. You chose not to."
 
+<!-- page -->
+
 Celectra considered this. "It would have been easier in some ways. Fighting is simpler. You win or you lose and it's over." She turned the celestite. "But then the dragons would still be war steeds, and the armies would still be enemies, just—fewer of them."
 
 "So you drew a line instead."
@@ -166,6 +179,8 @@ Both faces turned to her, the late morning light through the east-facing windows
 \*\*\*
 
 They left the holo-chamber together, walking the Nexus corridor toward the stairs. Celectra carried the specimen bag in one hand and her holopad in the other, both bodies moving in the easy synchronization of someone who had been entirely themselves for an entire morning.
+
+<!-- page -->
 
 At the top of the stairs, she stopped and looked back through the corridor window. Outside, New Eden was going about its business—people crossing the plaza, a cart from the hydroponic dome, the distant shimmer of the Pison catching the light. And beyond it all, the ridge where the security door sat flush with the rock, leading down to something old and patient and completely indifferent to human timelines.
 

@@ -3,6 +3,7 @@ layout: default
 title: The Shade Beast
 ---
 
+
 {% capture chapter_content %}
 
 When Dr. Zoë Kret arrived at the holo-chamber aboard Utopis, a place she had only visited once as a child, she found Celectra already there. The metallic tang of recycled air on Utopis, a sharp contrast to the arid breeze she remembered from Ares, hung heavy in the sterile space. Celectra was barefoot and pacing the corridor.   
@@ -20,6 +21,8 @@ Still kneeling, Zoë studied Celectra’s face, searching for signs of lasting t
 The simple truth of it hit Zoë harder than she’d expected. How many times had she made excuses for her father’s methods, convinced herself his intentions justified his approach? Seeing Celectra’s fear yesterday had shattered something inside her—the last remnants of the little girl who’d once looked up to Dr. Kret as a hero.  
 
 Zoë replied, “I know. But I’m here now. We’ll get through this together.”  
+
+<!-- page -->
 
 “Dr. Zoë, why can’t people—like the other kids—see I’m like Niamh and Ciara? They look like two stars, but really it’s the barycenter that’s in charge. That’s me—the in-between part. Not two stars, just one dance.”  
 
@@ -41,6 +44,8 @@ Celectra fidgeted, fingers knotting together, then slowly drew a deep breath. He
 
 Her two bodies straightened as if pulled upright by the same thread. With a small nod toward the holo-chamber door, she said more firmly, “But first—let’s do this.”  
 
+<!-- page -->
+
 After instructing Utara to load the program, they stepped into the holo-chamber. Zoë slipped out of her one-piece jumpsuit, revealing a leather tunic and moccasins. Celectra, in turn, ordered holographic leafy dresses to cover her, then slipped out of her physical ones, then added iridescent wings to one body and furry legs with hooves to the other.  
 
 “I’m ready\!” Celectra announced.  
@@ -54,6 +59,8 @@ Celectra’s her gaze—four eyes, one focus—locked on a flicker in the grass�
 For a moment, Zoë envied Celectra’s easy adaptation to this artificial world. The child moved through it as if it were completely real, her imagination effortlessly filling in the gaps. Zoë, however, remained acutely aware of the hard metal floor beneath her feet and the chamber walls just beyond the projected horizon. She felt like an intruder, a spectator in a world she couldn’t fully inhabit.  
 
 Maybe that’s exactly what she needs, Zoë thought. A place where the rules are different, where she can be powerful instead of vulnerable.  
+
+<!-- page -->
 
 Celectra was the first to speak, her voice taking on the persona of Aquella.  
 
@@ -78,6 +85,8 @@ Lolita: “What will you do?” Zoë prompted from within the game.
 Aquella: “I’ll follow this trail until my wings fall off if I have to. The Stallion’s not just a leader—he keeps the peace between all the creatures of these lands. If he’s gone, everything will fall apart.”  
 
 Zoë filed away the words as they moved on, wondering if Celectra realized just how much she was revealing about herself in these invented worlds.  
+
+<!-- page -->
 
 Zoë’s voice continued the story. “They follow the glowing hoofprints across the rolling hills until the grass gives way to a swaying sea of golden reeds. The sound of the wind through them is like a thousand whispering voices.”  
 
@@ -105,6 +114,8 @@ As Celectra walked toward the beast, her bare feet pressed flat against the cham
 
 Zoë’s voice described the beast’s reaction. “The boar lowers its head, steam curling from its nostrils.”  
 
+<!-- page -->
+
 Aquella: “We’re not your enemy. We’re on our way to the Great Grand Stallion, and we won’t harm you or your home.”  
 
 Celectra narrated the beast’s retreat. “The beast huffed, stomping once… then turned, melting back into the reeds without a sound.”  
@@ -124,6 +135,8 @@ She made a mental note to discuss this pattern with Dr. Cruiz. Celectra’s appr
 As they continued, Zoë seized the moment to delve deeper. “Celectra, how did you feel when you faced the shade-beast? Did it remind you of anything?”  
 
 Celectra paused, the question lingering. “It felt scary at first, like when Dr. Kret wanted to take me apart. I could almost hear his voice in the boar’s huffing.”  
+
+<!-- page -->
 
 “And what changed? Why weren’t you afraid anymore?” asked Zoë.  
 
@@ -147,6 +160,8 @@ The words struck Zoë like a physical blow. Of course. Celectra didn’t always 
 
 “You shouldn’t have to carry that alone,” Zoë said softly.  
 
+<!-- page -->
+
 Celectra tilted her heads, puzzled. “But I’m not alone. Not anymore. Daddy believes me now. Uncle Doc and Aunt Dee do too. And you. For a long time, it was just me who understood… but now I have people who do. Maybe more after Jaxon’s party next week.” Her small hands moved to her holopad, fingers tracing the edge of a holo-invite blinking with Jaxon’s name, her touch deliberate, as if sealing a decision.  
 
 Zoë’s breath caught at the cryptic remark. “Jaxon’s party?” she asked gently, leaning closer, her voice soft but probing. “What’s going to change there, sweetheart? What do you have planned?”  
@@ -156,6 +171,8 @@ Celectra’s eyes—both sets—flickered with a mix of mischief and resolve, bu
 Zoë watched the gesture, a knot of unease tightening in her chest. That careful pause wasn’t just childish whimsy—it was purpose, a quiet resolve Zoë recognized from patients plotting their next move. Beyond the viewport, a faint shimmer of stellar dust swirled past Utopis, tinged with Niamh’s auroral glow, a restless beauty that mirrored the spark in Celectra’s gaze. The simple declaration squeezed Zoë’s chest—relief for Celectra mixed with a stab of guilt. How long had this child borne her burden in silence before anyone truly saw her?  
 
 As they left the holo-chamber together, Zoë found herself wondering which of them was learning more from these sessions. Celectra was teaching her about resilience—but also about loneliness, the kind that came not from being isolated, but from being so fundamentally different that even in a crowd, you remained utterly alone. *I won’t let my father add to that loneliness,* Zoë promised herself. *Whatever it takes.*
+
+<!-- page -->
 
 {% endcapture %}
 

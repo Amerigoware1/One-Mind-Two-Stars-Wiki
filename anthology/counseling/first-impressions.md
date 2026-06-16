@@ -3,6 +3,7 @@ layout: default
 title: First Impressions
 ---
 
+
 {% capture chapter_content %}
 
 Dr. Zoë Kret, PsyD, rushed to finish her notes on her last patient when she heard the door swoosh open. She looked up to see two beautiful young girls hesitantly entering her office with their father and stopping behind the two cushioned chairs in front of her desk.  
@@ -29,6 +30,8 @@ Zoë steadied herself and turned to Celectra.
 
 “Hello, Dr. Kret, I’m here for my first session,” she said timidly.  
 
+<!-- page -->
+
 Dr. Cruiz’s notes, received just before Tim set up the appointment, were extraordinary. They claimed a single consciousness across two bodies, coining the term “mononous *disomas*”—an unprecedented phenomenon. Zoë had studied conjoined twins with distinct minds sharing physical lives, but this was the opposite. While she trusted Dr. Cruiz implicitly, she’d learned in New Eden, under the orange glow of Ciara, to trust her own observations over secondhand reports, no matter how compelling. Her piercing green eyes, analytical and intense, studied the child with a mix of professional curiosity and subtle warmth. She decided to start with a simple test.  
 
 Zoë nodded, noting the singular pronoun just as in Cruiz's referral. "You must be Electra and Celeste Carisco. I'm pleased to meet you both," she said, testing the waters.  
@@ -40,6 +43,8 @@ Celectra's bodies stiffened almost imperceptibly—not confusion, but correction
 Zoë deleted "mononous disomas" from her mental notes before the child even sat down. Some truths couldn't be captured in Greek. "Celectra," she repeated, letting the name settle between them. “Call me Miss Zoë or Dr. Zoë if you prefer; having two people called Dr. Kret is too confusing. You may not know this, but my father is Dr. Douglas Kret, chief physician here. Shall we make up a story together?”  
 
 Celectra’s eyes lit up as she scrambled over the arms of the chairs to sit. “The story thing sounds great to me\! Could we do it in a holo-chamber?”  
+
+<!-- page -->
 
 “Next time, absolutely\! I’ll schedule my time slots around our sessions,” Zoë said with a smile. “In the meantime, why don’t you think about a good scenario for our story?” Before Celectra could respond, she went on, “But first, one question. When I close my eyes, I feel my inner ‘me’ right behind my eyes and between my ears. Where do you feel yourself?”  
 
@@ -53,6 +58,8 @@ Celectra exclaimed, “I already have one\! I’ll be a water nymph named Aquell
 
 “Ah, fantasy\! You’re a natural at this\! You’ve introduced Aquella. Now, can your other body play a different character?”  
 
+<!-- page -->
+
 This was the real test. If Cruiz was right about the unified consciousness, how would Celectra handle splitting into separate roles? Zoë’s research instincts sharpened—Aquella’s nurturing, ageless persona might be a coping mechanism, a way to assert control over her dual existence.
 
 Celectra hesitated. Both bodies exchanged a quick glance—and a faint static lifted the fine hairs on her arms. She pressed her palms flat against the chair's metal armrests, grounding herself before answering. “I’m just one person,” she said softly, her tone steady but not defensive. “But I’ll try to play separate parts.”  
@@ -64,6 +71,8 @@ Zoë shrugged. “I guess it’s my turn. I’ll be a young human woman from the
 Celectra embraced her role. “It’s a pleasure to meet you, Lolita. I’ve heard of the Skitroles. They had a thriving city sixty kilometers east of here two thousand years ago.”  
 
 The transition was seamless—no pause, no confusion. Zoë noted the fluidity as evidence of a single consciousness, a key data point for her paper. But Celectra’s choice—an ancient, misunderstood nymph—hinted at a deeper coping strategy: projecting timelessness to counter fears of being “broken apart.”  
+
+<!-- page -->
 
 Lolita: “We have stories of city life, but what does a child like you know of such things? You look no older than seven.”  
 
@@ -86,6 +95,8 @@ Lolita: “That sounds good enough for me. Do you know where my tribe is now?”
 Aquella: “Yes, I’d happily escort you there. I’ll have to fly ahead to scout the way.” 
 
 Lolita: “Fly? You make it sound like you’re a bird\!”  
+
+<!-- page -->
 
 Aquella: “My father is a fairy, and my mother was a sylph, so naturally, I have wings. See?”  
 
@@ -117,6 +128,8 @@ Celectra’s other body filled in: “It is I, Kylyn. I am a harmless faun.”
 
 No hesitation—the response was instantaneous, as if one mind extended through both bodies. Zoë’s skepticism crumbled; this was no coordinated act but a single consciousness. Her research ambitions flared—a paper on this could cement her career if she were still on Earth. But again, her father’s voice crept in: *Fascinating case study.* She recoiled, heart racing. Celectra wasn’t a specimen; she was a child, terrified of being pulled apart, just as Zoë feared being consumed by her father’s legacy. She refocused, grounding herself in Celectra’s trust.  
 
+<!-- page -->
+
 Aquella: “We wish you no harm either. I am Aquella, and my friend hiding in the bushes is Lolita.”  
 
 Lolita: “I’m not hiding; I’m resting\!”  
@@ -141,6 +154,8 @@ Aquella: “Excellent idea. I’d like to help you, Kylyn. Some of those dragons
 Zoë sat back, her assessment crystallizing. Celectra’s roleplay was a coping mechanism, a way to process her fear of being “pulled apart” by creating a world where she controlled her unity. It was a goldmine for research but also a plea for understanding. Zoë’s own identity teetered—her father’s daughter saw a an amazing case; her psychologist self saw a child needing protection. 
 
  “That was wonderful storytelling, Celectra,” Zoë said, gently closing the roleplay. “You have quite an imagination.”  
+
+<!-- page -->
 
 Celectra beamed, both faces lighting up. “Thank you\! That was fun. Will we continue it next time?”  
 
@@ -167,6 +182,8 @@ Zoë leaned forward, her voice soft. “That sounds really hard.”
 “It is.” Celectra’s voices dropped in unison. “Sometimes I get mad at myself. Like… why couldn’t I just be normal? One body. One brain. Maybe Daddy wouldn’t worry so much.”  
 
 Zoë’s heart ached at the quiet confession. “It’s okay to feel that way. Being different doesn’t mean you don’t get tired of it sometimes. It just means you’re honest.”  
+
+<!-- page -->
 
 Celectra nodded slowly, her eyes distant. “I don’t want to be mad at myself. But I don’t want to pretend it’s easy, either.”  
 

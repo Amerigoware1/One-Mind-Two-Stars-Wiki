@@ -3,6 +3,7 @@ layout: default
 title: The Duckling Incident
 ---
 
+
 {% capture chapter_content %}
 
 Celectra was six years old, and she was bored.
@@ -26,6 +27,8 @@ Celectra’s left body popped the panel open with a fingernail, revealing a nest
 “I want to teach it to follow me,” she said.
 
 “That would require reassigning its target acquisition protocols from ‘debris’ to a specific biosignature,” Utara said. “Your biosignature, presumably. The safety implications are non‑trivial. If the disintegrator beam were active, following you would mean trying to atomize you.”
+
+<!-- page -->
 
 “That’s why I asked about training mode first.”
 
@@ -61,6 +64,8 @@ TERTIARY TARGET: Carisco, Celeste & Electra (identical-biosignature match: delta
 
 Celectra’s left body grinned. Her right body, still pacing the reclamatic, grinned too.
 
+<!-- page -->
+
 “Step one complete,” she said. “Disintegrator beams disabled?”
 
 “Training mode has been engaged. Emitter output is zero. You will not be atomized, not even exfoliated.”
@@ -88,6 +93,8 @@ Down the hall, Electra answered for her sister without a breath of delay: “Yes
 
 Amerigo blinked. The hand-off between his daughters’ voices was too seamless. It was like listening to one person speak from two places at once.
 
+<!-- page -->
+
 For a moment, a cold unease crept through him — the same vertigo he sometimes felt watching them move in perfect synchrony, as though distance meant nothing between them.
 
 Then Electra grinned at him, six years old and missing one front tooth, and the feeling collapsed under the familiar weight of fatherhood. They were his daughters. Twins. Just twins.
@@ -113,6 +120,8 @@ They ran.
 Both bodies took off down the corridor in opposite directions – which was, he immediately realized, a problem. The reclamatic, programmed to follow one biosignature, couldn’t decide which body to chase. It spun in place, beeped in distress, and then shut down with a soft whine.
 
 Both girls stopped. Both looked at the dead drone.
+
+<!-- page -->
 
 “Utara,” one of them said, “did I break it?”
 
@@ -165,6 +174,8 @@ The reclamatic beeped again, and Celeste began walking in a slow circle. The dro
 “Yes. And tomorrow, I’ll teach it to fetch.”
 
 He stared at them.
+
+<!-- page -->
 
 “Kidding,” she said. Both faces smiled. “Mostly.”
 

@@ -2,6 +2,7 @@
 layout: default
 title: Echos of Earth
 ---
+
 {% capture chapter_content %}
 
 Amerigo sat heavily in the middle of the sofa, absently cupping the four little feet in his lap between his hands. Celectra lay with a head on each arm of the sofa, each with a holopad synced to the same page of a book. Just this morning, Alex had confirmed what Amerigo had begun to suspect: Celectra wasn't twins, Celeste and Electra, but one person—a single consciousness in two bodies.  
@@ -15,6 +16,8 @@ He closed his eyes against the sterile gray of the cabin walls. Seventeen years 
 Amerigo's mind drifted to the wedding—a memory like a sun-warmed stone in his hand. Eighteen years since they'd woken from cryosleep to this new world, but Earth's blue sky remained vivid behind his eyes, and Jenni stood radiant in a simple dress, her laughter brighter than the bells that rang out after they said their vows.  
 
 He could still see her in perfect detail: the jasmine tucked behind her ear, the way her dark hair caught the afternoon sun, those hazel eyes that always saw more than they should. She’d written her own vows—of course she had, practical Jenni, who never did anything by half measures.  
+
+<!-- page -->
 
 “Amerigo,” she’d said, voice steady despite the tears shimmering, “I promise to explore the universe with you. To dig through asteroid cores and lava tubes and whatever weird rocks we find out there. To build something bigger than both of us. And to always, *always* remind you to eat when you’re lost in your calculations.”  
 
@@ -30,6 +33,8 @@ How could he have said no?
 \*\*\*  
 
 Their honeymoon wasn’t a relaxing beach trip; it was an adventure—the first of many they’d planned together. They spent two weeks on the Big Island of Hawaii, but instead of resorts, they explored the vast geological history of the island.  
+
+<!-- page -->
 
 Amerigo remembered the lava tubes near Kīlauea most vividly. The cool, damp air. The crushing silence. They had to duck low, stepping over sharp volcanic rock, the beam of their flashlights swallowed by massive black cavern walls. It felt like walking through the planet’s dark, beating heart.  
 
@@ -48,6 +53,8 @@ If only he’d known how prophetic her words would be.
 \*\*\*  
 
 They’d delayed starting a family, caught up in the chaos of New Eden’s founding. The cryosleep journey had taken seventy-eight years. They’d woken in a system that had never seen human footprints, with work that consumed every waking hour.  
+
+<!-- page -->
 
 Jenni’s deployments took her across the system—surveying moons, mapping resources, always chasing the next horizon. She’d comm him from Oscar or Oisín or one of the smaller satellites, her face pixelated but smiling, showing him core samples like they were treasures.  
 
@@ -68,6 +75,8 @@ By the tenth, they’d stopped counting.
 He’d held her while she cried, feeling utterly helpless. His brilliant, brave wife, who could read a planet’s history in its rocks, who could calculate orbital mechanics in her head—and there was nothing either of them could do about this. 
 
 “It’ll happen when it happens,” he’d told her, words that felt hollow even as he spoke them. “Or it won’t. Either way, I’ve got you.”  
+
+<!-- page -->
 
 She’d nodded against his chest, but he felt the dampness of her tears soaking through his shirt. 
 
@@ -99,6 +108,8 @@ Amerigo’s hands shook as he gripped the edge of his desk.
 
 “I’m not giving up on them,” she said fiercely. “I don’t care what the odds are. They’re fighters. They have to be. They’re *ours*.”  
 
+<!-- page -->
+
 He nodded, unable to speak past the lump in his throat.  
 
 “Four days,” she repeated. “I’ll see you in four days.”  
@@ -127,6 +138,8 @@ Amerigo’s blood turned to ice. He stumbled to his feet and ran across the wait
 “The babies—”  
 
 “Too early, but viable. It’s Jenni I’m worried about.”  
+
+<!-- page -->
 
 They wouldn’t let him into the surgical suite. He paced outside, hands shaking, praying to gods he didn’t believe in. Through the small window, he caught flashes: Jenni’s pale face, the frantic movements of the medical team, the harsh lights that made everything look too stark, too real. 
 
@@ -159,6 +172,8 @@ He couldn’t speak. Could only nod, tears streaming down his face as he took he
 
 “Anything. Jenni, please, just hold on—”  
 
+<!-- page -->
+
 “Promise me you’ll tell them about me.” The urgency in her voice made him freeze. She knew. She knew she was dying. “Not just the big stuff. Tell them about the time I accidentally vented the entire sample bay trying to open a window.” A weak laugh that turned into a cough. “Tell them I loved them before I ever met them. Tell them their mommy wanted to see the stars with them.”  
 
 “You will,” he choked out, denial thick in his throat. “You’ll be there. You’ll tell them yourself. You’ll—”  
@@ -182,6 +197,8 @@ The injustice of it made him want to break something.
 Instead, he went to see his daughters.  
 
 \*\*\*  
+
+<!-- page -->
 
 Seven days later, the medics cleared him to take the girls home.  
 
@@ -211,6 +228,8 @@ A knock at the door. Nurse Williams, still in her scrubs, carrying a bag of supp
 
 “Thought you might need help,” she said gently.  
 
+<!-- page -->
+
 He nodded, unable to speak.  
 
 She sat with him through that first terrible night, showing him how to hold them properly and how to tell when they were hungry versus tired versus just needing comfort. Her hands were sure where his shook, her voice calm where his broke.  
@@ -230,6 +249,8 @@ Williams didn’t tell him to stop crying. She just sat beside him, her slightly
 {% endcapture %}
 
 {% include tts-reader.html content=chapter_content %}
+
+<!-- page -->
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>

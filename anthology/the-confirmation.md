@@ -2,6 +2,7 @@
 layout: default
 title: The Confirmation
 ---
+
 {% capture chapter_content %}
 
 Amerigo watched his daughters' anticipation radiate through the exam room as Nurse Tim Alverson ushered them into the examination room. Amerigo took in the familiar details—the textured panels with their calming artificial wood grain, the soft hum of air filters, and the faint scent of antiseptic softened by something floral. Alex had always insisted a doctor’s office should feel less like a clinic and more like a place of comfort, and it showed; the small space felt more like a cozy study than a medical facility.  
@@ -15,6 +16,8 @@ Soon, Dr. Alex Cruiz’s presence filled the room, his kind tan eyes crinkling w
 Their faces lit up. “Hi, Uncle Doc\! I’m here to see you, of course\!”  
 
 Amerigo’s voice carried both affection and bewilderment. “Hi, Alex. My daughters insist they’re one person with a single mind spanning two bodies. I’m pretty much convinced, but I need your expertise to confirm it.” He recounted incidents—like when Celeste felt a tickle on Electra’s foot. “They complete each other’s sentences and respond as one entity. Look at their charts—identical weight, height, and vitals. It’s as if they’re two halves of a whole.”  
+
+<!-- page -->
 
 “I’ve noticed similar events. Let’s try something.” Alex stepped toward a drawer and returned with flashcards. “Celeste, could you turn around and face the wall?”  
 
@@ -46,6 +49,8 @@ Five jumps in, both monitors began climbing. 95... 98... 102...
 
 “Keep going,” Alex encouraged, his eyes fixed on the displays.  
 
+<!-- page -->
+
 Ten jumps. Both hearts: 108 bpm.  
 
 Fifteen jumps. 115 bpm.  
@@ -70,6 +75,8 @@ He looked at Amerigo with something like awe. “This isn’t just synchronized 
 
 He turned to the computer. “Utara, I assume you’ve been listening. Have you observed anything like this?”  
 
+<!-- page -->
+
 “Yes, Dr. Cruiz,” she answered, “I have been observing Celectra as the Colony Educator while teaching her. I believe she is correct about being one person. When I recently insisted both bodies take separate tests, both came up with the same correct and incorrect answers, even when I mixed up the question order.”  
 
 “The same *wrong* answers?” Amerigo interjected.  
@@ -89,6 +96,8 @@ Amerigo felt something twist in his chest. His daughter had been telling him for
 “Why didn’t you say something sooner?” Alex asked Utara, frustration touching his voice.  
 
 “After I heard her tell Amerigo, I started testing. I didn’t wish to speak until I was certain. There’s nothing anyone can do about it, and it isn’t a problem. On the contrary, it’s a tremendous asset. She has twice the brainpower of the average human, not to mention extra hands and feet.”  
+
+<!-- page -->
 
 Alex turned to Celectra. “Is that what you’d like us to call you?”  
 
@@ -110,6 +119,8 @@ Alex blinked, visibly stunned. He leaned back, rubbing his chin. “That... actu
 
 Alex chuckled. “Yeah, maybe something like that. Maybe your brains are so identical that each thought it was talking to other parts of itself.”  
 
+<!-- page -->
+
 Amerigo’s brow furrowed. “So it started because her skulls were still soft and unfinished, and the brains kept reinforcing the link as they grew?” Worry crept into his voice. “What does it mean for her now? Could that bridge ever break if she’s separated physically? Or could the connection itself cause problems as she keeps developing?”  
 
 Celectra froze. Not just a pause, but a mirror-stillness that made the air feel heavy. Both bodies drew arms around her knees, eyes wide. For the first time, Amerigo saw fear in both sets of eyes.  
@@ -128,6 +139,8 @@ Celectra exclaimed, both faces brightening up. “I’m a genius squared\!”
 
 “But why?” Amerigo asked, giving Celectra a thumbs-up.  
 
+<!-- page -->
+
 “The flare exposure during neural tube formation. We pulled the sensor logs from Utopis-Lab 3\. The station passed through the edge of Niamh’s coronal mass ejection for approximately eight minutes. Primarily high-energy protons and gamma radiation. Jenni’s estimated dose was around 1080millisieverts.”  
 
 Amerigo’s jaw tightened at the memory. Sublethal, but significant. Especially for what had been growing inside her.  
@@ -135,6 +148,8 @@ Amerigo’s jaw tightened at the memory. Sublethal, but significant. Especially 
 “That radiation exposure hit during a critical window,” Alex said quietly. “Normally, you’d expect developmental defects or miscarriage. Instead, it rewired Celectra’s biology in three ways.” He gestured to the scans. “The radiation didn't just damage tissue—it rewired developmental pathways during neural tube formation. Normally, embryonic brains develop strict boundaries between individuals. But at that critical window, the proton exposure appears to have fused signaling channels between your daughters' developing cortices—creating a bridge where biology intended separation. Second, placental damage caused insufficiency, leading to prematurity at 1.3 kilograms each, and her small size now. Third, the radiation triggered a localized **apoptotic cascade**, halting the melanoblasts before they could reach the epidermis. They simply never arrived, leaving her with white hair and fragile skin. But the neuroectoderm of her optic cups had already differentiated; her irises were already locked into their milk chocolate hue, a biological relic of the week before the storm hit. Three miracles from one tragedy.”  
 
 Amerigo swallowed. He had looked into those eyes a thousand times and never thought of them as anything but theirs—now hers.  
+
+<!-- page -->
 
 “Enhanced connectivity. Bilateral synchronization. The brains never had a chance to develop two separate consciousnesses. The result is an emergent phenomenon: two highly enhanced processors running a single, unified operating system. That’s why it’s not simply additive brilliance—it’s exponential. They literally evolved into a higher form of consciousness to survive the trauma. A forced evolutionary leap.”  
 
@@ -150,6 +165,8 @@ Amerigo’s jaw clenched.
 
 “Why Jenni died in childbirth.” Alex pulled up medical files—prenatal scans, placental anomalies, and the frantic delivery room moments. “The radiation that enhanced Celectra’s neural development also damaged Jenni’s placental tissue. It caused subtle vascular weakening and restricted blood flow, stunting growth in utero.”  
 
+<!-- page -->
+
 Alex’s voice softened, heavy with regret. “When labor began early, the weakened placenta started to detach. The hemorrhaging was catastrophic. We rushed her to surgery to save the twins, but the cascade of complications...”  
 
 “You couldn’t stop it,” Amerigo finished, his voice hollow. He’d heard fragments before, but never the full weight of why. Why Jenni, who’d survived the flare exposure and who’d carried their tiny twins to thirty-two weeks, had been lost in that final, terrible hour.  
@@ -163,6 +180,8 @@ Amerigo stared at the brain scans. “Can you predict what will happen as she de
 Amerigo thought of Jenni, her hand in his during those last minutes, whispering, “Take care of them,” before the light left her eyes.  
 
 “So we protect her,” Amerigo said quietly. “From anyone who sees her as an experiment instead of a person.”  
+
+<!-- page -->
 
 “Exactly.” Alex nodded firmly. “We know the *what*—radiation exposure during critical development created unprecedented neural architecture. We just don’t understand the *how*, and we may never fully understand it. But she’s thriving. She’s healthy, brilliant, and happy. Sometimes that has to be enough.”  
 
@@ -181,6 +200,8 @@ Celectra beamed, both sets of eyes shining. “See, Daddy? I told you it’s jus
 Amerigo’s expression softened, and for the first time in the conversation, a small smile touched his face. He knelt down and pulled both of her small bodies to him in a double hug. He finally let himself believe it—she was Celectra, not Celeste and Electra. One extraordinary daughter.  
 
 “You’re right, sweetheart. It is just you, and you’re more than enough. I wouldn’t trade you for anything.” He glanced at Alex, concern still flickering but tempered now with acceptance. “I just want to make sure you’ll always be safe, no matter how different you are.”  
+
+<!-- page -->
 
 Amerigo thought of Jenni, her courage in those early months of pregnancy, and hoped she’d be proud of their extraordinary daughter. Maybe this was her gift—a child who defied every boundary.  
 

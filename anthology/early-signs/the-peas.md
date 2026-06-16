@@ -3,6 +3,7 @@ layout: default
 title: The Peas
 ---
 
+
 {% capture chapter_content %}
 
 At six months old, the twins sat in their high chairs side by side – trays locked, safety straps snug. The medical schedule on Amerigo’s datapad said it was time for solid foods. Mashed peas, specifically. He had prepared the mush himself, spooning it from the MRE into two tiny bowls.
@@ -34,6 +35,8 @@ Amerigo set down the spoon. He looked from one face to the other. Both stared ba
 “Okay,” he said aloud. “That’s weird.”
 
 But he didn’t tell anyone. Not yet. What would he say? *I think my daughters might be sharing experiences somehow*? It sounded insane. He was a scientist. He needed more data.
+
+<!-- page -->
 
 He filed it away – in the same mental folder where he’d already placed the synchronized cries, the identical sleep cycles, the way they never seemed to need to look at each other to know what the other was doing.
 

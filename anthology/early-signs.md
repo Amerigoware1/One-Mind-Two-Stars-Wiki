@@ -2,6 +2,7 @@
 layout: default
 title: Early Signs
 ---
+
 {% capture chapter_content %}
 
 By week two, Amerigo had resorted to colored ribbons tied around their right ankles. Gold for Electra. Blue for Celeste.  
@@ -34,6 +35,8 @@ Celeste startled, too. Same timing, same wide eyes, same tiny gasp.
 
 “What in the...” He looked between them. Both stared at him with identical expressions of baby confusion and growing wariness. “Okay. That’s weird.”  
 
+<!-- page -->
+
 But he didn’t tell anyone. Not yet. Because what would he say? *I think my daughters might be sharing experiences somehow*? It sounded insane.  
 
 He filed it away in his mind with all the other oddities he’d noticed, telling himself it was just the strangeness of having twins, of being a new parent, of trying to navigate fatherhood while drowning in grief.  
@@ -58,6 +61,8 @@ Dee glanced at Amerigo, uncertain. He shrugged and smiled. “Sorry, sweetie. Ca
 
 “Yes, Daddy.” And she did—one body holding the watering can, the other guiding it, moving together like a choreographed dance.  
 
+<!-- page -->
+
 Afterward, Dee pulled him aside. “Amerigo... did you notice they said ‘I’m,’ not ‘we’re’?”  
 He had. But he’d dismissed it as linguistic confusion. Three-year-olds made grammar mistakes all the time.  
 
@@ -69,6 +74,8 @@ Alex and Dee saw their uniqueness, too. Alex, still carrying the weight of losin
 
 Now, Amerigo was seeing old memories in a new light. Celectra lived her single mind across two bodies like a birthright. Even now, resting and still. But Amerigo’s mind flashed back to her everyday life: the controlled chaos of her unique play. She was the unofficial ruler of the *Utopis* station’s sloping corridors. She didn’t just walk—she flowed. On the way to music, karate, or dance class, one body would run ahead, darting behind an air scrubber, while the other would pivot on a dime, laughing as it chased its own reflection.  
 
+<!-- page -->
+
 He remembered the time she reprogrammed the reclamatics to follow her like ducklings last year when she was 6\. One body stood beside a maintenance panel, fingers flying over the interface like she was tickling it into submission. Amerigo had thought it was a game. A prank. A coincidence. But now he saw it: the choreography. One body distracted the automated cleaning  bots—twirling, skipping, tossing a crumpled piece of paper like bait. The reclamatics, programmed to chase debris, followed her in a neat little line. Meanwhile, her other body rerouted their behavior protocols, assigning her own biosignature as their new “target object.” She didn’t need to speak. Didn’t need to signal. She just *knew* what her other self was doing. And when the reclamatics began trailing behind her like obedient ducklings, both bodies giggled in perfect unison. Amerigo had laughed, too, back then. But now, he relived it with awe.  
 
 Another time, Celectra had convinced Aunt Dee to teach her how to make real pancakes. In the Cruiz’s kitchen, one body smoothly beat the batter with a whisk while the other, at the counter’s edge, delicately portioned and folded in melted butter—a seamless, yet messy, division of labor resulting in perfectly proportioned ingredients in the mix and two sets of small, flour-dusted footprints leading away from the crime scene.  
@@ -78,6 +85,8 @@ They moved like two ends of the same magnificent piece of string, never crossing
 \*\*\*  
 
 Just yesterday, though it felt like a lifetime, Amerigo had watched her solve a calculus problem that Utara had given her as a “challenge”—high school-level mathematics. Problems he himself struggled with.  
+
+<!-- page -->
 
 One body wrote the equations in smooth, confident strokes. The other sketched a visual proof, translating abstract numbers into geometric shapes. Both worked simultaneously on different aspects of the same problem, never consulting, never checking with each other, never even glancing between bodies.  
 
@@ -103,6 +112,8 @@ How being *herself* felt.
 
 Now, in the present moment, with her four little feet warm in his hands and her dual breathing steady and synchronized, Amerigo understood.  
 
+<!-- page -->
+
 The potty training. The synchronized reactions to food. The way she never argued with “herself.” The reclamatic incident. The calculus. All of it.  
 
 It wasn’t coincidence or trained behavior or exceptional twin intuition.  
@@ -124,6 +135,8 @@ He thought for a moment, still absently rubbing her feet, feeling the warmth of 
 “She used to sing in the shower,” he said finally. “Terribly. Off-key. Songs from Earth that nobody else in the system had even heard of. And she’d make up half the words when she forgot them.”  
 
 Both faces lit up with delight. “Like what?”  
+
+<!-- page -->
 
 “There was this old song called ‘Twinkle Twinkle Little Star’—except she’d sing it ‘Sparkle sparkle little sun, burning bright when day is done.’” He smiled at the memory and could almost hear her voice echoing off the shower walls. “She said the original didn’t make sense because stars burn during the day too; we just can’t see them.”  
 
@@ -148,6 +161,8 @@ Both bodies moved then, abandoning their positions on the sofa arms to curl up a
 “I wish I could have met her,” Celectra said softly. “I wish I could remember her.”  
 
 “You do, in a way.” Amerigo held her—held *her*, singular, miraculous her—and let himself finally grieve and celebrate at once. “Every time you figure out a puzzle or ask a brilliant question or refuse to accept easy answers. Every time you see beauty in strange places. That’s all her.”  
+
+<!-- page -->
 
 He paused, then added, “And every time you use your uniqueness as a strength instead of hiding it—that’s you honoring what she gave up everything for. You existing, just as you are, is what she wanted most.”  
 

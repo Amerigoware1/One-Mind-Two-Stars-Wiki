@@ -3,6 +3,7 @@ layout: default
 title: Parisian Promise
 ---
 
+
 {% capture chapter_content %}
 
 The cylindrical elevator car was cramped with six bodies, but Celectra felt only warmth—the solid presence of Uncle Doc at her back, Daddy's hand resting lightly on her shoulder, Dr. Zoë's quiet hum vibrating through the confined space. This closeness wasn't confinement; it was sanctuary.  
@@ -18,6 +19,8 @@ The cylindrical elevator car was cramped with six bodies, but Celectra felt only
 The gravity strengthened steadily as they descended, from the weightlessness of the core to a gentle pull, then stronger still. Celectra felt her feet settling more firmly on the elevator floor, her bodies naturally adjusting to the familiar sensation of weight returning.  
 
 “I think Jaxon really understands now,” she said, catching a glimpse of the habitat ring’s curved hull through the small viewport. “Did you see his face when I untangled his harness?”  
+
+<!-- page -->
 
 “I saw,” Aunt Dee smiled. “Sometimes showing kindness to someone who’s hurt you is the most powerful thing you can do.”  
 
@@ -45,6 +48,8 @@ Amerigo blinked. “Excuse me?”
 
 “Don’t.” Alex held up a hand. “I’ve known you since college, Amerigo. I know what you look like when you’re interested, and I know what you look like when you’re terrified of being interested. Right now, you’re both.”  
 
+<!-- page -->
+
 Amerigo glanced over at Zoë again. She was laughing at something Dee said, her head thrown back, auburn hair catching the light from the observation windows. Something in his chest tightened.  
 
 “It’s complicated,” he said finally.  
@@ -65,6 +70,8 @@ Amerigo was quiet for a long moment, watching Zoë across the room. She caught h
 
 “That’s what I’m afraid of.”  
 
+<!-- page -->
+
 “Then stop being afraid and start being honest. With her, with Zoë, with yourself.” Alex clapped him on the shoulder. “Life’s too short to waste it on fear, especially out here. We’re forty-five light-years from Earth on a moon orbiting a gas giant. If we can be brave enough for that, you can be brave enough for this.”  
 
 Amerigo exhaled slowly, then nodded. “When did you get so wise?”  
@@ -82,6 +89,8 @@ Amerigo made his way across the common area toward the observation windows. Zoë
 The transition from zero-G to the habitat ring’s 0.9 \-*g* always took a moment of adjustment. After an hour of floating and spinning in the gym, the centrifugal gravity felt wonderfully grounding to Celectra. After the long, silent ride, the first notes of music felt like sunlight after an eclipse.  
 
 Utara was singing “Parisian Promise”—the lullaby Daddy used to sing to her, a lilting waltz drifting through the lounge. A wobbly guitar, a brushed snare, the soft hum of a synthesized violin. Amerigo had written it for Jenni, Celectra’s mother, whose Persian-Irish heart dreamed of Parisian terraces. It wasn’t the kind of song one expected on a space station, but to Celectra, it was home. “*Sitting out on the terrace, deep in the heart of Paris…*” she hummed through both pairs of lips, her two smiles wide—it was Mommy’s song, and Daddy’s words, even off-key, made the stars feel closer.  
+
+<!-- page -->
 
 It was the perfect kind of music for Daddy and Zoë.  
 
@@ -103,6 +112,8 @@ Jaxon stepped forward with an elegant cake server, ready to serve the synthesize
 
 The gesture was so thoughtful, so accepting, that Celectra felt warmth bloom in both her chests. “Thank you,” she said softly.  
 
+<!-- page -->
+
 One of her bodies stayed at the table with the other kids, laughing with Shawanna while Gill and Dev argued over which constellations their glow-in-the-dark stickers belonged to. Zara launched a toy shuttle in looping arcs, shrieking with delight each time it sailed back into her hands.  
 
 Her other body drifted toward the auto-tinted observation windows where the adults gathered, carrying most of her awareness with it. Daddy and Dr. Zoë stood close together, their shoulders nearly touching as they gazed out at the binary stars.  
@@ -117,6 +128,8 @@ Zoë turned toward him, smiling at his words. “She’s wise beyond her years. 
 
 “She is remarkable,” Daddy agreed, his tone dropping lower. “I was worried about today. About how the other kids would react.”  
 
+<!-- page -->
+
 “Children are often more accepting than we give them credit for,” Zoë said, glancing toward the table—toward Celectra’s other body. “Especially when someone has the courage to show them who they really are.”  
 
 Their hands brushed as they both reached for drinks, and this time, neither pulled away. The contact sent a flutter of hope through Celectra’s observant hearts, linking her two vantage points together in a rush of warmth.  
@@ -130,6 +143,8 @@ The conversation at the table had turned to party favors. Gill and Dev were comp
 “These are for you,” Jaxon said, approaching Celectra with two identical packages. Inside each was a holographic star chart—not unlike the gift she’d brought for him, but showing the view from Utopis at this exact moment.  
 
 “So you can always remember tonight,” he explained, his cheeks pink with embarrassment. “And... and I’m sorry. For being mean before. I thought you were two people being better than me, but knowing you’re one person...” He paused, searching for the right words. “It just makes you more amazing, not less.”  
+
+<!-- page -->
 
 Celectra clutched the star charts to both her chests, emotions threatening to overwhelm her. “I have something for you too,” she said, retrieving her carefully prepared gift—the holographic map of the Niamh-Ciara system.  
 
@@ -150,6 +165,8 @@ Instead, she whispered to herself, just loud enough for her enhanced hearing to 
 The binary stars continued their eternal dance outside the windows, two separate lights that created something beautiful together. Watching them, surrounded by friends who finally knew her truth, Celectra felt ready for anything.  
 
 She was Celectra, two bodies sharing one brilliant mind, and she had people who loved her exactly as she was.  
+
+<!-- page -->
 
 Outside, the binary stars kept circling their shared light. Inside, Celectra breathed in sync with them—whole, loved, and endless as the night.
 
