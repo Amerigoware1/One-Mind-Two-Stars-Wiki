@@ -40,11 +40,11 @@ permalink: /gallery/
       <div class="pswp__item"></div>
     </div>
 
-    <div class="pswp__ui pswp__hide-on-close">
+    <div class="pswp__ui pswp--ui-visible">
       <div class="pswp__top-bar">
-        <button class="pswp__button pswp__button--close"></button>
-        <button class="pswp__button pswp__button--arrow--prev"></button>
-        <button class="pswp__button pswp__button--arrow--next"></button>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--arrow--prev" title="Previous (arrow left)"></button>
+        <button class="pswp__button pswp__button--arrow--next" title="Next (arrow right)"></button>
         <div class="pswp__counter"></div>
       </div>
     </div>
@@ -122,9 +122,17 @@ permalink: /gallery/
     color: #aaa;
   }
 
-  /* Force close button visible */
-  .pswp__button--close {
+  /* Ensure PhotoSwipe UI is always visible */
+  .pswp__ui.pswp--ui-visible .pswp__button--close,
+  .pswp__ui.pswp--ui-visible .pswp__button--arrow--prev,
+  .pswp__ui.pswp--ui-visible .pswp__button--arrow--next {
     opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+  }
+
+  /* Override touch behavior to always show arrows */
+  .pswp--touch .pswp__button--arrow {
     visibility: visible !important;
   }
 </style>
@@ -205,18 +213,23 @@ document.addEventListener("DOMContentLoaded", async () => {
   function initLightbox() {
     if (lightbox) lightbox.destroy();
 
-    // 2. Initialize the v5 Lightbox
+    // Initialize the v5 Lightbox
     lightbox = new PhotoSwipeLightbox({
       gallery: '#gallery',
       children: 'a',
-      pswpModule: PhotoSwipe, // Points to the core UMD module script
+      pswpModule: PhotoSwipe,
 
       wheelToZoom: true,
+      pinchToClose: true,
       showHideAnimationType: 'zoom',
       closeOnVerticalDrag: true,
+      
+      // Ensure proper zoom behavior
+      allowPanToNext: true,
+      spacing: 0.12,
     });
 
-    // 3. Custom v5 UI Hook to render Captions dynamically
+    // Register custom caption element
     lightbox.on('uiRegister', function() {
       lightbox.pswp.ui.registerElement({
         name: 'custom-caption',
@@ -225,20 +238,34 @@ document.addEventListener("DOMContentLoaded", async () => {
         appendTo: 'root',
         onInit: (el, pswpInstance) => {
           // Listen for slide changes to swap text
-          lightbox.pswp.on('change', () => {
-            const currSlide = lightbox.pswp.currSlide;
+          pswpInstance.on('change', () => {
+            const currSlide = pswpInstance.currSlide;
             // Fetch item data using the slide index
             const itemData = items[currSlide.index]; 
             
-            if (itemData) {
+            if (itemData && el) {
               el.innerHTML = `
-                <div style="padding: 1.5rem; text-align: center; color: #fff; background: rgba(0, 0, 0, 0.75); position: absolute; bottom: 0; left: 0; right: 0; z-index: 9999;">
+                <div style="padding: 1.5rem; text-align: center; color: #fff; background: rgba(0, 0, 0, 0.75); position: absolute; bottom: 0; left: 0; right: 0;">
                   <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.4rem;">${itemData.title}</div>
                   <div style="font-size: 0.95rem; opacity: 0.85;">${itemData.description}</div>
                 </div>
               `;
-            } else {
+            } else if (el) {
               el.innerHTML = '';
+            }
+          });
+          
+          // Initial caption display
+          pswpInstance.on('initialLayout', () => {
+            const currSlide = pswpInstance.currSlide;
+            const itemData = items[currSlide.index];
+            if (itemData && el) {
+              el.innerHTML = `
+                <div style="padding: 1.5rem; text-align: center; color: #fff; background: rgba(0, 0, 0, 0.75); position: absolute; bottom: 0; left: 0; right: 0;">
+                  <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.4rem;">${itemData.title}</div>
+                  <div style="font-size: 0.95rem; opacity: 0.85;">${itemData.description}</div>
+                </div>
+              `;
             }
           });
         }

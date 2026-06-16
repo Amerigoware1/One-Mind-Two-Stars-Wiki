@@ -1,6 +1,1 @@
-# Jekyll build artifacts
-
-# Exclude Jekyll build artifacts
-_site/
-.jekyll-cache/
-.jekyll-metadata
+Nothing needs to be added to .gitignore since only a markdown file (`gallery.md`) was modified and there are no build artifacts, dependencies, or temporary files in the changes.
