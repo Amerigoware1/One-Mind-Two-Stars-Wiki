@@ -33,27 +33,6 @@ permalink: /gallery/
   <div class="loading">Loading gallery...</div>
 </div>
 
-<!-- PhotoSwipe Root -->
-<div class="pswp" id="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="pswp__bg"></div>
-  <div class="pswp__scroll-wrap">
-    <div class="pswp__container">
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-    </div>
-
-    <div class="pswp__ui pswp--ui-visible">
-      <div class="pswp__top-bar">
-        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-        <button class="pswp__button pswp__button--arrow--prev" title="Previous (arrow left)"></button>
-        <button class="pswp__button pswp__button--arrow--next" title="Next (arrow right)"></button>
-        <div class="pswp__counter"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <style>
   .gallery-grid {
     display: grid;
