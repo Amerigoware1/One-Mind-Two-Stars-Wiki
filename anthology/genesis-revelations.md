@@ -3,6 +3,8 @@ layout: default
 title: Genesis Revelations
 ---
 
+{% capture chapter_content %}
+
 Amerigo jolted awake to the sound of a pint-sized invasion force storming his berth aboard the space station, Utopis. His twin daughters, a whirlwind of boundless energy, quickly flanked his bed, seizing his arms and launching an adorable onslaught of demands, their voices a synchronized clamor in his room. This wasn’t the first time this had happened, and he knew it wouldn’t be the last. Despite his lean and muscular physique, he was utterly powerless against their formidable attributes of charm and puppy-dog eyes.  
 
 The soft blue ambient lighting strips along the curved ceiling had already begun their gradual morning brightening sequence, synced with Ares’s surface below, where dawn was still an hour away.  
@@ -266,6 +268,10 @@ Both faces lit up with radiant smiles, and he felt something shift in his chest�
 
 He raised his head, a new resolve hardening his expression. “This changes everything,” he announced. “I’m scheduling an appointment with Dr. Cruiz right now.”
 
+
+{% endcapture %}
+
+{% include tts-reader.html content=chapter_content %}
 
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">

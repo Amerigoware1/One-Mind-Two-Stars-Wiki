@@ -3,6 +3,8 @@ layout: default
 title: First Impressions
 ---
 
+{% capture chapter_content %}
+
 Dr. Zoë Kret, PsyD, rushed to finish her notes on her last patient when she heard the door swoosh open. She looked up to see two beautiful young girls hesitantly entering her office with their father and stopping behind the two cushioned chairs in front of her desk.  
 
 The sight of Amerigo struck her like the scent of rain on New Mexico asphalt—that astronomy conference in Albuquerque where Jenni had appeared at his elbow with two coffees and a laugh that said, he's mine.  
@@ -172,8 +174,9 @@ Zoë smiled gently. “That’s brave, Celectra. Really brave.”
 
 As Celectra gathered herself to leave, Zoë’s thoughts drifted to Amerigo. His absence on Utopis and his grief for Jenni stirred old feelings from their college days. She couldn’t help but wonder if this case might offer her a second chance with Amerigo—though the circumstances couldn’t be more complicated, with him grieving his wife and her needing to maintain professional boundaries while treating his daughter. The thought both thrilled and terrified her. But Celectra’s case—and her own struggle to stay true to her empathic core against her father’s influence—was what mattered now. She couldn’t let herself become Dr. Kret, seeing only “fascinating” data. Celectra deserved more.
 
+{% endcapture %}
 
--
+{% include tts-reader.html content=chapter_content %}
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to extended Archive</a>

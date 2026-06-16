@@ -3,7 +3,7 @@ layout: default
 Title: Cyrstalling Truths
 ---
 
-# Crystalline Truths
+{% capture chapter_content %}
 
 ​Celectra woke in the pre-dawn dimness. One body rolled from bed, knees sinking into the soft-touch flooring. The other leaned over the edge, fingers finding the carbon fiber panel set into the bedframe. A near-silent *whir* of electric motors followed, and a powered drawer, faced with matching cherry veneer, eased itself open from the decking until it was fully extended. It hung suspended just over the floor.
 
@@ -91,6 +91,9 @@ Maybe today Uncle Doc would finally help Daddy see what she’d always known: th
 
 Together, they headed to the kitchen, the station’s lighting sequence finally beginning its gradual brightening as Utopis turned its face toward another day.
 
+{% endcapture %}
+
+{% include tts-reader.html content=chapter_content %}
 
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">

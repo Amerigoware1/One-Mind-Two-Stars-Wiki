@@ -3,6 +3,8 @@ layout: default
 title: Parisian Promise
 ---
 
+{% capture chapter_content %}
+
 The cylindrical elevator car was cramped with six bodies, but Celectra felt only warmth—the solid presence of Uncle Doc at her back, Daddy's hand resting lightly on her shoulder, Dr. Zoë's quiet hum vibrating through the confined space. This closeness wasn't confinement; it was sanctuary.  
 
 "You were incredible in there," Dr. Zoë said softly, her hand finding Celectra's shoulder as the first hint of centrifugal force began to tug at them. "I've never seen such courage."  
@@ -150,6 +152,10 @@ The binary stars continued their eternal dance outside the windows, two separate
 She was Celectra, two bodies sharing one brilliant mind, and she had people who loved her exactly as she was.  
 
 Outside, the binary stars kept circling their shared light. Inside, Celectra breathed in sync with them—whole, loved, and endless as the night.
+
+{% endcapture %}
+
+{% include tts-reader.html content=chapter_content %}
 
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">

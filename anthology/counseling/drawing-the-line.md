@@ -3,6 +3,8 @@ layout: default
 title: Drawing the Line
 ---
 
+{% capture chapter_content %}
+
 The Nexus was a wide circular building just like the others around the roundabout in New Eden's center—part community hall, part recreation space—the social hub, its stone walls thick enough to hold the heat on cool evenings and the cool on hot ones. The holo-chambers were on the upper floor, three rooms set aside for entertainment, education, and the occasional therapeutic use that Celectra suggested. The corridor smelled of the same generic cleaning solution as every colony building, but up here the light was better, east-facing windows catching the morning before Chaos rose to dominate the sky.
 
 Celectra was already waiting in the corridor when Zoë arrived, barefoot as always. She had long since dropped the polite excuses about cleaning bots and sanitized floors she’d once used to deflect questions. The truth was that shoes were friction and fire—a recipe for "skin shouting" that her hypersensitive nerves couldn't tolerate. Her two bodies leaning against opposite walls, holopad in one set of hands, specimen bag in the other. The celestite from Oisín. She still brought it sometimes, a talisman rather than a prop now.
@@ -179,8 +181,9 @@ Celectra shifted the celestite to the hand that held the holopad, freeing the ot
 
 "Something real," she said. "I think I'm ready for something real."
 
+{% endcapture %}
 
--
+{% include tts-reader.html content=chapter_content %}
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>

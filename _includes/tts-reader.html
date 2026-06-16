@@ -1,0 +1,279 @@
+<!-- _includes/tts-reader.html -->
+<style>
+  .tts-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .tts-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--bg-card, #1e1e2f);
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid var(--neon-violet, #bb86fc);
+    margin-bottom: 10px;
+    color: var(--text-primary, #eee);
+    flex-wrap: wrap;
+  }
+  .tts-controls button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background: var(--neon-violet, #bb86fc);
+    color: var(--text-heading, #fff);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  .tts-controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .tts-controls label {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--text-muted, #aaa);
+  }
+  .tts-controls select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid var(--neon-violet, #bb86fc);
+    background: var(--bg-card, #2a2a3a);
+    color: var(--text-primary, #eee);
+  }
+  .tts-container {
+    position: relative;
+    border: 1px solid var(--neon-violet, #bb86fc);
+    padding: 20px;
+    background: var(--bg-card, #1a1a2a);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  .tts-container.tts-active {
+    border-color: var(--neon-cyan, #00e8ff);
+    box-shadow: 0 0 12px rgba(0, 232, 255, 0.5);
+    animation: borderPulse 2s infinite ease-in-out;
+  }
+  @keyframes borderPulse {
+    0% { box-shadow: 0 0 12px rgba(0, 232, 255, 0.4); }
+    50% { box-shadow: 0 0 18px rgba(0, 232, 255, 0.8); }
+    100% { box-shadow: 0 0 12px rgba(0, 232, 255, 0.4); }
+  }
+  /* Optional page navigation (if you split text) */
+  .tts-page {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .tts-page.active {
+    display: block;
+    opacity: 1;
+  }
+  .tts-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-top: 1px solid var(--neon-violet, #bb86fc);
+  }
+  .tts-nav button {
+    padding: 6px 14px;
+    background: var(--neon-violet, #bb86fc);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .tts-nav button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+</style>
+
+<div class="tts-wrapper">
+  <div class="tts-controls">
+    <button id="ttsPlayBtn" onclick="toggleTTS()">▶️ Play Audio</button>
+    <button id="ttsStopBtn" onclick="stopTTS()" disabled>⏹️ Stop</button>
+    <label for="voiceSelect">Voice:</label>
+    <select id="voiceSelect" onchange="changeVoice()"></select>
+  </div>
+
+  <div class="tts-container" id="ttsContainer">
+    <!-- The content will be injected here from the page -->
+    <div id="ttsContent">
+      {{ include.content | markdownify }}
+    </div>
+  </div>
+
+  <!-- Optional pagination controls (if you split content) -->
+  <div class="tts-nav" id="ttsNav" style="display:none;">
+    <button id="ttsPrev" onclick="changeTtsPage(-1)">⬅️ Previous</button>
+    <span id="ttsPageCounter">Page 1</span>
+    <button id="ttsNext" onclick="changeTtsPage(1)">Next ➡️</button>
+  </div>
+</div>
+
+<script>
+// --- TTS Engine ---
+(function() {
+  const synth = window.speechSynthesis;
+  let utterance = null;
+  let isPaused = false;
+  let voices = [];
+  let currentPage = 0;
+  let pages = [];
+
+  // Detect pages: if there are elements with class 'tts-page', use them; otherwise treat whole content as one page.
+// Instead of looking for .tts-page, split content by <!-- page -->
+function initPages() {
+  const content = document.getElementById('ttsContent');
+  const rawHTML = content.innerHTML;
+  const parts = rawHTML.split(/<!--\s*page\s*-->/);
+  if (parts.length > 1) {
+    content.innerHTML = ''; // clear
+    parts.forEach((part, i) => {
+      const div = document.createElement('div');
+      div.className = 'tts-page' + (i === 0 ? ' active' : '');
+      div.innerHTML = part;
+      content.appendChild(div);
+    });
+    pages = Array.from(content.querySelectorAll('.tts-page'));
+    document.getElementById('ttsNav').style.display = 'flex';
+    updateNavButtons();
+  } else {
+    // single page
+    const wrapper = document.createElement('div');
+    wrapper.className = 'tts-page active';
+    while (content.firstChild) wrapper.appendChild(content.firstChild);
+    content.appendChild(wrapper);
+    pages = [wrapper];
+    document.getElementById('ttsNav').style.display = 'none';
+  }
+  currentPage = 0;
+  updatePageCounter();
+}
+
+  function updateNavButtons() {
+    document.getElementById('ttsPrev').disabled = (currentPage === 0);
+    document.getElementById('ttsNext').disabled = (currentPage === pages.length - 1);
+  }
+
+  function updatePageCounter() {
+    document.getElementById('ttsPageCounter').textContent = `Page ${currentPage+1} of ${pages.length}`;
+  }
+
+  function getCurrentPageText() {
+    if (!pages.length) return '';
+    const el = pages[currentPage];
+    return el.textContent.trim() || '';
+  }
+
+  function populateVoiceList() {
+    if (!synth) return;
+    voices = synth.getVoices();
+    const select = document.getElementById('voiceSelect');
+    select.innerHTML = '';
+    voices.forEach((voice, i) => {
+      const opt = document.createElement('option');
+      opt.textContent = `${voice.name} (${voice.lang})`;
+      opt.value = i;
+      if (voice.default) opt.selected = true;
+      select.appendChild(opt);
+    });
+  }
+
+  if (synth && synth.onvoiceschanged !== undefined) {
+    synth.onvoiceschanged = populateVoiceList;
+  }
+
+  window.toggleTTS = function() {
+    if (!synth) return;
+    const container = document.getElementById('ttsContainer');
+    if (synth.speaking && !isPaused) {
+      synth.pause();
+      isPaused = true;
+      document.getElementById('ttsPlayBtn').textContent = '⏸️ Resume';
+      container.classList.remove('tts-active');
+      return;
+    }
+    if (isPaused) {
+      synth.resume();
+      isPaused = false;
+      document.getElementById('ttsPlayBtn').textContent = '⏸️ Pause';
+      container.classList.add('tts-active');
+      return;
+    }
+
+    const text = getCurrentPageText();
+    if (!text) return;
+
+    utterance = new SpeechSynthesisUtterance(text);
+    const selectedIndex = document.getElementById('voiceSelect').value;
+    if (voices[selectedIndex]) utterance.voice = voices[selectedIndex];
+
+    utterance.onstart = function() {
+      container.classList.add('tts-active');
+    };
+    utterance.onend = function() {
+      // If there's a next page, auto-advance
+      if (currentPage < pages.length - 1) {
+        changeTtsPage(1);
+        setTimeout(() => window.toggleTTS(), 300);
+      } else {
+        stopTTS();
+      }
+    };
+
+    document.getElementById('ttsPlayBtn').textContent = '⏸️ Pause';
+    document.getElementById('ttsStopBtn').disabled = false;
+    synth.speak(utterance);
+  };
+
+  window.stopTTS = function() {
+    if (!synth) return;
+    synth.cancel();
+    isPaused = false;
+    document.getElementById('ttsPlayBtn').textContent = '▶️ Play Audio';
+    document.getElementById('ttsStopBtn').disabled = true;
+    document.getElementById('ttsContainer').classList.remove('tts-active');
+  };
+
+  window.changeVoice = function() {
+    if (synth.speaking) {
+      stopTTS();
+      window.toggleTTS();
+    }
+  };
+
+  window.changeTtsPage = function(step) {
+    const newPage = currentPage + step;
+    if (newPage < 0 || newPage >= pages.length) return;
+    pages[currentPage].classList.remove('active');
+    currentPage = newPage;
+    pages[currentPage].classList.add('active');
+    updateNavButtons();
+    updatePageCounter();
+    // If TTS is speaking, restart with new page text
+    if (synth.speaking) {
+      stopTTS();
+      window.toggleTTS();
+    }
+  };
+
+  // Populate voices after DOM ready
+  if (document.readyState === 'complete') {
+    populateVoiceList();
+  } else {
+    window.addEventListener('load', populateVoiceList);
+  }
+
+  // Initialize pages when DOM is ready
+  if (document.readyState === 'complete') {
+    initPages();
+  } else {
+    window.addEventListener('load', initPages);
+  }
+})();
+</script>

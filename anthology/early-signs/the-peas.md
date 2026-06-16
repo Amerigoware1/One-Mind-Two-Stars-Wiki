@@ -3,6 +3,7 @@ layout: default
 title: The Peas
 ---
 
+{% capture chapter_content %}
 
 At six months old, the twins sat in their high chairs side by side – trays locked, safety straps snug. The medical schedule on Amerigo’s datapad said it was time for solid foods. Mashed peas, specifically. He had prepared the mush himself, spooning it from the MRE into two tiny bowls.
 
@@ -39,6 +40,10 @@ He filed it away – in the same mental folder where he’d already placed the s
 *Twin intuition*, he told himself. *Nothing more.*
 
 But he saved the peas for another day.
+
+{% endcapture %}
+
+{% include tts-reader.html content=chapter_content %}
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>

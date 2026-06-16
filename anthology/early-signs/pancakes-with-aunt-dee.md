@@ -3,6 +3,7 @@ layout: default
 title: Pancakes with Aunt Dee
 ---
 
+{% capture chapter_content %}
 
 Amerigo paused in the doorway of the Cruiz kitchen, the scent of vanilla and warm flour wrapping around him like a familiar blanket. He watched, heart softening, as his four-year-old daughters worked.
 
@@ -35,6 +36,10 @@ Celeste was already pouring syrup, her movements economical. "Optimal serving te
 Amerigo took the plate, the warmth seeping into his hands. "Looks perfect," he said, his voice thick with an emotion too big for words. He looked at Dee, who gave him a small, knowing nod. She saw it too—the miracle in the mundane. The love that didn't need to understand every scientific nuance to be real. And there, leading away from the epicenter of culinary creation, were two sets of small, flour-dusted footprints. Tiny arches and toes imprinted in the pale powder, tracing a path toward the living room. The crime scene, he thought affectionately. Evidence of his girls' enthusiastic approach to breakfast.
 
 As he took his first bite, the sweetness of maple and tartness of berry exploding on his tongue, Amerigo Carisco felt a profound gratitude. For Dee, who taught his daughters more than recipes. For Alex, who kept them healthy. For the quiet, flour-dusted morning where his twin daughters, Celeste and Electra, were just kids, and he was just their dad, and that was more than enough. The footprints on the floor weren't evidence of a crime, he decided. They were a map. A map leading right back to this: home.
+
+{% endcapture %}
+
+{% include tts-reader.html content=chapter_content %}
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>

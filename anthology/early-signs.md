@@ -2,6 +2,7 @@
 layout: default
 title: Early Signs
 ---
+{% capture chapter_content %}
 
 By week two, Amerigo had resorted to colored ribbons tied around their right ankles. Gold for Electra. Blue for Celeste.  
 
@@ -164,6 +165,9 @@ And here, on this station, her daughter—singular, extraordinary, impossible—
 
 And for the first time since Jenni’s death, Amerigo felt something like peace.
 
+{% endcapture %}
+
+{% include tts-reader.html content=chapter_content %}
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>

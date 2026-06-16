@@ -3,6 +3,8 @@ layout: default
 title: The Duckling Incident
 ---
 
+{% capture chapter_content %}
+
 Celectra was six years old, and she was bored.
 
 Not the restless, whining kind of bored. The *dangerous* kind – the kind that made her look at the station’s automated cleaning systems and wonder what would happen if they decided to follow her instead of chasing dust.
@@ -177,6 +179,9 @@ Then he opened his comm and called Alex.
 
 “You’re not going to believe what your goddaughters did today.”
 
+{% endcapture %}
+
+{% include tts-reader.html content=chapter_content %}
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>

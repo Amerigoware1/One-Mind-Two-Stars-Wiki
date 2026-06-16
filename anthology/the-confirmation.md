@@ -2,6 +2,7 @@
 layout: default
 title: The Confirmation
 ---
+{% capture chapter_content %}
 
 Amerigo watched his daughters' anticipation radiate through the exam room as Nurse Tim Alverson ushered them into the examination room. Amerigo took in the familiar details—the textured panels with their calming artificial wood grain, the soft hum of air filters, and the faint scent of antiseptic softened by something floral. Alex had always insisted a doctor’s office should feel less like a clinic and more like a place of comfort, and it showed; the small space felt more like a cozy study than a medical facility.  
 
@@ -194,6 +195,10 @@ Celectra cringed at both. Amerigo saw it too—the way it landed like a diagnosi
 After saying goodbye to Dr. Cruiz, Amerigo and Celectra left his office and headed down the upward-curving corridor toward their quarters. As they walked, Celectra looked up at her father with love beaming in her eyes. “Thank you for calling me ‘Celectra,’ Daddy\!”  
 
 Amerigo squeezed both her hands gently. “You’re welcome, sweetheart. I should have listened sooner.”
+
+{% endcapture %}
+
+{% include tts-reader.html content=chapter_content %}
 
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">

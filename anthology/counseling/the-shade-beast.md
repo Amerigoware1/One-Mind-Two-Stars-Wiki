@@ -3,6 +3,8 @@ layout: default
 title: The Shade Beast
 ---
 
+{% capture chapter_content %}
+
 When Dr. Zoë Kret arrived at the holo-chamber aboard Utopis, a place she had only visited once as a child, she found Celectra already there. The metallic tang of recycled air on Utopis, a sharp contrast to the arid breeze she remembered from Ares, hung heavy in the sterile space. Celectra was barefoot and pacing the corridor.   
 
 Celectra skipped toward her, her feet making soft, rhythmic slaps against the snow-white metal. Zoë dropped to her knees and gave her a warm hug. Celectra’s bare feet were a stark contrast to the sterile environment. “No shoes?” Zoë asked, her brow arched.   
@@ -154,7 +156,10 @@ Celectra’s eyes—both sets—flickered with a mix of mischief and resolve, bu
 Zoë watched the gesture, a knot of unease tightening in her chest. That careful pause wasn’t just childish whimsy—it was purpose, a quiet resolve Zoë recognized from patients plotting their next move. Beyond the viewport, a faint shimmer of stellar dust swirled past Utopis, tinged with Niamh’s auroral glow, a restless beauty that mirrored the spark in Celectra’s gaze. The simple declaration squeezed Zoë’s chest—relief for Celectra mixed with a stab of guilt. How long had this child borne her burden in silence before anyone truly saw her?  
 
 As they left the holo-chamber together, Zoë found herself wondering which of them was learning more from these sessions. Celectra was teaching her about resilience—but also about loneliness, the kind that came not from being isolated, but from being so fundamentally different that even in a crowd, you remained utterly alone. *I won’t let my father add to that loneliness,* Zoë promised herself. *Whatever it takes.*
--
+
+{% endcapture %}
+
+{% include tts-reader.html content=chapter_content %}
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>

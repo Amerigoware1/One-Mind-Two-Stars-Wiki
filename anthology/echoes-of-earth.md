@@ -2,6 +2,7 @@
 layout: default
 title: Echos of Earth
 ---
+{% capture chapter_content %}
 
 Amerigo sat heavily in the middle of the sofa, absently cupping the four little feet in his lap between his hands. Celectra lay with a head on each arm of the sofa, each with a holopad synced to the same page of a book. Just this morning, Alex had confirmed what Amerigo had begun to suspect: Celectra wasn't twins, Celeste and Electra, but one person—a single consciousness in two bodies.  
 
@@ -226,6 +227,9 @@ And in that hush, with their warmth seeping into his skin like the first breath 
 
 Williams didn’t tell him to stop crying. She just sat beside him, her slightly wrinkled hand resting on Amerigo’s shoulder, while he held his daughters and grieved for the woman who’d given everything to bring them into the world.
 
+{% endcapture %}
+
+{% include tts-reader.html content=chapter_content %}
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
