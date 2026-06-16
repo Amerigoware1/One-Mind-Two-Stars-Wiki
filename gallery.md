@@ -4,8 +4,8 @@ title: Gallery
 permalink: /gallery/
 ---
 <link rel="stylesheet" href="{{ '/photoswipe.css' | relative_url }}">
-<script src="{{ '/photoswipe-lightbox-umd.min.js' | relative_url }}"></script>
-<script src="{{ '/photoswipe-umd.min.js' | relative_url }}"></script>
+<script src="/photoswipe-umd.min.js"></script>
+<script src="/photoswipe-lightbox-umd.min.js"></script>
 <div class="card-bg">
   <h1>Gallery</h1>
   <p>A collection of artifacts, environments, and curiosities from <em>One Mind Two Stars</em>.</p>
