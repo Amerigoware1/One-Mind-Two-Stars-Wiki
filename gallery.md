@@ -214,6 +214,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     initLightbox();
+    document.getElementById('gallery').addEventListener('click', (e) => {
+  console.log('Gallery click detected on:', e.target);
+});
   }
 
   // 4. PhotoSwipe v5 initialization (with correct filtered items)
