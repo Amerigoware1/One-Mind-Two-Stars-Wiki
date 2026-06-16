@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   // 3. Render gallery (and re‑init lightbox)
-  function renderGallery() {
+function renderGallery() {
   const query = searchEl.value.toLowerCase().trim();
   const selectedTag = tagFilterEl.value;
 
@@ -192,7 +192,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     return;
   }
 
-  // Build grid
   galleryEl.innerHTML = "";
   currentItems.forEach((item, idx) => {
     const link = document.createElement("a");
@@ -211,11 +210,17 @@ document.addEventListener("DOMContentLoaded", async () => {
       </div>
     `;
 
-    // ✅ MANUAL CLICK HANDLER – forces lightbox to open
+    // ✅ Fixed manual click handler
     link.addEventListener('click', (e) => {
       e.preventDefault();
       if (window.lightboxInstance) {
-        window.lightboxInstance.loadAndOpen(link);
+        // Find the index in currentItems (should be same as idx, but safe)
+        const index = currentItems.findIndex(i => i.file === item.file);
+        if (index !== -1) {
+          window.lightboxInstance.loadAndOpen(index);
+        } else {
+          console.error("Index not found for item:", item.file);
+        }
       } else {
         console.error("Lightbox instance not found");
       }
@@ -224,7 +229,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     galleryEl.appendChild(link);
   });
 
-  // Re-init lightbox (needed for caption updates, but the manual click handler already works)
   initLightbox();
 }
 
@@ -291,10 +295,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Initial render
   renderGallery();
-  const firstLink = document.querySelector('#gallery a');
-if (firstLink && window.lightboxInstance) {
-  window.lightboxInstance.loadAndOpen(firstLink);
-}
 });
 </script>
 <script>
