@@ -212,7 +212,9 @@ function renderGallery() {
 
     // ✅ Fixed manual click handler
     link.addEventListener('click', (e) => {
+       console.log('click captured');
       e.preventDefault();
+      e.stopPropagation();
       if (window.lightboxInstance) {
         // Find the index in currentItems (should be same as idx, but safe)
         const index = currentItems.findIndex(i => i.file === item.file);
@@ -224,8 +226,7 @@ function renderGallery() {
       } else {
         console.error("Lightbox instance not found");
       }
-    });
-
+    }, true);
     galleryEl.appendChild(link);
   });
 
