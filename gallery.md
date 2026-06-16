@@ -142,27 +142,27 @@ permalink: /gallery/
 
 <!-- PhotoSwipe v5 UMD -->
 <script>
-console.log("Gallery script is running");
+console.log("Gallery script running (v5 clean)");
 document.addEventListener("DOMContentLoaded", async () => {
   const galleryEl = document.getElementById("gallery");
   const searchEl = document.getElementById("gallery-search");
   const tagFilterEl = document.getElementById("tag-filter");
 
-  let allItems = [];        // original unfiltered items
-  let currentItems = [];    // filtered items shown in grid
+  let allItems = [];
+  let currentItems = [];
 
-  // 1. Load manifest
+  // Load manifest
   try {
     const res = await fetch("{{ '/assets/images/gallery/manifest.json' | relative_url }}");
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     allItems = await res.json();
   } catch (err) {
     galleryEl.innerHTML = "<div class='loading'>Failed to load gallery manifest.</div>";
-    console.error("Manifest load error:", err);
+    console.error(err);
     return;
   }
 
-  // 2. Build tag filter dropdown
+  // Build tag filter
   const allTags = new Set();
   allItems.forEach(i => i.tags.forEach(t => allTags.add(t)));
   [...allTags].sort().forEach(tag => {
@@ -172,68 +172,57 @@ document.addEventListener("DOMContentLoaded", async () => {
     tagFilterEl.appendChild(opt);
   });
 
-  // 3. Render gallery (and re‑init lightbox)
-function renderGallery() {
-  const query = searchEl.value.toLowerCase().trim();
-  const selectedTag = tagFilterEl.value;
-
-  currentItems = allItems.filter(item => {
-    const matchesText =
-      item.title.toLowerCase().includes(query) ||
-      item.description.toLowerCase().includes(query) ||
-      item.tags.some(t => t.toLowerCase().includes(query));
-    const matchesTag = !selectedTag || item.tags.includes(selectedTag);
-    return matchesText && matchesTag;
-  });
-
-  if (currentItems.length === 0) {
-    galleryEl.innerHTML = "<div id='no-results'>No results found.</div>";
-    if (window.lightboxInstance) window.lightboxInstance.destroy();
-    return;
+  // Helper
+  function escapeHtml(str) {
+    return str.replace(/[&<>]/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[m] || m));
   }
 
-  galleryEl.innerHTML = "";
-  currentItems.forEach((item, idx) => {
-    const link = document.createElement("a");
-    link.href = "{{ '/assets/images/gallery/' | relative_url }}" + item.file;
-    link.dataset.pswpWidth = item.width;
-    link.dataset.pswpHeight = item.height;
-    link.dataset.pswpIndex = idx;
-    link.className = "card-bg";
+  // Render gallery
+  function renderGallery() {
+    const query = searchEl.value.toLowerCase().trim();
+    const selectedTag = tagFilterEl.value;
 
-    link.innerHTML = `
-      <img src="{{ '/assets/images/gallery/' | relative_url }}${item.file}" alt="${escapeHtml(item.title)}">
-      <div class="card-title">${escapeHtml(item.title)}</div>
-      <div class="card-description">${escapeHtml(item.description)}</div>
-      <div class="card-tags">
-        ${item.tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join("")}
-      </div>
-    `;
+    currentItems = allItems.filter(item => {
+      const matchesText =
+        item.title.toLowerCase().includes(query) ||
+        item.description.toLowerCase().includes(query) ||
+        item.tags.some(t => t.toLowerCase().includes(query));
+      const matchesTag = !selectedTag || item.tags.includes(selectedTag);
+      return matchesText && matchesTag;
+    });
 
-    // ✅ Fixed manual click handler
-    link.addEventListener('click', (e) => {
-       console.log('click captured');
-      e.preventDefault();
-      e.stopPropagation();
-      if (window.lightboxInstance) {
-        // Find the index in currentItems (should be same as idx, but safe)
-        const index = currentItems.findIndex(i => i.file === item.file);
-        if (index !== -1) {
-          window.lightboxInstance.loadAndOpen(index);
-        } else {
-          console.error("Index not found for item:", item.file);
-        }
-      } else {
-        console.error("Lightbox instance not found");
-      }
-    }, true);
-    galleryEl.appendChild(link);
-  });
+    if (currentItems.length === 0) {
+      galleryEl.innerHTML = "<div id='no-results'>No results found.</div>";
+      if (window.lightbox) window.lightbox.destroy();
+      return;
+    }
 
-  initLightbox();
-}
+    galleryEl.innerHTML = "";
+    currentItems.forEach((item, idx) => {
+      const link = document.createElement("a");
+      link.href = "{{ '/assets/images/gallery/' | relative_url }}" + item.file;
+      link.dataset.pswpWidth = item.width;
+      link.dataset.pswpHeight = item.height;
+      link.dataset.pswpIndex = idx;
+      link.className = "card-bg";
 
-  // 4. PhotoSwipe v5 initialization (with correct filtered items)
+      link.innerHTML = `
+        <img src="{{ '/assets/images/gallery/' | relative_url }}${item.file}" alt="${escapeHtml(item.title)}">
+        <div class="card-title">${escapeHtml(item.title)}</div>
+        <div class="card-description">${escapeHtml(item.description)}</div>
+        <div class="card-tags">
+          ${item.tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join("")}
+        </div>
+      `;
+
+      galleryEl.appendChild(link);
+    });
+
+    // Re-init lightbox after grid update
+    initLightbox();
+  }
+
+  // PhotoSwipe v5 lightbox – clean, no legacy markup
   let lightbox = null;
   function initLightbox() {
     if (lightbox) lightbox.destroy();
@@ -248,7 +237,7 @@ function renderGallery() {
       closeOnVerticalDrag: true,
     });
 
-    // Custom caption using currentItems (filtered)
+    // Custom caption (optional)
     lightbox.on('uiRegister', () => {
       lightbox.pswp.ui.registerElement({
         name: 'custom-caption',
@@ -277,34 +266,14 @@ function renderGallery() {
     });
 
     lightbox.init();
-    window.lightboxInstance = lightbox;
+    window.lightbox = lightbox; // for debugging
   }
 
-  // Helper to prevent XSS from manifest text
-  function escapeHtml(str) {
-    return str.replace(/[&<>]/g, function(m) {
-      if (m === '&') return '&amp;';
-      if (m === '<') return '&lt;';
-      if (m === '>') return '&gt;';
-      return m;
-    });
-  }
-
-  // 5. Event listeners for search / filter
-  searchEl.addEventListener("input", () => renderGallery());
-  tagFilterEl.addEventListener("change", () => renderGallery());
+  // Event listeners
+  searchEl.addEventListener("input", renderGallery);
+  tagFilterEl.addEventListener("change", renderGallery);
 
   // Initial render
   renderGallery();
 });
-</script>
-<script>
-  // Test if PhotoSwipeLightbox exists
-  window.addEventListener('load', function() {
-    if (typeof PhotoSwipeLightbox !== 'undefined') {
-      console.log("✅ PhotoSwipeLightbox is loaded globally");
-    } else {
-      console.error("❌ PhotoSwipeLightbox is NOT defined");
-    }
-  });
 </script>
