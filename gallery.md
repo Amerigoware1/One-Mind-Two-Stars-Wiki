@@ -3,7 +3,9 @@ layout: default
 title: Gallery
 permalink: /gallery/
 ---
-
+<link rel="stylesheet" href="{{ '/photoswipe.css' | relative_url }}">
+<script src="{{ '/photoswipe-lightbox-umd.min.js' | relative_url }}"></script>
+<script src="{{ '/photoswipe-umd.min.js' | relative_url }}"></script>
 <div class="card-bg">
   <h1>Gallery</h1>
   <p>A collection of artifacts, environments, and curiosities from <em>One Mind Two Stars</em>.</p>
@@ -128,9 +130,6 @@ permalink: /gallery/
 </style>
 
 <!-- PhotoSwipe v5 UMD -->
-<script src="{{ '/photoswipe-umd.min.js' | relative_url }}"></script>
-<script src="{{ '/photoswipe-lightbox-umd.min.js' | relative_url }}"></script>
-
 <script>
 console.log("Gallery script is running");
 document.addEventListener("DOMContentLoaded", async () => {
@@ -206,28 +205,45 @@ document.addEventListener("DOMContentLoaded", async () => {
   function initLightbox() {
     if (lightbox) lightbox.destroy();
 
+    // 2. Initialize the lightbox pointing to the loaded UMD global modules
     lightbox = new PhotoSwipeLightbox({
       gallery: '#gallery',
       children: 'a',
-      pswpModule: PhotoSwipe,
+      
+      // Explicitly point to the UMD module loaded via the script tag
+      pswpModule: PhotoSwipe, 
 
       wheelToZoom: true,
       showHideAnimationType: 'zoom',
       closeOnVerticalDrag: true,
+    });
 
-      captionContent: (slide) => {
-        const item = items[slide.data.index];
-        return {% raw %}`
-          <div style="padding: 1rem; text-align: center;">
-            <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">
-              ${item.title}
-            </div>
-            <div style="font-size: 0.9rem; opacity: 0.8;">
-              ${item.description}
-            </div>
-          </div>
-        `{% endraw %};
-      }
+    // 3. Register the caption template injection using the 'useCaption' pattern
+    lightbox.on('uiRegister', function() {
+      lightbox.pswp.ui.registerElement({
+        name: 'custom-caption',
+        order: 9,
+        isCustomElement: true,
+        appendTo: 'root',
+        onInit: (el, pswpInstance) => {
+          lightbox.pswp.on('change', () => {
+            const currSlide = lightbox.pswp.currSlide;
+            // Pull the original item data index
+            const itemData = items[currSlide.index]; 
+            
+            if (itemData) {
+              el.innerHTML = `
+                <div style="padding: 1rem; text-align: center; color: #fff; background: rgba(0,0,0,0.7); position: absolute; bottom: 0; left: 0; right: 0;">
+                  <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">${itemData.title}</div>
+                  <div style="font-size: 0.9rem; opacity: 0.8;">${itemData.description}</div>
+                </div>
+              `;
+            } else {
+              el.innerHTML = '';
+            }
+          });
+        }
+      });
     });
 
     lightbox.init();
