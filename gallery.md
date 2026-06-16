@@ -278,3 +278,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   renderGallery();
 });
 </script>
+<script>
+  // Test if PhotoSwipeLightbox exists
+  window.addEventListener('load', function() {
+    if (typeof PhotoSwipeLightbox !== 'undefined') {
+      console.log("✅ PhotoSwipeLightbox is loaded globally");
+    } else {
+      console.error("❌ PhotoSwipeLightbox is NOT defined");
+    }
+  });
+</script>
