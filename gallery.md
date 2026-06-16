@@ -205,20 +205,18 @@ document.addEventListener("DOMContentLoaded", async () => {
   function initLightbox() {
     if (lightbox) lightbox.destroy();
 
-    // 2. Initialize the lightbox pointing to the loaded UMD global modules
+    // 2. Initialize the v5 Lightbox
     lightbox = new PhotoSwipeLightbox({
       gallery: '#gallery',
       children: 'a',
-      
-      // Explicitly point to the UMD module loaded via the script tag
-      pswpModule: PhotoSwipe, 
+      pswpModule: PhotoSwipe, // Points to the core UMD module script
 
       wheelToZoom: true,
       showHideAnimationType: 'zoom',
       closeOnVerticalDrag: true,
     });
 
-    // 3. Register the caption template injection using the 'useCaption' pattern
+    // 3. Custom v5 UI Hook to render Captions dynamically
     lightbox.on('uiRegister', function() {
       lightbox.pswp.ui.registerElement({
         name: 'custom-caption',
@@ -226,16 +224,17 @@ document.addEventListener("DOMContentLoaded", async () => {
         isCustomElement: true,
         appendTo: 'root',
         onInit: (el, pswpInstance) => {
+          // Listen for slide changes to swap text
           lightbox.pswp.on('change', () => {
             const currSlide = lightbox.pswp.currSlide;
-            // Pull the original item data index
+            // Fetch item data using the slide index
             const itemData = items[currSlide.index]; 
             
             if (itemData) {
               el.innerHTML = `
-                <div style="padding: 1rem; text-align: center; color: #fff; background: rgba(0,0,0,0.7); position: absolute; bottom: 0; left: 0; right: 0;">
-                  <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;">${itemData.title}</div>
-                  <div style="font-size: 0.9rem; opacity: 0.8;">${itemData.description}</div>
+                <div style="padding: 1.5rem; text-align: center; color: #fff; background: rgba(0, 0, 0, 0.75); position: absolute; bottom: 0; left: 0; right: 0; z-index: 9999;">
+                  <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.4rem;">${itemData.title}</div>
+                  <div style="font-size: 0.95rem; opacity: 0.85;">${itemData.description}</div>
                 </div>
               `;
             } else {
@@ -248,9 +247,4 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     lightbox.init();
   }
-
-  renderGallery();
-  searchEl.addEventListener("input", renderGallery);
-  tagFilterEl.addEventListener("change", renderGallery);
-});
 </script>
