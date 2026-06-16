@@ -145,19 +145,23 @@ document.addEventListener("DOMContentLoaded", async () => {
   const searchEl = document.getElementById("gallery-search");
   const tagFilterEl = document.getElementById("tag-filter");
 
-  let items = [];
+  let allItems = [];        // original unfiltered items
+  let currentItems = [];    // filtered items shown in grid
+
+  // 1. Load manifest
   try {
     const res = await fetch("{{ '/assets/images/gallery/manifest.json' | relative_url }}");
-    items = await res.json();
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    allItems = await res.json();
   } catch (err) {
-    galleryEl.innerHTML = "<div class='loading'>Failed to load gallery.</div>";
-    console.error("Gallery JSON load error:", err);
+    galleryEl.innerHTML = "<div class='loading'>Failed to load gallery manifest.</div>";
+    console.error("Manifest load error:", err);
     return;
   }
 
-  // Build tag list
+  // 2. Build tag filter dropdown
   const allTags = new Set();
-  items.forEach(i => i.tags.forEach(t => allTags.add(t)));
+  allItems.forEach(i => i.tags.forEach(t => allTags.add(t)));
   [...allTags].sort().forEach(tag => {
     const opt = document.createElement("option");
     opt.value = tag;
@@ -165,113 +169,112 @@ document.addEventListener("DOMContentLoaded", async () => {
     tagFilterEl.appendChild(opt);
   });
 
+  // 3. Render gallery (and re‑init lightbox)
   function renderGallery() {
     const query = searchEl.value.toLowerCase().trim();
-    const tag = tagFilterEl.value;
+    const selectedTag = tagFilterEl.value;
 
-    const filtered = items.filter(item => {
+    currentItems = allItems.filter(item => {
       const matchesText =
         item.title.toLowerCase().includes(query) ||
         item.description.toLowerCase().includes(query) ||
         item.tags.some(t => t.toLowerCase().includes(query));
-
-      const matchesTag = !tag || item.tags.includes(tag);
-
+      const matchesTag = !selectedTag || item.tags.includes(selectedTag);
       return matchesText && matchesTag;
     });
 
-    if (filtered.length === 0) {
+    if (currentItems.length === 0) {
       galleryEl.innerHTML = "<div id='no-results'>No results found.</div>";
+      if (window.lightboxInstance) window.lightboxInstance.destroy();
       return;
     }
 
+    // Build grid
     galleryEl.innerHTML = "";
-    filtered.forEach((item, index) => {
+    currentItems.forEach((item, idx) => {
       const link = document.createElement("a");
       link.href = "{{ '/assets/images/gallery/' | relative_url }}" + item.file;
       link.dataset.pswpWidth = item.width;
       link.dataset.pswpHeight = item.height;
-      link.dataset.pswpIndex = index;
+      link.dataset.pswpIndex = idx;
       link.className = "card-bg";
 
       link.innerHTML = `
         <img src="{{ '/assets/images/gallery/' | relative_url }}${item.file}" alt="${item.title}">
-        <div class="card-title">${item.title}</div>
-        <div class="card-description">${item.description}</div>
+        <div class="card-title">${escapeHtml(item.title)}</div>
+        <div class="card-description">${escapeHtml(item.description)}</div>
         <div class="card-tags">
-          ${item.tags.map(t => `<span class="tag">${t}</span>`).join("")}
+          ${item.tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join("")}
         </div>
       `;
-
       galleryEl.appendChild(link);
     });
 
     initLightbox();
   }
 
-  let lightbox;
+  // 4. PhotoSwipe v5 initialization (with correct filtered items)
+  let lightbox = null;
   function initLightbox() {
     if (lightbox) lightbox.destroy();
 
-    // Initialize the v5 Lightbox
     lightbox = new PhotoSwipeLightbox({
       gallery: '#gallery',
       children: 'a',
       pswpModule: PhotoSwipe,
-
       wheelToZoom: true,
       pinchToClose: true,
       showHideAnimationType: 'zoom',
       closeOnVerticalDrag: true,
-      
-      // Ensure proper zoom behavior
-      allowPanToNext: true,
-      spacing: 0.12,
     });
 
-    // Register custom caption element
-    lightbox.on('uiRegister', function() {
+    // Custom caption using currentItems (filtered)
+    lightbox.on('uiRegister', () => {
       lightbox.pswp.ui.registerElement({
         name: 'custom-caption',
         order: 9,
         isCustomElement: true,
         appendTo: 'root',
         onInit: (el, pswpInstance) => {
-          // Listen for slide changes to swap text
-          pswpInstance.on('change', () => {
-            const currSlide = pswpInstance.currSlide;
-            // Fetch item data using the slide index
-            const itemData = items[currSlide.index]; 
-            
-            if (itemData && el) {
+          const updateCaption = () => {
+            const idx = pswpInstance.currSlide.index;
+            const item = currentItems[idx];
+            if (item && el) {
               el.innerHTML = `
-                <div style="padding: 1.5rem; text-align: center; color: #fff; background: rgba(0, 0, 0, 0.75); position: absolute; bottom: 0; left: 0; right: 0;">
-                  <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.4rem;">${itemData.title}</div>
-                  <div style="font-size: 0.95rem; opacity: 0.85;">${itemData.description}</div>
+                <div style="padding: 1rem; text-align: center; color: #fff; background: rgba(0,0,0,0.7); position: absolute; bottom: 0; left: 0; right: 0;">
+                  <div style="font-weight: bold; margin-bottom: 0.25rem;">${escapeHtml(item.title)}</div>
+                  <div style="font-size: 0.85rem;">${escapeHtml(item.description)}</div>
                 </div>
               `;
             } else if (el) {
               el.innerHTML = '';
             }
-          });
-          
-          // Initial caption display
-          pswpInstance.on('initialLayout', () => {
-            const currSlide = pswpInstance.currSlide;
-            const itemData = items[currSlide.index];
-            if (itemData && el) {
-              el.innerHTML = `
-                <div style="padding: 1.5rem; text-align: center; color: #fff; background: rgba(0, 0, 0, 0.75); position: absolute; bottom: 0; left: 0; right: 0;">
-                  <div style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.4rem;">${itemData.title}</div>
-                  <div style="font-size: 0.95rem; opacity: 0.85;">${itemData.description}</div>
-                </div>
-              `;
-            }
-          });
+          };
+          pswpInstance.on('change', updateCaption);
+          pswpInstance.on('afterInit', updateCaption);
         }
       });
     });
 
     lightbox.init();
+    window.lightboxInstance = lightbox;
   }
+
+  // Helper to prevent XSS from manifest text
+  function escapeHtml(str) {
+    return str.replace(/[&<>]/g, function(m) {
+      if (m === '&') return '&amp;';
+      if (m === '<') return '&lt;';
+      if (m === '>') return '&gt;';
+      return m;
+    });
+  }
+
+  // 5. Event listeners for search / filter
+  searchEl.addEventListener("input", () => renderGallery());
+  tagFilterEl.addEventListener("change", () => renderGallery());
+
+  // Initial render
+  renderGallery();
+});
 </script>
