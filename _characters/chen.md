@@ -2,7 +2,7 @@
 layout: character
 title: Dr. Yuki Chen
 portrait: "/assets/images/yuki-book1.webp"
-portrait-book2: "/assets/images/yuki-book1.webp"
+portrait-book1: "/assets/images/yuki-book1.webp"
 portrait-book2: "/assets/images/yuki-book2.webp"
 portrait-book3: "/assets/images/yuki-book3.webp"
 portrait-book4: "/assets/images/yuki-book4.webp"
@@ -66,7 +66,7 @@ book3_arc: >
 
 book4_title: "Preparing for Transition"
 book4_arc: >
-  At 167, Dr. Chen continues to serve as Chief Physician while consulting on the
+  At 75.9, Dr. Chen continues to serve as Chief Physician while consulting on the
   Communion Interface project. She works with Chen Wei, Ananya Patel, and Jaxon
   Bowers to validate the technological bridge's safety protocols. During the
   northern cluster rescue, she provides remote medical oversight for field teams
@@ -75,7 +75,7 @@ book4_arc: >
 
 book5_title: "Legacy & Mentorship"
 book5_arc: >
-  At 176, Dr. Chen has transitioned into a mentorship role, training the next
+  At 82.9, Dr. Chen has transitioned into a mentorship role, training the next
   generation of colony physicians in radiation medicine and xenophysiology. She
   helps formalize the Resonance Health Protocols that govern human–Galinstanian
   interaction. When the twins uncover the trapped Galinstanian cluster, Dr. Chen
@@ -83,7 +83,7 @@ book5_arc: >
   arc culminates in her becoming a living archive of colony medicine—the
   physician who diagnosed the beginning of Celectra's story and helped ensure
   its sustainable future.
-  ---
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
