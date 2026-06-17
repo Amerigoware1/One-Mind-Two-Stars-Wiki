@@ -1,7 +1,7 @@
 ---
 layout: character
 name: Claudia Belrose
-portrait: "/assets/img/portraits/belrose-book1.webp"
+portrait: "/assets/imgages/belrose-book1.webp"
 portrait-book1: "/assets/images/belrose-book1.webp"
 portrait-book2: "/assets/images/belrose-book2.webp"
 portrait-book3: "/assets/images/belrose-book3.webp"
