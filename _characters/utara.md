@@ -37,7 +37,7 @@ book4_arc: >
 
 book5_title: "Resonant Echo & Legacy"
 book5_arc: >
-  In 2262, Utara plays a pivotal role in the Resonant Echo rescue. When the twins (jenni-and xara) discover the trapped Galinstanian cluster, Utara's historical records help them understand the acoustic signatures they're detecting. Her data proves that the cluster has been isolated for decades, validating the twins' hypothesis.
+  In 2262, Utara plays a pivotal role in the Resonant Echo rescue. When the twins (Jenni and Xara) discover the trapped Galinstanian cluster, Utara's historical records help them understand the acoustic signatures they're detecting. Her data proves that the cluster has been isolated for decades, validating the twins' hypothesis.
 
   During the Council testimony, Xara argues: "Utara's limits are what allowed us to find the signal. If the system had auto-flagged us as trespassers, the cluster would be dead. Privacy enabled the rescue." This moment becomes a touchstone for debates about AI oversight and autonomy.
 
