@@ -6,7 +6,7 @@ common_names: The Colonial Architecture, The Core, Main Framework
 origin: Ares Colony Colonial Initiative (Multi-substrate integration)
 type: OMNI-Class Strategic Management AI
 primary_roles: Resource Allocation, Educational Administration, Environmental Monitoring, Historical Archive
-footprint: Omnipresent across all four river outposts (New Eden, Gihon, Hiddekel, Euphrates)
+footprint: Omnipresent across all four river outposts (New Eden, Gihon, Hiddekel, Euphrates), Utopis, and three Utopis-Labs
 status: Active / Continuous Oversight
 ---
 
@@ -14,7 +14,7 @@ status: Active / Continuous Oversight
   <table>
     <tr>
       <td colspan="2" class="text-center pb-2">
-        <img src="{{ '/assets/images/gallery/utara-core.png' | relative_url }}" alt="Utara Interface Node" class="portrait" style="width:280px; border-radius:0.5rem;">
+        <img src="{{ '/assets/images/utara-symbol.webp' | relative_url }}" alt="Utara Interface Node" class="portrait" style="width:280px; border-radius:0.5rem;">
         <div class="image-caption">Unified Interface Terminal Node</div>
       </td>
     </tr>
