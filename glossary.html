@@ -1,10 +1,11 @@
 ---
 layout: default
-title: glossary
+title: Glossary
 ---
 
+<style>
 /* ==========================================================================
-   INTERACTIVE SEARCH & CATEGORY UTILITIES (glossary-/ database)
+   INTERACTIVE SEARCH & CATEGORY UTILITIES (glossary / database)
    ========================================================================== */
 .search-container {
   max-width: 700px;
@@ -21,23 +22,23 @@ title: glossary
   width: 100%;
   padding: 0.75rem 1rem;
   font-size: 1rem;
-  border: 2px solid var(-neon-violet);
+  border: 2px solid var(--neon-violet);
   border-radius: 8px;
-  background: rgba(12,-0, 40, 0.8);
+  background: rgba(12, 0, 40, 0.8);
   color: white;
   outline: none;
-  box-shadow: 0 0 10px var(-glow-violet);
+  box-shadow: 0 0 10px var(--glow-violet);
   transition: all 0.3s ease;
   font-family: 'Inter', sans-serif;
 }
 
 #glossarySearch:focus {
-  border-color: var(-neon-cyan);
-  box-shadow: 0 0 15px var(-glow-cyan);
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 15px var(--glow-cyan);
 }
 
 #glossarySearch::placeholder {
-  color: var(-text-muted);
+  color: var(--text-muted);
   opacity: 0.7;
 }
 
@@ -48,7 +49,7 @@ title: glossary
   transform: translateY(-50%);
   background: none;
   border: none;
-  color: var(-text-muted);
+  color: var(--text-muted);
   cursor: pointer;
   font-size: 1.25rem;
   padding: 0;
@@ -56,8 +57,8 @@ title: glossary
 }
 
 .clear-search:hover {
-  color: var(-neon-magenta);
-  text-shadow: 0 0 8px var(-neon-magenta);
+  color: var(--neon-magenta);
+  text-shadow: 0 0 8px var(--neon-magenta);
 }
 
 .search-dropdown {
@@ -67,14 +68,14 @@ title: glossary
   right: 0;
   max-height: 300px;
   overflow-y: auto;
-  background: rgba(10,-0, 34, 0.95); /* Matches -bg-card-dark */
-  border: 2px solid var(-neon-cyan);
+  background: rgba(10, 0, 34, 0.95); /* Matches --bg-card-dark */
+  border: 2px solid var(--neon-cyan);
   border-top: none;
   border-radius: 0 0 8px 8px;
   display: none;
   z-index: 101;
   backdrop-filter: blur(10px);
-  box-shadow: 0 10px 20px rgba(0,-232, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 232, 255, 0.2);
 }
 
 .search-dropdown.show {
@@ -83,7 +84,7 @@ title: glossary
 
 .search-result {
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid var(-border-glow);
+  border-bottom: 1px solid var(--border-glow);
   cursor: pointer;
   transition: background 0.2s ease;
   display: flex;
@@ -92,14 +93,14 @@ title: glossary
 }
 
 .search-result:hover {
-  background: rgba(0,-232, 255, 0.15);
+  background: rgba(0, 232, 255, 0.15);
 }
 
 .result-category {
   font-size: 0.75rem;
-  color: var(-neon-cyan);
-  background: rgba(193,-60, 255, 0.2);
-  border: 1px solid var(-neon-violet);
+  color: var(--neon-cyan);
+  background: rgba(193, 60, 255, 0.2);
+  border: 1px solid var(--neon-violet);
   padding: 0.125rem 0.5rem;
   border-radius: 4px;
   white-space: nowrap;
@@ -108,19 +109,19 @@ title: glossary
 
 .result-name {
   flex: 1;
-  color: var(-text-heading);
+  color: var(--text-heading);
   font-weight: 500;
 }
 
 .result-link {
-  color: var(-neon-cyan);
+  color: var(--neon-cyan);
   font-size: 0.875rem;
   text-decoration: none;
 }
 
 .result-link:hover {
-  color: var(-neon-magenta);
-  text-shadow: 0 0 5px var(-glow-cyan);
+  color: var(--neon-magenta);
+  text-shadow: 0 0 5px var(--glow-cyan);
 }
 
 /* Quick jump item buttons row */
@@ -131,17 +132,17 @@ title: glossary
   justify-content: center;
   margin: 1.5rem 0;
   padding: 0.75rem;
-  background: var(-bg-card-dark);
-  border: 1px solid var(-border-glow);
+  background: var(--bg-card-dark);
+  border: 1px solid var(--border-glow);
   border-radius: 8px;
 }
 
 .jump-btn {
   padding: 0.375rem 0.75rem;
-  background: rgba(12,-0, 40, 0.4);
-  border: 1px solid var(-border-glow);
+  background: rgba(12, 0, 40, 0.4);
+  border: 1px solid var(--border-glow);
   border-radius: 4px;
-  color: var(-text-muted);
+  color: var(--text-muted);
   cursor: pointer;
   font-size: 0.875rem;
   font-family: 'Orbitron', sans-serif;
@@ -149,10 +150,10 @@ title: glossary
 }
 
 .jump-btn:hover {
-  background: rgba(193,-60, 255, 0.2);
-  border-color: var(-neon-violet);
-  color: var(-neon-cyan);
-  box-shadow: 0 0 10px var(-glow-violet);
+  background: rgba(193, 60, 255, 0.2);
+  border-color: var(--neon-violet);
+  color: var(--neon-cyan);
+  box-shadow: 0 0 10px var(--glow-violet);
 }
 
 /* Specific Category headers alignment */
@@ -160,23 +161,23 @@ title: glossary
   scroll-margin-top: 100px;
   margin-top: 2.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(-neon-cyan);
+  border-bottom: 2px solid var(--neon-cyan);
 }
 
 /* Dynamic search targeted item highlighting */
 .glossary-highlight {
   animation: highlight-pulse 2s ease-in-out;
-  border-left: 4px solid var(-neon-cyan) !important;
+  border-left: 4px solid var(--neon-cyan) !important;
   padding-left: 0.75rem !important;
 }
 
 @keyframes highlight-pulse {
-  0%, 100% { background: rgba(0,-232, 255, 0); }
-  50% { background: rgba(0,-232, 255, 0.15); }
+  0%, 100% { background: rgba(0, 232, 255, 0); }
+  50% { background: rgba(0, 232, 255, 0.15); }
 }
 
 /* Mobile responsive fixes */
-@media (max-width:-768px) {
+@media (max-width: 768px) {
   .search-container {
     margin: 1rem auto;
     padding: 0;
@@ -188,10 +189,10 @@ title: glossary
     white-space: nowrap;
   }
 }
+</style>
 
 <h1>Glossary</h1>
   
-  <!--Search & Categories-->
   <div class="search-container">
     <div class="search-wrapper">
       <input 
@@ -218,7 +219,6 @@ title: glossary
     </div>
   </div>
   
-  <!--TECH CATEGORY (alphabetically-sorted with new entries)-->
   <h2 class="category-header" id="tech">Technology</h2>
   
   <div class="card-bg glossary-item" data-name="Artificial Gills" data-category="tech" data-search="gills underwater breathing wetsuit">
@@ -237,7 +237,7 @@ title: glossary
   <div class="card-bg glossary-item" data-name="Bismuth Veins" data-category="tech" data-search="bismuth network waveguide elf electromagnetic galinstanian communication">
     <h2><a href="{{ '/bismuth-network.html' | relative_url }}">Bismuth Veins / Bismuth Network</a></h2>
     <p><strong>Pronunciation:</strong> /ˈbɪzməθ veɪnz/<button class="speak-button">🔊</button></p>
-    <p>Naturally occurring (but-cultivated by galinstanians) deposits of bismuth that act as a waveguide for electromagnetic frequencies in the ELF range. Carries Galinstanian communication and human radio signals.</p>
+    <p>Naturally occurring (but cultivated by galinstanians) deposits of bismuth that act as a waveguide for electromagnetic frequencies in the ELF range. Carries Galinstanian communication and human radio signals.</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Celectrum" data-category="tech" data-search="instrument music electronic crescent">
@@ -267,7 +267,7 @@ title: glossary
   <div class="card-bg glossary-item" data-name="Galinstan" data-category="tech" data-search="eutectic alloy gallium indium tin liquid metal">
     <h2>Galinstan</h2>
     <p><strong>Pronunciation:</strong> /ɡəˈlɪnstæn/<button class="speak-button">🔊</button></p>
-    <p>The eutectic alloy (gallium,-indium, tin) that forms the bodies of the Galinstanians. Liquid at room temperature, non‑toxic, with high electrical conductivity.</p>
+    <p>The eutectic alloy (gallium, indium, tin) that forms the bodies of the Galinstanians. Liquid at room temperature, non‑toxic, with high electrical conductivity.</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Hardline Network" data-category="tech" data-search="cable communication wired colony">
@@ -312,6 +312,12 @@ title: glossary
     <p>Automated cleaning and sterilization drones that utilize molecular disintegration technology to break down contaminants, dust, and biological residues into base components for recycling or safe disposal. Commonly deployed in habitats, spacecraft, and research facilities.</p>
   </div>
 
+  <div class="card-bg glossary-item" data-name="Resonance Chamber" data-category="tech" data-search="resonance chamber standing wave resonator bismuth vein frequency neural signal amplifier galinstanian">
+    <h2><a href="{{ '/resonance-chamber.html' | relative_url }}">Resonance Chamber</a></h2>
+    <p><strong>Pronunciation:</strong> /ˈrɛzənəns ˈtʃeɪmbər/<button class="speak-button">🔊</button></p>
+    <p>A subterranean architectural node constructed by the Galinstanians using a specific geometric bismuth configuration. It functions as a physical standing wave resonator and neural amplifier, using constructive interference to sharpen cross-body synchronicity at an exact field frequency of 21.7 Hz.</p>
+  </div>
+
   <div class="card-bg glossary-item" data-name="Standing Wave Resonator" data-category="tech" data-search="chamber bismuth vein frequency neural signal">
     <h2><a href="{{ '/bismuth-network.html' | relative_url }}">Standing Wave Resonator</a></h2>
     <p><strong>Pronunciation:</strong> /ˈstændɪŋ weɪv ˈrɛzəneɪtər/<button class="speak-button">🔊</button></p>
@@ -324,7 +330,6 @@ title: glossary
     <p>Unified Thought and Resource Architecture—sentient AI of the system.</p>
   </div>
   
-  <!--ASTRONOMY CATEGORY (with-new entries)-->
   <h2 class="category-header" id="astronomy">Heavenly Bodies</h2>
   
   <div class="card-bg glossary-item" data-name="Ares" data-category="astronomy" data-search="mars moon chaos">
@@ -375,7 +380,6 @@ title: glossary
     <p>Rocky moon orbiting Oisín.</p>
   </div>
   
-  <!--CHARACTERS CATEGORY (celectricity-updated)-->
   <h2 class="category-header" id="characters">Characters & Conditions</h2>
   
   <div class="card-bg glossary-item" data-name="Bridge" data-category="characters" data-search="celectra role connection galinstanian human transmitter">
@@ -387,7 +391,7 @@ title: glossary
   <div class="card-bg glossary-item" data-name="Celectricity" data-category="characters" data-search="celectra neural signals brains">
     <h2><a href="{{ '/mononous-disomas.html' | relative_url }}">Celectricity</a></h2>
     <p><strong>Pronunciation:</strong> /sɛˈlɛktrɪsɪti/<button class="speak-button">🔊</button></p>
-    <p>Celectra’s name for the neural signal that connects her two brains across distance. The “hum” she feels between her bodies. Distinct from “Celectrics” (the-condition).</p>
+    <p>Celectra’s name for the neural signal that connects her two brains across distance. The “hum” she feels between her bodies. Distinct from “Celectrics” (the condition).</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Celectrics" data-category="characters" data-search="mononous disomas condition twin bodies">
@@ -402,13 +406,11 @@ title: glossary
     <p>Celectra's condition: one consciousness spanning identical twin bodies. Clinical Greek‑derived term: “one mind, two bodies.” She dislikes it because it sounds like a disease.</p>
   </div>
   
-  <!--SLANG CATEGORY (with-shade-beast)-->
   <h2 class="category-header" id="slang">Slang</h2>
   
   <div class="card-bg">
     <p>Common informal terminology used by teens and young adults on Ares and Utopis, often rooted in astronomy or orbital life.</p>
     
-    <!--Positive / Affectionate-->
     <h3>Positive / Affectionate</h3>
     
     <div class="card-bg glossary-item" data-name="Aurora" data-category="slang" data-search="slang calming soothing presence">
@@ -459,7 +461,6 @@ title: glossary
       <p>Gifted or exceptionally talented; someone seen as destined for greatness.</p>
     </div>
 
-    <!--NEUTRAL SLANG-->
     <h3>Neutral / Descriptive</h3>
 
     <div class="card-bg glossary-item" data-name="Aphelion" data-category="slang" data-search="slang distant withdrawn space">
@@ -495,7 +496,7 @@ title: glossary
     <div class="card-bg glossary-item" data-name="Neutron Star" data-category="slang" data-search="slang memorial deceased grief influence">
       <h2>Neutron Star</h2>
       <p><strong>Pronunciation:</strong> /ˈnjuː.trɒn stɑːr/<button class="speak-button">🔊</button></p>
-      <p>(colloquial,-memorial) A term used for a deceased loved one whose presence has diminished in physical space but not in influence. Though the body is gone, their emotional gravity remains—dense, bright, and inescapable. Survivors are warned not to "orbit too close," lest memory collapse into obsession.</p>
+      <p>(colloquial, memorial) A term used for a deceased loved one whose presence has diminished in physical space but not in influence. Though the body is gone, their emotional gravity remains—dense, bright, and inescapable. Survivors are warned not to "orbit too close," lest memory collapse into obsession.</p>
     </div>
 
     <div class="card-bg glossary-item" data-name="Orbital Load" data-category="slang" data-search="slang workload busy responsibilities stress">
@@ -506,7 +507,7 @@ title: glossary
 
     <div class="card-bg glossary-item" data-name="Retrograde" data-category="slang" data-search="slang setback backward slide unproductive">
       <h2>Retrograde</h2>
-      <p><strong>Pronunciation:</strong> /ˈrɛtroʊˌɡreɪd/<button class="speak-button">🔊</button></p>
+      <p><strong>Pronunciation:</strong> /rɛtroʊˌɡreɪd/<button class="speak-button">🔊</button></p>
       <p>A setback or backward slide; an unproductive day.</p>
     </div>
 
@@ -635,7 +636,6 @@ title: glossary
     </div>
   </div>
   
-  <!--GALINSTANIANS CATEGORY-->
   <h2 class="category-header" id="aliens">Galinstanians</h2>
   
   <div class="card-bg glossary-item" data-name="Galinstanians" data-category="aliens" data-search="alien metal intelligent life">
@@ -644,7 +644,6 @@ title: glossary
     <p>Intelligent life based on the metal alloy galinstan. The indigenous, sentient, liquid‑metal beings living beneath Ares. Communicate via ELF electromagnetic fields. No collective name for themselves; named by Celectra.</p>
   </div>
   
-  <!--MEDICAL CATEGORY (with-new entries)-->
   <h2 class="category-header" id="medical">Medical Terms</h2>
   
   <div class="card-bg glossary-item" data-name="Biogenic Mineralization" data-category="medical" data-search="magnesium iron oxide skull waveguide galinstanian frequency">
@@ -684,7 +683,6 @@ title: glossary
     <p>Celectra's condition: one consciousness spanning identical twin bodies.</p>
   </div>
 
-  <!--LOCATIONS CATEGORY (with-new entries)-->
   <h2 class="category-header" id="locations">Locations</h2>
   
   <div class="card-bg glossary-item" data-name="Bore Shaft" data-category="locations" data-search="vertical tunnel disintegrator cave system biometric door">
@@ -714,7 +712,7 @@ title: glossary
   <div class="card-bg glossary-item" data-name="Squeeze, The" data-category="locations" data-search="narrow passage crawl cave system half meter">
     <h2>The Squeeze</h2>
     <p><strong>Pronunciation:</strong> /ðə skwiːz/<button class="speak-button">🔊</button></p>
-    <p>The narrow passage (approx.-half a meter wide) that Celectra crawled through to enter the deep cave system. She scraped herself passing through.</p>
+    <p>The narrow passage (approx. half a meter wide) that Celectra crawled through to enter the deep cave system. She scraped herself passing through.</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Utopis" data-category="locations" data-search="space station orbit ares">
@@ -723,7 +721,6 @@ title: glossary
     <p>Space station orbiting Ares, home to Celectra and her father for the first seven years of her life.</p>
   </div>
 
-  <!--MARTIAL ARTS CATEGORY (unchanged)-->
   <h2 class="category-header" id="martial-arts">Martial Arts</h2>
 
   <div class="card-bg glossary-item" data-name="Karate" data-category="martial-arts" data-search="martial art discipline self-control empty hand conflict avoidance">
@@ -744,7 +741,7 @@ title: glossary
     <h2>Sundome</h2>
     <p><strong>Pronunciation:</strong> /sʊnˈdoʊmeɪ/<button class="speak-button">🔊</button></p>
     <p><strong>Kanji:</strong> 寸止め</p>
-    <p>A traditional karate principle requiring practitioners to stop attacking techniques exactly 2.54 centimeters (one-"sun") before contact. On Ares, it is the only form permitted. It requires "Kime" (focus)—the ability to generate maximum kinetic energy and instantly arrest it through perfect muscular contraction. This discipline is taught from age four to ensure that power is always secondary to control.</p>
+    <p>A traditional karate principle requiring practitioners to stop attacking techniques exactly 2.54 centimeters (one "sun") before contact. On Ares, it is the only form permitted. It requires "Kime" (focus)—the ability to generate maximum kinetic energy and instantly arrest it through perfect muscular contraction. This discipline is taught from age four to ensure that power is always secondary to control.</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Kata" data-category="martial-arts" data-search="form pattern meditation solo practice">
@@ -782,7 +779,6 @@ title: glossary
     <p>The belt worn in martial arts to signify rank. Colors progress from white (beginner) through yellow, orange, green, blue, brown, and black. On Ares, children receive their first obi when they begin karate at age four. The belt represents not just technical skill but the growth of self-control, patience, and character.</p>
   </div>
 
-  <!--POLITICS & ORGANIZATIONS CATEGORY (new)-->
   <h2 class="category-header" id="politics">Politics & Organizations</h2>
 
   <div class="card-bg glossary-item" data-name="First Contact Committee" data-category="politics" data-search="council protocol coexistence galinstanian santos roan alex cruiz amerigo zoë">
@@ -797,7 +793,6 @@ title: glossary
     <p>The formal legal proceeding that found Dr. Kret guilty of unauthorized medical procedures and endangerment, leading to his probation and demotion.</p>
   </div>
 
-  <!--ARTS & CULTURE CATEGORY (new)-->
   <h2 class="category-header" id="arts">Arts & Culture</h2>
 
   <div class="card-bg glossary-item" data-name="Parisian Promise" data-category="arts" data-search="song amerigo jenni memory love">
