@@ -124,18 +124,20 @@ sample_chapter: true
     opacity: 0.5;
   }
 
-  /* Restored TTS Controls Panel Styling */
+/* Restored & Responsive TTS Controls Panel Styling */
 .tts-controls {
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Distributes items nicely */
+  flex-wrap: wrap;               /* CRITICAL: Allows items to wrap on mobile */
   gap: 12px;
-  /* Semi-transparent dark purple */
   background: var(--bg-card); 
   padding: 10px 15px;
   border-radius: 6px;
-  /* Bright accent border to make it pop */
   border: 1px solid var(--neon-violet); 
+  width: 100%;                   /* Takes up full available width */
   max-width: 800px;
+  box-sizing: border-box;        /* Prevents padding from breaking layout */
   margin-bottom: 10px;
   color: var(--text-primary);
 }
@@ -146,13 +148,15 @@ sample_chapter: true
     color: var(--text-muted);
   }
 
-  .tts-controls select {
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid var(--neon-violet);
-    background: var(--bg-card);
-    color: var(--text-primary);
-  }
+.tts-controls select {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid var(--neon-violet);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  flex: 1 1 auto;                /* Allows dropdown to scale smoothly */
+  min-width: 150px;              /* Keeps it usable */
+}
 </style>
 
 <h1>Book 1, Chapter 1 Sample</h1>
