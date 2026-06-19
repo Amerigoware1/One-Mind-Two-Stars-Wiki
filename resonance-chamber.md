@@ -14,7 +14,7 @@ classification: Applied Quantum Biology / Diplomatic Archive
   <table>
     <tr>
       <td colspan="2" class="text-center pb-2">
-        <img src="{{ '/assets/images/gallery/resonance-chamber.png' | relative_url }}" alt="The Resonance Chamber Layout" class="portrait" style="width:280px; border-radius:0.5rem;">
+        <img src="{{ '/assets/images/gallery/resonance-chamber.webp' | relative_url }}" alt="The Resonance Chamber Layout" class="portrait" style="width:280px; border-radius:0.5rem;">
         <div class="image-caption">Striated Bismuth Veins Configured for Standing Wave Resonance</div>
       </td>
     </tr>

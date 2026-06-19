@@ -14,7 +14,7 @@ protocol: Sympathetic Electromagnetic Remanence (Non-linguistic)
   <table>
     <tr>
       <td colspan="2" class="text-center pb-2">
-        <img src="{{ '/assets/images/gallery/bismuth-network.png' | relative_url }}" alt="Bismuth Network Fractal Geometries" class="portrait" style="width:280px; border-radius:0.5rem;">
+        <img src="{{ '/assets/images/gallery/bismuth-vein.webp' | relative_url }}" alt="Bismuth Network Fractal Geometries" class="portrait" style="width:280px; border-radius:0.5rem;">
         <div class="image-caption">Fractal Bismuth Veins Woven Through Deep Granite</div>
       </td>
     </tr>
