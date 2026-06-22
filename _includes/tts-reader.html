@@ -48,6 +48,8 @@
     background: var(--bg-card, #1a1a2a);
     border-radius: 6px;
     transition: all 0.3s ease;
+    max-height: 70vh;
+    overflow-y: auto;
   }
   .tts-container.tts-active {
     border-color: var(--neon-cyan, #00e8ff);
@@ -89,14 +91,12 @@
     opacity: 0.4;
     cursor: not-allowed;
   }
-
   .tts-highlight {
-  background: var(--neon-cyan, #00e8ff);
-  color: #000;
-  border-radius: 3px;
-  padding: 2px 3px;
-}
-
+    background: var(--neon-cyan, #00e8ff);
+    color: #000;
+    border-radius: 3px;
+    padding: 2px 3px;
+  }
 </style>
 
 <div class="tts-wrapper">
@@ -128,6 +128,7 @@
   let voices = [];
   let currentPage = 0;
   let pages = [];
+  let currentWordIndex = -1;
 
   // --- Voice persistence helpers ---
   function saveVoice(voice) {
@@ -173,24 +174,48 @@
     return false;
   }
 
+  // --- Word wrapping for highlighting ---
   function wrapWords(element) {
-  const text = element.innerText;
-  const words = text.split(/(\s+)/); // keep spaces
-  element.innerHTML = words
-    .map((w, i) => w.trim() ? `<span class="tts-word" data-index="${i}">${w}</span>` : w)
-    .join('');
-}
+    const text = element.innerText;
+    const words = text.split(/(\s+)/); // keep spaces
+    element.innerHTML = words
+      .map((w, i) => w.trim()
+        ? `<span class="tts-word" data-index="${i}">${w}</span>`
+        : w)
+      .join('');
+  }
 
+  // --- Page splitting based on <!-- page --> ---
+  function splitIntoPages() {
+    const content = document.getElementById('ttsContent');
+    const raw = content.innerHTML;
+    const parts = raw.split(/<!--\s*page\s*-->/i);
+
+    if (parts.length > 1) {
+      content.innerHTML = "";
+      parts.forEach((html, i) => {
+        const page = document.createElement('div');
+        page.className = 'tts-page' + (i === 0 ? ' active' : '');
+        page.innerHTML = html.trim();
+        content.appendChild(page);
+      });
+      return true;
+    }
+    return false;
+  }
 
   // --- Page handling ---
   function initPages() {
     const content = document.getElementById('ttsContent');
-    const pageElements = content.querySelectorAll('.tts-page');
+
+    // Try to split based on <!-- page --> markers
+    splitIntoPages();
+
+    let pageElements = content.querySelectorAll('.tts-page');
+
     if (pageElements.length > 0) {
       pages = Array.from(pageElements);
-      pages.forEach((p, i) => p.classList.toggle('active', i === 0));
       document.getElementById('ttsNav').style.display = 'flex';
-      updateNavButtons();
     } else {
       const wrapper = document.createElement('div');
       wrapper.className = 'tts-page active';
@@ -199,25 +224,33 @@
       pages = [wrapper];
       document.getElementById('ttsNav').style.display = 'none';
     }
-    currentPage = 0;
-    updatePageCounter();
+
+    // Wrap words on each page for highlighting
     pages.forEach(page => wrapWords(page));
 
+    currentPage = 0;
+    updateNavButtons();
+    updatePageCounter();
   }
 
   function updateNavButtons() {
-    document.getElementById('ttsPrev').disabled = (currentPage === 0);
-    document.getElementById('ttsNext').disabled = (currentPage === pages.length - 1);
+    const prev = document.getElementById('ttsPrev');
+    const next = document.getElementById('ttsNext');
+    if (!prev || !next) return;
+    prev.disabled = (currentPage === 0);
+    next.disabled = (currentPage === pages.length - 1);
   }
 
   function updatePageCounter() {
-    document.getElementById('ttsPageCounter').textContent = `Page ${currentPage+1} of ${pages.length}`;
+    const counter = document.getElementById('ttsPageCounter');
+    if (!counter) return;
+    counter.textContent = `Page ${currentPage + 1} of ${pages.length}`;
   }
 
   function getCurrentPageText() {
     if (!pages.length) return '';
     const el = pages[currentPage];
-    return el.textContent.trim() || '';
+    return el.innerText.trim() || '';
   }
 
   // --- Voice list ---
@@ -225,6 +258,7 @@
     if (!synth) return;
     voices = synth.getVoices();
     const select = document.getElementById('voiceSelect');
+    if (!select) return;
     select.innerHTML = '';
     voices.forEach((voice, i) => {
       const opt = document.createElement('option');
@@ -233,7 +267,6 @@
       if (voice.default) opt.selected = true;
       select.appendChild(opt);
     });
-    // Restore saved voice
     applyStoredVoice();
   }
 
@@ -245,18 +278,21 @@
   window.toggleTTS = function() {
     if (!synth) return;
     const container = document.getElementById('ttsContainer');
+    const playBtn = document.getElementById('ttsPlayBtn');
+    const stopBtn = document.getElementById('ttsStopBtn');
+
     if (synth.speaking && !isPaused) {
       synth.pause();
       isPaused = true;
-      document.getElementById('ttsPlayBtn').textContent = '⏸️ Resume';
-      container.classList.remove('tts-active');
+      if (playBtn) playBtn.textContent = '⏸️ Resume';
+      if (container) container.classList.remove('tts-active');
       return;
     }
     if (isPaused) {
       synth.resume();
       isPaused = false;
-      document.getElementById('ttsPlayBtn').textContent = '⏸️ Pause';
-      container.classList.add('tts-active');
+      if (playBtn) playBtn.textContent = '⏸️ Pause';
+      if (container) container.classList.add('tts-active');
       return;
     }
 
@@ -264,12 +300,16 @@
     if (!text) return;
 
     utterance = new SpeechSynthesisUtterance(text);
-    const selectedIndex = document.getElementById('voiceSelect').value;
+    const selectedIndex = document.getElementById('voiceSelect')?.value;
     if (voices[selectedIndex]) utterance.voice = voices[selectedIndex];
 
+    // Reset highlight state
+    clearHighlights();
+
     utterance.onstart = function() {
-      container.classList.add('tts-active');
+      if (container) container.classList.add('tts-active');
     };
+
     utterance.onend = function() {
       if (currentPage < pages.length - 1) {
         changeTtsPage(1);
@@ -278,49 +318,76 @@
         stopTTS();
       }
     };
-let currentWordIndex = -1;
 
-utterance.onboundary = function(event) {
-  if (event.name === 'word') {
-    const idx = event.charIndex;
-    const words = pages[currentPage].querySelectorAll('.tts-word');
+    // Word boundary highlighting + autoscroll
+    utterance.onboundary = function(event) {
+      if (event.name !== 'word') return;
 
-    // Find the word whose text range contains charIndex
-    let runningLength = 0;
-    for (let i = 0; i < words.length; i++) {
-      const w = words[i].innerText;
-      const start = runningLength;
-      const end = runningLength + w.length;
+      const pageEl = pages[currentPage];
+      const words = pageEl.querySelectorAll('.tts-word');
+      if (!words.length) return;
 
-      if (idx >= start && idx < end) {
-        if (currentWordIndex !== -1) {
+      const idx = event.charIndex;
+      let runningLength = 0;
+      let targetIndex = -1;
+
+      for (let i = 0; i < words.length; i++) {
+        const w = words[i].innerText;
+        const start = runningLength;
+        const end = runningLength + w.length;
+
+        if (idx >= start && idx < end) {
+          targetIndex = i;
+          break;
+        }
+        runningLength = end + 1; // approximate space
+      }
+
+      if (targetIndex !== -1) {
+        if (currentWordIndex !== -1 && words[currentWordIndex]) {
           words[currentWordIndex].classList.remove('tts-highlight');
         }
-        words[i].classList.add('tts-highlight');
-        currentWordIndex = i;
-        break;
-      }
-      runningLength = end + 1; // +1 for space
-    }
-  }
-};
+        words[targetIndex].classList.add('tts-highlight');
+        currentWordIndex = targetIndex;
 
-    document.getElementById('ttsPlayBtn').textContent = '⏸️ Pause';
-    document.getElementById('ttsStopBtn').disabled = false;
+        // Autoscroll to keep highlighted word in view
+        words[targetIndex].scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+      }
+    };
+
+    if (playBtn) playBtn.textContent = '⏸️ Pause';
+    if (stopBtn) stopBtn.disabled = false;
     synth.speak(utterance);
   };
+
+  function clearHighlights() {
+    currentWordIndex = -1;
+    pages.forEach(page => {
+      page.querySelectorAll('.tts-word.tts-highlight').forEach(span => {
+        span.classList.remove('tts-highlight');
+      });
+    });
+  }
 
   window.stopTTS = function() {
     if (!synth) return;
     synth.cancel();
     isPaused = false;
-    document.getElementById('ttsPlayBtn').textContent = '▶️ Play Audio';
-    document.getElementById('ttsStopBtn').disabled = true;
-    document.getElementById('ttsContainer').classList.remove('tts-active');
+    const playBtn = document.getElementById('ttsPlayBtn');
+    const stopBtn = document.getElementById('ttsStopBtn');
+    const container = document.getElementById('ttsContainer');
+    if (playBtn) playBtn.textContent = '▶️ Play Audio';
+    if (stopBtn) stopBtn.disabled = true;
+    if (container) container.classList.remove('tts-active');
+    clearHighlights();
   };
 
   window.changeVoice = function() {
     const select = document.getElementById('voiceSelect');
+    if (!select) return;
     const idx = select.value;
     if (voices[idx]) saveVoice(voices[idx]);
     if (synth.speaking) {
@@ -332,26 +399,33 @@ utterance.onboundary = function(event) {
   window.changeTtsPage = function(step) {
     const newPage = currentPage + step;
     if (newPage < 0 || newPage >= pages.length) return;
+
     pages[currentPage].classList.remove('active');
     currentPage = newPage;
     pages[currentPage].classList.add('active');
     updateNavButtons();
     updatePageCounter();
+
     if (synth.speaking) {
       stopTTS();
       window.toggleTTS();
+    } else {
+      clearHighlights();
+      const container = document.getElementById('ttsContainer');
+      if (container) container.scrollTop = 0;
     }
   };
 
   // --- Initialisation ---
-  if (document.readyState === 'complete') {
+  function init() {
     populateVoiceList();
     initPages();
+  }
+
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    setTimeout(init, 0);
   } else {
-    window.addEventListener('load', function() {
-      populateVoiceList();
-      initPages();
-    });
+    window.addEventListener('load', init);
   }
 })();
 </script>
