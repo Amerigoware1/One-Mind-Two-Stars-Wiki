@@ -89,6 +89,14 @@
     opacity: 0.4;
     cursor: not-allowed;
   }
+
+  .tts-highlight {
+  background: var(--neon-cyan, #00e8ff);
+  color: #000;
+  border-radius: 3px;
+  padding: 2px 3px;
+}
+
 </style>
 
 <div class="tts-wrapper">
@@ -165,6 +173,15 @@
     return false;
   }
 
+  function wrapWords(element) {
+  const text = element.innerText;
+  const words = text.split(/(\s+)/); // keep spaces
+  element.innerHTML = words
+    .map((w, i) => w.trim() ? `<span class="tts-word" data-index="${i}">${w}</span>` : w)
+    .join('');
+}
+
+
   // --- Page handling ---
   function initPages() {
     const content = document.getElementById('ttsContent');
@@ -184,6 +201,8 @@
     }
     currentPage = 0;
     updatePageCounter();
+    pages.forEach(page => wrapWords(page));
+
   }
 
   function updateNavButtons() {
@@ -259,6 +278,32 @@
         stopTTS();
       }
     };
+let currentWordIndex = -1;
+
+utterance.onboundary = function(event) {
+  if (event.name === 'word') {
+    const idx = event.charIndex;
+    const words = pages[currentPage].querySelectorAll('.tts-word');
+
+    // Find the word whose text range contains charIndex
+    let runningLength = 0;
+    for (let i = 0; i < words.length; i++) {
+      const w = words[i].innerText;
+      const start = runningLength;
+      const end = runningLength + w.length;
+
+      if (idx >= start && idx < end) {
+        if (currentWordIndex !== -1) {
+          words[currentWordIndex].classList.remove('tts-highlight');
+        }
+        words[i].classList.add('tts-highlight');
+        currentWordIndex = i;
+        break;
+      }
+      runningLength = end + 1; // +1 for space
+    }
+  }
+};
 
     document.getElementById('ttsPlayBtn').textContent = '⏸️ Pause';
     document.getElementById('ttsStopBtn').disabled = false;
