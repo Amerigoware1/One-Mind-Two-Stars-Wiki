@@ -264,6 +264,14 @@
     "height": 1536
   },
   {
+    "file": "swimming-hole.webp",
+    "title": "The Swimming Hole",
+    "description": "The swimming hole and entrance to the extensive cave system explored over fourteen years. These caves hold ancient Galinstanian secrets.",
+    "tags": ["environment", "cave", "exploration", "ancient"],
+    "width": 992,
+    "height": 736
+  },  
+  {
     "file": "cave.png",
     "title": "The Deep Caves",
     "description": "Entrance to the extensive cave system explored over fourteen years. These caves hold ancient Galinstanian secrets.",
