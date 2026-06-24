@@ -36,7 +36,7 @@ title: Parisian Promise
   background: none;
   border: 2px solid currentColor;
   border-radius: 50px;
-  padding: 0.7rem 2rem;
+  padding: 0.7rem 1rem;
   font-size: 1rem;
   font-family: inherit;
   color: #333; /* or match your theme */
@@ -61,15 +61,15 @@ title: Parisian Promise
   line-height: 1;
 }
 
-#playToggle .button-label {
+/* #playToggle .button-label {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
 
 /* When playing, subtly change the button text */
-#playToggle.playing .button-label {
-  content: "Pause";
-}
+/* #playToggle.playing .button-label {
+  content: "Pause"; */
+} */
 </style>
 
 <!-- Add this right above your .lyrics container -->
@@ -77,7 +77,7 @@ title: Parisian Promise
   <button id="playToggle" aria-label="Play or pause the song">
     <span class="play-icon">▶</span>
     <span class="pause-icon" style="display:none;">⏸</span>
-    <span class="button-label">Play Reference Track</span>
+    <!-- <span class="button-label">Play Reference Track</span> -->
   </button>
   "
   <audio id="audioRef" src="{{ 'assets/audio/parisian-promise.mp3' | relative_url }}" preload="metadata"></audio>
@@ -157,7 +157,7 @@ title: Parisian Promise
     const toggle = document.getElementById('playToggle');
     const playIcon = toggle.querySelector('.play-icon');
     const pauseIcon = toggle.querySelector('.pause-icon');
-    const label = toggle.querySelector('.button-label');
+    // const label = toggle.querySelector('.button-label');
 
     // Toggle play/pause on click
     toggle.addEventListener('click', function() {
@@ -166,13 +166,13 @@ title: Parisian Promise
         toggle.classList.add('playing');
         playIcon.style.display = 'none';
         pauseIcon.style.display = 'inline';
-        label.textContent = 'Pause';
+        // label.textContent = 'Pause';
       } else {
         audio.pause();
         toggle.classList.remove('playing');
         playIcon.style.display = 'inline';
         pauseIcon.style.display = 'none';
-        label.textContent = 'Play Reference Track';
+        // label.textContent = 'Play Reference Track';
       }
     });
 
@@ -181,7 +181,7 @@ title: Parisian Promise
       toggle.classList.remove('playing');
       playIcon.style.display = 'inline';
       pauseIcon.style.display = 'none';
-      label.textContent = 'Play Reference Track';
+      // label.textContent = 'Play Reference Track';
       // Optionally rewind to start
       audio.currentTime = 0;
     });
