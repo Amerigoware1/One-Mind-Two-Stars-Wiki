@@ -3,6 +3,7 @@ layout: default
 title: Parisian Promise
 ---
 
+<style>
 .lyrics {
   text-align: center; /* Centers the entire block on the page */
   margin: 2rem auto;
@@ -66,6 +67,7 @@ title: Parisian Promise
 #playToggle.playing .button-label {
   content: "Pause";
 }
+</style>
 
 <!-- Add this right above your .lyrics container -->
 <div class="audio-player">
