@@ -779,7 +779,7 @@ title: Glossary
   <h2 class="category-header">Arts &amp; Culture</h2>
 
   <div class="card-bg glossary-item" data-name="Parisian Promise" data-category="arts" data-search="song amerigo jenni memory love">
-    <h2>Parisian Promise</h2>
+    <h2><a href="{{ '/parisian-promise.html' | relative_url }}">Parisian Promise</a></h2>
     <p><strong>Pronunciation:</strong> /pəˈrɪziən ˈprɒmɪs/<button class="speak-button">🔊</button></p>
     <p>A song written by Amerigo for his late wife Jenni. He hums it when he thinks no one can hear. Represents enduring love and memory.</p>
   </div>
