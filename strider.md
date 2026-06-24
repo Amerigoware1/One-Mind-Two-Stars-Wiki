@@ -48,14 +48,14 @@ The MLV-01 is a high-mobility recreational vehicle designed for low-gravity and 
 ## Technical Specifications
 *   **Capacity:** 2 Passengers (Twin Recumbent)
 *   **Driver Fit:** Adjustable rail system (Fits US Size 7+)
-*   **Top Speed:** 85 km/h (53 mph)
+*   **Top Speed:** 85 km/h
 *   **Drive Type:** 4-Wheel Independent Hubless Maglev
 *   **Power Source:** Solid-State Battery + Kinetic Regenerative Suspension
 </div>
 
 <div class="card-bg" markdown="1">
 ## Propulsion: The Independent Maglev Wheel
-![Technical Sketch: Independent Maglev Wheel Hub Isolation System](./assets/images/gallery/hub-sketch.webp){: width="25%" }
+![Technical Sketch: Independent Maglev Wheel Hub Isolation System](./assets/images/gallery/hub-sketch.webp){: width="50%" }
 The vehicle utilizes a revolutionary **Hubless Induction Drive**.
 *   **Zero Physical Connection:** There is no axle. The tire assembly floats around the central structural spar via a magnetic gap.
 *   **Ground-Contact Tire:** The tire contains embedded permanent magnets.
