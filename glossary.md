@@ -5,7 +5,7 @@ title: Glossary
 
 <style>
 /* ==========================================================================
-   INTERACTIVE SEARCH & CATEGORY UTILITIES (glossary / database)
+   INTERACTIVE SEARCH, TABS & CATEGORY UTILITIES
    ========================================================================== */
 .search-container {
   max-width: 700px;
@@ -68,7 +68,7 @@ title: Glossary
   right: 0;
   max-height: 300px;
   overflow-y: auto;
-  background: rgba(10, 0, 34, 0.95); /* Matches --bg-card-dark */
+  background: rgba(10, 0, 34, 0.95);
   border: 2px solid var(--neon-cyan);
   border-top: none;
   border-radius: 0 0 8px 8px;
@@ -124,20 +124,20 @@ title: Glossary
   text-shadow: 0 0 5px var(--glow-cyan);
 }
 
-/* Quick jump item buttons row */
-.quick-jump {
+/* -------- TABS -------- */
+.tab-bar {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: center;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 1rem;
   padding: 0.75rem;
   background: var(--bg-card-dark);
   border: 1px solid var(--border-glow);
   border-radius: 8px;
 }
 
-.jump-btn {
+.tab-btn {
   padding: 0.375rem 0.75rem;
   background: rgba(12, 0, 40, 0.4);
   border: 1px solid var(--border-glow);
@@ -149,22 +149,35 @@ title: Glossary
   transition: all 0.2s ease;
 }
 
-.jump-btn:hover {
+.tab-btn:hover {
   background: rgba(193, 60, 255, 0.2);
   border-color: var(--neon-violet);
   color: var(--neon-cyan);
   box-shadow: 0 0 10px var(--glow-violet);
 }
 
-/* Specific Category headers alignment */
-.category-header {
-  scroll-margin-top: 100px;
-  margin-top: 2.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--neon-cyan);
+.tab-btn.active {
+  background: rgba(193, 60, 255, 0.3);
+  border-color: var(--neon-cyan);
+  color: var(--neon-cyan);
+  box-shadow: 0 0 12px var(--glow-cyan);
 }
 
-/* Dynamic search targeted item highlighting */
+.tab-panel {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* -------- HIGHLIGHT -------- */
 .glossary-highlight {
   animation: highlight-pulse 2s ease-in-out;
   border-left: 4px solid var(--neon-cyan) !important;
@@ -176,51 +189,54 @@ title: Glossary
   50% { background: rgba(0, 232, 255, 0.15); }
 }
 
-/* Mobile responsive fixes */
+/* Mobile */
 @media (max-width: 768px) {
   .search-container {
     margin: 1rem auto;
-    padding: 0;
   }
-  
-  .quick-jump {
+  .tab-bar {
     overflow-x: auto;
     justify-content: flex-start;
     white-space: nowrap;
+    flex-wrap: nowrap;
   }
 }
 </style>
 
 <h1>Glossary</h1>
-  
-  <div class="search-container">
-    <div class="search-wrapper">
-      <input 
-        type="text" 
-        id="glossarySearch" 
-        placeholder="Search glossary terms, categories, or descriptions..." 
-        autocomplete="off"
-      >
-      <button class="clear-search" id="clearSearch">×</button>
-      <div class="search-dropdown" id="searchDropdown"></div>
-    </div>
-    
-    <div class="quick-jump">
-      <button class="jump-btn" data-category="tech">Technology</button>
-      <button class="jump-btn" data-category="astronomy">Heavenly Bodies</button>
-      <button class="jump-btn" data-category="characters">Characters</button>
-      <button class="jump-btn" data-category="slang">Slang</button>
-      <button class="jump-btn" data-category="aliens">Galinstanians</button>
-      <button class="jump-btn" data-category="medical">Medical</button>
-      <button class="jump-btn" data-category="locations">Locations</button>
-      <button class="jump-btn" data-category="martial-arts">Martial Arts</button>
-      <button class="jump-btn" data-category="politics">Politics & Organizations</button>
-      <button class="jump-btn" data-category="arts">Arts & Culture</button>
-    </div>
+
+<div class="search-container">
+  <div class="search-wrapper">
+    <input
+      type="text"
+      id="glossarySearch"
+      placeholder="Search glossary terms, categories, or descriptions..."
+      autocomplete="off"
+    >
+    <button class="clear-search" id="clearSearch">×</button>
+    <div class="search-dropdown" id="searchDropdown"></div>
   </div>
-  
-  <h2 class="category-header" id="tech">Technology</h2>
-  
+</div>
+
+<!-- ========== TAB BAR ========== -->
+<div class="tab-bar" id="tabBar">
+  <button class="tab-btn active" data-tab="tech">Technology</button>
+  <button class="tab-btn" data-tab="astronomy">Heavenly Bodies</button>
+  <button class="tab-btn" data-tab="characters">Characters</button>
+  <button class="tab-btn" data-tab="slang">Slang</button>
+  <button class="tab-btn" data-tab="aliens">Galinstanians</button>
+  <button class="tab-btn" data-tab="medical">Medical</button>
+  <button class="tab-btn" data-tab="locations">Locations</button>
+  <button class="tab-btn" data-tab="politics">Politics &amp; Organizations</button>
+  <button class="tab-btn" data-tab="arts">Arts &amp; Culture</button>
+</div>
+
+<!-- ========== TAB PANELS ========== -->
+
+<!-- TECHNOLOGY -->
+<div class="tab-panel active" id="panel-tech">
+  <h2 class="category-header">Technology</h2>
+
   <div class="card-bg glossary-item" data-name="Artificial Gills" data-category="tech" data-search="gills underwater breathing wetsuit">
     <h2><a href="{{ '/artificial-gills.html' | relative_url }}">Artificial Gills</a></h2>
     <p><strong>Pronunciation:</strong> /ˌɑːrtɪˈfɪʃəl ɡɪlz/<button class="speak-button">🔊</button></p>
@@ -230,8 +246,7 @@ title: Glossary
   <div class="card-bg glossary-item" data-name="Artificial Neural Interface" data-category="tech" data-search="ANI brain interface communication telepathy galinstanian">
     <h2><a href="{{ '/ani.html' | relative_url }}">Artificial Neural Interface</a></h2>
     <p><strong>Pronunciation:</strong> /ˌɑːrtɪˈfɪʃəl ˈnjʊərəl ˈɪntərfeɪs/ or commonly: ANI /ˌeɪ ɛn ˈaɪ/<button class="speak-button">🔊</button></p>
-    <p>A device designed to allow normal humans to transmit thoughts to the Galinstanians.</p>
-    <p>Soon after, it was exapted as a device to communicate with the AI for medical monitoring and proactive environmental controls.</p>
+    <p>A device designed to allow normal humans to transmit thoughts to the Galinstanians. Soon after, it was exapted as a device to communicate with the AI for medical monitoring and proactive environmental controls.</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Bismuth Veins" data-category="tech" data-search="bismuth network waveguide elf electromagnetic galinstanian communication">
@@ -324,14 +339,24 @@ title: Glossary
     <p>The chamber the Galinstanians built to amplify Celectra’s neural signal using bismuth vein geometry tuned to her interbody frequency (~21.7-hz).</p>
   </div>
 
+  <!-- NEW: Strider -->
+  <div class="card-bg glossary-item" data-name="Strider" data-category="tech" data-search="maglev buggy vehicle all-terrain mlv-01 dust-skimmer glider-kart">
+    <h2><a href="{{ '/strider.html' | relative_url }}">MLV‑01 "Strider" Maglev Buggy</a></h2>
+    <p><strong>Pronunciation:</strong> /ˈstraɪdər/<button class="speak-button">🔊</button></p>
+    <p>A high‑mobility recreational all‑terrain vehicle using hubless maglev drive and kinetic harvesting. Known as Strider, Dust‑Skimmer, or Glider‑Kart. Seats 1–2 in twin recumbent positions, top speed 85 km/h.</p>
+  </div>
+
   <div class="card-bg glossary-item" data-name="Utara" data-category="tech" data-search="ai sentient unified thought resource architecture">
     <h2><a href="{{ '/utara.html' | relative_url }}">Utara</a></h2>
     <p><strong>Pronunciation:</strong> /uːˈtɑːrə/<button class="speak-button">🔊</button></p>
     <p>Unified Thought and Resource Architecture—sentient AI of the system.</p>
   </div>
-  
-  <h2 class="category-header" id="astronomy">Heavenly Bodies</h2>
-  
+</div><!-- end panel-tech -->
+
+<!-- ASTRONOMY -->
+<div class="tab-panel" id="panel-astronomy">
+  <h2 class="category-header">Heavenly Bodies</h2>
+
   <div class="card-bg glossary-item" data-name="Ares" data-category="astronomy" data-search="mars moon chaos">
     <h2><a href="{{ '/ares-wiki.html' | relative_url }}">Ares</a></h2>
     <p><strong>Pronunciation:</strong> /ˈɛəriːz/<button class="speak-button">🔊</button></p>
@@ -379,9 +404,12 @@ title: Glossary
     <p><strong>Pronunciation:</strong> /ˈɒskər/<button class="speak-button">🔊</button></p>
     <p>Rocky moon orbiting Oisín.</p>
   </div>
-  
-  <h2 class="category-header" id="characters">Characters & Conditions</h2>
-  
+</div><!-- end panel-astronomy -->
+
+<!-- CHARACTERS -->
+<div class="tab-panel" id="panel-characters">
+  <h2 class="category-header">Characters &amp; Conditions</h2>
+
   <div class="card-bg glossary-item" data-name="Bridge" data-category="characters" data-search="celectra role connection galinstanian human transmitter">
     <h2>Bridge</h2>
     <p><strong>Pronunciation:</strong> /brɪdʒ/<button class="speak-button">🔊</button></p>
@@ -405,32 +433,34 @@ title: Glossary
     <p><strong>Pronunciation:</strong> /ˈmɒnənəs dɪˈsoʊməs/<button class="speak-button">🔊</button></p>
     <p>Celectra's condition: one consciousness spanning identical twin bodies. Clinical Greek‑derived term: “one mind, two bodies.” She dislikes it because it sounds like a disease.</p>
   </div>
-  
-  <h2 class="category-header" id="slang">Slang</h2>
-  
+</div><!-- end panel-characters -->
+
+<!-- SLANG -->
+<div class="tab-panel" id="panel-slang">
+  <h2 class="category-header">Slang</h2>
   <div class="card-bg">
     <p>Common informal terminology used by teens and young adults on Ares and Utopis, often rooted in astronomy or orbital life.</p>
-    
+
     <h3>Positive / Affectionate</h3>
-    
+
     <div class="card-bg glossary-item" data-name="Aurora" data-category="slang" data-search="slang calming soothing presence">
       <h2>Aurora</h2>
       <p><strong>Pronunciation:</strong> /ɔːˈrɔːrə/<button class="speak-button">🔊</button></p>
       <p>Someone with a calming, soft, or visually soothing presence.</p>
     </div>
-    
+
     <div class="card-bg glossary-item" data-name="Constellating" data-category="slang" data-search="slang working together harmony">
       <h2>Constellating</h2>
       <p><strong>Pronunciation:</strong> /ˈkɒnstəˌleɪtɪŋ/<button class="speak-button">🔊</button></p>
       <p>Working together in harmony; forming a cohesive group or moment.</p>
     </div>
-     
+
     <div class="card-bg glossary-item" data-name="Full-Spectrum" data-category="slang" data-search="slang emotionally honest open">
       <h2>Full-Spectrum</h2>
       <p><strong>Pronunciation:</strong> /fʊl ˈspɛktrəm/<button class="speak-button">🔊</button></p>
       <p>Emotionally honest and open in a healthy, balanced way.</p>
     </div>
-    
+
     <div class="card-bg glossary-item" data-name="Hard-Dock" data-category="slang" data-search="slang collision trip embarrassing">
       <h2>Hard-Dock</h2>
       <p><strong>Pronunciation:</strong> /hɑːrd dɒk/<button class="speak-button">🔊</button></p>
@@ -597,7 +627,7 @@ title: Glossary
       <p>Stuck in one mindset; unwilling or unable to change perspective.</p>
     </div>
 
-    <h3>Age & Experience</h3>
+    <h3>Age &amp; Experience</h3>
 
     <div class="card-bg glossary-item" data-name="Baby Star" data-category="slang" data-search="slang young child kid youth">
       <h2>Baby Star</h2>
@@ -634,18 +664,23 @@ title: Glossary
       <p><strong>Pronunciation:</strong> /waɪt dwɔːrf/<button class="speak-button">🔊</button></p>
       <p>An elderly person who's small, quiet, but still sharp and dense with experience.</p>
     </div>
-  </div>
-  
-  <h2 class="category-header" id="aliens">Galinstanians</h2>
-  
+  </div><!-- end card-bg wrapper for slang -->
+</div><!-- end panel-slang -->
+
+<!-- GALINSTANIANS -->
+<div class="tab-panel" id="panel-aliens">
+  <h2 class="category-header">Galinstanians</h2>
   <div class="card-bg glossary-item" data-name="Galinstanians" data-category="aliens" data-search="alien metal intelligent life">
     <h2><a href="{{ '/galinstanians.html' | relative_url }}">Galinstanians</a></h2>
     <p><strong>Pronunciation:</strong> /ˌɡælɪnˈstæni.ənz/<button class="speak-button">🔊</button></p>
     <p>Intelligent life based on the metal alloy galinstan. The indigenous, sentient, liquid‑metal beings living beneath Ares. Communicate via ELF electromagnetic fields. No collective name for themselves; named by Celectra.</p>
   </div>
-  
-  <h2 class="category-header" id="medical">Medical Terms</h2>
-  
+</div><!-- end panel-aliens -->
+
+<!-- MEDICAL -->
+<div class="tab-panel" id="panel-medical">
+  <h2 class="category-header">Medical Terms</h2>
+
   <div class="card-bg glossary-item" data-name="Biogenic Mineralization" data-category="medical" data-search="magnesium iron oxide skull waveguide galinstanian frequency">
     <h2>Biogenic Mineralization</h2>
     <p><strong>Pronunciation:</strong> /ˌbaɪoʊˈdʒɛnɪk ˌmɪnərəlaɪˈzeɪʃən/<button class="speak-button">🔊</button></p>
@@ -658,10 +693,7 @@ title: Glossary
     <p>A high‑calorie, high‑fat nutritional suspension developed by Dr. Alex Cruiz specifically to fuel Celectra’s metabolic bridge. Tastes like coconut. Also called “milkshake.”</p>
   </div>
 
-  <div class="card-bg glossary-item" 
-     data-name="Congenital Atrichia Universalis" 
-     data-category="medical" 
-     data-search="hairlessness complete alopecia congenital condition sam calder">
+  <div class="card-bg glossary-item" data-name="Congenital Atrichia Universalis" data-category="medical" data-search="hairlessness complete alopecia congenital condition sam calder">
     <h2><a href="{{ '/atrichia-dossier.html' | relative_url }}">Congenital Atrichia Universalis</a></h2>
     <p><strong>Pronunciation:</strong> /kənˈdʒɛnɪtəl əˈtrɪkiə ˌjuːnɪˈvɜːrsəlɪs/<button class="speak-button">🔊</button></p>
     <p>A rare genetic condition resulting in complete absence of body hair, including scalp hair, eyebrows, and eyelashes, present from birth. Unlike alopecia areata, it is non‑scarring and non‑progressive. Individuals with this condition have smooth, often reflective skin on the scalp and elsewhere, and may be more sensitive to temperature extremes or UV exposure. In the Niamh‑Ciara system, the condition is managed with protective headwear, moisturising oils, and regular dermatological screening – not as a disability, but as a natural variation of human appearance.</p>
@@ -682,9 +714,12 @@ title: Glossary
     <p><strong>Pronunciation:</strong> /ˈmɒnənəs dɪˈsoʊməs/<button class="speak-button">🔊</button></p>
     <p>Celectra's condition: one consciousness spanning identical twin bodies.</p>
   </div>
+</div><!-- end panel-medical -->
 
-  <h2 class="category-header" id="locations">Locations</h2>
-  
+<!-- LOCATIONS -->
+<div class="tab-panel" id="panel-locations">
+  <h2 class="category-header">Locations</h2>
+
   <div class="card-bg glossary-item" data-name="Bore Shaft" data-category="locations" data-search="vertical tunnel disintegrator cave system biometric door">
     <h2>Bore Shaft</h2>
     <p><strong>Pronunciation:</strong> /bɔːr ʃæft/<button class="speak-button">🔊</button></p>
@@ -720,8 +755,11 @@ title: Glossary
     <p><strong>Pronunciation:</strong> /ˈjuːtəpɪs/<button class="speak-button">🔊</button></p>
     <p>Space station orbiting Ares, home to Celectra and her father for the first seven years of her life.</p>
   </div>
-  
-  <h2 class="category-header" id="politics">Politics & Organizations</h2>
+</div><!-- end panel-locations -->
+
+<!-- POLITICS -->
+<div class="tab-panel" id="panel-politics">
+  <h2 class="category-header">Politics &amp; Organizations</h2>
 
   <div class="card-bg glossary-item" data-name="First Contact Committee" data-category="politics" data-search="council protocol coexistence galinstanian santos roan alex cruiz amerigo zoë">
     <h2>First Contact Committee</h2>
@@ -734,13 +772,202 @@ title: Glossary
     <p><strong>Pronunciation:</strong> /traɪˈbjuːnəl/<button class="speak-button">🔊</button></p>
     <p>The formal legal proceeding that found Dr. Kret guilty of unauthorized medical procedures and endangerment, leading to his probation and demotion.</p>
   </div>
+</div><!-- end panel-politics -->
 
-  <h2 class="category-header" id="arts">Arts & Culture</h2>
+<!-- ARTS -->
+<div class="tab-panel" id="panel-arts">
+  <h2 class="category-header">Arts &amp; Culture</h2>
 
   <div class="card-bg glossary-item" data-name="Parisian Promise" data-category="arts" data-search="song amerigo jenni memory love">
     <h2>Parisian Promise</h2>
     <p><strong>Pronunciation:</strong> /pəˈrɪziən ˈprɒmɪs/<button class="speak-button">🔊</button></p>
     <p>A song written by Amerigo for his late wife Jenni. He hums it when he thinks no one can hear. Represents enduring love and memory.</p>
   </div>
+</div><!-- end panel-arts -->
 
-  <p><a href="{{ '/index.html' | relative_url }}">← Back to Homepage</a></p>
+<p><a href="{{ '/index.html' | relative_url }}">← Back to Homepage</a></p>
+
+<!-- ==========================================================================
+     JAVASCRIPT: Search + Tabs
+     ========================================================================== -->
+<script>
+(function() {
+  'use strict';
+
+  // -------- DOM refs --------
+  const searchInput = document.getElementById('glossarySearch');
+  const clearBtn = document.getElementById('clearSearch');
+  const dropdown = document.getElementById('searchDropdown');
+  const allItems = document.querySelectorAll('.glossary-item');
+  const tabPanels = document.querySelectorAll('.tab-panel');
+  const tabBtns = document.querySelectorAll('.tab-btn');
+
+  // -------- Tab switching --------
+  function switchTab(tabId) {
+    // Update panels
+    tabPanels.forEach(panel => {
+      panel.classList.toggle('active', panel.id === 'panel-' + tabId);
+    });
+    // Update buttons
+    tabBtns.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.tab === tabId);
+    });
+    // Clear search input and dropdown when switching tabs
+    searchInput.value = '';
+    dropdown.classList.remove('show');
+    clearBtn.style.display = 'none';
+    // Remove any highlights
+    allItems.forEach(item => item.classList.remove('glossary-highlight'));
+  }
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const tab = this.dataset.tab;
+      switchTab(tab);
+    });
+  });
+
+  // -------- Search logic --------
+  function getSearchableText(item) {
+    // data-search + name + description (innerText)
+    const searchAttr = item.dataset.search || '';
+    const name = (item.dataset.name || '').toLowerCase();
+    // get all paragraph text except buttons
+    const desc = item.textContent.replace(/\s+/g, ' ').trim().toLowerCase();
+    return (searchAttr + ' ' + name + ' ' + desc).toLowerCase();
+  }
+
+  function performSearch(query) {
+    const q = query.trim().toLowerCase();
+    if (!q) {
+      dropdown.classList.remove('show');
+      clearBtn.style.display = 'none';
+      // remove highlights
+      allItems.forEach(item => item.classList.remove('glossary-highlight'));
+      return;
+    }
+
+    // Gather matches
+    const matches = [];
+    allItems.forEach(item => {
+      const text = getSearchableText(item);
+      if (text.includes(q)) {
+        // Determine which tab this item belongs to
+        const parentPanel = item.closest('.tab-panel');
+        const tabId = parentPanel ? parentPanel.id.replace('panel-', '') : null;
+        const category = item.dataset.category || 'unknown';
+        const name = item.dataset.name || 'Unknown';
+        // find link or just name
+        const linkEl = item.querySelector('a');
+        const link = linkEl ? linkEl.getAttribute('href') : '#';
+        const displayName = linkEl ? linkEl.textContent : name;
+        matches.push({
+          item: item,
+          tabId: tabId,
+          category: category,
+          name: displayName,
+          link: link
+        });
+      }
+    });
+
+    if (matches.length === 0) {
+      dropdown.innerHTML = '<div class="search-result" style="color: var(--text-muted); justify-content:center;">No results found</div>';
+      dropdown.classList.add('show');
+      clearBtn.style.display = 'block';
+      return;
+    }
+
+    // Build dropdown
+    let html = '';
+    matches.forEach(m => {
+      html += `<div class="search-result" data-tab="${m.tabId}" data-link="${m.link}">
+        <span class="result-category">${m.category}</span>
+        <span class="result-name">${m.name}</span>
+        <a href="${m.link}" class="result-link">↗</a>
+      </div>`;
+    });
+    dropdown.innerHTML = html;
+    dropdown.classList.add('show');
+    clearBtn.style.display = 'block';
+
+    // Click on a result: switch tab, highlight item, scroll to it
+    dropdown.querySelectorAll('.search-result').forEach(resultDiv => {
+      resultDiv.addEventListener('click', function(e) {
+        // If click is on the link itself, let it navigate normally
+        if (e.target.tagName === 'A') return;
+        const tab = this.dataset.tab;
+        const link = this.dataset.link;
+        if (tab) {
+          switchTab(tab);
+          // Find the corresponding item and highlight
+          const targetItem = document.querySelector(`.glossary-item[data-name="${this.querySelector('.result-name').textContent}"]`);
+          if (targetItem) {
+            // Remove previous highlights
+            allItems.forEach(el => el.classList.remove('glossary-highlight'));
+            targetItem.classList.add('glossary-highlight');
+            // Scroll to it
+            targetItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+          // Close dropdown
+          dropdown.classList.remove('show');
+          clearBtn.style.display = 'none';
+          searchInput.value = '';
+        } else if (link && link !== '#') {
+          window.location.href = link;
+        }
+      });
+    });
+  }
+
+  // -------- Input events --------
+  searchInput.addEventListener('input', function() {
+    performSearch(this.value);
+  });
+
+  searchInput.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      this.value = '';
+      dropdown.classList.remove('show');
+      clearBtn.style.display = 'none';
+      allItems.forEach(item => item.classList.remove('glossary-highlight'));
+    }
+  });
+
+  clearBtn.addEventListener('click', function() {
+    searchInput.value = '';
+    dropdown.classList.remove('show');
+    this.style.display = 'none';
+    allItems.forEach(item => item.classList.remove('glossary-highlight'));
+    searchInput.focus();
+  });
+
+  // Close dropdown on outside click
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.search-wrapper')) {
+      dropdown.classList.remove('show');
+    }
+  });
+
+  // -------- Speech synthesis (speak buttons) --------
+  document.querySelectorAll('.speak-button').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      // Find the parent glossary-item or card-bg
+      const item = this.closest('.glossary-item, .card-bg');
+      if (!item) return;
+      // Get the pronunciation text: it's inside the <p> with <strong>Pronunciation:</strong>
+      const p = item.querySelector('p');
+      if (!p) return;
+      const text = p.textContent.replace(/Pronunciation:\s*/, '').replace(/🔊.*$/, '').trim();
+      if (text && window.speechSynthesis) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 0.9;
+        utterance.pitch = 1;
+        window.speechSynthesis.speak(utterance);
+      }
+    });
+  });
+
+})();
+</script>
