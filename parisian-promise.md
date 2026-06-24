@@ -5,24 +5,27 @@ title: Parisian Promise
 
 <style>
 .lyrics {
-  text-align: center; /* Centers the entire block on the page */
+  display: flex;
+  flex-direction: column;   /* Stacks the stanzas vertically in a column */
+  align-items: center;      /* Centers each stanza block horizontally */
   margin: 2rem auto;
 }
 
 /* Style for each stanza (verse/chorus/bridge) */
 .lyrics .stanza {
-  text-align: left; /* Keeps the text flush left inside the block */
-  display: inline-block; /* Makes the background/width shrink to fit the text */
-  max-width: 38em; /* Keeps lines from getting too long on wide screens */
-  padding: 0 1rem; /* Gives a little breathing room on mobile */
-  margin: 1.5rem 0; /* Space between stanzas */
+  text-align: left;         /* Keeps the lyrics flush left inside their block */
+  width: 100%;              /* Allows max-width to govern the sizing */
+  max-width: 24em;          /* Shrink this slightly so the vertical alignment is tight and clean */
+  padding: 0 1rem; 
+  margin: 1.5rem 0; 
   line-height: 1.9;
   font-size: 1.1rem;
+  box-sizing: border-box;
 }
 
-/* OPTIONAL: If you want the Chorus to be fully center-aligned for drama */
+/* If you want the Chorus text to be fully center-aligned for drama */
 .lyrics .stanza.chorus {
-  text-align: center; /* Overrides the left-align just for choruses */
+  text-align: center;       /* Overrides the left-align just for choruses */
 }
 .audio-player {
   text-align: center;
@@ -78,7 +81,6 @@ title: Parisian Promise
   </button>
   "
   <audio id="audioRef" src="{{ 'assets/audio/parisian-promise.mp3' | relative_url }}" preload="metadata"></audio>
-  <!-- <audio id="audioRef" src="assets/audio/parisian-promise.mp3" preload="metadata"></audio> -->
 </div>
 
 <div class="lyrics">
@@ -92,7 +94,7 @@ title: Parisian Promise
   </div>
 
   <!-- Add the "chorus" class here to center it completely -->
-  <div class="stanza chorus">
+  <div class="stanza">
     Chorus<br>
     Parisian nights, champagne bright,<br>
     With you by my side, the world feels right!<br>
@@ -108,7 +110,7 @@ title: Parisian Promise
     Making plans for a day in June.
   </div>
 
-  <div class="stanza chorus">
+  <div class="stanza">
     Chorus<br>
     Parisian nights, champagne bright,<br>
     With you by my side, the world feels right!<br>
@@ -132,7 +134,7 @@ title: Parisian Promise
     A sacred promise that our hearts will keep.<br>
   </div>
 
-  <div class="stanza chorus">
+  <div class="stanza">
     Chorus<br>
     Parisian nights, champagne bright,<br>
     With you by my side, the world feels right!<br>
