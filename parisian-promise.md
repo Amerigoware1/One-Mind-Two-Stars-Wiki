@@ -76,7 +76,9 @@ title: Parisian Promise
     <span class="pause-icon" style="display:none;">⏸</span>
     <span class="button-label">Play Reference Track</span>
   </button>
-  <audio id="audioRef" src="/assets/audio/parisian-promise.mp3" preload="metadata"></audio>
+  "
+  <audio id="audioRef" src="{{ 'assets/audio/parisian-promise.mp3' | relative_url }}" preload="metadata"></audio>
+  <!-- <audio id="audioRef" src="assets/audio/parisian-promise.mp3" preload="metadata"></audio> -->
 </div>
 
 <div class="lyrics">
@@ -184,7 +186,7 @@ title: Parisian Promise
 
     // Optional: handle errors gracefully (e.g., file not found)
     audio.addEventListener('error', function() {
-      alert('Audio file not found. Please check the file path.');
+      alert('Audio file not found. Please check the file path: audioRef');
       toggle.style.opacity = '0.5';
       toggle.style.cursor = 'not-allowed';
     });
