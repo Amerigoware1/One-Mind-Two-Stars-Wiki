@@ -220,15 +220,15 @@ title: Glossary
 
 <!-- ========== TAB BAR ========== -->
 <div class="tab-bar" id="tabBar">
-  <button class="tab-btn active" data-tab="tech">Technology</button>
-  <button class="tab-btn" data-tab="astronomy">Heavenly Bodies</button>
-  <button class="tab-btn" data-tab="characters">Characters</button>
-  <button class="tab-btn" data-tab="slang">Slang</button>
-  <button class="tab-btn" data-tab="aliens">Galinstanians</button>
-  <button class="tab-btn" data-tab="medical">Medical</button>
-  <button class="tab-btn" data-tab="locations">Locations</button>
-  <button class="tab-btn" data-tab="politics">Politics &amp; Organizations</button>
-  <button class="tab-btn" data-tab="arts">Arts &amp; Culture</button>
+  <button class="tab-btn active" data-tab="tech">⚙️Technology</button>
+  <button class="tab-btn" data-tab="astronomy">🌌Heavenly Bodies</button>
+  <button class="tab-btn" data-tab="characters">👨🏻‍👩🏻‍👦🏻‍👦🏻Characters</button>
+  <button class="tab-btn" data-tab="slang">🌬️Slang</button>
+  <button class="tab-btn" data-tab="aliens">🪔Galinstanians</button>
+  <button class="tab-btn" data-tab="medical">⚕️Medical</button>
+  <button class="tab-btn" data-tab="locations">🏯Locations</button>
+  <button class="tab-btn" data-tab="politics">🏛️Politics &amp; Organizations</button>
+  <button class="tab-btn" data-tab="arts">🖼️Arts &amp; 🎼Culture</button>
 </div>
 
 <!-- ========== TAB PANELS ========== -->
@@ -784,8 +784,6 @@ title: Glossary
     <p>A song written by Amerigo for his late wife Jenni. He hums it when he thinks no one can hear. Represents enduring love and memory.</p>
   </div>
 </div><!-- end panel-arts -->
-
-<p><a href="{{ '/index.html' | relative_url }}">← Back to Homepage</a></p>
 
 <!-- ==========================================================================
      JAVASCRIPT: Search + Tabs
