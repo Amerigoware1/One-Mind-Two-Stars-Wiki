@@ -947,26 +947,38 @@ title: Glossary
     }
   });
 
-  // -------- Speech synthesis (speak buttons) --------
-  document.querySelectorAll('.speak-button').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-      e.stopPropagation();
-      // Find the parent glossary-item or card-bg
-      const item = this.closest('.glossary-item, .card-bg');
-      if (!item) return;
-      // Get the pronunciation text: it's inside the <p> with <strong>Pronunciation:</strong>
-      const p = item.querySelector('p');
-      if (!p) return;
-      let text = p.textContent.replace(/Pronunciation:\s*/, '').replace(/🔊.*$/, '').trim();
-text = text.replace(/\//g, '');
-      if (text && window.speechSynthesis) {
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.rate = 0.9;
-        utterance.pitch = 1;
-        window.speechSynthesis.speak(utterance);
-      }
-    });
+// -------- Speech synthesis (speak buttons) --------
+document.querySelectorAll('.speak-button').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    
+    // Find the parent glossary-item or card-bg
+    const item = this.closest('.glossary-item, .card-bg');
+    if (!item) return;
+    
+    // Get the actual word from the <h2> tag. 
+    // .textContent naturally strips out HTML, so it works whether the text 
+    // is plain or wrapped inside an <a> tag.
+    const h2 = item.querySelector('h2');
+    let text = '';
+    
+    if (h2) {
+      text = h2.textContent.trim();
+    } else if (item.dataset.name) {
+      // Fallback to the data-name attribute if the <h2> is missing
+      text = item.dataset.name.trim();
+    }
+    
+    if (!text) return;
+
+    if (window.speechSynthesis) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 0.9;
+      utterance.pitch = 1;
+      window.speechSynthesis.speak(utterance);
+    }
   });
+});
 
 })();
 </script>
