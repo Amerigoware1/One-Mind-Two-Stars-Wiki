@@ -68,7 +68,7 @@ title: Parisian Promise
 
 /* When playing, subtly change the button text */
 /* #playToggle.playing .button-label {
-  content: "Pause"; */
+  content: "Pause";
 } */
 </style>
 
