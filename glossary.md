@@ -957,7 +957,8 @@ title: Glossary
       // Get the pronunciation text: it's inside the <p> with <strong>Pronunciation:</strong>
       const p = item.querySelector('p');
       if (!p) return;
-      const text = p.textContent.replace(/Pronunciation:\s*/, '').replace(/🔊.*$/, '').trim();
+      let text = p.textContent.replace(/Pronunciation:\s*/, '').replace(/🔊.*$/, '').trim();
+text = text.replace(/\//g, '');
       if (text && window.speechSynthesis) {
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.rate = 0.9;
