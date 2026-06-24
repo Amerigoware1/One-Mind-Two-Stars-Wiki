@@ -79,7 +79,6 @@ title: Parisian Promise
     <span class="pause-icon" style="display:none;">⏸</span>
     <!-- <span class="button-label">Play Reference Track</span> -->
   </button>
-  "
   <audio id="audioRef" src="{{ 'assets/audio/parisian-promise.mp3' | relative_url }}" preload="metadata"></audio>
 </div>
 
