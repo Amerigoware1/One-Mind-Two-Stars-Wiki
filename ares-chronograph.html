@@ -7,11 +7,13 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="wikistyle.css" />
     <style>
+        /* ── reset & base ── */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+
         body {
             font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
             background: linear-gradient(135deg, #0a0a0a, #1a1a2e, #16213e);
@@ -24,6 +26,8 @@
             align-items: center;
             justify-content: center;
         }
+
+        /* ── top banner / home ── */
         .top-banner {
             position: fixed;
             top: 0;
@@ -67,6 +71,8 @@
             color: #00ff88;
             font-weight: 700;
         }
+
+        /* ── main card ── */
         .chronometer {
             background: linear-gradient(145deg, #14141e, #20202e);
             border: 2px solid #00ff88;
@@ -80,6 +86,8 @@
         .chronometer:hover {
             box-shadow: 0 0 60px rgba(0, 255, 136, 0.25), inset 0 0 30px rgba(0, 255, 136, 0.08);
         }
+
+        /* ── grid layout ── */
         .main-display {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -91,6 +99,8 @@
             flex-direction: column;
             gap: 16px;
         }
+
+        /* ── time ── */
         .time-display {
             text-align: center;
             padding-bottom: 8px;
@@ -110,6 +120,8 @@
             margin-top: 4px;
             letter-spacing: 1px;
         }
+
+        /* ── cycle info ── */
         .cycle-info {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -136,6 +148,8 @@
             font-weight: 700;
             color: #ccffdd;
         }
+
+        /* ── lighting forecast ── */
         .lighting-forecast {
             text-align: center;
             margin-top: 4px;
@@ -174,6 +188,8 @@
             background: linear-gradient(135deg, #1a1a1a, #3a3a3a);
             color: #aaa;
         }
+
+        /* ── day timeline ── */
         .day-timeline {
             height: 34px;
             background: #0a0a12;
@@ -205,6 +221,8 @@
             transition: left 0.15s ease;
             border-radius: 2px;
         }
+
+        /* ── orbital diagram ── */
         .orbital-diagram {
             background: rgba(0, 0, 0, 0.45);
             border: 1px solid rgba(0, 255, 136, 0.2);
@@ -221,6 +239,8 @@
             display: block;
             border-radius: 8px;
         }
+
+        /* ── temperature ── */
         .temperature-display {
             background: rgba(10, 0, 26, 0.65);
             border: 1px solid rgba(0, 255, 136, 0.3);
@@ -295,6 +315,8 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
             pointer-events: none;
         }
+
+        /* ── orbital panels ── */
         .orbital-display {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -322,6 +344,8 @@
             font-weight: 700;
             color: #ccffdd;
         }
+
+        /* ── weather message ── */
         .weather-msg {
             background: rgba(10, 0, 26, 0.5);
             border: 1px solid rgba(0, 255, 136, 0.2);
@@ -334,6 +358,8 @@
             line-height: 1.5;
             backdrop-filter: blur(2px);
         }
+
+        /* ── controls ── */
         .controls {
             display: flex;
             flex-wrap: wrap;
@@ -378,6 +404,8 @@
             border-color: #ff6644;
             color: #ff6644;
         }
+
+        /* ── responsive ── */
         @media (max-width: 780px) {
             .main-display {
                 grid-template-columns: 1fr;
@@ -424,21 +452,29 @@
         }
     </style>
 </head>
+
 <body>
 
+    <!-- top banner -->
     <header class="top-banner">
         <a href="#" class="home-button">⌂ Home</a>
         <span class="banner-title"><strong>⏳</strong> Ares Chronometer · New Eden</span>
     </header>
 
+    <!-- main card -->
     <div class="chronometer">
 
+        <!-- top row: time + orbit -->
         <div class="main-display">
             <div class="left-panel">
+
+                <!-- time -->
                 <div class="time-display">
                     <div class="metric-time" id="metric-time">06:91:73</div>
                     <div class="standard-time" id="standard-time">(12:27 pm standard)</div>
                 </div>
+
+                <!-- cycle info -->
                 <div class="cycle-info">
                     <div class="info-panel">
                         <h4>Ares Sol</h4>
@@ -449,6 +485,8 @@
                         <div class="value" id="chaos-year">Day 82 of 400</div>
                     </div>
                 </div>
+
+                <!-- lighting -->
                 <div class="lighting-forecast">
                     <div class="current-lighting" id="current-lighting">Binary Starlight</div>
                     <div class="day-timeline">
@@ -457,11 +495,14 @@
                     </div>
                 </div>
             </div>
+
+            <!-- orbital diagram -->
             <div class="orbital-diagram">
                 <canvas id="orbital-canvas"></canvas>
             </div>
         </div>
 
+        <!-- temperature -->
         <div class="temperature-display">
             <div class="current-temp temp-tooltip" id="current-temp" data-fahrenheit="75.4°F">24.2°C</div>
             <div class="temp-label">Current Temperature</div>
@@ -471,6 +512,7 @@
             </div>
         </div>
 
+        <!-- orbital stats -->
         <div class="orbital-display">
             <div class="orbital-panel">
                 <h5>Eclipse Status</h5>
@@ -486,10 +528,12 @@
             </div>
         </div>
 
+        <!-- weather -->
         <div class="weather-msg" id="weather-msg">
             Clear binary starlight conditions with moderate temperatures. Perfect for outdoor activities with standard UV protection recommended.
         </div>
 
+        <!-- controls -->
         <div class="controls">
             <button onclick="advanceTime()">⏩ Advance Time</button>
             <button onclick="randomTime()">🎲 Random Time</button>
@@ -499,15 +543,20 @@
     </div>
 
     <script>
-        // ─── STATE ──────────────────────────────────────────────
+        // ──────────────────────────────────────────────
+        //  STATE
+        // ──────────────────────────────────────────────
         const state = {
-            metric: [6, 91, 73],
-            aresDay: 27,
-            chaosDay: 82
+            metric: [6, 91, 73], // [hour, minute, centiminute]  0–9, 0–99, 0–99
+            aresDay: 27, // 1–45
+            chaosDay: 82 // 1–400
         };
+
         let realTimeInterval = null;
 
-        // ─── HELPERS ────────────────────────────────────────────
+        // ──────────────────────────────────────────────
+        //  HELPERS
+        // ──────────────────────────────────────────────
         function metricToStandard(metric) {
             const totalUnits = metric[0] * 10000 + metric[1] * 100 + metric[2];
             const totalMinutes = (totalUnits / 100000) * (18 * 60);
@@ -518,52 +567,51 @@
             return `${h12.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')} ${ampm}`;
         }
 
-        // ─── GEOMETRY (used by both lighting & diagram) ──────
-        function getOrbitalPositions() {
+        function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); }
+
+        // ──────────────────────────────────────────────
+        //  CORE LOGIC
+        // ──────────────────────────────────────────────
+        function getStarEclipseState() {
             const chaosAngle = (state.chaosDay / 400) * 2 * Math.PI;
             const aresAngle = (state.aresDay / 45) * 2 * Math.PI;
             const binaryAngle = chaosAngle * 1.2;
 
-            const chaosR = 120; // arbitrary units, consistent with diagram
-            const aresR = 25;
-            const bScale = 25;
-            const nDist = bScale * 0.6;
-            const cDist = bScale * 1.4;
+            const chaosOrbitRadius = 120;
+            const aresOrbitRadius = 25;
 
-            const chaosX = chaosR * Math.cos(chaosAngle);
-            const chaosY = chaosR * Math.sin(chaosAngle);
-            const aresX = chaosX + aresR * Math.cos(aresAngle);
-            const aresY = chaosY + aresR * Math.sin(aresAngle);
+            const chaosX = chaosOrbitRadius * Math.cos(chaosAngle);
+            const chaosY = chaosOrbitRadius * Math.sin(chaosAngle);
+            const aresX = chaosX + aresOrbitRadius * Math.cos(aresAngle);
+            const aresY = chaosY + aresOrbitRadius * Math.sin(aresAngle);
 
-            const nX = nDist * Math.cos(binaryAngle);
-            const nY = nDist * Math.sin(binaryAngle);
-            const cX = -cDist * Math.cos(binaryAngle);
-            const cY = -cDist * Math.sin(binaryAngle);
+            const binaryScale = 25;
+            const niamhDist = binaryScale * 0.6;
+            const ciaraDist = binaryScale * 1.4;
+            const niamhX = niamhDist * Math.cos(binaryAngle);
+            const niamhY = niamhDist * Math.sin(binaryAngle);
+            const ciaraX = -ciaraDist * Math.cos(binaryAngle);
+            const ciaraY = -ciaraDist * Math.sin(binaryAngle);
 
-            return { chaosX, chaosY, aresX, aresY, nX, nY, cX, cY, binaryAngle, chaosAngle, aresAngle };
-        }
-
-        // ─── ECLIPSE STATE ─────────────────────────────────────
-        function getStarEclipseState() {
-            const pos = getOrbitalPositions();
-            const { chaosX, chaosY, aresX, aresY, nX, nY, cX, cY } = pos;
-
-            const binCX = (nX + cX) / 2;
-            const binCY = (nY + cY) / 2;
-
+            // direction to binary center from Ares
+            const binCX = (niamhX + ciaraX) / 2;
+            const binCY = (niamhY + ciaraY) / 2;
             const angleToBinary = Math.atan2(binCY - aresY, binCX - aresX);
             const angleToChaos = Math.atan2(chaosY - aresY, chaosX - aresX);
+
             let diff = Math.abs(angleToBinary - angleToChaos);
             if (diff > Math.PI) diff = 2 * Math.PI - diff;
             const eclipseThreshold = 0.4;
             if (diff < eclipseThreshold) return 'chaos_eclipse';
 
-            const aTN = Math.atan2(nY - aresY, nX - aresX);
-            const aTC = Math.atan2(cY - aresY, cX - aresX);
+            // individual star eclipses
+            const aTN = Math.atan2(niamhY - aresY, niamhX - aresX);
+            const aTC = Math.atan2(ciaraY - aresY, ciaraX - aresX);
             let dN = Math.abs(aTN - angleToChaos);
             let dC = Math.abs(aTC - angleToChaos);
             if (dN > Math.PI) dN = 2 * Math.PI - dN;
             if (dC > Math.PI) dC = 2 * Math.PI - dC;
+
             const starThresh = 0.25;
             if (dN < starThresh && dC < starThresh) return 'total_star_eclipse';
             if (dN < starThresh) return 'g_eclipsed';
@@ -571,37 +619,16 @@
             return 'none';
         }
 
-        // ─── LIGHTING TYPE (now geometrically correct) ──────
-        function getLightingType(metric) {
+        function getLightingType(metric, eclipseState) {
             const t = (metric[0] * 10000 + metric[1] * 100 + metric[2]) / 100000;
-            const newEdenAngle = t * 2 * Math.PI; // relative to Ares
+            const newEdenAngle = t * 2 * Math.PI;
+            const facingStars = Math.cos(newEdenAngle) > 0;
 
-            // Get directions
-            const pos = getOrbitalPositions();
-            const { aresX, aresY, nX, nY, cX, cY, chaosX, chaosY } = pos;
-            const binCX = (nX + cX) / 2;
-            const binCY = (nY + cY) / 2;
-
-            // Vector from Ares to binary center
-            const dx = binCX - aresX;
-            const dy = binCY - aresY;
-            const angleToStars = Math.atan2(dy, dx);
-
-            // Angular difference between New Eden's direction and star direction
-            let diff = newEdenAngle - angleToStars;
-            // Normalize to [-π, π]
-            diff = ((diff % (2 * Math.PI)) + 3 * Math.PI) % (2 * Math.PI) - Math.PI;
-
-            const facingStars = Math.abs(diff) < Math.PI / 2; // within ±90°
-
-            // Night: not facing stars
             if (!facingStars) {
                 const chaosIllum = ((Math.cos((state.aresDay / 45) * 2 * Math.PI) + 1) / 2);
                 return chaosIllum > 0.3 ? 'luminous' : 'dark';
             }
 
-            // Day: check eclipses
-            const eclipseState = getStarEclipseState();
             switch (eclipseState) {
                 case 'chaos_eclipse':
                 case 'total_star_eclipse':
@@ -623,10 +650,12 @@
             return 'temp-freezing';
         }
 
-        // ─── RENDER ────────────────────────────────────────────
+        // ──────────────────────────────────────────────
+        //  RENDER
+        // ──────────────────────────────────────────────
         function updateDisplay() {
+            // ── time ──
             const m = state.metric;
-            // time
             document.getElementById('metric-time').textContent =
                 `${m[0].toString().padStart(2, '0')}:${m[1].toString().padStart(2, '0')}:${m[2].toString().padStart(2, '0')}`;
             document.getElementById('standard-time').textContent =
@@ -636,8 +665,9 @@
             document.getElementById('chaos-year').textContent =
                 `Day ${state.chaosDay} of 400`;
 
-            // lighting
-            const lighting = getLightingType(m);
+            // ── lighting ──
+            const eclipseState = getStarEclipseState();
+            const lighting = getLightingType(m, eclipseState);
             const names = {
                 bright: 'Binary Starlight',
                 dim: 'Eclipse Period',
@@ -650,7 +680,7 @@
             el.textContent = names[lighting] || 'Unknown';
             el.className = `current-lighting ${lighting}`;
 
-            // timeline
+            // ── timeline ──
             const tf = document.getElementById('timeline-fill');
             tf.innerHTML = '';
             const tNow = (m[0] * 10000 + m[1] * 100 + m[2]) / 100000;
@@ -658,15 +688,15 @@
                 const seg = document.createElement('div');
                 const tSeg = i / 100;
                 const fakeMetric = [Math.floor(tSeg * 10), Math.floor((tSeg * 10 % 1) * 100), 0];
-                const segLight = getLightingType(fakeMetric);
+                const fakeEclipse = getStarEclipseState();
+                const segLight = getLightingType(fakeMetric, fakeEclipse);
                 seg.className = segLight;
                 seg.style.flex = '1';
                 tf.appendChild(seg);
             }
             document.getElementById('time-marker').style.left = `${tNow * 100}%`;
 
-            // eclipse status
-            const eclipseState = getStarEclipseState();
+            // ── eclipse status ──
             const eclipseNames = {
                 none: 'No Eclipse',
                 chaos_eclipse: 'Chaos Eclipse',
@@ -677,11 +707,11 @@
             document.getElementById('eclipse-status').textContent =
                 eclipseNames[eclipseState] || 'No Eclipse';
 
-            // chaos illumination
+            // ── chaos illumination ──
             const ci = Math.round(((Math.cos((state.aresDay / 45) * 2 * Math.PI) + 1) / 2) * 100);
             document.getElementById('chaos-illumination').textContent = `${ci}%`;
 
-            // temperature
+            // ── temperature ──
             let stellarFactor = 0.08;
             if (lighting === 'bright') stellarFactor = 0.70;
             else if (lighting === 'g_only') stellarFactor = 0.45;
@@ -693,6 +723,7 @@
             const chaosAngle = (state.chaosDay / 400) * 2 * Math.PI;
             const chaosDist = 1.0 + 0.4 * Math.cos(chaosAngle);
             const distHeat = 1.0 / (chaosDist * chaosDist);
+
             const aresAngle = (state.aresDay / 45) * 2 * Math.PI;
             const aresOrbHeat = (Math.cos(aresAngle - chaosAngle) + 1) / 2;
 
@@ -718,13 +749,13 @@
             lo.setAttribute('data-fahrenheit', `${(low * 9 / 5 + 32).toFixed(1)}°F`);
             hi.setAttribute('data-fahrenheit', `${(high * 9 / 5 + 32).toFixed(1)}°F`);
 
-            // binary season
+            // ── binary season ──
             const sp = (state.chaosDay / 400) * 2 * Math.PI;
             const sep = (Math.cos(sp) + 1) / 2;
             document.getElementById('binary-season').textContent =
                 sep > 0.7 ? 'Apastron' : sep < 0.3 ? 'Periastron' : 'Mid-orbit';
 
-            // weather message
+            // ── weather message ──
             let msg = '';
             switch (lighting) {
                 case 'bright':
@@ -749,10 +780,13 @@
             else if (temp < 10) msg += ' Cool conditions — warm clothing advised.';
             document.getElementById('weather-msg').textContent = msg;
 
+            // ── orbital diagram ──
             drawOrbitalDiagram();
         }
 
-        // ─── ORBITAL CANVAS ──────────────────────────────────
+        // ──────────────────────────────────────────────
+        //  ORBITAL CANVAS
+        // ──────────────────────────────────────────────
         function drawOrbitalDiagram() {
             const canvas = document.getElementById('orbital-canvas');
             if (!canvas || !canvas.getContext) return;
@@ -773,17 +807,15 @@
             const cy = h / 2;
             ctx.clearRect(0, 0, w, h);
 
-            const pos = getOrbitalPositions();
-            const scale = Math.min(w, h) / 280; // 280 is the base size (chaosR=120, etc.)
-            const chaosR = 120 * scale;
-            const aresR = 25 * scale;
-            const bScale = 25 * scale;
+            const chaosAngle = (state.chaosDay / 400) * 2 * Math.PI;
+            const aresAngle = (state.aresDay / 45) * 2 * Math.PI;
+            const binaryAngle = chaosAngle * 1.2;
+
+            const chaosR = Math.min(w, h) * 0.32;
+            const aresR = chaosR * 0.2;
+            const bScale = chaosR * 0.18;
             const nDist = bScale * 0.6;
             const cDist = bScale * 1.4;
-
-            const chaosAngle = pos.chaosAngle;
-            const aresAngle = pos.aresAngle;
-            const binaryAngle = pos.binaryAngle;
 
             const chaosX = cx + chaosR * Math.cos(chaosAngle);
             const chaosY = cy + chaosR * Math.sin(chaosAngle);
@@ -836,14 +868,14 @@
             ctx.shadowBlur = 0;
 
             // Chaos
-            const grad = ctx.createRadialGradient(chaosX, chaosY, 0, chaosX, chaosY, 13 * scale / 25);
+            const grad = ctx.createRadialGradient(chaosX, chaosY, 0, chaosX, chaosY, 13);
             grad.addColorStop(0, '#5577bb');
             grad.addColorStop(1, '#223366');
             ctx.fillStyle = grad;
             ctx.shadowColor = '#4466aa';
             ctx.shadowBlur = 10;
             ctx.beginPath();
-            ctx.arc(chaosX, chaosY, 13 * scale / 25, 0, 2 * Math.PI);
+            ctx.arc(chaosX, chaosY, 13, 0, 2 * Math.PI);
             ctx.fill();
             ctx.shadowBlur = 0;
 
@@ -859,7 +891,7 @@
             // New Eden
             const tDay = (state.metric[0] * 10000 + state.metric[1] * 100 + state.metric[2]) / 100000;
             const neAngle = tDay * 2 * Math.PI;
-            const setR = 6 * scale / 25;
+            const setR = 6;
             const neX = aresX + setR * Math.cos(neAngle);
             const neY = aresY + setR * Math.sin(neAngle);
             ctx.fillStyle = '#ff3333';
@@ -910,14 +942,16 @@
             ctx.fillText('Ciara (K)', cX, cY - 11);
             ctx.fillText('Chaos', chaosX, chaosY + 22);
             ctx.fillText('Ares', aresX + 10, aresY - 10);
-            const facing = Math.cos(neAngle) > 0; // this is now only used for icon, not for lighting
+            const facing = Math.cos(neAngle) > 0;
             ctx.fillStyle = facing ? '#ffff66' : '#4488ff';
             ctx.font = '7px "Inter","Segoe UI",sans-serif';
             ctx.fillText(facing ? '☀' : '☽', neX, neY + 10);
             ctx.shadowBlur = 0;
         }
 
-        // ─── CONTROLS ──────────────────────────────────────────
+        // ──────────────────────────────────────────────
+        //  CONTROLS
+        // ──────────────────────────────────────────────
         function advanceTime() {
             state.metric[2] += 10;
             if (state.metric[2] >= 100) {
@@ -963,9 +997,12 @@
             }
         }
 
-        // ─── INIT ──────────────────────────────────────────────
+        // ──────────────────────────────────────────────
+        //  INIT
+        // ──────────────────────────────────────────────
         document.addEventListener('DOMContentLoaded', function() {
             randomTime();
+            // re-draw on resize
             let resizeTimer;
             window.addEventListener('resize', function() {
                 clearTimeout(resizeTimer);
