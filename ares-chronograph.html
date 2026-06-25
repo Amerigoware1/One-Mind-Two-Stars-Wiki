@@ -619,15 +619,36 @@
             return 'none';
         }
 
-        function getLightingType(metric, eclipseState) {
-            const t = (metric[0] * 10000 + metric[1] * 100 + metric[2]) / 100000;
-            const newEdenAngle = t * 2 * Math.PI;
-            const facingStars = Math.cos(newEdenAngle) > 0;
+function getLightingType(metric, eclipseState) {
+    const t = (metric[0] * 10000 + metric[1] * 100 + metric[2]) / 100000;
+    const newEdenAngle = t * 2 * Math.PI;
 
-            if (!facingStars) {
-                const chaosIllum = ((Math.cos((state.aresDay / 45) * 2 * Math.PI) + 1) / 2);
-                return chaosIllum > 0.3 ? 'luminous' : 'dark';
-            }
+    // 1. Calculate Ares's position so it's in scope
+    const chaosAngle = (state.chaosDay / 400) * 2 * Math.PI;
+    const aresAngle = (state.aresDay / 45) * 2 * Math.PI;
+    const chaosOrbitRadius = 120;
+    const aresOrbitRadius = 25;
+
+    const chaosX = chaosOrbitRadius * Math.cos(chaosAngle);
+    const chaosY = chaosOrbitRadius * Math.sin(chaosAngle);
+    const aresX = chaosX + aresOrbitRadius * Math.cos(aresAngle);
+    const aresY = chaosY + aresOrbitRadius * Math.sin(aresAngle);
+
+    // 2. Your excellent angle logic now works perfectly!
+    const angleToSuns = Math.atan2(-aresY, -aresX);
+
+    // Check if New Eden's absolute rotational angle is facing that direction
+    let angleDiff = Math.abs(newEdenAngle - angleToSuns);
+    if (angleDiff > Math.PI) angleDiff = 2 * Math.PI - angleDiff;
+
+    // If the difference is less than 90 degrees, it's daytime!
+    const facingStars = angleDiff < (Math.PI / 2);
+
+    if (!facingStars) {
+        const chaosIllum = ((Math.cos((state.aresDay / 45) * 2 * Math.PI) + 1) / 2);
+        return chaosIllum > 0.3 ? 'luminous' : 'dark';
+    }
+    // ... rest of your code
 
             switch (eclipseState) {
                 case 'chaos_eclipse':
