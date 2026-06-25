@@ -11,6 +11,15 @@ layout: default
     <title>Chrono Age Calculator | Universal Age & Time Tool</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="wikistyle.css">
+    <!--Top Banner-->
+<div class="top-banner">
+    <div class="top-banner-content">
+        <a href="/" class="home-button">🏠 Home</a>
+        <div id="timeDisplay">
+            <span id="currentDate"></span> &nbsp;|&nbsp; <span id="currentTime"></span>
+        </div>
+    </div>
+</div>
     <style>
         /* ========== TOP BANNER FIXES ========== */
         .top-banner {
@@ -40,7 +49,7 @@ layout: default
         }
         
         .home-button {
-            color: var(-neon-cyan) !important;
+            color: var(--neon-cyan) !important;
             text-decoration: none;
             font-family: 'Orbitron', sans-serif !important;
             font-size: 1.1rem;
@@ -56,7 +65,7 @@ layout: default
         
         #timeDisplay {
             font-family: 'Orbitron', sans-serif;
-            color: var(-neon-cyan);
+            color: var(--neon-cyan);
             font-size: 0.9rem;
             text-align: right;
             white-space: nowrap;
@@ -131,14 +140,14 @@ layout: default
         }
         
         .tab-button:hover {
-            color: var(-neon-cyan);
-            border-color: var(-neon-cyan);
+            color: var(--neon-cyan);
+            border-color: var(--neon-cyan);
         }
         
         .tab-button.active {
             background: var(-bg-card-dark);
-            color: var(-neon-cyan);
-            border-color: var(-neon-cyan);
+            color: var(--neon-cyan);
+            border-color: var(--neon-cyan);
             border-bottom-color: transparent;
             box-shadow: 0 0 15px var(-glow-cyan);
         }
@@ -180,7 +189,7 @@ layout: default
         .date-input-group label {
             font-family: 'Orbitron', sans-serif;
             font-size: 1.1rem;
-            color: var(-neon-cyan);
+            color: var(--neon-cyan);
             text-shadow: 0 0 8px var(-glow-cyan);
         }
         
@@ -196,7 +205,7 @@ layout: default
         
         .date-input-group input:focus {
             outline: none;
-            border-color: var(-neon-cyan);
+            border-color: var(--neon-cyan);
             box-shadow: 0 0 20px var(-glow-cyan);
         }
         
@@ -263,7 +272,7 @@ layout: default
         }
         
         .converter-box h3 {
-            color: var(-neon-cyan);
+            color: var(--neon-cyan);
             margin-top: 0;
             border-bottom: 1px solid var(-border-glow);
             padding-bottom: 10px;
@@ -309,7 +318,7 @@ layout: default
         .result-header {
             font-family: 'Orbitron', sans-serif;
             font-size: 1.8rem;
-            color: var(-neon-cyan);
+            color: var(--neon-cyan);
             text-align: center;
             margin-bottom: 20px;
             text-shadow: 0 0 10px var(-glow-cyan);
@@ -376,7 +385,7 @@ layout: default
         .calculate-btn {
             width: 100%;
             padding: 15px;
-            background: linear-gradient(45deg,-var(-neon-violet), var(-neon-cyan));
+            background: linear-gradient(45deg,-var(-neon-violet), var(--neon-cyan));
             color: white;
             border: none;
             border-radius: 10px;
@@ -461,7 +470,7 @@ layout: default
             width: 22px;
             left: 4px;
             bottom: 3px;
-            background-color: var(-neon-cyan);
+            background-color: var(--neon-cyan);
             transition: .4s;
             border-radius: 50%;
             box-shadow: 0 0 10px var(-glow-cyan);
@@ -482,7 +491,7 @@ layout: default
             padding: 10px;
             border-radius: 5px;
             margin-top: 10px;
-            color: var(-neon-cyan);
+            color: var(--neon-cyan);
             border: 1px solid var(-border-glow);
             font-size: 0.9rem;
         }
@@ -499,41 +508,7 @@ layout: default
             }
             
             .tab-button.active {
-                border-bottom-color: var(-neon-cyan);
-            }
-        }
-        
-        /* ========== RETURN TO TOP BUTTON ========== */
-        #toTopBtn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: linear-gradient(45deg,-var(-neon-violet), var(-neon-cyan));
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            font-size: 1.5rem;
-            cursor: pointer;
-            display: none;
-            z-index: 999;
-            box-shadow: 0 0 20px var(-glow-violet);
-            transition: all 0.3s ease;
-        }
-        
-        #toTopBtn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 30px var(-glow-cyan);
-        }
-        
-        @media (max-width:-768px) {
-            #toTopBtn {
-                bottom: 20px;
-                right: 20px;
-                width: 45px;
-                height: 45px;
-                font-size: 1.3rem;
+                border-bottom-color: var(--neon-cyan);
             }
         }
         
@@ -590,7 +565,7 @@ layout: default
         
         .search-box:focus {
             outline: none;
-            border-color: var(-neon-cyan);
+            border-color: var(--neon-cyan);
             box-shadow: 0 0 10px var(-glow-cyan);
         }
         
@@ -609,7 +584,7 @@ layout: default
         
         .database-table th {
             background: rgba(193,-60, 255, 0.2);
-            color: var(-neon-cyan);
+            color: var(--neon-cyan);
             padding: 15px;
             text-align: left;
             font-family: 'Orbitron', sans-serif;
@@ -638,7 +613,7 @@ layout: default
         }
         
         .age-highlight {
-            color: var(-neon-cyan);
+            color: var(--neon-cyan);
             font-weight: bold;
             font-family: 'Orbitron', sans-serif;
         }
@@ -655,12 +630,12 @@ layout: default
         
         .bio-badge {
             background: rgba(0,-255, 255, 0.2);
-            color: var(-neon-cyan);
+            color: var(--neon-cyan);
             padding: 3px 8px;
             border-radius: 4px;
             font-size: 0.8rem;
             margin-left: 5px;
-            border: 1px solid var(-neon-cyan);
+            border: 1px solid var(--neon-cyan);
         }
         
         .database-stats {
@@ -684,7 +659,7 @@ layout: default
         .stat-value {
             font-family: 'Orbitron', sans-serif;
             font-size: 2rem;
-            color: var(-neon-cyan);
+            color: var(--neon-cyan);
             text-shadow: 0 0 10px var(-glow-cyan);
         }
         
@@ -698,7 +673,7 @@ layout: default
             display: none;
             text-align: center;
             padding: 40px;
-            color: var(-neon-cyan);
+            color: var(--neon-cyan);
         }
         
         .loading-spinner.active {
@@ -708,7 +683,7 @@ layout: default
         .spinner {
             border: 3px solid rgba(255,-255, 255, 0.3);
             border-radius: 50%;
-            border-top: 3px solid var(-neon-cyan);
+            border-top: 3px solid var(--neon-cyan);
             width: 40px;
             height: 40px;
             animation: spin 1s linear infinite;
@@ -722,8 +697,8 @@ layout: default
         
         .data-entry-btn {
             background: rgba(60,-100, 255, 0.2);
-            color: var(-neon-cyan);
-            border: 1px solid var(-neon-cyan);
+            color: var(--neon-cyan);
+            border: 1px solid var(--neon-cyan);
             border-radius: 4px;
             padding: 2px 8px;
             margin-left: 8px;
@@ -733,7 +708,7 @@ layout: default
         }
         
         .data-entry-btn:hover {
-            background: var(-neon-cyan);
+            background: var(--neon-cyan);
             color: black;
             transform: scale(1.1);
         }
@@ -806,7 +781,7 @@ layout: default
                 <!--Cryosleep Section-->
                 <div class="cryosleep-section">
                     <div class="cryosleep-toggle">
-                        <label style="font-family: 'Orbitron', sans-serif; color: var(-neon-cyan); font-size: 1.1rem;">
+                        <label style="font-family: 'Orbitron', sans-serif; color: var(--neon-cyan); font-size: 1.1rem;">
                             CRYOSLEEP OFFSET
                         </label>
                         <label class="toggle-switch">
@@ -824,7 +799,7 @@ layout: default
                         <div class="cryo-years">
                             <label for="cryoYears">Cryosleep Years:</label>
                             <input type="number" id="cryoYears" min="0" max="1000" value="90" step="0.1">
-                            <span style="color: var(-neon-cyan);">years</span>
+                            <span style="color: var(--neon-cyan);">years</span>
                         </div>
                         
                         <div style="margin-top: 15px; color: var(-text-muted); font-size: 0.9rem;">
@@ -834,7 +809,7 @@ layout: default
                 </div>
 <!--Add this after the cryosleep section-->
 <div class="chapter-dates-section" style="margin: 20px 0; padding: 15px; background: var(-bg-card-dark); border-radius: 8px;">
-    <h3 style="color: var(-neon-cyan); margin-top: 0; font-size: 1.1rem;">📖 Quick Chapter Dates</h3>
+    <h3 style="color: var(--neon-cyan); margin-top: 0; font-size: 1.1rem;">📖 Quick Chapter Dates</h3>
     <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
         <button class="chapter-btn" onclick="setChapterDate('launch-date', 'october 9, 2125')">🚀 Launch (2125)</button>
         <button class="chapter-btn" onclick="setChapterDate('arrival',-'july 20, 2215')">🪐 Arrival (2215)</button>
@@ -883,22 +858,22 @@ layout: default
 
             <!--Chrono Examples Section-->
             <div class="info-section">
-                <h2 style="color: var(-neon-cyan); margin-top: 0;">📋 Supported Formats & Examples</h2>
+                <h2 style="color: var(--neon-cyan); margin-top: 0;">📋 Supported Formats & Examples</h2>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit,-minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
                     <div class="constant-item">
-                        <strong style="color: var(-neon-cyan);">Full Dates:</strong><br>
+                        <strong style="color: var(--neon-cyan);">Full Dates:</strong><br>
                         • 10-11-2225<br>
                         • 2225-10-11<br>
                         • October 11, 2225
                     </div>
                     <div class="constant-item">
-                        <strong style="color: var(-neon-cyan);">Partial Dates:</strong><br>
+                        <strong style="color: var(--neon-cyan);">Partial Dates:</strong><br>
                         • September 2247<br>
                         • 9-2247<br>
                         • 09/2247
                     </div>
                     <div class="constant-item">
-                        <strong style="color: var(-neon-cyan);">With Cryosleep:</strong><br>
+                        <strong style="color: var(--neon-cyan);">With Cryosleep:</strong><br>
                         • Amerigo (2103-05-12)<br>
                         • 90 years offset<br>
                         • Biological: 21.0<br>
@@ -951,7 +926,7 @@ layout: default
                 
                 <!--Ares Constants-->
                 <div class="info-section" style="margin-top: 30px;">
-                    <h3 style="color: var(-neon-cyan); margin-top: 0;">🪐 Ares Time System Constants</h3>
+                    <h3 style="color: var(--neon-cyan); margin-top: 0;">🪐 Ares Time System Constants</h3>
                     <div class="constants-grid">
                         <div class="constant-item">
                             <strong>1 Ares-day</strong> = 18 Earth-hours<br>
@@ -982,7 +957,7 @@ layout: default
         <div id="database-tab" class="tab-content">
             <div class="database-container">
                 <div class="database-header">
-                    <h2 style="color: var(-neon-cyan); margin: 0; display: flex; align-items: center; gap: 10px;">
+                    <h2 style="color: var(--neon-cyan); margin: 0; display: flex; align-items: center; gap: 10px;">
                         📊 Character Age Database
                         <span style="font-size: 0.8rem; color: var(-text-muted);">(live-from google sheets)</span>
                     </h2>
@@ -1041,21 +1016,21 @@ layout: default
                 </div>
                 
                 <div class="info-section" style="margin-top: 30px;">
-                    <h3 style="color: var(-neon-cyan); margin-top: 0;">📝 Database Information</h3>
+                    <h3 style="color: var(--neon-cyan); margin-top: 0;">📝 Database Information</h3>
                     <p>This database is directly synchronized with your Google Sheet. Any updates made to the spreadsheet will be reflected here after refreshing.</p>
                     <div style="display: grid; grid-template-columns: repeat(auto-fit,-minmax(200px, 1fr)); gap: 15px; margin-top: 15px;">
                         <div class="constant-item">
-                            <strong style="color: var(-neon-cyan);">Source:</strong><br>
+                            <strong style="color: var(--neon-cyan);">Source:</strong><br>
                             Google Sheets Database<br>
                             <span style="color: var(-text-muted); font-size: 0.8rem;">Automatically updated</span>
                         </div>
                         <div class="constant-item">
-                            <strong style="color: var(-neon-cyan);">Age Reference:</strong><br>
+                            <strong style="color: var(--neon-cyan);">Age Reference:</strong><br>
                             September 2247<br>
                             <span style="color: var(-text-muted); font-size: 0.8rem;">Current story timeline</span>
                         </div>
                         <div class="constant-item">
-                            <strong style="color: var(-neon-cyan);">Last Updated:</strong><br>
+                            <strong style="color: var(--neon-cyan);">Last Updated:</strong><br>
                             <span id="lastUpdated">Never</span>
                         </div>
                     </div>
@@ -1068,24 +1043,26 @@ layout: default
         // ========== Global Functions ==========
 
         // Initialize with current time
-        function updateDateTime() {
-            const now = new Date();
-            const dateStr = now.toLocaleDateString('en-US', { 
-                weekday: 'long', 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
-            });
-            const timeStr = now.toLocaleTimeString('en-US', { 
-                hour12: false,
-                hour: '2-digit',
-                minute: '2-digit',
-                second: '2-digit'
-            });
+function updateDateTime() {
+    const now = new Date();
+    const dateStr = now.toLocaleDateString('en-US', { 
+        weekday: 'long', 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' 
+    });
+    const timeStr = now.toLocaleTimeString('en-US', { 
+        hour12: false,
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+    });
 
-            document.getElementById('currentDate').textContent = dateStr;
-            document.getElementById('currentTime').textContent = timeStr;
-        }
+    const dateEl = document.getElementById('currentDate');
+    const timeEl = document.getElementById('currentTime');
+    if (dateEl) dateEl.textContent = dateStr;
+    if (timeEl) timeEl.textContent = timeStr;
+}
 
         // Update time every second
         setInterval(updateDateTime, 1000);
@@ -1125,7 +1102,7 @@ layout: default
             if (this.checked) {
                 details.classList.add('active');
                 status.textContent = 'Active';
-                status.style.color = 'var(--neon-cyan)';
+                status.style.color = 'var(---neon-cyan)';
             } else {
                 details.classList.remove('active');
                 status.textContent = 'Inactive';
@@ -1331,7 +1308,7 @@ function calculateChronoAge() {
     if (data.useCryosleep) {
         html += `
             <div class="result-explanation">
-                <strong style="color: var(--neon-cyan);">⚡ Cryosleep Analysis:</strong><br>
+                <strong style="color: var(---neon-cyan);">⚡ Cryosleep Analysis:</strong><br>
                 ${data.explanation}<br><br>
                 <strong>Key Dates:</strong><br>
                 • Born: ${data.birthDate}<br>
@@ -1343,7 +1320,7 @@ function calculateChronoAge() {
     } else {
         html += `
             <div class="result-explanation">
-                <strong style="color: var(--neon-cyan);">⚡ Age Analysis:</strong><br>
+                <strong style="color: var(---neon-cyan);">⚡ Age Analysis:</strong><br>
                 ${data.explanation}<br><br>
                 <strong>Dates:</strong> Born ${data.birthDate}, Event on ${data.eventDate}
             </div>
@@ -1870,7 +1847,7 @@ function showCharacterInfo(characterName, character) {
             top: 120px;
             right: 20px;
             background: var(--bg-card-dark);
-            border: 2px solid var(--neon-cyan);
+            border: 2px solid var(---neon-cyan);
             padding: 15px;
             border-radius: 8px;
             z-index: 9998;
@@ -1886,7 +1863,7 @@ function showCharacterInfo(characterName, character) {
 
     infoDiv.innerHTML = `
         <div style="margin-bottom: 10px;">
-            <strong style="color: var(--neon-cyan);">${characterName}</strong>
+            <strong style="color: var(---neon-cyan);">${characterName}</strong>
             ${status === 'Deceased' ? '<span style="color: #ff5555; margin-left: 10px;">† Deceased</span>' : ''}
         </div>
         <div style="font-size: 0.9rem; color: var(--text-muted);">
@@ -1910,17 +1887,6 @@ function showCharacterInfo(characterName, character) {
     }, 10000);
 }  
         // ========== Common UI Functions ==========
-
-        // Return to top functionality
-        const toTopBtn = document.getElementById('toTopBtn');
-
-        window.addEventListener('scroll', () => {
-            toTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
-        });
-
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
 
         // Auto-calculate on Enter key for Chrono Age Calculator
         document.getElementById('eventDate').addEventListener('keypress', (e) => {
@@ -1990,7 +1956,7 @@ function setChapterDate(chapterName, date) {
         top: 100px;
         left: 50%;
         transform: translateX(-50%);
-        background: var(--neon-cyan);
+        background: var(---neon-cyan);
         color: black;
         padding: 10px 20px;
         border-radius: 5px;
