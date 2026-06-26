@@ -55,20 +55,25 @@ book5_arc: >
 ---
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 
 Claudia Belrose is the council member responsible for cultural affairs and community relations. A French-born curator and anthropologist who previously directed major museums on Earth, she believes that culture is what sustains civilizations through crisis. During the Galinstanian contact, her role became unexpectedly crucial: helping humans process the psychological impact of discovering they weren't alone, and laying groundwork for eventual cultural exchange with a species that experiences reality fundamentally differently.
 
 Her arc explores the question: How do you build culture when your fundamental assumptions about existence have changed? Her answer—that stories must evolve faster than circumstances—becomes guiding wisdom for the colony.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 
 Belrose has an elegant presence that combines artistic sensibility with administrative authority. Her silver-streaked dark hair is worn in sophisticated styles that somehow still look effortless. Her eyes are deep brown, expressive and attentive—they have the particular quality of someone who truly listens. She dresses in carefully chosen pieces that blend professional authority with artistic flair: tailored jackets over flowing blouses, statement jewelry crafted by colony artists, shoes that are both beautiful and walkable. She moves gracefully, with the unconscious poise of someone comfortable in her own body.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 
 **Cultural Intelligence:** Belrose understands how stories shape identity. She can read the unspoken narratives driving conflict and help people articulate what they're really afraid of.
@@ -78,18 +83,22 @@ Belrose has an elegant presence that combines artistic sensibility with administ
 **Curatorial Vision:** She sees patterns in chaos. Her ability to organize disparate elements into coherent narratives makes her invaluable for helping the colony process transformative events.
 
 **Community Building:** She creates spaces—physical and conversational—where people can encounter each other authentically. Her gatherings have a reputation for producing breakthrough moments.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Relationships
 
 - **Celectra:** She recognizes the child's unique burden and offers gentle support without pity. Celectra finds her calming.
 - **Zoë Kret:** They collaborate on psychological support for families processing the Galinstanian revelation; their approaches complement each other.
 - **Santos:** Trusts her to handle the human side of policy changes—the grief, fear, and hope that official announcements can't address.
 - **Amerigo:** Shares his belief in art as essential to survival; they often discuss the role of creativity in building civilization.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Key Moments
 
 1. **The Processing Circles:** Her informal gatherings become essential community infrastructure, helping colonists integrate the Galinstanian revelation without fracturing.
@@ -97,34 +106,42 @@ Belrose has an elegant presence that combines artistic sensibility with administ
 2. **The Samaya Gallery:** Her creation of a dedicated space for interspecies art and dialogue establishes a permanent foundation for cultural exchange.
 
 3. **The First Contact Ceremony:** She designs a ritual that honors both human and Galinstanian perspectives, setting precedent for all future formal interactions.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Philosophy
 
 *"Culture is what we become while we're surviving."*
 
 Belrose believes that civilization isn't built through policy alone—it's woven through stories, art, ritual, and relationship. Her work is driven by the conviction that how we make meaning matters as much as what we achieve.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Quotes
 
 - "We don't just need to survive together. We need to become something together."
 - "Stories are the architecture of meaning."
 - "First contact isn't an event. It's a conversation that lasts generations."
 - "Art isn't decoration. It's how we tell ourselves what matters."
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Themes
 
 - **Meaning-Making:** How do cultures process transformative experiences?
 - **Story as Survival:** What narratives sustain communities through uncertainty?
 - **Interspecies Understanding:** Can beings with fundamentally different experiences find common ground?
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Trivia
 
 - Directed the Louvre's Mars Exhibition before joining the colony expedition
@@ -132,9 +149,13 @@ Belrose believes that civilization isn't built through policy alone—it's woven
 - Collects children's drawings from every colony family, displayed in rotating exhibitions
 - Has a habit of quoting poetry in council meetings, usually to devastating effect
 - Believes that every major decision should be preceded by silence—"long enough to hear what you're not saying"
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

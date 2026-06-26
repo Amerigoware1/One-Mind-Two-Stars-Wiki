@@ -40,14 +40,19 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Dr. Zoë Carisco is the emotional backbone of the Carisco family and one of the most respected psychologists on Ares. Known for her calm, clinical clarity and her fierce maternal devotion, she becomes the stabilizing force behind Celectra's dual‑body development, the Listener Corps, and later the twins Jenni and Xara. Her arc spans five books, evolving from a mother navigating trauma to a grandmother guiding the next generation of bridges.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 Zoë is compact, strong, and expressive, with warm eyes and a steady presence. Her voice carries a practiced calm that can cut through panic without raising volume. Age brings silver streaks to her hair and deeper lines around her eyes, but her posture remains upright and purposeful. By her sixties, she carries herself with the quiet authority of someone who has guided her family through every crisis imaginable.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Zoë is defined by:
 
@@ -77,8 +82,10 @@ Her weaknesses include:
 - tendency to carry everyone's emotional weight
 - difficulty asking for help when she needs it
 - past trauma (her-father's legacy) that surfaces at unexpected moments
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Amerigo Carisco** — husband, intellectual partner, and the only person who can make her set down the weight for a moment
 - **Celectra Carisco** — adopted stepdaughter, source of pride and worry; their bond is tested by Celectra's unique needs but never broken
@@ -89,14 +96,18 @@ Her weaknesses include:
 - **Alex & Dee Cruiz** — long‑time friends and colleagues; Dee is her closest confidante, Alex her trusted medical counterpart
 - **Xara Kret** — her mother, whose warmth she carries forward and whose name she passes to her granddaughter
 - **Dr. Douglas Kret** — her father; their relationship is the wound that shaped her, and the reason she became a healer
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Zoë's journey is one of resilience and adaptation. She raises a traumatized dual‑bodied child with no precedent, helps build the psychological frameworks that allow human–Galinstanian coexistence, and becomes a grandmother whose wisdom shapes the next generation. Her arc is about choosing compassion even when the universe offers no guidebook. She is the quiet force who holds the Carisco family together—not through grand gestures, but through steady, unwavering presence.
+
 </div>
 
 
 <div class="card-bg" markdown="1">
+
 ### Key Moments
 - **The First Night (book-1):** Holding both of Celectra's bodies after the Kret experiments, promising they're safe now
 - **The Birthday Chapter (book-3):** A meditation on aging, mortality, and legacy at fifty
@@ -105,9 +116,11 @@ Zoë's journey is one of resilience and adaptation. She raises a traumatized dua
 - **The Naming (book-4):** Watches as her mother's name (xara) and her own are given to the twins—a moment of profound continuity
 - **Grandmother's Pride (book-5):** Observes the twins' testimony with quiet joy, seeing her values in action
 - **The Quiet Center (all-books):** Every family gathering, every crisis, every celebration—she is the calm in the storm
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Zoë's Wisdom
 > "My mother taught me that love isn't about fixing—it's about staying." — *Zoë, Book 2*
 
@@ -120,27 +133,33 @@ Zoë's journey is one of resilience and adaptation. She raises a traumatized dua
 > "We can learn from methods while condemning their origins. But we must never forget the people behind the data." — *Zoë during the Kret research debate, Book 3*
 
 > "She would have loved you all. Not because of what you do—because of who you are." — *Zoë to Celectra and Jaxon about her mother Xara, Book 4*
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Clinical Insights
 - **First to document** psychological development in a dual-bodied child
 - **Developed frameworks** for human–Galinstanian emotional health
 - **Identified "resonance fatigue"** —emotional exhaustion from sustained harmonic engagement
 - **Created protocols** for trauma-informed care in cross-species contexts
 - **Trained generations** of psychologists in her approach: presence over intervention, staying over fixing
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Themes
 - **The Healer's Wound:** Zoë became a psychologist because her father taught her what harm looks like
 - **Quiet Strength:** Not all heroes lead rescues; some ensure the rescuers can sleep afterward
 - **Generational Inheritance:** Values passed from mother to daughter to granddaughter—Xara to Zoë to Celectra to Xara and Jenni
 - **Presence Over Fixing:** Sometimes the most powerful thing you can do is simply stay
 - **The Emotional Backbone:** Holding a family together through every crisis, without anyone noticing the weight
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Trivia
 - Zoë keeps her mother Xara's photograph on her desk—the only pre-colony artifact she brought to Ares
 - She can calm Celectra's four hemispheres with a single sentence; no one else has ever managed this
@@ -148,9 +167,13 @@ Zoë's journey is one of resilience and adaptation. She raises a traumatized dua
 - She maintains a private journal of observations about Celectra's development, intending it as a resource for future parents of atypical children
 - Her birthday chapter in Book 3 is the only time in the series readers see her truly vulnerable, reflecting on mortality
 - By Book 5, her former students lead psychology programs across all four river settlements
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

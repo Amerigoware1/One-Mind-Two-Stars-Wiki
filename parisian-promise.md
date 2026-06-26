@@ -80,6 +80,7 @@ title: Parisian Promise
     <!-- <span class="button-label">Play Reference Track</span> -->
   </button>
   <audio id="audioRef" src="{{ 'assets/audio/parisian-promise.mp3' | relative_url }}" preload="metadata"></audio>
+
 </div>
 
 <div class="lyrics">
@@ -147,6 +148,7 @@ title: Parisian Promise
     In the City of Love...<br>
     With you — beneath Paris skies, always
   </div>
+
 
 </div>
 

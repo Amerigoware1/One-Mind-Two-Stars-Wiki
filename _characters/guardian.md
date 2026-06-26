@@ -38,20 +38,25 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Guardian is a member of the Northern Territory Galinstanian cluster and the parent of Chime. Named by Hiro during the rescue celebration in Book 2, Guardian embodies protection, warmth, and the particular ferocity of parental love. Hiro, a child who approached Guardian "with the particular reverence children showed to other people's parents," perceived their essence and chose the name "Guardian" because "that's what they do."
 
 During Chime's three days of torture at Kret's hands, Guardian endured the unique horror of hearing their child's pain through the bismuth network while being unable to help. That experience transformed Guardian's protective instincts into something sharper: a vow that no child of any species would ever suffer that way again.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 Guardian's form is substantial—larger than most Galinstanians, with a density that suggests strength and stability. Their surface is warm to human touch, and their pulses are deep, steady, and encompassing—like a heartbeat felt through a hug. When Guardian wraps pseudopods around someone (usually-a child), the embrace feels complete, safe, and utterly reliable.
 
 When distressed, Guardian's form tightens, becoming smaller and more compact—a defensive posture learned during the hiding. When protective instincts activate, they expand, flowing between the threat and those they guard.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Guardian is defined by:
 
@@ -75,9 +80,11 @@ Their weaknesses include:
 - tendency to be overprotective, especially with Chime
 - difficulty trusting humans who remind them of Kret
 - can be intimidating to adults while being gentle with children
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Chime** — Guardian's child; the bond is deep, complicated by the trauma of hiding while Chime suffered
 - **Hiro** — bonded human who named them "Guardian"; Hiro's reverence for parents touched Guardian deeply
@@ -86,17 +93,21 @@ Their weaknesses include:
 - **Stan** — elder who helped Guardian process parental guilt
 - **All children of New Eden** — Guardian watches over them all, human and Galinstanian alike
 - **Resonant Echo (the-four)** — Guardian helps them feel safe, offering the protective embrace they once could not give to Chime
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Guardian's arc is about the limits of protection—and what comes after. For three days, Guardian heard their child's pain and could do nothing. The guilt of that helplessness is the deepest wound Guardian carries. But the rescue taught Guardian something crucial: protection is not only about preventing harm. It is also about being present after harm has occurred.
 
 When Hiro named them "Guardian," Hiro saw the truth: Guardian protects. Not perfectly—no one can. But fiercely, consistently, and without condition. Guardian's story is about learning that hiding was not failure—it was survival. And that being there when the hiding ends is its own form of protection.
+
 </div>
 
 
 <div class="card-bg" markdown="1">
+
 ### Key Moments
 - **The Helpless Parent (book-2, pre-rescue):** Guardian hides, listening to Chime's torture—the worst days of their life
 - **The Cave-In (book-2):** Guardian dissolves stone with desperate precision, channeling parental fury into escape
@@ -104,27 +115,33 @@ When Hiro named them "Guardian," Hiro saw the truth: Guardian protects. Not perf
 - **The Naming (book-2):** Hiro names them "Guardian"—"because that's what they do"
 - **The Watch (book-3 & 4):** Guardian maintains safety perimeters, protecting from the background
 - **The Peace (book-5):** Chime pulses a private thank-you: for hiding, for surviving, for being there when the hiding ended
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Galinstanian Wisdom
 - **On Helplessness:** "I could not save my child. I can only be here now, every moment, for every child."
 - **On Protection:** "Protection is not about preventing all harm. It is about never leaving someone alone in the harm."
 - **On Guilt:** "The guilt does not fade. But it becomes something else—a reminder to act when I can."
 - **On Children:** "All children are mine to guard. This is not a burden. It is who I am."
 - **On Hiding:** "Hiding kept us alive. Survival is not failure. It is the prerequisite for everything that follows."
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Themes
 - **Parental Guilt:** The agony of being unable to protect one's child
 - **Protection as Presence:** Being there after harm is as important as preventing harm
 - **Survival Is Not Failure:** Hiding kept everyone alive; that matters
 - **Expanded Family:** Guardian's protective love extends to all children of both species
 - **Healing Together:** Parent and child heal side by side, not separately
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Trivia
 - Guardian's name came from Hiro's childhood reverence for parents; Hiro had recently learned the word "guardian" in school
 - Guardian still pulses a "goodnight" rhythm to Chime every evening—a habit from before the capture that they resumed after the rescue
@@ -133,9 +150,13 @@ When Hiro named them "Guardian," Hiro saw the truth: Guardian protects. Not perf
 - Hiro, now grown, still visits Guardian whenever he needs to feel safe
 - Guardian maintains a mental map of every child in New Eden and their general well-being
 - The other Northern Cluster members say Guardian "adopted the whole colony"
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

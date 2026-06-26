@@ -161,6 +161,7 @@ sample_chapter: true
   <button id="ttsStopBtn" onclick="stopTTS()" disabled>⏹️ Stop</button>
   <label for="voiceSelect">Voice:</label>
   <select id="voiceSelect" onchange="changeVoice()"></select>
+
 </div>
 
 <div class="reader-container unselectable" oncontextmenu="return false;">
@@ -190,7 +191,9 @@ sample_chapter: true
     <span id="pageCounter">Page 1 of 8</span>
     <button onclick="changePage(1)" id="nextBtn">Next ➡️</button>
   </div>
+
 </div>
+
 </div>
 <script>
 let currentPage = 0;

@@ -39,36 +39,47 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Lidia Sebastiani is the Councilor responsible for energy systems and grid infrastructure on New Eden. A brilliant electrical engineer with a background in fusion reactor design, she approaches every problem through risk assessment, redundancy, and failure analysis. During the Galinstanian disclosure, she became the colony's primary skeptic, voicing the concerns that others either ignored or were too relieved to name. Her caution can make her difficult to work with, but it also makes her one of the colony's most essential stabilizers.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 Sebastiani carries herself with the precise posture of someone who has spent decades in clean rooms, control centers, and emergency briefings. Her dark hair has silver at the temples, usually pulled back in a severe bun that keeps her face unobstructed and her focus sharp. Her eyes are pale gray and highly observant, narrowing slightly whenever she is evaluating information or hearing something she does not trust. She favors functional, durable clothing in dark colors, often a charcoal jumpsuit marked with engineering insignia.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Sebastiani is defined by analytical rigor: she trusts what can be measured, modeled, and stress-tested. That makes her invaluable during emergencies, but it can also make her seem cold when others are looking for reassurance. Her strongest instinct is to identify threats before they become disasters, which is why she is often the first to anticipate infrastructure vulnerabilities and system-wide risks.
 
 Her technical expertise is exceptional. She designed the colony's power distribution network and retains intimate knowledge of its transformers, conduits, backup systems, and emergency bypasses. She is also known for uncompromising honesty; she will not soften hard truths to make them easier to hear. In practice, that means she is often the person in the room who says what everyone else is trying not to say.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Amerigo Carisco** — Their ideological clash during the Galinstanian disclosure became one of the defining tensions of the early colony years. Sebastiani warned of betrayal and vulnerability, while Amerigo argued for trust and coexistence.
 - **Santos** — Respects Santos's leadership but frequently pushes back on what she sees as a willingness to accept uncertainty without sufficient safeguards.
 - **Celectra** — Views her with protective skepticism, not because she distrusts Celectra personally, but because she believes the child was placed in an impossible position.
 - **Yamoto** — Finds common ground with Yamoto in procedural discipline, even if she is often less diplomatic in how she expresses it.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Sebastiani's arc is about the tension between vigilance and trust. She represents the person who sees the structural weak points before anyone else and refuses to pretend that good intentions are the same as safety. Over time, her caution becomes less about resisting change and more about making change survivable. Her story asks whether being right about danger matters more than being liked in the moment—and whether a skeptic can become a guardian without ever becoming naive.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Key Moments
 - **The Disclosure Challenge (book-1):** Forces the Council to confront the reality that coexistence requires genuine safeguards, not optimism alone.
 - **The Abstention (book-1):** Abstains rather than voting no, acknowledging the strength of the opposing argument while preserving her own position.
@@ -78,18 +89,22 @@ Sebastiani's arc is about the tension between vigilance and trust. She represent
 - **Long-Term Stability (book-3):** Becomes a key voice for redundancy and operational resilience during growing political strain.
 - **Veteran Authority (book-4):** Serves as one of the colony's most experienced technical leaders.
 - **Legacy of Caution (book-5):** Her practical philosophy becomes part of the colony's institutional memory.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Philosophy
 - **Trust is a luxury. Redundancy is survival.**
 - **If it can fail, it will fail eventually.**
 - **Hope without preparation is negligence.**
 - **Safety is not pessimism; it is responsibility.**
 - **A good system assumes the worst and still works.**
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Notable Quotes
 > "We're talking about beings that can dissolve rock. That can travel through our foundations invisibly."
 
@@ -100,17 +115,21 @@ Sebastiani's arc is about the tension between vigilance and trust. She represent
 > "I don't need to be right. I need us to be safe."
 
 > "Trust is a luxury. Redundancy is survival."
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Themes
 - **Vigilance vs. Paranoia:** When does caution become obstruction?
 - **The Burden of Doubt:** What does it cost to be the person who always asks what if?
 - **Engineering Ethics:** The moral responsibility of those who design systems that keep people alive.
 - **Trust Under Pressure:** Whether coexistence can survive uncertainty without real safeguards.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Trivia
 - Sebastiani designed the colony's triple-redundant power grid.
 - She keeps a physical map of all power conduits in her office and updates it by hand.
@@ -118,9 +137,13 @@ Sebastiani's arc is about the tension between vigilance and trust. She represent
 - She has never taken a vacation since arriving on Ares.
 - She quietly funds a scholarship for children of engineers killed in Earth's Fusion Wars.
 - Her caution is widely respected by anyone who has had to survive one of her worst-case scenarios.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

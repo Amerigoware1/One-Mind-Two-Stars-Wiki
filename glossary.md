@@ -216,6 +216,7 @@ title: Glossary
     <button class="clear-search" id="clearSearch">×</button>
     <div class="search-dropdown" id="searchDropdown"></div>
   </div>
+
 </div>
 
 <!-- ========== TAB BAR ========== -->
@@ -229,6 +230,7 @@ title: Glossary
   <button class="tab-btn" data-tab="locations">🏯Locations</button>
   <button class="tab-btn" data-tab="politics">🏛️Politics &amp; Organizations</button>
   <button class="tab-btn" data-tab="arts">🖼️Arts &amp; 🎼Culture</button>
+
 </div>
 
 <!-- ========== TAB PANELS ========== -->
@@ -351,6 +353,7 @@ title: Glossary
     <p><strong>Pronunciation:</strong> /uːˈtɑːrə/<button class="speak-button">🔊</button></p>
     <p>Unified Thought and Resource Architecture—sentient AI of the system.</p>
   </div>
+
 </div><!-- end panel-tech -->
 
 <!-- ASTRONOMY -->
@@ -404,6 +407,7 @@ title: Glossary
     <p><strong>Pronunciation:</strong> /ˈɒskər/<button class="speak-button">🔊</button></p>
     <p>Rocky moon orbiting Oisín.</p>
   </div>
+
 </div><!-- end panel-astronomy -->
 
 <!-- CHARACTERS -->
@@ -433,6 +437,7 @@ title: Glossary
     <p><strong>Pronunciation:</strong> /ˈmɒnənəs dɪˈsoʊməs/<button class="speak-button">🔊</button></p>
     <p>Celectra's condition: one consciousness spanning identical twin bodies. Clinical Greek‑derived term: “one mind, two bodies.” She dislikes it because it sounds like a disease.</p>
   </div>
+
 </div><!-- end panel-characters -->
 
 <!-- SLANG -->
@@ -665,6 +670,7 @@ title: Glossary
       <p>An elderly person who's small, quiet, but still sharp and dense with experience.</p>
     </div>
   </div><!-- end card-bg wrapper for slang -->
+
 </div><!-- end panel-slang -->
 
 <!-- GALINSTANIANS -->
@@ -675,6 +681,7 @@ title: Glossary
     <p><strong>Pronunciation:</strong> /ˌɡælɪnˈstæni.ənz/<button class="speak-button">🔊</button></p>
     <p>Intelligent life based on the metal alloy galinstan. The indigenous, sentient, liquid‑metal beings living beneath Ares. Communicate via ELF electromagnetic fields. No collective name for themselves; named by Celectra.</p>
   </div>
+
 </div><!-- end panel-aliens -->
 
 <!-- MEDICAL -->
@@ -714,6 +721,7 @@ title: Glossary
     <p><strong>Pronunciation:</strong> /ˈmɒnənəs dɪˈsoʊməs/<button class="speak-button">🔊</button></p>
     <p>Celectra's condition: one consciousness spanning identical twin bodies.</p>
   </div>
+
 </div><!-- end panel-medical -->
 
 <!-- LOCATIONS -->
@@ -755,6 +763,7 @@ title: Glossary
     <p><strong>Pronunciation:</strong> /ˈjuːtəpɪs/<button class="speak-button">🔊</button></p>
     <p>Space station orbiting Ares, home to Celectra and her father for the first seven years of her life.</p>
   </div>
+
 </div><!-- end panel-locations -->
 
 <!-- POLITICS -->
@@ -772,6 +781,7 @@ title: Glossary
     <p><strong>Pronunciation:</strong> /traɪˈbjuːnəl/<button class="speak-button">🔊</button></p>
     <p>The formal legal proceeding that found Dr. Kret guilty of unauthorized medical procedures and endangerment, leading to his probation and demotion.</p>
   </div>
+
 </div><!-- end panel-politics -->
 
 <!-- ARTS -->
@@ -783,6 +793,7 @@ title: Glossary
     <p><strong>Pronunciation:</strong> /pəˈrɪziən ˈprɒmɪs/<button class="speak-button">🔊</button></p>
     <p>A song written by Amerigo for his late wife Jenni. He hums it when he thinks no one can hear. Represents enduring love and memory.</p>
   </div>
+
 </div><!-- end panel-arts -->
 
 <!-- ==========================================================================

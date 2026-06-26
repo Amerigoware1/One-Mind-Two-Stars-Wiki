@@ -72,14 +72,19 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ### Overview
 Kai Vasquez is a New Eden‑born martial artist and security officer, slightly older than Celectra Carisco’s generation. Known for his muscular build, quick eyes, and aggressive fighting style, he lost to Celectra in the first round of the Book 2 Sundome Karate Tournament. Rather than harboring resentment, he used the loss as motivation to grow – eventually becoming a mentor, a security professional, and a trusted guardian for the colony’s youth.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ### Physical Description
 Kai has a stocky, powerful build earned through years of strength training and martial arts. His dark hair is usually cropped short, and his quick, observant eyes miss little. He moves with explosive energy but has learned to temper it with control. He prefers practical attire – training gi or security uniform – and carries himself with the easy confidence of someone comfortable in his own skin.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ### Personality & Skills
 Kai is defined by:
 - explosive physical power
@@ -98,22 +103,30 @@ His weaknesses include:
 - occasional impatience with overly technical drills
 - tendency to rely on power rather than finesse
 - struggling with stillness and meditation
+
 </div>
 <div class="card-bg" markdown="1">
+
 ### Relationships
 - **Celectra Carisco** – friendly rival turned friend; her unconventional “stillness protocol” fascinated him, and he sought her out after his loss to learn more
 - **Aulii Vongphachanh** – colleague and co‑instructor; they balance each other’s teaching styles (power-vs. precision)
 - **Jenni & Xara Carisco‑Bowers** – students in defensive tactics; Kai runs scenario drills for them
 - **Sensei Onishi Kisa** – mentor who taught him that control matters more than power
 - **Amara Okonkwo & Leila Al‑Farsi** – cohort peers; regular training partners
+
 </div>
 <div class="card-bg" markdown="1">
+
 ### Story Overview (non‑spoiler)
 Kai’s arc is about channeling natural strength into disciplined service. He starts as a power‑heavy fighter who loses to a more strategic opponent, but instead of becoming bitter, he becomes curious. That curiosity leads him away from pure competition and toward security and teaching. He represents the generation that learns to protect – not just to win – and his growth from boastful teenager to calm, reliable guardian is a quiet anchor of the colony’s safety.
+
 </div>
 
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

@@ -115,6 +115,7 @@ Celectra’s caloric needs shift dramatically based on the "bandwidth" of her co
   <div class="bar-bg">
     <div class="bar-fill fill-idling" style="width: 35%;"></div>
   </div>
+
 </div>
 
 <div class="metabolic-container">
@@ -125,6 +126,7 @@ Celectra’s caloric needs shift dramatically based on the "bandwidth" of her co
   <div class="bar-bg">
     <div class="bar-fill fill-active" style="width: 85%;"></div>
   </div>
+
 </div>
 
 ### 3. Therapeutic Geothermal Restoration

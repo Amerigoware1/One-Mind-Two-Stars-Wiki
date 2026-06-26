@@ -40,20 +40,25 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Flicker is a member of the Northern Territory Galinstanian cluster, named by the human twins Emma and Ethan during the rescue celebration. The twins perceived Flicker's presence as "fast! Like thoughts that move too quick to catch!" and chose "Flicker" because Flicker is "like light that moves."
 
 Flicker's essence is quick, bright, and endlessly curious. Of all the Northern Territory cluster, Flicker is the most eager to explore—new places, new beings, new patterns. The trauma of hiding during Chime's torture left Flicker with a deep aversion to stillness; movement feels like safety. Bonded to two humans (emma-and ethan), Flicker has learned to flow between them, a perfect match for twins who are themselves two branches from one root.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 Flicker's form is smaller and less dense than other Northern Territory Galinstanians—built for speed rather than stability. Their surface catches light in ways that resemble flickering sunlight on water, constantly shifting, never still. When Flicker moves, they seem to teleport; in truth, they simply flow faster than human eyes can track.
 
 Their pulses are rapid, bright, almost staccato—the Galinstanian equivalent of a hummingbird's heartbeat. When excited (which-is often), Flicker's entire field brightens, pulses quickening further. When still (rare), they dim slightly, as if holding their breath.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Flicker is defined by:
 
@@ -77,9 +82,11 @@ Their weaknesses include:
 - aversion to enclosed spaces (triggers-memories of hiding)
 - sometimes moves too fast for careful communication
 - can be exhausting for slower beings to interact with
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Emma & Ethan** — bonded to both human twins; Flicker flows between them, fascinated by their similarities and differences
 - **The Northern Territory Cluster (chime,-harbor, logic, spark, guardian, lyric)** — family; Flicker is the fastest and most curious among them
@@ -87,17 +94,21 @@ Their weaknesses include:
 - **Celectra Carisco** — rescuer; Flicker trusts her and often zips around her during visits, a sign of affection
 - **Ripple** — younger Galinstanian; Flicker teaches speed and agility, though Ripple will never be as fast
 - **Resonant Echo (the-four)** — Flicker helps orient them to the colony, zipping ahead to scout safe paths
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Flicker's arc is about movement as survival. For three days, Flicker was forced into terrified stillness while Chime suffered. That stillness became associated with helplessness, with fear, with the inability to help. After the rescue, Flicker moved—fast, constantly, almost compulsively—as if speed could outrun the memory.
 
 When Emma and Ethan named them "Flicker," they saw the truth: Flicker is light that moves. Their story is about learning that movement is not escape—it is expression. And that being fast is not about running from the past, but about carrying hope into the future.
+
 </div>
 
 
 <div class="card-bg" markdown="1">
+
 ### Key Moments
 - **The Hiding (pre-book-2):** Flicker forced into terrified stillness while Chime suffers; the trauma of confinement begins
 - **The Cave-In (book-2):** Flicker uses speed to help dissolve stone rapidly, finding purpose in movement
@@ -105,27 +116,33 @@ When Emma and Ethan named them "Flicker," they saw the truth: Flicker is light t
 - **The Integration (book-3):** Flicker explores New Eden, their curiosity undimmed
 - **The Messenger (book-4):** During the Four Rivers crisis, Flicker carries messages across the colony
 - **The Scout (book-5):** Flicker helps coordinate the Resonant Echo rescue, zipping between locations with hope
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Galinstanian Wisdom
 - **On Speed:** "Stillness is where the fear lives. Movement is where I am free."
 - **On Twins:** "Two branches from one root. You are not the same, but you belong together. I understand this now."
 - **On Hiding:** "I could not help Chime because I could not move. I will never be still again when someone needs me."
 - **On Curiosity:** "Everything is interesting if you look fast enough."
 - **On Light:** "She called me light that moves. Light does not hide. Light illuminates."
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Themes
 - **Movement as Freedom:** For those who have been trapped, movement becomes salvation
 - **Speed as Care:** Flicker's quickness is not impatience—it is urgency born of helplessness
 - **Two Branches, One Root:** Bonding to twins reflects Flicker's own multiplicity
 - **Curiosity as Resilience:** The desire to explore is also the refusal to be defined by trauma
 - **Light That Moves:** Visibility as antidote to hiding
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Trivia
 - Flicker's name came from Emma and Ethan speaking simultaneously—they perceived Flicker's essence together, as a single impression
 - Flicker can move so fast that humans see only a blur; Emma and Ethan learned to track them by resonance rather than sight
@@ -134,9 +151,13 @@ When Emma and Ethan named them "Flicker," they saw the truth: Flicker is light t
 - Emma once timed Flicker crossing the colony: 4.7 seconds from one end to the other
 - Flicker is afraid of small, enclosed spaces but will enter them if someone needs help—trembling the whole time
 - The other Northern Cluster members joke that Flicker has "too much energy for one being"
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

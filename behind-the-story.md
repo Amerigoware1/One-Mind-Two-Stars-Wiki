@@ -6,6 +6,7 @@ title: "Behind-the-Story"
 # Behind the Story: The Inspiration for One Mind, Two Stars
 
 <div class="card-bg" markdown="1">
+
 ## The Spark of an Idea
 
 The central concept of _One Mind, Two Stars_ —one consciousness inhabiting two bodies—was inspired many years ago by a documentary about conjoined twins Brittany and Abby Hensel.
@@ -31,4 +32,5 @@ From that initial "what if," the world of _One Mind, Two Stars_ grew organically
 [Home]({{ '/index.html' | relative_url }})
 
 © One Mine Two Stars Wiki
+
 </div>

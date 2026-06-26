@@ -180,4 +180,5 @@ As they left the holo-chamber together, Zoë found herself wondering which of th
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
+
 </div>

@@ -40,18 +40,23 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Dr. Nathaniel Webb is one of New Eden's original agricultural scientists and a founding-generation colonist. Gruff, opinionated, and famously unimpressed by most things, Webb represents the early human mindset on Ares — pragmatic, territorial, and deeply skeptical of anything that threatened the colony's fragile stability.
 
 Over the course of the series, Webb evolves from a man with a colonialist outlook to someone who quietly, stubbornly grows. He becomes an unexpected emotional anchor during Celectra and Jaxon's wedding, which he officiates with a mixture of dry humor and genuine affection.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 Webb is tall, weathered, and built like someone who has spent decades outdoors. His hair is white and perpetually wind‑tossed, and his eyebrows seem to have declared independence long ago. His voice is gravelly, his posture stiff, and his expression usually hovers somewhere between "mildly annoyed" and "deeply unimpressed."
 
 Despite this, his eyes soften around the Carisco family, especially the twins.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Webb is defined by:
 
@@ -75,8 +80,10 @@ His weaknesses include:
 - difficulty admitting he's wrong
 - a tendency to lecture when nervous
 - initial resistance to change, even when necessary
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Celectra Carisco** — someone he respects deeply, even if he doesn't always understand her; her quiet dignity eventually wins his grudging admiration
 - **Jaxon Bowers** — a young man he likes more than he admits; Webb sees in him the steadiness the colony needs
@@ -84,23 +91,29 @@ His weaknesses include:
 - **Alex Cruiz** — frequent sparring partner in council debates; their arguments are loud but never personal
 - **Jenni Jo & Xara Zo** — children he pretends not to spoil; he brings them soil samples to play with and tells terrible jokes they pretend not to enjoy
 - **Stan, Chime, Ripple** — Galinstanians he slowly learns to trust, though he'd never admit how far he's come
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Webb's arc is about humility, growth, and the slow unlearning of assumptions. He begins as a man who sees Ares as a frontier to be tamed and ends as someone who understands that coexistence — not dominance — is the colony's future. His officiation of Celectra and Jaxon's wedding becomes one of the most unexpectedly tender moments in the series.
+
 </div>
 
 
 <div class="card-bg" markdown="1">
+
 ### Key Moments
 - **The Grumbling Years (book-1-2):** Webb opposes expanded Galinstanian engagement, earning a reputation as the council's resident skeptic
 - **Witness to Trauma (book-2):** Seeing Chime's suffering after the northern cluster rescue begins cracking his certainty
 - **The Wedding (book-3):** Officiates Celectra and Jaxon's ceremony with a speech that leaves no dry eye in the house — including his own
 - **Honorary Grandfather (book-4):** Develops an unlikely soft spot for the twins, bringing them "educational" soil samples that are really just excuses to visit
 - **The Quiet Advisor (book-5):** Mentors younger scientists, offering historical perspective that proves invaluable during Stewardship planning
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### The Wedding Speech (excerpt)
 > "I'll be honest — when I first heard about a child who could talk to beings made of metal, I thought we'd lost our minds. We were barely keeping crops alive. We didn't have time for miracles.
 
@@ -109,17 +122,21 @@ Webb's arc is about humility, growth, and the slow unlearning of assumptions. He
 > Jaxon, you're steadier than you know. And Celectra — you've built something none of us could have imagined. If I'd had my way back then, we'd have missed all of it. So... thank you for not listening to me.
 
 > Now someone get me a handkerchief. This dust is ridiculous."
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Themes
 - **The Grumpy Heart:** Sometimes the loudest skeptics have the deepest capacity for love — they just need time
 - **Slow Growth:** Real change doesn't happen in moments of revelation, but in thousands of small adjustments
 - **Honorary Grandparent:** The relationships we choose can be as meaningful as the ones we're born into
 - **From Frontier to Home:** Learning that a place isn't something to conquer, but something to belong to
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Trivia
 - Webb's eyebrows have their own fan club among colony children, who find them endlessly fascinating
 - He maintains a private garden where he experiments with soil amendments; the twins are the only ones allowed to help
@@ -127,9 +144,13 @@ Webb's arc is about humility, growth, and the slow unlearning of assumptions. He
 - Webb was the first council member to publicly admit he was wrong about the Galinstanians — though he phrased it as "Well, I suppose I misjudged that slightly"
 - He keeps a photograph of the twins on his workbench, hidden behind a soil sample container so no one will see it
 - By Book 5, he has become the unofficial colony archivist for agricultural history, maintaining records dating back to the first planting
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

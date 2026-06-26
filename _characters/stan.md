@@ -50,18 +50,23 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Stan is an elder of the Northern Cluster and the first Galinstanian to establish sustained communication with humans. At first contact, he was chosen by the Galinstanian collective to serve as spokesperson—selected based on proximity and his relative "youth" among them (approximately-300-400 years old, young by their species' standards). When seven-year-old Celectra, with a child's instinct, assigned him the name "Stan" and thought of him as male, he accepted both without hesitation. This acceptance became foundational to human–Galinstanian relations: a gesture of respect from a species that understands identity differently.
 
 Over the decades that follow, Stan serves as cultural interpreter, guide, and steady presence through every major crisis. He represents not just Galinstanian wisdom, but the profound grace of being truly seen—and accepted—by another species.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 Stan's form is stable, grounded, and riverbank-solid—older and more settled than younger Galinstanians like Ripple. His surface carries the patina of centuries, with deeper resonance patterns that speak of long observation. When calm, he pulses in steady, measured rhythms; when concerned, his field deepens without losing its anchor.
 
 He moves with the deliberate grace of one who has never needed to hurry, yet can flow swiftly when the moment requires. His presence in any space immediately communicates: here is one who has witnessed much and carries it without weight.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Stan is defined by:
 
@@ -84,8 +89,10 @@ His weaknesses include:
 - occasional difficulty conveying the pace of Galinstanian time to humans
 - carries the weight of every harm done to his people
 - tendency to observe longer than humans find comfortable
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Celectra Carisco** — first human to truly see him; their bond transcends translator and speaker—they are the original bridge, built on mutual acceptance
 - **Jenni & Xara Bowers** — watches them with the quiet pride of an elder observing the next generation carry the work forward
@@ -93,14 +100,18 @@ His weaknesses include:
 - **Chime, Harbor, Logic, Spark, Guardian, Lyric** — fellow Galinstanians; Stan is an elder among them, carrying collective memory
 - **Amerigo Carisco** — respects his scientific rigor and protective love for Celectra; collaborates on understanding the bismuth network
 - **Jaxon Bowers** — trusts his steady presence; recognizes in him the same grounding energy that younger Galinstanians need
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Stan's arc is about the grace of acceptance—of a child's naming, of human urgency, of the slow work of building understanding between species that perceive time differently. He represents the wisdom that knows when to speak and when to wait, when to guide and when to let the young find their own way. His greatest gift to humanity was not translation, but the simple act of accepting being seen—and named—by a seven-year-old who reached across the impossible.
+
 </div>
 
 
 <div class="card-bg" markdown="1">
+
 ### Key Moments
 - **The Naming (book-1):** Seven-year-old Celectra, with a child's instinct, names him "Stan" and thinks of him as male. He accepts—a gesture that becomes foundational to human–Galinstanian relations
 - **The Translation (book-1):** Begins the long work of bridging not just language, but two species' ways of perceiving reality
@@ -108,27 +119,33 @@ Stan's arc is about the grace of acceptance—of a child's naming, of human urge
 - **The Counsel (book-3):** Offers Galinstanian perspective on using Kret's research: knowledge gained through harm carries the harm within it
 - **The Pattern (book-4):** Recognizes ancient resonance patterns during the Four Rivers crisis, guiding the twins and Ripple
 - **The Forest (book-5):** Pulses with quiet satisfaction as the bonds he planted become a forest of connection
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Galinstanian Wisdom
 - **On Naming:** "A name is a gift. To refuse it would be to refuse the giving."
 - **On Time:** "You measure time in heartbeats; we measure it in resonance. Both are real. Both are true."
 - **On Harm:** "Knowledge gained through harm carries the harm within it. It cannot be separated."
 - **On Generations:** "The young must carry the work forward. We elders simply hold the memory of why it matters."
 - **On Acceptance:** "She saw me and named me. How could I be anything other than what she saw?"
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Themes
 - **The Grace of Acceptance:** Being truly seen by another—and accepting that vision—is a profound act of trust
 - **Generational Wisdom:** Those who have witnessed centuries carry patterns that the young must learn
 - **Translation as Bridge:** True communication requires not just words, but mutual perception
 - **Patience and Urgency:** Two species learning to move at speeds the other can comprehend
 - **The Weight of Memory:** Carrying collective history without being crushed by it
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Trivia
 - Stan's name came from a seven-year-old's instinct; he has never questioned or changed it
 - At 300-400 years old, he was considered "young" when chosen as spokesperson—a deliberate choice by the collective to match Celectra's youth
@@ -136,9 +153,13 @@ Stan's arc is about the grace of acceptance—of a child's naming, of human urge
 - Stan has never needed to "sleep" as humans understand it, but enters periods of deep resonance contemplation
 - He maintains a mental archive of every significant human–Galinstanian interaction since first contact
 - The younger generation of Galinstanians (including-ripple) refer to him as "Elder Stan" with genuine respect
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

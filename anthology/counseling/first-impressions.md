@@ -197,4 +197,5 @@ As Celectra gathered herself to leave, Zoë’s thoughts drifted to Amerigo. His
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
   <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to extended Archive</a>
+
 </div>

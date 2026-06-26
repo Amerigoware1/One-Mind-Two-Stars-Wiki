@@ -45,22 +45,27 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Chime is a member of the Northern Territory Galinstanian cluster—one of seven who lived in isolation before first contact. When Dr. Kret captured and tortured Chime for three days, the experience left deep scars. But the rescue that followed—humans and Galinstanians working together to escape a cave-in—became the foundation for something new: trust rebuilt from the ashes of violation.
 
 Now bonded to the Bowers twins, Xara and Jenni, Chime has transformed trauma into expertise. They are the signal expert of the Northern Territory group, able to distinguish between natural resonance and harmful interference with a sensitivity born of hypervigilance. Their arc is about healing—not as a destination, but as an ongoing practice of choosing trust over fear.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 Chime's form is slightly smaller than the other Northern Territory Galinstanians—not from youth but from the toll of captivity. Their surface carries a faint pattern that humans have learned to read as scar tissue: resonance disruptions that never fully smoothed, visible to those who know how to look.
 
 When calm, Chime pulses in gentle, rhythmic patterns—almost musical, which inspired their name. When distressed, their field becomes choppy, fragmented, the resonance breaking into discordant frequencies. Their movement is careful, as if expecting walls to appear where none exist.
 
 But around the twins—Xara and Jenni—Chime relaxes in ways they cannot achieve elsewhere. Their pseudopods flow more freely, their pulses steady into something approaching peace.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Chime is defined by:
 
@@ -84,9 +89,11 @@ Their weaknesses include:
 - difficulty being alone (isolation-triggers trauma)
 - tendency toward hypervigilance that exhausts them
 - sometimes hesitates when swift action is needed
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Xara & Jenni Bowers** — bonded to both twins; Chime trusts them completely, a trust that astonished even Chime themselves after what Kret did
 - **The Northern Territory Cluster (harbor,-flicker, logic, spark, guardian, lyric)** — family who hid helplessly during Chime's torture; forgiveness was necessary, and hard-won
@@ -95,16 +102,20 @@ Their weaknesses include:
 - **Kiri & Orren** — fellow Galinstanians who witnessed Chime's healing journey
 - **Ripple** — younger Galinstanian whom Chime mentors in signal differentiation
 - **Resonant Echo (the-four)** — Chime helps them transition to freedom, recognizing their own past self in the Four's trembling pseudopods
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Chime's arc is about what happens after the torture ends. The rescue was only the beginning—healing takes years, decades, perhaps centuries for a species that measures time in resonance. Chime learns that trauma does not have to be the center of their identity. It can become a source of expertise, a reason to protect others, a bridge to those who suffer similarly.
 
 When the twins discover the trapped Four (later-resonant echo), Chime steps forward not as a victim but as a guide. Having been trapped, Chime knows the way out—not just the physical path, but the psychological one.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Key Moments
 - **The Capture (pre-book-1):** Kret takes Chime, tortures them for three days; the other six hide, listening helplessly
 - **The Rescue (book-1):** Celectra's team captures Kret; he triggers a cave-in; Galinstanians dissolve stone while humans dig—first cooperation born of crisis
@@ -112,27 +123,33 @@ When the twins discover the trapped Four (later-resonant echo), Chime steps forw
 - **The Bonding (book-2):** Chime meets the Bowers twins and feels, for the first time since Kret, that trust might be possible again
 - **The Testimony (book-3):** Chime speaks to the Council about consent and violation, shaping Interface ethics
 - **The Guide (book-5):** Chime helps the twins interpret Resonant Echo's tapping, recognizing the desperation beneath the code
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Galinstanian Wisdom
 - **On Trauma:** "The harm does not disappear. But neither do I."
 - **On Trust:** "To trust again is not to forget. It is to remember and choose anyway."
 - **On Hiding:** "The others hid because they could not help. I do not blame them. I blame only the one who made hiding necessary."
 - **On Rescue:** "You did not save me from the cave. You saved me from being alone in it."
 - **On Signal:** "Desperation has a frequency. Once you hear it, you never mistake it for anything else."
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Themes
 - **Surviving Torture:** What it means to carry scars that others cannot see
 - **Trust After Betrayal:** Learning to reach toward connection when connection has hurt you
 - **Transformed Trauma:** Pain becomes expertise, vigilance becomes protection
 - **The Witness:** The difference between those who caused harm and those who could only watch
 - **Healing as Practice:** Not a destination, but daily work
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Trivia
 - Chime's name came from their musical resonance patterns—even in distress, their pulses had a rhythmic quality
 - They can identify individual Galinstanians by resonance signature alone, even through significant interference
@@ -141,9 +158,13 @@ When the twins discover the trapped Four (later-resonant echo), Chime steps forw
 - Chime maintains a private resonance archive of "safe frequencies"—patterns that never trigger flashbacks
 - They have taught the twins to recognize the difference between a signal of distress and a signal of deception
 - Chime was the first Galinstanian to voluntarily enter a human dwelling after the rescue—a small act of immense courage
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

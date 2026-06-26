@@ -34,6 +34,7 @@ permalink: /_characters/
     {% endif %}
   </div>
   {% endfor %}
+
 </div>
 
 <p id="no-results" style="display:none;">No characters match your search.</p>

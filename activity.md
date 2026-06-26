@@ -4,6 +4,7 @@ title: "Activity Center (mall-of motion) - One Mine Two Stars Wiki"
 ---
 
 <div class="card-bg" markdown="1">
+
 ## Overview
 
 The **Activity Center** —affectionately nicknamed the **"Mall of Motion"** —is New Eden's comprehensive fitness and recreation facility, one of the five original buildings encircling the central roundabout. Its exterior matches its neighbors, but inside, it is a world of movement: swimming pools, dojos, dance studios, climbing walls, courts, and open spaces that transform to meet the colony's needs.
@@ -25,9 +26,11 @@ Sundome Dojo
 🤸
 
 Gymnastics
+
 </div>   
   
 <div class="card-bg" markdown="1">
+
 ## 🥋 The Sundome Karate Lineage
 
 Sensei Onishi Kisa
@@ -63,8 +66,10 @@ The annual tournament is one of the Activity Center's most anticipated events, d
 Despite fighting at half capacity, Celectra advanced through bracket after bracket, reaching the final against Aulii. The match was close—those who witnessed it still debate whether a fully-embodied Celectra might have won—but in the end, Aulii's technique prevailed. Celectra accepted silver with grace, and the two competitors gained lifelong respect for each other.
 
 The tournament solidified both women's reputations: Aulii as a rising star, Celectra as someone who would sacrifice victory for fairness. When Aulii became Sensei in Book 5, Celectra was among the first to congratulate her.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Celectra's Journey Through Motion
 
 The Activity Center has been a constant in Celectra Carisco-Bowers' life, from childhood classes through postpartum recovery. Her relationship with movement mirrors her broader journey: disciplined, adaptive, and never giving up.
@@ -103,9 +108,11 @@ Cruiz monitored her progress closely, and Celectra—always disciplined—follow
 I spent my whole life learning to control two bodies. Then one of them did something the other couldn't—created life—and I had to learn all over again. The Activity Center was patient with me. So I learned to be patient with myself.
 
 — Celectra Carisco-Bowers, Book 5
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Facilities
 
 Area | Features  
@@ -130,9 +137,11 @@ Area | Features
 **Ground Level, Rear** — The locker rooms are positioned at the building's rear, providing direct access to **outdoor sports fields**. This design allows athletes to change indoors, step outside to play, and return for showers without tracking mud through the main facility. 
 
 The outdoor fields accommodate soccer, rugby, ultimate frisbee, and the annual New Eden Games opening ceremonies. During pleasant weather, they're among the most active spaces in the colony.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## More Than Athletics: A Community Hub
 
 The Activity Center's **open spaces** and **flexible design** make it the colony's default gathering place for events that don't fit elsewhere. Its large, empty floors can be transformed in hours to host almost anything.
@@ -169,9 +178,11 @@ The Center's signature event is the **New Eden Games** , a week-long competition
   * Dance performances and battles
 
 The Games conclude with an awards ceremony in the Open Event Hall, followed by a colony-wide celebration that spills onto the outdoor fields.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Council Seat 7: Athletics & Recreation
 
 Seat | Portfolio | Incumbent | Notes  
@@ -186,9 +197,11 @@ Chibuike Okafor brings an athlete's perspective to the council. A former competi
   * Maintaining the Activity Center's flexibility for community events
 
 Okafor is known for his ability to find common ground—perhaps a result of years spent mediating disputes between competitive athletes. He works closely with Dr. Zoë Carisco on the psychological benefits of exercise and with Chibuike (yes,-he shares a first name with the council member; they are not related) on facility maintenance.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Activity Center Timeline
 
 Period | Event  
@@ -201,9 +214,11 @@ Period | Event
 **Late Book 3** | Postpartum recovery begins under Dr. Cruiz's guidance; slow resumption of movement  
 **Between Books 4 & 5** | Samaya Gallery opens, reducing but not eliminating Center's art exhibition role  
 **Book 5** | Aulii Vongphachanh becomes Sensei of Sundome Dojo; Celectra's recovery continues
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Cultural Significance  
   
 The Activity Center embodies New Eden's belief that **movement is essential** —not just for fitness, but for community, expression, and joy. Its nickname, the "Mall of Motion," captures its role as a place where colonists browse activities the way earlier humans browsed stores: trying new things, finding what fits, returning to what they love.
@@ -223,9 +238,11 @@ The one-inch stop—the ability to deliver force at the very last instant, or to
 ### A Space for Everyone
 
 Unlike the specialized buildings around the roundabout, the Activity Center belongs to everyone. Athletes train here, yes, but so do children learning to swim, elders practicing gentle yoga, artists mounting exhibitions, and couples celebrating their weddings. It is the most democratic of the original five buildings—a place where movement, in all its forms, is honored.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## At a Glance
 
 Aspect | Detail  
@@ -238,4 +255,5 @@ Aspect | Detail
 **Celectra's Youth Activities** | Karate, acrobatics, swimming, yoga, gymnastics, dance, PE (rotating-weekly)  
 **Key Flexibility** | Open spaces host art, weddings, community events  
 **Outdoor Access** | Locker rooms lead to sports fields
+
 </div>

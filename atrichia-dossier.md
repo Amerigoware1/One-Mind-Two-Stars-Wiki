@@ -9,6 +9,7 @@ title: "Sam Calder – Atrichia Dossier"
 
 Complete Hairlessness – Dermatological & Social Management
 
+
 </div>
 
 <div class="card-bg" markdown="1">
@@ -27,6 +28,7 @@ Primary Impact:
 
 Complete absence of hair follicles on all body surfaces. No eyebrows, eyelashes, or scalp hair.
 
+
 </div>
 
 <div class="card-bg" markdown="1">
@@ -40,6 +42,7 @@ Complete absence of hair follicles on all body surfaces. No eyebrows, eyelashes,
   * **UV Protection:** Scalp and skin are vulnerable to sunburn. Broad‑spectrum SPF 50+ applied daily; wide‑brimmed headwear outdoors.
   * **Eye Protection:** No eyelashes means increased risk of debris and dryness. Wraparound sunglasses or lubricating drops as needed.
   * 
+
 </div>
 
 <div class="card-bg" markdown="1">
@@ -50,6 +53,7 @@ Complete absence of hair follicles on all body surfaces. No eyebrows, eyelashes,
   * **Community Attitude:** In New Eden, atrichia is viewed as a neutral trait, akin to freckles or heterochromia. Sam’s openness has helped normalise visible differences.
   * **Self‑Description:** “My head isn’t bare – it’s a canvas.”
   * 
+
 </div> 
 
 <div class="card-bg" markdown="1">
@@ -57,6 +61,7 @@ Complete absence of hair follicles on all body surfaces. No eyebrows, eyelashes,
 ### 📋 Ongoing Care
 
 Annual dermatological exam (skin-cancer risk is not elevated, but dryness and actinic keratosis are monitored). No medical treatment required – condition is purely cosmetic and stable. Sam uses a gentle, fragrance‑free moisturiser on the scalp and avoids harsh exfoliants.
+
 </div> 
 
 * * *

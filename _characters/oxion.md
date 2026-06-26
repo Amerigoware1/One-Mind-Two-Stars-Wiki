@@ -35,16 +35,21 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Oxion "Oxi" Carisco is the son of Alexander "Xan" Carisco and Duška Santoso Carisco, born during a pivotal moment in colony history shortly after the stabilization of the Four Rivers Resonance network. His birth symbolizes the first generation of children born into a fully integrated human–Galinstanian society on Ares. Named Oxion (often-shortened to "oxi" by family), he grew up in the Carisco Compound surrounded by scientists, engineers, and diplomats.
 
 From infancy, Oxion displayed an unusual affinity for Galinstanians. During the Samaya Gallery Opening in 2256, he was observed reaching out to the Galinstanian Ripple without fear, a moment noted by his cousins Jenni and Xara. By 2262, he is being raised within new educational frameworks that emphasize acoustic and EM integration, positioning him as a potential future bridge-builder.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 As a young child, Oxion has the soft features of early childhood, with dark curly hair inherited from his mother and observant eyes that mirror his father's quiet attentiveness. He favors comfortable play clothes, often with subtle bismuth-thread embroidery (a-family tradition). He moves with the confident curiosity of a child who has never known a world where Galinstanians were strange or distant.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Oxion is defined by:
 
@@ -66,8 +71,10 @@ His weaknesses include:
 - too young for complex responsibilities (still-a child)
 - occasional overconfidence around potentially dangerous situations
 - relies on older family members for protection and guidance
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Xan Carisco** — father; balances normal childhood experiences with exposure to family legacy; teaches him basic acoustic patterns
 - **Duška Santoso Carisco** — mother; notes his intuitive understanding of rhythm; introduces him to resonance-aware design concepts through play
@@ -75,14 +82,18 @@ His weaknesses include:
 - **Jenni & Xara Bowers** — cousins and mentors; though older, the twins treat Oxion as a partner in exploration; he looks up to them, particularly enjoying Jenni's stories
 - **Ripple & the Northern Cluster** — Galinstanian friends; Oxion does not fear them; by age six, he recognizes specific Galinstanian signatures
 - **Chime, Harbor, Flicker, Logic, Spark, Guardian, Lyric** — extended Galinstanian family; all participate in his upbringing as normal members of his community
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Oxion's arc represents the future of the colony—the generation that grows up knowing integration as normal rather than hard-won. He is not a bridge-builder like his great-aunt Celectra, but something new: a child who never knew separation between species, who reaches for Galinstanians the way other children reach for toys. His story is about what becomes possible when the work of one generation creates normalcy for the next.
+
 </div>
 
 
 <div class="card-bg" markdown="1">
+
 ### Key Moments
 - **Birth (july-31, 2255):** Born seven months after the Four Rivers Resonance crisis, symbolizing hope and stability
 - **First Contact (march-18, 2256):** At eight months old, reaches for Ripple without fear at the Samaya Gallery opening
@@ -90,26 +101,34 @@ Oxion's arc represents the future of the colony—the generation that grows up k
 - **Xara's Observation:** "Ripple likes them? Or recognizes their resonance pattern?" — "Same thing."
 - **Rescue Mission (2262):** Left with grandparents during the Resonant Echo crisis, begins acoustic education
 - **Evening Resonance Gathering (2265):** At ten, attends with Xan, Kael, and the Northern Cluster; learns tap code by choice
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Themes
 - **The Ordinary Extraordinary:** When integration becomes normal, connection is no longer remarkable—just true
 - **Generational Inheritance:** Each generation stands on the work of the last, often without knowing the cost
 - **Choice Over Necessity:** Oxi learns Galinstanian communication because he wants to, not because he has to
 - **Hope Made Flesh:** Children born into peace are the living proof that sacrifice mattered
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Trivia
 - His nickname "Oxi" was given by his cousins Jenni and Xara, who found "Oxion" too formal for a baby
 - The bismuth-thread embroidery on his clothes is a tradition Duška started, incorporating Galinstanian-resonant materials into everyday wear
 - He is the first Carisco child who has never known a world where the bismuth network was mysterious or threatening
 - Ripple recognizes Oxi's resonance pattern instantly whenever they meet, a fact that delights him endlessly
 - By age six, he can identify at least seven Galinstanians by their pulse signatures alone
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

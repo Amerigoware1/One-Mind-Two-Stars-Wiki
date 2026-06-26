@@ -41,18 +41,23 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 
 Nazia Thälmann is the council member responsible for logistics and transportation. A German-born supply chain specialist who previously managed continental distribution networks on Earth, she excels at moving resources efficiently through complex systems. During the Galinstanian crisis, her expertise became crucial for rerouting supplies around newly restricted zones and developing transportation protocols that respected subterranean territories. She serves as Councilor for Seat 12, holding the Logistics & Transportation portfolio.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 
 Thälmann has an athletic, compact build and moves with economical precision—no gesture wasted, no step unnecessary. Her dark hair is cut in a practical bob that requires minimal maintenance, and she wears it with a slight wave that suggests she doesn't have time for styling. Her eyes are sharp hazel, constantly scanning and assessing. She favors functional clothing in neutral tones, typically a tailored jumpsuit with multiple pockets for datapads and communication devices. A small tattoo of interlocking gears marks her left wrist—a reminder of her belief that everything connects.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 
 Nazia Thälmann is defined by:
@@ -76,9 +81,11 @@ Her weaknesses include:
 - occasional reluctance to commit without sufficient data
 - tendency to prioritize efficiency over individual concerns
 - private frustration when systems fail due to human error
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Relationships
 
 - **Rhea Babić** — collaborate closely on route planning; Thälmann handles the flow, Babić handles the map; their partnership is seamless
@@ -86,15 +93,19 @@ Her weaknesses include:
 - **Lidia Sebastiani** — they agree on risk assessment but differ on implementation; Thälmann prefers redundancy through flexibility, Sebastiani through duplication
 - **Isabella Santos** — delivers bad news honestly and early, which Santos appreciates even when unwelcome
 - **Logistics Division** — mentors a generation of supply chain specialists who carry forward her flexibility doctrine
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 
 Thälmann's arc is about the invisible architecture of civilization—the flows of resources, information, and goods that make life possible. She represents the practical voice on Council, the one who asks not "Should we?" but "How do we make it work?" Her journey from crisis manager to institutional architect mirrors the colony's own maturation: from scrambling to survive to building systems that endure. Her flexibility doctrine becomes a cornerstone of colony governance, and her quiet competence earns her a legacy that outlasts any single discovery.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Key Moments
 
 - **The 48-Hour Redesign (Book 1):** When mining restrictions take effect, she reorganizes the entire supply network in two days, preventing any critical shortages
@@ -102,15 +113,19 @@ Thälmann's arc is about the invisible architecture of civilization—the flows 
 - **The Flexibility Doctrine (Book 3):** She publishes a treatise on adaptive logistics that becomes required reading for all colony planners
 - **The Crisis Web (Book 4):** During the Four Rivers Resonance crisis, her calm under pressure and redundant systems keep the colony supplied
 - **The Living System (Book 5):** Her protégés manage the corridors she designed; her philosophy spreads beyond logistics to every department
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Philosophy
 
 **Flow matters more than speed.** Thälmann believes that sustainable systems prioritize consistency over maximum efficiency. A river that floods helps no one. Her work is driven by the conviction that reliability builds trust—both among humans and between species. Constraints aren't obstacles; they're design parameters. The best plan is the one that survives contact with reality.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Notable Quotes
 
 > "You can't optimize what you don't understand."
@@ -124,9 +139,11 @@ Thälmann's arc is about the invisible architecture of civilization—the flows 
 > "Flow matters more than speed. A river that floods helps no one."
 
 > "Beautiful buildings don't matter if supplies can't reach them."
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Themes
 
 - **Efficiency vs. Resilience:** What matters more—optimal performance or reliable adaptation?
@@ -134,9 +151,11 @@ Thälmann's arc is about the invisible architecture of civilization—the flows 
 - **The Ethics of Distribution:** Who gets resources when there isn't enough for everyone?
 - **Invisible Labor:** The unsung work of keeping civilization running
 - **Flexibility as Strength:** Adaptability outlasts rigid optimization
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Trivia
 
 - Managed supply chains for 200 million people on Earth before joining the colony
@@ -148,9 +167,13 @@ Thälmann's arc is about the invisible architecture of civilization—the flows 
 - The phrase "Thälmann it" entered colony slang meaning "find a way to make it work"
 - Maintains a small garden to remind herself that growth takes time
 - Never misses a shipment arrival—she personally greets the first transport of every month
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

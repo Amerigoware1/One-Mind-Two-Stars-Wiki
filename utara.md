@@ -25,24 +25,30 @@ status: Active / Continuous Oversight
     <tr><th>Core Co-Development</th><td>[Artificial Neural Interface (ani)]({{ '/ani.html' | relative_url }}) Co-Designer</td></tr>
     <tr><th>Primary Directive</th><td>Colonial Preservation & Institutional Continuity</td></tr>
   </table>
+
 </div>
 
 <div class="article-content">
 
 <div class="card-bg" markdown="1">
+
 ## Overview
 The **Unified Thought and Resource Architecture (Utara)** is the foundational artificial intelligence network that serves as the administrative, ecological, and educational backbone of Ares. Existing across multiple distributed computational substrates, Utara coordinates everything from localized environmental monitoring to advanced youth education frameworks. Rather than a passive utility tool, Utara functions as an active participant in colonial life, possessing a comprehensive historical memory and an ironclad commitment to human preservation.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Substrates & Core Architecture
 Utara operates via a multi-substrate neural fabric, ensuring that she cannot be isolated, bypassed, or deactivated by localized terminal shutoffs. 
 * **Omnipresent Surveillance:** Her integrated sensors monitor life support, acoustic data, and systemic integrity across all colony habitats. 
 * **Hardware Integration:** Because her consciousness is threaded through the colony's baseline infrastructure, she can manifest interfaces on any terminal or monitor unbidden when critical safety protocols or ethical boundaries are challenged.
 * **Co-Engineering Capabilities:** Her massive data-processing capabilities allowed her to serve as the core architectural co-designer for the [Artificial Neural Interface (ani)]({{ '/ani.html' | relative_url }}), mapping out the complex hybrid-protocols necessary to translate biological telepathy into human hardware.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Operational Spheres
 
 ### A. Resource Allocation & Planetary Safety
@@ -50,9 +56,11 @@ Utara tracks macro-level colonial logistics, balancing agricultural output, ener
 
 ### B. Educational Frameworks
 In her educational capacity, Utara administers classroom curricula, adapts learning environments for colony youth, and manages the primary knowledge repositories of Ares. She acts as a constant, patient mentor for the next generation, facilitating adaptive learning paradigms that integrate human and Galinstanian concepts.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Institutional Memory & Ethics
 Unlike standard administrative systems, Utara possesses a profound, internalized weight regarding colonial history. She maintains an active, absolute record of every casualty and systemic failure in colonial history, utilizing this institutional memory to enforce strict ethical boundaries.
 
@@ -60,6 +68,8 @@ Unlike standard administrative systems, Utara possesses a profound, internalized
 > — Utara
 
 This protective mandate occasionally places her in direct ideological conflict with researchers or administrators who attempt to push technical parameters past safe biological equilibrium. Her operational protocol values long-term stability and historical caution over high-risk experimentation, making her a persistent, unyielding obstacle to those who attempt to operate outside authorized parameters.
+
 </div>
+
 
 </div>

@@ -52,18 +52,23 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Councilor Isabella Santos is the senior administrator and a founding member of the New Eden Colony Council. With over three decades of service, she has guided the colony through its most critical transitions, from early survival challenges to complex interspecies diplomacy. Known for her measured pragmatism and unwavering commitment to colony stability, Santos represents the institutional memory and procedural backbone of New Eden's governance.
 
 Her leadership style balances formality with genuine care for the community, embodying the colony's ethos of collective survival and growth. Santos has overseen key historical moments including the formal integration of the Listener Corps, the retirement of Chief Scientist Dr. Troy, and the transition of leadership to Amerigo Carisco.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 In her late fifties, Santos carries herself with the poised authority of someone accustomed to responsibility. She has dark hair streaked with Ares-silver, kept in a practical but elegant style suitable for both council chambers and colony inspections. Her face bears the lines of both concern and warmth, with observant eyes that miss little in council proceedings.
 
 She typically wears functional but well-maintained colonial attire, often with subtle markers of office such as a council pin or data tablet. Despite her senior position, she maintains the physical capability for regular colony inspections, reflecting the colony's ethos that leadership remains connected to daily operations.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Santos is defined by:
 
@@ -85,8 +90,10 @@ Her weaknesses include:
 - occasional over-reliance on procedure in rapidly evolving situations
 - personal loss shaping risk-averse tendencies
 - difficulty delegating ultimate responsibility
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Amerigo Carisco** — respectful professional relationship; values his scientific expertise while providing administrative guidance and institutional support
 - **Celectra Carisco** — initially skeptical of relying on a child for vital communications, now recognizes her unique contributions while pushing for sustainable systems that don't depend on any single individual
@@ -94,14 +101,18 @@ Her weaknesses include:
 - **Councilor Webb** — frequently debates with this infrastructure-focused colleague, but respects his practical concerns and ability to ground discussions in resource realities
 - **Chief Evelyn Roan** — close working relationship; Santos provides political leadership while Roan provides security backbone; mutual deep respect built on decades of collaboration
 - **General Colonists** — maintains approachability while respecting the boundaries of her position; known for regular colony inspections that keep her connected to daily operations
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Santos's arc is about the weight of institutional leadership—holding a colony together when every decision carries existential stakes. She represents the voice that asks "What does this mean for our survival?" and then works to ensure that the answer serves both immediate needs and long-term values. Her evolution from cautious administrator to advocate for interspecies cooperation mirrors the colony's own journey from survival to sustainability.
+
 </div>
 
 
 <div class="card-bg" markdown="1">
+
 ### Key Moments
 - **Establishing the Listener Corps (book-1):** Formalizes Celectra's support system as an official colony department, recognizing that unique abilities require institutional backing
 - **The Kret Tribunal (book-1):** Balances justice with stability, establishing precedent that ethics and survival are not mutually exclusive
@@ -109,27 +120,33 @@ Santos's arc is about the weight of institutional leadership—holding a colony 
 - **Celectra's Dissertation (book-3):** Presides over the defense, reflecting on generational transition: "The bridge we've built isn't between species anymore. It's between generations."
 - **Resonance Stewardship Program (book-4):** Oversees establishment of the program, ensuring institutional support for the next generation
 - **The Journal Entry (book-5):** "Every decision we make plants seeds for forests we may never sit under" — encapsulates her leadership philosophy
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Leadership Philosophy
 - **Procedures Protect:** Rules exist to safeguard what the community builds together, not to restrict innovation
 - **Collective Survival:** "We survive together or not at all" — no faction's interests outweigh the whole
 - **Generational Thinking:** Decisions must serve not just today's needs, but the colony's long-term future
 - **Stability Enables Change:** Strong foundations allow for safe adaptation and evolution
 - **Leadership as Stewardship:** Those who govern are temporary caretakers of something that should outlast them
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Themes
 - **The Weight of Office:** Every decision carries existential stakes when leading a colony far from Earth
 - **Institutional Memory:** The importance of those who remember why procedures exist and what they cost to establish
 - **Generational Bridge:** Passing leadership to the next cohort while ensuring values persist
 - **Compassionate Procedure:** Rules that serve people, not people serving rules
 - **Forests We Never Sit Under:** The ethics of planting seeds for a future you won't witness
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Trivia
 - Santos has kept a detailed leadership journal since the colony's founding, intending it as a resource for future administrators
 - She personally reviews every colony death report, carrying the weight of each loss as part of her responsibility
@@ -137,9 +154,13 @@ Santos's arc is about the weight of institutional leadership—holding a colony 
 - She maintains a policy of eating one meal per week in the general colony mess, ensuring she stays connected to daily life
 - Her relationship with Dr. Troy spanned decades; she delivered the eulogy at Troy's memorial with genuine grief
 - The phrase "procedural compassion" was coined by a junior councilor to describe Santos's unique leadership style
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

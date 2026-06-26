@@ -33,16 +33,21 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Duška Santoso Carisco is a resonance designer and community arts coordinator born in New Eden during the colony's early stabilization period. Growing up alongside the "integration generation," she developed a keen sensitivity to the cultural and technological shifts occurring on Ares. Unlike many peers who focused purely on engineering or science, Duška gravitated toward the arts, exploring how visual and acoustic design could facilitate human–Galinstanian communication.
 
 She married Alexander "Xan" Carisco in 2254, solidifying a union between two of the colony's foundational families. Their son, Oxion, was born in 2255. Duška continues to work closely with the University Outreach Program, often collaborating with Galinstanian partners like Lyric to design spaces that accommodate both human and non-human sensory needs.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 Duška has a warm, approachable presence with expressive eyes that seem to listen as much as they observe. She favors practical, artistic attire—soft fabrics in earth tones, often accented with subtle bismuth-thread embroidery that catches the light. Her hair is usually worn in a loose, functional style, and she moves with the quiet confidence of someone comfortable in both human and Galinstanian spaces.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Duška is defined by:
 
@@ -64,8 +69,10 @@ Her weaknesses include:
 - occasional reluctance to assert herself in high-stakes technical debates
 - tendency to prioritize harmony over necessary conflict
 - taking on too much emotional labor for the community
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Alexander "Xan" Carisco** — husband; complementary partnership where he handles technical/observational data and she interprets human/cultural impact
 - **Oxion "Oxi" Carisco** — son (born-july 31, 2255); Duška nurtures his unusual comfort around Galinstanians
@@ -73,13 +80,19 @@ Her weaknesses include:
 - **Celectra Carisco-Bowers** — sister-in-law; trusted confidante on community integration matters
 - **Lyric & the Northern Cluster** — Galinstanian collaborators; Duška's resonance design work has earned their trust
 - **Kowan, Sofia, Emma/Ethan, Hiro, Zuri** — childhood cohort; frequent collaborators on university outreach and community projects
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Duška's arc is about finding her voice as a cultural architect—someone who shapes the spaces where humans and Galinstanians meet, not through technology alone, but through thoughtful design that honors both species' sensory needs. She represents the generation that grows up with integration as normal, and her work helps ensure that normalcy is sustainable, beautiful, and inclusive.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

@@ -35,14 +35,19 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Chen Wei is a technically-minded Ares-born colonist who transitions from competitive karate to cross-species communication technology. After losing in the first round of a tournament to a 14-year-old Celectra Carisco when he was the same age, he shifted his focus from physical competition to technical fields where analytical thinking mattered more than physiology. He joined the Listener Corps in Book 2 and by Book 3 works as a technician assisting with the development of technology designed to eventually replace Celectra's biological telepathic bridge.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 Chen carries himself with the posture of a former martial artist—straight-backed and precise. He has dark hair kept short for practicality, observant eyes that often focus on details others miss, and hands steady enough for fine technical work. He favors functional colony attire, often wearing technician vests with multiple pockets for tools and datapads. As he matures, he trades dojo uniforms for lab coats and interface headsets.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Chen is defined by:
 - **analytical precision** 
@@ -61,8 +66,10 @@ His weaknesses include:
 - initial reluctance to accept physical limitations
 - tendency to prioritize systems over emotional context
 - occasional professional distance with former peers
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Celectra Carisco** — former tournament opponent, now technical subject and colleague; respects her abilities but maintains professional distance
 - **Sensei Onishi Kisa** — former teacher; still respects their wisdom but has moved beyond martial arts
@@ -70,15 +77,21 @@ His weaknesses include:
 - **Listener Corps Team** — works collaboratively with Ananya Patel, Maya Keahi, and other corps members
 - **Dr. Yuki Chen** — professional colleague in monitoring and tech development (no-familial relation)
 - **Jaxon Bowers** — engineering collaborator on interface development
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Chen's arc is about finding value beyond physical prowess. His early disappointment in the dojo becomes the catalyst for a career that helps secure the colony's future. He represents the generation that builds the systems allowing human–Galinstanian relations to continue without dependence on a single biological bridge. His story mirrors the colony's shift from physical survival to complex technical coexistence.
+
 </div>
 
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>
 

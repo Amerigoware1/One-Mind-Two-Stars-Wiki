@@ -42,16 +42,19 @@ book5_arc: >
 <div class="article-content">
  
 <div class="card-bg" markdown="1">
+
 ### Overview
 Nhial Dok is a New Eden‑born martial artist, dancer, and field geologist, known for his exceptional speed, rhythmic control, and analytical approach to the subterranean environment. After a narrow loss to Celectra Carisco in the Book 2 Sundome Karate Tournament, he redirected his talents from pure competition toward a vital career in mining and mineralogy. As an adult, he becomes a key figure in the Ares Colonial Mining Corps, helping crews extract resources safely and efficiently. He is also the proud older brother of Nyanhial Dok, who often assists with colony logistics and survey data archiving.
  </div>
  
 <div class="card-bg" markdown="1">
+
 ### Physical Description
 Nhial is lean and wiry, with long limbs built for explosive acceleration and sustained endurance in tight spaces. His dark skin often carries the fine dust of drilling sites, and his eyes are perpetually alert – tracking structural shifts, mineral veins, and movement even at rest. He favors lightweight, reinforced field gear that doesn’t restrict his range of motion. When standing still, he has a coiled, ready quality, as if any moment he might step into a tunnel breach or pivot into a sparring stance.
  </div>
  
 <div class="card-bg" markdown="1">
+
 ### Personality & Skills
 Nhial is defined by:
 - lightning‑fast reflexes and rhythmic body control
@@ -73,6 +76,7 @@ His weaknesses include:
  </div>
  
 <div class="card-bg" markdown="1">
+
 ### Relationships
 - **Nyanhial Dok** – younger sister (born-2225); data archivist and logistics coordinator who frequently partners with Nhial on survey documentation
 - **Celectra Carisco** – respected opponent; her tactical foresight in their tournament match influenced his shift toward analytical disciplines
@@ -83,10 +87,14 @@ His weaknesses include:
  </div>
  
 <div class="card-bg" markdown="1">
+
 ### Story Overview (non‑spoiler)
 Nhial’s arc is about transformation – from a speed‑obsessed competitor and dancer to a grounded, systematic geologist who keeps the colony’s mining operations safe and sustainable. His tournament loss reveals that speed and rhythm without anticipation can be neutralized, and he channels that lesson into a career that blends physical discipline with hard science. Representing the generation that learns to measure and refine natural gifts, Nhial turns his reflexes, analytical mind, and respect for structure into tools that protect the miners and secure Ares’ future.
  </div>
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

@@ -12,6 +12,7 @@ permalink: /gallery/
 <div class="card-bg">
   <h1>Gallery</h1>
   <p>A collection of artifacts, environments, and curiosities from <em>One Mind Two Stars</em>.</p>
+
 </div>
 
 <!-- Search + Tag Filter -->
@@ -26,11 +27,13 @@ permalink: /gallery/
   <select id="tag-filter">
     <option value="">All Tags</option>
   </select>
+
 </div>
 
 <!-- Gallery Grid -->
 <div id="gallery" class="gallery-grid">
   <div class="loading">Loading gallery...</div>
+
 </div>
 
 <style>

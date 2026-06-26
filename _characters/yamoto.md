@@ -54,14 +54,19 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Councilor Dr. Kenji Yamoto is a respected member of the New Eden Colony Council with responsibility for environmental systems. With an engineering background focused on closed-loop water management and resource recycling, Yamoto oversees the colony's water reclamation, distribution networks, and waste processing. His pragmatic, data-driven approach has been instrumental in maintaining New Eden's environmental balance through years of expansion and population growth. He works closely with Councilor Webb on water allocation for agriculture, with Councilor Abrahamson on integrating environmental systems into colony infrastructure, and with Councilor Sebastiani on the energy demands of recycling operations.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 Yamoto carries himself with the precise posture of an engineer accustomed to monitoring exact measurements. He has neatly kept dark hair (streaked-with grey by book 5), sharp observant eyes behind practical glasses, and a calm demeanor that reflects decades of managing critical systems. He favors functional colony attire with subtle council insignia, and is rarely seen without a datapad displaying water purity and flow readouts. His hands are steady—trained for delicate calibration work—and he moves with economical grace.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Yamoto is defined by:
 
@@ -84,8 +89,10 @@ His weaknesses include:
 - occasional over-reliance on data over intuition
 - reluctance to approve expansion without extensive verification
 - tendency to internalize stress about system failures
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Dr. Nathaniel Webb** — collaborates on water allocation for agriculture and food production; their joint reports ensure population growth doesn't outpace resource capacity
 - **Amerigo Carisco** — respects his scientific leadership; supported his succession to Chief Scientist; collaborates on understanding environmental impacts on the bismuth network
@@ -97,14 +104,18 @@ His weaknesses include:
 - **Celectra Carisco** — values her bridge function for understanding Galinstanian perceptions of environmental changes humans cannot sense
 - **Chief Administrator Santos** — reports on resource capacity for population planning; their data-driven relationship ensures colony growth stays within sustainable limits
 - **The Twins (jenni-& xara)** — observes their resonance work with quiet interest; Xara's pattern recognition reminds him of his own analytical mind
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Yamoto's arc is about the quiet work of keeping a colony's resources in balance—the invisible infrastructure that allows everything else to function. He represents the voice that asks "Can our systems handle this?" before expansion proceeds, ensuring that growth doesn't outpace sustainability. His journey from pure engineer to councilor who values indigenous knowledge mirrors the colony's broader evolution from survival to partnership with Ares itself.
+
 </div>
 
 
 <div class="card-bg" markdown="1">
+
 ### Key Moments
 - **The Warning (book-2):** "Every liter counts. Every cycle of reclamation. On Ares, we don't have the luxury of Earth's aquifers."
 - **The Validation (book-3):** Jolts in recognition when Xan's glockenspiel reveals water reclamation variance: "That's correct. But how…?"
@@ -112,18 +123,22 @@ Yamoto's arc is about the quiet work of keeping a colony's resources in balance�
 - **The Four Rivers (book-4):** Helps design the support lattice that reinforces resonance anchors while humans sync frequencies
 - **The Philosophy (book-4):** Sustainability evolves from "human systems only" to "harmonizing with indigenous networks"
 - **The Legacy (book-5):** His protocols become standard; his principle—"every liter counts"—becomes colony law
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Environmental Philosophy
 - **Data with Context:** Numbers matter, but so does indigenous perception that can reveal what sensors miss
 - **Sustainable Growth:** Expansion must match resource capacity—not the other way around
 - **Invisible Infrastructure:** The systems no one notices are the ones working perfectly
 - **Harmonization, Not Domination:** Human systems should tune to the planet's natural frequencies, not override them
 - **Every Liter Counts:** On Ares, there is no margin for error—vigilance is survival
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Notable Quotes
 > "Every liter counts. Every cycle of reclamation. On Ares, we don't have the luxury of Earth's aquifers." — *Book 2*
 
@@ -134,18 +149,22 @@ Yamoto's arc is about the quiet work of keeping a colony's resources in balance�
 > "The systems no one notices are the ones working perfectly." — *Yamoto to a young engineer, Book 5*
 
 > "We don't conquer Ares. We listen to it. Then we tune ourselves to what we hear." — *Yamoto, reflecting on his career, Book 5*
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Themes
 - **Invisible Work:** The most essential systems are the ones no one thinks about—until they fail
 - **Data and Wisdom:** Numbers alone aren't enough; indigenous knowledge completes the picture
 - **Sustainable Growth:** The courage to say "not yet" when expansion would outpace capacity
 - **Harmonization:** Learning to tune human infrastructure to planetary rhythms
 - **Quiet Legacy:** Being remembered not in monuments, but in clean water and stable systems
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Trivia
 - Yamoto personally calibrates the water purity sensors every six months—not because they need it, but because it keeps him connected to the systems he oversees
 - He was the first councilor to formally propose integrating Galinstanian environmental observations into colony monitoring protocols
@@ -154,9 +173,13 @@ Yamoto's arc is about the quiet work of keeping a colony's resources in balance�
 - He and Nathaniel Webb share a weekly breakfast to discuss water allocation and resource projections; their partnership is one of the colony's most stable professional relationships
 - By Book 5, his former students lead environmental systems in all four river settlements—a quiet network of sustainability advocates he trained
 - The phrase "Yamoto's Question" entered colony lexicon as shorthand for asking "Can our systems handle this?" before any major initiative
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

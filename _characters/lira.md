@@ -67,18 +67,23 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Lira Keahi is a psychologist, youth mentor, and one of the earliest humans to recognize Celectra's need for sustainable support systems. Born on Utopis Station and relocating to Ares as a young adult, Lira bridges the gap between clinical observation and genuine human connection. She serves as Dr. Zoë Carisco's intern in Book 2, later becoming a trusted mentor to the Listener Corps and a key figure in youth development across the colony.
 
 Quiet, perceptive, and deeply grounded, Lira specializes in helping young people navigate extraordinary circumstances—including Celectra's burnout, the twins' development, and the psychological integration of humans and Galinstanians. She is the older sister of artist Maya Keahi.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 Lira has a calm, steady presence—someone who listens before speaking and notices what others miss. She is tall and lean, with warm brown skin, dark hair often pulled back in practical styles, and observant eyes that carry both professional attention and genuine warmth. Her movements are deliberate, never rushed, which makes her particularly effective with anxious children and overwhelmed teenagers.
 
 By adulthood, she carries herself with the quiet authority of someone who has spent decades helping others process trauma without absorbing it herself.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Lira is defined by:
 
@@ -101,8 +106,10 @@ Her weaknesses include:
 - tendency to prioritize others' needs over her own rest
 - can be so steady that others forget she also carries burdens
 - professional detachment sometimes mistaken for emotional distance
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Maya Keahi** — younger sister; Lira is protective but never stifling, watching Maya's growth with quiet pride
 - **Celectra Carisco** — first observes Celectra's burnout in Book 2; becomes trusted mentor and advocate
@@ -111,14 +118,20 @@ Her weaknesses include:
 - **Jenni Jo & Xara Zo Carisco** — observes their development; offers guidance when needed
 - **Stan (galinstanian)** — respects his wisdom; facilitates human–Galinstanian psychological understanding
 - **Sam Calder** — Maya's partner; Lira welcomes them into the family with characteristic quiet warmth
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Lira's arc is about the quiet work of supporting extraordinary people without seeking recognition herself. She enters the story as a competent young adult learning from Zoë, gradually becomes an indispensable mentor to the Listener Corps, and eventually helps shape how New Eden raises its children—particularly those touched by the bridge between species. Her greatest gift is her steadiness: in a world of remarkable individuals, Lira is the one who remembers to check if they've eaten, slept, or breathed.
+
 </div>
 
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

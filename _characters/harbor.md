@@ -40,20 +40,25 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Harbor is a member of the Northern Territory Galinstanian cluster, named by seven-year-old Sofia during the rescue celebration. Sofia chose "Harbor" because Harbor's presence felt like "a hug that's a person"—steady, patient, safe. The name captured exactly who Harbor is: the anchor of their cluster, the one others turn to when the resonance becomes chaotic.
 
 During Chime's torture at the hands of Dr. Kret, Harbor experienced the helplessness of hiding while a family member suffered. That guilt lingers, but Harbor has transformed it into purpose: to be the steady presence for others that they could not be for Chime in that moment. Their patience is not passive—it is active, chosen, hard-won.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 Harbor's form is solid and grounded—more dense than younger Galinstanians, with a surface that feels smooth but slightly grippy to human touch (sofia-once described it as "like warm river stone"). Their pulses are slow, measured, rhythmic—the Galinstanian equivalent of a deep, steady breath.
 
 When Harbor moves, it is with deliberate grace, never hurried. Their presence in any space immediately communicates safety. Young Galinstanians (including-ripple) gravitate toward Harbor when distressed, finding their resonance calming. Even humans who cannot perceive Galinstanian resonance directly report feeling "settled" when Harbor is nearby.
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Harbor is defined by:
 
@@ -77,9 +82,11 @@ Their weaknesses include:
 - tendency to absorb others' distress, leading to resonance fatigue
 - difficulty with rapid change or urgent deadlines
 - sometimes too passive when action is needed
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Sofia** — bonded human who named them "Harbor" as a child; their connection has matured into adult mutual respect
 - **The Northern Territory Cluster (chime,-flicker, logic, spark, guardian, lyric)** — family; Harbor is the anchor they all turn to
@@ -88,17 +95,21 @@ Their weaknesses include:
 - **Stan** — elder who helped Harbor process the guilt of hiding
 - **Ripple** — younger Galinstanian who seeks Harbor's calming presence during stress
 - **Resonant Echo (the-four)** — Harbor helps them transition, offering the same steady safety Sofia once named
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Harbor's arc is about the weight of helplessness—and what comes after. For three days, Harbor hid while Chime suffered, unable to help. That experience could have broken them. Instead, it shaped them into the anchor of their cluster: the steady one, the safe one, the presence that makes others feel held.
 
 When Sofia named them "Harbor," she saw something Harbor was still becoming. Their story is about growing into that name—learning that patience is not passivity, that steadiness is strength, and that being safe for others is a form of rescue all its own.
+
 </div>
 
 
 <div class="card-bg" markdown="1">
+
 ### Key Moments
 - **The Hiding (pre-book-2):** Harbor listens helplessly as Kret tortures Chime; the guilt begins
 - **The Cave-In (book-2):** Harbor works with the other Galinstanians to dissolve stone, helping everyone escape
@@ -106,27 +117,33 @@ When Sofia named them "Harbor," she saw something Harbor was still becoming. The
 - **The Integration (book-3):** Harbor steps back from central narrative, focusing on healing and grounding the cluster
 - **The Anchor (book-4):** During the Four Rivers crisis, Harbor's steady presence helps calm younger Galinstanians
 - **The Safe Place (book-5):** Harbor helps Resonant Echo transition to freedom, finally becoming the harbor they were named to be
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Galinstanian Wisdom
 - **On Helplessness:** "I could not save Chime then. So I will be the one who holds others now."
 - **On Patience:** "Waiting is not emptiness. It is preparation."
 - **On Names:** "She called me Harbor. I did not know I was becoming that. But she saw it first."
 - **On Safety:** "To be safe is not to be untouched. It is to be held while you tremble."
 - **On Guilt:** "Forgiveness from others is a gift. Forgiveness of self is a practice."
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Themes
 - **Helplessness Transformed:** The guilt of being unable to help becomes the drive to be helpful
 - **Patience as Strength:** Waiting is not weakness; it is active, chosen stillness
 - **Being Seen:** A child saw Harbor's essence before Harbor fully understood it themselves
 - **The Quiet Ones:** Not every hero acts loudly; some simply hold the space
 - **Safety as Rescue:** Sometimes the most important thing is to be a place others can land
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 ### Trivia
 - Harbor's name came from a seven-year-old's instinct for safety; Sofia had recently learned about Earth's harbors in school
 - Harbor can maintain perfect stillness for days—a skill the other Northern Cluster members find mildly unsettling
@@ -135,9 +152,13 @@ When Sofia named them "Harbor," she saw something Harbor was still becoming. The
 - They maintain a private resonance log of "safe sounds"—frequencies that calm distressed beings of both species
 - Sofia still visits Harbor whenever she returns to New Eden, though their conversations now are between adults
 - Harbor was the last of the Northern Cluster to accept their name, needing the most time to understand what "Harbor" meant
+
 </div>
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

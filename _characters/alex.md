@@ -63,11 +63,13 @@ Dr. Alexander “Alex” Cruiz is New Eden’s Chief of Medicine, a long‑servi
 
 Alex’s arc spans five books, evolving from frontline doctor to elder statesman of the colony’s medical and ethical leadership.
 
+
 </div>
 <div class="card-bg" markdown="1" markdown="1">
 
 ## Physical Description
 Alex is tall, broad‑shouldered, and carries the posture of someone who has spent decades on his feet in clinics, emergency bays, and field tents. His hair grays early at the temples, and his expression often settles into a mix of focus and dry amusement. His presence is steadying — the kind of man who walks into a crisis and instantly lowers the room’s panic level.
+
 
 </div>
 <div class="card-bg" markdown="1">
@@ -96,6 +98,7 @@ Personal strengths:
 - the ability to tell Amerigo he’s wrong without starting a fight  
 - the ability to get Celectra to slow down and breathe  
 
+
 </div>
 <div class="card-bg" markdown="1">
 
@@ -109,11 +112,13 @@ Personal strengths:
 - **Jaxon Bowers** — engineering partner in medical crises  
 - **Ripple, Chime, Stan** — Galinstanians he learns to read medically through Celectra  
 
+
 </div>
 <div class="card-bg" markdown="1">
 
 ## Story Overview (non-spoiler)
 Alex’s journey is one of responsibility and quiet heroism. He becomes the medical authority on Celectra’s physiology, the first to understand the risks of communion, and the doctor who delivers the colony’s hardest truths. His arc is about choosing to be the steady center in a world that constantly threatens to fracture.
+
 
 </div>
 
@@ -123,5 +128,7 @@ Alex’s journey is one of responsibility and quiet heroism. He becomes the medi
 
 {% include story-arcs.html %}
 
+
 </div>
+
 </div>

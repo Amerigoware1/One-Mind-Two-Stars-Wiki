@@ -31,16 +31,21 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ## Overview
 Jenni Jo Carisco is the older of Celectra's twin daughters and one of the most emotionally attuned young listeners on Ares. At seven years old in Book 4, she experiences resonance as a *feeling* — warmth, pressure, brightness, unease — long before she can articulate the underlying patterns. Her bond with Ripple is immediate, instinctive, and foundational to her development.
 
 By Book 5, at fourteen, Jenni becomes a stabilizing force within the Resonance Stewardship Program, specializing in emotional-harmonic modulation.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Physical Description
 Jenni has Celectra's expressive eyes and Jaxon's warm, open smile. She moves with a soft, instinctive awareness of her surroundings, often leaning into resonance rather than analyzing it. Her posture is relaxed, her gestures vivid and unfiltered.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Personality & Skills
 Jenni is defined by:
 
@@ -62,8 +67,10 @@ Her weaknesses include:
 - tendency to prioritize emotion over analysis
 - difficulty articulating what she intuitively perceives
 - taking emotional weight of others onto herself
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Relationships
 - **Xara Zo Carisco** — twin sister, intellectual complement; where Xara analyzes, Jenni feels
 - **Ripple** — closest friend, emotional partner; their bond transcends typical human–Galinstanian connection
@@ -71,14 +78,20 @@ Her weaknesses include:
 - **Zoë & Amerigo** — grandparents; Zoë nurtures her emotional intelligence, Amerigo her curiosity
 - **Xan Carisco** — uncle and mentor; helps translate her feelings into practice
 - **Chime, Stan, Harbor** — Galinstanian elders she trusts implicitly
+
 </div>
 <div class="card-bg" markdown="1">
+
 ## Story Overview (non-spoiler)
 Jenni's arc centers on emotional resonance — understanding what others feel, and learning how to stabilize harmonic fields through empathy. She becomes one of the first children to work formally with Galinstanians in the Stewardship Program, representing a generation for whom integration is not a challenge to overcome but a reality to nurture.
+
 </div>
 
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

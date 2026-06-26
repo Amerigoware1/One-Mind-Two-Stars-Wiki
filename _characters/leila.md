@@ -78,14 +78,19 @@ book5_arc: >
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
+
 ### Overview
 Leila Al‑Farsi is a New Eden‑born physician, medical researcher, and martial artist. Slightly younger than Aulii’s generation but older than Celectra’s, she reached the semifinal of the Book 2 Sundome Karate Tournament, losing to Celectra in a close tactical match. While she continues karate for fitness and health, her primary career is in medicine – specifically resonance‑related trauma and biomechanics. Her unique combination of grappling expertise and clinical knowledge makes her the colony’s leading authority on safe falling techniques.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ### Physical Description
 Leila has a compact, strong build – low center of gravity, solid core, and powerful hips. Her dark hair is often tied back in a practical ponytail, and her brown eyes have a calm, assessing quality. When not in medical scrubs or a lab coat, she wears simple, durable training clothes. She moves with deliberate economy, rarely wasting energy. Her hands are steady and precise – equally capable of executing a hip throw or suturing a wound.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ### Personality & Skills
 Leila is defined by:
 - a methodical, almost mathematical approach to both medicine and grappling
@@ -106,22 +111,30 @@ Her weaknesses include:
 - tendency to over‑prepare and under‑improvise
 - sometimes too reserved for effective cheerleading
 - workaholic tendencies that blur the line between career and hobby
+
 </div>
 <div class="card-bg" markdown="1">
+
 ### Relationships
 - **Celectra Carisco** – semifinal opponent who beat her with her own throw; Leila respects Celectra’s adaptability. They later collaborate on falling protocols, with Leila providing the medical data and Celectra the practical testing.
 - **Aulii Vongphachanh** – colleague and co‑instructor at the dojo; they share a precision‑focused philosophy. Aulii often jokes that Leila treats sparring like a lab experiment.
 - **Jenni & Xara Carisco‑Bowers** – primary students in break‑fall training; both twins credit Leila with saving them from serious injury during the gallery rescue. Jenni later asks Leila for advice on pre‑med studies.
 - **Sensei Onishi Kisa** – mentor who encouraged her to develop her grappling specialty, and supported her decision to pursue medicine.
 - **Dr. Helena Voss** – head of Resonance Medicine at New Eden General; Leila’s research supervisor and professional role model.
+
 </div>
 <div class="card-bg" markdown="1">
+
 ### Story Overview (non‑spoiler)
 Leila’s arc is about finding power in vulnerability – the ability to fall safely and to use an opponent’s momentum against them. She loses to Celectra in a tournament but takes that loss as impetus to refine her specialty rather than broaden it. Unlike a pure martial artist, she channels that same analytical drive into a medical career, becoming a physician and researcher. Through her teaching, she transforms ukemi from a niche martial art into a core survival skill for resonance‑era youth. She represents the generation that learns to embrace instability, turning every fall into a setup for the next movement – whether on the mat or in the trauma bay.
+
 </div>
 
 
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>

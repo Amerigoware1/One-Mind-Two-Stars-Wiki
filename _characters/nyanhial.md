@@ -41,16 +41,19 @@ book5_arc: >
 <div class="article-content">
  
 <div class="card-bg" markdown="1">
+
 ### Overview
 Nyanhial Dok is a New Eden‑born dancer, former soccer player, and senior logistics coordinator for the Ares Colonial Mining Corps. Known for her spatial awareness, operational precision, and ability to synchronize complex moving parts, she evolved from a competitive youth athlete into the unseen backbone of colonial resource management. Working closely with her brother Nhial, she ensures geological survey data, equipment, and personnel are coordinated efficiently across deep‑colony operations, turning chaotic variables into predictable, sustainable systems.
  </div>
  
 <div class="card-bg" markdown="1">
+
 ### Physical Description
 Nyanhial is lean and athletic, with a grounded posture that reflects years of dance and pitch play. Her movements are economical and deliberate, favoring quick pivots, sustained endurance, and efficient weight distribution. She typically wears practical field logistics gear – reinforced boots, data‑slate harnesses, and weather‑resistant layers – with her hair often secured tightly to avoid interference in tunnel environments. Her observant, steady gaze habitually scans spaces for bottlenecks, structural flow, or missing inventory.
  </div>
  
 <div class="card-bg" markdown="1">
+
 ### Personality & Skills
 Nyanhial is defined by:
 - organizational precision and rhythmic teamwork
@@ -72,6 +75,7 @@ Her weaknesses include:
  </div>
  
 <div class="card-bg" markdown="1">
+
 ### Relationships
 - **Nhial Dok** – older brother and primary collaborator; their complementary skills in field geology and logistics keep survey missions running safely
 - **Celectra Carisco** – mutual respect; Nyanhial occasionally consults with Celectra on Stewardship program scheduling and youth cohort logistics
@@ -81,10 +85,14 @@ Her weaknesses include:
  </div>
  
 <div class="card-bg" markdown="1">
+
 ### Story Overview (non‑spoiler)
 Nyanhial’s arc is about synchronization – from a youth athlete who learned to read space and rhythm on the dance floor and soccer pitch, to an operational architect who keeps an entire colony’s mining network moving in harmony. Her childhood training taught her that individual movement only matters when it serves the group, and she applies that philosophy to colonial logistics. Representing the generation that builds infrastructure, Nyanhial turns anticipation, data literacy, and calm coordination into lifelines that sustain Ares’ underground future.
  </div>
 <div class="card-bg" markdown="1">
+
 {% include story-arcs.html %}
+
 </div>
+
 </div>
