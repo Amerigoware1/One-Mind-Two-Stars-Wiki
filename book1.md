@@ -3,7 +3,11 @@ layout: default
 title: "Book 1: One Mind, Two Stars - Wiki"
 ---
 
+<div class="card-bg" markdown="1">
+
 [← Back to Wiki Home]({{ '/index.html' | relative_url }}) | [Series Overview]({{ '/series-overview.html' | relative_url }}) | [Book 1]({{ '/book1.html' | relative_url }}) | [Book 2]({{ '/book2.html' | relative_url }}) | [Book 3]({{ '/book3.html' | relative_url }})
+
+</div> <div class="card-bg" markdown="1">
 
 # Book 1: One Mind, Two Stars
 
@@ -25,7 +29,8 @@ title: "Book 1: One Mind, Two Stars - Wiki"
 
 [ 📖 Read Sample Chapter (chapter-1) ]({{ '/book1samplechapter.html' | relative_url }})
 
-## Synopsis
+
+</div> <div class="card-bg" markdown="1">
 
 ## Synopsis
 
@@ -35,12 +40,16 @@ Alone in the darkness, she discovers the Galinstanians, a hidden liquid-metal ci
 
 As Kret's hunt draws closer to the hidden civilization, Celectra must become the bridge between two species—risking her own mind to protect both the people who finally understand her and the colony she still calls home.
 
+</div> <div class="card-bg" markdown="1">
+
 ## Key Themes
 
   * **Bodily Autonomy & Identity:** The fight to be recognized as one person, not a medical specimen or a pair of twins.
   * **The Ethics of First Contact:** Communication, consent, and mutual protection between vastly different species.
   * **Found Family:** Healing from trauma through the unwavering support of a father, a psychologist, and alien beings.
   * **Trauma and Agency:** Reclaiming control after violation, and the transition from victim to active protector.
+
+</div> <div class="card-bg" markdown="1">
 
 ## Plot Summary
 
@@ -68,6 +77,8 @@ Kret leads a search team into the caves. To protect the Galinstanians, Celectra 
 
 A formal tribunal is held. Roan presents irrefutable evidence of Kret’s premeditated torture, including the sub-level jammer and biometric data. Zoë testifies against her father, and Amerigo fiercely defends his daughter. Kret is found guilty, stripped of his medical license, and exiled to a remote northern survey team. The story concludes on Celectra’s eighth birthday, marking her transition from hidden survivor to celebrated bridge between worlds.
 
+</div> <div class="card-bg" markdown="1">
+
 ## Character Arcs
 
 ### Celectra Ambar Carisco (age-7 → 8)
@@ -94,6 +105,8 @@ Amerigo’s fierce, unwavering belief in Celectra’s singularity ("my-brown-eye
 
 After seventeen years of silently observing human "noise," Stan recognizes Celectra’s unique consciousness. He becomes her protector, teacher, and the first true friend who understands her without needing an explanation.
 
+</div> <div class="card-bg" markdown="1">
+
 ## Key Events
 
   * **The Corridor Test:** Kret’s initial unauthorized separation test, interrupted by Zoë.
@@ -105,12 +118,16 @@ After seventeen years of silently observing human "noise," Stan recognizes Celec
   * **The Tribunal:** Kret is exposed, convicted, and exiled to the northern survey.
   * **The 8th Birthday Epilogue:** Celectra receives her lightning-bolt earrings, accepts Zoë as "Mommy," and the family moves to Ares.
 
+</div> <div class="card-bg" markdown="1">
+
 ## Scientific Concepts
 
   * **Mononous Disoma:** Dr. Cruiz’s term for Celectra’s condition: one mind spanning two bodies, made possible by biogenic mineralization in her skull acting as a natural waveguide.
   * **Celectricity:** The natural electromagnetic field generated between Celectra’s two brains, operating at ~21.7 Hz, which allows her to interface with the Galinstanian network.
   * **The Bismuth Network:** A planetary-scale, naturally occurring (and-galinstanian-maintained) crystalline bismuth vein system that conducts electromagnetic signals, acting as the collective’s nervous system.
   * **Galinstanians:** Sentient, liquid-metal beings (gallium,-indium, tin) that communicate via layered EM fields, metabolize minerals, and shape stone through controlled dissolution.
+
+</div> <div class="card-bg" markdown="1">
 
 ## Notable Quotes
 
@@ -120,6 +137,9 @@ After seventeen years of silently observing human "noise," Stan recognizes Celec
 
 > "But I'm not a thing to study. I'm me. Don't let him hurt anyone else."
 
+</div> <div class="card-bg" markdown="1">
+
 _Note: All future‑book references and terminology are exploratory and may evolve during the editorial process._
 
 [ 📖 Read Sample Chapter (chapter-1) ]({{ '/book1samplechapter.html' | relative_url }}) [ Continue to Book 2: The Northern Shadows → ]({{ '/book2.html' | relative_url }})
+</div>
