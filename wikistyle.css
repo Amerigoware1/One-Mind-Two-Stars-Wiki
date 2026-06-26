@@ -1524,3 +1524,58 @@ letter-spacing: 0.3em;
 margin-top: 0.5rem;
 text-shadow: 0 0 10px var(-glow-violet) }
 
+#character-search {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    
+    /* Change the first 0 to a value that clears your banner */
+    margin: 6rem auto 1.5rem; 
+    
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #1e0a47;
+    border-radius: 6px;
+    background: #0c0028;
+    color: inherit;
+  }
+
+  #character-search:focus {
+    outline: none;
+    border-color: #7b4fd4;
+  }
+
+  .character-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .character-card {
+    text-align: center;
+  }
+
+  .character-card a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .character-card .character-thumb {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .character-card h2 {
+    font-size: 1rem;
+    margin: 0 0 0.25rem;
+  }
+
+  .character-card p {
+    font-size: 0.85rem;
+    margin: 0;
+    opacity: 0.75;
+  }

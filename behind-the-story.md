@@ -3,8 +3,6 @@ layout: default
 title: "Behind-the-Story"
 ---
 
-# Behind the Story: The Inspiration for One Mind, Two Stars
-
 <div class="card-bg" markdown="1">
 
 ## The Spark of an Idea
