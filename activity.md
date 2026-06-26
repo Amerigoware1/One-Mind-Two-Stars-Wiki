@@ -22,7 +22,8 @@
 </div>
 </div> 
 
-<div class="card-bg">
+<div class="card-bg" markdown="1">
+
 ## 🥋 The Sundome Karate Lineage
 
 Sensei Onishi Kisa
@@ -58,6 +59,7 @@ The annual tournament is one of the Activity Center's most anticipated events, d
 Despite fighting at half capacity, Celectra advanced through bracket after bracket, reaching the final against Aulii. The match was close—those who witnessed it still debate whether a fully-embodied Celectra might have won—but in the end, Aulii's technique prevailed. Celectra accepted silver with grace, and the two competitors gained lifelong respect for each other.
 
 The tournament solidified both women's reputations: Aulii as a rising star, Celectra as someone who would sacrifice victory for fairness. When Aulii became Sensei in Book 5, Celectra was among the first to congratulate her.
+
 </div>
 
 <div class="card-bg">
