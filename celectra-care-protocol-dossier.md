@@ -26,11 +26,10 @@ In utero proton/gamma exposure; complete melanocyte ablation.
 Primary Risk:
 
 Extreme Phototoxicity & Hyper-metabolic Caloric Crash.
-</div> 
-
-## Prescribed Regimens & Protocols
 
 </div> <div class="card-bg" markdown="1">
+
+## Prescribed Regimens & Protocols
 
 ###  ☀️ I. Daytime Defense Protocol (armor) 
 
@@ -41,7 +40,7 @@ Broad-spectrum mineral SPF 50+. **Note:** Elevated skin temperature sitting at 3
   * Barrier Management:
 
 Mandatory UPF 50+ clothing. Shared thermal load between bodies can lead to localized sweating, potentially compromising mineral barrier integrity.
-</div> </div> <div class="card-bg" markdown="1">
+
 
 ###  🌙 II. Nighttime Repair Protocol (fortification) 
 
@@ -52,8 +51,9 @@ Nightly application of high-strength Ceramides to combat "thinning" skin caused 
   * Metabolic Refuel:
 
 Mandatory high-density lipid snack (mct-rich) before sleep to prevent hypoglycemia during the nighttime "hum" cycle.
-</div> 
 
-* * *
+</div></div> </div> <div class="card-bg" markdown="1">
 
 [Return to Celectra]({{ '/_characters/celectra.html' | relative_url }}) | [Browse Glossary](glossary.html#medical)
+
+</div>
