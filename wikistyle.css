@@ -701,11 +701,11 @@ border: 2px solid #9acc7a }
 margin: 4rem auto;
 text-align: center }
 
-.passcode-box { background: var(-bg-card);
-border: 1px solid var(-border-glow);
+.passcode-box { background: var(--bg-card);
+border: 1px solid var(--border-glow);
 padding: 2rem;
 border-radius: 0.75rem;
-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 15px var(-glow-violet) }
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 15px var(--glow-violet) }
 
 .passcode-box input { width: 80%;
 text-align: center;
@@ -714,7 +714,7 @@ font-family: "Orbitron", sans-serif }
 
 .passcode-box button { margin-top: 1rem }
 
-.error-message { color: var(-neon-magenta);
+.error-message { color: var(--neon-magenta);
 text-shadow: 0 0 8px rgba(255, -42, 241, 0.4);
 margin-top: 1rem;
 font-weight: bold }
@@ -727,11 +727,11 @@ grid-template-columns: repeat(auto-fill, -minmax(300px, 1fr));
 gap: 1.5rem;
 margin: 2rem 0 }
 
-.story-card p { color: var(-text-muted);
+.story-card p { color: var(--text-muted);
 font-size: 0.9rem }
 
 hr { border: none;
-border-top: 1px solid var(-border-glow);
+border-top: 1px solid var(--border-glow);
 margin: 2rem 0 }
 
 .reader-wrapper { display: flex;
@@ -986,14 +986,14 @@ gap: 12px }
 
 .technocracy-note strong { color: #fc9 }
 
-.series-status { background: var(-bg-card);
-color: var(-text-heading);
+.series-status { background: var(--bg-card);
+color: var(--text-heading);
 padding: 2rem;
 border-radius: 10px;
 margin: 2rem 0;
 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) }
 
-.series-status h2 { color: var(-neon-cyan);
+.series-status h2 { color: var(--neon-cyan);
 margin-top: 0 }
 
 .book-progress { display: flex;
@@ -1001,15 +1001,15 @@ gap: 1rem;
 margin: 1.5rem 0;
 flex-wrap: wrap }
 
-.book-card { background: var(-bg-card-dark);
+.book-card { background: var(--bg-card-dark);
 border-radius: 8px;
 padding: 1rem;
 flex: 1;
 min-width: 200px;
-border: 1px solid var(-border-glow) }
+border: 1px solid var(--border-glow) }
 
 .book-card h3 { margin-top: 0;
-color: var(-neon-violet) }
+color: var(--neon-violet) }
 
 .status-badge { display: inline-block;
 padding: 0.25rem 0.75rem;
@@ -1025,8 +1025,8 @@ color: #fff }
 
 .status-drafting { background: #2196f3 }
 
-.author-note { background: var(-bg-card-dark);
-border-left: 4px solid var(-neon-violet);
+.author-note { background: var(--bg-card-dark);
+border-left: 4px solid var(--neon-violet);
 padding: 1rem;
 margin: 1.5rem 0;
 border-radius: 0 8px 8px 0 }
@@ -1447,19 +1447,19 @@ margin-top: 1.5rem;
 padding: 0.8rem 1.5rem;
 font-family: "Orbitron", sans-serif;
 font-size: 0.9rem;
-color: var(-neon-cyan);
+color: var(--neon-cyan);
 text-transform: uppercase;
 letter-spacing: 2px;
 background: rgba(0, -232, 255, 0.05);
-border: 1px solid var(-neon-cyan);
+border: 1px solid var(--neon-cyan);
 border-radius: 4px;
 text-decoration: none;
-box-shadow: 0 0 10px var(-glow-cyan);
+box-shadow: 0 0 10px var(--glow-cyan);
 transition: all 0.3s ease }
 
-.read-sample-btn:hover { background: var(-neon-cyan);
-color: var(-bg-space);
-box-shadow: 0 0 25px var(-neon-cyan);
+.read-sample-btn:hover { background: var(--neon-cyan);
+color: var(--bg-space);
+box-shadow: 0 0 25px var(--neon-cyan);
 transform: scale(1.05) }
 
 .book-links { display: flex;
@@ -1486,13 +1486,13 @@ border-collapse: collapse;
 margin-top: 1rem;
 font-family: "Inter", sans-serif }
 
-.system-table th, .system-table td { border: 1px solid var(-border-glow);
+.system-table th, .system-table td { border: 1px solid var(--border-glow);
 padding: 12px;
 text-align: left }
 
-.system-table th { background-color: var(-bg-card-dark);
+.system-table th { background-color: var(--bg-card-dark);
 font-family: "Orbitron", sans-serif;
-color: var(-neon-cyan);
+color: var(--neon-cyan);
 letter-spacing: 0.5px }
 
 .system-table tr { transition: background-color 0.2s }
@@ -1500,13 +1500,13 @@ letter-spacing: 0.5px }
 .system-table tbody tr:hover { background-color: rgba(193, -60, 255, 0.05) }
 
 .system-table tr.highlight-row { background-color: rgba(255, -42, 241, 0.08);
-border: 2px solid var(-neon-magenta) }
+border: 2px solid var(--neon-magenta) }
 
-.system-table tr.highlight-row td { border-top: 1px solid var(-neon-magenta);
-border-bottom: 1px solid var(-neon-magenta);
+.system-table tr.highlight-row td { border-top: 1px solid var(--neon-magenta);
+border-bottom: 1px solid var(--neon-magenta);
 font-weight: 600 }
 
-.system-table tr.highlight-row td:first-child { color: var(-neon-magenta);
+.system-table tr.highlight-row td:first-child { color: var(--neon-magenta);
 font-family: "Orbitron", sans-serif;
 text-shadow: 0 0 8px rgba(255, -42, 241, 0.4) }
 
@@ -1516,11 +1516,11 @@ position: relative }
 
 .era-divider::after { content: "— ⬡ — ⬡ — ⬡ —";
 display: block;
-color: var(-neon-violet);
+color: var(--neon-violet);
 font-family: "Orbitron", sans-serif;
 letter-spacing: 0.3em;
 margin-top: 0.5rem;
-text-shadow: 0 0 10px var(-glow-violet) }
+text-shadow: 0 0 10px var(--glow-violet) }
 
 #character-search {
     display: block;
