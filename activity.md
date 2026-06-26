@@ -1,3 +1,8 @@
+---
+layout: default
+title: Activity Center
+---
+
 <div class="card-bg">
 <h2 class="section-header">Overview</h2>
 <p>The <strong>Activity Center</strong>—affectionately nicknamed the <strong>"Mall of Motion"</strong>—is New Eden's comprehensive fitness and recreation facility, one of the five original buildings encircling the central roundabout. Its exterior matches its neighbors, but inside, it is a world of movement: swimming pools, dojos, dance studios, climbing walls, courts, and open spaces that transform to meet the colony's needs.</p>
