@@ -52,7 +52,7 @@ Nightly application of high-strength Ceramides to combat "thinning" skin caused 
 
 Mandatory high-density lipid snack (mct-rich) before sleep to prevent hypoglycemia during the nighttime "hum" cycle.
 
-</div></div> </div> <div class="card-bg" markdown="1">
+</div> <div class="card-bg" markdown="1">
 
 [Return to Celectra]({{ '/_characters/celectra.html' | relative_url }}) | [Browse Glossary](glossary.html#medical)
 
