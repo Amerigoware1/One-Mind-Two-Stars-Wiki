@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: tts-reader.html
 title: "Book 1, Chapter 1 Sample"
 ---
 
-\--- layout: default title: "Book 1 Sample Chapter" sample_chapter: true \--- 
+
 
 # Book 1, Chapter 1 Sample
 
