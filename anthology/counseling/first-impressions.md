@@ -2,7 +2,7 @@
 layout: default
 title: First Impressions
 is_Counsel: true
-return_url: "{{ 'index.html' | relative_url }}"
+return_url: index.html
 return_label: "Return to counseling"
 ---
 
