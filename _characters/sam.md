@@ -63,7 +63,7 @@ book5_arc: >
 <div class="card-bg" markdown="1">
 
 ## Overview
-Sam Calder is a genderfluid audio engineer and soundscape artist who relocated from Utopis Space Station to New Eden in search of independence and self‑discovery. Born with [congenital atrichia universalis] (../atrichia-dossier.html) (complete-hairlessness), Sam has embraced their unique appearance as part of their fluid identity, using fashion and headwear to express mood and presentation. Known for warmth, curiosity, and exceptional emotional intelligence, Sam forms deep connections easily and serves as a bridge between diverse cultural backgrounds.
+Sam Calder is a genderfluid audio engineer and soundscape artist who relocated from Utopis Space Station to New Eden in search of independence and self‑discovery. Born with [congenital atrichia universalis] (/One-Mind-Two-Stars-Wiki/atrichia-dossier.html) (complete-hairlessness), Sam has embraced their unique appearance as part of their fluid identity, using fashion and headwear to express mood and presentation. Known for warmth, curiosity, and exceptional emotional intelligence, Sam forms deep connections easily and serves as a bridge between diverse cultural backgrounds.
 
 In Book 3, Sam arrives in New Eden and begins a collaborative relationship with Maya Keahi, providing sound design for her art exhibitions. By Book 4, they co‑found the **Samaya Gallery & Museum of Integration**, which opens in March 2256. Sam's expertise in audio engineering later contributes to standardized frequency libraries for human–Galinstanian communication interfaces.
 
