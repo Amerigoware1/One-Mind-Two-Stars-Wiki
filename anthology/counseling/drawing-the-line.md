@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Drawing the Line
-is_Counsel: true
-return_url: index.html
+is_archive: true
+/anthology/counseling/index.html
 return_label: "Return to counseling"
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: default
 title: First Impressions
-is_Counsel: true
-return_url: index.html
+is_archive: true
+/anthology/counseling/index.html
 return_label: "Return to counseling"
 ---
 
