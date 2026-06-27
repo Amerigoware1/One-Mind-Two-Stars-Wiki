@@ -11,7 +11,6 @@
     </div>
 
   </div>
-
 </div>
 
 <script>
@@ -19,31 +18,37 @@
     const bannerNav = document.getElementById('dynamic-banner-nav');
     if (!bannerNav) return;
 
-    // 1. Let Jekyll hardcode the layout type directly into JavaScript during build!
+    // 1. Grab Jekyll variables from the front-matter
     const currentLayout = "{{ page.layout }}";
     const isSampleChapter = "{{ page.sample_chapter | default: false }}" === "true";
-
-    // 2. Scan the active page for relevant return links
-    const dossierReturnLink = document.querySelector('.return-link');
-    const footerCharactersLink = document.querySelector('.site-footer a[href*="characters"]');
+    
+    // NEW: Grab the dossier marker and URL from front-matter
+    const isDossier = "{{ page.is_dossier | default: false }}" === "true";
+    const dossierReturnUrl = "{{ page.return_url }}"; 
+    const dossierReturnLabel = "{{ page.return_label | default: 'Return to Dossier' }}";
 
     // SCENARIO A: Inside a medical/care sub-dossier layout
-    if (dossierReturnLink) {
-      const topBtn = dossierReturnLink.cloneNode(true);
+    // Now uses front-matter instead of scanning the page for .return-link
+    if (isDossier && dossierReturnUrl) {
+      const topBtn = document.createElement('a');
+      topBtn.href = dossierReturnUrl;
       topBtn.className = 'banner-btn';
-      topBtn.innerHTML = `‹ ${topBtn.textContent.replace({{ '/Return to/i, ''' | relative_url }}).trim()}`;
+      topBtn.textContent = `‹ ${dossierReturnLabel}`;
       bannerNav.appendChild(topBtn);
     } 
     
-    // SCENARIO B: On a standard biography layout page (where layout is explicitly 'character')
-    else if (footerCharactersLink && currentLayout === 'character') {
-      const topBtn = footerCharactersLink.cloneNode(true);
+    // SCENARIO B: On a standard biography layout page
+    // Fixed: No longer relies on the deleted footer!
+    else if (currentLayout === 'character') {
+      const topBtn = document.createElement('a');
+      // IMPORTANT: Update this path to match your actual characters hub URL!
+      topBtn.href = "{{ '/_characters/' | relative_url }}"; 
       topBtn.className = 'banner-btn';
-      topBtn.innerHTML = `‹ Characters Hub`;
+      topBtn.textContent = "‹ Characters Hub";
       bannerNav.appendChild(topBtn);
     }
     
-        // ⭐ SCENARIO C: Sample chapter pages → Return to Series Overview
+    // SCENARIO C: Sample chapter pages → Return to Series Overview
     else if (isSampleChapter) {
       const topBtn = document.createElement('a');
       topBtn.href = "{{ '/series-overview.html' | relative_url }}";
@@ -51,6 +56,7 @@
       topBtn.textContent = "‹ Series Overview";
       bannerNav.appendChild(topBtn);
     }
-    // SCENARIO D: The hub list directory or homepage--> Does nothing!
+    
+    // SCENARIO D: The hub list directory or homepage --> Does nothing!
   });
 </script>
