@@ -56,7 +56,16 @@
       topBtn.textContent = "‹ Series Overview";
       bannerNav.appendChild(topBtn);
     }
-    
-    // SCENARIO D: The hub list directory or homepage --> Does nothing!
+    // SCENARIO D: On a anthology story page → Return to index
+    else if (isArchive) {
+      const topBtn = document.createElement('a');
+      topBtn.href = "{{ '/' | relative_url }}"; // Main hub URL
+      topBtn.className = 'banner-btn';
+      topBtn.textContent = "‹ Main Hub";
+      bannerNav.appendChild(topBtn);
+    }
+
+
+    // SCENARIO E: The hub list directory or homepage --> Does nothing!
   });
 </script>

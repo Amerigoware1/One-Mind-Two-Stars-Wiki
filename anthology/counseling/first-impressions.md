@@ -1,8 +1,12 @@
 ---
 layout: default
 title: First Impressions
+is_Archive: true
+return_url: index.html
+return_label: "Return to counseling"
 ---
 
+# First Impressions
 
 {% capture chapter_content %}
 

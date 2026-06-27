@@ -1,8 +1,12 @@
 ---
 layout: default
 title: The Shade Beast
+is_Archive: true
+return_url: index.html
+return_label: "Return to counseling"
 ---
 
+# The Shade Beast
 
 {% capture chapter_content %}
 
