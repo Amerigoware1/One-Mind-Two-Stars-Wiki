@@ -1,8 +1,12 @@
 ---
 layout: default
-title: Pancakes with Aunt Dee
+title: Pancakes With Aunt Dee
+is_archive: true
+return_url: /anthology/early-signs/index.html
+return_label: "Return to Early Signs index"
 ---
 
+# {title}
 
 {% capture chapter_content %}
 
