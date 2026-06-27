@@ -2,7 +2,7 @@
 layout: default
 title: The Shade Beast
 is_archive: true
-return_url: "{{ '/counseling/index.html' | relative_url }}"
+return_url: "{{ 'counseling/index.html' | relative_url }}"
 return_label: "Return to counseling"
 ---
 

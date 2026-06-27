@@ -2,7 +2,7 @@
 layout: default
 title: Drawing the Line
 is_Counsel: true
-return_url: "{{ '/counseling/index.html' | relative_url }}"
+return_url: "{{ 'counseling/index.html' | relative_url }}"
 return_label: "Return to counseling"
 ---
 
