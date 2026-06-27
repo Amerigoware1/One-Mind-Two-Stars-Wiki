@@ -1,18 +1,3 @@
-<div class="top-banner">
-  <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
-    
-    <span class="banner-title" style="font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 1.1rem; color: #ffffff;">
-      One Mind, Two Stars Wiki
-    </span>
-      
-    <div style="display: flex; align-items: center; gap: 1rem;">
-      <a href="{{ '/' | relative_url }}" class="home-button">🏠 Home</a><a href="{{ '/glossary/' | relative_url }}" class="home-button">📘 Glossary</a><a href="{{ '/_characters/' | relative_url }}" class="home-button">👨🏻‍👩🏻‍👦🏻‍👦🏻 Characters</a> 
-      <span id="dynamic-banner-nav" style="display: flex; gap: 1rem;"></span>
-    </div>
-
-  </div>
-</div>
-
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const bannerNav = document.getElementById('dynamic-banner-nav');
@@ -20,14 +5,18 @@
 
     // 1. Grab Jekyll variables from the front-matter
     const currentLayout = "{{ page.layout }}";
-    const isSampleChapter = "{{ page.sample_chapter | default: false }}";
+    
+    // FIX: Added === "true" so it evaluates as a real boolean
+    const isSampleChapter = "{{ page.sample_chapter | default: false }}" === "true";
     const seriesOverviewUrl = "{{ page.return_url | relative_url }}";
-    // NEW: Grab the dossier marker and URL from front-matter
+    
+    // Grab the dossier marker and URL from front-matter
     const isDossier = "{{ page.is_dossier | default: false }}" === "true";
     const dossierReturnUrl = "{{ page.return_url | relative_url }}";
     const dossierReturnLabel = "{{ page.return_label | default: 'Return to Dossier' }}";
-    // NEW: Grab the archive marker from front-matter
-    const isArchive = "{{ page.is_archive | default: false }}";
+    
+    // FIX: Added === "true" here as well, otherwise it suffers from the exact same bug!
+    const isArchive = "{{ page.is_archive | default: false }}" === "true";
     const archiveReturnUrl = "{{ page.return_url | relative_url }}";
     const archiveReturnLabel = "{{ page.return_label | default: 'Return to Archive' }}";
     
@@ -35,7 +24,7 @@
     if (isDossier && dossierReturnUrl) {
       const topBtn = document.createElement('a');
       topBtn.href = dossierReturnUrl;
-      topBtn.className = 'home-button'; // <--- CHANGED
+      topBtn.className = 'home-button';
       topBtn.textContent = `‹ ${dossierReturnLabel}`;
       bannerNav.appendChild(topBtn);
     } 
@@ -44,7 +33,7 @@
     else if (currentLayout === 'character') {
       const topBtn = document.createElement('a');
       topBtn.href = "{{ '/_characters/' | relative_url }}"; 
-      topBtn.className = 'home-button'; // <--- CHANGED
+      topBtn.className = 'home-button';
       topBtn.textContent = "‹ Characters Hub";
       bannerNav.appendChild(topBtn);
     }
@@ -52,8 +41,8 @@
     // SCENARIO C: Sample chapter pages → Return to Series Overview
     else if (isSampleChapter) {
       const topBtn = document.createElement('a');
-      topBtn.href = seriesOverviewUrl; // Note: Ensure seriesOverviewUrl is defined somewhere!
-      topBtn.className = 'home-button'; // <--- CHANGED
+      topBtn.href = seriesOverviewUrl; 
+      topBtn.className = 'home-button';
       topBtn.textContent = "‹ Series Overview";
       bannerNav.appendChild(topBtn);
     }
@@ -62,7 +51,7 @@
     else if (isArchive) {
       const topBtn = document.createElement('a');
       topBtn.href = archiveReturnUrl;
-      topBtn.className = 'home-button'; // <--- CHANGED
+      topBtn.className = 'home-button';
       topBtn.textContent = `‹ ${archiveReturnLabel}`;
       bannerNav.appendChild(topBtn);
     }
