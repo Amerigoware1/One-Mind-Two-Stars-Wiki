@@ -1,3 +1,18 @@
+<div class="top-banner">
+  <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
+    
+    <span class="banner-title" style="font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 1.1rem; color: #ffffff;">
+      One Mind, Two Stars Wiki
+    </span>
+      
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <a href="{{ '/' | relative_url }}" class="home-button">🏠 Home</a><a href="{{ '/glossary/' | relative_url }}" class="home-button">📘 Glossary</a><a href="{{ '/_characters/' | relative_url }}" class="home-button">👨🏻‍👩🏻‍👦🏻‍👦🏻 Characters</a> 
+      <span id="dynamic-banner-nav" style="display: flex; gap: 1rem;"></span>
+    </div>
+
+  </div>
+</div>
+
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const bannerNav = document.getElementById('dynamic-banner-nav');
