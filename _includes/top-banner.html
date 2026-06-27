@@ -27,7 +27,7 @@
     const dossierReturnUrl = "{{ page.return_url }}"; 
     const dossierReturnLabel = "{{ page.return_label | default: 'Return to Dossier' }}";
     // NEW: Grab the archive marker from front-matter
-    const isArchive = "{{ page.is_archive | default: false }}" === "true";
+    const isArchive = "{{ page.is_archive | default: false }}";
     const archiveReturnUrl = "{{ page.return_url }}";
     const archiveReturnLabel = "{{ page.return_label | default: 'Return to Archive' }}";
     // SCENARIO A: Inside a medical/care sub-dossier layout
