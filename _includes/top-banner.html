@@ -26,7 +26,10 @@
     const isDossier = "{{ page.is_dossier | default: false }}" === "true";
     const dossierReturnUrl = "{{ page.return_url }}"; 
     const dossierReturnLabel = "{{ page.return_label | default: 'Return to Dossier' }}";
-
+    // NEW: Grab the archive marker from front-matter
+    const isArchive = "{{ page.is_archive | default: false }}" === "true";
+    const archiveReturnUrl = "{{ page.return_url }}";
+    const archiveReturnLabel = "{{ page.return_label | default: 'Return to Archive' }}";
     // SCENARIO A: Inside a medical/care sub-dossier layout
     // Now uses front-matter instead of scanning the page for .return-link
     if (isDossier && dossierReturnUrl) {
@@ -59,13 +62,11 @@
     // SCENARIO D: On a anthology story page → Return to index
     else if (isArchive) {
       const topBtn = document.createElement('a');
-      topBtn.href = "{{ '/' | relative_url }}"; // Main hub URL
+      topBtn.href = archiveReturnUrl;
       topBtn.className = 'banner-btn';
-      topBtn.textContent = "‹ Main Hub";
+      topBtn.textContent = `‹ ${archiveReturnLabel}`;
       bannerNav.appendChild(topBtn);
     }
-
-
     // SCENARIO E: The hub list directory or homepage --> Does nothing!
   });
 </script>

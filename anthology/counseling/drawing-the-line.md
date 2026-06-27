@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Drawing the Line
-is_Archive: true
+is_Counsel: true
 return_url: index.html
 return_label: "Return to counseling"
 ---

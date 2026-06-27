@@ -1,7 +1,7 @@
 ---
 layout: default
 title: The Shade Beast
-is_Archive: true
+is_archive: true
 return_url: index.html
 return_label: "Return to counseling"
 ---
