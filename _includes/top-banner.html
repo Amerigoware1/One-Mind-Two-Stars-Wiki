@@ -21,7 +21,7 @@
     // 1. Grab Jekyll variables from the front-matter
     const currentLayout = "{{ page.layout }}";
     const isSampleChapter = "{{ page.sample_chapter | default: false }}";
-    
+    const seriesOverviewUrl = "{{ page.return_url | relative_url }}";
     // NEW: Grab the dossier marker and URL from front-matter
     const isDossier = "{{ page.is_dossier | default: false }}" === "true";
     const dossierReturnUrl = "{{ page.return_url | relative_url }}";
@@ -30,21 +30,21 @@
     const isArchive = "{{ page.is_archive | default: false }}";
     const archiveReturnUrl = "{{ page.return_url | relative_url }}";
     const archiveReturnLabel = "{{ page.return_label | default: 'Return to Archive' }}";
+    
     // SCENARIO A: Inside a medical/care sub-dossier layout
-    // Now uses front-matter instead of scanning the page for .return-link
     if (isDossier && dossierReturnUrl) {
       const topBtn = document.createElement('a');
       topBtn.href = dossierReturnUrl;
-      topBtn.className = 'banner-btn';
+      topBtn.className = 'home-button'; // <--- CHANGED
       topBtn.textContent = `‹ ${dossierReturnLabel}`;
       bannerNav.appendChild(topBtn);
     } 
     
     // SCENARIO B: On a standard biography layout page
-      else if (currentLayout === 'character') {
+    else if (currentLayout === 'character') {
       const topBtn = document.createElement('a');
       topBtn.href = "{{ '/_characters/' | relative_url }}"; 
-      topBtn.className = 'banner-btn';
+      topBtn.className = 'home-button'; // <--- CHANGED
       topBtn.textContent = "‹ Characters Hub";
       bannerNav.appendChild(topBtn);
     }
@@ -52,19 +52,21 @@
     // SCENARIO C: Sample chapter pages → Return to Series Overview
     else if (isSampleChapter) {
       const topBtn = document.createElement('a');
-      topBtn.href = seriesOverviewUrl;
-      topBtn.className = 'banner-btn';
+      topBtn.href = seriesOverviewUrl; // Note: Ensure seriesOverviewUrl is defined somewhere!
+      topBtn.className = 'home-button'; // <--- CHANGED
       topBtn.textContent = "‹ Series Overview";
       bannerNav.appendChild(topBtn);
     }
-    // SCENARIO D: On a anthology story page → Return to index
+    
+    // SCENARIO D: On an anthology story page → Return to index
     else if (isArchive) {
       const topBtn = document.createElement('a');
       topBtn.href = archiveReturnUrl;
-      topBtn.className = 'banner-btn';
+      topBtn.className = 'home-button'; // <--- CHANGED
       topBtn.textContent = `‹ ${archiveReturnLabel}`;
       bannerNav.appendChild(topBtn);
     }
+    
     // SCENARIO E: The hub list directory or homepage --> Does nothing!
   });
 </script>
