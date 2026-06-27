@@ -6,7 +6,7 @@ return_url: /anthology/early-signs/index.html
 return_label: "Return to Early Signs index"
 ---
 
-# (file.data.title)
+# {{ page.title }}
 
 {% capture chapter_content %}
 
