@@ -2,7 +2,7 @@
 layout: default
 title: "Celectra Growth Chart"
 is_dossier: true
-return_url: "/_characters/celectra.html"
+return_url: "../_characters/celectra.html"
 return_label: "Return to Celectra"
 ---
 

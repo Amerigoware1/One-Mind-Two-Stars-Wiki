@@ -2,7 +2,7 @@
 layout: default
 title: Celectra's Care Protocol Dossier
 is_dossier: true
-return_url: "/_characters/celectra.html"
+return_url: "../_characters/celectra.html"
 return_label: "Return to Celectra"
 ---
 
