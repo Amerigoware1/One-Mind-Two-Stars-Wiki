@@ -1,7 +1,12 @@
 ---
 layout: default
 title: Early Signs
+is_archive: true
+return_url: anthology.html
+return_label: "Return to Anthology index"
 ---
+
+# {{ page.title }}
 
 {% capture chapter_content %}
 
@@ -185,6 +190,6 @@ And for the first time since Jenni’s death, Amerigo felt something like peace.
 {% include tts-reader.html content=chapter_content %}
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
+  <a href="{{ '/anthology/early-signs/index.html' | relative_url }}" style="color: #bb86fc;">Read extended excerps from this chapter.</a>
 
 </div>

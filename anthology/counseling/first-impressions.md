@@ -6,7 +6,7 @@ return_url: /anthology/counseling/index.html
 return_label: "Return to Counseling index"
 ---
 
-# First Impressions
+# {{ page.title }}
 
 {% capture chapter_content %}
 

@@ -1,8 +1,12 @@
 ---
 layout: default
-title: Parisian Promise
+title: Parisian Promise—Extended
+is_archive: true
+return_url: anthology.html
+return_label: "Return to Anthology index"
 ---
 
+# {{ page.title }}
 
 {% capture chapter_content %}
 

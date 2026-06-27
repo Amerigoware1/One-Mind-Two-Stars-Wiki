@@ -1,7 +1,12 @@
 ---
 layout: default
-Title: The In-Between Part
+title: The In-Between Part
+is_archive: true
+return_url: anthology.html
+return_label: "Return to Anthology index"
 ---
+
+# {{ page.title }}
 
 {% capture chapter_content %}
 

@@ -1,7 +1,12 @@
 ---
 layout: default
 title: The Confirmation
+is_archive: true
+return_url: anthology.html
+return_label: "Return to Anthology index"
 ---
+
+# {{ page.title }}
 
 {% capture chapter_content %}
 
