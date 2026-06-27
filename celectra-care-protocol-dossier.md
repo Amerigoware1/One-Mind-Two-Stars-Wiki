@@ -2,9 +2,8 @@
 layout: default
 title: Celectra's Care Protocol Dossier
 is_dossier: true
-return_url: /characters/celectra.html
-return_label: "Return to Celectra Carisco"
----
+return_url: "/_characters/celectra.html"
+return_label: "Return to Celectra"
 ---
 
 <div class="card-bg" markdown="1">

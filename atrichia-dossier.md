@@ -2,9 +2,8 @@
 layout: default
 title: "Sam Calder – Atrichia Dossier"
 is_dossier: true
-return_url: /characters/sam.html
-return_label: "Return to Sam Calder"
----
+return_url: /_characters/sam.html
+return_label: "Return to Sam"
 ---
 
 <div class="card-bg" markdown="1">
