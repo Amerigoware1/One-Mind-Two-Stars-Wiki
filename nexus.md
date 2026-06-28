@@ -3,6 +3,42 @@ layout: default
 title: "The Nexus"
 ---
 
+  <div class="infobox">
+    <table class="infobox">
+      <tr>
+        <td colspan="2" class="text-center pb-2">
+          <!--Using a placeholder image; replace with actual Nexus artwork when available-->
+          <img src="{{ '/assets/images/gallery/nexus.webp' | relative_url }}"
+ alt="Concept art of The Nexus" class="portrait">
+          <div class="image-caption">The Nexus at dusk (concept-art)</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <td>Community Center / Culinary & Cultural Hub</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>New Eden Settlement, Town Hub</td>
+      </tr>
+      <tr>
+        <th>Levels</th>
+        <td>5 (ground-+ 4 upper levels + sub-level)</td>
+      </tr>
+      <tr>
+        <th>Key Feature</th>
+        <td>Utara's "Core Well" central sculpture</td>
+      </tr>
+      <tr>
+        <th>Affiliation</th>
+        <td>New Eden Colony / Utara AI</td>
+      </tr>
+      <tr>
+        <th>Access</th>
+        <td>Open to all citizens</td>
+      </tr>
+    </table>
+  </div>
 <div class="card-bg" markdown="1">
 
 ## Overview

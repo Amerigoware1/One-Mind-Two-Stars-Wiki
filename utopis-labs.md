@@ -3,6 +3,28 @@ layout: default
 title: "Utopis-Labs 1–3"
 ---
 
+<div class="infobox">
+    <table class="infobox">
+        <tr>
+            <td colspan="2" class="text-center pb-2">
+                <img src="{{ '/assets/images/utopis-lab.webp' | relative_url }}"
+ alt="Utopis-Lab mobile research platform" class="portrait">
+                <div class="image-caption">A Utopis-Lab module (generic-representation)</div>
+            </td>
+        </tr>
+        <tr><th>Type</th><td>Mobile research habitat ring</td></tr>
+        <tr><th>Operator</th><td>New Eden Colony / AI Utara</td></tr>
+        <tr><th>Parent Ship</th><td><a href="{{ '/utopis.html' | relative_url }}">Utopis</a></td></tr>
+        <tr><th>Detached</th><td>2215 (upon-arrival in ares system)</td></tr>
+        <tr><th>Diameter</th><td>~403 meters (external-shell)</td></tr>
+        <tr><th>Length</th><td>~150 meters</td></tr>
+        <tr><th>Rotation Rate</th><td>2 RPM (generates-0.9 g)</td></tr>
+        <tr><th>Propulsion</th><td>Independent fusion drives</td></tr>
+        <tr><th>Crew Capacity</th><td>~20–30 persons each</td></tr>
+        <tr><th>Primary Roles</th><td>Resource prospecting, particle physics, remote research, exile station</td></tr>
+        <tr><th>Current Status</th><td>All three active (lab 3-refitted after solar flare)</td></tr>
+    </table>
+</div>
 <div class="card-bg" markdown="1">
 
 **Utopis-Labs 1, 2, and 3** are three identical mobile research platforms detached from the main [Utopis]({{ '/utopis.html' | relative_url }}) spaceship upon its arrival in the Ares system. Each is a ~400‑meter‑diameter, ~150‑meter‑long habitat ring that maintains 0.9 g artificial gravity via 2 RPM rotation. Independently propelled, the labs conduct specialized exploration across Ares’ moons and planets, functioning as remote extensions of the New Eden colony. Though identical in design, each lab has developed a distinct operational history and mission profile.

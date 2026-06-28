@@ -3,6 +3,44 @@ layout: default
 title: "Galinstanians"
 ---
 
+ <div class="infobox">
+        <table>
+                <tr>
+      <td colspan="2" class="text-center pb-2">
+        <img src="{{ '/assets/images/gallery/galinstanian.jpg' | relative_url }}"
+ alt="Galinstanian" class="portrait">
+        <div class="image-caption">Galinstanian</div>
+      </td>
+    </tr>
+            <tr>
+                <th colspan="2">Galinstanian</th>
+            </tr>
+            <tr>
+                <th>Homeworld</th>
+                <td><a href="{{ '/ares-wiki.html' | relative_url }}">Ares</a></td>
+            </tr>
+            <tr>
+                <th>Star system</th>
+                <td>Niamh-Ciara binary system</td>
+            </tr>
+            <tr>
+                <th>Environment</th>
+                <td>Subsurface caverns</td>
+            </tr>
+            <tr>
+                <th>Physiology</th>
+                <td>Gelatinous metal (galinstan-based)</td>
+            </tr>
+            <tr>
+                <th>Communication</th>
+                <td>Electromagnetic telepathy via bismuth alloy network</td>
+            </tr>
+            <tr>
+                <th>First contact</th>
+                <td>New Eden colony, date unknown</td>
+            </tr>
+        </table>
+    </div>
 <div class="card-bg" markdown="1">
 
 ## Contents

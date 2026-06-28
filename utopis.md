@@ -3,6 +3,33 @@ layout: default
 title: "Utopis"
 ---
 
+<div class="infobox">
+<table class="infobox">
+    <tr>
+      <td colspan="2" class="text-center pb-2">
+        <img src="{{ '/assets/images/utopis.png' | relative_url }}"
+ alt="Utopis Space Station" class="portrait">
+        <div class="image-caption">Utopis Space Station</div>
+      </td>
+    </tr>
+    <tr><th>Type</th><td>Interstellar spaceship / Orbital space station</td></tr>
+    <tr><th>Operator</th><td>New Eden Colony, overseen by AI Utara</td></tr>
+    <tr><th>Launched</th><td>October 9, 2125, 02:40 PM CDT (fictional-launch)</td></tr>
+    <tr><th>Destination</th><td>Ares moon, 45 light-years from Earth</td></tr>
+    <tr><th>Journey Duration</th><td>~79 years proper time, ~90 years objective time</td></tr>
+    <tr><th>Maximum Speed</th><td>0.5c</td></tr>
+    <tr><th>Diameter</th><td>~403 meters</td></tr>
+    <tr><th>Rotation Rate</th><td>2 RPM (post-arrival-as station)</td></tr>
+    <tr><th>Artificial Gravity</th><td>0.9 -g centrifugal (post-arrival); 0.9 -g propulsion during journey</td></tr>
+    <tr><th>Habitat Levels</th><td>3 stories</td></tr>
+    <tr><th>Original Population</th><td>100 colonists</td></tr>
+    <tr><th>Current Population</th><td>~195 (including-95 offspring)</td></tr>
+    <tr><th>Orbit</th><td>Geostationary above New Eden, Ares equator</td></tr>
+    <tr><th>Detached Components</th><td>Utopis-Labs 1–3 (mobile-research platforms)</td></tr>
+    <tr><th>AI System</th><td><a href="{{ '/utara.html' | relative_url }}">Utara</a> (sentient-central computer)</td></tr>
+</table>
+</div>
+
 <div class="card-bg" markdown="1">
 
 **Utopis** is an interstellar spaceship and subsequent orbital space station. Launched on October 9, 2125, at 02:40 PM EDT, it transported 300 colonists 45 light-years to the moon Ares, establishing the colony town of New Eden near the equator. Controlled by the sentient AI Utara, the ship completed its journey under continuous 0.9 -g propulsion, with colonists in cryosleep for ~78.53 years (proper-time) or ~90 years (objective-time) and awakening post-arrival in 2215. The core cylinder now operates as the Utopis space station in geostationary orbit above New Eden, while three detached habitat rings became mobile research platforms, Utopis-Labs 1–3. "Seventeen years post-arrival, the colony's population is distributed across Utopis, three mobile research labs, and New Eden. Despite its expansion, the community remains tight-knit, with a population of ~600, including offspring like Celectra."

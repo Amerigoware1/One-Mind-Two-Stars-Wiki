@@ -3,6 +3,45 @@ layout: default
 title: "Samaya Gallery and Museum of Integration"
 ---
 
+  <div class="infobox">
+    <table class="infobox">
+      <tr>
+        <td colspan="2" class="text-center pb-2">
+          <img src="{{ '/assets/images/gallery/gallery.webp' | relative_url }}"
+ alt="Samaya Gallery exterior at dusk" class="portrait">
+          <div class="image-caption">The Gallery as seen from the central roundabout</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <td>Art Museum / Cultural Center / Archive</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>New Eden Town Center (sixth-building)</td>
+      </tr>
+      <tr>
+        <th>Construction</th>
+        <td><span class="timeline-marker">Between Books 4 & 5</span></td>
+      </tr>
+      <tr>
+        <th>Co-Directors</th>
+        <td>Maya Keahi (visual-arts) • Sam Calder (sound)</td>
+      </tr>
+      <tr>
+        <th>Key Theme</th>
+        <td>Human-Galinstanian Integration</td>
+      </tr>
+      <tr>
+        <th>Notable Feature</th>
+        <td>Meteor Crater Basement (archives)</td>
+      </tr>
+      <tr>
+        <th>Affiliation</th>
+        <td>Dr. Celectra Carisco-Bowers (historical-consultant)</td>
+      </tr>
+    </table>
+  </div>
 <div class="card-bg" markdown="1">
 
 ## Overview

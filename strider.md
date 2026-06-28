@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Strider
+title: MLV-01 "Strider" Maglev Buggy
 ---
 
 <div class="infobox">
@@ -33,7 +33,6 @@ title: Strider
 <div class="article-content">
 <div class="card-bg" markdown="1">
 
-# MLV-01 "Strider" Maglev Buggy
 
 **Class:** Recreational All-Terrain Vehicle
 **Manufacturer:** Fabrication Annex 1

@@ -3,6 +3,46 @@ layout: default
 title: "New Eden Observatory"
 ---
 
+  <div class="infobox">
+    <table class="infobox">
+      <tr>
+        <td colspan="2" class="text-center pb-2">
+          <img src="{{ '/assets/images/gallery/observatory.webp' | relative_url }}"
+ alt="New Eden Observatory dome at sunset" class="portrait">
+          <div class="image-caption">The observatory dome under the binary sunset</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <td>Educational Observatory / Public Viewing Facility</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>Ridge southeast of <a href="{{ '/new-eden.html' | relative_url }}">New Eden</a>, within walking distance</td>
+      </tr>
+      <tr>
+        <th>Purpose</th>
+        <td>Educational tours • Public stargazing • Viewing Chaos</td>
+      </tr>
+      <tr>
+        <th>Notable View</th>
+        <td>Binary sunset (niamh-& ciara) • Rise of Chaos</td>
+      </tr>
+      <tr>
+        <th>Access</th>
+        <td>Scheduled tours • Authorized personnel • Open path for visitors</td>
+      </tr>
+      <tr>
+        <th>Affiliation</th>
+        <td><a href="{{ '/new-eden.html' | relative_url }}">New Eden Settlement</a> • Educational Outreach</td>
+      </tr>
+      <tr>
+        <th>Notable Moment</th>
+        <td>Amerigo & Zoë's interrupted picnic date</td>
+      </tr>
+    </table>
+  </div>
+
 <div class="card-bg" markdown="1">
 
 ## Overview

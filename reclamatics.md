@@ -3,15 +3,35 @@ layout: default
 title: "Reclamatics"
 ---
 
+  <div class="infobox">
+    <table>
+      <tr>
+        <td colspan="2" class="text-center pb-2">
+          <img src="{{ '/assets/images/reclamatic.png' | relative_url }}"
+ alt="Reclamatic Drone" class="portrait">
+          <div class="image-caption">Standard Reclamatics Unit</div>
+        </td>
+      </tr>
+      <tr><th colspan="2">Reclamatics Unit</th></tr>
+      <tr><th>Type</th><td>Automated Maintenance Unit</td></tr>
+      <tr><th>Common Name</th><td>Reclamatic / Cleaning Drone</td></tr>
+      <tr><th>Technology</th><td>Molecular Disintegration & Reclamation</td></tr>
+      <tr><th>Form Factor</th><td>Palm-sized, Disk or Hexagonal</td></tr>
+      <tr><th>Locomotion</th><td>Micro-thrusters / Agile Treads</td></tr>
+      <tr><th>Primary Function</th><td>Sterilization & Waste Recovery</td></tr>
+      <tr><th>Status</th><td>Ubiquitous (ares-& orbital)</td></tr>
+    </table>
+  </div>
 <div class="card-bg" markdown="1">
 
 ## Contents
 
-  * [Overview](#Overview)
-  * [Description](#Description)
-  * [Operational Principles](#Operational_Principles)
-  * [Variants](#Variants)
-  * [Usage in the Niamh-Ciara System](#System_Usage)
+- [Contents](#contents)
+- [Overview](#overview)
+- [Description](#description)
+- [Operational Principles](#operational-principles)
+- [Variants](#variants)
+- [Usage in the Niamh-Ciara System](#usage-in-the-niamh-ciara-system)
 
 </div> <div class="card-bg" markdown="1">
 

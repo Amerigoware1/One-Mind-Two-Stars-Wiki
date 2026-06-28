@@ -3,6 +3,45 @@ layout: default
 title: "Science and Technology Center"
 ---
 
+  <div class="infobox">
+    <table class="infobox">
+      <tr>
+        <td colspan="2" class="text-center pb-2">
+          <img src="{{ '/assets/images/gallery/science.webp' | relative_url }}"
+ alt="Science and Technology Center exterior with observatory dome" class="portrait">
+          <div class="image-caption">The Science Center's observatory dome at twilight</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <td>Research Facility / Laboratory Complex</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>New Eden Town Center (original-five)</td>
+      </tr>
+      <tr>
+        <th>Construction</th>
+        <td>Pre-series (colony-founding)</td>
+      </tr>
+      <tr>
+        <th>Chief of Science & Technology</th>
+        <td>Dr. Lorain Troy (books-1-3) → <strong>Amerigo Carisco</strong> (book-3 onward)</td>
+      </tr>
+      <tr>
+        <th>Notable Projects</th>
+        <td>ANI headset development (book-3)</td>
+      </tr>
+      <tr>
+        <th>Key Feature</th>
+        <td>Prototype Workshop</td>
+      </tr>
+      <tr>
+        <th>Council Seat</th>
+        <td>4 (science-& technology)</td>
+      </tr>
+    </table>
+  </div>
 <div class="card-bg" markdown="1">
 
 ## Overview

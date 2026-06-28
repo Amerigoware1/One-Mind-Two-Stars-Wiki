@@ -3,6 +3,40 @@ layout: default
 title: "Listener Corps"
 ---
 
+<div class="infobox">
+    <table class="infobox">
+      <tr>
+        <td colspan="2" style="text-align:center; padding-bottom:10px;">
+          <img src="{{ '/assets/images/listener-corps.png' | relative_url }}"
+ alt="Listener Corps Emblem" style="width:280px; border-radius:0.5rem;">
+        </td>
+      </tr>
+      <tr>
+        <th>Founded</th>
+        <td>2239 (by-celectra ambar carisco)</td>
+      </tr>
+      <tr>
+        <th>Active Era</th>
+        <td>2239–2246 (pre-a.n.i.-expansion)</td>
+      </tr>
+      <tr>
+        <th>Reorganized</th>
+        <td>January 28, 2255 (evolved-into the resonance stewardship program)</td>
+      </tr>
+      <tr>
+        <th>Original Purpose</th>
+        <td>Assist with routine Galinstanian communication and documentation</td>
+      </tr>
+      <tr>
+        <th>Capabilities</th>
+        <td>Receive Galinstanian EM impressions passively via mental "unfocusing"</td>
+      </tr>
+      <tr>
+        <th>Historical Limits</th>
+        <td>Entirely dependent on Celectra as the sole bidirectional biological broadcaster</td>
+      </tr>
+    </table>
+  </div>
 <div class="card-bg" markdown="1">
 
 ## Overview & Historical Context

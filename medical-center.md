@@ -3,6 +3,62 @@ layout: default
 title: "Medical Center"
 ---
 
+  <div class="infobox">
+    <table class="infobox">
+      <tr>
+        <td colspan="2" class="text-center pb-2">
+          <img src="{{ '/assets/images/gallery/medical.webp' | relative_url }}"
+ alt="Medical Center exterior, one of the original five" class="portrait">
+          <div class="image-caption">The Medical Center as seen from the roundabout</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <td>Healthcare Facility / Small Hospital</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>New Eden Town Center (original-five)</td>
+      </tr>
+      <tr>
+        <th>Construction</th>
+        <td>Pre-series (colony-founding)</td>
+      </tr>
+      <tr>
+        <th>Chief of Medicine</th>
+        <td>Dr. Alex Cruiz (from-book 1)</td>
+      </tr>
+      <tr>
+        <th>Head Nurse</th>
+        <td>Terry Fairchild (agender,-they/them)</td>
+      </tr>
+      <tr>
+        <th>Chief of Psychology</th>
+        <td>Dr. Zoë (kret) (carisco) PsyD — Book 1: Dr. Zoë professionally, Zoë Kret legally; Book 2+: Dr. Zoë Carisco</td>
+      </tr>
+      <tr>
+        <th>Basement Level</th>
+        <td>Mortuary, morgue, autopsy theater</td>
+      </tr>
+      <tr>
+        <th>Colony Population</th>
+        <td>~600 (varies-by book)</td>
+      </tr>
+      <tr>
+        <th>Key Innovation</th>
+        <td>ANI comfort monitoring (late-book 3)</td>
+      </tr>
+      <tr>
+        <th>Notable Births</th>
+        <td>Celectra (2225) • Twin deliveries (2247)</td>
+      </tr>
+      <tr>
+        <th>Notable Trauma</th>
+        <td>Kret's experiments on 7-year-old Celectra (book-1)</td>
+      </tr>
+    </table>
+  </div>
+
 <div class="card-bg" markdown="1">
 
 ## Overview

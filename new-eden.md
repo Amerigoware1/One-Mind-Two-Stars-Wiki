@@ -3,17 +3,35 @@ layout: default
 title: "New Eden"
 ---
 
+  <div class="infobox">
+    <table class="infobox">
+          <tr><th colspan="2">New Eden</th> </tr>
+          <tr><th>Type</th><td>Primary Settlement</td> </tr>
+          <tr><th>Population</th><td>~200 colonists (book-1) → ~600 (book-5)</td> </tr>
+          <tr><th>Location</th><td>Southern hemisphere, near the Pison River</td> </tr>
+          <tr><th>Structures</th><td>Stone, steel, glass dwellings; six central buildings; fusion reactor; colony modules</td> </tr>
+          <tr><th>Landmarks</th><td><a href="{{ '/central-buildings.html' | relative_url }}">Central Roundabout</a>, Fusion Reactor, <a href="{{ '/observatory.html' | relative_url }}">New Eden Observatory</a></td> </tr>
+          <tr><th>Transport</th><td>Autocabs, aerial VTOLs, space shuttles</td> </tr>
+          <tr><th>Climate</th><td>Arid plains, ~26°C daytime average</td> </tr>
+          <tr><th><a href="assets/images/ares.png">Map</a></th> </tr>
+          <tr><th>See Also</th><td><a href="{{ '/central-buildings.html' | relative_url }}">The Six Central Buildings</a></td> </tr>
+      </table>
+  </div>
+
 <div class="card-bg" markdown="1">
 
 ## Contents
 
-  * [Overview](#Overview)
-  * [Layout and Structures](#Layout_and_Structures)
-  * [Central Roundabout](#Central_Roundabout)
-  * [Surroundings](#Surroundings)
-  * [New Eden Observatory](#Observatory)
-  * [Cultural Notes](#Cultural_Notes)
-  * [Settlement Timeline](#Settlement_Timeline)
+- [Contents](#contents)
+- [Overview](#overview)
+- [Layout and Structures](#layout-and-structures)
+- [Central Roundabout](#central-roundabout)
+- [Government](#government)
+- [Surroundings](#surroundings)
+- [New Eden Observatory](#new-eden-observatory)
+  - [A Memorable Evening](#a-memorable-evening)
+- [Cultural Notes](#cultural-notes)
+- [Settlement Timeline](#settlement-timeline)
 
 </div> <div class="card-bg" markdown="1">
 
