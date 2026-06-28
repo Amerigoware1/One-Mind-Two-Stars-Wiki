@@ -78,19 +78,27 @@
 </script>
 <style>
 .page-title {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
-  font-size: 1.6rem;   /* Increase this as needed */
-  /* color: var(--text-primary); */
-  /*color: #d15eed;  A slightly brighter magenta/purple */
-  color: linear-gradient(0deg, #d15eed, #00ffff); /* Gradient from magenta to cyan */
-  text-shadow: 0 0 8px rgba(0, 255, 255, 0.6); /* Adds a subtle cyan energy hum behind it */
-  margin-left: 1rem;   /* Prevent crowding next to the site title */
-}
 
+  /* 1. Apply the gradient as a background instead of a text color */
+  background: linear-gradient(0deg, #d15eed, #00ffff);
+  
+  /* 2. Clip the background so it only shows through the text characters */
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* 3. Make the actual text transparent so the background gradient shines through */
+  -webkit-text-fill-color: transparent;
+  
+  /* Optional: Make it bold so the gradient has more surface area to show off */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.6); /* Adds a subtle cyan energy hum behind it */
+  margin-left: 1rem;   /* Prevent crowding next to the site title */ 
+}
 .top-banner {
   /* A rich, shifting sci-fi palette: deep void, nebula purple, and starlight blue */
-  background: linear-gradient(125deg, #0a0a16, #241442, #0f3d59, #0a0a16);
+  background: linear-gradient(125deg, #13132b, #241442, #0f3d59, #411c1c);
   background-size: 400% 400%; /* Makes the gradient huge so we can move around inside it */
   animation: color-swirl 15s ease infinite;
 }
