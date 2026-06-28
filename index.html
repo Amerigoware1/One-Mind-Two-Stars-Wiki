@@ -193,7 +193,25 @@ title: "Home - One Mind, Two Stars Wiki"
       <p><strong>Interested agents/editors:</strong> <a href="mailto:echrisco@gmail.com">Contact Emmery Chrisco</a> for the full manuscript, query letter, and series proposal.</p>
     </section>
   </main>
-
+  <div class="card-bg" markdown="1">
+  <p>&copy; {{ site.time | date: "%Y" }} One Mind, Two Stars — All Rights Reserved</p>
+  </div>
   <!--Floating Return to Top Button-->
   </body>
 </html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const toTopBtn = document.getElementById('toTopBtn');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) {
+        toTopBtn.style.display = 'block';
+      } else {
+        toTopBtn.style.display = 'none';
+      }
+    });
+    toTopBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+</script>
