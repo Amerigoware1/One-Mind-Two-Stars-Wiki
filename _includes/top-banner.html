@@ -84,41 +84,53 @@
   color: var(--text-primary);
   margin-left: 1rem;   /* Prevent crowding next to the site title */
 }
+
 .top-banner {
-  position: relative;
-  overflow: hidden; /* Keeps the sweep inside the banner boundaries */
-  /*background-color: #111;  Your base banner color */
+  /* A rich, shifting sci-fi palette: deep void, nebula purple, and starlight blue */
+  background: linear-gradient(125deg, #0a0a16, #241442, #0f3d59, #0a0a16);
+  background-size: 400% 400%; /* Makes the gradient huge so we can move around inside it */
+  animation: color-swirl 15s ease infinite;
 }
 
+@keyframes color-swirl {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /* The Scanner Line */
-.top-banner::after {
+/* .top-banner::after {
   content: '';
   position: absolute;
   top: 0;
-  left: -50%; /* Start completely off-screen to the left */
+  left: -50%;
   width: 50%;
   height: 100%;
   background: linear-gradient(
     to right,
     transparent,
-    rgba(0, 255, 255, 0.05), /* Subtle ambient glow edge */
-    rgba(0, 255, 255, 0.4),  /* The bright leading edge of the scan */
+    rgba(0, 255, 255, 0.05),
+    rgba(0, 255, 255, 0.4),
     transparent
   );
-  transform: skewX(-25deg); /* Angles the scanner beam for a dynamic look */
+  transform: skewX(-25deg);
   animation: scanner-sweep 4s ease-in-out infinite;
 }
 
-/* The Animation Loop */
 @keyframes scanner-sweep {
   0% {
     left: -50%;
   }
   50% {
-    left: 110%; /* Sweep all the way past the right edge */
+    left: 110%;
   }
   100% {
-    left: 50%; /* Pause at the end before resetting to create a natural gap */
+    left: 150%;
   }
-}
+} */
 </style>
