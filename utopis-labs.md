@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Utopis-Labs 1–3 - Utopis Wiki"
+title: "Utopis-Labs 1–3"
 ---
 
 <div class="card-bg" markdown="1">

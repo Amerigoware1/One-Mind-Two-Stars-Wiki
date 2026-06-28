@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Science and Technology Center - One Mine Two Stars Wiki"
+title: "Science and Technology Center"
 ---
 
 <div class="card-bg" markdown="1">

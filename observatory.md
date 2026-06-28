@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "New Eden Observatory - One Mine Two Stars Wiki"
+title: "New Eden Observatory"
 ---
 
 <div class="card-bg" markdown="1">

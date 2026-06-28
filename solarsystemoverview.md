@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "System Overview – One Mind, Two Stars Wiki"
+title: "System Overview"
 ---
 
 # 💫 Niamh–Ciara System Overview 💫

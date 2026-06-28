@@ -1,20 +1,22 @@
 ---
 layout: default
-title: "Educational System of New Eden and Utopis - One Mind, Two Stars Wiki"
+title: "Educational System of New Eden and Utopis"
 ---
 
 <div class="card-bg" markdown="1">
 
 ## Contents
 
-  * [Overview](#overview)
-  * [Academic Education (utara-managed)](#academic)
-  * [Communal and Human-Led Education](#communal)
-  * [The Activities Center: "Mall of Motion"](#activities)
-  * [Galinstanian Cultural Education](#galinstanian)
-  * [Utara's Role](#utara-role)
-  * [Adaptations and Exceptions](#adaptations)
-  * [History and Development](#history)
+- [Contents](#contents)
+- [Overview](#overview)
+- [Academic Education (utara-managed)](#academic-education-utara-managed)
+- [Communal and Human-Led Education](#communal-and-human-led-education)
+- [The Activities Center: "Mall of Motion"](#the-activities-center-mall-of-motion)
+- [Physical Education and Sports Age Groups](#physical-education-and-sports-age-groups)
+- [Galinstanian Cultural Education](#galinstanian-cultural-education)
+- [Utara's Role](#utaras-role)
+- [Adaptations and Exceptions](#adaptations-and-exceptions)
+- [History and Development](#history-and-development)
 
 </div> <div class="card-bg" markdown="1">
 

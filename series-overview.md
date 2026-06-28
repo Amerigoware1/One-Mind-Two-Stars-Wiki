@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Series Overview - One Mind Two Stars Wiki"
+title: "One Mind Two Stars Series Overview"
 ---
 
-# Series Overview: One Mind, Two Stars
+# The definitive guide to the sci-fi series by Emmery Chrisco
 
-The definitive guide to the sci-fi series by Emmery Chrisco
+<div class="card-bg" markdown="1">
 
 ## Series Metadata
 

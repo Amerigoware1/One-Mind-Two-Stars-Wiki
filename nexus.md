@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "The Nexus - One Mine Two Stars Wiki"
+title: "The Nexus"
 ---
 
 <div class="card-bg" markdown="1">

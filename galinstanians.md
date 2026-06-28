@@ -1,21 +1,22 @@
 ---
 layout: default
-title: "Galinstanian - Wikipedia"
+title: "Galinstanians"
 ---
 
 <div class="card-bg" markdown="1">
 
 ## Contents
 
-  * [Overview](#Overview)
-  * [Homeworld](#Homeworld)
-  * [Physiology](#Physiology)
-  * [Society](#Society)
-  * [Conflicts](#Conflicts)
-  * [History](#History)
-  * [Art](#Art)
-  * [Philosophy](#Philosophy)
-  * [Human Interaction](#Human_Interaction)
+- [Contents](#contents)
+- [Overview](#overview)
+- [Homeworld](#homeworld)
+- [Physiology](#physiology)
+- [Society](#society)
+- [Conflicts](#conflicts)
+- [History](#history)
+- [Art](#art)
+- [Philosophy](#philosophy)
+- [Human Interaction](#human-interaction)
 
 </div> <div class="card-bg" markdown="1">
 

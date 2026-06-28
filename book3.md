@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Book 3: One Mind, Two Stars - Wiki"
+title: "Book 3: One Mind, Two Stars"
 sample_chapter: true
 return_url: series-overview.html
 return_label: "Series Overview"

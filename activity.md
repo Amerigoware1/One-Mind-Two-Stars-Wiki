@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Activity Center (mall-of motion) - One Mine Two Stars Wiki"
+title: "Activity Center (mall-of motion)"
 ---
 
 <div class="card-bg" markdown="1">

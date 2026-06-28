@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Medical Center - One Mine Two Stars Wiki"
+title: "Medical Center"
 ---
 
 <div class="card-bg" markdown="1">

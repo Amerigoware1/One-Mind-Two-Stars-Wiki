@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Artificial Neural Interface (ani) - Ares Colony Wiki"
+title: "Artificial Neural Interface (ani)"
 ---
 
 <div class="card-bg" markdown="1">
