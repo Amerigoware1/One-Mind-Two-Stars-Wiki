@@ -1,10 +1,12 @@
+
 <div class="top-banner">
   <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
     
     <span class="banner-title" style="font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 1.1rem; color: #ffffff;">
       One Mind, Two Stars Wiki
     </span>
-      {{ page.title | default: "" }} style="font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 1.1rem;
+      <span class="page-title">{{ page.title | default: "" }}</span>
+
     <div style="display: flex; align-items: center; gap: 1rem;">
       <a href="{{ '/' | relative_url }}" class="home-button">🏠 Home</a><a href="{{ '/glossary.html' | relative_url }}" class="home-button">📘 Glossary</a> 
       <span id="dynamic-banner-nav" style="display: flex; gap: 1rem;"></span>
@@ -74,3 +76,12 @@
     // SCENARIO E: The hub list directory or homepage --> Does nothing!
   });
 </script>
+<style>
+.page-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;   /* Increase this as needed */
+  color: #ffffff;
+  margin-left: 1rem;   /* Prevent crowding next to the site title */
+}
+</style>
