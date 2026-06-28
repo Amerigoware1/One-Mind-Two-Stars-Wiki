@@ -50,21 +50,9 @@ The **Science and Technology Center** is New Eden's dedicated research facility,
 
 Here, the colony's brightest minds pursue pure research and applied technology, from astronomical observation to materials science to the revolutionary ANI interfaces that would transform human-AI interaction. The Center embodies the colony's founding principle: that survival requires knowledge, and knowledge requires dedicated space to grow.
 
-12+
-
-Active Labs
-
-4
-
-Council Seat
-
-🔭
-
-Observatory
-
-⚙️
-
-Prototype Shop
+Active Labs 12+
+Council Seat 4
+⚙️Prototype Shop
 
 </div> <div class="card-bg" markdown="1">
 
