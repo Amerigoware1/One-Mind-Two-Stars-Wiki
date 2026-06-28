@@ -84,4 +84,41 @@
   color: var(--text-primary);
   margin-left: 1rem;   /* Prevent crowding next to the site title */
 }
+.banner {
+  position: relative;
+  overflow: hidden; /* Keeps the sweep inside the banner boundaries */
+  background-color: #111; /* Your base banner color */
+}
+
+/* The Scanner Line */
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%; /* Start completely off-screen to the left */
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 255, 255, 0.05), /* Subtle ambient glow edge */
+    rgba(0, 255, 255, 0.4),  /* The bright leading edge of the scan */
+    transparent
+  );
+  transform: skewX(-25deg); /* Angles the scanner beam for a dynamic look */
+  animation: scanner-sweep 4s ease-in-out infinite;
+}
+
+/* The Animation Loop */
+@keyframes scanner-sweep {
+  0% {
+    left: -150%;
+  }
+  50% {
+    left: 150%; /* Sweep all the way past the right edge */
+  }
+  100% {
+    left: 150%; /* Pause at the end before resetting to create a natural gap */
+  }
+}
 </style>
