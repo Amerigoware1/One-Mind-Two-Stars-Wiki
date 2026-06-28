@@ -87,7 +87,7 @@
 .top-banner {
   position: relative;
   overflow: hidden; /* Keeps the sweep inside the banner boundaries */
-  background-color: #111; /* Your base banner color */
+  /*background-color: #111;  Your base banner color */
 }
 
 /* The Scanner Line */
@@ -95,7 +95,7 @@
   content: '';
   position: absolute;
   top: 0;
-  left: -150%; /* Start completely off-screen to the left */
+  left: -50%; /* Start completely off-screen to the left */
   width: 50%;
   height: 100%;
   background: linear-gradient(
@@ -112,13 +112,13 @@
 /* The Animation Loop */
 @keyframes scanner-sweep {
   0% {
-    left: -150%;
+    left: -50%;
   }
   50% {
-    left: 150%; /* Sweep all the way past the right edge */
+    left: 110%; /* Sweep all the way past the right edge */
   }
   100% {
-    left: 150%; /* Pause at the end before resetting to create a natural gap */
+    left: 50%; /* Pause at the end before resetting to create a natural gap */
   }
 }
 </style>
