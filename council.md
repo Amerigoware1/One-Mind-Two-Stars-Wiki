@@ -3,7 +3,52 @@ layout: default
 title: "The Plenum and the Council Chamber"
 ---
 
-<div class="card-bg" markdown="1">
+  <!--Infobox-->
+  <div class="infobox">
+    <table class="infobox">
+      <tr>
+        <td colspan="2" class="text-center pb-2">
+          <img src="{{ '/assets/images/gallery/plenum.webp' | relative_url }}" alt="The circular Plenum housing the Council Chamber" class="portrait">
+          <div class="image-caption">Exterior View of the Plenum</div>
+        </td>
+      </tr>
+      <tr>
+        <th>Type</th>
+        <td>Government / Civic Building</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>New Eden Town Center (original-five)</td>
+      </tr>
+      <tr>
+        <th>Construction</th>
+        <td>Pre-series (colony-founding)</td>
+      </tr>
+      <tr>
+        <th>Council Seats</th>
+        <td>12 voting + 1 non-voting (ambassador)</td>
+      </tr>
+      <tr>
+        <th>Presiding Officer</th>
+        <td>Administrator Isabella Santos</td>
+      </tr>
+      <tr>
+        <th>Security Chief</th>
+        <td>Evelyn Roan (office-in dome)</td>
+      </tr>
+      <tr>
+        <th>Key Role</th>
+        <td>Galinstanian ambassadorial interface</td>
+      </tr>
+      <tr>
+        <th>Notable Feature</th>
+        <td>Circular design — curved bench, no head of table</td>
+      </tr>
+    </table>
+  </div>
+
+
+<div class="article-content"><div class="card-bg" markdown="1">
 
 ## Overview
 
@@ -183,4 +228,4 @@ Aspect| Detail
 **Ambassador**|  Celectra Carisco-Bowers (seat-13, non-voting)  
 **Unique Feature**|  "Show us the long path" — Utara's projection
 
-</div>
+</div></div>

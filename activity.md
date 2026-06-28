@@ -3,7 +3,7 @@ layout: default
 title: "Activity Center (mall-of motion)"
 ---
 
-<div class="card-bg" markdown="1">
+<div class="article-content"><div class="card-bg" markdown="1">
 
 ## Overview
 
@@ -256,4 +256,4 @@ Aspect | Detail
 **Key Flexibility** | Open spaces host art, weddings, community events  
 **Outdoor Access** | Locker rooms lead to sports fields
 
-</div>
+</div></div>

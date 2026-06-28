@@ -68,7 +68,4 @@ Discovered deep beneath the center of New Eden, the accessibility of the Great R
 
 Current research focuses on safe, non-destructive monitoring of the network's active pulses, mapping the depths to better understand the planetary resonance field without disrupting the fragile, millennia-old signatures preserved in the stone.
 
-</div>
-
-
-</div>
+</div></div>

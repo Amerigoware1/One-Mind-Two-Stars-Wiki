@@ -5,16 +5,17 @@ title: "Ares"
 
 ## Contents
 
-  * [Overview](#Overview)
-  * [Physical Characteristics](#Physical_Characteristics)
-  * [Atmosphere and Climate](#Atmosphere_and_Climate)
-  * [Geology and Interior](#Geology_and_Interior)
-  * [Orbit and System](#Orbit_and_System)
-  * [Native Life](#Native_Life)
-  * [Human Colonization](#Human_Colonization)
-  * [Cultural Significance](#Cultural_Significance)
+- [Contents](#contents)
+- [Overview](#overview)
+- [Physical Characteristics](#physical-characteristics)
+- [Atmosphere and Climate](#atmosphere-and-climate)
+- [Geology and Interior](#geology-and-interior)
+- [Orbit and System](#orbit-and-system)
+- [Native Life](#native-life)
+- [Human Colonization](#human-colonization)
+- [Cultural Significance](#cultural-significance)
 
-<div class="card-bg" markdown="1">
+<div class="article-content"><div class="card-bg" markdown="1">
 
 ## Overview
 
@@ -76,4 +77,4 @@ Ares was initially deemed sterile, lacking native carbon-based life. However, th
 
 Ares derives its name from its Martian-like terrain, a testament to its reddish, iron-oxide-rich landscape. The moon’s cultural importance stems from its role as a frontier of human resilience, with genetically altered trees and plants—adapted to extreme temperature fluctuations and the lack of traditional seasons—supporting New Eden’s ecosystem. The discovery of the Galinstanians reshapes narratives of exploration, highlighting the moon’s unique geothermal caverns and rivers as symbols of adaptability.
 
-</div>
+</div></div>

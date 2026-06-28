@@ -8,9 +8,7 @@ return_label: "Return to Sam"
 
 <div class="card-bg" markdown="1">
 
-# Sam Calder: Congenital Atrichia Universalis – Care & Adaptation Dossier
-
-Complete Hairlessness – Dermatological & Social Management
+Dermatological & Social Management
 
 
 </div>

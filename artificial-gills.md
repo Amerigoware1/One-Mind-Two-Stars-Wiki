@@ -2,9 +2,7 @@
 layout: default
 title: "Artificial Gill HFM Module Design"
 ---
-<div class="card-bg" markdown="1">
-
-# AQUATIC RESPIRATION: HFM MODULE
+<div class="article-content"><div class="card-bg" markdown="1">
 
 Wetsuit‑Integrated Artificial Gill
 

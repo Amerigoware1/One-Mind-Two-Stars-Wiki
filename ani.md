@@ -3,7 +3,7 @@ layout: default
 title: "Artificial Neural Interface (ani)"
 ---
 
-<div class="card-bg" markdown="1">
+<div class="article-content"><div class="card-bg" markdown="1">
 
 ## Overview
 
@@ -42,4 +42,4 @@ Initially deployed during the height of the mid-2247 communication surge to aid 
 
 This technical foundation directly enabled the creation of the **Resonance Stewardship Program** in 2255. With language translation handled seamlessly by A.N.I. arrays, the next generation utilizes external, wrist-mounted resonance arrays to shift focus entirely onto protecting the physical and harmonic balance of the planet itself.
 
-</div>
+</div></div>
