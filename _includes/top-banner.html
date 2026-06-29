@@ -32,7 +32,7 @@
     const dossierReturnUrl = "{{ page.return_url | relative_url }}";
     const dossierReturnLabel = "{{ page.return_label | default: 'Return to Character' }}";
     const glossaryReturnUrl = "{{ /glossary.html#medical | relative_url }}";
-    const glossaryReturnLabel = "{{ page.return_label | default: 'Return to Glossary (Medical)' }}";
+    const glossaryReturnLabel = "Return to Glossary (Medical)";
 
     // FIX: Added === "true" here as well, otherwise it suffers from the exact same bug!
     const isArchive = "{{ page.is_archive | default: false }}" === "true";
@@ -56,7 +56,7 @@
       const glossaryBtn = document.createElement('a');
       glossaryBtn.href = glossaryReturnUrl;
       glossaryBtn.className = 'home-button';
-      glossaryBtn.textContent = `📘 Glossary`;
+      glossaryBtn.textContent = `‹📘 ${glossaryReturnLabel}`;
       bannerNav.appendChild(glossaryBtn);
     } 
     
