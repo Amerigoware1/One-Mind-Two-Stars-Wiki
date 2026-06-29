@@ -31,7 +31,7 @@
     const isDossier = "{{ page.is_dossier | default: false }}" === "true";
     const dossierReturnUrl = "{{ page.return_url | relative_url }}";
     const dossierReturnLabel = "{{ page.return_label | default: 'Return to Character' }}";
-    const glossaryReturnUrl = "{{ /glossary.html#medical | relative_url }}";
+    const glossaryReturnUrl = "{{ '/glossary.html#medical' | relative_url }}";
     const glossaryReturnLabel = "Return to Glossary (Medical)";
 
     // FIX: Added === "true" here as well, otherwise it suffers from the exact same bug!
@@ -142,34 +142,4 @@
     background-position: 0% 50%;
   }
 }
-/* The Scanner Line */
-/* .top-banner::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(0, 255, 255, 0.05),
-    rgba(0, 255, 255, 0.4),
-    transparent
-  );
-  transform: skewX(-25deg);
-  animation: scanner-sweep 4s ease-in-out infinite;
-}
-
-@keyframes scanner-sweep {
-  0% {
-    left: -50%;
-  }
-  50% {
-    left: 110%;
-  }
-  100% {
-    left: 150%;
-  }
-} */
 </style>
