@@ -10,6 +10,8 @@ return_label: "Return to Celectra"
 
 # Birth Weight and Height Progression
 
+</div> <div class="card-bg" markdown="1">
+
 Celectra’s Growth Timeline Age (years) | Height (m) | Weight (kg) | BMI | Notes  
 ---|---|---|---|---  
 Birth | 0.42 | 1.3 | ~10.2 | 8 weeks premature; severe growth restriction; metabolic energy diverted to neural bridge initialization.  

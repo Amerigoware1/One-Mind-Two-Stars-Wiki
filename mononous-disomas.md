@@ -1,13 +1,16 @@
 ---
 layout: default
 title: "Mononous Disomas – Celectra's Neural Dossier"
+is_dossier: true
+return_url: "_characters/celectra.html"
+return_label: "Return to Celectra"
 ---
 
-# Mononous Disomas: Celectra’s Neural Dossier
-
-One Mind Spanning Two Bodies – Congenital Dual‑Body Unification
-
 <div class="card-bg" markdown="1">
+
+# One Mind Spanning Two Bodies – Congenital Dual‑Body Unification
+
+</div><div class="card-bg" markdown="1">
 
 ## Condition Summary
 

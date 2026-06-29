@@ -8,12 +8,9 @@ return_label: "Return to Sam"
 
 <div class="card-bg" markdown="1">
 
-Dermatological & Social Management
+# Dermatological & Social Management
 
-
-</div>
-
-<div class="card-bg" markdown="1">
+</div><div class="card-bg" markdown="1">
 
 ## Condition Summary
 
