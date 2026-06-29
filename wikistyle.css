@@ -1180,7 +1180,7 @@ transform: scale(1.2) }
 .header-two-column { display: flex;
 flex-wrap: wrap;
 gap: 2rem;
-margin-bottom: 2rem;
+margin: 1.5rem 0 2rem 0;
 align-items: flex-start }
 
 .header-column { flex: 1;
