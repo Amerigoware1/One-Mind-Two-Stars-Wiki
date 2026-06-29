@@ -47,23 +47,26 @@
     const NewEdenReturnLabel = "{{ page.return_label | default: 'Return to New Eden' }}";
     
     // SCENARIO A: Inside a medical/care sub-dossier layout
-    if (isDossier && dossierReturnUrl) {
-      const topBtn = document.createElement('a');
-      topBtn.href = dossierReturnUrl;
-      topBtn.className = 'home-button';
-      topBtn.textContent = `‹🧍‍♀️ ${dossierReturnLabel}`;
-      bannerNav.appendChild(topBtn);
-      const glossaryBtn = document.createElement('a');
-      glossaryBtn.href = glossaryReturnUrl;
-      glossaryBtn.className = 'home-button';
-      glossaryBtn.textContent = `‹📘 ${glossaryReturnLabel}`;
-      bannerNav.appendChild(glossaryBtn);
-      // remove existing generic glossary button
-      const existingGlossaryBtn = bannerNav.querySelector(`a[href="../glossary.html"]`);
-      if (existingGlossaryBtn) {
-        bannerNav.removeChild(existingGlossaryBtn);
-      }
-    } 
+if (isDossier && dossierReturnUrl) {
+  const topBanner = bannerNav.closest('.top-banner');
+    if (topBanner) {
+      const existingGlossaryBtn = topBanner.querySelector('a[href$="glossary.html"]');
+    if (existingGlossaryBtn) {
+      existingGlossaryBtn.remove();
+    }
+  }
+  const topBtn = document.createElement('a');
+  topBtn.href = dossierReturnUrl;
+  topBtn.className = 'home-button';
+  topBtn.textContent = `‹🧍‍♀️ ${dossierReturnLabel}`;
+  bannerNav.appendChild(topBtn);
+  
+  const glossaryBtn = document.createElement('a');
+  glossaryBtn.href = glossaryReturnUrl;
+  glossaryBtn.className = 'home-button';
+  glossaryBtn.textContent = `‹📘 ${glossaryReturnLabel}`;
+  bannerNav.appendChild(glossaryBtn);
+} 
     
     // SCENARIO B: On a standard biography layout page
     else if (currentLayout === 'character') {
