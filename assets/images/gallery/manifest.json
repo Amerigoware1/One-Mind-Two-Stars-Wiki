@@ -19,7 +19,7 @@
     "file": "celectra-karate.webp",
     "title": "Celectra karate",
     "description": "Celectra practicing sundome karate",
-    "tags": ["celectra", "carisco"],
+    "tags": ["celectra", "carisco", "athletic activities"],
     "width": 1024,
     "height": 1536
   },
@@ -27,7 +27,7 @@
     "file": "acrobatics1.webp",
     "title": "Celectra acrobatics",
     "description": "Celectra practicing acrobatics",
-    "tags": ["celectra", "carisco"],
+    "tags": ["celectra", "carisco", "athletic activities"],
     "width": 688,
     "height": 1000
   },
@@ -35,7 +35,7 @@
     "file": "dance.webp",
     "title": "Celectra dance",
     "description": "Celectra practicing dance",
-    "tags": ["celectra", "carisco"],
+    "tags": ["celectra", "carisco", "athletic activities"],
     "width": 1024,
     "height": 1536
   },
@@ -43,7 +43,7 @@
     "file": "gymnastics.webp",
     "title": "Celectra gymnastics",
     "description": "Celectra practicing gymnastics",
-    "tags": ["celectra", "carisco"],
+    "tags": ["celectra", "carisco", "athletic activities"],
     "width": 1536,
     "height": 1024
   },
@@ -51,7 +51,7 @@
     "file": "swim.webp",
     "title": "Celectra swimming",
     "description": "Celectra at swim practice",
-    "tags": ["celectra", "carisco"],
+    "tags": ["celectra", "carisco", "athletic activities"],
     "width": 915,
     "height": 915
   },
@@ -59,7 +59,7 @@
     "file": "yoga.webp",
     "title": "Celectra yoga",
     "description": "Celectra practicing yoga",
-    "tags": ["celectra", "carisco"],
+    "tags": ["celectra", "carisco", "athletic activities"],
     "width": 1024,
     "height": 1024
   },    
