@@ -1106,8 +1106,8 @@ color: #faa;
 background: #4a2a2a }
 
 .gallery-container { position: relative;
-width: 50%;
-max-width: 400px;
+width: 100%;
+max-width: 800px;
 margin: 0 auto;
 border-radius: 16px;
 overflow: hidden;
@@ -1186,7 +1186,7 @@ align-items: flex-start }
 .header-column { flex: 1;
 min-width: 280px }
 
-.header-column:first-child { flex: 1.2 }
+.header-column:first-child { flex: 1.5 }
 
 .header-column .infobox { width: 100%;
 margin: 0 }
