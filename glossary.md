@@ -801,32 +801,14 @@ title: Glossary
 (function() {
   'use strict';
 
- // -------- DOM refs --------
-const searchInput = document.getElementById('glossarySearch');
-const clearBtn = document.getElementById('clearSearch');
-const dropdown = document.getElementById('searchDropdown');
-const allItems = document.querySelectorAll('.glossary-item');
-const tabPanels = document.querySelectorAll('.tab-panel');
-const tabBtns = document.querySelectorAll('.tab-btn');
+  // -------- DOM refs --------
+  const searchInput = document.getElementById('glossarySearch');
+  const clearBtn = document.getElementById('clearSearch');
+  const dropdown = document.getElementById('searchDropdown');
+  const allItems = document.querySelectorAll('.glossary-item');
+  const tabPanels = document.querySelectorAll('.tab-panel');
+  const tabBtns = document.querySelectorAll('.tab-btn');
 
-// Handle routing from external URLs with hash fragments (#medical)
-window.addEventListener('DOMContentLoaded', () => {
-  const currentHash = window.location.hash.substring(1);
-
-  if (currentHash) {
-    // 1. Direct command to switch tab panels and active button states
-    switchTab(currentHash);
-    
-    // 2. Locate the active panel or button to smooth scroll down if needed
-    const targetPanel = document.getElementById('panel-' + currentHash);
-    if (targetPanel) {
-      targetPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
-});
-
-// -------- Tab switching --------
-function switchTab(tabId) {
   // -------- Tab switching --------
   function switchTab(tabId) {
     // Update panels
@@ -845,12 +827,28 @@ function switchTab(tabId) {
     allItems.forEach(item => item.classList.remove('glossary-highlight'));
   }
 
+  // 👇 PLACE THE TRAFFIC CONTROLLER HERE (Inside the function, below switchTab)
+  window.addEventListener('DOMContentLoaded', () => {
+    const currentHash = window.location.hash.substring(1);
+    if (currentHash) {
+      switchTab(currentHash);
+      
+      const targetPanel = document.getElementById('panel-' + currentHash);
+      if (targetPanel) {
+        targetPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  });
+
+  // -------- Regular Tab Click Events --------
   tabBtns.forEach(btn => {
     btn.addEventListener('click', function(e) {
       const tab = this.dataset.tab;
       switchTab(tab);
     });
   });
+
+  // -------- Search logic follows down here normally... --------
 
   // -------- Search logic --------
   function getSearchableText(item) {
