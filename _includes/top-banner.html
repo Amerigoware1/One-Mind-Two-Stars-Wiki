@@ -31,8 +31,8 @@
     const isDossier = "{{ page.is_dossier | default: false }}" === "true";
     const dossierReturnUrl = "{{ page.return_url | relative_url }}";
     const dossierReturnLabel = "{{ page.return_label | default: 'Return to Character' }}";
-    const glossaryReturnUrl = "{{ page.return_url | relative_url }}";
-    const glossaryReturnLabel = "{{ page.return_label | default: 'Return to Glossary' }}";
+    const glossaryReturnUrl = "{{ /glossary.html?tab=medical | relative_url }}";
+    const glossaryReturnLabel = "{{ page.return_label | default: 'Return to Glossary (Medical)' }}";
 
     // FIX: Added === "true" here as well, otherwise it suffers from the exact same bug!
     const isArchive = "{{ page.is_archive | default: false }}" === "true";
@@ -54,7 +54,7 @@
       topBtn.textContent = `‹🧍‍♀️ ${dossierReturnLabel}`;
       bannerNav.appendChild(topBtn);
       const glossaryBtn = document.createElement('a');
-      glossaryBtn.href = "{{ '/glossary.html#medical' | relative_url }}";
+      glossaryBtn.href = glossaryReturnUrl;
       glossaryBtn.className = 'home-button';
       glossaryBtn.textContent = `📘 Glossary`;
       bannerNav.appendChild(glossaryBtn);
