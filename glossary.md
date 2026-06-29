@@ -801,33 +801,32 @@ title: Glossary
 (function() {
   'use strict';
 
-  // -------- DOM refs --------
-  const searchInput = document.getElementById('glossarySearch');
-  const clearBtn = document.getElementById('clearSearch');
-  const dropdown = document.getElementById('searchDropdown');
-  const allItems = document.querySelectorAll('.glossary-item');
-  const tabPanels = document.querySelectorAll('.tab-panel');
-  const tabBtns = document.querySelectorAll('.tab-btn');
-// linked from external url
+ // -------- DOM refs --------
+const searchInput = document.getElementById('glossarySearch');
+const clearBtn = document.getElementById('clearSearch');
+const dropdown = document.getElementById('searchDropdown');
+const allItems = document.querySelectorAll('.glossary-item');
+const tabPanels = document.querySelectorAll('.tab-panel');
+const tabBtns = document.querySelectorAll('.tab-btn');
+
+// Handle routing from external URLs with hash fragments (#medical)
 window.addEventListener('DOMContentLoaded', () => {
-  // 1. Get the hash from the URL (e.g., "#characters") and remove the "#"
   const currentHash = window.location.hash.substring(1);
 
   if (currentHash) {
-    // 2. Find the tab button that matches the hash
-    // (Adjust the selector attribute depending on how your HTML is structured)
-    const targetTabBtn = document.querySelector(`.tab-btn[data-tab="${currentHash}"]`) || 
-                          document.getElementById(currentHash);
-
-    if (targetTabBtn) {
-      // 3. Programmatically click it to switch tabs automatically
-      targetTabBtn.click();
-      
-      // Optional: Smooth scroll to the glossary container if it's lower on the page
-      targetTabBtn.scrollIntoView({ behavior: 'smooth' });
+    // 1. Direct command to switch tab panels and active button states
+    switchTab(currentHash);
+    
+    // 2. Locate the active panel or button to smooth scroll down if needed
+    const targetPanel = document.getElementById('panel-' + currentHash);
+    if (targetPanel) {
+      targetPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
 });
+
+// -------- Tab switching --------
+function switchTab(tabId) {
   // -------- Tab switching --------
   function switchTab(tabId) {
     // Update panels
