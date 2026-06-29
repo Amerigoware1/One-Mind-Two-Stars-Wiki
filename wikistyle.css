@@ -175,6 +175,7 @@ overflow: hidden;
 /* Forces block content to wrap clean around floating sidebar */
 /* make article stay to the left of the infobox and not wrap under it */
 margin-right: 340px;
+margin-top: 1.5rem;
 /* Width of infobox + margin */
 max-width: 900px;
 margin: 0 auto }
@@ -187,7 +188,7 @@ background: var(--bg-card);
 border: 1px solid var(--neon-violet);
 /* border-radius: 12px; */
 padding: 1rem;
-margin: 0 0 1.5rem 1.5rem;
+margin: 1.5rem 0 1.5rem 1.5rem;
 box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 position: relative;
 /* Helps contain children */
@@ -1178,7 +1179,7 @@ border: 1px solid #fa3 }
 transform: scale(1.2) }
 
 .header-two-column { display: flex;
-flex-wrap: wrap;
+flex-wrap: wrap;0
 gap: 2rem;
 margin: 1.5rem 0 2rem 0;
 align-items: flex-start }
