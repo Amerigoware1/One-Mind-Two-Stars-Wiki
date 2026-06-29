@@ -58,6 +58,11 @@
       glossaryBtn.className = 'home-button';
       glossaryBtn.textContent = `‹📘 ${glossaryReturnLabel}`;
       bannerNav.appendChild(glossaryBtn);
+      // remove existing glossary button if it exists
+      const existingGlossaryBtn = bannerNav.querySelector("a[href='{{ '/glossary.html' | relative_url }}']");
+      if (existingGlossaryBtn) {
+        bannerNav.removeChild(existingGlossaryBtn);
+      }
     } 
     
     // SCENARIO B: On a standard biography layout page
