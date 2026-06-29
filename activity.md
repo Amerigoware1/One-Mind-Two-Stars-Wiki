@@ -3,6 +3,54 @@ layout: default
 title: "Activity Center (mall-of motion)"
 ---
 
+<!--Infobox-->
+<div class="infobox">
+  <table class="infobox">
+    <tr>
+      <td colspan="2" class="text-center pb-2">
+        <img src="{{ '/assets/images/gallery/activity.webp' | relative_url }}" alt="Exterior of the Activity Center (Mall of Motion)" class="portrait">
+        <div class="image-caption">Exterior View of the Activity Center</div>
+      </td>
+    </tr>
+    <tr>
+      <th>Type</th>
+      <td>Athletics & Recreation Facility / Community Hub</td>
+    </tr>
+    <tr>
+      <th>Nickname</th>
+      <td>"Mall of Motion"</td>
+    </tr>
+    <tr>
+      <th>Location</th>
+      <td>New Eden Town Center (original-five)</td>
+    </tr>
+    <tr>
+      <th>Construction</th>
+      <td>Pre-series (colony-founding)</td>
+    </tr>
+    <tr>
+      <th>Council Seat</th>
+      <td>Seat 7 — Chibuike Okafor</td>
+    </tr>
+    <tr>
+      <th>Sundome Sensei (Books 1–4)</th>
+      <td>Sensei Onishi Kisa</td>
+    </tr>
+    <tr>
+      <th>Sundome Sensei (Book 5+)</th>
+      <td>Sensei Aulii Vongphachanh</td>
+    </tr>
+    <tr>
+      <th>Notable Features</th>
+      <td>Olympic pool, Sundome Dojo, climbing wall, dance studios, flexible event hall</td>
+    </tr>
+    <tr>
+      <th>Outdoor Access</th>
+      <td>Direct to sports fields via rear locker rooms</td>
+    </tr>
+  </table>
+</div>
+
 <div class="article-content"><div class="card-bg" markdown="1">
 
 ## Overview
@@ -11,21 +59,13 @@ The **Activity Center** —affectionately nicknamed the **"Mall of Motion"** —
 
 More than just a gym, the Center serves as the colony's flexible community space. Its open floors have hosted art exhibitions (including-maya keahi's pre-gallery shows), weddings, festivals, and the annual New Eden Games. When the colony gathers to celebrate, move, or compete, it gathers here.
 
-🏊
+🏊 Olympic Pool
 
-Olympic Pool
+🧘 Yoga Studio
 
-🧘
+🥋 Sundome Dojo
 
-Yoga Studio
-
-🥋
-
-Sundome Dojo
-
-🤸
-
-Gymnastics
+🤸 Gymnastics
 
 </div>   
   
