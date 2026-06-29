@@ -13,85 +13,6 @@ title: "Home - One Mind, Two Stars Wiki"
   <!--Load main stylesheet-->
   <link rel="stylesheet" href="{{ '/wikistyle.css' | relative_url }}">
   
-  <!--CRITICAL INLINE STYLES: ensures colour scheme works even if wikistyle.css is slow-->
-  <style>
-    /* Duplicate of the CSS variables from wikistyle.css – prevents flash of unstyled content */
-    :root {
-      -bg-space:         #0f0124;
-      -bg-card:          #0c0028;
-      -bg-card-dark:     #0a0022;
-      -border-glow:      #1e0a47;
-      -neon-violet:      #c13cff;
-      -neon-cyan:        #00e8ff;
-      -neon-magenta:     #ff2af1;
-      -text-primary:     #e37df5;
-      -text-muted:       #b8b1ff;
-      -text-heading:     #ffffff;
-      -glow-violet:      rgba(193,-60, 255, 0.3);
-      -glow-cyan:        rgba(0,-232, 255, 0.25);
-    }
-    /* Force immediate background/text to match the theme */
-    body {
-      background: var(-bg-space);
-      color: var(-text-primary);
-      margin: 20px;
-      padding: 1rem;
-    }
-  </style>
-
-  <!--Additional styles for the series section (same-as before)-->
-  <style>
-    .series-status {
-      background: var(-bg-card);
-      color: var(-text-heading);
-      padding: 2rem;
-      border-radius: 10px;
-      margin: 2rem 0;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    }
-    .series-status h2 {
-      color: var(-neon-cyan);
-      margin-top: 0;
-    }
-    .book-progress {
-      display: flex;
-      gap: 1rem;
-      margin: 1.5rem 0;
-      flex-wrap: wrap;
-    }
-    .book-card {
-      background: var(-bg-card-dark);
-      border-radius: 8px;
-      padding: 1rem;
-      flex: 1;
-      min-width: 200px;
-      border: 1px solid var(-border-glow);
-    }
-    .book-card h3 {
-      margin-top: 0;
-      color: var(-neon-violet);
-    }
-    .status-badge {
-      display: inline-block;
-      padding: 0.25rem 0.75rem;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: bold;
-      margin: 0.5rem 0;
-      color: #ffffff;
-    }
-    .status-ready { background: #4caf50; }
-    .status-polishing { background: #ff9800; }
-    .status-drafting { background: #2196f3; }
-    
-    .author-note {
-      background: var(-bg-card-dark);
-      border-left: 4px solid var(-neon-violet);
-      padding: 1rem;
-      margin: 1.5rem 0;
-      border-radius: 0 8px 8px 0;
-    }
-  </style>
 </head>
 <body>
 
@@ -120,7 +41,7 @@ title: "Home - One Mind, Two Stars Wiki"
           <p>Complete manuscript. Introducing the Niamh–Ciara system, Utopis Station, unique physiology, and the discovery of Galinstanian life.</p>
         </div>
         <div class="book-card">
-          <h3>Book 2: One Mind, Two Stars 2: The Northern Shadows</h3>
+          <h3>Book 2: One Mind, Two Stars: The Northern Shadows</h3>
           <span class="status-badge status-polishing">In Revision/Polishing</span>
           <p>Deepening conflicts between antagonist and Galinstanian allies, and the ethical implications of experimentation on sentient beings.</p>
         </div>
@@ -161,6 +82,15 @@ title: "Home - One Mind, Two Stars Wiki"
       </div>
     </section>
 
+    <!--Characters & Factions-->
+    <section>
+      <h2>👥 Characters & Groups</h2>
+      <div class="index-links">
+        <a href="{{ '/_characters/' | relative_url }}">👨🏻‍👩🏻‍👦🏻‍👦🏻 Characters<br><span class="link-desc">Novel cast of characters</span></a>
+        <a href="{{ '/listener-corps.html' | relative_url }}">🎧 Listener Corps<br><span class="link-desc">About the Listener Corps</span></a>
+      </div>
+    </section>
+    
     <!--Tools & Simulators-->
     <section>
       <h2>🛠️ Tools & Simulators</h2>
@@ -171,15 +101,6 @@ title: "Home - One Mind, Two Stars Wiki"
       </div>
     </section>
 
-    <!--Characters & Factions-->
-    <section>
-      <h2>👥 Characters & Groups</h2>
-      <div class="index-links">
-        <a href="{{ '/_characters/' | relative_url }}">👨🏻‍👩🏻‍👦🏻‍👦🏻 Characters<br><span class="link-desc">Novel cast of characters</span></a>
-        <a href="{{ '/listener-corps.html' | relative_url }}">🎧 Listener Corps<br><span class="link-desc">About the Listener Corps</span></a>
-      </div>
-    </section>
-    
     <!--Publishing Contact Section-->
     <section style="background:#0c0028; padding:1.5rem; border-radius:8px; margin-top:2rem;">
       <h2>📬 For Publishing Professionals</h2>
