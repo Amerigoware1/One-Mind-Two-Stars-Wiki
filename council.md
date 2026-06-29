@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "The Plenum and the Council Chamber"
+is_building: true
 ---
 
   <!--Infobox-->

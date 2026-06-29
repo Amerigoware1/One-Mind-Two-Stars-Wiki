@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Activity Center (mall-of motion)"
+is_building: true
 ---
 
 <!--Infobox-->

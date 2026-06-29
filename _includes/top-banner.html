@@ -30,12 +30,21 @@
     // Grab the dossier marker and URL from front-matter
     const isDossier = "{{ page.is_dossier | default: false }}" === "true";
     const dossierReturnUrl = "{{ page.return_url | relative_url }}";
-    const dossierReturnLabel = "{{ page.return_label | default: 'Return to Dossier' }}";
-    
+    const dossierReturnLabel = "{{ page.return_label | default: 'Return to Character' }}";
+    const glossaryReturnUrl = "{{ page.return_url | relative_url }}";
+    const glossaryReturnLabel = "{{ page.return_label | default: 'Return to Glossary' }}";
+
     // FIX: Added === "true" here as well, otherwise it suffers from the exact same bug!
     const isArchive = "{{ page.is_archive | default: false }}" === "true";
     const archiveReturnUrl = "{{ page.return_url | relative_url }}";
     const archiveReturnLabel = "{{ page.return_label | default: 'Return to Archive' }}";
+
+    // Add building pages to the banner navigation
+    const isBuildingPage = "{{ page.is_building | default: false }}" === "true";
+    const buildingReturnUrl = "{{ '/central-buildings.html' | relative_url }}";
+    const NewEdenReturnUrl = "{{ '/new-eden.html' | relative_url }}";
+    const buildingReturnLabel = "{{ page.return_label | default: 'Return to Central Buildings' }}";
+    const NewEdenReturnLabel = "{{ page.return_label | default: 'Return to New Eden' }}";
     
     // SCENARIO A: Inside a medical/care sub-dossier layout
     if (isDossier && dossierReturnUrl) {
@@ -44,6 +53,11 @@
       topBtn.className = 'home-button';
       topBtn.textContent = `‹🧍‍♀️ ${dossierReturnLabel}`;
       bannerNav.appendChild(topBtn);
+      const glossaryBtn = document.createElement('a');
+      glossaryBtn.href = "{{ '/glossary.html#medical' | relative_url }}";
+      glossaryBtn.className = 'home-button';
+      glossaryBtn.textContent = `📘 Glossary`;
+      bannerNav.appendChild(glossaryBtn);
     } 
     
     // SCENARIO B: On a standard biography layout page
@@ -72,8 +86,22 @@
       topBtn.textContent = `‹📖 ${archiveReturnLabel}`;
       bannerNav.appendChild(topBtn);
     }
-    
-    // SCENARIO E: The hub list directory or homepage --> Does nothing!
+
+    // SCENARIO E: On a building page → Return to New Eden or Central Buildings
+    else if (isBuildingPage) {
+      const topBtnA = document.createElement('a');
+      topBtnA.href = buildingReturnUrl;
+      topBtnA.className = 'home-button';
+      topBtnA.textContent = `‹🏛️ Return to Central Buildings`;
+      bannerNav.appendChild(topBtnA);
+      const topBtnB = document.createElement('a');
+      topBtnB.href = NewEdenReturnUrl;
+      topBtnB.className = 'home-button';
+      topBtnB.textContent = `‹🏛️ Return to New Eden`;
+      bannerNav.appendChild(topBtnB);
+    }
+
+    // SCENARIO F: The hub list directory or homepage --> Does nothing!
   });
 </script>
 <style>
