@@ -16,6 +16,54 @@
     "height": 1178
   },
   {
+    "file": "celectra-karate.webp",
+    "title": "Celectra karate",
+    "description": "Celectra practicing sundome karate",
+    "tags": ["celectra", "carisco"],
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "file": "celectra-acrobatics1.webp",
+    "title": "Celectra acrobatics1",
+    "description": "Celectra practicing acrobatics",
+    "tags": ["celectra", "carisco"],
+    "width": 688,
+    "height": 1000
+  },
+  {
+    "file": "dance.webp",
+    "title": "Celectra dance",
+    "description": "Celectra practicing dance",
+    "tags": ["celectra", "carisco"],
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "file": "gymnastics.webp",
+    "title": "Celectra gymnastics",
+    "description": "Celectra practicing gymnastics",
+    "tags": ["celectra", "carisco"],
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "file": "swim.webp",
+    "title": "Celectra swimming",
+    "description": "Celectra at swim practice",
+    "tags": ["celectra", "carisco"],
+    "width": 915,
+    "height": 915
+  },
+  {
+    "file": "yoga.webp",
+    "title": "Celectra yoga",
+    "description": "Celectra practicing yoga",
+    "tags": ["celectra", "carisco"],
+    "width": 1024,
+    "height": 1024
+  },    
+  {
     "file": "celectra-book2-alt.webp",
     "title": "Celectra at age fourteen",
     "description": "Celectra at age fourteen",
@@ -23,6 +71,14 @@
     "width": 832,
     "height": 1213
   },
+  {
+    "file": "chilling-age18.webp",
+    "title": "Celectra chilling",
+    "description": "Celectra relaxing on her bed",
+    "tags": ["celectra", "carisco"],
+    "width": 1184,
+    "height": 864
+  },   
   {
     "file": "celectra-pregnant.webp",
     "title": "Celectra Pregnant",
@@ -510,7 +566,15 @@
     "tags": ["maya", "sam", "gallery", "museum", "integration"],
     "width": 941,
     "height": 627
-  },  
+  },
+  {
+    "file": "great-grand-stallion.webp",
+    "title": "Great Grand stallion",
+    "description": "Celectra's impression of the invented character from her therapy sessions.",
+    "tags": ["maya", "sam", "gallery", "museum", "integration"],
+    "width": 941,
+    "height": 627
+  },    
   {
     "file": "medical.webp",
     "title": "The Medical Center",
