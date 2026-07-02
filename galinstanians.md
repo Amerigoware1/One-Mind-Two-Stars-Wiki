@@ -32,7 +32,7 @@ title: "Galinstanians"
         </tr>
         <tr>
             <th>Communication</th>
-            <td>Electromagnetic telepathy via bismuth alloy network</td>
+            <td>Coherent EM resonance via bismuth waveguide network</td>
         </tr>
         <tr>
             <th>First contact</th>
@@ -66,7 +66,7 @@ title: "Galinstanians"
 
 ## Overview
 
-The Galinstanians are an intelligent, peaceful alien species native to the subsurface caverns of Ares, a near-Earth-sized moon orbiting the super-Jupiter Chaos in the Niamh-Ciara binary star system. Characterized by their colloidal liquid metal alloy-based physiology, they are composed primarily of a galinstan-base matrix embedded with particulate iron, copper, silicon, and bismuth-tin clusters. They communicate via electromagnetic (EM) telepathy, amplified by a biologically secreted bismuth waveguide network, and lack traditional technology. Their society is egalitarian and harmonious, with no concept of war or secrecy, and their culture emphasizes art, philosophy, and cosmic interconnectedness.
+The Galinstanians are an intelligent, peaceful alien species native to the subsurface caverns of Ares, a near-Earth-sized moon orbiting the super-Jupiter Chaos in the Niamh-Ciara binary star system. Characterized by their colloidal liquid metal alloy-based physiology, they are composed primarily of a galinstan-base matrix embedded with particulate iron, copper, silicon, and bismuth-tin clusters. They communicate via coherent electromagnetic resonance, amplified by a biologically secreted bismuth waveguide network, and lack traditional technology. Their society is egalitarian and harmonious, with no concept of war or secrecy, and their culture emphasizes art, philosophy, and cosmic interconnectedness.
 
 </div>
 
@@ -95,12 +95,12 @@ Galinstanians sustain themselves by dissolving mineral-rich rock using localized
 ### Sensory Systems and Neural Networks
 
 * **EM Detection and Communication:** Galinstanians perceive a vast electromagnetic spectrum from radio waves to infrared. Their language uses frequency for abstract concepts, modulation for nuance, and amplitude for emotion. This communication system operates as a distributed, self-forming EM-hydrodynamic supercomputer, primarily focused on sharing immediate sensory data (thermal maps, seismic vectors, nutrient gradients) and movement commands.
-* **The Bismuth Waveguide Network:** Long-range telepathy is amplified by their internal bismuth alloy clusters, which act as natural electromagnetic waveguides. While standard human neural activity lacks the phase-coherence to be interpreted by Galinstanians, Celectra Carisco’s unique bi-nodal neurology allows for constructive interference. By synchronizing the EM flux between her two bodies, she generates a "High-Gain Resonance" that seamlessly matches native Galinstanian broadcasts.
+* **The Bismuth Waveguide Network:** Far-field EM resonance is amplified by their internal bismuth alloy clusters. While standard human neural activity lacks the phase-coherence to be interpreted by Galinstanians, Celectra Carisco’s unique bi-nodal neurology allows for constructive interference. By synchronizing the EM flux between her two bodies, she generates a "High-Gain Resonance" that seamlessly matches native Galinstanian broadcasts.
 * **Magnetic Field Sensing:** They possess a highly accurate internal compass, navigating via planetary and celestial magnetic fields, allowing them to map and detect nearby orbital bodies like Niamh, Ciara, and Chaos.
 * **Vibrotactile Perception:** Their entire conductive surface acts as a giant acoustic sensor, picking up micro-vibrations through the crust to detect seismic activity, approaching footsteps, or structural shifts.
 
 ### Life Cycle and Maturation
-Galinstanians reproduce asexually through a process of budding. New buds undergo a period of slow maturation, taking several decades to develop the complex internal EM pathways required for full telepathic integration and shape-shifting mastery. Once mature, their amorphous alloy bodies grant them lifespans spanning several centuries. While they continuously recycle metals internally to prevent decay, they remain highly vulnerable to extreme external temperatures and intense EM interference, both of which can cause fatal structural dissipation.
+Galinstanians reproduce asexually through a process of budding. New buds undergo a period of slow maturation, taking several decades to develop the complex internal EM pathways required for full neural mesh integration and shape-shifting mastery. Once mature, their amorphous alloy bodies grant them lifespans spanning several centuries. While they continuously recycle metals internally to prevent decay, they remain highly vulnerable to extreme external temperatures and intense EM interference, both of which can cause fatal structural dissipation.
 
 </div>
 
@@ -108,7 +108,7 @@ Galinstanians reproduce asexually through a process of budding. New buds undergo
 
 ## Society
 
-Galinstanian society is communal and egalitarian, organized into "clusters" of 5-20+ individuals sharing harmonized EM fields. Resonance circles facilitate consensus without leaders. The bismuth alloy network weaves clusters into a moon-wide consciousness, channeling telepathy and integrating with their habitat. Daily life involves nutrient absorption, cavern exploration, and EM symphonies for bonding. They shape homes by dissolving and reforming rock, creating fluid architectures as they eat.
+Galinstanian society is communal and egalitarian, organized into "clusters" of 5-20+ individuals sharing harmonized EM fields. Resonance circles facilitate consensus without leaders. The bismuth alloy network weaves clusters into a moon-wide neural mesh, channeling coherent EM resonance and integrating with their habitat. Daily life involves nutrient absorption, cavern exploration, and EM symphonies for bonding. They shape homes by dissolving and reforming rock, creating fluid architectures as they eat.
 
 </div>
 
@@ -116,7 +116,7 @@ Galinstanian society is communal and egalitarian, organized into "clusters" of 5
 
 ## Conflicts
 
-Conflicts are minimal, viewed as disruptions in "field harmony." Environmental challenges include seismic events and magnetic storms, addressed by pooling resources or broadcasting calming pulses. Rare internal "resonance clashes" from anomalous mineral absorption are resolved telepathically or by voluntary separation. Human activities (e.g., mining, encrypted signals) risk damaging their network/habitat, perceived as hostile noise. They respond with withdrawal or empathetic outreach, favoring trust and transparency. Because individuals are integrated into a moon-wide bismuth network, high-amplitude distress signals (such as those generated during Dr. Kret’s experiments) create a Sympathetic Resonance Cascade. This causes localized physical destabilization in nearby clusters, effectively turning one individual's agony into a collective physical trauma.
+Conflicts are minimal, viewed as disruptions in "field harmony." Environmental challenges include seismic events and magnetic storms, addressed by pooling resources or broadcasting calming pulses. Rare internal "resonance clashes" from anomalous mineral absorption are resolved telepathically or by voluntary separation. Human activities (e.g., mining, encrypted signals) risk damaging their network/habitat, perceived as hostile noise. They respond with withdrawal or empathetic outreach, favoring trust and transparency. Because individuals are integrated into a moon-wide EM waveguide matrix, high-amplitude distress signals (such as those generated during Dr. Kret’s experiments) create a Sympathetic Resonance Cascade. This causes localized physical destabilization in nearby clusters, effectively turning one individual's agony into a collective physical trauma.
 
 </div>
 
@@ -148,7 +148,7 @@ Galinstanian art is ephemeral, using bodies and the bismuth network for sensory 
 
 Centered on "Field Unity," their philosophy views all existence as interconnected via EM/vibrational fields. Key tenets include:
 
-* **Biological Agnosticism:** "Having evolved without discrete bodies or hidden thoughts, Galinstanians do not categorize life by form, gender, or origin." Their presence on Ares has acted as a confirmation for the colony’s universal inclusivity, as their 'Echo' interactions reward transparency and emotional honesty over social performativity. 
+* **Biological Agnosticism:** "Having evolved without discrete physical boundaries or un-coupled neural fields, Galinstanians do not categorize life by form, gender, or origin." Their presence on Ares has acted as a confirmation for the colony’s universal inclusivity, as their 'Echo' interactions reward transparency and emotional honesty over social performativity. 
 * **Interconnectedness:** Individuals extend a universal matrix; actions ripple, promoting peace.
 * **Environmental Harmony:** Ares and the cosmos are living; dissolving/reforming is transformation.
 * **Curiosity and Acceptance:** Outsiders expand resonance; secrecy (e.g., encryption) is alien and potentially hostile.
@@ -164,6 +164,6 @@ First contact occurred near New Eden, with a Galinstanian scout observing human 
 
 They welcome humans if habitats are respected, advocating transparency over encrypted signals, which disrupt their network. Interactions emphasize trust, with potential for friendship.
 
-Their slow perception of time and centuries-long lifespans make them view human lives as fleeting "echoes," which adds a layer of melancholy or patience to their interactions with the short-lived colonists.
+Their slow perception of time and centuries-long lifespans make them view human lives as fleeting "echoes," which adds a layer of patience to their interactions with the short-lived colonists.
 
 </div>
