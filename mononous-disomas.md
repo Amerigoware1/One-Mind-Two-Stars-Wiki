@@ -10,7 +10,7 @@ return_label: "Return to Celectra"
 
 # One Mind Spanning Two Bodies – Congenital Dual‑Body Unification
 
-</div><div class="card-bg" markdown="1">
+</div> <div class="card-bg" markdown="1">
 
 ## Condition Summary
 

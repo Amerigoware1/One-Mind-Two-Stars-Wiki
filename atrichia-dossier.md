@@ -10,7 +10,7 @@ return_label: "Return to Sam"
 
 # Dermatological & Social Management
 
-</div><div class="card-bg" markdown="1">
+</div> <div class="card-bg" markdown="1">
 
 ## Condition Summary
 

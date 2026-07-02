@@ -14,6 +14,7 @@ title: "Celectrum - Electronic Instrument"
 - [Performance Style](#performance-style)
 - [Cultural Significance](#cultural-significance)
 - [Notable Appearances](#notable-appearances)
+
 </div> <div class="card-bg" markdown="1">
 
 ## Overview

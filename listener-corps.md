@@ -36,8 +36,8 @@ title: "Listener Corps"
         <td>Entirely dependent on Celectra as the sole bidirectional biological broadcaster</td>
       </tr>
     </table>
-  </div>
-<div class="card-bg" markdown="1">
+
+  </div> <div class="card-bg" markdown="1">
 
 ## Overview & Historical Context
 

@@ -20,7 +20,7 @@ function: "Thermoregulating, dermatologically protective, bacteriostatic smart t
     <tr><th>Core Function</th><td>{{ page.function }}</td></tr>
   </table>
 
-</div><div class="card-bg" markdown="1">
+</div> <div class="card-bg" markdown="1">
 
 # Material Profile: Cryo-Silk
 
