@@ -1,11 +1,28 @@
 ---
 layout: default
 title: "Cryo-Silk - Technical Specifications & History"
+origin: "Medical emergency development (Celectra neonatal case); decentralized open-source synthesis"
+composition: "Graphene-infused high-denier lyocell; beechwood MicroModal dermal layer; passive polymer optical fiber matrix"
+function: "Thermoregulating, dermatologically protective, bacteriostatic smart textile with passive phototherapeutic luminance matrix"
 ---
 
-# Material Profile: Cryo-Silk
+<div class="infobox">
+  <table>
+    <tr>
+      <td colspan="2" class="text-center pb-2">
+        <img src="{{ '/assets/images/gallery/cryo-silk.webp' | relative_url }}" alt="Cryo-silk garmet" class="portrait" style="width:280px; border-radius:0.5rem;">
+        <div class="image-caption">Cryo-silk garmet on a mannequin</div>
+      </td>
+    </tr>
+    <tr><th colspan="2">Material Specifications</th></tr>
+    <tr><th>Origin</th><td>{{ page.origin }}</td></tr>
+    <tr><th>Primary Composition</th><td>{{ page.composition }}</td></tr>
+    <tr><th>Core Function</th><td>{{ page.function }}</td></tr>
+  </table>
 
-<div class="card-bg" markdown="1">
+</div><div class="card-bg" markdown="1">
+
+# Material Profile: Cryo-Silk
 
 **Classification:** Advanced Biocarbon-Cellulosic Hybrid Textile
 
