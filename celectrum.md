@@ -1,7 +1,25 @@
 ---
 layout: default
 title: "Celectrum - Electronic Instrument"
+origin: "Created by Jaxon"
+function: "Musical instrument"
 ---
+
+<div class="infobox">
+  <table>
+    <tr>
+      <td colspan="2" class="text-center pb-2">
+        <img src="{{ '/assets/images/gallery/celectrum.webp' | relative_url }}" alt="Celectrum" class="portrait" style="width:280px; border-radius:0.5rem;">
+        <div class="image-caption">Celectrum</div>
+      </td>
+    </tr>
+    <tr><th colspan="2">Specifications</th></tr>
+    <tr><th>Origin</th><td>{{ page.origin }}</td></tr>
+    <tr><th>Core Function</th><td>{{ page.function }}</td></tr>
+  </table>
+
+</div>
+
 
 <div class="card-bg" markdown="1">
 
