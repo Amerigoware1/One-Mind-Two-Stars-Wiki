@@ -285,6 +285,18 @@ title: Glossary
     <p>The eutectic alloy (gallium, indium, tin) that forms the bodies of the Galinstanians. Liquid at room temperature, non‑toxic, with high electrical conductivity.</p>
   </div>
 
+<div class="card-bg glossary-item" data-name="Holopad" data-category="tech" data-search="holopad holo-pad holo pad data tablet screen display monitor">
+    <h2>Holopad</h2>
+    <p><strong>Pronunciation:</strong> /ˈhoʊloʊˌpæd/<button class="speak-button">🔊</button></p>
+    <p>A portable, handheld data tablet utilizing a completely transparent aluminosilicate glass substrate wrapped in an opaque composite frame. Rather than projecting light into mid-air, it utilizes advanced autostereoscopic light-field displays and real-time eye tracking to generate perceived 3D depth inside the display volume (the "Shadowbox Illusion"). Standard models feature a built-in liquid crystal layer for instant opacity control, an active ultrasonic "sonic shiver" self-cleaning system, and support for virtual haptic keyboards or resonant styluses.</p>
+  </div>
+
+  <div class="card-bg glossary-item" data-name="Holoscreen" data-category="tech" data-search="holoscreen holo-screen holo screen display monitor television terminal bulkhead panel">
+    <h2>Holoscreen</h2>
+    <p><strong>Pronunciation:</strong> /ˈhoʊloʊˌskriːn/<button class="speak-button">🔊</button></p>
+    <p>A large-scale, stationary or self-standing display panel leveraging the same transparent light-field architecture as a holopad. Commonly integrated directly into architectural bulkheads, workspace partitions, or bridge terminals, holoscreens coordinate dense multi-user parallax tracking to display distinct, distortion-free 3D spatial data to multiple observers simultaneously. Frequently linked with automated environment protocols to toggle the liquid crystal matrix from clear glass to deep opacity, serving as dynamic privacy barriers or synthetic night-shift window shuttering.</p>
+  </div>
+
   <div class="card-bg glossary-item" data-name="Hardline Network" data-category="tech" data-search="cable communication wired colony">
     <h2>Hardline Network</h2>
     <p><strong>Pronunciation:</strong> /ˈhɑːrdlaɪn ˈnɛtwɜːrk/<button class="speak-button">🔊</button></p>
