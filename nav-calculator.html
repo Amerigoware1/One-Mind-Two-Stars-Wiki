@@ -1,0 +1,476 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARES NAV :: New Eden Coordinate Calculator</title>
+<!--     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0b0e14;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .terminal {
+            background: #141a22;
+            border: 1px solid #2a3a4a;
+            border-radius: 12px;
+            padding: 40px 45px;
+            max-width: 720px;
+            width: 100%;
+            box-shadow: 0 0 40px rgba(0, 180, 255, 0.05);
+        }
+
+        .header {
+            border-bottom: 1px solid #1e2c38;
+            padding-bottom: 16px;
+            margin-bottom: 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header h1 {
+            color: #7fc9ff;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .header .origin {
+            color: #5a7a8a;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+        .header .origin span {
+            color: #aacfdf;
+        }
+
+        .input-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px 12px;
+            margin-bottom: 24px;
+        }
+
+        .field {
+            flex: 1 0 160px;
+        }
+
+        .field label {
+            display: block;
+            color: #6b8d9e;
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .field select, .field input {
+            width: 100%;
+            background: #0b1118;
+            border: 1px solid #1f313e;
+            border-radius: 6px;
+            padding: 10px 12px;
+            color: #c8e2f0;
+            font-family: 'Courier New', monospace;
+            font-size: 15px;
+            outline: none;
+            transition: border 0.2s;
+        }
+
+        .field select:focus, .field input:focus {
+            border-color: #3d8db0;
+        }
+
+        .field input::placeholder {
+            color: #2f4555;
+        }
+
+        .field .hint {
+            color: #3f5f6f;
+            font-size: 10px;
+            margin-top: 4px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            margin: 18px 0 28px 0;
+        }
+
+        .actions button {
+            flex: 1;
+            background: #0b1a26;
+            border: 1px solid #1f3f52;
+            border-radius: 6px;
+            padding: 12px 0;
+            color: #8fcbff;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+
+        .actions button:hover {
+            background: #12303f;
+            border-color: #4a8fb0;
+            color: #b0deff;
+            box-shadow: 0 0 20px rgba(0, 140, 255, 0.08);
+        }
+
+        .actions button.secondary {
+            background: transparent;
+            border-color: #1a2a34;
+            color: #4a6a7a;
+            flex: 0.4;
+        }
+
+        .actions button.secondary:hover {
+            background: #0f1a22;
+            border-color: #2a4a5a;
+            color: #7a9aaa;
+        }
+
+        .result-box {
+            background: #0a1119;
+            border-left: 3px solid #2a6a8a;
+            padding: 18px 22px;
+            border-radius: 4px;
+            margin-top: 6px;
+        }
+
+        .result-box .label {
+            color: #4a7a8a;
+            font-size: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .result-box .coords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 30px;
+            margin-top: 8px;
+        }
+
+        .result-box .coords .item {
+            color: #c0dce8;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .result-box .coords .item small {
+            color: #4a6a7a;
+            font-size: 11px;
+            margin-left: 6px;
+            font-weight: 300;
+        }
+
+        .result-box .summary {
+            color: #6a9aaa;
+            font-size: 13px;
+            margin-top: 12px;
+            border-top: 1px solid #12222e;
+            padding-top: 12px;
+        }
+
+        .result-box .summary em {
+            color: #b0d8ee;
+            font-style: normal;
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #1f3340;
+            font-size: 10px;
+            text-align: right;
+            letter-spacing: 0.5px;
+        }
+
+        .error {
+            color: #d48a8a;
+            font-size: 12px;
+            margin-top: 6px;
+            display: none;
+        }
+
+        @media (max-width: 480px) {
+            .terminal { padding: 24px 18px; }
+            .header { flex-direction: column; align-items: flex-start; gap: 6px; }
+            .result-box .coords .item { font-size: 15px; }
+        }
+    </style> -->
+</head>
+<body>
+
+<div class="terminal">
+    <div class="header">
+        <h1>⛭ ARES · NAV CALC</h1>
+        <div class="origin">ORIGIN: <span>NEW EDEN</span> &nbsp; 00°25'24.0"S / 000°00'00.0"E</div>
+    </div>
+
+    <div class="input-group">
+        <div class="field">
+            <label for="bearingSelect">BEARING</label>
+            <select id="bearingSelect">
+                <option value="0">N (000°)</option>
+                <option value="22.5" selected>NNE (022.5°)</option>
+                <option value="45">NE (045°)</option>
+                <option value="67.5">ENE (067.5°)</option>
+                <option value="90">E (090°)</option>
+                <option value="112.5">ESE (112.5°)</option>
+                <option value="135">SE (135°)</option>
+                <option value="157.5">SSE (157.5°)</option>
+                <option value="180">S (180°)</option>
+                <option value="202.5">SSW (202.5°)</option>
+                <option value="225">SW (225°)</option>
+                <option value="247.5">WSW (247.5°)</option>
+                <option value="270">W (270°)</option>
+                <option value="292.5">WNW (292.5°)</option>
+                <option value="315">NW (315°)</option>
+                <option value="337.5">NNW (337.5°)</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label for="distanceInput">DISTANCE (KM)</label>
+            <input type="number" id="distanceInput" value="2000" step="0.1" min="0">
+            <div class="hint">max 20,000 km (half circumference)</div>
+        </div>
+    </div>
+
+    <div class="field" style="margin-bottom: 12px;">
+        <label for="customBearing">OR ENTER CUSTOM BEARING (DEGREES)</label>
+        <input type="number" id="customBearing" placeholder="e.g. 37.2" step="0.1" min="0" max="360">
+    </div>
+
+    <div class="actions">
+        <button id="calcBtn">▷ CALCULATE</button>
+        <button id="resetBtn" class="secondary">⟲ RESET</button>
+    </div>
+
+    <div id="errorMsg" class="error"></div>
+
+    <div id="resultArea" class="result-box" style="display: none;">
+        <div class="label">▼ DESTINATION GEODETIC</div>
+        <div class="coords">
+            <div class="item" id="latDMS">—</div>
+            <div class="item" id="lonDMS">—</div>
+        </div>
+        <div style="margin-top: 4px; color: #3f5f6f; font-size: 13px;">
+            <span id="latDec">—</span> &nbsp;·&nbsp; <span id="lonDec">—</span>
+        </div>
+        <div class="summary" id="summaryLine">—</div>
+    </div>
+
+    <div class="footer">LUNAR RADIUS: 6371 KM · SPHERICAL MODEL</div>
+</div>
+
+<script>
+    (function() {
+        // ---- CONSTANTS ----
+        const R = 5600; // near Earth-sized moon radius in km
+        const ORIGIN_LAT_DEC = -0.423333; // 00°25'24.0"S
+        const ORIGIN_LON_DEC = 0.0;
+
+        // ---- DOM refs ----
+        const bearingSelect = document.getElementById('bearingSelect');
+        const customBearing = document.getElementById('customBearing');
+        const distanceInput = document.getElementById('distanceInput');
+        const calcBtn = document.getElementById('calcBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        const resultArea = document.getElementById('resultArea');
+        const latDMS = document.getElementById('latDMS');
+        const lonDMS = document.getElementById('lonDMS');
+        const latDec = document.getElementById('latDec');
+        const lonDec = document.getElementById('lonDec');
+        const summaryLine = document.getElementById('summaryLine');
+        const errorMsg = document.getElementById('errorMsg');
+
+        // ---- Helper: decimal → DMS string ----
+        function decToDMS(dec, isLat) {
+            const abs = Math.abs(dec);
+            const deg = Math.floor(abs);
+            const minFloat = (abs - deg) * 60;
+            const min = Math.floor(minFloat);
+            const sec = ((minFloat - min) * 60);
+            const roundedSec = Math.round(sec * 10) / 10; // one decimal
+
+            let dir = '';
+            if (isLat) {
+                dir = (dec >= 0) ? 'N' : 'S';
+            } else {
+                dir = (dec >= 0) ? 'E' : 'W';
+            }
+            // Pad degrees/minutes with leading zeros
+            const degStr = String(deg).padStart(2, '0');
+            const minStr = String(min).padStart(2, '0');
+            const secStr = roundedSec.toFixed(1).padStart(4, '0');
+            return `${degStr}°${minStr}'${secStr}"${dir}`;
+        }
+
+        // ---- Core navigation: destination from start + bearing + distance ----
+        function calculateDestination(lat1Deg, lon1Deg, bearingDeg, distKm) {
+            const lat1 = lat1Deg * Math.PI / 180;
+            const lon1 = lon1Deg * Math.PI / 180;
+            const theta = bearingDeg * Math.PI / 180;
+            const delta = distKm / R; // angular distance
+
+            const lat2 = Math.asin(
+                Math.sin(lat1) * Math.cos(delta) +
+                Math.cos(lat1) * Math.sin(delta) * Math.cos(theta)
+            );
+
+            const lon2 = lon1 + Math.atan2(
+                Math.sin(theta) * Math.sin(delta) * Math.cos(lat1),
+                Math.cos(delta) - Math.sin(lat1) * Math.sin(lat2)
+            );
+
+            return {
+                lat: lat2 * 180 / Math.PI,
+                lon: lon2 * 180 / Math.PI
+            };
+        }
+
+        // ---- render result ----
+        function renderResult(bearingDeg, distKm, dest) {
+            const lat = dest.lat;
+            const lon = dest.lon;
+
+            // DMS
+            latDMS.textContent = decToDMS(lat, true);
+            lonDMS.textContent = decToDMS(lon, false);
+
+            // Decimal
+            latDec.textContent = lat.toFixed(6) + '°';
+            lonDec.textContent = lon.toFixed(6) + '°';
+
+            // Summary
+            const dirMap = {
+                '0': 'due North', '22.5': 'NNE', '45': 'NE', '67.5': 'ENE',
+                '90': 'due East', '112.5': 'ESE', '135': 'SE', '157.5': 'SSE',
+                '180': 'due South', '202.5': 'SSW', '225': 'SW', '247.5': 'WSW',
+                '270': 'due West', '292.5': 'WNW', '315': 'NW', '337.5': 'NNW'
+            };
+            const dirName = dirMap[String(bearingDeg)] || bearingDeg.toFixed(1) + '°';
+
+            // Determine if destination is N/S/E/W of New Eden
+            const latDiff = lat - ORIGIN_LAT_DEC;
+            const lonDiff = lon - ORIGIN_LON_DEC;
+            const northSouth = (latDiff > 0.001) ? 'north' : (latDiff < -0.001) ? 'south' : '';
+            const eastWest = (lonDiff > 0.001) ? 'east' : (lonDiff < -0.001) ? 'west' : '';
+
+            let directionPhrase = '';
+            if (northSouth && eastWest) directionPhrase = `${northSouth} and ${eastWest}`;
+            else if (northSouth) directionPhrase = northSouth;
+            else if (eastWest) directionPhrase = eastWest;
+            else directionPhrase = 'the same location';
+
+            summaryLine.innerHTML = `
+                <em>${distKm.toFixed(1)} km</em> ${dirName} from New Eden places you 
+                <em>${directionPhrase}</em> of the capital.
+                ${Math.abs(latDiff) > 1 ? ' (Crossed the equator!)' : ''}
+            `;
+
+            resultArea.style.display = 'block';
+        }
+
+        // ---- main calculate ----
+        function calculate() {
+            errorMsg.style.display = 'none';
+            errorMsg.textContent = '';
+
+            // Get distance
+            const dist = parseFloat(distanceInput.value);
+            if (isNaN(dist) || dist < 0) {
+                errorMsg.textContent = '⚠ Invalid distance. Enter a positive number.';
+                errorMsg.style.display = 'block';
+                return;
+            }
+            if (dist > R * Math.PI) {
+                errorMsg.textContent = `⚠ Distance exceeds half-circumference (${(R * Math.PI).toFixed(0)} km). Use a shorter range.`;
+                errorMsg.style.display = 'block';
+                return;
+            }
+
+            // Get bearing: prefer custom if filled, else dropdown
+            let bearingDeg;
+            const customVal = customBearing.value.trim();
+            if (customVal !== '') {
+                bearingDeg = parseFloat(customVal);
+                if (isNaN(bearingDeg) || bearingDeg < 0 || bearingDeg >= 360) {
+                    errorMsg.textContent = '⚠ Custom bearing must be between 0 and 360.';
+                    errorMsg.style.display = 'block';
+                    return;
+                }
+            } else {
+                bearingDeg = parseFloat(bearingSelect.value);
+            }
+
+            // Calculate
+            const dest = calculateDestination(ORIGIN_LAT_DEC, ORIGIN_LON_DEC, bearingDeg, dist);
+            renderResult(bearingDeg, dist, dest);
+        }
+
+        // ---- reset ----
+        function resetForm() {
+            bearingSelect.value = '22.5';
+            customBearing.value = '';
+            distanceInput.value = '2000';
+            resultArea.style.display = 'none';
+            errorMsg.style.display = 'none';
+            errorMsg.textContent = '';
+        }
+
+        // ---- sync: clear custom when dropdown changes ----
+        bearingSelect.addEventListener('change', function() {
+            if (this.value !== '') {
+                customBearing.value = '';
+            }
+        });
+
+        customBearing.addEventListener('input', function() {
+            if (this.value.trim() !== '') {
+                bearingSelect.value = '';
+            }
+        });
+
+        // ---- events ----
+        calcBtn.addEventListener('click', calculate);
+        resetBtn.addEventListener('click', resetForm);
+
+        // Enter key on distance or custom bearing triggers calc
+        distanceInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') calculate(); });
+        customBearing.addEventListener('keydown', (e) => { if (e.key === 'Enter') calculate(); });
+
+        // ---- auto-run on load with default (2000km NNE) ----
+        window.addEventListener('load', function() {
+            // ensure defaults
+            bearingSelect.value = '22.5';
+            distanceInput.value = '2000';
+            calculate();
+        });
+
+    })();
+</script>
+
+</body>
+</html>
