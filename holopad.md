@@ -7,7 +7,7 @@ title: Holopads - OP-GLASS INTERFACE SYSTEMS
   <table>
     <tr>
       <td colspan="2" class="text-center pb-2">
-        <img src="{{ '/assets/images/gallery/holopad-series7.webp' | relative_url }}" alt="Holopad Series-7 transparent display" class="portrait" style="width:280px; border-radius:0.5rem;">
+        <img src="{{ '/assets/images/gallery/holopad.webp' | relative_url }}" alt="Holopad Series-7 transparent display" class="portrait" style="width:280px; border-radius:0.5rem;">
         <div class="image-caption">Holopad / Holoscreen Series-7 in Active (transparent) mode</div>
       </td>
     </tr>
@@ -18,7 +18,7 @@ title: Holopads - OP-GLASS INTERFACE SYSTEMS
     <tr><th>Bezel Material</th><td>High-density carbon composite</td></tr>
     <tr><th>Display Modes</th><td>Active (Transparent) / Shade (High-Contrast)</td></tr>
     <tr><th>Depth Tracking</th><td>Multi-camera parallax, real-time IPD mapping</td></tr>
-    <tr><th>Self-Cleaning</th><td>Oleophobic coating + Ultrasonic (22&nbsp;kHz)</td></tr>
+    <tr><th>Self-Cleaning</th><td>Oleophobic coating + Ultrasonic (22 kHz)</td></tr>
     <tr><th>Input Methods</th><td>Virtual Keyboard (haptic) / Resonant Stylus</td></tr>
   </table>
 </div>
@@ -51,8 +51,8 @@ title: Holopads - OP-GLASS INTERFACE SYSTEMS
 ### **3\. CONTAMINATION MITIGATION (SELF-CLEANING)**
 
 * **Passive Layer:** Permanent fluoropolymer matrix molecularly bonded to the outer glass. This ultra-durable oleophobic coating prevents skin lipids and moisture from adhering or smearing, forcing them to bead loosely on the surface.  
-* **Active Layer (Sonic Shiver):** Frame-mounted piezoelectric actuators that emit high-frequency ultrasonic waves ($\>22\\text{ kHz}$) across the glass panel during standby or manual cycles.  
-* **Operational Nuance:** The micro-vibration instantly breaks the weak surface tension of the beaded lipids and pocket dust, atomizing or shearing the debris off the lower bezel edge. Emits a low, audible acoustic pulse ($150\\text{ Hz}$) to violently pump out liquid if completely submerged.
+* **Active Layer (Sonic Shiver):** Frame-mounted piezoelectric actuators that emit high-frequency ultrasonic waves (22 kHz) across the glass panel during standby or manual cycles.  
+* **Operational Nuance:** The micro-vibration instantly breaks the weak surface tension of the beaded lipids and pocket dust, atomizing or shearing the debris off the lower bezel edge. Emits a low, audible acoustic pulse (150 Hz) to violently pump out liquid if completely submerged.
 
 </div> <div class="card-bg" markdown="1">
 
