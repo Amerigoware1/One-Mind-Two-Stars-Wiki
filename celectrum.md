@@ -7,10 +7,19 @@ function: "Musical instrument"
 
 <div class="infobox">
   <table>
-    <tr>
+     <tr>
       <td colspan="2" class="text-center pb-2">
-        <img src="{{ '/assets/images/gallery/celectrum.jpg' | relative_url }}" alt="Celectrum" class="portrait" style="width:280px; border-radius:0.5rem;">
-        <div class="image-caption">Celectrum</div>
+<div class="portrait-container">
+    <video id="celectrum-vid" autoplay muted playsinline class="portrait" poster="assets/images/Celectrum.jpg">
+      <source src="assets/images/celectrum.mp4" type="video/mp4">
+      <img src="assets/images/Celectrum.jpg" title="Your browser does not support the video tag">
+    </video>
+    
+    <div class="video-controls">
+        <button onclick="togglePlay()" id="playBtn">⟳ REPLAY</button>
+        <button onclick="toggleMute()" id="muteBtn">UNMUTE</button>
+    </div>
+</div>
       </td>
     </tr>
     <tr><th colspan="2">Specifications</th></tr>
@@ -82,3 +91,38 @@ The Celectrum was created by Jaxon, an engineer and musician, as a personal proj
   * Associated with themes of intimacy, innovation, and the blending of science with art.
 
 </div>
+
+  <script>
+    const toTopBtn = document.getElementById("toTopBtn");
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 200) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    });
+    toTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+  <script>
+  const video = document.getElementById('celectrum-vid');
+const muteBtn = document.getElementById('muteBtn');
+
+function togglePlay() {
+    video.currentTime = 0; // Rewind to start
+    video.play();
+}
+
+function toggleMute() {
+    if (video.muted) {
+        video.muted = false;
+        muteBtn.innerText = "MUTE";
+    } else {
+        video.muted = true;
+        muteBtn.innerText = "UNMUTE";
+    }
+}
+    </script>
+</body>
+</html>
