@@ -783,7 +783,7 @@ title: Glossary
   <div class="card-bg glossary-item" data-name="First Contact Committee" data-category="politics" data-search="council protocol coexistence galinstanian santos roan alex cruiz amerigo zoë">
     <h2>First Contact Committee</h2>
     <p><strong>Pronunciation:</strong> /fɜːrst ˈkɒntækt kəˈmɪti/<button class="speak-button">🔊</button></p>
-    <p>The council‑sanctioned body responsible for developing protocols for coexistence with the Galinstanians. Members: Santos, Roan, Alex Cruiz, Amerigo, Zoë.</p>
+    <p>The council‑sanctioned body responsible for developing protocols for coexistence with the Galinstanians. Members: Santos, Roan, Alex Cruiz, Amerigo, Zoë, Celectra.</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Tribunal" data-category="politics" data-search="legal proceeding guilty probation demotion kret">
