@@ -7,23 +7,8 @@ layout: default
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARES NAV :: New Eden Coordinate Calculator</title>
+
     <style>
-        /* fit between header and footer, with a dark theme and monospace font */
-        .terminal {
-            border: 1px solid #2a3a4a;
-            border-radius: 12px;
-            padding: 40px 45px;
-            max-width: 720px;
-            width: 100%;
-            box-shadow: 0 0 40px rgba(0, 180, 255, 0.05);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-    </style>
-<!--     <style>
         * {
             margin: 0;
             padding: 0;
@@ -31,49 +16,50 @@ layout: default
         }
 
         body {
-            background: #0b0e14;
+            background: transparent;
             font-family: 'Courier New', monospace;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
+            min-height: 100%;
+            padding: 30px 15px;
+            color: #111;
         }
 
         .terminal {
-            background: #141a22;
-            border: 1px solid #2a3a4a;
+            background: #ffffff;
+            border: 1px solid #d2d6dc;
             border-radius: 12px;
-            padding: 40px 45px;
-            max-width: 720px;
+            padding: 36px 40px;
+            max-width: 780px;
             width: 100%;
-            box-shadow: 0 0 40px rgba(0, 180, 255, 0.05);
+            margin: 0 auto;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
         }
 
         .header {
-            border-bottom: 1px solid #1e2c38;
-            padding-bottom: 16px;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 18px;
             margin-bottom: 28px;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
+            gap: 1rem;
         }
 
         .header h1 {
-            color: #7fc9ff;
+            color: #111827;
             font-size: 18px;
-            font-weight: 400;
-            letter-spacing: 3px;
+            font-weight: 600;
+            letter-spacing: 1px;
             text-transform: uppercase;
         }
 
         .header .origin {
-            color: #5a7a8a;
+            color: #4b5563;
             font-size: 12px;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
         }
+
         .header .origin span {
-            color: #aacfdf;
+            color: #1d4ed8;
         }
 
         .input-group {
@@ -84,97 +70,100 @@ layout: default
         }
 
         .field {
-            flex: 1 0 160px;
+            flex: 1 0 180px;
         }
 
         .field label {
             display: block;
-            color: #6b8d9e;
+            color: #6b7280;
             font-size: 10px;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             text-transform: uppercase;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
 
-        .field select, .field input {
+        .field select,
+        .field input {
             width: 100%;
-            background: #0b1118;
-            border: 1px solid #1f313e;
-            border-radius: 6px;
-            padding: 10px 12px;
-            color: #c8e2f0;
+            background: #f8fafc;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            padding: 12px 14px;
+            color: #111827;
             font-family: 'Courier New', monospace;
             font-size: 15px;
             outline: none;
-            transition: border 0.2s;
+            transition: border 0.2s, box-shadow 0.2s;
         }
 
-        .field select:focus, .field input:focus {
-            border-color: #3d8db0;
+        .field select:focus,
+        .field input:focus {
+            border-color: #93c5fd;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
         }
 
         .field input::placeholder {
-            color: #2f4555;
+            color: #9ca3af;
         }
 
         .field .hint {
-            color: #3f5f6f;
+            color: #6b7280;
             font-size: 10px;
-            margin-top: 4px;
+            margin-top: 6px;
         }
 
         .actions {
             display: flex;
             gap: 12px;
             margin: 18px 0 28px 0;
+            flex-wrap: wrap;
         }
 
         .actions button {
             flex: 1;
-            background: #0b1a26;
-            border: 1px solid #1f3f52;
-            border-radius: 6px;
+            background: #2563eb;
+            border: 1px solid #2563eb;
+            border-radius: 8px;
             padding: 12px 0;
-            color: #8fcbff;
+            color: #ffffff;
             font-family: 'Courier New', monospace;
             font-size: 14px;
             font-weight: 600;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
             cursor: pointer;
-            transition: all 0.25s;
+            transition: all 0.2s ease;
         }
 
         .actions button:hover {
-            background: #12303f;
-            border-color: #4a8fb0;
-            color: #b0deff;
-            box-shadow: 0 0 20px rgba(0, 140, 255, 0.08);
+            background: #1d4ed8;
+            border-color: #1d4ed8;
+            box-shadow: 0 10px 24px rgba(37, 99, 235, 0.16);
         }
 
         .actions button.secondary {
             background: transparent;
-            border-color: #1a2a34;
-            color: #4a6a7a;
+            border-color: #9ca3af;
+            color: #374151;
             flex: 0.4;
         }
 
         .actions button.secondary:hover {
-            background: #0f1a22;
-            border-color: #2a4a5a;
-            color: #7a9aaa;
+            background: #f3f4f6;
+            border-color: #6b7280;
+            color: #111827;
         }
 
         .result-box {
-            background: #0a1119;
-            border-left: 3px solid #2a6a8a;
-            padding: 18px 22px;
-            border-radius: 4px;
-            margin-top: 6px;
+            background: #f8fafc;
+            border-left: 3px solid #2563eb;
+            padding: 20px 22px;
+            border-radius: 8px;
+            margin-top: 12px;
         }
 
         .result-box .label {
-            color: #4a7a8a;
+            color: #4b5563;
             font-size: 10px;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -184,56 +173,58 @@ layout: default
             display: flex;
             flex-wrap: wrap;
             gap: 12px 30px;
-            margin-top: 8px;
+            margin-top: 10px;
         }
 
         .result-box .coords .item {
-            color: #c0dce8;
+            color: #111827;
             font-size: 18px;
             letter-spacing: 0.5px;
         }
 
         .result-box .coords .item small {
-            color: #4a6a7a;
+            color: #6b7280;
             font-size: 11px;
             margin-left: 6px;
-            font-weight: 300;
+            font-weight: 400;
         }
 
         .result-box .summary {
-            color: #6a9aaa;
+            color: #4b5563;
             font-size: 13px;
-            margin-top: 12px;
-            border-top: 1px solid #12222e;
+            margin-top: 14px;
+            border-top: 1px solid #e5e7eb;
             padding-top: 12px;
         }
 
         .result-box .summary em {
-            color: #b0d8ee;
+            color: #1d4ed8;
             font-style: normal;
         }
 
         .footer {
             margin-top: 20px;
-            color: #1f3340;
-            font-size: 10px;
+            color: #6b7280;
+            font-size: 11px;
             text-align: right;
             letter-spacing: 0.5px;
         }
 
         .error {
-            color: #d48a8a;
+            color: #b91c1c;
             font-size: 12px;
             margin-top: 6px;
             display: none;
         }
 
-        @media (max-width: 480px) {
-            .terminal { padding: 24px 18px; }
-            .header { flex-direction: column; align-items: flex-start; gap: 6px; }
+        @media (max-width: 640px) {
+            .terminal { padding: 24px 20px; }
+            .header { flex-direction: column; align-items: flex-start; gap: 10px; }
             .result-box .coords .item { font-size: 15px; }
+            .actions { flex-direction: column; }
+            .actions button.secondary { flex: 1; }
         }
-    </style> -->
+    </style>
 </head>
 <body>
 
