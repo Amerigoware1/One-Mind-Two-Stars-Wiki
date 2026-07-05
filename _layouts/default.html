@@ -10,13 +10,8 @@
   <link rel="stylesheet" href="{{ '/wikistyle.css' | relative_url }}">
   <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
   <!-- Optional: Favicon, meta tags, etc. -->
-</head>
 
-<body>
-
-  {% include top-banner.html %}
-
-  {% if page.is_archive %}
+    {% if page.is_archive %}
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <style>
@@ -25,8 +20,13 @@
     }
   </style>
   {% endif %}
+</head>
 
-  <main class="page-content">
+<body>
+
+  {% include top-banner.html %}
+
+   <main class="page-content">
     {{ content }}
   </main>
 
