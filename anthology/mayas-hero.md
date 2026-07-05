@@ -7,6 +7,7 @@ return_label: "Return to Anthology index"
 ---
 
 # {{ page.title }}
+
 {% capture chapter_content %}
 
 Celectra approached the waiting cave entrance with both bodies moving in easy synchronization. She’d come alone today, planning a quiet soak in the geothermal pool—knees still aching from the sustained seiza yesterday. No council questions, no diplomatic pressure, just general conversation—or silence.
@@ -43,7 +44,7 @@ The Diplomat: *She’s trying so hard to impress you. Be kind. You can soak anot
 
 The Wildcard: *She’s trying to contribute something real. That deserves respect, not condescension. You can invite her to soak with you.*
 
-\<\!-- page \--\>
+<!-- page -->
 
 “Come inside,” Celectra said, gathering up the drawings carefully. “Let’s ask Stan directly. If he’s interested, you can sketch him in person—no more working from secondhand descriptions and a distant memory.”
 
@@ -93,7 +94,7 @@ Maya looked like she might cry from joy. “Thank you. Thank you so much. I prom
 
 *“Breathe,”* Celectra said, both voices warm with amusement. *“You’re already doing them justice. Stan doesn’t offer praise lightly.”*
 
-\<\!-- page \--\>
+<!-- page -->
 
 *“I have to admit,”* said Celectra, *“I came here with the intention of relaxing in the hot pool. Do you think you can draw with your lower half in water?”*
 
@@ -137,7 +138,7 @@ And there it was—the hero-worship again, naked in her voice. Celectra felt all
 
 *But carefully*, the Wildcard hemisphere added. *She’s thirteen and vulnerable. Don’t crush her.*
 
-\<\!-- page \--\>
+<!-- page -->
 
 They emerged from the caves two hours later, Celectra retrieving her hats at the entrance. Maya’s portfolio was now bulging with new sketches and reference materials. The afternoon light painted the settlement in warm coppers, with Niamh hanging low on the horizon while her dimmer companion, Ciara, traced her own arc across the rust-colored sky.
 
@@ -217,7 +218,7 @@ They rode their hover-bikes back toward the settlement together, the conversatio
 
 Not forbidden. Just... managed.
 
-\<\!-- page \--\>
+<!-- page -->
 
 As they reached the residential cluster where Maya’s family lived, the younger girl paused at her door. “Celectra?”
 
