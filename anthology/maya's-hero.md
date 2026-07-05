@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Maya's Hero
 is_archive: true
 return_url: anthology.html
