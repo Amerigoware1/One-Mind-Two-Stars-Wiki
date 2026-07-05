@@ -26,7 +26,7 @@ Daddy’s voice went quieter. “I figured if anything should represent what mak
 <!-- page -->
 
 *Unique. One. Not twins. Not Celeste-and-Electra. Just me.*  
-Celectra remembered the old earrings she’d worn since she was tiny—gold stars for one body, amber teardrops for the other. Mismatched, because that was what people expected when they saw two faces. A few months ago she’d swapped them, wearing one star and one teardrop on each body, a silent message she wasn’t sure anyone would read. Daddy had noticed. He’d actually noticed.  
+Celectra remembered the old earrings she’d worn since she was tiny—gold stars for one body, amber teardrops for the other. Mismatched, because that was what people expected when they saw two faces. A few months ago she’d swapped them, wearing one star on each left lobe and the teardrops on the right ones, a silent message she wasn’t sure anyone would read. Daddy had noticed. He’d actually noticed.  
 Her throat tightened. “Daddy…” both her voices came out wobbly.  
 “You get to decide what to do with the old ones,” he went on. “Keep them, pass them on, whatever you want. These are for the you you’ve always been—one person with her own kind of electricity running between her.”  
 She threw all four of her arms around him, pressing both her faces against his chest. His shirt smelled like coffee and the faint, clean scent of the lab. She could feel his heartbeat under her right cheek, steady and solid. “Thank you, Daddy!” she managed, her voices muffled. “Thank you, thank you!”  
