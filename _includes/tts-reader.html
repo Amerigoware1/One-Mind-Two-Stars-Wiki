@@ -100,29 +100,47 @@
     opacity: 1;
   }
 
-  .tts-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    margin-top: 10px;
-    border-top: 1px solid var(--neon-violet, #bb86fc);
-  }
+.tts-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-top: 1px solid var(--neon-violet, #bb86fc);
+}
 
-  .tts-nav button {
-    padding: 6px 14px;
-    background: var(--neon-violet, #bb86fc);
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-  }
+.tts-nav button {
+  padding: 6px 14px;
+  background: var(--neon-violet, #bb86fc);
+  border: none;
+  border-radius: 4px;
+  /* Swapped from white to match the razor-sharp contrast of the TTS controls */
+  color: #12121c; 
+  font-weight: bold;
+  cursor: pointer;
+  /* Smoothes out your existing mouseover shift so it glides like silk */
+  transition: all 0.2s ease-in-out; 
+}
 
-  .tts-nav button:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-  }
+/* Enhanced Hover state to match the top controls */
+.tts-nav button:hover:not(:disabled) {
+  background: #d7b4ff;
+  box-shadow: 0 0 10px rgba(187, 134, 252, 0.4);
+  /* If your existing mouseover logic is handled via JS or a different class, 
+     this transition will ensure the visual blending remains perfectly fluid. */
+}
+
+/* Tactile click feedback */
+.tts-nav button:active:not(:disabled) {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.tts-nav button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
 
   .tts-highlight {
     background: var(--neon-cyan, #00e8ff);
