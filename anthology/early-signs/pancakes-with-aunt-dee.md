@@ -6,8 +6,6 @@ return_url: /anthology/early-signs/index.html
 return_label: "Return to Early Signs index"
 ---
 
-# {{ page.title }}
-
 {% capture chapter_content %}
 
 Amerigo paused in the doorway of the Cruiz kitchen, the scent of vanilla and warm flour wrapping around him like a familiar blanket. He watched, heart softening, as his four-year-old daughters worked.

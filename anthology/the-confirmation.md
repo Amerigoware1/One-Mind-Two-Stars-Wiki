@@ -6,8 +6,6 @@ return_url: anthology.html
 return_label: "Return to Anthology index"
 ---
 
-# {{ page.title }}
-
 {% capture chapter_content %}
 
 Amerigo watched his daughters' anticipation radiate through the exam room as Nurse Tim Alverson ushered them into the examination room. Amerigo took in the familiar details—the textured panels with their calming artificial wood grain, the soft hum of air filters, and the faint scent of antiseptic softened by something floral. Alex had always insisted a doctor’s office should feel less like a clinic and more like a place of comfort, and it showed; the small space felt more like a cozy study than a medical facility.  

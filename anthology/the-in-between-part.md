@@ -6,8 +6,6 @@ return_url: anthology.html
 return_label: "Return to Anthology index"
 ---
 
-# {{ page.title }}
-
 {% capture chapter_content %}
 
 Celectra woke on her eighth birthday to the smell of omelets and the pale gold light filtering through her window. Both of her padded barefoot across the cool stone floor, still drowsy, still drinking her morning shake, the familiar hum of her celectricity a soft background thread connecting her two bodies. Daddy stood at the counter with his back to her, doing something with his hands.  
@@ -121,7 +119,7 @@ Down in the sculpted chambers, Stan and several others emerged from the crevices
 *It’s Celebration Day,* Stan transmitted, his thoughts warm with pleasure. *We sense happiness in you, Celectra.*  
 She touched her new earrings, both her left and right hands moving in perfect mirror. The lightning bolts were cool under her fingers. *“Daddy gave me these new earrings. Lightning bolts—for my celectricity. So I match. So people see me as me.”*  
 *We have always seen you as you,* came the gentle reply. *But we understand symbols matter to your kind. We were happy to provide the indigestible stones. They are beautiful—we sense the intense, static charge of their structure, and we feel the beauty you see in them. They are like captured sparks. Come, I have something to show you.*  
-Her dual curiosity sharpened. “Wait! How did… how did you ask for the diamonds, Daddy?”  
+Her dual curiosity sharpened. *“Wait! How did… how did you ask for the diamonds, Daddy?”*  
 As they walked behind Stan, Daddy explained. “I didn’t. Remember when Alex and I went to see the Galinstanian’s discarded waste? You didn’t want to see it." He grinned, “One species' trash is another species’ treasure.”  
 They gave them willingly. That knowledge sent a fresh wave of warmth through Celectra. Her earrings weren’t just stones. They were a gift from two species, connected through her.  
 

@@ -6,7 +6,6 @@ return_url: anthology.html
 return_label: "Return to Anthology index"
 ---
 
-# {{ page.title }}
 {% capture chapter_content %}
 
 Amerigo sat heavily in the middle of the sofa, absently cupping the four little feet in his lap between his hands. Celectra lay with a head on each arm of the sofa, each with a holopad synced to the same page of a book. Just this morning, Alex had confirmed what Amerigo had begun to suspect: Celectra wasn't twins, Celeste and Electra, but one person—a single consciousness in two bodies.  

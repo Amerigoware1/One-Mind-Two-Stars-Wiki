@@ -6,8 +6,6 @@ return_url: /anthology/counseling/index.html
 return_label: "Return to Counseling index"
 ---
 
-# {{ page.title }}
-
 {% capture chapter_content %}
 
 Dr. Zoë Kret, PsyD, rushed to finish her notes on her last patient when she heard the door swoosh open. She looked up to see two beautiful young girls hesitantly entering her office with their father and stopping behind the two cushioned chairs in front of her desk.  

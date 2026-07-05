@@ -6,8 +6,6 @@ return_url: /anthology/early-signs/index.html
 return_label: "Return to Early Signs index"
 ---
 
-# {{ page.title }}
-
 {% capture chapter_content %}
 
 At six months old, the twins sat in their high chairs side by side – trays locked, safety straps snug. The medical schedule on Amerigo’s datapad said it was time for solid foods. Mashed peas, specifically. He had prepared the mush himself, spooning it from the MRE into two tiny bowls.

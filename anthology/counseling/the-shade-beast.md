@@ -6,8 +6,6 @@ return_url: /anthology/counseling/index.html
 return_label: "Return to Counseling index"
 ---
 
-# {{ page.title }}
-
 {% capture chapter_content %}
 
 When Dr. Zoë Kret arrived at the holo-chamber aboard Utopis, a place she had only visited once as a child, she found Celectra already there. The metallic tang of recycled air on Utopis, a sharp contrast to the arid breeze she remembered from Ares, hung heavy in the sterile space. Celectra was barefoot and pacing the corridor.   

@@ -6,8 +6,6 @@ return_url: anthology.html
 return_label: "Return to Anthology index"
 ---
 
-# {{ page.title }}
-
 {% capture chapter_content %}
 
 By week two, Amerigo had resorted to colored ribbons tied around their right ankles. Gold for Electra. Blue for Celeste.  

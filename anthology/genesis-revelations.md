@@ -6,8 +6,6 @@ return_url: anthology.html
 return_label: "Return to Anthology index"
 ---
 
-# {{ page.title }}
-
 {% capture chapter_content %}
 
 Amerigo jolted awake to the sound of a pint-sized invasion force storming his berth aboard the space station, Utopis. His twin daughters, a whirlwind of boundless energy, quickly flanked his bed, seizing his arms and launching an adorable onslaught of demands, their voices a synchronized clamor in his room. This wasn’t the first time this had happened, and he knew it wouldn’t be the last. Despite his lean and muscular physique, he was utterly powerless against their formidable attributes of charm and puppy-dog eyes.  

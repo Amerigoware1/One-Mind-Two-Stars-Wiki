@@ -6,8 +6,6 @@ return_url: /anthology/counseling/index.html
 return_label: "Return to Counseling index"
 ---
 
-# {{ page.title }}
-
 {% capture chapter_content %}
 
 The Nexus was a wide circular building just like the others around the roundabout in New Eden's center—part community hall, part recreation space—the social hub, its stone walls thick enough to hold the heat on cool evenings and the cool on hot ones. The holo-chambers were on the upper floor, three rooms set aside for entertainment, education, and the occasional therapeutic use that Celectra suggested. The corridor smelled of the same generic cleaning solution as every colony building, but up here the light was better, east-facing windows catching the morning before Chaos rose to dominate the sky.

@@ -6,8 +6,6 @@ return_url: anthology.html
 return_label: "Return to Anthology index"
 ---
 
-# {{ page.title }}
-
 {% capture chapter_content %}
 
 The cylindrical elevator car was cramped with six bodies, but Celectra felt only warmth—the solid presence of Uncle Doc at her back, Daddy's hand resting lightly on her shoulder, Dr. Zoë's quiet hum vibrating through the confined space. This closeness wasn't confinement; it was sanctuary.  
