@@ -114,11 +114,14 @@ Celectra's 8th birthday.
 
 Extended version of Maya's Hero (Pattern Recognition)
 
-[Read →]({{ '/anthology/maya's-hero.html' | relative_url }})
+[Read →]({{ '/anthology/mayas-hero.html' | relative_url }})
 
+</div> 
 
-* * *
+<div class="card-bg" markdown="1">
 
 Stories are presented as originally written, with minor formatting adjustments for the web. 
-
+* * *
 [← Return to Main Wiki]({{ '/index.html' | relative_url }})
+
+</div>
