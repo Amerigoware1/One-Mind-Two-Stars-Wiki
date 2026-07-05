@@ -11,9 +11,9 @@ title: MLV-01 "Strider" Maglev Buggy
         <div class="image-caption">MLV-01 Strider</div>
       </td>
     </tr>
-    <tr><th colspan="2">MLV-01 "Strider" Maglev Buggy</th></tr>
+    <tr><th colspan="2">MLV-01 "Glide Pod" Maglev Buggy</th></tr>
     <tr><th>Classification</th><td>Recreational All-Terrain Vehicle</td></tr>
-    <tr><th>Common Names</th><td>Strider, Dust-Skimmer, Glider-Kart</td></tr>
+    <tr><th>Common Names</th><td>Glide Pod, Dust-Skimmer, Glider-Kart</td></tr>
     <tr><th>Manufacturer</th><td>Fabrication Annex 1</td></tr>
     <tr><th>Development</th><td>Science and Technology Center</td></tr>
     <tr><th>Technology</th><td>Hubless Maglev Drive, Kinetic Harvesting</td></tr>

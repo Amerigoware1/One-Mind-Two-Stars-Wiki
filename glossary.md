@@ -351,11 +351,11 @@ title: Glossary
     <p>The chamber the Galinstanians built to amplify Celectra’s neural signal using bismuth vein geometry tuned to her interbody frequency (~21.7-hz).</p>
   </div>
 
-  <!-- NEW: Strider -->
-  <div class="card-bg glossary-item" data-name="Strider" data-category="tech" data-search="maglev buggy vehicle all-terrain mlv-01 dust-skimmer glider-kart">
-    <h2><a href="{{ '/strider.html' | relative_url }}">MLV‑01 "Strider" Maglev Buggy</a></h2>
+  <!-- NEW: Glide Pod -->
+  <div class="card-bg glossary-item" data-name="Glide Pod" data-category="tech" data-search="maglev buggy vehicle all-terrain mlv-01 dust-skimmer glider-kart">
+    <h2><a href="{{ '/glide-pod.html' | relative_url }}">MLV‑01 "Glide Pod" Maglev Buggy</a></h2>
     <p><strong>Pronunciation:</strong> /ˈstraɪdər/<button class="speak-button">🔊</button></p>
-    <p>A high‑mobility recreational all‑terrain vehicle using hubless maglev drive and kinetic harvesting. Known as Strider, Dust‑Skimmer, or Glider‑Kart. Seats 1–2 in twin recumbent positions, top speed 85 km/h.</p>
+    <p>A high‑mobility recreational all‑terrain vehicle using hubless maglev drive and kinetic harvesting. Known as Glide Pod, Dust‑Skimmer, or Glider‑Kart. Seats 1–2 in twin recumbent positions, top speed 85 km/h.</p>
   </div>
 
   <div class="card-bg glossary-item" data-name="Utara" data-category="tech" data-search="ai sentient unified thought resource architecture">
