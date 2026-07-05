@@ -6,13 +6,6 @@ return_url: anthology.html
 return_label: "Return to Anthology index"
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<style>
-  body {
-    font-family: "Lora", serif;
-  }
-</style>
-
 {% capture chapter_content %}
 
 Celectra approached the waiting cave entrance with both bodies moving in easy synchronization. She’d come alone today, planning a quiet soak in the geothermal pool—knees still aching from the sustained seiza yesterday. No council questions, no diplomatic pressure, just general conversation—or silence.
@@ -67,7 +60,7 @@ The main communion chamber opened before them, its walls smoothed to flowing cur
 
 *Celectra. Welcome.* His thought-voice rippled through her mind like warm water. Then, with curiosity rather than suspicion: *You bring another human.*
 
-*“This is Maya Keahi,”* Celectra said. “She’s an artist. A creator of images. She wishes to document your people visually for cultural exchange.”
+*“This is Maya Keahi,”* Celectra said. *“She’s an artist. A creator of images. She wishes to document your people visually for cultural exchange.”*
 
 Maya had frozen at the chamber’s entrance, eyes wide, one hand clutching her portfolio case like a shield. “He’s... he’s in my head. I can feel him.”
 
