@@ -4,43 +4,60 @@
     max-width: 800px;
     margin: 0 auto;
   }
-  .tts-controls {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: var(--bg-card, #1e1e2f);
-    padding: 10px 15px;
-    border-radius: 6px;
-    border: 1px solid var(--neon-violet, #bb86fc);
-    margin-bottom: 10px;
-    color: var(--text-primary, #eee);
-    flex-wrap: wrap;
-  }
+
   .tts-controls button {
     padding: 8px 15px;
     cursor: pointer;
     background: var(--neon-violet, #bb86fc);
-    color: var(--text-heading, #fff);
+    /* Changed from white to a dark indigo/charcoal for razor-sharp contrast */
+    color: #12121c;
     border: none;
     border-radius: 4px;
     font-weight: bold;
+    /* Adds a smooth easing effect instead of a sudden jump on hover */
+    transition: all 0.2s ease-in-out;
   }
+
+  /* Enhanced Hover & Active States */
+  .tts-controls button:hover:not(:disabled) {
+    /* Shifts the button color slightly brighter/closer to a neon glow */
+    background: #d7b4ff;
+    /* Subtle lift effect */
+    transform: translateY(-1px);
+    /* Optional soft glow to match the sci-fi theme */
+    box-shadow: 0 0 10px rgba(187, 134, 252, 0.4);
+  }
+
+  .tts-controls button:active:not(:disabled) {
+    /* Depresses the button slightly when clicked */
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+
   .tts-controls button:disabled {
-    opacity: 0.5;
+    opacity: 0.4;
     cursor: not-allowed;
+    /* Strips the hover transform effects for disabled states */
+    transform: none;
   }
-  .tts-controls label {
-    font-size: 0.9em;
-    font-weight: bold;
-    color: var(--text-muted, #aaa);
-  }
+
+  /* Sharpening up the Select dropdown border to match */
   .tts-controls select {
     padding: 5px;
     border-radius: 4px;
     border: 1px solid var(--neon-violet, #bb86fc);
-    background: var(--bg-card, #2a2a3a);
+    background: #1a1a26;
+    /* Darkened slightly to anchor it */
     color: var(--text-primary, #eee);
+    outline: none;
+    transition: border-color 0.2s ease;
   }
+
+  .tts-controls select:focus {
+    /* Brightens the border when user is selecting a voice */
+    border-color: #d7b4ff;
+  }
+
   .tts-container {
     position: relative;
     border: 1px solid var(--neon-violet, #bb86fc);
@@ -51,25 +68,38 @@
     max-height: 70vh;
     overflow-y: auto;
   }
+
   .tts-container.tts-active {
     border-color: var(--neon-cyan, #00e8ff);
     box-shadow: 0 0 12px rgba(0, 232, 255, 0.5);
     animation: borderPulse 2s infinite ease-in-out;
   }
+
   @keyframes borderPulse {
-    0% { box-shadow: 0 0 12px rgba(0, 232, 255, 0.4); }
-    50% { box-shadow: 0 0 18px rgba(0, 232, 255, 0.8); }
-    100% { box-shadow: 0 0 12px rgba(0, 232, 255, 0.4); }
+    0% {
+      box-shadow: 0 0 12px rgba(0, 232, 255, 0.4);
+    }
+
+    50% {
+      box-shadow: 0 0 18px rgba(0, 232, 255, 0.8);
+    }
+
+    100% {
+      box-shadow: 0 0 12px rgba(0, 232, 255, 0.4);
+    }
   }
+
   .tts-page {
     display: none;
     opacity: 0;
     transition: opacity 0.5s ease;
   }
+
   .tts-page.active {
     display: block;
     opacity: 1;
   }
+
   .tts-nav {
     display: flex;
     justify-content: space-between;
@@ -78,6 +108,7 @@
     margin-top: 10px;
     border-top: 1px solid var(--neon-violet, #bb86fc);
   }
+
   .tts-nav button {
     padding: 6px 14px;
     background: var(--neon-violet, #bb86fc);
@@ -87,10 +118,12 @@
     font-weight: bold;
     cursor: pointer;
   }
+
   .tts-nav button:disabled {
     opacity: 0.4;
     cursor: not-allowed;
   }
+
   .tts-highlight {
     background: var(--neon-cyan, #00e8ff);
     color: #000;
@@ -122,337 +155,337 @@
 </div>
 
 <script>
-(function() {
-  const synth = window.speechSynthesis;
-  let utterance = null;
-  let isPaused = false;
-  let voices = [];
-  let currentPage = 0;
-  let pages = [];
-  let currentWordIndex = -1;
+  (function () {
+    const synth = window.speechSynthesis;
+    let utterance = null;
+    let isPaused = false;
+    let voices = [];
+    let currentPage = 0;
+    let pages = [];
+    let currentWordIndex = -1;
 
-  // --- Voice persistence helpers ---
-  function saveVoice(voice) {
-    if (!voice) return;
-    const data = {
-      name: voice.name,
-      lang: voice.lang,
-      voiceURI: voice.voiceURI
-    };
-    try {
-      localStorage.setItem('preferredVoice', JSON.stringify(data));
-    } catch (e) {}
-  }
-
-  function loadVoice() {
-    try {
-      const raw = localStorage.getItem('preferredVoice');
-      if (!raw) return null;
-      return JSON.parse(raw);
-    } catch { return null; }
-  }
-
-  function applyStoredVoice() {
-    const stored = loadVoice();
-    if (!stored) return false;
-    const select = document.getElementById('voiceSelect');
-    let foundIndex = -1;
-    for (let i = 0; i < voices.length; i++) {
-      const v = voices[i];
-      if (v.voiceURI === stored.voiceURI) {
-        foundIndex = i;
-        break;
-      }
-      if (v.name === stored.name && v.lang === stored.lang) {
-        foundIndex = i;
-        break;
-      }
-    }
-    if (foundIndex > -1) {
-      select.value = foundIndex;
-      return true;
-    }
-    return false;
-  }
-
-  // --- Word wrapping for highlighting ---
-function wrapWordsPreservingHTML(element) {
-  const walker = document.createTreeWalker(
-    element,
-    NodeFilter.SHOW_TEXT,
-    null,
-    false
-  );
-
-  const textNodes = [];
-  let node;
-  while ((node = walker.nextNode())) {
-    textNodes.push(node);
-  }
-
-  textNodes.forEach(textNode => {
-    const words = textNode.textContent.split(/(\s+)/);
-    const frag = document.createDocumentFragment();
-
-    words.forEach((w, i) => {
-      if (w.trim()) {
-        const span = document.createElement('span');
-        span.className = 'tts-word';
-        span.dataset.index = i;
-        span.textContent = w;
-        frag.appendChild(span);
-      } else {
-        frag.appendChild(document.createTextNode(w));
-      }
-    });
-
-    textNode.replaceWith(frag);
-  });
-}
-
-
-  // --- Page splitting based on <!-- page --> ---
-  function splitIntoPages() {
-    const content = document.getElementById('ttsContent');
-    const raw = content.innerHTML;
-    const parts = raw.split(/<!--\s*page\s*-->/i);
-
-    if (parts.length > 1) {
-      content.innerHTML = "";
-      parts.forEach((html, i) => {
-        const page = document.createElement('div');
-        page.className = 'tts-page' + (i === 0 ? ' active' : '');
-        page.innerHTML = html.trim();
-        content.appendChild(page);
-      });
-      return true;
-    }
-    return false;
-  }
-
-  // --- Page handling ---
-  function initPages() {
-    const content = document.getElementById('ttsContent');
-
-    // Try to split based on <!-- page --> markers
-    splitIntoPages();
-
-    let pageElements = content.querySelectorAll('.tts-page');
-
-    if (pageElements.length > 0) {
-      pages = Array.from(pageElements);
-      document.getElementById('ttsNav').style.display = 'flex';
-    } else {
-      const wrapper = document.createElement('div');
-      wrapper.className = 'tts-page active';
-      while (content.firstChild) wrapper.appendChild(content.firstChild);
-      content.appendChild(wrapper);
-      pages = [wrapper];
-      document.getElementById('ttsNav').style.display = 'none';
+    // --- Voice persistence helpers ---
+    function saveVoice(voice) {
+      if (!voice) return;
+      const data = {
+        name: voice.name,
+        lang: voice.lang,
+        voiceURI: voice.voiceURI
+      };
+      try {
+        localStorage.setItem('preferredVoice', JSON.stringify(data));
+      } catch (e) { }
     }
 
-    // Wrap words on each page for highlighting
-  pages.forEach(page => wrapWordsPreservingHTML(page));
-
-
-    currentPage = 0;
-    updateNavButtons();
-    updatePageCounter();
-  }
-
-  function updateNavButtons() {
-    const prev = document.getElementById('ttsPrev');
-    const next = document.getElementById('ttsNext');
-    if (!prev || !next) return;
-    prev.disabled = (currentPage === 0);
-    next.disabled = (currentPage === pages.length - 1);
-  }
-
-  function updatePageCounter() {
-    const counter = document.getElementById('ttsPageCounter');
-    if (!counter) return;
-    counter.textContent = `Page ${currentPage + 1} of ${pages.length}`;
-  }
-
-  function getCurrentPageText() {
-    if (!pages.length) return '';
-    const el = pages[currentPage];
-    return el.innerText.trim() || '';
-  }
-
-  // --- Voice list ---
-  function populateVoiceList() {
-    if (!synth) return;
-    voices = synth.getVoices();
-    const select = document.getElementById('voiceSelect');
-    if (!select) return;
-    select.innerHTML = '';
-    voices.forEach((voice, i) => {
-      const opt = document.createElement('option');
-      opt.textContent = `${voice.name} (${voice.lang})`;
-      opt.value = i;
-      if (voice.default) opt.selected = true;
-      select.appendChild(opt);
-    });
-    applyStoredVoice();
-  }
-
-  if (synth && synth.onvoiceschanged !== undefined) {
-    synth.onvoiceschanged = populateVoiceList;
-  }
-
-  // --- TTS controls (global) ---
-  window.toggleTTS = function() {
-    if (!synth) return;
-    const container = document.getElementById('ttsContainer');
-    const playBtn = document.getElementById('ttsPlayBtn');
-    const stopBtn = document.getElementById('ttsStopBtn');
-
-    if (synth.speaking && !isPaused) {
-      synth.pause();
-      isPaused = true;
-      if (playBtn) playBtn.textContent = '⏸️ Resume';
-      if (container) container.classList.remove('tts-active');
-      return;
-    }
-    if (isPaused) {
-      synth.resume();
-      isPaused = false;
-      if (playBtn) playBtn.textContent = '⏸️ Pause';
-      if (container) container.classList.add('tts-active');
-      return;
+    function loadVoice() {
+      try {
+        const raw = localStorage.getItem('preferredVoice');
+        if (!raw) return null;
+        return JSON.parse(raw);
+      } catch { return null; }
     }
 
-    const text = getCurrentPageText();
-    if (!text) return;
-
-    utterance = new SpeechSynthesisUtterance(text);
-    const selectedIndex = document.getElementById('voiceSelect')?.value;
-    if (voices[selectedIndex]) utterance.voice = voices[selectedIndex];
-
-    // Reset highlight state
-    clearHighlights();
-
-    utterance.onstart = function() {
-      if (container) container.classList.add('tts-active');
-    };
-
-    utterance.onend = function() {
-      if (currentPage < pages.length - 1) {
-        changeTtsPage(1);
-        setTimeout(() => window.toggleTTS(), 300);
-      } else {
-        stopTTS();
-      }
-    };
-
-    // Word boundary highlighting + autoscroll
-    utterance.onboundary = function(event) {
-      if (event.name !== 'word') return;
-
-      const pageEl = pages[currentPage];
-      const words = pageEl.querySelectorAll('.tts-word');
-      if (!words.length) return;
-
-      const idx = event.charIndex;
-      let runningLength = 0;
-      let targetIndex = -1;
-
-      for (let i = 0; i < words.length; i++) {
-        const w = words[i].innerText;
-        const start = runningLength;
-        const end = runningLength + w.length;
-
-        if (idx >= start && idx < end) {
-          targetIndex = i;
+    function applyStoredVoice() {
+      const stored = loadVoice();
+      if (!stored) return false;
+      const select = document.getElementById('voiceSelect');
+      let foundIndex = -1;
+      for (let i = 0; i < voices.length; i++) {
+        const v = voices[i];
+        if (v.voiceURI === stored.voiceURI) {
+          foundIndex = i;
           break;
         }
-        runningLength = end + 1; // approximate space
+        if (v.name === stored.name && v.lang === stored.lang) {
+          foundIndex = i;
+          break;
+        }
+      }
+      if (foundIndex > -1) {
+        select.value = foundIndex;
+        return true;
+      }
+      return false;
+    }
+
+    // --- Word wrapping for highlighting ---
+    function wrapWordsPreservingHTML(element) {
+      const walker = document.createTreeWalker(
+        element,
+        NodeFilter.SHOW_TEXT,
+        null,
+        false
+      );
+
+      const textNodes = [];
+      let node;
+      while ((node = walker.nextNode())) {
+        textNodes.push(node);
       }
 
-      if (targetIndex !== -1) {
-        if (currentWordIndex !== -1 && words[currentWordIndex]) {
-          words[currentWordIndex].classList.remove('tts-highlight');
-        }
-        words[targetIndex].classList.add('tts-highlight');
-        currentWordIndex = targetIndex;
+      textNodes.forEach(textNode => {
+        const words = textNode.textContent.split(/(\s+)/);
+        const frag = document.createDocumentFragment();
 
-        // Autoscroll to keep highlighted word in view
-        words[targetIndex].scrollIntoView({
-          behavior: "smooth",
-          block: "center"
+        words.forEach((w, i) => {
+          if (w.trim()) {
+            const span = document.createElement('span');
+            span.className = 'tts-word';
+            span.dataset.index = i;
+            span.textContent = w;
+            frag.appendChild(span);
+          } else {
+            frag.appendChild(document.createTextNode(w));
+          }
         });
+
+        textNode.replaceWith(frag);
+      });
+    }
+
+
+    // --- Page splitting based on <!-- page --> ---
+    function splitIntoPages() {
+      const content = document.getElementById('ttsContent');
+      const raw = content.innerHTML;
+      const parts = raw.split(/<!--\s*page\s*-->/i);
+
+      if (parts.length > 1) {
+        content.innerHTML = "";
+        parts.forEach((html, i) => {
+          const page = document.createElement('div');
+          page.className = 'tts-page' + (i === 0 ? ' active' : '');
+          page.innerHTML = html.trim();
+          content.appendChild(page);
+        });
+        return true;
+      }
+      return false;
+    }
+
+    // --- Page handling ---
+    function initPages() {
+      const content = document.getElementById('ttsContent');
+
+      // Try to split based on <!-- page --> markers
+      splitIntoPages();
+
+      let pageElements = content.querySelectorAll('.tts-page');
+
+      if (pageElements.length > 0) {
+        pages = Array.from(pageElements);
+        document.getElementById('ttsNav').style.display = 'flex';
+      } else {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'tts-page active';
+        while (content.firstChild) wrapper.appendChild(content.firstChild);
+        content.appendChild(wrapper);
+        pages = [wrapper];
+        document.getElementById('ttsNav').style.display = 'none';
+      }
+
+      // Wrap words on each page for highlighting
+      pages.forEach(page => wrapWordsPreservingHTML(page));
+
+
+      currentPage = 0;
+      updateNavButtons();
+      updatePageCounter();
+    }
+
+    function updateNavButtons() {
+      const prev = document.getElementById('ttsPrev');
+      const next = document.getElementById('ttsNext');
+      if (!prev || !next) return;
+      prev.disabled = (currentPage === 0);
+      next.disabled = (currentPage === pages.length - 1);
+    }
+
+    function updatePageCounter() {
+      const counter = document.getElementById('ttsPageCounter');
+      if (!counter) return;
+      counter.textContent = `Page ${currentPage + 1} of ${pages.length}`;
+    }
+
+    function getCurrentPageText() {
+      if (!pages.length) return '';
+      const el = pages[currentPage];
+      return el.innerText.trim() || '';
+    }
+
+    // --- Voice list ---
+    function populateVoiceList() {
+      if (!synth) return;
+      voices = synth.getVoices();
+      const select = document.getElementById('voiceSelect');
+      if (!select) return;
+      select.innerHTML = '';
+      voices.forEach((voice, i) => {
+        const opt = document.createElement('option');
+        opt.textContent = `${voice.name} (${voice.lang})`;
+        opt.value = i;
+        if (voice.default) opt.selected = true;
+        select.appendChild(opt);
+      });
+      applyStoredVoice();
+    }
+
+    if (synth && synth.onvoiceschanged !== undefined) {
+      synth.onvoiceschanged = populateVoiceList;
+    }
+
+    // --- TTS controls (global) ---
+    window.toggleTTS = function () {
+      if (!synth) return;
+      const container = document.getElementById('ttsContainer');
+      const playBtn = document.getElementById('ttsPlayBtn');
+      const stopBtn = document.getElementById('ttsStopBtn');
+
+      if (synth.speaking && !isPaused) {
+        synth.pause();
+        isPaused = true;
+        if (playBtn) playBtn.textContent = '⏸️ Resume';
+        if (container) container.classList.remove('tts-active');
+        return;
+      }
+      if (isPaused) {
+        synth.resume();
+        isPaused = false;
+        if (playBtn) playBtn.textContent = '⏸️ Pause';
+        if (container) container.classList.add('tts-active');
+        return;
+      }
+
+      const text = getCurrentPageText();
+      if (!text) return;
+
+      utterance = new SpeechSynthesisUtterance(text);
+      const selectedIndex = document.getElementById('voiceSelect')?.value;
+      if (voices[selectedIndex]) utterance.voice = voices[selectedIndex];
+
+      // Reset highlight state
+      clearHighlights();
+
+      utterance.onstart = function () {
+        if (container) container.classList.add('tts-active');
+      };
+
+      utterance.onend = function () {
+        if (currentPage < pages.length - 1) {
+          changeTtsPage(1);
+          setTimeout(() => window.toggleTTS(), 300);
+        } else {
+          stopTTS();
+        }
+      };
+
+      // Word boundary highlighting + autoscroll
+      utterance.onboundary = function (event) {
+        if (event.name !== 'word') return;
+
+        const pageEl = pages[currentPage];
+        const words = pageEl.querySelectorAll('.tts-word');
+        if (!words.length) return;
+
+        const idx = event.charIndex;
+        let runningLength = 0;
+        let targetIndex = -1;
+
+        for (let i = 0; i < words.length; i++) {
+          const w = words[i].innerText;
+          const start = runningLength;
+          const end = runningLength + w.length;
+
+          if (idx >= start && idx < end) {
+            targetIndex = i;
+            break;
+          }
+          runningLength = end + 1; // approximate space
+        }
+
+        if (targetIndex !== -1) {
+          if (currentWordIndex !== -1 && words[currentWordIndex]) {
+            words[currentWordIndex].classList.remove('tts-highlight');
+          }
+          words[targetIndex].classList.add('tts-highlight');
+          currentWordIndex = targetIndex;
+
+          // Autoscroll to keep highlighted word in view
+          words[targetIndex].scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+          });
+        }
+      };
+
+      if (playBtn) playBtn.textContent = '⏸️ Pause';
+      if (stopBtn) stopBtn.disabled = false;
+      synth.speak(utterance);
+    };
+
+    function clearHighlights() {
+      currentWordIndex = -1;
+      pages.forEach(page => {
+        page.querySelectorAll('.tts-word.tts-highlight').forEach(span => {
+          span.classList.remove('tts-highlight');
+        });
+      });
+    }
+
+    window.stopTTS = function () {
+      if (!synth) return;
+      synth.cancel();
+      isPaused = false;
+      const playBtn = document.getElementById('ttsPlayBtn');
+      const stopBtn = document.getElementById('ttsStopBtn');
+      const container = document.getElementById('ttsContainer');
+      if (playBtn) playBtn.textContent = '▶️ Play Audio';
+      if (stopBtn) stopBtn.disabled = true;
+      if (container) container.classList.remove('tts-active');
+      clearHighlights();
+    };
+
+    window.changeVoice = function () {
+      const select = document.getElementById('voiceSelect');
+      if (!select) return;
+      const idx = select.value;
+      if (voices[idx]) saveVoice(voices[idx]);
+      if (synth.speaking) {
+        stopTTS();
+        window.toggleTTS();
       }
     };
 
-    if (playBtn) playBtn.textContent = '⏸️ Pause';
-    if (stopBtn) stopBtn.disabled = false;
-    synth.speak(utterance);
-  };
+    window.changeTtsPage = function (step) {
+      const newPage = currentPage + step;
+      if (newPage < 0 || newPage >= pages.length) return;
 
-  function clearHighlights() {
-    currentWordIndex = -1;
-    pages.forEach(page => {
-      page.querySelectorAll('.tts-word.tts-highlight').forEach(span => {
-        span.classList.remove('tts-highlight');
-      });
-    });
-  }
+      pages[currentPage].classList.remove('active');
+      currentPage = newPage;
+      pages[currentPage].classList.add('active');
+      updateNavButtons();
+      updatePageCounter();
 
-  window.stopTTS = function() {
-    if (!synth) return;
-    synth.cancel();
-    isPaused = false;
-    const playBtn = document.getElementById('ttsPlayBtn');
-    const stopBtn = document.getElementById('ttsStopBtn');
-    const container = document.getElementById('ttsContainer');
-    if (playBtn) playBtn.textContent = '▶️ Play Audio';
-    if (stopBtn) stopBtn.disabled = true;
-    if (container) container.classList.remove('tts-active');
-    clearHighlights();
-  };
+      if (synth.speaking) {
+        stopTTS();
+        window.toggleTTS();
+      } else {
+        clearHighlights();
+        const container = document.getElementById('ttsContainer');
+        if (container) container.scrollTop = 0;
+      }
+    };
 
-  window.changeVoice = function() {
-    const select = document.getElementById('voiceSelect');
-    if (!select) return;
-    const idx = select.value;
-    if (voices[idx]) saveVoice(voices[idx]);
-    if (synth.speaking) {
-      stopTTS();
-      window.toggleTTS();
+    // --- Initialisation ---
+    function init() {
+      populateVoiceList();
+      initPages();
     }
-  };
 
-  window.changeTtsPage = function(step) {
-    const newPage = currentPage + step;
-    if (newPage < 0 || newPage >= pages.length) return;
-
-    pages[currentPage].classList.remove('active');
-    currentPage = newPage;
-    pages[currentPage].classList.add('active');
-    updateNavButtons();
-    updatePageCounter();
-
-    if (synth.speaking) {
-      stopTTS();
-      window.toggleTTS();
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      setTimeout(init, 0);
     } else {
-      clearHighlights();
-      const container = document.getElementById('ttsContainer');
-      if (container) container.scrollTop = 0;
+      window.addEventListener('load', init);
     }
-  };
-
-  // --- Initialisation ---
-  function init() {
-    populateVoiceList();
-    initPages();
-  }
-
-  if (document.readyState === 'complete' || document.readyState === 'interactive') {
-    setTimeout(init, 0);
-  } else {
-    window.addEventListener('load', init);
-  }
-})();
+  })();
 </script>
