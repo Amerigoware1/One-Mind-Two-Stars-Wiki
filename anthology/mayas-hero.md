@@ -6,8 +6,6 @@ return_url: anthology.html
 return_label: "Return to Anthology index"
 ---
 
-# {{ page.title }}
-
 {% capture chapter_content %}
 
 Celectra approached the waiting cave entrance with both bodies moving in easy synchronization. She’d come alone today, planning a quiet soak in the geothermal pool—knees still aching from the sustained seiza yesterday. No council questions, no diplomatic pressure, just general conversation—or silence.

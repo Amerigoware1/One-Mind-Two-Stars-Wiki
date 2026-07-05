@@ -176,15 +176,40 @@
   }
 
   // --- Word wrapping for highlighting ---
-  function wrapWords(element) {
-    const text = element.innerText;
-    const words = text.split(/(\s+)/); // keep spaces
-    element.innerHTML = words
-      .map((w, i) => w.trim()
-        ? `<span class="tts-word" data-index="${i}">${w}</span>`
-        : w)
-      .join('');
+function wrapWordsPreservingHTML(element) {
+  const walker = document.createTreeWalker(
+    element,
+    NodeFilter.SHOW_TEXT,
+    null,
+    false
+  );
+
+  const textNodes = [];
+  let node;
+  while ((node = walker.nextNode())) {
+    textNodes.push(node);
   }
+
+  textNodes.forEach(textNode => {
+    const words = textNode.textContent.split(/(\s+)/);
+    const frag = document.createDocumentFragment();
+
+    words.forEach((w, i) => {
+      if (w.trim()) {
+        const span = document.createElement('span');
+        span.className = 'tts-word';
+        span.dataset.index = i;
+        span.textContent = w;
+        frag.appendChild(span);
+      } else {
+        frag.appendChild(document.createTextNode(w));
+      }
+    });
+
+    textNode.replaceWith(frag);
+  });
+}
+
 
   // --- Page splitting based on <!-- page --> ---
   function splitIntoPages() {
@@ -227,7 +252,8 @@
     }
 
     // Wrap words on each page for highlighting
-    pages.forEach(page => wrapWords(page));
+  pages.forEach(page => wrapWordsPreservingHTML(page));
+
 
     currentPage = 0;
     updateNavButtons();
