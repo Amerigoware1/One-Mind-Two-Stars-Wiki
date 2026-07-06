@@ -1,13 +1,13 @@
 ---
 layout: character
-title: Ripple (northern-cluster)
+title: Ripple
 portrait: "/assets/images/ripple-book4.webp"
 portrait-book4: "/assets/images/ripple-book4.webp"
 portrait-book5: "/assets/images/ripple-book5.webp"
-affiliation: Northern Cluster; Carisco Household; Four Rivers Resonance Network
+affiliation: Transient Cluster; Carisco Household; Four Rivers Resonance Network
 status: Alive
 birthday: Unknown
-birthplace: Northern Cluster, Ares
+birthplace: Unknown, Ares
 book1_age: "Not yet introduced"
 book2_age: "Not yet introduced"
 book3_age: "Not yet introduced"
@@ -41,7 +41,7 @@ book5_arc: >
 <div class="card-bg" markdown="1">
 
 ## Overview
-Ripple is a young Galinstanian of the Northern Cluster and the closest non-human companion of Jenni and Xara Carisco. At roughly thirty years old — still early childhood for their species — Ripple is fluid, sensitive, and deeply attuned to harmonic disturbances. They arrive in Book 4 after a cavern collapse destroys their original home and kills their parent. The migrating cluster that rescues Ripple entrusts them to Celectra and Jaxon after sensing the twins' immediate, instinctive bond.
+Ripple is a young Galinstanian of the transient Cluster and the closest non-human companion of Jenni and Xara Carisco. At roughly thirty years old — still early childhood for their species — Ripple is fluid, sensitive, and deeply attuned to harmonic disturbances. They arrive in Book 4 after a cavern collapse destroys their original home and kills their parent. The migrating cluster that rescues Ripple entrusts them to Celectra and Jaxon after sensing the twins' immediate, instinctive bond.
 
 Ripple becomes a central figure in the Four Rivers Resonance crisis and later emerges as one of the first Galinstanians to develop a personal "song" that travels the planetary network.
 
