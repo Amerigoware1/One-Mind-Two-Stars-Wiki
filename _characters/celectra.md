@@ -62,17 +62,17 @@ book5_arc: >
  communion is shared, understood, and sustainable.
 ---
 ## Overview
-Celectra Ambar Carisco is the first known dual-bodied human consciousness and the foundational bridge between humanity and the Galinstanian species of Ares. Born in 2225 after a radiation-induced consciousness fusion event, she grew into a diplomat, scientist, and cultural cornerstone whose natural electromagnetic communion shaped the colony’s survival and identity. Her life spans five books of the Two Stars saga, evolving from a traumatized child into a mother, scholar, and architect of interspecies harmony.
+Celectra Ambar Carisco is the first known dual-bodied human consciousness and the foundational bridge between humanity and the Galinstanian species of Ares. Born in 2225 after a radiation-induced consciousness fusion event, she grew into a diplomat, scientist, and cultural cornerstone whose natural electromagnetic communion shaped the colony’s survival and identity. Her life spans at least five books of the Two Stars saga, evolving from a traumatized child into a mother, scholar, and architect of interspecies harmony.
 
 ## Physical Description
-Celectra’s two bodies are genetically identical, each standing 1.49 m and weighing ~41 kg in early adulthood. Both have white hair threaded with fiber-optic strands for formal occasions, milk chocolate irises, and a distinctive EM “signature” detectable by Galinstanians. During Book 3, pregnancy affects only her right body, creating visible asymmetry that becomes a major emotional and logistical challenge.
+Celectra’s two bodies are genetically identical, each standing 1.49 m and weighing ~41 kg in early adulthood. Both have hip-length white hair, milk chocolate irises, and a distinctive EM “signature” detectable by Galinstanians. During Book 3, pregnancy affects only her right body, creating visible asymmetry that becomes a major emotional and logistical challenge.
 
 ## Medical Summary
 Celectra’s physiology is the subject of three major medical dossiers maintained by Dr. Alex Cruiz and the New Eden Medical Corps:
 
 ### Mononous Disomas (dual-body-physiology)
 Celectra possesses a unique dual-bodied condition known as mononous disomas, in which two fully functional bodies share a single consciousness and a unified sensory-emotional network. Both bodies exhibit synchronized autonomic responses, but can act independently with deliberate control. This condition is stable but requires ongoing monitoring for metabolic load, neural fatigue, and resonance overextension.
-* **Waveguide Skulls:** Her skulls are mineralized with trace metals, acting as biogenic antennas to focus the "celectricity".
+* **Waveguide Skulls:** Her skulls are mineralized with trace iron and magnesium, acting as biogenic antennas to focus the "celectricity".
 * **Celectric Tax:** She maintains a BMR 2.5x higher than average; her body prioritizes powering the neural bridge over physical mass.
 [Mononous Disomas – Celectra's Neural Dossier](../mononous-disomas.html)
 

@@ -15,9 +15,9 @@ title: "One Mind Two Stars Series Overview"
 
 **Core Themes:** Autonomy, Neurodiversity, First Contact Ethics, Found Family, Sustainable Systems
 
-**Comparable Titles:** _Ender’s Game × Project Hail Mary × A Psalm for the Wild-Built_
+**Comparable Titles:** _Ancillary Justice × Project Hail Mary × The Mountain in the Sea_
 
-**Book 1 Word Count:** ~93,000 words
+**Book 1 Word Count:** ~88,000 words
 
 **Series Length:** Planned trilogy, with optional future stories outlined for expansion
 
@@ -37,7 +37,7 @@ _Note: All future-book content on this site is exploratory and subject to change
 
 ### Book 1: One Mind, Two Stars
 
-Status: Complete | Word Count: ~93,000 | Timeline: Age 7–8 (first-contact occurs days after her 7th birthday; concludes on her 8th birthday)
+Status: Complete | Word Count: ~88,000 | Timeline: Age 7 (first-contact occurs days after her 7th birthday)
 
 Seven-year-old Celectra Carisco has one mind, two bodies, and a strict forty-meter limit. While her father fiercely protects her right to be seen as a single, whole person, the colony’s Chief of Medicine views her unique neurology as the key to unlocking consciousness transfer. When his unethical isolation tests push Celectra to the brink of cardiac arrest, she flees into the uncharted, subterranean cave systems of the moon Ares. 
 
@@ -47,7 +47,7 @@ Alone in the dark, Celectra discovers the Galinstanians—a collective, liquid-m
 
 ### Book 2: One Mind, Two Stars: The Northern Shadows
 
-Status: Complete / In Revision | Word Count: ~80,000 | Timeline: Age 14 (6-years after book 1's epilogue; xan is 6 years old)
+Status: Complete / In Revision | Word Count: ~80,000 | Timeline: Age 14 (7-years after book 1's epilogue; xan is 5 years old)
 
 Fourteen-year-old Celectra is buckling under the relentless demands of being New Eden's sole translator. Her "Celectricity" allows instantaneous communion with the Galinstanians, but the emotional labor leaves her exhausted and isolated. When she finally sets boundaries to protect her own mental health, the Council is forced to recognize that treating a child as an indispensable resource is unsustainable. 
 
