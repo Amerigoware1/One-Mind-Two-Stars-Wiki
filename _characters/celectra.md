@@ -86,7 +86,7 @@ Initially diagnosed as "failure to thrive," her small stature is now understood 
 The foundation of her treatment relies on the CMS-1 protocol—a medical legacy inherited directly from her mother's final months.
 [Celectra Growth ](../celectragrowth.html)[& Development Report](../celectragrowth.html)
 
-## The Nutritional Protocol (cms-1)
+## [The Nutritional Protocol (cms-1)](./cms-1-formula.html)
 To maintain a high-fidelity consciousness across two bodies, Celectra must overcome a constant "Celectricity Tax." In her early development, this metabolic drain was mistaken for failure to thrive, leading to the adaptation of the CMS-1 (celectric-metabolic stabilizer) protocol.
 
 Originally, CMS-1 was not designed for Celectra. It was hastily synthesized by New Eden physicians as an emergency, high-density therapeutic formula for her mother, Jenni Carisco, to combat acute gestational demineralization after the solar flare. Only after Jenni's death did retrospective metabolic data reveal a tragic reality: Jenni’s body wasn't just failing from radiation—her fetuses were aggressively stripping her skeletal system of specific mineral isotopes and trace elements to build their unprecedented neural architecture. 
