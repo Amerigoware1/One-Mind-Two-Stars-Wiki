@@ -98,7 +98,7 @@ Deep Communion / Planetary Resonance ~12,500 kcal/day
 
 *Note: During Deep Communion events, glucose depletion occurs in < 15 minutes without external supplementation.
 
-### [CMS-1 Formula (Cellular Metabolic Stabilizer-1)](../cms-1-formula.html)
+### [CMS-1 Formula (Cellular Metabolic Stabilizer-1)](./cms-1-formula.html)
 A highly specialized, rapid-absorption nutrient compound essential for sustaining anomalous, dual-bodied human physiology. 
 
 * **Origin History:** Originally synthesized on Utopis Station as a desperate maternal therapeutic to treat Jenni Carisco’s severe, unexplained gestational demineralization. Standard medical formulas could not keep pace with her rapid bone-density loss and vascular degradation. 
