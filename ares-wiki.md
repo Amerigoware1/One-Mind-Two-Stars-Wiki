@@ -3,55 +3,55 @@ layout: default
 title: "Ares"
 ---
 
-    <div class="infobox">
-        <table>
-				<tr>
-      <td colspan="2" class="text-center pb-2">
-  <img src="assets/images/gallery/ares.gif" alt="Ares planetary animation" class="portrait">
-  <div class="image-caption">Ares</div>
-   </td>
-    </tr>
-            <tr>
-                <th colspan="2">Ares</th>
-            </tr>
-            <tr>
-    <th>Parent body</th>
-    <td>Chaos (super-jupiter)</td>
-</tr>
-<tr>
-    <th>Day length</th>
-    <td>18 hours (non-synchronous)</td>
-</tr>
-<tr>
-    <th>Orbital period</th>
-    <td>45 days</td>
-</tr>
-            <tr>
-                <th>Star system</th>
-                <td>Niamh-Ciara binary system</td>
-            </tr>
-			<tr>
-				<th>Distance from barycenter</th>
-				<td>1.2 AU</td>
-			</tr>
-            <tr>
-                <th>Diameter</th>
-                <td>~6,792 km (near-earth-sized)</td>
-            </tr>
-            <tr>
-                <th>Gravity</th>
-                <td>0.9 G</td>
-            </tr>
-            <tr>
-                <th>Atmosphere</th>
-                <td>0.8 Atm (breathable)</td>
-            </tr>
-            <tr>
-                <th>Human settlement</th>
-                <td><a href="New Eden.html">New Eden</a> (pison-river)</td>
-            </tr>
-        </table>
-    </div>
+<div class="infobox">
+    <table>
+		<tr>
+            <td colspan="2" class="text-center pb-2">
+            <img src="assets/images/gallery/ares.gif" alt="Ares planetary animation" class="portrait">
+            <div class="image-caption">Ares</div>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Ares</th>
+        </tr>
+        <tr>
+            <th>Parent body</th>
+            <td>Chaos (super-jupiter)</td>
+        </tr>
+        <tr>
+            <th>Day length</th>
+            <td>18 hours (non-synchronous)</td>
+        </tr>
+        <tr>
+            <th>Orbital period</th>
+            <td>45 days</td>
+        </tr>
+        <tr>
+            <th>Star system</th>
+            <td>Niamh-Ciara binary system</td>
+        </tr>
+		<tr>
+			<th>Distance from barycenter</th>
+			<td>1.2 AU</td>
+		</tr>
+        <tr>
+            <th>Diameter</th>
+            <td>~6,792 km (near-earth-sized)</td>
+        </tr>
+        <tr>
+            <th>Gravity</th>
+            <td>0.9 G</td>
+        </tr>
+        <tr>
+            <th>Atmosphere</th>
+            <td>0.8 Atm (breathable)</td>
+        </tr>
+        <tr>
+            <th>Human settlement</th>
+            <td><a href="New Eden.html">New Eden</a> (pison-river)</td>
+         </tr>
+    </table>
+</div>
 
 <div class="article-content"><div class="card-bg" markdown="1">
 
