@@ -98,6 +98,13 @@ Deep Communion / Planetary Resonance ~12,500 kcal/day
 
 *Note: During Deep Communion events, glucose depletion occurs in < 15 minutes without external supplementation.
 
+### CMS-1 Formula (Cellular Metabolic Stabilizer-1)
+A highly specialized, rapid-absorption nutrient compound essential for sustaining anomalous, dual-bodied human physiology. 
+
+* **Origin History:** Originally synthesized on Utopis Station as a desperate maternal therapeutic to treat Jenni Carisco’s severe, unexplained gestational demineralization. Standard medical formulas could not keep pace with her rapid bone-density loss and vascular degradation. 
+* **The Retrospective Discovery:** Post-mortem metabolic analysis revealed that Jenni’s body was being systematically depleted by her fetuses. The developing twins were pulling immense amounts of calcium, magnesium, and complex lipids to forge a biogenic, electromagnetic network entirely new to human biology.
+* **Modern Application:** Following Jenni's passing, Dr. Alex Cruiz modified the formula into a pediatric protocol. CMS-1 bypasses slow standard digestion to deliver immediate "rocket fuel" (including MCT emulsions and Magnesium Glycinate) directly to the neural bridge. It remains a lifelong requirement for Celectra Carisco to offset her 2.5x Basal Metabolic Rate and prevent "Neural Brownouts" during high-bandwidth Galinstanian communion.
+
 </div> <div class="card-bg" markdown="1">
 
 ## Clinical Manifestations & Diagnostic Evidence
