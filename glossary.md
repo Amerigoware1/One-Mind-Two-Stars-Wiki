@@ -705,7 +705,7 @@ title: Glossary
   </div>
 
   <div class="card-bg glossary-item" data-name="CMS-1 Formula" data-category="medical" data-search="milkshake nutritional suspension metabolic bridge coconut">
-    <h2>CMS-1 Formula (milkshake)</h2>
+    <h2><a href="{{ '/cms-1-formula.html' | relative_url }}">CMS-1 Formula (milkshake)</a></h2>
     <p><strong>Pronunciation:</strong> /siː ɛm ɛs wʌn ˈfɔːrmjʊlə/<button class="speak-button">🔊</button></p>
     <p>Originally synthesized on Utopis as an emergency high-density therapeutic to counteract Jenni Carisco’s acute gestational demineralization following the solar flare. Early formulations attempted to stabilize her brittle vascular walls and rapid bone density loss. Following her death, retrospective metabolic analysis revealed that the twins were actively drawing down specific trace elements to fuel their anomalous cellular and neural development. The formula was subsequently re-engineered as a pediatric metabolic stabilizer specifically tailored to support Celectra Carisco’s unique physiological demands. Tastes like coconut. Also called “milkshake.”</p>
   </div>
