@@ -36,7 +36,7 @@ title: "Ares"
 		</tr>
         <tr>
             <th>Diameter</th>
-            <td>~6,792 km (near-earth-sized)</td>
+            <td>~11,200 km (near-earth-sized)</td>
         </tr>
         <tr>
             <th>Gravity</th>
