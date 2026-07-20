@@ -57,7 +57,7 @@ The **Council Chamber** on the ground floor is New Eden's seat of governance —
 
 The Chamber hosts weekly open sessions, resource allocation debates, dispute mediation, ceremonial events, and — most critically — the tribunals that have shaped colony leadership. It is also the formal interface between human governance and the Galinstanian species, a role made possible by one extraordinary individual.
 
-⚙️ **Technocratic Governance:** New Eden is a **democratic technocracy** — leadership is vested in experts and department heads whose authority derives from proven competence in their fields. Council seats are held by directors of critical sectors (medicine,-engineering, science, etc.), and policy decisions are grounded in data, feasibility studies, and Utara's long‑term projections. This system ensures that those who govern are those who truly understand the systems they oversee.
+⚙️ Technocratic Governance: New Eden is a democratic technocracy. Daily administration, resource allocation, and judicial tribunals are facilitated by a Council of 12 department experts whose authority derives from proven competence. However, ultimate sovereignty remains with the citizens. The Council operates within a strict framework of laws written and revised by direct popular vote. Furthermore, while field heads automatically assume Council seats via merit, the public retains an absolute democratic veto—allowing a citizen referendum to recall any councilor who violates the colony's trust or misaligns with Utara's long path projections.
 
 ⚖️ 12 Seats 🌀 Circular Design ⚡ Galinstanian Interface 🔍 Tribunal Venue 👮 Security Office 📊 Technocracy
 
