@@ -329,12 +329,20 @@
   },  
   {
     "file": "cave.png",
-    "title": "The Deep Caves",
-    "description": "Entrance to the extensive cave system explored over fourteen years. These caves hold ancient Galinstanian secrets.",
+    "title": "Boreshaft Entrance",
+    "description": "The Boreshaft Entrance to the Deep Caves",
     "tags": ["environment", "cave", "exploration", "ancient"],
     "width": 1024,
     "height": 1536
-  },  
+  },
+  {
+    "file": "cave-system.webp",
+    "title": "The Deep Caves",
+    "description": "The extensive cave system explored over fourteen years. These caves hold ancient Galinstanian secrets.",
+    "tags": ["environment", "cave", "exploration", "ancient"],
+    "width": 921,
+    "height": 1152
+  },    
   {
     "file": "galinstanian.jpg",
     "title": "Galinstanian Being",
