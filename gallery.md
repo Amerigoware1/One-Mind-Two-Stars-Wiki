@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             const item = currentItems[idx];
             if (item && el) {
               el.innerHTML = `
-                <div style="padding: 1rem; text-align: center; color: #fff; background: rgba(0,0,0,0.7); position: absolute; bottom: 0; left: 0; right: 0;">
+                <div style="padding: 1rem; text-align: center; color: #fff; background: rgba(0,0,0,0); position: absolute; bottom: 0; left: 0; right: 0;">
                   <div style="font-weight: bold; margin-bottom: 0.25rem;">${escapeHtml(item.title)}</div>
                   <div style="font-size: 0.85rem;">${escapeHtml(item.description)}</div>
                 </div>
