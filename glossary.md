@@ -804,6 +804,11 @@ title: Glossary
     <p>A song written by Amerigo for his late wife Jenni. He hums it when he thinks no one can hear. Represents enduring love and memory.</p>
   </div>
 
+  <div class="card-bg glossary-item" data-name="I Like The Me That I Am" data-category="arts" data-search="song maya celectra exhibition">
+    <h2><a href="{{ '/i-like-the-me.html' | relative_url }}">I Like The Me That I Am</a></h2>
+    <p><strong>Pronunciation:</strong> /aɪ laɪk ðə miː ðæt aɪ æm/<button class="speak-button">🔊</button></p>
+    <p>A song written by Maya for Celectra sung by Maya at her art exhibition in Book 2. Rather than the romantic song Celectra feared it would be, its a song celebrating differences in friendship.</p>
+  </div>
 </div><!-- end panel-arts -->
 
 <!-- ==========================================================================
