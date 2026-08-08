@@ -28,7 +28,7 @@ title: "Galinstanians"
         </tr>
         <tr>
             <th>Physiology</th>
-            <td>Amorphous Liquid-Metal Organism (Colloidal Ferro-alloy); long-lived (centuries) with slow maturation</td>
+            <td>Amorphous Colloidal Magnetorheological-Alloy Organism; long-lived (centuries) with slow maturation</td>
         </tr>
         <tr>
             <th>Communication</th>
@@ -66,7 +66,7 @@ title: "Galinstanians"
 
 ## Overview
 
-The Galinstanians are an intelligent, peaceful alien species native to the subsurface caverns of Ares, a near-Earth-sized moon orbiting the super-Jupiter Chaos in the Niamh-Ciara binary star system. Characterized by their colloidal liquid metal alloy-based physiology, they are composed primarily of a galinstan-base matrix embedded with particulate iron, copper, silicon, and bismuth-tin clusters. They communicate via coherent electromagnetic resonance, amplified by a biologically secreted bismuth waveguide network, and lack traditional technology. Their society is egalitarian and harmonious, with no concept of war or secrecy, and their culture emphasizes art, philosophy, and cosmic interconnectedness.
+The Galinstanians are an intelligent, peaceful alien species native to the subsurface caverns of Ares, a near-Earth-sized moon orbiting the super-Jupiter Chaos in the Niamh-Ciara binary star system. Characterized by their magnetorheological colloidal gel physiology, they are composed primarily of a galinstan-base matrix embedded with particulate iron, copper, silicon, and bismuth-tin clusters. They communicate via coherent electromagnetic resonance, amplified by a biologically secreted bismuth waveguide network, and lack traditional technology. Their society is egalitarian and harmonious, with no concept of war or secrecy, and their culture emphasizes art, philosophy, and cosmic interconnectedness.
 
 </div>
 
@@ -82,12 +82,14 @@ Ares is a geologically active moon with 18-hour days, recently captured by the s
 
 ## Physiology
 
-Galinstanians possess fluid, shape-shifting bodies primarily composed of a galinstan-base matrix. This fluid matrix is embedded with a high-density suspension of particulate iron and copper, transforming their bodies into a living, highly responsive ferrofluid. By generating localized internal electromagnetic pulses, they manipulate these metallic particles to alter surface tension, allowing them to flow as amorphous masses or contract into rigid, semi-solid humanoid forms.
+Galinstanians possess fluid, shape-shifting bodies composed of a galinstan-base colloidal matrix. This liquid metal base is heavily embedded with a suspended particulate mesh of iron and copper, giving their internal fluid the properties of a living magnetorheological gel. Rather than behaving as a simple Newtonian fluid, their body tissue behaves as a dynamic yield-stress fluid.
 
-For advanced structural support, Galinstanians utilize silicon and bismuth-tin clusters dispersed within their alloy. By altering their internal EM fields, they can induce rapid phase-changes in these clusters, temporarily hardening them into a dense, metallic endoskeleton. Trace silver minerals serve as high-velocity conduits for their nervous system, facilitating rapid cognitive processing and environmental sensory perception through ambient electromagnetism.
+In a passive state, the body maintains an autonomic, low-frequency "idle" electromagnetic tone—analogous to muscle tone in biological fauna. This baseline field locks the suspended metallic particles into microscopic dipole chains, providing a static yield stress that prevents slumping or spilling under gravity. When fully relaxed or at rest in a partial enclosure, this autonomic field allows them to hold a stable, viscoelastic shape without active exertion. By dynamically generating localized internal EM pulses, they alter this internal yield stress and surface tension on demand, flowing as amorphous gels, stiffening into dense masses, or contracting into rigid forms.
+
+For advanced structural support, Galinstanians utilize silicon and bismuth-tin clusters dispersed within their alloy. By altering their internal EM fields, they can induce rapid phase-changes in these clusters, temporarily hardening them into a dense, metallic endoskeleton. Trace silver minerals serve as high-velocity conduits for their nervous system, facilitating rapid cognitive processing and environmental sensory perception through ambient electromagnetism. Complete loss of internal EM control—such as through severe EMP disruption or death—collapses the yield stress, causing the gel to thin and slump into a flat liquid pool.
 
 ### Locomotion and Shape Control
-Movement relies on **Magnetohydrodynamics (MHD)**, where localized EM fields generate Lorentz forces to propel the liquid metal mass and dynamically control its shape. They form pseudopods—such as thin, EM-stabilized sensing spikes or broad, flowing locomotion pods—by manipulating surface tension. Temporary hardening via silicon and rapid, localized cooling allows for the formation of semi-solid "Anchoring Pylons" used for bracing and mechanical leverage.
+Movement relies on **Magnetohydrodynamics (MHD)** and dynamic yield-stress manipulation. By modulating internal EM fields, Galinstanians generate Lorentz forces to propel their mass while localized field adjustments temporarily liquefy or solidify specific regions of their gel matrix. They form pseudopods—such as thin, EM-stabilized sensing spikes or broad, flowing locomotion pods—by lowering local yield stress to allow flow and then instantly re-establishing field chains to freeze the shape in place. Temporary hardening via silicon phase changes and localized field locks allows for the formation of semi-solid "Anchoring Pylons" used for bracing and mechanical leverage.
 
 ### Nutrient Absorption, Tasting, and Waste
 Galinstanians sustain themselves by dissolving mineral-rich rock using localized hydrofluoric acid ($HF$) secretions. They safely contain these corrosive agents using a dynamically maintained, passivated gallium oxide ($Ga_2O_3$) layer on their outer surface that constantly regenerates against chemical wear. As they feed, specialized chemoreceptors sample the surrounding air and ground, effectively allowing them to "taste" the environment for vital minerals. Insoluble, acid-resistant materials—such as diamonds, corundum, and other hard gemstones found in the host rock—cannot be digested; they are simply pushed aside and left behind as a polished waste residue during the excavation process.
@@ -100,7 +102,11 @@ Galinstanians sustain themselves by dissolving mineral-rich rock using localized
 * **Vibrotactile Perception:** Their entire conductive surface acts as a giant acoustic sensor, picking up micro-vibrations through the crust to detect seismic activity, approaching footsteps, or structural shifts.
 
 ### Life Cycle and Maturation
-Galinstanians reproduce asexually through a process of budding. New buds undergo a period of slow maturation, taking several decades to develop the complex internal EM pathways required for full neural mesh integration and shape-shifting mastery. Once mature, their amorphous alloy bodies grant them lifespans spanning several centuries. While they continuously recycle metals internally to prevent decay, they remain highly vulnerable to extreme external temperatures and intense EM interference, both of which can cause fatal structural dissipation.
+Galinstanians reproduce asexually through a process of budding, extruding a portion of their colloidal gel matrix to form an independent offspring. New buds begin with a soft, poorly regulated magnetorheological structure, lacking the complex internal EM pathways and bismuth network required to maintain a stable baseline field.
+
+During early maturation—a process taking several decades—young Galinstanians gradually align their particulate iron and copper suspensions, developing the autonomic neural loops needed to establish an "idle" field tone. Until this autonomic field stabilizes, juveniles struggle to maintain structural cohesion, often slumping or spreading under gravity if not supported by an elder’s overlapping EM field or contained within natural cavern hollows.
+
+As the bismuth waveguide network fully integrates and the silver sensory conduits mature, the individual gains precise control over their internal yield stress, mastering magnetohydrodynamic (MHD) locomotion and rapid phase-change hardening. Once fully mature, their amorphous alloy-gel bodies grant them lifespans spanning several centuries. While they continuously recycle metals internally to prevent elemental degradation, they remain highly vulnerable to extreme external temperatures and intense EM interference—both of which can disrupt their baseline yield stress, causing fatal structural dissipation and collapse into a unformed liquid pool.
 
 </div>
 
