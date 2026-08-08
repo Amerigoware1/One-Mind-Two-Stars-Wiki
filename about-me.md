@@ -47,4 +47,4 @@ The same structural discipline applied to fictional cosmos is mirrored in physic
 Functioning under a triple‑A baseline configuration (ace, aro, agender), the entity deliberately bypasses standard sociopolitical tropes. Instead, it architects frontier realities where systemic survival, functional mechanics, and diverse identities exist as an unquestioned fabric of the cosmos. Conflict is positioned on exploration and endurance rather than the right to exist, establishing futures where difference is naturalised and unremarkable—a quiet but deliberate subversion of conventional storytelling.
 
 </div>
-</div> 
+</div>
