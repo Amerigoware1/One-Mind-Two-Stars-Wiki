@@ -11,21 +11,23 @@
   <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
   <!-- Optional: Favicon, meta tags, etc. -->
 
-{% if page.is_archive %}
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital@1,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-<style>
-  .page-content {
-    font-family: "Lora", serif !important;
-    color: #d7fcff;
-  }
-  .page-content i,
-.page-content em {
-  font-weight: 550;
-  letter-spacing: 0.02em;
-  color: #9df5fd;
-}
-</style>
-{% endif %}
+  {% if page.is_archive %}
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <style>
+    .page-content {
+      font-family: "Lora", serif !important;
+      color: #d7fcff;
+    }
+
+    .page-content i,
+    .page-content em {
+      font-weight: 550;
+      letter-spacing: 0.02em;
+      color: #9df5fd;
+    }
+  </style>
+  {% endif %}
 
 
 </head>
@@ -34,7 +36,7 @@
 
   {% include top-banner.html %}
 
-   <main class="page-content">
+  <main class="page-content">
     {{ content }}
   </main>
 
@@ -42,6 +44,20 @@
   <footer>
     {% include footer.html %}
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'default',  // or 'dark' if your site has a dark background
+        flowchart: {
+          useMaxWidth: true,
+          htmlLabels: true
+        }
+      });
+    });
+  </script>
 
 </body>
 
