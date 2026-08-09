@@ -142,7 +142,7 @@ Preserved in "memory veins" (EM imprints in cavern walls), their history spans e
 * **Celestial Awakening:** Sensing of binary stars and Chaos shifted philosophy to cosmic unity.
 * **Human Contact:** Detected human signals, sent a scout to New Eden, and dissolved a drone to learn, fostering cautious interaction. Celectra was their first source of intelligible information about humans.
 
-
+</div>
 
 <div class="card-bg" markdown="1">
 
