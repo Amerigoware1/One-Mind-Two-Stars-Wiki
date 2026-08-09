@@ -150,24 +150,18 @@ Preserved in "memory veins" (EM imprints in cavern walls), their history spans e
 
 The evolutionary origin of the Galinstanians—historically preserved in native oral traditions as the *First Resonance*—was formalized into a unified xenobiological model through a collaborative study between Dr. Cruiz, Amerigo Carisco, Celectra Carisco, and the Galinstanian cluster representative "Stan."
 
-```text
-[ Planetary Core Currents & Chaos Magnetosphere ]
-                                              │
-                                              ▼
-                                [ Lodestone Veins (Fe3O4) ]
-                                              │
-                            (Magnetotactic Scaffolding & Inductive Power)
-                                              │
-                                              ▼
-┌───────────────────────────┐    MHD Micro-Currents     ┌───────────────────────────┐
-│ Mineral-Rich Abiotic Pool │ ────────────────────────> │ Particle Alignment &      │
-│ (Ga-In-Sn + Fe/Cu/Ag/Bi)  │                           │ Magnetophoresis           │
-└───────────────────────────┘                           └───────────────────────────┘
-│
-(Autonomic Feedback Loop)
-│
-▼
-[ Proto-Galinstanian Organism ]
+```mermaid
+flowchart TD
+    A[Planetary Core Currents &<br>Chaos Magnetosphere]
+    B[Lodestone Veins (Fe₃O₄)]
+    C[(Magnetotactic Scaffolding<br>& Inductive Power)]
+    D[Mineral-Rich Abiotic Pool<br>(Ga-In-Sn + Fe/Cu/Ag/Bi)]
+    E[Particle Alignment &<br>Magnetophoresis]
+    F[Proto-Galinstanian Organism]
+
+    A --> B --> C --> D
+    D -- MHD Micro-Currents --> E
+    E -- Autonomic Feedback Loop --> F
 ```
 
 ### **1\. The Abiotic Cradle (Lodestone Scaffolding)**
