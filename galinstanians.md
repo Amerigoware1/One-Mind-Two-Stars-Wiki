@@ -57,12 +57,12 @@ title: "Galinstanians"
 - [Conflicts](#conflicts)
 - [History](#history)
 - [Biogenesis: The Lodestone-Catalyzed MR Hypothesis](#biogenesis-the-lodestone-catalyzed-mr-hypothesis)
-  - [1. The Abiotic Cradle (Lodestone Scaffolding)](#1-the-abiotic-cradle-lodestone-scaffolding)
-  - [2. Micro-Inductive Energetics](#2-micro-inductive-energetics)
-  - [3. Circuit Formation and Autonomic Bootstrap](#3-circuit-formation-and-autonomic-bootstrap)
-- [Art](#art)
-- [Philosophy](#philosophy)
-- [Human Interaction](#human-interaction)
+  - [**1. The Abiotic Cradle (Lodestone Scaffolding)**](#1-the-abiotic-cradle-lodestone-scaffolding)
+  - [**2. Micro-Inductive Energetics**](#2-micro-inductive-energetics)
+  - [**3. Circuit Formation and Autonomic Bootstrap**](#3-circuit-formation-and-autonomic-bootstrap)
+- [**Art**](#art)
+- [**Philosophy**](#philosophy)
+- [**Human Interaction**](#human-interaction)
 
 </div>
 <div class="article-content">
@@ -96,7 +96,7 @@ For advanced structural support, Galinstanians utilize silicon and bismuth-tin c
 Movement relies on **Magnetohydrodynamics (MHD)** and dynamic yield-stress manipulation. By modulating internal EM fields, Galinstanians generate Lorentz forces to propel their mass while localized field adjustments temporarily liquefy or solidify specific regions of their gel matrix. They form pseudopods—such as thin, EM-stabilized sensing spikes or broad, flowing locomotion pods—by lowering local yield stress to allow flow and then instantly re-establishing field chains to freeze the shape in place. Temporary hardening via silicon phase changes and localized field locks allows for the formation of semi-solid "Anchoring Pylons" used for bracing and mechanical leverage.
 
 ### Nutrient Absorption, Tasting, and Waste
-Galinstanians sustain themselves by dissolving mineral-rich rock using localized hydrofluoric acid ($HF$) secretions. They safely contain these corrosive agents using a dynamically maintained, passivated gallium oxide ($Ga_2O_3$) layer on their outer surface that constantly regenerates against chemical wear. As they feed, specialized chemoreceptors sample the surrounding air and ground, effectively allowing them to "taste" the environment for vital minerals. Insoluble, acid-resistant materials—such as diamonds, corundum, and other hard gemstones found in the host rock—cannot be digested; they are simply pushed aside and left behind as a polished waste residue during the excavation process.
+Galinstanians sustain themselves by dissolving mineral-rich rock using localized hydrofluoric acid (HF) secretions. They safely contain these corrosive agents using a dynamically maintained, passivated gallium oxide (Ga_2O_3) layer on their outer surface that constantly regenerates against chemical wear. As they feed, specialized chemoreceptors sample the surrounding air and ground, effectively allowing them to "taste" the environment for vital minerals. Insoluble, acid-resistant materials—such as diamonds, corundum, and other hard gemstones found in the host rock—cannot be digested; they are simply pushed aside and left behind as a polished waste residue during the excavation process.
 
 ### Sensory Systems and Neural Networks
 
@@ -149,6 +149,8 @@ Preserved in "memory veins" (EM imprints in cavern walls), their history spans e
 ## Biogenesis: The Lodestone-Catalyzed MR Hypothesis
 
 The evolutionary origin of the Galinstanians—historically preserved in native oral traditions as the *First Resonance*—was formalized into a unified xenobiological model through a collaborative study between Dr. Cruiz, Amerigo Carisco, Celectra Carisco, and the Galinstanian cluster representative "Stan."
+
+```text
 [ Planetary Core Currents & Chaos Magnetosphere ]
                                               │
                                               ▼
@@ -166,52 +168,56 @@ The evolutionary origin of the Galinstanians—historically preserved in native 
 │
 ▼
 [ Proto-Galinstanian Organism ]
-### 1. The Abiotic Cradle (Lodestone Scaffolding)
-* **Magnetic Pinning:** Prior to the evolution of internal neural control, fluid galinstan-base alloys cannot maintain structural cohesion against gravity. Geologically active magnetite ($Fe_3O_4$) deposits in Ares’s granite caverns—permanently magnetized into lodestones by ancient planetary lightning strikes and Chaos's magnetospheric fluctuations—provided an external magnetic gradient ($\nabla B$).
-* **Magnetophoresis:** Suspended iron ($Fe$) and copper ($Cu$) micro-particles were drawn along localized field lines into high-density dipole chains. This abiotic "magnetic skeleton" prevented the liquid metal from separating or slumping into inert sludge, creating localized zones of high magnetorheological (MR) yield stress within primordial mineral pools.
 
-### 2. Micro-Inductive Energetics
-* **Faraday Generation:** Geothermal convection driven by subsurface thermal vents forced liquid galinstan to flow across the stationary magnetic fields of the lodestone beds.
-* **MHD Current Injection:** In accordance with Faraday’s Law of Induction ($\vec{J} = \sigma (\vec{v} \times \vec{B})$), this movement generated continuous, micro-ampere electrical currents directly within the conductive alloy. These abiotic currents provided the raw electrochemical energy required to catalyze early metal-recycling pathways without requiring traditional organic metabolic enzymes.
+### **1\. The Abiotic Cradle (Lodestone Scaffolding)**
 
-### 3. Circuit Formation and Autonomic Bootstrap
-* **Silver Conduit Assembly:** Trace silver ($Ag$) dissolved in the mineral pools was swept along the path of least electrical resistance by the induced currents, gradually precipitating into high-velocity conductive conduits.
-* **The "Great Resonance" Event:** A massive, high-amplitude geomagnetic storm—triggered by a solar flare interacting with Chaos’s magnetosphere—induced a planetary-scale electromagnetic standing wave. This external pulse forced the primitive silver pathways and bismuth ($Bi$) clusters into self-sustaining resonance, establishing the first permanent, autonomic "idle" field. 
+* **Magnetic Pinning:** Prior to the evolution of internal neural control, fluid galinstan-base alloys cannot maintain structural cohesion against gravity. Geologically active magnetite (Fe₃O₄) deposits in Ares’s granite caverns—permanently magnetized into lodestones by ancient planetary lightning strikes and Chaos's magnetospheric fluctuations—provided an external magnetic gradient (∇B).  
+* **Magnetophoresis:** Suspended iron (Fe) and copper (Cu) micro-particles were drawn along localized field lines into high-density dipole chains. This abiotic "magnetic skeleton" prevented the liquid metal from separating or slumping into inert sludge, creating localized zones of high magnetorheological (MR) yield stress within primordial mineral pools.
+
+### **2\. Micro-Inductive Energetics**
+
+* **Faraday Generation:** Geothermal convection driven by subsurface thermal vents forced liquid galinstan to flow across the stationary magnetic fields of the lodestone beds.  
+* **MHD Current Injection:** In accordance with Faraday’s Law of Induction (J \= σ (v × B)), this movement generated continuous, micro-ampere electrical currents directly within the conductive alloy. These abiotic currents provided the raw electrochemical energy required to catalyze early metal-recycling pathways without requiring traditional organic metabolic enzymes.
+
+### **3\. Circuit Formation and Autonomic Bootstrap**
+
+* **Silver Conduit Assembly:** Trace silver (Ag) dissolved in the mineral pools was swept along the path of least electrical resistance by the induced currents, gradually precipitating into high-velocity conductive conduits.  
+* **The "Great Resonance" Event:** A massive, high-amplitude geomagnetic storm—triggered by a solar flare interacting with Chaos’s magnetosphere—induced a planetary-scale electromagnetic standing wave. This external pulse forced the primitive silver pathways and bismuth (Bi) clusters into self-sustaining resonance, establishing the first permanent, autonomic "idle" field.
 
 Once this autonomic feedback loop was achieved, the proto-organisms no longer required external lodestone beds to maintain their yield stress. They gained the ability to detach from their rock cradles, flow through the subsurface water channels, and begin self-directed shape manipulation.
 
----
-> **Collaborative Note (Field Excerpt):**  
-> *"Stan’s recollection of their ancestral 'Vein-Sleeping' was originally interpreted as early cultural mythology. It wasn't until Dr. Cruiz mapped the remnant magnetite polarization in Lower Cavern 4, and Amerigo modeled the magnetohydrodynamic induction loops, that the physics clicked. Celectra’s bi-nodal EM synchronization allowed Stan to isolate the specific resonance harmonic of those ancient lodestone beds, effectively letting us read the magnetic 'fossil record' embedded in their oldest bismuth memory veins."*  
+**Collaborative Note (Field Excerpt):**    
+*"Stan’s recollection of their ancestral 'Vein-Sleeping' was originally interpreted as early cultural mythology. It wasn't until Dr. Cruiz mapped the remnant magnetite polarization in Lower Cavern 4, and Amerigo modeled the magnetohydrodynamic induction loops, that the physics clicked. Celectra’s bi-nodal EM synchronization allowed Stan to isolate the specific resonance harmonic of those ancient lodestone beds, effectively letting us read the magnetic 'fossil record' embedded in their oldest bismuth memory veins."*  
+
 > — **Dr. Cruiz & Amerigo Carisco, *Xenobiological Survey of Ares***
-> 
-</div>
 
-<div class="card-bg" markdown="1">
+\</div\>
 
-## Art
+\<div class="card-bg" markdown="1"\>
+
+## **Art**
 
 Galinstanian art is ephemeral, using bodies and the bismuth network for sensory immersion. EM symphonies create light ribbons and vibrations, while temporary sculptures and "taste murals" etched in rock share sensory memories. Themes depict celestial orbits, nutrient cycles, or human "echoes." Art educates young buds and strengthens empathy.
 
-</div>
+\</div\>
 
-<div class="card-bg" markdown="1">
+\<div class="card-bg" markdown="1"\>
 
-## Philosophy
+## **Philosophy**
 
 Centered on "Field Unity," their philosophy views all existence as interconnected via EM/vibrational fields. Key tenets include:
 
-* **Biological Agnosticism:** "Having evolved without discrete physical boundaries or un-coupled neural fields, Galinstanians do not categorize life by form, gender, or origin." Their presence on Ares has acted as a confirmation for the colony’s universal inclusivity, as their 'Echo' interactions reward transparency and emotional honesty over social performativity. 
-* **Interconnectedness:** Individuals extend a universal matrix; actions ripple, promoting peace.
-* **Environmental Harmony:** Ares and the cosmos are living; dissolving/reforming is transformation.
-* **Curiosity and Acceptance:** Outsiders expand resonance; secrecy (e.g., encryption) is alien and potentially hostile.
+* **Biological Agnosticism:** "Having evolved without discrete physical boundaries or un-coupled neural fields, Galinstanians do not categorize life by form, gender, or origin." Their presence on Ares has acted as a confirmation for the colony’s universal inclusivity, as their 'Echo' interactions reward transparency and emotional honesty over social performativity.  
+* **Interconnectedness:** Individuals extend a universal matrix; actions ripple, promoting peace.  
+* **Environmental Harmony:** Ares and the cosmos are living; dissolving/reforming is transformation.  
+* **Curiosity and Acceptance:** Outsiders expand resonance; secrecy (e.g., encryption) is alien and potentially hostile.  
 * **Existential Views:** Death is "dissipation" into planetary fields; purpose is attuning to universal rhythms.
 
-</div>
+\</div\>
 
-<div class="card-bg" markdown="1">
+\<div class="card-bg" markdown="1"\>
 
-## Human Interaction
+## **Human Interaction**
 
 First contact occurred near New Eden, with a Galinstanian scout observing human vibrations and signals. They later communicated electromagnetically with Celectra, a neurologically enhanced human, as a bridge.
 
@@ -219,4 +225,6 @@ They welcome humans if habitats are respected, advocating transparency over encr
 
 Their slow perception of time and centuries-long lifespans make them view human lives as fleeting "echoes," which adds a layer of patience to their interactions with the short-lived colonists.
 
-</div></div>
+\</div\>
+
+\</div\>
