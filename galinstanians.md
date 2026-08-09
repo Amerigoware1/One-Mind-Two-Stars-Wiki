@@ -168,6 +168,7 @@ The evolutionary origin of the Galinstanians—historically preserved in native 
 │
 ▼
 [ Proto-Galinstanian Organism ]
+```
 
 ### **1\. The Abiotic Cradle (Lodestone Scaffolding)**
 
