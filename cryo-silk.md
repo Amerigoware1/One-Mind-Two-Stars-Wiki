@@ -20,7 +20,7 @@ function: "Thermoregulating, dermatologically protective, bacteriostatic smart t
     <tr><th>Core Function</th><td>{{ page.function }}</td></tr>
   </table>
 
-</div> <div class="card-bg" markdown="1">
+</div><div class="article-content"> <div class="card-bg" markdown="1">
 
 # Material Profile: Cryo-Silk
 
@@ -55,4 +55,4 @@ What began as a bespoke medical solution for a single child rapidly disrupted th
 
 By the time Celectra reached adulthood, cryo-silk had completely decentralized into the mainstream. Because Dr. Cruiz and Amerigo Carisco published the molecular patterns openly, the material schematic is available on all public networks. Today, it is the most frequently requested material profile for domestic, workplace, and travel garments worldwide. The original therapeutic micro-fiber-optic grid has since evolved into a highly celebrated cultural design aesthetic, allowing users to customize their attire with fluid, holopad-controlled, color-shifting swirls for the night scene.
 
-</div> 
+</div> </div>

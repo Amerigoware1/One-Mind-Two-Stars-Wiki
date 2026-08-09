@@ -65,7 +65,7 @@ title: "Galinstanians"
 - [Human Interaction](#human-interaction)
 
 </div>
-
+<div class="article-content">
 <div class="card-bg" markdown="1">
 
 ## Overview
@@ -219,4 +219,4 @@ They welcome humans if habitats are respected, advocating transparency over encr
 
 Their slow perception of time and centuries-long lifespans make them view human lives as fleeting "echoes," which adds a layer of patience to their interactions with the short-lived colonists.
 
-</div>
+</div></div>
