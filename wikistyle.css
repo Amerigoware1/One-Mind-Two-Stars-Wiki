@@ -1580,4 +1580,4 @@ text-shadow: 0 0 10px var(--glow-violet) }
     margin: 0;
     opacity: 0.75;
   }
-  .mermaid svg { max-width: 100%; height: auto; }
+  .mermaid svg { max-width: 75%; height: auto; }
