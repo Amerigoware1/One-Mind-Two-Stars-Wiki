@@ -152,16 +152,19 @@ The evolutionary origin of the Galinstanians—historically preserved in native 
 
 <div class="mermaid">
 flowchart TD
-    A["Planetary Core Currents<br>Chaos Magnetosphere"]
-    B["Lodestone Veins (Fe₃O₄)"]
-    C[("Magnetotactic Scaffolding<br>& Inductive Power")]
-    D["Mineral-Rich Abiotic Pool<br>(Ga-In-Sn + Fe/Cu/Ag/Bi)"]
-    E["Particle Alignment &<br>Magnetophoresis"]
-    F["Proto-Galinstanian Organism"]
+    subgraph Cradle ["Geological & Magnetic Environment"]
+        A["Planetary Core Currents<br>& Chaos Magnetosphere"] --> B["Lodestone Veins (Fe₃O₄)"]
+        B --> C["Magnetotactic Scaffolding<br>& Inductive Power"]
+    end
 
-    A --> B --> C --> D
-    D -- "MHD Micro-Currents" --> E
-    E -- "Autonomic Feedback Loop" --> F
+    subgraph Matrix ["Chemical Base"]
+        D["Mineral-Rich Abiotic Pool<br>(Ga-In-Sn + Fe/Cu/Ag/Bi)"]
+    end
+
+    C & D --> E["MHD Micro-Currents"]
+    E --> F["Particle Alignment & Magnetophoresis"]
+    F --> G["Autonomic Feedback Loop<br>(Silver Conduit Assembly)"]
+    G --> H["Proto-Galinstanian Organism"]
 </div>
 
 ### **1\. The Abiotic Cradle (Lodestone Scaffolding)**
