@@ -136,7 +136,7 @@ Conflicts are minimal, viewed as disruptions in "field harmony." Environmental c
 
 Preserved in "memory veins" (EM imprints in cavern walls), their history spans eons:
 
-* **Origins:** Evolved from primordial mineral pools in Ares's molten core, shaped by magnetic fields and EM radiation.
+* **Origins:** Evolved from primordial mineral pools within Ares's deep granite caverns, shaped by magnetic fields and EM radiation.
 * **Great Resonance:** A solar flare sparked telepathy, uniting pools into clusters.
 * **Dissolution Age:** Learned to corrode rock for expansion, developing the bismuth waveguide network.
 * **Celestial Awakening:** Sensing of binary stars and Chaos shifted philosophy to cosmic unity.
