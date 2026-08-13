@@ -50,12 +50,16 @@ title: "Galinstanians"
   <button class="tab-btn" data-tab="tab-society">Society, History &amp; Conflicts</button>
   <button class="tab-btn" data-tab="tab-culture">Art, Philosophy &amp; Human Interaction</button>
 </div>
-
+<div class="article-content">
 <div id="tab-overview" class="tab-content active card-bg" markdown="1">
+<div class="card-bg" markdown="1">
 
 ## Overview
 
 The Galinstanians are an intelligent, peaceful alien species native to the subsurface caverns of Ares, a near-Earth-sized moon orbiting the super-Jupiter Chaos in the Niamh-Ciara binary star system. Characterized by their magnetorheological colloidal gel physiology, they are composed primarily of a galinstan-base matrix embedded with particulate iron, copper, silicon, and bismuth-tin clusters. They communicate via coherent electromagnetic resonance, amplified by a biologically secreted bismuth waveguide network, and lack traditional technology. Their society is egalitarian and harmonious, with no concept of war or secrecy, and their culture emphasizes art, philosophy, and cosmic interconnectedness.
+
+</div>
+<div class="card-bg" markdown="1">
 
 ## Homeworld
 
@@ -65,9 +69,15 @@ Ares is a geologically active moon with 18-hour days, recently captured by the s
 
 <div id="tab-evolution" class="tab-content card-bg" markdown="1">
 
+</div>
+<div class="card-bg" markdown="1">
+
 ## Evolution & Biogenesis: The Lodestone-Catalyzed MR Hypothesis
 
 The evolutionary origin of the Galinstanians—historically preserved in native oral traditions as the *First Resonance*—was formalized into a unified xenobiological model through a collaborative study between Dr. Cruiz, Amerigo Carisco, Celectra Carisco, and the Galinstanian cluster representative "Stan."
+
+</div>
+<div class="card-bg" markdown="1">
 
 <div class="mermaid">
 flowchart TD
@@ -85,6 +95,9 @@ flowchart TD
     F --> G["Autonomic Feedback Loop<br>(Silver Conduit Assembly)"]
     G --> H["Proto-Galinstanian Organism"]
 </div>
+
+</div>
+<div class="card-bg" markdown="1">
 
 ### 1.1 The Cradle-to-Consciousness Pathway
 
@@ -113,11 +126,17 @@ Once this autonomic feedback loop was achieved, the proto-organisms no longer re
 
 What partial trace survives from the pre-conscious period is not oral history but geology: faint, chaotic hysteresis patterns laid down in the very oldest bismuth deposits, decades before any organism existed to intend them. Unlike a mature Coherence Core's actively maintained Latent Lattice Memory, these fossil traces were never reinforced or re-recorded by a conscious mind, and eons of ambient thermal and magnetic noise have degraded them badly—bismuth records, like any other, corrode without meticulous, deliberate upkeep. Recovering a coherent account of the tuning period at all took the targeted, multi-generational research effort described above. The oral tradition of a single dramatic Resonance was never a corruption of a story the Galinstanians once knew and later forgot. It is the honest limit of what any species can remember about its own birth—and, in this case, a gap only an outside collaborator could help fill back in.
 
+</div>
+<div class="card-bg" markdown="1">
+
 ### 1.2 The Biological Monoculture: An Evolutionary Paradox
 
 To a human scientific community raised on the chaotic, branching tree of carbon-based DNA, the biosphere of Ares presents a staggering anomaly: an intelligent, highly complex species that evolved completely devoid of an accompanying "animal" kingdom. In traditional speculative exobiology, divergence is considered an absolute law of life. Geographic separation forces speciation; changing environments create specialized branches.
 
 Yet, the Galinstanians did not branch. They amalgamated. By bypassing cellular replication in favor of an electromagnetic ferrofluid matrix, their evolution from primordial mineral pools to sentient masses was completely adivergent. Where Earth biology utilizes competition and divergence to fill ecological niches, the physics of a living colloidal alloy dictate an entirely different selective pressure: coalescence.
+
+</div>
+<div class="card-bg" markdown="1">
 
 ### 1.3 Thermodynamic Merging (The "One Drop" Principle)
 
@@ -131,6 +150,9 @@ In standard surface biology, two distinct species occupying the same niche canno
 
 **A Persistent Filter:** This compatibility threshold did not vanish once macro-organisms stabilized and amalgamation gave way to individuated bodies. The same ±0.5% rheological tolerance now governs modern asexual budding (see Development & Reproduction): each youngling's Coherence Core is an imperfect, stochastically partitioned copy of its parent's, carrying slightly drifted trace-element ratios and cluster geometry. Where the ancient droplets used this filter to decide who could physically *join*, the modern species uses the identical chemistry to decide who can survive *apart*—a youngling budded outside tolerance is typically reabsorbed by its own parent within days, or, in the rare case of a sealed cavern, becomes the founding drift of one of the regional "chemical dialects" described below. The filter that first built the species now quietly maintains its ongoing genetic economy.
 
+</div>
+<div class="card-bg" markdown="1">
+
 ### 1.4 The Universal Filter: Field Harmony
 
 Traditional ecosystems diversify because organisms adapt to different physical niches—some fly, some burrow, some hunt. For the Galinstanians, the primary environment is not merely the subterranean rock, but the profound electromagnetic landscape generated by the planetary magnetic fields of Ares, the super-Jupiter Chaos, and the Niamh-Ciara binary stars.
@@ -138,6 +160,9 @@ Traditional ecosystems diversify because organisms adapt to different physical n
 **The Resonance Filter:** Once early pools developed the capacity for basic EM synchronization, evolutionary "fitness" ceased to be measured by physical speed or predatory mechanics. Fitness became a measure of computational and electromagnetic compatibility.
 
 **Systemic Error Correction:** Any variant pool that mutated to broadcast chaotic, out-of-phase "noise" would actively disrupt the stabilizing magnetohydrodynamic fields of neighboring clusters. The surrounding collective, driven by the physics of resonant induction, would either force the rogue pool into phase coherence through powerful, synchronized harmonic pulses, or physically absorb its constituent metals into the main mesh. Divergence was effectively treated by the environment as a system error and automatically corrected.
+
+</div>
+<div class="card-bg" markdown="1">
 
 ### 1.5 Absence of Permanent Geographic Isolation
 
@@ -153,6 +178,9 @@ Crucially, these physical barriers were never permanent. Tectonic activity on Ar
 
 A Galinstanian's internal bismuth waveguide clusters inductively couple into this external network much as a transmitter couples into an antenna, converting what would otherwise be free-space radiative loss into low-loss guided propagation carried in the Extremely Low Frequency (ELF) band. Bismuth's unusually strong diamagnetism reinforces this: diamagnetic materials weakly repel external magnetic field lines rather than conducting them inward, which helps confine the guided signal to the strand itself and keeps the ambient magnetospheric noise of Chaos and the Niamh-Ciara binary from bleeding in. The "moon-wide mesh," in other words, is not a broadcast *through* Ares, but a broadcast through wiring the species built for itself, one plated strand at a time, over a span longer than its own written memory extends.
 
+</div>
+<div class="card-bg" markdown="1">
+
 ### 1.6 Xenobiological Implications for Human Interaction
 
 This fluid, network-style evolution directly shapes the foundational philosophy of Galinstanian society, specifically what xenobiologists term **Biological Agnosticism**.
@@ -161,7 +189,7 @@ Having evolved entirely without discrete, permanent physical boundaries or un-co
 
 Consequently, they view human individuals with a mixture of profound patience and clinical curiosity. To a being whose consciousness is integrated into a multi-century, moon-wide electromagnetic waveguide matrix, a human is a fascinating, if tragically brief, "echo"—a sentient spark permanently trapped inside a rigid, isolated carbon shell, communicating through primitive, uncoupled acoustic vibrations.
 
-</div>
+</div></div>
 
 <div id="tab-physiology" class="tab-content card-bg" markdown="1">
 
@@ -171,13 +199,22 @@ Galinstanians possess fluid, shape-shifting bodies composed of a galinstan-base 
 
 In a passive state, the body maintains an autonomic, low-frequency "idle" electromagnetic tone—analogous to muscle tone in biological fauna. This baseline field locks the suspended metallic particles into microscopic dipole chains, providing a static yield stress that prevents slumping or spilling under gravity. By dynamically generating localized internal EM pulses, they alter this internal yield stress and surface tension on demand, flowing as amorphous gels, stiffening into dense masses, or contracting into rigid forms. Complete loss of internal EM control—such as through severe EMP disruption or death—collapses the yield stress, causing the gel to thin and slump into a flat liquid pool.
 
+</div>
+<div class="card-bg" markdown="1">
+
 ### Locomotion and Shape Control
 
 Movement relies on **magnetohydrodynamics (MHD)** and dynamic yield-stress manipulation. By modulating internal EM fields, Galinstanians generate Lorentz forces to propel their mass while localized field adjustments temporarily liquefy or solidify specific regions of their gel matrix. They form pseudopods—such as thin, EM-stabilized sensing spikes or broad, flowing locomotion pods—by lowering local yield stress to allow flow and then instantly re-establishing field chains to freeze the shape in place. Temporary hardening via silicon phase changes and localized field locks allows for the formation of semi-solid **Anchoring Pylons** used for bracing and mechanical leverage.
 
+</div>
+<div class="card-bg" markdown="1">
+
 ### Nutrient Absorption, Tasting, and Waste
 
 Galinstanians sustain themselves by dissolving mineral-rich rock using localized hydrofluoric acid (HF) secretions. They safely contain these corrosive agents using a dynamically maintained, passivated gallium oxide (Ga₂O₃) layer on their outer surface that constantly regenerates against chemical wear. As they feed, specialized chemoreceptors sample the surrounding air and ground, effectively allowing them to "taste" the environment for vital minerals. Insoluble, acid-resistant materials—such as diamonds, corundum, and other hard gemstones found in the host rock—cannot be digested; they are simply pushed aside and left behind as a polished waste residue during the excavation process.
+
+</div>
+<div class="card-bg" markdown="1">
 
 ### Sensory Systems and Neural Networks
 
@@ -185,6 +222,9 @@ Galinstanians sustain themselves by dissolving mineral-rich rock using localized
 * **The Bismuth Network:** Far-field EM resonance, carried in the ELF band (see Evolution & Biogenesis), is amplified by their internal bismuth alloy clusters. While standard human neural activity lacks the phase-coherence to be interpreted by Galinstanians, Celectra Carisco's unique bi-nodal neurology allows for constructive interference. By synchronizing the EM flux between her two bodies, she generates a "High-Gain Resonance" that seamlessly matches native Galinstanian broadcasts.
 * **Magnetic Field Sensing:** They possess a highly accurate internal compass, navigating via planetary and celestial magnetic fields, allowing them to map and detect nearby orbital bodies like Niamh, Ciara, and Chaos.
 * **Vibrotactile Perception:** Their entire conductive surface acts as a giant acoustic sensor, picking up micro-vibrations through the crust to detect seismic activity, approaching footsteps, or structural shifts.
+
+</div>
+<div class="card-bg" markdown="1">
 
 ### Deep Structure: The Coherence Core & Ganglionic Network
 
@@ -204,15 +244,20 @@ The systems above describe the organism at the level a field observer sees. Unde
 * **The Ganglionic Ribbon Network (Peripheral Micro-Ganglia):** Distributed through the bulk fluid, with density increasing near the Plasmalemma and any actively working Anchoring Pylon, are hundreds of small, self-contained oscillator clusters—informally termed micro-ganglia, roughly comparable in processing complexity to the ganglia of a terrestrial arthropod. Structurally, a micro-ganglion is a dense knot of the same magnetophoretic dipole chains described in Evolution & Biogenesis: individual Fe/Cu particle chains, laterally bonded into flat, multi-strand ribbons, then coiled tight. Because a ribbon is itself current-carrying rather than insulating, a micro-ganglion never interrupts the organism's continuous MHD current loop—it routes and locally processes a portion of it in transit. Micro-ganglia handle fast, reflexive computation close to the point of contact, closely paralleling the semi-autonomous arm ganglia of a terrestrial octopus. Thicker ribbon *trunks* aggregate this data before it reaches the Coherence Core; a single damaged ribbon rarely disables the organism, since redundant parallel chains carry the signal around the damage—fault-tolerance directly analogous to a vertebrate peripheral nerve bundle.
 * **Exophytic Waste Pores:** Dynamic, tension-controlled surface channels through which acid-resistant, undigestible minerals are expelled as polished waste residue.
 
+</div>
+<div class="card-bg" markdown="1">
+
 ### Life Cycle and Maturation
 
 Galinstanians reproduce asexually through budding (see Development & Reproduction for the full mechanism). New buds begin with a soft, poorly regulated magnetorheological structure, lacking the complex internal EM pathways and bismuth network required to maintain a stable baseline field. Until their autonomic field stabilizes, juveniles struggle to maintain structural cohesion, often slumping or spreading under gravity if not supported by an elder's overlapping EM field or contained within natural cavern hollows. Once fully mature, their amorphous alloy-gel bodies grant them lifespans spanning several centuries. While they continuously recycle metals internally to prevent elemental degradation, they remain highly vulnerable to extreme external temperatures and intense EM interference—both of which can disrupt their baseline yield stress, causing fatal structural dissipation and collapse into a unformed liquid pool.
 
-</div>
+</div></div>
 
 <div id="tab-development" class="tab-content card-bg" markdown="1">
 
 ## Development & Reproduction
+
+<div class="card-bg" markdown="1">
 
 ### Asexual Budding (Asymmetric Fission)
 
@@ -222,6 +267,9 @@ Reproduction in a giant monocellular colloidal organism occurs through asymmetri
 2. **Extrusive Pinching:** The parent cell extrudes a smaller portion of its galinstan-silicon matrix containing the new core through a surface-tension pinch point.
 3. **Fission:** Surface tension snaps, Ga₂O₃ skin forms over both organisms, and the youngling separates as a smaller, independent single cell.
 
+</div>
+<div class="card-bg" markdown="1">
+
 ### Maturation Bottlenecks
 
 Development from a youngling to an adult spans several decades due to strict physical and chemical limitations:
@@ -230,15 +278,21 @@ Development from a youngling to an adult spans several decades due to strict phy
 * **Waveguide Self-Assembly:** A youngling begins with a simple, noisy neural structure. Over decades, silver and bismuth paths must self-organize into phase-coherent waveguides capable of handling high-frequency communication and precise shape-shifting.
 * **Thermal and EM Stability:** Due to a high surface-area-to-volume ratio, younglings lose internal charge rapidly and remain vulnerable to external magnetic noise and cold. This is not merely a matter of scale: below a critical cluster volume, individual bismuth memory domains sit close to their superparamagnetic threshold—the point at which ambient thermal energy becomes sufficient to spontaneously randomize a stored magnetic pattern. A youngling's earliest memories are therefore genuinely unstable in a way an adult's are not; decades of growth provide the thermal and magnetic inertia necessary not just for survival, but for memory to hold at all.
 
+</div>
+<div class="card-bg" markdown="1">
+
 ### Full Linguistic Integration as Maturity
 
 Physical maturity is not measured in years or sheer mass, but by **Full Linguistic Integration**. This milestone marks the moment a youngling's Coherence Core achieves total phase-coherence with the moon-wide waveguide network, and permanently fixes the individual's unique fundamental carrier frequency—the resonant signature, unduplicated in any other living Galinstanian, that will identify it within any future network coupling (see Cognition & Consciousness). The youngling transitions from broadcasting noisy emotional hums and simple physical shapes to generating complex, abstract frequencies and achieving full harmonic resonance with adult society.
 
-</div>
+</div></div>
 
 <div id="tab-cognition" class="tab-content card-bg" markdown="1">
 
 ## Cognition & Consciousness
+
+</div>
+<div class="card-bg" markdown="1">
 
 ### Dynamically Coupled Distributed Intelligence
 
@@ -250,13 +304,19 @@ Galinstanians exist as distinct individuals while retaining the ability to form 
 
 **On the Question of Unified Consciousness:** Xenobiologists remain divided on what coupling actually constitutes. One school holds that a coupled cluster becomes, however briefly, a single unified consciousness the moment its shared information is broadcast widely enough for many individual Cores to act on it jointly—a broadcast-width threshold with clear echoes in Terran cognitive science. A second school argues the opposite: that coupling is sophisticated parallel computation with no accompanying unified experience at all, no more conscious than a human research team sharing data across a network. The debate largely mirrors an older, unresolved one from Terran consciousness science, between models in which awareness arises from information being merely *shared widely* and models in which it must be *irreducibly integrated*. Ares xenobiology has, to date, produced no instrument capable of settling which applies here—a limitation it shares, humbling as that may be, with human science generally.
 
-</div>
+</div></div>
 
 <div id="tab-society" class="tab-content card-bg" markdown="1">
+
+
+<div class="card-bg" markdown="1">
 
 ## Society
 
 Galinstanian society is communal and egalitarian, organized into "clusters" of 5-20+ individuals sharing harmonized EM fields. Resonance circles facilitate consensus without leaders. The Bismuth Network weaves clusters into a moon-wide neural mesh, channeling coherent EM resonance and integrating with their habitat. Daily life involves nutrient absorption, cavern exploration, and EM symphonies for bonding. They shape homes by dissolving and reforming rock, creating fluid architectures as they eat.
+
+</div>
+<div class="card-bg" markdown="1">
 
 ## History
 
@@ -268,17 +328,26 @@ Preserved in the Memory Veins (EM imprints in cavern walls), their history spans
 * **Celestial Awakening:** Sensing of binary stars and Chaos shifted philosophy to cosmic unity.
 * **Human Contact:** Detected human signals, sent a scout to New Eden, and dissolved a drone to learn, fostering cautious interaction. Celectra was their first source of intelligible information about humans.
 
+</div>
+<div class="card-bg" markdown="1">
+
 ## Conflicts
 
 Conflicts are minimal, viewed as disruptions in "field harmony." Environmental challenges include seismic events and magnetic storms, addressed by pooling resources or broadcasting calming pulses. Rare internal "resonance clashes" from anomalous mineral absorption are resolved telepathically or by voluntary separation. Human activities (e.g., mining, encrypted signals) risk damaging their network/habitat, perceived as hostile noise. They respond with withdrawal or empathetic outreach, favoring trust and transparency. Because individuals are integrated into a moon-wide EM waveguide matrix, high-amplitude distress signals create a Sympathetic Resonance Cascade—localized physical destabilization in nearby clusters, turning one individual's agony into a collective physical trauma.
 
-</div>
+</div></div>
 
 <div id="tab-culture" class="tab-content card-bg" markdown="1">
+
+
+<div class="card-bg" markdown="1">
 
 ## Art
 
 Galinstanian art is ephemeral, using bodies and the bismuth network for sensory immersion. EM symphonies create light ribbons and vibrations, while temporary sculptures and "taste murals" etched in rock share sensory memories. Themes depict celestial orbits, nutrient cycles, or human "echoes." Art educates young buds and strengthens empathy.
+
+</div>
+<div class="card-bg" markdown="1">
 
 ## Philosophy
 
@@ -290,6 +359,9 @@ Centered on "Field Unity," their philosophy views all existence as interconnecte
 * **Curiosity and Acceptance:** Outsiders expand resonance; secrecy (e.g., encryption) is alien and potentially hostile.
 * **Existential Views:** Death is "dissipation" into planetary fields; purpose is attuning to universal rhythms.
 
+</div>
+<div class="card-bg" markdown="1">
+
 ## Human Interaction
 
 First contact occurred near New Eden, with a Galinstanian scout observing human vibrations and signals. They later communicated electromagnetically with Celectra, a neurologically enhanced human, as a bridge.
@@ -298,7 +370,7 @@ They welcome humans if habitats are respected, advocating transparency over encr
 
 Their slow perception of time and centuries-long lifespans make them view human lives as fleeting "echoes," which adds a layer of patience to their interactions with the short-lived colonists.
 
-</div>
+</div></div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
