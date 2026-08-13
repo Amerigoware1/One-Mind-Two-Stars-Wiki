@@ -65,7 +65,7 @@ The Galinstanians are an intelligent, peaceful alien species native to the subsu
 
 Ares is a geologically active moon with 18-hour days, recently captured by the super-Jupiter Chaos. Its surface experiences pale, fractured dawns refracted through Chaos's banded storms, with frost at cavern entrances giving way to warm, mineral-rich subsurface environments. The New Eden human colony, located under the geostationary orbit of the Utopis space station, marks the only known human settlement. Galinstanian habitats consist of smoothed caverns and water channels, shaped by their corrosive abilities over generations.
 
-</div>
+</div></div>
 
 <div id="tab-evolution" class="tab-content card-bg" markdown="1">
 
@@ -75,9 +75,6 @@ Ares is a geologically active moon with 18-hour days, recently captured by the s
 ## Evolution & Biogenesis: The Lodestone-Catalyzed MR Hypothesis
 
 The evolutionary origin of the Galinstanians—historically preserved in native oral traditions as the *First Resonance*—was formalized into a unified xenobiological model through a collaborative study between Dr. Cruiz, Amerigo Carisco, Celectra Carisco, and the Galinstanian cluster representative "Stan."
-
-</div>
-<div class="card-bg" markdown="1">
 
 <div class="mermaid">
 flowchart TD
