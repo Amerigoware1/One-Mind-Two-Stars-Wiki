@@ -189,17 +189,17 @@ Once this autonomic feedback loop was achieved, the proto-organisms no longer re
 
 > — **Dr. Cruiz & Amerigo Carisco, *Xenobiological Survey of Ares***
 
-\</div\>
+</div>
 
-\<div class="card-bg" markdown="1"\>
+<div class="card-bg" markdown="1">
 
 ## **Art**
 
 Galinstanian art is ephemeral, using bodies and the bismuth network for sensory immersion. EM symphonies create light ribbons and vibrations, while temporary sculptures and "taste murals" etched in rock share sensory memories. Themes depict celestial orbits, nutrient cycles, or human "echoes." Art educates young buds and strengthens empathy.
 
-\</div\>
+</div>
 
-\<div class="card-bg" markdown="1"\>
+<div class="card-bg" markdown="1">
 
 ## **Philosophy**
 
@@ -211,9 +211,9 @@ Centered on "Field Unity," their philosophy views all existence as interconnecte
 * **Curiosity and Acceptance:** Outsiders expand resonance; secrecy (e.g., encryption) is alien and potentially hostile.  
 * **Existential Views:** Death is "dissipation" into planetary fields; purpose is attuning to universal rhythms.
 
-\</div\>
+</div>
 
-\<div class="card-bg" markdown="1"\>
+<div class="card-bg" markdown="1">
 
 ## **Human Interaction**
 
@@ -223,6 +223,6 @@ They welcome humans if habitats are respected, advocating transparency over encr
 
 Their slow perception of time and centuries-long lifespans make them view human lives as fleeting "echoes," which adds a layer of patience to their interactions with the short-lived colonists.
 
-\</div\>
+</div>
 
-\</div\>
+</div>
