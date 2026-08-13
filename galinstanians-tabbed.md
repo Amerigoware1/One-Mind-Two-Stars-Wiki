@@ -1,5 +1,5 @@
 ---
-layout: character
+layout: default
 title: "Galinstanians"
 ---
 
