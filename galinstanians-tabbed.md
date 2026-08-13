@@ -69,7 +69,6 @@ Ares is a geologically active moon with 18-hour days, recently captured by the s
 
 <div id="tab-evolution" class="tab-content card-bg" markdown="1">
 
-</div>
 <div class="card-bg" markdown="1">
 
 ### 1.0 Evolution & Biogenesis: The Lodestone-Catalyzed MR Hypothesis
