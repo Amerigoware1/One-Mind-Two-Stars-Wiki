@@ -299,3 +299,22 @@ They welcome humans if habitats are respected, advocating transparency over encr
 Their slow perception of time and centuries-long lifespans make them view human lives as fleeting "echoes," which adds a layer of patience to their interactions with the short-lived colonists.
 
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".tab-btn");
+  const tabs = document.querySelectorAll(".tab-content");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const target = button.getAttribute("data-tab");
+
+      buttons.forEach(btn => btn.classList.remove("active"));
+      tabs.forEach(tab => tab.classList.remove("active"));
+
+      button.classList.add("active");
+      document.getElementById(target).classList.add("active");
+    });
+  });
+});
+</script>
