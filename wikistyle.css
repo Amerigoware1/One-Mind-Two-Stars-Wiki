@@ -219,7 +219,7 @@ background: transparent }
 .infobox table { 
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid var(--border-glow); /* Dim purple box aligned to contents */
+  border: 1px solid var(--neon-magenta); /* Dim purple box aligned to contents */
   background: var(--bg-card);
   border-radius: 0.75rem;
   margin: 0;                            /* Strips default table margins */
