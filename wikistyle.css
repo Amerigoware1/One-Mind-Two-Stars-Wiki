@@ -212,7 +212,7 @@ margin-bottom: 1rem }
 
 .infobox table.infobox { width: 100%;
 border-collapse: collapse;
-border: none;
+border: 1px solid var(--neon-magenta);
 margin: 0;
 
 background: transparent }
