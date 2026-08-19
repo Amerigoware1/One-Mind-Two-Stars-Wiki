@@ -16,6 +16,9 @@ book2_age:  "14.1 Earth / 12.66 Ares "
 book3_age:  "21.0 Earth / 18.85 Ares "
 book4_age:  "29.3 Earth / 26.2 Ares "
 book5_age:  "36.3 Earth / 32.5 Ares "
+gender assignment: "female"
+gender:  "female"
+orientation: "bisexual"
 book1_title:  "Dual-Body Emergence "
 book1_arc: >
  At age seven, Celectra survives Dr. Kret's uncaring procedures to collect data about her dual-bodied physiology. She runs away from his clinic into a cave system where she finds  new friends. Under the care of Dr. Alex Cruiz and her father and Dr. Zoë, she begins to heal from the trama, but still has PTSD. She becomes the first human capable of
