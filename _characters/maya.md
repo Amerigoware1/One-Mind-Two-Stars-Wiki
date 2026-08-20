@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/maya-book3.webp"
 portrait-book4: "/assets/images/maya-book4.webp"
 portrait-book5: "/assets/images/maya-book5.webp"
 affiliation: New Eden Youth Cohort; Artist; Co‑Founder of Samaya Gallery & Museum of Integration
-status: Alive
 birthday: September 22, 2226
 birthplace: New Eden, Ares
 book1_age: "6.1"
@@ -16,6 +15,13 @@ book2_age: "13.2"
 book3_age: "20.1"
 book4_age: "28.3"
 book5_age: "35.3"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Lesbian"
+orientation_awareness_age: 10
+status: Alive
+death_date:
+death_place:
 book1_title: "Childhood (off-page)"
 book1_arc: >
   Maya is present in the colony as a young child. While not a central POV character, she is part of the earliest generation of Ares-born children growing up alongside Celectra's early integration work.

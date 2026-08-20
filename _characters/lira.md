@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/lira-book3.webp"
 portrait-book4: "/assets/images/lira-book4.webp"
 portrait-book5: "/assets/images/lira-book5.webp"
 affiliation: Psychologist; Listener Corps Mentor; Youth Development Specialist
-status: Alive
 birthday: April 19, 2217
 birthplace: Utopis Station, Chaos System
 book1_age: "15.5"
@@ -16,6 +15,13 @@ book2_age: "22.6"
 book3_age: "29.5"
 book4_age: "37.7"
 book5_age: "44.7"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 11
+status: Alive
+death_date:
+death_place:
 book1_title: "The Babysitter"
 book1_arc: >
   Lira's first appearance is quiet and unassuming: she is hired by Amerigo to babysit seven-year-old Celectra during the chaos following the medical confirmation of her condition. Too young to be a professional caregiver but older than the other children, Lira watches Celectra with thoughtful eyes, noting how the child holds herself—both bodies—with the weight of being different.

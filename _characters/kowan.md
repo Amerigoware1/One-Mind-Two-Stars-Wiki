@@ -7,11 +7,19 @@ portrait-book3: "/assets/images/kowan-book3.webp"
 portrait-book4: "/assets/images/kowan-book4.webp"
 portrait-book5: "/assets/images/kowan-book5.webp"
 affiliation: New Eden Youth Cohort (previous); University Mentor; Resonance Stewardship Program (data-analysis)
-status: Alive
 birthday: March 12, 2233
 birthplace: New Eden, Ares
 book2_age: "6.7"
+book3_age: "13.6"
+book4_age: "21.8"
 book5_age: "28.8"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book2_title: "Xan's Birthday (age-6)"
 book2_arc: >
   At six years old, Kowan attends Xan’s sixth birthday celebration in the caverns. He is drawn to a methodical, analytical Galinstanian whose presence feels organized and precise. After careful consideration, Kowan names them “Logic.” This naming creates a permanent bond between the two.

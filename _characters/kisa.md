@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/kisa-book3.webp"
 portrait-book4: "/assets/images/kisa-book4.webp"
 portrait-book5: "/assets/images/kisa-book5.webp"
 affiliation: Sundome Karate Dojo; Athletics Committee; New Eden Physical Education
-status: Active
 birthday: October 17, 2106
 birthplace: Okinawa, Japan, Earth
 book1_age: "36.0"
@@ -16,6 +15,13 @@ book2_age: "43.1"
 book3_age: "50.0"
 book4_age: "58.2"
 book5_age: "65.2"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Aromantic"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book1_title: "The Advocate"
 book1_arc: >
   Sensei Kisa serves as Celectra's primary advocate during the heated Athletics Committee debates about her competition eligibility. When Councilor Okafor questions whether it's fair for Celectra to compete with four limbs while others have two, Sensei Kisa offers the principled defense: "She is who she is. We do not ask tall competitors to fight on their knees. Celectra's body is her body."

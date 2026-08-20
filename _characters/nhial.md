@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/nhial-book3.webp"
 portrait-book4: "/assets/images/nhial-book4.webp"
 portrait-book5: "/assets/images/nhial-book5.webp"
 affiliation: New Eden Youth Cohort; Martial Artist & Dancer; Sundome Dojo; Ares Colonial Mining Corps (geology-& mineralogy division)
-status: Alive
 birthday: September 15, 2222
 birthplace: New Eden, Ares
 sister: Nyanhial Dok (born-2225)
@@ -17,6 +16,13 @@ book2_age: "17.2"
 book3_age: "24.1"
 book4_age: "32.3"
 book5_age: "39.3"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book1_title: "Growing (age-10)"
 book1_arc: >
   At ten, Nhial splits his time between Sundome Dojo and a local dance studio. His exceptional speed translates seamlessly across both disciplines, allowing him to move with striking precision in kumite and fluid grace on the dance floor. In karate, he favors counter‑strikes and intercepting techniques, often frustrating sparring partners who cannot close the distance. Sensei Kisa encourages him to develop patience, warning that pure speed without anticipation can be exploited, while his dance instructor pushes him to connect physical momentum to rhythmic awareness.

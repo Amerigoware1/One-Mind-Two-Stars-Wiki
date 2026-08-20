@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/leila-book3.webp"
 portrait-book4: "/assets/images/leila-book4.webp"
 portrait-book5: "/assets/images/leila-book5.webp"
 affiliation: New Eden Health Services; Resonance Medicine Research; Sundome Dojo (recreational)
-status: Alive
 birthday: November 30, 2224
 birthplace: New Eden, Ares
 book1_age: "9.5"
@@ -16,6 +15,13 @@ book2_age: "15.1"
 book3_age: "23.0"
 book4_age: "31.2"
 book5_age: "38.2"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Lesbian"
+orientation_awareness_age: 11
+status: Alive
+death_date:
+death_place:
 book1_title: "Growing (age-9)"
 book1_arc: >
   At nine, Leila is already a student of grappling and throws – her mother

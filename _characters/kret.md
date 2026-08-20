@@ -8,16 +8,20 @@ portrait-book3: "/assets/images/kret-book5.webp"
 portrait-book4: "/assets/images/kret-book5.webp"
 portrait-book5: "/assets/images/kret-book5.webp"
 affiliation: Formerly New Eden Medical Corps; Formerly New Eden Council
-status: Deceased
 birthday: February 14, 2098
 birthplace: Earth (pre‑ares-migration)
-death_date: April 2, 2259
-death_place: Utopis‑Lab 1, Amaterasu Outer System
 book1_age: "44.8"
 book2_age: "52.0"
 book3_age: "58.9"
 book4_age: "67.2"
 book5_age: "—"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Deceased
+death_date: April 2, 2259
+death_place: Utopis‑Lab 1, Amaterasu Outer System
 book1_title: "The Hidden Experiments"
 book1_arc: >
   Kret serves as Chief of Medicine and a councilman. He studies seven-year-old Celectra carelessly and unethically. Celectra runs away to a cave system to escape him. The colony begins investigating his past actions, and his authority rapidly erodes. He is exiled to work as a camp cook and medic with a planetary survey team scouring the surface of Ares.

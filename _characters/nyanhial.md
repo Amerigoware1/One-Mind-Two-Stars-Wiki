@@ -17,6 +17,13 @@ book2_age: "15.7"
 book3_age: "22.6"
 book4_age: "30.8"
 book5_age: "37.8"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Pansexual"
+orientation_awareness_age: 15
+status: Alive
+death_date:
+death_place:
 book1_title: "Rhythm & Pitch (age-8)"
 book1_arc: >
   At eight, Nyanhial splits her afternoons between the dance studio and the New Eden youth soccer pitch. Training alongside Nhial, she quickly develops a shared vocabulary of movement: dance teaches her body control and spatial grace, while soccer grounds that grace in teamwork, timing, and rapid decision‑making. She plays as a central midfielder, already showing an instinct for reading the flow of play and positioning herself where she can intercept or distribute. Her coaches note her unusual calm under pressure and her ability to synchronize with partners without verbal cues.

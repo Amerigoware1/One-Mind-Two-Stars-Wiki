@@ -7,13 +7,19 @@ portrait-book3: "/assets/images/logic-book3.webp"
 portrait-book4: "/assets/images/logic-book4.webp"
 portrait-book5: "/assets/images/logic-book5.webp"
 affiliation: Northern Territory; New Eden; Bonded to Kowan
-status: Alive
-birthday: Unknown
+birthday: ~1181
 birthplace: Northern Territory, Ares
 book2_age: "Unknown (adult)"
 book3_age: "Unknown (adult)"
 book4_age: "Unknown (adult)"
 book5_age: "Unknown (adult)"
+gender assignment: "Agender"
+gender:  "Agender"
+orientation: "Asexual"
+orientation_awareness_age:
+status: Alive
+death_date:
+death_place:
 book2_title: "The Northern Territory"
 book2_arc: >
   Logic is part of the Northern Territory cluster—seven Galinstanians living in isolation. When Dr. Kret captures Chime, Logic hides with the others, their analytical mind racing through impossible equations: How to help? How to reach Chime? How to stop Kret? The lack of a solution is its own kind of torture for a being who believes every problem has an answer.
