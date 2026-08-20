@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/alex-book3.webp"
 portrait-book4: "/assets/images/alex-book4.webp"
 portrait-book5: "/assets/images/alex-book5.webp"
 affiliation: New Eden Medical Corps; Chief of Medicine; New Eden Council
-status: Alive
 birthday: November 2, 2103
 birthplace: Earth (pre‑ares-migration)
 book1_age: "38.9 Earth / 34.7 Ares"
@@ -16,6 +15,12 @@ book2_age: "46.0 Earth / 41.1 Ares"
 book3_age: "52.9 Earth / 47.3 Ares"
 book4_age: "61.2 Earth / 54.7 Ares"
 book5_age: "68.2 Earth / 61.0 Ares"
+gender assignment: "male"
+gender:  "male"
+orientation: "gay"
+orientation_awareness_age: 17
+death_date:
+death_place:
 book1_title: "Chief of Medicine"
 book1_arc: >
    Alex — “Uncle Doc” — is the adult Celectra trusts most outside her father.

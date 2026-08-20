@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/amerigo-book3.webp"
 portrait-book4: "/assets/images/amerigo-book4.webp"
 portrait-book5: "/assets/images/amerigo-book5.webp"
 affiliation: Carisco Family; New Eden Science Directorate; Chief Scientist; New Eden Council
-status: Alive
 birthday: May 12, 2103
 birthplace: Earth (pre‑ares-migration)
 book1_age: "39.4"
@@ -16,6 +15,12 @@ book2_age: "46.5"
 book3_age: "53.4"
 book4_age: "61.7"
 book5_age: "68.7"
+gender assignment: "male"
+gender:  "male"
+orientation: "gay"
+orientation_awareness_age: 17
+death_date:
+death_place:
 book1_title: "The Scientist and the Father"
 book1_arc: >
   Amerigo struggles to balance his scientific responsibilities, fatherhood, and coming to terms with Celectra's dual-body existence. He becomes one of the
