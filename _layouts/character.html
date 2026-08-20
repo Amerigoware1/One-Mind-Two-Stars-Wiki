@@ -15,7 +15,9 @@ layout: default
       <div class="infobox" id="portrait-container"
            data-title="{{ page.title }}"
            data-true-orientation="{{ page.orientation }}"
-           data-orientation-threshold="{{ page.orientation_awareness_age | default: 13 }}">
+           data-orientation-threshold="{{ page.orientation_awareness_age | default: 13 }}"
+           data-birthday="{{ page.birthday }}"
+           data-death-date="{{ page.death_date }}">
         <div class="portrait-box" id="portrait-box">
           <img id="character-portrait"
                src="{% if page.portrait %}{{ page.portrait | relative_url }}{% else %}{{ '/assets/images/portrait-placeholder.png' | relative_url }}{% endif %}"
@@ -25,7 +27,10 @@ layout: default
 
         <table>
           <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
-          <tr><th>Status</th><td>{{ page.status }}</td></tr>
+          <tr>
+            <th>Status</th>
+            <td><span id="status-display">{{ page.status }}</span></td>
+          </tr>
           <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
           <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
           <tr><th>Gender</th><td>{{ page.gender_assignment | default: page.gender }}</td></tr>
@@ -67,15 +72,36 @@ document.addEventListener('DOMContentLoaded', function () {
   const container = document.getElementById('portrait-container');
   const portrait = document.getElementById('character-portrait');
   const orientationSpan = document.getElementById('orientation-display');
+  const statusSpan = document.getElementById('status-display');
 
   const initialPortrait = portrait ? portrait.src : null;
   const placeholder = "{{ '/assets/images/portrait-placeholder.png' | relative_url }}";
 
-  if (!container || !portrait || !orientationSpan) return;
+  if (!container || !portrait || !orientationSpan || !statusSpan) return;
 
   // --- Read data from container ---
   const trueOrientation = container.dataset.trueOrientation || '';
   const threshold = parseFloat(container.dataset.orientationThreshold) || 13;
+  const birthdayStr = container.dataset.birthday || '';
+  const deathDateStr = container.dataset.deathDate || '';
+
+  // Extract years from date strings (e.g. "October 11, 2225" -> 2225)
+  function extractYear(dateStr) {
+    const match = dateStr.match(/\d{4}/);
+    return match ? parseInt(match[0], 10) : null;
+  }
+
+  const birthYear = extractYear(birthdayStr);
+  const deathYear = extractYear(deathDateStr);
+
+  // Book years (as provided)
+  const bookYears = {
+    1: 2232,
+    2: 2239,
+    3: 2246,
+    4: 2255,
+    5: 2262
+  };
 
   // --- Build book data ---
   const bookData = {};
@@ -112,7 +138,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // --- Update orientation based on book index ---
   function updateOrientation(bookIndex) {
     if (!bookIndex) {
-      // No book selected → show true orientation
       orientationSpan.textContent = trueOrientation;
       return;
     }
@@ -129,11 +154,40 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
-    if (earthAge < threshold) {
-      orientationSpan.textContent = 'none';
-    } else {
-      orientationSpan.textContent = trueOrientation;
+    orientationSpan.textContent = (earthAge < threshold) ? 'none' : trueOrientation;
+  }
+
+  // --- Update status based on book index ---
+  function updateStatus(bookIndex) {
+    if (!bookIndex) {
+      // No tab active → keep the static YAML status
+      // (statusSpan already has the static value from the table)
+      return;
     }
+
+    const bookYear = bookYears[bookIndex];
+    if (bookYear === undefined) {
+      // Unknown book index – leave static
+      return;
+    }
+
+    if (birthYear === null) {
+      // No birthday – cannot determine
+      statusSpan.textContent = 'Unknown';
+      return;
+    }
+
+    let newStatus;
+
+    if (bookYear < birthYear) {
+      newStatus = 'Pre-birth';
+    } else if (deathYear !== null && bookYear > deathYear) {
+      newStatus = 'Deceased';
+    } else {
+      newStatus = 'Alive';
+    }
+
+    statusSpan.textContent = newStatus;
   }
 
   // --- Update portrait based on book index ---
@@ -147,7 +201,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const selected = randomFrom(bookData[bookIndex].images);
       portrait.src = selected;
     } else {
-      // Fallback to initial portrait (YAML)
       portrait.src = initialPortrait;
     }
   }
@@ -169,13 +222,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (targetEl) targetEl.classList.add('active');
       }
 
-      // Update portrait
+      // Update portrait, orientation, and status
       const bookIndex = this.dataset.book;
       const explicitImage = this.dataset.image || this.getAttribute('data-image');
       updatePortrait(bookIndex, explicitImage);
-
-      // Update orientation
       updateOrientation(bookIndex);
+      updateStatus(bookIndex);
     });
   });
 
@@ -186,10 +238,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const explicitImage = activeTab.dataset.image || activeTab.getAttribute('data-image');
     updatePortrait(bookIndex, explicitImage);
     updateOrientation(bookIndex);
+    updateStatus(bookIndex);
   } else {
-    // No active tab → keep YAML portrait and show true orientation
+    // No active tab → keep YAML portrait, true orientation, and static status
     portrait.src = initialPortrait;
     orientationSpan.textContent = trueOrientation;
+    // statusSpan already contains the static value
   }
 
   // --- Fallback if portrait fails ---

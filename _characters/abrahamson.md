@@ -8,9 +8,14 @@ portrait-book3: "/assets/images/abrahamson-book3.webp"
 portrait-book4: "/assets/images/abrahamson-book4.webp"
 portrait-book5: "/assets/images/abrahamson-book5.webp"
 affiliation: New Eden Colony Engineering & Infrastructure Division; Senior Council Member
-status: Alive
+
 birthday: March 15, 2085
 birthplace: Cambridge, Massachusetts, Earth
+gender assignment: "male"
+gender:  "male"
+orientation: "gay"
+orientation_awareness_age: 17
+status: Alive
 death_date:
 death_place:
 book1_age: "57.6"

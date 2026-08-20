@@ -8,7 +8,6 @@ portrait-book3:  "/assets/images/celectra-book3.webp "
 portrait-book4:  "/assets/images/celectra-book4.webp "
 portrait-book5:  "/assets/images/celectra-book5.webp "
 affiliation: Carisco Family; Listener Corps; Human–Galinstanian Bridge
-status: Alive
 birthday: October 11, 2225
 birthplace: Utopis Station, Ares Orbit
 book1_age:  "7.0 Earth / 6.28 Ares "
@@ -19,6 +18,10 @@ book5_age:  "36.3 Earth / 32.5 Ares "
 gender assignment: "female"
 gender:  "female"
 orientation: "bisexual"
+orientation_awareness_age: 10
+death_date:
+death_place:
+status: Alive
 book1_title:  "Dual-Body Emergence "
 book1_arc: >
  At age seven, Celectra survives Dr. Kret's uncaring procedures to collect data about her dual-bodied physiology. She runs away from his clinic into a cave system where she finds  new friends. Under the care of Dr. Alex Cruiz and her father and Dr. Zoë, she begins to heal from the trama, but still has PTSD. She becomes the first human capable of
