@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/ananya-book3.webp"
 portrait-book4: "/assets/images/ananya-book4.webp"
 portrait-book5: "/assets/images/ananya-book5.webp"
 affiliation: New Eden Youth Cohort; Biologist; Listener Corps Translator
-status: Alive
 birthday: August 14, 2224
 birthplace: Utopis Station
 book1_age: "8.2"
@@ -16,6 +15,13 @@ book2_age: "15.3"
 book3_age: "22.2"
 book4_age: "30.4"
 book5_age: "37.4"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 14
+status: Alive
+death_date:
+death_place:
 book1_title: "New Arrival (age-8)"
 book1_arc: >
   Ananya appears as a bright, curious eight-year-old who recently moved from Utopis

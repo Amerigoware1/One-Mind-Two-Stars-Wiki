@@ -17,8 +17,9 @@ book4_age: "61.7"
 book5_age: "68.7"
 gender assignment: "male"
 gender:  "male"
-orientation: "gay"
-orientation_awareness_age: 17
+orientation: "straight"
+orientation_awareness_age: 15
+status: Alive
 death_date:
 death_place:
 book1_title: "The Scientist and the Father"

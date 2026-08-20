@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/jaxon-book3.webp"
 portrait-book4: "/assets/images/jaxon-book4.webp"
 portrait-book5: "/assets/images/jaxon-book5.webp"
 affiliation: New Eden Engineering Corps; Communion Interface Project
-status: Alive
 birthday: October 31, 2222
 birthplace: New Eden, Ares
 book1_age: "9.9"
@@ -16,6 +15,13 @@ book2_age: "17.1"
 book3_age: "23.9"
 book4_age: "32.2"
 book5_age: "39.2"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book1_title: "Childhood Foundations"
 book1_arc: >
   Jaxon, age nine, becomes one of Celectra's earliest friends. He is fascinated by her dual-body coordination and protective of her even before understanding the trauma behind it. Their bond forms the emotional foundation for their future relationship.

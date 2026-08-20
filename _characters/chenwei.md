@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/chenwei-book3.webp"
 portrait-book4: "/assets/images/chenwei-book4.webp"
 portrait-book5: "/assets/images/chenwei-book5.webp"
 affiliation: Listener Corps Technician; Signal Processing Specialist; New Eden Colony
-status: Active
 birthday: March 10, 2225
 birthplace: New Eden, Ares
 book1_age: "7.6"
@@ -16,6 +15,13 @@ book2_age: "14.7"
 book3_age: "21.6"
 book4_age: "29.8"
 book5_age: "36.8"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Pansexual"
+orientation_awareness_age: 14
+status: Alive
+death_date:
+death_place:
 book1_title: "Growing (age-7.6)"
 book1_arc: >
   At seven years old, Chen Wei is growing up in New Eden, already showing the focus and precision that will define him. At the Activity Center, he began karate at age six and now wears a kiiro obi (yellow-belt), known among his instructors for his careful, analytical approach to technique rather than raw speed or power. He also trains in gymnastics, where his natural sense of balance and control sets him apart—he is often found on the balance beam, moving with a quiet concentration that belies his age. He is a quiet presence in Celectra's cohort, more comfortable observing than performing.

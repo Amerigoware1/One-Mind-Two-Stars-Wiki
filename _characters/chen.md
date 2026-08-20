@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/yuki-book3.webp"
 portrait-book4: "/assets/images/yuki-book4.webp"
 portrait-book5: "/assets/images/yuki-book5.webp"
 affiliation: Utopis Station Medical; Radiation Medicine Specialist; Celectra's Primary Monitor
-status: Active
 birthday: March 4, 2089
 birthplace: Beijing, Earth
 book1_age: "53.6"
@@ -16,6 +15,13 @@ book2_age: "60.7"
 book3_age: "67.6"
 book4_age: "75.9"
 book5_age: "82.9"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Lesbian"
+orientation_awareness_age: 14
+status: Alive
+death_date:
+death_place:
 book1_title: "The Diagnosis That Changed Everything"
 book1_arc: >
   In 2225, Dr. Chen is the attending physician when Jenni Carisco is exposed to

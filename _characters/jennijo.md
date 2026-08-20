@@ -14,6 +14,13 @@ book2_age: "Not yet born"
 book3_age: "Infant"
 book4_age: "7 years old"
 book5_age: "14 years old"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 14
+status: Alive
+death_date:
+death_place:
 book3_title: "Birth and Early Bonding"
 book3_arc: >
   Jenni is born during the events of Book 3. She is named after her biological grandmother (jinni) and Amerigo's middle name (giorgio). Even as an infant, she responds strongly to Celectra's EM field and to the presence of Galinstanians.

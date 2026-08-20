@@ -7,13 +7,19 @@ portrait-book3: "/assets/images/harbor-book3.webp"
 portrait-book4: "/assets/images/harbor-book4.webp"
 portrait-book5: "/assets/images/harbor-book5.webp"
 affiliation: Northern Territory; New Eden; Bonded to Sofia
-status: Alive
-birthday: Unknown
+birthday: "~1953"
 birthplace: Northern Territory, Ares
 book2_age: "Unknown (adult)"
 book3_age: "Unknown (adult)"
 book4_age: "Unknown (adult)"
 book5_age: "Unknown (adult)"
+gender assignment: "Agender"
+gender:  "Agender"
+orientation: "Asexual"
+orientation_awareness_age:
+status: Alive
+death_date:
+death_place:
 book2_title: "The Northern Territory"
 book2_arc: >
   Harbor is part of the Northern Territory cluster—seven Galinstanians living in isolation. When Dr. Kret captures Chime and subjects them to three days of torture, Harbor hides with the others, listening helplessly to Chime's pain through the bismuth network. The helplessness marks Harbor deeply: a being defined by patience and steadiness, forced into inaction while a family member suffered.

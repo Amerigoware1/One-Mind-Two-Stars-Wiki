@@ -7,13 +7,19 @@ portrait-book3: "/assets/images/duska-book3.webp"
 portrait-book4: "/assets/images/duska-book4.webp"
 portrait-book5: "/assets/images/duska-book5.webp"
 affiliation: Carisco Family; Resonance Designer; Community Arts Coordinator; University Outreach Liaison
-status: Alive
 birthday: May 5, 2234
 birthplace: New Eden, Ares
 book2_age: "5.5"
 book3_age: "12.4"
 book4_age: "20.7"
 book5_age: "27.7"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 14
+status: Alive
+death_date:
+death_place:
 book2_title: "Childhood in the Integration Era"
 book2_arc: >
   At five years old, Duška is part of the earliest generation to grow up with Galinstanians as neighbors, not novelties. She attends Xan's 6th birthday party in the cave where she bonds with Lyric by naming them. She shows early interest in art and sound, often drawing the shimmering forms of Galinstanians she sees in the colony. While not a central character in Book 2, she appears in background scenes at community events, quietly observing the bridges being built—both literal and cultural—between species.

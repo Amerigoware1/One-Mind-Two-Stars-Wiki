@@ -1,7 +1,7 @@
 ---
 
 layout: character
-name: 
+title: Rhea Babić
 portrait: "/assets/images/babic-book1.webp"
 portrait-book1: "/assets/images/babic-book1.webp"
 portrait-book2: "/assets/images/babic-book2.webp"
@@ -12,13 +12,18 @@ affiliation: New Eden Colony Orbital & System Coordination Division; Senior Coun
 status: Alive
 birthday: July 22, 2092
 birthplace: Croatia, Earth
-death_date:
-death_place:
 book1_age: "50.2"
 book2_age: "57.3"
 book3_age: "64.2"
 book4_age: "72.5"
 book5_age: "79.5"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 14
+status: Alive
+death_date:
+death_place:
 role: "Councilor, Seat 11"
 
 book1_title: "The Cartographer of Coexistence"

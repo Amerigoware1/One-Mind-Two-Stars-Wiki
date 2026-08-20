@@ -16,6 +16,13 @@ book2_age: "56.5"
 book3_age: "63.4"
 book4_age: "71.6"
 book5_age: "78.6"
+gender assignment: "Female"
+gender:  "Agender"
+orientation: "Asexual"
+orientation_awareness_age: 14
+status: Alive
+death_date:
+death_place:
 book1_title: "The Caregiver in the Storm"
 book1_arc: >
   In 2232, Terry serves as Dr. Kret's assigned nurse during his unethical research on seven-year-old Celectra's mononous disoma condition. They quickly recognize that Celectra is one person across two bodies after witnessing her terror at separation, and they provide crucial emotional support: bringing breakfast in bed, playing Neutralize (and-losing three consecutive matches), and offering quiet reassurance.

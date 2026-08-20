@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/kai-book3.webp"
 portrait-book4: "/assets/images/kai-book4.webp"
 portrait-book5: "/assets/images/kai-book5.webp"
 affiliation: New Eden Youth Cohort; Martial Artist; Sundome Dojo; Colony Security Auxiliary
-status: Alive
 birthday: April 3, 2223
 birthplace: New Eden, Ares
 book1_age: "11.2"
@@ -16,6 +15,13 @@ book2_age: "16.7"
 book3_age: "24.6"
 book4_age: "32.8"
 book5_age: "39.8"
+gender assignment: "Male"
+gender:  "Gender Curious"
+orientation: "Bisexual"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book1_title: "Growing (age-11)"
 book1_arc: >
   At eleven, Kai is already known among his cohort for his physical strength and

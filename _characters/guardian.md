@@ -7,13 +7,19 @@ portrait-book3: "/assets/images/guardian-book3.webp"
 portrait-book4: "/assets/images/guardian-book4.webp"
 portrait-book5: "/assets/images/guardian-book5.webp"
 affiliation: Northern Territory; New Eden; Bonded to Hiro
-status: Alive
-birthday: Unknown
+birthday: "~1732"
 birthplace: Northern Territory, Ares
 book2_age: "Unknown (adult)"
 book3_age: "Unknown (adult)"
 book4_age: "Unknown (adult)"
 book5_age: "Unknown (adult)"
+gender assignment: "Agender"
+gender:  "Agender"
+orientation: "Asexual"
+orientation_awareness_age:
+status: Alive
+death_date:
+death_place:
 book2_title: "The Northern Territory"
 book2_arc: >
   Guardian is a member of the Northern Territory cluster and the parent of Chime. When Dr. Kret captures Chime and tortures them for three days, Guardian endures the worst agony of their long existence: hiding helplessly while their child suffers, unable to intervene without endangering the entire cluster.

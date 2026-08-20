@@ -11,7 +11,16 @@ status: Alive
 birthday: September 21, 2233
 birthplace: New Eden, Ares
 book2_age: "6.2"
+book3_age: "13.1"
+book4_age: "21.3"
 book5_age: "28.3"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Pansexual"
+orientation_awareness_age: 14
+status: Alive
+death_date:
+death_place:
 book2_title: "Xan's Birthday (age-6)"
 book2_arc: >
   At six years old, Ethan attends Xan’s sixth birthday celebration in the caverns with his twin sister, Emma. Together, they are drawn to a quick, bright Galinstanian whose presence feels like sunlight on water. The Galinstanian flows between them, fascinated by their similarities and differences. Together, Emma and Ethan name the Galinstanian “Flicker” because “they’re like light that moves.”

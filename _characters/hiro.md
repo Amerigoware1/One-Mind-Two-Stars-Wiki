@@ -7,11 +7,19 @@ portrait-book3: "/assets/images/hiro-book3.webp"
 portrait-book4: "/assets/images/hiro-book4.webp" 
 portrait-book5: "/assets/images/hiro-book5.webp" 
 affiliation: New Eden Youth Cohort (previous); Martial Artist; Sundome Dojo; Resonance Stewardship Program (physical-training)
-status: Alive
 birthday: November 30, 2233
 birthplace: New Eden, Ares
 book2_age: "6.0"
+book3_age: "12.9"
+book4_age: "21.1"
 book5_age: "28.1"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book2_title: "Xan's Birthday (age-6)"
 book2_arc: >
   At six years old, Hiro attends Xan’s sixth birthday celebration in the caverns. He approaches Chime’s parent—the same Galinstanian who gifted Xan the aquamarine—with the particular reverence children show to elders. He names them “Guardian” because “they feel like they’d keep everyone safe.”

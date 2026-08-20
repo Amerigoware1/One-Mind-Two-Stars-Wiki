@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/aulii-book3.webp"
 portrait-book4: "/assets/images/aulii-book4.webp"
 portrait-book5: "/assets/images/aulii-book5.webp"
 affiliation: New Eden Youth Cohort; Martial Artist; Sundome Dojo; Resonance Stewardship Program (physical-training)
-status: Alive
 birthday: February 14, 2224
 birthplace: New Eden, Ares
 book1_age: "8.9"
@@ -16,6 +15,13 @@ book2_age: "15.8"
 book3_age: "22.7"
 book4_age: "30.9"
 book5_age: "37.9"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 12
+status: Alive
+death_date:
+death_place:
 book1_title: "Growing (age-8)"
 book1_arc: >
   At age eight, Aulii doesn't appear in Book 1, but she's growing up in New Eden. She is Celectra's classmate in karate and other activities with their age cohort.

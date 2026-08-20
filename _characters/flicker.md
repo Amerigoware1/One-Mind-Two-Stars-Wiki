@@ -7,13 +7,19 @@ portrait-book3: "/assets/images/flicker-book3.webp"
 portrait-book4: "/assets/images/flicker-book4.webp"
 portrait-book5: "/assets/images/flicker-book5.webp"
 affiliation: Northern Territory; New Eden; Bonded to Emma & Ethan
-status: Alive
-birthday: Unknown
+birthday: "~2205"
 birthplace: Northern Territory, Ares
 book2_age: "Unknown (adult)"
 book3_age: "Unknown (adult)"
 book4_age: "Unknown (adult)"
 book5_age: "Unknown (adult)"
+gender assignment: "Agender"
+gender:  "Agender"
+orientation: "Asexual"
+orientation_awareness_age:
+status: Alive
+death_date:
+death_place:
 book2_title: "The Northern Territory"
 book2_arc: >
   Flicker is part of the Northern Territory cluster—seven Galinstanians living in isolation. When Dr. Kret captures Chime, Flicker hides with the others, their quick, bright nature forced into terrified stillness. The experience is particularly hard for Flicker, whose essence craves movement and exploration.

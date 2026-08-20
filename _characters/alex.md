@@ -15,10 +15,11 @@ book2_age: "46.0 Earth / 41.1 Ares"
 book3_age: "52.9 Earth / 47.3 Ares"
 book4_age: "61.2 Earth / 54.7 Ares"
 book5_age: "68.2 Earth / 61.0 Ares"
-gender assignment: "male"
-gender:  "male"
-orientation: "gay"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Straight"
 orientation_awareness_age: 17
+status: Alive
 death_date:
 death_place:
 book1_title: "Chief of Medicine"

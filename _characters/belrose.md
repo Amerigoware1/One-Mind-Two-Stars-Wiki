@@ -11,14 +11,18 @@ affiliation: New Eden Colony Cultural Affairs & Community Relations Division; Co
 status: Alive
 birthday: July 22, 2092
 birthplace: Croatia, Earth
-death_date:
-death_place:
-
 book1_age: "41.9"
 book2_age: "49.0"
 book3_age: "55.9"
 book4_age: "64.2"
 book5_age: "71.2"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Bisexual"
+orientation_awareness_age: 14
+status: Alive
+death_date:
+death_place:
 role: "Councilor, Seat 12"
 
 book1_title: "The Bridge of Stories"

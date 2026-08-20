@@ -5,10 +5,17 @@ portrait: "/assets/images/kael-book5.webp"
 portrait-book4: "/assets/images/kael-book4.webp"
 portrait-book5: "/assets/images/kael-book5.webp"
 affiliation: New Eden Youth Cohort; Acoustic Rhythm Specialist; Resonance Stewardship Program (acoustic-training)
-status: Alive
 birthday: December 10, 2247
 birthplace: New Eden, Ares
-book4_age: "14.1"
+book4_age: "7.1"
+book5_age: "14.1"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book4_title: "Dreaming of Percussion (age-7)"
 book4_arc: >
     At seven, Kael is the youngest of the twins' cohort, trailing behind Jenni and Xara by a few weeks. While other children play group games or practice martial arts forms at the Activity Center, Kael can often be found at the edges, hands moving against his thighs, tapping out rhythms only he can hear.

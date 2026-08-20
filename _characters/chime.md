@@ -7,13 +7,19 @@ portrait-book3: "/assets/images/chime-book3.webp"
 portrait-book4: "/assets/images/chime-book4.webp"
 portrait-book5: "/assets/images/chime-book5.webp"
 affiliation: Northern Territory; New Eden; Bonded to Xara & Jenni Bowers
-status: Alive
-birthday: Unknown
+birthday: ~2200
 birthplace: Northern Territory, Ares
 book2_age: "Unknown (toddler)"
 book3_age: "Unknown (youngling)"
 book4_age: "Unknown (youngling)"
 book5_age: "Unknown (youngling)"
+gender assignment: "Agender"
+gender:  "Agender"
+orientation: "Asexual"
+orientation_awareness_age:
+status: Alive
+death_date:
+death_place:
 book2_title: "The Northern Territory"
 book2_arc: >
   Chime is part of the Northern Territory cluster—a group of Galinstanians living in isolation, unaware of humans until Dr. Kret's expedition. When Kret captures Chime and subjects them to three days of torture in the name of "science," the other six hide helplessly, listening to Chime's pain through the bismuth network.

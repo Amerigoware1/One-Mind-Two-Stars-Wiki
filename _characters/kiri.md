@@ -7,22 +7,40 @@ portrait-book3: "/assets/images/kiri-book3.webp"
 portrait-book4: "/assets/images/kiri-book4.webp"
 portrait-book5: "/assets/images/kiri-book5.webp"
 affiliation: Galinstanian; Northern Cluster; Resonance Stewardship Program
-status: Alive
 birthday: Unknown (middle-aged-by human measure)
 birthplace: Ares
-book1_age: "~30"
-book3_age: "~37"
-book4_age: "~44"
-book1_title: "The Curious One (~30)"
+book1_age: "~130"
+book2_age: "~137
+book3_age: "~144"
+book4_age: "~151"
+book5_age: "~158"
+gender assignment: "Agender"
+gender:  "Female"
+orientation: "Asexual"
+orientation_awareness_age:
+status: Alive
+death_date:
+death_place:
+book1_title: "The Curious One (~130)"
 book1_arc: >
-  When Celectra first meets Kiri, the young Galinstanian approaches with shy curiosity, having absorbed human cultural transmissions from the memory veins. Kiri asks about human stories—deities, gods—and admits confusion about their function. Celectra explains that these are stories people told to explain what they didn't understand.
+  When Celectra first meets Kiri, the young Galinstanian approaches with shy curiosity. Having absorbed human cultural thoughts from Celectra, Kiri asks about human stories—deities, gods—and admits confusion about their function. Celectra explains that these are stories people told to explain what they didn't understand.
 
   Recognizing Kiri's distinct, sharp presence, Celectra names her. Kiri chooses to be female, telling Celectra: "I'd like to be like you." The name "Kiri" is chosen to match the sound of her presence—sharp and precise, like cutting crystal.
-book3_title: "The Gift-Giver (~37)"
+book2_title: "The Wounded (~137)"
+book2_arc: >
+  When Kret escapes custody in his final, desperate bid to avoid exile, he targets Kiri specifically—exploiting resonance signatures he secretly mapped during his house arrest to find her in Celectra's own resonance chamber, then seals them both inside with a demolition charge, attempting to force his consciousness into hers and erase what remains. Kiri holds her own shape against him with everything a mind under siege can command, until Celectra reaches her through the chamber's bismuth walls and the attempt collapses.
+
+  Healing takes longer than the injury did. Kiri refuses to perform forgiveness she hasn't earned, choosing honesty over easy comfort. Months later, she returns to the violated chamber on her own terms: "I did not want to wake up one day, a very long time from now, having simply never returned here... I would rather choose it now, quickly, while it is still a choice and not yet a habit."
+book3_title: "The Gift-Giver (~144)"
 book3_arc: >
   During Celectra's pregnancy, when her natural field begins degrading, Kiri joins Stan, Orren, and Chime in crafting a gift: circlet amplifiers, each individually shaped to Celectra's neural signature. Kiri's ancient resonance carries warmth as she explains the secondary function: allowing Celectra to maintain communion with them even when she is no longer bridge.
 
   Kiri's words are gentle but clear: "You are becoming something new. These help you bridge the transition." She sees Celectra's transformation not as loss but as growth, and her gift is designed to carry Celectra through it.
+book4_title: 
+book4_arc: >  
+
+book5_title: 
+book5_arc: >  
 ---
 
 <div class="article-content">

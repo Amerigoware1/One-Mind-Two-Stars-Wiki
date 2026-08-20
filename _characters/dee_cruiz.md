@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/dee-book3.webp"
 portrait-book4: "/assets/images/dee-book4.webp"
 portrait-book5: "/assets/images/dee-book5.webp"
 affiliation: New Eden Community Corps; Cruiz–Carisco Family
-status: Alive
 birthday: May 12, 2101
 birthplace: Earth (pre‑ares-migration)
 book1_age: "41.4"
@@ -16,6 +15,13 @@ book2_age: "48.5"
 book3_age: "55.4"
 book4_age: "63.7"
 book5_age: "70.7"
+gender assignment: "Male"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 12
+status: Alive
+death_date:
+death_place:
 book1_title: "The Early Years"
 book1_arc: >
   After relocating from Utopis, Dee establishes herself as a cornerstone of New Eden's community life. While her husband, Alex, navigates the demands of becoming Chief of Medicine, Dee provides the emotional ballast for their family and becomes a trusted, calming presence in the Carisco household. Her quiet support is instrumental in helping a young Celectra feel safe and secure during her early medical crises.
