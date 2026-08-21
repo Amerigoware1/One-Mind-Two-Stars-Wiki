@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/webb-book3.webp"
 portrait-book4: "/assets/images/webb-book4.webp"
 portrait-book5: "/assets/images/webb-book5.webp"
 affiliation: New Eden Founders; Agricultural Sciences Division; Council
-status: Alive
 birthday: August 29, 2085
 birthplace: Earth (pre‑ares-migration)
 book1_age: "57.0"
@@ -16,6 +15,13 @@ book2_age: "64.2"
 book3_age: "71.1"
 book4_age: "79.4"
 book5_age: "86.4"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book1_title: "The Old Guard"
 book1_arc: >
   Webb serves as an agricultural scientist and early council member. He is wary of Galinstanians and deeply skeptical of Celectra's communion abilities. His worldview is shaped by the early survival years, when every unknown felt like a threat.

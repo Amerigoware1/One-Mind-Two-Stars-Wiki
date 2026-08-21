@@ -6,14 +6,20 @@ portrait-book3: "/assets/images/xarazo-book3.webp"
 portrait-book4: "/assets/images/xarazo-book4.webp"
 portrait-book5: "/assets/images/xarazo-book5.webp"
 affiliation: Carisco Family; Listener Corps (junior); Resonance Stewardship Program
-status: Alive
 birthday: November 15, 2247
 birthplace: New Eden, Ares
 book1_age: "Not yet born"
 book2_age: "Not yet born"
 book3_age: "Infant"
-book4_age: "7 years old"
-book5_age: "14 years old"
+book4_age: "7.2"
+book5_age: "14.2"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book3_title: "Birth and Early Bonding"
 book3_arc: >
   Xara is born during the events of Book 3. She is named after her adoptive grandmother's mother (xara) and her adoptive grandmother (zoë). Even as an infant, she shows unusual focus and sensitivity to harmonic patterns.

@@ -3,14 +3,20 @@ layout: character
 title: Utara
 portrait: "/assets/images/utara-symbol.webp"
 affiliation: Utopis Station; New Eden Colony; Unified Thought and Resource Architecture
-status: Active
-activation_date: 2124
+birthday: 2124 (activated)
 birthplace: Sol System (utopis-colony ship)
-book1_age: "108 years active"
-book2_age: "115 years active"
-book3_age: "122 years active"
-book4_age: "132 years active"
-book5_age: "138 years active"
+book1_age: "108"
+book2_age: "115"
+book3_age: "122"
+book4_age: "132"
+book5_age: "138"
+gender assignment: "Agender"
+gender:  "Female"
+orientation: "Asexual"
+orientation_awareness_age:
+status: Alive
+death_date:
+death_place:
 book1_title: "Guardian of the System"
 book1_arc: >
   In 2232, Utara serves as the colony's central intelligence during the Kret incident. She monitors Celectra's physiological data throughout the unauthorized experiments and provides critical evidence during the tribunal. When Celectra flees into the cave systems, Utara coordinates the search effort, tracking life signs and environmental conditions.

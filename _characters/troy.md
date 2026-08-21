@@ -8,16 +8,20 @@ portrait-book3: "/assets/images/troy-book3.webp"
 portrait-book4: "/assets/images/troy-book4.webp"
 portrait-book5: "/assets/images/troy-book4.webp"
 affiliation: New Eden Colony Science Division; Chief Scientist (retired); Senior Council Member
-status: Deceased
 birthday: November 8, 2099
 birthplace: Cambridge, Massachusetts, Earth
-death_date: August 23, 2253
-death_place: New Eden, Ares
 book1_age: "42.9"
 book2_age: "50.0"
 book3_age: "56.9"
 book4_age: "—"
 book5_age: "—"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Deceased
+death_date: August 23, 2253
+death_place: New Eden, Ares
 book1_title: "Chief Scientist"
 book1_arc: >
   In 2232, Dr. Troy serves as Chief Scientist during the aftermath of Dr. Kret's unethical experiments on Celectra Carisco. She provides expert testimony during Kret's tribunal, helping establish the precedent that scientific knowledge gained through violation must be acknowledged but never repeated. She develops the first xenobiology protocols for Ares, emphasizing non-invasive study methods for indigenous life. Her leadership during this crisis helps establish the colony's scientific ethics framework.

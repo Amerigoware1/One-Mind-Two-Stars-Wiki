@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/zoe-book3.webp"
 portrait-book4: "/assets/images/zoe-book4.webp"
 portrait-book5: "/assets/images/zoe-book5.webp"
 affiliation: Carisco Family; New Eden Psychology Division; Council Advisor
-status: Alive
 birthday: January 3, 2107
 birthplace: Earth (pre‑ares-migration)
 book1_age: "35.8"
@@ -16,6 +15,13 @@ book2_age: "42.9"
 book3_age: "49.8"
 book4_age: "58"
 book5_age: "65"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book1_title: "The Mother of a Miracle"
 book1_arc: >
   Zoë becomes the second human to raise a dual-bodied child. She navigates Celectra's trauma, sensory overload, and early communion abilities with a blend of clinical insight and maternal intuition. Her calm, grounding presence becomes essential to Celectra's survival and development.

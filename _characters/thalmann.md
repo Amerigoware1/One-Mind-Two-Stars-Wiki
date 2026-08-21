@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/thalmann-book3.webp"
 portrait-book4: "/assets/images/thalmann-book4.webp"
 portrait-book5: "/assets/images/thalmann-book5.webp"
 affiliation: New Eden Colony Council; Logistics & Transportation
-status: Alive
 birthday: December 31, 2106
 birthplace: Germany
 death_date: 
@@ -18,6 +17,13 @@ book2_age: "42.9"
 book3_age: "49.8"
 book4_age: "58.0"
 book5_age: "65.0"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book1_title: "The Flow Keeper"
 book1_arc: >
   When the Galinstanian crisis breaks, Thälmann's logistical expertise becomes crucial. She calculates the impact of mining suspensions on supply chains, identifies alternative routes for resource transport, and abstains from the final Council vote—citing insufficient data on long-term implications. Her silence during philosophical debates reflects her orientation toward action: she needs to know what's being decided before she can assess how to execute it. Her 48-hour redesign of the colony's transportation network prevents any critical shortage during the transition.

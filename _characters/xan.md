@@ -7,7 +7,6 @@ portrait-book3: "/assets/images/xan-book3.webp"
 portrait-book4: "/assets/images/xan-book4.webp"
 portrait-book5: "/assets/images/xan-book5.webp"
 affiliation: Carisco Family; Listener Corps (junior); Acoustic Interface Research
-status: Alive
 birthday: March 8, 2234
 birthplace: New Eden, Ares
 book1_age: "Unborn"
@@ -15,6 +14,13 @@ book2_age: "5.0"
 book3_age: "11.0"
 book4_age: "18.4"
 book5_age: "24.6"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book2_title: "Early Curiosity"
 book2_arc: >
   Xan, age five, begins experimenting with tapping patterns and rhythmic mimicry. He forms a gentle friendship with Chime, who responds to his early attempts at rhythmic "conversation." His role is small but meaningful, hinting at the communicator he will become.

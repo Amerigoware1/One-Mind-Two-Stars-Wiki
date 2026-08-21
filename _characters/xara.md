@@ -8,16 +8,20 @@ portrait-book3: "/assets/images/xara-book2.webp"
 portrait-book4: "/assets/images/xara-book2.webp"
 portrait-book5: "/assets/images/xara-book2.webp"
 affiliation: Earth; Pre-Colony Era; Kret Family
-status: Deceased
 birthday: July 22, 2087
 birthplace: Earth
-death_date: March 20, 2122
-death_place: Sol System (shuttle-accident)
 book1_age: "Deceased"
 book2_age: "Deceased"
 book3_age: "Deceased"
 book4_age: "Deceased"
 book5_age: "Deceased"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Deceased
+death_date: March 20, 2122
+death_place: Sol System (shuttle-accident)
 book1_title: "Memory and Motivation"
 book1_arc: >
   Xara does not appear alive in Book 1. She died in 2122, over a century before the events of the first book. However, her presence is felt indirectly through her husband Douglas Kret's motivations. Zoë sometimes references her mother's warmth when contrasting with Douglas's cold ambition: "My mother believed people mattered more than data. He forgot that."

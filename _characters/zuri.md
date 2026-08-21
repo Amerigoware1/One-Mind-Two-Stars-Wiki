@@ -7,13 +7,19 @@ portrait-book3: "/assets/images/zuri-book3.webp"
 portrait-book4: "/assets/images/zuri-book4.webp"
 portrait-book5: "/assets/images/zuri-book5.webp"
 affiliation: New Eden Youth Cohort (previous); University Mentor; Resonance Stewardship Program (youth-engagement)
-status: Alive
 birthday: February 15, 2232
 birthplace: New Eden, Ares
 book2_age: "7.8"
 book3_age: "14.7"
 book4_age: "22.9"
 book5_age: "29.9"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Gay"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book2_title: "Xan's Birthday (age-7)"
 book2_arc: >
   At seven years old, Zuri attends Xan’s sixth birthday celebration in the caverns. He is drawn to a playful, curious Galinstanian whose presence feels almost childlike despite their maturity. As the Galinstanian attempts to replicate the shape of Zuri’s face, Zuri laughs and names them “Spark” because “they make everything feel more fun.”

@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/yamoto-book3.webp"
 portrait-book4: "/assets/images/yamoto-book4.webp"
 portrait-book5: "/assets/images/yamoto-book5.webp"
 affiliation: New Eden Colony Council; Environmental Systems Director
-status: Active
 birthday: September 14, 2095
 birthplace: Kyoto, Japan, Earth
 book1_age: "47.1"
@@ -16,6 +15,13 @@ book2_age: "54.2"
 book3_age: "61.1"
 book4_age: "69.3"
 book5_age: "76.3"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Gay"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book1_title: "Systems and Stability"
 book1_arc: >
   In 2232, Yamoto serves as Environmental Systems Director during the aftermath of Dr. Kret's unethical experiments. He ensures that colony water reclamation and recycling systems remain stable despite political turmoil, monitoring hydrological purity, distribution networks, and solid-waste processing. His data-driven reports help the Council make informed decisions about resource allocation during the crisis.
