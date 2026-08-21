@@ -8,14 +8,20 @@ portrait-book3: "/assets/images/stan-book3.webp"
 portrait-book4: "/assets/images/stan-book4.webp"
 portrait-book5: "/assets/images/stan-book5.webp"
 affiliation: Northern Cluster; Galinstanian Collective; New Eden Liaison
-status: Alive
-birthday: Unknown (approx.-300-400 years old at first contact)
+birthday: ~1882
 birthplace: Northern Cluster, Ares
-book1_age: "~300-400"
-book2_age: "~307-407"
-book3_age: "~314-414"
-book4_age: "~322-422"
-book5_age: "~329-429"
+book1_age: "~350"
+book2_age: "~357"
+book3_age: "~364"
+book4_age: "~371"
+book5_age: "~378"
+gender assignment: "Agender"
+gender:  "Male"
+orientation: "Asexual"
+orientation_awareness_age:
+status: Alive
+death_date:
+death_place:
 book1_title: "First Contact"
 book1_arc: >
   At first contact with humans, Stan is chosen by the Galinstanian collective to serve as spokesperson. The Galinstanians sense that seven-year-old Celectra is young, and select Stan based on proximity and his relative "youth" among them—approximately 300-400 years old, young by their species' standards. When Celectra, with a child's instinct, assigns him the name "Stan" and thinks of him as male, he accepts both without hesitation. This acceptance becomes foundational to human–Galinstanian relations: a gesture of respect from a species that understands identity differently.

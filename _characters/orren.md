@@ -8,14 +8,20 @@ portrait-book3: "/assets/images/orren-book3.webp"
 portrait-book4: "/assets/images/orren-book4.webp"
 portrait-book5: "/assets/images/orren-book5.webp"
 affiliation: Galinstanian; Northern Cluster; Resonance Stewardship Program
-status: Alive
-birthday: Unknown (ancient-by human measure)
+birthday: ~138 BCE
 birthplace: Ares
 book1_age: "Ancient"
 book2_age: "Ancient"
 book3_age: "Ancient"
 book4_age: "Ancient"
 book5_age: "Ancient"
+gender assignment: "Agender"
+gender:  "Agender"
+orientation: "Asexual"
+orientation_awareness_age:
+status: Alive
+death_date:
+death_place:
 book1_title: "The Ancient One (age-unknown)"
 book1_arc: >
   Orren is one of the first Galinstanians Celectra names, alongside Stan and Kiri. Their presence is warm and ancient and wise—like a teacher. The name "Orren" is chosen to match how Their presence feels: patient, layered, carrying the weight of long existence.

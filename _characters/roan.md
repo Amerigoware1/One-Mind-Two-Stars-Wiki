@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/roan-book3.webp"
 portrait-book4: "/assets/images/roan-book4.webp"
 portrait-book5: "/assets/images/roan-book5.webp"
 affiliation: New Eden Colony Security; Colony Council; Justice & Safety Advocate
-status: Active
 birthday: June 26, 2104
 birthplace: Earth
 book1_age: "38.3"
@@ -16,6 +15,13 @@ book2_age: "45.4"
 book3_age: "52.3"
 book4_age: "62.5"
 book5_age: "68.5"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Aromatic"
+orientation_awareness_age: 15
+status: Alive
+death_date:
+death_place:
 book1_title: "The First Investigation"
 book1_arc: >
   In 2232, Roan leads the investigation into Dr. Kret's unauthorized experiments on 7-year-old Celectra Carisco. She documents the Omni-tomography incident and subsequent isolation testing, coordinating the search when Celectra flees into the caves. Roan arrests Kret while he is searching for Celectra in the cave systems and presents evidence at Kret's first tribunal, which leads to his exile to the survey team.

@@ -5,7 +5,6 @@ portrait: "/assets/images/oxion-book5.webp"
 portrait-book4: "/assets/images/oxion-book4.webp"
 portrait-book5: "/assets/images/oxion-book5.webp"
 affiliation: Carisco Family; New Eden Student; Next-Generation Resonance Cohort
-status: Alive
 birthday: July 31, 2255
 birthplace: New Eden, Ares
 book1_age: "Not yet born"
@@ -13,6 +12,13 @@ book2_age: "Not yet born"
 book3_age: "Not yet born"
 book4_age: "0.2"
 book5_age: "6.4"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book4_title: "Birth & First Contact"
 book4_arc: >
   Oxion is born on July 31, 2255, seven months after the Four Rivers Resonance crisis is resolved. His birth symbolizes hope and stability for the colony—the first child of the post-crisis era.

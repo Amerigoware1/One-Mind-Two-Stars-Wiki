@@ -7,11 +7,19 @@ portrait-book3: "/assets/images/sofia-book3.webp"
 portrait-book4: "/assets/images/sofia-book4.webp"
 portrait-book5: "/assets/images/sofia-book5.webp"
 affiliation: New Eden Youth Cohort (previous); University Mentor; Resonance Stewardship Program (medical-support)
-status: Alive
 birthday: July 4, 2234
 birthplace: New Eden, Ares
 book2_age: "5.4"
+book3_age: "12.3"
+book4_age: "20.5"
 book5_age: "27.5"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book2_title: "Xan's Birthday (age-5)"
 book2_arc: >
   At five years old, Sofia attends Xan’s sixth birthday celebration in the caverns. She is drawn to a patient, steady Galinstanian whose presence feels like safety. She names them “Harbor,” explaining, “That’s where boats on Earth go to be safe from storms.”

@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/santos-book3.webp"
 portrait-book4: "/assets/images/santos-book4.webp"
 portrait-book5: "/assets/images/santos-book5.webp"
 affiliation: New Eden Colony Council; Colony Administrator; Founding Leadership
-status: Active
 birthday: March 18, 2085
 birthplace: Earth
 book1_age: "57.6"
@@ -16,6 +15,13 @@ book2_age: "64.7"
 book3_age: "71.6"
 book4_age: "79.8"
 book5_age: "86.8"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book1_title: "Founding Stability"
 book1_arc: >
   In 2232, Santos participates in the emergency council sessions following the Kret incident and Celectra's rescue. She balances procedural rigor with compassion, ensuring that justice is served while protecting the colony's fragile stability. Her leadership during this crisis helps establish the precedent that ethical accountability and colony survival are not mutually exclusive.

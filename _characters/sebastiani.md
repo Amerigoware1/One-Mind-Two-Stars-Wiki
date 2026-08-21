@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/sebastiani-book3.webp"
 portrait-book4: "/assets/images/sebastiani-book4.webp"
 portrait-book5: "/assets/images/sebastiani-book5.webp"
 affiliation: New Eden Colony Council; Seat 10; Energy Systems & Grid Infrastructure
-status: Living
 birthday: February 29, 2088
 birthplace: Earth
 book1_age: "37.4"
@@ -16,6 +15,13 @@ book2_age: "47.6"
 book3_age: "54.6"
 book4_age: "61.7"
 book5_age: "68.6"
+gender assignment: "Female"
+gender:  "Female"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book1_title: "The First Warning"
 book1_arc: >
   In 2232, Sebastiani serves as the Council's most persistent skeptic during the Galinstanian disclosure. While others are relieved that contact has not led to immediate catastrophe, she forces the chamber to confront infrastructure vulnerability, territorial risk, and the possibility that good intentions may not be enough to prevent disaster. Her warnings are not theatrical; they are technical, grounded in decades of systems engineering and hard-won experience. When Celectra counters her arguments, Sebastiani does not surrender her principles, but she does acknowledge the strength of the case for coexistence by abstaining rather than voting no. That choice establishes her as a guardian rather than an antagonist.

@@ -5,14 +5,20 @@ portrait: "/assets/images/ripple-book4.webp"
 portrait-book4: "/assets/images/ripple-book4.webp"
 portrait-book5: "/assets/images/ripple-book5.webp"
 affiliation: Transient Cluster; Carisco Household; Four Rivers Resonance Network
-status: Alive
-birthday: Unknown
+birthday: ~2200
 birthplace: Unknown, Ares
 book1_age: "Not yet introduced"
 book2_age: "Not yet introduced"
 book3_age: "Not yet introduced"
-book4_age: "Youngling (~30)"
-book5_age: "Youngling (~37)"
+book4_age: "Youngling (~55)"
+book5_age: "Youngling (~62)"
+gender assignment: "Agender"
+gender:  "Agender"
+orientation: "Asexual"
+orientation_awareness_age:
+status: Alive
+death_date:
+death_place:
 book4_title: "Arrival and Resonance"
 book4_arc: >
   Off page, five years before the events of Book 4, Ripple arrives with a migrating cluster after a cavern collapse destroys their home and kills their parent. The twins, age two, reach for Ripple immediately; Ripple reaches back. The cluster recognizes the bond and entrusts Ripple to Celectra and Jaxon.

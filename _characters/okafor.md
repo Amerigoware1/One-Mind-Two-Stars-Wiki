@@ -8,7 +8,6 @@ portrait-book3: "/assets/images/okafor-book3.webp"
 portrait-book4: "/assets/images/okafor-book4.webp"
 portrait-book5: "/assets/images/okafor-book5.webp"
 affiliation: New Eden Colony Council; Athletics Committee Chair; Youth Development Director
-status: Active
 birthday: July 4, 2100
 birthplace: Lagos, Nigeria, Earth
 book1_age: "42.3"
@@ -16,6 +15,13 @@ book2_age: "49.4"
 book3_age: "56.3"
 book4_age: "64.5"
 book5_age: "71.5"
+gender assignment: "Male"
+gender:  "Male"
+orientation: "Straight"
+orientation_awareness_age: 13
+status: Alive
+death_date:
+death_place:
 book1_title: "Establishing Standards"
 book1_arc: >
   As Athletics Committee Chair, Okafor oversees the development of colony sports programs adapted to Ares' 0.9g environment. He emphasizes discipline, consistency, and fair play across all youth activities. While not a central POV character in Book 1, his influence is felt in the structure of tournaments and the careful consideration given to rule adaptations. He begins to encounter questions about exceptional cases—athletes whose physiologies don't fit Earth-derived standards—but defers major decisions until more data is available.

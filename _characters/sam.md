@@ -19,7 +19,6 @@ portrait-book5:
   - /assets/images/sam-femme-book5.webp
   - /assets/images/sam-andro-book5.webp
 affiliation: New Eden Colony; Audio Engineer; Co‑Founder of Samaya Gallery & Museum of Integration
-status: Alive
 birthday: December 30, 2227
 birthplace: Utopis Space Station
 book1_age: "4.8"
@@ -27,6 +26,13 @@ book2_age: "11.9"
 book3_age: "18.8"
 book4_age: "27.0"
 book5_age: "34.0"
+gender assignment: "Female"
+gender:  "Gender Fluid"
+orientation: "Femsexual"
+orientation_awareness_age: 15
+status: Alive
+death_date:
+death_place:
 book1_title: "Life on Utopis"
 book1_arc: >
   Sam does not appear in Book 1. At age 4.8, they are living on Utopis Space Station with their family. They grow up in a tight‑knit, diverse community surrounded by maintenance crews, learning basic engineering skills from an early age. While loved, Sam feels constantly "known" in the small station environment and begins to dream of a place where they can define themselves without preconceptions.

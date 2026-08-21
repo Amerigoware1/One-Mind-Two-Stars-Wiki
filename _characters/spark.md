@@ -7,13 +7,19 @@ portrait-book3: "/assets/images/spark-book3.webp"
 portrait-book4: "/assets/images/spark-book4.webp"
 portrait-book5: "/assets/images/spark-book5.webp"
 affiliation: Northern Territory; New Eden; Bonded to Zuri
-status: Alive
-birthday: Unknown
+birthday: ~654
 birthplace: Northern Territory, Ares
 book2_age: "Unknown (adult)"
 book3_age: "Unknown (adult)"
 book4_age: "Unknown (adult)"
 book5_age: "Unknown (adult)"
+gender assignment: "Agender"
+gender:  "Agender"
+orientation: "Asexual"
+orientation_awareness_age:
+status: Alive
+death_date:
+death_place:
 book2_title: "The Northern Territory"
 book2_arc: >
   Spark is part of the Northern Territory cluster—seven Galinstanians living in isolation. When Dr. Kret captures Chime and tortures them for three days, Spark hides with the others, their naturally playful, curious nature forced into terrified silence. The experience is particularly crushing for Spark, whose essence craves joy and exploration.
