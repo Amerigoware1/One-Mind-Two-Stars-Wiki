@@ -1,6 +1,6 @@
 ---
 layout: character
-name: Claudia Belrose
+title: Claudia Belrose
 portrait: "/assets/images/belrose-book1.webp"
 portrait-book1: "/assets/images/belrose-book1.webp"
 portrait-book2: "/assets/images/belrose-book2.webp"
