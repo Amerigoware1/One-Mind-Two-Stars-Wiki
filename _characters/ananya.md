@@ -17,7 +17,7 @@ book4_age: "30.4"
 book5_age: "37.4"
 gender assignment: "Female"
 gender:  "Female"
-orientation: "Heterosexual""
+orientation: "heterosexual"
 orientation_awareness_age: 14
 status: Alive
 death_date:
