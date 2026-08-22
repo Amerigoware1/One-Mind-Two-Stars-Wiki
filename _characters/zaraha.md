@@ -1,12 +1,12 @@
 ---
 layout: character
 title: Zahara Solari
-portrait: "/assets/images/zarah-book3.webp"
-portrait-book2: "/assets/images/zarah-book1.webp"
-portrait-book2: "/assets/images/zarah-book2.webp"
-portrait-book3: "/assets/images/zarah-book3.webp"
-portrait-book4: "/assets/images/zarah-book4.webp"
-portrait-book5: "/assets/images/zarah-book5.webp"
+portrait: "/assets/images/zahara-book3.webp"
+portrait-book2: "/assets/images/zahara-book1.webp"
+portrait-book2: "/assets/images/zahara-book2.webp"
+portrait-book3: "/assets/images/zahara-book3.webp"
+portrait-book4: "/assets/images/zahara-book4.webp"
+portrait-book5: "/assets/images/zahara-book5.webp"
 affiliation: Utopis Colony; Administrative Corps
 birthday: June 22, 2225
 birthplace: Utopis

@@ -1,12 +1,12 @@
 ---
 layout: character
 title: Shawanna Morris
-portrait: "/assets/images/shawanna-book3"
-portrait-book1: "/assets/images/shawanna-book1"
-portrait-book2: "/assets/images/shawanna-book2"
-portrait-book3: "/assets/images/shawanna-book3"
-portrait-book4: "/assets/images/shawanna-book4"
-portrait-book5: "/assets/images/shawanna-book5"
+portrait: "/assets/images/shawanna-book3.webp"
+portrait-book1: "/assets/images/shawanna-book1.webp"
+portrait-book2: "/assets/images/shawanna-book2.webp"
+portrait-book3: "/assets/images/shawanna-book3.webp"
+portrait-book4: "/assets/images/shawanna-book4.webp"
+portrait-book5: "/assets/images/shawanna-book5.webp"
 affiliation: Utopis Colony; Geological Survey; Utopis-Lab 3
 birthday: March 5, 2224
 birthplace: Utopis
