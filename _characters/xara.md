@@ -17,7 +17,7 @@ book4_age: "Deceased"
 book5_age: "Deceased"
 gender assignment: "Female"
 gender:  "Female"
-orientation: "Straight"
+orientation: "Heterosexual""
 orientation_awareness_age: 13
 status: Deceased
 death_date: March 20, 2122
