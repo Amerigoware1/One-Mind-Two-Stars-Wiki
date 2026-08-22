@@ -10,7 +10,7 @@ affiliation: Galinstanian; Northern Cluster; Resonance Stewardship Program
 birthday: Unknown (middle-aged-by human measure)
 birthplace: Ares
 book1_age: "~130"
-book2_age: "~137
+book2_age: "~137"
 book3_age: "~144"
 book4_age: "~151"
 book5_age: "~158"
