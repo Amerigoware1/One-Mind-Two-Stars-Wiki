@@ -6,6 +6,14 @@
     "tags": ["celectra", "space station", "utopis", "living quarters", "book 1"],
     "width": 4096,
     "height": 4096
+  },
+  {
+    "file": "checkup.webp",
+    "title": "Checkup with Dr. Cruiz",
+    "description": "A checkup with Dr. Cruiz in the Utopis station medical bay",
+    "tags": ["celectra", "space station", "utopis", "medical bay", "book 1"],
+    "width": 1024,
+    "height": 1536
   },  
   {
     "file": "celectra-age8.webp",
@@ -86,6 +94,14 @@
     "tags": ["celectra", "twins", "pregnant"],
     "width": 1024,
     "height": 1024
+  },
+  {
+    "file": "dancing-with-jaxon.webp",
+    "title": "Dancing with Jaxon",
+    "description": "Celectra and Jaxon dancing at the Nexus in New Eden.",
+    "tags": ["celectra", "jaxon", "new eden", "nexus", "book 3"],
+    "width": 1254,
+    "height": 1254
   },
   {
     "file": "xan-age7.webp",
@@ -230,6 +246,22 @@
     "tags": ["technology", "ani", "interface"],
     "width": 1205,
     "height": 722
+  },
+  {
+    "file": "ani-sun-hat-femme.webp",
+    "title": "Artificial Neural Interface (gen 2)",
+    "description": "The experimental ANI device that allows neural linking between humans and Galinstanian consciousness and, eventually, Utara.",
+    "tags": ["technology", "ani", "interface", "sun hat", "femme"],
+    "width": 1199,
+    "height": 1312
+  },
+  {
+    "file": "ani-sun-hat-uni.webp",
+    "title": "Artificial Neural Interface (gen 2)",
+    "description": "The experimental ANI device that allows neural linking between humans and Galinstanian consciousness and, eventually, Utara.",
+    "tags": ["technology", "ani", "interface", "sun hat", "uni"],
+    "width": 1536,
+    "height": 1024
   },
   {
     "file": "celectra_cabinet.png",
@@ -478,14 +510,62 @@
     "tags": ["sofia", "reading", "holopad", "childhood"],
     "width": 832,
     "height": 1248
-  },    
+  },
+  {
+    "file": "shawanna-age9.webp",
+    "title": "Shawanna at age 9",
+    "description": "Shawanna at age 9, examining a rock sample.",
+    "tags": ["shawanna", "space station", "utopis", "living quarters", "book 1"],
+    "width": 4096,
+    "height": 4096
+  },
+  {
+    "file": "shawanna-age15.webp",
+    "title": "Shawanna at age 15",
+    "description": "Shawanna at age 15, studying in her quarters.",
+    "tags": ["shawanna", "space station", "utopis", "living quarters", "book 2"],
+    "width": 848,
+    "height": 1262
+  },
+  {
+    "file": "shawanna-cooking.webp",
+    "title": "Shawanna cooking",
+    "description": "Shawanna cooking in her kitchen.",
+    "tags": ["shawanna", "space station", "utopis", "cooking", "book 3"],
+    "width": 832,
+    "height": 1248
+  },
+  {
+    "file": "shawanna-relaxing.webp",
+    "title": "Shawanna relaxing",
+    "description": "Shawanna relaxing in the Nexus.",
+    "tags": ["shawanna", "nexus", "new eden", "relaxing", "book 4"],
+    "width": 832,
+    "height": 1248
+  },
+  {
+    "file": "zahara-age28.webp",
+    "title": "Zahara at age 28",
+    "description": "Zahara at age 28, relaxing at home.",
+    "tags": ["zahara", "home", "Utopis", "relaxing", "book 4"],
+    "width": 672,
+    "height": 1000
+  },
+  {
+    "file": "zahara-playing.webp",
+    "title": "Zahara at age 28",
+    "description": "Zahara at age 28, playing at home.",
+    "tags": ["zahara", "home", "Utopis", "playing", "book 4"],
+    "width": 672,
+    "height": 1000
+  },
   {
     "file": "zuri-age8.webp",
     "title": "Zuri playing",
     "description": "Zuri playing in his yard.",
-    "tags": ["celectra", "twins", "pregnant"],
-    "width": 1024,
-    "height": 1536
+    "tags": ["zuri", "childhood", "new eden", "ares"],
+    "width": 783,
+    "height": 1174
   },     
   {
     "file": "reclamatic.png",
