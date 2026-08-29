@@ -39,6 +39,18 @@ title: "Ares"
             <td>~11,200 km (near-earth-sized)</td>
         </tr>
         <tr>
+            <th>Mass</th>
+            <td>~4.15 × 10²⁴ kg</td>
+        </tr>
+        <tr>
+            <th>Density</th>
+            <td>~5,648 kg/m³</td>
+        </tr>
+        <tr>
+            <th>Volume</th>
+            <td>~0.678 Earth volumes</td>
+        </tr>        
+        <tr>
             <th>Gravity</th>
             <td>0.9 G</td>
         </tr>
@@ -60,6 +72,7 @@ title: "Ares"
 - [Contents](#contents)
 - [Overview](#overview)
 - [Physical Characteristics](#physical-characteristics)
+- [Physical Characteristics](#physical-characteristics-1)
 - [Atmosphere and Climate](#atmosphere-and-climate)
 - [Geology and Interior](#geology-and-interior)
 - [Orbit and System](#orbit-and-system)
@@ -79,7 +92,13 @@ Ares is the outermost, near-Earth-sized moon orbiting the super-Jupiter Chaos in
 
 ## Physical Characteristics
 
-Ares has a diameter of approximately 11,200 kilometers. Unlike older moons in the system, its 18-hour rotation is independent of its 45-day orbital period, though this rotation is gradually slowing due to tidal braking from Chaos. Its surface is marked by four small rivers—Pison, Gihon, Hiddekel, and Euphrates—fed by subsurface aquifers.
+<div class="card-bg" markdown="1">
+
+## Physical Characteristics
+
+Ares has a diameter of approximately 11,200 kilometers and a surface gravity of 0.9 G, yielding a total mass of **~4.15 × 10²⁴ kg** (roughly 0.695 Earth masses). Its mean density of **~5,648 kg/m³** exceeds Earth’s, driven by a large, metallic core rich in iron and nickle. Unlike older moons in the system, its 18-hour rotation is independent of its 45-day orbital period, though this rotation is gradually slowing due to tidal braking from Chaos. Its surface is marked by four small rivers—Pison, Gihon, Hiddekel, and Euphrates—fed by subsurface aquifers.
+
+</div>
 
 </div>
 
