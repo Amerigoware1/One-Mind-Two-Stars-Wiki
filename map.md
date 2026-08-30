@@ -3,4 +3,4 @@ layout: default
 title: "New Eden Map"
 ---
 
-![Ares]({{ '/assets/images/Ares.png' | relative_url }})
+![Ares]({{ '/assets/images/ares.png' | relative_url }})
