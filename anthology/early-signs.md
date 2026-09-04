@@ -28,8 +28,7 @@ He gave Electra a spoonful of mashed peas. Her face scrunched up in disgust, her
 
 And Celeste, on the other side of the high chair divider, made the exact same expression—without having been offered any food yet.
 
-<img src="{{ '/assets/images/gallery/baby-celectra.webp' | relative_url }}" alt="Celectra Eating" style="width:250px;">
-
+<img src="{{ '/assets/images/gallery/baby-celectra.webp' | relative_url }}" alt="Celectra Eating" style="width:40%;">
 
 Amerigo froze, spoon halfway to Celeste’s mouth.  
 
