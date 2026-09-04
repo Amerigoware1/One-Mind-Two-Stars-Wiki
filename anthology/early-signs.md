@@ -21,14 +21,12 @@ But the joke landed wrong. Because something in the way they synchronized everyt
 Even this early, there were signs.  
 
 \*\*\*  
-
+<img src="{{ '/assets/images/gallery/baby-celectra.webp' | relative_url }}" alt="Celectra Eating" style="width:30%;">
 At six months, Amerigo fed them in high chairs side by side, trying to introduce solid foods per the developmental schedule Williams had given him.  
 
 He gave Electra a spoonful of mashed peas. Her face scrunched up in disgust, her mouth puckering like she’d tasted poison.  
 
 And Celeste, on the other side of the high chair divider, made the exact same expression—without having been offered any food yet.
-
-<img src="{{ '/assets/images/gallery/baby-celectra.webp' | relative_url }}" alt="Celectra Eating" style="width:30%;">
 
 Amerigo froze, spoon halfway to Celeste’s mouth.  
 
