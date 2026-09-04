@@ -28,7 +28,8 @@ He gave Electra a spoonful of mashed peas. Her face scrunched up in disgust, her
 
 And Celeste, on the other side of the high chair divider, made the exact same expression—without having been offered any food yet.
 
-![Celectra Eating](/One-Mind-Two-Stars-Wiki/assets/images/gallery/baby-celectra.webp)
+<img src="{{ '/assets/images/gallery/baby-celectra.webp' | relative_url }}" alt="Celectra Eating" style="width:250px;">
+
 
 Amerigo froze, spoon halfway to Celeste’s mouth.  
 
