@@ -83,13 +83,13 @@ His thumb hovered over the initiate icon.
 
 The soft pink light of the holo-call interface waited.  
 
-He looked at the twins again. Celeste was studying a speck of puree on her tray with deep concentration. Electra was studying the same speck on her own tray with the same concentration, though the speck on Electra’s tray was in a different place. Or perhaps it was the same speck, somehow. The idea made his stomach turn.  
+He looked at the twins again. Both were watching him intently. He mused briefly what it would be like for a single mind to actually see something from such separate angles-a thought that made his head spin.  
 
 What would he even say?  
 
-Alex, I think my daughters are one person in two bodies. I think they share a single consciousness. I think when one of them tastes something, the other already knows.  
+*Alex, I think my daughters are one person in two bodies. I think they share a single consciousness. I think when one of them tastes something, the other already knows.*
 
-It sounded like the opening line of a breakdown. It sounded like the kind of thing that got parental fitness evaluations triggered and children placed under observation. It sounded like the kind of claim that ended careers and invited questions about the experimental protocols that had brought the twins into existence in the first place.  
+It sounded like the opening line of a breakdown. It sounded like the kind of thing that got parental fitness evaluations triggered and children placed under observation. It sounded like the kind of claim that ended careers and invited questions about a father's fitness to raise his children.  
 
 Amerigo’s thumb moved away from the icon. He locked the datapad and set it face-down on the counter.  
 
