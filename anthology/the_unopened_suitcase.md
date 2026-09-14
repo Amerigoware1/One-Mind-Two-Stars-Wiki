@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Four Hands, One Meal
+title: The Unopened Suitcase
 is_archive: true
 return_url: anthology.html
 return_label: "Return to Anthology index"
