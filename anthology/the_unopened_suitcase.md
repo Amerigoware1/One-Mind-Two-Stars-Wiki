@@ -8,12 +8,12 @@ return_label: "Return to Anthology index"
 
 {% capture chapter_content %}
 
-# Two Hearts, Finite Span
+# The Unopened Suitcase
 
-# The Unopened Suitcase 
+## Two Hearts, Finite Span
 
 *Date: January 3, 2247 (Zoë's 50th Birthday)*  
-*Word Count: \~2,262 words*
+*Word Count: ~2,262 words*
 
 The twilight of New Eden dimmed to a soft umber glow, deepening as the party spilled into the evening. Through the courtyard of the Carisco home, carried scents of celebration: yeast from Dee's bread, the mineral tang of roasted tubers from the aeroponics bay, and the faint, sweet-bitter aroma of festival chemlights.  
 Celectra stood just inside the wide arch of her own home's eastern wall, watching the gathering. The bismuth necklaces rested cool against her collarbones—a habit now, like breathing, even here in the safety of home. Below her feet, through the layered quartz-sapphire composite of her floor, the Pison River glistened three meters down—more a creek than a river, really. Someone, likely Xan and his friends, had dosed it with slow-release luminophores for the party. The water glowed a gentle, rippling cerulean, a ribbon of captured sky snaking through the colony's substructure.  
