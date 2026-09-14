@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Dr. Padma Sharma
-portrait: "/assets/images/padma-book5.webp"
+portrait: "/assets/images/padma-book1.webp"
 portrait-book1: "/assets/images/padma-book1.webp"
 portrait-book2: "/assets/images/padma-book2.webp"
 portrait-book3: "/assets/images/padma-book3.webp"
