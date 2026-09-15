@@ -311,7 +311,7 @@
     "width": 832,
     "height": 1248
   },
-    {
+  {
     "file": "ananya-age9.webp",
     "title": "Ananya at age 9",
     "description": "Ananya at age 9",
@@ -322,10 +322,18 @@
   {
     "file": "chenwei-age10.webp",
     "title": "Chen Wei at age 10",
-    "description": "Chen Wei practicing at age 10",
+    "description": "Chen Wei practicing acrobatics at age 10",
     "tags": ["chen wei", "book 1"],
     "width": 1664,
     "height": 928
+  },
+  {
+    "file": "chenwei-alt.webp",
+    "title": "Chen Wei at age 10",
+    "description": "Chen Wei practicing acrobatics at age 10",
+    "tags": ["chen wei", "book 1"],
+    "width": 1024,
+    "height": 1536
   },
   {
     "file": "hiro-aulii.webp",
