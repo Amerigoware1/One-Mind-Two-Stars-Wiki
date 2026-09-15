@@ -155,13 +155,9 @@ Xan's journey centers on finding his own voice in a family defined by extraordin
 
 {% include story-arcs.html %}
 
+## Identity Sheet
 
-
-## [Visual Identity Sheet](xan-identity.md)
-
-<div class="card-bg">
-<div class="identity-sheet">
-  <img src="/One-Mine-Two-Stars-Wiki/assets/images/identity/xan-identity.webp" alt="Xan Identity Sheet">
-</div>
-</div>
+  <div class="identity-sheet">
+    <img src="/One-Mine-Two-Stars-Wiki/assets/images/identity/xan-identity.webp" alt="Xan Identity Sheet">
+  </div>
 </div>
