@@ -1606,7 +1606,7 @@ text-shadow: 0 0 10px var(--glow-violet) }
   grid-template-rows: auto auto auto;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  max-width: 900px;
+  max-width: 90px;
   margin: auto;
 }
 
