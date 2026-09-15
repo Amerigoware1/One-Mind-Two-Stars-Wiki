@@ -43,7 +43,6 @@ book4_arc: >
 book5_title: "The Next Generation's Guide"
 book5_arc: >
   Xan becomes a senior member of the Resonance Stewardship Program, specializing in acoustic–resonance interfaces. He mentors younger listeners and engineers, including Jenni, Xara, and Ripple. His arc centers on legacy — proving that harmony can be engineered, improvised, or played, and that the future of Ares belongs to many voices, not just one.
-  
 ---
 
 <div class="article-content">
@@ -159,7 +158,8 @@ Xan's journey centers on finding his own voice in a family defined by extraordin
 {% include story-arcs.html %}
 
 <div class="card-bg" markdown="1">
-## [Visual Identity Sheet](/assets/images/identity/xan.html)
+
+## [Visual Identity Sheet](assets\images\identity\xan.html)
 
 <div class="identity-sheet">
   <img src="/One-Mine-Two-Stars-Wiki/assets/images/identity/xan-identity.webp" alt="Xan Identity Sheet">
