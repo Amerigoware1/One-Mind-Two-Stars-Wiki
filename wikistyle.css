@@ -1606,12 +1606,16 @@ text-shadow: 0 0 10px var(--glow-violet) }
   grid-template-rows: auto auto auto;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  max-width: 90px;
+  max-width: 900px;
   margin: auto;
 }
 
 .identity-grid .age {
   grid-row: 1;
+  max-width: 150px; /* or a percentage like 23% in a flex row */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .identity-grid .anchors {
