@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Xan Carisco
+title: Alexander "Xan" Carisco
 portrait: "/assets/images/xan-book5.webp"
 portrait-book2: "/assets/images/xan-book2.webp"
 portrait-book3: "/assets/images/xan-book3.webp"
@@ -158,6 +158,13 @@ Xan's journey centers on finding his own voice in a family defined by extraordin
 
 {% include story-arcs.html %}
 
+<div class="card-bg" markdown="1">
+## [Visual Identity Sheet](/assets/images/identity/xan.md)
+
+<div class="identity-sheet">
+  <img src="/One-Mine-Two-Stars-Wiki/assets/images/identity/xan-identity.webp" alt="Xan Identity Sheet">
+</div>
+</div>
 </div>
 
 </div>
