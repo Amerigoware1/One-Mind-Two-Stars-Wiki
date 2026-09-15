@@ -151,13 +151,14 @@ Xan's journey centers on finding his own voice in a family defined by extraordin
 - The twins call Xan "Uncle Xany" — a nickname he pretends to dislike but secretly treasures
 - By Book 5, his acoustic methods are taught alongside Celectra's EM communion in every colony school
 
-</div>
+</div></div>
 
 {% include story-arcs.html %}
 
 ## Identity Sheet
 
   <div class="identity-sheet">
+    <a href="{{ 'identities/xan.html' | relative_url }}">Identity</a>
     <img src="/One-Mine-Two-Stars-Wiki/assets/images/identity/xan-identity.webp" alt="Xan Identity Sheet">
   </div>
-</div>
+
