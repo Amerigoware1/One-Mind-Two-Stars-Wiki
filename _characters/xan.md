@@ -158,7 +158,7 @@ Xan's journey centers on finding his own voice in a family defined by extraordin
 ## Identity Sheet
 
   <div class="identity-sheet">
-    <a href="{{ '/_characters/identities/xan.html' | relative_url }}">Identity</a>
+    <a href="{{ '_characters\identities\xan.html' | relative_url }}">Identity</a>
     <img src="/One-Mine-Two-Stars-Wiki/assets/images/identity/xan-identity.webp" alt="Xan Identity Sheet">
   </div>
 
