@@ -157,7 +157,7 @@ Xan's journey centers on finding his own voice in a family defined by extraordin
 
 
 
-## Visual Identity Sheet
+## [Visual Identity Sheet](xan-identity.md)
 
 <div class="card-bg">
 <div class="identity-sheet">

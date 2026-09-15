@@ -1,3 +1,8 @@
+---
+layout: default
+title: Xan Identity Sheet
+---
+
 # Character Identity Sheet: Alexander "Xan" Carisco
 
 ## Face Anchor
@@ -65,3 +70,4 @@
     <div>Expressions: Neutral, Happy, Angry, Afraid, Determined</div>
   </div>
 </div>
+<img src="/assets/images/identity/xan-identity.webp" alt="Xan Identity Sheet">
