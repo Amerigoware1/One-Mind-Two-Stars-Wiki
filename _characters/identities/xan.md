@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 ---
 
@@ -44,7 +44,7 @@ layout: default
 ## Scene Context
 - Home: Carisco family dwelling in New Eden
 - Workplace: Listener Corps acoustic labs
-- Cultural architecture: Ares settlement structures, Four Rivers Exchange Program sites
+- Cultural architecture: Ares settlement structures, Four Rivers Exchange Program sites -->
 
 ## Visual Identity Sheet (Composite)
 
