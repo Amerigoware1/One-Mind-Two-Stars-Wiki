@@ -157,7 +157,7 @@ Xan's journey centers on finding his own voice in a family defined by extraordin
 
 <div class="card-bg" markdown="1">
 
-## [Visual Identity Sheet](assets\images\identity\xan.html) <!--Chrome says this page doesn't exist. -->
+## [Visual Identity Sheet](\assets\images\identity\xan.html) <!--Chrome says this page doesn't exist. -->
 
 <div class="identity-sheet">
   <img src="/One-Mine-Two-Stars-Wiki/assets/images/identity/xan-identity.webp" alt="Xan Identity Sheet"> <!--Expected. This image really doesn't exist yet. -->
