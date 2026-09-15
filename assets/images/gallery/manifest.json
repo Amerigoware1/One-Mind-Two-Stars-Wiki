@@ -328,6 +328,22 @@
     "height": 1536
   },
   {
+    "file": "ananya-alt.webp",
+    "title": "Ananya at age 12",
+    "description": "Ananya at age 12 living on Utopis",
+    "tags": ["ananya", "utopis"],
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "file": "ananya-age16.webp",
+    "title": "Ananya at age 16",
+    "description": "Ananya at age 16 living in New Eden",
+    "tags": ["ananya", "new eden"],
+    "width": 1024,
+    "height": 1536
+  },
+  {
     "file": "chenwei-age10.webp",
     "title": "Chen Wei at age 10",
     "description": "Chen Wei practicing acrobatics at age 10",
