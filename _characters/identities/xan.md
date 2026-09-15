@@ -5,14 +5,14 @@ layout: default
 # Character Identity Sheet: Alexander "Xan" Carisco
 
 ## Face Anchor
-- Primary portrait: ![Xan Face Anchor](/assets/images/xan-book2.webp)
+- Primary portrait: ![Xan Face Anchor]({{ '/assets/images/xan-book2.webp' | relative_url }})
 - Notes: Tall, lean build; expressive eyes; rhythmic energy; calloused hands from bismuth instruments.
 
 ## Age Progression
-- Child (Book 2, age 5): ![Xan Child](/assets/images/xan-book2.webp)
-- Teen (Book 3, age 12): ![Xan Teen](/assets/images/xan-book3.webp)
-- Young Adult (Book 4, age 20): ![Xan Adult](/assets/images/xan-book4.webp)
-- Mature Adult (Book 5, age 27): ![Xan Elder](/assets/images/xan-book5.webp)
+- Child (Book 2, age 5): ![Xan Child]({{ '/assets/images/xan-book2.webp' | relative_url }})
+- Teen (Book 3, age 12): ![Xan Teen]({{ '/assets/images/xan-book3.webp' | relative_url }})
+- Young Adult (Book 4, age 20): ![Xan Adult]({{ '/assets/images/xan-book3.webp' | relative_url }})
+- Mature Adult (Book 5, age 27): ![Xan Adult]({{ '/assets/images/xan-book2.webp' | relative_url }})
 
 ## Hair Reference
 - Default style: loose, brushed back, slightly tousled
