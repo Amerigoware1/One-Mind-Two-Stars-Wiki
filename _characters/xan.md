@@ -145,26 +145,22 @@ Xan's journey centers on finding his own voice in a family defined by extraordin
 ### Trivia
 - Xan still has the first glockenspiel he built; it sits in his workshop, battered but functional
 - He can identify individual Galinstanians by their rhythmic responses alone
-- Chime was his first friend; their bond predates his understanding that Galinstanians were "different"
+- Chime was his first Galinstanian friend; their bond predates his understanding that Galinstanians were "different"
 - Xan proposed to Duška by composing a rhythm only she would recognize — a pattern from their childhood
 - He keeps a small set of tuned bismuth bars in his pocket at all times, "just in case someone needs to talk"
-- The twins call him "Uncle Rhythm" — a nickname he pretends to dislike but secretly treasures
+- The twins call Xan "Uncle Xany" — a nickname he pretends to dislike but secretly treasures
 - By Book 5, his acoustic methods are taught alongside Celectra's EM communion in every colony school
 
 </div>
-
-<div class="card-bg" markdown="1">
 
 {% include story-arcs.html %}
 
 <div class="card-bg" markdown="1">
 
-## [Visual Identity Sheet](assets\images\identity\xan.html)
+## [Visual Identity Sheet](assets\images\identity\xan.html) <!--Chrome says this page doesn't exist. -->
 
 <div class="identity-sheet">
-  <img src="/One-Mine-Two-Stars-Wiki/assets/images/identity/xan-identity.webp" alt="Xan Identity Sheet">
+  <img src="/One-Mine-Two-Stars-Wiki/assets/images/identity/xan-identity.webp" alt="Xan Identity Sheet"> <!--Expected. This image really doesn't exist yet. -->
 </div>
 </div>
-</div>
-
 </div>
