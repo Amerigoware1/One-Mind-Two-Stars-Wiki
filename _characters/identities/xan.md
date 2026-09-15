@@ -1,7 +1,7 @@
-<!-- ---
+---
 layout: default
 ---
-
+<!-- 
 # Character Identity Sheet: Alexander "Xan" Carisco
 
 ## Face Anchor
