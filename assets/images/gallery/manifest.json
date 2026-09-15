@@ -246,7 +246,23 @@
     "tags": ["xara", "jenni", "book 4"],
     "width": 928,
     "height": 1152
-  },    
+  },
+  {
+    "file": "girls-day-out.webp",
+    "title": "Three Generations of women doing yoga",
+    "description": "A portrait of Zoë, Celectra, Jenni and Xara (age 10) doing yoga together.",
+    "tags": ["xara", "jenni", "celectra", "zoe", "family"],
+    "width": 1402,
+    "height": 1122
+  },
+    {
+    "file": "girls-day-out-2.webp",
+    "title": "Three Generations of women doing yoga",
+    "description": "A portrait of Zoë, Celectra, Jenni and Xara (age 10) doing yoga together",
+    "tags": ["xara", "jenni", "celectra", "zoe", "family"],
+    "width": 1024,
+    "height": 816
+  },          
   {
     "file": "alex-and-dee.webp",
     "title": "Uncle Alex and Aunt Dee",
@@ -478,6 +494,14 @@
     "tags": ["maya", "sam", "gallery", "museum", "Integration"],
     "width": 1024,
     "height": 1536
+  },
+  {
+    "file": "leila-alt.webp",
+    "title": "Leila at age 15",
+    "description": "Leila at age 15 practicing karate in the dojo",
+    "tags": ["leila", "book 2"],
+    "width": 807,
+    "height": 450
   },
   {
     "file": "nyanhial-nhial.webp",
