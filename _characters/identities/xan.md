@@ -11,8 +11,8 @@ layout: default
 ## Age Progression
 - Child (Book 2, age 5): ![Xan Child]({{ '/assets/images/xan-book2.webp' | relative_url }})
 - Teen (Book 3, age 12): ![Xan Teen]({{ '/assets/images/xan-book3.webp' | relative_url }})
-- Young Adult (Book 4, age 20): ![Xan Adult]({{ '/assets/images/xan-book3.webp' | relative_url }})
-- Mature Adult (Book 5, age 27): ![Xan Adult]({{ '/assets/images/xan-book2.webp' | relative_url }})
+- Young Adult (Book 4, age 20): ![Xan Adult]({{ '/assets/images/xan-book4.webp' | relative_url }})
+- Mature Adult (Book 5, age 27): ![Xan Mature]({{ '/assets/images/xan-book5.webp' | relative_url }})
 
 ## Hair Reference
 - Default style: loose, brushed back, slightly tousled
@@ -50,10 +50,10 @@ layout: default
 
 <div class="identity-grid">
   <!-- Age progression -->
-  <img class="age" src="/assets/images/xan-book2.webp" alt="Xan Child">
-  <img class="age" src="/assets/images/xan-book3.webp" alt="Xan Teen">
-  <img class="age" src="/assets/images/xan-book4.webp" alt="Xan Adult">
-  <img class="age" src="/assets/images/xan-book5.webp" alt="Xan Mature">
+<img class="age" src="{{ '/assets/images/xan-book2.webp' | relative_url }}" alt="Xan Child">
+<img class="age" src="{{ '/assets/images/xan-book3.webp' | relative_url }}" alt="Xan Teen">
+<img class="age" src="{{ '/assets/images/xan-book4.webp' | relative_url }}" alt="Xan Adult">
+<img class="age" src="{{ '/assets/images/xan-book5.webp' | relative_url }}" alt="Xan Mature">
 
   <!-- Identity anchors -->
   <div class="anchors">
