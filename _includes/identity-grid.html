@@ -41,6 +41,11 @@
         {% for item in page.outfits %}
           <li>{{ item }}</li>
         {% endfor %}
+        {% if page.insignia %}
+  <div class="insignia-box">
+    <img src="{{ '/assets/images/insignias/' | append: page.insignia | append: '.webp' | relative_url }}" alt="{{ page.insignia | replace: '-', ' ' | capitalize }} Insignia" class="insignia-badge">
+  </div>
+{% endif %}
       </ul>
     </div>
   </div>

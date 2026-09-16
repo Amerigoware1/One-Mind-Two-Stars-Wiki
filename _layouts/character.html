@@ -7,33 +7,42 @@ layout: default
 
     {%- assign is_character_page = false -%}
     {%- if page.portrait or page.affiliation or page.status -%}
-      {%- assign is_character_page = true -%}
+    {%- assign is_character_page = true -%}
     {%- endif -%}
 
     {%- if is_character_page -%}
     <aside class="infobox-sidebar">
-      <div class="infobox" id="portrait-container"
-           data-title="{{ page.title }}"
-           data-true-orientation="{{ page.orientation }}"
-           data-orientation-threshold="{{ page.orientation_awareness_age | default: 13 }}"
-           data-birthday="{{ page.birthday }}"
-           data-death-date="{{ page.death_date }}">
+      <div class="infobox" id="portrait-container" data-title="{{ page.title }}"
+        data-true-orientation="{{ page.orientation }}"
+        data-orientation-threshold="{{ page.orientation_awareness_age | default: 13 }}"
+        data-birthday="{{ page.birthday }}" data-death-date="{{ page.death_date }}">
         <div class="portrait-box" id="portrait-box">
           <img id="character-portrait"
-               src="{% if page.portrait %}{{ page.portrait | relative_url }}{% else %}{{ '/assets/images/portrait-placeholder.png' | relative_url }}{% endif %}"
-               alt="{{ page.title }}"
-               class="portrait">
+            src="{% if page.portrait %}{{ page.portrait | relative_url }}{% else %}{{ '/assets/images/portrait-placeholder.png' | relative_url }}{% endif %}"
+            alt="{{ page.title }}" class="portrait">
         </div>
 
         <table>
-          <tr><th>Affiliation</th><td>{{ page.affiliation }}</td></tr>
+          <tr>
+            <th>Affiliation</th>
+            <td>{{ page.affiliation }}</td>
+          </tr>
           <tr>
             <th>Status</th>
             <td><span id="status-display">{{ page.status }}</span></td>
           </tr>
-          <tr><th>Birthday</th><td>{{ page.birthday }}</td></tr>
-          <tr><th>Birthplace</th><td>{{ page.birthplace }}</td></tr>
-          <tr><th>Gender</th><td>{{ page.gender_assignment | default: page.gender }}</td></tr>
+          <tr>
+            <th>Birthday</th>
+            <td>{{ page.birthday }}</td>
+          </tr>
+          <tr>
+            <th>Birthplace</th>
+            <td>{{ page.birthplace }}</td>
+          </tr>
+          <tr>
+            <th>Gender</th>
+            <td>{{ page.gender_assignment | default: page.gender }}</td>
+          </tr>
           <tr>
             <th>Orientation</th>
             <td><span id="orientation-display">{{ page.orientation }}</span></td>
@@ -41,30 +50,31 @@ layout: default
         </table>
 
         {%- for i in (1..5) -%}
-          {%- assign key = "portrait-book" | append: i -%}
-          {%- assign imgs = page[key] -%}
-          {%- assign age_key = "book" | append: i | append: "_age" -%}
-          <span class="sr-only"
-                data-book-index="{{ i }}"
-                data-book-images="{% if imgs %}{% for img in imgs %}{% if forloop.first == false %},{% endif %}{{ img | relative_url }}{% endfor %}{% endif %}"
-                data-book-age="{{ page[age_key] }}">
-          </span>
+        {%- assign key = "portrait-book" | append: i -%}
+        {%- assign imgs = page[key] -%}
+        {%- assign age_key = "book" | append: i | append: "_age" -%}
+        <span class="sr-only" data-book-index="{{ i }}"
+          data-book-images="{% if imgs %}{% for img in imgs %}{% if forloop.first == false %},{% endif %}{{ img | relative_url }}{% endfor %}{% endif %}"
+          data-book-age="{{ page[age_key] }}">
+        </span>
         {%- endfor -%}
       </div>
     </aside>
     {%- endif -%}
 
-<main class="character-main {% unless is_character_page %}full-width{% endunless %}">
+    <main class="character-main {% unless is_character_page %}full-width{% endunless %}">
       <div class="character-body" data-layout="{{ page.layout }}">
         {{ content }}
-
-        <!-- Automatically rendered on every character page -->
         {% assign char_id = page.character | default: page.slug %}
-        {% if char_id %}
-          <div class="identity-sheet">
-            <a href="{{ '/characters/identities/' | append: char_id | append: '.html' | relative_url }}">Identity Sheet</a>
-            <img src="{{ '/assets/images/identity/' | append: char_id | append: '-identity-sheet.webp' | relative_url }}" alt="{{ page.title | escape }} Identity Sheet">
-          </div>
+        {% assign target_url = '/characters/identities/' | append: char_id | append: '.html' %}
+        {% assign identity_exists = site.html_pages | where: "url", target_url | first %}
+
+        {% if identity_exists %}
+        <div class="identity-sheet">
+          <a href="{{ target_url | relative_url }}">Identity Sheet</a>
+          <img src="{{ '/assets/images/identity/' | append: char_id | append: '-identity-sheet.webp' | relative_url }}"
+            alt="{{ page.title | escape }} Identity Sheet">
+        </div>
         {% endif %}
       </div>
     </main>
@@ -75,293 +85,309 @@ layout: default
 <button id="toTopBtn" aria-label="Return to top">⬆️ Top</button>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function () {
 
-  const container = document.getElementById('portrait-container');
-  const portrait = document.getElementById('character-portrait');
-  const orientationSpan = document.getElementById('orientation-display');
-  const statusSpan = document.getElementById('status-display');
+    const container = document.getElementById('portrait-container');
+    const portrait = document.getElementById('character-portrait');
+    const orientationSpan = document.getElementById('orientation-display');
+    const statusSpan = document.getElementById('status-display');
 
-  const initialPortrait = portrait ? portrait.src : null;
-  const placeholder = "{{ '/assets/images/portrait-placeholder.png' | relative_url }}";
+    const initialPortrait = portrait ? portrait.src : null;
+    const placeholder = "{{ '/assets/images/portrait-placeholder.png' | relative_url }}";
 
-  if (!container || !portrait || !orientationSpan || !statusSpan) return;
+    if (!container || !portrait || !orientationSpan || !statusSpan) return;
 
-  // --- Read data from container ---
-  const trueOrientation = container.dataset.trueOrientation || '';
-  const threshold = parseFloat(container.dataset.orientationThreshold) || 13;
-  const birthdayStr = container.dataset.birthday || '';
-  const deathDateStr = container.dataset.deathDate || '';
+    // --- Read data from container ---
+    const trueOrientation = container.dataset.trueOrientation || '';
+    const threshold = parseFloat(container.dataset.orientationThreshold) || 13;
+    const birthdayStr = container.dataset.birthday || '';
+    const deathDateStr = container.dataset.deathDate || '';
 
-  // Extract years from date strings (e.g. "October 11, 2225" -> 2225)
-  function extractYear(dateStr) {
-    const match = dateStr.match(/\d{4}/);
-    return match ? parseInt(match[0], 10) : null;
-  }
+    // Extract years from date strings (e.g. "October 11, 2225" -> 2225)
+    function extractYear(dateStr) {
+      const match = dateStr.match(/\d{4}/);
+      return match ? parseInt(match[0], 10) : null;
+    }
 
-  const birthYear = extractYear(birthdayStr);
-  const deathYear = extractYear(deathDateStr);
+    const birthYear = extractYear(birthdayStr);
+    const deathYear = extractYear(deathDateStr);
 
-  // Book years (as provided)
-  const bookYears = {
-    1: 2232,
-    2: 2239,
-    3: 2246,
-    4: 2255,
-    5: 2262
-  };
-
-  // --- Build book data ---
-  const bookData = {};
-  container.querySelectorAll('span[data-book-index]').forEach(span => {
-    const idx = span.dataset.bookIndex;
-    const imagesStr = span.dataset.bookImages || '';
-    const ageStr = span.dataset.bookAge || '';
-
-    const imgs = imagesStr
-      .split(',')
-      .map(i => i.trim())
-      .filter(i => i.length > 0);
-
-    bookData[idx] = {
-      images: imgs,
-      age: ageStr
+    // Book years (as provided)
+    const bookYears = {
+      1: 2232,
+      2: 2239,
+      3: 2246,
+      4: 2255,
+      5: 2262
     };
-  });
 
-  // --- Helpers ---
-  function randomFrom(arr) {
-    return arr[Math.floor(Math.random() * arr.length)];
-  }
+    // --- Build book data ---
+    const bookData = {};
+    container.querySelectorAll('span[data-book-index]').forEach(span => {
+      const idx = span.dataset.bookIndex;
+      const imagesStr = span.dataset.bookImages || '';
+      const ageStr = span.dataset.bookAge || '';
 
-  // Extract Earth years from a string like "7.0 Earth / 6.28 Ares"
-  function parseEarthYears(ageStr) {
-    const match = ageStr.match(/^([\d.]+)\s*Earth/);
-    if (match) {
-      return parseFloat(match[1]);
-    }
-    return null;
-  }
+      const imgs = imagesStr
+        .split(',')
+        .map(i => i.trim())
+        .filter(i => i.length > 0);
 
-  // --- Update orientation based on book index ---
-  function updateOrientation(bookIndex) {
-    if (!bookIndex) {
-      orientationSpan.textContent = trueOrientation;
-      return;
-    }
+      bookData[idx] = {
+        images: imgs,
+        age: ageStr
+      };
+    });
 
-    const data = bookData[bookIndex];
-    if (!data || !data.age) {
-      orientationSpan.textContent = trueOrientation;
-      return;
+    // --- Helpers ---
+    function randomFrom(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
     }
 
-    const earthAge = parseEarthYears(data.age);
-    if (earthAge === null) {
-      orientationSpan.textContent = trueOrientation;
-      return;
+    // Extract Earth years from a string like "7.0 Earth / 6.28 Ares"
+    function parseEarthYears(ageStr) {
+      const match = ageStr.match(/^([\d.]+)\s*Earth/);
+      if (match) {
+        return parseFloat(match[1]);
+      }
+      return null;
     }
 
-    orientationSpan.textContent = (earthAge < threshold) ? 'none' : trueOrientation;
-  }
-
-  // --- Update status based on book index ---
-  function updateStatus(bookIndex) {
-    if (!bookIndex) {
-      // No tab active → keep the static YAML status
-      // (statusSpan already has the static value from the table)
-      return;
-    }
-
-    const bookYear = bookYears[bookIndex];
-    if (bookYear === undefined) {
-      // Unknown book index – leave static
-      return;
-    }
-
-    if (birthYear === null) {
-      // No birthday – cannot determine
-      statusSpan.textContent = 'Unknown';
-      return;
-    }
-
-    let newStatus;
-
-    if (bookYear < birthYear) {
-      newStatus = 'Pre-birth';
-    } else if (deathYear !== null && bookYear > deathYear) {
-      newStatus = 'Deceased';
-    } else {
-      newStatus = 'Alive';
-    }
-
-    statusSpan.textContent = newStatus;
-  }
-
-  // --- Update portrait based on book index ---
-  function updatePortrait(bookIndex, explicitImage) {
-    if (explicitImage && explicitImage.trim()) {
-      portrait.src = explicitImage.trim();
-      return;
-    }
-
-    if (bookIndex && bookData[bookIndex] && bookData[bookIndex].images.length) {
-      const selected = randomFrom(bookData[bookIndex].images);
-      portrait.src = selected;
-    } else {
-      portrait.src = initialPortrait;
-    }
-  }
-
-  // --- Tab click handler ---
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      // Update active class
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      this.classList.add('active');
-
-      // Show tab content
-      const targetId = this.dataset.tab;
-      if (targetId) {
-        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-        const targetEl = document.getElementById(targetId);
-        if (targetEl) targetEl.classList.add('active');
+    // --- Update orientation based on book index ---
+    function updateOrientation(bookIndex) {
+      if (!bookIndex) {
+        orientationSpan.textContent = trueOrientation;
+        return;
       }
 
-      // Update portrait, orientation, and status
-      const bookIndex = this.dataset.book;
-      const explicitImage = this.dataset.image || this.getAttribute('data-image');
+      const data = bookData[bookIndex];
+      if (!data || !data.age) {
+        orientationSpan.textContent = trueOrientation;
+        return;
+      }
+
+      const earthAge = parseEarthYears(data.age);
+      if (earthAge === null) {
+        orientationSpan.textContent = trueOrientation;
+        return;
+      }
+
+      orientationSpan.textContent = (earthAge < threshold) ? 'none' : trueOrientation;
+    }
+
+    // --- Update status based on book index ---
+    function updateStatus(bookIndex) {
+      if (!bookIndex) {
+        // No tab active → keep the static YAML status
+        // (statusSpan already has the static value from the table)
+        return;
+      }
+
+      const bookYear = bookYears[bookIndex];
+      if (bookYear === undefined) {
+        // Unknown book index – leave static
+        return;
+      }
+
+      if (birthYear === null) {
+        // No birthday – cannot determine
+        statusSpan.textContent = 'Unknown';
+        return;
+      }
+
+      let newStatus;
+
+      if (bookYear < birthYear) {
+        newStatus = 'Pre-birth';
+      } else if (deathYear !== null && bookYear > deathYear) {
+        newStatus = 'Deceased';
+      } else {
+        newStatus = 'Alive';
+      }
+
+      statusSpan.textContent = newStatus;
+    }
+
+    // --- Update portrait based on book index ---
+    function updatePortrait(bookIndex, explicitImage) {
+      if (explicitImage && explicitImage.trim()) {
+        portrait.src = explicitImage.trim();
+        return;
+      }
+
+      if (bookIndex && bookData[bookIndex] && bookData[bookIndex].images.length) {
+        const selected = randomFrom(bookData[bookIndex].images);
+        portrait.src = selected;
+      } else {
+        portrait.src = initialPortrait;
+      }
+    }
+
+    // --- Tab click handler ---
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Update active class
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        // Show tab content
+        const targetId = this.dataset.tab;
+        if (targetId) {
+          document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+          const targetEl = document.getElementById(targetId);
+          if (targetEl) targetEl.classList.add('active');
+        }
+
+        // Update portrait, orientation, and status
+        const bookIndex = this.dataset.book;
+        const explicitImage = this.dataset.image || this.getAttribute('data-image');
+        updatePortrait(bookIndex, explicitImage);
+        updateOrientation(bookIndex);
+        updateStatus(bookIndex);
+      });
+    });
+
+    // --- Initial load ---
+    const activeTab = document.querySelector('.tab-btn.active');
+    if (activeTab) {
+      const bookIndex = activeTab.dataset.book;
+      const explicitImage = activeTab.dataset.image || activeTab.getAttribute('data-image');
       updatePortrait(bookIndex, explicitImage);
       updateOrientation(bookIndex);
       updateStatus(bookIndex);
-    });
-  });
-
-  // --- Initial load ---
-  const activeTab = document.querySelector('.tab-btn.active');
-  if (activeTab) {
-    const bookIndex = activeTab.dataset.book;
-    const explicitImage = activeTab.dataset.image || activeTab.getAttribute('data-image');
-    updatePortrait(bookIndex, explicitImage);
-    updateOrientation(bookIndex);
-    updateStatus(bookIndex);
-  } else {
-    // No active tab → keep YAML portrait, true orientation, and static status
-    portrait.src = initialPortrait;
-    orientationSpan.textContent = trueOrientation;
-    // statusSpan already contains the static value
-  }
-
-  // --- Fallback if portrait fails ---
-  portrait.addEventListener('error', function () {
-    if (!this.dataset.fallbacked) {
-      this.dataset.fallbacked = '1';
-      this.src = placeholder;
+    } else {
+      // No active tab → keep YAML portrait, true orientation, and static status
+      portrait.src = initialPortrait;
+      orientationSpan.textContent = trueOrientation;
+      // statusSpan already contains the static value
     }
-  });
 
-});
+    // --- Fallback if portrait fails ---
+    portrait.addEventListener('error', function () {
+      if (!this.dataset.fallbacked) {
+        this.dataset.fallbacked = '1';
+        this.src = placeholder;
+      }
+    });
+
+  });
 </script>
 
 <style>
-.character-layout {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.5rem;
-}
-
-.character-layout .character-main.full-width {
-  grid-column: 1 / -1;
-}
-
-.infobox-sidebar {
-  position: sticky;
-  top: 1rem;
-  align-self: start;
-  z-index: 100;
-}
-
-.infobox {
-  background: #0c0028;
-  border: 1px solid #1e0a47;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.infobox .portrait-box {
-  margin-bottom: 1rem;
-}
-
-.infobox .portrait {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 4px;
-}
-
-.infobox table {
-  width: 100%;
-  font-size: 0.95rem;
-}
-
-.infobox th {
-  text-align: left;
-  padding: 0.3rem 0;
-  font-weight: 600;
-  width: 40%;
-}
-
-.infobox td {
-  padding: 0.3rem 0;
-}
-
-.character-main {
-  min-width: 0;
-}
-
-.character-header h1 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-}
-
-@media (max-width: 768px) {
   .character-layout {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
   }
-  
+
+  .character-layout .character-main.full-width {
+    grid-column: 1 / -1;
+  }
+
   .infobox-sidebar {
-    position: static;
-    order: -1;
+    position: sticky;
+    top: 1rem;
+    align-self: start;
+    z-index: 100;
+  }
+
+  .infobox {
+    background: #0c0028;
+    border: 1px solid #1e0a47;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .infobox .portrait-box {
+    margin-bottom: 1rem;
+  }
+
+  .infobox .portrait {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+
+  .infobox table {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .infobox th {
+    text-align: left;
+    padding: 0.3rem 0;
+    font-weight: 600;
+    width: 40%;
+  }
+
+  .infobox td {
+    padding: 0.3rem 0;
+  }
+
+  .character-main {
+    min-width: 0;
+  }
+
+  .character-header h1 {
+    margin-top: 0;
     margin-bottom: 1.5rem;
   }
-}
 
-.tab-btn {
-  cursor: pointer;
-  padding: 0.4em 0.8em;
-  border: none;
-  background: none;
-  color: rgba(255, 255, 255, 0.30);
-  transition: color 0.2s ease, border-bottom-color 0.2s ease;
-}
+  @media (max-width: 768px) {
+    .character-layout {
+      grid-template-columns: 1fr;
+    }
 
-.tab-btn:hover {
-  color: rgba(255, 255, 255, 0.85);
-}
+    .infobox-sidebar {
+      position: static;
+      order: -1;
+      margin-bottom: 1.5rem;
+    }
+  }
 
-.tab-btn.active {
-  color: #fff;
-  font-weight: bold;
-  border-bottom: 2px solid currentColor;
-}
+  .tab-btn {
+    cursor: pointer;
+    padding: 0.4em 0.8em;
+    border: none;
+    background: none;
+    color: rgba(255, 255, 255, 0.30);
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  }
 
-.tab-content { display: none; }
-.tab-content.active { display: block; }
-.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  .tab-btn:hover {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .tab-btn.active {
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid currentColor;
+  }
+
+  .tab-content {
+    display: none;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  .sr-only {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
 </style>

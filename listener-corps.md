@@ -7,7 +7,7 @@ title: "Listener Corps"
     <table class="infobox">
       <tr>
         <td colspan="2" style="text-align:center; padding-bottom:10px;">
-          <img src="{{ '/assets/images/listener-corps.png' | relative_url }}"
+          <img src="{{ '/assets/images/insignias/listener-corps.png' | relative_url }}"
  alt="Listener Corps Emblem" style="width:280px; border-radius:0.5rem;">
         </td>
       </tr>
