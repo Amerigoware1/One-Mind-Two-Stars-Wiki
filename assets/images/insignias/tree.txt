@@ -1,0 +1,15 @@
+    admin.webp
+    agri.webp
+    athletic.webp
+    bridge.webp
+    comm.webp
+    cult-rel.webp
+    energy.webp
+    engi-infra.webp
+    environ.webp
+    log-trans.webp
+    med.webp
+    orb-sys.webp
+    sci-tech.webp
+    security.webp
+

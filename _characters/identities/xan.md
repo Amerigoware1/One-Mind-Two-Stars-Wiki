@@ -14,22 +14,22 @@ hair:
 colors:
   - "Skin tone: #f5d5c5"
   - "Hair tone: #3a2a20"
-  - "Clothing: muted blues, silvers, bismuth iridescence"
+  - "Clothing: blacks, silvers, cryo-silk comfort"
 
 outfits:
-  - "Everyday: tunic with utility belt"
+  - "Everyday: tunic, romper"
   - "Formal: Listener Corps uniform with acoustic insignia"
-  - "Cultural: Ares settlement casual wear, layered fabrics"
+  - "Cultural: Ares settlement casual wear (cryo-silk), layered fabrics"
 
 props:
   - "Bismuth-plated glockenspiel (Book 3 breakthrough)"
   - "Acoustic interface tools"
-  - "Resonance Stewardship Program insignia (Book 5)"
+  - "Listener Corps/Resonance Stewardship Program insignia (Book 5)"
 
 scene:
   - "Home: Carisco family dwelling in New Eden"
   - "Workplace: Listener Corps acoustic labs"
-  - "Cultural: Ares settlement sites"
+  - "Cultural: Ares settlement sites, cave system"
 
 expressions:
   - "Neutral: calm, observant"
