@@ -1,0 +1,105 @@
+<!-- 1x in <head> — html2canvas CDN. Or self-host it. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<!-- 1x at end of <body> -->
+<script>
+(function () {
+  const btn = document.getElementById('download-sheet-btn');
+  if (!btn) return; // page without the button: do nothing, no error
+
+  let outputFolderHandle = null;
+
+  function openHandleDB() {
+    return new Promise((res, rej) => {
+      const req = indexedDB.open('fs-handles', 1);
+      req.onupgradeneeded = () => req.result.createObjectStore('handles');
+      req.onsuccess = () => res(req.result);
+      req.onerror = () => rej(req.error);
+    });
+  }
+  async function getSavedHandle() {
+    const db = await openHandleDB();
+    return new Promise(res => {
+      const tx = db.transaction('handles', 'readonly').objectStore('handles').get('exportDir');
+      tx.onsuccess = () => res(tx.result || null);
+    });
+  }
+  async function saveHandle(h) {
+    const db = await openHandleDB();
+    return new Promise(res => {
+      db.transaction('handles', 'readwrite').objectStore('handles').put(h, 'exportDir')
+        .onsuccess = () => res();
+    });
+  }
+
+  btn.addEventListener('click', async function () {
+    outputFolderHandle = await getSavedHandle();
+
+    if (!outputFolderHandle) {
+      outputFolderHandle = await window.showDirectoryPicker({ mode: 'readwrite' });
+      await saveHandle(outputFolderHandle);
+    } else if ((await outputFolderHandle.queryPermission({ mode: 'readwrite' })) !== 'granted') {
+      const perm = await outputFolderHandle.requestPermission({ mode: 'readwrite' });
+      if (perm !== 'granted') { console.warn('Write permission denied.'); return; }
+    }
+
+    const gridElement = document.getElementById('identity-sheet-container');
+    if (!gridElement) { console.error('identity-sheet-container not found'); return; }
+
+    // Preload images so html2canvas measures final layout
+    await Promise.all([...gridElement.querySelectorAll('img')].map(img =>
+      img.complete && img.naturalWidth
+        ? Promise.resolve()
+        : new Promise(res => { img.onload = res; img.onerror = res; })
+    ));
+    await new Promise(r => requestAnimationFrame(r));
+
+    // Off-screen clone to bypass ancestor overflow / transforms
+    const clone = gridElement.cloneNode(true);
+    clone.style.position = 'fixed';
+    clone.style.top = '-10000px';
+    clone.style.left = '0';
+    clone.style.margin = '0';
+    clone.style.zIndex = '-1';
+    document.body.appendChild(clone);
+    await Promise.all([...clone.querySelectorAll('img')].map(img =>
+      img.complete && img.naturalWidth
+        ? Promise.resolve()
+        : new Promise(res => { img.onload = res; img.onerror = res; })
+    ));
+    await new Promise(r => requestAnimationFrame(r));
+
+    const rect = clone.getBoundingClientRect();
+    const w = Math.ceil(rect.width);
+    const h = Math.ceil(rect.height);
+
+    let canvas;
+    try {
+      canvas = await html2canvas(clone, {
+        useCORS: true,
+        scale: 2,
+        backgroundColor: '#0f0a1c',
+        width: w,
+        height: h,
+        windowWidth: w,
+        windowHeight: h,
+        x: 0,
+        y: 0,
+        scrollX: 0,
+        scrollY: 0
+      });
+    } finally {
+      clone.remove();
+    }
+
+    canvas.toBlob(async (blob) => {
+      const fileName = '{{ page.character | default: "character" }}-identity-sheet.webp';
+      const fileHandle = await outputFolderHandle.getFileHandle(fileName, { create: true });
+      const writable = await fileHandle.createWritable();
+      await writable.write(blob);
+      await writable.close();
+      console.log(`Saved ${fileName} to ${outputFolderHandle.name}!`);
+    }, 'image/webp', 1.0);
+  });
+})();
+</script>

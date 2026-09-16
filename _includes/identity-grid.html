@@ -87,9 +87,9 @@
       // 1. Wait for every <img> to actually decode.
       const imgs = gridElement.querySelectorAll('img');
       await Promise.all([...imgs].map(img =>
-        img.complete && img.naturalWidth
-          ? Promise.resolve()
-          : new Promise(res => { img.onload = res; img.onerror = res; })
+        img.complete
+        ? Promise.resolve()
+        : new Promise(res => { img.onload = res; img.onerror = res; })
       ));
 
       // 2. One frame for reflow after decode.
