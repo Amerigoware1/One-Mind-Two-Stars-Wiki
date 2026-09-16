@@ -37,3 +37,5 @@ expressions:
   - "Afraid: wide eyes, defensive posture"
   - "Determined: focused gaze, upright stance"
 ---
+
+- {% include identity-grid.html %}
