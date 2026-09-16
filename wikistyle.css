@@ -1601,20 +1601,16 @@ text-shadow: 0 0 10px var(--glow-violet) }
   }
   .mermaid svg { max-width: 75%; height: auto; }
 
-  .identity-grid {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: repeat(4, 1fr);
+.identity-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
-  max-width: 900px;
-  margin: auto;
 }
 
 .identity-grid .age {
   grid-row: 1;
-  width: 23%;         /* four images fit neatly in one row */
-  height: auto;
-  object-fit: cover;
+  flex: 0 0 150px; 
 }
 
 .identity-grid .anchors {
