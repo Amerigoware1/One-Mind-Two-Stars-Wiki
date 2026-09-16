@@ -7,7 +7,6 @@ portrait-book3: "/assets/images/xan-book3.webp"
 portrait-book4: "/assets/images/xan-book4.webp"
 portrait-book5: "/assets/images/xan-book5.webp"
 affiliation: Carisco Family; Listener Corps (junior); Acoustic Interface Research
-insignia: bridge
 birthday: March 8, 2234
 birthplace: New Eden, Ares
 book1_age: "Unborn"

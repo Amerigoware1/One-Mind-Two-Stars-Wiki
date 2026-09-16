@@ -2,6 +2,7 @@
 layout: identity
 title: Xan Identity Sheet
 character: xan
+insignia: bridge
 first_book: 2
 last_book: 5
 
