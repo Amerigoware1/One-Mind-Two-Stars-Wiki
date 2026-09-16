@@ -55,18 +55,34 @@
 
 <script>
   document.getElementById('download-sheet-btn').addEventListener('click', function () {
-    const gridElement = document.getElementById('identity-sheet-container');
     
-    html2canvas(gridElement, {
-      useCORS: true,
-      backgroundColor: '#0f0a1c', // Matches dark wiki background
-      scale: 2 // High DPI export for AI image generators
-    }).then(canvas => {
-      // const link = document.createElement('a');
-      const link = "assets\images\identity"
-      link.download = '{{ page.character }}-identity-sheet.png';
-      link.href = canvas.toDataURL('image/png');
-      link.click();
-    });
-  });
+    let outputFolderHandle = "{{'assets/images//' | relative_url}}"; // Default output folder
+
+    // Call this once (e.g., via a "Select Export Folder" button)
+    async function selectFolder() {
+      outputFolderHandle = await window.showDirectoryPicker();
+    }
+
+    async function exportToWebp() {
+      if (!outputFolderHandle) {
+        // Prompt to pick directory if not already selected
+        outputFolderHandle = await window.showDirectoryPicker();
+      }
+
+      const gridElement = document.getElementById('identity-sheet-container');
+      const canvas = await html2canvas(gridElement, { useCORS: true, scale: 2 });
+      
+      // Convert canvas to WebP Blob
+      canvas.toBlob(async (blob) => {
+        const fileName = '{{ page.character }}-identity.webp';
+        
+        // Create/overwrite file directly inside selected directory handle
+        const fileHandle = await outputFolderHandle.getFileHandle(fileName, { create: true });
+        const writable = await fileHandle.createWritable();
+        await writable.write(blob);
+        await writable.close();
+        
+        console.log(`Saved ${fileName} directly to selected folder!`);
+      }, 'image/webp', 0.92);
+    }
 </script>
