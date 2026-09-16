@@ -54,18 +54,20 @@ layout: default
     </aside>
     {%- endif -%}
 
-    <main class="character-main {% unless is_character_page %}full-width{% endunless %}">
+<main class="character-main {% unless is_character_page %}full-width{% endunless %}">
       <div class="character-body" data-layout="{{ page.layout }}">
         {{ content }}
+
+        <!-- Automatically rendered on every character page -->
+        {% assign char_id = page.character | default: page.slug %}
+        {% if char_id %}
+          <div class="identity-sheet">
+            <a href="{{ '/characters/identities/' | append: char_id | append: '.html' | relative_url }}">Identity Sheet</a>
+            <img src="{{ '/assets/images/identity/' | append: char_id | append: '-identity-sheet.webp' | relative_url }}" alt="{{ page.title | escape }} Identity Sheet">
+          </div>
+        {% endif %}
       </div>
     </main>
-      <!-- Automatically rendered on every character page -->
-      {% if page.character %}
-        <div class="identity-sheet">
-          <a href="{{ '/characters/identities/' | append: page.character | append: '.html' | relative_url }}">Identity</a>
-          <img src="{{ '/assets/images/identity/' | append: page.character | append: '-identity-sheet.webp' | relative_url }}" alt="{{ page.title | escape }} Identity Sheet">
-        </div>
-      {% endif %}
   </div>
 </div>
 

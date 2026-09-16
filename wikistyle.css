@@ -2200,7 +2200,19 @@ hr {
   box-sizing: border-box;            /* keep padding INSIDE the measured width */
   /* min-width intentionally omitted — we let JS measure */
 }
+.identity-sheet a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
 
+.identity-sheet img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
 .identity-grid .age {
   width: 150px;
   aspect-ratio: 2 / 3;
