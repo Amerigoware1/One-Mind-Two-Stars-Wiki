@@ -55,41 +55,42 @@
 
 <script>
   document.getElementById('download-sheet-btn').addEventListener('click', function () {
-    
- //"{{'assets/images//' | relative_url}}"; // Default output folder
 
+    let outputFolderHandle = "{{'assets/images/identity/' | relative_url}}"; // Default output folder
 
-let outputFolderHandle = null;
+    // Call this once (e.g., via a "Select Export Folder" button)
+/*     async function selectFolder() {
+      outputFolderHandle = await window.showDirectoryPicker();
+    } */
 
-// Call this once (e.g., via a "Select Export Folder" button)
-async function selectFolder() {
-  outputFolderHandle = await window.showDirectoryPicker();
-}
+    async function exportToWebp() {
+      if (!outputFolderHandle) {
+        // Prompt to pick directory if not already selected
+        outputFolderHandle = await window.showDirectoryPicker();
+      }
 
-async function exportToWebp() {
-  if (!outputFolderHandle) {
-    // Prompt to pick directory if not already selected
-    outputFolderHandle = await window.showDirectoryPicker();
-  }
+      const gridElement = document.getElementById('identity-sheet-container');
+      const canvas = await html2canvas(gridElement, {
+        useCORS: true,
+        scale: 2,
+        backgroundColor: '#0f0a1c' // Prevents rendering on default white
+      });
 
-  const gridElement = document.getElementById('identity-sheet-container');
-  const canvas = await html2canvas(gridElement, { useCORS: true, scale: 2 });
-  
-  // Convert canvas to WebP Blob
-  canvas.toBlob(async (blob) => {
-    const fileName = '{{ page.character }}-identity-sheet.webp';
-    
-    // Create/overwrite file directly inside selected directory handle
-    const fileHandle = await outputFolderHandle.getFileHandle(fileName, { create: true });
-    const writable = await fileHandle.createWritable();
-    await writable.write(blob);
-    await writable.close();
-    
-    console.log(`Saved ${fileName} directly to selected folder!`);
-  }, 'image/webp', 1.0);
-}
+      // Convert canvas to WebP Blob
+      canvas.toBlob(async (blob) => {
+        const fileName = '{{ page.character }}-identity-sheet.webp';
 
-  // Call the export function
-  exportToWebp();
-});
+        // Create/overwrite file directly inside selected directory handle
+        const fileHandle = await outputFolderHandle.getFileHandle(fileName, { create: true });
+        const writable = await fileHandle.createWritable();
+        await writable.write(blob);
+        await writable.close();
+
+        console.log(`Saved ${fileName} directly to selected folder!`);
+      }, 'image/webp', 1.0);
+    }
+
+    // Call the export function
+    exportToWebp();
+  });
 </script>

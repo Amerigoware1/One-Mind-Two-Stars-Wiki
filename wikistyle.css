@@ -2191,18 +2191,23 @@ hr {
 .identity-grid {
   display: grid;
   grid-template-columns: repeat(5, 150px);
-  /* five fixed-width columns */
   gap: 10px;
   justify-content: center;
-  /* center the row */
   margin: auto;
+  padding: 24px;              /* Adds border padding to the exported PNG/WebP */
+  background-color: #0f0a1c;  /* Matches your dark site theme */
+  border-radius: 8px;
 }
 
 .identity-grid .age {
   width: 150px;
-  /* fixed width */
-  height: auto;
+  aspect-ratio: 2 / 3;        /* Forces empty slots to match real image heights */
   object-fit: cover;
+  border-radius: 4px;
+}
+
+.identity-grid .empty-slot {
+  visibility: hidden;         /* Preserves column space without rendering content */
 }
 
 .identity-grid .anchors {
@@ -2218,12 +2223,6 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.identity-grid .empty-slot {
-  width: 150px;
-  visibility: hidden;
-  /* Maintains 5-column structure while suppressing missing images */
 }
 
 .grid-actions {
