@@ -1,4 +1,11 @@
-<div class="identity-grid">
+<!-- html2canvas CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<div class="grid-actions">
+  <button id="download-sheet-btn" class="export-btn">📸 Save Sheet as PNG</button>
+</div>
+
+<div id="identity-sheet-container" class="identity-grid">
   <!-- Age Progression (Books 1 through 5) -->
   {% for i in (1..5) %}
     {% if page.first_book and i < page.first_book %}
@@ -44,3 +51,21 @@
     <div><strong>Scene:</strong> {{ page.scene | join: " • " }}</div>
     <div><strong>Expressions:</strong> {{ page.expressions | join: " • " }}</div>
   </div>
+</div>
+
+<script>
+  document.getElementById('download-sheet-btn').addEventListener('click', function () {
+    const gridElement = document.getElementById('identity-sheet-container');
+    
+    html2canvas(gridElement, {
+      useCORS: true,
+      backgroundColor: '#0f0a1c', // Matches dark wiki background
+      scale: 2 // High DPI export for AI image generators
+    }).then(canvas => {
+      const link = document.createElement('a');
+      link.download = '{{ page.character }}-identity-sheet.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    });
+  });
+</script>

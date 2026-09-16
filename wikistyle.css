@@ -1629,8 +1629,29 @@ text-shadow: 0 0 10px var(--glow-violet) }
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .identity-grid .empty-slot {
   width: 150px;
   visibility: hidden; /* Maintains 5-column structure while suppressing missing images */
   }
+
+  .grid-actions {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.export-btn {
+  background-color: #6c5ce7;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease-in-out;
+}
+
+.export-btn:hover {
+  background-color: #a29bfe;
+}
