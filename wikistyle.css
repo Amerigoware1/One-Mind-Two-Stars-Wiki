@@ -2242,8 +2242,8 @@ hr {
 }
 
 .identity-grid .insignia-box {
-  width: 50px;
-  height: 50px;                 /* Force exact 50x50px square dimensions */
+  width: 200px;
+  height: 200px;                 /* Force exact 50x50px square dimensions */
   margin-top: 10px;
 }
 
