@@ -95,66 +95,102 @@
   });
 </script> -->
 <script>
-// --- Handle persistence helpers ---
-async function getSavedHandle() {
-  const db = await new Promise((res, rej) => {
-    const req = indexedDB.open('fs-handles', 1);
-    req.onupgradeneeded = () => req.result.createObjectStore('handles');
-    req.onsuccess = () => res(req.result);
-    req.onerror = () => rej(req.error);
-  });
-  return new Promise((res) => {
-    const tx = db.transaction('handles', 'readonly').objectStore('handles').get('exportDir');
-    tx.onsuccess = () => res(tx.result || null);
-  });
-}
+  document.getElementById('download-sheet-btn').addEventListener('click', async function () {
+    // Directory handle persistence (IndexedDB) — see note below.
+    // The path itself CANNOT be hardcoded; the File System Access API
+    // always requires an explicit user gesture to grant directory access.
+    let outputFolderHandle = await getSavedHandle();
 
-async function saveHandle(handle) {
-  const db = await new Promise((res, rej) => {
-    const req = indexedDB.open('fs-handles', 1);
-    req.onupgradeneeded = () => req.result.createObjectStore('handles');
-    req.onsuccess = () => res(req.result);
-    req.onerror = () => rej(req.error);
-  });
-  const tx = db.transaction('handles', 'readwrite').objectStore('handles').put(handle, 'exportDir');
-  return new Promise((res) => { tx.onsuccess = res; });
-}
-
-// --- Get a usable handle: reuse saved one, or ask once ---
-async function getOutputFolder() {
-  let handle = await getSavedHandle();
-
-  if (handle) {
-    // Re-verify permission without showing the picker
-    if ((await handle.queryPermission({ mode: 'readwrite' })) === 'granted' ||
-        (await handle.requestPermission({ mode: 'readwrite' })) === 'granted') {
-      return handle;
+    // Call this once via a "Select Export Folder" button if you want to
+    // prime the handle without downloading. Otherwise the user is
+    // prompted on first export only.
+    async function selectFolder() {
+      outputFolderHandle = await window.showDirectoryPicker({ mode: 'readwrite' });
+      await saveHandle(outputFolderHandle);
     }
-  }
 
-  // First time (or permission revoked): must show the picker
-  handle = await window.showDirectoryPicker({ mode: 'readwrite' });
-  await saveHandle(handle);
-  return handle;
-}
+    async function exportToWebp() {
+      if (!outputFolderHandle) {
+        outputFolderHandle = await window.showDirectoryPicker({ mode: 'readwrite' });
+        await saveHandle(outputFolderHandle);
+      } else if ((await outputFolderHandle.queryPermission({ mode: 'readwrite' })) !== 'granted') {
+        const perm = await outputFolderHandle.requestPermission({ mode: 'readwrite' });
+        if (perm !== 'granted') {
+          console.warn('Write permission denied for the saved folder.');
+          return;
+        }
+      }
 
-document.getElementById('download-sheet-btn').addEventListener('click', async () => {
-  const outputFolderHandle = await getOutputFolder();
+      const gridElement = document.getElementById('identity-sheet-container');
 
-  const gridElement = document.getElementById('identity-sheet-container');
-  const canvas = await html2canvas(gridElement, {
-    useCORS: true,
-    scale: 2,
-    backgroundColor: '#0f0a1c'
+      // 1. Wait for every <img> inside the grid to actually load —
+      //    base64 / CORS images can still be decoding when html2canvas
+      //    measures layout, which produces clipped-looking output.
+      const imgs = gridElement.querySelectorAll('img');
+      await Promise.all([...imgs].map(img =>
+        img.complete && img.naturalWidth
+          ? Promise.resolve()
+          : new Promise(res => { img.onload = res; img.onerror = res; })
+      ));
+
+      // 2. Give the browser one frame to reflow after decoding.
+      await new Promise(r => requestAnimationFrame(r));
+
+      // 3. Capture the grid's REAL size, not the visible viewport.
+      //    html2canvas defaults windowWidth/Height to innerWidth/Height,
+      //    which is what was clipping the right edge of the grid.
+      const w = gridElement.scrollWidth;
+      const h = gridElement.scrollHeight;
+
+      const canvas = await html2canvas(gridElement, {
+        useCORS: true,
+        scale: 3,                              // 3× density for sharp WebP
+        backgroundColor: '#0f0a1c',
+        width: w,                              // capture exactly this wide
+        height: h,                             // …and this tall
+        windowWidth: w,                        // virtual viewport that fits it
+        windowHeight: h,
+        x: 0,
+        y: 0,
+        scrollX: 0,
+        scrollY: 0
+      });
+
+      // Convert canvas to WebP Blob and write into the saved folder.
+      canvas.toBlob(async (blob) => {
+        const fileName = '{{ page.character }}-identity-sheet.webp';
+        const fileHandle = await outputFolderHandle.getFileHandle(fileName, { create: true });
+        const writable = await fileHandle.createWritable();
+        await writable.write(blob);
+        await writable.close();
+        console.log(`Saved ${fileName} directly to ${outputFolderHandle.name}!`);
+      }, 'image/webp', 1.0);
+    }
+
+    exportToWebp();
   });
 
-  canvas.toBlob(async (blob) => {
-    const fileName = '{{ page.character }}-identity-sheet.webp';
-    const fileHandle = await outputFolderHandle.getFileHandle(fileName, { create: true });
-    const writable = await fileHandle.createWritable();
-    await writable.write(blob);
-    await writable.close();
-    console.log(`Saved ${fileName} to ${outputFolderHandle.name}`);
-  }, 'image/webp', 1.0);
-});
+  // ---- IndexedDB persistence helpers (reuse handle across sessions) ----
+  function openHandleDB() {
+    return new Promise((res, rej) => {
+      const req = indexedDB.open('fs-handles', 1);
+      req.onupgradeneeded = () => req.result.createObjectStore('handles');
+      req.onsuccess = () => res(req.result);
+      req.onerror = () => rej(req.error);
+    });
+  }
+  async function getSavedHandle() {
+    const db = await openHandleDB();
+    return new Promise(res => {
+      const tx = db.transaction('handles', 'readonly').objectStore('handles').get('exportDir');
+      tx.onsuccess = () => res(tx.result || null);
+    });
+  }
+  async function saveHandle(handle) {
+    const db = await openHandleDB();
+    return new Promise(res => {
+      const tx = db.transaction('handles', 'readwrite').objectStore('handles').put(handle, 'exportDir');
+      tx.onsuccess = () => res();
+    });
+  }
 </script>
