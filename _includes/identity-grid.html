@@ -56,7 +56,7 @@
 <script>
   document.getElementById('download-sheet-btn').addEventListener('click', function () {
     
-    let outputFolderHandle = "{{'assets/images//' | relative_url}}"; // Default output folder
+    let outputFolderHandle = null; //"{{'assets/images//' | relative_url}}"; // Default output folder
 
     // Call this once (e.g., via a "Select Export Folder" button)
     async function selectFolder() {
