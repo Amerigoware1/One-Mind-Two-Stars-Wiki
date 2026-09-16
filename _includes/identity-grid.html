@@ -62,9 +62,10 @@
       backgroundColor: '#0f0a1c', // Matches dark wiki background
       scale: 2 // High DPI export for AI image generators
     }).then(canvas => {
-      const link = document.createElement('a');
-      link.download = '{{ page.character }}-identity-sheet.png';
-      link.href = canvas.toDataURL('image/png');
+      // const link = document.createElement('a');
+      const link = "assets\images\identity"
+      link.download = '{{ page.character }}-identity-sheet.webp';
+      link.href = canvas.toDataURL('image/webp');
       link.click();
     });
   });
