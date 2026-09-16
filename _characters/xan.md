@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Alexander "Xan" Carisco
+title: Alexander (Xan) Carisco
 portrait: "/assets/images/xan-book5.webp"
 portrait-book2: "/assets/images/xan-book2.webp"
 portrait-book3: "/assets/images/xan-book3.webp"
@@ -154,11 +154,3 @@ Xan's journey centers on finding his own voice in a family defined by extraordin
 </div></div>
 
 {% include story-arcs.html %}
-
-## Identity Sheet
-
-  <div class="identity-sheet">
-    <a href="{{ '/characters/identities/xan.html' | relative_url }}">Identity</a>
-    <img src="{{ 'assets/images/identity/xan-identity-sheet.webp' | relative_url }}" alt="Xan Identity Sheet">
-  </div>
-

@@ -59,7 +59,13 @@ layout: default
         {{ content }}
       </div>
     </main>
-
+      <!-- Automatically rendered on every character page -->
+      {% if page.character %}
+        <div class="identity-sheet">
+          <a href="{{ '/characters/identities/' | append: page.character | append: '.html' | relative_url }}">Identity</a>
+          <img src="{{ '/assets/images/identity/' | append: page.character | append: '-identity-sheet.webp' | relative_url }}" alt="{{ page.title | escape }} Identity Sheet">
+        </div>
+      {% endif %}
   </div>
 </div>
 
