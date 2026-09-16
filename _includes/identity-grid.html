@@ -1,22 +1,47 @@
 <div class="identity-grid">
-  <!-- Age progression -->
-  <img class="age" src="{{ '/assets/images/' | append: page.character | append: '-book1.webp' | relative_url }}" alt="{{ page.character }} Book 1">
-  <img class="age" src="{{ '/assets/images/' | append: page.character | append: '-book2.webp' | relative_url }}" alt="{{ page.character }} Book 2">
-  <img class="age" src="{{ '/assets/images/' | append: page.character | append: '-book3.webp' | relative_url }}" alt="{{ page.character }} Book 3">
-  <img class="age" src="{{ '/assets/images/' | append: page.character | append: '-book4.webp' | relative_url }}" alt="{{ page.character }} Book 4">
-  <img class="age" src="{{ '/assets/images/' | append: page.character | append: '-book5.webp' | relative_url }}" alt="{{ page.character }} Book 5">
+  <!-- Age Progression (Books 1 through 5) -->
+  {% for i in (1..5) %}
+    {% if page.first_book and i < page.first_book %}
+      <div class="age empty-slot"></div>
+    {% elsif page.last_book and i > page.last_book %}
+      <div class="age empty-slot"></div>
+    {% else %}
+      <img class="age" src="{{ '/assets/images/' | append: page.character | append: '-book' | append: i | append: '.webp' | relative_url }}" alt="{{ page.character }} Book {{ i }}">
+    {% endif %}
+  {% endfor %}
 
-  <!-- Identity anchors -->
+  <!-- Identity Anchors -->
   <div class="anchors">
-    <div>Hair Styles</div>
-    <div>Color Swatches</div>
-    <div>Outfit Silhouettes</div>
+    <div>
+      <strong>Hair Styles</strong>
+      <ul>
+        {% for item in page.hair %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <strong>Color Swatches</strong>
+      <ul>
+        {% for item in page.colors %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <strong>Outfit Silhouettes</strong>
+      <ul>
+        {% for item in page.outfits %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 
-  <!-- Context & symbols -->
+  <!-- Context & Symbols -->
   <div class="context">
-    <div>Props:</div>
-    <div>Scene:</div>
-    <div>Expressions:</div>
+    <div><strong>Props:</strong> {{ page.props | join: " • " }}</div>
+    <div><strong>Scene:</strong> {{ page.scene | join: " • " }}</div>
+    <div><strong>Expressions:</strong> {{ page.expressions | join: " • " }}</div>
   </div>
 </div>

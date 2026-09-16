@@ -1629,3 +1629,8 @@ text-shadow: 0 0 10px var(--glow-violet) }
     flex-direction: column;
     gap: 10px;
   }
+  
+  .identity-grid .empty-slot {
+  width: 150px;
+  visibility: hidden; /* Maintains 5-column structure while suppressing missing images */
+  }
