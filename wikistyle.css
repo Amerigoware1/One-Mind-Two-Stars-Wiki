@@ -1602,16 +1602,19 @@ text-shadow: 0 0 10px var(--glow-violet) }
   .mermaid svg { max-width: 75%; height: auto; }
 
 .identity-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 150px); /* five fixed-width columns */
   gap: 10px;
+  justify-content: center; /* center the row */
+  margin: auto;
 }
 
 .identity-grid .age {
-  grid-row: 1;
-  flex: 0 0 150px; 
+  width: 150px;   /* fixed width */
+  height: auto;
+  object-fit: cover;
 }
+
 
 .identity-grid .anchors {
   grid-row: 2;
