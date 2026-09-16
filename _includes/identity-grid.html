@@ -8,54 +8,60 @@
 <div id="identity-sheet-container" class="identity-grid">
   <!-- Age Progression (Books 1 through 5) -->
   {% for i in (1..5) %}
-    {% if page.first_book and i < page.first_book %}
-      <div class="age empty-slot"></div>
-    {% elsif page.last_book and i > page.last_book %}
-      <div class="age empty-slot"></div>
-    {% else %}
-      <img class="age" src="{{ '/assets/images/' | append: page.character | append: '-book' | append: i | append: '.webp' | relative_url }}" alt="{{ page.character }} Book {{ i }}">
-    {% endif %}
-  {% endfor %}
-
-  <!-- Identity Anchors -->
-  <div class="anchors">
-    <div>
-      <strong>Hair Styles</strong>
-      <ul>
-        {% for item in page.hair %}
-          <li>{{ item }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div>
-      <strong>Color Swatches</strong>
-      <ul>
-        {% for item in page.colors %}
-          <li>{{ item }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div>
-      <strong>Outfit Silhouettes</strong>
-      <ul>
-        {% for item in page.outfits %}
-          <li>{{ item }}</li>
-        {% endfor %}
-        {% if page.insignia %}
-  <div class="insignia-box">
-    <img src="{{ '/assets/images/insignias/' | append: page.insignia | append: '.webp' | relative_url }}" alt="{{ page.insignia | replace: '-', ' ' | capitalize }} Insignia" class="insignia-badge">
-  </div>
+  {% if page.first_book and i < page.first_book %} <div class="age empty-slot">
+</div>
+{% elsif page.last_book and i > page.last_book %}
+<div class="age empty-slot"></div>
+{% else %}
+<img class="age"
+  src="{{ '/assets/images/' | append: page.character | append: '-book' | append: i | append: '.webp' | relative_url }}"
+  alt="{{ page.character }} Book {{ i }}">
 {% endif %}
-      </ul>
-    </div>
-  </div>
+{% endfor %}
 
-  <!-- Context & Symbols -->
-  <div class="context">
-    <div><strong>Props:</strong> {{ page.props | join: " • " }}</div>
-    <div><strong>Scene:</strong> {{ page.scene | join: " • " }}</div>
-    <div><strong>Expressions:</strong> {{ page.expressions | join: " • " }}</div>
+<!-- Identity Anchors -->
+<div class="anchors">
+  <div>
+    <strong>Hair Styles</strong>
+    <ul>
+      {% for item in page.hair %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
   </div>
+  <div>
+    <strong>Color Swatches</strong>
+    <ul>
+      {% for item in page.colors %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div>
+    <strong>Outfit Silhouettes</strong>
+    <ul>
+      {% for item in page.outfits %}
+      <li>{{ item }}</li>
+      {% endfor %}
+
+      {% if page.insignia %}
+      <li class="insignia-item">
+        <div class="insignia-box">
+          <img src="{{ '/assets/images/insignias/' | append: page.insignia | append: '.webp' | relative_url }}"
+            alt="{{ page.insignia | replace: '-', ' ' | capitalize }} Insignia" class="insignia-badge">
+        </div>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+</div>
+
+<!-- Context & Symbols -->
+<div class="context">
+  <div><strong>Props:</strong> {{ page.props | join: " • " }}</div>
+  <div><strong>Scene:</strong> {{ page.scene | join: " • " }}</div>
+  <div><strong>Expressions:</strong> {{ page.expressions | join: " • " }}</div>
+</div>
 </div>
 
 <script>
@@ -93,7 +99,7 @@
       //    Use getBoundingClientRect, not scrollWidth/scrollHeight,
       //    because scrollWidth can lie if an ancestor has overflow:hidden.
       const rect = gridElement.getBoundingClientRect();
-      const width  = Math.ceil(rect.width);
+      const width = Math.ceil(rect.width);
       const height = Math.ceil(rect.height);
 
       // 4. Off-screen clone technique (fallback that bypasses ancestor
@@ -116,7 +122,7 @@
       await new Promise(r => requestAnimationFrame(r));
 
       const cRect = clone.getBoundingClientRect();
-      const cWidth  = Math.ceil(cRect.width);
+      const cWidth = Math.ceil(cRect.width);
       const cHeight = Math.ceil(cRect.height);
 
       let canvas;
