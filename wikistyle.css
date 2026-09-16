@@ -1612,8 +1612,7 @@ text-shadow: 0 0 10px var(--glow-violet) }
 
 .identity-grid .age {
   grid-row: 1;
-  max-width: 150px; /* or a percentage like 23% in a flex row */
-  width: 100%;
+  width: 23%;         /* four images fit neatly in one row */
   height: auto;
   object-fit: cover;
 }
