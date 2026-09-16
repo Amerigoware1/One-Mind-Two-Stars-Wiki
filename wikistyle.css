@@ -2194,20 +2194,23 @@ hr {
   gap: 10px;
   justify-content: center;
   margin: auto;
-  padding: 24px;              /* Adds border padding to the exported PNG/WebP */
-  background-color: #0f0a1c;  /* Matches your dark site theme */
+  padding: 24px;
+  background-color: #0f0a1c;
   border-radius: 8px;
+  box-sizing: border-box;            /* keep padding INSIDE the measured width */
+  /* min-width intentionally omitted — we let JS measure */
 }
 
 .identity-grid .age {
   width: 150px;
-  aspect-ratio: 2 / 3;        /* Forces empty slots to match real image heights */
+  aspect-ratio: 2 / 3;
   object-fit: cover;
   border-radius: 4px;
+  display: block;                    /* kill the inline-img baseline gap */
 }
 
 .identity-grid .empty-slot {
-  visibility: hidden;         /* Preserves column space without rendering content */
+  visibility: hidden;
 }
 
 .identity-grid .anchors {
@@ -2215,6 +2218,7 @@ hr {
   grid-column: span 5;
   display: flex;
   justify-content: space-around;
+  min-width: 0;                      /* let flex children shrink properly */
 }
 
 .identity-grid .context {

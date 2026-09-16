@@ -53,57 +53,10 @@
   </div>
 </div>
 
-<!-- <script>
-  document.getElementById('download-sheet-btn').addEventListener('click', function () {
-
-    let outputFolderHandle = "{{'assets/images/identity/' | relative_url}}"; // Default output folder
-
-    // Call this once (e.g., via a "Select Export Folder" button)
-/*     async function selectFolder() {
-      outputFolderHandle = await window.showDirectoryPicker();
-    } */
-
-    async function exportToWebp() {
-      if (!outputFolderHandle) {
-        // Prompt to pick directory if not already selected
-        outputFolderHandle = await window.showDirectoryPicker();
-      }
-
-      const gridElement = document.getElementById('identity-sheet-container');
-      const canvas = await html2canvas(gridElement, {
-        useCORS: true,
-        scale: 2,
-        backgroundColor: '#0f0a1c' // Prevents rendering on default white
-      });
-
-      // Convert canvas to WebP Blob
-      canvas.toBlob(async (blob) => {
-        const fileName = '{{ page.character }}-identity-sheet.webp';
-
-        // Create/overwrite file directly inside selected directory handle
-        const fileHandle = await outputFolderHandle.getFileHandle(fileName, { create: true });
-        const writable = await fileHandle.createWritable();
-        await writable.write(blob);
-        await writable.close();
-
-        console.log(`Saved ${fileName} directly to selected folder!`);
-      }, 'image/webp', 1.0);
-    }
-
-    // Call the export function
-    exportToWebp();
-  });
-</script> -->
 <script>
   document.getElementById('download-sheet-btn').addEventListener('click', async function () {
-    // Directory handle persistence (IndexedDB) — see note below.
-    // The path itself CANNOT be hardcoded; the File System Access API
-    // always requires an explicit user gesture to grant directory access.
     let outputFolderHandle = await getSavedHandle();
 
-    // Call this once via a "Select Export Folder" button if you want to
-    // prime the handle without downloading. Otherwise the user is
-    // prompted on first export only.
     async function selectFolder() {
       outputFolderHandle = await window.showDirectoryPicker({ mode: 'readwrite' });
       await saveHandle(outputFolderHandle);
@@ -115,17 +68,12 @@
         await saveHandle(outputFolderHandle);
       } else if ((await outputFolderHandle.queryPermission({ mode: 'readwrite' })) !== 'granted') {
         const perm = await outputFolderHandle.requestPermission({ mode: 'readwrite' });
-        if (perm !== 'granted') {
-          console.warn('Write permission denied for the saved folder.');
-          return;
-        }
+        if (perm !== 'granted') { console.warn('Write permission denied.'); return; }
       }
 
       const gridElement = document.getElementById('identity-sheet-container');
 
-      // 1. Wait for every <img> inside the grid to actually load —
-      //    base64 / CORS images can still be decoding when html2canvas
-      //    measures layout, which produces clipped-looking output.
+      // 1. Wait for every <img> to actually decode.
       const imgs = gridElement.querySelectorAll('img');
       await Promise.all([...imgs].map(img =>
         img.complete && img.naturalWidth
@@ -133,30 +81,58 @@
           : new Promise(res => { img.onload = res; img.onerror = res; })
       ));
 
-      // 2. Give the browser one frame to reflow after decoding.
+      // 2. One frame for reflow after decode.
       await new Promise(r => requestAnimationFrame(r));
 
-      // 3. Capture the grid's REAL size, not the visible viewport.
-      //    html2canvas defaults windowWidth/Height to innerWidth/Height,
-      //    which is what was clipping the right edge of the grid.
-      const w = gridElement.scrollWidth;
-      const h = gridElement.scrollHeight;
+      // 3. MEASURE the actual rendered size — this is the "magic".
+      //    Use getBoundingClientRect, not scrollWidth/scrollHeight,
+      //    because scrollWidth can lie if an ancestor has overflow:hidden.
+      const rect = gridElement.getBoundingClientRect();
+      const width  = Math.ceil(rect.width);
+      const height = Math.ceil(rect.height);
 
-      const canvas = await html2canvas(gridElement, {
-        useCORS: true,
-        scale: 3,                              // 3× density for sharp WebP
-        backgroundColor: '#0f0a1c',
-        width: w,                              // capture exactly this wide
-        height: h,                             // …and this tall
-        windowWidth: w,                        // virtual viewport that fits it
-        windowHeight: h,
-        x: 0,
-        y: 0,
-        scrollX: 0,
-        scrollY: 0
-      });
+      // 4. Off-screen clone technique (fallback that bypasses ancestor
+      //    overflow, transforms, and stacking-context issues). Drop
+      //    this on top of #identity-sheet-container briefly during capture.
+      const clone = gridElement.cloneNode(true);
+      clone.style.position = 'fixed';
+      clone.style.top = '-10000px';
+      clone.style.left = '0';
+      clone.style.margin = '0';
+      clone.style.zIndex = '-1';
+      document.body.appendChild(clone);
 
-      // Convert canvas to WebP Blob and write into the saved folder.
+      // Re-wait for cloned <img>s (re-using the same sources).
+      await Promise.all([...clone.querySelectorAll('img')].map(img =>
+        img.complete && img.naturalWidth
+          ? Promise.resolve()
+          : new Promise(res => { img.onload = res; img.onerror = res; })
+      ));
+      await new Promise(r => requestAnimationFrame(r));
+
+      const cRect = clone.getBoundingClientRect();
+      const cWidth  = Math.ceil(cRect.width);
+      const cHeight = Math.ceil(cRect.height);
+
+      let canvas;
+      try {
+        canvas = await html2canvas(clone, {
+          useCORS: true,
+          scale: 2,
+          backgroundColor: '#0f0a1c',
+          width: cWidth,
+          height: cHeight,
+          windowWidth: cWidth,
+          windowHeight: cHeight,
+          x: 0,
+          y: 0,
+          scrollX: 0,
+          scrollY: 0
+        });
+      } finally {
+        clone.remove();                // always clean up the clone
+      }
+
       canvas.toBlob(async (blob) => {
         const fileName = '{{ page.character }}-identity-sheet.webp';
         const fileHandle = await outputFolderHandle.getFileHandle(fileName, { create: true });
@@ -170,7 +146,7 @@
     exportToWebp();
   });
 
-  // ---- IndexedDB persistence helpers (reuse handle across sessions) ----
+  // ---- IndexedDB handle persistence ----
   function openHandleDB() {
     return new Promise((res, rej) => {
       const req = indexedDB.open('fs-handles', 1);
