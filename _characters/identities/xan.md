@@ -1,7 +1,11 @@
 ---
-layout: default
+layout: identity
+title: Xan Identity Sheet
+character: xan
 ---
-<!-- 
+
+{% include identity-grid.html %}
+
 # Character Identity Sheet: Alexander "Xan" Carisco
 
 ## Face Anchor
@@ -44,9 +48,9 @@ layout: default
 ## Scene Context
 - Home: Carisco family dwelling in New Eden
 - Workplace: Listener Corps acoustic labs
-- Cultural architecture: Ares settlement structures, Four Rivers Exchange Program sites -->
+- Cultural architecture: Ares settlement structures, Four Rivers Exchange Program sites
 
-## Visual Identity Sheet (Composite)
+<!-- ## Visual Identity Sheet (Composite)
 
 <div class="identity-grid">
   <!-- Age progression -->
@@ -68,4 +72,4 @@ layout: default
     <div>Scene: Carisco dwelling, Listener Corps lab</div>
     <div>Expressions: Neutral, Happy, Angry, Afraid, Determined</div>
   </div>
-</div>
+</div> -->
