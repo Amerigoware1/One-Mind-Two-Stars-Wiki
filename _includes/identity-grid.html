@@ -1,20 +1,22 @@
-<!-- Age progression -->
-<img class="age" src="/assets/images/{{ page.character }}-book1.webp" alt="{{ page.character }} Book 1">
-<img class="age" src="/assets/images/{{ page.character }}-book2.webp" alt="{{ page.character }} Book 2">
-<img class="age" src="/assets/images/{{ page.character }}-book3.webp" alt="{{ page.character }} Book 3">
-<img class="age" src="/assets/images/{{ page.character }}-book4.webp" alt="{{ page.character }} Book 4">
-<img class="age" src="/assets/images/{{ page.character }}-book5.webp" alt="{{ page.character }} Book 5">
+<div class="identity-grid">
+  <!-- Age progression -->
+  <img class="age" src="{{ '/assets/images/' | append: page.character | append: '-book1.webp' | relative_url }}" alt="{{ page.character }} Book 1">
+  <img class="age" src="{{ '/assets/images/' | append: page.character | append: '-book2.webp' | relative_url }}" alt="{{ page.character }} Book 2">
+  <img class="age" src="{{ '/assets/images/' | append: page.character | append: '-book3.webp' | relative_url }}" alt="{{ page.character }} Book 3">
+  <img class="age" src="{{ '/assets/images/' | append: page.character | append: '-book4.webp' | relative_url }}" alt="{{ page.character }} Book 4">
+  <img class="age" src="{{ '/assets/images/' | append: page.character | append: '-book5.webp' | relative_url }}" alt="{{ page.character }} Book 5">
 
-<!-- Identity anchors -->
-<div class="anchors">
-  <div>Hair Styles</div>
-  <div>Color Swatches</div>
-  <div>Outfit Silhouettes</div>
-</div>
+  <!-- Identity anchors -->
+  <div class="anchors">
+    <div>Hair Styles</div>
+    <div>Color Swatches</div>
+    <div>Outfit Silhouettes</div>
+  </div>
 
-<!-- Context & symbols -->
-<div class="context">
-  <div>Props:</div>
-  <div>Scene:</div>
-  <div>Expressions:</div>
+  <!-- Context & symbols -->
+  <div class="context">
+    <div>Props:</div>
+    <div>Scene:</div>
+    <div>Expressions:</div>
+  </div>
 </div>

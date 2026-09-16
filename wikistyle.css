@@ -1601,32 +1601,31 @@ text-shadow: 0 0 10px var(--glow-violet) }
   }
   .mermaid svg { max-width: 75%; height: auto; }
 
-.identity-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 150px); /* five fixed-width columns */
-  gap: 10px;
-  justify-content: center; /* center the row */
-  margin: auto;
-}
+  .identity-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 150px); /* five fixed-width columns */
+    gap: 10px;
+    justify-content: center; /* center the row */
+    margin: auto;
+  }
 
-.identity-grid .age {
-  width: 150px;   /* fixed width */
-  height: auto;
-  object-fit: cover;
-}
+  .identity-grid .age {
+    width: 150px;   /* fixed width */
+    height: auto;
+    object-fit: cover;
+  }
 
+  .identity-grid .anchors {
+    grid-row: 2;
+    grid-column: span 5;
+    display: flex;
+    justify-content: space-around;
+  }
 
-.identity-grid .anchors {
-  grid-row: 2;
-  grid-column: span 4;
-  display: flex;
-  justify-content: space-around;
-}
-
-.identity-grid .context {
-  grid-row: 3;
-  grid-column: span 4;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+  .identity-grid .context {
+    grid-row: 3;
+    grid-column: span 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
