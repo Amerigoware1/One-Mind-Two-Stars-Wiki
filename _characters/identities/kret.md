@@ -4,7 +4,7 @@ title: Dr. Douglas Kret Identity Sheet
 character: kret
 insignia: med
 first_book: 1
-last_book: 3
+last_book: 4
 
 hair:
   - "Prime: meticulously groomed"
