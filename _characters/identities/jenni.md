@@ -4,7 +4,7 @@ title: Jinan 'Jenni' Carisco Identity Sheet
 character: jenni
 insignia: med
 first_book: 1
-last_book: 1
+last_book: 2
 
 hair:
   - "Default: pulled back for fieldwork"
