@@ -112,22 +112,7 @@
       clone.style.margin = '0';
       clone.style.zIndex = '-1';
       document.body.appendChild(clone);
-// --- THE FIX: Force explicit dimensions for html2canvas ---
-      // html2canvas ignores 'aspect-ratio', so we must measure the live, 
-      // perfectly-rendered images and apply exact pixel values to the clone.
-      const originalImages = gridElement.querySelectorAll('img');
-      const clonedImages = clone.querySelectorAll('img');
 
-      originalImages.forEach((origImg, index) => {
-        const rect = origImg.getBoundingClientRect();
-        clonedImages[index].style.width = `${rect.width}px`;
-        clonedImages[index].style.height = `${rect.height}px`;
-        
-        // Explicitly force object-fit inline just to be safe
-        clonedImages[index].style.objectFit = 'cover';
-        clonedImages[index].style.objectPosition = 'top center';
-      });
-      // ----------------------------------------------------------
       // Re-wait for cloned <img>s (re-using the same sources).
       await Promise.all([...clone.querySelectorAll('img')].map(img =>
         img.complete && img.naturalWidth
@@ -135,7 +120,38 @@
           : new Promise(res => { img.onload = res; img.onerror = res; })
       ));
       await new Promise(r => requestAnimationFrame(r));
+// --- THE FIX: The Background-Image Swap Workaround ---
+      // html2canvas fails at 'object-fit', but succeeds with background images.
+      const liveImages = gridElement.querySelectorAll('img');
+      const clonedImages = clone.querySelectorAll('img');
 
+      liveImages.forEach((liveImg, index) => {
+        const rect = liveImg.getBoundingClientRect();
+        const cloneImg = clonedImages[index];
+
+        const bgDiv = document.createElement('div');
+
+        // Apply exact dimensions measured from the live page
+        bgDiv.style.width = `${Math.ceil(rect.width)}px`;
+        bgDiv.style.height = `${Math.ceil(rect.height)}px`;
+
+        // Apply the image as a background so html2canvas renders the crop
+        bgDiv.style.backgroundImage = `url("${liveImg.src}")`;
+        bgDiv.style.backgroundSize = 'cover';
+        bgDiv.style.backgroundPosition = 'top center';
+
+        // Carry over necessary styling from the original image
+        const computedStyles = window.getComputedStyle(liveImg);
+        bgDiv.style.borderRadius = computedStyles.borderRadius;
+        bgDiv.style.boxShadow = computedStyles.boxShadow;
+        bgDiv.style.display = 'block';
+        
+        bgDiv.className = cloneImg.className;
+
+        // Swap the broken img tag for our bulletproof div
+        cloneImg.parentNode.replaceChild(bgDiv, cloneImg);
+      });
+      // -----------------------------------------------------------
       const cRect = clone.getBoundingClientRect();
       const cWidth = Math.ceil(cRect.width);
       const cHeight = Math.ceil(cRect.height);
