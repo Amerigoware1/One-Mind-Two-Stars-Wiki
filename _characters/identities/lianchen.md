@@ -1,7 +1,7 @@
 ---
 layout: identity
 title: Lian Chen Identity Sheet
-character: lianchen
+character: lian
 insignia: environ
 first_book: 1
 last_book: 5
