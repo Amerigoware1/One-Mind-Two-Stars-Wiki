@@ -4,7 +4,7 @@ title: Dr. Lorain Troy Identity Sheet
 character: troy
 insignia: sci-tech
 first_book: 1
-last_book: 3
+last_book: 4
 
 hair:
   - "Default: silver-streaked dark hair, practical but elegant"
