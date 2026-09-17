@@ -2208,10 +2208,15 @@ hr {
 }
 
 .identity-sheet img {
-  max-width: 100%;
-  height: auto;
+  width: 100%; /* Ensures it fills its container block */
+  aspect-ratio: 2 / 3; /* Forces the 2:3 box regardless of original file dimensions */
+  object-fit: cover; /* Zooms and crops to fill the box without squishing */
+  object-position: top center; /* Keeps the face/top of the image in view */
+  
+  /* Your existing styling */
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  display: block; /* Borrowed this from your .age class to kill the baseline gap! */
 }
 
 .identity-grid .age {
