@@ -59,7 +59,7 @@ Chief Hydrological Engineer Lian Chen is a pragmatic and highly skilled engineer
 <div class="card-bg" markdown="1">
 
 ## Physical Description
-Director Chen is a compact, physically fit woman who maintains the efficient posture of a career engineer and station dweller. Her hair is cut short and practically, with streaks of grey. Her expression is often one of focused assessment, and she is rarely seen without a dataslate or stylus in hand. Her attire is strictly utilitarian—standard colony jumpsuits, often with the sleeves rolled up, devoid of personal adornment. Despite her chronological age, life extension therapies keep her biological appearance in her fifties.
+Director Chen is a compact, physically fit woman who maintains the efficient posture of a career engineer and station dweller. Her hair is cut short and practically, with streaks of grey. Her expression is often one of focused assessment, and she is rarely seen without a holopad or stylus in hand. Her attire is strictly utilitarian—standard colony jumpsuits, often with the sleeves rolled up, devoid of personal adornment. Despite her chronological age, life extension therapies keep her biological appearance in her fifties.
 
 </div>
 <div class="card-bg" markdown="1">

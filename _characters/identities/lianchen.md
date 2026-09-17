@@ -22,7 +22,7 @@ outfits:
   - "Cultural: engineering briefings, aquifer sites"
 
 props:
-  - "Dataslate"
+  - "Holopad"
   - "Stylus"
   - "Hydrological models"
   - "Pipeline simulations"
