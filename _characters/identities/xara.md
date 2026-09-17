@@ -4,7 +4,7 @@ title: Xara Kret Identity Sheet
 character: xara
 insignia: med
 first_book: 1
-last_book: 1
+last_book: 2
 
 hair:
   - "Default: soft waves"
