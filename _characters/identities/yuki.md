@@ -1,7 +1,7 @@
 ---
 layout: identity
 title: Dr. Yuki Chen Identity Sheet
-character: chen
+character: yuki
 insignia: med
 first_book: 1
 last_book: 5
