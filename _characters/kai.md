@@ -119,7 +119,7 @@ His weaknesses include:
 - **Jenni & Xara Carisco‑Bowers** – students in defensive tactics; Kai runs scenario drills for them
 - **Sensei Onishi Kisa** – mentor who taught him that control matters more than power
 - **Amara Okonkwo & Leila Al‑Farsi** – cohort peers; regular training partners
-- **Parents Hana & Roberto Vasquez** - his father keeps the VTOL's and shuttles running and his mother leads the exploritory expedition.
+- **Parents: Hana (Mochizuki) & Roberto Vasquez** - His father keeps the VTOLs and shuttles running, and his mother leads the exploratory expedition.
 
 </div>
 <div class="card-bg" markdown="1">

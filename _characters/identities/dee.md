@@ -1,7 +1,7 @@
 ---
 layout: identity
 title: Dee Cruiz Identity Sheet
-character: dee_cruiz
+character: dee
 insignia: comm
 first_book: 1
 last_book: 5
