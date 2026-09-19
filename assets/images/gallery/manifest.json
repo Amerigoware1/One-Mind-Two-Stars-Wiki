@@ -3,7 +3,13 @@
     "file": "baby-celectra.webp",
     "title": "Baby Celectra",
     "description": "Celectra eatting in highchairs.",
-    "tags": ["celectra", "space station", "utopis", "living quarters", "pre-series"],
+    "tags": [
+      "celectra",
+      "space station",
+      "utopis",
+      "living quarters",
+      "pre-series"
+    ],
     "width": 848,
     "height": 1233
   },
@@ -11,7 +17,13 @@
     "file": "gazing-through-port-hole.jpg",
     "title": "Utopis Station Living Room",
     "description": "The Carisco family's living quarters aboard the Utopis space station, featuring a view of Ares.",
-    "tags": ["celectra", "space station", "utopis", "living quarters", "book 1"],
+    "tags": [
+      "celectra",
+      "space station",
+      "utopis",
+      "living quarters",
+      "book 1"
+    ],
     "width": 4096,
     "height": 4096
   },
@@ -19,15 +31,24 @@
     "file": "checkup.webp",
     "title": "Checkup with Dr. Cruiz",
     "description": "A checkup with Dr. Cruiz in the Utopis station medical bay",
-    "tags": ["celectra", "space station", "utopis", "medical bay", "book 1"],
+    "tags": [
+      "celectra",
+      "space station",
+      "utopis",
+      "medical bay",
+      "book 1"
+    ],
     "width": 1024,
     "height": 1536
-  },  
+  },
   {
     "file": "celectra-age8.webp",
     "title": "Celectra at Age 8",
     "description": "Celectra on her 8th birthday in Book 1's epilogue",
-    "tags": ["celectra", "carisco"],
+    "tags": [
+      "celectra",
+      "carisco"
+    ],
     "width": 589,
     "height": 1178
   },
@@ -35,7 +56,11 @@
     "file": "celectra-karate.webp",
     "title": "Celectra karate",
     "description": "Celectra practicing sundome karate",
-    "tags": ["celectra", "carisco", "athletic activities"],
+    "tags": [
+      "celectra",
+      "carisco",
+      "athletic activities"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -43,7 +68,11 @@
     "file": "acrobatics1.webp",
     "title": "Celectra acrobatics",
     "description": "Celectra practicing acrobatics",
-    "tags": ["celectra", "carisco", "athletic activities"],
+    "tags": [
+      "celectra",
+      "carisco",
+      "athletic activities"
+    ],
     "width": 688,
     "height": 1000
   },
@@ -51,7 +80,11 @@
     "file": "dance.webp",
     "title": "Celectra dance",
     "description": "Celectra practicing dance",
-    "tags": ["celectra", "carisco", "athletic activities"],
+    "tags": [
+      "celectra",
+      "carisco",
+      "athletic activities"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -59,7 +92,11 @@
     "file": "gymnastics.webp",
     "title": "Celectra gymnastics",
     "description": "Celectra practicing gymnastics",
-    "tags": ["celectra", "carisco", "athletic activities"],
+    "tags": [
+      "celectra",
+      "carisco",
+      "athletic activities"
+    ],
     "width": 1536,
     "height": 1024
   },
@@ -67,7 +104,11 @@
     "file": "swim.webp",
     "title": "Celectra swimming",
     "description": "Celectra at swim practice",
-    "tags": ["celectra", "carisco", "athletic activities"],
+    "tags": [
+      "celectra",
+      "carisco",
+      "athletic activities"
+    ],
     "width": 915,
     "height": 915
   },
@@ -75,15 +116,22 @@
     "file": "yoga.webp",
     "title": "Celectra yoga",
     "description": "Celectra practicing yoga",
-    "tags": ["celectra", "carisco", "athletic activities"],
+    "tags": [
+      "celectra",
+      "carisco",
+      "athletic activities"
+    ],
     "width": 1024,
     "height": 1024
-  },    
+  },
   {
     "file": "celectra-book2-alt.webp",
     "title": "Celectra at age fourteen",
     "description": "Celectra at age fourteen",
-    "tags": ["celectra", "carisco"],
+    "tags": [
+      "celectra",
+      "carisco"
+    ],
     "width": 832,
     "height": 1213
   },
@@ -91,23 +139,35 @@
     "file": "besties.webp",
     "title": "Celectra at age fifteen",
     "description": "Celectra at age fifteen with Stan and Ananya",
-    "tags": ["celectra", "carisco", "stan", "ananya"],
+    "tags": [
+      "celectra",
+      "carisco",
+      "stan",
+      "ananya"
+    ],
     "width": 1538,
     "height": 1023
-  },  
+  },
   {
     "file": "chilling-age18.webp",
     "title": "Celectra chilling",
     "description": "Celectra relaxing on her bed",
-    "tags": ["celectra", "carisco"],
+    "tags": [
+      "celectra",
+      "carisco"
+    ],
     "width": 1184,
     "height": 864
-  },   
+  },
   {
     "file": "celectra-pregnant.webp",
     "title": "Celectra Pregnant",
     "description": "Celectra carrying twins in her right body.",
-    "tags": ["celectra", "twins", "pregnant"],
+    "tags": [
+      "celectra",
+      "twins",
+      "pregnant"
+    ],
     "width": 1024,
     "height": 1024
   },
@@ -115,7 +175,13 @@
     "file": "dancing-with-jaxon.webp",
     "title": "Dancing with Jaxon",
     "description": "Celectra and Jaxon dancing at the Nexus in New Eden.",
-    "tags": ["celectra", "jaxon", "new eden", "nexus", "book 3"],
+    "tags": [
+      "celectra",
+      "jaxon",
+      "new eden",
+      "nexus",
+      "book 3"
+    ],
     "width": 1254,
     "height": 1254
   },
@@ -123,15 +189,37 @@
     "file": "xan-birthday.webp",
     "title": "Xan's 7th Birthday",
     "description": "Xan's birthday party in the cave.",
-    "tags": ["xan", "birthday", "cave", "book 2"],
+    "tags": [
+      "xan",
+      "birthday",
+      "cave",
+      "book 2"
+    ],
     "width": 1024,
     "height": 1024
+  },
+  {
+    "file": "xan-chime.webp",
+    "title": "Xan playing with chime",
+    "description": "Xan playing with the chime in the cave.",
+    "tags": [
+      "xan",
+      "chime",
+      "cave",
+      "book 2"
+    ],
+    "width": 1254,
+    "height": 1254
   },
   {
     "file": "xan-age7.webp",
     "title": "Xan playing",
     "description": "Xan playing a video game at home.",
-    "tags": ["xan", "playing", "childhood home"],
+    "tags": [
+      "xan",
+      "playing",
+      "childhood home"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -139,15 +227,25 @@
     "file": "xan-alt.webp",
     "title": "Xan playing",
     "description": "Xan playing the glockenspiel in a cave.",
-    "tags": ["xan", "playing", "cave", "glockenspiel"],
+    "tags": [
+      "xan",
+      "playing",
+      "cave",
+      "glockenspiel"
+    ],
     "width": 1024,
     "height": 1536
-  },  
+  },
   {
     "file": "xan-duska-playing.webp",
     "title": "Xan and Duška playing",
     "description": "Xan playing a video game at Duška's house.",
-    "tags": ["xan", "duška", "playing", "childhood home"],
+    "tags": [
+      "xan",
+      "duška",
+      "playing",
+      "childhood home"
+    ],
     "width": 1186,
     "height": 784
   },
@@ -155,7 +253,12 @@
     "file": "carisco-family.webp",
     "title": "The Carisco Family Portrait",
     "description": "A formal portrait of the Carisco family from Book 2, showing the growing family.",
-    "tags": ["carisco", "family", "portrait", "book 2"],
+    "tags": [
+      "carisco",
+      "family",
+      "portrait",
+      "book 2"
+    ],
     "width": 864,
     "height": 1232
   },
@@ -163,7 +266,12 @@
     "file": "carisco-family-cave.webp",
     "title": "The Carisco Family Portrait",
     "description": "A snapshot of the Carisco family from Book 2, showing the growing family in the cave.",
-    "tags": ["carisco", "family", "portrait", "book 2"],
+    "tags": [
+      "carisco",
+      "family",
+      "portrait",
+      "book 2"
+    ],
     "width": 832,
     "height": 1040
   },
@@ -171,15 +279,27 @@
     "file": "zoe-age36.webp",
     "title": "Dr. Zoë Kret",
     "description": "A portrait of Dr. Zoë Kret at age 36 in Book 1",
-    "tags": ["zoë", "carisco", "kret", "portrait", "book 1"],
+    "tags": [
+      "zoë",
+      "carisco",
+      "kret",
+      "portrait",
+      "book 1"
+    ],
     "width": 1028,
     "height": 1530
-  },  
+  },
   {
     "file": "bowers-home.webp",
     "title": "Bowers Home",
     "description": "Exterior view of Celectra and Jaxon's home.",
-    "tags": ["bowers", "home", "house", "new eden", "ares"],
+    "tags": [
+      "bowers",
+      "home",
+      "house",
+      "new eden",
+      "ares"
+    ],
     "width": 434,
     "height": 434
   },
@@ -187,7 +307,13 @@
     "file": "jaxon-age12.webp",
     "title": "Jaxon at age 12",
     "description": "Jaxon at age 12.",
-    "tags": ["bowers", "jaxon", "youth", "new eden", "ares"],
+    "tags": [
+      "bowers",
+      "jaxon",
+      "youth",
+      "new eden",
+      "ares"
+    ],
     "width": 630,
     "height": 1260
   },
@@ -195,7 +321,13 @@
     "file": "bowers-living-room.webp",
     "title": "Bowers Living Room",
     "description": "Interior view of Celectra and Jaxon's home.",
-    "tags": ["bowers", "home", "house", "new eden", "ares"],
+    "tags": [
+      "bowers",
+      "home",
+      "house",
+      "new eden",
+      "ares"
+    ],
     "width": 1536,
     "height": 1024
   },
@@ -203,7 +335,13 @@
     "file": "bowers-babies.webp",
     "title": "Jenni and Xara Bowers as Babies",
     "description": "Celectra's identical twin babies, Jenni Jo and Xara Zo Bowers as babies.",
-    "tags": ["jenni", "xara", "bowers", "baby", "babies"],
+    "tags": [
+      "jenni",
+      "xara",
+      "bowers",
+      "baby",
+      "babies"
+    ],
     "width": 1024,
     "height": 1024
   },
@@ -211,7 +349,14 @@
     "file": "jenni-xara-first-birthday.webp",
     "title": "Jenni and Xara Bowers 1st Birthday",
     "description": "Celectra's identical twin babies, Jenni Jo and Xara Zo Bowers one-year-old.",
-    "tags": ["jenni", "xara", "bowers", "toddlers", "toddler","birthday"],
+    "tags": [
+      "jenni",
+      "xara",
+      "bowers",
+      "toddlers",
+      "toddler",
+      "birthday"
+    ],
     "width": 1237,
     "height": 928
   },
@@ -219,15 +364,26 @@
     "file": "wedding.webp",
     "title": "Bowers Wedding",
     "description": "Celectra and Jaxon getting married.",
-    "tags": ["celectra", "jaxon", "bowers", "wedding"],
+    "tags": [
+      "celectra",
+      "jaxon",
+      "bowers",
+      "wedding"
+    ],
     "width": 1000,
     "height": 672
-  },  
+  },
   {
     "file": "bowers-twins.webp",
     "title": "Jenni and Xara Bowers at Age Seven",
     "description": "Celectra's identical twin girls, Jenni Jo and Xara Zo Bowers at age seven.",
-    "tags": ["jenni", "xara", "bowers", "baby", "babies"],
+    "tags": [
+      "jenni",
+      "xara",
+      "bowers",
+      "baby",
+      "babies"
+    ],
     "width": 832,
     "height": 1248
   },
@@ -235,7 +391,14 @@
     "file": "bowers-evening.webp",
     "title": "Bowers Family",
     "description": "Candid photo of the Bowers relaxing before bed.",
-    "tags": ["jenni", "xara", "bowers", "celectra", "jaxon", "book 4"],
+    "tags": [
+      "jenni",
+      "xara",
+      "bowers",
+      "celectra",
+      "jaxon",
+      "book 4"
+    ],
     "width": 845,
     "height": 634
   },
@@ -243,15 +406,28 @@
     "file": "bowers-lazy-afternoon.webp",
     "title": "Bowers Family",
     "description": "Candid photo of the Bowers relaxing at home.",
-    "tags": ["jenni", "xara", "bowers", "celectra", "jaxon", "book 4"],
+    "tags": [
+      "jenni",
+      "xara",
+      "bowers",
+      "celectra",
+      "jaxon",
+      "book 4"
+    ],
     "width": 845,
     "height": 634
-  },    
+  },
   {
     "file": "xara-jenni-podchair.webp",
     "title": "Reading Twins",
     "description": "Seven-year-old twins reading",
-    "tags": ["jenni", "xara", "reading", "pod chair", "book 4"],
+    "tags": [
+      "jenni",
+      "xara",
+      "reading",
+      "pod chair",
+      "book 4"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -259,7 +435,11 @@
     "file": "xara-and-jenni.webp",
     "title": "Xara and Jenni",
     "description": "Portrait of Xara and Jenni at age 7 in book 4.",
-    "tags": ["xara", "jenni", "book 4"],
+    "tags": [
+      "xara",
+      "jenni",
+      "book 4"
+    ],
     "width": 928,
     "height": 1152
   },
@@ -267,23 +447,41 @@
     "file": "girls-day-out.webp",
     "title": "Three Generations of women doing yoga",
     "description": "A portrait of Zoë, Celectra, Jenni and Xara (age 10) doing yoga together.",
-    "tags": ["xara", "jenni", "celectra", "zoe", "family"],
+    "tags": [
+      "xara",
+      "jenni",
+      "celectra",
+      "zoe",
+      "family"
+    ],
     "width": 1402,
     "height": 1122
   },
-    {
+  {
     "file": "girls-day-out-2.webp",
     "title": "Three Generations of women doing yoga",
     "description": "A portrait of Zoë, Celectra, Jenni and Xara (age 10) doing yoga together",
-    "tags": ["xara", "jenni", "celectra", "zoe", "family"],
+    "tags": [
+      "xara",
+      "jenni",
+      "celectra",
+      "zoe",
+      "family"
+    ],
     "width": 1024,
     "height": 816
-  },          
+  },
   {
     "file": "alex-and-dee.webp",
     "title": "Uncle Alex and Aunt Dee",
     "description": "Uncle Alex and Aunt Dee dancing at Jaxon's 10th birthday party in Book 1",
-    "tags": ["alex", "dee", "dance", "kiss", "book 1"],
+    "tags": [
+      "alex",
+      "dee",
+      "dance",
+      "kiss",
+      "book 1"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -291,7 +489,11 @@
     "file": "ani.png",
     "title": "Artificial Neural Interface",
     "description": "The experimental ANI device that allows neural linking between humans and Galinstanian consciousness and, eventually, Utara.",
-    "tags": ["technology", "ani", "interface"],
+    "tags": [
+      "technology",
+      "ani",
+      "interface"
+    ],
     "width": 1205,
     "height": 722
   },
@@ -299,7 +501,13 @@
     "file": "ani-sun-hat-femme.png",
     "title": "Artificial Neural Interface (gen 2)",
     "description": "The experimental ANI device that allows neural linking between humans and Galinstanian consciousness and, eventually, Utara.",
-    "tags": ["technology", "ani", "interface", "sun hat", "femme"],
+    "tags": [
+      "technology",
+      "ani",
+      "interface",
+      "sun hat",
+      "femme"
+    ],
     "width": 1199,
     "height": 1312
   },
@@ -307,7 +515,13 @@
     "file": "ani-sun-hat-uni.png",
     "title": "Artificial Neural Interface (gen 2)",
     "description": "The experimental ANI device that allows neural linking between humans and Galinstanian consciousness and, eventually, Utara.",
-    "tags": ["technology", "ani", "interface", "sun hat", "uni"],
+    "tags": [
+      "technology",
+      "ani",
+      "interface",
+      "sun hat",
+      "uni"
+    ],
     "width": 1536,
     "height": 1024
   },
@@ -315,7 +529,13 @@
     "file": "celectra_cabinet.png",
     "title": "Celectra's Cabinet of Stones",
     "description": "An illuminated cabinet containing Celectra's rock collection including large, precious stones that Galanstanians leave behind as insoluble waste.",
-    "tags": ["celectra", "rocks", "stones", "cabinet", "collection"],
+    "tags": [
+      "celectra",
+      "rocks",
+      "stones",
+      "cabinet",
+      "collection"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -323,7 +543,11 @@
     "file": "celectrum.jpg",
     "title": "Celectrum",
     "description": "An instrument invented by Jaxon in book 2",
-    "tags": ["celectrum", "instrument", "music"],
+    "tags": [
+      "celectrum",
+      "instrument",
+      "music"
+    ],
     "width": 832,
     "height": 1248
   },
@@ -331,7 +555,10 @@
     "file": "ananya-age9.webp",
     "title": "Ananya at age 9",
     "description": "Ananya at age 9",
-    "tags": ["ananya", "book 1"],
+    "tags": [
+      "ananya",
+      "book 1"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -339,7 +566,10 @@
     "file": "ananya-alt.webp",
     "title": "Ananya at age 12",
     "description": "Ananya at age 12 living on Utopis",
-    "tags": ["ananya", "utopis"],
+    "tags": [
+      "ananya",
+      "utopis"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -347,7 +577,10 @@
     "file": "ananya-age16.webp",
     "title": "Ananya at age 16",
     "description": "Ananya at age 16 living in New Eden",
-    "tags": ["ananya", "new eden"],
+    "tags": [
+      "ananya",
+      "new eden"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -355,7 +588,10 @@
     "file": "chenwei-age10.webp",
     "title": "Chen Wei at age 10",
     "description": "Chen Wei practicing acrobatics at age 10",
-    "tags": ["chen wei", "book 1"],
+    "tags": [
+      "chen wei",
+      "book 1"
+    ],
     "width": 1664,
     "height": 928
   },
@@ -363,7 +599,10 @@
     "file": "chenwei-alt.webp",
     "title": "Chen Wei at age 10",
     "description": "Chen Wei practicing acrobatics at age 10",
-    "tags": ["chen wei", "book 1"],
+    "tags": [
+      "chen wei",
+      "book 1"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -371,7 +610,11 @@
     "file": "hiro-aulii.webp",
     "title": "Hiro and Aulii Vongphachanh",
     "description": "Hiro and Aulii sparing in their yard",
-    "tags": ["hiro", "aulii", "Vongphachanh"],
+    "tags": [
+      "hiro",
+      "aulii",
+      "Vongphachanh"
+    ],
     "width": 1536,
     "height": 1024
   },
@@ -379,15 +622,23 @@
     "file": "hiro-kisa.webp",
     "title": "Hiro and Sensei Kisa",
     "description": "Sensei Kisa teaching Hiro at the dojo",
-    "tags": ["hiro", "kisa", "dojo", "karate"],
+    "tags": [
+      "hiro",
+      "kisa",
+      "dojo",
+      "karate"
+    ],
     "width": 1536,
     "height": 1024
-  },  
+  },
   {
     "file": "kowan-playing.webp",
     "title": "Kowan playing",
     "description": "Kowan playing in his living room",
-    "tags": ["kowan", "playing"],
+    "tags": [
+      "kowan",
+      "playing"
+    ],
     "width": 832,
     "height": 1248
   },
@@ -395,7 +646,10 @@
     "file": "duska-book2-alt.webp",
     "title": "Duška at age 5",
     "description": "Duška at age 5",
-    "tags": ["duška", "book 2"],
+    "tags": [
+      "duška",
+      "book 2"
+    ],
     "width": 896,
     "height": 1184
   },
@@ -403,7 +657,11 @@
     "file": "duska-xan-playing.webp",
     "title": "Duška and Xan playing",
     "description": "Duška at age 5 playing with 6-year-old Xan",
-    "tags": ["duška", "xan","book 2"],
+    "tags": [
+      "duška",
+      "xan",
+      "book 2"
+    ],
     "width": 1536,
     "height": 1024
   },
@@ -411,7 +669,10 @@
     "file": "ethan-age10.webp",
     "title": "Ethan at age 10",
     "description": "Ethan at age 10",
-    "tags": ["ethan", "book 2"],
+    "tags": [
+      "ethan",
+      "book 2"
+    ],
     "width": 768,
     "height": 1024
   },
@@ -419,7 +680,11 @@
     "file": "ethan-and-emma.webp",
     "title": "Ethan and Emma at age 6",
     "description": "Ethan and Emma at age 6",
-    "tags": ["ethan", "emma","book 2"],
+    "tags": [
+      "ethan",
+      "emma",
+      "book 2"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -427,15 +692,25 @@
     "file": "swimming-hole.webp",
     "title": "The Swimming Hole",
     "description": "The swimming hole and entrance to the extensive cave system explored over fourteen years. These caves hold ancient Galinstanian secrets.",
-    "tags": ["environment", "cave", "exploration", "ancient"],
+    "tags": [
+      "environment",
+      "cave",
+      "exploration",
+      "ancient"
+    ],
     "width": 992,
     "height": 736
-  },  
+  },
   {
     "file": "cave.png",
     "title": "Boreshaft Entrance",
     "description": "The Boreshaft Entrance to the Deep Caves",
-    "tags": ["environment", "cave", "exploration", "ancient"],
+    "tags": [
+      "environment",
+      "cave",
+      "exploration",
+      "ancient"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -443,15 +718,25 @@
     "file": "cave-system.webp",
     "title": "The Deep Caves",
     "description": "The extensive cave system explored over fourteen years. These caves hold ancient Galinstanian secrets.",
-    "tags": ["environment", "cave", "exploration", "ancient"],
+    "tags": [
+      "environment",
+      "cave",
+      "exploration",
+      "ancient"
+    ],
     "width": 921,
     "height": 1152
-  },    
+  },
   {
     "file": "galinstanian.jpg",
     "title": "Galinstanian Being",
     "description": "A rare capture of a Galinstanian in their natural form, displaying the characteristic quicksilver reflections.",
-    "tags": ["galinstanian", "alien", "species", "stan"],
+    "tags": [
+      "galinstanian",
+      "alien",
+      "species",
+      "stan"
+    ],
     "width": 768,
     "height": 512
   },
@@ -459,7 +744,12 @@
     "file": "grotto.webp",
     "title": "Grotto",
     "description": "The subterrainian geothermal pool grotto",
-    "tags": ["cave", "grotto", "pool", "geothermal"],
+    "tags": [
+      "cave",
+      "grotto",
+      "pool",
+      "geothermal"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -467,7 +757,11 @@
     "file": "listener-corps.png",
     "title": "Listener Corps Emblem",
     "description": "The elite Listener Corps, trained to communicate with Galinstanian consciousness through neural interfaces.",
-    "tags": ["listener corps", "organization", "elite"],
+    "tags": [
+      "listener corps",
+      "organization",
+      "elite"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -475,7 +769,11 @@
     "file": "maya-painting.webp",
     "title": "Maya Painting",
     "description": "Maya creating a fingerpaint masterpiece at age 6.",
-    "tags": ["maya", "paint", "childhood"],
+    "tags": [
+      "maya",
+      "paint",
+      "childhood"
+    ],
     "width": 832,
     "height": 1248
   },
@@ -483,15 +781,23 @@
     "file": "sam-altr.webp",
     "title": "Sam Childhood",
     "description": "Sam as a toddler on Utopis.",
-    "tags": ["sam", "utopis", "homework"],
+    "tags": [
+      "sam",
+      "utopis",
+      "homework"
+    ],
     "width": 928,
     "height": 928
-  },  
+  },
   {
     "file": "sam-alt-12.webp",
     "title": "Sam Childhood",
     "description": "Sam doing homework on Utopis.",
-    "tags": ["sam", "utopis", "homework"],
+    "tags": [
+      "sam",
+      "utopis",
+      "homework"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -499,7 +805,11 @@
     "file": "sam-alt.webp",
     "title": "Sam Homework",
     "description": "Sam doing homework on Utopis.",
-    "tags": ["sam", "utopis", "homework"],
+    "tags": [
+      "sam",
+      "utopis",
+      "homework"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -507,7 +817,11 @@
     "file": "sam-book1-alt.webp",
     "title": "Sam playing",
     "description": "Sam playing on Utopis.",
-    "tags": ["sam", "utopis", "homework"],
+    "tags": [
+      "sam",
+      "utopis",
+      "homework"
+    ],
     "width": 832,
     "height": 1216
   },
@@ -515,7 +829,11 @@
     "file": "sam-book2-alt.webp",
     "title": "Sam Age 12",
     "description": "Sam using a holopad.",
-    "tags": ["sam", "utopis", "homework"],
+    "tags": [
+      "sam",
+      "utopis",
+      "homework"
+    ],
     "width": 832,
     "height": 1216
   },
@@ -523,7 +841,13 @@
     "file": "maya-and-sam.webp",
     "title": "Maya and Sam",
     "description": "Maya and Sam at the Samaya Gallery and Museum of Integration's grand opening between books 4 and 5.",
-    "tags": ["maya", "sam", "gallery", "museum", "Integration"],
+    "tags": [
+      "maya",
+      "sam",
+      "gallery",
+      "museum",
+      "Integration"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -531,7 +855,13 @@
     "file": "sam-and-maya.webp",
     "title": "Sam and Maya",
     "description": "Sam and Maya celebrating the grand opening of the Samaya Gallery and Museum of Integration between books 4 and 5.",
-    "tags": ["maya", "sam", "gallery", "museum", "Integration"],
+    "tags": [
+      "maya",
+      "sam",
+      "gallery",
+      "museum",
+      "Integration"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -539,15 +869,43 @@
     "file": "leila-alt.webp",
     "title": "Leila at age 15",
     "description": "Leila at age 15 practicing karate in the dojo",
-    "tags": ["leila", "book 2"],
+    "tags": [
+      "leila",
+      "book 2"
+    ],
     "width": 807,
     "height": 450
+  },
+  {
+    "file": "leila-alt3.webp",
+    "title": "Leila at age 15",
+    "description": "Leila at age 15 practicing karate in the dojo",
+    "tags": [
+      "leila",
+      "book 2"
+    ],
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "file": "logic-in-motion.webp",
+    "title": "Logic animated in the desert",
+    "description": "Logic animated in the desert",
+    "tags": [
+      "logic",
+      "book 3"
+    ],
+    "width": 1024,
+    "height": 1536
   },
   {
     "file": "nyanhial-nhial.webp",
     "title": "Nyanhial & Nhial",
     "description": "Nyanhial & Nhial doing schoolwork",
-    "tags": ["nyanhial", "nhial"],
+    "tags": [
+      "nyanhial",
+      "nhial"
+    ],
     "width": 1086,
     "height": 1448
   },
@@ -555,7 +913,9 @@
     "file": "nyanhial-age8.webp",
     "title": "Nyanhial Chilling",
     "description": "Nyanhial relaxing at home",
-    "tags": ["nyanhial"],
+    "tags": [
+      "nyanhial"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -563,15 +923,21 @@
     "file": "nyanhial-soccer.webp",
     "title": "Nyanhial Soccer",
     "description": "Nyanhial on the soccer field",
-    "tags": ["nyanhial", "soccer"],
+    "tags": [
+      "nyanhial",
+      "soccer"
+    ],
     "width": 1023,
     "height": 1537
-  },    
+  },
   {
     "file": "oxi-age7-grotto.webp",
     "title": "Oxi at the grotto",
     "description": "Oxi getting into the grotto hot pool",
-    "tags": ["oxi", "grotto"],
+    "tags": [
+      "oxi",
+      "grotto"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -579,7 +945,10 @@
     "file": "oxi-grotto.webp",
     "title": "Oxi at the grotto",
     "description": "Oxi floating in the geothermal pool",
-    "tags": ["oxi", "grotto"],
+    "tags": [
+      "oxi",
+      "grotto"
+    ],
     "width": 1024,
     "height": 1536
   },
@@ -587,7 +956,12 @@
     "file": "sofia-age9.webp",
     "title": "Sofia reading",
     "description": "Sofia reading her holopad before bed.",
-    "tags": ["sofia", "reading", "holopad", "childhood"],
+    "tags": [
+      "sofia",
+      "reading",
+      "holopad",
+      "childhood"
+    ],
     "width": 832,
     "height": 1248
   },
@@ -595,7 +969,13 @@
     "file": "shawanna-age9.webp",
     "title": "Shawanna at age 9",
     "description": "Shawanna at age 9, examining a rock sample.",
-    "tags": ["shawanna", "space station", "utopis", "living quarters", "book 1"],
+    "tags": [
+      "shawanna",
+      "space station",
+      "utopis",
+      "living quarters",
+      "book 1"
+    ],
     "width": 672,
     "height": 1000
   },
@@ -603,7 +983,13 @@
     "file": "shawanna-age15.webp",
     "title": "Shawanna at age 15",
     "description": "Shawanna at age 15, studying in her quarters.",
-    "tags": ["shawanna", "space station", "utopis", "living quarters", "book 2"],
+    "tags": [
+      "shawanna",
+      "space station",
+      "utopis",
+      "living quarters",
+      "book 2"
+    ],
     "width": 848,
     "height": 1262
   },
@@ -611,7 +997,13 @@
     "file": "shawanna-cooking.webp",
     "title": "Shawanna cooking",
     "description": "Shawanna cooking in her kitchen.",
-    "tags": ["shawanna", "space station", "utopis", "cooking", "book 3"],
+    "tags": [
+      "shawanna",
+      "space station",
+      "utopis",
+      "cooking",
+      "book 3"
+    ],
     "width": 832,
     "height": 1248
   },
@@ -619,7 +1011,13 @@
     "file": "shawanna-relaxing.webp",
     "title": "Shawanna relaxing",
     "description": "Shawanna relaxing in the Nexus.",
-    "tags": ["shawanna", "nexus", "new eden", "relaxing", "book 4"],
+    "tags": [
+      "shawanna",
+      "nexus",
+      "new eden",
+      "relaxing",
+      "book 4"
+    ],
     "width": 832,
     "height": 1248
   },
@@ -627,7 +1025,13 @@
     "file": "zahara-age7.webp",
     "title": "Zahara at age 7",
     "description": "Zahara at age 7, playing in her living room.",
-    "tags": ["zahara", "childhood", "utopis", "playing", "book 1"],
+    "tags": [
+      "zahara",
+      "childhood",
+      "utopis",
+      "playing",
+      "book 1"
+    ],
     "width": 783,
     "height": 1174
   },
@@ -635,7 +1039,13 @@
     "file": "zahara-age28.webp",
     "title": "Zahara at age 28",
     "description": "Zahara at age 28, relaxing at home.",
-    "tags": ["zahara", "home", "Utopis", "relaxing", "book 4"],
+    "tags": [
+      "zahara",
+      "home",
+      "Utopis",
+      "relaxing",
+      "book 4"
+    ],
     "width": 672,
     "height": 1000
   },
@@ -643,7 +1053,13 @@
     "file": "zahara-playing.webp",
     "title": "Zahara at age 28",
     "description": "Zahara at age 28, playing at home.",
-    "tags": ["zahara", "home", "Utopis", "playing", "book 4"],
+    "tags": [
+      "zahara",
+      "home",
+      "Utopis",
+      "playing",
+      "book 4"
+    ],
     "width": 672,
     "height": 1000
   },
@@ -651,15 +1067,25 @@
     "file": "zuri-age8.webp",
     "title": "Zuri playing",
     "description": "Zuri playing in his yard.",
-    "tags": ["zuri", "childhood", "new eden", "ares"],
+    "tags": [
+      "zuri",
+      "childhood",
+      "new eden",
+      "ares"
+    ],
     "width": 783,
     "height": 1174
-  },     
+  },
   {
     "file": "reclamatic.png",
     "title": "Reclamatic (cleaning bot)",
     "description": "A robotic floor cleaner that uses MRI tech to deatomize dust, debris, germs and even stains.",
-    "tags": ["robot", "bot", "cleaning", "cleaner"],
+    "tags": [
+      "robot",
+      "bot",
+      "cleaning",
+      "cleaner"
+    ],
     "width": 775,
     "height": 458
   },
@@ -667,7 +1093,12 @@
     "file": "utopis.png",
     "title": "Utopis",
     "description": "Exterior view of the space station, Utopis. Home of Celectra and Amergio through most of book 1.",
-    "tags": ["utopis", "space station", "orbit", "childhood home"],
+    "tags": [
+      "utopis",
+      "space station",
+      "orbit",
+      "childhood home"
+    ],
     "width": 1536,
     "height": 1024
   },
@@ -675,7 +1106,15 @@
     "file": "ares-chaos.webp",
     "title": "Utopis in orbit",
     "description": "Utopis in orbit around the moon Ares as Ares orbits Chaos.",
-    "tags": ["ares", "chaos", "planet", "moon", "orbit", "utopis", "space station"],
+    "tags": [
+      "ares",
+      "chaos",
+      "planet",
+      "moon",
+      "orbit",
+      "utopis",
+      "space station"
+    ],
     "width": 1536,
     "height": 1024
   },
@@ -683,7 +1122,11 @@
     "file": "ares.gif",
     "title": "Ares Rotating",
     "description": "Ares, a moon of Chaos rotating. It's the home of New Eden and most of the characters.",
-    "tags": ["ares", "moon", "planet"],
+    "tags": [
+      "ares",
+      "moon",
+      "planet"
+    ],
     "width": 340,
     "height": 340
   },
@@ -691,15 +1134,24 @@
     "file": "ares.png",
     "title": "Map of Ares around New Eden",
     "description": "A Map showing the New Eden area of Ares.",
-    "tags": ["ares", "map", "new eden"],
+    "tags": [
+      "ares",
+      "map",
+      "new eden"
+    ],
     "width": 1042,
     "height": 576
-  },  
+  },
   {
     "file": "new-eden-book1.webp",
     "title": "New Eden",
     "description": "New Eden in books 1 and 2.",
-    "tags": ["new eden", "town", "book1", "book 2"],
+    "tags": [
+      "new eden",
+      "town",
+      "book1",
+      "book 2"
+    ],
     "width": 3072,
     "height": 4096
   },
@@ -707,7 +1159,12 @@
     "file": "new-eden-book3.webp",
     "title": "New Eden",
     "description": "New Eden in books 3 and 4.",
-    "tags": ["new eden", "town", "book3", "book 4"],
+    "tags": [
+      "new eden",
+      "town",
+      "book3",
+      "book 4"
+    ],
     "width": 1611,
     "height": 2000
   },
@@ -715,7 +1172,11 @@
     "file": "new-eden-book5.webp",
     "title": "New Eden",
     "description": "New Eden in books 5.",
-    "tags": ["new eden", "town", "book5"],
+    "tags": [
+      "new eden",
+      "town",
+      "book5"
+    ],
     "width": 1024,
     "height": 1024
   },
@@ -723,7 +1184,14 @@
     "file": "activity.webp",
     "title": "Activity Center",
     "description": "Activity center (Mall of Motion).",
-    "tags": ["activity", "motion", "gym", "exercize", "swim", "PE"],
+    "tags": [
+      "activity",
+      "motion",
+      "gym",
+      "exercize",
+      "swim",
+      "PE"
+    ],
     "width": 1536,
     "height": 1024
   },
@@ -731,7 +1199,12 @@
     "file": "pool-room.webp",
     "title": "Pool Room",
     "description": "The pool room.",
-    "tags": ["pool", "activity", "swim", "activity center"],
+    "tags": [
+      "pool",
+      "activity",
+      "swim",
+      "activity center"
+    ],
     "width": 1264,
     "height": 842
   },
@@ -739,7 +1212,12 @@
     "file": "swim-meet.webp",
     "title": "Swim Meet",
     "description": "Swim meet in the pool room",
-    "tags": ["pool", "activity", "swim", "activity center"],
+    "tags": [
+      "pool",
+      "activity",
+      "swim",
+      "activity center"
+    ],
     "width": 1264,
     "height": 842
   },
@@ -747,7 +1225,13 @@
     "file": "gallery.webp",
     "title": "Samaya Gallery and Museum of Integration",
     "description": "Art gallery and museum founded and directed by Maya and Sam.",
-    "tags": ["maya", "sam", "gallery", "museum", "integration"],
+    "tags": [
+      "maya",
+      "sam",
+      "gallery",
+      "museum",
+      "integration"
+    ],
     "width": 941,
     "height": 627
   },
@@ -755,23 +1239,43 @@
     "file": "great-grand-stallion.webp",
     "title": "Great Grand stallion",
     "description": "Celectra's impression of the invented character from her therapy sessions.",
-    "tags": ["maya", "sam", "gallery", "museum", "integration"],
+    "tags": [
+      "maya",
+      "sam",
+      "gallery",
+      "museum",
+      "integration"
+    ],
     "width": 941,
     "height": 627
-  },    
+  },
   {
     "file": "medical.webp",
     "title": "The Medical Center",
     "description": "The Medical Center is where all health matters are addressed.",
-    "tags": ["medical", "medicine", "surgery", "psychology", "doctor", "nurse"],
+    "tags": [
+      "medical",
+      "medicine",
+      "surgery",
+      "psychology",
+      "doctor",
+      "nurse"
+    ],
     "width": 1536,
     "height": 1024
-  },  
+  },
   {
     "file": "nexus.webp",
     "title": "The Nexus",
     "description": "The Nexus, a place communal social space.",
-    "tags": ["social", "dining", "food", "drink", "relaxation", "study"],
+    "tags": [
+      "social",
+      "dining",
+      "food",
+      "drink",
+      "relaxation",
+      "study"
+    ],
     "width": 1536,
     "height": 1024
   },
@@ -779,7 +1283,14 @@
     "file": "observatory.webp",
     "title": "The Observatory",
     "description": "The Observatory. Professional research, star gazing, planetarium",
-    "tags": ["observatory", "space", "stars", "planets", "moons", "science"],
+    "tags": [
+      "observatory",
+      "space",
+      "stars",
+      "planets",
+      "moons",
+      "science"
+    ],
     "width": 1536,
     "height": 1024
   },
@@ -787,7 +1298,12 @@
     "file": "plenum.webp",
     "title": "The Plenum",
     "description": "The Plenum houses the council chamber and offices and security.",
-    "tags": ["plenum", "council", "government", "security"],
+    "tags": [
+      "plenum",
+      "council",
+      "government",
+      "security"
+    ],
     "width": 1536,
     "height": 1024
   },
@@ -795,7 +1311,14 @@
     "file": "science.webp",
     "title": "The Science and Technology Center",
     "description": "The Science and Technology Center contains labs and workshops.",
-    "tags": ["science", "technology", "ANI", "dr. troy", "amerigo", "celectra"],
+    "tags": [
+      "science",
+      "technology",
+      "ANI",
+      "dr. troy",
+      "amerigo",
+      "celectra"
+    ],
     "width": 1536,
     "height": 1024
   }
