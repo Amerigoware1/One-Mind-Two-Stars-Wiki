@@ -105,12 +105,14 @@ Her weaknesses include:
 <div class="card-bg" markdown="1">
 
 ## Relationships
-- **Celectra Carisco** — best friend since childhood; Ananya treats her like a person, not a phenomenon
-- **Chen Wei** — fellow Listener Corps translator; research collaborator
-- **Maya Keahi & Jaxon Bowers** — close friends in the youth cohort; part of the core support circle
-- **Xan Carisco** — peers; mutual respect for each other's communication innovations
-- **Lira Keahi** — mentor figure in psychology/Listener training
-- **Stan & the Galinstanian collective** — professional respect; she learns to receive communion with clarity and care
+- **Dr. Padma Sharma** — aunt; a grounding, warm presence in her life who encourages her work as a Listener and keeps her supplied with direct advice and fresh cookies.
+- **Sofia Patel** — cousin; fellow member of the extended Patel family network in New Eden.
+- **Celectra Carisco** — best friend since childhood; Ananya treats her like a person, not a phenomenon.
+- **Chen Wei** — fellow Listener Corps translator; research collaborator; eventual love interest.
+- **Maya Keahi & Jaxon Bowers** — close friends in the youth cohort; part of the core support circle.
+- **Xan Carisco** — peers; mutual respect for each other's communication innovations.
+- **Lira Keahi** — mentor figure in psychology/Listener training.
+- **Stan & the Galinstanian collective** — professional respect; she learns to receive communion with clarity and care.
 
 </div>
 <div class="card-bg" markdown="1">
