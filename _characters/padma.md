@@ -97,6 +97,7 @@ Her weaknesses include:
 <div class="card-bg" markdown="1">
 
 ## Relationships
+- **Sofia Patel** — her daughter; raised within the warm chaos of the extended Patel household in New Eden.
 - **Ananya Patel** — her beloved niece; Padma takes immense pride in Ananya’s growth as a biologist and Listener, matching her directness with mutual warmth, cookies, and encouragement.
 - **Celectra Carisco** — an academic colleague, mentor, and protector; Padma treats Celectra purely as a person rather than a scientific marvel, critically evaluating her 21.7 Hz resonance theories while supporting her mental well-being.
 - **The Patel Family & Crew** — a core part of the loud, always-cooking, three-generation housing network; she maintains a fluid, beautifully customized web of casual physical partners and deep platonic confidants explicitly governed by mutual freedom.

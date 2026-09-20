@@ -76,11 +76,13 @@ Her weaknesses include:
 <div class="card-bg" markdown="1">
 
 ### Relationships
-- **Harbor** — bonded Galinstanian; Sofia named Harbor at age five, seeking safety; now they provide safety together
-- **Jenni & Xara Carisco-Bowers** — younger peers; Sofia helps monitor their well-being during the rescue
-- **Xan Carisco** — older peer and friend from childhood
-- **Duška Santoso Carisco** — collaborator in the Stewardship Program
-- **Zuri Yazzie** — friend from the same cohort
+- **Dr. Padma Sharma** — mother; shares a deep connection within their extended family network and provides a grounding, warm presence.
+- **Ananya Patel** — cousin; fellow member of the extended Patel family network in New Eden.
+- **Harbor** — bonded Galinstanian; Sofia named Harbor at age five, seeking safety; now they provide safety together.
+- **Jenni & Xara Carisco-Bowers** — younger peers; Sofia helps monitor their well-being during the rescue.
+- **Xan Carisco** — older peer and friend from childhood.
+- **Duška Santoso Carisco** — collaborator in the Stewardship Program.
+- **Zuri Yazzie** — friend from the same cohort.
 
 </div>
 <div class="card-bg" markdown="1">
