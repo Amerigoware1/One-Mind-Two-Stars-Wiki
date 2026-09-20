@@ -175,3 +175,10 @@ The term **Mononous Disomas** was coined by Dr. Alex Cruiz (greek:-_mono‑nous_
 Utara (colony-educator) confirmation: “I believe she is correct about being one person.” – validated by identical wrong answers on separated tests.
 
 </div> 
+<div class="card-bg" markdown="1">
+
+🎥 **Visual Log / Media Attachment**
+[▶ Access Visual Recording: Celectra Synchronization Test]({{ '/assets/images/gallery/Science_of_Mononous_Disomas.mp4' | relative_url }})
+*Note: External media link. Requires standard clearance to view.*
+
+</div>
