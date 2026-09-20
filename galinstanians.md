@@ -189,7 +189,7 @@ Consequently, they view human individuals with a mixture of profound patience an
 </div>
 </div>
 
-<!-- Physiology Tab (fixed: content moved inside) -->
+<!-- Physiology Tab -->
 <div id="tab-physiology" class="tab-content card-bg" markdown="1">
 <div class="card-bg" markdown="1">
 
@@ -198,7 +198,14 @@ Consequently, they view human individuals with a mixture of profound patience an
 Galinstanians possess fluid, shape-shifting bodies composed of a galinstan-base colloidal matrix. This liquid metal base is heavily embedded with a suspended particulate mesh of iron and copper, giving their internal fluid the properties of a living magnetorheological gel. Rather than behaving as a simple Newtonian fluid, their body tissue behaves as a dynamic yield-stress fluid.
 
 In a passive state, the body maintains an autonomic, low-frequency "idle" electromagnetic tone—analogous to muscle tone in biological fauna. This baseline field locks the suspended metallic particles into microscopic dipole chains, providing a static yield stress that prevents slumping or spilling under gravity. By dynamically generating localized internal EM pulses, they alter this internal yield stress and surface tension on demand, flowing as amorphous gels, stiffening into dense masses, or contracting into rigid forms. Complete loss of internal EM control—such as through severe EMP disruption or death—collapses the yield stress, causing the gel to thin and slump into a flat liquid pool.
-
+<div class="card-bg" markdown="1">
+<div class="text-center">
+<a href="{{ '/assets/images/gallery/galinstanian-cross-section.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" class="diagram-thumbnail">
+<img src="{{ '/assets/images/gallery/galinstanian-cross-section.webp' | relative_url }}" alt="Galinstanian Xenobiological Cross-Section Analysis" class="img-thumbnail">
+<div class="caption small text-muted">Click to enlarge: Xenobiological Cross-Section Analysis</div>
+</a>
+</div>
+</div>
 </div>
 <div class="card-bg" markdown="1">
 
