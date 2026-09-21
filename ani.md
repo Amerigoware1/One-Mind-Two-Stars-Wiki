@@ -8,7 +8,7 @@ title: "Artificial Neural Interface (ANI)"
 <div class="card-bg" markdown="1">
 
 # Overview
-The **Artificial Neural Interface (ANI)**—informally referred to as the "Sympathetic Cap" or the neural bridge prototype—is an intent-driven broadcast and translation headband engineered to synthesize non-humanoid EM communication. By replicating and standardizing cross-species neural connectivity on Ares, the device successfully eliminates the need for a single organic anchor with a finite lifespan. Co-designed by Dr. Celectra Carisco, Jaxon Bowers, and the colonial AI framework Utara, the ANI utilizes synthetic electromagnetic field generation to simulate the natural biological communion properties of Celectricity.
+The **Artificial Neural Interface (ANI)** is an intent-driven broadcast and translation headband engineered to synthesize non-humanoid EM communication. By replicating and standardizing cross-species neural connectivity on Ares, the device successfully eliminates the need for a single organic anchor with a finite lifespan. Co-designed by Dr. Celectra Carisco, Jaxon Bowers, and the colonial AI framework Utara, the ANI utilizes synthetic electromagnetic field generation to simulate the natural biological communion properties of Celectricity.
 
 </div>
 
@@ -18,7 +18,14 @@ The **Artificial Neural Interface (ANI)**—informally referred to as the "Sympa
 * **Theoretical Blueprint:** The device was conceived in the doctoral dissertation of **Dr. Celectra Carisco**. It was initially designed as a long-term, voluntary transition tool to decentralize the inter-species EM relay. The ultimate goal was to allow Celectra to eventually step back from full-time ambassadorial duties to focus on pedagogical science and youth curriculum design.  
 * **Timeline Compression:** While the original R&D roadmap projected a 5+ year development cycle, an acute medical crisis drastically accelerated the project. Celectra suffered severe Celectricity degradation, facing imminent autonomic cascade failure if forced to remain the colony's primary biological broadcast bridge.  
 * **The Kret Archives:** To achieve a functional prototype within roughly twelve months, hardware lead Jaxon Bowers integrated Celectra's theoretical framework with forbidden files retrieved from Douglas Kret's archive. The team utilized Kret's dark research on intent-driven modulation to bypass years of trial-and-error hardware development.
-  
+  <div class="card-bg" markdown="1">
+<div class="text-center">
+<a href="{{ '/assets/images/gallery/ani.png' | relative_url }}" target="_blank" rel="noopener noreferrer" class="diagram-thumbnail">
+<img src="{{ '/assets/images/gallery/ani.png' | relative_url }}" alt="ANI" class="img-thumbnail">
+<div class="caption small text-muted">Click to enlarge: ANI Prototype</div>
+</a>
+</div>
+</div>
 </div>
 
 <div class="card-bg" markdown="1">
@@ -60,7 +67,14 @@ The hardware transitioned cross-species interaction out of clinical laboratory s
 Initially deployed during the height of the mid-2247 communication surge to aid the expanding [Listener Corps]({{ '/listener-corps.html' | relative_url }}), the hardware footprint expanded rapidly across all four river outposts. By automating language translation and data tracking via Utara's frameworks, the A.N.I. reached an active infrastructure of over 200 certified devices by 2255.
 
 This technical foundation directly enabled the creation of the **Resonance Stewardship Program** in 2255. With language translation handled seamlessly by A.N.I. arrays, the next generation utilizes external, wrist-mounted resonance arrays to shift focus entirely onto protecting the physical and harmonic balance of the planet itself.
-
+  <div class="card-bg" markdown="1">
+<div class="text-center">
+<a href="{{ '/assets/images/gallery/anis.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" class="diagram-thumbnail">
+<img src="{{ '/assets/images/gallery/anis.webp' | relative_url }}" alt="ANIs" class="img-thumbnail">
+<div class="caption small text-muted">Click to enlarge: ANI caps</div>
+</a>
+</div>
+</div>
 </div>
 
 <div class="card-bg" markdown="1">
