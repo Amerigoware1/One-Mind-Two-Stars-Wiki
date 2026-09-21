@@ -2280,3 +2280,27 @@ hr {
 .export-btn:hover {
   background-color: #a29bfe;
 }
+
+.diagram-thumbnail {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.diagram-thumbnail:hover {
+  transform: scale(1.02);
+}
+
+.img-thumbnail {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px; /* Controls the thumbnail size */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.diagram-thumbnail .caption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
