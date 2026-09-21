@@ -1,12 +1,12 @@
 ---
 layout: character
 title: Dr. Yuki Chen
-portrait: "/assets/images/yuki-book1.webp"
-portrait-book1: "/assets/images/yuki-book1.webp"
-portrait-book2: "/assets/images/yuki-book2.webp"
-portrait-book3: "/assets/images/yuki-book3.webp"
-portrait-book4: "/assets/images/yuki-book4.webp"
-portrait-book5: "/assets/images/yuki-book5.webp"
+portrait: "/assets/images/chen-book1.webp"
+portrait-book1: "/assets/images/chen-book1.webp"
+portrait-book2: "/assets/images/chen-book2.webp"
+portrait-book3: "/assets/images/chen-book3.webp"
+portrait-book4: "/assets/images/chen-book4.webp"
+portrait-book5: "/assets/images/chen-book5.webp"
 affiliation: Utopis Station Medical; Radiation Medicine Specialist; Celectra's Primary Monitor
 birthday: March 4, 2089
 birthplace: Beijing, Earth
