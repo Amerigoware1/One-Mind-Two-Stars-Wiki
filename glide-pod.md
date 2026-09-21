@@ -62,7 +62,15 @@ The MLV-01 is a high-mobility recreational vehicle designed for low-gravity and 
 <div class="card-bg" markdown="1">
 
 ## Propulsion: The Independent Maglev Wheel
-![Technical Sketch: Independent Maglev Wheel Hub Isolation System](./assets/images/gallery/hub-sketch.webp){: width="50%" }
+<!-- ![Technical Sketch: Independent Maglev Wheel Hub Isolation System](./assets/images/gallery/hub-sketch.webp){: width="50%" } -->
+<div class="card-bg" markdown="1">
+<div class="text-center">
+<a href="{{ '/assets/images/gallery/hub-sketch.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" class="diagram-thumbnail">
+<img src="{{ '/assets/images/gallery/hub-sketch.webp' | relative_url }}" alt="Maglev Wheel Hub" class="img-thumbnail">
+<div class="caption small text-muted">Click to enlarge: Technical Sketch: Independent Maglev Wheel Hub Isolation System</div>
+</a>
+</div>
+</div>
 The vehicle utilizes a revolutionary **Hubless Induction Drive**.
 *   **Zero Physical Connection:** There is no axle. The tire assembly floats around the central structural spar via a magnetic gap.
 *   **Ground-Contact Tire:** The tire contains embedded permanent magnets.
