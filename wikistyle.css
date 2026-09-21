@@ -2293,7 +2293,7 @@ hr {
 .img-thumbnail {
   max-width: 100%;
   height: auto;
-  max-height: 300px; /* Controls the thumbnail size */
+  max-height: 150px; /* Controls the thumbnail size */
   border: 2px solid #ddd;
   border-radius: 8px;
   cursor: pointer;
