@@ -50,18 +50,3 @@ permalink: /_characters/
     none.style.display = visible === 0 ? '' : 'none';
   });
 </script>
-  const search = document.getElementById('character-search');
-  const cards  = document.querySelectorAll('.character-card');
-  const none   = document.getElementById('no-results');
-
-  search.addEventListener('input', function () {
-    const query = this.value.toLowerCase().trim();
-    let visible = 0;
-    cards.forEach(card => {
-      const match = card.dataset.name.includes(query);
-      card.style.display = match ? '' : 'none';
-      if (match) visible++;
-    });
-    none.style.display = visible === 0 ? '' : 'none';
-  });
-</script>
