@@ -237,6 +237,12 @@ title: Glossary
 <div class="tab-panel active" id="panel-tech">
   <h2 class="category-header">Technology</h2>
 
+  <div class="card-bg glossary-item" data-name="Auto-Otto" data-category="tech" data-search="auto otto automatic induction charger ottoman magnetism holopad charge device landing pad heels">
+    <h2><a href="{{ '/auto-otto.html' | relative_url }}">Auto-Otto (automatic induction charger)</a></h2>
+    <p><strong>Pronunciation:</strong> /ˈɔːtoʊ ˈɒtoʊ/<button class="speak-button">🔊</button></p>
+    <p>Magnetic induction charging ottoman. A soft landing pad for heels that is firm enough to charge devices without them slipping off. See full entry → <a href="{{ '/auto-otto.html' | relative_url }}">auto-otto page</a></p>
+  </div>
+
   <div class="card-bg glossary-item" data-name="Artificial Gills" data-category="tech" data-search="gills underwater breathing wetsuit">
     <h2><a href="{{ '/artificial-gills.html' | relative_url }}">Artificial Gills</a></h2>
     <p><strong>Pronunciation:</strong> /ˌɑːrtɪˈfɪʃəl ɡɪlz/<button class="speak-button">🔊</button></p>
@@ -332,12 +338,6 @@ title: Glossary
     <p><strong>Pronunciation:</strong> /ˈpɔːrtəbəl ɛm ɑːr iː/<button class="speak-button">🔊</button></p>
     <p>A portable version of the colony’s Matter Recycler/Extractor. Can synthesize food, equipment, and clothing from raw materials and stored blueprints. Celectra steals one from Kret’s office.</p>
   </div>
-
-<div class="card-bg glossary-item" data-name="Auto-Otto" data-category="tech" data-search="auto otto automatic induction charger ottoman magnetism holopad charge device landing pad heels">
-  <h2><a href="{{ '/auto-otto.html' | relative_url }}">Auto-Otto (automatic induction charger)</a></h2>
-  <p><strong>Pronunciation:</strong> /ˈɔːtoʊ ˈɒtoʊ/<button class="speak-button">🔊</button></p>
-  <p>Magnetic induction charging ottoman. A soft landing pad for heels that is firm enough to charge devices without them slipping off. See full entry → <a href="{{ '/auto-otto.html' | relative_url }}">auto-otto page</a></p>
-</div>
 
   <div class="card-bg glossary-item" data-name="Reclamatics" data-category="tech" data-search="cleaning bot sterilization drone molecular disintegration">
     <h2><a href="{{ '/reclamatics.html' | relative_url }}">Reclamatics</a></h2>
