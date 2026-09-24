@@ -72,7 +72,6 @@ title: "Ares"
 - [Contents](#contents)
 - [Overview](#overview)
 - [Physical Characteristics](#physical-characteristics)
-- [Physical Characteristics](#physical-characteristics-1)
 - [Atmosphere and Climate](#atmosphere-and-climate)
 - [Geology and Interior](#geology-and-interior)
 - [Orbit and System](#orbit-and-system)
@@ -84,21 +83,15 @@ title: "Ares"
 
 ## Overview
 
-Ares is the outermost, near-Earth-sized moon orbiting the super-Jupiter Chaos in the Niamh-Ciara binary system. Captured approximately 2–5 million years ago—a recent event in cosmic terms—Ares has not yet become tidally locked to its parent planet. It features a reddish, iron-oxide-rich surface and a breathable 0.8 Atm atmosphere. Its 18-hour day and 0.9 G gravity are driven by a large, fast-spinning core, making it a dynamic world supporting the New Eden colony.
+Ares is the outermost, near-Earth-sized moon orbiting the super-Jupiter Chaos in the Niamh-Ciara binary system 45 lightyears from Sol. Captured approximately 2–5 million years ago—a recent event in cosmic terms—Ares has not yet become tidally locked to its parent planet. It features a reddish, iron-oxide-rich surface and a breathable 0.8 Atm atmosphere. Its 18-hour day and 0.9 G gravity are driven by a large, fast-spinning core, making it a dynamic world supporting the New Eden colony.
 
 </div>
-
-<div class="card-bg" markdown="1">
-
-## Physical Characteristics
 
 <div class="card-bg" markdown="1">
 
 ## Physical Characteristics
 
 Ares has a diameter of approximately 11,200 kilometers and a surface gravity of 0.9 G, yielding a total mass of **~4.15 × 10²⁴ kg** (roughly 0.695 Earth masses). Its mean density of **~5,648 kg/m³** exceeds Earth’s, driven by a large, metallic core rich in iron and nickle. Unlike older moons in the system, its 18-hour rotation is independent of its 45-day orbital period, though this rotation is gradually slowing due to tidal braking from Chaos. Its surface is marked by four small rivers—Pison, Gihon, Hiddekel, and Euphrates—fed by subsurface aquifers.
-
-</div>
 
 </div>
 

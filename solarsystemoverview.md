@@ -42,7 +42,8 @@ Amaterasu | Frozen gas giant | Susanoo, Tsukuyomi, Inari | Japanese | Named for 
 </div> <div class="card-bg" markdown="1">
 
 ## Key Parameters  
-  
+
+  * **System Location:** 45 lightyears from Sol. 
   * **Ares Day Length:** 18 Earth-hours (gradually-slowing due to tidal braking).
   * **Ares Orbital Period:** 45 Earth-days (1-"month").
   * **Chaos Year:** 407 Earth-days / 542.66 Ares-days.
