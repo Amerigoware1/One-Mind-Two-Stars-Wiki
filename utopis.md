@@ -47,7 +47,7 @@ The Utopis was designed for a ~78.53-year journey (proper-time) to Ares, acceler
 The Utopis features a cylindrical habitat module with an external shell diameter of approximately 400 meters. It rotates at 2 RPM post-arrival to generate ~0.9 -g centrifugal gravity, though during the journey, 0.9 -g propulsion provided gravity, negating the need for rotation.
 <div class="text-center">
 <a href="{{ '/assets/images/gallery/utopis.svg' | relative_url }}" target="_blank" rel="noopener noreferrer" class="diagram-thumbnail">
-<img src="{{ '/assets/images/gallery/utopis.svg' | relative_url }}" alt="ANIs" class="img-thumbnail">
+<img src="{{ '/assets/images/gallery/utopis.svg' | relative_url }}" alt="ANIs" class="img-thumbnail" style="display:block; width:50%; max-width:520px; height:auto; margin:0 auto;">
 <div class="caption small text-muted">Click to enlarge: Utopis blueprint</div>
 </a>
 </div>
