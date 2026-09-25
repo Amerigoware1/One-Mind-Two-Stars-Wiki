@@ -702,6 +702,20 @@
     "height": 1536
   },
   {
+    "file": "ethan-nyanhial-with-baby.webp",
+    "title": "Ethan and Nyanhial with Baby",
+    "description": "Ethan and Nyanhial with their baby",
+    "tags": [
+      "ethan",
+      "nyanhial",
+      "baby",
+      "book 4"
+    ],
+    "width": 672,
+    "height": 1000
+  },
+  
+  {
     "file": "swimming-hole.webp",
     "title": "The Swimming Hole",
     "description": "The swimming hole and entrance to the extensive cave system explored over fourteen years. These caves hold ancient Galinstanian secrets.",
@@ -1101,6 +1115,20 @@
     "width": 783,
     "height": 1174
   },
+  {
+    "file": "zuri-emma-with-twins.webp",
+    "title": "Zuri, Emma, and the Twins",
+    "description": "Zuri, Emma, and the twins playing together.",
+    "tags": [
+      "zuri",
+      "emma",
+      "twins",
+      "book 4"
+    ],
+    "width": 1536,
+    "height": 1024
+  },
+  
   {
     "file": "reclamatic.png",
     "title": "Reclamatic (cleaning bot)",
