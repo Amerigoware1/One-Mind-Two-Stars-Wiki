@@ -1196,6 +1196,19 @@
     "height": 576
   },
   {
+    "file": "pison-river.webp",
+    "title": "Pison River",
+    "description": "The Pison River flows through the desert of Ares lined with fruit trees.",
+    "tags": [
+      "ares",
+      "map",
+      "new eden",
+      "pison river"
+    ],
+    "width": 768,
+    "height": 512
+  },  
+  {
     "file": "new-eden-book1.webp",
     "title": "New Eden",
     "description": "New Eden in books 1 and 2.",
