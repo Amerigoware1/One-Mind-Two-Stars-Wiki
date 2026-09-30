@@ -1,5 +1,20 @@
 [
   {
+    "file": "newborn-celectra.webp",
+    "title": "Newborn Celectra",
+    "description": "A newborn Celectra in an incubator.",
+    "tags": [
+      "celectra",
+      "space station",
+      "utopis",
+      "living quarters",
+      "pre-series",
+      "newborn"
+    ],
+    "width": 1024,
+    "height": 1536
+  },  
+  {
     "file": "baby-celectra.webp",
     "title": "Baby Celectra",
     "description": "Celectra eatting in highchairs.",
@@ -59,10 +74,24 @@
     "tags": [
       "celectra",
       "carisco",
-      "athletic activities"
+      "athletic activities",
+      "karate"
     ],
     "width": 1024,
     "height": 1536
+  },
+  {
+    "file": "celectra-self-sparing.webp",
+    "title": "Celectra self-sparing",
+    "description": "Celectra practicing self-sparing",
+    "tags": [
+      "celectra",
+      "carisco",
+      "athletic activities",
+      "karate"
+    ],
+    "width": 720,
+    "height": 1080
   },
   {
     "file": "acrobatics1.webp",
@@ -1010,6 +1039,7 @@
     "description": "Shawanna at age 9, examining a rock sample.",
     "tags": [
       "shawanna",
+      "morris",
       "space station",
       "utopis",
       "living quarters",
@@ -1024,6 +1054,7 @@
     "description": "Shawanna at age 15, studying in her quarters.",
     "tags": [
       "shawanna",
+      "morris",
       "space station",
       "utopis",
       "living quarters",
@@ -1038,6 +1069,7 @@
     "description": "Shawanna cooking in her kitchen.",
     "tags": [
       "shawanna",
+      "morris",
       "space station",
       "utopis",
       "cooking",
@@ -1052,6 +1084,7 @@
     "description": "Shawanna relaxing in the Nexus.",
     "tags": [
       "shawanna",
+      "morris",
       "nexus",
       "new eden",
       "relaxing",
@@ -1060,6 +1093,21 @@
     "width": 832,
     "height": 1248
   },
+  {
+    "file": "morris-family.webp",
+    "title": "Morris family",
+    "description": "The Morris family together.",
+    "tags": [
+      "shawanna",
+      "morris",
+      "nexus",
+      "new eden",
+      "relaxing",
+      "book 4"
+    ],
+    "width": 832,
+    "height": 1248
+  },  
   {
     "file": "zahara-age7.webp",
     "title": "Zahara at age 7",
