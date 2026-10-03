@@ -60,7 +60,7 @@ title: "Ares"
         </tr>
         <tr>
             <th>Human settlement</th>
-            <td><a href="New Eden.html">New Eden</a> (pison-river)</td>
+            <td><a href="new-eden.html">New Eden</a> (pison-river)</td>
          </tr>
     </table>
 </div>
