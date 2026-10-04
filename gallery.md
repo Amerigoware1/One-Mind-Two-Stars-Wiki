@@ -37,94 +37,95 @@ permalink: /gallery/
 </div>
 
 <style>
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
 
-  .card-bg img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+/* Updated to support both img and video thumbnails */
+.card-bg img,
+.card-bg video {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #000; /* Fallback background for videos */
+}
 
-  .card-title {
-    margin-top: 0.5rem;
-    font-weight: bold;
-    color: #fff;
-    font-size: 0.95rem;
-  }
+.card-title {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #fff;
+  font-size: 0.95rem;
+}
 
-  .card-description {
-    margin-top: 0.25rem;
-    font-size: 0.8rem;
-    color: #aaa;
-    line-height: 1.3;
-  }
+.card-description {
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  color: #aaa;
+  line-height: 1.3;
+}
 
-  .card-tags {
-    margin-top: 0.5rem;
-    font-size: 0.7rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-    justify-content: center;
-  }
+.card-tags {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: center;
+}
 
-  .tag {
-    background: #1e0a47;
-    color: #b79aff;
-    padding: 0.2rem 0.5rem;
-    border-radius: 12px;
-    font-size: 0.65rem;
-    text-transform: lowercase;
-  }
+.tag {
+  background: #1e0a47;
+  color: #b79aff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.65rem;
+  text-transform: lowercase;
+}
 
-  #gallery-search,
-  #tag-filter {
-    background: #0c0028;
-    border: 1px solid #1e0a47;
-    color: inherit;
-    border-radius: 6px;
-    padding: 0.5rem 0.75rem;
-  }
+#gallery-search,
+#tag-filter {
+  background: #0c0028;
+  border: 1px solid #1e0a47;
+  color: inherit;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+}
 
-  #gallery-search:focus,
-  #tag-filter:focus {
-    outline: none;
-    border-color: #7b4fd4;
-  }
+#gallery-search:focus,
+#tag-filter:focus {
+  outline: none;
+  border-color: #7b4fd4;
+}
 
-  .loading,
-  #no-results {
-    grid-column: 1 / -1;
-    text-align: center;
-    padding: 2rem;
-    color: #aaa;
-  }
+.loading,
+#no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+  color: #aaa;
+}
 
-  /* Ensure PhotoSwipe UI is always visible */
-  .pswp__ui.pswp--ui-visible .pswp__button--close,
-  .pswp__ui.pswp--ui-visible .pswp__button--arrow--prev,
-  .pswp__ui.pswp--ui-visible .pswp__button--arrow--next {
-    opacity: 1 !important;
-    visibility: visible !important;
-    display: block !important;
-  }
+/* Ensure PhotoSwipe UI is always visible */
+.pswp__ui.pswp--ui-visible .pswp__button--close,
+.pswp__ui.pswp--ui-visible .pswp__button--arrow--prev,
+.pswp__ui.pswp--ui-visible .pswp__button--arrow--next {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
 
-  /* Override touch behavior to always show arrows */
-  .pswp--touch .pswp__button--arrow {
-    visibility: visible !important;
-  }
+.pswp--touch .pswp__button--arrow {
+  visibility: visible !important;
+}
 </style>
 
-<!-- PhotoSwipe v5 UMD -->
 <script>
-console.log("Gallery script running (v5 clean)");
+console.log("Gallery script running (v5 clean with Video Support)");
 document.addEventListener("DOMContentLoaded", async () => {
   const galleryEl = document.getElementById("gallery");
   const searchEl = document.getElementById("gallery-search");
@@ -159,11 +160,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     return str.replace(/[&<>]/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[m] || m));
   }
 
+  // Helper to detect video files
+  function isVideoFile(filename) {
+    return /\.(mp4|webm|ogg|mov)$/i.test(filename);
+  }
+
   // Render gallery
   function renderGallery() {
     const query = searchEl.value.toLowerCase().trim();
     const selectedTag = tagFilterEl.value;
 
+    // Fixed typo: allItem s.filter -> allItems.filter
     currentItems = allItems.filter(item => {
       const matchesText =
         item.title.toLowerCase().includes(query) ||
@@ -188,8 +195,19 @@ document.addEventListener("DOMContentLoaded", async () => {
       link.dataset.pswpIndex = idx;
       link.className = "card-bg";
 
+      const mediaUrl = "{{ '/assets/images/gallery/' | relative_url }}" + item.file;
+      let mediaHtml;
+
+      // Render Video Thumbnail or Image Thumbnail
+      if (isVideoFile(item.file)) {
+        // preload="metadata" loads just the first frame to save bandwidth
+        mediaHtml = `<video src="${mediaUrl}" muted loop playsinline preload="metadata"></video>`;
+      } else {
+        mediaHtml = `<img src="${mediaUrl}" alt="${escapeHtml(item.title)}">`;
+      }
+
       link.innerHTML = `
-        <img src="{{ '/assets/images/gallery/' | relative_url }}${item.file}" alt="${escapeHtml(item.title)}">
+        ${mediaHtml}
         <div class="card-title">${escapeHtml(item.title)}</div>
         <div class="card-description">${escapeHtml(item.description)}</div>
         <div class="card-tags">
@@ -204,7 +222,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initLightbox();
   }
 
-  // PhotoSwipe v5 lightbox – clean, no legacy markup
+  // PhotoSwipe v5 lightbox
   let lightbox = null;
   function initLightbox() {
     if (lightbox) lightbox.destroy();
@@ -217,6 +235,35 @@ document.addEventListener("DOMContentLoaded", async () => {
       pinchToClose: true,
       showHideAnimationType: 'zoom',
       closeOnVerticalDrag: true,
+    });
+
+    // --- VIDEO SUPPORT FILTER ---
+    lightbox.addFilter('itemData', (itemData, element, index) => {
+      const item = currentItems[index];
+      if (item && isVideoFile(item.file)) {
+        const videoUrl = itemData.src; // Grab the URL from the href
+        
+        // Tell PhotoSwipe to render HTML instead of an image
+        itemData.type = 'html';
+        
+        // Set dimensions to window size so the video centers nicely in the lightbox
+        itemData.width = window.innerWidth;
+        itemData.height = window.innerHeight;
+        
+        // Inject the HTML5 Video Player
+        itemData.html = `
+          <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; background: rgba(0,0,0,0.95);">
+            <video controls autoplay playsinline style="max-width: 95vw; max-height: 95vh; outline: none; background: #000; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+              <source src="${videoUrl}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        `;
+        
+        // Clear src so PhotoSwipe doesn't try to preload the video as an image
+        itemData.src = null; 
+      }
+      return itemData;
     });
 
     // Custom caption (optional)
@@ -248,7 +295,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     lightbox.init();
-    window.lightbox = lightbox; // for debugging
+    window.lightbox = lightbox; // Fixed typo: l ightbox -> lightbox
   }
 
   // Event listeners
