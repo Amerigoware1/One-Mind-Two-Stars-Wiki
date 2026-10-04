@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Echoes of Earth
+title: Reminiscence
 is_archive: true
 return_url: anthology.html
 return_label: "Return to Anthology index"
@@ -9,6 +9,8 @@ return_label: "Return to Anthology index"
 {% capture chapter_content %}
 
 Amerigo sat heavily in the middle of the sofa, absently cupping the four little feet in his lap between his hands. Celectra lay with a head on each arm of the sofa, each with a holopad synced to the same page of a book. Just this morning, Alex had confirmed what Amerigo had begun to suspect: Celectra wasn't twins, Celeste and Electra, but one person—a single consciousness in two bodies.
+
+<img src="{{ '/assets/images/gallery/reminiscence.webp' | relative_url }}" alt="Amerigo reminiscing" style="width:30%;">
 
 The confirmation was a relief, but the explanation—radiation-induced neural architecture at the cost of Jenni's life—left him hollow. He felt the phantom weight of her hand on his shoulder, the ghost of her scientific curiosity that would have exploded with wonder at Celectra's reality. He was finally able to name the miracle, but naming it only sharpened the wound.
 
