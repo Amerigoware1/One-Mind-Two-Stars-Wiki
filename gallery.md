@@ -308,7 +308,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         link.addEventListener("click", (e) => {
           e.preventDefault();
           e.stopPropagation();
-          modalVideo.src = item.file;
+          modalVideo.src = baseUrl + item.file;  // ← Added baseUrl here
           modalVideo.poster = posterUrl;
           modalTitle.textContent = item.title;
           modalDesc.textContent = item.description;
