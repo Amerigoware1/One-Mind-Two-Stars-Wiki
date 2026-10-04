@@ -381,7 +381,7 @@
     "height": 1024
   },
   {
-    "file": "jenni-xara-first-birthday.webp",
+    "file": "jenni-xara-first-birthday.mp4",
     "title": "Jenni and Xara Bowers 1st Birthday",
     "description": "Celectra's identical twin babies, Jenni Jo and Xara Zo Bowers one-year-old.",
     "tags": [
@@ -393,8 +393,9 @@
       "birthday"
     ],
     "width": 1237,
-    "height": 928
-  },
+    "height": 928,
+    "poster": "jenni-xara-first-birthday.webp" 
+  },  
   {
     "file": "wedding.webp",
     "title": "Bowers Wedding",
