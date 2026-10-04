@@ -44,7 +44,6 @@ permalink: /gallery/
   margin-top: 1.5rem;
 }
 
-/* Updated to support both img and video thumbnails */
 .card-bg img,
 .card-bg video {
   width: 100%;
@@ -52,7 +51,7 @@ permalink: /gallery/
   object-fit: cover;
   border-radius: 4px;
   cursor: pointer;
-  background: #000; /* Fallback background for videos */
+  background: #000; 
 }
 
 .card-title {
@@ -110,7 +109,6 @@ permalink: /gallery/
   color: #aaa;
 }
 
-/* Ensure PhotoSwipe UI is always visible */
 .pswp__ui.pswp--ui-visible .pswp__button--close,
 .pswp__ui.pswp--ui-visible .pswp__button--arrow--prev,
 .pswp__ui.pswp--ui-visible .pswp__button--arrow--next {
@@ -125,7 +123,7 @@ permalink: /gallery/
 </style>
 
 <script>
-console.log("Gallery script running (v5 clean with Video Support)");
+console.log("Gallery script running (v5 Video Fix)");
 document.addEventListener("DOMContentLoaded", async () => {
   const galleryEl = document.getElementById("gallery");
   const searchEl = document.getElementById("gallery-search");
@@ -133,6 +131,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   let allItems = [];
   let currentItems = [];
+  const baseUrl = "{{ '/assets/images/gallery/' | relative_url }}";
 
   // Load manifest
   try {
@@ -155,12 +154,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     tagFilterEl.appendChild(opt);
   });
 
-  // Helper
   function escapeHtml(str) {
     return str.replace(/[&<>]/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[m] || m));
   }
 
-  // Helper to detect video files
   function isVideoFile(filename) {
     return /\.(mp4|webm|ogg|mov)$/i.test(filename);
   }
@@ -170,7 +167,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const query = searchEl.value.toLowerCase().trim();
     const selectedTag = tagFilterEl.value;
 
-    // Fixed typo: allItem s.filter -> allItems.filter
     currentItems = allItems.filter(item => {
       const matchesText =
         item.title.toLowerCase().includes(query) ||
@@ -189,19 +185,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     galleryEl.innerHTML = "";
     currentItems.forEach((item, idx) => {
       const link = document.createElement("a");
-      link.href = "{{ '/assets/images/gallery/' | relative_url }}" + item.file;
+      link.href = baseUrl + item.file;
       link.dataset.pswpWidth = item.width;
       link.dataset.pswpHeight = item.height;
       link.dataset.pswpIndex = idx;
       link.className = "card-bg";
 
-      const mediaUrl = "{{ '/assets/images/gallery/' | relative_url }}" + item.file;
+      const mediaUrl = baseUrl + item.file;
       let mediaHtml;
 
-      // Render Video Thumbnail or Image Thumbnail
       if (isVideoFile(item.file)) {
-        // preload="metadata" loads just the first frame to save bandwidth
-        mediaHtml = `<video src="${mediaUrl}" muted loop playsinline preload="metadata"></video>`;
+        // FIX 1: Use the poster attribute so it doesn't show a black box
+        const posterUrl = item.poster ? baseUrl + item.poster : '';
+        mediaHtml = `<video src="${mediaUrl}" poster="${posterUrl}" muted loop playsinline preload="metadata"></video>`;
       } else {
         mediaHtml = `<img src="${mediaUrl}" alt="${escapeHtml(item.title)}">`;
       }
@@ -218,7 +214,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       galleryEl.appendChild(link);
     });
 
-    // Re-init lightbox after grid update
     initLightbox();
   }
 
@@ -237,36 +232,36 @@ document.addEventListener("DOMContentLoaded", async () => {
       closeOnVerticalDrag: true,
     });
 
-    // --- VIDEO SUPPORT FILTER ---
+    // FIX 2: Properly intercept video clicks and strip the image source
     lightbox.addFilter('itemData', (itemData, element, index) => {
       const item = currentItems[index];
+      
       if (item && isVideoFile(item.file)) {
-        const videoUrl = itemData.src; // Grab the URL from the href
+        const videoUrl = itemData.src; 
+        const posterUrl = item.poster ? baseUrl + item.poster : '';
         
-        // Tell PhotoSwipe to render HTML instead of an image
+        // Tell PhotoSwipe this is HTML, not an image
         itemData.type = 'html';
-        
-        // Set dimensions to window size so the video centers nicely in the lightbox
         itemData.width = window.innerWidth;
         itemData.height = window.innerHeight;
+        
+        // CRITICAL: Delete the src property so PhotoSwipe stops trying to load the MP4 as an image
+        delete itemData.src; 
         
         // Inject the HTML5 Video Player
         itemData.html = `
           <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; background: rgba(0,0,0,0.95);">
-            <video controls autoplay playsinline style="max-width: 95vw; max-height: 95vh; outline: none; background: #000; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+            <video controls autoplay playsinline poster="${posterUrl}" style="max-width: 95vw; max-height: 90vh; outline: none; background: #000; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
               <source src="${videoUrl}" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
         `;
-        
-        // Clear src so PhotoSwipe doesn't try to preload the video as an image
-        itemData.src = null; 
       }
       return itemData;
     });
 
-    // Custom caption (optional)
+    // Custom caption
     lightbox.on('uiRegister', () => {
       lightbox.pswp.ui.registerElement({
         name: 'custom-caption',
@@ -295,14 +290,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     lightbox.init();
-    window.lightbox = lightbox; // Fixed typo: l ightbox -> lightbox
+    window.lightbox = lightbox;
   }
 
-  // Event listeners
   searchEl.addEventListener("input", renderGallery);
   tagFilterEl.addEventListener("change", renderGallery);
 
-  // Initial render
   renderGallery();
 });
 </script>
