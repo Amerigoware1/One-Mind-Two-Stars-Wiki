@@ -51,7 +51,7 @@ permalink: /gallery/
   object-fit: cover;
   border-radius: 4px;
   cursor: pointer;
-  background: #000; 
+  background: #000;
 }
 
 .card-title {
@@ -120,10 +120,77 @@ permalink: /gallery/
 .pswp--touch .pswp__button--arrow {
   visibility: visible !important;
 }
+
+/* Video Modal Styles */
+.video-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.video-modal.active {
+  display: flex;
+}
+
+.video-modal video {
+  max-width: 95vw;
+  max-height: 85vh;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  outline: none;
+}
+
+.video-modal-caption {
+  margin-top: 1rem;
+  text-align: center;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.video-modal-caption .title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.video-modal-caption .description {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.video-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.video-modal-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
 </style>
 
 <script>
-console.log("Gallery script running (v5 Video Fix)");
+console.log("Gallery script running (v5 with Video Modal)");
 document.addEventListener("DOMContentLoaded", async () => {
   const galleryEl = document.getElementById("gallery");
   const searchEl = document.getElementById("gallery-search");
@@ -132,6 +199,41 @@ document.addEventListener("DOMContentLoaded", async () => {
   let allItems = [];
   let currentItems = [];
   const baseUrl = "{{ '/assets/images/gallery/' | relative_url }}";
+
+  // Create video modal
+  const videoModal = document.createElement("div");
+  videoModal.className = "video-modal";
+  videoModal.innerHTML = `
+    <button class="video-modal-close" aria-label="Close video">&times;</button>
+    <video controls playsinline></video>
+    <div class="video-modal-caption">
+      <div class="title"></div>
+      <div class="description"></div>
+    </div>
+  `;
+  document.body.appendChild(videoModal);
+
+  const modalVideo = videoModal.querySelector("video");
+  const modalClose = videoModal.querySelector(".video-modal-close");
+  const modalTitle = videoModal.querySelector(".title");
+  const modalDesc = videoModal.querySelector(".description");
+
+  // Close modal functions
+  function closeVideoModal() {
+    videoModal.classList.remove("active");
+    modalVideo.pause();
+    modalVideo.src = "";
+  }
+
+  modalClose.addEventListener("click", closeVideoModal);
+  videoModal.addEventListener("click", (e) => {
+    if (e.target === videoModal) closeVideoModal();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && videoModal.classList.contains("active")) {
+      closeVideoModal();
+    }
+  });
 
   // Load manifest
   try {
@@ -185,20 +287,39 @@ document.addEventListener("DOMContentLoaded", async () => {
     galleryEl.innerHTML = "";
     currentItems.forEach((item, idx) => {
       const link = document.createElement("a");
-      link.href = baseUrl + item.file;
-      link.dataset.pswpWidth = item.width;
-      link.dataset.pswpHeight = item.height;
-      link.dataset.pswpIndex = idx;
       link.className = "card-bg";
 
       const mediaUrl = baseUrl + item.file;
       let mediaHtml;
 
       if (isVideoFile(item.file)) {
-        // FIX 1: Use the poster attribute so it doesn't show a black box
         const posterUrl = item.poster ? baseUrl + item.poster : '';
         mediaHtml = `<video src="${mediaUrl}" poster="${posterUrl}" muted loop playsinline preload="metadata"></video>`;
+        
+        // For videos, don't set href (prevent PhotoSwipe), use data attributes instead
+        link.dataset.videoUrl = mediaUrl;
+        link.dataset.posterUrl = posterUrl;
+        link.dataset.title = item.title;
+        link.dataset.description = item.description;
+        link.dataset.index = idx;
+        link.style.cursor = "pointer";
+        
+        // Click handler for video
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          modalVideo.src = item.file;
+          modalVideo.poster = posterUrl;
+          modalTitle.textContent = item.title;
+          modalDesc.textContent = item.description;
+          videoModal.classList.add("active");
+          modalVideo.play();
+        });
       } else {
+        link.href = baseUrl + item.file;
+        link.dataset.pswpWidth = item.width;
+        link.dataset.pswpHeight = item.height;
+        link.dataset.pswpIndex = idx;
         mediaHtml = `<img src="${mediaUrl}" alt="${escapeHtml(item.title)}">`;
       }
 
@@ -217,48 +338,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     initLightbox();
   }
 
-  // PhotoSwipe v5 lightbox
+  // PhotoSwipe v5 lightbox (images only)
   let lightbox = null;
   function initLightbox() {
     if (lightbox) lightbox.destroy();
 
     lightbox = new PhotoSwipeLightbox({
       gallery: '#gallery',
-      children: 'a',
+      children: 'a[href]', // Only target links with href (images, not videos)
       pswpModule: PhotoSwipe,
       wheelToZoom: true,
       pinchToClose: true,
       showHideAnimationType: 'zoom',
       closeOnVerticalDrag: true,
-    });
-
-    // FIX 2: Properly intercept video clicks and strip the image source
-    lightbox.addFilter('itemData', (itemData, element, index) => {
-      const item = currentItems[index];
-      
-      if (item && isVideoFile(item.file)) {
-        const videoUrl = itemData.src; 
-        const posterUrl = item.poster ? baseUrl + item.poster : '';
-        
-        // Tell PhotoSwipe this is HTML, not an image
-        itemData.type = 'html';
-        itemData.width = window.innerWidth;
-        itemData.height = window.innerHeight;
-        
-        // CRITICAL: Delete the src property so PhotoSwipe stops trying to load the MP4 as an image
-        delete itemData.src; 
-        
-        // Inject the HTML5 Video Player
-        itemData.html = `
-          <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; background: rgba(0,0,0,0.95);">
-            <video controls autoplay playsinline poster="${posterUrl}" style="max-width: 95vw; max-height: 90vh; outline: none; background: #000; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.5);">
-              <source src="${videoUrl}" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        `;
-      }
-      return itemData;
     });
 
     // Custom caption
