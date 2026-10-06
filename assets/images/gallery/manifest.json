@@ -702,7 +702,7 @@
     "height": 1024
   },
   {
-    "file": "xan-duska-oxi.webp",
+    "file": "xan-duska-oxi.mp4",
     "title": "Duška and Xan with with Oxi",
     "description": "Duška and Xan playing with with Oxi at home",
     "tags": [
@@ -712,7 +712,8 @@
       "book 4"
     ],
     "width": 672,
-    "height": 1000
+    "height": 1000,
+    "poster": "xan-duska-oxi.webp"
   },  
   {
     "file": "ethan-age10.webp",
