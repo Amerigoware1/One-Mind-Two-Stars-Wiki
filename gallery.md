@@ -320,6 +320,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         link.dataset.pswpWidth = item.width;
         link.dataset.pswpHeight = item.height;
         link.dataset.pswpIndex = idx;
+        link.dataset.title = item.title;
+        link.dataset.description = item.description;
         mediaHtml = `<img src="${mediaUrl}" alt="${escapeHtml(item.title)}">`;
       }
 
@@ -353,7 +355,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       closeOnVerticalDrag: true,
     });
 
-    // Custom caption
+    // Custom caption — use the original DOM element so videos in currentItems
+    // do not shift PhotoSwipe's image-only indices
     lightbox.on('uiRegister', () => {
       lightbox.pswp.ui.registerElement({
         name: 'custom-caption',
@@ -362,18 +365,24 @@ document.addEventListener("DOMContentLoaded", async () => {
         appendTo: 'root',
         onInit: (el, pswpInstance) => {
           const updateCaption = () => {
-            const idx = pswpInstance.currSlide.index;
-            const item = currentItems[idx];
-            if (item && el) {
-              el.innerHTML = `
-                <div style="padding: 1rem; text-align: center; color: #fff; background: rgba(0,0,0,0); position: absolute; bottom: 0; left: 0; right: 0;">
-                  <div style="font-weight: bold; margin-bottom: 0.25rem;">${escapeHtml(item.title)}</div>
-                  <div style="font-size: 0.85rem;">${escapeHtml(item.description)}</div>
-                </div>
-              `;
-            } else if (el) {
-              el.innerHTML = '';
+            const slideEl = pswpInstance.currSlide?.data?.element;
+            if (!slideEl || !el) {
+              if (el) el.innerHTML = '';
+              return;
             }
+            // Prefer data attributes (set on every card); fall back to visible text
+            const title = slideEl.dataset.title
+              || slideEl.querySelector('.card-title')?.textContent
+              || '';
+            const description = slideEl.dataset.description
+              || slideEl.querySelector('.card-description')?.textContent
+              || '';
+            el.innerHTML = `
+              <div style="padding: 1rem; text-align: center; color: #fff; background: rgba(0,0,0,0); position: absolute; bottom: 0; left: 0; right: 0;">
+                <div style="font-weight: bold; margin-bottom: 0.25rem;">${escapeHtml(title)}</div>
+                <div style="font-size: 0.85rem;">${escapeHtml(description)}</div>
+              </div>
+            `;
           };
           pswpInstance.on('change', updateCaption);
           pswpInstance.on('afterInit', updateCaption);
