@@ -11,7 +11,7 @@ function: "Musical instrument"
       <td colspan="2" class="text-center pb-2">
 <div class="portrait-container">
     <video id="celectrum-vid" autoplay muted playsinline class="portrait" poster="assets/images/Celectrum.jpg">
-      <source src="assets/images/celectrum.mp4" type="video/mp4">
+      <source src="assets/images/gallery/celectrum.mp4" type="video/mp4">
       <img src="assets/images/Celectrum.jpg" title="Your browser does not support the video tag">
     </video>
     
