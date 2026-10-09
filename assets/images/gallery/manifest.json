@@ -64,8 +64,8 @@
       "celectra",
       "carisco"
     ],
-    "width": 589,
-    "height": 1178
+    "width": 1664,
+    "height": 2496
   },
   {
     "file": "celectra-karate.webp",
@@ -702,6 +702,20 @@
     "width": 1536,
     "height": 1024
   },
+  {
+    "file": "duska-dancing.webp",
+    "title": "Duška dancing",
+    "description": "Duška at age 5 dancing in a studio at the Activity Center",
+    "tags": [
+      "duška",
+      "activity center",
+      "dancing",
+      "book 2"
+    ],
+    "width": 720,
+    "height": 960,
+    "poster": "duska-dance.webp"
+  },  
   {
     "file": "xan-duska-oxi.mp4",
     "title": "Duška and Xan with with Oxi",
