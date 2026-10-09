@@ -187,6 +187,11 @@ permalink: /gallery/
 .video-modal-close:hover {
   background: rgba(255, 255, 255, 0.1);
 }
+/* Custom background color for video cards */
+.video-card {
+  background-color: #2a124d !important; /* Adjust hex color to preference */
+  border: 1px solid #7b4fd4; /* Optional border accent */
+}
 </style>
 
 <script>
@@ -293,6 +298,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       let mediaHtml;
 
       if (isVideoFile(item.file)) {
+        link.className = "card-bg video-card";
         const posterUrl = item.poster ? baseUrl + item.poster : '';
         mediaHtml = `<video src="${mediaUrl}" poster="${posterUrl}" muted loop playsinline preload="metadata"></video>`;
         
