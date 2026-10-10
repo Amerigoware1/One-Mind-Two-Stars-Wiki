@@ -285,6 +285,17 @@
     "height": 784
   },
   {
+    "file": "xan-floating.webp",
+    "title": "Xan at the grotto",
+    "description": "Xan relaxing in the geothermal pool",
+    "tags": [
+      "xan",
+      "grotto"
+    ],
+    "width": 720,
+    "height": 1080
+  },   
+  {
     "file": "carisco-family.webp",
     "title": "The Carisco Family Portrait",
     "description": "A formal portrait of the Carisco family from Book 2, showing the growing family.",
@@ -766,7 +777,17 @@
     "width": 672,
     "height": 1000
   },
-  
+  {
+    "file": "hiro-kowan.webp",
+    "title": "Hiro and Kowan",
+    "description": "Hiro and Kowan at the Nexus in New Eden",
+    "tags": [
+      "hiro",
+      "kowan"
+    ],
+    "width": 1536,
+    "height": 1024
+  },   
   {
     "file": "swimming-hole.webp",
     "title": "The Swimming Hole",
@@ -1001,7 +1022,19 @@
     ],
     "width": 1024,
     "height": 1536
-  },  
+  },
+   
+  {
+    "file": "nyanhial-nhial.webp",
+    "title": "Nyanhial & Nhial",
+    "description": "Nyanhial & Nhial doing schoolwork",
+    "tags": [
+      "nyanhial",
+      "nhial"
+    ],
+    "width": 1086,
+    "height": 1448
+  },    
   {
     "file": "nyanhial-nhial.webp",
     "title": "Nyanhial & Nhial",
