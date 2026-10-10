@@ -12,7 +12,7 @@ birthday: March 15, 2085
 birthplace: Cambridge, Massachusetts, Earth
 gender assignment: "male"
 gender:  "male"
-orientation: "gay"
+orientation: "Homosexual"
 orientation_awareness_age: 17
 status: Alive
 death_date:
