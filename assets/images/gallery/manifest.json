@@ -893,6 +893,18 @@
     "height": 1536
   },
   {
+    "file": "sam-masc-age12.webp",
+    "title": "Sam Childhood",
+    "description": "Sam masculine at age 12 (no wig).",
+    "tags": [
+      "sam",
+      "utopis",
+      "homework"
+    ],
+    "width": 1664,
+    "height": 2512
+  }, 
+  {
     "file": "sam-alt.webp",
     "title": "Sam Homework",
     "description": "Sam doing homework on Utopis.",
@@ -943,7 +955,7 @@
     "height": 1536
   },
   {
-    "file": "sam-and-maya.webp",
+    "file": "sam-and-maya.mp4",
     "title": "Sam and Maya",
     "description": "Sam and Maya celebrating the grand opening of the Samaya Gallery and Museum of Integration between books 4 and 5.",
     "tags": [
@@ -954,7 +966,8 @@
       "Integration"
     ],
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "poster": "sam-and-maya.webp"
   },
   {
     "file": "leila-alt.webp",
