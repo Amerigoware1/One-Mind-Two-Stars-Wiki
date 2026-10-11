@@ -81,6 +81,20 @@
     "height": 1536
   },
   {
+    "file": "sparring-solo.mp4",
+    "title": "Celectra sparring solo",
+    "description": "Celectra practicing by herself in the dojo",
+    "tags": [
+      "celectra",
+      "carisco",
+      "athletic activities",
+      "karate"
+    ],
+    "width": 1024,
+    "height": 1536,
+    "poster": "sparring-solo.webp"
+  },
+  {
     "file": "celectra-practicing.mp4",
     "title": "Celectra practicing",
     "description": "Celectra practicing karate",
@@ -140,7 +154,7 @@
     "height": 1000
   },
   {
-    "file": "dance.webp",
+    "file": "dance.mp4",
     "title": "Celectra dance",
     "description": "Celectra practicing dance",
     "tags": [
@@ -150,7 +164,8 @@
       "dance"
     ],
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "poster": "dance.webp"
   },
   {
     "file": "gymnastics.webp",
