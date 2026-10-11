@@ -109,7 +109,23 @@
     "width": 1226,
     "height": 1283,
     "poster": "celectra-vs-aulii.webp" 
-  },     
+  },
+  {
+    "file": "karate1.mp4",
+    "title": "Celectra vs. Aulii",
+    "description": "Celectra sparring against Aulii in the dojo",
+    "tags": [
+      "celectra",
+      "carisco",
+      "aulii",
+      "Vongphachanh",
+      "athletic activities",
+      "karate"
+    ],
+    "width": 1024,
+    "height": 1536,
+    "poster": "karate1.webp" 
+  },        
   {
     "file": "acrobatics1.webp",
     "title": "Celectra acrobatics",
