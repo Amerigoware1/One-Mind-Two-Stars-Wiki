@@ -595,6 +595,21 @@
     "height": 1536
   },
   {
+    "file": "dee.mp4",
+    "title": "Dee with wise words",
+    "description": "Dee speaks words of wisdom.",
+    "tags": [
+      "dee",
+      "bonzi",
+      "gardening",
+      "hydoponics",
+      "book 5"
+    ],
+    "width": 843,
+    "height": 1264,
+    "poster": "dee.webp"
+  },
+  {
     "file": "ani.png",
     "title": "Artificial Neural Interface",
     "description": "The experimental ANI device that allows neural linking between humans and Galinstanian consciousness and, eventually, Utara.",
