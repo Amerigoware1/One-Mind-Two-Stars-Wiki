@@ -1309,7 +1309,7 @@
     "height": 1000
   },
   {
-    "file": "zahara-playing.webp",
+    "file": "zahara-playing.mp4",
     "title": "Zahara at age 28",
     "description": "Zahara at age 28, playing at home.",
     "tags": [
@@ -1320,7 +1320,8 @@
       "book 4"
     ],
     "width": 672,
-    "height": 1000
+    "height": 1000,
+    "poster": "zahara-playing.webp"
   },
   {
     "file": "zuri-age8.webp",
