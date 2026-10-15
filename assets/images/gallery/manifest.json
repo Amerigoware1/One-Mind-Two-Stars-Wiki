@@ -1337,7 +1337,7 @@
     "height": 1174
   },
   {
-    "file": "zuri-emma-with-twins.webp",
+    "file": "zuri-emma-with-twins.mp4",
     "title": "Zuri, Emma, and the Twins",
     "description": "Zuri, Emma, and the twins playing together.",
     "tags": [
@@ -1347,7 +1347,8 @@
       "book 4"
     ],
     "width": 1536,
-    "height": 1024
+    "height": 1024,
+    "poster": "zuri-emma-with-twins.webp"
   },
   
   {
