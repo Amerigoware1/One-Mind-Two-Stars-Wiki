@@ -2304,3 +2304,39 @@ hr {
   margin-top: 0.5rem;
   font-size: 0.85rem;
 }
+/* --- Optional Gold Theme Overrides --- */
+body.theme-gold {
+    --bg-space: #050505;
+    --bg-card: linear-gradient(160deg, #191919 0%, #0b0b0b 28%, #111 53%, #060606 100%);
+    --bg-card-dark: #080808;
+    --border-glow: rgba(216, 180, 79, 0.38);
+
+    --neon-violet: #d8b44f; /* Re-mapped to primary gold accent */
+    --neon-cyan: #fff0ad;   /* Re-mapped to bright gold/cream */
+    --neon-magenta: #b9a879;/* Re-mapped to muted gold */
+
+    --text-primary: #f8f2df;
+    --text-muted: #b9a879;
+    --text-heading: #fff4bd;
+
+    --glow-violet: rgba(216, 180, 79, 0.22);
+    --glow-cyan: rgba(255, 240, 173, 0.15);
+}
+
+/* Specific component tweaks for the gold theme background textures */
+body.theme-gold, 
+body.theme-gold .page-body {
+    background: 
+        radial-gradient(ellipse at 50% -12%, rgba(100, 78, 32, 0.22), transparent 45%),
+        radial-gradient(ellipse at 0% 55%, rgba(42, 42, 42, 0.22), transparent 38%),
+        linear-gradient(135deg, #030303 0%, #0b0b0b 48%, #020202 100%);
+    color: var(--text-primary);
+}
+
+body.theme-gold h1 {
+    background: linear-gradient(110deg, #fff4bd 0%, #d4af37 28%, #fff0ad 48%, #a77a25 72%, #f8e8a2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1px solid rgba(216, 180, 79, 0.48);
+}

@@ -6,7 +6,7 @@
       One Mind, Two Stars Wiki
     </span>
       <span class="page-title">{{ page.title | default: "" }}</span>
-
+<button id="themeToggleBtn" onclick="toggleGoldTheme()">Toggle Gold Theme</button>
     <div style="display: flex; align-items: center; gap: 1rem;">
       <a href="{{ '/' | relative_url }}" class="home-button">🏠 Home</a><a href="{{ '/glossary.html' | relative_url }}" class="home-button">📘 Glossary</a> 
       <span id="dynamic-banner-nav" style="display: flex; gap: 1rem;"></span>
@@ -110,7 +110,21 @@ if (isDossier && dossierReturnUrl) {
     }
 
     // SCENARIO F: The hub list directory or homepage --> Does nothing!
+    
+    function toggleGoldTheme() {
+    document.body.classList.toggle('theme-gold');
+    const isGold = document.body.classList.contains('theme-gold');
+    localStorage.setItem('preferred-theme', isGold ? 'gold' : 'default');
+    }
+
+    // Check for saved preference on load
+    window.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('preferred-theme') === 'gold') {
+        document.body.classList.add('theme-gold');
+    }
   });
+    });
+
 </script>
 <style>
 .page-title {
