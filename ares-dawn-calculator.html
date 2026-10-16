@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="assets/images/gallery/og.webp">
+    <style>
+        :root {
+            --color-bg: #050505;
+            --color-ink: #f8f2df;
+            --color-muted: #b9a879;
+            --color-gold: #d8b44f;
+            --color-gold-bright: #fff0ad;
+            --color-gold-deep: #76551b;
+            --font-sans: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            --font-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+        }
+
+        * { box-sizing: border-box; }
+
+        button { font-family: inherit; cursor: pointer; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            color: var(--color-ink);
+            font-family: var(--font-sans);
+            background:
+                radial-gradient(ellipse at 50% -12%, rgba(100, 78, 32, 0.22), transparent 45%),
+                radial-gradient(ellipse at 0% 55%, rgba(42, 42, 42, 0.22), transparent 38%),
+                linear-gradient(135deg, #030303 0%, #0b0b0b 48%, #020202 100%);
+        }
+
+        .shell {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 1.75rem 1rem 2.5rem;
+        }
+
+        .container {
+            background:
+                linear-gradient(145deg, rgba(255, 255, 255, 0.045), transparent 17%, transparent 72%, rgba(255, 255, 255, 0.018)),
+                linear-gradient(160deg, #191919 0%, #0b0b0b 28%, #111 53%, #060606 100%);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(224, 190, 94, 0.48);
+            box-shadow:
+                0 24px 65px rgba(0, 0, 0, 0.9),
+                0 0 0 1px rgba(255, 239, 173, 0.035),
+                inset 0 1px 0 rgba(255, 255, 255, 0.12),
+                inset 0 -1px 0 rgba(0, 0, 0, 0.95),
+                inset 0 0 28px rgba(0, 0, 0, 0.48);
+            max-width: 40rem;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 7%; right: 7%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 240, 173, 0.95), rgba(216, 180, 79, 0.8), transparent);
+            box-shadow: 0 0 12px rgba(216, 180, 79, 0.32);
+            pointer-events: none;
+        }
+
+        .container::after {
+            content: "";
+            position: absolute;
+            inset: 7px;
+            border: 1px solid rgba(216, 180, 79, 0.08);
+            border-radius: 10px;
+            pointer-events: none;
+        }
+
+        h1 {
+            font-size: 1.55rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(110deg, #fff4bd 0%, #d4af37 28%, #fff0ad 48%, #a77a25 72%, #f8e8a2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            letter-spacing: 0.045em;
+        }
+
+        .subtitle {
+            color: var(--color-muted);
+            font-size: 0.88rem;
+            margin-bottom: 1.6rem;
+            letter-spacing: 0.055em;
+        }
+
+        .input-group { margin-bottom: 1.15rem; }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #c3b181;
+            font-size: 0.76rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+
+        input[type="date"],
+        input[type="time"] {
+            width: 100%;
+            padding: 0.8rem 0.85rem;
+            background: linear-gradient(180deg, #080808 0%, #151515 45%, #070707 100%);
+            border: 1px solid rgba(216, 180, 79, 0.28);
+            border-radius: 8px;
+            color: var(--color-ink);
+            font-size: 1rem;
+            color-scheme: dark;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.035);
+        }
+
+        input[type="date"]:hover,
+        input[type="time"]:hover { border-color: rgba(216, 180, 79, 0.48); }
+
+        input[type="date"]:focus,
+        input[type="time"]:focus {
+            outline: none;
+            border-color: rgba(255, 230, 145, 0.85);
+            box-shadow:
+                inset 0 2px 5px rgba(0, 0, 0, 0.85),
+                0 0 0 2px rgba(216, 180, 79, 0.14),
+                0 0 16px rgba(216, 180, 79, 0.1);
+        }
+
+        .results {
+            background:
+                linear-gradient(135deg, rgba(255, 255, 255, 0.025), transparent 35%),
+                linear-gradient(180deg, #090909 0%, #101010 50%, #060606 100%);
+            padding: 1.25rem;
+            border-radius: 11px;
+            margin-top: 1.5rem;
+            border: 1px solid rgba(216, 180, 79, 0.27);
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.055),
+                inset 0 0 22px rgba(0, 0, 0, 0.55),
+                0 7px 24px rgba(0, 0, 0, 0.42);
+        }
+
+        .result-label {
+            color: var(--color-muted);
+            font-size: 0.77rem;
+            margin-bottom: 0.45rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+
+        .dawn-time {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0 0 0.75rem;
+            line-height: 1.1;
+            font-variant-numeric: tabular-nums;
+            background: linear-gradient(120deg, #fff4bd 0%, #d7b346 38%, #fff0ad 58%, #a77a25 82%, #f5e4a0 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            filter: drop-shadow(0 0 10px rgba(216, 180, 79, 0.22));
+        }
+
+        .dawn-time.multi { font-size: 1.7rem; }
+
+        .badges { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.85rem; }
+
+        .cycle-badge {
+            background: linear-gradient(135deg, #fff0ad 0%, #d8b44f 42%, #8b641d 100%);
+            color: #100d05;
+            padding: 0.25rem 0.78rem;
+            border-radius: 9999px;
+            font-weight: 700;
+            font-size: 0.76rem;
+            letter-spacing: 0.055em;
+            border: 1px solid rgba(255, 245, 196, 0.48);
+            box-shadow: 0 2px 10px rgba(216, 180, 79, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.58);
+        }
+
+        .detail { font-size: 0.84rem; color: #b9ad8a; line-height: 1.55; }
+        .note { font-size: 0.8rem; color: #f2d56e; margin-top: 0.6rem; line-height: 1.45; }
+        .timeline { margin-top: 1.4rem; }
+
+        .timeline-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .legend { display: flex; gap: 0.7rem; text-transform: none; letter-spacing: 0; }
+        .legend span { display: inline-flex; align-items: center; gap: 0.3rem; }
+        .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+        .swatch.day {
+            background: linear-gradient(180deg, #fff0ad 0%, #d8b44f 45%, #8b641d 100%);
+            box-shadow: 0 0 6px rgba(216, 180, 79, 0.35);
+        }
+        .swatch.night {
+            background: linear-gradient(180deg, #292929 0%, #070707 100%);
+            border: 1px solid rgba(216, 180, 79, 0.36);
+        }
+
+        .bar {
+            position: relative;
+            height: 56px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #030303;
+            border: 1px solid rgba(216, 180, 79, 0.38);
+            box-shadow: inset 0 2px 7px rgba(0, 0, 0, 0.95), 0 0 14px rgba(216, 180, 79, 0.055);
+        }
+        .bar::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 45%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 100%);
+            pointer-events: none;
+            z-index: 6;
+        }
+        .seg { position: absolute; top: 0; bottom: 0; }
+        .seg.day {
+            background: linear-gradient(180deg, #fff1b2 0%, #d8b44f 35%, #b88624 70%, #76551b 100%);
+            box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.17);
+        }
+        .seg.night { background: linear-gradient(180deg, #242424 0%, #0c0c0c 60%, #030303 100%); }
+        .gridline { position: absolute; top: 0; bottom: 0; width: 1px; z-index: 4; pointer-events: none; }
+        .gridline.major { background: rgba(216, 180, 79, 0.42); }
+        .gridline.minor { background: rgba(216, 180, 79, 0.17); }
+        .gridline.midnight {
+            background: rgba(255, 240, 173, 0.88);
+            width: 2px;
+            box-shadow: 0 0 8px rgba(216, 180, 79, 0.55);
+            z-index: 5;
+        }
+
+        .ticks { position: relative; height: 28px; margin-top: 7px; }
+        .tick {
+            position: absolute;
+            top: 0;
+            transform: translateX(-50%);
+            font-family: inherit;
+            font-size: 0.68rem;
+            color: #a99769;
+            font-variant-numeric: tabular-nums;
+            letter-spacing: 0.02em;
+            padding: 2px 4px;
+            border: 0;
+            border-radius: 4px;
+            background: transparent;
+            cursor: pointer;
+            user-select: none;
+            line-height: 1.2;
+        }
+        .tick.major { color: #d2bd80; font-size: 0.7rem; }
+        .tick.minor { color: #786844; font-size: 0.58rem; top: 2px; }
+        .tick.midnight { color: var(--color-gold-bright); font-weight: 700; }
+        .tick.first { transform: translateX(0); }
+        .tick.last { transform: translateX(-100%); }
+        .tick:hover, .tick:focus-visible { color: #fff6d0; background: rgba(216, 180, 79, 0.13); }
+        .tick.selected {
+            color: #fff5c8;
+            background: rgba(216, 180, 79, 0.2);
+            box-shadow: inset 0 0 0 1px rgba(255, 230, 145, 0.58);
+        }
+
+        .days { display: flex; margin-top: 2px; font-size: 0.72rem; color: #a99769; }
+        .days > div {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1px;
+            text-align: center;
+            line-height: 1.3;
+            min-width: 0;
+        }
+        .days .dow {
+            color: #f0e2b8;
+            font-weight: 650;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.66rem;
+        }
+        .days .dom { color: #a99769; letter-spacing: 0.04em; }
+
+        .watches {
+            border-top: 1px solid rgba(216, 180, 79, 0.23);
+            padding-top: 1rem;
+            margin-top: 1.35rem;
+        }
+        .watch-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.84rem;
+            margin-bottom: 0.45rem;
+            padding: 0.55rem 0.65rem;
+            border: 1px solid transparent;
+            border-radius: 7px;
+        }
+        .watch-name { color: var(--color-muted); letter-spacing: 0.055em; }
+        .watch-time { font-variant-numeric: tabular-nums; color: #f0e2b8; text-align: right; }
+        .watch-item.active {
+            background: linear-gradient(100deg, rgba(216, 180, 79, 0.17), rgba(216, 180, 79, 0.045));
+            border-color: rgba(255, 224, 133, 0.62);
+            box-shadow: inset 0 1px 0 rgba(255, 245, 196, 0.09), 0 0 15px rgba(216, 180, 79, 0.12);
+        }
+        .watch-item.active .watch-name { color: var(--color-gold-bright); }
+        .watch-item.active .watch-time { color: #fff5ce; }
+        .watch-hint { color: #c8b77f; font-size: 0.78rem; line-height: 1.5; margin-top: 0.65rem; }
+
+        .temporal-tag {
+            margin-top: 0.8rem;
+            padding: 0.8rem;
+            border: 1px solid rgba(216, 180, 79, 0.28);
+            border-radius: 8px;
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.035), rgba(0, 0, 0, 0.35));
+        }
+        .temporal-tag-label {
+            color: var(--color-muted);
+            font-size: 0.68rem;
+            letter-spacing: 0.11em;
+            text-transform: uppercase;
+            margin-bottom: 0.45rem;
+        }
+        .tag-row { display: flex; gap: 0.5rem; align-items: stretch; }
+        .tag-text {
+            flex: 1;
+            min-width: 0;
+            padding: 0.65rem;
+            border: 1px solid rgba(216, 180, 79, 0.2);
+            border-radius: 6px;
+            background: #050505;
+            color: var(--color-gold-bright);
+            font: 0.75rem/1.5 var(--font-mono);
+            overflow-wrap: break-word;
+            white-space: pre-wrap;
+            user-select: text;
+            -webkit-user-select: text;
+            cursor: text;
+            caret-color: var(--color-gold-bright);
+        }
+        .tag-text:focus {
+            outline: none;
+            border-color: rgba(255, 230, 145, 0.75);
+            box-shadow: 0 0 0 1px rgba(216, 180, 79, 0.28);
+        }
+        .tag-text::selection { background: #fff0ad; color: #1a1408; }
+        .copy-tag {
+            flex: 0 0 auto;
+            padding: 0.55rem 0.75rem;
+            border: 1px solid rgba(255, 230, 145, 0.55);
+            border-radius: 6px;
+            background: linear-gradient(145deg, #f7e5a0, #b88624 70%, #76551b);
+            color: #100d05;
+            font-weight: 700;
+            font-size: 0.78rem;
+            cursor: pointer;
+        }
+        .copy-tag:hover, .copy-tag:focus-visible { filter: brightness(1.12); }
+        .copy-tag:focus-visible { outline: 2px solid rgba(255, 240, 173, 0.65); outline-offset: 2px; }
+        .copy-status { color: var(--color-muted); font-size: 0.7rem; margin-top: 0.4rem; min-height: 1em; }
+        .tag-help { color: #c8b77f; font-size: 0.75rem; line-height: 1.5; margin: 0.55rem 0 0; }
+
+        .footer-note {
+            margin-top: 1.5rem;
+            font-size: 0.76rem;
+            color: #a99769;
+            line-height: 1.6;
+            border-top: 1px solid rgba(216, 180, 79, 0.17);
+            padding-top: 1rem;
+        }
+
+        @media (max-width: 420px) {
+            .container { padding: 1.25rem; }
+            .dawn-time { font-size: 2.1rem; }
+            .watch-item { align-items: flex-start; flex-direction: column; gap: 0.2rem; }
+            .watch-time { text-align: left; }
+            .tick { padding-left: 2px; padding-right: 2px; }
+            .days .dow { letter-spacing: 0.04em; font-size: 0.6rem; }
+        }
+    </style>
+</head>
+<body>
+<main class="shell">
+    <div class="container">
+        <h1>Ares Dawn Calculator</h1>
+        <div class="subtitle">18-hour local day · 9 h daylight · 9 h night</div>
+
+        <div class="input-group">
+            <label for="refDate">Reference Dawn Date</label>
+            <input id="refDate" type="date" value="2232-10-14">
+        </div>
+        <div class="input-group">
+            <label for="refTime">Reference Dawn Time (Earth clock)</label>
+            <input id="refTime" type="time" value="12:00">
+        </div>
+        <div class="input-group">
+            <label for="targetDate">Target Date</label>
+            <input id="targetDate" type="date" value="2232-10-19">
+        </div>
+
+        <section class="results" id="results" hidden>
+            <div class="result-label">Dawn on <span id="targetLabel">--</span></div>
+            <div class="dawn-time" id="dawnTime">--:--</div>
+            <div class="badges" id="badges"></div>
+            <div class="detail" id="detail"></div>
+            <div class="note" id="note" hidden></div>
+
+            <div class="timeline">
+                <div class="timeline-head">
+                    <span>Daylight & Night · 48 h</span>
+                    <span class="legend">
+                        <span><i class="swatch day"></i>Day</span>
+                        <span><i class="swatch night"></i>Night</span>
+                    </span>
+                </div>
+                <div class="bar" id="bar"></div>
+                <div class="ticks" id="ticks"></div>
+                <div class="days" id="days"></div>
+            </div>
+
+            <div class="watches">
+                <div class="watch-item" id="watchItem1"><span class="watch-name">First Watch</span><span class="watch-time" id="watch1">--:-- – --:--</span></div>
+                <div class="watch-item" id="watchItem2"><span class="watch-name">Second Watch</span><span class="watch-time" id="watch2">--:-- – --:--</span></div>
+                <div class="watch-item" id="watchItem3"><span class="watch-name">Third Watch</span><span class="watch-time" id="watch3">--:-- – --:--</span></div>
+                <div class="watch-hint" id="watchHint" aria-live="polite">Select a time tick to identify its cycle and watch.</div>
+                <div class="temporal-tag" id="temporalTagPanel" hidden>
+                    <div class="temporal-tag-label">Manuscript temporal tag</div>
+                    <div class="tag-row">
+                        <div id="temporalTag" class="tag-text" contenteditable="plaintext-only" role="textbox" aria-multiline="false" spellcheck="false" translate="no" aria-label="Manuscript temporal tag. Edit the four-digit time; cycle and watch follow. Highlight any part to copy it."></div>
+                        <button class="copy-tag" id="copyTagButton" type="button">Copy</button>
+                    </div>
+                    <p class="tag-help">Edit the four-digit time and the cycle and watch follow. Highlight any stretch of the tag, then copy that selection from the menu.</p>
+                    <div class="copy-status" id="copyStatus"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-note">
+            Ares day = 18 Earth hours: 9 of daylight, 9 of night. Dawn therefore drifts 6 hours earlier each Earth day, and 4 dawns fall in 3 Earth days — so some calendar days hold two dawns, and the day after holds two sunsets.<br>
+            Niamh & Ciara drive the actual sunrise; Chaos provides the secondary glow.
+        </div>
+    </div>
+</main>
+<script>
+    const HOUR = 3600000;
+    const ARES_DAY = 18 * HOUR;
+    const LIGHT = 9 * HOUR;
+    const EARTH_DAY = 24 * HOUR;
+    const WATCH = 6 * HOUR;
+    const CYCLES = ["A", "B", "C", "D"];
+    const WATCH_LABELS = ["First Watch", "Second Watch", "Third Watch"];
+    const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const TAG_TIME = /\/\/\s*(\d{4})-(\d{2})-(\d{2})\s*\/\/\s*(\d{2})(\d{2})\s*HRS/i;
+    const DEFAULT_HINT = "Select a time tick to identify its cycle and watch.";
+
+    const refDateInput = document.getElementById("refDate");
+    const refTimeInput = document.getElementById("refTime");
+    const targetDateInput = document.getElementById("targetDate");
+    const tagEl = document.getElementById("temporalTag");
+    const resultsEl = document.getElementById("results");
+
+    let selectedMs = null;
+    let copyStatus = "";
+    let tagNote = "";
+    let pendingCaret = null;
+    let currentModel = null;
+
+    function pad(n) { return String(n).padStart(2, "0"); }
+
+    function toMs(dateStr, timeStr) {
+        const [y, m, d] = dateStr.split("-").map(Number);
+        const [hh, mm] = (timeStr || "00:00").split(":").map(Number);
+        return Date.UTC(y, m - 1, d, hh || 0, mm || 0);
+    }
+
+    function startOfDay(ms) { return Math.floor(ms / EARTH_DAY) * EARTH_DAY; }
+
+    function fmtTime(ms) {
+        const d = new Date(ms);
+        return pad(d.getUTCHours()) + ":" + pad(d.getUTCMinutes());
+    }
+
+    function fmtDate(ms) {
+        const d = new Date(ms);
+        return MONTHS[d.getUTCMonth()] + " " + d.getUTCDate();
+    }
+
+    function weekdayName(ms) { return WEEKDAYS[new Date(ms).getUTCDay()]; }
+
+    function isoDate(ms) {
+        const d = new Date(ms);
+        return d.getUTCFullYear() + "-" + pad(d.getUTCMonth() + 1) + "-" + pad(d.getUTCDate());
+    }
+
+    function compactTime(ms) {
+        const d = new Date(ms);
+        return pad(d.getUTCHours()) + pad(d.getUTCMinutes());
+    }
+
+    function fmtTimeOffset(ms, base) {
+        const days = Math.round((startOfDay(ms) - startOfDay(base)) / EARTH_DAY);
+        return fmtTime(ms) + (days > 0 ? " (+" + days + "d)" : "");
+    }
+
+    function cycleOf(k) { return CYCLES[((k % 4) + 4) % 4]; }
+
+    function describeInstant(ms, refMs) {
+        const cycleIndex = Math.floor((ms - refMs) / ARES_DAY);
+        const cycleStart = refMs + cycleIndex * ARES_DAY;
+        const watchIndex = Math.min(2, Math.max(0, Math.floor((ms - cycleStart) / WATCH)));
+        return { cycle: cycleOf(cycleIndex), watch: WATCH_LABELS[watchIndex] };
+    }
+
+    function formatTag(ms, refMs) {
+        const described = describeInstant(ms, refMs);
+        return "// " + isoDate(ms) + " // " + compactTime(ms) + " HRS // CYCLE " + described.cycle + " // " + described.watch.toUpperCase();
+    }
+
+    function parseTagInstant(text) {
+        const m = String(text || "").match(TAG_TIME);
+        if (!m) return null;
+        const year = Number(m[1]);
+        const month = Number(m[2]);
+        const day = Number(m[3]);
+        const hour = Number(m[4]);
+        const minute = Number(m[5]);
+        if (month < 1 || month > 12 || hour > 23 || minute > 59) return null;
+        const ms = Date.UTC(year, month - 1, day, hour, minute);
+        const dt = new Date(ms);
+        if (dt.getUTCFullYear() !== year || dt.getUTCMonth() !== month - 1 || dt.getUTCDate() !== day) return null;
+        return ms;
+    }
+
+    function dawnsOnDay(refMs, dayStart) {
+        const dayEnd = dayStart + EARTH_DAY;
+        const dawns = [];
+        let k = Math.ceil((dayStart - refMs) / ARES_DAY);
+        for (let guard = 0; guard < 8; guard++, k++) {
+            const t = refMs + k * ARES_DAY;
+            if (t >= dayEnd) break;
+            dawns.push({ k: k, t: t });
+        }
+        return dawns;
+    }
+
+    function sunsetsOnDay(refMs, dayStart) {
+        const dayEnd = dayStart + EARTH_DAY;
+        const sunsets = [];
+        let ks = Math.ceil((dayStart - LIGHT - refMs) / ARES_DAY);
+        for (let guard = 0; guard < 8; guard++, ks++) {
+            const t = refMs + ks * ARES_DAY + LIGHT;
+            if (t >= dayEnd) break;
+            if (t >= dayStart) sunsets.push(t);
+        }
+        return sunsets;
+    }
+
+    function daylightSpans(refMs, stripStart, stripEnd) {
+        const spans = [];
+        let cursor = stripStart;
+        let kk = Math.floor((stripStart - refMs) / ARES_DAY) - 1;
+        for (let guard = 0; guard < 8; guard++, kk++) {
+            const dawn = refMs + kk * ARES_DAY;
+            const sunset = dawn + LIGHT;
+            if (dawn >= stripEnd) break;
+            if (sunset <= stripStart) continue;
+            const s = Math.max(dawn, stripStart);
+            const e = Math.min(sunset, stripEnd);
+            if (s > cursor) spans.push({ type: "night", start: cursor, end: s });
+            if (e > s) {
+                spans.push({ type: "day", start: s, end: e });
+                cursor = e;
+            }
+        }
+        if (cursor < stripEnd) spans.push({ type: "night", start: cursor, end: stripEnd });
+        return spans;
+    }
+
+    function watchesFrom(dawn) {
+        const w1 = dawn;
+        const w2 = w1 + WATCH;
+        const w3 = w2 + WATCH;
+        const w4 = w3 + WATCH;
+        return [
+            { start: w1, end: w2, label: "First Watch" },
+            { start: w2, end: w3, label: "Second Watch" },
+            { start: w3, end: w4, label: "Third Watch" }
+        ];
+    }
+
+    function caretOffset(el) {
+        const sel = window.getSelection();
+        if (!sel || sel.rangeCount === 0) return null;
+        const range = sel.getRangeAt(0);
+        if (!el.contains(range.endContainer)) return null;
+        const pre = range.cloneRange();
+        pre.selectNodeContents(el);
+        pre.setEnd(range.endContainer, range.endOffset);
+        return pre.toString().length;
+    }
+
+    function placeCaret(el, offset) {
+        const node = el.firstChild;
+        if (!node) return;
+        const len = node.textContent ? node.textContent.length : 0;
+        const pos = Math.max(0, Math.min(offset, len));
+        const range = document.createRange();
+        range.setStart(node, pos);
+        range.collapse(true);
+        const sel = window.getSelection();
+        if (!sel) return;
+        sel.removeAllRanges();
+        sel.addRange(range);
+    }
+
+    function syncTag() {
+        if (!currentModel || selectedMs == null) return;
+        const next = formatTag(selectedMs, currentModel.refMs);
+        const draft = tagEl.textContent || "";
+        const caret = pendingCaret;
+        pendingCaret = null;
+        if (draft !== next) {
+            const editing = document.activeElement === tagEl && parseTagInstant(draft) == null && caret == null;
+            if (!editing) tagEl.textContent = next;
+        }
+        if (caret != null && document.activeElement === tagEl) placeCaret(tagEl, caret);
+    }
+
+    function calculate() {
+        if (!refDateInput.value || !refTimeInput.value || !targetDateInput.value) {
+            resultsEl.hidden = true;
+            return;
+        }
+        const refMs = toMs(refDateInput.value, refTimeInput.value);
+        const dayStart = toMs(targetDateInput.value, "00:00");
+        const dawns = dawnsOnDay(refMs, dayStart);
+        if (!dawns.length) {
+            resultsEl.hidden = true;
+            return;
+        }
+        const sunsets = sunsetsOnDay(refMs, dayStart);
+        const stripEnd = dayStart + 2 * EARTH_DAY;
+        const spans = daylightSpans(refMs, dayStart, stripEnd);
+        const dayEnd = dayStart + EARTH_DAY;
+        const bleed = spans.find(function (sp) { return sp.type === "day" && sp.start < dayEnd && sp.end > dayEnd; }) || null;
+        const first = dawns[0];
+        const last = dawns[dawns.length - 1];
+        const watches = watchesFrom(first.t);
+        currentModel = { refMs: refMs, dayStart: dayStart, dawns: dawns, watches: watches };
+
+        document.getElementById("targetLabel").textContent = fmtDate(dayStart);
+        const dawnTimeEl = document.getElementById("dawnTime");
+        dawnTimeEl.textContent = dawns.map(function (d) { return fmtTime(d.t); }).join(" & ");
+        dawnTimeEl.classList.toggle("multi", dawns.length > 1);
+
+        const badges = document.getElementById("badges");
+        badges.innerHTML = "";
+        dawns.forEach(function (d) {
+            const b = document.createElement("span");
+            b.className = "cycle-badge";
+            b.textContent = "Cycle " + describeInstant(d.t, refMs).cycle;
+            badges.appendChild(b);
+        });
+
+        const nextDawn = refMs + (last.k + 1) * ARES_DAY;
+        const sunsetTxt = sunsets.length
+            ? "Sunset" + (sunsets.length > 1 ? "s" : "") + " " + sunsets.map(fmtTime).join(" & ")
+            : "No sunset today";
+        document.getElementById("detail").textContent =
+            sunsetTxt + " · Next dawn " + fmtTime(nextDawn) + " (" + fmtDate(nextDawn) + ")";
+
+        const noteEl = document.getElementById("note");
+        if (bleed) {
+            noteEl.hidden = false;
+            noteEl.textContent = "Daylight runs past midnight — the sun sets at " + fmtTime(bleed.end) + " on " + fmtDate(bleed.end) + ".";
+        } else {
+            noteEl.hidden = true;
+            noteEl.textContent = "";
+        }
+
+        const total = 2 * EARTH_DAY;
+        const bar = document.getElementById("bar");
+        bar.innerHTML = "";
+        spans.forEach(function (sp) {
+            const el = document.createElement("div");
+            el.className = "seg " + sp.type;
+            el.style.left = ((sp.start - dayStart) / total * 100) + "%";
+            el.style.width = ((sp.end - sp.start) / total * 100) + "%";
+            bar.appendChild(el);
+        });
+        for (let h = 3; h < 48; h += 3) {
+            const g = document.createElement("div");
+            g.className = "gridline " + (h === 24 ? "midnight" : h % 6 === 0 ? "major" : "minor");
+            g.style.left = (h / 48 * 100) + "%";
+            bar.appendChild(g);
+        }
+
+        const ticks = document.getElementById("ticks");
+        ticks.innerHTML = "";
+        for (let h = 0; h <= 48; h += 3) {
+            const ms = dayStart + h * HOUR;
+            const el = document.createElement("button");
+            el.type = "button";
+            let cls = "tick";
+            if (h === 0) cls += " first";
+            else if (h === 48) cls += " last";
+            if (h === 24) cls += " midnight";
+            else if (h % 6 === 0) cls += " major";
+            else cls += " minor";
+            if (selectedMs === ms) cls += " selected";
+            el.className = cls;
+            el.style.left = (h / 48 * 100) + "%";
+            el.textContent = pad(h % 24);
+            el.setAttribute("aria-label", weekdayName(ms) + ", " + fmtDate(ms) + " at " + fmtTime(ms) + "; select watch");
+            el.setAttribute("aria-pressed", selectedMs === ms ? "true" : "false");
+            el.addEventListener("click", function () {
+                selectedMs = ms;
+                copyStatus = "";
+                tagNote = "";
+                calculate();
+            });
+            ticks.appendChild(el);
+        }
+
+        const daysEl = document.getElementById("days");
+        daysEl.innerHTML = "";
+        for (let i = 0; i < 2; i++) {
+            const ms = dayStart + i * EARTH_DAY;
+            const cell = document.createElement("div");
+            const dow = document.createElement("span");
+            dow.className = "dow";
+            dow.textContent = weekdayName(ms);
+            const dom = document.createElement("span");
+            dom.className = "dom";
+            dom.textContent = fmtDate(ms);
+            cell.appendChild(dow);
+            cell.appendChild(dom);
+            daysEl.appendChild(cell);
+        }
+
+        for (let i = 0; i < watches.length; i++) {
+            const range = watches[i];
+            const item = document.getElementById("watchItem" + (i + 1));
+            const active = selectedMs != null && selectedMs >= range.start && selectedMs < range.end;
+            item.classList.toggle("active", active);
+            document.getElementById("watch" + (i + 1)).textContent =
+                fmtTimeOffset(range.start, dayStart) + " – " + fmtTimeOffset(range.end, dayStart);
+        }
+
+        const hint = document.getElementById("watchHint");
+        if (selectedMs != null) {
+            const described = describeInstant(selectedMs, refMs);
+            hint.textContent = weekdayName(selectedMs) + ", " + fmtDate(selectedMs) + " at " + fmtTime(selectedMs) +
+                " falls within " + described.watch + " of Cycle " + described.cycle + ".";
+        } else {
+            hint.textContent = DEFAULT_HINT;
+        }
+
+        const panel = document.getElementById("temporalTagPanel");
+        panel.hidden = selectedMs == null;
+        document.getElementById("copyStatus").textContent = tagNote || copyStatus;
+        if (selectedMs != null) syncTag();
+
+        resultsEl.hidden = false;
+    }
+
+    tagEl.addEventListener("input", function () {
+        if (!currentModel) return;
+        const text = tagEl.textContent || "";
+        if (text.length > 180) {
+            tagEl.textContent = formatTag(selectedMs, currentModel.refMs);
+            return;
+        }
+        const ms = parseTagInstant(text);
+        if (ms == null) return;
+        if (selectedMs != null && ms === selectedMs) {
+            const next = formatTag(ms, currentModel.refMs);
+            if (text !== next) {
+                const caret = caretOffset(tagEl);
+                tagEl.textContent = next;
+                if (caret != null) placeCaret(tagEl, caret);
+            }
+            return;
+        }
+        pendingCaret = caretOffset(tagEl);
+        selectedMs = ms;
+        copyStatus = "";
+        tagNote = "";
+        calculate();
+    });
+
+    tagEl.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") event.preventDefault();
+    });
+
+    tagEl.addEventListener("paste", function (event) {
+        event.preventDefault();
+        const text = event.clipboardData.getData("text/plain").replace(/[\r\n]+/g, "");
+        const sel = window.getSelection();
+        if (!sel || sel.rangeCount === 0) return;
+        const range = sel.getRangeAt(0);
+        range.deleteContents();
+        const node = document.createTextNode(text);
+        range.insertNode(node);
+        range.setStartAfter(node);
+        range.collapse(true);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        tagEl.dispatchEvent(new InputEvent("input", { bubbles: true }));
+    });
+
+    tagEl.addEventListener("blur", function () {
+        if (!currentModel || selectedMs == null) return;
+        const next = formatTag(selectedMs, currentModel.refMs);
+        const text = tagEl.textContent || "";
+        if (text === next) return;
+        const ms = parseTagInstant(text);
+        if (ms == null) {
+            tagEl.textContent = next;
+            tagNote = "That time isn't a real Earth-clock hour, so the tag was restored.";
+            document.getElementById("copyStatus").textContent = tagNote;
+            return;
+        }
+        if (ms !== selectedMs) {
+            selectedMs = ms;
+            tagNote = "";
+            calculate();
+        } else {
+            tagEl.textContent = next;
+        }
+    });
+
+    document.getElementById("copyTagButton").addEventListener("click", async function () {
+        if (!currentModel || selectedMs == null) return;
+        const tag = formatTag(selectedMs, currentModel.refMs);
+        try {
+            if (navigator.clipboard && window.isSecureContext) {
+                await navigator.clipboard.writeText(tag);
+            } else {
+                const helper = document.createElement("textarea");
+                helper.value = tag;
+                helper.style.position = "fixed";
+                helper.style.opacity = "0";
+                document.body.appendChild(helper);
+                helper.select();
+                const copied = document.execCommand("copy");
+                helper.remove();
+                if (!copied) throw new Error("copy failed");
+            }
+            copyStatus = "Copied the full tag.";
+            tagNote = "";
+        } catch (error) {
+            copyStatus = "Copy was blocked. Highlight the tag and copy it from the menu.";
+        }
+        document.getElementById("copyStatus").textContent = copyStatus;
+    });
+
+    refDateInput.addEventListener("input", calculate);
+    refTimeInput.addEventListener("input", calculate);
+    targetDateInput.addEventListener("input", calculate);
+    calculate();
+</script>
+</body>
+</html>
