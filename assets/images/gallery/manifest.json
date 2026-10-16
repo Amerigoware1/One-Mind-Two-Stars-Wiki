@@ -30,9 +30,9 @@
     "height": 1536
   },  
   {
-    "file": "baby-celectra.webp",
+    "file": "baby-celectra-eating.mp4",
     "title": "Baby Celectra",
-    "description": "Celectra eatting in highchairs.",
+    "description": "Celectra eating in highchairs.",
     "tags": [
       "celectra",
       "space station",
@@ -41,8 +41,23 @@
       "pre-series"
     ],
     "width": 848,
-    "height": 1233
+    "height": 1233,
+    "poster": "baby-celectra-eating.webp"
   },
+  {
+    "file": "baby-celectra.webp",
+    "title": "Baby Celectra",
+    "description": "Celectra in a basinette.",
+    "tags": [
+      "celectra",
+      "space station",
+      "utopis",
+      "living quarters",
+      "pre-series"
+    ],
+    "width": 720,
+    "height": 1080
+  },  
   {
     "file": "gazing-through-port-hole.jpg",
     "title": "Utopis Station Living Room",
