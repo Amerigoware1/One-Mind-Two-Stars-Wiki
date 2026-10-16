@@ -16,6 +16,18 @@
 </div>
 
 <script>
+  // 1. Move function to global scope so onclick="toggleGoldTheme()" can find it
+  function toggleGoldTheme() {
+    document.body.classList.toggle('theme-gold');
+    const isGold = document.body.classList.contains('theme-gold');
+    localStorage.setItem('preferred-theme', isGold ? 'gold' : 'default');
+  }
+
+  // 2. Apply saved theme preference immediately on script load (prevents flash of wrong theme)
+  if (localStorage.getItem('preferred-theme') === 'gold') {
+    document.body.classList.add('theme-gold');
+  }
+
   document.addEventListener("DOMContentLoaded", function() {
     const bannerNav = document.getElementById('dynamic-banner-nav');
     if (!bannerNav) return;
@@ -47,26 +59,26 @@
     const NewEdenReturnLabel = "{{ page.return_label | default: 'Return to New Eden' }}";
     
     // SCENARIO A: Inside a medical/care sub-dossier layout
-if (isDossier && dossierReturnUrl) {
-  const topBanner = bannerNav.closest('.top-banner');
-    if (topBanner) {
-      const existingGlossaryBtn = topBanner.querySelector('a[href$="glossary.html"]');
-    if (existingGlossaryBtn) {
-      existingGlossaryBtn.remove();
-    }
-  }
-  const topBtn = document.createElement('a');
-  topBtn.href = dossierReturnUrl;
-  topBtn.className = 'home-button';
-  topBtn.textContent = `‹🧍‍♀️ ${dossierReturnLabel}`;
-  bannerNav.appendChild(topBtn);
-  
-  const glossaryBtn = document.createElement('a');
-  glossaryBtn.href = glossaryReturnUrl;
-  glossaryBtn.className = 'home-button';
-  glossaryBtn.textContent = `‹📘 ${glossaryReturnLabel}`;
-  bannerNav.appendChild(glossaryBtn);
-} 
+    if (isDossier && dossierReturnUrl) {
+      const topBanner = bannerNav.closest('.top-banner');
+      if (topBanner) {
+        const existingGlossaryBtn = topBanner.querySelector('a[href$="glossary.html"]');
+        if (existingGlossaryBtn) {
+          existingGlossaryBtn.remove();
+        }
+      }
+      const topBtn = document.createElement('a');
+      topBtn.href = dossierReturnUrl;
+      topBtn.className = 'home-button';
+      topBtn.textContent = `‹🧍‍♀️ ${dossierReturnLabel}`;
+      bannerNav.appendChild(topBtn);
+      
+      const glossaryBtn = document.createElement('a');
+      glossaryBtn.href = glossaryReturnUrl;
+      glossaryBtn.className = 'home-button';
+      glossaryBtn.textContent = `‹📘 ${glossaryReturnLabel}`;
+      bannerNav.appendChild(glossaryBtn);
+    } 
     
     // SCENARIO B: On a standard biography layout page
     else if (currentLayout === 'character') {
@@ -108,23 +120,7 @@ if (isDossier && dossierReturnUrl) {
       topBtnB.textContent = `‹🏛️ Return to New Eden`;
       bannerNav.appendChild(topBtnB);
     }
-
-    // SCENARIO F: The hub list directory or homepage --> Does nothing!
-    
-    function toggleGoldTheme() {
-    document.body.classList.toggle('theme-gold');
-    const isGold = document.body.classList.contains('theme-gold');
-    localStorage.setItem('preferred-theme', isGold ? 'gold' : 'default');
-    }
-
-    // Check for saved preference on load
-    window.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('preferred-theme') === 'gold') {
-        document.body.classList.add('theme-gold');
-    }
   });
-    });
-
 </script>
 <style>
 .page-title {
