@@ -2308,6 +2308,123 @@ hr {
 /*  GILDED NOIR / BLACK & GOLD THEME OVERRIDES          */
 /* ==================================================== */
 
+body.theme-gold {
+    --bg-space: #050505;
+    --bg-card: #0b0b0b;
+    --bg-card-dark: #080808;
+    --border-glow: rgba(216, 180, 79, 0.38);
+
+    --neon-violet: #d8b44f; /* Mapped to primary gold accent */
+    --neon-cyan: #fff0ad;   /* Mapped to bright cream/gold */
+    --neon-magenta: #b9a879;/* Mapped to muted vintage gold */
+
+    --text-primary: #f8f2df;
+    --text-muted: #b9a879;
+    --text-heading: #fff4bd;
+
+    --glow-violet: rgba(216, 180, 79, 0.22);
+    --glow-cyan: rgba(255, 240, 173, 0.15);
+
+    background: 
+        radial-gradient(ellipse at 50% -12%, rgba(100, 78, 32, 0.22), transparent 45%),
+        radial-gradient(ellipse at 0% 55%, rgba(42, 42, 42, 0.22), transparent 38%),
+        linear-gradient(135deg, #030303 0%, #0b0b0b 48%, #020202 100%) !important;
+    color: var(--text-primary);
+}
+
+/* Global Headings & Accents in Gold Theme */
+body.theme-gold h1,
+body.theme-gold h2,
+body.theme-gold h3,
+body.theme-gold h4 {
+    font-family: var(--font-sans, "Segoe UI", sans-serif);
+    color: var(--text-heading);
+}
+
+body.theme-gold h1 {
+    background: linear-gradient(110deg, #fff4bd 0%, #d4af37 28%, #fff0ad 48%, #a77a25 72%, #f8e8a2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1px solid rgba(216, 180, 79, 0.48);
+}
+
+body.theme-gold h2 {
+    color: var(--neon-cyan);
+    border-bottom: 2px solid var(--neon-violet);
+}
+
+/* Cards, Tables, & Containers */
+body.theme-gold .card-bg,
+body.theme-gold .toc,
+body.theme-gold .result,
+body.theme-gold .passcode-box,
+body.theme-gold .series-status,
+body.theme-gold .book-detail-card {
+    background: linear-gradient(160deg, #191919 0%, #0b0b0b 28%, #111 53%, #060606 100%);
+    border: 1px solid rgba(224, 190, 94, 0.48);
+    box-shadow: 0 24px 65px rgba(0, 0, 0, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/* Buttons and Interactive Elements */
+body.theme-gold button,
+body.theme-gold input[type="submit"],
+body.theme-gold .export-btn {
+    background: linear-gradient(145deg, #f7e5a0, #b88624 70%, #76551b);
+    color: #100d05;
+    font-weight: 700;
+    border: 1px solid rgba(255, 230, 145, 0.55);
+    box-shadow: 0 2px 10px rgba(216, 180, 79, 0.22);
+}
+
+body.theme-gold button:hover,
+body.theme-gold .export-btn:hover {
+    filter: brightness(1.12);
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(216, 180, 79, 0.4);
+}
+
+/* Inputs and Search Bars */
+body.theme-gold input[type="text"],
+body.theme-gold input[type="number"],
+body.theme-gold select,
+body.theme-gold #character-search {
+    background: linear-gradient(180deg, #080808 0%, #151515 45%, #070707 100%);
+    border: 1px solid rgba(216, 180, 79, 0.28);
+    color: var(--text-primary);
+    color-scheme: dark;
+}
+
+body.theme-gold input:focus,
+body.theme-gold #character-search:focus {
+    border-color: rgba(255, 230, 145, 0.85);
+    box-shadow: 0 0 0 2px rgba(216, 180, 79, 0.14), 0 0 16px rgba(216, 180, 79, 0.1);
+}
+
+/* Links & Nav Buttons */
+body.theme-gold a {
+    color: var(--neon-cyan);
+}
+
+body.theme-gold a:hover {
+    color: var(--neon-violet);
+    text-shadow: 0 0 8px rgba(216, 180, 79, 0.4);
+}
+
+body.theme-gold .top-banner .banner-btn,
+body.theme-gold .home-button {
+    background: rgba(216, 180, 79, 0.1);
+    border: 1px solid rgba(216, 180, 79, 0.3);
+    color: var(--neon-cyan) !important;
+}
+
+body.theme-gold .top-banner .banner-btn:hover,
+body.theme-gold .home-button:hover {
+    background: rgba(216, 180, 79, 0.25);
+    border-color: var(--neon-violet);
+    box-shadow: 0 0 15px rgba(216, 180, 79, 0.3);
+}
+
 /* ==================================================== */
 /*  GOLD THEME — archival / technocracy / desert arc    */
 /*  Place AFTER the neon core so it wins on ties.       */
