@@ -198,6 +198,20 @@
     "poster": "dance.webp"
   },
   {
+    "file": "dance2.mp4",
+    "title": "Celectra dance",
+    "description": "Celectra practicing dance",
+    "tags": [
+      "celectra",
+      "carisco",
+      "athletic activities",
+      "dance"
+    ],
+    "width": 1024,
+    "height": 1536,
+    "poster": "dance2.webp"
+  },  
+  {
     "file": "gymnastics.webp",
     "title": "Celectra gymnastics",
     "description": "Celectra practicing gymnastics",
