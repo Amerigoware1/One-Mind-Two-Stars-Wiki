@@ -143,21 +143,20 @@
   margin-left: 1rem;   /* Prevent crowding next to the site title */ 
 }
 .top-banner {
-  /* A rich, shifting sci-fi palette: deep void, nebula purple, and starlight blue */
+  /* Default dark purple theme */
   background: linear-gradient(125deg, #13132b, #241442, #0f3d59, #411c1c);
-  background-size: 400% 400%; /* Makes the gradient huge so we can move around inside it */
+  background-size: 400% 400%;
   animation: color-swirl 6s ease infinite;
 }
 
+/* Gold theme override */
+body.theme-gold .top-banner {
+  background: linear-gradient(125deg, #140d07, #2a1e14, #4a2e1e, #7a4f18);
+}
+
 @keyframes color-swirl {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 </style>

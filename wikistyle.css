@@ -3024,3 +3024,48 @@ body.theme-gold .home-button:hover {
 .ambassador-note::before {
   color: var(--gold);
 }
+/* ==================================================== */
+/*  GLOBAL GOLD THEME VARIABLES                         */
+/*  Remaps the neon palette to gold when active         */
+/* ==================================================== */
+
+body.theme-gold {
+  /* Remap dark backgrounds */
+  --bg-space: #140d07;      
+  --bg-card: #1f150e;       
+  --bg-card-dark: #140d07;  
+  --border-glow: #7a4f18;   
+  
+  /* Remap neon accents to gold */
+  --neon-violet: #e08a1e;   /* Deep gold (was purple) */
+  --neon-cyan: #ffbb4d;     /* Bright gold (was cyan) */
+  --neon-magenta: #ffaa33;  /* Mid gold (was magenta) */
+  
+  /* Remap text */
+  --text-primary: #e8d5b0;  
+  --text-muted: #c9ad7e;    
+  --text-heading: #ffe9b0;  
+  
+  /* Remap glows */
+  --glow-violet: rgba(255, 170, 51, 0.3);
+  --glow-cyan: rgba(255, 170, 51, 0.25);
+}
+
+/* Fix hardcoded blue in the H1 gradient */
+body.theme-gold h1 {
+  background: linear-gradient(90deg, #ffd479, #e08a1e, #b27a2a);
+}
+
+/* Fix hardcoded purple in tabs */
+body.theme-gold .tab-container {
+  background: var(--bg-card);
+  border-color: var(--border-glow);
+}
+body.theme-gold .tab-buttons {
+  background: var(--bg-card-dark);
+  border-bottom-color: var(--border-glow);
+}
+body.theme-gold .character-card {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 12px var(--neon-cyan);
+}
