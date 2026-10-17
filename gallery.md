@@ -250,7 +250,38 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.error(err);
     return;
   }
+try {
+    const res = await fetch("{{ '/assets/images/gallery/manifest.json' | relative_url }}");
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    allItems = await res.json();
 
+    // ↓ REPLACE THE TWO CHAOS ITEMS WITH ONE TOGGLE ITEM ↓
+    const dayFile = "chaos-demeter-view-from-ares.webp";
+    const twilightFile = "chaos-demeter-view-twilight.webp";
+    const dayIdx = allItems.findIndex(i => i.file === dayFile);
+    const twiIdx = allItems.findIndex(i => i.file === twilightFile);
+
+    if (dayIdx !== -1 && twiIdx !== -1) {
+      const dayItem = allItems[dayIdx];
+      const twiItem = allItems[twiIdx];
+      
+      // Pick initial view randomly, keep alt as the other
+      const isDayFirst = Math.random() < 0.5;
+      const combined = {
+        ...(isDayFirst ? dayItem : twiItem),
+        file: isDayFirst ? dayFile : twilightFile,
+        title: isDayFirst ? dayItem.title : twiItem.title,
+        description: isDayFirst ? dayItem.description : twiItem.description,
+        altFile: isDayFirst ? twilightFile : dayFile,
+        altTitle: isDayFirst ? twiItem.title : dayItem.title,
+        altDescription: isDayFirst ? twiItem.description : dayItem.description
+      };
+
+      allItems.splice(Math.max(dayIdx, twiIdx), 1);
+      allItems.splice(Math.min(dayIdx, twiIdx), 1, combined);
+    }
+  } catch (err) {
+  
   // Build tag filter
   const allTags = new Set();
   allItems.forEach(i => i.tags.forEach(t => allTags.add(t)));
@@ -328,7 +359,37 @@ document.addEventListener("DOMContentLoaded", async () => {
         link.dataset.pswpIndex = idx;
         link.dataset.title = item.title;
         link.dataset.description = item.description;
-        mediaHtml = `<img src="${mediaUrl}" alt="${escapeHtml(item.title)}">`;
+        } else {
+        link.href = baseUrl + item.file;
+        link.dataset.pswpWidth = item.width;
+        link.dataset.pswpHeight = item.height;
+        link.dataset.pswpIndex = idx;
+        link.dataset.title = item.title;
+        link.dataset.description = item.description;
+        mediaHtml = `<img src="${baseUrl + item.file}" alt="${escapeHtml(item.title)}">`;
+
+        // If an alternate file exists, swap images & text on hover
+        if (item.altFile) {
+          link.addEventListener("mouseenter", () => {
+            const img = link.querySelector("img");
+            const titleEl = link.querySelector(".card-title");
+            const descEl = link.querySelector(".card-description");
+            if (img) img.src = baseUrl + item.altFile;
+            if (titleEl) titleEl.textContent = item.altTitle;
+            if (descEl) descEl.textContent = item.altDescription;
+            link.href = baseUrl + item.altFile;
+          });
+          link.addEventListener("mouseleave", () => {
+            const img = link.querySelector("img");
+            const titleEl = link.querySelector(".card-title");
+            const descEl = link.querySelector(".card-description");
+            if (img) img.src = baseUrl + item.file;
+            if (titleEl) titleEl.textContent = item.title;
+            if (descEl) descEl.textContent = item.description;
+            link.href = baseUrl + item.file;
+          });
+        }
+      }
       }
 
       link.innerHTML = `

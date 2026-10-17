@@ -1222,6 +1222,17 @@
     "height": 1536
   },
   {
+    "file": "roan-in-office.webp",
+    "title": "Roan in the office",
+    "description": "Roan working in her office",
+    "tags": [
+      "roan",
+      "book 3"
+    ],
+    "width": 1195,
+    "height": 896
+  },
+  {
     "file": "sofia-age9.webp",
     "title": "Sofia reading",
     "description": "Sofia reading her holopad before bed.",
@@ -1446,6 +1457,21 @@
     "width": 1042,
     "height": 576
   },
+  {
+    "file": "chaos-demeter-view-from-ares.webp",
+    "altFile": "chaos-demeter-view-twilight.webp",
+    "title": "View of Chaos and Demeter from Ares",
+    "description": "A view of Chaos and Demeter from the perspective of Ares (Day / Twilight).",
+    "tags": [
+      "ares",
+      "chaos",
+      "demeter",
+      "daytime",
+      "twilight"
+    ],
+    "width": 1536,
+    "height": 1024
+  },    
   {
     "file": "pison-river.webp",
     "title": "Pison River",
