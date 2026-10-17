@@ -2413,14 +2413,14 @@ body.theme-gold a:hover {
 
 body.theme-gold .top-banner .banner-btn,
 body.theme-gold .home-button {
-    background: rgba(216, 180, 79, 0.1);
+    background: linear-gradient(145deg, #f7e5a0, #b88624 70%, #76551b);
     border: 1px solid rgba(216, 180, 79, 0.3);
     color: var(--neon-cyan) !important;
 }
 
 body.theme-gold .top-banner .banner-btn:hover,
 body.theme-gold .home-button:hover {
-    background: rgba(216, 180, 79, 0.25);
+    background: linear-gradient(145deg, #f7e5a0, #b88624 70%, #76551b);
     border-color: var(--neon-violet);
     box-shadow: 0 0 15px rgba(216, 180, 79, 0.3);
 }
