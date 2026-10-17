@@ -3,8 +3,6 @@ layout: default
 title: "Molecular Reconfiguration Engine (mre)"
 ---
 
-# Molecular Reconfiguration Engine (mre)
-
 <div class="card-bg" markdown="1">
 
 **Pronunciation:** /məˈlɛkjʊlər riːˌkɒnfɪɡjuˈreɪʃən ˈɛndʒɪn/
