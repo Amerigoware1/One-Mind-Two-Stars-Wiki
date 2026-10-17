@@ -2320,7 +2320,7 @@ body.theme-gold {
 
     --text-primary: #f8f2df;
     --text-muted: #b9a879;
-    --text-heading: #fff4bd;
+    --text-heading: #000000;
 
     --glow-violet: rgba(216, 180, 79, 0.22);
     --glow-cyan: rgba(255, 240, 173, 0.15);
