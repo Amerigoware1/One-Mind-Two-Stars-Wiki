@@ -2320,7 +2320,7 @@ body.theme-gold {
 
     --text-primary: #f8f2df;
     --text-muted: #b9a879;
-    --text-heading: #000000;
+    --text-heading: #fff4bd;
 
     --glow-violet: rgba(216, 180, 79, 0.22);
     --glow-cyan: rgba(255, 240, 173, 0.15);
@@ -2420,7 +2420,7 @@ body.theme-gold .home-button {
 
 body.theme-gold .top-banner .banner-btn:hover,
 body.theme-gold .home-button:hover {
-    background: linear-gradient(145deg, #f7e5a0, #b88624 70%, #76551b);
+    background: rgba(216, 180, 79, 0.25);
     border-color: var(--neon-violet);
     box-shadow: 0 0 15px rgba(216, 180, 79, 0.3);
 }
