@@ -157,7 +157,19 @@ body.theme-gold .top-banner{
 /* page-title gold theme override */
 body.theme-gold .page-title {
   background: linear-gradient(90deg, #ffd700, #ff8c00);
+  /* 2. Clip the background so it only shows through the text characters */
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* 3. Make the actual text transparent so the background gradient shines through */
   -webkit-text-fill-color: transparent;
+  
+  /* Optional: Make it bold so the gradient has more surface area to show off */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  /*text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);  Adds a subtle cyan energy hum behind it */
+  margin-left: 1rem;   /* Prevent crowding next to the site title */ 
 }
 
 @keyframes color-swirl {
