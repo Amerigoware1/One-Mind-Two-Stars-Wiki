@@ -240,22 +240,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
-  // Load manifest
+  // Load manifest and handle chaos/demeter toggle merge
   try {
     const res = await fetch("{{ '/assets/images/gallery/manifest.json' | relative_url }}");
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     allItems = await res.json();
-  } catch (err) {
-    galleryEl.innerHTML = "<div class='loading'>Failed to load gallery manifest.</div>";
-    console.error(err);
-    return;
-  }
-try {
-    const res = await fetch("{{ '/assets/images/gallery/manifest.json' | relative_url }}");
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    allItems = await res.json();
 
-    // ↓ REPLACE THE TWO CHAOS ITEMS WITH ONE TOGGLE ITEM ↓
     const dayFile = "chaos-demeter-view-from-ares.webp";
     const twilightFile = "chaos-demeter-view-twilight.webp";
     const dayIdx = allItems.findIndex(i => i.file === dayFile);
@@ -265,7 +255,6 @@ try {
       const dayItem = allItems[dayIdx];
       const twiItem = allItems[twiIdx];
       
-      // Pick initial view randomly, keep alt as the other
       const isDayFirst = Math.random() < 0.5;
       const combined = {
         ...(isDayFirst ? dayItem : twiItem),
@@ -281,7 +270,11 @@ try {
       allItems.splice(Math.min(dayIdx, twiIdx), 1, combined);
     }
   } catch (err) {
-  
+    galleryEl.innerHTML = "<div class='loading'>Failed to load gallery manifest.</div>";
+    console.error(err);
+    return;
+  }
+
   // Build tag filter
   const allTags = new Set();
   allItems.forEach(i => i.tags.forEach(t => allTags.add(t)));
@@ -333,7 +326,6 @@ try {
         const posterUrl = item.poster ? baseUrl + item.poster : '';
         mediaHtml = `<video src="${mediaUrl}" poster="${posterUrl}" muted loop playsinline preload="metadata"></video>`;
         
-        // For videos, don't set href (prevent PhotoSwipe), use data attributes instead
         link.dataset.videoUrl = mediaUrl;
         link.dataset.posterUrl = posterUrl;
         link.dataset.title = item.title;
@@ -341,11 +333,10 @@ try {
         link.dataset.index = idx;
         link.style.cursor = "pointer";
         
-        // Click handler for video
         link.addEventListener("click", (e) => {
           e.preventDefault();
           e.stopPropagation();
-          modalVideo.src = baseUrl + item.file;  // ← Added baseUrl here
+          modalVideo.src = baseUrl + item.file;
           modalVideo.poster = posterUrl;
           modalTitle.textContent = item.title;
           modalDesc.textContent = item.description;
@@ -353,13 +344,6 @@ try {
           modalVideo.play();
         });
       } else {
-        link.href = baseUrl + item.file;
-        link.dataset.pswpWidth = item.width;
-        link.dataset.pswpHeight = item.height;
-        link.dataset.pswpIndex = idx;
-        link.dataset.title = item.title;
-        link.dataset.description = item.description;
-        } else {
         link.href = baseUrl + item.file;
         link.dataset.pswpWidth = item.width;
         link.dataset.pswpHeight = item.height;
@@ -390,7 +374,6 @@ try {
           });
         }
       }
-      }
 
       link.innerHTML = `
         ${mediaHtml}
@@ -414,7 +397,7 @@ try {
 
     lightbox = new PhotoSwipeLightbox({
       gallery: '#gallery',
-      children: 'a[href]', // Only target links with href (images, not videos)
+      children: 'a[href]',
       pswpModule: PhotoSwipe,
       wheelToZoom: true,
       pinchToClose: true,
@@ -422,8 +405,6 @@ try {
       closeOnVerticalDrag: true,
     });
 
-    // Custom caption — use the original DOM element so videos in currentItems
-    // do not shift PhotoSwipe's image-only indices
     lightbox.on('uiRegister', () => {
       lightbox.pswp.ui.registerElement({
         name: 'custom-caption',
@@ -437,7 +418,6 @@ try {
               if (el) el.innerHTML = '';
               return;
             }
-            // Prefer data attributes (set on every card); fall back to visible text
             const title = slideEl.dataset.title
               || slideEl.querySelector('.card-title')?.textContent
               || '';
