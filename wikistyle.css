@@ -3138,18 +3138,3 @@ body.theme-gold #themeToggleBtn:hover {
   box-shadow: 0 0 20px rgba(193, 60, 255, 0.5);
   color: #fff;
 }
-
-body.theme-gold .index-links a.feature-link {
-  border: 1px solid var(--neon-magenta) !important;
-  color: var(--neon-cyan) !important;
-  background: linear-gradient(145deg, #fff0c0 0%, #e0c050 50%, #b89020 100%) !important;
-  position: relative;
-  overflow: hidden;
-  animation: pulseFeatureBtn 3s infinite alternate ease-in-out
-}
-
-body.theme-gold .index-links a.feature-link:hover {
-  background: linear-gradient(145deg, #fff0c0 0%, #e0c050 50%, #b89020 100%) !important;
-  box-shadow: 0 0 25px rgba(255, 188, 42, 0.7), inset 0 0 10px rgba(255, 216, 42, 0.3);
-  border-color: #fff !important
-}
