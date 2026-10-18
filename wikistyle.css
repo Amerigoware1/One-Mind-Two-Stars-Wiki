@@ -3139,7 +3139,7 @@ body.theme-gold #themeToggleBtn:hover {
   color: #fff;
 }
 
-/* body.theme-gold .index-links a:hover {
+body.theme-gold .index-links a:hover {
   color: var(--neon-magenta);
   border-color: var(--neon-cyan);
   box-shadow: 0 0 20px var(--glow-cyan), 0 0 30px var(--glow-violet);
@@ -3156,7 +3156,7 @@ body.theme-gold .index-links .link-desc {
   margin-top: 0.35rem;
   font-size: 0.9rem;
   color: var(--text-muted)
-} */
+}
 
 body.theme-gold .index-links a.feature-link {
   border: 1px solid var(--neon-magenta) !important;
