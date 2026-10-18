@@ -3139,27 +3139,9 @@ body.theme-gold #themeToggleBtn:hover {
   color: #fff;
 }
 
-body.theme-gold .index-links a:hover {
-  color: var(--neon-magenta);
-  border-color: var(--neon-cyan);
-  box-shadow: 0 0 20px var(--glow-cyan), 0 0 30px var(--glow-violet);
-  transform: translatey(-3px)
-}
-
-body.theme-gold .index-links a:active {
-  transform: translatey(0);
-  box-shadow: 0 0 12px rgba(0, 232, 255, 0.25)
-}
-
-body.theme-gold .index-links .link-desc {
-  display: block;
-  margin-top: 0.35rem;
-  font-size: 0.9rem;
-  color: var(--text-muted)
-}
-
 body.theme-gold .index-links a.feature-link {
   border: 1px solid var(--neon-magenta) !important;
+  color: var(--neon-cyan) !important;
   background: linear-gradient(145deg, #fff0c0 0%, #e0c050 50%, #b89020 100%) !important;
   position: relative;
   overflow: hidden;
