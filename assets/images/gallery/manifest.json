@@ -1458,7 +1458,7 @@
     "height": 576
   },
   {
-    "file": "chaos-demeter-view-from-ares.webp",
+    "file": "chaos-demeter-view-from-ares.mp4",
     "altFile": "chaos-demeter-view-twilight.webp",
     "title": "View of Chaos and Demeter from Ares",
     "description": "A view of Chaos and Demeter from the perspective of Ares (Day / Twilight).",
@@ -1470,7 +1470,8 @@
       "twilight"
     ],
     "width": 1536,
-    "height": 1024
+    "height": 1024,
+    "poster": "chaos-demeter-view-from-ares.webp"
   },    
   {
     "file": "pison-river.webp",
