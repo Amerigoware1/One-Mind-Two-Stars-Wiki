@@ -2305,31 +2305,44 @@ hr {
   font-size: 0.85rem;
 }
 /* ==================================================== */
-/*  GILDED NOIR / BLACK & GOLD THEME OVERRIDES          */
+/*  GILDED NOIR / METALLIC GOLD ON OBSIDIAN             */
+/*  Shiny black (onyx) + metallic gold — final winner    */
 /* ==================================================== */
 
 body.theme-gold {
+    /* Pure near-black — no brown cast */
     --bg-space: #050505;
-    --bg-card: #0b0b0b;
+    --bg-card: #0c0c0c;
     --bg-card-dark: #080808;
-    --border-glow: rgba(216, 180, 79, 0.38);
+    --border-glow: rgba(212, 175, 55, 0.40);
 
-    --neon-violet: #d8b44f; /* Mapped to primary gold accent */
-    --neon-cyan: #fff0ad;   /* Mapped to bright cream/gold */
-    --neon-magenta: #b9a879;/* Mapped to muted vintage gold */
+    /* Metallic gold */
+    --neon-violet: #d4af37;
+    --neon-cyan: #f5e6a3;
+    --neon-magenta: #c9a227;
 
-    --text-primary: #f8f2df;
-    --text-muted: #b9a879;
-    --text-heading: #fff4bd;
+    --text-primary: #f0e6c8;
+    --text-muted: #b8a878;
+    --text-heading: #ffe9a8;
 
-    --glow-violet: rgba(216, 180, 79, 0.22);
-    --glow-cyan: rgba(255, 240, 173, 0.15);
+    --glow-violet: rgba(212, 175, 55, 0.28);
+    --glow-cyan: rgba(245, 230, 163, 0.18);
 
-    background: 
-        radial-gradient(ellipse at 50% -12%, rgba(100, 78, 32, 0.22), transparent 45%),
-        radial-gradient(ellipse at 0% 55%, rgba(42, 42, 42, 0.22), transparent 38%),
-        linear-gradient(135deg, #030303 0%, #0b0b0b 48%, #020202 100%) !important;
+    /* Obsidian base: pure black with faint cool specular, minimal warm tint */
+    background:
+        radial-gradient(ellipse at 50% -10%, rgba(60, 50, 20, 0.12), transparent 40%),
+        radial-gradient(ellipse at 90% 15%, rgba(35, 35, 42, 0.22), transparent 32%),
+        radial-gradient(ellipse at 10% 75%, rgba(28, 28, 32, 0.18), transparent 38%),
+        linear-gradient(165deg, #020202 0%, #080808 40%, #050505 70%, #000000 100%) !important;
     color: var(--text-primary);
+}
+
+/* Kill residual purple ambient glow under gold theme */
+body.theme-gold::before {
+  background:
+    radial-gradient(ellipse at 50% -10%, rgba(80, 65, 25, 0.10), transparent 42%),
+    radial-gradient(ellipse at 85% 20%, rgba(40, 40, 45, 0.15), transparent 35%),
+    radial-gradient(ellipse at 15% 70%, rgba(30, 30, 35, 0.12), transparent 40%);
 }
 
 /* Global Headings & Accents in Gold Theme */
@@ -3025,38 +3038,19 @@ body.theme-gold .home-button:hover {
   color: var(--gold);
 }
 /* ==================================================== */
-/*  GLOBAL GOLD THEME VARIABLES                         */
-/*  Remaps the neon palette to gold when active         */
+/*  GOLD THEME — final component fixes (no brown remap) */
 /* ==================================================== */
 
-body.theme-gold {
-  /* Remap dark backgrounds */
-  --bg-space: #140d07;      
-  --bg-card: #1f150e;       
-  --bg-card-dark: #140d07;  
-  --border-glow: #7a4f18;   
-  
-  /* Remap neon accents to gold */
-  --neon-violet: #e08a1e;   /* Deep gold (was purple) */
-  --neon-cyan: #ffbb4d;     /* Bright gold (was cyan) */
-  --neon-magenta: #ffaa33;  /* Mid gold (was magenta) */
-  
-  /* Remap text */
-  --text-primary: #e8d5b0;  
-  --text-muted: #c9ad7e;    
-  --text-heading: #ffe9b0;  
-  
-  /* Remap glows */
-  --glow-violet: rgba(255, 170, 51, 0.3);
-  --glow-cyan: rgba(255, 170, 51, 0.25);
-}
-
-/* Fix hardcoded blue in the H1 gradient */
 body.theme-gold h1 {
-  background: linear-gradient(90deg, #ffd479, #e08a1e, #b27a2a);
+  background: linear-gradient(110deg,
+    #fff8e0 0%, #f5e6a3 18%, #d4af37 38%,
+    #f0d878 55%, #a67c00 78%, #e8d48b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.45);
 }
 
-/* Fix hardcoded purple in tabs */
 body.theme-gold .tab-container {
   background: var(--bg-card);
   border-color: var(--border-glow);
@@ -3067,5 +3061,80 @@ body.theme-gold .tab-buttons {
 }
 body.theme-gold .character-card {
   border-color: var(--neon-cyan);
-  box-shadow: 0 0 12px var(--neon-cyan);
+  box-shadow: 0 0 12px var(--glow-violet);
+}
+
+/* Cards: polished black panels, gold edge, no brown fill */
+body.theme-gold .card-bg,
+body.theme-gold .toc,
+body.theme-gold .result,
+body.theme-gold .passcode-box,
+body.theme-gold .series-status,
+body.theme-gold .book-detail-card {
+  background: linear-gradient(165deg, #121212 0%, #0a0a0a 40%, #0e0e0e 70%, #050505 100%);
+  border: 1px solid rgba(212, 175, 55, 0.38);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.9),
+    0 0 20px rgba(212, 175, 55, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Metallic gold buttons */
+body.theme-gold button,
+body.theme-gold input[type="submit"],
+body.theme-gold .export-btn {
+  background: linear-gradient(145deg, #f5e6a3 0%, #d4af37 45%, #a67c00 85%, #8a6800 100%);
+  color: #0c0a04;
+  font-weight: 700;
+  border: 1px solid rgba(255, 230, 160, 0.55);
+  box-shadow: 0 2px 12px rgba(212, 175, 55, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+body.theme-gold button:hover,
+body.theme-gold .export-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 0 22px rgba(212, 175, 55, 0.45);
+}
+
+/* Banner buttons + theme toggle — same size, metallic gold */
+body.theme-gold .top-banner .banner-btn,
+body.theme-gold .home-button,
+body.theme-gold #themeToggleBtn {
+  background: linear-gradient(145deg, #f5e6a3 0%, #d4af37 50%, #a67c00 100%);
+  border: 1px solid rgba(255, 230, 160, 0.45);
+  color: #0c0a04 !important;
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+body.theme-gold .top-banner .banner-btn:hover,
+body.theme-gold .home-button:hover,
+body.theme-gold #themeToggleBtn:hover {
+  background: linear-gradient(145deg, #fff0c0 0%, #e0c050 50%, #b89020 100%);
+  border-color: rgba(255, 240, 180, 0.7);
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.4);
+  color: #0c0a04 !important;
+}
+
+/* Theme toggle size match (both themes) */
+#themeToggleBtn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s;
+  background: rgba(193, 60, 255, 0.15);
+  border: 1px solid rgba(193, 60, 255, 0.3);
+  color: var(--neon-cyan);
+  box-shadow: none;
+}
+
+#themeToggleBtn:hover {
+  background: rgba(193, 60, 255, 0.35);
+  box-shadow: 0 0 20px rgba(193, 60, 255, 0.5);
+  color: #fff;
 }
