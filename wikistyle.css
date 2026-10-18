@@ -3134,7 +3134,26 @@ body.theme-gold #themeToggleBtn:hover {
 }
 
 #themeToggleBtn:hover {
-  background: rgba(193, 60, 255, 0.35);
-  box-shadow: 0 0 20px rgba(193, 60, 255, 0.5);
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 20px rgba(16, 0, 24, 0.5);
   color: #fff;
+}
+
+.index-links a:hover {
+  color: var(--neon-magenta);
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 20px var(--glow-cyan), 0 0 30px var(--glow-violet);
+  transform: translatey(-3px)
+}
+
+.index-links a:active {
+  transform: translatey(0);
+  box-shadow: 0 0 12px rgba(0, 232, 255, 0.25)
+}
+
+.index-links .link-desc {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--text-muted)
 }
