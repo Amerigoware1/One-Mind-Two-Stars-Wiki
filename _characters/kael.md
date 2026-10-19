@@ -42,29 +42,29 @@ During the "Polar Opposites" crisis, when the twins are separated at opposite po
 Following the crisis, Kael and Xara's relationship deepens into a profound partnership. They conceive their son, Jasper, organically—a testament to Xara learning to let go of absolute control and trust the natural rhythm of life, and Kael stepping fully into his role as a deliberate, loving father and equal partner.
 book7_title: "The Father's Tempo (age-28)"
 book7_arc: >
-[Placeholder: Kael balances his demanding role as a senior Stewardship leader with fatherhood to toddler Jasper. He begins integrating Jasper's natural, innate acoustic resonance into his teaching methods, realizing that the next generation doesn't just need to hear the music—they need to feel it in their bones. Kael and Xara establish a beautiful, chaotic, and deeply loving domestic rhythm.]
+Kael balances his demanding role as a senior Stewardship leader with fatherhood to toddler Jasper. He begins integrating Jasper's natural, innate acoustic resonance into his teaching methods, realizing that the next generation doesn't just need to hear the music—they need to feel it in their bones. Kael and Xara establish a beautiful, chaotic, and deeply loving domestic rhythm.
 book8_title: "Echoes of the Next Generation (age-35)"
 book8_arc: >
-[Placeholder: Kael is now a master of his craft, fully stepping out of the "accidental hero" shadow. Jasper (age 7) begins showing advanced acoustic abilities, acting as a natural bridge between human emotion and Galinstanian geometry. Kael mentors a new wave of Stewardship cadets, emphasizing that technology and ANI interfaces are tools, but the human heartbeat is the true foundation of resonance.]
+Kael is now a master of his craft, fully stepping out of the "accidental hero" shadow. Jasper (age 7) begins showing advanced acoustic abilities, acting as a natural bridge between human emotion and Galinstanian geometry. Kael mentors a new wave of Stewardship cadets, emphasizing that technology and ANI interfaces are tools, but the human heartbeat is the true foundation of resonance.
 book9_title: "Legacy of Rhythm (age-42)"
 book9_arc: >
-[Placeholder: In his early forties, Kael is a revered elder statesman of the acoustic arts on Ares. Jasper is a young teen, confidently navigating his own unique resonance. Kael's life's work culminates in a new, massive evolutionary step in human-Galinstanian harmony, proving that the "Drummer of Hope" didn't just save a trapped collective—he helped compose the future of the colony.]
+In his early forties, Kael is a revered elder statesman of the acoustic arts on Ares. Jasper is a young teen, confidently navigating his own unique resonance. Kael's life's work culminates in a new, massive evolutionary step in human-Galinstanian harmony, proving that the "Drummer of Hope" didn't just save a trapped collective—he helped compose the future of the colony.
 ---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">
 
-Overview
+## Overview
 Kael Aoki is a New Eden-born musician, acoustic rhythm specialist, and Lead Acoustic Harmonizer for the Resonance Stewardship Program. Slightly younger than the twins, he is defined by his intense focus on drumming, his evolution from an awkward, distracted youth into a grounded, emotionally intelligent man, and his deep, anchoring partnership with Xara Zo Carisco. His “accidental heroism” in Book 5—unknowingly providing hope to a trapped collective for months—cemented his role as a bridge between acoustic and EM communication. By Book 6, Kael represents the power of intentional connection, proving that consistent, focused practice and deep emotional empathy can change the world.
 </div>
 <div class="card-bg" markdown="1">
 
-Physical Description
+## Physical Description
 By his early twenties, Kael has matured into a striking, grounded young man. He is still lean, but years of rigorous drumming and field expeditions have given him a wiry, defined strength. His dark hair is no longer a messy shield hiding his face; it is kept neatly pushed back or tied in a short, practical tail, revealing a face that is open and directly observant. His hands remain heavily calloused—a badge of honor he doesn't hide. The constant ANI headset of his youth is gone, replaced by a subtle, custom-fitted bismuth-thread earpiece that allows him to both broadcast and receive acoustic data seamlessly. When he looks at Xara or his son, his once-distant, rhythm-focused gaze is entirely present, warm, and fiercely protective.
 </div>
 <div class="card-bg" markdown="1">
 
-Personality & Skills
+## Personality & Skills
 Kael is defined by his **earned confidence, deep emotional intelligence, and intuitive grounding**. He has transitioned from "feel first, act second" to a mature balance of "feel deeply, act deliberately."
 His strengths include:
 *   **Harmonic Grounding:** Master of using subsonic and acoustic rhythms to physically calm resonance spikes in both people and environments.
@@ -77,7 +77,7 @@ His weaknesses include:
 </div>
 <div class="card-bg" markdown="1">
 
-Relationships
+## Relationships
 *   **Xara Zo Carisco** — romantic partner and wife; the "geometry" to his "rhythm." He grounds her analytical mind, while she gives his intuitive genius structural framework.
 *   **Jasper Aoki-Carisco** — his son; a beautiful blend of Xara's analytical mind and Kael's acoustic soul.
 *   **Jenni Jo & Elara Vance** — his sister-in-law and her partner. Kael and Elara share a profound, unspoken mutual respect as the "anchors" of the twin dynamic.
@@ -87,12 +87,12 @@ Relationships
 </div>
 <div class="card-bg" markdown="1">
 
-Story Overview (non-spoiler)
+## Story Overview (non-spoiler)
 Kael’s arc is about the evolution of intention. He does not set out to be a hero in his youth—he simply practices his drums with dedication. Yet that dedication becomes a lifeline for beings trapped in silence. As he matures, Kael learns to accept his role not as an accident, but as proof that consistent, focused practice can change lives. By his twenties, he becomes the emotional and acoustic anchor for the Carisco-Bowers family, teaching the colony that structure and feeling are not opposites, but partners in the song of survival.
 </div>
 <div class="card-bg" markdown="1">
 
-Key Moments
+## Key Moments
 *   **The Hope Beacon (Book 5):** His daily drumming practice unknowingly sustains the trapped Resonant Echo collective for months.
 *   **The Council Testimony (Book 5):** He demonstrates the power of acoustic intention, helping reinstate acoustic methods as a recognized protocol.
 *   **The Polar Crisis (Book 6):** He guides Xara through a harmonic anomaly at the Southern Pole via long-range acoustic relay, teaching her to "feel the downbeat" when her data fails.
@@ -101,7 +101,7 @@ Key Moments
 </div>
 <div class="card-bg" markdown="1">
 
-Kael's Observations
+## Kael's Observations
 "I didn't know... I thought I was just making noise." — Kael, age 14, upon learning his drumming saved the collective (Book 5)
 "Stop looking at the wobble, Xara. Feel the downbeat. The pattern isn't broken; it's just syncopated." — Kael, guiding Xara through the Polar Crisis (Book 6)
 "You build the map, I'll set the tempo. Together, we don't just survive the song—we conduct it." — Kael to Xara (Book 6)
@@ -109,7 +109,7 @@ Kael's Observations
 </div>
 <div class="card-bg" markdown="1">
 
-Themes
+## Themes
 *   **Intentional Connection:** Moving from accidental impact to deliberate, purposeful action.
 *   **Rhythm and Geometry:** Learning that analysis (Xara) and intuition (Kael) are complementary, not competitive.
 *   **The Anchor:** Providing emotional and physical grounding for those who carry the weight of the world.
@@ -117,7 +117,7 @@ Themes
 </div>
 <div class="card-bg" markdown="1">
 
-Trivia
+## Trivia
 *   He was officially honored with the title "Drummer-of-Hope" by the Resonant Echo collective at the end of Book 5.
 *   His hands are heavily calloused from years of drumming, a trait he refuses to soften with lotions because it helps him feel the subtle vibrations in the bismuth network.
 *   He and Xara have a private dynamic where he will physically tap a steady, slow rhythm on her back or desk to ground her when she enters an analytical spiral.
