@@ -94,7 +94,6 @@ Jenni's arc centers on emotional resonance — understanding what others feel, a
 
 </div>
 
-
 <div class="card-bg" markdown="1">
 
 {% include story-arcs.html %}
