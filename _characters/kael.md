@@ -50,18 +50,17 @@ book9_title: "Legacy of Rhythm (age-42)"
 book9_arc: >
 [Placeholder: In his early forties, Kael is a revered elder statesman of the acoustic arts on Ares. Jasper is a young teen, confidently navigating his own unique resonance. Kael's life's work culminates in a new, massive evolutionary step in human-Galinstanian harmony, proving that the "Drummer of Hope" didn't just save a trapped collective—he helped compose the future of the colony.]
 ---
+
 <div class="article-content">
 <div class="card-bg" markdown="1">
 
 Overview
 Kael Aoki is a New Eden-born musician, acoustic rhythm specialist, and Lead Acoustic Harmonizer for the Resonance Stewardship Program. Slightly younger than the twins, he is defined by his intense focus on drumming, his evolution from an awkward, distracted youth into a grounded, emotionally intelligent man, and his deep, anchoring partnership with Xara Zo Carisco. His “accidental heroism” in Book 5—unknowingly providing hope to a trapped collective for months—cemented his role as a bridge between acoustic and EM communication. By Book 6, Kael represents the power of intentional connection, proving that consistent, focused practice and deep emotional empathy can change the world.
-
 </div>
 <div class="card-bg" markdown="1">
 
 Physical Description
 By his early twenties, Kael has matured into a striking, grounded young man. He is still lean, but years of rigorous drumming and field expeditions have given him a wiry, defined strength. His dark hair is no longer a messy shield hiding his face; it is kept neatly pushed back or tied in a short, practical tail, revealing a face that is open and directly observant. His hands remain heavily calloused—a badge of honor he doesn't hide. The constant ANI headset of his youth is gone, replaced by a subtle, custom-fitted bismuth-thread earpiece that allows him to both broadcast and receive acoustic data seamlessly. When he looks at Xara or his son, his once-distant, rhythm-focused gaze is entirely present, warm, and fiercely protective.
-
 </div>
 <div class="card-bg" markdown="1">
 
@@ -75,7 +74,6 @@ His strengths include:
 His weaknesses include:
 *   Occasionally deflects his own emotional vulnerability by focusing on a practical task (e.g., tuning a drum or checking gear).
 *   Can become overly protective of Xara when she pushes herself to the brink of analytical burnout.
-*   
 </div>
 <div class="card-bg" markdown="1">
 
@@ -86,13 +84,11 @@ Relationships
 *   **Resonant Echo** — the collective he unknowingly sustained; they honor him as “Drummer-of-Hope” and remain a lifelong, deeply respected connection.
 *   **Jenni Jo Carisco** — his sister-in-law; he provides the emotional grounding she needs when her twin is unavailable.
 *   **Xan Carisco** — older mentor figure; Kael studied the tap code protocols Xan developed, eventually surpassing him in practical acoustic application.
-*   
 </div>
 <div class="card-bg" markdown="1">
 
 Story Overview (non-spoiler)
 Kael’s arc is about the evolution of intention. He does not set out to be a hero in his youth—he simply practices his drums with dedication. Yet that dedication becomes a lifeline for beings trapped in silence. As he matures, Kael learns to accept his role not as an accident, but as proof that consistent, focused practice can change lives. By his twenties, he becomes the emotional and acoustic anchor for the Carisco-Bowers family, teaching the colony that structure and feeling are not opposites, but partners in the song of survival.
-
 </div>
 <div class="card-bg" markdown="1">
 
@@ -102,7 +98,6 @@ Key Moments
 *   **The Polar Crisis (Book 6):** He guides Xara through a harmonic anomaly at the Southern Pole via long-range acoustic relay, teaching her to "feel the downbeat" when her data fails.
 *   **The Conception of Jasper (Book 6):** He and Xara conceive their son organically, symbolizing their perfect balance of structure and flow.
 *   **The Master's Class (Book 8):** [Placeholder] Kael officially transitions from "youth instructor" to "Lead Harmonizer," mentoring the next generation.
-*   
 </div>
 <div class="card-bg" markdown="1">
 
@@ -111,7 +106,6 @@ Kael's Observations
 "Stop looking at the wobble, Xara. Feel the downbeat. The pattern isn't broken; it's just syncopated." — Kael, guiding Xara through the Polar Crisis (Book 6)
 "You build the map, I'll set the tempo. Together, we don't just survive the song—we conduct it." — Kael to Xara (Book 6)
 "Rhythm isn't just math. It's the heartbeat of the thing you're trying to understand." — Kael, teaching a Stewardship cadet (Book 8)
-
 </div>
 <div class="card-bg" markdown="1">
 
@@ -120,7 +114,6 @@ Themes
 *   **Rhythm and Geometry:** Learning that analysis (Xara) and intuition (Kael) are complementary, not competitive.
 *   **The Anchor:** Providing emotional and physical grounding for those who carry the weight of the world.
 *   **Legacy of Sound:** Passing down the understanding that true communication requires both listening and feeling.
-*   
 </div>
 <div class="card-bg" markdown="1">
 
@@ -130,7 +123,6 @@ Trivia
 *   He and Xara have a private dynamic where he will physically tap a steady, slow rhythm on her back or desk to ground her when she enters an analytical spiral.
 *   He replaced his bulky ANI headset with a custom bismuth-thread earpiece in his late teens to allow for more natural physical movement while drumming.
 *   Jasper, his son, inherited his deep, innate connection to acoustic resonance, but has Xara's dark, observant eyes.
-*   
 </div>
 
 <div class="card-bg" markdown="1">
