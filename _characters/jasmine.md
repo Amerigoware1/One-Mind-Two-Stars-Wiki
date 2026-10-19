@@ -22,16 +22,16 @@ death_date:
 death_place:
 book6_title: "The Harmonic Anchor (age-1.5)"
 book6_arc: >
-At one and a half years old, Jasmine is the first child conceived via Dr. Elara Vance’s groundbreaking Harmonic IVG Protocol. A true "resonance baby," she is a perfect genetic and harmonic blend of her mothers. Even as a toddler, she possesses an innate, calming bio-harmonic presence. When she is near, chaotic EM fields naturally settle. She has Jenni’s expressive warmth but inherits Elara’s striking, luminous amber eyes, giving her a perceptive, "old soul" gaze that seems to understand the song of Ares long before she can speak.
+    At one and a half years old, Jasmine is the first child conceived via Dr. Elara Vance’s groundbreaking Harmonic IVG Protocol. A true "resonance baby," she is a perfect genetic and harmonic blend of her mothers. Even as a toddler, she possesses an innate, calming bio-harmonic presence. When she is near, chaotic EM fields naturally settle. She has Jenni’s expressive warmth but inherits Elara’s striking, luminous amber eyes, giving her a perceptive, "old soul" gaze that seems to understand the song of Ares long before she can speak.
 book7_title: "The Resonance Prodigy (age-8.5)"
 book7_arc: >
-[Placeholder: At eight, Jasmine begins gentle, formal observation within the Stewardship Program. She doesn't just feel the music like Jenni or map it like Xara; she anchors it. Her presence alone can soothe a frayed bismuth network. She learns to consciously direct her calming influence, acting as a bridge during minor harmonic fluctuations, while her mothers and teachers work to ensure she maintains healthy emotional boundaries and doesn't absorb too much ambient stress.]
+    [Placeholder: At eight, Jasmine begins gentle, formal observation within the Stewardship Program. She doesn't just feel the music like Jenni or map it like Xara; she anchors it. Her presence alone can soothe a frayed bismuth network. She learns to consciously direct her calming influence, acting as a bridge during minor harmonic fluctuations, while her mothers and teachers work to ensure she maintains healthy emotional boundaries and doesn't absorb too much ambient stress.]
 book8_title: "The Bridge Builder (age-15.5)"
 book8_arc: >
-[Placeholder: As a teenager, Jasmine navigates the complexities of her unique resonance. During a major colony-wide harmonic shift, she steps forward to act as a living stabilizer, proving that the next generation's empathy is a measurable, vital metric in planetary stewardship. She begins to develop her own protocols for bio-harmonic integration, blending her mothers' legacies of emotional intuition and scientific rigor.]
+    [Placeholder: As a teenager, Jasmine navigates the complexities of her unique resonance. During a major colony-wide harmonic shift, she steps forward to act as a living stabilizer, proving that the next generation's empathy is a measurable, vital metric in planetary stewardship. She begins to develop her own protocols for bio-harmonic integration, blending her mothers' legacies of emotional intuition and scientific rigor.]
 book9_title: "Legacy of the Anchor (age-22.5)"
 book9_arc: >
-[Placeholder: In her early twenties, Jasmine is a full Stewardship officer and a revered harmonic stabilizer on Ares. Her life's work focuses on advanced bio-harmonic integration, continuing the legacy of Jenni and Elara. She proves that the "anchor" didn't just hold the ship steady—she helped the entire colony evolve into a new era of human-Galinstanian harmony.]
+    [Placeholder: In her early twenties, Jasmine is a full Stewardship officer and a revered harmonic stabilizer on Ares. Her life's work focuses on advanced bio-harmonic integration, continuing the legacy of Jenni and Elara. She proves that the "anchor" didn't just hold the ship steady—she helped the entire colony evolve into a new era of human-Galinstanian harmony.]
 ---
 
 <div class="article-content">
@@ -58,7 +58,7 @@ Her strengths include:
 Her weaknesses include:
 *   Can unconsciously absorb too much ambient stress if she doesn't actively practice grounding techniques.
 *   Sometimes struggles to articulate the depth of what she feels, as harmonic stability is so "normal" to her that she forgets others experience it as chaos.
-*   
+   
 </div>
 <div class="card-bg" markdown="1">
 
@@ -68,7 +68,7 @@ Her weaknesses include:
 *   **Xara Zo Carisco-Bowers** — aunt; Xara adores her niece and often collaborates with her, marveling at how Jasmine can "feel the math" in a way that perfectly complements Xara’s analytical mapping.
 *   **Jasper Aoki-Carisco** — cousin; Jasper and Jasmine share a profound, playful bond. Where Jasper hums and weaves acoustic rhythms, Jasmine provides the calm, steady foundation for his music to flourish.
 *   **Ripple** — Galinstanian family friend and mentor; Ripple refers to Jasmine affectionately as "Little Stillness" and trusts her implicitly, recognizing her as a natural bridge between their species.
-*   
+  
 </div>
 <div class="card-bg" markdown="1">
 
@@ -83,7 +83,7 @@ Jasmine’s arc is about growing up as a living symbol of human-Galinstanian har
 *   **The First Anchor (Book 7):** [Placeholder] As a young child, Jasmine unconsciously calms a severe resonance spike in the Activity Center, drawing the attention of the Stewardship elders.
 *   **The Living Stabilizer (Book 8):** [Placeholder] As a teenager, she voluntarily steps into a frayed bismuth network during a colony-wide crisis, acting as a living anchor to prevent a catastrophic harmonic cascade.
 *   **The New Protocol (Book 9):** [Placeholder] Jasmine publishes her own bio-harmonic integration frameworks, officially transitioning from a "prodigy" to a respected leader in her own right.
-*   
+   
 </div>
 <div class="card-bg" markdown="1">
 
@@ -100,7 +100,7 @@ Jasmine’s arc is about growing up as a living symbol of human-Galinstanian har
 *   **Legacy of Harmony:** Carrying forward the best of both parents—emotional intuition and scientific rigor—without being confined by their past struggles.
 *   **Boundaries of Empathy:** Learning that to hold space for others, one must first fiercely protect their own inner peace.
 *   **The Next Evolution:** Representing a generation for whom human-Galinstanian integration is not a challenge to overcome, but a natural, beautiful reality.
-*   
+  
 </div>
 <div class="card-bg" markdown="1">
 
@@ -110,7 +110,7 @@ Jasmine’s arc is about growing up as a living symbol of human-Galinstanian har
 *   Ripple and the Resonant Echo collective refer to her affectionately as "Little Stillness" or "The Quiet Heart."
 *   She has a deep, playful rivalry with her cousin Jasper, often challenging him to see who can calm a chaotic resonance field faster (Jasper uses rhythm; Jasmine uses pure presence).
 *   Elara keeps a detailed, encrypted journal of Jasmine’s harmonic development, not as a subject to be studied, but as a testament to the beautiful success of their family.
-*   
+ 
 </div>
 <div class="card-bg" markdown="1">
 
