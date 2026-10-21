@@ -1377,7 +1377,6 @@
     "width": 783,
     "height": 1174
   },
-
   {
     "file": "zuri-emma-with-twins.mp4",
     "title": "Zuri, Emma, and the Twins",
@@ -1392,7 +1391,19 @@
     "height": 1024,
     "poster": "zuri-emma-with-twins.webp"
   },
-  
+  {
+    "file": "elara-age8.webp",
+    "title": "Elara at age 8",
+    "description": "Elara at age 8, playing in her living room.",
+    "tags": [
+      "elara",
+      "vance",
+      "childhood",
+      "new eden"
+    ],
+    "width": 843,
+    "height": 1264
+  },
   {
     "file": "reclamatic.png",
     "title": "Reclamatic (cleaning bot)",
