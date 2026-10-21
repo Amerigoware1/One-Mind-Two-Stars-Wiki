@@ -73,7 +73,7 @@
     "height": 4096
   },
   {
-    "file": "checkup.webp",
+    "file": "checkup.mp4",
     "title": "Checkup with Dr. Cruiz",
     "description": "A checkup with Dr. Cruiz in the Utopis station medical bay",
     "tags": [
@@ -84,7 +84,8 @@
       "book 1"
     ],
     "width": 832,
-    "height": 1248
+    "height": 1248,
+    "poster": "checkup.webp"
   },
   {
     "file": "celectra-age8.webp",
@@ -1376,6 +1377,7 @@
     "width": 783,
     "height": 1174
   },
+
   {
     "file": "zuri-emma-with-twins.mp4",
     "title": "Zuri, Emma, and the Twins",
