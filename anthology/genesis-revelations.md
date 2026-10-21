@@ -12,7 +12,7 @@ Amerigo jolted awake to the sound of a pint-sized invasion force storming his be
 
 The soft blue ambient lighting strips along the curved ceiling had already begun their gradual morning brightening sequence, synced with Ares’s surface below, where dawn was still an hour away.  
 
-Squinting at his bedside chronometer, magnetically secured to the textured gray wall panel next to a framed photo of Jenni, he saw it was only 5:12. A groan escaped his lips as he muttered, “Coffee.” The mini molecular reconfiguration engine on his bedside table whirred to life, synthesizing a steaming cup of coffee. Its robust aroma wafted through the recycled air, cutting through the station’s ever-present metallic tang.  
+Squinting at his bedside chronometer, magnetically secured to the textured gray wall panel next to a framed photo of Jenni, he saw it was only 1112. A groan escaped his lips as he muttered, “Coffee.” The mini molecular reconfiguration engine on his bedside table whirred to life, synthesizing a steaming cup of coffee. Its robust aroma wafted through the recycled air, cutting through the station’s ever-present metallic tang.  
 
 He freed his right arm and sat up, reaching for the tantalizing brew. As he took a few sips, the cobwebs in his mind dissipated. His attackers’ insistent demands cut through the morning haze. 
 
