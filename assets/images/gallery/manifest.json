@@ -1429,7 +1429,7 @@
     "poster": "zuri-emma-with-twins.webp"
   },
   {
-    "file": "elara-age8.webp",
+    "file": "elara-age8.mp4",
     "title": "Elara at age 8",
     "description": "Elara at age 8, playing in her living room.",
     "tags": [
@@ -1439,7 +1439,8 @@
       "new eden"
     ],
     "width": 843,
-    "height": 1264
+    "height": 1264,
+    "poster": "elara-age8.webp"
   },
   {
     "file": "reclamatic.png",
