@@ -99,6 +99,17 @@
     "height": 2496
   },
   {
+    "file": "celectra-playing.webp",
+    "title": "Celectra at Age 8 Playing",
+    "description": "Celectra playing on the floor",
+    "tags": [
+      "celectra",
+      "carisco"
+    ],
+    "width": 672,
+    "height": 1000
+  },  
+  {
     "file": "celectra-karate.webp",
     "title": "Celectra karate",
     "description": "Celectra practicing sundome karate",
@@ -325,6 +336,32 @@
     "width": 1254,
     "height": 1254
   },
+  {
+    "file": "celectra-working.webp",
+    "title": "Celectra working",
+    "description": "Celectra working in the tech lab at the Science and Technology Center in New Eden.",
+    "tags": [
+      "celectra",
+      "carisco",
+      "new eden",
+      "tech lab"
+    ],
+    "width": 720,
+    "height": 1080
+  },
+  {
+    "file": "celectra-age32.webp",
+    "title": "Celectra at Age 32",
+    "description": "Celectra in her thirties, showing the passage of time.",
+    "tags": [
+      "celectra",
+      "carisco",
+      "new eden",
+      "tech lab"
+    ],
+    "width": 1664,
+    "height": 2496
+  },    
   {
     "file": "xan-birthday.webp",
     "title": "Xan's 7th Birthday",
