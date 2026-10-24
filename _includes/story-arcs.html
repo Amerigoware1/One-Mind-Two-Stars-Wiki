@@ -3,7 +3,7 @@
   A book is included if it has either a title or an arc.
 {% endcomment %}
 {% assign books = "" | split: "" %}
-{% for i in (1..5) %}
+{% for i in (1..9) %}
   {% assign title_key = "book" | append: i | append: "_title" %}
   {% assign arc_key = "book" | append: i | append: "_arc" %}
   {% if page[title_key] or page[arc_key] %}
