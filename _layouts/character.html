@@ -40,7 +40,7 @@ layout: default
           </tr>
         </table>
 
-        {%- for i in (1..5) -%}
+        {%- for i in (1..9) -%}
           {%- assign key = "portrait-book" | append: i -%}
           {%- assign imgs = page[key] -%}
           {%- assign age_key = "book" | append: i | append: "_age" -%}
@@ -108,7 +108,11 @@ document.addEventListener('DOMContentLoaded', function () {
     2: 2239,
     3: 2246,
     4: 2255,
-    5: 2262
+    5: 2262,
+    6: 2270,
+    7: 2278,
+    8: 2286,
+    9: 2294
   };
 
   // --- Build book data ---
