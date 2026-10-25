@@ -683,6 +683,18 @@
     "width": 720,
     "height": 1080
   },
+    {
+    "file": "jennijo-elara-teens.webp",
+    "title": "Jenni and Elara as Teens",
+    "description": "Portrait of Jenni and Elara during their teenage years.",
+    "tags": [
+      "jenni jo",
+      "elara",
+      "book 5"
+    ],
+    "width": 832,
+    "height": 1248
+  },
   {
     "file": "alex-and-dee.webp",
     "title": "Uncle Alex and Aunt Dee",
@@ -1465,6 +1477,18 @@
     "height": 1264,
     "poster": "elara-age8.webp"
   },
+  {
+    "file": "jenni-elara-pregnant.webp",
+    "title": "Jenni and Elara as young adults",
+    "description": "Portrait of Jenni and Elara during Jenni's pregnancy.",
+    "tags": [
+      "jenni jo",
+      "elara",
+      "book 6"
+    ],
+    "width": 843,
+    "height": 1264
+  },  
   {
     "file": "reclamatic.png",
     "title": "Reclamatic (cleaning bot)",
