@@ -1477,7 +1477,19 @@
     "height": 1264,
     "poster": "elara-age8.webp"
   },
-  
+  {
+    "file": "xara-kael-age14.webp",
+    "title": "Xara and Kael at age 14",
+    "description": "Xara and Kael at age 14, young love.",
+    "tags": [
+      "xara",
+      "kael",
+      "childhood",
+      "new eden"
+    ],
+    "width": 1664,
+    "height": 2496
+  },
   {
     "file": "jenni-elara-pregnant.webp",
     "title": "Jenni and Elara as young adults",
@@ -1489,7 +1501,20 @@
     ],
     "width": 843,
     "height": 1264
-  },  
+  },
+  {
+    "file": "xara-kael-age21.webp",
+    "title": "Xara and Kael at age 21",
+    "description": "Xara and Kael at age 21, in their early twenties.",
+    "tags": [
+      "xara",
+      "kael",
+      "book 6",
+      "new eden"
+    ],
+    "width": 720,
+    "height": 1080
+  },
   {
     "file": "reclamatic.png",
     "title": "Reclamatic (cleaning bot)",
