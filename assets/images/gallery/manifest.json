@@ -1504,7 +1504,7 @@
     "height": 1264
   },
   {
-    "file": "xara-kael-age21.webp",
+    "file": "xara-kael-age21.mp4",
     "title": "Xara and Kael at age 21",
     "description": "Xara and Kael at age 21, in their early twenties.",
     "tags": [
@@ -1514,7 +1514,8 @@
       "new eden"
     ],
     "width": 720,
-    "height": 1080
+    "height": 1080,
+    "poster": "xara-kael-age21.webp"
   },
   {
     "file": "xara-pregnant.webp",
@@ -1527,6 +1528,18 @@
     ],
     "width": 1024,
     "height": 1536
+  },
+  {
+    "file": "jasmine-age3.webp",
+    "title": "Jasmine at age 3",
+    "description": "Jasmine at age 3, playing at Celectra's.",
+    "tags": [
+      "jasmine",
+      "childhood",
+      "new eden"
+    ],
+    "width": 843,
+    "height": 1264
   },
   {
     "file": "jasmine-with-jasper-xara-kael.webp",
