@@ -1,121 +1,194 @@
 ---
 layout: character
 title: Jasper Aoki-Carisco
-portrait:  "/assets/images/jasper-book6.webp "
-portrait-book6:  "/assets/images/jasper-book6.webp "
-portrait-book7:  "/assets/images/jasper-book7.webp "
-portrait-book8:  "/assets/images/jasper-book8.webp "
-portrait-book9:  "/assets/images/jasper-book9.webp "
-affiliation: Carisco-Bowers Extended Family; Resonance Stewardship Program (Future Cadet)
-birthday: August 22, 2267
+portrait: "/assets/images/jasper-book7.webp"
+portrait-book6: "/assets/images/jasper-book6.webp"
+portrait-book7: "/assets/images/jasper-book7.webp"
+portrait-book8: "/assets/images/jasper-book8.webp"
+portrait-book9: "/assets/images/jasper-book9.webp"
+affiliation: Carisco-Bowers Extended Family; Global Planetary Survey Team (Junior Resonance Composer)
+birthday: February 14, 2270
 birthplace: New Eden, Ares
-book6_age:  "1.5 "
-book7_age:  "8.5 "
-book8_age:  "15.5 "
-book9_age:  "22.5 "
-gender assignment:  "Male "
-gender:   "Male "
-orientation:  "Not yet determined "
-orientation_awareness_age: 
+book6_age: "Unborn"
+book7_age: "6.1"
+book8_age: "13.1"
+book9_age: "20.1"
+gender assignment: "Male"
+gender: "Male"
+orientation: "Not yet determined"
+orientation_awareness_age:
 status: Alive
 death_date:
 death_place:
-book6_title: "The Acoustic Weaver (age-1.5)"
+book6_title: "The Unwritten Bar (unborn)"
 book6_arc: >
-    At one and a half years old, Jasper is the son of Xara Zo Carisco and Kael Aoki, conceived organically in the aftermath of the "Polar Opposites" crisis. His conception represents Xara’s ultimate growth—letting go of absolute control to trust the natural, spontaneous rhythm of life. Even as a toddler, Jasper exhibits a unique form of synesthetic resonance: he doesn't just hear his father's drumming; he sees the geometric fractal patterns the sound makes in the air. He is the living bridge between his mother's visual mapping and his father's acoustic flow.
-book7_title: "The Geometry of Sound (age-8.5)"
+  Book 6 ends before Jasper is born. His first appearance is not a portrait but a
+  promise. At the Southern Pole, Xara does something she has never done: she shuts
+  off the holopad and trusts a rhythm she cannot yet map. Kael's voice on the
+  acoustic relay becomes the first pattern her body accepts without proof.
+  In the quiet months that follow the crisis, they conceive a son. Xara names him
+  Jasper, after the banded stone she found in a mineral field guide. Kael loves the
+  name for a different reason: struck lightly, jasper rings. A stone that makes
+  sound. A child who will inherit both of them.
+  [Production note: No individual portrait in Book 6. Jasper is represented in the
+  Carisco family group portrait placeholder, portrait-book6-family.webp.]
+
+book7_title: "The Child Who Heard the Shape (age-6.1)"
 book7_arc: >
-    [Placeholder: At eight, Jasper begins gentle, formal observation within the Stewardship Program. He creates "sound-maps," drawing the visual geometry of acoustic rhythms. While his cousin Jasmine naturally calms chaotic EM fields, Jasper actively weaves new, stable harmonic pathways using sound. He and Jasmine develop a profound, playful partnership: Jasper creates the complex acoustic structures, and Jasmine anchors them into the bismuth network. He is a child of pure synthesis, proving that the next generation doesn't have to choose between feeling and analyzing.]
-book8_title: "The Bridge of Rhythm (age-15.5)"
+  Jasper is six when the Stewardship instructors notice that he hums in perfect pitch
+  while drawing flawless fractal spirals in the Activity Center dust. He does not
+  experience sound and pattern as separate senses. A resonance spike is a shape to
+  him and a beat at the same time; a wrong note looks crooked.
+  This dual-channel perception is extraordinary, and it is also exhausting. When the
+  auditory and visual channels disagree, Jasper freezes—unable to analyze his way out
+  (Xara's instinct) or drum his way out (Kael's). The family's challenge in Book 7 is
+  not to cultivate the gift but to protect the child carrying it.
+  The turning point comes during a minor fluctuation at the Activity Center. Jasper
+  tries to correct the field with both channels and overloads. His cousin Jasmine
+  walks over, sits beside him, and simply stays. The field settles. So does he. He
+  learns the first lesson of his life: he does not have to hold the whole song alone.
+
+book8_title: "The Right to Be Off-Key (age-13.1)"
 book8_arc: >
-    [Placeholder: As a teenager, Jasper navigates the pressure of his family's immense legacy. During a major colony-wide harmonic shift, he develops a hybrid communication protocol, using his father's acoustic drumming to "draw" his mother's harmonic geometry in real-time, allowing for instantaneous, multi-layered communication with the Galinstanians. He begins to step out of his parents' shadows, carving his own identity not just as a legacy, but as a pioneer of a new acoustic-visual language.]
-book9_title: "The Symphony of Ares (age-22.5)"
+  Thirteen, and suddenly the gift is a label. Prodigy. Asset. Next Generation. Jasper
+  begins to resent the fact that every note he plays is being measured by someone. He
+  does something the Carisco family does not know how to handle: he quits. He steps
+  away from formal Stewardship training and joins a colony youth ensemble, where music
+  is allowed to be only music—loud, sloppy, unnecessary, and joyful.
+  Xara must resist her deepest instinct to optimize him. Kael must resist his own urge
+  to prove that disciplined practice is the only path worth walking. Instead, Kael
+  sits in on rehearsals and plays badly on purpose. It is the most important thing he
+  ever teaches his son.
+  When a colony-wide harmonic shift forces the Stewardship team to call for help,
+  Jasper returns—but on his own terms, and not as an instrument. He brings a notebook
+  full of something nobody has seen before: a composite notation. A score that can be
+  read as geometry and played as rhythm. His mother's map and his father's tempo,
+  written on the same page.
+
+book9_title: "The Weaver of Song (age-20.1)"
 book9_arc: >
-    [Placeholder: In his early twenties, Jasper is a full Stewardship officer and a master of his unique acoustic-visual craft. Alongside his cousin Jasmine, he forms the twin pillars of the colony's new era. While Jasmine is the living stabilizer, Jasper is the active composer, constantly expanding the boundaries of human-Galinstanian integration. He proves that the "Drummer of Hope" and the "Pattern Weaver" didn't just save the colony—they gave it the tools to sing a completely new song.]
+  At twenty, Jasper is no longer a prodigy to be managed. He is a Resonance
+  Composer—a new discipline that did not exist when he was born—working alongside his
+  cousin Jasmine, whose anchoring presence makes his weaves possible.
+  Together with the Listener Corps and Resonant Echo, he develops the first shared
+  compositional framework between human and Galinstanian perception: not a translation
+  layer, but a genuine common language. Humans contribute rhythm and intention; the
+  Galinstanians contribute structure and flow. Neither has to become the other.
+  The book culminates in a premiere in the same gallery courtyard where, as a
+  seven-year-old, Kael once drummed unknowingly toward a sealed wall. This time, the
+  collective answers in harmony. The Drummer of Hope's son closes the circle his
+  father accidentally opened.
 ---
 
 <div class="article-content">
+
 <div class="card-bg" markdown="1">
 
 ## Overview
-Jasper Aoki-Carisco is the son of Xara Zo Carisco and Kael Aoki, conceived organically following the events of Book 6. He represents the next evolutionary step in human-Galinstanian integration, embodying the perfect synthesis of his parents' distinct gifts. Where Xara sees the visual geometry of resonance and Kael feels and creates its acoustic rhythm, Jasper experiences both simultaneously. He is a synesthetic "Acoustic Weaver" who can see the mathematical fractal patterns created by sound. Alongside his cousin Jasmine, he is the future of the Resonance Stewardship Program.
+Jasper Aoki-Carisco is the son of Xara Zo Carisco and Kael Aoki, conceived in the aftermath of the Polar Opposites crisis. He is the first documented child with genuine dual-channel resonance perception: he hears structure and sees rhythm as a single, unified sensation. Where Xara maps the song and Kael keeps its tempo, Jasper weaves the two together. His arc is not a traditional prodigy story; it is a story about a child learning that he is allowed to be unfinished, and a family learning that love is not the same thing as optimization.
 
+* career_title: "Resonance Composer (founding discipline)"
+* education:
+  Self-paced education under Utara's satellite curriculum. Focus areas:
+  - Acoustic engineering and harmonic rhythm (under Kael's mentorship)
+  - Harmonic geometry and pattern mapping (under Xara's mentorship)
+  - Galinstanian flow-pattern translation
+  - Composite notation development (original discipline, no prior curriculum)
+  By Book 9, Jasper has established Resonance Composition as a formal Stewardship
+  discipline—the first new field created entirely by the second generation.
 </div>
+
 <div class="card-bg" markdown="1">
 
 ## Physical Description
-Jasper is a stunning, harmonious blend of his parents' phenotypes, representing the beautiful mingling of East Asian and Italian/Arabic/European/African heritage. He has medium olive skin (5) with a warm, radiant undertone. His hair is a rich, very dark brown (8), thick, and falls in deep, loose waves that occasionally form soft, defined curls—a perfect genetic compromise between Xara’s voluminous curls and Kael’s wavy hair. His eyes are dark brown and almond-shaped, inheriting a subtle epicanthic fold from his father, giving him a sharp, intensely observant gaze. Unlike his amber-eyed cousin Jasmine, Jasper’s dark eyes reflect the deep, analytical focus of his mother, but they dance with the rhythmic, kinetic energy of his father. 
-
+Jasper is a living midpoint between his parents. He has medium-tan skin (5) with a warm undertone, sitting naturally between Kael's light olive and Xara's medium brown. His hair is very dark brown (8), medium-thick, and falls in soft, defined curls—looser than Xara's ringlets, tighter than Kael's waves. His eyes are dark brown and almond-shaped, with the subtle epicanthic fold he inherits from Kael, carrying Xara's intense, evaluating stillness but moving to a beat she would never admit to hearing. He is almost always barefoot, reading floor vibration through his feet just like his father, and by age nine, his fingertips develop the same heavy callouses as Kael's.
 </div>
+
 <div class="card-bg" markdown="1">
 
 ## Personality & Skills
-Jasper is defined by his **synesthetic resonance, kinetic intelligence, and joyful synthesis**. 
+Jasper is defined by his **dual perception, quiet wit, and hard-won permission to be imperfect**. Unlike his cousin Jasmine, who naturally anchors chaotic fields, Jasper actively weaves them, requiring intense mental and physical coordination.
+
 His strengths include:
-*   **Acoustic-Visual Synesthesia:** The innate ability to see sound as geometry. He can map the bismuth network by listening to its acoustic resonance, translating audio data into visual, structural models in real-time.
-*   **Rhythmic Precision:** Inherited from Kael, he has flawless timing and an intuitive understanding of how sound travels through physical structures.
-*   **Adaptive Flow:** Unlike Xara, who can be rigid when patterns break, Jasper can improvise. If the rhythm changes, he instantly sees the new geometry and adapts.
+* **Dual-Channel Perception:** Experiences acoustic rhythm and geometric structure as one sensation; can detect a harmonic fault before either instrument registers it.
+* **Improvisational Bridging:** Translates a Galinstanian flow pattern into a rhythm a human ensemble can actually play, without flattening its meaning.
+* **Composite Notation:** Develops a written language that is simultaneously a map and a score—his parents' two ways of knowing, finally sharing a page.
+* **Dry, Deflecting Humor:** A Carisco defense mechanism, softened by an Aoki warmth. He makes people laugh before they can make him a specimen.
+
 His weaknesses include:
-*   Can become so entranced by the "visual music" that he forgets his physical surroundings or basic needs.
-*   Sometimes struggles to explain his synesthetic experience to those who don't share it, leading to moments of childhood frustration.
-*   His energy is highly kinetic; he has a hard time sitting still for traditional analytical work, preferring to "think with his hands."
-*   
+* **Channel Conflict:** When what he hears and what he sees disagree, he freezes rather than choosing a channel. Incomplete information is his hardest enemy.
+* **Self-Diagnosis:** Tends to describe his own emotions as "out of tune" instead of naming them.
+* **Inherited Perfectionism:** Xara's need for structural certainty, expressed through music. He can sabotage a good performance because it wasn't the *right* one.
 </div>
+
 <div class="card-bg" markdown="1">
 
 ## Relationships
-*   **Xara Zo Carisco** — mother; she nurtures his visual and analytical gifts, teaching him how to structure his wild, synesthetic visions into actionable science.
-*   **Kael Aoki** — father; his first teacher in rhythm. Kael grounds Jasper’s wild energy, teaching him that the math he sees is driven by the heartbeat he feels.
-*   **Jasmine Carisco-Vance** — cousin and best friend; the "Anchor" to his "Weaver." They share a profound, playful bond. Jasper creates the complex acoustic structures, and Jasmine provides the calm bio-harmonic foundation to stabilize them.
-*   **Jenni Jo & Elara Vance** — aunt and co-mother; Jenni adores his kinetic energy, while Elara helps monitor his neurological development to ensure his synesthesia is safely integrated.
-*   **Ripple** — Galinstanian family friend; Ripple finds Jasper’s ability to "see the song" deeply fascinating, often working with him to translate complex emotional states into visual-acoustic maps.
-
+* **Xara Zo Carisco** — mother. She recognizes her own mind in him and must learn not to build a cage around it. Their quietest moments are the ones where she puts down the holopad and simply listens.
+* **Kael Aoki** — father. His first teacher and, later, his most important protector. Kael teaches him to drum; more importantly, Kael teaches him that a drum is allowed to be a drum and not a planetary rescue device.
+* **Jasmine Carisco-Vance** — cousin and closest peer. She anchors; he weaves. Their rivalry is genuine and their affection is deeper than either will admit. She is the only person who can pull him out of a channel-conflict freeze without asking him to explain what went wrong.
+* **Jenni Jo Carisco** — aunt. The one who teaches him to trust a feeling before he has a pattern for it.
+* **Dr. Elara Vance** — aunt by family. The only adult who can explain the biology of what happens inside his head, and who treats that explanation as a comfort rather than a diagnosis.
+* **Sora & Nia** — fellow rover-born children; Sora is his exact age and closest wilderness cohort, sharing a boisterous, physical pairing that balances Jasper's more internalized sensory processing.
+* **Resonant Echo / Ripple** — the collective that knew his father before he existed. Ripple refers to Xara and Kael's courtship as "the first duet" and to Jasper as its answer.
 </div>
+
+<div class="article-content">
+
 <div class="card-bg" markdown="1">
 
 ## Story Overview (non-spoiler)
-Jasper’s arc is about the power of synthesis. Born from a mother who learned to feel the music and a father who learned to structure the rhythm, Jasper never has to choose between the two. His journey involves learning to harness his unique synesthetic abilities, navigating the immense expectations of his family's legacy, and ultimately forging a new, hybrid language of communication that pushes human-Galinstanian integration into its next great era.
-
+Jasper grows up inside a legend he did not write. His father is the Drummer of Hope; his mother is the Pattern Weaver; his aunt and her partner saved a colony by trusting each other's opposites. Everyone expects him to be the next step in human-Galinstanian integration. What nobody expects is that he might simply want to make music. His journey is the movement from being used as a bridge to choosing to build one, and from believing that his gift is an obligation to discovering that it is a language, and languages belong to the people who speak them.
 </div>
+
 <div class="card-bg" markdown="1">
 
 ## Key Moments
-*   **The Organic Conception (Book 6):** Conceived naturally, symbolizing Xara’s leap of faith in trusting the spontaneous rhythm of life over absolute control.
-*   **The First Sound-Map (Book 7):** [Placeholder] As a young child, Jasper draws a perfect, complex fractal map of the gallery's acoustic resonance, astonishing the Stewardship elders by doing it purely by ear.
-*   **The Hybrid Protocol (Book 8):** [Placeholder] As a teenager, he successfully debuts a new communication method, "drumming" geometric patterns that the Galinstanians can instantly read as both emotion and data.
-*   **The Twin Pillars (Book 9):** [Placeholder] He and Jasmine officially take on leadership roles in the Stewardship Program, representing the perfect balance of creation (Jasper) and stabilization (Jasmine).
-*   
+* **The Naming (Book 6):** Xara chooses a stone from a mineral field guide. Kael loves it because jasper rings when struck. The child's name is already a synthesis.
+* **The First Weave (Book 7):** Jasper attempts to correct an Activity Center resonance fluctuation and overloads. Jasmine sits beside him. The field settles. He learns that being held is not the same as being fixed.
+* **The Refusal (Book 8):** He leaves the Stewardship training track and joins an ordinary youth ensemble. The family's most difficult act of love is letting him.
+* **The Composite Score (Book 8):** He returns to a crisis on his own terms, carrying a notation that can be read and played. Xara and Kael look at the same page and finally see the same thing.
+* **The Answering (Book 9):** His premiere in the gallery courtyard. Resonant Echo answers. The wall that once swallowed a boy's drumming now sings back.
 </div>
+
 <div class="card-bg" markdown="1">
 
 ## Jasper's Observations
-"When Dad hits the drum, it doesn't just sound like a beat. It looks like a blue spiral expanding outward. Mom says it's a C-minor harmonic wave, but I know it's a spiral." — Jasper, age 8 (Book 7)
-"Jasmine makes the floor stop shaking. I just draw the lines so the shaking knows where to go." — Jasper, on his dynamic with his cousin (Book 8)
-"You can't map the song if you don't know how to dance the math." — Jasper, teaching a new cadet (Book 9)
+> "It's not two songs. It's one song with two eyes." — Jasper, age 6, explaining his perception to a confused instructor (Book 7)
 
+> "Auntie Jenni says I don't have to be right. I keep thinking she means I don't have to try." — Jasper, age 6 (Book 7)
+
+> "I don't want to fix the field. I want to write something in it." — Jasper, age 13, to Kael (Book 8)
+
+> "You taught me to keep time, Baba. Nobody taught me I was allowed to stop." — Jasper, age 13 (Book 8)
+
+> "Mama builds the map. Papa sets the tempo. I'm learning to write the part where they meet." — Jasper, age 20, program note for the premiere (Book 9)
 </div>
+
 <div class="card-bg" markdown="1">
 
 ## Themes
-*   **Synthesis of Opposites:** Proving that structure (geometry) and flow (rhythm) are not mutually exclusive, but two halves of the same language.
-*   **The Next Evolution:** Representing a generation for whom synesthetic, multi-sensory integration with the planet is a natural, lived reality.
-*   **Legacy and Identity:** Carrying forward the names and gifts of his parents while forging a completely new path that is uniquely his own.
-*   **The Joy of Creation:** Approaching planetary stewardship not just as a solemn duty, but as a joyful, creative act of composing a symphony.
-
+* **Dual Perception:** Structure and rhythm are not opposing ways of knowing; they are the same knowledge arriving by different roads.
+* **Permission Over Optimization:** A gift is not a contract. Talent does not obligate the talented.
+* **Inheritance vs. Authorship:** Becoming the child of legends without becoming their sequel.
+* **The Circle Closed:** The accidental hope-beacon of Book 5 becomes, two generations later, a deliberate and shared song.
 </div>
+
 <div class="card-bg" markdown="1">
 
 ## Trivia
-*   Unlike his cousin Jasmine, who was conceived via IVG and has striking amber eyes, Jasper was conceived organically and has dark brown eyes, creating a beautiful visual contrast between the two cousins.
-*   He has a playful, ongoing rivalry with Jasmine to see who can influence the bismuth network faster: she does it by projecting calm bio-harmonics, he does it by playing complex acoustic rhythms on a mini-drum pad.
-*   He inherits his father's calloused hands, but instead of just drumming, he uses his tactile sensitivity to "feel" the geometric grooves of the bismuth network.
-*   By Book 8, he finds his father's newly grown mustache highly amusing and often uses it as an excuse to break concentration during serious study sessions.
-*   His middle name, Aoki, is paired with Carisco to honor both his father's lineage and his mother's, but he is often just called "Jas" or "Weaver" by the Stewardship elders.
-*   
+* His name comes from jasper, the banded opaque chalcedony. Xara chose it for the patterning. Kael chose it because it rings. Neither admitted the other's reason until after the naming.
+* He is barefoot indoors from age three onward, a habit copied directly from his father. He can identify which wing of the Stewardship building is active by the floor alone.
+* Xara wove him a bismuth-thread wristband when he was four. He still wears it, stretched and frayed, in Book 9.
+* He hums in perfect pitch while drawing, and draws perfect fractals while humming. Elara has forty pages of observations on this and has never once shown them to him.
+* His rivalry with Jasmine is legendary: he claims rhythm can fix anything; she claims presence can. They have been settling it with demonstrations since they were six.
+* He keeps a private notebook titled *Bad Music*. It contains deliberately imperfect pieces. It is the healthiest thing about him.
+* Kael's calloused hands are mirrored in Jasper's fingertips by age nine. Xara notices first, says nothing, and is secretly delighted.
 </div>
+
 <div class="card-bg" markdown="1">
 
 {% include story-arcs.html %}
-
 </div>
+
 </div>
