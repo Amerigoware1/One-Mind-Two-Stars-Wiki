@@ -814,7 +814,7 @@
     "height": 1536
   },
   {
-    "file": "ananya-age16.webp",
+    "file": "ananya-age16.mp4",
     "title": "Ananya at age 16",
     "description": "Ananya at age 16 living in New Eden",
     "tags": [
@@ -822,7 +822,8 @@
       "new eden"
     ],
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "poster": "ananya-age16.jpg"
   },
   {
     "file": "chenwei-age10.webp",
