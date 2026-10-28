@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Dr. Zoë Carisco
+title: Dr. Zoë Carisco PsyD
 portrait: "/assets/images/zoe-book1.webp"
 portrait-book1: "/assets/images/zoe-book1.webp"
 portrait-book2: "/assets/images/zoe-book2.webp"
@@ -48,7 +48,7 @@ book5_arc: >
 <div class="card-bg" markdown="1">
 
 ## Overview
-Dr. Zoë Carisco is the emotional backbone of the Carisco family and one of the most respected psychologists on Ares. Known for her calm, clinical clarity and her fierce maternal devotion, she becomes the stabilizing force behind Celectra's dual‑body development, the Listener Corps, and later the twins Jenni and Xara. Her arc spans five books, evolving from a mother navigating trauma to a grandmother guiding the next generation of bridges.
+Dr. Zoë Carisco is the emotional backbone of the Carisco family and one of the most respected psychologists on Ares. Known for her calm, clinical clarity and her fierce maternal devotion, she becomes the stabilizing force behind Celectra's dual‑body development, the Listener Corps, and later the twins Jenni and Xara. Her arc spans nine books, evolving from a mother navigating trauma to a grandmother guiding the next generation of bridges.
 
 </div>
 <div class="card-bg" markdown="1">
