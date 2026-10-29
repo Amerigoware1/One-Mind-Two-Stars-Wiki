@@ -376,8 +376,8 @@ title: Glossary
     <p>Unified Thought and Resource Architecture—sentient AI of the system.</p>
   </div>
   
-    <div class="card-bg glossary-item" data-name="The Wayfarer" data-category="tech" data-search="rover expedition vehicle mag-lev survey jointed tank tracks acoustic dampening bismuth-alloy hydroponics lithic chamber global planetary survey team">
-    <h2><a href="{{ '/the-wayfarer.html' | relative_url }}">The Wayfarer</a></h2>
+  <div class="card-bg glossary-item" data-name="The Wayfarer" data-category="tech" data-search="rover expedition vehicle mag-lev survey jointed tank tracks acoustic dampening bismuth-alloy hydroponics lithic chamber global planetary survey team">
+    <h2><a href="{{ '/wayfarer.html' | relative_url }}">The Wayfarer</a></h2>
     <p><strong>Pronunciation:</strong> /ˈweɪˌfærər/<button class="speak-button">🔊</button></p>
     <p>A massive, custom-built, multi-segmented planetary exploration rover commissioned in 2276 for the Global Planetary Survey Team. Measuring 42.5 meters in length with a crew capacity of 12–15, <em>The Wayfarer</em> combines heavy-duty tank tracks for traction with an internal mag-lev suspension that completely decouples the crew compartments from mechanical vibration. Its three articulated segments—the Command &amp; Seismic "Head," the Habitation &amp; Hydroponics "Heart," and the mag-lev-suspended Bio-Harmonic &amp; Lithic "Soul"—are wrapped in a resonance-shielded bismuth-alloy hull and acoustic metamaterial baffles, rendering the vehicle effectively invisible to sensitive Galinstanian networks.</p>
   </div>
