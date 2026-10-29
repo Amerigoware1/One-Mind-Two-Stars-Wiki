@@ -17,7 +17,7 @@ The Papilio-Class Personal Flight Harness, colloquially known as "Butterflies," 
 </div>
 
 <div class="card-bg" markdown="1">
-
+re
 ## Structural Architecture & Propulsion
 The unit is built for high output in Ares' 0.8 atm atmosphere without sacrificing compactness or safety.
 * **Quad-Rotor EDF Frame:** A rigid, lightweight carbon-fiber and titanium chassis mounts four high-output brushless electric ducted fans (EDFs). The blades are encased in high-impact ducting to maximize thrust efficiency and protect the pilot's limbs and nearby cave flora/structures in tight spaces.

@@ -37,9 +37,9 @@ The vehicle's design is dictated by the dual necessities of extreme terrain navi
 <div class="card-bg" markdown="1">
 
 ## Key Systems & Technology
-* **Papilio-Class Micro-Scout Drones ("Butterflies"):** Housed in dorsal launch bays, these backpack-worn drones are *The Wayfarer*'s primary reconnaissance tool. They deploy silent, subsonic pings to map cave systems and cliff faces, and can fire micro-tethers to create safe climbing lines for the crew.
+* **Papilio-Class Personal Flight Harness ("Butterflies"):** Housed in dorsal launch bays, these backpack-worn drones are *The Wayfarer*'s primary reconnaissance tool. They carry a person into canyons, up cliff faces, or ahead to scout the way.
 * **Resonance-Shielded Hull:** The exterior is coated in a dilute bismuth-alloy weave that prevents the rover's own electromagnetic signature from bleeding into the environment, keeping it "invisible" to sensitive Galinstanian networks until the crew chooses to make contact.
-* **Closed-Loop Life Support:** Integrated with Mei's hydroponics, the rover recycles 98% of its water and air, allowing for multi-month expeditions between the four major settlements without resupply.
+* **Closed-Loop Life Support:** Integrated with Mei's hydroponics and an MRE, the rover recycles 98% of its water and and wastes, allowing for multi-month expeditions between the four major settlements without resupply.
 </div>
 
 <div class="card-bg" markdown="1">
