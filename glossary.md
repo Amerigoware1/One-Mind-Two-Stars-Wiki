@@ -261,6 +261,12 @@ title: Glossary
     <p>Naturally occurring (but cultivated by galinstanians) deposits of bismuth that act as a waveguide for electromagnetic frequencies in the ELF range. Carries Galinstanian communication and human radio signals.</p>
   </div>
 
+  <div class="card-bg glossary-item" data-name="Butterflies" data-category="tech" data-search="papilio personal flight harness VTOL strap-on coaxial contra-rotating morphing smart-blades gaze-directed navigation two-second rule soft lock corded hand controllers prone flight emergency pitch-up canyon descent cliff ascent">
+    <h2><a href="{{ '/butterflies.html' | relative_url }}">Butterflies</a></h2>
+    <p><strong>Pronunciation:</strong> /ˈbʌtərflaɪ/ (colloquial); <em>Papilio</em>-Class /pəˈpɪlioʊ/ (official)<button class="speak-button">🔊</button></p>
+    <p>Strap-on, human-piloted VTOL mobility units worn as a backpack harness, deployed in 2276 to replace remote micro-drones for canyon descent, cliff ascent, and tight-space exploration. Each harness mounts four high-output brushless electric ducted fans in a coaxial contra-rotating configuration (two blades per arm spinning in opposite directions), doubling thrust within a compact frame suited to Ares' 0.8 atm atmosphere. Morphing smart-blades of piezoelectric composite dynamically alter pitch and camber in real time to maximize lift efficiency. Navigation uses gaze-directed "Two-Second Rule" targeting with a "Soft Lock" safety requiring a body lean or thumb-trigger to engage, backed by corded hand controllers for absolute reliability in rugged terrain. The pilot transitions from standing to a prone, head-first flight position within a split second via the "Harness Tug" sequence, and emergency pitch-up braking reverses the launch logic to land upright on foot. Certified pilots must complete rigorous PPE and harmonic-safety training before solo deployment.</p>
+  </div>
+  
   <div class="card-bg glossary-item" data-name="Celectrum" data-category="tech" data-search="instrument music electronic crescent">
     <h2><a href="{{ '/celectrum.html' | relative_url }}">Celectrum</a></h2>
     <p><strong>Pronunciation:</strong> /sɛˈlɛktrəm/<button class="speak-button">🔊</button></p>
@@ -368,6 +374,12 @@ title: Glossary
     <h2><a href="{{ '/utara.html' | relative_url }}">Utara</a></h2>
     <p><strong>Pronunciation:</strong> /uːˈtɑːrə/<button class="speak-button">🔊</button></p>
     <p>Unified Thought and Resource Architecture—sentient AI of the system.</p>
+  </div>
+  
+    <div class="card-bg glossary-item" data-name="The Wayfarer" data-category="tech" data-search="rover expedition vehicle mag-lev survey jointed tank tracks acoustic dampening bismuth-alloy hydroponics lithic chamber global planetary survey team">
+    <h2><a href="{{ '/the-wayfarer.html' | relative_url }}">The Wayfarer</a></h2>
+    <p><strong>Pronunciation:</strong> /ˈweɪˌfærər/<button class="speak-button">🔊</button></p>
+    <p>A massive, custom-built, multi-segmented planetary exploration rover commissioned in 2276 for the Global Planetary Survey Team. Measuring 42.5 meters in length with a crew capacity of 12–15, <em>The Wayfarer</em> combines heavy-duty tank tracks for traction with an internal mag-lev suspension that completely decouples the crew compartments from mechanical vibration. Its three articulated segments—the Command &amp; Seismic "Head," the Habitation &amp; Hydroponics "Heart," and the mag-lev-suspended Bio-Harmonic &amp; Lithic "Soul"—are wrapped in a resonance-shielded bismuth-alloy hull and acoustic metamaterial baffles, rendering the vehicle effectively invisible to sensitive Galinstanian networks.</p>
   </div>
 
 </div><!-- end panel-tech -->
