@@ -31,32 +31,32 @@ death_place:
 
 book3_title:  "Birth and Early Bonding "
 book3_arc:  >
-Jenni is born during the events of Book 3. She is named after her biological grandmother (Jinan "Jenni") and Amerigo's middle name (Giorgio). Even as an infant, she responds strongly to Celectra's EM field and to the presence of Galinstanians.
+    Jenni is born during the events of Book 3. She is named after her biological grandmother (Jinan "Jenni") and Amerigo's middle name (Giorgio). Even as an infant, she responds strongly to Celectra's EM field and to the presence of Galinstanians.
 
 book4_title: "The Four Rivers Resonance"
 book4_arc: >
-At seven years old, Jenni has known Ripple for five years. She remembers none of Ripple's arrival, but she knows the story — the collapse, the migrating cluster, the moment she and Xara reached for Ripple and Ripple reached back.
-Jenni's sensitivity allows her to detect emotional-harmonic shifts before adults notice them. She plays a small but meaningful role in the Great Resonance, providing stabilizing pulses during moments of instability.
+    At seven years old, Jenni has known Ripple for five years. She remembers none of Ripple's arrival, but she knows the story — the collapse, the migrating cluster, the moment she and Xara reached for Ripple and Ripple reached back.
+    Jenni's sensitivity allows her to detect emotional-harmonic shifts before adults notice them. She plays a small but meaningful role in the Great Resonance, providing stabilizing pulses during moments of instability.
 
 book5_title: "Stewardship and Emotional Resonance"
 book5_arc: >
-At fourteen, Jenni becomes a junior member of the Resonance Stewardship Program. She specializes in emotional-harmonic stabilization and works closely with Ripple and Xara. Her arc centers on learning to trust her instincts while developing the discipline needed for planetary stewardship.
+    At fourteen, Jenni becomes a junior member of the Resonance Stewardship Program. She specializes in emotional-harmonic stabilization and works closely with Ripple and Xara. Her arc centers on learning to trust her instincts while developing the discipline needed for planetary stewardship.
 
 book6_title: "The Intuitive Anchor (age-21)"
 book6_arc: >
-At twenty-one, Jenni travels to the Northern Pole of Ares during the "Polar Opposites" crisis, separated from her twin sister, Xara. While Xara struggles with chaotic data at the Southern Pole, Jenni's "feel first" instincts allow her to sense the emotional-harmonic root of the anomaly at the Northern Pole. She partners with Dr. Elara Vance, a brilliant bio-harmonic engineer who translates Jenni's intuitive feelings into actionable, life-saving science. Together, they stabilize the colony's network. Following the crisis, Jenni and Elara's profound bond deepens into a life partnership, and they conceive their daughter, Jasmine, via Elara's groundbreaking Harmonic IVG Protocol.
+    At twenty-one, Jenni travels to the Northern Pole of Ares during the "Polar Opposites" crisis, separated from her twin sister, Xara. While Xara struggles with chaotic data at the Southern Pole, Jenni's "feel first" instincts allow her to sense the emotional-harmonic root of the anomaly at the Northern Pole. She partners with Dr. Elara Vance, a brilliant bio-harmonic engineer who translates Jenni's intuitive feelings into actionable, life-saving science. Together, they stabilize the colony's network. Following the crisis, Jenni and Elara's profound bond deepens into a life partnership, and they conceive their daughter, Jasmine, via Elara's groundbreaking Harmonic IVG Protocol.
 
 book7_title: "The Resonance Psychologist (age-28)"
 book7_arc: >
-Jenni officially earns her PsyD, following directly in the footsteps of her grandmother, Dr. Zoë Carisco. As the Global Planetary Survey Team travels the Ares wilderness aboard *The Wayfarer*, Jenni's role becomes critical. She studies the psychological toll of living in wildly different harmonic biomes, developing protocols for "Resonance Acclimation" to ensure colonists don't suffer from sensory overload or ANI dissociation. She learns to establish strict emotional boundaries, ensuring she no longer absorbs the ambient stress of the colony at the expense of her own mental health, while raising toddler Jasmine with Elara.
+    Jenni officially earns her PsyD, following directly in the footsteps of her grandmother, Dr. Zoë Carisco. As the Global Planetary Survey Team travels the Ares wilderness aboard *The Wayfarer*, Jenni's role becomes critical. She studies the psychological toll of living in wildly different harmonic biomes, developing protocols for "Resonance Acclimation" to ensure colonists don't suffer from sensory overload or ANI dissociation. She learns to establish strict emotional boundaries, ensuring she no longer absorbs the ambient stress of the colony at the expense of her own mental health, while raising toddler Jasmine with Elara.
 
 book8_title: "The Empathic Architect (age-35)"
 book8_arc: >
-Jenni and Elara co-author a new framework for empathic stewardship, officially integrating emotional intelligence and psychological resilience into the colony's hard science protocols. Jasmine (age 7) begins showing advanced harmonic anchoring traits. Jenni transitions from a field psychologist to a senior mentor, teaching Stewardship cadets that empathy is not just a feeling, but a rigorous, measurable metric in planetary survival and diplomatic integration.
+    Jenni and Elara co-author a new framework for empathic stewardship, officially integrating emotional intelligence and psychological resilience into the colony's hard science protocols. Jasmine (age 7) begins showing advanced harmonic anchoring traits. Jenni transitions from a field psychologist to a senior mentor, teaching Stewardship cadets that empathy is not just a feeling, but a rigorous, measurable metric in planetary survival and diplomatic integration.
 
 book9_title: "Legacy of the Heart (age-42)"
 book9_arc: >
-In her early forties, Jenni is a revered elder of emotional resonance and psychology on Ares. Jasmine (age 14) is a confident young steward in her own right. Jenni's life's work culminates in a deep, empathic communion with the Galinstanians, establishing the first formalized psychological care protocols for human-Galinstanian interface trauma. She proves that the "heart" of the colony is just as vital, and just as scientifically rigorous, as its "mind."
+    In her early forties, Jenni is a revered elder of emotional resonance and psychology on Ares. Jasmine (age 14) is a confident young steward in her own right. Jenni's life's work culminates in a deep, empathic communion with the Galinstanians, establishing the first formalized psychological care protocols for human-Galinstanian interface trauma. She proves that the "heart" of the colony is just as vital, and just as scientifically rigorous, as its "mind."
 ---
 <div class="article-content">
 <div class="card-bg" markdown="1">

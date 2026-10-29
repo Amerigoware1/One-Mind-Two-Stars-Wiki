@@ -31,31 +31,31 @@ death_place:
 
 book3_title:  "Birth and Early Bonding "
 book3_arc:  >
-Xara is born during the events of Book 3. She is named after her adoptive grandmother's mother (xara) and her adoptive grandmother (zoë). Even as an infant, she shows unusual focus and sensitivity to harmonic patterns.
+    Xara is born during the events of Book 3. She is named after her adoptive grandmother's mother (xara) and her adoptive grandmother (zoë). Even as an infant, she shows unusual focus and sensitivity to harmonic patterns.
 
 book4_title: "The Four Rivers Resonance"
 book4_arc: >
-At seven, Xara has known Ripple for five years. She is fascinated by Ripple's harmonic fluctuations and begins mapping them with stones, toys, and water ripples. Her early observations help Celectra interpret the resonance anomalies. Xara's analytical clarity becomes essential during the Great Resonance.
+    At seven, Xara has known Ripple for five years. She is fascinated by Ripple's harmonic fluctuations and begins mapping them with stones, toys, and water ripples. Her early observations help Celectra interpret the resonance anomalies. Xara's analytical clarity becomes essential during the Great Resonance.
 
 book5_title: "Pattern Weaver"
 book5_arc: >
-At fourteen, Xara becomes a junior member of the Resonance Stewardship Program. She specializes in harmonic geometry and anomaly detection. Working with Ripple and Jenni, she helps map the long-term stability of the planetary network. Her arc centers on becoming a "pattern weaver" — someone who sees the structure beneath the song.
+    At fourteen, Xara becomes a junior member of the Resonance Stewardship Program. She specializes in harmonic geometry and anomaly detection. Working with Ripple and Jenni, she helps map the long-term stability of the planetary network. Her arc centers on becoming a "pattern weaver" — someone who sees the structure beneath the song.
 
 book6_title: "Polar Opposites & The Syncopated Map (age-21)"
 book6_arc: >
-At twenty-one, Xara travels to the Southern Pole of Ares during the "Polar Opposites" crisis. Separated from her twin, her analytical maps fail to predict a chaotic, fractal harmonic shift. Her partner, Kael, guides her through long-range acoustic relay, teaching her to stop analyzing the data and feel the "syncopated downbeat." By trusting intuition over pure structure, she maps the crisis and saves the colony. Following the crisis, she and Kael conceive their son, Jasper, organically—a testament to her learning to let go of absolute control and trust the natural rhythm of life.
+    At twenty-one, Xara travels to the Southern Pole of Ares during the "Polar Opposites" crisis. Separated from her twin, her analytical maps fail to predict a chaotic, fractal harmonic shift. Her partner, Kael, guides her through long-range acoustic relay, teaching her to stop analyzing the data and feel the "syncopated downbeat." By trusting intuition over pure structure, she maps the crisis and saves the colony. Following the crisis, she and Kael conceive their son, Jasper, organically—a testament to her learning to let go of absolute control and trust the natural rhythm of life.
 
 book7_title: "The Planetary Harmonic Geologist (age-28)"
 book7_arc: >
-As the Global Planetary Survey Team departs New Eden aboard *The Wayfarer*, Xara's role becomes critical. She is no longer just mapping the bismuth network under the colony; she is mapping the *entire planet's* deep-crust resonance highways. She looks for planetary tectonic fault lines, harmonic "dead zones," and the deep structural connections between the four settlements. She provides the "weather forecast" for planetary resonance, telling the team where it is safe to travel and where the subterranean rivers flow. She balances this demanding career with motherhood to toddler Jasper, learning to let him experience the world without forcing his gifts into a rigid framework.
+    As the Global Planetary Survey Team departs New Eden aboard *The Wayfarer*, Xara's role becomes critical. She is no longer just mapping the bismuth network under the colony; she is mapping the *entire planet's* deep-crust resonance highways. She looks for planetary tectonic fault lines, harmonic "dead zones," and the deep structural connections between the four settlements. She provides the "weather forecast" for planetary resonance, telling the team where it is safe to travel and where the subterranean rivers flow. She balances this demanding career with motherhood to toddler Jasper, learning to let him experience the world without forcing his gifts into a rigid framework.
 
 book8_title: "The Architect of Echoes (age-35)"
 book8_arc: >
-Xara leads a major initiative to integrate acoustic and EM mapping into a unified Stewardship protocol. When Jasper (age 13) quits formal training to play in a youth ensemble, Xara must confront her deepest perfectionism. She learns the hardest lesson of her life: love is not optimization. She supports his choice, and when a colony-wide crisis hits, she trusts his unconventional "composite score" to save the day. She and Kael establish a beautiful, chaotic, and deeply loving domestic rhythm, proving that structure and spontaneity can coexist.
+    Xara leads a major initiative to integrate acoustic and EM mapping into a unified Stewardship protocol. When Jasper (age 13) quits formal training to play in a youth ensemble, Xara must confront her deepest perfectionism. She learns the hardest lesson of her life: love is not optimization. She supports his choice, and when a colony-wide crisis hits, she trusts his unconventional "composite score" to save the day. She and Kael establish a beautiful, chaotic, and deeply loving domestic rhythm, proving that structure and spontaneity can coexist.
 
 book9_title: "Legacy of the Pattern Weaver (age-42)"
 book9_arc: >
-In her early forties, Xara is a revered elder stateswoman of harmonic geometry on Ares. She has fully stepped out of Jenni's shadow, recognized not just as a twin, but as the architect of the colony's modern resonance frameworks. Jasper (age 20) premieres his first human-Galinstanian composition, and Xara watches from the front row, finally understanding that the most beautiful patterns are the ones you cannot predict.
+    In her early forties, Xara is a revered elder stateswoman of harmonic geometry on Ares. She has fully stepped out of Jenni's shadow, recognized not just as a twin, but as the architect of the colony's modern resonance frameworks. Jasper (age 20) premieres his first human-Galinstanian composition, and Xara watches from the front row, finally understanding that the most beautiful patterns are the ones you cannot predict.
 ---
 <div class="article-content">
 <div class="card-bg" markdown="1">

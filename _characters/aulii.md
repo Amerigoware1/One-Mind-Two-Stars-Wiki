@@ -33,46 +33,46 @@ death_place:
 
 book1_title:  "Growing (age-8) "
 book1_arc:  >
-At age eight, Aulii doesn't appear in Book 1, but she's growing up in New Eden. She is Celectra's classmate in karate and other activities with their age cohort.
-Aulii started karate when she was four years old and has progressed steadily. Now wearing a midori obi (green-belt), she is known among her instructors for thriving on the discipline and self-control that sundome (inch-stop) karate demands—a focus that surprises and impresses those who expect typical childhood restlessness.
+    At age eight, Aulii doesn't appear in Book 1, but she's growing up in New Eden. She is Celectra's classmate in karate and other activities with their age cohort.
+    Aulii started karate when she was four years old and has progressed steadily. Now wearing a midori obi (green-belt), she is known among her instructors for thriving on the discipline and self-control that sundome (inch-stop) karate demands—a focus that surprises and impresses those who expect typical childhood restlessness.
 
 book2_title: "The Gold Medal (age-15)"
 book2_arc: >
-At fifteen, Aulii competes in the Sundome Karate Tournament alongside Celectra Carisco. She faces Celectra in the finals, where Celectra is competing under the "stillness protocol," fighting with one body while the other remains motionless.
-Aulii wins 4–1 through precise, disciplined technique, earning the Gold Medal while Celectra takes Silver.
-After the match, Aulii demonstrates exceptional sportsmanship. She acknowledges the difficulty of Celectra’s constraint and offers a strategic suggestion; alternating bodies between matches to allow genuine recovery. This advice becomes a key adjustment for Celectra in future tournaments. Aulii’s victory is remembered not as an exploitation of limitation, but as a demonstration of excellence under fair conditions.
+    At fifteen, Aulii competes in the Sundome Karate Tournament alongside Celectra Carisco. She faces Celectra in the finals, where Celectra is competing under the "stillness protocol," fighting with one body while the other remains motionless.
+    Aulii wins 4–1 through precise, disciplined technique, earning the Gold Medal while Celectra takes Silver.
+    After the match, Aulii demonstrates exceptional sportsmanship. She acknowledges the difficulty of Celectra’s constraint and offers a strategic suggestion; alternating bodies between matches to allow genuine recovery. This advice becomes a key adjustment for Celectra in future tournaments. Aulii’s victory is remembered not as an exploitation of limitation, but as a demonstration of excellence under fair conditions.
 
 book3_title: "Young Instructor (age-22)"
 book3_arc: >
-Off-page, at twenty-two, Aulii begins assisting Sensei Kisa at the Sundome Dojo. She focuses on adapting traditional martial arts techniques for the unique physiologies of colony-born children, including those with sensory sensitivities or physical differences. She maintains a friendly rivalry with Celectra, sparring occasionally to keep her skills sharp.
-She also begins collaborating with the Resonance Stewardship Program, designing physical training modules that incorporate rhythm and body awareness—skills that will later prove essential for the twins’ generation. Her reputation grows as a teacher who emphasizes precision over power, and respect over dominance.
+    Off-page, at twenty-two, Aulii begins assisting Sensei Kisa at the Sundome Dojo. She focuses on adapting traditional martial arts techniques for the unique physiologies of colony-born children, including those with sensory sensitivities or physical differences. She maintains a friendly rivalry with Celectra, sparring occasionally to keep her skills sharp.
+    She also begins collaborating with the Resonance Stewardship Program, designing physical training modules that incorporate rhythm and body awareness—skills that will later prove essential for the twins’ generation. Her reputation grows as a teacher who emphasizes precision over power, and respect over dominance.
 
 book4_title: "Mentor to the Next Generation (age-30)"
 book4_arc: >
-At thirty, Aulii becomes Physical Training Lead for the youth cohort. She works closely with Duška Santoso Carisco (resonance-design) and Kael (acoustic rhythm) to create integrated training programs. When the twins—Jenni and Xara—begin formal physical education, Aulii becomes their primary instructor.
-She is also the assistant Sensei and recognizes their strengths early; Xara’s analytical precision and Jenni’s intuitive body awareness. She tailors their training accordingly, teaching Xara defensive positioning and Jenni adaptive movement. Her lessons emphasize that physical discipline is not about fighting, but about understanding one’s own body and respecting others.
+    At thirty, Aulii becomes Physical Training Lead for the youth cohort. She works closely with Duška Santoso Carisco (resonance-design) and Kael (acoustic rhythm) to create integrated training programs. When the twins—Jenni and Xara—begin formal physical education, Aulii becomes their primary instructor.
+    She is also the assistant Sensei and recognizes their strengths early; Xara’s analytical precision and Jenni’s intuitive body awareness. She tailors their training accordingly, teaching Xara defensive positioning and Jenni adaptive movement. Her lessons emphasize that physical discipline is not about fighting, but about understanding one’s own body and respecting others.
 
 book5_title: "The Twins’ Instructor (age-37)"
 book5_arc: >
-At thirty-seven, Aulii is a senior instructor in the Resonance Stewardship Program. She prepares the twins (age-14) for field work, teaching them defensive tactics, situational awareness, and how to move safely in unstable environments such as caves and resonance chambers.
-During the Resonant Echo rescue preparation, Aulii ensures the twins are physically equipped for the mission, even though they are officially “observers.” She teaches them how to fall, how to brace, and how to trust their bodies under stress. Her training proves crucial when the twins navigate the gallery rescue site.
-After the rescue, Aulii helps integrate acoustic movement patterns—learned from Kael—into the standard martial arts curriculum. Her arc culminates in becoming a bridge between generations; trained by Sensei Kisa, she now trains the twins, ensuring that discipline, respect, and adaptability remain core values of New Eden’s physical culture.
+    At thirty-seven, Aulii is a senior instructor in the Resonance Stewardship Program. She prepares the twins (age-14) for field work, teaching them defensive tactics, situational awareness, and how to move safely in unstable environments such as caves and resonance chambers.
+    During the Resonant Echo rescue preparation, Aulii ensures the twins are physically equipped for the mission, even though they are officially “observers.” She teaches them how to fall, how to brace, and how to trust their bodies under stress. Her training proves crucial when the twins navigate the gallery rescue site.
+    After the rescue, Aulii helps integrate acoustic movement patterns—learned from Kael—into the standard martial arts curriculum. Her arc culminates in becoming a bridge between generations; trained by Sensei Kisa, she now trains the twins, ensuring that discipline, respect, and adaptability remain core values of New Eden’s physical culture.
 
 book6_title: "The Student of Stone (age-44)"
 book6_arc: >
-At forty-four, Aulii steps back from daily dojo instruction to pursue a lifelong project hinted at in her youth; learning to read the Galinstanian "Memory Veins." Her decades of sundome (inch-stop) martial arts have given her a profound mastery of physical stillness and internal quiet. While others map the active resonance network, Aulii learns to quiet her own biological "noise" enough to receive the ancient, lithic history written in the bismuth fractals. She becomes the expedition's designated Lithic Resonance Translator.
+    At forty-four, Aulii steps back from daily dojo instruction to pursue a lifelong project hinted at in her youth; learning to read the Galinstanian "Memory Veins." Her decades of sundome (inch-stop) martial arts have given her a profound mastery of physical stillness and internal quiet. While others map the active resonance network, Aulii learns to quiet her own biological "noise" enough to receive the ancient, lithic history written in the bismuth fractals. She becomes the expedition's designated Lithic Resonance Translator.
 
 book7_title: "The Lithic Translator (age-51)"
 book7_arc: >
-Aulii joins the Global Planetary Survey Team aboard *The Wayfarer*. Her role is critical; when the team encounters isolated, ancient Galinstanian clusters, Aulii is the one who interfaces with the deep-crust Memory Veins to establish trust. She proves to these ancient beings that humanity respects their ancestral archive, not as a resource to be mined, but as a history to be honored. Her daughter Mei, partner Samir, and grandchildren Sora and Nia are vital members of the expedition, making the rover a true multi-generational, chosen-family home.
+    Aulii joins the Global Planetary Survey Team aboard *The Wayfarer*. Her role is critical; when the team encounters isolated, ancient Galinstanian clusters, Aulii is the one who interfaces with the deep-crust Memory Veins to establish trust. She proves to these ancient beings that humanity respects their ancestral archive, not as a resource to be mined, but as a history to be honored. Her daughter Mei, partner Samir, and grandchildren Sora and Nia are vital members of the expedition, making the rover a true multi-generational, chosen-family home.
 
 book8_title: "The Living Archive (age-58)"
 book8_arc: >
-Aulii achieves a major breakthrough, successfully translating a complex ancestral resonance-pattern that reveals the location of a hidden, stable harmonic nexus. She becomes the foremost human expert on Galinstanian deep history. Her quiet, grounded presence is the emotional bedrock of the expedition, especially when the wilderness pushes the crew to its limits. She helps draft the preliminary "Lithic Accords," legally protecting the Memory Veins from future exploitation.
+    Aulii achieves a major breakthrough, successfully translating a complex ancestral resonance-pattern that reveals the location of a hidden, stable harmonic nexus. She becomes the foremost human expert on Galinstanian deep history. Her quiet, grounded presence is the emotional bedrock of the expedition, especially when the wilderness pushes the crew to its limits. She helps draft the preliminary "Lithic Accords," legally protecting the Memory Veins from future exploitation.
 
 book9_title: "Legacy of Stillness (age-65)"
 book9_arc: >
-In her mid-sixties, Aulii is a revered elder of the colony. She no longer travels the wilderness, but her translations form the foundation of human-Galinstanian historical understanding. She spends her days at the Sundome Dojo, teaching the next generation that true strength is not about force, but about the profound, receptive stillness required to truly listen to the world.
+    In her mid-sixties, Aulii is a revered elder of the colony. She no longer travels the wilderness, but her translations form the foundation of human-Galinstanian historical understanding. She spends her days at the Sundome Dojo, teaching the next generation that true strength is not about force, but about the profound, receptive stillness required to truly listen to the world.
 ---
 <div class="article-content">
 <div class="card-bg" markdown="1">
