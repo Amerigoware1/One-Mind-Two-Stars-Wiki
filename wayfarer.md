@@ -8,7 +8,29 @@ crew_capacity: "12-15 (standard expedition complement)"
 first_deployment: "2276 (Book 7)"
 status: "Active"
 ---
+<div class="infobox">
+  <table>
+    <tr>
+      <td colspan="2" class="text-center pb-2">
+        <img src="{{ '/assets/images/gallery/wayfarer.webp' | relative_url }}" alt="wayfarer rover" class="portrait">
+        <div class="image-caption">The Wayfarer</div>
+      </td>
+    </tr>
+    <tr><th colspan="2">The Wayfarer</th></tr>
+    <tr><th>Classification</th><td>Deep-Crust Planetary Exploration Rover (Jointed Mag-Lev)</td></tr>
+    <tr><th>Affiliation</th><td>Global Planetary Survey Team; New Eden Resonance Stewardship Program</td></tr>
+    <tr><th>Manufacturer</th><td>Fabrication Annex 3</td></tr>
+    <tr><th>Development</th><td>Science and Technology Center</td></tr>
+    <tr><th>Mobility</th><td>Heavy-duty tank tracks; mag-lev suspension</td></tr>
+    <tr><th>Capacity</th><td>12–15 (standard expedition complement)</td></tr>
+    <tr><th>Length</th><td>42.5 meters</td></tr>
+    <tr><th>Structure</th><td>Three articulated, pressure-sealed segments</td></tr>
+    <tr><th>Primary Use</th><td>Planetary exploration and deep-crust research</td></tr>
+    <tr><th>First Deployment</th><td>2276 (Book 7)</td></tr>
+    <tr><th>Status</th><td>Active</td></tr>
+  </table>
 
+</div>
 <div class="article-content">
 
 <div class="card-bg" markdown="1">
