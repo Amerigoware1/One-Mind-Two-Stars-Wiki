@@ -30,7 +30,7 @@ The vehicle's design is dictated by the dual necessities of extreme terrain navi
 
 ## Operational Segments
 * **Segment 1: Command & Seismic (The Head):** Piloted by Samir, this segment houses the primary navigation consoles, external sensor arrays, and Kael and Xara's deep-subsonic acoustic mapping equipment. It is the "eyes and ears" of the expedition.
-* **Segment 2: Habitation & Hydroponics (The Heart):** The central living space. This segment contains the crew quarters, the galley, and Mei's expansive, UV-lit hydroponics bay. It is the emotional and nutritional center of the rover, designed for comfort and psychological well-being during long wilderness transits.
+* **Segment 2: Habitation & Hydroponics (The Heart):** The central living space. This segment contains the crew quarters, the galley, and Mei's small, UV-lit hydroponics bay and terraforming seed bank. It is the emotional and nutritional center of the rover, designed for comfort and psychological well-being during long wilderness transits.
 * **Segment 3: Bio-Harmonic & Lithic Chamber (The Soul):** The rear segment is a specialized, strictly controlled environment. It features a mag-lev-suspended resonance chamber where Dr. Elara Vance conducts biological sampling, and where Aulii Vongphachanh and Dr. Jenni Jo Carisco-Vance can safely interface with deep-crust Memory Veins. The suspension here is so precise that even the rover's engine idle cannot disrupt the ancestral signatures being read.
 </div>
 
@@ -56,7 +56,7 @@ The vehicle's design is dictated by the dual necessities of extreme terrain navi
 
 ## Trivia
 * The name *The Wayfarer* was chosen by Xara, reflecting the vehicle's purpose: not to conquer the landscape, but to respectfully pass through it.
-* The mag-lev suspension in Segment 3 is so sensitive that Sora and Nia are strictly forbidden from running in the rear corridor, as the kinetic shockwave can momentarily scramble Elara's bio-harmonic sensors.
+* The mag-lev suspension in Segment 3 is so sensitive that the children are strictly forbidden from running in the rear corridor, as the kinetic shockwave can momentarily scramble Elara's bio-harmonic sensors.
 * Kael keeps a small, traditional acoustic drum kit strapped down in the command segment. During long, silent transits through dead zones, he plays soft, subsonic rhythms that the crew claims helps them "sync up" with the planet's natural frequency.
 * The vehicle's exterior is painted a matte, dust-camouflage grey, but the interior living spaces are brightly colored with cryo-silk accents, a deliberate psychological choice by Mei to combat the sensory deprivation of the Ares wilderness.
 * Jasper's frayed bismuth-thread wristband is often seen hooked onto a console in the command segment, a quiet talisman of the family's deep connection to the planet's song.
