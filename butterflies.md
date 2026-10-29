@@ -1,5 +1,5 @@
 ---
-layout: technology
+layout: default
 title: Papilio-Class Personal Flight Harness
 affiliation: Global Planetary Survey Team; New Eden Resonance Stewardship Program
 class: Personal Vertical Take-Off and Landing (VTOL) Mobility Unit
@@ -71,11 +71,6 @@ The Butterflies are the literal and figurative vehicles that allow the Book 7–
 * Aulii refuses to use the gaze-directed navigation when approaching a sensitive Memory Vein, preferring to fly manually via the corded grips to ensure her own focus and intention remain entirely her own, unmediated by the flight computer.
 * The rigid lumbar plate of the backpack chassis is custom-molded for each crew member. Jasper’s is uniquely reinforced to accommodate the subtle, constant micro-adjustments his dual-channel perception makes while flying.
 * The corded hand controllers are braided with a thin strand of bismuth thread, a symbolic and functional nod to the Stewardship Program, ensuring the tethers are not only physically strong but mildly resonance-dampening.
-</div>
-
-<div class="card-bg" markdown="1">
-
-{% include story-arcs.html %}
 </div>
 
 </div>

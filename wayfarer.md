@@ -1,5 +1,5 @@
 ---
-layout: technology
+layout: default
 title: The Wayfarer
 affiliation: Global Planetary Survey Team; New Eden Resonance Stewardship Program
 class: Deep-Crust Planetary Exploration Rover (Jointed Mag-Lev)
@@ -61,10 +61,4 @@ The vehicle's design is dictated by the dual necessities of extreme terrain navi
 * The vehicle's exterior is painted a matte, dust-camouflage grey, but the interior living spaces are brightly colored with cryo-silk accents, a deliberate psychological choice by Mei to combat the sensory deprivation of the Ares wilderness.
 * Jasper's frayed bismuth-thread wristband is often seen hooked onto a console in the command segment, a quiet talisman of the family's deep connection to the planet's song.
 </div>
-
-<div class="card-bg" markdown="1">
-
-{% include story-arcs.html %}
-</div>
-
 </div>
