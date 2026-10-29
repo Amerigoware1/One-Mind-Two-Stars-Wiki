@@ -14,7 +14,7 @@ title: "Ares"
         <tr>
             <th colspan="2">Ares</th>
         </tr>
-        <tr>
+		<tr>
             <th>Parent body</th>
             <td>Chaos (super-jupiter)</td>
         </tr>
@@ -31,9 +31,13 @@ title: "Ares"
             <td>Niamh-Ciara binary system</td>
         </tr>
 		<tr>
-			<th>Distance from barycenter</th>
-			<td>1.2 AU</td>
+			<th>Distance from Chaos</th>
+			<td>~1.35 million km (outermost orbit)</td>
 		</tr>
+        <tr>
+            <th>Orbital alignment</th>
+            <td>Coplanar with Chaos (zero axial tilt / monthly eclipses)</td>
+        </tr>
         <tr>
             <th>Diameter</th>
             <td>~11,200 km (near-earth-sized)</td>
@@ -99,7 +103,7 @@ Ares has a diameter of approximately 11,200 kilometers and a surface gravity of 
 
 ## Atmosphere and Climate
 
-Ares’ atmosphere measures 0.8 atmospheres, comprising 18-20% oxygen, nitrogen as the dominant gas, and traces of carbon dioxide. This thin air is breathable with adaptation—newcomers may require oxygen support, while native-born children develop enhanced lung capacity. The climate features pale, fractured dawns refracted through Chaos’s storms, with temperatures ranging from -20°C to 26°C, moderated by stellar heat, tidal forces, and internal geothermal activity. Eclipses from the binary stars add dynamic insolation challenges.
+Ares’ atmosphere measures 0.8 atmospheres, comprising 18-20% oxygen, nitrogen as the dominant gas, and traces of carbon dioxide. This thin air is breathable with adaptation—newcomers may require oxygen support, while native-born children develop enhanced lung capacity. The climate features pale, fractured dawns refracted through Chaos’s storms, with temperatures ranging from -20°C to 26°C, moderated by stellar heat, tidal forces, and internal geothermal activity. Once every 45-day orbit, passing through Chaos's shadow cone triggers temporary, rhythmic drops in temperature and insolation, creating brief, predictable cold cycles across the moon's surface.
 
 </div>
 
@@ -115,7 +119,7 @@ Ares’ geology reflects its captured origin, with a basaltic crust and iron-ric
 
 ## Orbit and System
 
-Ares resides in a mildly elliptical orbit as the outermost of Chaos's five moons: **Hermes, Athena, Poseidon, Demeter, and Ares**. Because Ares orbits further out than its siblings, the inner moons often appear clustered near Chaos in the Aresian sky. The system follows a P-type orbit around the binary stars Niamh (g-type) and Ciara (k-type), which are separated by only ~0.15 AU. Other planets in the system include **Oisín, Ra, Odin, Vishnu, Quetzalcoatl, and Amaterasu**.
+Ares resides in a mildly elliptical orbit approximately 1.35 million kilometers from Chaos, serving as the outermost of its five moons: Hermes, Athena, Poseidon, Demeter, and Ares. Ares's orbital plane and rotational axis are aligned precisely with Chaos's plane of orbit around the Niamh-Ciara binary stars, meaning the moon experiences zero axial tilt and no traditional seasonal cycles. However, because of this direct alignment, Ares passes directly through Chaos's shadow cone once every 45-day orbit, resulting in predictable monthly eclipses. Because Ares orbits further out than its siblings, the inner moons often appear clustered near Chaos in the Aresian sky. The system follows a P-type orbit around the binary stars Niamh (g-type) and Ciara (k-type), which are separated by only ~0.15 AU. Other planets in the system include **Oisín, Ra, Odin, Vishnu, Quetzalcoatl, and Amaterasu**.
 
 </div>
 
