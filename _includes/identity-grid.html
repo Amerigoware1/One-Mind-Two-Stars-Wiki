@@ -16,17 +16,19 @@
     margin: 0 auto;
   }
 
-  /* 3x3 Grid for Books 1 through 9 */
+/* 3x3 Grid for Books 1 through 9 */
   .age-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    gap: 16px;
     width: 100%;
+    max-width: 600px; /* Adjust overall grid width as needed */
   }
 
   .age, .age.empty-slot {
-    width: 150px; /* Adjust size as needed for your layout */
-    height: 150px;
+    width: 100%;
+    /* Use 2/3 for portrait book covers, or 3/2 if they are landscape */
+    aspect-ratio: 2 / 3; 
     object-fit: cover;
     border-radius: 8px;
   }
