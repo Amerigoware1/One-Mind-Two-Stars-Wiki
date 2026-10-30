@@ -125,20 +125,27 @@
 
 <script>
   document.getElementById('download-sheet-btn').addEventListener('click', async function () {
-    let outputFolderHandle = await getSavedHandle();
+    const btn = document.getElementById('download-sheet-btn');
+    const originalText = btn.innerText;
+    
+    try {
+      btn.innerText = '⏳ Preparing Export...';
+      let outputFolderHandle = await getSavedHandle();
 
-    async function selectFolder() {
-      outputFolderHandle = await window.showDirectoryPicker({ mode: 'readwrite' });
-      await saveHandle(outputFolderHandle);
-    }
-
-    async function exportToWebp() {
+      // If no saved handle exists, or if permission cannot be verified/granted, prompt the picker fresh
       if (!outputFolderHandle) {
         outputFolderHandle = await window.showDirectoryPicker({ mode: 'readwrite' });
         await saveHandle(outputFolderHandle);
-      } else if ((await outputFolderHandle.queryPermission({ mode: 'readwrite' })) !== 'granted') {
-        const perm = await outputFolderHandle.requestPermission({ mode: 'readwrite' });
-        if (perm !== 'granted') { console.warn('Write permission denied.'); return; }
+      } else {
+        const perm = await outputFolderHandle.queryPermission({ mode: 'readwrite' });
+        if (perm !== 'granted') {
+          const newPerm = await outputFolderHandle.requestPermission({ mode: 'readwrite' });
+          if (newPerm !== 'granted') {
+            // Fallback to fresh picker if permission denied
+            outputFolderHandle = await window.showDirectoryPicker({ mode: 'readwrite' });
+            await saveHandle(outputFolderHandle);
+          }
+        }
       }
 
       const gridElement = document.getElementById('identity-sheet-container');
@@ -154,12 +161,7 @@
       // 2. One frame for reflow after decode.
       await new Promise(r => requestAnimationFrame(r));
 
-      // 3. MEASURE the actual rendered size.
-      const rect = gridElement.getBoundingClientRect();
-      const width = Math.ceil(rect.width);
-      const height = Math.ceil(rect.height);
-
-      // 4. Off-screen clone technique.
+      // 3. Off-screen clone technique.
       const clone = gridElement.cloneNode(true);
       clone.style.position = 'fixed';
       clone.style.top = '-10000px';
@@ -224,17 +226,36 @@
         clone.remove();
       }
 
-      canvas.toBlob(async (blob) => {
-        const fileName = '{{ page.character }}-identity-sheet.webp';
-        const fileHandle = await outputFolderHandle.getFileHandle(fileName, { create: true });
-        const writable = await fileHandle.createWritable();
-        await writable.write(blob);
-        await writable.close();
-        console.log(`Saved ${fileName} directly to ${outputFolderHandle.name}!`);
-      }, 'image/webp', 1.0);
-    }
+      btn.innerText = '💾 Saving File...';
 
-    exportToWebp();
+      await new Promise((resolve, reject) => {
+        canvas.toBlob(async (blob) => {
+          if (!blob) {
+            reject(new Error('Canvas to Blob conversion failed.'));
+            return;
+          }
+          try {
+            const fileName = '{{ page.character }}-identity-sheet.webp';
+            const fileHandle = await outputFolderHandle.getFileHandle(fileName, { create: true });
+            const writable = await fileHandle.createWritable();
+            await writable.write(blob);
+            await writable.close();
+            console.log(`Saved ${fileName} directly to ${outputFolderHandle.name}!`);
+            resolve();
+          } catch (writeErr) {
+            reject(writeErr);
+          }
+        }, 'image/webp', 1.0);
+      });
+
+      btn.innerText = '✅ Saved Successfully!';
+      setTimeout(() => { btn.innerText = originalText; }, 3000);
+
+    } catch (err) {
+      console.error('Export error:', err);
+      alert('Export failed: ' + err.message);
+      btn.innerText = originalText;
+    }
   });
 
   // ---- IndexedDB handle persistence ----
