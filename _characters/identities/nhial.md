@@ -4,7 +4,7 @@ title: Nhial Dok Identity Sheet
 character: nhial
 insignia: engi-infra
 first_book: 1
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: dark, close-cropped / field practical"

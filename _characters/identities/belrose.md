@@ -4,7 +4,7 @@ title: Claudia Belrose Identity Sheet
 character: belrose
 insignia: cult-rel
 first_book: 1
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: silver-streaked dark hair, sophisticated but effortless"

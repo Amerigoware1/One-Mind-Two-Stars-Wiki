@@ -4,7 +4,7 @@ title: Nyanhial Dok Identity Sheet
 character: nyanhial
 insignia: log-trans
 first_book: 1
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: secured tightly for tunnel environments"

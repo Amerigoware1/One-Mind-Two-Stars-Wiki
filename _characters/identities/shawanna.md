@@ -4,7 +4,7 @@ title: Shawanna Morris Identity Sheet
 character: shawanna
 insignia: sci-tech
 first_book: 1
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: sweat-dampened, pushed back with wrist"

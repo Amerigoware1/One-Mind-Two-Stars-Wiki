@@ -4,7 +4,7 @@ title: Xan Identity Sheet
 character: xan
 insignia: bridge
 first_book: 2
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: loose, brushed back, slightly tousled"

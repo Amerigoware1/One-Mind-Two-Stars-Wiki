@@ -4,7 +4,7 @@ title: Stan Identity Sheet
 character: stan
 insignia: bridge
 first_book: 1
-last_book: 5
+last_book: 9
 
 hair:
   - "N/A — amorphous colloidal form"

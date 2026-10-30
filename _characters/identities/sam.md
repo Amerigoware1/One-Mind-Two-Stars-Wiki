@@ -4,7 +4,7 @@ title: Sam Calder Identity Sheet
 character: sam
 insignia: cult-rel
 first_book: 1
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: no body hair — congenital atrichia universalis"

@@ -4,7 +4,7 @@ title: Oxion 'Oxi' Carisco Identity Sheet
 character: oxion
 insignia: bridge
 first_book: 4
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: dark curly hair (inherited from mother Duška)"

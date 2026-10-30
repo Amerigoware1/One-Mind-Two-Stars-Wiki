@@ -4,7 +4,7 @@ title: Amerigo Giorgio Carisco Identity Sheet
 character: amerigo
 insignia: sci-tech
 first_book: 1
-last_book: 5
+last_book: 9
 
 phenotype:
   ancestry: "Italian"

@@ -4,7 +4,7 @@ title: Zahara Solari Identity Sheet
 character: zahara
 insignia: admin
 first_book: 1
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: dark hair in a neat, secure bun"

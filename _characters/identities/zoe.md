@@ -4,7 +4,7 @@ title: Dr. Zoë Carisco Identity Sheet
 character: zoe
 insignia: med
 first_book: 1
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: dark, with silver streaks by book 5"

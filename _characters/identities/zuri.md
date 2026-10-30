@@ -4,7 +4,7 @@ title: Zuri Yazzie Identity Sheet
 character: zuri
 insignia: bridge
 first_book: 2
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: dark hair in loose curls"

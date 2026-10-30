@@ -4,7 +4,7 @@ title: Dr. Yuki Chen Identity Sheet
 character: chen
 insignia: med
 first_book: 1
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: short, neatly kept, silver-streaked"

@@ -4,7 +4,7 @@ title: Duška Santoso Carisco Identity Sheet
 character: duska
 insignia: cult-rel
 first_book: 2
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: loose, functional style"

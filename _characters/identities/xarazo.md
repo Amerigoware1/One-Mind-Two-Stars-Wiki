@@ -4,7 +4,7 @@ title: Xara Zo Carisco Identity Sheet
 character: xarazo
 insignia: bridge
 first_book: 3
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: dark, voluminous curls, often pulled back or styled with beads"

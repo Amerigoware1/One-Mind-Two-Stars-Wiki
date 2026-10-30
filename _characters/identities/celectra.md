@@ -4,7 +4,7 @@ title: Celectra Ambar Carisco Identity Sheet
 character: celectra
 insignia: bridge
 first_book: 1
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: hip-length white hair, both bodies"

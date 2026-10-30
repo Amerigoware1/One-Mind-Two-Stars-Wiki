@@ -4,7 +4,7 @@ title: Logic Identity Sheet
 character: logic
 insignia: bridge
 first_book: 2
-last_book: 5
+last_book: 9
 
 hair:
   - "N/A — amorphous colloidal form"

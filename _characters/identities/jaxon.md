@@ -4,7 +4,7 @@ title: Jaxon Bowers Identity Sheet
 character: jaxon
 insignia: engi-infra
 first_book: 1
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: dark hair, practical"

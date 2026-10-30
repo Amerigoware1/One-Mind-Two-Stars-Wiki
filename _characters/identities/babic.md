@@ -4,7 +4,7 @@ title: Rhea Babić Identity Sheet
 character: babic
 insignia: orb-sys
 first_book: 1
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: short dark brown, practical, slight wave"

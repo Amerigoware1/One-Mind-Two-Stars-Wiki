@@ -4,7 +4,7 @@ title: Aulii Vongphachanh Identity Sheet
 character: aulii
 insignia: bridge
 first_book: 1
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: dark, tight practical bun during training"

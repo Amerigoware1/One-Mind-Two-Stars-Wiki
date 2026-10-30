@@ -4,7 +4,7 @@ title: Lira Keahi Identity Sheet
 character: lira
 insignia: bridge
 first_book: 1
-last_book: 5
+last_book: 9
 
 hair:
   - "Default: dark, often pulled back in practical styles"
