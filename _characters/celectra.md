@@ -7,6 +7,10 @@ portrait-book2:  "/assets/images/celectra-book2.webp "
 portrait-book3:  "/assets/images/celectra-book3.webp "
 portrait-book4:  "/assets/images/celectra-book4.webp "
 portrait-book5:  "/assets/images/celectra-book5.webp "
+portrait-book6: "/assets/images/celectra-book6.webp"
+portrait-book7: "/assets/images/celectra-book7.webp"
+portrait-book8: "/assets/images/celectra-book8.webp"
+portrait-book9: "/assets/images/celectra-book9.webp"
 affiliation: Carisco Family; Listener Corps; Human–Galinstanian Bridge
 birthday: October 11, 2225
 birthplace: Utopis Station, Ares Orbit
@@ -15,6 +19,10 @@ book2_age:  "14.1 Earth / 12.66 Ares "
 book3_age:  "21.0 Earth / 18.85 Ares "
 book4_age:  "29.3 Earth / 26.2 Ares "
 book5_age:  "36.3 Earth / 32.5 Ares "
+book6_age: ""
+book7_age: ""
+book8_age: ""
+book9_age: ""
 gender assignment: "female"
 gender:  "female"
 orientation: "bisexual"
@@ -66,6 +74,23 @@ book5_arc: >
  architect of the system that ensures no one will ever bear that burden alone. Her
  legacy is one of resilience, compassion, and the creation of a future where
  communion is shared, understood, and sustainable.
+
+book6_title: "Book 6 Title (Placeholder)"
+book6_arc: >
+  Placeholder arc description for Book 6. Update with character development details.
+
+book7_title: "Book 7 Title (Placeholder)"
+book7_arc: >
+  Placeholder arc description for Book 7. Update with character development details.
+
+book8_title: "Book 8 Title (Placeholder)"
+book8_arc: >
+  Placeholder arc description for Book 8. Update with character development details.
+
+book9_title: "Book 9 Title (Placeholder)"
+book9_arc: >
+  Placeholder arc description for Book 9. Update with character development details.
+
 ---
 ## Overview
 Celectra Ambar Carisco is the first known dual-bodied human consciousness and the foundational bridge between humanity and the Galinstanian species of Ares. Born in 2225 after a radiation-induced consciousness fusion event, she grew into a diplomat, scientist, and cultural cornerstone whose natural electromagnetic communion shaped the colony’s survival and identity. Her life spans at least five books of the Two Stars saga, evolving from a traumatized child into a mother, scholar, and architect of interspecies harmony.
