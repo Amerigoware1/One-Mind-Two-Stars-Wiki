@@ -1,67 +1,124 @@
 <!-- html2canvas CDN -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
+<style>
+  /* Self-contained layout styling for the identity sheet */
+  #identity-sheet-container.identity-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #0f0a1c;
+    padding: 24px;
+    color: #fff;
+    font-family: inherit;
+    box-sizing: border-box;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  /* 3x3 Grid for Books 1 through 9 */
+  .age-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+  }
+
+  .age, .age.empty-slot {
+    width: 150px; /* Adjust size as needed for your layout */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .age.empty-slot {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px dashed rgba(255, 255, 255, 0.15);
+  }
+
+  .grid-actions {
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .export-btn {
+    padding: 10px 18px;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .export-btn:hover {
+    background: #4f46e5;
+  }
+</style>
+
 <div class="grid-actions">
   <button id="download-sheet-btn" class="export-btn">📸 Save Sheet as WebP</button>
 </div>
 
 <div id="identity-sheet-container" class="identity-grid">
-  <!-- Age Progression (Books 1 through 5) -->
-  {% for i in (1..5) %}
-  {% if page.first_book and i < page.first_book %} <div class="age empty-slot">
-</div>
-{% elsif page.last_book and i > page.last_book %}
-<div class="age empty-slot"></div>
-{% else %}
-<img class="age"
-  src="{{ '/assets/images/' | append: page.character | append: '-book' | append: i | append: '.webp' | relative_url }}"
-  alt="{{ page.character }} Book {{ i }}">
-{% endif %}
-{% endfor %}
-
-<!-- Identity Anchors -->
-<div class="anchors">
-  <div>
-    <strong>Hair Styles</strong>
-    <ul>
-      {% for item in page.hair %}
-      <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div>
-    <strong>Color Swatches</strong>
-    <ul>
-      {% for item in page.colors %}
-      <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div>
-    <strong>Outfit Silhouettes</strong>
-    <ul>
-      {% for item in page.outfits %}
-      <li>{{ item }}</li>
-      {% endfor %}
-
-      {% if page.insignia %}
-      <li class="insignia-item">
-        <div class="insignia-box">
-          <img src="{{ '/assets/images/insignias/' | append: page.insignia | append: '.webp' | relative_url }}"
-            alt="{{ page.insignia | replace: '-', ' ' | capitalize }} Insignia" class="insignia-badge">
-        </div>
-      </li>
+  <!-- Age Progression (Books 1 through 9 in a 3x3 Grid) -->
+  <div class="age-grid">
+    {% for i in (1..9) %}
+      {% if page.first_book and i < page.first_book %} 
+        <div class="age empty-slot"></div>
+      {% elsif page.last_book and i > page.last_book %}
+        <div class="age empty-slot"></div>
+      {% else %}
+        <img class="age"
+          src="{{ '/assets/images/' | append: page.character | append: '-book' | append: i | append: '.webp' | relative_url }}"
+          alt="{{ page.character }} Book {{ i }}">
       {% endif %}
-    </ul>
+    {% endfor %}
   </div>
-</div>
 
-<!-- Context & Symbols -->
-<div class="context">
-  <div><strong>Props:</strong> {{ page.props | join: " • " }}</div>
-  <div><strong>Scene:</strong> {{ page.scene | join: " • " }}</div>
-  <div><strong>Expressions:</strong> {{ page.expressions | join: " • " }}</div>
-</div>
+  <!-- Identity Anchors -->
+  <div class="anchors">
+    <div>
+      <strong>Hair Styles</strong>
+      <ul>
+        {% for item in page.hair %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <strong>Color Swatches</strong>
+      <ul>
+        {% for item in page.colors %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <strong>Outfit Silhouettes</strong>
+      <ul>
+        {% for item in page.outfits %}
+        <li>{{ item }}</li>
+        {% endfor %}
+
+        {% if page.insignia %}
+        <li class="insignia-item">
+          <div class="insignia-box">
+            <img src="{{ '/assets/images/insignias/' | append: page.insignia | append: '.webp' | relative_url }}"
+              alt="{{ page.insignia | replace: '-', ' ' | capitalize }} Insignia" class="insignia-badge">
+          </div>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Context & Symbols -->
+  <div class="context">
+    <div><strong>Props:</strong> {{ page.props | join: " • " }}</div>
+    <div><strong>Scene:</strong> {{ page.scene | join: " • " }}</div>
+    <div><strong>Expressions:</strong> {{ page.expressions | join: " • " }}</div>
+  </div>
 </div>
 
 <script>
@@ -95,16 +152,12 @@
       // 2. One frame for reflow after decode.
       await new Promise(r => requestAnimationFrame(r));
 
-      // 3. MEASURE the actual rendered size — this is the "magic".
-      //    Use getBoundingClientRect, not scrollWidth/scrollHeight,
-      //    because scrollWidth can lie if an ancestor has overflow:hidden.
+      // 3. MEASURE the actual rendered size.
       const rect = gridElement.getBoundingClientRect();
       const width = Math.ceil(rect.width);
       const height = Math.ceil(rect.height);
 
-      // 4. Off-screen clone technique (fallback that bypasses ancestor
-      //    overflow, transforms, and stacking-context issues). Drop
-      //    this on top of #identity-sheet-container briefly during capture.
+      // 4. Off-screen clone technique.
       const clone = gridElement.cloneNode(true);
       clone.style.position = 'fixed';
       clone.style.top = '-10000px';
@@ -113,15 +166,15 @@
       clone.style.zIndex = '-1';
       document.body.appendChild(clone);
 
-      // Re-wait for cloned <img>s (re-using the same sources).
+      // Re-wait for cloned <img>s.
       await Promise.all([...clone.querySelectorAll('img')].map(img =>
         img.complete && img.naturalWidth
           ? Promise.resolve()
           : new Promise(res => { img.onload = res; img.onerror = res; })
       ));
       await new Promise(r => requestAnimationFrame(r));
-// --- THE FIX: The Background-Image Swap Workaround ---
-      // html2canvas fails at 'object-fit', but succeeds with background images.
+
+      // --- Background-Image Swap Workaround for html2canvas ---
       const liveImages = gridElement.querySelectorAll('img');
       const clonedImages = clone.querySelectorAll('img');
 
@@ -130,28 +183,22 @@
         const cloneImg = clonedImages[index];
 
         const bgDiv = document.createElement('div');
-
-        // Apply exact dimensions measured from the live page
         bgDiv.style.width = `${Math.ceil(rect.width)}px`;
         bgDiv.style.height = `${Math.ceil(rect.height)}px`;
-
-        // Apply the image as a background so html2canvas renders the crop
         bgDiv.style.backgroundImage = `url("${liveImg.src}")`;
         bgDiv.style.backgroundSize = 'cover';
         bgDiv.style.backgroundPosition = 'top center';
 
-        // Carry over necessary styling from the original image
         const computedStyles = window.getComputedStyle(liveImg);
         bgDiv.style.borderRadius = computedStyles.borderRadius;
         bgDiv.style.boxShadow = computedStyles.boxShadow;
         bgDiv.style.display = 'block';
-        
         bgDiv.className = cloneImg.className;
 
-        // Swap the broken img tag for our bulletproof div
         cloneImg.parentNode.replaceChild(bgDiv, cloneImg);
       });
       // -----------------------------------------------------------
+
       const cRect = clone.getBoundingClientRect();
       const cWidth = Math.ceil(cRect.width);
       const cHeight = Math.ceil(cRect.height);
@@ -172,7 +219,7 @@
           scrollY: 0
         });
       } finally {
-        clone.remove();                // always clean up the clone
+        clone.remove();
       }
 
       canvas.toBlob(async (blob) => {
