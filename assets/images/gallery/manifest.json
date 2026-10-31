@@ -1569,7 +1569,7 @@
     "height": 458
   },
   {
-    "file": "utopis.png",
+    "file": "utopis.mp4",
     "title": "Utopis",
     "description": "Exterior view of the space station, Utopis. Home of Celectra and Amergio through most of book 1.",
     "tags": [
@@ -1579,7 +1579,8 @@
       "childhood home"
     ],
     "width": 1536,
-    "height": 1024
+    "height": 1024,
+    "poster": "utopis.png"
   },
   {
     "file": "ares-chaos.webp",
