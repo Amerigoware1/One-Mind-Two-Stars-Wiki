@@ -1156,6 +1156,18 @@
     "height": 1216
   },
   {
+    "file": "sam-age11.webp",
+    "title": "Sam playing dressup",
+    "description": "Sam playing dressup on Utopis.",
+    "tags": [
+      "sam",
+      "utopis",
+      "playing"
+    ],
+    "width": 1086,
+    "height": 1448
+  },  
+  {
     "file": "sam-book2-alt.webp",
     "title": "Sam Age 12",
     "description": "Sam using a holopad.",
@@ -1241,17 +1253,6 @@
     "width": 1086,
     "height": 1448
   },    
-  {
-    "file": "nyanhial-nhial.webp",
-    "title": "Nyanhial & Nhial",
-    "description": "Nyanhial & Nhial doing schoolwork",
-    "tags": [
-      "nyanhial",
-      "nhial"
-    ],
-    "width": 1086,
-    "height": 1448
-  },
   {
     "file": "nyanhial-age8.webp",
     "title": "Nyanhial Chilling",
