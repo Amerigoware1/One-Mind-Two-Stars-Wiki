@@ -88,6 +88,19 @@
     "poster": "checkup.webp"
   },
   {
+    "file": "celectra-reading.webp",
+    "title": "Celectra Reading",
+    "description": "Celectra reading a book in the Utopis station living quarters",
+    "tags": [
+      "celectra",
+      "space station",
+      "utopis",
+      "book 1"
+    ],
+    "width": 1280,
+    "height": 720
+  },  
+  {
     "file": "celectra-age8.webp",
     "title": "Celectra at Age 8",
     "description": "Celectra on her 8th birthday in Book 1's epilogue",
