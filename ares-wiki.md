@@ -32,7 +32,7 @@ title: "Ares"
         </tr>
 		<tr>
 			<th>Distance from Chaos</th>
-			<td>~1.35 million km (outermost orbit)</td>
+			<td>~6.2 million km (outermost orbit)</td>
 		</tr>
         <tr>
             <th>Orbital alignment</th>
@@ -95,7 +95,7 @@ Ares is the outermost, near-Earth-sized moon orbiting the super-Jupiter Chaos in
 
 ## Physical Characteristics
 
-Ares has a diameter of approximately 11,200 kilometers and a surface gravity of 0.9 G, yielding a total mass of **~4.15 × 10²⁴ kg** (roughly 0.695 Earth masses). Its mean density of **~5,648 kg/m³** exceeds Earth’s, driven by a large, metallic core rich in iron and nickle. Unlike older moons in the system, its 18-hour rotation is independent of its 45-day orbital period, though this rotation is gradually slowing due to tidal braking from Chaos. Its surface is marked by four small rivers—Pison, Gihon, Hiddekel, and Euphrates—fed by subsurface aquifers.
+Ares has a diameter of approximately 11,200 kilometers and a surface gravity of 0.9 G, yielding a total mass of **~4.15 × 10²⁴ kg** (roughly 0.695 Earth masses). Its mean density of **~5,648 kg/m³** exceeds Earth’s, driven by a large, metallic core rich in iron and nickel. Unlike older moons in the system, its 18-hour rotation is independent of its 45-day orbital period, though this rotation is gradually slowing due to tidal braking from Chaos. Its surface is marked by four small rivers—Pison, Gihon, Hiddekel, and Euphrates—fed by subsurface aquifers.
 
 </div>
 
@@ -119,7 +119,7 @@ Ares’ geology reflects its captured origin, with a basaltic crust and iron-ric
 
 ## Orbit and System
 
-Ares resides in a mildly elliptical orbit approximately 1.35 million kilometers from Chaos, serving as the outermost of its five moons: Hermes, Athena, Poseidon, Demeter, and Ares. Ares's orbital plane and rotational axis are aligned precisely with Chaos's plane of orbit around the Niamh-Ciara binary stars, meaning the moon experiences zero axial tilt and no traditional seasonal cycles. However, because of this direct alignment, Ares passes directly through Chaos's shadow cone once every 45-day orbit, resulting in predictable monthly eclipses. Because Ares orbits further out than its siblings, the inner moons often appear clustered near Chaos in the Aresian sky. The system follows a P-type orbit around the binary stars Niamh (g-type) and Ciara (k-type), which are separated by only ~0.15 AU. Other planets in the system include **Oisín, Ra, Odin, Vishnu, Quetzalcoatl, and Amaterasu**.
+Ares resides in a mildly elliptical orbit approximately 6.2 million kilometers from Chaos, serving as the outermost of its five moons: Hermes, Athena, Poseidon, Demeter, and Ares. This distance yields the 45-day orbital period around a roughly 5-Jupiter-mass parent. Chaos itself has a radius of about 1.6 Rⱼ, appearing roughly four times the width of Earth’s full Moon in Ares’s sky—large enough for visible banding and storms, and producing monthly eclipses of substantial duration. Ares’s orbital plane and rotational axis are aligned precisely with Chaos’s plane of orbit around the Niamh-Ciara binary stars, meaning the moon experiences zero axial tilt and no traditional seasonal cycles. Because of this direct alignment, Ares passes directly through Chaos’s shadow cone once every 45-day orbit, resulting in predictable monthly eclipses. Because Ares orbits further out than its siblings, the inner moons often appear clustered near Chaos in the Aresian sky. The system follows a P-type orbit around the binary stars Niamh (g-type) and Ciara (k-type), which are separated by only ~0.15 AU. Other planets in the system include **Oisín, Ra, Odin, Vishnu, Quetzalcoatl, and Amaterasu**.
 
 </div>
 
