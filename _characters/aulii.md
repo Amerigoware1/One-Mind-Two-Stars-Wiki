@@ -100,6 +100,7 @@ Her weaknesses include:
 <div class="card-bg" markdown="1">
 
 ## Relationships
+* **Elias Thorne** — romantic partner and husband of European/African descent; a structural ecologist who complements Aulii's stillness with his own deep, patient observation of Ares' GMO flora. Their cross-cultural partnership is a quiet, deeply loving anchor for their family.
 *   **Samir** — Mei's queerplatonic life partner, adoptive co-mother to Sora and Nia, and Chief Pilot/Logistics Coordinator of *The Wayfarer*. Aulii accepts and loves Samir as a son.
 *   **Mei Vongphachanh** — daughter; Expedition Botanist and Hydroponics Lead. An aromantic, heterosexual woman who actively chose motherhood. She engaged in consensual, transparent encounters with willing single men (Pedro and Diomid) who acted solely as genetic donors with no parental responsibility, allowing Mei and Samir to raise the children as a unified, loving parental unit.
 *   **Sora & Nia** — grandchildren; Sora (biological father: Pedro) is Jasper's exact age and closest wilderness cohort, while Nia (biological father: Diomid) is a playful, curious companion to Jasmine. They grow up in the back of the mag-lev rover, learning to navigate Ares alongside the Carisco-Bowers twins.
