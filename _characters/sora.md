@@ -7,12 +7,12 @@ portrait-book7: "/assets/images/sora-book7.webp"
 portrait-book8: "/assets/images/sora-book8.webp"
 portrait-book9: "/assets/images/sora-book9.webp"
 affiliation: Carisco-Bowers Extended Family; Global Planetary Survey Team (Junior Wilderness Scout)
-birthday: March 10, 2270
+birthday: March 10, 2267
 birthplace: New Eden, Ares
-book6_age: "Unborn"
-book7_age: "6.1"
-book8_age: "13.1"
-book9_age: "20.1"
+book6_age: "1.8"
+book7_age: "8.8"
+book8_age: "15.8"
+book9_age: "22.8"
 gender assignment: "Male"
 gender: "Male"
 orientation: "Not yet determined"

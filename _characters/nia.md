@@ -7,12 +7,12 @@ portrait-book7: "/assets/images/nia-book7.webp"
 portrait-book8: "/assets/images/nia-book8.webp"
 portrait-book9: "/assets/images/nia-book9.webp"
 affiliation: Carisco-Bowers Extended Family; Global Planetary Survey Team (Junior Resonance Archivist)
-birthday: June 18, 2272
+birthday: June 18, 2269
 birthplace: New Eden, Ares
 book6_age: "Unborn"
-book7_age: "4.2"
-book8_age: "11.2"
-book9_age: "18.2"
+book7_age: "6.5"
+book8_age: "13.5"
+book9_age: "20.5"
 gender assignment: "Female"
 gender: "Female"
 orientation: "Not yet determined"
