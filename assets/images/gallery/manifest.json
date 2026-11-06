@@ -1423,6 +1423,35 @@
     "height": 1174
   },
   {
+    "file": "zahara-celectra.webp",
+    "title": "Zahara with Celectra",
+    "description": "Zahara playing in her living room with Celectra.",
+    "tags": [
+      "zahara",
+      "childhood",
+      "utopis",
+      "playing",
+      "celectra",
+      "book 2"
+    ],
+    "width": 2048,
+    "height": 2048
+  },
+  {
+    "file": "zahara-age21.webp",
+    "title": "Zahara at age 21",
+    "description": "Zahara at age 21, relaxing at home.",
+    "tags": [
+      "zahara",
+      "home",
+      "Utopis",
+      "relaxing",
+      "book 3"
+    ],
+    "width": 672,
+    "height": 1000
+  }
+  {
     "file": "zahara-age28.webp",
     "title": "Zahara at age 28",
     "description": "Zahara at age 28, relaxing at home.",
@@ -1568,6 +1597,34 @@
     ],
     "width": 842,
     "height": 1264
+  },
+  {
+    "file": "mei-aulii.webp",
+    "title": "Mei and Aulii",
+    "description": "Mei and Aulii, mother and daughter in the kitchen of their home in New Eden.",
+    "tags": [
+      "mei",
+      "aulii",
+      "mother",
+      "daughter",
+      "new eden",
+      "book 4"
+    ],
+    "width": 842,
+    "height": 1264
+  },
+  {
+    "file": "mei-age18.webp",
+    "title": "Mei at age 18",
+    "description": "Mei at age 18, studying in the living room of her home in New Eden.",
+    "tags": [
+      "mei",
+      "aulii",
+      "new eden",
+      "book 5"
+    ],
+    "width": 1124,
+    "height": 1686
   },
   {
     "file": "reclamatic.png",
