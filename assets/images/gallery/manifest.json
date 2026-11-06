@@ -1254,9 +1254,8 @@
     "width": 1024,
     "height": 1536
   },
-   
   {
-    "file": "nyanhial-nhial.webp",
+    "file": "nyanhial-nhial.mp4",
     "title": "Nyanhial & Nhial",
     "description": "Nyanhial & Nhial doing schoolwork",
     "tags": [
@@ -1264,7 +1263,8 @@
       "nhial"
     ],
     "width": 1086,
-    "height": 1448
+    "height": 1448,
+    "poster": "nyanhial-nhial.webp"
   },    
   {
     "file": "nyanhial-age8.webp",
