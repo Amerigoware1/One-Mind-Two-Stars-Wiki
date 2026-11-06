@@ -1,7 +1,10 @@
 ---
 layout: character
 title: Mei Vongphachanh
-portrait: "/assets/images/mei-book7.webp"
+portrait: "/assets/images/mei-book5.webp"
+portrait-book3: "/assets/images/mei-book3.webp"
+portrait-book4: "/assets/images/mei-book4.webp"
+portrait-book5: "/assets/images/mei-book5.webp"
 portrait-book6: "/assets/images/mei-book6.webp"
 portrait-book7: "/assets/images/mei-book7.webp"
 portrait-book8: "/assets/images/mei-book8.webp"
@@ -9,10 +12,13 @@ portrait-book9: "/assets/images/mei-book9.webp"
 affiliation: Carisco-Bowers Extended Family; Global Planetary Survey Team (Expedition Botanist & Hydroponics Lead)
 birthday: May 12, 2244
 birthplace: New Eden, Ares
-book6_age: "25"
-book7_age: "32"
-book8_age: "39"
-book9_age: "46"
+book3_age: "2.4"
+book4_age: "10.7"
+book5_age: "17.7"
+book6_age: "24.6"
+book7_age: "31.6"
+book8_age: "38.6"
+book9_age: "45.6"
 gender assignment: "Female"
 gender: "Female"
 orientation: "aromantic, heterosexual"
@@ -20,11 +26,23 @@ orientation_awareness_age: 16
 status: Alive
 death_date:
 death_place:
+book3_title: "Toddlerhood"
+book3_arc: >
+  "At 2.4 years old, Mei is growing up with Aulii in their home in New Eden. Her father, Elias (a structural ecologist of European/African descent) has already passed on.
+
+book4_title: "Growing up"
+book4_arc: >
+  At 10.7 years of age, Mei is still growing and learning. She loves gardening and collecting plants. She had potten plants indoors and many more outside around her mother's zen garden. Her home has an empty room originally intended as a spare bedroom where she practices martial arts learned from her mother at the dojo.
+
+book5_title: "Studying"
+book5_arc: >
+  At 17.7 years, Mei is is finishing her education with emphasis in botany and horticulture.
+  Her experience with boys has led her to lean toward the "open mind, open heart, and open body" philosophy.
 
 book6_title: "The Roots of Tomorrow (age-25)"
 book6_arc: >
   At twenty-five, Mei is already a master of closed-loop ecology. With Ares possessing no native flora, survival in the wilderness requires more than just water; it requires calories, oxygen, and psychological comfort. Mei is appointed the Expedition Botanist and Hydroponics Lead for the newly christened *Wayfarer*. 
-  While her mother, Aulii, prepares to read the deep stone, Mei prepares the living payload. She spends Book 6 securing the colony's genetic banks, calibrating the rover's massive internal hydro-bays, and designing the delicate, non-invasive aquifer taps that will allow them to create artificial surface oases without fracturing the bismuth network. 
+  While her mother, Aulii, prepares to read the deep stone, Mei prepares the living payload. She spends Book 6 securing the colony's genetic banks, calibrating the rover's internal hydro-bays, and designing the delicate, non-invasive aquifer taps that will allow them to create artificial surface oases without fracturing the bismuth network. 
   Off-page, Mei's personal life is as intentional as her botanical layouts. An aromantic, heterosexual woman, she rejects Earth's outdated romantic paradigms. Through transparent, consensual encounters with willing single men—Pedro and Diomid—she conceives her children, Sora and Nia. Her queerplatonic partner, Samir, stands by her side as the co-parent and the newly appointed Chief Pilot of *The Wayfarer*, ready to drive their chosen family into the unknown.
 
 book7_title: "The Oasis Maker (age-32)"
