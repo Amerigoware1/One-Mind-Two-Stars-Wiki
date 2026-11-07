@@ -696,7 +696,21 @@
     "width": 720,
     "height": 1080
   },
-    {
+  {
+    "file": "jenni-xara-aerial.mp4",
+    "title": "Xara and Jenni perform",
+    "description": "Portrait of Xara and Jenni at age 14 performing an aerial dance.",
+    "tags": [
+      "xara zo",
+      "jenni jo",
+      "dance",
+      "book 5"
+    ],
+    "width": 4096,
+    "height": 4096,
+    "poster": "jenni-xara-aerial.webp"
+  },
+  {
     "file": "elara-jenni-spicy.webp",
     "title": "Jenni and Elara as Teens",
     "description": "Portrait of Jenni and Elara during their teenage years.",
