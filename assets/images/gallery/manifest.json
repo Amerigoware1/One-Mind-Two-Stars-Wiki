@@ -1640,9 +1640,22 @@
     "height": 1536
   },
   {
+    "file": "mei-with-sora2.webp",
+    "title": "Mei with Sora",
+    "description": "Mei with Sora, enjoying binary sunshine outside their home in New Eden.",
+    "tags": [
+      "mei",
+      "sora",
+      "new eden",
+      "book 6"
+    ],
+    "width": 1664,
+    "height": 2496
+  },  
+  {
     "file": "mei-sora-nia.webp",
     "title": "Mei, Sora and Nia",
-    "description": "Mei, Sora and Nia together on the patio of their home in New Eden.",
+    "description": "Mei, Sora and Nia together in the foyer of their home in New Eden.",
     "tags": [
       "mei",
       "sora",
@@ -1650,9 +1663,22 @@
       "new eden",
       "book 7"
     ],
-    "width": 843,
-    "height": 1264
+    "width": 1024,
+    "height": 1536
   },
+  {
+    "file": "sora-nia-book7.webp",
+    "title": "Sora and Nia onboard the Wayfarer",
+    "description": "Sora and Nia in the dining area of the Wayfarer.",
+    "tags": [
+      "nia",
+      "sora",
+      "wayfarer",
+      "book 7"
+    ],
+    "width": 1024,
+    "height": 1536
+  },  
   {
     "file": "reclamatic.png",
     "title": "Reclamatic (cleaning bot)",
