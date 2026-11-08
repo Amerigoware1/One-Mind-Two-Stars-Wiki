@@ -1627,6 +1627,33 @@
     "height": 1686
   },
   {
+    "file": "mei-with-sora.webp",
+    "title": "Mei with Sora",
+    "description": "Mei with Sora, enjoying binary sunshine outside their home in New Eden.",
+    "tags": [
+      "mei",
+      "sora",
+      "new eden",
+      "book 6"
+    ],
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "file": "mei-sora-nia.webp",
+    "title": "Mei, Sora and Nia",
+    "description": "Mei, Sora and Nia together on the patio of their home in New Eden.",
+    "tags": [
+      "mei",
+      "sora",
+      "nia",
+      "new eden",
+      "book 7"
+    ],
+    "width": 843,
+    "height": 1264
+  },
+  {
     "file": "reclamatic.png",
     "title": "Reclamatic (cleaning bot)",
     "description": "A robotic floor cleaner that uses MRI tech to deatomize dust, debris, germs and even stains.",
