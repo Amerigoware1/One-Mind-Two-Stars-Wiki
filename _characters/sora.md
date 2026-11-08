@@ -22,7 +22,7 @@ death_date:
 death_place:
 book6_title: "The Unborn Scout (unborn)"
 book6_arc: >
-  Book 6 ends before Sora is born. His first appearance is a quiet moment between his
+  Book 6 ends after Sora is born. His first appearance is a quiet moment between his
   mothers: Mei, calibrating the hydro-bays of the newly commissioned *Wayfarer*, and
   Samir, running final navigation checks on the mag-lev systems. They are preparing a
   vessel for a journey they know will change their family forever.
@@ -31,8 +31,6 @@ book6_arc: >
   is fully present—equally invested in the child they will raise together, though
   Pedro (Sora's biological father, off-page) has no parental claim by prior agreement.
   Sora is conceived as a seed planted for a journey he will grow up to complete.
-  [Production note: No individual portrait in Book 6. Sora is represented in the
-  Vongphachanh family group portrait placeholder.]
 
 book7_title: "The First Trek (age-6.1)"
 book7_arc: >
@@ -124,9 +122,10 @@ His weaknesses include:
 * **Mei Vongphachanh** — biological mother ("Mama"). Sora inherits her warmth and pragmatic nurturing, though he expresses it through action rather than cultivation.
 * **Samir** — adoptive father ("Papa"). Sora idolizes Samir's piloting skills and quiet competence, often sitting in the cockpit for hours just watching him work the controls.
 * **Aulii Vongphachanh** — grandmother. Aulii is his fiercest protector and most demanding teacher. She is patiently teaching him that true strength requires stillness, not just motion.
-* **Jasper Aoki-Carisco** — best friend and exact-age cohort. Their dynamic is legendary: Sora is the physical anchor who pulls Jasper out of channel-conflict freezes, while Jasper helps Sora understand the deeper patterns of the environments they explore.
+* **Jasper Aoki-Carisco** — best friend and age cohort. Their dynamic is legendary: Sora is the physical anchor who pulls Jasper out of channel-conflict freezes, while Jasper helps Sora understand the deeper patterns of the environments they explore.
 * **Nia Vongphachanh** — younger sister. Sora is fiercely protective of Nia, though he frequently teases her. They share a deep, unspoken sibling bond forged in the confined space of the rover.
-* **Jasmine Carisco-Vance** — cousin and friend. Sora respects Jasmine's calm, anchoring presence and often defers to her judgment when the environment becomes harmonically unstable.
+* **Jasmine Carisco-Vance** — friend. Sora respects Jasmine's calm, anchoring presence and often defers to her judgment when the environment becomes harmonically unstable.
+* **Pedro** — biological father (off-page). A engineer aboard Utopis. Sora and Pedro know that Sora carries Pedro's genes, but that is the extent of their relationship.
 </div>
 
 <div class="card-bg" markdown="1">

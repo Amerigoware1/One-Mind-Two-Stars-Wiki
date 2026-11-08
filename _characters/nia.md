@@ -2,7 +2,7 @@
 layout: character
 title: Nia Vongphachanh
 portrait: "/assets/images/nia-book7.webp"
-portrait-book6: "/assets/images/nia-book6.webp"
+portrait-book6: "/assets/images/prenatal.webp"
 portrait-book7: "/assets/images/nia-book7.webp"
 portrait-book8: "/assets/images/nia-book8.webp"
 portrait-book9: "/assets/images/nia-book9.webp"
@@ -32,8 +32,7 @@ book6_arc: >
   grow up lovingly archiving alongside her expedition logs.
   Nia is conceived as a listener, though nobody knows it yet. She will be the one who
   remembers how the journey felt, not just where it went.
-  [Production note: No individual portrait in Book 6. Nia is represented in the
-  Vongphachanh family group portrait placeholder.]
+  [Production note: No individual portrait in Book 6.]
 
 book7_title: "The First Echo (age-4.2)"
 book7_arc: >
@@ -82,7 +81,7 @@ book9_arc: >
 <div class="card-bg" markdown="1">
 
 ## Overview
-Nia Vongphachanh is the younger daughter of Mei Vongphachanh and Samir, and the younger granddaughter of Aulii Vongphachanh. Born in 2272, she grows up entirely aboard *The Wayfarer* during the Global Planetary Survey. While her older brother Sora is the physical anchor and her cousin Jasmine is the harmonic stabilizer, Nia is the "Harmonic Mirror"—an empathic archivist who can perfectly mimic and reflect the emotional and resonance states of the environments and beings they encounter. She is Jasmine's closest confidante and playful companion, bringing curiosity, joy, and a profound ability to record the "song" of Ares.
+Nia Vongphachanh is the younger daughter of Mei Vongphachanh and Samir, and the younger granddaughter of Aulii Vongphachanh. Born in 2272, she grows up entirely aboard *The Wayfarer* during the Global Planetary Survey. While her older brother Sora is the physical anchor and her friend Jasmine is the harmonic stabilizer, Nia is the "Harmonic Mirror"—an empathic archivist who can perfectly mimic and reflect the emotional and resonance states of the environments and beings they encounter. She is Jasmine's closest confidante and playful companion, bringing curiosity, joy, and a profound ability to record the "song" of Ares.
 
 * career_title: "Resonance Archivist / Emotional Historian"
 * education: >
@@ -125,8 +124,8 @@ Her weaknesses include:
 * **Samir** — adoptive father ("Papa"). Nia idolizes Samir's piloting skills and often sits in the co-pilot seat, "helping" him navigate by calling out resonance shifts she hears.
 * **Aulii Vongphachanh** — grandmother. Aulii is her fiercest protector. Nia is the one who successfully coaxes Aulii into smiling, often by mimicking her grandmother's precise martial stances with exaggerated, playful flair.
 * **Sora Vongphachanh** — older brother. Nia looks up to Sora's physical bravery, though she frequently teases him for being too serious. They share a deep, protective sibling bond.
-* **Jasmine Carisco-Vance** — cousin and closest confidante. Where Jasmine anchors the chaos, Nia reflects it. They are inseparable, with Nia often using her mirroring to help Jasmine process the emotional weight she absorbs.
-* **Jasper Aoki-Carisco** — cousin. Nia and Jasper often collaborate, with Jasper weaving the acoustic rhythms and Nia mirroring the emotional textures, creating beautiful, impromptu duets in the rover's cargo bay.
+* **Jasmine Carisco-Vance** — friend and closest confidante. Where Jasmine anchors the chaos, Nia reflects it. They are inseparable, with Nia often using her mirroring to help Jasmine process the emotional weight she absorbs.
+* **Jasper Aoki-Carisco** — friend. Nia and Jasper often collaborate, with Jasper weaving the acoustic rhythms and Nia mirroring the emotional textures, creating beautiful, impromptu duets in the rover's cargo bay.
 * **Diomid** — biological father (off-page). A respected hydroponics engineer in New Eden who sends her regular, cheerful audio-messages, which she lovingly archives alongside her expedition logs.
 </div>
 
