@@ -1678,6 +1678,31 @@
     ],
     "width": 1024,
     "height": 1536
+  },
+  {
+    "file": "samir-nia.webp",
+    "title": "Samir and Nia onboard the Wayfarer",
+    "description": "Samir and Nia in the cockpit of the Wayfarer.",
+    "tags": [
+      "nia",
+      "samir",
+      "wayfarer",
+      "book 7"
+    ],
+    "width": 832,
+    "height": 1248
+  },
+  {
+    "file": "nia-eating.webp",
+    "title": "Nia eating",
+    "description": "Nia eating in the dining area of the Wayfarer.",
+    "tags": [
+      "nia",
+      "wayfarer",
+      "book 7"
+    ],
+    "width": 1664,
+    "height": 2496
   },  
   {
     "file": "reclamatic.png",
