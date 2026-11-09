@@ -32,7 +32,7 @@ book6_arc: >
   Pedro (Sora's biological father, off-page) has no parental claim by prior agreement.
   Sora is conceived as a seed planted for a journey he will grow up to complete.
 
-book7_title: "The First Trek (age-6.1)"
+book7_title: "The First Trek (age-8.8)"
 book7_arc: >
   At six, Sora insists on carrying his own pack during the expedition's first major
   surface excursion. He has already learned to scale the interior cargo nets of
@@ -46,7 +46,7 @@ book7_arc: >
   Aulii begins teaching him that stillness is not the absence of action, but the
   loading of the spring.
 
-book8_title: "The Stillness Breakthrough (age-13.1)"
+book8_title: "The Stillness Breakthrough (age-15.8)"
 book8_arc: >
   At thirteen, Sora faces his hardest challenge: not a canyon or a climb, but his own
   restless energy. During a severe harmonic storm in the deep canyons, Jasper
@@ -59,7 +59,7 @@ book8_arc: >
   master his own internal noise. It is the hardest thing he has ever done, and the
   most important.
 
-book9_title: "The Vanguard (age-20.1)"
+book9_title: "The Vanguard (age-22.8)"
 book9_arc: >
   At twenty, Sora leads the vanguard scout team for a critical planetary synthesis
   mission. He has seamlessly blended his physical agility with a mature, hard-won
@@ -79,7 +79,7 @@ book9_arc: >
 <div class="card-bg" markdown="1">
 
 ## Overview
-Sora Vongphachanh is the firstborn child of Mei Vongphachanh and Samir, and the eldest grandchild of Aulii Vongphachanh. Born in 2270, Sora grows up almost entirely aboard *The Wayfarer* during the Global Planetary Survey. As Jasper Aoki-Carisco's exact age and closest wilderness cohort, Sora provides a boisterous, physical, and grounding counterweight to Jasper's internalized sensory processing. Where Jasper hears the music of the planet, Sora feels the ground beneath his feet. He represents the next generation's physical adaptation to the Ares wilderness: agile, fiercely loyal, and entirely at home in the wild.
+Sora Vongphachanh is the firstborn child of Mei Vongphachanh and Samir, and the eldest grandchild of Aulii Vongphachanh. Born in 2270, Sora grows up almost entirely aboard *The Wayfarer* during the Global Planetary Survey. As Jasper Aoki-Carisco's closest wilderness cohort, Sora provides a boisterous, physical, and grounding counterweight to Jasper's internalized sensory processing. Where Jasper hears the music of the planet, Sora feels the ground beneath his feet. He represents the next generation's physical adaptation to the Ares wilderness: agile, fiercely loyal, and entirely at home in the wild.
 
 * career_title: "Wilderness Scout / Field Operations Specialist"
 * education:
@@ -137,10 +137,10 @@ Sora's arc is about learning that true strength is not just about physical endur
 <div class="card-bg" markdown="1">
 
 ## Key Moments
-* **The First Trek (Book 7):** At age six, Sora insists on carrying his own pack during the expedition's first major surface excursion, proving his physical resilience and earning his first "Butterfly" drone tethering certification.
+* **The First Trek (Book 7):** At age eight, Sora insists on carrying his own pack during the expedition's first major surface excursion, proving his physical resilience and earning his first "Butterfly" drone tethering certification.
 * **The Anchor (Book 8):** During a severe harmonic storm in the deep canyons, Jasper experiences a channel-conflict freeze. Sora abandons his own safety protocol to physically ground Jasper, holding him steady until the field passes, proving his fierce pack loyalty.
 * **The Stillness Breakthrough (Book 8):** Under Aulii's guidance, Sora successfully sits in absolute stillness for a full hour near a deep-crust Memory Vein, proving to himself and his grandmother that he can master his own internal noise.
-* **The Vanguard (Book 9):** At twenty, Sora leads the vanguard scout team for a critical planetary synthesis mission, seamlessly blending his physical agility with a mature, hard-won harmonic awareness.
+* **The Vanguard (Book 9):** At twenty-two, Sora leads the vanguard scout team for a critical planetary synthesis mission, seamlessly blending his physical agility with a mature, hard-won harmonic awareness.
 </div>
 
 <div class="card-bg" markdown="1">
@@ -148,11 +148,11 @@ Sora's arc is about learning that true strength is not just about physical endur
 ## Sora's Observations
 > "Jasper hears the song. I just make sure the ground doesn't swallow us while he listens." — Sora, age 8, explaining his role to a Stewardship instructor (Book 7)
 
-> "Papa flies the ship. Mama grows the food. Grandma reads the stone. Me? I make sure we all get to the stone in one piece." — Sora, age 13 (Book 8)
+> "Papa flies the ship. Mama grows the food. Grandma reads the stone. Me? I make sure we all get to the stone in one piece." — Sora, age 15 (Book 8)
 
 > "You don't have to understand the whole pattern, Jaz. You just have to hold my hand until the wobble stops." — Sora, grounding Jasper during a channel-conflict freeze (Book 8)
 
-> "Stillness isn't doing nothing. It's loading the spring." — Sora, repeating Aulii's lesson back to her, age 20 (Book 9)
+> "Stillness isn't doing nothing. It's loading the spring." — Sora, repeating Aulii's lesson back to her, age 22 (Book 9)
 </div>
 
 <div class="card-bg" markdown="1">

@@ -34,7 +34,7 @@ book6_arc: >
   remembers how the journey felt, not just where it went.
   [Production note: No individual portrait in Book 6.]
 
-book7_title: "The First Echo (age-4.2)"
+book7_title: "The First Echo (age-6.5)"
 book7_arc: >
   At four, Nia perfectly mimics a complex, multi-tone Galinstanian pulse she heard
   from Ripple, astonishing the crew and revealing her innate harmonic mirroring
@@ -47,7 +47,7 @@ book7_arc: >
   Her arc in Book 7 is about discovering that her mirroring is not just a parlor
   trick, but a form of deep listening that the expedition desperately needs.
 
-book8_title: "The Cargo Bay Duet (age-11.2)"
+book8_title: "The Cargo Bay Duet (age-13.5)"
 book8_arc: >
   At eleven, Nia and Jasper create an impromptu acoustic-emotional duet in the rover's
   cargo bay that calms a frayed bismuth network in the vicinity. The discovery is
@@ -61,7 +61,7 @@ book8_arc: >
   storing them as emotional audio-logs that capture not just the data, but the feeling
   of being there.
 
-book9_title: "The Archivist's Choice (age-18.2)"
+book9_title: "The Archivist's Choice (age-20.5)"
 book9_arc: >
   At eighteen, Nia officially compiles the "Wayfarer Resonance Logs"—a comprehensive
   emotional and acoustic history of the expedition. She presents it to the New Eden
@@ -146,13 +146,13 @@ Nia's arc is about the power of joyful witness. Growing up in the back of a mass
 <div class="card-bg" markdown="1">
 
 ## Nia's Observations
-> "Jasmine holds the floor so it doesn't shake. I just sing to the walls so they remember us." — Nia, age 8 (Book 7)
+> "Jasmine holds the floor so it doesn't shake. I just sing to the walls so they remember us." — Nia, age 6 (Book 7)
 
-> "Papa flies the ship. Mama grows the food. Grandma reads the stone. Sora climbs the rocks. Me? I listen to the water." — Nia, age 11 (Book 8)
+> "Papa flies the ship. Mama grows the food. Grandma reads the stone. Sora climbs the rocks. Me? I listen to the water." — Nia, age 13 (Book 8)
 
 > "You don't have to be afraid of the dark, Jax. It's just a song we haven't learned the words to yet." — Nia, comforting Jasper during a channel-conflict freeze (Book 8)
 
-> "History isn't just what happened. It's how it felt when it happened." — Nia, age 18, introduction to the Wayfarer Resonance Logs (Book 9)
+> "History isn't just what happened. It's how it felt when it happened." — Nia, age 20, introduction to the Wayfarer Resonance Logs (Book 9)
 </div>
 
 <div class="card-bg" markdown="1">

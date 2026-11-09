@@ -129,7 +129,7 @@ His weaknesses include:
 * **Jasmine Carisco-Vance** — cousin and closest peer. She anchors; he weaves. Their rivalry is genuine and their affection is deeper than either will admit. She is the only person who can pull him out of a channel-conflict freeze without asking him to explain what went wrong.
 * **Jenni Jo Carisco** — aunt. The one who teaches him to trust a feeling before he has a pattern for it.
 * **Dr. Elara Vance** — aunt by family. The only adult who can explain the biology of what happens inside his head, and who treats that explanation as a comfort rather than a diagnosis.
-* **Sora & Nia** — fellow rover-born children; Sora is his exact age and closest wilderness cohort, sharing a boisterous, physical pairing that balances Jasper's more internalized sensory processing.
+* **Sora & Nia** — fellow rover-born children; Sora is his closest wilderness cohort, sharing a boisterous, physical pairing that balances Jasper's more internalized sensory processing.
 * **Resonant Echo / Ripple** — the collective that knew his father before he existed. Ripple refers to Xara and Kael's courtship as "the first duet" and to Jasper as its answer.
 </div>
 
