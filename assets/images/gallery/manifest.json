@@ -1703,7 +1703,19 @@
     ],
     "width": 1664,
     "height": 2496
-  },  
+  },
+  {
+    "file": "nia-age-13.webp",
+    "title": "Nia at age 13",
+    "description": "Nia at age 13, standing in the cockpit of the Wayfarer at night.",
+    "tags": [
+      "nia",
+      "wayfarer",
+      "book 7"
+    ],
+    "width": 720,
+    "height": 1280
+  },
   {
     "file": "reclamatic.png",
     "title": "Reclamatic (cleaning bot)",
