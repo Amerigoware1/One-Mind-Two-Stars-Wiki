@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Nia Vongphachanh
-portrait: "/assets/images/nia-book7.webp"
+portrait: "/assets/images/nia-book8.webp"
 portrait-book6: "/assets/images/prenatal.webp"
 portrait-book7: "/assets/images/nia-book7.webp"
 portrait-book8: "/assets/images/nia-book8.webp"

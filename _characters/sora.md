@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Sora Vongphachanh
-portrait: "/assets/images/sora-book7.webp"
+portrait: "/assets/images/sora-book8.webp"
 portrait-book6: "/assets/images/sora-book6.webp"
 portrait-book7: "/assets/images/sora-book7.webp"
 portrait-book8: "/assets/images/sora-book8.webp"

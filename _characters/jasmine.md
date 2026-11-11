@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Jasmine Carisco-Vance
-portrait: "/assets/images/jasmine-book7.webp"
+portrait: "/assets/images/jasmine-book8.webp"
 portrait-book6: "/assets/images/jasmine-book6.webp"
 portrait-book7: "/assets/images/jasmine-book7.webp"
 portrait-book8: "/assets/images/jasmine-book8.webp"

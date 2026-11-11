@@ -1,7 +1,7 @@
 ---
 layout: character
 title: Jasper Aoki-Carisco
-portrait: "/assets/images/jasper-book7.webp"
+portrait: "/assets/images/jasper-book8.webp"
 portrait-book6: "/assets/images/jasper-book6.webp"
 portrait-book7: "/assets/images/jasper-book7.webp"
 portrait-book8: "/assets/images/jasper-book8.webp"
