@@ -5,7 +5,7 @@ affiliation: Global Planetary Survey Team; New Eden Resonance Stewardship Progra
 class: Deep-Crust Planetary Exploration Rover (Jointed Mag-Lev)
 length: "42.5 meters"
 crew_capacity: "12-15 (standard expedition complement)"
-first_deployment: "2276 (Book 7)"
+first_deployment: "2277 (Book 7)"
 status: "Active"
 ---
 <div class="infobox">
@@ -26,7 +26,7 @@ status: "Active"
     <tr><th>Length</th><td>42.5 meters</td></tr>
     <tr><th>Structure</th><td>Three articulated, pressure-sealed segments</td></tr>
     <tr><th>Primary Use</th><td>Planetary exploration and deep-crust research</td></tr>
-    <tr><th>First Deployment</th><td>2276 (Book 7)</td></tr>
+    <tr><th>First Deployment</th><td>2277 (Book 7)</td></tr>
     <tr><th>Status</th><td>Active</td></tr>
   </table>
 
