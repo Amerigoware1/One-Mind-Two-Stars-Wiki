@@ -12,13 +12,13 @@ portrait-book9: "/assets/images/elara-book9.webp "
 affiliation: Carisco-Bowers Extended Family; Resonance Stewardship Program (Bio-Harmonic Engineering Division)
 birthday: March 4, 2247
 birthplace: New Eden, Ares
-book3_age:  "1   "
-book4_age:  "8 "
-book5_age:  "15 "
-book6_age:  "22 "
-book7_age:  "29 "
-book8_age:  "36 "
-book9_age:  "43 "
+book3_age:  "0.6   "
+book4_age:  "8.9 "
+book5_age:  "15.9 "
+book6_age:  "22.8 "
+book7_age:  "29.8 "
+book8_age:  "36.8 "
+book9_age:  "43.8 "
 gender assignment:  "Female "
 gender:   "Female "
 orientation:  "homosexual "
@@ -26,6 +26,15 @@ orientation_awareness_age: 12
 status: Alive
 death_date:
 death_place:
+book3_title: "Infancy (age-0.6)"
+book3_arc: >
+    Baby Elara is growing in New Eden off page
+book4_title: "Growing up (age-8)"
+book4_arc: >
+    Young Elara is still growing and learning in New Eden off page.
+book5_title: "Study, study, study (age-15)"
+book5_arc: >
+    Still off page, young Elara has a facination with the human body and its workings. She has come to realize that she has no interest in boys, but is attracted to girls — particularly one named Jenni.
 book6_title: "The Harmonic Anchor (age-22)"
 book6_arc: >
     At twenty-two, Elara is a brilliant Bio-Harmonic Engineer and geneticist. While her partner, Jenni, experiences resonance as an intuitive, emotional feeling, Elara translates those feelings into hard data, biological models, and structural algorithms. During the "Polar Opposites" crisis, when Jenni instinctively knows how to fix a harmonic anomaly but lacks the scientific framework to prove it, Elara bridges the gap. She trusts Jenni's "feel first" instincts over her own "think first" data, synthesizing Jenni's intuition with her own engineering to save the colony. Following the crisis, Elara utilizes her expertise in bio-harmonics to pioneer the "Harmonic IVG Protocol," allowing them to conceive their daughter, Jasmine, a perfect genetic blend of both mothers.
