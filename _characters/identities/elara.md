@@ -3,7 +3,7 @@ layout: identity
 title: Dr. Elara Vance Identity Sheet
 character: elara
 insignia: anchor
-first_book: 6
+first_book: 3
 last_book: 9
 hair:
  - "Default: very dark brown, thick, heavy waves, kept in a neat practical braid or low bun"
