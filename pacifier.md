@@ -16,8 +16,8 @@ The Single-Pattern Rule: The MRE refuses all other weapon patterns. No firearm, 
 Carry Doctrine: Emitter-down carry, hail-first engagement, and Council review of every discharge were written into the mission charter before departure and remain in force. The Chief of Security is the only sworn officer authorized to carry the device.
 <div class="card-bg" markdown="1">
 <div class="text-center">
- <a href="{{ '/assets/images/gallery/pacifier.png' | relative_url }}" target="_blank" rel="noopener noreferrer" class="diagram-thumbnail">
- <img src="{{ '/assets/images/gallery/pacifier.png' | relative_url }}" alt="SP-4" class="img-thumbnail">
+ <a href="{{ '/assets/images/gallery/pacifier1.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" class="diagram-thumbnail">
+ <img src="{{ '/assets/images/gallery/pacifier1.webp' | relative_url }}" alt="SP-4" class="img-thumbnail">
  <div class="caption small text-muted">Click to enlarge: SP-4 emitter head, probe bores, and grip</div>
  </a>
 </div>
@@ -78,8 +78,8 @@ The device is not without critics. The phrase "a pain ray with a nursery name" r
 There is no SP-5. The certification board that froze the pattern dissolved on Earth generations ago, and the MRE maintains the file without deviation. Any amendment would require Council action and full pattern re-certification — a process that has been petitioned eleven times and completed never. The device carried by the Chief of Security today is functionally identical to the one that left Earth on October 9, 2125, down to the original cartridge design, replaced quarterly and never fired.
 <div class="card-bg" markdown="1">
 <div class="text-center">
- <a href="{{ '/assets/images/gallery/pacifiers.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" class="diagram-thumbnail">
- <img src="{{ '/assets/images/gallery/pacifiers.webp' | relative_url }}" alt="SP-4 units" class="img-thumbnail">
+ <a href="{{ '/assets/images/gallery/pacifier2.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" class="diagram-thumbnail">
+ <img src="{{ '/assets/images/gallery/pacifier2.webp' | relative_url }}" alt="SP-4 units" class="img-thumbnail">
  <div class="caption small text-muted">Click to enlarge: MRE output tray — SP-4 and ledgered cartridge</div>
  </a>
 </div>
