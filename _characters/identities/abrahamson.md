@@ -4,7 +4,7 @@ title: Joaquim Abrahamson Identity Sheet
 character: abrahamson
 insignia: engi-infra
 first_book: 1
-last_book: 9
+last_book: 6
 
 hair:
   - "Default: dark/graying, kept neat"
