@@ -339,6 +339,12 @@ title: Glossary
     <p>Advanced device for matter synthesis and reclamation. See full entry → <a href="{{ '/mre.html' | relative_url }}">MRE page</a></p>
   </div>
 
+  <div class="card-bg glossary-item" data-name="Pacifier" data-category="tech" data-search="sonic pacifier sp-4 acoustic compliance weapon ultrasound probe taser stun lullaby binky chief security roan biometric less-lethal emitter">
+    <h2><a href="{{ '/pacifier.html' | relative_url }}">Pacifier (SP-4)</a></h2>
+    <p><strong>Pronunciation:</strong> /ˈpæsɪfaɪər ˌɛs piː ˈfɔːr/<button class="speak-button">🔊</button></p>
+    <p>Handheld sonic compliance emitter with a gated probe module; the only weapon pattern the MRE will fabricate, released solely to the Chief of Security under live biometric confirmation. See full entry → <a href="{{ '/pacifier.html' | relative_url }}">SP-4 page</a></p>
+  </div>
+
   <div class="card-bg glossary-item" data-name="Portable MRE" data-category="tech" data-search="field mre matter recycler extractor synthesis food equipment">
     <h2><a href="{{ '/mre.html' | relative_url }}">Portable MRE (field-mre)</a></h2>
     <p><strong>Pronunciation:</strong> /ˈpɔːrtəbəl ɛm ɑːr iː/<button class="speak-button">🔊</button></p>
