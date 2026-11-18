@@ -1586,7 +1586,7 @@
     "height": 1024
   },
   {
-    "file": "jasmine-jasper-twister.webp",
+    "file": "jasmine-jasper-twister.mp4",
     "title": "Jasmine and Jasper playing",
     "description": "Jasmine and Jasper playing together at Celectra's.",
     "tags": [
@@ -1597,7 +1597,8 @@
       "book 6"
     ],
     "width": 1536,
-    "height": 1024
+    "height": 1024,
+    "poster": "jasmine-jasper-twister.webp"
   },
   {
     "file": "jasmine-with-jasper-xara-kael.webp",
