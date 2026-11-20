@@ -1,9 +1,17 @@
 ---
+
 layout: default
+
 title: Three Legs, One Mind
+
 is_archive: true
+
 return_url: anthology.html
+
 return_label: "Return to Anthology index"
+
+<!-- page -->
+
 ---
 
 {% capture chapter_content %}
@@ -15,6 +23,8 @@ Doctor's rules: wide-brimmed hat, UV sleeves, and the wraparound shades whenever
 "No hats," both of her voices said happily, as Daddy tied the number bibs on. He'd made them himself that afternoon, on the fabric printer. CARISCO—TEAM 7, in bright yellow.
 
 "No hats, no long sleeves" Daddy agreed, grinning. "Festival rules. Sundown means freedom." He smoothed the bib down over her collarbones—both collarbones, both bodies, working left to right like he'd done it a thousand times, because he had.
+
+<!-- page -->
 
 She was wearing her new festival set, and she couldn't stop looking down at it. Mommy had tuned it on the holopad that afternoon—Mommy, the word she'd been given permission to use on her eighth birthday and which still felt like a present she got to open every day—and it was cryo-silk, the good stuff from Uncle Doc's original medical pattern, woven through with the little light threads that carried nothing but color. Right now both of her outfits were drifting through slow swirls of deep teal and midnight blue, the glow pooling softly in the folds, like wearing a piece of the sky that hadn't decided what it wanted to be yet. Half the colony was shimmering. Down by the lantern line, the Galinstanians who'd come up for the festival were clustered at the edge of the field, and Celectra could feel Kiri's bright, needling curiosity at the edge of her awareness—you celebrate the dark by filling it with light? Explain the logic—while beside her, Stan's presence pulsed its slow, deep, riverbank patience, which was Stan's way of saying he found the whole species delightful and would not be explaining himself.
 
@@ -28,6 +38,8 @@ Both her bodies sat side by side on the grass and let Daddy bind their inner leg
 
 "They're my best partner," Celectra said, both voices, perfectly flat, and Amara laughed so hard she nearly dropped the flag.
 
+<!-- page -->
+
 The whistle blew.
 
 And the thing was—and Celectra had never once had to explain this, because how could you explain breathing?—the thing was that her legs already knew each other. There was no negotiation. Left body's bound leg swung forward because right body's bound leg swung forward, at the same instant, from the same thought, the way one bell is one tone no matter which side of it you strike. Inner-inner-out. Inner-inner-out. Three legs moving like four, their joined stride as smooth as a wheel, and the only sound her team made on the grass was a single soft whish, whish, whish.
@@ -39,6 +51,8 @@ She crossed the line first, both hands up, both bodies' lungs full of the same c
 "Time!" Amara Voss shouted, and read it off the field clock, and whistled low. "That's a colony junior record, folks. By nine seconds."
 
 "Nine seconds," Daddy repeated faintly, when both of Celectra's bodies barreled into him, which made four arms and one hug. "Nine—sweetheart, that's not a junior record, that's the open record."
+
+<!-- page -->
 
 "I know," both voices said, and then, because she was nine and honest: "It's easier for me. Nobody has to learn anybody."
 
@@ -52,6 +66,8 @@ Celectra's stomach did something small and complicated.
 
 The draw put her left body with Aulii Vongphachanh and her right body with Kai Vasquez. Which meant, she realized as they knelt on the grass and the padded straps went on, that she was now two teams. Both her bodies were bound to other people's legs, facing away from each other down the same field, and her mind—her one mind—sat exactly in the middle.
 
+<!-- page -->
+
 The whistle blew, and it was like trying to hear two conversations at once, if each conversation were happening in her own knees.
 
 Aulii counted loud—one-two, one-two—a marching rhythm, metronome-steady, technically perfect, and Celectra's left body fell into it fine for six strides. But six strides was exactly as long as Kai lasted on her other side before he lurched into a scrambling sprinter's gait, fast and ragged, and here was the problem, the real problem, the one she couldn't have explained to Councilor Okafor if she'd tried: her bodies matched each other. Not on purpose. They matched each other the way two heartbeats in one chest matched each other. Every time Kai surged, her right body surged, and two meters away her left body surged with it, out of Aulii's count, and Aulii stumbled, and shouted, and the strap bit, and they went down in the grass in a tangle of four legs that only belonged to two rhythms.
@@ -63,6 +79,8 @@ Chen Wei and Amor won the second heat. Aulii and Celectra came in fifth of six. 
 They sat in a row on the grass afterward, all five kids, breathing. Celectra's outfits had gone a quiet, honest gray-blue.
 
 "You're not bad," Aulii said at last, elbows on knees. "You're just—synchronized. With yourself. It's weird. It's like racing someone who's already three steps into my next step before I am."
+
+<!-- page -->
 
 "You are," both of Celectra's voices admitted. "Sorry. I don't know how to be unsynchronized."
 
@@ -76,6 +94,8 @@ It cracked open gold over the water, and the whole crowd's ooh rolled across the
 
 "And with myself," said the other.
 
+<!-- page -->
+
 "I'm not cut out for last place," both voices agreed, and the third firework—a big one, pink and purple, Daddy's telltale ordering from the pyro cart because she could see him smiling at the sky like he knew what she was thinking—bloomed over the river, and everything on the field, cloth and skin and water, turned briefly the color of her room.
 
 {% endcapture %}
@@ -83,6 +103,8 @@ It cracked open gold over the water, and the whole crowd's ooh rolled across the
 {% include tts-reader.html content=chapter_content %}
 
 <div style="margin-top: 2rem; text-align: center; color: #aaa; font-size: 0.85rem;">
-  <a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
+
+<a href="{{ '/anthology.html' | relative_url }}" style="color: #bb86fc;">← Back to Extended Archive</a>
 
 </div>
+
