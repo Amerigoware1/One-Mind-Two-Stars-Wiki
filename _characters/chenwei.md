@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Chen Wei
+title: Chen Wei Chentel
 portrait: "/assets/images/chenwei-book5.webp"
 portrait-book1: "/assets/images/chenwei-book1.webp"
 portrait-book2: "/assets/images/chenwei-book2.webp"
@@ -97,7 +97,10 @@ His weaknesses include:
 - **Listener Corps Team** — works collaboratively with Ananya Patel, Maya Keahi, and other corps members
 - **Dr. Yuki Chen** — professional colleague in monitoring and tech development (no-familial relation)
 - **Jaxon Bowers** — engineering collaborator on interface development
-- **Ananay Patel** — engineering collaborator on interface development and love interest
+- **Ananay Patel** — engineering collaborator on interface development and love interest and eventual wife
+- **Tara Hui Chentel** — first born, daughter
+- **Jia Kiran Chentel** — second born, daughter
+- **Aditi Ming Chentel** — third born, son
 </div>
 <div class="card-bg" markdown="1">
 
