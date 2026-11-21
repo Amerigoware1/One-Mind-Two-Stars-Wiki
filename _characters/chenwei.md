@@ -36,15 +36,15 @@ book1_arc: >
 book2_title: "The Pivot & Recruitment"
 book2_arc: >
   At 14, Chen faces 14-year-old Celectra in the first round of a tournament. Despite his technical skill, he loses to her superior control and coordination. The loss prompts him to question physical competition and seek fields where analytical thinking matters more than physiology. He joins the newly formed Listener Corps, fascinated by the technical challenge of cross-species communication. He assists in baseline monitoring of telepathic fields and helps develop early amplification equipment.
-book3_title: "Technical Development"
+book3_title: "Technical Development & Courtship"
 book3_arc: >
-  Chen works on the urgent project to develop technology that can replace Celectra's deteriorating biological bridge. He helps build and test prototype telepathic field amplifiers and translators, using his precision mindset to fine-tune sensitive equipment. He monitors Celectra's field degradation patterns to inform technical requirements, working alongside Dr. Yuki Chen and other medical/technical staff. He is aware of the timeline pressure—Celectra's field is deteriorating faster than expected.
-book4_title: "Northern Disturbance Support"
+  Chen works on the urgent project to develop technology that can replace Celectra's deteriorating biological bridge. He helps build and test prototype telepathic field amplifiers and translators, using his precision mindset to fine-tune sensitive equipment. He monitors Celectra's field degradation patterns to inform technical requirements, working alongside Dr. Yuki Chen and other medical/technical staff. He is aware of the timeline pressure—Celectra's field is deteriorating faster than expected. Late in the book, his close collaboration with Ananya Patel becomes courtship; by the closing chapters, Ananya is pregnant with their first child, Tara.
+book4_title: "Northern Disturbance Support & Fatherhood"
 book4_arc: >
-  Chen serves as a technical specialist during the northern disturbance investigation. He helps deploy Communion Interfaces and bismuth amplification relay stations to extend communication range where Celectra cannot reach. His work proves that technological bridges can handle complex situations Celectra can't personally reach, validating years of research. He continues to refine the hybrid communication protocols that integrate Celectra's natural communion with technological interfaces.
-book5_title: "Stewardship & Legacy"
+  Chen serves as a technical specialist during the northern disturbance investigation. He helps deploy Communion Interfaces and bismuth amplification relay stations to extend communication range where Celectra cannot reach. His work proves that technological bridges can handle complex situations Celectra can't personally reach, validating years of research. He continues to refine the hybrid communication protocols that integrate Celectra's natural communion with technological interfaces. At home, he and Ananya are raising Tara (~6) and Jia (~3), learning to balance field deployments, calibration work, and family routines.
+book5_title: "Stewardship, Legacy & Family"
 book5_arc: >
-  Chen is an established technician within the Resonance Stewardship Program. He helps train the next generation of Listener Corps members in signal processing and interface calibration. His work ensures that human–Galinstanian communication remains stable and accessible even as Celectra transitions into emeritus roles. He represents the continuity of the colony's technical infrastructure—the quiet expertise that keeps the bridges standing long after the originals have stepped back.
+  Chen is an established technician within the Resonance Stewardship Program. He helps train the next generation of Listener Corps members in signal processing and interface calibration. His work ensures that human–Galinstanian communication remains stable and accessible even as Celectra transitions into emeritus roles. He represents the continuity of the colony's technical infrastructure—the quiet expertise that keeps the bridges standing long after the originals have stepped back. At home, he and Ananya are raising Tara (~13), Jia (~10), and Aditi (~3); Aditi was born after Ananya's pregnancy while Tara was nine and Jia was six.
 book6_title: "Book 6 Title (Placeholder)"
 book6_arc: >
   Placeholder arc description for Book 6. Update with character development details.
@@ -62,7 +62,7 @@ book9_arc: >
 <div class="card-bg" markdown="1">
 
 ## Overview
-Chen Wei is a technically-minded Ares-born colonist who transitions from competitive karate to cross-species communication technology. After losing in the first round of a tournament to a 14-year-old Celectra Carisco when he was the same age, he shifted his focus from physical competition to technical fields where analytical thinking mattered more than physiology. He joined the Listener Corps in Book 2 and by Book 3 works as a technician assisting with the development of technology designed to eventually replace Celectra's biological telepathic bridge.
+Chen Wei is a technically-minded Ares-born colonist who transitions from competitive karate to cross-species communication technology. After losing in the first round of a tournament to a 14-year-old Celectra Carisco when he was the same age, he shifted his focus from physical competition to technical fields where analytical thinking mattered more than physiology. He joined the Listener Corps in Book 2 and by Book 3 works as a technician assisting with the development of technology designed to eventually replace Celectra's biological telepathic bridge. He later marries Ananya Patel and raises three children with her: Tara, Jia, and Aditi.
 </div>
 <div class="card-bg" markdown="1">
 
@@ -97,15 +97,15 @@ His weaknesses include:
 - **Listener Corps Team** — works collaboratively with Ananya Patel, Maya Keahi, and other corps members
 - **Dr. Yuki Chen** — professional colleague in monitoring and tech development (no-familial relation)
 - **Jaxon Bowers** — engineering collaborator on interface development
-- **Ananay Patel** — engineering collaborator on interface development and love interest and eventual wife
-- **Tara Hui Chentel** — first born, daughter
-- **Jia Kiran Chentel** — second born, daughter
-- **Aditi Ming Chentel** — third born, son
+- **Ananya Patel (later Ananya Chentel, née Patel)** — engineering collaborator on interface development and love interest and eventual wife
+- **Tara Hui Chentel** — first born, daughter; born December 20, 2248
+- **Jia Kiran Chentel** — second born, daughter; born September 5, 2251
+- **Aditi Ming Chentel** — third born, son; born July 14, 2258
 </div>
 <div class="card-bg" markdown="1">
 
 ## Story Overview (non-spoiler)
-Chen's arc is about finding value beyond physical prowess. His early disappointment in the dojo becomes the catalyst for a career that helps secure the colony's future. He represents the generation that builds the systems allowing human–Galinstanian relations to continue without dependence on a single biological bridge. His story mirrors the colony's shift from physical survival to complex technical coexistence.
+Chen's arc is about finding value beyond physical prowess. His early disappointment in the dojo becomes the catalyst for a career that helps secure the colony's future. He represents the generation that builds the systems allowing human–Galinstanian relations to continue without dependence on a single biological bridge. His story mirrors the colony's shift from physical survival to complex technical coexistence. In the later books, that arc expands to include courtship, marriage to Ananya, and raising their three children while maintaining the technical infrastructure that keeps New Eden's bridges standing.
 </div>
 <div class="card-bg" markdown="1">
 

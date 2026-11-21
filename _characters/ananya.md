@@ -44,7 +44,7 @@ book2_arc: >
   Listener Corps. She learns to receive Galinstanian communion through the interface,
   documents sessions, and provides crucial emotional grounding. Her humor and
   reliability help transform Celectra's isolation into a supported team effort.
-book3_title: "Scientist & Translator (age-22)"
+book3_title: "Scientist, Translator & Courtship (age-22)"
 book3_arc: >
   Now a xenobiology graduate, Ananya applies formal scientific training to
   Galinstanian research. She works alongside Chen Wei and Jaxon on the Communion
@@ -52,16 +52,21 @@ book3_arc: >
   field generation. As a trained Listener, she handles routine diplomatic
   communications, freeing Celectra to focus on complex negotiations. Her dual role—
   as researcher and friend—makes her a key architect of the systems that will
-  eventually replace Celectra's biological bridge.
-book4_title: "Building the Network (age-30)"
+  eventually replace Celectra's biological bridge. Late in the book, her long
+  professional partnership with Chen Wei turns into courtship, grounded in shared
+  work, direct honesty, and the same steady support she has always offered. By the
+  closing chapters she is pregnant with their first child, Tara.
+book4_title: "Building the Network & Family (age-30)"
 book4_arc: >
   At thirty, Ananya is an established biologist and senior Listener Corps trainer.
   She helps design the hybrid communication protocols that integrate Celectra's
   natural communion, the technological interface, and Xan's glockenspiel system.
   During the northern cluster rescue and subsequent policy shifts, she advocates for
   acoustic methods and ethical oversight. Her steady presence helps the colony
-  navigate the transition from "one bridge" to "many bridges."
-book5_title: "Mentor & Legacy (age-37)"
+  navigate the transition from "one bridge" to "many bridges." At home, she and Chen
+  Wei are raising Tara (~6) and Jia (~3), balancing fieldwork, training, and the
+  practical chaos of a young family.
+book5_title: "Mentor, Legacy & Family (age-37)"
 book5_arc: >
   At thirty-seven, Ananya trains the next generation of Listeners and researchers.
   She helps formalize the Resonance Stewardship Program, ensuring that
@@ -70,7 +75,9 @@ book5_arc: >
   investigation with technical expertise and ethical guidance. Her arc culminates in
   her becoming a quiet cornerstone of New Eden's scientific and diplomatic
   infrastructure—the friend who showed up, stayed, and helped build something that
-  lasts.
+  lasts. She and Chen Wei are raising three children: Tara (~13), Jia (~10), and
+  Aditi (~3), the youngest born after Ananya's pregnancy while Tara was nine and Jia
+  was six.
 book6_title: "Book 6 Title (Placeholder)"
 book6_arc: >
   Placeholder arc description for Book 6. Update with character development details.
@@ -88,7 +95,7 @@ book9_arc: >
 <div class="card-bg" markdown="1">
 
 ## Overview
-Ananya Patel moved from Utopis to New Eden when she was nine. Direct, energetic, and scientifically disciplined, she treats Celectra's extraordinary life like regular teenage drama—offering grounded humor and unwavering support. Known as "The Snack Queen" for her habit of showing up with treats during stressful moments, Ananya becomes one of the first volunteers for the Listener Corps and later applies her xenobiology training to advance human–Galinstanian communication research.
+Ananya Patel moved from Utopis to New Eden when she was nine. Direct, energetic, and scientifically disciplined, she treats Celectra's extraordinary life like regular teenage drama—offering grounded humor and unwavering support. Known as "The Snack Queen" for her habit of showing up with treats during stressful moments, Ananya becomes one of the first volunteers for the Listener Corps and later applies her xenobiology training to advance human–Galinstanian communication research. She later marries Chen Wei and raises three children with him: Tara, Jia, and Aditi.
 </div>
 <div class="card-bg" markdown="1">
 
@@ -121,9 +128,9 @@ Her weaknesses include:
 - **Sofia Patel** — cousin; fellow member of the extended Patel family network in New Eden.
 - **Celectra Carisco** — best friend since childhood; Ananya treats her like a person, not a phenomenon.
 - **Chen Wei** — fellow Listener Corps translator; research collaborator; eventual love interest. Eventual husband.
-- **Tara Hui Chentel** — first born, daughter
-- **Jia Kiran Chentel** — second born, daughter
-- **Aditi Ming Chentel** — third born, son
+- **Tara Hui Chentel** — first born, daughter; born December 20, 2248.
+- **Jia Kiran Chentel** — second born, daughter; born September 5, 2251.
+- **Aditi Ming Chentel** — third born, son; born July 14, 2258.
 - **Maya Keahi & Jaxon Bowers** — close friends in the youth cohort; part of the core support circle.
 - **Xan Carisco** — peers; mutual respect for each other's communication innovations.
 - **Lira Keahi** — mentor figure in psychology/Listener training.
@@ -132,7 +139,7 @@ Her weaknesses include:
 <div class="card-bg" markdown="1">
 
 ## Story Overview (non-spoiler)
-Ananya's arc is about turning friendship into function—using her scientific training and emotional intelligence to help build systems that outlast any one person. She never seeks the spotlight, but her steady presence, sharp mind, and willingness to show up (often-with snacks) make her indispensable to Celectra, the Listener Corps, and the broader project of human–Galinstanian integration.
+Ananya's arc is about turning friendship into function—using her scientific training and emotional intelligence to help build systems that outlast any one person. She never seeks the spotlight, but her steady presence, sharp mind, and willingness to show up (often-with snacks) make her indispensable to Celectra, the Listener Corps, and the broader project of human–Galinstanian integration. Her later arc includes marriage to Chen Wei and raising their three children while continuing to shape New Eden's communication infrastructure.
 </div>
 -
 <div class="card-bg" markdown="1">
