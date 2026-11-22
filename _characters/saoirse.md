@@ -1,11 +1,7 @@
 ---
 layout: character
 title: Saoirse Echo Keahi-Calder
-portrait: "/assets/images/saoirse-book9.webp"
-portrait-book1: ""
-portrait-book2: ""
-portrait-book3: ""
-portrait-book4: ""
+portrait: "/assets/images/saoirse-book5.webp"
 portrait-book5: "/assets/images/saoirse-book5.webp"
 portrait-book6: "/assets/images/saoirse-book6.webp"
 portrait-book7: "/assets/images/saoirse-book7.webp"
@@ -14,15 +10,11 @@ portrait-book9: "/assets/images/saoirse-book9.webp"
 affiliation: New Eden Colony; Audio-Visual Artist
 birthday: February 22, 2255
 birthplace: New Eden, Ares
-book1_age: ""
-book2_age: ""
-book3_age: ""
-book4_age: "0.7"
-book5_age: "7.7"
-book6_age: "14.7"
-book7_age: "22.5"
-book8_age: "29.5"
-book9_age: "35.5"
+book5_age: "6.9"
+book6_age: "13.8"
+book7_age: "20.9"
+book8_age: "27.9"
+book9_age: "34.9"
 gender assignment: "Female"
 gender: "Female"
 orientation: "Unknown"
@@ -30,28 +22,19 @@ orientation_awareness_age:
 status: Alive
 death_date:
 death_place:
-book1_title: ""
-book1_arc: >
-book2_title: ""
-book2_arc: >
-book3_title: ""
-book3_arc: >
-book4_title: "The First Born (age-0.7)"
-book4_arc: >
-  Saoirse is born in early 2255, the eldest of the triplets by a few minutes. She spends her first months surrounded by the final chaotic preparations for the Samaya Gallery's opening, lulled to sleep by her parent Sam's soundscapes.
-book5_title: "Gallery Rat (age-7.7)"
+book5_title: "Gallery Rat (age-6.9)"
 book5_arc: >
-  At seven, Saoirse is a whirlwind of energy. She practically grows up inside the Samaya Gallery, treating the exhibits as her personal playground. She inherits Sam's fascination with sound, often trying to integrate her own loud, enthusiastic music into her mother Maya's quiet visual exhibits. Her parents constantly have to remind her not to touch the art.
-book6_title: "Teenage Frequencies (age-14.7)"
+  At seven, Saoirse, the eldest of the triplets by a few minutes, is a whirlwind of energy. She practically grows up inside the Samaya Gallery, treating the exhibits as her personal playground. She inherits Sam's fascination with sound, often trying to integrate her own loud, enthusiastic music into her mother Maya's quiet visual exhibits. Her parents constantly have to remind her not to touch the art.
+book6_title: "Teenage Frequencies (age-13.8)"
 book6_arc: >
   At fourteen, Saoirse is experimenting with music production and sound design, following closely in Sam's footsteps. She is bold, expressive, and fiercely protective of her sisters. She uses audio as an emotional outlet, creating complex, layered soundscapes that capture the overwhelming experience of growing up in New Eden.
-book7_title: "Young Adulthood & The Pact (age-22.5)"
+book7_title: "Young Adulthood & The Pact (age-20.9)"
 book7_arc: >
-  At twenty-two, Saoirse is a rising star in the colony's acoustic art scene. Alongside her sisters, she formalizes the pact they made as children: they will build a life and a home together, raising any future children as a collective unit. She designs the acoustic layout for their shared home, ensuring it accommodates all their needs.
-book8_title: "The Co-Mothering Pod (age-29.5)"
+  At twenty, Saoirse is a rising star in the colony's acoustic art scene. Alongside her sisters, she formalizes the pact they made as children: they will build a life and a home together, raising any future children as a collective unit. She designs the acoustic layout for their shared home, ensuring it accommodates all their needs.
+book8_title: "The Co-Mothering Pod (age-27.9)"
 book8_arc: >
-  At twenty-nine, Saoirse is raising her children alongside her sisters in their shared home. The house is loud, chaotic, and constantly vibrating with music. She balances her career as an audio engineer with the shared parenting duties, finding joy in the unconventional, deeply supportive family structure the triplets have created.
-book9_title: "Legacy of Sound (age-35.5)"
+  At twenty-eight, Saoirse is raising her children alongside her sisters in their shared home. The house is loud, chaotic, and constantly vibrating with music. She balances her career as an audio engineer with the shared parenting duties, finding joy in the unconventional, deeply supportive family structure the triplets have created.
+book9_title: "Legacy of Sound (age-34.9)"
 book9_arc: >
   At thirty-five, Saoirse continues to push the boundaries of acoustic art, often collaborating with her sister Indigo on interactive, cross-species installations. Her children are growing up surrounded by art, music, and the unwavering love of their three mothers.
 ---
@@ -64,7 +47,7 @@ Saoirse Echo Keahi-Calder (pronounced *SEER-sha*) is the firstborn of the frater
 <div class="card-bg" markdown="1">
 
 ## Physical Description
-Saoirse has Maya's warm Hawaiian complexion and Sam's striking, expressive eyes. She often dyes her hair wild colors (blues and purples) to match her vibrant personality. She dresses in eclectic, layered clothing, often adorned with audio equipment or sonic jewelry.
+Saoirse has Maya's warm Hawaiian complexion and Sam's striking, expressive eyes. Naturally blonde, she often dyes her hair wild colors (blues and purples) to match her vibrant personality. She dresses in eclectic, layered clothing, often adorned with audio equipment or sonic jewelry.
 </div>
 <div class="card-bg" markdown="1">
 

@@ -2,9 +2,6 @@
 layout: character
 title: Jia Kiran Chentel
 portrait: "/assets/images/jia-book5.webp"
-portrait-book1: ""
-portrait-book2: ""
-portrait-book3: ""
 portrait-book4: "/assets/images/jia-book4.webp"
 portrait-book5: "/assets/images/jia-book5.webp"
 portrait-book6: "/assets/images/jia-book6.webp"
@@ -14,9 +11,6 @@ portrait-book9: "/assets/images/jia-book9.webp"
 affiliation: New Eden Colony
 birthday: September 5, 2251
 birthplace: New Eden, Ares
-book1_age: ""
-book2_age: ""
-book3_age: ""
 book4_age: "3.4"
 book5_age: "10.4"
 book6_age: "17.3"
@@ -30,12 +24,6 @@ orientation_awareness_age:
 status: Alive
 death_date:
 death_place:
-book1_title: ""
-book1_arc: >
-book2_title: ""
-book2_arc: >
-book3_title: ""
-book3_arc: >
 book4_title: "Toddler Years (age-3.4)"
 book4_arc: >
   At just over three years old, Jia is the energetic toddler of the Chentel family. Born in 2251, she is constantly underfoot, full of questions, and unafraid to interrupt her parents' serious technical discussions with demands for snacks or attention. She navigates the northern cluster rescue era mostly through the lens of a happy, busy childhood surrounded by extended family.

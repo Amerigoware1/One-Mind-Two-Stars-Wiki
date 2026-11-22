@@ -1,11 +1,7 @@
 ---
 layout: character
 title: Kalea Lyric Keahi-Calder
-portrait: "/assets/images/kalea-book9.webp"
-portrait-book1: ""
-portrait-book2: ""
-portrait-book3: ""
-portrait-book4: ""
+portrait: "/assets/images/kalea-book5.webp"
 portrait-book5: "/assets/images/kalea-book5.webp"
 portrait-book6: "/assets/images/kalea-book6.webp"
 portrait-book7: "/assets/images/kalea-book7.webp"
@@ -14,15 +10,11 @@ portrait-book9: "/assets/images/kalea-book9.webp"
 affiliation: New Eden Colony; Visual Artist & Gallery Curator
 birthday: February 22, 2255
 birthplace: New Eden, Ares
-book1_age: ""
-book2_age: ""
-book3_age: ""
-book4_age: "0.7"
-book5_age: "7.7"
-book6_age: "14.7"
-book7_age: "22.5"
-book8_age: "29.5"
-book9_age: "35.5"
+book5_age: "6.9"
+book6_age: "13.8"
+book7_age: "20.9"
+book8_age: "27.9"
+book9_age: "34.9"
 gender assignment: "Female"
 gender: "Female"
 orientation: "Unknown"
@@ -30,28 +22,19 @@ orientation_awareness_age:
 status: Alive
 death_date:
 death_place:
-book1_title: ""
-book1_arc: >
-book2_title: ""
-book2_arc: >
-book3_title: ""
-book3_arc: >
-book4_title: "The Quiet Middle (age-0.7)"
-book4_arc: >
-  Kalea is born in early 2255, the middle triplet. Even as an infant, she is noticeably calmer than Saoirse, content to sleep through the noise of the gallery preparations.
-book5_title: "The Gallery Sanctuary (age-7.7)"
+book5_title: "The Gallery Sanctuary (age-6.9)"
 book5_arc: >
-  At seven, Kalea is a quiet, observant child. While her sisters run wild, she can usually be found sitting in a quiet corner of the Samaya Gallery with a sketchbook, drawing the visitors or the artwork. It is her second home, and she treats the exhibits with a reverence her sisters often lack.
-book6_title: "The Teenage Canvas (age-14.7)"
+  At seven, the middle triplet, Kalea is a quiet, observant child. While her sisters run wild, she can usually be found sitting in a quiet corner of the Samaya Gallery with a sketchbook, drawing the visitors or the artwork. It is her second home, and she treats the exhibits with a reverence her sisters often lack.
+book6_title: "The Teenage Canvas (age-13.8)"
 book6_arc: >
   At fourteen, Kalea is developing into a profoundly gifted visual artist. Unlike her sister, she is introverted and expresses her deep, complex emotions through her mixed-media art. She struggles slightly with the loudness of her family, but finds her sanctuary in Maya's gallery, starting to create her own small exhibits.
-book7_title: "Finding Her Voice & The Pact (age-22.5)"
+book7_title: "Finding Her Voice & The Pact (age-20.9)"
 book7_arc: >
-  At twenty-two, Kalea is studying fine arts and xenobiology. Alongside her sisters, she embraces their plan for the future: living together and raising their children as a triad. She helps design the layout of their shared home, ensuring it provides quiet spaces for her own artistic process while keeping her close to her sisters.
-book8_title: "The Co-Mothering Pod (age-29.5)"
+  At twenty-one, Kalea is studying fine arts and xenobiology. Alongside her sisters, she embraces their plan for the future: living together and raising their children as a triad. She helps design the layout of their shared home, ensuring it provides quiet spaces for her own artistic process while keeping her close to her sisters.
+book8_title: "The Co-Mothering Pod (age-27.9)"
 book8_arc: >
-  At twenty-nine, Kalea is raising her children alongside Saoirse and Indigo. She takes charge of decorating their shared home, turning it into a beautiful, nurturing sanctuary. She paints murals in the children's rooms and ensures the communal living space is a haven of calm amidst the joyful chaos of family life.
-book9_title: "The Curator (age-35.5)"
+  At twenty-eight, Kalea is raising her children alongside Saoirse and Indigo. She takes charge of decorating their shared home, turning it into a beautiful, nurturing sanctuary. She paints murals in the children's rooms and ensures the communal living space is a haven of calm amidst the joyful chaos of family life.
+book9_title: "The Curator (age-34.9)"
 book9_arc: >
   At thirty-five, Kalea is a renowned artist and the lead curator of the Samaya Gallery. She ensures the gallery remains a haven for quiet, thoughtful connection and cross-species artistic expression, often bringing her own children to work to inspire them just as her mothers inspired her.
 ---

@@ -1790,6 +1790,56 @@
     "height": 768
   },
   {
+    "file": "keahi-kalder-family.webp",
+    "title": "Keahi-Kalder family",
+    "description": "The Keahi-Kalder family in the living room of their home in New Eden.",
+    "tags": [
+      "keahi-kalder",
+      "sam",
+      "maya",
+      "indigo",
+      "kalea",
+      "saoirse",
+      "new eden",
+      "family",
+      "book 5"
+    ],
+    "width": 1312,
+    "height": 1199
+  },
+  {
+    "file": "keahi-kalder-triplets-home.webp",
+    "title": "Keahi-Kalder triplets",
+    "description": "The Keahi-Kalder triplets in the living room of their home in New Eden.",
+    "tags": [
+      "keahi-kalder",
+      "indigo",
+      "kalea",
+      "saoirse",
+      "new eden",
+      "family",
+      "book 5"
+    ],
+    "width": 1024,
+    "height": 1536
+  },
+  {
+    "file": "keahi-kalder-triplets-playing.webp",
+    "title": "Keahi-Kalder triplets playing",
+    "description": "The Keahi-Kalder triplets playing in the gallery playroom in New Eden.",
+    "tags": [
+      "keahi-kalder",
+      "indigo",
+      "kalea",
+      "saoirse",
+      "new eden",
+      "family",
+      "book 5"
+    ],
+    "width": 1536,
+    "height": 1024
+  },    
+  {
     "file": "reclamatic.png",
     "title": "Reclamatic (cleaning bot)",
     "description": "A robotic floor cleaner that uses MRI tech to deatomize dust, debris, germs and even stains.",
