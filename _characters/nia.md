@@ -98,7 +98,7 @@ Nia Vongphachanh is the younger daughter of Mei Vongphachanh and Samir, and the 
 <div class="card-bg" markdown="1">
 
 ## Physical Description
-Nia is a vibrant blend of her family's lineages. She has light olive skin (4) with a warm, sun-kissed undertone. Her hair is very dark brown (8), thick, and falls in loose, bouncy curls that she often wears in two practical braids or a messy half-up style. Her eyes are dark brown and almond-shaped, carrying the subtle epicanthic fold inherited from her grandmother Aulii, but they sparkle with a mischievous, intensely curious light. She has a slender, agile build, shaped by years of climbing around the rover's interior and exploring surface outcroppings. Like her family, she is almost always barefoot indoors, claiming she can "hear the water moving" through the rover's pipes.
+Nia is a vibrant blend of her family's lineages. She has light olive skin (4) with a warm, sun-kissed undertone. Her hair is dark golden blonde (8), thick, and falls in loose, bouncy curls that she often wears in two practical braids or a messy half-up style. Her eyes are dark brown and almond-shaped, carrying the subtle epicanthic fold inherited from her grandmother Aulii, but they sparkle with a mischievous, intensely curious light. She has a slender, agile build, shaped by years of climbing around the rover's interior and exploring surface outcroppings. Like her family, she is almost always barefoot indoors, claiming she can "hear the water moving" through the rover's pipes.
 </div>
 
 <div class="card-bg" markdown="1">
