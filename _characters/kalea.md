@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Kalea Lyric Keahi-Calder
+title: Kalea Melody Keahi-Calder
 portrait: "/assets/images/kalea-book5.webp"
 portrait-book5: "/assets/images/kalea-book5.webp"
 portrait-book6: "/assets/images/kalea-book6.webp"
@@ -42,7 +42,7 @@ book9_arc: >
 <div class="card-bg" markdown="1">
 
 ## Overview
-Kalea Lyric Keahi-Calder is the second of the fraternal triplets. Named for joy (Kalea) and poetry/music (Lyric), she is the quiet observer of the group. Deeply artistic like her mother Maya, she uses painting and mixed-media to process the world around her. She grows up finding sanctuary in the Samaya Gallery, and as an adult, chooses to build a communal, co-parenting life with her sisters.
+Kalea Melody Keahi-Calder is the second of the fraternal triplets. Named for joy (Kalea) and poetry/music (Melody), she is the quiet observer of the group. Deeply artistic like her mother Maya, she uses painting and mixed-media to process the world around her. She grows up finding sanctuary in the Samaya Gallery, and as an adult, chooses to build a communal, co-parenting life with her sisters.
 </div>
 <div class="card-bg" markdown="1">
 

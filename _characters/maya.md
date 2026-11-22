@@ -103,7 +103,7 @@ Her weaknesses include:
 - **Celectra Carisco** — childhood hero, brief crush, later mentor figure who sees Maya's gifts clearly
 - **Sam Calder** — partner in life and art; co‑founder of Samaya Gallery; their collaboration defines her adulthood
 - **Saoirse Echo Keahi-Calder** — first born (of triplets), daughter; born February 22, 2255.
-- **Kalea Lyric Keahi-Calder** — second born (of triplets), daughter; born February 22, 2255.
+- **Kalea Melody Keahi-Calder** — second born (of triplets), daughter; born February 22, 2255.
 - **Indigo Nova Keahi-Calder** — third born (of triplets), daughter; born February 22, 2255.
 - **Jenni Jo & Xara Zo** — younger generation she mentors through the gallery's educational programs
 - **Xan Carisco** — peer she admires for his creativity and parallel artistic journey

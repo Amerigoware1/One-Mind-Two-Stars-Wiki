@@ -147,7 +147,7 @@ Their weaknesses include:
 
 - **Maya Keahi** — partner; relationship begins in Book 3 through artistic collaboration; mutual healing and growth; Maya finds freedom in Sam's fluidity, Sam finds grounding in Maya's steadiness
 - **Saoirse Echo Keahi-Calder** — first born (of triplets), daughter; born February 22, 2255.
-- **Kalea Lyric Keahi-Calder** — second born (of triplets), daughter; born February 22, 2255.
+- **Kalea Melody Keahi-Calder** — second born (of triplets), daughter; born February 22, 2255.
 - **Indigo Nova Keahi-Calder** — third born (of triplets), daughter; born February 22, 2255.
 - **Celectra Carisco‑Bowers** — colleague and friend; Sam respects her role as bridge while focusing on cultural integration through art and sound
 - **Jenni & Xara Bowers** — mentor figures; Sam helps integrate audio protocols into their education and resonance work
