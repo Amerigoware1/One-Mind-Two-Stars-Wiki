@@ -60,7 +60,8 @@ title: "Ares"
         </tr>
         <tr>
             <th>Atmosphere</th>
-            <td>0.8 Atm (breathable)</td>
+            <td>0.8 Atm (pO₂ ≈ 15 kPa; see <a href="#cold-environments">Polar and Cryogenic Environments</a>)</td>
+
         </tr>
         <tr>
             <th>Human settlement</th>
@@ -104,7 +105,11 @@ Ares has a diameter of approximately 11,200 kilometers and a surface gravity of 
 ## Atmosphere and Climate
 
 Ares’ atmosphere measures 0.8 atmospheres, comprising 18-20% oxygen, nitrogen as the dominant gas, and traces of carbon dioxide. This thin air is breathable with adaptation—newcomers may require oxygen support, while native-born children develop enhanced lung capacity. The climate features pale, fractured dawns refracted through Chaos’s storms, with temperatures ranging from -20°C to 26°C, moderated by stellar heat, tidal forces, and internal geothermal activity. Once every 45-day orbit, passing through Chaos's shadow cone triggers temporary, rhythmic drops in temperature and insolation, creating brief, predictable cold cycles across the moon's surface.
+### Polar and Cryogenic Environments
 
+The −20 °C to 26 °C range quoted above describes the equatorial surface and the inhabited river valleys, not the moon as a whole. Air at 0.8 atm thins with altitude, and Ares’s zero axial tilt replaces seasons with a single constant, punctuated only by Chaos’s shadow. Once per 45-day orbit the moon crosses that shadow cone and the entire surface loses insolation at once; in the highlands and at the polar cavern mouths the cycle is enough to hold ground ice, frost-heave exposed rock and seal cavern throats. Expedition planning therefore treats the poles and the highlands as cryogenic environments reached by descent from a temperate surface, rather than as the cold season of a temperate one.
+
+Oxygen is the other constraint. At 0.8 atm and 18–20% O₂ the partial pressure of oxygen is ≈15 kPa, against ≈21 kPa at Earth sea level — equivalent to roughly 2,700 m of terrestrial altitude. That is why acclimatisation and oxygen enrichment are routine at New Eden, and why children born on Ares develop larger lungs.
 </div>
 
 <div class="card-bg" markdown="1">
@@ -127,7 +132,7 @@ Ares resides in a mildly elliptical orbit approximately 6.2 million kilometers f
 
 ## Native Life
 
-Ares was initially deemed sterile, lacking native carbon-based life. However, the discovery of the Galinstanians—sentient, metal-based beings inhabiting subsurface caverns—challenged this view. These creatures, detailed in the [Galinstanian article]({{ '/galinstanians.html' | relative_url }}), use bismuth veins for telepathic communication, thriving in the moon’s geothermal environment. No other native life forms have been identified.
+Ares was initially deemed sterile, lacking native carbon-based life. However, the discovery of the Galinstanians—sentient, metal-based beings inhabiting subsurface caverns—challenged this view. These creatures, detailed in the [Galinstanian article]({{ '/galinstanians.html' | relative_url }}), communicate by guided electromagnetic resonance in the ELF band, carried through bismuth veins the species plates itself, thriving in the moon’s geothermal environment. No other native life forms have been identified.
 
 </div>
 

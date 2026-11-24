@@ -38,6 +38,26 @@ title: "Galinstanians"
             <th>First contact</th>
             <td>New Eden colony, 2232-10-15</td>
         </tr>
+		        <tr>
+            <th>Body volume</th>
+            <td>~30–35 L (comparable to a ten-year-old human)</td>
+        </tr>
+        <tr>
+            <th>Mass</th>
+            <td>~193–225 kg (bulk density 6.44 g/cm³)</td>
+        </tr>
+        <tr>
+            <th>Resting form</th>
+            <td>Low and broad at ease; ~1 m tall when holding a compact humanoid shape</td>
+        </tr>
+        <tr>
+            <th>Metabolism</th>
+            <td>Lithotrophic — mineral rock dissolved with HF secretions; no organic intake</td>
+        </tr>
+        <tr>
+            <th>Tolerance</th>
+            <td>0.8 atm, breathable (pO₂ ≈ 15 kPa); cold tolerance posture- and time-dependent, see Thermal Lapse</td>
+        </tr>
     </table>
 </div>
 
@@ -171,6 +191,8 @@ However, physical geography *did* intermittently isolate subpopulations. Tectoni
 
 Crucially, these physical barriers were never permanent. Tectonic activity on Ares is relentless; sealed caverns invariably re-opened, or water channels re-routed, forcing these chemically drifted clusters back into physical contact with the main collective. When contact resumed, the re-integration process triggered a violent "harmonization imperative"—the returning cluster's EM field was forcibly phase-locked to the global resonance, while its slightly altered chemical composition was either corrected through targeted galvanic exchange or, in rare cases of extreme drift, absorbed as inert waste. Because the neural mesh had remained connected via EM throughout the entrapment, the returning cluster retained all collective memories and did not develop a separate "culture." This repeated cycle of physical entrapment and forced re-integration prevented permanent speciation, while allowing just enough rheological diversity to prevent stagnation—a singular, planet-wide organism with temporary, fluidic "accents" periodically smoothed back into the whole.
 
+**One qualification, mechanical rather than geological.** Every isolation described above is an isolation of *rock*: the passage closes, the mesh does not, and the returning cluster arrives with its memories intact. There is one failure mode the cavern record does not yet cover. The Bismuth Network is not bedrock but plumbing — strands plated by the species itself, one at a time, over millennia — and plated bismuth is thin and brittle. Where a cavern throat is frost-heaved, thermally cycled for centuries and finally sealed by ice, the rock can remain merely narrow while the *strand* inside it fails. An EM-severed cluster is a different case from a physically entombed one: it keeps its memories and its syntax, and drifts generation by generation out of the shared field, accumulating exactly the chemical dialect that entrapment alone was said to prevent. Whether any such cluster exists on Ares is not established. It is flagged here because it is the only route by which a population could survive entrapment unnoticed, and because the harmonization imperative applies to any reconnection attempt — targeted galvanic exchange where drift is small, absorption as inert waste where it is extreme.
+
 **The Bismuth Network (Waveguides / Memory Veins):** A brief note on mechanism, since a moon-wide mesh invites an obvious objection: unguided electromagnetic signal attenuates sharply through kilometers of solid, lossy rock, and free-space radiative transmission alone could not plausibly carry a coherent signal across Ares. The mesh survives because it was never free-space transmission. Deep granite beneath Ares carries natural bismuth deposits—modest, geologically ordinary veins, laid down alongside the lodestone beds and, on their own, capable of carrying only short-range, badly attenuated signal. What makes the modern network is not geology alone but millennia of Galinstanian biomineralization: living clusters recognized the natural veins' limited reach and progressively extended it themselves, chemically depositing and plating additional bismuth along and between the original deposits until isolated veins became a single continuous, moon-wide lattice. Xenobiologists refer to the individual conductive pathways as **strands**, and the larger engineered junctions where many strands converge and reinforce one another as **nodes**—the largest of which, massive multi-strand pillar formations, function as **resonance anchors** stabilizing entire regions of the network.
 
 A Galinstanian's internal bismuth waveguide clusters inductively couple into this external network much as a transmitter couples into an antenna, converting what would otherwise be free-space radiative loss into low-loss guided propagation carried in the Extremely Low Frequency (ELF) band. Bismuth's unusually strong diamagnetism reinforces this: diamagnetic materials weakly repel external magnetic field lines rather than conducting them inward, which helps confine the guided signal to the strand itself and keeps the ambient magnetospheric noise of Chaos and the Niamh-Ciara binary from bleeding in. The "moon-wide mesh," in other words, is not a broadcast *through* Ares, but a broadcast through wiring the species built for itself, one plated strand at a time, over a span longer than its own written memory extends.
@@ -216,9 +238,42 @@ Movement relies on **magnetohydrodynamics (MHD)** and dynamic yield-stress manip
 </div>
 <div class="card-bg" markdown="1">
 
+### Scale, Mass, and Thermal Envelope
+An adult occupies about the volume of a ten-year-old human: 30–35 litres of bulk alloy. Galinstan is dense (6.44 g/cm³), so that same volume carries 193–225 kg, roughly six times a human child's mass. The derived figure that matters downstream is heat capacity. At a specific heat of 296 J/(kg·K), a 32-litre adult holds ≈61 kJ/K — about a fifth of a 70 kg human adult's, despite the greater mass, because the alloy's specific heat is an order of magnitude below water's. Moving one such body through a 50 K warming takes ≈3.0 MJ.
+
+Resting shape is a posture, not a size. Holding a compact, roughly humanoid silhouette about a metre tall requires continuous work: lowering yield stress locally, then re-establishing field chains to lock the form. Adults at ease do not maintain it. Left alone they settle low and broad, which is mechanically stable and thermally cheap — and a first-contact observer who meets a Galinstanian "at rest" in a near-humanoid form is seeing deliberate effort, made for the visitor's benefit.
+
+**Unresolved in the record:** the organism's own metabolic or galvanic output. No resting heat production figure and no feeding rate are asserted here. Where a thermal calculation requires them, they are gaps in the record and not zeros; colonial planning has so far had to work from loss figures alone.
+</div>
+
+<div class="card-bg" markdown="1">
+
+### Thermal Lapse
+Cold does not stiffen a Galinstanian. It un-knits one. The record states the vulnerability in a single line — extreme external temperature and intense EM interference both "disrupt their baseline yield stress" — but the consequence is geometric, and the geometry is what kills.
+
+The idle tone is what holds a body's surface small. An adult standing on Anchoring Pylons touches the ground through a few square centimetres. As tone falls the dipole chains relax and the body begins to spread; a lapsed adult touches the ground through a square metre or more, and contact area is the dominant term in conductive loss. Order-of-magnitude figures for a 35 K difference between body and substrate:
+
+| Posture | Contact / insulation | Heat loss |
+|---|---|---|
+| Standing, grip intact | 2–8 cm² of pylon contact | ≈ 1–10 W |
+| Upright, bare | 1 m², convective and radiative | ≈ 350 W |
+| Upright under 25 mm closed-cell chloroprene | 1 m², k ≈ 0.04 W/(m·K) | ≈ 56 W |
+| Spread on cold rock; bounded 20 mm pool, 5 mm melt-refreeze bridge | 1.6 m², k(ice) ≈ 2.1 W/(m·K) | ≈ 24 kW |
+
+The last row is the terminal one, and it closes a positive loop: a pool melts its own contact film, refreezes it as ice, and ice conducts roughly fifty times better than insulation foam. Broader contact gives faster loss, which weakens tone, which broadens contact. The time constants follow directly, and they are unforgiving in both directions. Standing, the loss is small enough that a modest internal output could balance it; at 61 kJ/K, even a few watts of net loss drains 35 K in roughly a day, so a body that is not generating heat is not stable however well it stands. Lapsed on cold rock, the same body drains 35 K in about two minutes.
+
+Two consequences, both easy to get wrong. First, grip fails before shape does: a slipping pylon is the earliest visible sign of a cold-stressed individual, and the only one still actionable. Second, a lapsed Galinstanian is not a patient who can be warmed where it lies. It is a slab bonded to the floor, and the floor conducts better than any portable heater.
+
+**On thresholds.** No fixed cold threshold appears anywhere in the record. The −19 °C figure that circulates in colonial briefings is the eutectic melting point of the alloy itself — a materials property, not a biological limit. Where an individual fails depends on tone, posture, substrate and time, and cannot be reduced to a single temperature.
+
+</div>
+<div class="card-bg" markdown="1">
+
 ### Nutrient Absorption, Tasting, and Waste
 
 Galinstanians sustain themselves by dissolving mineral-rich rock using localized hydrofluoric acid (HF) secretions. They safely contain these corrosive agents using a dynamically maintained, passivated gallium oxide (Ga₂O₃) layer on their outer surface that constantly regenerates against chemical wear. As they feed, specialized chemoreceptors sample the surrounding air and ground, effectively allowing them to "taste" the environment for vital minerals. Insoluble, acid-resistant materials—such as diamonds, corundum, and other hard gemstones found in the host rock—cannot be digested; they are simply pushed aside and left behind as a polished waste residue during the excavation process.
+
+**Throughput, not schedule.** Feeding frequency is not recorded, and no figure is offered here; what the record does establish is that excavation and eating are the same act. They carve their habitats over millennia by dissolving rock and reforming it, which makes a mature individual's lifetime throughput a meaningful volume of rock rather than an occasional meal. The distinction matters on sterile ground — water ice, snow, worked metal — where the mineral supply is effectively zero whatever the appetite. Because HF is the digestion chemistry, a fluoride source is as necessary as a silicate one, and neither is present in ice.
 
 </div>
 <div class="card-bg" markdown="1">
