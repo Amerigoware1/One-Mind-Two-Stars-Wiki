@@ -1,5 +1,4 @@
 ---
-
 layout: character
 title: Indigo Nova Keahi-Calder
 portrait: "/assets/images/indigo-book5.webp"
@@ -38,7 +37,6 @@ At twenty-eight, Indigo balances increasingly ambitious ANI research with raisin
 book9_title: "The Architect of the Future (age-34.9)"
 book9_arc: >
 At thirty-five, Indigo is an established specialist in ANI systems evolution and cross-species communication. She is recognized for advancing the technology inherited from Celectra, Jaxon, and the original research teams, particularly in adaptive interpretation, distributed communication, and accessibility. Working primarily from her home research studio, she leads collaborative projects that connect human and Galinstanian researchers without reducing either side's contributions to simplistic translations. She remains an active co-parent, sharing responsibility for the children's upbringing with Saoirse and Kalea. Her work and family life embody the same principle: different minds can cooperate without surrendering their individuality.
-
 ---
 
 <div class="article-content">
