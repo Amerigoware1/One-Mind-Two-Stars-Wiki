@@ -2586,19 +2586,6 @@
     "poster": "utopis.png"
   },
   {
-    "file": "utopis.png",
-    "title": "Utopis",
-    "description": "Exterior view of the Utopis space station.",
-    "tags": [
-      "utopis",
-      "space station",
-      "orbit",
-      "childhood home"
-    ],
-    "width": 1000,
-    "height": 688
-  },
-  {
     "file": "utopis.webp",
     "title": "Utopis",
     "description": "Exterior view of the Utopis space station.",
