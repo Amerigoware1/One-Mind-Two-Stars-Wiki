@@ -3,8 +3,6 @@
 layout: character
 title: Tara Hui Chentel
 portrait: "/assets/images/tara-book5.webp"
-portrait-book1: ""
-portrait-book2: ""
 portrait-book3: "/assets/images/prenatal.webp"
 portrait-book4: "/assets/images/tara-book4.webp"
 portrait-book5: "/assets/images/tara-book5.webp"
@@ -15,8 +13,6 @@ portrait-book9: "/assets/images/tara-book9.webp"
 affiliation: New Eden Colony; Listener Corps Affiliate; Xenobiology Research
 birthday: December 20, 2248
 birthplace: New Eden, Ares
-book1_age: ""
-book2_age: ""
 book3_age: "Gestating"
 book4_age: "6.1"
 book5_age: "13.1"
@@ -31,10 +27,6 @@ orientation_awareness_age:
 status: Alive
 death_date:
 death_place:
-book1_title: ""
-book1_arc: >
-book2_title: ""
-book2_arc: >
 book3_title: "The Next Generation (Gestating)"
 book3_arc: >
 	Late in Book 3, following the courtship of	her parents, Ananya and Chen Wei, Tara is conceived. She exists as a promise of the future, gestating while her parents work to stabilize the colony's communication infrastructure.
