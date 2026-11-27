@@ -1,5 +1,4 @@
 ---
-
 layout: character
 title: Tara Hui Chentel
 portrait: "/assets/images/tara-book5.webp"
