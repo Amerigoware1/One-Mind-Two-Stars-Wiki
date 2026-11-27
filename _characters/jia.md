@@ -43,6 +43,7 @@ book9_title: "Settled & Thriving (age-38.3)"
 book9_arc: >
   At thirty-eight, Jia is settled and thriving, raising her children in a fully integrated New Eden. She remains incredibly close with her siblings, and the three of them form a strong core for the extended Chentel and Patel families.
 ---
+
 <div class="article-content">
 <div class="card-bg" markdown="1">
 

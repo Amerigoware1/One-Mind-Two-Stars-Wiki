@@ -54,6 +54,7 @@ book9_title: "A Father & A Builder (age-31.5)"
 book9_arc: >
   At thirty-one, Aditi has children of his own. He becomes a deeply involved father, bringing the same gentle patience and methodical care to parenting as he did to his early tinkering. Together with his sisters and their families, Aditi ensures that the Chentel legacy of stewardship and quiet strength carries securely into the future.
 ---
+
 <div class="article-content">
 <div class="card-bg" markdown="1">
 

@@ -56,6 +56,7 @@ book9_title: "The Matriarch (age-41.0)"
 book9_arc: >
   At forty-one, Tara is a mother with children of her own, navigating the complexities of raising a family in a mature, integrated colony. She stands as a testament to the future Ananya and Chen Wei helped build—a world where humans and Galinstanians coexist, and where the children of the original bridge-builders thrive.
 ---
+
 <div class="article-content">
 <div class="card-bg" markdown="1">
 

@@ -38,6 +38,7 @@ book9_title: "The Architect of the Future (age-34.9)"
 book9_arc: >
   At thirty-five, Indigo is a leading mind in cross-species communication technology. She stands as a testament to the ultimate success of New Eden's integration, raising the next generation to view the universe as a symphony of data, art, and emotion within the unique family structure she and her sisters built.
 ---
+
 <div class="article-content">
 <div class="card-bg" markdown="1">
 

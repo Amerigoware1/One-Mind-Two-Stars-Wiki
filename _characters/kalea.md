@@ -38,6 +38,7 @@ book9_title: "The Curator (age-34.9)"
 book9_arc: >
   At thirty-five, Kalea is a renowned artist and the lead curator of the Samaya Gallery. She ensures the gallery remains a haven for quiet, thoughtful connection and cross-species artistic expression, often bringing her own children to work to inspire them just as her mothers inspired her.
 ---
+
 <div class="article-content">
 <div class="card-bg" markdown="1">
 
