@@ -25,20 +25,19 @@ death_date:
 death_place:
 book5_title: "Gallery Rat (age-6.9)"
 book5_arc: >
-At seven, Saoirse, the eldest of the triplets by a few minutes, is a whirlwind of energy. She practically grows up inside the Samaya Gallery, treating the exhibits as her personal playground. She inherits Sam's fascination with sound, often trying to integrate her own loud, enthusiastic music into her mother Maya's quiet visual exhibits. Her parents constantly have to remind her not to touch the art.
+    At seven, Saoirse, the eldest of the triplets by a few minutes, is a whirlwind of energy. She practically grows up inside the Samaya Gallery, treating the exhibits as her personal playground. She inherits Sam's fascination with sound, often trying to integrate her own loud, enthusiastic music into her mother Maya's quiet visual exhibits. Her parents constantly have to remind her not to touch the art.
 book6_title: "Teenage Frequencies (age-13.8)"
 book6_arc: >
-At fourteen, Saoirse is experimenting with music production and sound design, following closely in Sam's footsteps. She is bold, expressive, and fiercely protective of her sisters. She uses audio as an emotional outlet, creating complex, layered soundscapes that capture the overwhelming experience of growing up in New Eden.
+    At fourteen, Saoirse is experimenting with music production and sound design, following closely in Sam's footsteps. She is bold, expressive, and fiercely protective of her sisters. She uses audio as an emotional outlet, creating complex, layered soundscapes that capture the overwhelming experience of growing up in New Eden.
 book7_title: "Young Adulthood & The Pact (age-20.9)"
 book7_arc: >
-At twenty, Saoirse is a rising star in the colony's acoustic art scene. Alongside her sisters, she formalizes the pact they made as children: they will build a life and a home together, raising any future children as a collective unit. She designs the acoustic layout for their shared home, ensuring it accommodates all their needs.
+    At twenty, Saoirse is a rising star in the colony's acoustic art scene. Alongside her sisters, she formalizes the pact they made as children: they will build a life and a home together, raising any future children as a collective unit. She designs the acoustic layout for their shared home, ensuring it accommodates all their needs.
 book8_title: "The Co-Mothering Pod (age-27.9)"
 book8_arc: >
-At twenty-eight, Saoirse is raising her children alongside her sisters in their shared home. The house is loud, chaotic, and constantly vibrating with music. She balances her career as an acoustic ecologist and sonic experience designer with shared parenting duties, creating sound environments for both human and cross-species audiences.
+    At twenty-eight, Saoirse is raising her children alongside her sisters in their shared home. The house is loud, chaotic, and constantly vibrating with music. She balances her career as an acoustic ecologist and sonic experience designer with shared parenting duties, creating sound environments for both human and cross-species audiences.
 book9_title: "Legacy of Sound (age-34.9)"
 book9_arc: >
-At thirty-five, Saoirse is an established acoustic ecologist and sonic experience designer, pushing the boundaries of acoustic art and cross-species sensory design. She collaborates with Indigo on interactive installations that explore how humans and Galinstanians perceive and interpret patterns of vibration. Her children are growing up surrounded by art, music, and the unwavering love of their three mothers.
-
+    At thirty-five, Saoirse is an established acoustic ecologist and sonic experience designer, pushing the boundaries of acoustic art and cross-species sensory design. She collaborates with Indigo on interactive installations that explore how humans and Galinstanians perceive and interpret patterns of vibration. Her children are growing up surrounded by art, music, and the unwavering love of their three mothers.
 ---
 
 <div class="article-content">

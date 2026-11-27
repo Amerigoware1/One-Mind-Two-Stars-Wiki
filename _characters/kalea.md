@@ -25,22 +25,20 @@ death_date:
 death_place:
 book5_title: "The Gallery Sanctuary (age-6.9)"
 book5_arc: >
-At seven, the middle triplet, Kalea is a quiet, observant child. While her sisters run wild, she can usually be found sitting in a quiet corner of the Samaya Gallery with a sketchbook, drawing the visitors or the artwork. It is her second home, and she treats the exhibits with a reverence her sisters often lack.
+    At seven, the middle triplet, Kalea is a quiet, observant child. While her sisters run wild, she can usually be found sitting in a quiet corner of the Samaya Gallery with a sketchbook, drawing the visitors or the artwork. It is her second home, and she treats the exhibits with a reverence her sisters often lack.
 book6_title: "The Teenage Canvas (age-13.8)"
 book6_arc: >
-At fourteen, Kalea is developing into a profoundly gifted visual artist. Unlike her sister, she is introverted and expresses her deep, complex emotions through her mixed-media art. She struggles slightly with the loudness of her family, but finds her sanctuary in Maya's gallery, starting to create her own small exhibits. Her growing interest in xenobiology leads her to consider how entirely different forms of life might perceive and express beauty.
+    At fourteen, Kalea is developing into a profoundly gifted visual artist. Unlike her sister, she is introverted and expresses her deep, complex emotions through her mixed-media art. She struggles slightly with the loudness of her family, but finds her sanctuary in Maya's gallery, starting to create her own small exhibits. Her growing interest in xenobiology leads her to consider how entirely different forms of life might perceive and express beauty.
 book7_title: "Finding Her Voice & The Pact (age-20.9)"
 book7_arc: >
-At twenty-one, Kalea is studying fine arts and xenobiology. She begins exploring the relationship between artistic expression, perception, and the unfamiliar forms of culture found among the Galinstanians. Alongside her sisters, she embraces their plan for the future: living together and raising their children as a triad. She helps design the layout of their shared home, ensuring it provides quiet spaces for her own artistic process while keeping her close to her sisters.
+    At twenty-one, Kalea is studying fine arts and xenobiology. She begins exploring the relationship between artistic expression, perception, and the unfamiliar forms of culture found among the Galinstanians. Alongside her sisters, she embraces their plan for the future: living together and raising their children as a triad. She helps design the layout of their shared home, ensuring it provides quiet spaces for her own artistic process while keeping her close to her sisters.
 book8_title: "The Co-Mothering Pod (age-27.9)"
 book8_arc: >
-At twenty-eight, Kalea is raising her children alongside Saoirse and Indigo while establishing herself as a curator and independent artist. She takes charge of decorating their shared home, turning it into a beautiful, nurturing sanctuary. She paints murals in the children's rooms and ensures the communal living space is a haven of calm amidst the joyful chaos of family life. Her professional work increasingly focuses on exhibitions that bring human and Galinstanian artistic expression into meaningful conversation.
+    At twenty-eight, Kalea is raising her children alongside Saoirse and Indigo while establishing herself as a curator and independent artist. She takes charge of decorating their shared home, turning it into a beautiful, nurturing sanctuary. She paints murals in the children's rooms and ensures the communal living space is a haven of calm amidst the joyful chaos of family life. Her professional work increasingly focuses on exhibitions that bring human and Galinstanian artistic expression into meaningful conversation.
 book9_title: "The Curator (age-34.9)"
 book9_arc: >
-At thirty-five, Kalea is the lead curator of the Samaya Gallery and an accomplished cross-species cultural researcher. She oversees exhibitions that explore the artistic and expressive traditions of humans and Galinstanians, working with contributors from both communities to ensure their work is represented respectfully. She continues creating her own mixed-media art and develops virtual exhibitions that can be experienced throughout New Eden and beyond. Her flexible schedule and home studio allow her to remain actively involved in raising the children alongside her sisters.
-
---g
-
+    At thirty-five, Kalea is the lead curator of the Samaya Gallery and an accomplished cross-species cultural researcher. She oversees exhibitions that explore the artistic and expressive traditions of humans and Galinstanians, working with contributors from both communities to ensure their work is represented respectfully. She continues creating her own mixed-media art and develops virtual exhibitions that can be experienced throughout New Eden and beyond. Her flexible schedule and home studio allow her to remain actively involved in raising the children alongside her sisters.
+---
 
 <div class="article-content">
 <div class="card-bg" markdown="1">

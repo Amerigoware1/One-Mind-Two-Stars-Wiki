@@ -56,7 +56,6 @@ book8_arc: >
 book9_title: "The Established Scientist (age-41.0)"
 book9_arc: >
 	At forty-one, Tara is an accomplished exobiologist, respected researcher, and mother. Her contributions to the understanding of Galinstanian biology have helped establish a lasting scientific discipline in New Eden. She remains closely connected to her parents, siblings, and the original generation of human-Galinstanian bridge-builders, while mentoring younger researchers who have grown up in an integrated colony. She represents the continuation of scientific discovery beyond the pioneering generation.
-
 ---
 
 <div class="article-content">
