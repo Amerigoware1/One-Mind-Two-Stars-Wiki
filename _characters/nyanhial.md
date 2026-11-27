@@ -75,7 +75,7 @@ book9_arc: >
 <div class="card-bg" markdown="1">
 
 ### Overview
-Nyanhial Dok is a New Eden‑born dancer, former soccer player, and senior logistics coordinator for the Ares Colonial Mining Corps. Known for her spatial awareness, operational precision, and ability to synchronize complex moving parts, she evolved from a competitive youth athlete into the unseen backbone of colonial resource management. Working closely with her brother Nhial, she ensures geological survey data, equipment, and personnel are coordinated efficiently across deep‑colony operations, turning chaotic variables into predictable, sustainable systems.
+Nyanhial Dok, nicknamed Yanny, is a New Eden‑born dancer, former soccer player, and senior logistics coordinator for the Ares Colonial Mining Corps. Known for her spatial awareness, operational precision, and ability to synchronize complex moving parts, she evolved from a competitive youth athlete into the unseen backbone of colonial resource management. Working closely with her brother Nhial, she ensures geological survey data, equipment, and personnel are coordinated efficiently across deep‑colony operations, turning chaotic variables into predictable, sustainable systems.
  </div>
  
 <div class="card-bg" markdown="1">
