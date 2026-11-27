@@ -28,7 +28,7 @@ death_date:
 death_place:
 book3_title: "The Next Generation (Gestating)"
 book3_arc: >
-	Late in Book 3, following the courtship of	her parents, Ananya and Chen Wei, Tara is conceived. She exists as a promise of the future, gestating while her parents work to stabilize the colony's communication infrastructure.
+	Late in Book 3, following the courtship of her parents, Ananya and Chen Wei, Tara is conceived. She exists as a promise of the future, gestating while her parents work to stabilize the colony's communication infrastructure.
 book4_title: "Childhood & Colony Life (age-6.1)"
 book4_arc: >
 	At six years old, Tara is a bright and curious child growing up amidst the technological hum of the Listener Corps. Fascinated by her mother's scientific work and her father's interface equipment, she frequently asks questions that reveal an unusually analytical mind. She is already interested in understanding how things work, rather than simply accepting what adults tell her. She navigates colony life with the resilience of a child surrounded by a close-knit extended family.
