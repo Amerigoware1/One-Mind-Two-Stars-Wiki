@@ -73,7 +73,8 @@
       {% else %}
         <img class="age"
           src="{{ '/assets/images/' | append: page.character | append: '-book' | append: i | append: '.webp' | relative_url }}"
-          alt="{{ page.character }} Book {{ i }}">
+          alt="{{ page.character }} Book {{ i }}"
+          onerror="this.onerror=null;this.src='{{ '/assets/images/portrait-placeholder.png' | relative_url }}';">
       {% endif %}
     {% endfor %}
   </div>
@@ -107,7 +108,8 @@
         <li class="insignia-item">
           <div class="insignia-box">
             <img src="{{ '/assets/images/insignias/' | append: page.insignia | append: '.webp' | relative_url }}"
-              alt="{{ page.insignia | replace: '-', ' ' | capitalize }} Insignia" class="insignia-badge">
+              alt="{{ page.insignia | replace: '-', ' ' | capitalize }} Insignia" class="insignia-badge"
+              onerror="this.style.display='none';">
           </div>
         </li>
         {% endif %}

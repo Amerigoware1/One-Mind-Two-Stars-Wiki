@@ -7,10 +7,10 @@ portrait-book2: "/assets/images/zahara-book2.webp"
 portrait-book3: "/assets/images/zahara-book3.webp"
 portrait-book4: "/assets/images/zahara-book4.webp"
 portrait-book5: "/assets/images/zahara-book5.webp"
-portrait-book6: "/assets/images/zaraha-book6.webp"
-portrait-book7: "/assets/images/zaraha-book7.webp"
-portrait-book8: "/assets/images/zaraha-book8.webp"
-portrait-book9: "/assets/images/zaraha-book9.webp"
+portrait-book6: "/assets/images/zahara-book6.webp"
+portrait-book7: "/assets/images/zahara-book7.webp"
+portrait-book8: "/assets/images/zahara-book8.webp"
+portrait-book9: "/assets/images/zahara-book9.webp"
 affiliation: Utopis Colony; Administrative Corps
 birthday: June 22, 2225
 birthplace: Utopis

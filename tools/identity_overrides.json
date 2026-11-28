@@ -1,0 +1,247 @@
+{
+  "aditi": {
+    "insignia": "bridge",
+    "hair": [
+      "Default: dark brown, straight, medium density — kept neat and short",
+      "Alternate: softly grown out at the temples during long research stints",
+      "Color: dark brown (lightness 8/10)"
+    ],
+    "colors": [
+      "Skin tone: 5.5 / 10, warm — warm medium, mother's tone with father's cast",
+      "Hair tone: dark brown, nearly black in low light",
+      "Clothing: simple neat colony wear in muted tones; mediation whites for formal duty"
+    ],
+    "outfits": [
+      "Everyday: simple, tidy colony wear — nothing that draws attention",
+      "Formal: Inter-Species Mediation Center dress whites with bridge insignia",
+      "Cultural: soft layered clothing for long ANI interface sessions"
+    ],
+    "props": [
+      "ANI neural interface headset",
+      "Ethics case files and consent charters",
+      "Hand-bound notebook of mediation notes"
+    ],
+    "scene": [
+      "Home: Chentel family dwelling, New Eden",
+      "Workplace: Inter-Species Mediation Center; Resonance Research Center",
+      "Cultural: quiet reading corners, mediation chambers, family dinners"
+    ],
+    "expressions": [
+      "Neutral: calm, listening stillness",
+      "Happy: slow, unguarded warmth",
+      "Angry: rare — quiet, precise disappointment",
+      "Afraid: withdraws into methodical checklists",
+      "Determined: patient, immovable bridge-building"
+    ]
+  },
+  "jia": {
+    "insignia": "med",
+    "hair": [
+      "Default: dark brown, thick waves, low ponytail or practical twist",
+      "Alternate: loose and slightly chaotic after a double shift",
+      "Color: dark brown (lightness 8/10)"
+    ],
+    "colors": [
+      "Skin tone: 5.5 / 10, warm — warm medium-brown mix of both parents",
+      "Hair tone: dark brown, sun-warmed at the ends",
+      "Clothing: medical scrubs in soft greens, cardigans over everything"
+    ],
+    "outfits": [
+      "Everyday: practical scrubs, sleeves pushed up, soft cardigan",
+      "Formal: New Eden Medical Center dress uniform",
+      "Cultural: community clinic aprons, rescue-era field gear"
+    ],
+    "props": [
+      "Medical scanner and paediatric care kit",
+      "Clipboard of shift charts, always half-filled",
+      "Pocket snacks for young patients"
+    ],
+    "scene": [
+      "Home: Chentel family dwelling, New Eden",
+      "Workplace: New Eden Medical Center — emergency bay and paediatric ward",
+      "Cultural: community health clinics, neighbourhood kitchens"
+    ],
+    "expressions": [
+      "Neutral: bright, assessing",
+      "Happy: quick laugh, whole-face grin",
+      "Angry: sharp, protective flare",
+      "Afraid: talks faster, moves faster",
+      "Determined: rolls up sleeves and gets practical"
+    ]
+  },
+  "kalea": {
+    "insignia": "cult-rel",
+    "hair": [
+      "Default: dark wavy, tied up with whatever paintbrush is closest",
+      "Alternate: loose and gallery-presentable for openings",
+      "Color: dark brown (lightness 8/10)"
+    ],
+    "colors": [
+      "Skin tone: 4.5 / 10, warm — warm medium mix of Maya and Sam",
+      "Hair tone: dark brown, faint copper in strong light",
+      "Clothing: working clothes layered with colour smudges; gallery formalwear in deep tones"
+    ],
+    "outfits": [
+      "Everyday: paint-smeared work clothes, sleeves rolled, apron over all",
+      "Formal: gallery opening attire — structured, quiet, one bold colour",
+      "Cultural: Samaya Gallery curator layers, cross-species exhibition wear"
+    ],
+    "props": [
+      "Sketchbook and mixed-media tools",
+      "Gallery exhibition plans and layout drafts",
+      "Paint-stained hands, usually holding a brush"
+    ],
+    "scene": [
+      "Home: Keahi-Calder shared home — her studio corner and the children's mural room",
+      "Workplace: Samaya Gallery & Museum of Integration",
+      "Cultural: exhibition openings, cross-species installations, virtual galleries"
+    ],
+    "expressions": [
+      "Neutral: calm, penetrating observation",
+      "Happy: soft, private smile",
+      "Angry: silent, then devastatingly precise",
+      "Afraid: retreats into making",
+      "Determined: steady hands, total focus"
+    ]
+  },
+  "indigo": {
+    "insignia": "sci-tech",
+    "hair": [
+      "Default: bald — congenital atrichia inherited from Sam",
+      "Alternate: bold geometric makeup or a tech-enhanced headpiece",
+      "Color: none"
+    ],
+    "colors": [
+      "Skin tone: 3 / 10, cool — fairer mix, Sam's atrichia trait",
+      "Hair tone: none; brow and lash lines drawn in bold geometry",
+      "Clothing: sharp structural pieces in dark colours, faintly lit by datapads"
+    ],
+    "outfits": [
+      "Everyday: dark structured clothing, geometric makeup, headpiece",
+      "Formal: ANI research dress with a precision-built headpiece",
+      "Cultural: cross-species research attire — quiet, functional, many pockets"
+    ],
+    "props": [
+      "Several datapads, always glowing",
+      "ANI calibration rig",
+      "Custom tech headpiece"
+    ],
+    "scene": [
+      "Home: Keahi-Calder shared home — home research studio",
+      "Workplace: Listener Corps labs; remote ANI research studio",
+      "Cultural: distributed research collectives, New Eden data networks"
+    ],
+    "expressions": [
+      "Neutral: sharp, analytical",
+      "Happy: bright, delighted curiosity",
+      "Angry: clipped, cold precision",
+      "Afraid: over-clocks into problem-solving",
+      "Determined: focused, quietly relentless"
+    ]
+  },
+  "nia": {
+    "insignia": "bridge",
+    "hair": [
+      "Default: dark golden blonde curls, two practical braids or a messy half-up",
+      "Alternate: loose and windblown on survey routes",
+      "Color: dark golden blonde (lightness 4/10)"
+    ],
+    "colors": [
+      "Skin tone: 4 / 10, warm — light olive, sun-kissed from surface work",
+      "Hair tone: dark golden blonde, bright in daylight",
+      "Clothing: field-worn survey layers, stones and cords at the wrist"
+    ],
+    "outfits": [
+      "Everyday: survey layers, barefoot indoors, braids tied back",
+      "Formal: Global Planetary Survey Team field formal",
+      "Cultural: resonance archive wear, keepsake cords and stone pouches"
+    ],
+    "props": [
+      "Resonant stones tuned to specific memories",
+      "Archivist's field recorder",
+      "Braided cord keepsakes from the extended family"
+    ],
+    "scene": [
+      "Home: the Wayfarer and the Carisco-Bowers extended household",
+      "Workplace: Global Planetary Survey Team field camps",
+      "Cultural: resonance archives, planetary survey routes"
+    ],
+    "expressions": [
+      "Neutral: watching, half-smiling",
+      "Happy: open, chiming laugh",
+      "Angry: hurt before anger",
+      "Afraid: reaches for a stone",
+      "Determined: quiet, stubborn resolve"
+    ]
+  },
+  "saoirse": {
+    "insignia": "cult-rel",
+    "hair": [
+      "Default: dyed wild blues and purples, thick waves, usually mid-length",
+      "Alternate: fresh dye, half-shaved, or pinned up with audio clips",
+      "Color: variable by choice (lightness 3/10 base)"
+    ],
+    "colors": [
+      "Skin tone: 5 / 10, warm — Maya's Hawaiian golden-tan",
+      "Hair tone: dyed cobalt, indigo and violet",
+      "Clothing: eclectic layers hung with sonic jewellery and audio gear"
+    ],
+    "outfits": [
+      "Everyday: layered thrifted colour, audio equipment worn as jewellery",
+      "Formal: sonic experience designer attire — one sculptural sound piece",
+      "Cultural: sound installation workwear, festival layers"
+    ],
+    "props": [
+      "Sonic jewellery and portable audio rig",
+      "Field recorder",
+      "Headphones around the neck, always"
+    ],
+    "scene": [
+      "Home: Keahi-Calder shared home, full of sound",
+      "Workplace: acoustic ecology field sites and sound studios",
+      "Cultural: sound installations, Four Rivers Festival"
+    ],
+    "expressions": [
+      "Neutral: bright, restless",
+      "Happy: loud and infectious",
+      "Angry: flares hot and fast",
+      "Afraid: covers it with noise",
+      "Determined: inventive, improvisational"
+    ]
+  },
+  "tara": {
+    "insignia": "sci-tech",
+    "hair": [
+      "Default: long dark brown waves, tied back for fieldwork",
+      "Alternate: loose when she is reading, which is most of the time",
+      "Color: dark brown (lightness 8/10)"
+    ],
+    "colors": [
+      "Skin tone: 6 / 10, warm — mother's warm brown",
+      "Hair tone: dark brown, thick and heavy",
+      "Clothing: practical colony roam wear, sample pouches at the belt"
+    ],
+    "outfits": [
+      "Everyday: practical clothing for colony roaming, hair tied back",
+      "Formal: Listener Corps affiliate dress, xenobiology research insignia",
+      "Cultural: survey kit, field journal in the thigh pocket"
+    ],
+    "props": [
+      "Field journal and sample kit",
+      "Survey scanner",
+      "Climbing rig from childhood explorations"
+    ],
+    "scene": [
+      "Home: Chentel family dwelling, New Eden",
+      "Workplace: xenobiology research labs; Listener Corps annex",
+      "Cultural: colony explore routes, survey expeditions"
+    ],
+    "expressions": [
+      "Neutral: quiet assessment",
+      "Happy: dry, surprised humour",
+      "Angry: goes very still",
+      "Afraid: gathers data first",
+      "Determined: methodical, unhurried"
+    ]
+  }
+}
