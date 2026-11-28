@@ -2499,7 +2499,7 @@
     "height": 3360
   },  
   {
-    "file": "keahi-calder-triplets-home.webp",
+    "file": "keahi-calder-triplets-home.mp4",
     "title": "Keahi-calder triplets",
     "description": "The Keahi-calder triplets in the living room of their home in New Eden.",
     "tags": [
@@ -2512,7 +2512,8 @@
       "book 5"
     ],
     "width": 1024,
-    "height": 1536
+    "height": 1536,
+    "poster": "keahi-calder-triplets-home.webp"
   },
   {
     "file": "keahi-calder-triplets-playing.webp",
