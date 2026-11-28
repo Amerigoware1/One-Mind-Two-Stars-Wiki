@@ -4,7 +4,9 @@ title: Indigo Nova Keahi-Calder
 portrait: "/assets/images/indigo-book5.webp"
 portrait-book5: "/assets/images/indigo-book5.webp"
 portrait-book6: "/assets/images/indigo-book6.webp"
-portrait-book7: "/assets/images/indigo-book7.webp"
+portrait-book7:
+- "/assets/images/indigo-book7.webp"
+- "/assets/images/indigo-book7-alt.webp"
 portrait-book8: "/assets/images/indigo-book8.webp"
 portrait-book9: "/assets/images/indigo-book9.webp"
 affiliation: New Eden Colony; ANI Systems Evolution Specialist; Cross-Species Researcher

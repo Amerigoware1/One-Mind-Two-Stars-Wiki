@@ -5,7 +5,9 @@ title: Jia Kiran Chentel
 portrait: "/assets/images/jia-book5.webp"
 portrait-book4: "/assets/images/jia-book4.webp"
 portrait-book5: "/assets/images/jia-book5.webp"
-portrait-book6: "/assets/images/jia-book6.webp"
+portrait-book6:
+- "/assets/images/jia-book6.webp"
+- "/assets/images/jia-book6-alt.webp"
 portrait-book7: "/assets/images/jia-book7.webp"
 portrait-book8: "/assets/images/jia-book8.webp"
 portrait-book9: "/assets/images/jia-book9.webp"

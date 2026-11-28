@@ -5,7 +5,9 @@ title: Saoirse Echo Keahi-Calder
 portrait: "/assets/images/saoirse-book5.webp"
 portrait-book5: "/assets/images/saoirse-book5.webp"
 portrait-book6: "/assets/images/saoirse-book6.webp"
-portrait-book7: "/assets/images/saoirse-book7.webp"
+portrait-book7: 
+- "/assets/images/saoirse-book7.webp"
+- "/assets/images/saoirse-book7-alt.webp"
 portrait-book8: "/assets/images/saoirse-book8.webp"
 portrait-book9: "/assets/images/saoirse-book9.webp"
 affiliation: New Eden Colony; Acoustic Ecologist & Sonic Experience Designer

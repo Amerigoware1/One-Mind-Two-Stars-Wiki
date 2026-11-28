@@ -5,7 +5,9 @@ title: Kalea Melody Keahi-Calder
 portrait: "/assets/images/kalea-book5.webp"
 portrait-book5: "/assets/images/kalea-book5.webp"
 portrait-book6: "/assets/images/kalea-book6.webp"
-portrait-book7: "/assets/images/kalea-book7.webp"
+portrait-book7: 
+- "/assets/images/kalea-book7.webp"
+- "/assets/images/kalea-book7-alt.webp"
 portrait-book8: "/assets/images/kalea-book8.webp"
 portrait-book9: "/assets/images/kalea-book9.webp"
 affiliation: New Eden Colony; Lead Curator of Cross-Species Arts & Cultural Heritage; Visual Artist
