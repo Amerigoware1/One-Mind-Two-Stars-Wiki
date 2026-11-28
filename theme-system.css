@@ -488,3 +488,51 @@ body.theme-holo #themeSelect:focus {
   text-transform: none;
   letter-spacing: normal;
 }
+/* ==================================================== */
+/*  FEATURE LINKS – theme-aware overrides               */
+/* ==================================================== */
+
+/* Default (Neon) */
+.index-links a.feature-link {
+  border: 1px solid var(--neon-magenta) !important;
+  background: rgba(180, 74, 255, 0.10) !important;
+  box-shadow: 0 0 14px rgba(180, 74, 255, 0.25);
+  animation: none; /* optional: remove the old pulse if you want */
+}
+
+.index-links a.feature-link:hover {
+  background: rgba(180, 74, 255, 0.22) !important;
+  border-color: var(--neon-cyan) !important;
+  box-shadow: 0 0 25px rgba(180, 74, 255, 0.45), 0 0 35px rgba(0, 240, 255, 0.25);
+  color: #fff;
+}
+
+/* Gold */
+body.theme-gold .index-links a.feature-link {
+  border: 1px solid rgba(212, 175, 55, 0.55) !important;
+  background: rgba(212, 175, 55, 0.09) !important;
+  box-shadow: 0 0 14px rgba(212, 175, 55, 0.25);
+}
+
+body.theme-gold .index-links a.feature-link:hover {
+  background: rgba(212, 175, 55, 0.22) !important;
+  border-color: #fff !important;
+  box-shadow: 0 0 28px rgba(212, 175, 55, 0.55), inset 0 0 12px rgba(212, 175, 55, 0.2);
+}
+
+/* Holo */
+body.theme-holo .index-links a.feature-link {
+  border: 1px solid rgba(0, 245, 255, 0.45) !important;
+  background: rgba(0, 80, 120, 0.25) !important;
+  box-shadow: 0 0 16px rgba(0, 245, 255, 0.25);
+  backdrop-filter: blur(6px);
+}
+
+body.theme-holo .index-links a.feature-link:hover {
+  background: rgba(0, 120, 160, 0.35) !important;
+  border-color: var(--neon-magenta) !important;
+  box-shadow:
+    0 0 28px rgba(0, 245, 255, 0.45),
+    0 0 40px rgba(255, 0, 170, 0.2);
+  color: #fff;
+}
