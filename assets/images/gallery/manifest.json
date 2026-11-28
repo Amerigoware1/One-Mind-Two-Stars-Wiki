@@ -2807,7 +2807,7 @@
     "description": "A pacifier design.",
     "tags": [
       "pacifier",
-      "baby",
+      "weapon",
       "technology"
     ],
     "width": 2528,
@@ -2820,7 +2820,7 @@
     "description": "An alternate pacifier design.",
     "tags": [
       "pacifier",
-      "baby",
+      "weapon",
       "technology"
     ],
     "width": 2528,
@@ -2834,7 +2834,8 @@
     "tags": [
       "ripple",
       "toddler",
-      "technology"
+      "galinstanian",
+      "alien"
     ],
     "width": 682,
     "height": 1024
