@@ -13,7 +13,7 @@
     ],
     "width": 1664,
     "height": 2496
-  },    
+  },
   {
     "file": "newborn-celectra.webp",
     "title": "Newborn Celectra",
@@ -59,20 +59,6 @@
     "poster": "baby-celectra-eating.webp"
   },
   {
-    "file": "baby-celectra-eating.webp",
-    "title": "Baby Celectra Eating",
-    "description": "Celectra eating in a highchair.",
-    "tags": [
-      "celectra",
-      "space station",
-      "utopis",
-      "living quarters",
-      "pre-series"
-    ],
-    "width": 848,
-    "height": 1233
-  },    
-  {
     "file": "gazing-through-port-hole.jpg",
     "title": "Utopis Station Living Room",
     "description": "The Carisco family's living quarters aboard the Utopis space station, featuring a view of Ares.",
@@ -102,20 +88,6 @@
     "poster": "checkup.webp"
   },
   {
-    "file": "checkup.webp",
-    "title": "Checkup with Dr. Cruiz",
-    "description": "A checkup with Dr. Cruiz in the Utopis station medical bay.",
-    "tags": [
-      "celectra",
-      "space station",
-      "utopis",
-      "medical bay",
-      "book 1"
-    ],
-    "width": 832,
-    "height": 1248
-  },
-  {
     "file": "celectra-reading.webp",
     "title": "Celectra Reading",
     "description": "Celectra reading a book in the Utopis station living quarters",
@@ -127,7 +99,7 @@
     ],
     "width": 1280,
     "height": 720
-  },  
+  },
   {
     "file": "celectra-age8.webp",
     "title": "Celectra at Age 8",
@@ -149,7 +121,7 @@
     ],
     "width": 672,
     "height": 1000
-  },  
+  },
   {
     "file": "celectra-karate.webp",
     "title": "Celectra karate",
@@ -178,19 +150,6 @@
     "poster": "sparring-solo.webp"
   },
   {
-    "file": "sparring-solo.webp",
-    "title": "Celectra Sparring Solo",
-    "description": "Celectra practicing by herself in the dojo.",
-    "tags": [
-      "celectra",
-      "carisco",
-      "athletic activities",
-      "karate"
-    ],
-    "width": 1024,
-    "height": 1536
-  },
-  {
     "file": "celectra-practicing.mp4",
     "title": "Celectra practicing",
     "description": "Celectra practicing karate",
@@ -202,7 +161,7 @@
     ],
     "width": 720,
     "height": 1080,
-    "poster": "celectra-self-sparing.webp" 
+    "poster": "celectra-self-sparing.webp"
   },
   {
     "file": "celectra-self-sparing.webp",
@@ -231,22 +190,7 @@
     ],
     "width": 1226,
     "height": 1283,
-    "poster": "celectra-vs-aulii.webp" 
-  },
-  {
-    "file": "celectra-vs-aulii.webp",
-    "title": "Celectra vs. Aulii",
-    "description": "Celectra sparring against Aulii in the dojo.",
-    "tags": [
-      "celectra",
-      "carisco",
-      "aulii",
-      "Vongphachanh",
-      "athletic activities",
-      "karate"
-    ],
-    "width": 1226,
-    "height": 1283
+    "poster": "celectra-vs-aulii.webp"
   },
   {
     "file": "karate1.mp4",
@@ -262,23 +206,8 @@
     ],
     "width": 1024,
     "height": 1536,
-    "poster": "karate1.webp" 
+    "poster": "karate1.webp"
   },
-  {
-    "file": "karate1.webp",
-    "title": "Celectra vs. Aulii",
-    "description": "Celectra sparring with Aulii in the dojo.",
-    "tags": [
-      "celectra",
-      "carisco",
-      "aulii",
-      "Vongphachanh",
-      "athletic activities",
-      "karate"
-    ],
-    "width": 1024,
-    "height": 1536
-  },        
   {
     "file": "acrobatics1.webp",
     "title": "Celectra acrobatics",
@@ -333,32 +262,6 @@
     "height": 1536,
     "poster": "dance2.webp"
   },
-  {
-    "file": "dance.webp",
-    "title": "Celectra Dance",
-    "description": "Celectra practicing dance.",
-    "tags": [
-      "celectra",
-      "carisco",
-      "athletic activities",
-      "dance"
-    ],
-    "width": 549,
-    "height": 837
-  },
-  {
-    "file": "dance2.webp",
-    "title": "Celectra Dance",
-    "description": "Celectra practicing dance.",
-    "tags": [
-      "celectra",
-      "carisco",
-      "athletic activities",
-      "dance"
-    ],
-    "width": 720,
-    "height": 1080
-  },  
   {
     "file": "gymnastics.webp",
     "title": "Celectra gymnastics",
@@ -696,7 +599,7 @@
     ],
     "width": 720,
     "height": 1080
-  },   
+  },
   {
     "file": "carisco-family.webp",
     "title": "The Carisco Family Portrait",
@@ -807,22 +710,8 @@
     ],
     "width": 1237,
     "height": 928,
-    "poster": "jenni-xara-first-birthday.webp" 
+    "poster": "jenni-xara-first-birthday.webp"
   },
-  {
-    "file": "jenni-xara-first-birthday.webp",
-    "title": "Jenni and Xara Bowers 1st Birthday",
-    "description": "Jenni Jo and Xara Zo Bowers celebrating their first birthday.",
-    "tags": [
-      "jenni jo",
-      "xara zo",
-      "bowers",
-      "toddlers",
-      "birthday"
-    ],
-    "width": 1536,
-    "height": 1024
-  },  
   {
     "file": "wedding.webp",
     "title": "Bowers Wedding",
@@ -1013,19 +902,6 @@
     "poster": "jenni-xara-aerial.webp"
   },
   {
-    "file": "jenni-xara-aerial.webp",
-    "title": "Xara and Jenni Perform",
-    "description": "Xara and Jenni performing an aerial dance.",
-    "tags": [
-      "xara zo",
-      "jenni jo",
-      "dance",
-      "book 5"
-    ],
-    "width": 4096,
-    "height": 4096
-  },
-  {
     "file": "elara-jenni-spicy.webp",
     "title": "Jenni and Elara as Teens",
     "description": "Portrait of Jenni and Elara during their teenage years.",
@@ -1077,20 +953,6 @@
     "width": 843,
     "height": 1264,
     "poster": "dee.webp"
-  },
-  {
-    "file": "dee.webp",
-    "title": "Dee with Wise Words",
-    "description": "Dee sharing words of wisdom.",
-    "tags": [
-      "dee",
-      "bonzi",
-      "gardening",
-      "hydoponics",
-      "book 5"
-    ],
-    "width": 843,
-    "height": 1264
   },
   {
     "file": "ani.png",
@@ -1172,18 +1034,6 @@
     "poster": "celectrum.jpg"
   },
   {
-    "file": "celectrum.jpg",
-    "title": "Celectrum",
-    "description": "The celectrum, an instrument invented by Jaxon.",
-    "tags": [
-      "celectrum",
-      "instrument",
-      "music"
-    ],
-    "width": 832,
-    "height": 1248
-  },
-  {
     "file": "ananya-age9.webp",
     "title": "Ananya at age 9",
     "description": "Ananya at age 9",
@@ -1216,17 +1066,6 @@
     "width": 1024,
     "height": 1536,
     "poster": "ananya-age16.webp"
-  },
-  {
-    "file": "ananya-age16.webp",
-    "title": "Ananya at Age 16",
-    "description": "Ananya at age 16 living in New Eden.",
-    "tags": [
-      "ananya",
-      "new eden"
-    ],
-    "width": 672,
-    "height": 1000
   },
   {
     "file": "chenwei-age10.webp",
@@ -1351,19 +1190,6 @@
     "poster": "xan-duska-oxi.webp"
   },
   {
-    "file": "xan-duska-oxi.webp",
-    "title": "Duska and Xan with Oxi",
-    "description": "Duska and Xan spending time with Oxi.",
-    "tags": [
-      "duska",
-      "xan",
-      "oxi",
-      "book 4"
-    ],
-    "width": 672,
-    "height": 1000
-  },  
-  {
     "file": "ethan-age10.webp",
     "title": "Ethan at age 10",
     "description": "Ethan at age 10",
@@ -1409,7 +1235,7 @@
     ],
     "width": 1536,
     "height": 1024
-  },   
+  },
   {
     "file": "swimming-hole.webp",
     "title": "The Swimming Hole",
@@ -1621,7 +1447,7 @@
     ],
     "width": 1664,
     "height": 2512
-  }, 
+  },
   {
     "file": "sam-alt.webp",
     "title": "Sam Homework",
@@ -1657,7 +1483,7 @@
     ],
     "width": 1086,
     "height": 1448
-  },  
+  },
   {
     "file": "sam-book2-alt.webp",
     "title": "Sam Age 12",
@@ -1698,20 +1524,6 @@
     "width": 1024,
     "height": 1536,
     "poster": "sam-and-maya.webp"
-  },
-  {
-    "file": "sam-and-maya.webp",
-    "title": "Sam and Maya",
-    "description": "Sam and Maya together at the Samaya Gallery and Museum of Integration.",
-    "tags": [
-      "maya",
-      "sam",
-      "gallery",
-      "museum",
-      "integration"
-    ],
-    "width": 1024,
-    "height": 1536
   },
   {
     "file": "leila-alt.webp",
@@ -1758,17 +1570,6 @@
     "height": 1448,
     "poster": "nyanhial-nhial.webp"
   },
-  {
-    "file": "nyanhial-nhial.webp",
-    "title": "Nyanhial and Nhial",
-    "description": "Nyanhial and Nhial doing schoolwork.",
-    "tags": [
-      "nyanhial",
-      "nhial"
-    ],
-    "width": 1086,
-    "height": 1448
-  },    
   {
     "file": "nyanhial-age8.webp",
     "title": "Nyanhial Chilling",
@@ -1921,7 +1722,7 @@
     ],
     "width": 1168,
     "height": 784
-  },  
+  },
   {
     "file": "zahara-age7.webp",
     "title": "Zahara at age 7",
@@ -1981,20 +1782,6 @@
     "poster": "zahara-playing.webp"
   },
   {
-    "file": "zahara-playing.webp",
-    "title": "Zahara at Age 28",
-    "description": "Zahara playing at home.",
-    "tags": [
-      "zahara",
-      "home",
-      "Utopis",
-      "playing",
-      "book 4"
-    ],
-    "width": 672,
-    "height": 1000
-  },
-  {
     "file": "zuri-age8.webp",
     "title": "Zuri playing",
     "description": "Zuri playing in his yard.",
@@ -2048,19 +1835,6 @@
     "poster": "zuri-emma-with-twins.webp"
   },
   {
-    "file": "zuri-emma-with-twins.webp",
-    "title": "Zuri, Emma, and the Twins",
-    "description": "Zuri, Emma, and the twins playing together.",
-    "tags": [
-      "zuri",
-      "emma",
-      "twins",
-      "book 4"
-    ],
-    "width": 1536,
-    "height": 1024
-  },
-  {
     "file": "elara-age8.mp4",
     "title": "Elara at age 8",
     "description": "Elara at age 8, playing in her living room.",
@@ -2073,19 +1847,6 @@
     "width": 843,
     "height": 1264,
     "poster": "elara-age8.webp"
-  },
-  {
-    "file": "elara-age8.webp",
-    "title": "Elara at Age 8",
-    "description": "Elara at age 8, playing in her living room.",
-    "tags": [
-      "elara",
-      "vance",
-      "childhood",
-      "new eden"
-    ],
-    "width": 843,
-    "height": 1264
   },
   {
     "file": "xara-kael-age14.webp",
@@ -2128,19 +1889,6 @@
     "poster": "xara-kael-age21.webp"
   },
   {
-    "file": "xara-kael-age21.webp",
-    "title": "Xara and Kael at Age 21",
-    "description": "Xara and Kael together at age 21.",
-    "tags": [
-      "xara",
-      "kael",
-      "book 6",
-      "new eden"
-    ],
-    "width": 720,
-    "height": 1080
-  },
-  {
     "file": "xara-pregnant.webp",
     "title": "Xara at age 21",
     "description": "Xara at age 21, pregnant with Jasper.",
@@ -2178,20 +1926,6 @@
     "width": 1536,
     "height": 1024,
     "poster": "jasmine-jasper-twister.webp"
-  },
-  {
-    "file": "jasmine-jasper-twister.webp",
-    "title": "Jasmine and Jasper Playing",
-    "description": "Jasmine and Jasper playing together at Celectra's.",
-    "tags": [
-      "jasmine",
-      "childhood",
-      "new eden",
-      "jasper",
-      "book 6"
-    ],
-    "width": 1536,
-    "height": 1024
   },
   {
     "file": "jasmine-with-jasper-xara-kael.webp",
@@ -2273,7 +2007,7 @@
     ],
     "width": 672,
     "height": 1000
-  },  
+  },
   {
     "file": "mei-sora-nia.webp",
     "title": "Mei, Sora and Nia",
@@ -2469,7 +2203,7 @@
     ],
     "width": 1024,
     "height": 1536
-  },  
+  },
   {
     "file": "kalea-studying.webp",
     "title": "Kalea Studying",
@@ -2497,7 +2231,7 @@
     ],
     "width": 5024,
     "height": 3360
-  },  
+  },
   {
     "file": "keahi-calder-triplets-home.mp4",
     "title": "Keahi-calder triplets",
@@ -2546,20 +2280,6 @@
     "height": 1024
   },
   {
-    "file": "saoirse-playroom.webp",
-    "title": "Saoirse in the Playroom",
-    "description": "Saoirse in the gallery playroom in New Eden.",
-    "tags": [
-      "keahi-calder",
-      "saoirse",
-      "new eden",
-      "family",
-      "book 5"
-    ],
-    "width": 1536,
-    "height": 1024
-  },      
-  {
     "file": "reclamatic.png",
     "title": "Reclamatic (cleaning bot)",
     "description": "A robotic floor cleaner that uses MRI tech to deatomize dust, debris, germs and even stains.",
@@ -2599,19 +2319,6 @@
     "poster": "utopis.png"
   },
   {
-    "file": "utopis.webp",
-    "title": "Utopis",
-    "description": "Exterior view of the Utopis space station.",
-    "tags": [
-      "utopis",
-      "space station",
-      "orbit",
-      "childhood home"
-    ],
-    "width": 1000,
-    "height": 688
-  },
-  {
     "file": "utopis-transparent.webp",
     "title": "Utopis",
     "description": "A transparent-background illustration of the Utopis space station.",
@@ -2622,18 +2329,6 @@
     ],
     "width": 946,
     "height": 651
-  },
-  {
-    "file": "utopis.svg",
-    "title": "Utopis Map",
-    "description": "A detailed map of the Utopis space station.",
-    "tags": [
-      "utopis",
-      "space station",
-      "map"
-    ],
-    "width": 6400,
-    "height": 4800
   },
   {
     "file": "ares-chaos.webp",
@@ -2704,19 +2399,6 @@
     "poster": "chaos-demeter-view-from-ares.webp"
   },
   {
-    "file": "chaos-demeter-view-from-ares.webp",
-    "title": "View of Chaos and Demeter from Ares",
-    "description": "A daytime view of Chaos and Demeter from Ares.",
-    "tags": [
-      "ares",
-      "chaos",
-      "demeter",
-      "daytime"
-    ],
-    "width": 1536,
-    "height": 1024
-  },
-  {
     "file": "chaos-demeter-view-twilight.webp",
     "title": "View of Chaos and Demeter from Ares at Twilight",
     "description": "A twilight view of Chaos and Demeter from Ares.",
@@ -2728,7 +2410,7 @@
     ],
     "width": 1536,
     "height": 1024
-  },    
+  },
   {
     "file": "pison-river.webp",
     "title": "Pison River",
@@ -2741,7 +2423,7 @@
     ],
     "width": 768,
     "height": 512
-  },  
+  },
   {
     "file": "new-eden-book1.webp",
     "title": "New Eden",
@@ -2945,7 +2627,8 @@
       "technology"
     ],
     "width": 2528,
-    "height": 1696
+    "height": 1696,
+    "category": "Technology & Science"
   },
   {
     "file": "pacifier2.webp",
@@ -2957,7 +2640,8 @@
       "technology"
     ],
     "width": 2528,
-    "height": 1696
+    "height": 1696,
+    "category": "Technology & Science"
   },
   {
     "file": "ripple-emulating-toddler.png",
@@ -3064,5 +2748,18 @@
     ],
     "width": 2752,
     "height": 1536
+  },
+  {
+    "file": "utopis.webp",
+    "title": "Utopis",
+    "description": "Exterior view of the Utopis space station.",
+    "tags": [
+      "utopis",
+      "space station",
+      "orbit",
+      "childhood home"
+    ],
+    "width": 1000,
+    "height": 688
   }
 ]
