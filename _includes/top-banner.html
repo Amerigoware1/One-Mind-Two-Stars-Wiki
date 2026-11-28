@@ -9,7 +9,11 @@
 
     <div style="display: flex; align-items: center; gap: 1rem;">
       <a href="{{ '/' | relative_url }}" class="home-button">🏠 Home</a><a href="{{ '/glossary.html' | relative_url }}" class="home-button">📘 Glossary</a> 
-      <button id="themeToggleBtn" onclick="toggleGoldTheme()">Toggle Gold Theme</button>
+      <select id="themeSelect" aria-label="Choose theme">
+        <option value="neon">Neon</option>
+        <option value="gold">Gold</option>
+        <option value="holo">Holo</option>
+      </select>
       <span id="dynamic-banner-nav" style="display: flex; gap: 1rem;"></span>
     </div>
 
@@ -17,18 +21,31 @@
 </div>
 
 <script>
-  // 1. Move function to global scope so onclick="toggleGoldTheme()" can find it
-  function toggleGoldTheme() {
-    document.body.classList.toggle('theme-gold');
-    const isGold = document.body.classList.contains('theme-gold');
-    localStorage.setItem('preferred-theme', isGold ? 'gold' : 'default');
+  (function () {
+  const select = document.getElementById('themeSelect');
+  if (!select) return;
+
+  // Apply a theme
+  function applyTheme(theme) {
+    document.body.classList.remove('theme-gold', 'theme-holo');
+    if (theme === 'gold') {
+      document.body.classList.add('theme-gold');
+    } else if (theme === 'holo') {
+      document.body.classList.add('theme-holo');
+    }
+    // 'neon' = no extra class (default)
+    localStorage.setItem('preferred-theme', theme);
+    select.value = theme;
   }
 
-  // 2. Apply saved theme preference immediately on script load (prevents flash of wrong theme)
-  if (localStorage.getItem('preferred-theme') === 'gold') {
-    document.body.classList.add('theme-gold');
-  }
+  // Restore saved preference as early as possible (prevents flash)
+  const saved = localStorage.getItem('preferred-theme') || 'neon';
+  applyTheme(saved);
 
+  // Listen for changes
+  select.addEventListener('change', () => {
+    applyTheme(select.value);
+  });
   document.addEventListener("DOMContentLoaded", function() {
     const bannerNav = document.getElementById('dynamic-banner-nav');
     if (!bannerNav) return;
