@@ -2242,6 +2242,7 @@
       "nia",
       "vongphachanh",
       "samir",
+      "reyes",
       "wayfarer",
       "book 7"
     ],
@@ -2255,7 +2256,8 @@
     "tags": [
       "nia",
       "wayfarer",
-      "book 7"
+      "book 7",
+      "vongphachanh"
     ],
     "width": 1664,
     "height": 2496
@@ -2267,7 +2269,8 @@
     "tags": [
       "nia",
       "wayfarer",
-      "book 7"
+      "book 7",
+      "vongphachanh"
     ],
     "width": 720,
     "height": 1280
@@ -2280,7 +2283,8 @@
       "sora",
       "nia",
       "wayfarer",
-      "book 8"
+      "book 8",
+      "vongphachanh"
     ],
     "width": 2528,
     "height": 1696
@@ -2292,7 +2296,8 @@
     "tags": [
       "nia",
       "wayfarer",
-      "book 8"
+      "book 8",
+      "vongphachanh"
     ],
     "width": 1376,
     "height": 768
@@ -2303,6 +2308,7 @@
     "description": "Jia being silly at home in New Eden.",
     "tags": [
       "jia",
+      "chentel",
       "new eden",
       "book 4.5"
     ],
@@ -2315,6 +2321,7 @@
     "description": "Jia studying at home in New Eden.",
     "tags": [
       "jia",
+      "chentel",
       "new eden",
       "book 5"
     ],
@@ -2327,6 +2334,7 @@
     "description": "Jia at age 17.",
     "tags": [
       "jia",
+      "chentel",
       "new eden",
       "book 5"
     ],
@@ -2557,18 +2565,6 @@
     ],
     "width": 1042,
     "height": 576
-  },
-  {
-    "file": "og.webp",
-    "title": "Ares Dawn Calculator",
-    "description": "A landscape illustration used for the Ares dawn calculator.",
-    "tags": [
-      "ares",
-      "new eden",
-      "landscape"
-    ],
-    "width": 1584,
-    "height": 672
   },
   {
     "file": "chaos-demeter-view-from-ares.mp4",
