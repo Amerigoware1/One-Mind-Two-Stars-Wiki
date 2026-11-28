@@ -28,6 +28,13 @@ permalink: /gallery/
     <option value="">All Tags</option>
   </select>
 
+  <select id="group-by">
+    <option value="none">No Grouping</option>
+    <option value="category" selected>Group by Category</option>
+    <option value="book">Group by Book</option>
+    <option value="year">Group by Year</option>
+  </select>
+
 </div>
 
 <!-- Gallery Grid -->
@@ -38,11 +45,49 @@ permalink: /gallery/
 
 <style>
 .gallery-grid {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.gallery-grid.is-flat {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1rem;
-  margin-top: 1.5rem;
 }
+
+.gallery-section {
+  margin-bottom: 2.5rem;
+}
+
+.gallery-section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  border-bottom: 1px solid #1e0a47;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-section-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #b79aff;
+  text-transform: capitalize;
+}
+
+.gallery-section-count {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.gallery-section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+</style>
+
+<style>
 
 .card-bg img,
 .card-bg video {
@@ -200,10 +245,84 @@ document.addEventListener("DOMContentLoaded", async () => {
   const galleryEl = document.getElementById("gallery");
   const searchEl = document.getElementById("gallery-search");
   const tagFilterEl = document.getElementById("tag-filter");
+  const groupByEl = document.getElementById("group-by");
 
   let allItems = [];
   let currentItems = [];
   const baseUrl = "{{ '/assets/images/gallery/' | relative_url }}";
+
+  // ---- Category detection -------------------------------------------------
+  // Priority order matters: the first matching rule wins.
+  // You can re-order or edit these lists without touching the manifest.
+  const CATEGORY_RULES = [
+    { name: "Characters & Portraits", tags: ["portrait", "sketch", "drawing", "paint", "femme", "anatomy"] },
+    { name: "Places & Environments",  tags: ["building", "environment", "landscape", "town", "home", "house", "grotto", "cave", "museum", "observatory", "new eden", "utopis", "nexus", "samaya", "wayfarer", "pacifier", "central buildings", "living quarters", "town square", "pison river", "geothermal"] },
+    { name: "Technology & Science",   tags: ["technology", "science", "schematic", "diagram", "map", "computer lab", "tech lab", "holopad", "interface", "cryo-silk", "celectrum", "celectra", "bismuth", "minerals", "geology", "rocks", "stones", "material", "robot", "bot", "auto otto", "glide pod", "pod chair", "resonance chamber", "medical", "medicine", "medical bay", "surgery", "biology", "psychology", "hydoponics", "gardening", "chemistry"] },
+    { name: "Space",                  tags: ["space", "planet", "planets", "moon", "moons", "stars", "orbit", "sun", "chaos", "demeter", "ares", "galinstanian", "species", "alien", "spacecraft", "transport", "space station"] },
+    { name: "Culture & Daily Life",   tags: ["activity", "food", "cooking", "drink", "dining", "music", "instrument", "dance", "dancing", "yoga", "karate", "dojo", "soccer", "swim", "swimming", "pool", "gym", "exercise", "exercize", "acrobatics", "flexibility", "athletic activities", "gymnastics", "reading", "study", "homework", "cleaning", "relaxation", "relaxing", "playing", "wedding", "birthday", "government", "council", "organization", "security", "listener corps", "elite", "education", "clothing", "sun hat"] },
+    { name: "Family & Childhood",     tags: ["family", "baby", "babies", "newborn", "toddler", "toddlers", "childhood", "childhood home", "youth", "pregnancy", "pregnant", "mother", "daughter", "twins", "babysitting", "kiss", "reminiscence", "social"] },
+    { name: "Books & Anthology",      tags: ["anthology", "book 1", "book 2", "book 3", "book 4", "book 4.5", "book 5", "book 6", "book 7", "book 8", "book1", "book2", "book3", "book4", "book5", "pre-series", "gallery", "collection"] },
+  ];
+  const FALLBACK_CATEGORY = "Other";
+
+  // Character names (manifest tags) that should land in Characters & Portraits.
+  const CHARACTER_TAGS = new Set([
+    "aditi ming","alex","ananya","aulii","auto otto","bowers","bonzi","carisco",
+    "chen wei","chentel","chime","dee","dr. troy","duska","duška","elara","emma",
+    "ethan","glockenspiel","hiro","indigo","jasmine","jasper","jaxon","jenni",
+    "jenni jo","jia","jia kiran","kael","kalea","keahi-calder","kiri","kisa",
+    "kowan","kret","leila","lira","maya","mei","morris","nhial","nia","nyanhial",
+    "oxi","ripple","roan","sam","samir","saoirse","shawanna","sofia","stan",
+    "strider","tara hui","vance","xan","xara","xara zo","zahara","zoe","zoë","zuri"
+  ]);
+
+  function detectCategory(item) {
+    // 1. An explicit field in manifest.json always wins:
+    //    { "file": "...", "category": "Characters & Portraits", ... }
+    if (item.category) return item.category;
+    // 2. Otherwise match against the tag rules above.
+    const tags = new Set((item.tags || []).map(t => t.toLowerCase()));
+    for (const rule of CATEGORY_RULES) {
+      if (rule.tags.some(t => tags.has(t))) return rule.name;
+    }
+    // 3. Character-name tags fall back into Characters & Portraits.
+    for (const t of tags) {
+      if (CHARACTER_TAGS.has(t)) return "Characters & Portraits";
+    }
+    // 4. Fallback.
+    return FALLBACK_CATEGORY;
+  }
+
+  function detectBook(item) {
+    if (item.book) return item.book;
+    for (const t of item.tags || []) {
+      const m = /^book\s*([0-9]+(?:\.5)?)$/i.exec(t.trim());
+      if (m) return "Book " + m[1];
+    }
+    if ((item.tags || []).some(t => /^pre-series$/i.test(t))) return "Pre-Series";
+    return "General Artwork";
+  }
+
+  function detectYear(item) {
+    return String(item.year || "Undated");
+  }
+
+  const BOOK_ORDER = ["Pre-Series", "Book 1", "Book 2", "Book 3", "Book 4", "Book 4.5", "Book 5", "Book 6", "Book 7", "Book 8"];
+
+  function sortGroupNames(mode, names) {
+    if (mode === "book") {
+      return names.sort((a, b) => {
+        const ia = BOOK_ORDER.indexOf(a), ib = BOOK_ORDER.indexOf(b);
+        return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib) || a.localeCompare(b);
+      });
+    }
+    if (mode === "year") return names.sort((a, b) => b.localeCompare(a));
+    return names.sort((a, b) => {
+      if (a === FALLBACK_CATEGORY) return 1;
+      if (b === FALLBACK_CATEGORY) return -1;
+      return a.localeCompare(b);
+    });
+  }
 
   // Create video modal
   const videoModal = document.createElement("div");
@@ -293,10 +412,85 @@ document.addEventListener("DOMContentLoaded", async () => {
     return /\.(mp4|webm|ogg|mov)$/i.test(filename);
   }
 
-  // Render gallery
+  // Build a single gallery card (link element) for an item
+  function createCard(item, idx) {
+    const link = document.createElement("a");
+    link.className = "card-bg";
+
+    const mediaUrl = baseUrl + item.file;
+    let mediaHtml;
+
+    if (isVideoFile(item.file)) {
+      link.className = "card-bg video-card";
+      const posterUrl = item.poster ? baseUrl + item.poster : '';
+      mediaHtml = `<video src="${mediaUrl}" poster="${posterUrl}" muted loop playsinline preload="metadata"></video>`;
+
+      link.dataset.videoUrl = mediaUrl;
+      link.dataset.posterUrl = posterUrl;
+      link.dataset.title = item.title;
+      link.dataset.description = item.description;
+      link.dataset.index = idx;
+      link.style.cursor = "pointer";
+
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        modalVideo.src = baseUrl + item.file;
+        modalVideo.poster = posterUrl;
+        modalTitle.textContent = item.title;
+        modalDesc.textContent = item.description;
+        videoModal.classList.add("active");
+        modalVideo.play();
+      });
+    } else {
+      link.href = baseUrl + item.file;
+      link.dataset.pswpWidth = item.width;
+      link.dataset.pswpHeight = item.height;
+      link.dataset.pswpIndex = idx;
+      link.dataset.title = item.title;
+      link.dataset.description = item.description;
+      mediaHtml = `<img src="${baseUrl + item.file}" alt="${escapeHtml(item.title)}">`;
+
+      // If an alternate file exists, swap images & text on hover
+      if (item.altFile) {
+        link.addEventListener("mouseenter", () => {
+          const img = link.querySelector("img");
+          const titleEl = link.querySelector(".card-title");
+          const descEl = link.querySelector(".card-description");
+          if (img) img.src = baseUrl + item.altFile;
+          if (titleEl) titleEl.textContent = item.altTitle;
+          if (descEl) descEl.textContent = item.altDescription;
+          link.href = baseUrl + item.altFile;
+        });
+        link.addEventListener("mouseleave", () => {
+          const img = link.querySelector("img");
+          const titleEl = link.querySelector(".card-title");
+          const descEl = link.querySelector(".card-description");
+          if (img) img.src = baseUrl + item.file;
+          if (titleEl) titleEl.textContent = item.title;
+          if (descEl) descEl.textContent = item.description;
+          link.href = baseUrl + item.file;
+        });
+      }
+    }
+
+    link.innerHTML = `
+      ${mediaHtml}
+      <div class="card-title">${escapeHtml(item.title)}</div>
+      <div class="card-description">${escapeHtml(item.description)}</div>
+      <div class="card-tags">
+        ${item.tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join("")}
+      </div>
+    `;
+
+    return link;
+  }
+
+  // Render gallery (optionally grouped by category / book / year)
   function renderGallery() {
     const query = searchEl.value.toLowerCase().trim();
     const selectedTag = tagFilterEl.value;
+    const mode = groupByEl ? groupByEl.value : "none";
 
     currentItems = allItems.filter(item => {
       const matchesText =
@@ -308,84 +502,57 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     if (currentItems.length === 0) {
+      galleryEl.classList.remove("is-flat");
       galleryEl.innerHTML = "<div id='no-results'>No results found.</div>";
       if (window.lightbox) window.lightbox.destroy();
       return;
     }
 
     galleryEl.innerHTML = "";
-    currentItems.forEach((item, idx) => {
-      const link = document.createElement("a");
-      link.className = "card-bg";
 
-      const mediaUrl = baseUrl + item.file;
-      let mediaHtml;
+    if (mode === "none") {
+      // Flat grid - original layout
+      galleryEl.classList.add("is-flat");
+      currentItems.forEach((item, idx) => {
+        galleryEl.appendChild(createCard(item, idx));
+      });
+    } else {
+      // Grouped sections with headers
+      galleryEl.classList.remove("is-flat");
+      const groupFn = mode === "book" ? detectBook : mode === "year" ? detectYear : detectCategory;
 
-      if (isVideoFile(item.file)) {
-        link.className = "card-bg video-card";
-        const posterUrl = item.poster ? baseUrl + item.poster : '';
-        mediaHtml = `<video src="${mediaUrl}" poster="${posterUrl}" muted loop playsinline preload="metadata"></video>`;
-        
-        link.dataset.videoUrl = mediaUrl;
-        link.dataset.posterUrl = posterUrl;
-        link.dataset.title = item.title;
-        link.dataset.description = item.description;
-        link.dataset.index = idx;
-        link.style.cursor = "pointer";
-        
-        link.addEventListener("click", (e) => {
-          e.preventDefault();
-          e.stopPropagation();
-          modalVideo.src = baseUrl + item.file;
-          modalVideo.poster = posterUrl;
-          modalTitle.textContent = item.title;
-          modalDesc.textContent = item.description;
-          videoModal.classList.add("active");
-          modalVideo.play();
+      const groups = new Map();
+      currentItems.forEach(item => {
+        const key = groupFn(item);
+        if (!groups.has(key)) groups.set(key, []);
+        groups.get(key).push(item);
+      });
+
+      const names = sortGroupNames(mode, [...groups.keys()]);
+      let idx = 0; // running index so lightbox order follows visual order
+      names.forEach(name => {
+        const section = document.createElement("section");
+        section.className = "gallery-section";
+        section.dataset.group = name;
+
+        const header = document.createElement("div");
+        header.className = "gallery-section-header";
+        header.innerHTML = `
+          <h2 class="gallery-section-title">${escapeHtml(name)}</h2>
+          <span class="gallery-section-count">${groups.get(name).length}</span>
+        `;
+        section.appendChild(header);
+
+        const grid = document.createElement("div");
+        grid.className = "gallery-section-grid";
+        groups.get(name).forEach(item => {
+          grid.appendChild(createCard(item, idx++));
         });
-      } else {
-        link.href = baseUrl + item.file;
-        link.dataset.pswpWidth = item.width;
-        link.dataset.pswpHeight = item.height;
-        link.dataset.pswpIndex = idx;
-        link.dataset.title = item.title;
-        link.dataset.description = item.description;
-        mediaHtml = `<img src="${baseUrl + item.file}" alt="${escapeHtml(item.title)}">`;
+        section.appendChild(grid);
 
-        // If an alternate file exists, swap images & text on hover
-        if (item.altFile) {
-          link.addEventListener("mouseenter", () => {
-            const img = link.querySelector("img");
-            const titleEl = link.querySelector(".card-title");
-            const descEl = link.querySelector(".card-description");
-            if (img) img.src = baseUrl + item.altFile;
-            if (titleEl) titleEl.textContent = item.altTitle;
-            if (descEl) descEl.textContent = item.altDescription;
-            link.href = baseUrl + item.altFile;
-          });
-          link.addEventListener("mouseleave", () => {
-            const img = link.querySelector("img");
-            const titleEl = link.querySelector(".card-title");
-            const descEl = link.querySelector(".card-description");
-            if (img) img.src = baseUrl + item.file;
-            if (titleEl) titleEl.textContent = item.title;
-            if (descEl) descEl.textContent = item.description;
-            link.href = baseUrl + item.file;
-          });
-        }
-      }
-
-      link.innerHTML = `
-        ${mediaHtml}
-        <div class="card-title">${escapeHtml(item.title)}</div>
-        <div class="card-description">${escapeHtml(item.description)}</div>
-        <div class="card-tags">
-          ${item.tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join("")}
-        </div>
-      `;
-
-      galleryEl.appendChild(link);
-    });
+        galleryEl.appendChild(section);
+      });
+    }
 
     initLightbox();
   }
@@ -443,6 +610,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   searchEl.addEventListener("input", renderGallery);
   tagFilterEl.addEventListener("change", renderGallery);
+  if (groupByEl) groupByEl.addEventListener("change", renderGallery);
 
   renderGallery();
 });
