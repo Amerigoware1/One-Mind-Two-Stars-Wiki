@@ -1,6 +1,6 @@
 ---
 layout: character
-title: Samir
+title: Samir Reyes
 portrait: "/assets/images/samir-book7.webp"
 portrait-book6: "/assets/images/samir-book6.webp"
 portrait-book7: "/assets/images/samir-book7.webp"
@@ -41,7 +41,7 @@ book9_arc: >
 <div class="card-bg" markdown="1">
 
 ## Overview
-Samir is the Chief Pilot and Logistics Coordinator of *The Wayfarer*, and the queerplatonic life partner and co-parent to Mei Vongphachanh's children, Sora and Nia. A trans man, Samir represents the progressive, stigma-free ethos of the Ares colony, where identity and family are defined by choice, consent, and fierce commitment rather than outdated Earth paradigms. He is a master of his craft, navigating the treacherous wilderness of Ares with calm precision, while providing a warm, grounded, and deeply loving paternal presence for his family.
+Samir Reyes is the Chief Pilot and Logistics Coordinator of *The Wayfarer*, and the queerplatonic life partner and co-parent to Mei Vongphachanh's children, Sora and Nia. A trans man, Samir represents the progressive, stigma-free ethos of the Ares colony, where identity and family are defined by choice, consent, and fierce commitment rather than outdated Earth paradigms. He is a master of his craft, navigating the treacherous wilderness of Ares with calm precision, while providing a warm, grounded, and deeply loving paternal presence for his family.
 </div>
 <div class="card-bg" markdown="1">
 

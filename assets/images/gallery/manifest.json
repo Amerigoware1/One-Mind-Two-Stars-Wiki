@@ -5,6 +5,7 @@
     "description": "Jenni in her pregnancy.",
     "tags": [
       "jenni",
+      "carisco",
       "pregnancy",
       "space station",
       "utopis",
@@ -20,6 +21,7 @@
     "description": "A newborn Celectra in an incubator.",
     "tags": [
       "celectra",
+      "carisco",
       "space station",
       "utopis",
       "living quarters",
@@ -35,6 +37,7 @@
     "description": "Celectra in a basinette.",
     "tags": [
       "celectra",
+      "carisco",
       "space station",
       "utopis",
       "living quarters",
@@ -49,6 +52,7 @@
     "description": "Celectra eating in highchairs.",
     "tags": [
       "celectra",
+      "carisco",
       "space station",
       "utopis",
       "living quarters",
@@ -64,6 +68,7 @@
     "description": "The Carisco family's living quarters aboard the Utopis space station, featuring a view of Ares.",
     "tags": [
       "celectra",
+      "carisco",
       "space station",
       "utopis",
       "living quarters",
@@ -78,6 +83,7 @@
     "description": "A checkup with Dr. Cruiz in the Utopis station medical bay",
     "tags": [
       "celectra",
+      "carisco",
       "space station",
       "utopis",
       "medical bay",
@@ -93,6 +99,7 @@
     "description": "Celectra reading a book in the Utopis station living quarters",
     "tags": [
       "celectra",
+      "carisco",
       "space station",
       "utopis",
       "book 1"
@@ -321,8 +328,10 @@
     "tags": [
       "celectra",
       "carisco",
+      "yoga",
+      "activity",
       "athletic activities",
-      "yoga"
+      "exercise"
     ],
     "width": 1024,
     "height": 1024
@@ -332,8 +341,11 @@
     "title": "Yoga",
     "description": "A yoga practice.",
     "tags": [
+      "celectra",
+      "carisco",
       "yoga",
       "activity",
+      "athletic activities",
       "exercise"
     ],
     "width": 1080,
@@ -344,8 +356,11 @@
     "title": "Yoga",
     "description": "A yoga practice.",
     "tags": [
+      "celectra",
+      "carisco",
       "yoga",
       "activity",
+      "athletic activities",
       "exercise"
     ],
     "width": 1536,
@@ -356,8 +371,11 @@
     "title": "Yoga",
     "description": "A yoga practice.",
     "tags": [
+      "celectra",
+      "carisco",
       "yoga",
       "activity",
+      "athletic activities",
       "exercise"
     ],
     "width": 1024,
@@ -368,8 +386,11 @@
     "title": "Yoga",
     "description": "A yoga practice.",
     "tags": [
+      "celectra",
+      "carisco",
       "yoga",
       "activity",
+      "athletic activities",
       "exercise"
     ],
     "width": 2512,
@@ -380,7 +401,10 @@
     "title": "Splits",
     "description": "A flexibility practice involving the splits.",
     "tags": [
+      "celectra",
+      "carisco",
       "activity",
+      "athletic activities",
       "exercise",
       "flexibility"
     ],
@@ -392,6 +416,10 @@
     "title": "Yoga",
     "description": "A yoga practice.",
     "tags": [
+      "keahi-calder",
+      "saoirse",
+      "kalea",
+      "indigo",
       "yoga",
       "activity",
       "exercise"
@@ -407,6 +435,7 @@
       "celectra",
       "carisco",
       "maya",
+      "keahi",
       "babysitting"
     ],
     "width": 546,
@@ -418,7 +447,8 @@
     "description": "Celectra at age fourteen",
     "tags": [
       "celectra",
-      "carisco"
+      "carisco",
+      "book 2"
     ],
     "width": 832,
     "height": 1213
@@ -431,7 +461,8 @@
       "celectra",
       "carisco",
       "stan",
-      "ananya"
+      "ananya",
+      "patel"
     ],
     "width": 1538,
     "height": 1023
@@ -442,7 +473,8 @@
     "description": "Celectra relaxing on her bed",
     "tags": [
       "celectra",
-      "carisco"
+      "carisco",
+      "new eden"
     ],
     "width": 1184,
     "height": 864
@@ -453,8 +485,11 @@
     "description": "Celectra carrying twins in her right body.",
     "tags": [
       "celectra",
+      "carisco",
+      "new eden",
       "twins",
-      "pregnant"
+      "pregnant",
+      "book 3"
     ],
     "width": 1664,
     "height": 2469
@@ -465,8 +500,10 @@
     "description": "Celectra carrying twins in her right body.",
     "tags": [
       "celectra",
+      "carisco",
       "twins",
-      "pregnant"
+      "pregnant",
+      "book 3"
     ],
     "width": 1536,
     "height": 1024
@@ -477,7 +514,9 @@
     "description": "Celectra and Jaxon dancing at the Nexus in New Eden.",
     "tags": [
       "celectra",
+      "carisco",
       "jaxon",
+      "bowers",
       "new eden",
       "nexus",
       "book 3"
@@ -493,7 +532,8 @@
       "celectra",
       "carisco",
       "new eden",
-      "tech lab"
+      "tech lab",
+"book 3"
     ],
     "width": 1025,
     "height": 1534
@@ -506,7 +546,8 @@
       "celectra",
       "carisco",
       "new eden",
-      "tech lab"
+      "tech lab",
+      "book 3"
     ],
     "width": 1664,
     "height": 2496
@@ -517,6 +558,7 @@
     "description": "Ananya and Chen Wei at the Nexus in New Eden.",
     "tags": [
       "ananya",
+      "patel",
       "chen wei",
       "nexus",
       "new eden",
@@ -531,6 +573,7 @@
     "description": "Xan's birthday party in the cave.",
     "tags": [
       "xan",
+"carisco",
       "birthday",
       "cave",
       "book 2"
@@ -544,6 +587,7 @@
     "description": "Xan playing with the chime in the cave.",
     "tags": [
       "xan",
+      "carisco",
       "chime",
       "cave",
       "book 2"
@@ -557,6 +601,7 @@
     "description": "Xan playing a video game at home.",
     "tags": [
       "xan",
+      "carisco",
       "playing",
       "childhood home"
     ],
@@ -569,6 +614,7 @@
     "description": "Xan playing the glockenspiel in a cave.",
     "tags": [
       "xan",
+      "carisco",
       "playing",
       "cave",
       "glockenspiel"
@@ -583,8 +629,10 @@
     "tags": [
       "xan",
       "duška",
+      "santoso",
       "playing",
-      "childhood home"
+      "childhood home",
+      "carisco"
     ],
     "width": 1186,
     "height": 784
@@ -595,7 +643,8 @@
     "description": "Xan relaxing in the geothermal pool",
     "tags": [
       "xan",
-      "grotto"
+      "grotto",
+      "carisco"
     ],
     "width": 720,
     "height": 1080
@@ -621,7 +670,8 @@
       "carisco",
       "family",
       "portrait",
-      "book 2"
+      "book 2",
+      "cave"
     ],
     "width": 832,
     "height": 1040
@@ -674,6 +724,8 @@
     "description": "Interior view of Celectra and Jaxon's home.",
     "tags": [
       "bowers",
+      "carisco",
+      "carisco-bowers",
       "home",
       "house",
       "new eden",
@@ -690,6 +742,8 @@
       "jenni jo",
       "xara zo",
       "bowers",
+      "carisco",
+      "carisco-bowers",
       "baby",
       "babies"
     ],
@@ -704,6 +758,8 @@
       "jenni jo",
       "xara zo",
       "bowers",
+      "carisco",
+      "carisco-bowers",
       "toddlers",
       "toddler",
       "birthday"
@@ -720,7 +776,12 @@
       "celectra",
       "jaxon",
       "bowers",
-      "wedding"
+      "carisco",
+      "carisco-bowers",
+      "wedding",
+      "new eden",
+      "ares",
+"book 3"
     ],
     "width": 1000,
     "height": 672
@@ -733,8 +794,9 @@
       "jenni jo",
       "xara zo",
       "bowers",
-      "baby",
-      "babies"
+      "carisco",
+      "carisco-bowers",
+      "book 4"
     ],
     "width": 832,
     "height": 1248
@@ -749,6 +811,8 @@
       "bowers",
       "celectra",
       "jaxon",
+      "carisco",
+      "carisco-bowers",
       "book 4"
     ],
     "width": 845,
@@ -764,6 +828,8 @@
       "bowers",
       "celectra",
       "jaxon",
+      "carisco",
+      "carisco-bowers",
       "book 4"
     ],
     "width": 845,
@@ -778,7 +844,9 @@
       "xara zo",
       "reading",
       "pod chair",
-      "book 4"
+      "book 4",
+      "carisco",
+      "carisco-bowers"
     ],
     "width": 1024,
     "height": 1536
@@ -790,7 +858,9 @@
     "tags": [
       "xara zo",
       "jenni jo",
-      "book 4"
+      "book 4",
+      "carisco",
+      "carisco-bowers"
     ],
     "width": 928,
     "height": 1152
@@ -802,7 +872,9 @@
     "tags": [
       "jenni jo",
       "computer lab",
-      "book 4"
+      "book 4",
+      "carisco",
+      "carisco-bowers"
     ],
     "width": 648,
     "height": 1000
@@ -816,6 +888,8 @@
       "jenni jo",
       "celectra",
       "zoe",
+      "carisco",
+      "carisco-bowers",
       "family"
     ],
     "width": 1402,
@@ -830,7 +904,9 @@
       "jenni jo",
       "celectra",
       "zoe",
-      "family"
+      "family",
+      "carisco",
+      "carisco-bowers"
     ],
     "width": 1024,
     "height": 816
@@ -846,7 +922,8 @@
       "jia kiran",
       "aditi ming",
       "chentel",
-      "family"
+      "family",
+      "book 4.5"
     ],
     "width": 1448,
     "height": 1086
@@ -882,6 +959,9 @@
     "description": "Portrait of Jenni at age 14 in book 5.",
     "tags": [
       "jenni jo",
+      "carisco",
+      "bowers",
+      "carisco-bowers",
       "book 5"
     ],
     "width": 720,
@@ -895,7 +975,9 @@
       "xara zo",
       "jenni jo",
       "dance",
-      "book 5"
+      "book 5",
+      "carisco",
+      "carisco-bowers"
     ],
     "width": 4096,
     "height": 4096,
@@ -908,7 +990,10 @@
     "tags": [
       "jenni jo",
       "elara",
-      "book 5"
+      "vance",
+      "book 5",
+      "carisco",
+      "carisco-bowers"
     ],
     "width": 832,
     "height": 1248
@@ -920,7 +1005,10 @@
     "tags": [
       "jenni jo",
       "elara",
-      "book 5"
+      "vance",
+      "book 5",
+      "carisco",
+      "carisco-bowers"
     ],
     "width": 832,
     "height": 1248
@@ -934,7 +1022,8 @@
       "dee",
       "dance",
       "kiss",
-      "book 1"
+      "book 1",
+      "cruiz"
     ],
     "width": 1024,
     "height": 1536
@@ -948,7 +1037,8 @@
       "bonzi",
       "gardening",
       "hydoponics",
-      "book 5"
+      "book 5",
+      "cruiz"
     ],
     "width": 843,
     "height": 1264,
@@ -1039,6 +1129,7 @@
     "description": "Ananya at age 9",
     "tags": [
       "ananya",
+      "patel",
       "book 1"
     ],
     "width": 1024,
@@ -1050,6 +1141,7 @@
     "description": "Ananya at age 12 living on Utopis",
     "tags": [
       "ananya",
+      "patel",
       "utopis"
     ],
     "width": 1024,
@@ -1061,6 +1153,7 @@
     "description": "Ananya at age 16 living in New Eden",
     "tags": [
       "ananya",
+      "patel",
       "new eden"
     ],
     "width": 1024,
@@ -1073,7 +1166,8 @@
     "description": "Chen Wei practicing acrobatics at age 10",
     "tags": [
       "chen wei",
-      "book 1"
+      "book 1",
+      "athletic activities"
     ],
     "width": 1664,
     "height": 928
@@ -1084,7 +1178,8 @@
     "description": "Chen Wei practicing acrobatics at age 10",
     "tags": [
       "chen wei",
-      "book 1"
+      "book 1",
+      "athletic activities"
     ],
     "width": 1024,
     "height": 1536
@@ -1096,7 +1191,9 @@
     "tags": [
       "hiro",
       "aulii",
-      "Vongphachanh"
+      "Vongphachanh",
+      "karate",
+      "athletic activities"
     ],
     "width": 1536,
     "height": 1024
@@ -1109,7 +1206,8 @@
       "hiro",
       "kisa",
       "dojo",
-      "karate"
+      "karate",
+      "athletic activities"
     ],
     "width": 1536,
     "height": 1024
@@ -1120,7 +1218,9 @@
     "description": "Kowan playing in his living room",
     "tags": [
       "kowan",
-      "playing"
+      "elian",
+      "playing",
+      "book 2"
     ],
     "width": 832,
     "height": 1248
@@ -1131,6 +1231,7 @@
     "description": "Duška at age 5",
     "tags": [
       "duška",
+      "santoso",
       "book 2"
     ],
     "width": 896,
@@ -1142,7 +1243,9 @@
     "description": "Duška at age 5 playing with 6-year-old Xan",
     "tags": [
       "duška",
+      "santoso",
       "xan",
+      "carisco",
       "book 2"
     ],
     "width": 1536,
@@ -1154,8 +1257,10 @@
     "description": "Duška at age 5 dancing in a studio at the Activity Center",
     "tags": [
       "duška",
+      "santoso",
       "activity center",
       "dancing",
+      "athletic activities",
       "book 2"
     ],
     "width": 720,
@@ -1168,8 +1273,10 @@
     "description": "Duska dancing at the activity center.",
     "tags": [
       "duska",
+      "santoso",
       "activity center",
       "dancing",
+      "athletic activities",
       "book 2"
     ],
     "width": 720,
@@ -1181,7 +1288,9 @@
     "description": "Duška and Xan playing with with Oxi at home",
     "tags": [
       "duška",
+      "santoso",
       "xan",
+      "carisco",
       "oxi",
       "book 4"
     ],
@@ -1195,6 +1304,7 @@
     "description": "Ethan at age 10",
     "tags": [
       "ethan",
+      "johnson",
       "book 2"
     ],
     "width": 768,
@@ -1207,6 +1317,7 @@
     "tags": [
       "ethan",
       "emma",
+      "johnson",
       "book 2"
     ],
     "width": 1024,
@@ -1218,7 +1329,9 @@
     "description": "Ethan and Nyanhial with their baby",
     "tags": [
       "ethan",
+      "johnson",
       "nyanhial",
+      "doc",
       "baby",
       "book 4"
     ],
@@ -1231,7 +1344,11 @@
     "description": "Hiro and Kowan at the Nexus in New Eden",
     "tags": [
       "hiro",
-      "kowan"
+      "vongphachanh",
+      "kowan",
+      "elian",
+      "new eden",
+      "nexus"
     ],
     "width": 1536,
     "height": 1024
@@ -1381,8 +1498,10 @@
     "description": "Maya creating a fingerpaint masterpiece at age 6.",
     "tags": [
       "maya",
+      "keahi",
       "paint",
-      "childhood"
+      "childhood",
+      "book 1"
     ],
     "width": 832,
     "height": 1248
@@ -1393,8 +1512,10 @@
     "description": "Maya drawing Stan at age 14 (book 2).",
     "tags": [
       "maya",
+      "keahi",
       "drawing",
-      "childhood"
+      "childhood",
+      "book 1"
     ],
     "width": 720,
     "height": 1080
@@ -1406,6 +1527,7 @@
     "tags": [
       "maya",
       "lira",
+      "keahi",
       "relaxing",
       "nexus"
     ],
@@ -1418,6 +1540,7 @@
     "description": "Sam as a toddler on Utopis.",
     "tags": [
       "sam",
+      "calder",
       "utopis",
       "homework"
     ],
@@ -1430,6 +1553,7 @@
     "description": "Sam doing homework on Utopis.",
     "tags": [
       "sam",
+      "calder",
       "utopis",
       "homework"
     ],
@@ -1442,6 +1566,7 @@
     "description": "Sam masculine at age 12 (no wig).",
     "tags": [
       "sam",
+      "calder",
       "utopis",
       "homework"
     ],
@@ -1454,6 +1579,7 @@
     "description": "Sam doing homework on Utopis.",
     "tags": [
       "sam",
+      "calder",
       "utopis",
       "homework"
     ],
@@ -1466,6 +1592,7 @@
     "description": "Sam playing on Utopis.",
     "tags": [
       "sam",
+      "calder",
       "utopis",
       "homework"
     ],
@@ -1478,6 +1605,7 @@
     "description": "Sam playing dressup on Utopis.",
     "tags": [
       "sam",
+      "calder",
       "utopis",
       "playing"
     ],
@@ -1490,6 +1618,7 @@
     "description": "Sam using a holopad.",
     "tags": [
       "sam",
+      "calder",
       "utopis",
       "homework"
     ],
@@ -1502,10 +1631,13 @@
     "description": "Maya and Sam at the Samaya Gallery and Museum of Integration's grand opening between books 4 and 5.",
     "tags": [
       "maya",
+      "keahi",
       "sam",
+      "calder",
       "gallery",
       "museum",
-      "Integration"
+      "Integration",
+      "new eden"
     ],
     "width": 1024,
     "height": 1536
@@ -1516,10 +1648,13 @@
     "description": "Sam and Maya celebrating the grand opening of the Samaya Gallery and Museum of Integration between books 4 and 5.",
     "tags": [
       "maya",
+      "keahi",
       "sam",
+      "calder",
       "gallery",
       "museum",
-      "Integration"
+      "Integration",
+      "new eden"
     ],
     "width": 1024,
     "height": 1536,
@@ -1531,7 +1666,10 @@
     "description": "Leila at age 15 practicing karate in the dojo",
     "tags": [
       "leila",
-      "book 2"
+      "al-farsi",
+      "book 2",
+      "karate",
+      "athletic activities"
     ],
     "width": 807,
     "height": 450
@@ -1542,6 +1680,8 @@
     "description": "Logic animated in the desert",
     "tags": [
       "logic",
+      "galinstanian",
+      "alien",
       "book 3"
     ],
     "width": 1024,
@@ -1553,6 +1693,8 @@
     "description": "Kiri in the cave",
     "tags": [
       "kiri",
+      "galinstanian",
+      "alien",
       "book 3"
     ],
     "width": 1024,
@@ -1564,7 +1706,9 @@
     "description": "Nyanhial & Nhial doing schoolwork",
     "tags": [
       "nyanhial",
-      "nhial"
+      "nhial",
+      "dok",
+      "book 1"
     ],
     "width": 1086,
     "height": 1448,
@@ -1575,7 +1719,9 @@
     "title": "Nyanhial Chilling",
     "description": "Nyanhial relaxing at home",
     "tags": [
-      "nyanhial"
+      "nyanhial",
+      "dok",
+      "book 1"
     ],
     "width": 1024,
     "height": 1536
@@ -1586,6 +1732,8 @@
     "description": "Nyanhial on the soccer field",
     "tags": [
       "nyanhial",
+      "dok",
+      "book 2",
       "soccer"
     ],
     "width": 1023,
@@ -1597,6 +1745,7 @@
     "description": "Oxi getting into the grotto hot pool",
     "tags": [
       "oxi",
+      "carisco",
       "grotto"
     ],
     "width": 1024,
@@ -1608,6 +1757,7 @@
     "description": "Oxi floating in the geothermal pool",
     "tags": [
       "oxi",
+      "carisco",
       "grotto"
     ],
     "width": 1024,
@@ -1618,6 +1768,7 @@
     "title": "Roan in the office",
     "description": "Roan working in her office",
     "tags": [
+      "evelyn",
       "roan",
       "book 3"
     ],
@@ -1630,6 +1781,7 @@
     "description": "Sofia reading her holopad before bed.",
     "tags": [
       "sofia",
+      "patel",
       "reading",
       "holopad",
       "childhood"
@@ -1729,6 +1881,7 @@
     "description": "Zahara at age 7, playing in her living room.",
     "tags": [
       "zahara",
+      "solari",
       "childhood",
       "utopis",
       "playing",
@@ -1743,6 +1896,7 @@
     "description": "Zahara playing in her living room with Celectra.",
     "tags": [
       "zahara",
+      "solari",
       "childhood",
       "utopis",
       "playing",
@@ -1758,6 +1912,7 @@
     "description": "Zahara at age 28, relaxing at home.",
     "tags": [
       "zahara",
+      "solari",
       "home",
       "Utopis",
       "relaxing",
@@ -1772,6 +1927,7 @@
     "description": "Zahara at age 28, playing at home.",
     "tags": [
       "zahara",
+      "solari",
       "home",
       "Utopis",
       "playing",
@@ -1787,9 +1943,12 @@
     "description": "Zuri playing in his yard.",
     "tags": [
       "zuri",
+      "yazzie",
       "childhood",
       "new eden",
-      "ares"
+      "ares",
+      "playing",
+      "book 2"
     ],
     "width": 783,
     "height": 1174
@@ -1800,9 +1959,11 @@
     "description": "Zuri at the Nexus.",
     "tags": [
       "zuri",
+      "yazzie",
       "childhood",
       "new eden",
-      "nexus"
+      "nexus",
+      "book 2"
     ],
     "width": 720,
     "height": 1080
@@ -1815,7 +1976,8 @@
       "zuri",
       "childhood",
       "new eden",
-      "ares"
+      "ares",
+      "book 2"
     ],
     "width": 720,
     "height": 1080
@@ -1826,7 +1988,9 @@
     "description": "Zuri, Emma, and the twins playing together.",
     "tags": [
       "zuri",
+      "yazzie",
       "emma",
+      "johnson",
       "twins",
       "book 4"
     ],
@@ -1842,7 +2006,8 @@
       "elara",
       "vance",
       "childhood",
-      "new eden"
+      "new eden",
+      "book 4"
     ],
     "width": 843,
     "height": 1264,
@@ -1854,9 +2019,12 @@
     "description": "Xara and Kael at age 14, young love.",
     "tags": [
       "xara",
+      "bowers",
       "kael",
+      "aoki",
       "childhood",
-      "new eden"
+      "new eden",
+      "book 5"
     ],
     "width": 1664,
     "height": 2496
@@ -1867,7 +2035,9 @@
     "description": "Portrait of Jenni and Elara during Jenni's pregnancy.",
     "tags": [
       "jenni jo",
+      "bowers",
       "elara",
+      "vance",
       "pregnancy",
       "book 6"
     ],
@@ -1880,7 +2050,9 @@
     "description": "Xara and Kael at age 21, in their early twenties.",
     "tags": [
       "xara",
+      "bowers",
       "kael",
+      "aoki",
       "book 6",
       "new eden"
     ],
@@ -1894,6 +2066,7 @@
     "description": "Xara at age 21, pregnant with Jasper.",
     "tags": [
       "xara",
+      "bowers",
       "pregnancy",
       "book 6"
     ],
@@ -1906,8 +2079,10 @@
     "description": "Jasmine at age 3, playing at Celectra's.",
     "tags": [
       "jasmine",
+      "carisco-vance",
       "childhood",
-      "new eden"
+      "new eden",
+      "book 6"
     ],
     "width": 1536,
     "height": 1024
@@ -1918,9 +2093,11 @@
     "description": "Jasmine and Jasper playing together at Celectra's.",
     "tags": [
       "jasmine",
+      "jasper",
+      "carisco-vance",
+      "aoki-carisco",
       "childhood",
       "new eden",
-      "jasper",
       "book 6"
     ],
     "width": 1536,
@@ -1933,9 +2110,11 @@
     "description": "Jasmine with Jasper, Xara and Kael.",
     "tags": [
       "jasmine",
+      "carisco-vance",
       "jasper",
       "xara",
       "kael",
+      "aoki-carisco",
       "book 6",
       "new eden",
       "childhood"
@@ -1950,6 +2129,7 @@
     "tags": [
       "mei",
       "aulii",
+      "vongphachanh",
       "mother",
       "daughter",
       "new eden",
@@ -1965,6 +2145,7 @@
     "tags": [
       "mei",
       "aulii",
+      "vongphachanh",
       "new eden",
       "book 5"
     ],
@@ -1977,7 +2158,9 @@
     "description": "Mei at age 31.",
     "tags": [
       "mei",
-      "new eden"
+      "vongphachanh",
+      "new eden",
+      "book 5"
     ],
     "width": 1024,
     "height": 572
@@ -1989,6 +2172,7 @@
     "tags": [
       "mei",
       "sora",
+      "vongphachanh",
       "new eden",
       "book 6"
     ],
@@ -2002,6 +2186,7 @@
     "tags": [
       "mei",
       "sora",
+      "vongphachanh",
       "new eden",
       "book 6"
     ],
@@ -2016,6 +2201,7 @@
       "mei",
       "sora",
       "nia",
+      "vongphachanh",
       "new eden",
       "book 7"
     ],
@@ -2030,7 +2216,8 @@
       "nia",
       "sora",
       "wayfarer",
-      "book 7"
+      "book 7",
+      "vongphachanh"
     ],
     "width": 2720,
     "height": 1536
@@ -2053,6 +2240,7 @@
     "description": "Samir and Nia in the cockpit of the Wayfarer.",
     "tags": [
       "nia",
+      "vongphachanh",
       "samir",
       "wayfarer",
       "book 7"
