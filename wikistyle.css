@@ -3141,3 +3141,487 @@ body.theme-gold #themeToggleBtn:hover {
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
   color: #fff;
 }
+
+
+
+:root {
+  /* Core palette */
+  --bg-space: #050508;
+  --bg-card: #0c0c12;
+  --bg-card-dark: #08080e;
+  --border-glow: #2a1a3a;
+
+  /* True neon accents */
+  --neon-violet: #b44aff;
+  --neon-cyan: #00f0ff;
+  --neon-magenta: #ff2d95;
+
+  /* Text */
+  --text-primary: #e8e0ff;
+  --text-muted: #a090c0;
+  --text-heading: #ffffff;
+
+  /* Glows */
+  --glow-violet: rgba(180, 74, 255, 0.35);
+  --glow-cyan: rgba(0, 240, 255, 0.30);
+  --glow-magenta: rgba(255, 45, 149, 0.30);
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background:
+    radial-gradient(ellipse 120% 60% at 50% -10%, rgba(180, 74, 255, 0.12) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 50% at 90% 20%, rgba(0, 240, 255, 0.07) 0%, transparent 50%),
+    linear-gradient(180deg, #0d0a14 0%, #08060e 45%, #050508 100%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  line-height: 1.7;
+  margin: 20px;
+  padding: 1rem;
+  min-height: 100vh;
+  transition: background 0.4s ease, color 0.3s ease;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(180, 74, 255, 0.09) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 240, 255, 0.07) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Headings */
+h1 {
+  background: linear-gradient(100deg, #7b2cbf 0%, #e0aaff 25%, #b44aff 50%, #00f0ff 75%, #7b2cbf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px solid rgba(180, 74, 255, 0.45);
+}
+
+h2 {
+  color: var(--neon-cyan);
+  border-bottom: 2px solid var(--neon-violet);
+}
+
+/* Links */
+a {
+  color: var(--neon-cyan);
+}
+a:hover {
+  color: var(--neon-magenta);
+  text-shadow: 0 0 10px var(--glow-cyan);
+}
+
+/* Cards */
+.card-bg,
+.toc,
+.result,
+.passcode-box,
+.series-status,
+.book-detail-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glow);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 18px var(--glow-violet);
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+.export-btn {
+  background: linear-gradient(45deg, var(--neon-violet), var(--neon-cyan));
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 15px rgba(180, 74, 255, 0.45);
+}
+
+button:hover,
+.export-btn:hover {
+  box-shadow: 0 0 28px var(--glow-violet), 0 0 18px var(--glow-cyan);
+  transform: translateY(-2px);
+}
+
+/* Banner buttons */
+.top-banner .banner-btn,
+.top-banner .home-button {
+  background: rgba(180, 74, 255, 0.15);
+  border: 1px solid rgba(180, 74, 255, 0.35);
+  color: var(--neon-cyan) !important;
+  backdrop-filter: blur(6px);
+}
+
+.top-banner .banner-btn:hover,
+.top-banner .home-button:hover {
+  background: rgba(180, 74, 255, 0.35);
+  box-shadow: 0 0 22px rgba(180, 74, 255, 0.55);
+  color: #fff !important;
+}
+
+
+/* ---------------------------------------------------- */
+/*  2. GOLD THEME (body.theme-gold)                     */
+/* ---------------------------------------------------- */
+body.theme-gold {
+  --bg-space: #050505;
+  --bg-card: #0c0c0c;
+  --bg-card-dark: #080808;
+  --border-glow: rgba(212, 175, 55, 0.40);
+
+  --neon-violet: #d4af37;
+  --neon-cyan: #f5e6a3;
+  --neon-magenta: #c9a227;
+
+  --text-primary: #f0e6c8;
+  --text-muted: #b8a878;
+  --text-heading: #ffe9a8;
+
+  --glow-violet: rgba(212, 175, 55, 0.28);
+  --glow-cyan: rgba(245, 230, 163, 0.18);
+
+  background:
+    radial-gradient(ellipse at 50% -10%, rgba(60, 50, 20, 0.12), transparent 40%),
+    radial-gradient(ellipse at 90% 15%, rgba(35, 35, 42, 0.22), transparent 32%),
+    radial-gradient(ellipse at 10% 75%, rgba(30, 29, 26, 0.18), transparent 38%),
+    linear-gradient(165deg, #020202 0%, #080808 40%, #050505 70%, #000000 100%) !important;
+  color: var(--text-primary);
+}
+
+body.theme-gold::before {
+  background:
+    radial-gradient(ellipse at 50% -10%, rgba(80, 65, 25, 0.10), transparent 42%),
+    radial-gradient(ellipse at 85% 20%, rgba(42, 41, 38, 0.15), transparent 35%),
+    radial-gradient(ellipse at 15% 70%, rgba(35, 33, 28, 0.12), transparent 40%);
+}
+
+body.theme-gold h1 {
+  background: linear-gradient(110deg,
+    #fff8e0 0%, #f5e6a3 18%, #d4af37 38%,
+    #f0d878 55%, #a67c00 78%, #e8d48b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.45);
+}
+
+body.theme-gold h2 {
+  color: var(--neon-cyan);
+  border-bottom: 2px solid var(--neon-violet);
+}
+
+body.theme-gold .card-bg,
+body.theme-gold .toc,
+body.theme-gold .result,
+body.theme-gold .passcode-box,
+body.theme-gold .series-status,
+body.theme-gold .book-detail-card {
+  background: linear-gradient(165deg, #121212 0%, #0a0a0a 40%, #0e0e0e 70%, #050505 100%);
+  border: 1px solid rgba(212, 175, 55, 0.38);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.9),
+    0 0 20px rgba(212, 175, 55, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+body.theme-gold button,
+body.theme-gold input[type="submit"],
+body.theme-gold .export-btn {
+  background: linear-gradient(145deg, #f5e6a3 0%, #d4af37 45%, #a67c00 85%, #8a6800 100%);
+  color: #0c0a04;
+  font-weight: 700;
+  border: 1px solid rgba(255, 230, 160, 0.55);
+  box-shadow: 0 2px 12px rgba(212, 175, 55, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+body.theme-gold button:hover,
+body.theme-gold .export-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 0 22px rgba(212, 175, 55, 0.45);
+}
+
+body.theme-gold .top-banner .banner-btn,
+body.theme-gold .home-button {
+  background: linear-gradient(145deg, #f5e6a3 0%, #d4af37 50%, #a67c00 100%);
+  border: 1px solid rgba(255, 230, 160, 0.45);
+  color: #0c0a04 !important;
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+body.theme-gold .top-banner .banner-btn:hover,
+body.theme-gold .home-button:hover {
+  background: linear-gradient(145deg, #fff0c0 0%, #e0c050 50%, #b89020 100%);
+  border-color: rgba(255, 240, 180, 0.7);
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.4);
+  color: #0c0a04 !important;
+}
+
+
+/* ---------------------------------------------------- */
+/*  3. HOLOGRAPHIC THEME (body.theme-holo)              */
+/*  Closest practical 3-D hologram look on a 2-D screen */
+/* ---------------------------------------------------- */
+body.theme-holo {
+  --bg-space: #02040a;
+  --bg-card: rgba(8, 18, 32, 0.55);
+  --bg-card-dark: rgba(4, 12, 24, 0.75);
+  --border-glow: rgba(0, 255, 255, 0.35);
+
+  --neon-violet: #c77dff;          /* soft purple */
+  --neon-cyan: #00f5ff;            /* electric cyan */
+  --neon-magenta: #ff00aa;         /* hot magenta */
+
+  --text-primary: #d0f8ff;
+  --text-muted: #7ec8d8;
+  --text-heading: #ffffff;
+
+  --glow-violet: rgba(199, 125, 255, 0.45);
+  --glow-cyan: rgba(0, 245, 255, 0.45);
+  --glow-magenta: rgba(255, 0, 170, 0.40);
+
+  background:
+    radial-gradient(ellipse 100% 80% at 50% -20%, rgba(0, 200, 255, 0.18) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 50% at 15% 90%, rgba(255, 0, 170, 0.12) 0%, transparent 45%),
+    radial-gradient(ellipse 50% 40% at 90% 30%, rgba(180, 80, 255, 0.10) 0%, transparent 40%),
+    linear-gradient(165deg, #010308 0%, #030914 40%, #02040a 100%) !important;
+  color: var(--text-primary);
+}
+
+/* Soft holographic scan-line / shimmer overlay */
+body.theme-holo::before {
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 255, 0.015) 2px,
+      rgba(0, 255, 255, 0.015) 4px
+    ),
+    radial-gradient(ellipse at 30% 20%, rgba(0, 245, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 80%, rgba(255, 0, 170, 0.07) 0%, transparent 50%);
+  animation: holoShimmer 8s ease-in-out infinite alternate;
+}
+
+@keyframes holoShimmer {
+  0%   { opacity: 0.7; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.85; }
+}
+
+/* Iridescent holographic title */
+body.theme-holo h1 {
+  background: linear-gradient(
+    110deg,
+    #00f5ff 0%,
+    #c77dff 25%,
+    #ff00aa 50%,
+    #00f5ff 75%,
+    #c77dff 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: holoText 6s linear infinite;
+  border-bottom: 1px solid rgba(0, 245, 255, 0.35);
+  text-shadow: none;
+  filter: drop-shadow(0 0 12px rgba(0, 245, 255, 0.4));
+}
+
+@keyframes holoText {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+body.theme-holo h2 {
+  color: var(--neon-cyan);
+  border-bottom: 2px solid var(--neon-magenta);
+  text-shadow: 0 0 12px var(--glow-cyan);
+}
+
+body.theme-holo h3 {
+  color: var(--neon-violet);
+  text-shadow: 0 0 10px var(--glow-violet);
+}
+
+/* Glass / holographic panels */
+body.theme-holo .card-bg,
+body.theme-holo .toc,
+body.theme-holo .result,
+body.theme-holo .passcode-box,
+body.theme-holo .series-status,
+body.theme-holo .book-detail-card,
+body.theme-holo .infobox table,
+body.theme-holo .timeline-event,
+body.theme-holo .character-card {
+  background: linear-gradient(
+    145deg,
+    rgba(0, 40, 60, 0.45) 0%,
+    rgba(10, 20, 40, 0.55) 50%,
+    rgba(30, 10, 50, 0.40) 100%
+  );
+  border: 1px solid rgba(0, 245, 255, 0.30);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(0, 245, 255, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 245, 255, 0.05);
+  backdrop-filter: blur(12px) saturate(1.4);
+  -webkit-backdrop-filter: blur(12px) saturate(1.4);
+}
+
+body.theme-holo .card-bg:hover,
+body.theme-holo .timeline-event:hover,
+body.theme-holo .character-card:hover {
+  border-color: rgba(0, 245, 255, 0.55);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.55),
+    0 0 30px rgba(0, 245, 255, 0.25),
+    0 0 50px rgba(255, 0, 170, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  transform: translateY(-4px) perspective(800px) rotateX(1deg);
+}
+
+/* Holographic buttons */
+body.theme-holo button,
+body.theme-holo input[type="submit"],
+body.theme-holo .export-btn {
+  background: linear-gradient(135deg, rgba(0, 245, 255, 0.25), rgba(199, 125, 255, 0.25));
+  color: #e0ffff;
+  border: 1px solid rgba(0, 245, 255, 0.5);
+  box-shadow:
+    0 0 15px rgba(0, 245, 255, 0.3),
+    inset 0 0 12px rgba(0, 245, 255, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+body.theme-holo button:hover,
+body.theme-holo .export-btn:hover {
+  background: linear-gradient(135deg, rgba(0, 245, 255, 0.4), rgba(255, 0, 170, 0.3));
+  box-shadow:
+    0 0 28px rgba(0, 245, 255, 0.5),
+    0 0 40px rgba(255, 0, 170, 0.25);
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+/* Banner buttons in holo */
+body.theme-holo .top-banner .banner-btn,
+body.theme-holo .top-banner .home-button {
+  background: rgba(0, 40, 60, 0.4);
+  border: 1px solid rgba(0, 245, 255, 0.4);
+  color: var(--neon-cyan) !important;
+  box-shadow: 0 0 12px rgba(0, 245, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+body.theme-holo .top-banner .banner-btn:hover,
+body.theme-holo .top-banner .home-button:hover {
+  background: rgba(0, 80, 100, 0.5);
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 22px rgba(0, 245, 255, 0.45);
+  color: #fff !important;
+}
+
+/* Chromatic aberration on important text (subtle 3-D feel) */
+body.theme-holo .glow-cyan {
+  text-shadow:
+    -1px 0 2px rgba(255, 0, 170, 0.6),
+     1px 0 2px rgba(0, 245, 255, 0.6),
+     0 0 12px var(--glow-cyan);
+}
+
+body.theme-holo a:hover {
+  text-shadow:
+    -1px 0 3px rgba(255, 0, 170, 0.7),
+     1px 0 3px rgba(0, 245, 255, 0.7),
+     0 0 14px var(--glow-cyan);
+}
+
+/* Infobox portrait glow */
+body.theme-holo .infobox img.portrait,
+body.theme-holo .portrait-container img {
+  border: 2px solid rgba(0, 245, 255, 0.5);
+  box-shadow:
+    0 0 18px rgba(0, 245, 255, 0.35),
+    0 0 30px rgba(199, 125, 255, 0.2);
+}
+
+
+/* ---------------------------------------------------- */
+/*  COMBOBOX (theme selector) styling – works in all    */
+/* ---------------------------------------------------- */
+#themeSelect {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0.55rem 2.2rem 0.55rem 1rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2300f0ff' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 12px;
+}
+
+/* Default (neon) look for the select */
+#themeSelect {
+  background-color: rgba(180, 74, 255, 0.15);
+  border: 1px solid rgba(180, 74, 255, 0.4);
+  color: var(--neon-cyan);
+}
+
+#themeSelect:hover,
+#themeSelect:focus {
+  background-color: rgba(180, 74, 255, 0.3);
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 18px rgba(180, 74, 255, 0.45);
+  outline: none;
+}
+
+/* Gold theme select */
+body.theme-gold #themeSelect {
+  background-color: rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #f5e6a3;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23f5e6a3' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+}
+
+body.theme-gold #themeSelect:hover,
+body.theme-gold #themeSelect:focus {
+  background-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.4);
+}
+
+/* Holo theme select */
+body.theme-holo #themeSelect {
+  background-color: rgba(0, 40, 60, 0.45);
+  border: 1px solid rgba(0, 245, 255, 0.45);
+  color: #00f5ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2300f5ff' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  box-shadow: 0 0 12px rgba(0, 245, 255, 0.2);
+}
+
+body.theme-holo #themeSelect:hover,
+body.theme-holo #themeSelect:focus {
+  background-color: rgba(0, 80, 100, 0.55);
+  box-shadow: 0 0 22px rgba(0, 245, 255, 0.4);
+}
+
+/* Make the options themselves readable */
+#themeSelect option {
+  background: #0c0c12;
+  color: #e0e0ff;
+  font-family: system-ui, sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+}
