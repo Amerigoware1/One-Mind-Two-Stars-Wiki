@@ -1,19 +1,21 @@
-
 <div class="top-banner">
   <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
     
     <span class="banner-title" style="font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 1.1rem; color: #ffffff;">
       One Mind, Two Stars Wiki
     </span>
-      <span class="page-title">{{ page.title | default: "" }}</span>
+    <span class="page-title">{{ page.title | default: "" }}</span>
 
     <div style="display: flex; align-items: center; gap: 1rem;">
-      <a href="{{ '/' | relative_url }}" class="home-button">🏠 Home</a><a href="{{ '/glossary.html' | relative_url }}" class="home-button">📘 Glossary</a> 
+      <a href="{{ '/' | relative_url }}" class="home-button">🏠 Home</a>
+      <a href="{{ '/glossary.html' | relative_url }}" class="home-button">📘 Glossary</a> 
+      
       <select id="themeSelect" aria-label="Choose theme">
         <option value="neon">Neon</option>
         <option value="gold">Gold</option>
         <option value="holo">Holo</option>
       </select>
+      
       <span id="dynamic-banner-nav" style="display: flex; gap: 1rem;"></span>
     </div>
 
@@ -21,11 +23,10 @@
 </div>
 
 <script>
-  (function () {
+(function () {
   const select = document.getElementById('themeSelect');
   if (!select) return;
 
-  // Apply a theme
   function applyTheme(theme) {
     document.body.classList.remove('theme-gold', 'theme-holo');
     if (theme === 'gold') {
@@ -33,167 +34,156 @@
     } else if (theme === 'holo') {
       document.body.classList.add('theme-holo');
     }
-    // 'neon' = no extra class (default)
     localStorage.setItem('preferred-theme', theme);
     select.value = theme;
   }
 
-  // Restore saved preference as early as possible (prevents flash)
+  // Restore saved theme immediately
   const saved = localStorage.getItem('preferred-theme') || 'neon';
   applyTheme(saved);
 
   // Listen for changes
-  select.addEventListener('change', () => {
+  select.addEventListener('change', function () {
     applyTheme(select.value);
-
-  document.addEventListener("DOMContentLoaded", function() {
-    const bannerNav = document.getElementById('dynamic-banner-nav');
-    if (!bannerNav) return;
-
-    // 1. Grab Jekyll variables from the front-matter
-    const currentLayout = "{{ page.layout }}";
-    
-    // FIX: Added === "true" so it evaluates as a real boolean
-    const isSampleChapter = "{{ page.sample_chapter | default: false }}" === "true";
-    const seriesOverviewUrl = "{{ page.return_url | relative_url }}";
-    
-    // Grab the dossier marker and URL from front-matter
-    const isDossier = "{{ page.is_dossier | default: false }}" === "true";
-    const dossierReturnUrl = "{{ page.return_url | relative_url }}";
-    const dossierReturnLabel = "{{ page.return_label | default: 'Return to Character' }}";
-    const glossaryReturnUrl = "{{ '/glossary.html#medical' | relative_url }}";
-    const glossaryReturnLabel = "Return to Glossary (Medical)";
-
-    // FIX: Added === "true" here as well, otherwise it suffers from the exact same bug!
-    const isArchive = "{{ page.is_archive | default: false }}" === "true";
-    const archiveReturnUrl = "{{ page.return_url | relative_url }}";
-    const archiveReturnLabel = "{{ page.return_label | default: 'Return to Archive' }}";
-
-    // Add building pages to the banner navigation
-    const isBuildingPage = "{{ page.is_building | default: false }}" === "true";
-    const buildingReturnUrl = "{{ '/central-buildings.html' | relative_url }}";
-    const NewEdenReturnUrl = "{{ '/new-eden.html' | relative_url }}";
-    const buildingReturnLabel = "{{ page.return_label | default: 'Return to Central Buildings' }}";
-    const NewEdenReturnLabel = "{{ page.return_label | default: 'Return to New Eden' }}";
-    
-    // SCENARIO A: Inside a medical/care sub-dossier layout
-    if (isDossier && dossierReturnUrl) {
-      const topBanner = bannerNav.closest('.top-banner');
-      if (topBanner) {
-        const existingGlossaryBtn = topBanner.querySelector('a[href$="glossary.html"]');
-        if (existingGlossaryBtn) {
-          existingGlossaryBtn.remove();
-        }
-      }
-      const topBtn = document.createElement('a');
-      topBtn.href = dossierReturnUrl;
-      topBtn.className = 'home-button';
-      topBtn.textContent = `‹🧍‍♀️ ${dossierReturnLabel}`;
-      bannerNav.appendChild(topBtn);
-      
-      const glossaryBtn = document.createElement('a');
-      glossaryBtn.href = glossaryReturnUrl;
-      glossaryBtn.className = 'home-button';
-      glossaryBtn.textContent = `‹📘 ${glossaryReturnLabel}`;
-      bannerNav.appendChild(glossaryBtn);
-    } 
-    
-    // SCENARIO B: On a standard biography layout page
-    else if (currentLayout === 'character') {
-      const topBtn = document.createElement('a');
-      topBtn.href = "{{ '/_characters/' | relative_url }}"; 
-      topBtn.className = 'home-button';
-      topBtn.textContent = "‹👨🏻‍👩🏻‍👦🏻‍👦🏻 Return to Characters";
-      bannerNav.appendChild(topBtn);
-    }
-    
-    // SCENARIO C: Sample chapter pages → Return to Series Overview
-    else if (isSampleChapter) {
-      const topBtn = document.createElement('a');
-      topBtn.href = seriesOverviewUrl; 
-      topBtn.className = 'home-button';
-      topBtn.textContent = "‹📚 Series Overview";
-      bannerNav.appendChild(topBtn);
-    }
-    
-    // SCENARIO D: On an anthology story page → Return to index
-    else if (isArchive) {
-      const topBtn = document.createElement('a');
-      topBtn.href = archiveReturnUrl;
-      topBtn.className = 'home-button';
-      topBtn.textContent = `‹📖 ${archiveReturnLabel}`;
-      bannerNav.appendChild(topBtn);
-    }
-
-    // SCENARIO E: On a building page → Return to New Eden or Central Buildings
-    else if (isBuildingPage) {
-      const topBtnA = document.createElement('a');
-      topBtnA.href = buildingReturnUrl;
-      topBtnA.className = 'home-button';
-      topBtnA.textContent = `‹🏛️ Return to Central Buildings`;
-      bannerNav.appendChild(topBtnA);
-      const topBtnB = document.createElement('a');
-      topBtnB.href = NewEdenReturnUrl;
-      topBtnB.className = 'home-button';
-      topBtnB.textContent = `‹🏛️ Return to New Eden`;
-      bannerNav.appendChild(topBtnB);
-    }
   });
-</script>
-<style>
-.page-title {
+})();
 
-  /* 1. Apply the gradient as a background instead of a text color */
-  background: linear-gradient(90deg, #d15eed, #00ffff);
+// Dynamic banner navigation (runs after DOM is ready)
+document.addEventListener("DOMContentLoaded", function() {
+  const bannerNav = document.getElementById('dynamic-banner-nav');
+  if (!bannerNav) return;
+
+  const currentLayout = "{{ page.layout }}";
+  const isSampleChapter = "{{ page.sample_chapter | default: false }}" === "true";
+  const seriesOverviewUrl = "{{ page.return_url | relative_url }}";
   
-  /* 2. Clip the background so it only shows through the text characters */
+  const isDossier = "{{ page.is_dossier | default: false }}" === "true";
+  const dossierReturnUrl = "{{ page.return_url | relative_url }}";
+  const dossierReturnLabel = "{{ page.return_label | default: 'Return to Character' }}";
+  const glossaryReturnUrl = "{{ '/glossary.html#medical' | relative_url }}";
+  const glossaryReturnLabel = "Return to Glossary (Medical)";
+
+  const isArchive = "{{ page.is_archive | default: false }}" === "true";
+  const archiveReturnUrl = "{{ page.return_url | relative_url }}";
+  const archiveReturnLabel = "{{ page.return_label | default: 'Return to Archive' }}";
+
+  const isBuildingPage = "{{ page.is_building | default: false }}" === "true";
+  const buildingReturnUrl = "{{ '/central-buildings.html' | relative_url }}";
+  const NewEdenReturnUrl = "{{ '/new-eden.html' | relative_url }}";
+  const buildingReturnLabel = "{{ page.return_label | default: 'Return to Central Buildings' }}";
+  const NewEdenReturnLabel = "{{ page.return_label | default: 'Return to New Eden' }}";
+  
+  if (isDossier && dossierReturnUrl) {
+    const topBanner = bannerNav.closest('.top-banner');
+    if (topBanner) {
+      const existingGlossaryBtn = topBanner.querySelector('a[href$="glossary.html"]');
+      if (existingGlossaryBtn) existingGlossaryBtn.remove();
+    }
+    const topBtn = document.createElement('a');
+    topBtn.href = dossierReturnUrl;
+    topBtn.className = 'home-button';
+    topBtn.textContent = `‹🧍‍♀️ ${dossierReturnLabel}`;
+    bannerNav.appendChild(topBtn);
+    
+    const glossaryBtn = document.createElement('a');
+    glossaryBtn.href = glossaryReturnUrl;
+    glossaryBtn.className = 'home-button';
+    glossaryBtn.textContent = `‹📘 ${glossaryReturnLabel}`;
+    bannerNav.appendChild(glossaryBtn);
+  } 
+  else if (currentLayout === 'character') {
+    const topBtn = document.createElement('a');
+    topBtn.href = "{{ '/_characters/' | relative_url }}"; 
+    topBtn.className = 'home-button';
+    topBtn.textContent = "‹👨🏻‍👩🏻‍👦🏻‍👦🏻 Return to Characters";
+    bannerNav.appendChild(topBtn);
+  }
+  else if (isSampleChapter) {
+    const topBtn = document.createElement('a');
+    topBtn.href = seriesOverviewUrl; 
+    topBtn.className = 'home-button';
+    topBtn.textContent = "‹📚 Series Overview";
+    bannerNav.appendChild(topBtn);
+  }
+  else if (isArchive) {
+    const topBtn = document.createElement('a');
+    topBtn.href = archiveReturnUrl;
+    topBtn.className = 'home-button';
+    topBtn.textContent = `‹📖 ${archiveReturnLabel}`;
+    bannerNav.appendChild(topBtn);
+  }
+  else if (isBuildingPage) {
+    const topBtnA = document.createElement('a');
+    topBtnA.href = buildingReturnUrl;
+    topBtnA.className = 'home-button';
+    topBtnA.textContent = `‹🏛️ Return to Central Buildings`;
+    bannerNav.appendChild(topBtnA);
+    
+    const topBtnB = document.createElement('a');
+    topBtnB.href = NewEdenReturnUrl;
+    topBtnB.className = 'home-button';
+    topBtnB.textContent = `‹🏛️ Return to New Eden`;
+    bannerNav.appendChild(topBtnB);
+  }
+});
+</script>
+
+<style>
+/* Page title – Neon (default) */
+.page-title {
+  background: linear-gradient(90deg, #d15eed, #00ffff);
   -webkit-background-clip: text;
   background-clip: text;
-  
-  /* 3. Make the actual text transparent so the background gradient shines through */
   -webkit-text-fill-color: transparent;
-  
-  /* Optional: Make it bold so the gradient has more surface area to show off */
   font-family: 'Orbitron', sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
-  /*text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);  Adds a subtle cyan energy hum behind it */
-  margin-left: 1rem;   /* Prevent crowding next to the site title */ 
+  margin-left: 1rem;
 }
+
+/* Top banner background – Neon */
 .top-banner {
-  /* Default dark purple theme */
   background: linear-gradient(125deg, #13132b, #241442, #0f3d59, #411c1c);
   background-size: 400% 400%;
   animation: color-swirl 6s ease infinite;
 }
 
-/* Gold theme override — shiny black / obsidian */
-body.theme-gold .top-banner{
+/* Gold overrides */
+body.theme-gold .top-banner {
   background: linear-gradient(125deg, #030303, #0a0a0a, #10100c, #16140e);
   background-size: 400% 400%;
 }
 
-/* page-title gold theme override — metallic gold */
 body.theme-gold .page-title {
   background: linear-gradient(90deg, #fff8e0, #f5e6a3 25%, #d4af37 50%, #a67c00 80%, #e8d48b);
-  /* 2. Clip the background so it only shows through the text characters */
   -webkit-background-clip: text;
   background-clip: text;
-  
-  /* 3. Make the actual text transparent so the background gradient shines through */
   -webkit-text-fill-color: transparent;
-  
-  /* Optional: Make it bold so the gradient has more surface area to show off */
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.8rem;
-  font-weight: bold;
-  /*text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);  Adds a subtle cyan energy hum behind it */
-  margin-left: 1rem;   /* Prevent crowding next to the site title */ 
+}
+
+/* Holo overrides */
+body.theme-holo .top-banner {
+  background: linear-gradient(125deg, #02040a, #041220, #0a1a2e, #12081c);
+  background-size: 400% 400%;
+}
+
+body.theme-holo .page-title {
+  background: linear-gradient(90deg, #00f5ff, #c77dff 40%, #ff00aa 70%, #00f5ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: holoText 6s linear infinite;
 }
 
 @keyframes color-swirl {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+@keyframes holoText {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
 }
 </style>
